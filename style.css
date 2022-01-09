@@ -1,19 +1,31 @@
-h1 {
+.scripture-search {
+  border-style: solid;
+  border-color: black;
+  height: 500px;
+}
+
+.scripture-search > h1 {
   font-family: "Play", sans-serif;
   text-align: center;
   font-size: 80px;
+  padding: 20px;
+  margin: 0px;
 }
 
-body {
-  background-color: #ffffff;
+.scripture-search > h3 {
+  font-family: 'Play', sans-serif;
+  text-align: center;
+  font-size: 50px;
+  padding: 10px;
+  margin: 0px;
 }
 
 .search-box {
   position: absolute;
-  top: 50%;
+  top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: #666666;
+  background: #dcdcdc;
   height: 40px;
   border-radius: 40px;
   padding: 10px;
@@ -58,6 +70,6 @@ body {
   font-weight: bold;
 }
 
-.scripture-search {
-  background-color: red;
-}
+
+
+
