@@ -1,7 +1,10 @@
 .scripture-search {
   border-style: solid;
   border-color: black;
-  height: 500px;
+  width: 100%;
+  height: 1200px;
+  position: relative;
+
 }
 
 .scripture-search > h1 {
@@ -21,11 +24,11 @@
 }
 
 .search-box {
-  position: absolute;
+   position: absolute;
   top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: #dcdcdc;
+  background: #666666;
   height: 40px;
   border-radius: 40px;
   padding: 10px;
@@ -69,7 +72,5 @@
   width: 0px;
   font-weight: bold;
 }
-
-
 
 
