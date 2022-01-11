@@ -31,10 +31,21 @@
   padding: 0;
 }
 
+#bbl-division {
+  width: 50%;
+  height: 20px;
+}
+
+#search-divison {
+  width: 50%;
+  height: 20px;
+}
+
 form {
   width: 400px;
-  margin: auto;
+  margin: 0 auto;
   margin-top: 50px;
+  margin-right: 200px;
 }
 
 input {
@@ -44,7 +55,7 @@ input {
 }
 
 .search {
-  width: 75%;
+  width: 320px;
 }
 
 .submit {
@@ -54,26 +65,29 @@ input {
 
 /* Dropdown Button */
 .dropbtn {
-  background-color: #3498db;
+  background-color: #ff6700;
   color: white;
   padding: 16px;
-  font-size: 16px;
+  font-size: 20px;
+  font-family: "Russo One", sans-serif;
   border: none;
   cursor: pointer;
+  width: 300px;
+  border-radius: 25px;
 }
 
 /* Dropdown button on hover & focus */
 .dropbtn:hover,
 .dropbtn:focus {
-  background-color: #2980b9;
+  background-color: #ff8533;
 }
 
 /* The container <div> - needed to position the dropdown content */
 .dropdown {
   position: relative;
   display: inline-block;
-  top: 5%;
-  left: 47%;
+  top: -1%;
+  left: 25%;
 }
 
 #OT-column,
@@ -86,40 +100,51 @@ input {
 }
 
 #OT-column {
-  width: 200px;
+  min-width: auto;
+  max-width: 200px;
   height: 300px;
 }
 
 #OT-column-scroll {
-  width: 200px;
+  min-width: auto;
+  max-width: 200px;
   height: 300px;
   overflow: auto;
 }
 
 #NT-column {
-  width: 200px;
+  min-width: auto;
+  max-width: 200px;
   height: 300px;
 }
 
 #NT-column-scroll {
-  width: 200px;
+  min-width: auto;
+  max-width: 200px;
   height: 300px;
   overflow: auto;
 }
 
 #S-column {
-  width: 200px;
+  min-width: auto;
+  max-width: 300px;
   height: 300px;
 }
 
 #S-column-scroll {
-  width: 200px;
+  min-width: auto;
+  max-width: 300px;
   height: 300px;
   overflow: auto;
 }
 
+#myDropdown {
+  margin: 0 auto;
+}
+
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content {
+  margin: 0 auto;
   display: none;
   position: absolute;
   background-color: #f1f1f1;
@@ -127,7 +152,7 @@ input {
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
   height: 350px;
-  width: 700px;
+  width: 630px;
 }
 
 /* Links inside the dropdown */
