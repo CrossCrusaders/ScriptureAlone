@@ -137,20 +137,63 @@ input {
   overflow: auto;
 }
 
-.col-6 {
-  width: 300px;
+.col-6-left {
+  width: 700px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  text-align: center;
+  font-size: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  width: 500px;
+}
+
+a:hover {
+  color: white;
+  background-color: gray;
+}
+
+li:hover {
+  color: white;
+  background-color: gray;
+}
+
+.chapters {
+  color: black;
+  padding: 0;
+  margin: 0;
+}
+
+.chapters:hover {
+  color: white;
+  background-color: grey;
+}
+
+.col-6-right {
+  min-width: auto;
+  max-width: 500px;
 }
 
 .row {
-  width: 600px;
+  width: 350px;
 }
 
 .modal-content {
-  width: 630px;
+  width: 380px;
 }
 
 .modal-body {
-  width: 600px;
+  width: 350px;
 }
 
 .column {
