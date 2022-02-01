@@ -1,0 +1,15 @@
+-- Sqlite database initial setup script
+
+DROP TABLE IF EXISTS doc;
+DROP TABLE IF EXISTS book;
+DROP TABLE IF EXISTS chapter;
+DROP TABLE IF EXISTS verse;
+
+DROP TABLE IF EXISTS author;
+DROP TABLE IF EXISTS category;
+
+CREATE TABLE doc (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    title TEXT UNIQUE NOT NULL,
+    category TEXT NOT NULL
+)
