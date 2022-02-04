@@ -378,18 +378,34 @@ ul {
 }
 
 .SA-search {
-  background-color: green;
+  /*background-color: green;*/
   height: 33.3%;
   justify-content: center;
   margin-top: 0;
   padding: 0;
   margin: 0 auto;
-  border: 1px solid blue;
+  margin-top: 40px;
+  /*display: flex;
+  align-items: top;*/
+}
+
+#wrapper1 {
+  /*background-color: rebeccapurple;*/
+}
+
+#wrapper2 {
+  /*background-color: lightcoral;*/
+  text-align: center;
+  margin-top: 60px;
 }
 
 .SA-dropdown {
-  background-color: yellow;
+  /*background-color: yellow;*/
+  margin-bottom: 40px;
   height: 33.3%;
+  text-align: center;
+  display: column;
+  align-items: top;
 }
 
 /*form {
@@ -401,6 +417,7 @@ ul {
 
 form {
   text-align: center;
+  padding-bottom: 30px;
 }
 
 .form-select {
@@ -421,7 +438,12 @@ input {
 
 .submit {
   width: 70px;
+  height: 30px;
   background-color: #1c87c9;
+  font-family: "Play", sans-serif;
+  font-size: 10px;
+  padding: 0;
+  margin: 0;
 }
 
 /* Search bar styling */
@@ -466,10 +488,53 @@ input {
 
 /* Dropdown Modal */
 
-#myBtn {
-  background: transparent;
-  border: none;
+button {
+  position: relative;
+  margin: 0 auto;
+  width: 100px;
+  top: 50%;
+  left: 0;
+}
+
+/* CSS */
+.button-9 {
+  appearance: button;
+  backface-visibility: hidden;
+  background-color: #393d48;
+  border-radius: 50px;
+  border-width: 0;
+  box-shadow: rgba(50, 50, 93, 0.1) 0 0 0 1px inset,
+    rgba(50, 50, 93, 0.1) 0 2px 5px 0, rgba(0, 0, 0, 0.07) 0 1px 1px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  font-family: "Play", sans-serif;
+  font-size: 20px;
+  height: 50px;
+  line-height: 1.15;
+  margin: 12px 0 0;
+  outline: none;
+  overflow: hidden;
+  padding: 0 25px;
+  position: relative;
   text-align: center;
+  text-transform: none;
+  transform: translateZ(0);
+  transition: all 0.2s, box-shadow 0.08s ease-in;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 40%;
+}
+
+.button-9:disabled {
+  cursor: default;
+}
+
+.button-9:focus {
+  box-shadow: rgba(50, 50, 93, 0.1) 0 0 0 1px inset,
+    rgba(50, 50, 93, 0.2) 0 6px 15px 0, rgba(0, 0, 0, 0.1) 0 2px 2px 0,
+    rgba(50, 151, 211, 0.3) 0 0 0 4px;
 }
 
 /*------------------------------------------
@@ -758,6 +823,7 @@ input {
 
 .modal-body {
   padding: 2px 16px;
+  text-align: left;
 }
 
 .modal-footer {
