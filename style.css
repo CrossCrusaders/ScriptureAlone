@@ -15,7 +15,8 @@ button {
   min-height: 100vh;
   min-width: 100%;
   overflow-x: hidden;
-  background-image: url(images/blurry-gradient-haikei.svg);
+  /*background-image: url(images/blurry-gradient-haikei.svg);*/
+  background-color: #ebeae9;
   background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
@@ -195,12 +196,13 @@ ul {
   display: inline-block;
   font-size: 1rem;
   font-weight: 300;
-  text-transform: uppercase;
   letter-spacing: 1px;
   transition: 0.3s;
   opacity: 0;
   transform: translateY(10px);
   animation: hide 0.5s forwards ease;
+  font-family: "Play", sans-serif;
+  font-size: 25px;
 }
 
 .links a:hover {
@@ -316,7 +318,8 @@ ul {
   top: 0;
   left: 0;
   display: flex;
-  background-image: url(images/blurry-gradient-haikei.svg);
+  /*background-image: url(images/blurry-gradient-haikei.svg);*/
+  background-color: #faf8f7;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -390,7 +393,7 @@ ul {
 }
 
 #wrapper1 {
-  /*background-color: rebeccapurple;*/
+  background-color: transparent;
 }
 
 #wrapper2 {
@@ -830,4 +833,61 @@ button {
   padding: 2px 16px;
   background-color: #5cb85c;
   color: white;
+}
+
+/*Section 2*/
+
+.section-2 {
+  width: 100%;
+  height: 100vh;
+  background-image: url(images/layered-waves-haikei.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.row1 {
+  height: 10%;
+}
+
+#votd {
+  font-family: "Montserrat", sans-serif;
+  font-size: 80px;
+  text-align: center;
+}
+
+.row2 {
+  display: flex;
+  align-items: center;
+}
+
+.votd-blob {
+  border-radius: 25px;
+  border-style: solid;
+  border-color: black;
+  border-width: 5px;
+  height: 50vh;
+  margin-top: 10vh;
+  margin-left: 25vh;
+  margin-right: 25vh;
+}
+
+.votd-ref {
+  font-family: "Montserrat", sans-serif;
+  font-size: 60px;
+  padding-left: 20px;
+  height: 30%;
+  margin: 0;
+}
+
+.votd-passage {
+  padding: 25px;
+  font-size: 30px;
+  height: 50%;
+}
+
+.votd-share {
+  height: 10%;
+  text-align: right;
+  padding-right: 30px;
+  font-family: "Play", sans-serif;
 }
