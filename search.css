@@ -6,12 +6,12 @@ App
   top: 50%;
   left: 50%;
   width: 350px;
-  height: 50px;
+  height: 40px;
   border-radius: 40px;
   -webkit-box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
-  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
   -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   background: #fff;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
@@ -19,7 +19,7 @@ App
 
 .search-form.focus {
   -webkit-box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15);
-  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15);
 }
 
 .search-input {
@@ -30,17 +30,17 @@ App
   background: none;
   color: #5a6674;
   width: 195px;
-  height: 30px;
+  height: 20px;
   border: none;
   -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   outline: none;
 }
 
 .search-input::-webkit-search-cancel-button {
   -webkit-appearance: none;
-  appearance: none;
+          appearance: none;
 }
 
 .search-button {
@@ -103,7 +103,7 @@ App
   text-align: center;
   left: 50%;
   -webkit-transform: translateX(-50%);
-  transform: translateX(-50%);
+          transform: translateX(-50%);
   opacity: 0;
   background: #929aa3;
   color: #fff;
@@ -124,7 +124,7 @@ App
   bottom: -3px;
   left: 50%;
   -webkit-transform: translateX(-50%);
-  transform: translateX(-50%);
+          transform: translateX(-50%);
   border-top: 4px solid #929aa3;
   border-left: 4px solid transparent;
   border-right: 4px solid transparent;
