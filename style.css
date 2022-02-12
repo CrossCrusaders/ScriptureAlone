@@ -48,7 +48,6 @@ button {
 .logo {
   font-size: 1.1rem;
   font-weight: 600;
-  text-transform: uppercase;
   letter-spacing: 2px;
   line-height: 4rem;
 }
@@ -949,7 +948,7 @@ button {
 
 .sermons-wrapper {
   background-color: transparent;
-  padding-top: 3em;
+  padding-top: 7.5em;
 }
 
 /* Section 5 - Footer */

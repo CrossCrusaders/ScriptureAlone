@@ -46,7 +46,15 @@ img {
 
 .netflix-slider h2 {
   font-family: "Montserrat", sans-serif;
-  font-size: 50px;
+  font-size: 40px;
+}
+
+.netflix-slider h3 {
+  font-family: "Play", "Times New Roman", Times, serif;
+  font-size: 25px;
+  text-align: right;
+  padding-top: 5px;
+  padding-right: 15px;
 }
 
 :root {
@@ -54,13 +62,16 @@ img {
 }
 
 .netflix-slider {
-  padding-top: 2em;
-  padding-bottom: 1em;
+  padding-bottom: 0em;
   padding-left: 0.5em;
 }
 
-.netflix-slider .swiper-wrapper {
+/*.netflix-slider .swiper-wrapper {
   padding: 20px 0;
+}*/
+
+.swiper-wrapper {
+  padding-top: 0.5em;
 }
 
 .netflix-slider .swiper-slide {
