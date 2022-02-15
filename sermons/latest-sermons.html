@@ -16,14 +16,14 @@
         <link href="https://fonts.googleapis.com/css2?family=Play:wght@700&display=swap" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
         <link
         rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
         />
-        <link href="https://vjs.zencdn.net/7.17.0/video-js.css" rel="stylesheet" />
-
-        <!-- If you'd like to support IE8 (for Video.js versions prior to v7) -->
-        <!-- <script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script> -->
+        
+        <link href="http://vjs.zencdn.net/7.0/video-js.min.css" rel="stylesheet">
+        <script src="http://vjs.zencdn.net/7.0/video.min.js"></script>
 
     </head>
     <body>
@@ -57,63 +57,267 @@
             <!-- Content -->
             <section class="content__section">
                 <div class="playlist__one">
-                    <h4 class="playlist__title">Section Title</h4>
+                    <h2 class="playlist__title">Latest Sermons</h2>
                     <div class="videos">
-                        <div class="video" style="background-image: url(/images/image-1.jpg)">
-                            <a class="venobox" data-autoplay="true" data-vbtype="video" data-gall="myGallery" href="https://res.cloudinary.com/dxrojjzoa/video/upload/v1644787609/Spencer%20Smith/Video%20Sermons/Following_Christ_-_Spencer_Smith_lyuzaz.mp4"><i class="fas fa-play-circle"></i></a>                                             
+                        <div class="video tooltip" style="background-image: url(/images/thumbnails/sermons/spencer/spencer-thumb-wdtbsate.jpg)">
+                            <span class="tooltiptext">What Does the Bible Say About the Enneagram?</span>
+                            <a class="venobox" data-autoplay="true" data-vbtype="video" data-gall="myGallery" href="http://youtu.be/SY3jQ9lr-rk"><i class="fas fa-play-circle"></i></a>
                         </div>
-                        <div class="video" style="background-image: url(/images/image-2.jpg)">
-                            <a class="venobox" data-autoplay="true" data-vbtype="video" data-gall="myGallery" href="http://youtu.be/RD_hvIhi1T4"><i class="fas fa-play-circle"></i></a>
+                        <div class="video tooltip" style="background-image: url(/images/thumbnails/sermons/spencer/spencer-thumb-tvol.jpg)">
+                            <span class="tooltiptext">The Vanity of Life</span>
+                            <a class="venobox" data-autoplay="true" data-vbtype="video" data-gall="myGallery" href="http://youtu.be/SY3jQ9lr-rk"><i class="fas fa-play-circle"></i></a>
                         </div>
-                        <div class="video" style="background-image: url(/images/image-3.jpg)">
-                            <a class="venobox" data-autoplay="true" data-vbtype="inline" data-gall="myGallery" href="https://github.com/nicolafranchini/VenoBox/issues/104"><i class="fas fa-play-circle"></i></a>
+                        <div class="video tooltip" style="background-image: url(/images/thumbnails/sermons/spencer/spencer-thumb-tmotmtmi.jpg)">
+                            <span class="tooltiptext">The Marks of the Man That Makes It</span>
+                            <a class="venobox" data-autoplay="true" data-vbtype="video" data-gall="myGallery" href="http://youtu.be/SY3jQ9lr-rk"><i class="fas fa-play-circle"></i></a>
                         </div>
-                        <div class="video" style="background-image: url(/images/image-4.jpg)">
-                            <a class="venobox" data-autoplay="true" data-vbtype="video" data-gall="myGallery" href="http://youtu.be/_AF2T1fISng"><i class="fas fa-play-circle"></i></a>
+                        <div class="video tooltip" style="background-image: url(/images/thumbnails/sermons/spencer/spencer-thumb-dm.jpg)">
+                            <span class="tooltiptext">Doctrine Matters</span>
+                            <a class="venobox" data-autoplay="true" data-vbtype="video" data-gall="myGallery" href="http://youtu.be/SY3jQ9lr-rk"><i class="fas fa-play-circle"></i></a>
                         </div>
-                        <div class="video" style="background-image: url(/images/image-5.jpg)">
-                            <a class="venobox" data-autoplay="true" data-vbtype="video" data-gall="myGallery" href="http://youtu.be/KEvu6dXRi4o"><i class="fas fa-play-circle"></i></a>
+                        <div class="video tooltip" style="background-image: url(/images/thumbnails/sermons/spencer/spencer-thumb-pftm.jpg)">
+                            <span class="tooltiptext">Profitable for the Ministry</span>
+                            <a class="venobox" data-autoplay="true" data-vbtype="video" data-gall="myGallery" href="http://youtu.be/SY3jQ9lr-rk"><i class="fas fa-play-circle"></i></a>
                         </div>
-                        <div class="video" style="background-image: url(/images/image-6.jpg)">
-                            <a class="venobox" data-autoplay="true" data-vbtype="video" data-gall="myGallery" href="http://youtu.be/arwM3sdtVt4"><i class="fas fa-play-circle"></i></a>
+                        <div class="video tooltip" style="background-image: url(/images/thumbnails/sermons/spencer/spencer-thumb-wicm.jpg)">
+                            <span class="tooltiptext">What is Christian Manhood?</span>
+                            <a class="venobox" data-autoplay="true" data-vbtype="video" data-gall="myGallery" href="http://youtu.be/SY3jQ9lr-rk"><i class="fas fa-play-circle"></i></a>
                         </div>
-                        <div class="video" style="background-image: url(/images/image-7.jpg)">
-                            <a class="venobox" data-autoplay="true" data-vbtype="video" data-gall="myGallery" href="http://youtu.be/-PxhSP6P028"><i class="fas fa-play-circle"></i></a>
+                        <div class="video tooltip" style="background-image: url(/images/thumbnails/sermons/spencer/spencer-thumb-witc.jpg)">
+                            <span class="tooltiptext">Witchcraft in the Church</span>
+                            <a class="venobox" data-autoplay="true" data-vbtype="video" data-gall="myGallery" href="http://youtu.be/SY3jQ9lr-rk"><i class="fas fa-play-circle"></i></a>
                         </div>
-                        <div class="video" style="background-image: url(/images/image-8.jpg)">
-                            <a class="venobox" data-autoplay="true" data-vbtype="video" data-gall="myGallery" href="http://youtu.be/2dTGPhxHkfE"><i class="fas fa-play-circle"></i></a>
-                        </div>
+                        <div class="video tooltip" style="background-image: url(/images/thumbnails/sermons/shawn/shawn-thumb-tditc.jpg)">
+                            <span class="tooltiptext">The Doctrinal Compromises in the Church</span>
+                            <a class="venobox" data-autoplay="true" data-vbtype="video" data-gall="myGallery" href="http://youtu.be/SY3jQ9lr-rk"><i class="fas fa-play-circle"></i></a>
+                        </div> 
                     </div>
                 </div>
                 <div class="playlist__two">
-                        <h4 class="playlist__title">Section Title</h4>
+                        <h2 class="playlist__title">Speakers</h2>
+                        <h4 class="playlist__subtitle">Spencer Smith</h4>
                         <div class="videos">
-                            <div class="video" style="background-image: url(/images/image-9.jpg)">
-                                <a class="venobox" data-autoplay="true" data-vbtype="video" data-gall="myGallery" href="http://youtu.be/MI3-esEWahM"><i class="fas fa-play-circle"></i></a>
-\                            </div>
-                            <div class="video" style="background-image: url(/images/image-10.jpg)">
+
+                            <div class="spencer-mog" id="spencer-mog" style="display: none;">
+                                <h1 class="mog-title">The Maniac of Gadera</h1>
+                                <h2 class="mog-author">Spencer Smith</h2>
+                                    <video id="my-video" class="video-js vjs-big-play-centered mog-player" max-width="854" max-height="480" controls preload="metadata" data-setup="{}">
+                                    <source src="https://res.cloudinary.com/dxrojjzoa/video/upload/v1644787552/Spencer%20Smith/Video%20Sermons/Missionary_Spencer_Smith_-_The_Maniac_of_Gadara_ifbbly.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                    </video>                                   
+
+                                    
+                                <p>Lorem ipsum</p>
+                            </div>              
+                            <div class="video tooltip" style="background-image: url(/images/thumbnails/sermons/spencer/spencer-thumb-mog.jpg)">
+                                <span class="tooltiptext">The Maniac of Gadera</span>
+                                <a class="venobox" data-autoplay="true" data-vbtype="inline" href="#spencer-mog"><i class="fas fa-play-circle"></i></a>
+                            </div>
+                            <div class="video tooltip" style="background-image: url(/images/thumbnails/sermons/spencer/spencer-thumb-wog.jpg)">
+                                <span class="tooltiptext">The Will of God</span>
                                 <a class="venobox" data-autoplay="true" data-vbtype="video" data-gall="myGallery" href="http://youtu.be/SY3jQ9lr-rk"><i class="fas fa-play-circle"></i></a>
                             </div>
-                            <div class="video" style="background-image: url(/images/image-11.jpg)">
-                                <a class="venobox" data-autoplay="true" data-vbtype="video" data-gall="myGallery" href="http://youtu.be/QT4SdZyNRy4"><i class="fas fa-play-circle"></i></a>
+                            <div class="video tooltip" style="background-image: url(/images/thumbnails/sermons/spencer/spencer-thumb-overwhelmed.jpg)">
+                                <span class="tooltiptext">What To Do When You Are Overwhelmed</span>
+                                <a class="venobox" data-autoplay="true" data-vbtype="video" data-gall="myGallery" href="http://youtu.be/SY3jQ9lr-rk"><i class="fas fa-play-circle"></i></a>
                             </div>
-                            <div class="video" style="background-image: url(/images/image-12.jpg)">
-                                <a class="venobox" data-autoplay="true" data-vbtype="video" data-gall="myGallery" href="http://youtu.be/fquIXhC1fRI"><i class="fas fa-play-circle"></i></a>
+                            <div class="video tooltip" style="background-image: url(/images/thumbnails/sermons/spencer/spencer-thumb-top.jpg)">
+                                <span class="tooltiptext">Thoughts on Prayer</span>
+                                <a class="venobox" data-autoplay="true" data-vbtype="video" data-gall="myGallery" href="http://youtu.be/SY3jQ9lr-rk"><i class="fas fa-play-circle"></i></a>
                             </div>
-                            <div class="video" style="background-image: url(/images/image-13.jpg)">
-                                <a class="venobox" data-autoplay="true" data-vbtype="video" data-gall="myGallery" href="http://youtu.be/Bmu2TOjNSAA"><i class="fas fa-play-circle"></i></a>
+                            <div class="video tooltip" style="background-image: url(/images/thumbnails/sermons/spencer/spencer-thumb-wwydwj.jpg)">
+                                <span class="tooltiptext">What Will Ye Do With Jesus</span>
+                                <a class="venobox" data-autoplay="true" data-vbtype="video" data-gall="myGallery" href="http://youtu.be/SY3jQ9lr-rk"><i class="fas fa-play-circle"></i></a>
                             </div>
-                            <div class="video" style="background-image: url(/images/image-14.jpg)">
-                                <a class="venobox" data-autoplay="true" data-vbtype="video" data-gall="myGallery" href="http://youtu.be/tpV9m75RPoA"><i class="fas fa-play-circle"></i></a>
+                            <div class="video tooltip" style="background-image: url(/images/thumbnails/sermons/spencer/spencer-thumb-wianarc.jpg)">
+                                <span class="tooltiptext">Why I Am Not A Roman Catholic</span>
+                                <a class="venobox" data-autoplay="true" data-vbtype="video" data-gall="myGallery" href="http://youtu.be/SY3jQ9lr-rk"><i class="fas fa-play-circle"></i></a>
                             </div>
-                            <div class="video" style="background-image: url(/images/image-15.jpg)">
-                                <a class="venobox" data-autoplay="true" data-vbtype="video" data-gall="myGallery" href="http://youtu.be/mZA0_9Asqeg"><i class="fas fa-play-circle"></i></a>
+                            <div class="video tooltip" style="background-image: url(/images/thumbnails/sermons/spencer/spencer-thumb-tsrr.jpg)">
+                                <span class="tooltiptext">The Self Righteous Ruler</span>
+                                <a class="venobox" data-autoplay="true" data-vbtype="video" data-gall="myGallery" href="http://youtu.be/SY3jQ9lr-rk"><i class="fas fa-play-circle"></i></a>
                             </div>
-                            <div class="video" style="background-image: url(/images/image-16.jpg)">
-                                <a class="venobox" data-autoplay="true" data-vbtype="video" data-gall="myGallery" href="http://youtu.be/1t2W2lN8IZk"><i class="fas fa-play-circle"></i></a>
+                            <div class="video tooltip" style="background-image: url(/images/thumbnails/sermons/spencer/spencer-thumb-doh.jpg)">
+                                <span class="tooltiptext">Dull of Hearing</span>
+                                <a class="venobox" data-autoplay="true" data-vbtype="video" data-gall="myGallery" href="http://youtu.be/SY3jQ9lr-rk"><i class="fas fa-play-circle"></i></a>
                             </div>
+                            <div class="video tooltip" style="background-image: url(/images/thumbnails/sermons/spencer/spencer-thumb-tsos.jpg)">
+                                <span class="tooltiptext">The Sorrows of Succoth</span>
+                                <a class="venobox" data-autoplay="true" data-vbtype="video" data-gall="myGallery" href="http://youtu.be/SY3jQ9lr-rk"><i class="fas fa-play-circle"></i></a>
+                            </div>
+                            <div class="video tooltip" style="background-image: url(/images/thumbnails/sermons/spencer/spencer-thumb-tsvs1.jpg)">
+                                <span class="tooltiptext">The Flesh VS Spirit - Part 1</span>
+                                <a class="venobox" data-autoplay="true" data-vbtype="video" data-gall="myGallery" href="http://youtu.be/SY3jQ9lr-rk"><i class="fas fa-play-circle"></i></a>
+                            </div>
+                            <div class="video tooltip" style="background-image: url(/images/thumbnails/sermons/spencer/spencer-thumb-tsvs2.jpg)">
+                                <span class="tooltiptext">The Flesh VS Spirit - Part 2</span>
+                                <a class="venobox" data-autoplay="true" data-vbtype="video" data-gall="myGallery" href="http://youtu.be/SY3jQ9lr-rk"><i class="fas fa-play-circle"></i></a>
+                            </div>
+                            <div class="video tooltip" style="background-image: url(/images/thumbnails/sermons/spencer/spencer-thumb-tg.jpg)">
+                                <span class="tooltiptext">What is the Gospel?</span>
+                                <a class="venobox" data-autoplay="true" data-vbtype="video" data-gall="myGallery" href="http://youtu.be/SY3jQ9lr-rk"><i class="fas fa-play-circle"></i></a>
+                            </div>
+                            <div class="video tooltip" style="background-image: url(/images/thumbnails/sermons/spencer/spencer-thumb-ypypyp.jpg)">
+                                <span class="tooltiptext">Your Prayers, Your Purse, Your Person</span>
+                                <a class="venobox" data-autoplay="true" data-vbtype="video" data-gall="myGallery" href="http://youtu.be/SY3jQ9lr-rk"><i class="fas fa-play-circle"></i></a>
+                            </div>
+                            <div class="video tooltip" style="background-image: url(/images/thumbnails/sermons/spencer/spencer-thumb-trtr.jpg)">
+                                <span class="tooltiptext">The Road to Ruin</span>
+                                <a class="venobox" data-autoplay="true" data-vbtype="video" data-gall="myGallery" href="http://youtu.be/SY3jQ9lr-rk"><i class="fas fa-play-circle"></i></a>
+                            </div>
+                            <div class="video tooltip" style="background-image: url(/images/thumbnails/sermons/spencer/spencer-thumb-ssb.jpg)">
+                                <span class="tooltiptext">Spirit, Soul, Body</span>
+                                <a class="venobox" data-autoplay="true" data-vbtype="video" data-gall="myGallery" href="http://youtu.be/SY3jQ9lr-rk"><i class="fas fa-play-circle"></i></a>
+                            </div>
+                            <div class="video tooltip" style="background-image: url(/images/thumbnails/sermons/spencer/spencer-thumb-ibg.jpg)">
+                                <span class="tooltiptext">I Believe God</span>
+                                <a class="venobox" data-autoplay="true" data-vbtype="video" data-gall="myGallery" href="http://youtu.be/SY3jQ9lr-rk"><i class="fas fa-play-circle"></i></a>
+                            </div>
+                            <div class="video tooltip" style="background-image: url(/images/thumbnails/sermons/spencer/spencer-thumb-tg2.jpg)">
+                                <span class="tooltiptext">The Gospel</span>
+                                <a class="venobox" data-autoplay="true" data-vbtype="video" data-gall="myGallery" href="http://youtu.be/SY3jQ9lr-rk"><i class="fas fa-play-circle"></i></a>
+                            </div>
+                            <div class="video tooltip" style="background-image: url(/images/thumbnails/sermons/spencer/spencer-thumb-sitg.jpg)">
+                                <span class="tooltiptext">Stand in the Gap (Ezekiel 22)</span>
+                                <a class="venobox" data-autoplay="true" data-vbtype="video" data-gall="myGallery" href="http://youtu.be/SY3jQ9lr-rk"><i class="fas fa-play-circle"></i></a>
+                            </div>
+                            <div class="video tooltip" style="background-image: url(/images/thumbnails/sermons/spencer/spencer-thumb-tbsoccm.jpg)">
+                                <span class="tooltiptext">The Brass Shield of Contemporary Christian Music</span>
+                                <a class="venobox" data-autoplay="true" data-vbtype="video" data-gall="myGallery" href="http://youtu.be/SY3jQ9lr-rk"><i class="fas fa-play-circle"></i></a>
+                            </div>
+                            <div class="video tooltip" style="background-image: url(/images/thumbnails/sermons/spencer/spencer-thumb-bhgmg.jpg)">
+                                <span class="tooltiptext">But He Giveth More Grace</span>
+                                <a class="venobox" data-autoplay="true" data-vbtype="video" data-gall="myGallery" href="http://youtu.be/SY3jQ9lr-rk"><i class="fas fa-play-circle"></i></a>
+                            </div>
+                            <div class="video tooltip" style="background-image: url(/images/thumbnails/sermons/spencer/spencer-thumb-ttblos.jpg)">
+                                <span class="tooltiptext">The Three Biggest Lies of Sin</span>
+                                <a class="venobox" data-autoplay="true" data-vbtype="video" data-gall="myGallery" href="http://youtu.be/SY3jQ9lr-rk"><i class="fas fa-play-circle"></i></a>
+                            </div>
+                            <div class="video tooltip" style="background-image: url(/images/thumbnails/sermons/spencer/spencer-thumb-tseowwg.jpg)">
+                                <span class="tooltiptext">7 Elements of Walking with God</span>
+                                <a class="venobox" data-autoplay="true" data-vbtype="video" data-gall="myGallery" href="http://youtu.be/SY3jQ9lr-rk"><i class="fas fa-play-circle"></i></a>
+                            </div>
+                            <div class="video tooltip" style="background-image: url(/images/thumbnails/sermons/spencer/spencer-thumb-gc.jpg)">
+                                <span class="tooltiptext">God's Counsel - Man's Choice - Life's Consequences</span>
+                                <a class="venobox" data-autoplay="true" data-vbtype="video" data-gall="myGallery" href="http://youtu.be/SY3jQ9lr-rk"><i class="fas fa-play-circle"></i></a>
+                            </div>
+                            <div class="video tooltip" style="background-image: url(/images/thumbnails/sermons/spencer/spencer-thumb-d.jpg)">
+                                <span class="tooltiptext">Destruction</span>
+                                <a class="venobox" data-autoplay="true" data-vbtype="video" data-gall="myGallery" href="http://youtu.be/SY3jQ9lr-rk"><i class="fas fa-play-circle"></i></a>
+                            </div>
+                            <div class="video tooltip" style="background-image: url(/images/thumbnails/sermons/spencer/spencer-thumb-m.jpg)">
+                                <span class="tooltiptext">Missions</span>
+                                <a class="venobox" data-autoplay="true" data-vbtype="video" data-gall="myGallery" href="http://youtu.be/SY3jQ9lr-rk"><i class="fas fa-play-circle"></i></a>
+                            </div>
+                            <div class="video tooltip" style="background-image: url(/images/thumbnails/sermons/spencer/spencer-thumb-itboj.jpg)">
+                                <span class="tooltiptext">Introduction to the Book of Philippians</span>
+                                <a class="venobox" data-autoplay="true" data-vbtype="video" data-gall="myGallery" href="http://youtu.be/SY3jQ9lr-rk"><i class="fas fa-play-circle"></i></a>
+                            </div>
+                            <div class="video tooltip" style="background-image: url(/images/thumbnails/sermons/spencer/spencer-thumb-p1.jpg)">
+                                <span class="tooltiptext">Philippians: Chapter 1</span>
+                                <a class="venobox" data-autoplay="true" data-vbtype="video" data-gall="myGallery" href="http://youtu.be/SY3jQ9lr-rk"><i class="fas fa-play-circle"></i></a>
+                            </div>
+                            <div class="video tooltip" style="background-image: url(/images/thumbnails/sermons/spencer/spencer-thumb-p2.jpg)">
+                                <span class="tooltiptext">Philippians: Chapter 2</span>
+                                <a class="venobox" data-autoplay="true" data-vbtype="video" data-gall="myGallery" href="http://youtu.be/SY3jQ9lr-rk"><i class="fas fa-play-circle"></i></a>
+                            </div>
+                            <div class="video tooltip" style="background-image: url(/images/thumbnails/sermons/spencer/spencer-thumb-p3.jpg)">
+                                <span class="tooltiptext">Philippians: Chapter 3</span>
+                                <a class="venobox" data-autoplay="true" data-vbtype="video" data-gall="myGallery" href="http://youtu.be/SY3jQ9lr-rk"><i class="fas fa-play-circle"></i></a>
+                            </div>
+                            <div class="video tooltip" style="background-image: url(/images/thumbnails/sermons/spencer/spencer-thumb-p4.jpg)">
+                                <span class="tooltiptext">Philippians: Chapter 4</span>
+                                <a class="venobox" data-autoplay="true" data-vbtype="video" data-gall="myGallery" href="http://youtu.be/SY3jQ9lr-rk"><i class="fas fa-play-circle"></i></a>
+                            </div>
+                            <div class="video tooltip" style="background-image: url(/images/thumbnails/sermons/spencer/spencer-thumb-ttob.jpg)">
+                                <span class="tooltiptext">The Theology of Boys</span>
+                                <a class="venobox" data-autoplay="true" data-vbtype="video" data-gall="myGallery" href="http://youtu.be/SY3jQ9lr-rk"><i class="fas fa-play-circle"></i></a>
+                            </div>
+                            <div class="video tooltip" style="background-image: url(/images/thumbnails/sermons/spencer/spencer-thumb-ttog.jpg)">
+                                <span class="tooltiptext">The Theology of Girls</span>
+                                <a class="venobox" data-autoplay="true" data-vbtype="video" data-gall="myGallery" href="http://youtu.be/SY3jQ9lr-rk"><i class="fas fa-play-circle"></i></a>
+                            </div>
+                            <div class="video tooltip" style="background-image: url(/images/thumbnails/sermons/spencer/spencer-thumb-tdoj.jpg)">
+                                <span class="tooltiptext">The Doctrine of Jezebel</span>
+                                <a class="venobox" data-autoplay="true" data-vbtype="video" data-gall="myGallery" href="http://youtu.be/SY3jQ9lr-rk"><i class="fas fa-play-circle"></i></a>
+                            </div>
+                            <div class="video tooltip" style="background-image: url(/images/thumbnails/sermons/spencer/spencer-thumb-byfwts.jpg)">
+                                <span class="tooltiptext">Be Ye Filled With The Spirit</span>
+                                <a class="venobox" data-autoplay="true" data-vbtype="video" data-gall="myGallery" href="http://youtu.be/SY3jQ9lr-rk"><i class="fas fa-play-circle"></i></a>
+                            </div>
+                            <div class="video tooltip" style="background-image: url(/images/thumbnails/sermons/spencer/spencer-thumb-tpwtmg.jpg)">
+                                <span class="tooltiptext">The Problem With The Modern Gospel</span>
+                                <a class="venobox" data-autoplay="true" data-vbtype="video" data-gall="myGallery" href="http://youtu.be/SY3jQ9lr-rk"><i class="fas fa-play-circle"></i></a>
+                            </div>
+                            <div class="video tooltip" style="background-image: url(/images/thumbnails/sermons/spencer/spencer-thumb-fc.jpg)">
+                                <span class="tooltiptext">Following Christ</span>
+                                <a class="venobox" data-autoplay="true" data-vbtype="video" data-gall="myGallery" href="http://youtu.be/SY3jQ9lr-rk"><i class="fas fa-play-circle"></i></a>
+                            </div>
+                            <div class="video tooltip" style="background-image: url(/images/thumbnails/sermons/spencer/spencer-thumb-tsosi.jpg)">
+                                <span class="tooltiptext">The Sin of Silence</span>
+                                <a class="venobox" data-autoplay="true" data-vbtype="video" data-gall="myGallery" href="http://youtu.be/SY3jQ9lr-rk"><i class="fas fa-play-circle"></i></a>
+                            </div>
+                            <div class="video tooltip" style="background-image: url(/images/thumbnails/sermons/spencer/spencer-thumb-wweith.jpg)">
+                                <span class="tooltiptext">When Wisdom Entereth Into Thine Heart</span>
+                                <a class="venobox" data-autoplay="true" data-vbtype="video" data-gall="myGallery" href="http://youtu.be/SY3jQ9lr-rk"><i class="fas fa-play-circle"></i></a>
+                            </div>
+                            <div class="video tooltip" style="background-image: url(/images/thumbnails/sermons/spencer/spencer-thumb-witc.jpg)">
+                                <span class="tooltiptext">Witchcraft in the Church</span>
+                                <a class="venobox" data-autoplay="true" data-vbtype="video" data-gall="myGallery" href="http://youtu.be/SY3jQ9lr-rk"><i class="fas fa-play-circle"></i></a>
+                            </div>
+                            <div class="video tooltip" style="background-image: url(/images/thumbnails/sermons/spencer/spencer-thumb-wicm.jpg)">
+                                <span class="tooltiptext">What is Christian Manhood?</span>
+                                <a class="venobox" data-autoplay="true" data-vbtype="video" data-gall="myGallery" href="http://youtu.be/SY3jQ9lr-rk"><i class="fas fa-play-circle"></i></a>
+                            </div>
+                            <div class="video tooltip" style="background-image: url(/images/thumbnails/sermons/spencer/spencer-thumb-pftm.jpg)">
+                                <span class="tooltiptext">Profitable for the Ministry</span>
+                                <a class="venobox" data-autoplay="true" data-vbtype="video" data-gall="myGallery" href="http://youtu.be/SY3jQ9lr-rk"><i class="fas fa-play-circle"></i></a>
+                            </div>
+                            <div class="video tooltip" style="background-image: url(/images/thumbnails/sermons/spencer/spencer-thumb-dm.jpg)">
+                                <span class="tooltiptext">Doctrine Matters</span>
+                                <a class="venobox" data-autoplay="true" data-vbtype="video" data-gall="myGallery" href="http://youtu.be/SY3jQ9lr-rk"><i class="fas fa-play-circle"></i></a>
+                            </div>
+                            <div class="video tooltip" style="background-image: url(/images/thumbnails/sermons/spencer/spencer-thumb-tmotmtmi.jpg)">
+                                <span class="tooltiptext">The Marks of the Man That Makes It</span>
+                                <a class="venobox" data-autoplay="true" data-vbtype="video" data-gall="myGallery" href="http://youtu.be/SY3jQ9lr-rk"><i class="fas fa-play-circle"></i></a>
+                            </div>
+                            <div class="video tooltip" style="background-image: url(/images/thumbnails/sermons/spencer/spencer-thumb-tvol.jpg)">
+                                <span class="tooltiptext">The Vanity of Life</span>
+                                <a class="venobox" data-autoplay="true" data-vbtype="video" data-gall="myGallery" href="http://youtu.be/SY3jQ9lr-rk"><i class="fas fa-play-circle"></i></a>
+                            </div>
+                            <div class="video tooltip" style="background-image: url(/images/thumbnails/sermons/spencer/spencer-thumb-wdtbsate.jpg)">
+                                <span class="tooltiptext">What Does the Bible Say About the Enneagram?</span>
+                                <a class="venobox" data-autoplay="true" data-vbtype="video" data-gall="myGallery" href="http://youtu.be/SY3jQ9lr-rk"><i class="fas fa-play-circle"></i></a>
+                            </div>
+                            
                         </div>
+                </div>
+                
+                <div class="playlist__three">
+                    <h4 class="playlist__subtitle">Shawn H.</h4>
+                    <div class="videos">
+                        <div class="video tooltip" style="background-image: url(/images/thumbnails/sermons/shawn/shawn-thumb-tnocoft.jpg)">
+                            <span class="tooltiptext">The Necessity of Calling Out False Teachers</span>
+                            <a class="venobox" data-autoplay="true" data-vbtype="video" data-gall="myGallery" href="http://youtu.be/MI3-esEWahM"><i class="fas fa-play-circle"></i></a>
+                        </div>
+                        <div class="video tooltip" style="background-image: url(/images/thumbnails/sermons/shawn/shawn-thumb-tdoccm.jpg)">
+                            <span class="tooltiptext">The Danger of Contemporary Christian Music</span>
+                            <a class="venobox" data-autoplay="true" data-vbtype="video" data-gall="myGallery" href="http://youtu.be/SY3jQ9lr-rk"><i class="fas fa-play-circle"></i></a>
+                        </div>
+                        <div class="video tooltip" style="background-image: url(/images/thumbnails/sermons/shawn/shawn-thumb-teotmg.jpg)">
+                            <span class="tooltiptext">The Errancy of the Modern Gospel</span>
+                            <a class="venobox" data-autoplay="true" data-vbtype="video" data-gall="myGallery" href="http://youtu.be/SY3jQ9lr-rk"><i class="fas fa-play-circle"></i></a>
+                        </div>
+                        <div class="video tooltip" style="background-image: url(/images/thumbnails/sermons/shawn/shawn-thumb-tiomc.jpg)">
+                            <span class="tooltiptext">The Instability of Modern Christianity</span>
+                            <a class="venobox" data-autoplay="true" data-vbtype="video" data-gall="myGallery" href="http://youtu.be/SY3jQ9lr-rk"><i class="fas fa-play-circle"></i></a>
+                        </div>
+                        <div class="video tooltip" style="background-image: url(/images/thumbnails/sermons/shawn/shawn-thumb-tditc.jpg)">
+                            <span class="tooltiptext">The Doctrinal Compromises in the Church</span>
+                            <a class="venobox" data-autoplay="true" data-vbtype="video" data-gall="myGallery" href="http://youtu.be/SY3jQ9lr-rk"><i class="fas fa-play-circle"></i></a>
+                        </div>                       
                     </div>
+            </div>
             </section> <!-- End Content Section -->
         </div> <!-- End Wrapper -->
         <script src="/modalzinha.js"></script>

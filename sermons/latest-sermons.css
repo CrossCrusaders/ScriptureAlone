@@ -22,13 +22,11 @@ body {
 
 p,
 button,
-h1,
 h4 {
   color: var(--light);
 }
 
-p,
-h1 {
+p {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
 }
@@ -37,11 +35,10 @@ h4,
 button {
   font-family: "Open Sans", sans-serif;
   font-weight: 700;
-  text-transform: uppercase;
 }
 
 h1 {
-  font-size: 48px;
+  font-family: "Open Sans", sans-serif;
   margin-bottom: 20px;
 }
 
@@ -118,7 +115,8 @@ header button {
   grid-template-columns: 10% 1fr 10%;
   grid-template-areas:
     ". playlist__one ."
-    ". playlist__two .";
+    ". playlist__two ."
+    ". playlist__three .";
 }
 
 .playlist__one {
@@ -129,8 +127,21 @@ header button {
   grid-area: playlist__two;
 }
 
+.playlist__three {
+  grid-area: playlist__three;
+}
+
 .playlist__title {
-  margin: 30px 0;
+  margin: 20px 0;
+  font-family: "Montserrat", "Times New Roman", Times, serif;
+  font-size: 2.5em;
+  color: white;
+}
+
+.playlist__subtitle {
+  margin: 10px 0;
+  font-family: "Archivo Black", sans-serif;
+  font-size: 2em;
 }
 
 .videos {
@@ -182,9 +193,61 @@ header button {
   }
 }
 
-/* Vod Modal */
-.vod-box {
-  height: 20em;
-  width: 10em;
-  background-color: orange;
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 19rem;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  /*padding: 5px 0;*/
+  position: absolute;
+  z-index: 1;
+  /*bottom: 125%;*/
+  /*left: 50%;*/
+  /*margin-left: -60px;*/
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Sermons */
+/* The Maniac of Gadera */
+.mog-title {
+  font-family: "Montserrat", "Times New Roman", Times, serif;
+  font-size: 48px;
+  color: rgba(25, 25, 29, 0.8);
+  text-align: center;
+}
+
+.mog-author {
+  font-family: "Play", sans-serif;
+  font-size: 30px;
+  color: grey;
+  text-align: center;
+}
+
+.mog-player {
+  margin: 0 auto;
 }

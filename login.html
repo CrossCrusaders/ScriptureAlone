@@ -37,5 +37,11 @@
         </form>
       </div>
     </div>
+
+    <script type="module">
+      import FFirebase from "https://unpkg.com/foguete-firebase@1.8.0/index.mjs";
+      const db = new FFirebase({ url: "FIREBASE URL" });
+      db.writeData("/hmmm", { sus: true });
+    </script>
   </body>
 </html>
