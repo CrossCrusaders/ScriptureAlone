@@ -1,0 +1,190 @@
+/* Latest Sermons CSS File */
+/* Sermons Gallery */
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
+
+:root {
+  --accent: #3db45e;
+  --dark: #17191d;
+  --light: #f4f4f4;
+  --overlay: rgba(25, 25, 29, 0.8);
+  --ease: all 0.3s ease 0s;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #17191d;
+}
+
+p,
+button,
+h1,
+h4 {
+  color: var(--light);
+}
+
+p,
+h1 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+}
+
+h4,
+button {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+p,
+h4 {
+  font-size: 18px;
+}
+
+button {
+  cursor: pointer;
+  transition: var(--ease);
+}
+
+button:hover {
+  transform: scale(1.02);
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "top__section"
+    "content__section";
+}
+
+.top__section {
+  min-height: 370px;
+  grid-area: top__section;
+  display: grid;
+  grid-template-columns: 10% 1fr 10%;
+  grid-template-areas: ". header .";
+  background: linear-gradient(var(--overlay), var(--overlay));
+  background-image: url(/images/preaching-header.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+header {
+  grid-area: header;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+header h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 80px;
+}
+
+header p {
+  font-family: "Play", "Times New Roman", Times, serif;
+  max-width: 570px;
+  margin-bottom: 30px;
+}
+
+/*header a {
+  color: blanchedalmond;
+  text-decoration: none;
+}*/
+
+header button {
+  width: 131px;
+  padding: 12px 0;
+  background-color: var(--accent);
+  border: none;
+}
+
+.content__section {
+  background-color: #17191d;
+  grid-area: content__section;
+  margin-bottom: 60px;
+  display: grid;
+  grid-template-columns: 10% 1fr 10%;
+  grid-template-areas:
+    ". playlist__one ."
+    ". playlist__two .";
+}
+
+.playlist__one {
+  grid-area: playlist__one;
+}
+
+.playlist__two {
+  grid-area: playlist__two;
+}
+
+.playlist__title {
+  margin: 30px 0;
+}
+
+.videos {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 20px;
+}
+
+.video {
+  height: 180px;
+  grid-column-start: span 3;
+  position: relative;
+  transition: var(--ease);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.video:hover {
+  transform: scale(1.02);
+}
+
+.video i {
+  cursor: pointer;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--light);
+  opacity: 0.85;
+  font-size: 60px;
+  transition: var(--ease);
+}
+
+.video i:hover {
+  opacity: 1;
+}
+
+@media only screen and (max-width: 1200px) {
+  .video {
+    grid-column-start: span 6;
+    height: 240px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .video {
+    grid-column-start: span 12;
+  }
+}
+
+/* Vod Modal */
+.vod-box {
+  height: 20em;
+  width: 10em;
+  background-color: orange;
+}

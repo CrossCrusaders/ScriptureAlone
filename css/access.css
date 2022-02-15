@@ -1,0 +1,43 @@
+*{
+	padding:0px;
+	margin:0px;
+	color:#808080;
+	font-family:arial;
+	box-sizing:border-box;
+}
+body{
+	background-color:#0062c4;
+}
+a{text-decoration:none;font-weight:600;}
+.link{color:#00aced;}
+p{margin:5px 0px;}
+.box{
+	width:400px;
+	height:auto;
+	margin:0 auto;
+	background-color:white;
+}
+.inner-box{
+	padding:20px;
+}
+.box h1,h2,h3,h4,h5,h6{
+	text-align:center;
+	margin:5px 0px;
+}
+.forgot{
+	float:right;
+}
+input[type="text"],input[type="password"],input[type="submit"],input[type="email"]{
+	width:100%;
+	padding:10px;
+	margin:10px 0px;
+	border:2px solid #c0c0c0;
+}
+input[type="submit"]{
+	border:1px solid #3B5998;
+	background-color:#3B5998;
+	color:white;
+	font-size:16px;
+	font-weight:600;
+	cursor:pointer;
+}
