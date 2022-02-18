@@ -21,10 +21,6 @@
 	<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 
-	<link href="http://vjs.zencdn.net/7.0/video-js.min.css" rel="stylesheet">
-	<script src="http://vjs.zencdn.net/7.0/video.min.js">
-	</script>
-
 </head>
 
 <body>
@@ -102,10 +98,17 @@
                             <div class="spencer-mog" id="spencer-mog" style="display: none;">
                                 <h1 class="mog-title">The Maniac of Gadera</h1>
                                 <h2 class="mog-author">Spencer Smith</h2>
-                                    <video id="my-video" class="video-js vjs-big-play-centered mog-player" max-width="854" max-height="480" controls preload="metadata" data-setup="{}">
-                                    <source src="https://res.cloudinary.com/dxrojjzoa/video/upload/v1644787552/Spencer%20Smith/Video%20Sermons/Missionary_Spencer_Smith_-_The_Maniac_of_Gadara_ifbbly.mp4" type="video/mp4">
-                                    Your browser does not support the video tag.
-                                    </video>                                   
+                                <div style="width: 560px; height: 315px; float: none; clear: both; margin: 2px auto;">
+                                    <embed
+                                      src="https://www.youtube.com/embed/Tl2HDW6fQzI"
+                                      wmode="transparent"
+                                      type="video/mp4"
+                                      width="100%" height="100%"
+                                      allow="autoplay; encrypted-media; picture-in-picture"
+                                      allowfullscreen
+                                      title="Keyboard Cat"
+                                    >
+                                  </div>                   
 
                                     
                                 <p>Lorem ipsum</p>
@@ -332,12 +335,12 @@
                     closeBackground: '#17191D',
                     overlayColor: 'rgba(25,25,29,0.8)'
                 }); 
-                var player = videojs('my-player');
+                /*var player = videojs('my-player');
                 var ModelDialog = videojs.getComponent('ModalDialog');
                 
                 var modal = new ModalDialog(player, {
                     // Persist after modal is closed
-                    temporary: false; });
+                    temporary: false });
 
                 // Parent modal to player element
                 player.addChild(modal);
@@ -350,7 +353,7 @@
                 player.on('play', () => {
                     // Close modal when media playback is resumed
                     modal.close();
-                });
+                });*/
 
                 // Get the modal
                 //var modal = document.getElementById("myVodModal");
