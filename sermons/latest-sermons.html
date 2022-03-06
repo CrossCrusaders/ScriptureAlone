@@ -9,17 +9,19 @@
 	<link rel="stylesheet" href="/style.css">
 	<link rel="stylesheet" href="/sermons/sermons.css">
 	<link rel="stylesheet" href="/sermons/latest-sermons.css">
-	<link rel="stylesheet" type="text/css" href="/css/modal-style.css">
-	<link rel="stylesheet" type="text/css" href="/css/modalzinha.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
 	 crossorigin="anonymous">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
-	<link rel="stylesheet" href="/venobox/venobox.css" type="text/css" media="screen" />
+	<!--<link rel="stylesheet" href="/venobox/venobox.css" type="text/css" media="screen" />-->
 	<link href="https://fonts.googleapis.com/css2?family=Play:wght@700&display=swap" rel="stylesheet" />
 	<link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet" />
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet" />
 	<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/@thelevicole/youtube-to-html5-loader@4.0.1/dist/YouTubeToHtml5.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.6.12/plyr.css" />
 
 </head>
 
@@ -37,7 +39,7 @@
               <li><a href="#">Plans</a></li>
               <li><a class="active" href="#">Sermons</a></li>
             </ul>
-        </nav>
+    </nav>
         <div class="wrapper">
             <!-- Header -->
             <section class="top__section">
@@ -48,7 +50,7 @@
                         Bible and are doctrinally sound. Please read our
                         <span><a href="#">what we believe</a></span> statement in order to
                         further understand our stance on biblical matters.</p>
-                    <a class="venobox" data-autoplay="true" data-vbtype="video" data-gall="myGallery" href="http://youtu.be/VHgBM3NmrVk"><button>Watch Now</button></a>
+                    <a class="" data-autoplay="true" data-vbtype="video" data-gall="myGallery" href="http://youtu.be/VHgBM3NmrVk"><button>Watch Now</button></a>
                 </header>
             </section> <!-- End Header Section -->
             <!-- Content -->
@@ -58,11 +60,11 @@
                     <div class="videos">
                         <div class="video tooltip" style="background-image: url(/images/thumbnails/sermons/spencer/spencer-thumb-wdtbsate.jpg)">
                             <span class="tooltiptext">What Does the Bible Say About the Enneagram?</span>
-                            <a class="venobox" data-autoplay="true" data-vbtype="video" data-gall="myGallery" href="http://youtu.be/SY3jQ9lr-rk"><i class="fas fa-play-circle"></i></a>
+                            <a class="" data-autoplay="true" data-vbtype="video" data-gall="myGallery" href="http://youtu.be/SY3jQ9lr-rk"><i class="fas fa-play-circle"></i></a>
                         </div>
                         <div class="video tooltip" style="background-image: url(/images/thumbnails/sermons/spencer/spencer-thumb-tvol.jpg)">
                             <span class="tooltiptext">The Vanity of Life</span>
-                            <a class="venobox" data-autoplay="true" data-vbtype="video" data-gall="myGallery" href="http://youtu.be/SY3jQ9lr-rk"><i class="fas fa-play-circle"></i></a>
+                            <a class="" data-autoplay="true" data-vbtype="video" data-gall="myGallery" href="http://youtu.be/SY3jQ9lr-rk"><i class="fas fa-play-circle"></i></a>
                         </div>
                         <div class="video tooltip" style="background-image: url(/images/thumbnails/sermons/spencer/spencer-thumb-tmotmtmi.jpg)">
                             <span class="tooltiptext">The Marks of the Man That Makes It</span>
@@ -94,28 +96,9 @@
                         <h2 class="playlist__title">Speakers</h2>
                         <h4 class="playlist__subtitle">Spencer Smith</h4>
                         <div class="videos">
-
-                            <div class="spencer-mog" id="spencer-mog" style="display: none;">
-                                <h1 class="mog-title">The Maniac of Gadera</h1>
-                                <h2 class="mog-author">Spencer Smith</h2>
-                                <div style="width: 560px; height: 315px; float: none; clear: both; margin: 2px auto;">
-                                    <embed
-                                      src="https://www.youtube.com/embed/Tl2HDW6fQzI"
-                                      wmode="transparent"
-                                      type="video/mp4"
-                                      width="100%" height="100%"
-                                      allow="autoplay; encrypted-media; picture-in-picture"
-                                      allowfullscreen
-                                      title="Keyboard Cat"
-                                    >
-                                  </div>                   
-
-                                    
-                                <p>Lorem ipsum</p>
-                            </div>              
                             <div class="video tooltip" style="background-image: url(/images/thumbnails/sermons/spencer/spencer-thumb-mog.jpg)">
                                 <span class="tooltiptext">The Maniac of Gadera</span>
-                                <a class="venobox" data-autoplay="true" data-vbtype="inline" href="#spencer-mog"><i class="fas fa-play-circle"></i></a>
+                                <a class="venobox" data-autoplay="true" data-vbtype="inline" href="/sermons/spencersmith/the-maniac-of-gadera.html"><i class="fas fa-play-circle"></i></a>
                             </div>
                             <div class="video tooltip" style="background-image: url(/images/thumbnails/sermons/spencer/spencer-thumb-wog.jpg)">
                                 <span class="tooltiptext">The Will of God</span>
@@ -324,10 +307,18 @@
             </div>
             </section> <!-- End Content Section -->
         </div> <!-- End Wrapper -->
-        <script src="/modalzinha.js"></script>
         <script type="text/javascript" src="/jquery/jquery-3.4.1.min.js"></script>
-        <script type="text/javascript" src="/venobox/venobox.min.js"></script>
+        <!--<script type="text/javascript" src="/venobox/venobox.min.js"></script>-->
+        <script src="https://cdn.plyr.io/3.6.12/plyr.js"></script>
         <script>
+        const player = new Plyr('#player');
+        </script>
+        <script>
+        new YouTubeToHtml5({
+            withAudio: true // Filter streams to those with audio channels
+        });
+        </script>
+        <!--<script>
             $(document).ready(() => {
                 $('.venobox').venobox({
                     closeColor: '#f4f4f4',
@@ -383,6 +374,6 @@
 
             });
 
-        </script>
+        </script>-->
     </body>
 </html>

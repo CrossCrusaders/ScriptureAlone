@@ -919,6 +919,18 @@ button {
   text-align: center;
 }
 
+.netflix-slider {
+  padding: 0;
+}
+
+.netflix-slider > h2 {
+  font-family: "Russo One", "Times New Roman", Times, serif;
+  font-weight: 500;
+  padding-left: 5px;
+  padding-bottom: 0;
+  margin: 0;
+}
+
 .plans-wrapper {
   background-color: transparent;
   padding-top: 7em;

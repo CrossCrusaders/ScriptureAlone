@@ -26,7 +26,7 @@ h4 {
   color: var(--light);
 }
 
-p {
+/*p {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
 }
@@ -45,7 +45,7 @@ h1 {
 p,
 h4 {
   font-size: 18px;
-}
+}*/
 
 button {
   cursor: pointer;
@@ -77,6 +77,11 @@ button:hover {
   background-repeat: no-repeat;
 }
 
+.top__section h1 {
+  padding-bottom: 0.15em;
+  color: #fff;
+}
+
 header {
   grid-area: header;
   display: flex;
@@ -103,7 +108,8 @@ header p {
 header button {
   width: 131px;
   padding: 12px 0;
-  background-color: var(--accent);
+  background-color: #33383b;
+  color: white;
   border: none;
 }
 
