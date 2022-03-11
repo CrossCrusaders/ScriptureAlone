@@ -82,6 +82,20 @@
   background-repeat: no-repeat;
 }
 
+.ibg__section {
+  max-height: 100vh;
+  min-height: 75vh;
+  grid-area: top__section;
+  display: grid;
+  grid-template-columns: 10% 1fr 10%;
+  grid-template-areas: ". header .";
+  background: linear-gradient(var(--overlay), var(--overlay));
+  background-image: url(/images/thumbnails/sermons/spencer/ibg-header.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .mog__section h1 {
   color: #fff;
   padding-bottom: 0.15em;
@@ -108,6 +122,11 @@
 }
 
 .yp__section h1 {
+  color: #fff;
+  padding-bottom: 0.15em;
+}
+
+.ibg__section h1 {
   color: #fff;
   padding-bottom: 0.15em;
 }
@@ -153,6 +172,14 @@
 }
 
 .yp__section h2 {
+  font-family: "Play", sans-serif;
+  margin: 0;
+  padding-bottom: 20px;
+  font-size: 40px;
+  color: #fff;
+}
+
+.ibg__section h2 {
   font-family: "Play", sans-serif;
   margin: 0;
   padding-bottom: 20px;
