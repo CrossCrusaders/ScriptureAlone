@@ -96,6 +96,314 @@
   background-repeat: no-repeat;
 }
 
+.sitg__section {
+  max-height: 100vh;
+  min-height: 75vh;
+  grid-area: top__section;
+  display: grid;
+  grid-template-columns: 10% 1fr 10%;
+  grid-template-areas: ". header .";
+  background: linear-gradient(var(--overlay), var(--overlay));
+  background-image: url(/images/thumbnails/sermons/spencer/sitg-header.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.tbsoccm__section {
+  max-height: 100vh;
+  min-height: 75vh;
+  grid-area: top__section;
+  display: grid;
+  grid-template-columns: 10% 1fr 10%;
+  grid-template-areas: ". header .";
+  background: linear-gradient(var(--overlay), var(--overlay));
+  background-image: url(/images/thumbnails/sermons/spencer/tbsoccm-header.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.bhgmg__section {
+  max-height: 100vh;
+  min-height: 75vh;
+  grid-area: top__section;
+  display: grid;
+  grid-template-columns: 10% 1fr 10%;
+  grid-template-areas: ". header .";
+  background: linear-gradient(var(--overlay), var(--overlay));
+  background-image: url(/images/thumbnails/sermons/spencer/bhgmg-header.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.witccmtlt__section {
+  max-height: 100vh;
+  min-height: 75vh;
+  grid-area: top__section;
+  display: grid;
+  grid-template-columns: 10% 1fr 10%;
+  grid-template-areas: ". header .";
+  background: linear-gradient(var(--overlay), var(--overlay));
+  background-image: url(/images/thumbnails/sermons/spencer/witccmtlt-header.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.ittbop__section {
+  max-height: 100vh;
+  min-height: 75vh;
+  grid-area: top__section;
+  display: grid;
+  grid-template-columns: 10% 1fr 10%;
+  grid-template-areas: ". header .";
+  background: linear-gradient(var(--overlay), var(--overlay));
+  background-image: url(/images/thumbnails/sermons/spencer/ittbop-header.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.p1__section {
+  max-height: 100vh;
+  min-height: 75vh;
+  grid-area: top__section;
+  display: grid;
+  grid-template-columns: 10% 1fr 10%;
+  grid-template-areas: ". header .";
+  background: linear-gradient(var(--overlay), var(--overlay));
+  background-image: url(/images/thumbnails/sermons/spencer/p1-header.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.p2__section {
+  max-height: 100vh;
+  min-height: 75vh;
+  grid-area: top__section;
+  display: grid;
+  grid-template-columns: 10% 1fr 10%;
+  grid-template-areas: ". header .";
+  background: linear-gradient(var(--overlay), var(--overlay));
+  background-image: url(/images/thumbnails/sermons/spencer/p2-header.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.p3__section {
+  max-height: 100vh;
+  min-height: 75vh;
+  grid-area: top__section;
+  display: grid;
+  grid-template-columns: 10% 1fr 10%;
+  grid-template-areas: ". header .";
+  background: linear-gradient(var(--overlay), var(--overlay));
+  background-image: url(/images/thumbnails/sermons/spencer/p3-header.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.p4__section {
+  max-height: 100vh;
+  min-height: 75vh;
+  grid-area: top__section;
+  display: grid;
+  grid-template-columns: 10% 1fr 10%;
+  grid-template-areas: ". header .";
+  background: linear-gradient(var(--overlay), var(--overlay));
+  background-image: url(/images/thumbnails/sermons/spencer/p4-header.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.ttob__section {
+  max-height: 100vh;
+  min-height: 75vh;
+  grid-area: top__section;
+  display: grid;
+  grid-template-columns: 10% 1fr 10%;
+  grid-template-areas: ". header .";
+  background: linear-gradient(var(--overlay), var(--overlay));
+  background-image: url(/images/thumbnails/sermons/spencer/ttob-header.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.ttog__section {
+  max-height: 100vh;
+  min-height: 75vh;
+  grid-area: top__section;
+  display: grid;
+  grid-template-columns: 10% 1fr 10%;
+  grid-template-areas: ". header .";
+  background: linear-gradient(var(--overlay), var(--overlay));
+  background-image: url(/images/thumbnails/sermons/spencer/ttog-header.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.tdoj__section {
+  max-height: 100vh;
+  min-height: 75vh;
+  grid-area: top__section;
+  display: grid;
+  grid-template-columns: 10% 1fr 10%;
+  grid-template-areas: ". header .";
+  background: linear-gradient(var(--overlay), var(--overlay));
+  background-image: url(/images/thumbnails/sermons/spencer/tdoj-header.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.byfwts__section {
+  max-height: 100vh;
+  min-height: 75vh;
+  grid-area: top__section;
+  display: grid;
+  grid-template-columns: 10% 1fr 10%;
+  grid-template-areas: ". header .";
+  background: linear-gradient(var(--overlay), var(--overlay));
+  background-image: url(/images/thumbnails/sermons/spencer/byfwts-header.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.fc__section {
+  max-height: 100vh;
+  min-height: 75vh;
+  grid-area: top__section;
+  display: grid;
+  grid-template-columns: 10% 1fr 10%;
+  grid-template-areas: ". header .";
+  background: linear-gradient(var(--overlay), var(--overlay));
+  background-image: url(/images/thumbnails/sermons/spencer/fc-header.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.tsos__section {
+  max-height: 100vh;
+  min-height: 75vh;
+  grid-area: top__section;
+  display: grid;
+  grid-template-columns: 10% 1fr 10%;
+  grid-template-areas: ". header .";
+  background: linear-gradient(var(--overlay), var(--overlay));
+  background-image: url(/images/thumbnails/sermons/spencer/tsos-header.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.witc__section {
+  max-height: 100vh;
+  min-height: 75vh;
+  grid-area: top__section;
+  display: grid;
+  grid-template-columns: 10% 1fr 10%;
+  grid-template-areas: ". header .";
+  background: linear-gradient(var(--overlay), var(--overlay));
+  background-image: url(/images/thumbnails/sermons/spencer/witc-header.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.wicm__section {
+  max-height: 100vh;
+  min-height: 75vh;
+  grid-area: top__section;
+  display: grid;
+  grid-template-columns: 10% 1fr 10%;
+  grid-template-areas: ". header .";
+  background: linear-gradient(var(--overlay), var(--overlay));
+  background-image: url(/images/thumbnails/sermons/spencer/wicm-header.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.pftm__section {
+  max-height: 100vh;
+  min-height: 75vh;
+  grid-area: top__section;
+  display: grid;
+  grid-template-columns: 10% 1fr 10%;
+  grid-template-areas: ". header .";
+  background: linear-gradient(var(--overlay), var(--overlay));
+  background-image: url(/images/thumbnails/sermons/spencer/pftm-header.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.dm__section {
+  max-height: 100vh;
+  min-height: 75vh;
+  grid-area: top__section;
+  display: grid;
+  grid-template-columns: 10% 1fr 10%;
+  grid-template-areas: ". header .";
+  background: linear-gradient(var(--overlay), var(--overlay));
+  background-image: url(/images/thumbnails/sermons/spencer/dm-header.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.tmotmtmi__section {
+  max-height: 100vh;
+  min-height: 75vh;
+  grid-area: top__section;
+  display: grid;
+  grid-template-columns: 10% 1fr 10%;
+  grid-template-areas: ". header .";
+  background: linear-gradient(var(--overlay), var(--overlay));
+  background-image: url(/images/thumbnails/sermons/spencer/tmotmtmi-header.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.tvol__section {
+  max-height: 100vh;
+  min-height: 75vh;
+  grid-area: top__section;
+  display: grid;
+  grid-template-columns: 10% 1fr 10%;
+  grid-template-areas: ". header .";
+  background: linear-gradient(var(--overlay), var(--overlay));
+  background-image: url(/images/thumbnails/sermons/spencer/tvol-header.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.wdtbsate__section {
+  max-height: 100vh;
+  min-height: 75vh;
+  grid-area: top__section;
+  display: grid;
+  grid-template-columns: 10% 1fr 10%;
+  grid-template-areas: ". header .";
+  background: linear-gradient(var(--overlay), var(--overlay));
+  background-image: url(/images/thumbnails/sermons/spencer/wdtbsate-header.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .mog__section h1 {
   color: #fff;
   padding-bottom: 0.15em;
@@ -127,6 +435,116 @@
 }
 
 .ibg__section h1 {
+  color: #fff;
+  padding-bottom: 0.15em;
+}
+
+.sitg__section h1 {
+  color: #fff;
+  padding-bottom: 0.15em;
+}
+
+.tbsoccm__section h1 {
+  color: #fff;
+  padding-bottom: 0.15em;
+}
+
+.bhgmg__section h1 {
+  color: #fff;
+  padding-bottom: 0.15em;
+}
+
+.witccmtlt__section h1 {
+  color: #fff;
+  padding-bottom: 0.15em;
+}
+
+.ittbop__section h1 {
+  color: #fff;
+  padding-bottom: 0.15em;
+}
+
+.p1__section h1 {
+  color: #fff;
+  padding-bottom: 0.15em;
+}
+
+.p2__section h1 {
+  color: #fff;
+  padding-bottom: 0.15em;
+}
+
+.p3__section h1 {
+  color: #fff;
+  padding-bottom: 0.15em;
+}
+
+.p4__section h1 {
+  color: #fff;
+  padding-bottom: 0.15em;
+}
+
+.ttob__section h1 {
+  color: #fff;
+  padding-bottom: 0.15em;
+}
+
+.ttog__section h1 {
+  color: #fff;
+  padding-bottom: 0.15em;
+}
+
+.tdoj__section h1 {
+  color: #fff;
+  padding-bottom: 0.15em;
+}
+
+.byfwts__section h1 {
+  color: #fff;
+  padding-bottom: 0.15em;
+}
+
+.fc__section h1 {
+  color: #fff;
+  padding-bottom: 0.15em;
+}
+
+.tsos__section h1 {
+  color: #fff;
+  padding-bottom: 0.15em;
+}
+
+.witc__section h1 {
+  color: #fff;
+  padding-bottom: 0.15em;
+}
+
+.wicm__section h1 {
+  color: #fff;
+  padding-bottom: 0.15em;
+}
+
+.pftm__section h1 {
+  color: #fff;
+  padding-bottom: 0.15em;
+}
+
+.dm__section h1 {
+  color: #fff;
+  padding-bottom: 0.15em;
+}
+
+.tmotmtmi__section h1 {
+  color: #fff;
+  padding-bottom: 0.15em;
+}
+
+.tvol__section h1 {
+  color: #fff;
+  padding-bottom: 0.15em;
+}
+
+.wdtbsate__section h1 {
   color: #fff;
   padding-bottom: 0.15em;
 }
@@ -180,6 +598,182 @@
 }
 
 .ibg__section h2 {
+  font-family: "Play", sans-serif;
+  margin: 0;
+  padding-bottom: 20px;
+  font-size: 40px;
+  color: #fff;
+}
+
+.sitg__section h2 {
+  font-family: "Play", sans-serif;
+  margin: 0;
+  padding-bottom: 20px;
+  font-size: 40px;
+  color: #fff;
+}
+
+.tbsoccm__section h2 {
+  font-family: "Play", sans-serif;
+  margin: 0;
+  padding-bottom: 20px;
+  font-size: 40px;
+  color: #fff;
+}
+
+.bhgmg__section h2 {
+  font-family: "Play", sans-serif;
+  margin: 0;
+  padding-bottom: 20px;
+  font-size: 40px;
+  color: #fff;
+}
+
+.witccmtlt__section h2 {
+  font-family: "Play", sans-serif;
+  margin: 0;
+  padding-bottom: 20px;
+  font-size: 40px;
+  color: #fff;
+}
+
+.ittbop__section h2 {
+  font-family: "Play", sans-serif;
+  margin: 0;
+  padding-bottom: 20px;
+  font-size: 40px;
+  color: #fff;
+}
+
+.p1__section h2 {
+  font-family: "Play", sans-serif;
+  margin: 0;
+  padding-bottom: 20px;
+  font-size: 40px;
+  color: #fff;
+}
+
+.p2__section h2 {
+  font-family: "Play", sans-serif;
+  margin: 0;
+  padding-bottom: 20px;
+  font-size: 40px;
+  color: #fff;
+}
+
+.p3__section h2 {
+  font-family: "Play", sans-serif;
+  margin: 0;
+  padding-bottom: 20px;
+  font-size: 40px;
+  color: #fff;
+}
+
+.p4__section h2 {
+  font-family: "Play", sans-serif;
+  margin: 0;
+  padding-bottom: 20px;
+  font-size: 40px;
+  color: #fff;
+}
+
+.ttob__section h2 {
+  font-family: "Play", sans-serif;
+  margin: 0;
+  padding-bottom: 20px;
+  font-size: 40px;
+  color: #fff;
+}
+
+.ttog__section h2 {
+  font-family: "Play", sans-serif;
+  margin: 0;
+  padding-bottom: 20px;
+  font-size: 40px;
+  color: #fff;
+}
+
+.tdoj__section h2 {
+  font-family: "Play", sans-serif;
+  margin: 0;
+  padding-bottom: 20px;
+  font-size: 40px;
+  color: #fff;
+}
+
+.byfwts__section h2 {
+  font-family: "Play", sans-serif;
+  margin: 0;
+  padding-bottom: 20px;
+  font-size: 40px;
+  color: #fff;
+}
+
+.fc__section h2 {
+  font-family: "Play", sans-serif;
+  margin: 0;
+  padding-bottom: 20px;
+  font-size: 40px;
+  color: #fff;
+}
+
+.tsos__section h2 {
+  font-family: "Play", sans-serif;
+  margin: 0;
+  padding-bottom: 20px;
+  font-size: 40px;
+  color: #fff;
+}
+
+.witc__section h2 {
+  font-family: "Play", sans-serif;
+  margin: 0;
+  padding-bottom: 20px;
+  font-size: 40px;
+  color: #fff;
+}
+
+.wicm__section h2 {
+  font-family: "Play", sans-serif;
+  margin: 0;
+  padding-bottom: 20px;
+  font-size: 40px;
+  color: #fff;
+}
+
+.pftm__section h2 {
+  font-family: "Play", sans-serif;
+  margin: 0;
+  padding-bottom: 20px;
+  font-size: 40px;
+  color: #fff;
+}
+
+.dm__section h2 {
+  font-family: "Play", sans-serif;
+  margin: 0;
+  padding-bottom: 20px;
+  font-size: 40px;
+  color: #fff;
+}
+
+.tmotmtmi__section h2 {
+  font-family: "Play", sans-serif;
+  margin: 0;
+  padding-bottom: 20px;
+  font-size: 40px;
+  color: #fff;
+}
+
+.tvol__section h2 {
+  font-family: "Play", sans-serif;
+  margin: 0;
+  padding-bottom: 20px;
+  font-size: 40px;
+  color: #fff;
+}
+
+.wdtbsate__section h2 {
   font-family: "Play", sans-serif;
   margin: 0;
   padding-bottom: 20px;
