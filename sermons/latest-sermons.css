@@ -64,6 +64,93 @@ button:hover {
     "content__section";
 }
 
+.header-section {
+  min-width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  top: 0;
+  left: 0;
+  display: flex;
+  background: linear-gradient(var(--overlay), var(--overlay));
+  background-image: url(/images/preaching-header.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.header-col-1 {
+  display: block;
+  float: left;
+  width: 10%;
+  height: 100vh;
+  background: transparent;
+}
+
+.header-col-2 {
+  display: block;
+  float: center;
+  width: 65%;
+  height: 100vh;
+  background: transparent;
+}
+
+.header-col-3 {
+  display: block;
+  float: right;
+  width: 10%;
+  height: 100vh;
+  background: transparent;
+}
+
+.header-row-1 {
+  background-color: transparent;
+  height: 33.3%;
+  margin: 0;
+  padding: 0;
+  display: table;
+  width: 100%;
+}
+
+.header-row-2 {
+  height: 10%;
+  justify-content: center;
+  margin-top: 0;
+  padding: 0;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+
+.header-row-3 {
+  background-color: transparent;
+  height: 33.3%;
+  margin: 0;
+  padding: 0;
+  display: table;
+  width: 100%;
+}
+
+.header-section h1 {
+  padding-bottom: 0.15em;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 80px;
+}
+
+.header-section p {
+  font-family: "Play", "Times New Roman", Times, serif;
+  max-width: 570px;
+  color: var(--light);
+}
+
+.directory-button {
+  width: 131px;
+  padding: 12px;
+  background-color: #33383b;
+  color: white;
+  border: none;
+}
+
 .top__section {
   min-height: 370px;
   grid-area: top__section;
@@ -122,7 +209,10 @@ header button {
   grid-template-areas:
     ". playlist__one ."
     ". playlist__two ."
-    ". playlist__three .";
+    ". playlist__three ."
+    ". playlist__four ."
+    ". playlist__five ."
+    ". playlist__six .";
 }
 
 .playlist__one {
@@ -135,6 +225,18 @@ header button {
 
 .playlist__three {
   grid-area: playlist__three;
+}
+
+.playlist__four {
+  grid-area: playlist__four;
+}
+
+.playlist__five {
+  grid-area: playlist__five;
+}
+
+.playlist__six {
+  grid-area: playlist__six;
 }
 
 .playlist__title {
@@ -199,6 +301,21 @@ header button {
   }
 }
 
+.titlebar {
+  display: flex;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+  color: white;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+}
+
 .tooltip {
   position: relative;
   display: inline-block;
@@ -256,4 +373,148 @@ header button {
 
 .mog-player {
   margin: 0 auto;
+}
+
+/* Accordian */
+.index-directory {
+  width: 100%;
+  height: 20px;
+  position: relative;
+  background-color: transparent;
+}
+
+.hidden {
+  display: none;
+}
+
+#myInput {
+  background-image: url("/css/searchicon.png");
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+.ac-container {
+  max-width: 70em;
+  margin: 10px auto;
+  display: grid;
+  background-color: #eee;
+  padding: 10px;
+  border-radius: 25px;
+}
+
+.ac-label {
+  font-weight: 700;
+  position: relative;
+  padding: 0.5em 1em;
+  margin-bottom: 0.5em;
+  display: block;
+  cursor: pointer;
+  background-color: whiteSmoke;
+  transition: background-color 0.15s ease-in-out;
+}
+
+li {
+  list-style-type: none;
+}
+
+.cool-link {
+  display: inline-block;
+  color: #000;
+  text-decoration: none;
+}
+
+.cool-link::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #000;
+  transition: width 0.3s;
+}
+
+.cool-link:hover::after {
+  width: 100%;
+  transition: width 0.3s;
+}
+
+.ac-input:checked + label,
+.ac-label:hover {
+  background-color: #999;
+}
+
+.ac-label:after,
+.ac-input:checked + .ac-label:after {
+  content: "+";
+  position: absolute;
+  display: block;
+  right: 0;
+  top: 0;
+  width: 2em;
+  height: 100%;
+  line-height: 2.25em;
+  text-align: center;
+  background-color: #e5e5e5;
+  transition: background-color 0.15s ease-in-out;
+}
+
+.ac-label:hover:after,
+.ac-input:checked + .ac-label:after {
+  background-color: #b5b5b5;
+}
+
+.ac-input:checked + .ac-label:after {
+  content: "-";
+}
+
+.ac-input {
+  display: none;
+}
+
+.ac-text,
+.ac-sub-text {
+  opacity: 0;
+  height: 0;
+  margin-bottom: 0.5em;
+  transition: opacity 0.5s ease-in-out;
+  overflow: hidden;
+}
+
+.ac-input:checked ~ .ac-text,
+.ac-sub .ac-input:checked ~ .ac-sub-text {
+  opacity: 1;
+  height: 15em;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.ac-sub .ac-label {
+  background: none;
+  font-weight: 600;
+  padding: 0.5em 2em;
+  margin-bottom: 0;
+}
+
+.ac-sub .ac-label:checked {
+  background: none;
+  border-bottom: 1px solid whitesmoke;
+}
+
+.ac-sub .ac-label:after,
+.ac-sub .ac-input:checked + .ac-label:after {
+  left: 0;
+  background: none;
+}
+
+.ac-sub .ac-input:checked + label,
+.ac-sub .ac-label:hover {
+  background: none;
+}
+
+.ac-sub-text {
+  padding: 0 1em 0 2em;
 }

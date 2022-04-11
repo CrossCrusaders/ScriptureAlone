@@ -6,7 +6,7 @@
   grid-template-columns: 10% 1fr 10%;
   grid-template-areas: ". header .";
   background: linear-gradient(var(--overlay), var(--overlay));
-  background-image: url(/images/thumbnails/sermons/spencer/mog-header.png);
+  background-image: url(/images/thumbnails/sermons/shawn/du1-header.PNG);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
