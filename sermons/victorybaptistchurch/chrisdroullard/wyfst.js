@@ -2,10 +2,10 @@ let currentMusic = 0;
 
 let songs = [
     {
-        name: 'Destruction',
-        path: 'https://res.cloudinary.com/scripturealone/video/upload/v1647275165/Destruction_-_Missionary_Spencer_Smith_egfbvc.mp3',
-        artist: 'Spencer Smith',
-        cover: '/images/audioplayer/spencer-ap.jpg'
+        name: 'When Your Faith Stands Trail',
+        path: 'https://res.cloudinary.com/scripturealone/video/upload/v1648171279/Victory%20Baptist%20Church/3_21_21_sun_am_when_your_fatih_stands_trail_pastor_ph2goe.mp3',
+        artist: 'Chris Droullard',
+        cover: '/images/audioplayer/chris-ap.jpg'
     }
 ]
 
