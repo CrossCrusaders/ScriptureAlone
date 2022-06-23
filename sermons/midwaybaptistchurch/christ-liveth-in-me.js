@@ -3,8 +3,8 @@ let currentMusic = 0;
 let songs = [
     {
         name: 'Christ Liveth in Me',
-        path: 'https://res.cloudinary.com/scripture-alone-dev/video/upload/v1655922280/2020.04.16.M_In_These_Last_Days_-_Harold_McMillian_-_582022655709_knbsq6.mp3',
-        artist: 'Chris Droullard',
+        path: 'https://res.cloudinary.com/scripture-alone-dev/video/upload/v1656001226/Midway%20Baptist%20Church/Harold%20MacMillian/2017.04.09.A_Christ_Liveth_In_Me_-_Harold_McMillian_-_49171540142_g6napq.mp3',
+        artist: 'Harold MacMillian',
         cover: '/images/audioplayer/harold-ap.png'
     }
 ]

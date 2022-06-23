@@ -528,14 +528,15 @@ li {
 }
 
 .container h1 {
-  color: black;
+  color: whitesmoke;
   text-align: center;
   padding: 15px;
   font-size: 45px;
 }
 
 .container h2 {
-  color: darkblue;
+  color: whitesmoke;
+  font-family: 'Montserrat', sans-serif;
   text-align: center;
   padding: 15px;
   font-size: 40px;
@@ -668,7 +669,7 @@ li {
 
 .modal-header {
   padding: 2px 16px;
-  background-color: #5cb85c;
+  background-color: #33383b;
   color: white;
 }
 
@@ -679,7 +680,7 @@ li {
 
 .modal-footer {
   padding: 2px 16px;
-  background-color: #5cb85c;
+  background-color: #292c2f;
   color: white;
 }
 
