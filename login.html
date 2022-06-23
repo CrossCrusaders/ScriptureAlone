@@ -94,19 +94,19 @@
     <div class="container sign-in-mode">
       <div class="forms-container">
         <div class="signin-signup">
-          <form action="#" class="sign-in-form" onsubmit="login(event)">
+          <form action="#" class="sign-in-form" id="login">
             <h2 class="title">Log in</h2>
             <!--<div class="input-field">
               <i class="fas fa-user"></i>
               <input type="text" id="username" placeholder="Username" />
             </div>-->
             <div class="input-field">
-              <i class="fas fa-envelope"></i>
-              <input type="text" id="email" placeholder="Email" />
+              <i class="fas fa-user"></i>
+              <input type="text" autocomplete="off" placeholder="Username" id="username"  />
             </div>
             <div class="input-field">
               <i class="fas fa-lock"></i>
-              <input type="password" placeholder="Password" />
+              <input type="password" autocomplete="off" placeholder="Password" id="password"  />
             </div>
             <input type="submit" value="Login" class="btn solid" id="submitData" name="submitData"/>
             <p class="social-text">Or Log in with social platforms</p>
@@ -169,7 +169,7 @@
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis,
               ex ratione. Aliquid!
             </p>
-            <button class="btn transparent" onclick="window.location.href='/signup.html'">
+            <button class="btn transparent" onclick="window.location.href='/register.html'">
               Sign up
             </button>
           </div>
@@ -262,6 +262,37 @@
         
       </footer>
     </div>
+
+    <script>
+			const form = document.getElementById('login')
+			form.addEventListener('submit', login)
+
+			async function login(event) {
+				event.preventDefault()
+				const username = document.getElementById('username').value
+				const password = document.getElementById('password').value
+
+				const result = await fetch('/api/login', {
+					method: 'POST',
+					headers: {
+						'Content-Type': 'application/json'
+					},
+					body: JSON.stringify({
+						username,
+						password
+					})
+				}).then((res) => res.json())
+
+				if (result.status === 'ok') {
+					// everythign went fine
+					console.log('Got the token: ', result.data)
+					localStorage.setItem('token', result.data)
+					alert('Success')
+				} else {
+					alert(result.error)
+				}
+			}
+		</script>
 
     <script>
       // After the DOM is loaded

@@ -2,10 +2,10 @@ let currentMusic = 0;
 
 let songs = [
     {
-        name: 'When Your Faith Stands Trail',
+        name: 'Christ Liveth in Me',
         path: 'https://res.cloudinary.com/scripture-alone-dev/video/upload/v1655922280/2020.04.16.M_In_These_Last_Days_-_Harold_McMillian_-_582022655709_knbsq6.mp3',
         artist: 'Chris Droullard',
-        cover: '/images/audioplayer/chris-ap.jpg'
+        cover: '/images/audioplayer/harold-ap.png'
     }
 ]
 

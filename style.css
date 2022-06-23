@@ -4,6 +4,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body,
@@ -11,15 +12,12 @@ button {
   font-family: "Poppins", sans-serif;
 }
 
-
-
-
 @charset "UTF-8";
 :root {
   --nav-content-width: auto;
   --nav-height: 75px;
   --nav-link-height: 16px;
-  --nav-background: #fff;
+  --nav-background: #faf8f7;
   --nav-font-color: #393d48;
   --link-hover-color: #28D;
 }
@@ -27,7 +25,7 @@ button {
 /* Logo + navigation bar, full width */
 .navigation {
   height: var(--nav-height);
-  background: var(--nav-background);
+  background: #faf8f7;
   position: relative; 
   z-index: 100;
 }
@@ -545,13 +543,13 @@ ul {
     padding: 2em;
   }
 }
-a {
+.nav-a {
   font-weight: 700;
   text-decoration: none;
   /*text-transform: uppercase;*/
   position: relative;
   color: #333;
-  padding: 10px 0px;
+  /*padding: 10px 0px;*/
   letter-spacing: 1px;
   font-size: 17px;
 }
@@ -834,6 +832,7 @@ form {
 .form-select {
   width: 320px;
   margin: 0 auto;
+  text-align: center;
 }
 
 input {
@@ -899,13 +898,13 @@ input {
 
 /* Dropdown Modal */
 
-button {
+/*button {
   position: relative;
   margin: 0 auto;
   width: 100px;
   top: 50%;
   left: 0;
-}
+}*/
 
 /* CSS */
 .button-9 {
@@ -1244,9 +1243,68 @@ button {
 }
 
 .section-1-main {
-  background-color: lightcoral;
+  background-color: #faf8f7;
   width: 100%;
-  height: 60vh;
+  height: 65vh;
+}
+
+.section-1-main:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.c-1 {
+  background-color: transparent;
+  float: left;
+  width: 20%;
+  height: 100%;
+}
+
+.c-2 {
+  background-color: transparent;
+  float: left;
+  width: 60%;
+  height: 100%;
+}
+
+.c-3 {
+  background-color: transparent;
+  float: left;
+  width: 20%;
+  height: 100%;
+}
+
+.row-1 {
+  text-align: center;
+}
+
+.row-2 {
+  text-align: center;
+}
+
+#r2-main {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
+}
+
+#r2-sub {
+  font-family: Source Sans Pro;
+  font-size: 20px;
+}
+
+.row-3 {
+  background-color: transparent;
+}
+
+.row-4 {
+  background-color: transparent;
+  text-align: center;
+}
+
+.bible-main {
+  height: 350px;
+  width: 350px;
 }
 
 .section-1-links {
@@ -1257,16 +1315,16 @@ button {
 
 .wrapper {
 	/*padding: 5px;*/
-	max-width: 960px;
-	width: 95%;
-	margin: 20px auto;
+	max-width: 1300px;
+	width: 100%;
+	margin: 0 auto;
 }
 
 .columns {
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: center;
-	margin: 5px 0;
+	margin: 0;
 }
 
 .column {
@@ -1274,11 +1332,31 @@ button {
 	border: 1px solid gray;
 	margin: 2px;
 	padding: 10px;
-	&:first-child { margin-left: 0; }
-	&:last-child { margin-right: 0; }
-	
+  width: 100px;
+  height: 225px;
+  position: relative;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  transition: 0.3s;
 }
 
+.column:hover {
+  background-color: black;
+  color: white;
+}
+
+.center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+/*&:first-child { margin-left: 0; }
+	&:last-child { margin-right: 0; }*/
 
 @media screen and (max-width: 980px) {
   .columns .column {
@@ -1301,6 +1379,9 @@ button {
 	}
 }
 
+.f-icon {
+  font-size: 50px;
+}
 /*Section 2*/
 
 .section-2 {
@@ -1315,7 +1396,7 @@ button {
   height: 10%;
 }
 
-#votd {
+#votd-style {
   font-family: "Montserrat", sans-serif;
   font-size: 80px;
   text-align: center;

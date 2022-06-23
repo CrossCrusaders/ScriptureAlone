@@ -29,16 +29,20 @@
     />
 
     <!-- Stylesheets -->
-    <link href="/sermons/sermons.css" rel="stylesheet" type="text/css" />
+    <!--<link href="/sermons/sermons.css" rel="stylesheet" type="text/css" />-->
     <link rel="stylesheet" href="style.css" />
-    <link href="search.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="/sermons/latest-sermons.css" />
+    <link rel="stylesheet" href="/sermons/victorybaptistchurch/chrisdroullard/chris.css" />
+    <link rel="stylesheet" href="/sermons/spencersmith/spencer.css" />
+    
+    <!--<link href="search.css" rel="stylesheet" type="text/css" />-->
 
-    <link
+    <!--<link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
-    />
+    />-->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -58,297 +62,440 @@
       src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"
       type="text/javascript"
     ></script>
+
+    <link href="https://vjs.zencdn.net/7.17.0/video-js.css" rel="stylesheet" />
+
+    <!-- Sea -->
+    <link
+      href="https://unpkg.com/@videojs/themes@1/dist/sea/index.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <nav>
-      <div class="logo">Scripture Alone</div>
-      <input type="checkbox" id="click" />
-      <label for="click" class="menu-btn">
-        <i class="fas fa-bars"></i>
-      </label>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Read the Bible</a></li>
-        <li><a href="#">Study Tools</a></li>
-        <li><a href="#">Plans</a></li>
-        <li><a class="active" href="#">Sermons</a></li>
-      </ul>
-    </nav>
-
-    <div class="section-1_sermons">
-      <div class="s1-header">
-        <h1>Sermons</h1>
-        <p>
-          The following sermons have been provided by various speakers from
-          churches and organizations which have been verified to follow the
-          Bible and are doctrinally sound. Please read our
-          <span><a href="#">what we believe</a></span> statement in order to
-          further understand our stance on biblical matters.
-        </p>
+    <section class="navigation">
+      <div class="nav-container">
+        <span class="logo">
+          <span class="logo-img">
+            <img src="/images/bible-img/biblev2.png">
+          </span>
+          <span class="logo-text">
+            <h1>Scripture Alone</h1>
+          </span>
+        </span>
+        <nav class="navbar">
+          <div class="nav-mobile">
+            <a class="nav-a" id="nav-ham" href="#!"><span id="ss"></span></a>        
+          </div>
+          <ul>
+            <li>
+              <a class="nav-a" href="#!">Read the Scripture</a>
+            </li>
+            <li>
+              <a class="nav-a" href="#!">Study Tools</a>
+              <ul>
+                <li>
+                  <a class="nav-a" href="#!">Commentaries</a>
+                </li>
+                <li>
+                  <a class="nav-a" href="#!">Study Groups</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a class="nav-a" href="#!">Plans</a>
+              <ul>
+                <li>
+                  <a class="nav-a" href="#!">Bible Reading Plans</a>
+                </li>
+                <li>
+                  <a class="nav-a" href="#!">Devotionals</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a class="nav-a" href="/sermons.html">Sermons</a>
+            </li>  
+            <button id="btn-login" disabled="true" onclick="login()">Log in</button>
+            <button id="btn-logout" disabled="true" onclick="logout()">Log out</button> 
+            <!--<li>
+              <a href="/dashboard.html"><div id="get-started" class="get-started">Get Started</div></a>
+            </li>
+            <li>
+              <a href="/signup.html">Sign up</a>
+            </li>-->   
+          </ul>
+        </nav>
       </div>
+    </section>
+
+    <div class="header-section">
+      <div class="header-col-1"></div>
+      <div class="header-col-2">
+          <div class="header-row-1"></div>
+          <div class="header-row-2">
+              <h1>All Sermons</h1>
+              <p>The following sermons have been provided by various speakers from
+                  churches and organizations which have been verified to follow the
+                  Bible and are doctrinally sound. Please read our
+                  <span><a href="#">what we believe</a></span> statement in order to
+                  further understand our stance on biblical matters.</p>
+              <button class="directory-button">Watch Now</button>
+          </div>
+          <div class="header-row-3"></div>
+      </div>
+      <div class="header-col-3"></div>  
     </div>
+
     <div class="section-2_sermons">
-      <div class="sermons-wrapper">
-        <!-- Swiper -->
-        <div class="netflix-slider">
-          <h2>Latest Sermons</h2>
-          <div class="swiper-container">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <img src="http://placehold.jp/341x192.png" alt="Movie Title" />
-              </div>
-              <div class="swiper-slide">
-                <img src="http://placehold.jp/341x192.png" alt="Movie Title" />
-              </div>
-              <div class="swiper-slide">
-                <img src="http://placehold.jp/341x192.png" alt="Movie Title" />
-              </div>
-              <div class="swiper-slide">
-                <img src="http://placehold.jp/341x192.png" alt="Movie Title" />
-              </div>
-              <div class="swiper-slide">
-                <img src="http://placehold.jp/341x192.png" alt="Movie Title" />
-              </div>
-              <div class="swiper-slide">
-                <img src="http://placehold.jp/341x192.png" alt="Movie Title" />
-              </div>
-              <div class="swiper-slide">
-                <img src="http://placehold.jp/341x192.png" alt="Movie Title" />
-              </div>
-              <div class="swiper-slide">
-                <img src="http://placehold.jp/341x192.png" alt="Movie Title" />
-              </div>
-              <div class="swiper-slide">
-                <img src="http://placehold.jp/341x192.png" alt="Movie Title" />
-              </div>
-              <div class="swiper-slide">
-                <img src="http://placehold.jp/341x192.png" alt="Movie Title" />
-              </div>
-            </div>
-            <!-- Add Pagination -->
-            <!-- <div class="swiper-pagination"></div> -->
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-          </div>
-          <h3>View All</h3>
-        </div>
-
-        <div class="netflix-slider">
-          <h2>Speakers</h2>
-          <div class="swiper-container">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <img src="/images/spencer-thumb.jpeg" alt="Movie Title" />
-              </div>
-              <div class="swiper-slide">
-                <img src="http://placehold.jp/341x192.png" alt="Movie Title" />
-              </div>
-              <div class="swiper-slide">
-                <img src="http://placehold.jp/341x192.png" alt="Movie Title" />
-              </div>
-              <div class="swiper-slide">
-                <img src="http://placehold.jp/341x192.png" alt="Movie Title" />
-              </div>
-              <div class="swiper-slide">
-                <img src="http://placehold.jp/341x192.png" alt="Movie Title" />
-              </div>
-              <div class="swiper-slide">
-                <img src="http://placehold.jp/341x192.png" alt="Movie Title" />
-              </div>
-              <div class="swiper-slide">
-                <img src="http://placehold.jp/341x192.png" alt="Movie Title" />
-              </div>
-              <div class="swiper-slide">
-                <img src="http://placehold.jp/341x192.png" alt="Movie Title" />
-              </div>
-              <div class="swiper-slide">
-                <img src="http://placehold.jp/341x192.png" alt="Movie Title" />
-              </div>
-              <div class="swiper-slide">
-                <img src="http://placehold.jp/341x192.png" alt="Movie Title" />
-              </div>
-            </div>
-            <!-- Add Pagination -->
-            <!-- <div class="swiper-pagination"></div> -->
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-          </div>
-          <h3>View All</h3>
-        </div>
-
-        <div class="netflix-slider">
-          <h2>Topical Sermons</h2>
-          <div class="swiper-container">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <img src="http://placehold.jp/341x192.png" alt="Movie Title" />
-              </div>
-              <div class="swiper-slide">
-                <img src="http://placehold.jp/341x192.png" alt="Movie Title" />
-              </div>
-              <div class="swiper-slide">
-                <img src="http://placehold.jp/341x192.png" alt="Movie Title" />
-              </div>
-              <div class="swiper-slide">
-                <img src="http://placehold.jp/341x192.png" alt="Movie Title" />
-              </div>
-              <div class="swiper-slide">
-                <img src="http://placehold.jp/341x192.png" alt="Movie Title" />
-              </div>
-              <div class="swiper-slide">
-                <img src="http://placehold.jp/341x192.png" alt="Movie Title" />
-              </div>
-              <div class="swiper-slide">
-                <img src="http://placehold.jp/341x192.png" alt="Movie Title" />
-              </div>
-              <div class="swiper-slide">
-                <img src="http://placehold.jp/341x192.png" alt="Movie Title" />
-              </div>
-              <div class="swiper-slide">
-                <img src="http://placehold.jp/341x192.png" alt="Movie Title" />
-              </div>
-              <div class="swiper-slide">
-                <img src="http://placehold.jp/341x192.png" alt="Movie Title" />
-              </div>
-            </div>
-            <!-- Add Pagination -->
-            <!-- <div class="swiper-pagination"></div> -->
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-          </div>
-          <h3>View All</h3>
-        </div>
-
-        <div class="netflix-slider">
-          <h2>Sermon Series</h2>
-          <div class="swiper-container">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <img src="http://placehold.jp/341x192.png" alt="Movie Title" />
-              </div>
-              <div class="swiper-slide">
-                <img src="http://placehold.jp/341x192.png" alt="Movie Title" />
-              </div>
-              <div class="swiper-slide">
-                <img src="http://placehold.jp/341x192.png" alt="Movie Title" />
-              </div>
-              <div class="swiper-slide">
-                <img src="http://placehold.jp/341x192.png" alt="Movie Title" />
-              </div>
-              <div class="swiper-slide">
-                <img src="http://placehold.jp/341x192.png" alt="Movie Title" />
-              </div>
-              <div class="swiper-slide">
-                <img src="http://placehold.jp/341x192.png" alt="Movie Title" />
-              </div>
-              <div class="swiper-slide">
-                <img src="http://placehold.jp/341x192.png" alt="Movie Title" />
-              </div>
-              <div class="swiper-slide">
-                <img src="http://placehold.jp/341x192.png" alt="Movie Title" />
-              </div>
-              <div class="swiper-slide">
-                <img src="http://placehold.jp/341x192.png" alt="Movie Title" />
-              </div>
-              <div class="swiper-slide">
-                <img src="http://placehold.jp/341x192.png" alt="Movie Title" />
-              </div>
-            </div>
-            <!-- Add Pagination -->
-            <!-- <div class="swiper-pagination"></div> -->
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-          </div>
-          <h3>View All</h3>
-        </div>
-
-        <div class="netflix-slider">
-          <h2>Audio Sermons (A-Z)</h2>
-          <div class="swiper-container">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <img src="http://placehold.jp/341x192.png" alt="Movie Title" />
-              </div>
-              <div class="swiper-slide">
-                <img src="http://placehold.jp/341x192.png" alt="Movie Title" />
-              </div>
-              <div class="swiper-slide">
-                <img src="http://placehold.jp/341x192.png" alt="Movie Title" />
-              </div>
-              <div class="swiper-slide">
-                <img src="http://placehold.jp/341x192.png" alt="Movie Title" />
-              </div>
-              <div class="swiper-slide">
-                <img src="http://placehold.jp/341x192.png" alt="Movie Title" />
-              </div>
-              <div class="swiper-slide">
-                <img src="http://placehold.jp/341x192.png" alt="Movie Title" />
-              </div>
-              <div class="swiper-slide">
-                <img src="http://placehold.jp/341x192.png" alt="Movie Title" />
-              </div>
-              <div class="swiper-slide">
-                <img src="http://placehold.jp/341x192.png" alt="Movie Title" />
-              </div>
-              <div class="swiper-slide">
-                <img src="http://placehold.jp/341x192.png" alt="Movie Title" />
-              </div>
-              <div class="swiper-slide">
-                <img src="http://placehold.jp/341x192.png" alt="Movie Title" />
-              </div>
-            </div>
-            <!-- Add Pagination -->
-            <!-- <div class="swiper-pagination"></div> -->
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-          </div>
-          <h3>View All</h3>
-        </div>
-
-        <div class="netflix-slider">
-          <h2>Video Sermons (A-Z)</h2>
-          <div class="swiper-container">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <img src="http://placehold.jp/341x192.png" alt="Movie Title" />
-              </div>
-              <div class="swiper-slide">
-                <img src="http://placehold.jp/341x192.png" alt="Movie Title" />
-              </div>
-              <div class="swiper-slide">
-                <img src="http://placehold.jp/341x192.png" alt="Movie Title" />
-              </div>
-              <div class="swiper-slide">
-                <img src="http://placehold.jp/341x192.png" alt="Movie Title" />
-              </div>
-              <div class="swiper-slide">
-                <img src="http://placehold.jp/341x192.png" alt="Movie Title" />
-              </div>
-              <div class="swiper-slide">
-                <img src="http://placehold.jp/341x192.png" alt="Movie Title" />
-              </div>
-              <div class="swiper-slide">
-                <img src="http://placehold.jp/341x192.png" alt="Movie Title" />
-              </div>
-              <div class="swiper-slide">
-                <img src="http://placehold.jp/341x192.png" alt="Movie Title" />
-              </div>
-              <div class="swiper-slide">
-                <img src="http://placehold.jp/341x192.png" alt="Movie Title" />
-              </div>
-              <div class="swiper-slide">
-                <img src="http://placehold.jp/341x192.png" alt="Movie Title" />
-              </div>
-            </div>
-            <!-- Add Pagination -->
-            <!-- <div class="swiper-pagination"></div> -->
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-          </div>
-          <h3>View All</h3>
-        </div>
+      <div class="index-directory">
+        <input type="text" id="myInput" placeholder="Search for sermons" data-search> 
       </div>
+
+      <div class="container">
+        <h1>Heritage Baptist Church</h1>
+        <h2>Harold MacMillian</h2>
+
+        <div class="image-container">
+          <div class="image" style="background: url(/images/thumbnails/thumbfinal/heritagebaptistchurch/haroldmacmillian/christlivethinme.png);"><button class="modal-button" href="#christlivethinme"></button></div>
+          
+
+          <!-- Trigger/Open the Modal
+          <button class="modal-button" href="#myModal1">Open Modal</button>-->
+
+          <!-- The Modal -->
+          <div id="christlivethinme" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+              <div class="modal-header">
+                <span class="close">&times;</span>
+                <h2>Name of Sermon</h2>
+              </div>
+              <div class="modal-body">
+                <div class="section-2-wog" id="watch">
+                  <div class="col-left"></div>
+                  <div class="audio-holder">
+                    <audio src="" id="audio"></audio>
+                    <div class="music-player">
+                      <!-- Inside music player element -->
+                      <h1 class="music-name"></h1>
+                      <p class="artist-name"></p>
+                      <div class="disk"></div>
+                      <div class="song-slider">
+                        <input type="range" value="0" class="seek-bar">
+                        <span class="current-time">00:00</span>
+                        <span class="song-duration">00:00</span>
+                    </div>
+                    <div class="controls">
+                      <button style="border-radius: 35px; height: 60px; width: 60px; border: none;" onclick="rewindAudio();"><i style="color: #4d4d4d; font-size: 40px;" class="fa-solid fa-backward-step"></i></button>
+                      <button class="play-btn pause">
+                          <span></span>
+                          <span></span>
+                      </button>
+                      <button style="border-radius: 35px; height: 60px; width: 60px; border: none;" onclick="forwardAudio();"><i style="color: #4d4d4d; font-size: 40px;" class="fa-solid fa-forward-step"></i></button>
+                    </div>
+                    </div>
+            
+                    <p style="text-align: center">If the total length time appears NaN:NaN, please refresh the page 1-2 times before playing the file and the time will appear correctly.</p>
+            
+                    <!--<script src="/sermons/spencersmith/data.js"></script>-->
+                    <script src="/sermons/midwaybaptistchurch/christ-liveth-in-me.js"></script>
+            
+                  </div>
+                  <div class="col-right"></div>
+                </div>
+                <div class="section-3-main">
+                  <div class="row-1">
+                    <h1 class="row-about"><a class="link" style="cursor: pointer">About Harold MacMillian</a></h1>
+                  </div>
+                  <div class="section-3-sub">
+                    <div class="col-bio-main">
+                      <div class="col-bio-1">
+                        <div class="col-bio-image">
+                          <img
+                            id="spencer-bio"
+                            src="/images/bio/harold-bio.png"
+                            alt="A photo of spencer smith for his bio"
+                          />
+                        </div>
+                        <div class="col-bio-socials">
+                          <div class="spencer-socials-icons">
+                            <!--<a href="https://www.youtube.com/c/spencersmith312" target="_blank"><i class="fa fa-brands fa-youtube"></i></a>-->
+                            <a href="https://www.facebook.com/Victory-Baptist-Church-in-Winthrop-Maine-116651825028173/" target="_blank"><i class="fa fa-brands fa-facebook"></i></a>
+                            <a href="https://www.vbcwinthrop.org/"><i class="fa-solid fa-window-restore"></i></a>
+                            <!--<a href="https://twitter.com/brospencer" target="_blank"><i class="fa fa-brands fa-twitter"></i></a>-->
+                            <a href="mailto:pastor@vbcwinthrop.org" target="_blank"><i class="fa fa-solid fa-envelope"></i></a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-bio-2">
+                        <p>
+                          Pastor of Heritage Baptist Church which started as a mission on September 2, 2012 and was constituted on January 27, 2013. 
+                          <br>
+                          <br>
+                          He studied at Macedonia Baptist College which is part of the ministry of Bro. Ronnie Simpson. In September 2020 he became the pastor of Midway Baptist Church. 
+                          <br>
+                          <br>
+                          He lives in Asheboro with his lovely wife, Wendy. They have two daughters, two son-in-laws, and three precious granddaughters. 
+                        </p>
+                      </div>
+                    </div>
+                    <div class="col-share">
+                      <h2>Share</h2>
+                        <div class="share-content">
+                          <input type="text" value="https://itsshawn.github.io/sermons/victorybaptistchurch/chrisdroullard/when-your-faith-stands-trail" style="display:none" id="myInput">
+                          <button class="link-button" onclick="myFunction()"><i class="fa-solid fa-link"></i></button>
+            
+                          <script>
+                          function myFunction() {
+                            /* Get the text field */
+                            var copyText = document.getElementById("myInput");
+            
+                            /* Select the text field */
+                            copyText.select();
+                            copyText.setSelectionRange(0, 99999); /* For mobile devices */
+            
+                            /* Copy the text inside the text field */
+                            navigator.clipboard.writeText(copyText.value);
+                            
+                            /* Alert the copied text */
+                            alert("Succesfully copied link");
+                          }
+                          </script>
+                            
+                        
+                            <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fitsshawn.github.io%2Fsermons%2Fvictorybaptistchurch%2Fchrisdroullard%2Fwhen-your-faith-stands-trail&amp;src=sdkpreparse" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                            
+                            <a href="https://twitter.com/intent/tweet?text=Listen%20to%20When%20Your%20Faith%20Stands%20Trail%20by%20Chris%20Droullard%20on%20Scripture%20Alone&url=https%3A%2F%2Fitsshawn.github.io%2Fsermons%2Fvictorybaptistchurch%2Fchrisdroullard%2Fwhen-your-faith-stands-trail" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        
+                            <a href="https://web.whatsapp.com/send?text=https%3A%2F%2Fitsshawn.github.io%2Fsermons%2Fvictorybaptistchurch%2Fchrisdroullard%2Fwhen-your-faith-stands-trail" target="_blank"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+                            
+                            <a href="https://www.facebook.com/dialog/send?link=https%3A%2F%2Fitsshawn.github.io%2Fsermons%2Fvictorybaptistchurch%2Fchrisdroullard%2Fwhen-your-faith-stands-trail&app_id=291494419107518&redirect_uri=https%3A%2F%2Fwww.sharethis.com" target="_blank"><i class="fa-brands fa-facebook-messenger" aria-hidden="true"></i></a>
+            
+                            <a href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&su=When+Your+Faith+Stands+Trail+by+Chris+Droullard+on+Scripture+Alone&body=https://itsshawn.github.io/sermons/victorybaptistchurch/chrisdroullard/when-your-faith-stands-trail" target="_blank"><i class="fa fa-solid fa-envelope"></i></a>
+                        </div>
+            
+                        <div class="col-description">
+                          <h2>More Info</h2>
+                          <p>Recorded on: 03/21/21</p>
+                          <p>Sermon by: Pastor Chris Droullard</p>
+                          <p>Church: Victory Baptist Church</p>
+                          <p>Address: 1170 US Rt 202 Winthrop, ME  04364</p>
+                          <p>Phone: 207-377-2161</p>
+                          <p>Email: pastor@vbcwinthrop.org</p>
+                          <a style="font-family: 'Encode Sans', sans-serif; font-size: 18px; text-align: center;"class="link" href="https://www.vbcwinthrop.org/contact-us/">Contact Victory Baptist Church</a>
+                        </div>
+            
+                    <script>
+                    $('.share-ico').click(function() {
+                      $(this).parent().toggleClass('expand');
+                    });
+                    </script>
+                  </div>
+                </div>
+              </div>
+                <div class="section-4">
+                  <div class="commentbox"></div>
+                  <script src="https://unpkg.com/commentbox.io/dist/commentBox.min.js"></script>
+                  <script>commentBox('5757798738558976-proj')</script>
+                </div>
+                
+              
+              
+            </div>
+
+          </div>
+
+          
+        </div>
+
+        <div class="image" style="background: url(/images/thumbnails/thumbfinal/spencersmith/doctrinematters.png);"><button class="modal-button" href="#myModal2"></button></div>
+
+          <!-- Trigger/Open the Modal
+          <button class="modal-button" href="#myModal1">Open Modal</button>-->
+
+          <!-- The Modal -->
+          <div id="myModal2" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+              <div class="modal-header">
+                <span class="close">&times;</span>
+                <h2>Name of Sermon</h2>
+              </div>
+              <div class="modal-body">
+                <div class="section-2-mog" id="watch">
+                  <div class="col-left"></div>
+                  <div class="video-holder">
+                    <div style="max-width: 1280px; min-height: 720px">
+                      <video
+                        id="my-video"
+                        class="video-js vjs-big-play-centered vjs-fluid"
+                        controls
+                        preload="auto"
+                        width="640"
+                        height="264"
+                        poster="/images/thumbnails/sermons/spencer/spencer-thumb-dm.jpg"
+                        data-setup="{}"
+                      >
+                        <source
+                          src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+                          type="video/mp4"
+                        />
+                        <p class="vjs-no-js">
+                          To view this video please enable JavaScript, and consider
+                          upgrading to a web browser that
+                          <a href="https://videojs.com/html5-video-support/" target="_blank"
+                            >supports HTML5 video</a
+                          >
+                        </p>
+                      </video>
+                    </div>
+                  </div>
+                  <div class="col-right"></div>
+                </div>
+                <div class="section-3-main">
+                  <div class="row-1">
+                    <h1 class="row-about"><a class="link" style="cursor: pointer">About Pastor Droullard</a></h1>
+                  </div>
+                  <div class="section-3-sub">
+                    <div class="col-bio-main">
+                      <div class="col-bio-1">
+                        <div class="col-bio-image">
+                          <img
+                            id="spencer-bio"
+                            src="/images/bio/chris-bio.jpg"
+                            alt="A photo of spencer smith for his bio"
+                          />
+                        </div>
+                        <div class="col-bio-socials">
+                          <div class="spencer-socials-icons">
+                            <!--<a href="https://www.youtube.com/c/spencersmith312" target="_blank"><i class="fa fa-brands fa-youtube"></i></a>-->
+                            <a href="https://www.facebook.com/Victory-Baptist-Church-in-Winthrop-Maine-116651825028173/" target="_blank"><i class="fa fa-brands fa-facebook"></i></a>
+                            <a href="https://www.vbcwinthrop.org/"><i class="fa-solid fa-window-restore"></i></a>
+                            <!--<a href="https://twitter.com/brospencer" target="_blank"><i class="fa fa-brands fa-twitter"></i></a>-->
+                            <a href="mailto:pastor@vbcwinthrop.org" target="_blank"><i class="fa fa-solid fa-envelope"></i></a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-bio-2">
+                        <p>
+                          Bro. Chris Droullard accepted the call to pastor Victory Baptist Church on February 18, 2018. A native of the area, he spent most of his growing up years in Readfield. 
+                          He began attending Victory Baptist Church with his family at the age of eight, and was saved and later called to preach right here. 
+                          <br />
+                          <br />He graduated in 2010 from Hyles-Anderson College, where he met and married his wife, Marion. The Droullards moved to Readfield that summer to pursue a ministry 
+                          opportunity in northern Maine, but God had different plans and kept them at Victory. Soon they hated the thought of ever leaving their beloved church! In 2016, Bro. Chris 
+                          was hired as full-time assistant pastor. He served        with Pastor Walter for almost two years before God took Pastor Walter home to heaven in November 2017.
+                          <br />
+                          <br />
+                          Pastor Droullard is honored to pastor his home church, and is excited to continue the mission that Jesus gave to the church in Matthew 28: “Go ye therefore, and 
+                          teach all nations, baptizing them in the name of the Father, and of the Son, and of the Holy Ghost: Teaching them to observe all things whatsoever I have commanded you: 
+                          and, lo, I am with you always, even unto the end of the world. Amen.”  
+                        </p>
+                      </div>
+                    </div>
+                    <div class="col-share">
+                      <h2>Share</h2>
+                        <div class="share-content">
+                          <input type="text" value="https://itsshawn.github.io/sermons/victorybaptistchurch/chrisdroullard/when-your-faith-stands-trail" style="display:none" id="myInput">
+                          <button class="link-button" onclick="myFunction()"><i class="fa-solid fa-link"></i></button>
+            
+                          <script>
+                          function myFunction() {
+                            /* Get the text field */
+                            var copyText = document.getElementById("myInput");
+            
+                            /* Select the text field */
+                            copyText.select();
+                            copyText.setSelectionRange(0, 99999); /* For mobile devices */
+            
+                            /* Copy the text inside the text field */
+                            navigator.clipboard.writeText(copyText.value);
+                            
+                            /* Alert the copied text */
+                            alert("Succesfully copied link");
+                          }
+                          </script>
+                            
+                        
+                            <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fitsshawn.github.io%2Fsermons%2Fvictorybaptistchurch%2Fchrisdroullard%2Fwhen-your-faith-stands-trail&amp;src=sdkpreparse" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                            
+                            <a href="https://twitter.com/intent/tweet?text=Listen%20to%20When%20Your%20Faith%20Stands%20Trail%20by%20Chris%20Droullard%20on%20Scripture%20Alone&url=https%3A%2F%2Fitsshawn.github.io%2Fsermons%2Fvictorybaptistchurch%2Fchrisdroullard%2Fwhen-your-faith-stands-trail" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        
+                            <a href="https://web.whatsapp.com/send?text=https%3A%2F%2Fitsshawn.github.io%2Fsermons%2Fvictorybaptistchurch%2Fchrisdroullard%2Fwhen-your-faith-stands-trail" target="_blank"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+                            
+                            <a href="https://www.facebook.com/dialog/send?link=https%3A%2F%2Fitsshawn.github.io%2Fsermons%2Fvictorybaptistchurch%2Fchrisdroullard%2Fwhen-your-faith-stands-trail&app_id=291494419107518&redirect_uri=https%3A%2F%2Fwww.sharethis.com" target="_blank"><i class="fa-brands fa-facebook-messenger" aria-hidden="true"></i></a>
+            
+                            <a href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&su=When+Your+Faith+Stands+Trail+by+Chris+Droullard+on+Scripture+Alone&body=https://itsshawn.github.io/sermons/victorybaptistchurch/chrisdroullard/when-your-faith-stands-trail" target="_blank"><i class="fa fa-solid fa-envelope"></i></a>
+                        </div>
+            
+                        <div class="col-description">
+                          <h2>More Info</h2>
+                          <p>Recorded on: 03/21/21</p>
+                          <p>Sermon by: Pastor Chris Droullard</p>
+                          <p>Church: Victory Baptist Church</p>
+                          <p>Address: 1170 US Rt 202 Winthrop, ME  04364</p>
+                          <p>Phone: 207-377-2161</p>
+                          <p>Email: pastor@vbcwinthrop.org</p>
+                          <a style="font-family: 'Encode Sans', sans-serif; font-size: 18px; text-align: center;"class="link" href="https://www.vbcwinthrop.org/contact-us/">Contact Victory Baptist Church</a>
+                        </div>
+            
+                    <script>
+                    $('.share-ico').click(function() {
+                      $(this).parent().toggleClass('expand');
+                    });
+                    </script>
+                  </div>
+                </div>
+              </div>
+                <div class="section-4">
+                  <div class="commentbox"></div>
+                  <script src="https://unpkg.com/commentbox.io/dist/commentBox.min.js"></script>
+                  <script>commentBox('5757798738558976-proj')</script>
+                </div>
+                
+              
+              
+            </div>
+
+          </div>
+
+          
+        </div>
+        <div class="image"><img src="https://images.unsplash.com/photo-1541701494587-cb58502866ab?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YWJzdHJhY3QlMjBjb2xvdXJ8ZW58MHx8MHx8&w=1000&q=80" alt=""></div>
+        <div class="image"><img src="https://images.unsplash.com/photo-1541701494587-cb58502866ab?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YWJzdHJhY3QlMjBjb2xvdXJ8ZW58MHx8MHx8&w=1000&q=80" alt=""></div>
+        <div class="image"><img src="https://images.unsplash.com/photo-1541701494587-cb58502866ab?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YWJzdHJhY3QlMjBjb2xvdXJ8ZW58MHx8MHx8&w=1000&q=80" alt=""></div>
+        <div class="image"><img src="https://images.unsplash.com/photo-1541701494587-cb58502866ab?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YWJzdHJhY3QlMjBjb2xvdXJ8ZW58MHx8MHx8&w=1000&q=80" alt=""></div>
+        <div class="image"><img src="https://images.unsplash.com/photo-1541701494587-cb58502866ab?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YWJzdHJhY3QlMjBjb2xvdXJ8ZW58MHx8MHx8&w=1000&q=80" alt=""></div>
+        <div class="image"><img src="https://images.unsplash.com/photo-1541701494587-cb58502866ab?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YWJzdHJhY3QlMjBjb2xvdXJ8ZW58MHx8MHx8&w=1000&q=80" alt=""></div>
+        <div class="image"><img src="https://images.unsplash.com/photo-1541701494587-cb58502866ab?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YWJzdHJhY3QlMjBjb2xvdXJ8ZW58MHx8MHx8&w=1000&q=80" alt=""></div>
+        <div class="image"><img src="https://images.unsplash.com/photo-1541701494587-cb58502866ab?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YWJzdHJhY3QlMjBjb2xvdXJ8ZW58MHx8MHx8&w=1000&q=80" alt=""></div>
+        <div class="image"><img src="https://images.unsplash.com/photo-1541701494587-cb58502866ab?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YWJzdHJhY3QlMjBjb2xvdXJ8ZW58MHx8MHx8&w=1000&q=80" alt=""></div>
+        <div class="image"><img src="https://images.unsplash.com/photo-1541701494587-cb58502866ab?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YWJzdHJhY3QlMjBjb2xvdXJ8ZW58MHx8MHx8&w=1000&q=80" alt=""></div>
+        <div class="image"><img src="https://images.unsplash.com/photo-1541701494587-cb58502866ab?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YWJzdHJhY3QlMjBjb2xvdXJ8ZW58MHx8MHx8&w=1000&q=80" alt=""></div>
+        <div class="image"><img src="https://images.unsplash.com/photo-1541701494587-cb58502866ab?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YWJzdHJhY3QlMjBjb2xvdXJ8ZW58MHx8MHx8&w=1000&q=80" alt=""></div>
+        <div class="image"><img src="https://images.unsplash.com/photo-1541701494587-cb58502866ab?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YWJzdHJhY3QlMjBjb2xvdXJ8ZW58MHx8MHx8&w=1000&q=80" alt=""></div>
+        <div class="image"><img src="https://images.unsplash.com/photo-1541701494587-cb58502866ab?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YWJzdHJhY3QlMjBjb2xvdXJ8ZW58MHx8MHx8&w=1000&q=80" alt=""></div>
+        <div class="image"><img src="https://images.unsplash.com/photo-1541701494587-cb58502866ab?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YWJzdHJhY3QlMjBjb2xvdXJ8ZW58MHx8MHx8&w=1000&q=80" alt=""></div>
+        <div class="image"><img src="https://images.unsplash.com/photo-1541701494587-cb58502866ab?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YWJzdHJhY3QlMjBjb2xvdXJ8ZW58MHx8MHx8&w=1000&q=80" alt=""></div>
+        <div class="image"><img src="https://images.unsplash.com/photo-1541701494587-cb58502866ab?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YWJzdHJhY3QlMjBjb2xvdXJ8ZW58MHx8MHx8&w=1000&q=80" alt=""></div>
+        <div class="image"><img src="https://images.unsplash.com/photo-1541701494587-cb58502866ab?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YWJzdHJhY3QlMjBjb2xvdXJ8ZW58MHx8MHx8&w=1000&q=80" alt=""></div>
+        <div class="image"><img src="https://images.unsplash.com/photo-1541701494587-cb58502866ab?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YWJzdHJhY3QlMjBjb2xvdXJ8ZW58MHx8MHx8&w=1000&q=80" alt=""></div>
+        <div class="image"><img src="https://images.unsplash.com/photo-1541701494587-cb58502866ab?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YWJzdHJhY3QlMjBjb2xvdXJ8ZW58MHx8MHx8&w=1000&q=80" alt=""></div>
+        <div class="image"><img src="https://images.unsplash.com/photo-1541701494587-cb58502866ab?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YWJzdHJhY3QlMjBjb2xvdXJ8ZW58MHx8MHx8&w=1000&q=80" alt=""></div>
+        <div class="image"><img src="https://images.unsplash.com/photo-1541701494587-cb58502866ab?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YWJzdHJhY3QlMjBjb2xvdXJ8ZW58MHx8MHx8&w=1000&q=80" alt=""></div>
+        <div class="image"><img src="https://images.unsplash.com/photo-1541701494587-cb58502866ab?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YWJzdHJhY3QlMjBjb2xvdXJ8ZW58MHx8MHx8&w=1000&q=80" alt=""></div>
+        
+
+        
+      </div>
+
+      
+
     </div>
+
+
+    
 
     <div class="section-5_sermons">
       <!--footer starts from here-->
@@ -420,6 +567,179 @@
       </footer>
     </div>
 
+    <!-- Video Popup -->
+    <!--<script>
+    document.querySelectorAll('.video-container video').forEach(vid => {
+      vid.onclick = () =>{
+        document.querySelector('.popup-video').style.display = 'block';
+        document.querySelector('.popup-video video').src = vid.getAttribute('src');
+      }
+    });
+
+    document.querySelector('.popup-video span').onclick = () =>{
+      document.querySelector('.popup-video').style.display = 'none';
+    }
+    </script>-->
+
+    <script src="https://vjs.zencdn.net/7.17.0/video.min.js"></script>
+    <script>
+      $(function () {
+        var $refreshButton = $("#refresh");
+        var $results = $("#css_result");
+
+        function refresh() {
+          var css = $("style.cp-pen-styles").text();
+          $results.html(css);
+        }
+
+        refresh();
+        $refreshButton.click(refresh);
+
+        // Select all the contents when clicked
+        $results.click(function () {
+          $(this).select();
+        });
+      });
+    </script>
+    <script>
+      // Adding a vertical volume bar
+
+      var vid = document.getElementById("my-video");
+
+      var player = videojs(vid, {
+        controlBar: { volumePanel: { inline: false } },
+      });
+    </script>
+
+    <script>
+      ocument.getElementById("copyButton2").addEventListener("click", function() {
+    copyToClipboardMsg(document.getElementById("copyTarget2"), "msg");
+});
+
+document.getElementById("pasteTarget").addEventListener("mousedown", function() {
+    this.value = "";
+});
+
+
+function copyToClipboardMsg(elem, msgElem) {
+	  var succeed = copyToClipboard(elem);
+    var msg;
+    if (!succeed) {
+        msg = "Copy not supported or blocked.  Press Ctrl+c to copy."
+    } else {
+        msg = "Text copied to the clipboard."
+    }
+    if (typeof msgElem === "string") {
+        msgElem = document.getElementById(msgElem);
+    }
+    msgElem.innerHTML = msg;
+    setTimeout(function() {
+        msgElem.innerHTML = "";
+    }, 2000);
+}
+
+function copyToClipboard(elem) {
+	  // create hidden text element, if it doesn't already exist
+    var targetId = "_hiddenCopyText_";
+    var isInput = elem.tagName === "INPUT" || elem.tagName === "TEXTAREA";
+    var origSelectionStart, origSelectionEnd;
+    if (isInput) {
+        // can just use the original source element for the selection and copy
+        target = elem;
+        origSelectionStart = elem.selectionStart;
+        origSelectionEnd = elem.selectionEnd;
+    } else {
+        // must use a temporary form element for the selection and copy
+        target = document.getElementById(targetId);
+        if (!target) {
+            var target = document.createElement("textarea");
+            target.style.position = "absolute";
+            target.style.left = "-9999px";
+            target.style.top = "0";
+            target.id = targetId;
+            document.body.appendChild(target);
+        }
+        target.textContent = elem.textContent;
+    }
+    // select the content
+    var currentFocus = document.activeElement;
+    target.focus();
+    target.setSelectionRange(0, target.value.length);
+    
+    // copy the selection
+    var succeed;
+    try {
+    	  succeed = document.execCommand("copy");
+    } catch(e) {
+        succeed = false;
+    }
+    // restore original focus
+    if (currentFocus && typeof currentFocus.focus === "function") {
+        currentFocus.focus();
+    }
+    
+    if (isInput) {
+        // restore prior selection
+        elem.setSelectionRange(origSelectionStart, origSelectionEnd);
+    } else {
+        // clear temporary content
+        target.textContent = "";
+    }
+    return succeed;
+}
+
+    </script>
+
+    <!-- Modal URL Search -->
+    <script>
+      $(document).ready(() => {
+        const href = window.location.href
+        const modalID = href.split('/').reverse()[0]
+        if(modalID){
+            $(modalID).modal('show')
+        }
+      })
+    </script>
+
+    <!-- Modal Popup -->
+    <script>
+    // Get the modal
+    var modals = document.querySelectorAll('.modal');
+     
+    // Get the button that opens the modal
+    var btn = document.querySelectorAll("button.modal-button");
+          
+    // Get the <span> element that closes the modal
+    var spans = document.getElementsByClassName("close");
+           
+    // When the user clicks the button, open the modal 
+    for (var i = 0; i < btn.length; i++) {
+      btn[i].onclick = function(e) {
+        e.preventDefault();
+        modal = document.querySelector(e.target.getAttribute("href"));
+        modal.style.display = "block";
+      }
+    }
+           
+    // When the user clicks on <span> (x), close the modal
+    for (var i = 0; i < spans.length; i++) {
+      spans[i].onclick = function() {
+        for (var index in modals) {
+          if (typeof modals[index].style !== 'undefined') modals[index].style.display = "none";
+        }
+      }
+    }
+           
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+      if (event.target.classList.contains('modal')) {
+       for (var index in modals) {
+        if (typeof modals[index].style !== 'undefined') modals[index].style.display = "none";
+       }
+     }
+    }         
+    </script>
+
     <!-- Swiper JS -->
     <script src="package/js/swiper.min.js"></script>
 
@@ -438,6 +758,70 @@
           prevEl: ".swiper-button-prev",
         },
       });
+    </script>
+
+    <script>
+      // After the DOM is loaded
+      window.addEventListener("load", function(e) {
+
+      // Hamburger or X
+      let navham = document.getElementById('nav-ham');
+      // 1st level (only one)
+      let navul = document.querySelector('nav > ul');
+      // 2nd level (many)
+      let navulliuls = document.querySelectorAll('nav > ul > li > ul');
+      // 1st level links that have a 2nd level dropdown (many)
+      let navullis = document.querySelectorAll('nav > ul > li a:not(:only-child)');
+
+      // Toggle 2nd level visibility
+      let toggle2nd = function(e) {
+        // Make 2nd level visible
+        let thisul = this.parentNode.querySelector('ul');
+        thisul.classList.toggle('active');
+        // Hide other dropdowns
+        for (let item of navulliuls) {
+          if (item !== thisul) {
+            item.classList.remove('active');
+          }
+        }
+        // Do not execute this link or hidenav
+        e.stopPropagation();
+      }
+
+      // Toggle mobile navigation bar
+      let togglenav = function(e) {
+        // Hamburger to X toggle
+        navham.classList.toggle('active');
+        // 1st level visible toggle
+        navul.classList.toggle('active');
+        // Do not execute hidenav
+        e.stopPropagation();
+      }
+
+      // Hide mobile navigation bar
+      let hidenav = function(e) {
+        // Hamburger
+        navham.classList.remove('active');
+        // 1st level visible toggle
+        navul.classList.remove('active');
+        e.stopPropagation();
+        // Hide 2nd level
+        for (let item of navulliuls) {
+          item.classList.remove('active');
+        }
+      }
+
+      // Toggle 2nd level visibility on click on any link that has a 2nd level dropdown
+      for (let item of navullis) {
+        item.addEventListener("click", toggle2nd, false);
+      }
+
+      // Hamburger or X click
+      navham.addEventListener("click", togglenav, false);
+
+      // Clicking away from dropdown will remove the dropdown class
+      document.documentElement.addEventListener("click", hidenav, false);
+      }, false);
     </script>
   </body>
 </html>

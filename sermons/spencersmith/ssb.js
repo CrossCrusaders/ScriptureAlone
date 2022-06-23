@@ -3,7 +3,7 @@ let currentMusic = 0;
 let songs = [
     {
         name: 'Spirit, Soul, Body',
-        path: 'https://res.cloudinary.com/scripturealone/video/upload/v1647031221/Spirit_Soul_Body_-_Spencer_Smith_zyj69m.mp3',
+        path: 'https://res.cloudinary.com/scripture-alone-dev/video/upload/v1655922280/2020.04.16.M_In_These_Last_Days_-_Harold_McMillian_-_582022655709_knbsq6.mp3',
         artist: 'Spencer Smith',
         cover: '/images/audioplayer/spencer-ap.jpg'
     }
