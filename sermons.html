@@ -148,16 +148,16 @@
 
     <div class="section-2_sermons">
       <div class="index-directory">
-        <input type="text" id="myInput" placeholder="Search for sermons" data-search> 
+        <input id="myInput" type="text" onkeyup="filterTextInput()" placeholder="Search for sermons"/>
       </div>
 
       <div class="container">
         <br />
-        <h1>Heritage Baptist Church</h1>
-        <h2>Harold MacMillian</h2>
+        <h1 style="color: #33383b;">Heritage Baptist Church</h1>
+        <h2 style="color: #33383b;">Harold MacMillian</h2>
 
-        <div class="image-container">
-          <div id="christ-liveth-in-me" class="image" style="background: url(/images/thumbnails/thumbfinal/heritagebaptistchurch/haroldmacmillian/christlivethinme.png);"><button class="modal-button" href="#christlivethinme"></button></div>
+        <div id="myDIV" class="image-container">
+          <div id="christ-liveth-in-me" class="image" style="background: url(/images/thumbnails/thumbfinal/heritagebaptistchurch/haroldmacmillian/christlivethinme.png);" data-content="christ liveth in me"><button class="modal-button" href="#christlivethinme"></button>christ liveth in me</div>
           
 
           <!-- Trigger/Open the Modal
@@ -170,7 +170,7 @@
             <div class="modal-content">
               <div class="modal-header">
                 <span class="close">&times;</span>
-                <h2>Christ Liveth In Me</h2>
+                <h2>Christ Liveth in Me</h2>
               </div>
               <div class="modal-body">
                 <div class="section-2-wog" id="watch">
@@ -179,30 +179,16 @@
                     <audio src="" id="audio"></audio>
                     <div class="music-player">
                       <!-- Inside music player element -->
-                      <h1 class="music-name"></h1>
-                      <p class="artist-name"></p>
-                      <div class="disk"></div>
-                      <div class="song-slider">
-                        <input type="range" value="0" class="seek-bar">
-                        <span class="current-time">00:00</span>
-                        <span class="song-duration">00:00</span>
+                      <h1 class="music-name">Christ Liveth in Me</h1>
+                      <p class="artist-name">Harold MacMillian</p>
+                      <div class="harold-disk"></div>
+                      <br />
+                      <br />
+                      <audio class="SA-audioplayer" controls>
+                        <source src="https://res.cloudinary.com/scripture-alone-dev/video/upload/v1656001226/Midway%20Baptist%20Church/Harold%20MacMillian/2017.04.09.A_Christ_Liveth_In_Me_-_Harold_McMillian_-_49171540142_g6napq.mp3">
+                      </audio>
                     </div>
-                    <div class="controls">
-                      <button style="border-radius: 35px; height: 60px; width: 60px; border: none;" onclick="rewindAudio();"><i style="color: #4d4d4d; font-size: 40px;" class="fa-solid fa-backward-step"></i></button>
-                      <button class="play-btn pause">
-                          <span></span>
-                          <span></span>
-                      </button>
-                      <button style="border-radius: 35px; height: 60px; width: 60px; border: none;" onclick="forwardAudio();"><i style="color: #4d4d4d; font-size: 40px;" class="fa-solid fa-forward-step"></i></button>
-                    </div>
-                    </div>
-            
-                    <p style="text-align: center">If the total length time appears NaN:NaN, please refresh the page 1-2 times before playing the file and the time will appear correctly.</p>
-            
-                    <!--<script src="/sermons/spencersmith/data.js"></script>-->
-                    <script src="/sermons/midwaybaptistchurch/christ-liveth-in-me.js"></script>
-            
-                  </div>
+                    </div>        
                   <div class="col-right"></div>
                 </div>
                 <div class="section-3-main">
@@ -247,36 +233,36 @@
                     <div class="col-share">
                       <h2>Share</h2>
                         <div class="share-content">
-                          <input type="text" value="https://itsshawn.github.io/sermons#christ-liveth-in-me" style="display:none" id="myInput">
-                          <button class="link-button" onclick="myFunction()"><i class="fa-solid fa-link"></i></button>
+                          <input type="text" value="https://scripturealone.com/sermons#christ-liveth-in-me" style="display:none" id="myInputclim">
+                          <button class="link-button" onclick="myclimFunction()"><i class="fa-solid fa-link"></i></button>
             
                           <script>
-                          function myFunction() {
-                            /* Get the text field */
-                            var copyText = document.getElementById("myInput");
-            
-                            /* Select the text field */
-                            copyText.select();
-                            copyText.setSelectionRange(0, 99999); /* For mobile devices */
-            
-                            /* Copy the text inside the text field */
-                            navigator.clipboard.writeText(copyText.value);
-                            
-                            /* Alert the copied text */
-                            alert("Succesfully copied link");
-                          }
-                          </script>
+                            function myclimFunction() {
+                              /* Get the text field */
+                              var copyText = document.getElementById("myInputclim");
+              
+                              /* Select the text field */
+                              copyText.select();
+                              copyText.setSelectionRange(0, 99999); /* For mobile devices */
+              
+                              /* Copy the text inside the text field */
+                              navigator.clipboard.writeText(copyText.value);
+                              
+                              /* Alert the copied text */
+                              alert("Succesfully copied link");
+                            }
+                            </script>
                             
                         
-                            <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fitsshawn.github.io%2Fsermons#christ-liveth-in-me&amp;src=sdkpreparse" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                            <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fscripturealone.com%2Fsermons%23christ-liveth-in-me&amp;src=sdkpreparse" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
                             
-                            <a href="https://twitter.com/intent/tweet?text=Listen%20to%20Christ%20Liveth%20In%20Me%20by%20Harold%20MacMilliand%20on%20Scripture%20Alone&url=https%3A%2F%2Fitsshawn.github.io%2Fsermons#christ-liveth-in-me" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                            <a href="https://twitter.com/intent/tweet?text=Listen%20to%20Christ%20Liveth%20In%20Me%20by%20Harold%20MacMilliand%20on%20Scripture%20Alone&url=https%3A%2F%2Fscripturealone.com%2Fsermons%23christ-liveth-in-me" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
                         
-                            <a href="https://web.whatsapp.com/send?text=https%3A%2F%2Fitsshawn.github.io%2Fsermons#christ-liveth-in-me" target="_blank"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+                            <a href="https://web.whatsapp.com/send?text=https%3A%2F%2Fscripturealone.com%2Fsermons%23christ-liveth-in-me" target="_blank"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
                             
-                            <a href="https://www.facebook.com/dialog/send?link=https%3A%2F%2Fitsshawn.github.io%2Fsermons#christ-liveth-in-me&app_id=291494419107518&redirect_uri=https%3A%2F%2Fwww.sharethis.com" target="_blank"><i class="fa-brands fa-facebook-messenger" aria-hidden="true"></i></a>
+                            <a href="https://www.facebook.com/dialog/send?link=https%3A%2F%2Fscripturealone.com%2Fsermons%23christ-liveth-in-me&app_id=291494419107518&redirect_uri=https%3A%2F%2Fwww.sharethis.com" target="_blank"><i class="fa-brands fa-facebook-messenger" aria-hidden="true"></i></a>
             
-                            <a href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&su=Christ+Liveth+In+Me+by+Harold+MacMillian+on+Scripture+Alone&body=https://itsshawn.github.io/sermons#christ-liveth-in-me" target="_blank"><i class="fa fa-solid fa-envelope"></i></a>
+                            <a href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&su=Christ+Liveth+In+Me+by+Harold+MacMillian+on+Scripture+Alone&body=https://scripturealone.com/sermons%23christ-liveth-in-me" target="_blank"><i class="fa fa-solid fa-envelope"></i></a>
                         </div>
             
                         <div class="col-description">
@@ -313,34 +299,1412 @@
           
         </div>
 
-        
+        <div id="dead-flies-in-the-ointment" class="image" style="background: url(/images/thumbnails/thumbfinal/heritagebaptistchurch/haroldmacmillian/deadfliesintheointment.png);" data-content="dead flies in the ointment"><button class="modal-button" href="#deadfliesintheointment"></button>dead flies in the ointment</div>
+          
+
+          <!-- Trigger/Open the Modal
+          <button class="modal-button" href="#myModal1">Open Modal</button>-->
+
+          <!-- The Modal -->
+          <div id="deadfliesintheointment" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+              <div class="modal-header">
+                <span class="close">&times;</span>
+                <h2>Dead Flies in the Ointment</h2>
+              </div>
+              <div class="modal-body">
+                <div class="section-2-wog" id="watch">
+                  <div class="col-left"></div>
+                  <div class="audio-holder">
+                    <audio src="" id="audio"></audio>
+                    <div class="music-player">
+                      <!-- Inside music player element -->
+                      <h1 class="music-name">Dead Files in the Ointment</h1>
+                      <p class="artist-name">Harold MacMillian</p>
+                      <div class="harold-disk"></div>
+                      <br />
+                      <br />
+                      <audio class="SA-audioplayer" controls>
+                        <source src="https://github.com/ItsShawn/sa-sermons/blob/main/MidwayBaptistChurch/HaroldMacMillian/2017.04.09.E%20Dead%20Flies%20In%20The%20Ointment%20-%20Harold%20McMillian%20-%2049172129558.mp3?raw=true">
+                      </audio>
+                    </div>
+                    </div>        
+                    <div class="col-right"></div>    
+                  </div>
+                </div>
+                <div class="section-3-main">
+                  <div class="row-1">
+                    <h1 class="row-about"><a class="link" style="cursor: pointer">About Harold MacMillian</a></h1>
+                  </div>
+                  <div class="section-3-sub">
+                    <div class="col-bio-main">
+                      <div class="col-bio-1">
+                        <div class="col-bio-image">
+                          <img
+                            id="spencer-bio"
+                            src="/images/bio/harold-bio.png"
+                            alt="A photo of spencer smith for his bio"
+                          />
+                        </div>
+                        <div class="col-bio-socials">
+                          <div class="spencer-socials-icons">
+                            <!--<a href="https://www.youtube.com/c/spencersmith312" target="_blank"><i class="fa fa-brands fa-youtube"></i></a>-->
+                            <a href="https://www.facebook.com/Midway-Baptist-Church-of-Lexington-NC-108158671068695" target="_blank"><i class="fa fa-brands fa-facebook"></i></a>
+                            <a href="https://www.mbclexington.com/" target="_blank"><i class="fa-solid fa-window-restore"></i></a>
+                            <!--<a href="https://twitter.com/brospencer" target="_blank"><i class="fa fa-brands fa-twitter"></i></a>-->
+                            <a href="mailto:harold.mcmillian1@gmail.com" target="_blank"><i class="fa fa-solid fa-envelope"></i></a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-bio-2">
+                        <p>
+                          Pastor Harold McMillian pastored the Heritage Baptist Church which started as a mission on September 2, 2012 and was constituted on January 27, 2013
+                          <br />
+                          <br />
+                          On September 24, 2020, Heritage Baptist Church and its congregation merged with Midway Baptist Church of Lexington and their congregation, which Bro. McMillian now pastors.
+                          <br />
+                          <br />
+                          Pastor McMillian works a full time job and is a full time Pastor. He has a love for children, a love for people and a heart for missions.
+                          <br />
+                          <br />
+                          He studied at Macedonia Baptist College which is part of the ministry of Bro. Ronnie Simpson. He lives in Asheboro NC with his lovely wife, Wendy. They have two daughters, two son-in-laws, and three precious grandchildren who are dearly loved!
+                        </p>
+                      </div>
+                    </div>
+                    <div class="col-share">
+                      <h2>Share</h2>
+                        <div class="share-content">
+                          <input type="text" value="https://scripturealone.com/sermons#dead-flies-in-the-ointment" style="display:none" id="myInputdfito">
+                          <button class="link-button" onclick="mydfitoFunction()"><i class="fa-solid fa-link"></i></button>
+            
+                          <script>
+                            function mydfitoFunction() {
+                              /* Get the text field */
+                              var copyText = document.getElementById("myInputdfito");
+              
+                              /* Select the text field */
+                              copyText.select();
+                              copyText.setSelectionRange(0, 99999); /* For mobile devices */
+              
+                              /* Copy the text inside the text field */
+                              navigator.clipboard.writeText(copyText.value);
+                              
+                              /* Alert the copied text */
+                              alert("Succesfully copied link");
+                            }
+                            </script>
+                            
+                        
+                            <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fscripturealone.com%2Fsermons%23dead-flies-in-the-ointment&amp;src=sdkpreparse" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                            
+                            <a href="https://twitter.com/intent/tweet?text=Listen%20to%20Dead%20Flies%20in%20the%20Ointment%20by%20Harold%20MacMilliand%20on%20Scripture%20Alone&url=https%3A%2F%2Fscripturealone.com%2Fsermons%23dead-flies-in-the-ointment" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        
+                            <a href="https://web.whatsapp.com/send?text=https%3A%2F%2Fscripturealone.com%2Fsermons%23dead-flies-in-the-ointment" target="_blank"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+                            
+                            <a href="https://www.facebook.com/dialog/send?link=https%3A%2F%2Fscripturealone.com%2Fsermons%23dead-flies-in-the-ointment&app_id=291494419107518&redirect_uri=https%3A%2F%2Fwww.sharethis.com" target="_blank"><i class="fa-brands fa-facebook-messenger" aria-hidden="true"></i></a>
+            
+                            <a href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&su=Dead+Flies+in+the+Ointment+by+Harold+MacMillian+on+Scripture+Alone&body=https://scripturealone.com/sermons%23christ-liveth-in-me" target="_blank"><i class="fa fa-solid fa-envelope"></i></a>
+                        </div>
+            
+                        <div class="col-description">
+                          <h2>More Info</h2>
+                          <p>Recorded on: April 9th, 2017</p>
+                          <p>Sermon by: Pastor Harold MacMillian</p>
+                          <p>Church: Midway Baptist Church</p>
+                          <p>Address: 6678 Ridge Rd. Lexington, NC 27295</p>
+                          <p>Phone: 336-259-8225</p>
+                          <p>Email: harold.mcmillian1@gmail.com</p>
+                          <a style="font-family: 'Encode Sans', sans-serif; font-size: 18px; text-align: center;"class="link" href="https://www.mbclexington.com/#contact" target="_blank">Contact Midway Baptist Church</a>
+                        </div>
+            
+                    <script>
+                    $('.share-ico').click(function() {
+                      $(this).parent().toggleClass('expand');
+                    });
+                    </script>
+                  </div>
+                </div>
+              </div>
+                <div class="section-4">
+                  <div class="commentbox"></div>
+                  <script src="https://unpkg.com/commentbox.io/dist/commentBox.min.js"></script>
+                  <script>commentBox('5757798738558976-proj')</script>
+                </div>
+                
+              
+              
+            </div>
+
+          </div>
+
+          <div id="why-i-am-a-baptist" class="image" style="background: url(/images/thumbnails/thumbfinal/heritagebaptistchurch/haroldmacmillian/whyiamabaptist.png);" ><button class="modal-button" href="#whyiamabaptist" data-content="why i am a baptist"></button>why i am a baptist</div>
+          
+
+          <!-- Trigger/Open the Modal
+          <button class="modal-button" href="#myModal1">Open Modal</button>-->
+
+          <!-- The Modal -->
+          <div id="whyiamabaptist" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+              <div class="modal-header">
+                <span class="close">&times;</span>
+                <h2>Why I Am A Baptist</h2>
+              </div>
+              <div class="modal-body">
+                <div class="section-2-wog" id="watch">
+                  <div class="col-left"></div>
+                  <div class="audio-holder">
+                    <audio src="" id="audio"></audio>
+                    <div class="music-player">
+                      <!-- Inside music player element -->
+                      <h1 class="music-name">Why I Am A Baptist</h1>
+                      <p class="artist-name">Harold MacMillian</p>
+                      <div class="harold-disk"></div>
+                      <br />
+                      <br />
+                      <audio class="SA-audioplayer" controls>
+                        <source src="https://github.com/ItsShawn/sa-sermons/blob/main/MidwayBaptistChurch/HaroldMacMillian/2017.04.13.M%20Why%20I%20Am%20A%20Baptist%20-%20Harold%20McMillian%20-%2041817115220.mp3?raw=true">
+                      </audio>
+                    </div>
+                    </div>        
+                    <div class="col-right"></div>    
+                  </div>
+                </div>
+                <div class="section-3-main">
+                  <div class="row-1">
+                    <h1 class="row-about"><a class="link" style="cursor: pointer">About Harold MacMillian</a></h1>
+                  </div>
+                  <div class="section-3-sub">
+                    <div class="col-bio-main">
+                      <div class="col-bio-1">
+                        <div class="col-bio-image">
+                          <img
+                            id="spencer-bio"
+                            src="/images/bio/harold-bio.png"
+                            alt="A photo of spencer smith for his bio"
+                          />
+                        </div>
+                        <div class="col-bio-socials">
+                          <div class="spencer-socials-icons">
+                            <!--<a href="https://www.youtube.com/c/spencersmith312" target="_blank"><i class="fa fa-brands fa-youtube"></i></a>-->
+                            <a href="https://www.facebook.com/Midway-Baptist-Church-of-Lexington-NC-108158671068695" target="_blank"><i class="fa fa-brands fa-facebook"></i></a>
+                            <a href="https://www.mbclexington.com/" target="_blank"><i class="fa-solid fa-window-restore"></i></a>
+                            <!--<a href="https://twitter.com/brospencer" target="_blank"><i class="fa fa-brands fa-twitter"></i></a>-->
+                            <a href="mailto:harold.mcmillian1@gmail.com" target="_blank"><i class="fa fa-solid fa-envelope"></i></a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-bio-2">
+                        <p>
+                          Pastor Harold McMillian pastored the Heritage Baptist Church which started as a mission on September 2, 2012 and was constituted on January 27, 2013
+                          <br />
+                          <br />
+                          On September 24, 2020, Heritage Baptist Church and its congregation merged with Midway Baptist Church of Lexington and their congregation, which Bro. McMillian now pastors.
+                          <br />
+                          <br />
+                          Pastor McMillian works a full time job and is a full time Pastor. He has a love for children, a love for people and a heart for missions.
+                          <br />
+                          <br />
+                          He studied at Macedonia Baptist College which is part of the ministry of Bro. Ronnie Simpson. He lives in Asheboro NC with his lovely wife, Wendy. They have two daughters, two son-in-laws, and three precious grandchildren who are dearly loved!
+                        </p>
+                      </div>
+                    </div>
+                    <div class="col-share">
+                      <h2>Share</h2>
+                        <div class="share-content">
+                          <input type="text" value="https://scripturealone.com/sermons#why-i-am-a-baptist" style="display:none" id="myInputwiaab">
+                          <button class="link-button" onclick="mywiaabFunction()"><i class="fa-solid fa-link"></i></button>
+            
+                          <script>
+                            function mywiaabFunction() {
+                              /* Get the text field */
+                              var copyText = document.getElementById("myInputwiaab");
+              
+                              /* Select the text field */
+                              copyText.select();
+                              copyText.setSelectionRange(0, 99999); /* For mobile devices */
+              
+                              /* Copy the text inside the text field */
+                              navigator.clipboard.writeText(copyText.value);
+                              
+                              /* Alert the copied text */
+                              alert("Succesfully copied link");
+                            }
+                            </script>
+                            
+                        
+                            <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fscripturealone.com%2Fsermons%23why-i-am-a-baptist&amp;src=sdkpreparse" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                            
+                            <a href="https://twitter.com/intent/tweet?text=Listen%20to%20Why%20I%20Am%20A%20Baptist%20by%20Harold%20MacMilliand%20on%20Scripture%20Alone&url=https%3A%2F%2Fscripturealone.com%2Fsermons%23why-i-am-a-baptist" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        
+                            <a href="https://web.whatsapp.com/send?text=https%3A%2F%2Fscripturealone.com%2Fsermons%23why-i-am-a-baptist" target="_blank"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+                            
+                            <a href="https://www.facebook.com/dialog/send?link=https%3A%2F%2Fscripturealone.com%2Fsermons%23why-i-am-a-baptist&app_id=291494419107518&redirect_uri=https%3A%2F%2Fwww.sharethis.com" target="_blank"><i class="fa-brands fa-facebook-messenger" aria-hidden="true"></i></a>
+            
+                            <a href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&su=Why+I+Am+A+Baptist+by+Harold+MacMillian+on+Scripture+Alone&body=https://scripturealone.com/sermons%23why-i-am-a-baptist" target="_blank"><i class="fa fa-solid fa-envelope"></i></a>
+                        </div>
+            
+                        <div class="col-description">
+                          <h2>More Info</h2>
+                          <p>Recorded on: April 13th, 2017</p>
+                          <p>Sermon by: Pastor Harold MacMillian</p>
+                          <p>Church: Midway Baptist Church</p>
+                          <p>Address: 6678 Ridge Rd. Lexington, NC 27295</p>
+                          <p>Phone: 336-259-8225</p>
+                          <p>Email: harold.mcmillian1@gmail.com</p>
+                          <a style="font-family: 'Encode Sans', sans-serif; font-size: 18px; text-align: center;"class="link" href="https://www.mbclexington.com/#contact" target="_blank">Contact Midway Baptist Church</a>
+                        </div>
+            
+                    <script>
+                    $('.share-ico').click(function() {
+                      $(this).parent().toggleClass('expand');
+                    });
+                    </script>
+                  </div>
+                </div>
+              </div>
+                <div class="section-4">
+                  <div class="commentbox"></div>
+                  <script src="https://unpkg.com/commentbox.io/dist/commentBox.min.js"></script>
+                  <script>commentBox('5757798738558976-proj')</script>
+                </div>
+                
+              
+              
+            </div>
+
+          </div>
+
+          <div data-filter-item data-filter-name="the perspective of the resurrection" id="the-perspective-of-the-resurrection" class="image" style="background: url(/images/thumbnails/thumbfinal/heritagebaptistchurch/haroldmacmillian/theperspectiveoftheresurrection.png);"><button class="modal-button" href="#theperspectiveoftheresurrection"></button></div>
+          
+
+          <!-- Trigger/Open the Modal
+          <button class="modal-button" href="#myModal1">Open Modal</button>-->
+
+          <!-- The Modal -->
+          <div id="theperspectiveoftheresurrection" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+              <div class="modal-header">
+                <span class="close">&times;</span>
+                <h2>The Perspective of the Resurrection</h2>
+              </div>
+              <div class="modal-body">
+                <div class="section-2-wog" id="watch">
+                  <div class="col-left"></div>
+                  <div class="audio-holder">
+                    <audio src="" id="audio"></audio>
+                    <div class="music-player">
+                      <!-- Inside music player element -->
+                      <h1 class="music-name">The Perspective of the Resurrection</h1>
+                      <p class="artist-name">Harold MacMillian</p>
+                      <div class="harold-disk"></div>
+                      <br />
+                      <br />
+                      <audio class="SA-audioplayer" controls>
+                        <source src="https://github.com/ItsShawn/sa-sermons/blob/main/MidwayBaptistChurch/HaroldMacMillian/2017.04.16.A%20The%20Perspective%20Of%20The..%20-%20Harold%20McMillian%20-%20418171159522.mp3?raw=true">
+                      </audio>
+                    </div>
+                    </div>        
+                    <div class="col-right"></div>    
+                  </div>
+                </div>
+                <div class="section-3-main">
+                  <div class="row-1">
+                    <h1 class="row-about"><a class="link" style="cursor: pointer">About Harold MacMillian</a></h1>
+                  </div>
+                  <div class="section-3-sub">
+                    <div class="col-bio-main">
+                      <div class="col-bio-1">
+                        <div class="col-bio-image">
+                          <img
+                            id="spencer-bio"
+                            src="/images/bio/harold-bio.png"
+                            alt="A photo of spencer smith for his bio"
+                          />
+                        </div>
+                        <div class="col-bio-socials">
+                          <div class="spencer-socials-icons">
+                            <!--<a href="https://www.youtube.com/c/spencersmith312" target="_blank"><i class="fa fa-brands fa-youtube"></i></a>-->
+                            <a href="https://www.facebook.com/Midway-Baptist-Church-of-Lexington-NC-108158671068695" target="_blank"><i class="fa fa-brands fa-facebook"></i></a>
+                            <a href="https://www.mbclexington.com/" target="_blank"><i class="fa-solid fa-window-restore"></i></a>
+                            <!--<a href="https://twitter.com/brospencer" target="_blank"><i class="fa fa-brands fa-twitter"></i></a>-->
+                            <a href="mailto:harold.mcmillian1@gmail.com" target="_blank"><i class="fa fa-solid fa-envelope"></i></a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-bio-2">
+                        <p>
+                          Pastor Harold McMillian pastored the Heritage Baptist Church which started as a mission on September 2, 2012 and was constituted on January 27, 2013
+                          <br />
+                          <br />
+                          On September 24, 2020, Heritage Baptist Church and its congregation merged with Midway Baptist Church of Lexington and their congregation, which Bro. McMillian now pastors.
+                          <br />
+                          <br />
+                          Pastor McMillian works a full time job and is a full time Pastor. He has a love for children, a love for people and a heart for missions.
+                          <br />
+                          <br />
+                          He studied at Macedonia Baptist College which is part of the ministry of Bro. Ronnie Simpson. He lives in Asheboro NC with his lovely wife, Wendy. They have two daughters, two son-in-laws, and three precious grandchildren who are dearly loved!
+                        </p>
+                      </div>
+                    </div>
+                    <div class="col-share">
+                      <h2>Share</h2>
+                        <div class="share-content">
+                          <input type="text" value="https://scripturealone.com/sermons#the-perspective-of-the-resurrection" style="display:none" id="myInputtpofr">
+                          <button class="link-button" onclick="mytpofrFunction()"><i class="fa-solid fa-link"></i></button>
+            
+                          <script>
+                            function mytpofrFunction() {
+                              /* Get the text field */
+                              var copyText = document.getElementById("myInputtpofr");
+              
+                              /* Select the text field */
+                              copyText.select();
+                              copyText.setSelectionRange(0, 99999); /* For mobile devices */
+              
+                              /* Copy the text inside the text field */
+                              navigator.clipboard.writeText(copyText.value);
+                              
+                              /* Alert the copied text */
+                              alert("Succesfully copied link");
+                            }
+                            </script>
+                            
+                        
+                            <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fscripturealone.com%2Fsermons%23the-perspective-of-the-resurrection&amp;src=sdkpreparse" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                            
+                            <a href="https://twitter.com/intent/tweet?text=Listen%20to%20The%20Perspective%20of%20the%20Resurrection%20by%20Harold%20MacMilliand%20on%20Scripture%20Alone&url=https%3A%2F%2Fscripturealone.com%2Fsermons%23the-perspective-of-the-resurrection" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        
+                            <a href="https://web.whatsapp.com/send?text=https%3A%2F%2Fscripturealone.com%2Fsermons%23the-perspective-of-the-resurrection" target="_blank"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+                            
+                            <a href="https://www.facebook.com/dialog/send?link=https%3A%2F%2Fscripturealone.com%2Fsermons%23the-perspective-of-the-resurrection&app_id=291494419107518&redirect_uri=https%3A%2F%2Fwww.sharethis.com" target="_blank"><i class="fa-brands fa-facebook-messenger" aria-hidden="true"></i></a>
+            
+                            <a href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&su=The+Perspective+of+the+Resurrection+by+Harold+MacMillian+on+Scripture+Alone&body=https://scripturealone.com/sermons%23the-perspective-of-the-resurrection" target="_blank"><i class="fa fa-solid fa-envelope"></i></a>
+                        </div>
+            
+                        <div class="col-description">
+                          <h2>More Info</h2>
+                          <p>Recorded on: April 16th, 2017</p>
+                          <p>Sermon by: Pastor Harold MacMillian</p>
+                          <p>Church: Midway Baptist Church</p>
+                          <p>Address: 6678 Ridge Rd. Lexington, NC 27295</p>
+                          <p>Phone: 336-259-8225</p>
+                          <p>Email: harold.mcmillian1@gmail.com</p>
+                          <a style="font-family: 'Encode Sans', sans-serif; font-size: 18px; text-align: center;"class="link" href="https://www.mbclexington.com/#contact" target="_blank">Contact Midway Baptist Church</a>
+                        </div>
+            
+                    <script>
+                    $('.share-ico').click(function() {
+                      $(this).parent().toggleClass('expand');
+                    });
+                    </script>
+                  </div>
+                </div>
+              </div>
+                <div class="section-4">
+                  <div class="commentbox"></div>
+                  <script src="https://unpkg.com/commentbox.io/dist/commentBox.min.js"></script>
+                  <script>commentBox('5757798738558976-proj')</script>
+                </div>
+                
+              
+              
+            </div>
+
+          </div>
+
+          <div data-filter-item data-filter-name="the failure of a nation" id="the-failure-of-a-nation" class="image" style="background: url(/images/thumbnails/thumbfinal/heritagebaptistchurch/haroldmacmillian/thefailureofanation.png);"><button class="modal-button" href="#thefailureofanation"></button></div>
+          
+
+          <!-- Trigger/Open the Modal
+          <button class="modal-button" href="#myModal1">Open Modal</button>-->
+
+          <!-- The Modal -->
+          <div id="thefailureofanation" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+              <div class="modal-header">
+                <span class="close">&times;</span>
+                <h2>The Failure Of A Nation</h2>
+              </div>
+              <div class="modal-body">
+                <div class="section-2-wog" id="watch">
+                  <div class="col-left"></div>
+                  <div class="audio-holder">
+                    <audio src="" id="audio"></audio>
+                    <div class="music-player">
+                      <!-- Inside music player element -->
+                      <h1 class="music-name">The Failure Of A Nation</h1>
+                      <p class="artist-name">Harold MacMillian</p>
+                      <div class="harold-disk"></div>
+                      <br />
+                      <br />
+                      <audio class="SA-audioplayer" controls>
+                        <source src="https://github.com/ItsShawn/sa-sermons/blob/main/MidwayBaptistChurch/HaroldMacMillian/2017.04.20.M%20The%20Failure%20Of%20A%20Nation%20-%20Harold%20McMillian%20-%20421172055220.mp3?raw=true">
+                      </audio>
+                    </div>
+                    </div>        
+                    <div class="col-right"></div>    
+                  </div>
+                </div>
+                <div class="section-3-main">
+                  <div class="row-1">
+                    <h1 class="row-about"><a class="link" style="cursor: pointer">About Harold MacMillian</a></h1>
+                  </div>
+                  <div class="section-3-sub">
+                    <div class="col-bio-main">
+                      <div class="col-bio-1">
+                        <div class="col-bio-image">
+                          <img
+                            id="spencer-bio"
+                            src="/images/bio/harold-bio.png"
+                            alt="A photo of spencer smith for his bio"
+                          />
+                        </div>
+                        <div class="col-bio-socials">
+                          <div class="spencer-socials-icons">
+                            <!--<a href="https://www.youtube.com/c/spencersmith312" target="_blank"><i class="fa fa-brands fa-youtube"></i></a>-->
+                            <a href="https://www.facebook.com/Midway-Baptist-Church-of-Lexington-NC-108158671068695" target="_blank"><i class="fa fa-brands fa-facebook"></i></a>
+                            <a href="https://www.mbclexington.com/" target="_blank"><i class="fa-solid fa-window-restore"></i></a>
+                            <!--<a href="https://twitter.com/brospencer" target="_blank"><i class="fa fa-brands fa-twitter"></i></a>-->
+                            <a href="mailto:harold.mcmillian1@gmail.com" target="_blank"><i class="fa fa-solid fa-envelope"></i></a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-bio-2">
+                        <p>
+                          Pastor Harold McMillian pastored the Heritage Baptist Church which started as a mission on September 2, 2012 and was constituted on January 27, 2013
+                          <br />
+                          <br />
+                          On September 24, 2020, Heritage Baptist Church and its congregation merged with Midway Baptist Church of Lexington and their congregation, which Bro. McMillian now pastors.
+                          <br />
+                          <br />
+                          Pastor McMillian works a full time job and is a full time Pastor. He has a love for children, a love for people and a heart for missions.
+                          <br />
+                          <br />
+                          He studied at Macedonia Baptist College which is part of the ministry of Bro. Ronnie Simpson. He lives in Asheboro NC with his lovely wife, Wendy. They have two daughters, two son-in-laws, and three precious grandchildren who are dearly loved!
+                        </p>
+                      </div>
+                    </div>
+                    <div class="col-share">
+                      <h2>Share</h2>
+                        <div class="share-content">
+                          <input type="text" value="https://scripturealone.com/sermons#the-failure-of-a-nation" style="display:none" id="myInputtfoan">
+                          <button class="link-button" onclick="mytfoanFunction()"><i class="fa-solid fa-link"></i></button>
+            
+                          <script>
+                            function mytfoanFunction() {
+                              /* Get the text field */
+                              var copyText = document.getElementById("myInputtfoan");
+              
+                              /* Select the text field */
+                              copyText.select();
+                              copyText.setSelectionRange(0, 99999); /* For mobile devices */
+              
+                              /* Copy the text inside the text field */
+                              navigator.clipboard.writeText(copyText.value);
+                              
+                              /* Alert the copied text */
+                              alert("Succesfully copied link");
+                            }
+                            </script>
+                            
+                        
+                            <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fscripturealone.com%2Fsermons%23the-failure-of-a-nation&amp;src=sdkpreparse" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                            
+                            <a href="https://twitter.com/intent/tweet?text=Listen%20to%20The%20Failure%20Of%20A%20Nation%20by%20Harold%20MacMilliand%20on%20Scripture%20Alone&url=https%3A%2F%2Fscripturealone.com%2Fsermons%23the-failure-of-a-nation" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        
+                            <a href="https://web.whatsapp.com/send?text=https%3A%2F%2Fscripturealone.com%2Fsermons%23the-failure-of-a-nation" target="_blank"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+                            
+                            <a href="https://www.facebook.com/dialog/send?link=https%3A%2F%2Fscripturealone.com%2Fsermons%23the-failure-of-a-nation&app_id=291494419107518&redirect_uri=https%3A%2F%2Fwww.sharethis.com" target="_blank"><i class="fa-brands fa-facebook-messenger" aria-hidden="true"></i></a>
+            
+                            <a href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&su=The+Failure+Of+A+Nation+by+Harold+MacMillian+on+Scripture+Alone&body=https://scripturealone.com/sermons%23the-failure-of-a-nation" target="_blank"><i class="fa fa-solid fa-envelope"></i></a>
+                        </div>
+            
+                        <div class="col-description">
+                          <h2>More Info</h2>
+                          <p>Recorded on: April 20th, 2017</p>
+                          <p>Sermon by: Pastor Harold MacMillian</p>
+                          <p>Church: Midway Baptist Church</p>
+                          <p>Address: 6678 Ridge Rd. Lexington, NC 27295</p>
+                          <p>Phone: 336-259-8225</p>
+                          <p>Email: harold.mcmillian1@gmail.com</p>
+                          <a style="font-family: 'Encode Sans', sans-serif; font-size: 18px; text-align: center;"class="link" href="https://www.mbclexington.com/#contact" target="_blank">Contact Midway Baptist Church</a>
+                        </div>
+            
+                    <script>
+                    $('.share-ico').click(function() {
+                      $(this).parent().toggleClass('expand');
+                    });
+                    </script>
+                  </div>
+                </div>
+              </div>
+                <div class="section-4">
+                  <div class="commentbox"></div>
+                  <script src="https://unpkg.com/commentbox.io/dist/commentBox.min.js"></script>
+                  <script>commentBox('5757798738558976-proj')</script>
+                </div>
+                
+              
+              
+            </div>
+
+          </div>
+
+          <div data-filter-item data-filter-name="where are the nine" id="where-are-the-nine" class="image" style="background: url(/images/thumbnails/thumbfinal/heritagebaptistchurch/haroldmacmillian/wherearethenine.png);"><button class="modal-button" href="#wherearethenine"></button></div>
+          
+
+          <!-- Trigger/Open the Modal
+          <button class="modal-button" href="#myModal1">Open Modal</button>-->
+
+          <!-- The Modal -->
+          <div id="wherearethenine" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+              <div class="modal-header">
+                <span class="close">&times;</span>
+                <h2>Where Are The Nine?</h2>
+              </div>
+              <div class="modal-body">
+                <div class="section-2-wog" id="watch">
+                  <div class="col-left"></div>
+                  <div class="audio-holder">
+                    <audio src="" id="audio"></audio>
+                    <div class="music-player">
+                      <!-- Inside music player element -->
+                      <h1 class="music-name">Where Are The Nine?</h1>
+                      <p class="artist-name">Harold MacMillian</p>
+                      <div class="harold-disk"></div>
+                      <br />
+                      <br />
+                      <audio class="SA-audioplayer" controls>
+                        <source src="https://github.com/ItsShawn/sa-sermons/blob/main/MidwayBaptistChurch/HaroldMacMillian/2017.04.23.A%20Where%20Are%20The%20Nine%20-%20Harold%20McMillian%20-%2042417188571.mp3?raw=true">
+                      </audio>
+                    </div>
+                    </div>        
+                    <div class="col-right"></div>    
+                  </div>
+                </div>
+                <div class="section-3-main">
+                  <div class="row-1">
+                    <h1 class="row-about"><a class="link" style="cursor: pointer">About Harold MacMillian</a></h1>
+                  </div>
+                  <div class="section-3-sub">
+                    <div class="col-bio-main">
+                      <div class="col-bio-1">
+                        <div class="col-bio-image">
+                          <img
+                            id="spencer-bio"
+                            src="/images/bio/harold-bio.png"
+                            alt="A photo of spencer smith for his bio"
+                          />
+                        </div>
+                        <div class="col-bio-socials">
+                          <div class="spencer-socials-icons">
+                            <!--<a href="https://www.youtube.com/c/spencersmith312" target="_blank"><i class="fa fa-brands fa-youtube"></i></a>-->
+                            <a href="https://www.facebook.com/Midway-Baptist-Church-of-Lexington-NC-108158671068695" target="_blank"><i class="fa fa-brands fa-facebook"></i></a>
+                            <a href="https://www.mbclexington.com/" target="_blank"><i class="fa-solid fa-window-restore"></i></a>
+                            <!--<a href="https://twitter.com/brospencer" target="_blank"><i class="fa fa-brands fa-twitter"></i></a>-->
+                            <a href="mailto:harold.mcmillian1@gmail.com" target="_blank"><i class="fa fa-solid fa-envelope"></i></a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-bio-2">
+                        <p>
+                          Pastor Harold McMillian pastored the Heritage Baptist Church which started as a mission on September 2, 2012 and was constituted on January 27, 2013
+                          <br />
+                          <br />
+                          On September 24, 2020, Heritage Baptist Church and its congregation merged with Midway Baptist Church of Lexington and their congregation, which Bro. McMillian now pastors.
+                          <br />
+                          <br />
+                          Pastor McMillian works a full time job and is a full time Pastor. He has a love for children, a love for people and a heart for missions.
+                          <br />
+                          <br />
+                          He studied at Macedonia Baptist College which is part of the ministry of Bro. Ronnie Simpson. He lives in Asheboro NC with his lovely wife, Wendy. They have two daughters, two son-in-laws, and three precious grandchildren who are dearly loved!
+                        </p>
+                      </div>
+                    </div>
+                    <div class="col-share">
+                      <h2>Share</h2>
+                        <div class="share-content">
+                          <input type="text" value="https://scripturealone.com/sermons#where-are-the-nine" style="display:none" id="myInputwatn">
+                          <button class="link-button" onclick="mywatnFunction()"><i class="fa-solid fa-link"></i></button>
+            
+                          <script>
+                            function mywatnFunction() {
+                              /* Get the text field */
+                              var copyText = document.getElementById("myInputwatn");
+              
+                              /* Select the text field */
+                              copyText.select();
+                              copyText.setSelectionRange(0, 99999); /* For mobile devices */
+              
+                              /* Copy the text inside the text field */
+                              navigator.clipboard.writeText(copyText.value);
+                              
+                              /* Alert the copied text */
+                              alert("Succesfully copied link");
+                            }
+                            </script>
+                            
+                        
+                            <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fscripturealone.com%2Fsermons%23where-are-the-nine&amp;src=sdkpreparse" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                            
+                            <a href="https://twitter.com/intent/tweet?text=Listen%20to%20Where%20Are%20The%20Nine?%20by%20Harold%20MacMilliand%20on%20Scripture%20Alone&url=https%3A%2F%2Fscripturealone.com%2Fsermons%23where-are-the-nine" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        
+                            <a href="https://web.whatsapp.com/send?text=https%3A%2F%2Fscripturealone.com%2Fsermons%23where-are-the-nine" target="_blank"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+                            
+                            <a href="https://www.facebook.com/dialog/send?link=https%3A%2F%2Fscripturealone.com%2Fsermons%23where-are-the-nine&app_id=291494419107518&redirect_uri=https%3A%2F%2Fwww.sharethis.com" target="_blank"><i class="fa-brands fa-facebook-messenger" aria-hidden="true"></i></a>
+            
+                            <a href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&su=Where+Are+The+Nine+by+Harold+MacMillian+on+Scripture+Alone&body=https://scripturealone.com/sermons%23where-are-the-nine" target="_blank"><i class="fa fa-solid fa-envelope"></i></a>
+                        </div>
+            
+                        <div class="col-description">
+                          <h2>More Info</h2>
+                          <p>Recorded on: April 23rd, 2017</p>
+                          <p>Sermon by: Pastor Harold MacMillian</p>
+                          <p>Church: Midway Baptist Church</p>
+                          <p>Address: 6678 Ridge Rd. Lexington, NC 27295</p>
+                          <p>Phone: 336-259-8225</p>
+                          <p>Email: harold.mcmillian1@gmail.com</p>
+                          <a style="font-family: 'Encode Sans', sans-serif; font-size: 18px; text-align: center;"class="link" href="https://www.mbclexington.com/#contact" target="_blank">Contact Midway Baptist Church</a>
+                        </div>
+            
+                    <script>
+                    $('.share-ico').click(function() {
+                      $(this).parent().toggleClass('expand');
+                    });
+                    </script>
+                  </div>
+                </div>
+              </div>
+                <div class="section-4">
+                  <div class="commentbox"></div>
+                  <script src="https://unpkg.com/commentbox.io/dist/commentBox.min.js"></script>
+                  <script>commentBox('5757798738558976-proj')</script>
+                </div>
+                
+              
+              
+            </div>
+
+          </div>
+
+          <div data-filter-item data-filter-name="we need revival" id="we-need-revival" class="image" style="background: url(/images/thumbnails/thumbfinal/heritagebaptistchurch/haroldmacmillian/weneedrevival.png);"><button class="modal-button" href="#weneedrevival"></button></div>
+          
+
+          <!-- Trigger/Open the Modal
+          <button class="modal-button" href="#myModal1">Open Modal</button>-->
+
+          <!-- The Modal -->
+          <div id="weneedrevival" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+              <div class="modal-header">
+                <span class="close">&times;</span>
+                <h2>We Need Revival</h2>
+              </div>
+              <div class="modal-body">
+                <div class="section-2-wog" id="watch">
+                  <div class="col-left"></div>
+                  <div class="audio-holder">
+                    <audio src="" id="audio"></audio>
+                    <div class="music-player">
+                      <!-- Inside music player element -->
+                      <h1 class="music-name">We Need Revival</h1>
+                      <p class="artist-name">Harold MacMillian</p>
+                      <div class="harold-disk"></div>
+                      <br />
+                      <br />
+                      <audio class="SA-audioplayer" controls>
+                        <source src="https://github.com/ItsShawn/sa-sermons/blob/main/MidwayBaptistChurch/HaroldMacMillian/2017.04.23.E%20We%20Need%20Revival%20-%20Harold%20McMillian%20-%20424172039228.mp3?raw=true">
+                      </audio>
+                    </div>
+                    </div>        
+                    <div class="col-right"></div>    
+                  </div>
+                </div>
+                <div class="section-3-main">
+                  <div class="row-1">
+                    <h1 class="row-about"><a class="link" style="cursor: pointer">About Harold MacMillian</a></h1>
+                  </div>
+                  <div class="section-3-sub">
+                    <div class="col-bio-main">
+                      <div class="col-bio-1">
+                        <div class="col-bio-image">
+                          <img
+                            id="spencer-bio"
+                            src="/images/bio/harold-bio.png"
+                            alt="A photo of spencer smith for his bio"
+                          />
+                        </div>
+                        <div class="col-bio-socials">
+                          <div class="spencer-socials-icons">
+                            <!--<a href="https://www.youtube.com/c/spencersmith312" target="_blank"><i class="fa fa-brands fa-youtube"></i></a>-->
+                            <a href="https://www.facebook.com/Midway-Baptist-Church-of-Lexington-NC-108158671068695" target="_blank"><i class="fa fa-brands fa-facebook"></i></a>
+                            <a href="https://www.mbclexington.com/" target="_blank"><i class="fa-solid fa-window-restore"></i></a>
+                            <!--<a href="https://twitter.com/brospencer" target="_blank"><i class="fa fa-brands fa-twitter"></i></a>-->
+                            <a href="mailto:harold.mcmillian1@gmail.com" target="_blank"><i class="fa fa-solid fa-envelope"></i></a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-bio-2">
+                        <p>
+                          Pastor Harold McMillian pastored the Heritage Baptist Church which started as a mission on September 2, 2012 and was constituted on January 27, 2013
+                          <br />
+                          <br />
+                          On September 24, 2020, Heritage Baptist Church and its congregation merged with Midway Baptist Church of Lexington and their congregation, which Bro. McMillian now pastors.
+                          <br />
+                          <br />
+                          Pastor McMillian works a full time job and is a full time Pastor. He has a love for children, a love for people and a heart for missions.
+                          <br />
+                          <br />
+                          He studied at Macedonia Baptist College which is part of the ministry of Bro. Ronnie Simpson. He lives in Asheboro NC with his lovely wife, Wendy. They have two daughters, two son-in-laws, and three precious grandchildren who are dearly loved!
+                        </p>
+                      </div>
+                    </div>
+                    <div class="col-share">
+                      <h2>Share</h2>
+                        <div class="share-content">
+                          <input type="text" value="https://scripturealone.com/sermons#we-need-revival" style="display:none" id="myInputwnr">
+                          <button class="link-button" onclick="mywnrFunction()"><i class="fa-solid fa-link"></i></button>
+            
+                          <script>
+                            function mywnrFunction() {
+                              /* Get the text field */
+                              var copyText = document.getElementById("myInputwnr");
+              
+                              /* Select the text field */
+                              copyText.select();
+                              copyText.setSelectionRange(0, 99999); /* For mobile devices */
+              
+                              /* Copy the text inside the text field */
+                              navigator.clipboard.writeText(copyText.value);
+                              
+                              /* Alert the copied text */
+                              alert("Succesfully copied link");
+                            }
+                            </script>
+                            
+                        
+                            <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fscripturealone.com%2Fsermons%23we-need-revival&amp;src=sdkpreparse" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                            
+                            <a href="https://twitter.com/intent/tweet?text=Listen%20to%20We%20Need%20Revival%20by%20Harold%20MacMilliand%20on%20Scripture%20Alone&url=https%3A%2F%2Fscripturealone.com%2Fsermons%23we-need-revival" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        
+                            <a href="https://web.whatsapp.com/send?text=https%3A%2F%2Fscripturealone.com%2Fsermons%23we-need-revival" target="_blank"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+                            
+                            <a href="https://www.facebook.com/dialog/send?link=https%3A%2F%2Fscripturealone.com%2Fsermons%23we-need-revival&app_id=291494419107518&redirect_uri=https%3A%2F%2Fwww.sharethis.com" target="_blank"><i class="fa-brands fa-facebook-messenger" aria-hidden="true"></i></a>
+            
+                            <a href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&su=We+Need+Revival+by+Harold+MacMillian+on+Scripture+Alone&body=https://scripturealone.com/sermons%23we-need-revival" target="_blank"><i class="fa fa-solid fa-envelope"></i></a>
+                        </div>
+            
+                        <div class="col-description">
+                          <h2>More Info</h2>
+                          <p>Recorded on: April 23rd, 2017</p>
+                          <p>Sermon by: Pastor Harold MacMillian</p>
+                          <p>Church: Midway Baptist Church</p>
+                          <p>Address: 6678 Ridge Rd. Lexington, NC 27295</p>
+                          <p>Phone: 336-259-8225</p>
+                          <p>Email: harold.mcmillian1@gmail.com</p>
+                          <a style="font-family: 'Encode Sans', sans-serif; font-size: 18px; text-align: center;"class="link" href="https://www.mbclexington.com/#contact" target="_blank">Contact Midway Baptist Church</a>
+                        </div>
+            
+                    <script>
+                    $('.share-ico').click(function() {
+                      $(this).parent().toggleClass('expand');
+                    });
+                    </script>
+                  </div>
+                </div>
+              </div>
+                <div class="section-4">
+                  <div class="commentbox"></div>
+                  <script src="https://unpkg.com/commentbox.io/dist/commentBox.min.js"></script>
+                  <script>commentBox('5757798738558976-proj')</script>
+                </div>
+                
+              
+              
+            </div>
+
+          </div>
+
+          <div data-filter-item data-filter-name="leaving your first love" id="leaving-your-first-love" class="image" style="background: url(/images/thumbnails/thumbfinal/heritagebaptistchurch/haroldmacmillian/leavingyourfirstlove.png);"><button class="modal-button" href="#leavingyourfirstlove"></button></div>
+          
+
+          <!-- Trigger/Open the Modal
+          <button class="modal-button" href="#myModal1">Open Modal</button>-->
+
+          <!-- The Modal -->
+          <div id="leavingyourfirstlove" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+              <div class="modal-header">
+                <span class="close">&times;</span>
+                <h2>Leaving Your First Love</h2>
+              </div>
+              <div class="modal-body">
+                <div class="section-2-wog" id="watch">
+                  <div class="col-left"></div>
+                  <div class="audio-holder">
+                    <audio src="" id="audio"></audio>
+                    <div class="music-player">
+                      <!-- Inside music player element -->
+                      <h1 class="music-name">Leaving Your First Love</h1>
+                      <p class="artist-name">Harold MacMillian</p>
+                      <div class="harold-disk"></div>
+                      <br />
+                      <br />
+                      <audio class="SA-audioplayer" controls>
+                        <source src="https://github.com/ItsShawn/sa-sermons/blob/main/MidwayBaptistChurch/HaroldMacMillian/2017.04.27.M%20Leaving%20Your%20First%20Love%20-%20Harold%20McMillian%20-%20428172131341.mp3?raw=true">
+                      </audio>
+                    </div>
+                    </div>        
+                    <div class="col-right"></div>    
+                  </div>
+                </div>
+                <div class="section-3-main">
+                  <div class="row-1">
+                    <h1 class="row-about"><a class="link" style="cursor: pointer">About Harold MacMillian</a></h1>
+                  </div>
+                  <div class="section-3-sub">
+                    <div class="col-bio-main">
+                      <div class="col-bio-1">
+                        <div class="col-bio-image">
+                          <img
+                            id="spencer-bio"
+                            src="/images/bio/harold-bio.png"
+                            alt="A photo of spencer smith for his bio"
+                          />
+                        </div>
+                        <div class="col-bio-socials">
+                          <div class="spencer-socials-icons">
+                            <!--<a href="https://www.youtube.com/c/spencersmith312" target="_blank"><i class="fa fa-brands fa-youtube"></i></a>-->
+                            <a href="https://www.facebook.com/Midway-Baptist-Church-of-Lexington-NC-108158671068695" target="_blank"><i class="fa fa-brands fa-facebook"></i></a>
+                            <a href="https://www.mbclexington.com/" target="_blank"><i class="fa-solid fa-window-restore"></i></a>
+                            <!--<a href="https://twitter.com/brospencer" target="_blank"><i class="fa fa-brands fa-twitter"></i></a>-->
+                            <a href="mailto:harold.mcmillian1@gmail.com" target="_blank"><i class="fa fa-solid fa-envelope"></i></a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-bio-2">
+                        <p>
+                          Pastor Harold McMillian pastored the Heritage Baptist Church which started as a mission on September 2, 2012 and was constituted on January 27, 2013
+                          <br />
+                          <br />
+                          On September 24, 2020, Heritage Baptist Church and its congregation merged with Midway Baptist Church of Lexington and their congregation, which Bro. McMillian now pastors.
+                          <br />
+                          <br />
+                          Pastor McMillian works a full time job and is a full time Pastor. He has a love for children, a love for people and a heart for missions.
+                          <br />
+                          <br />
+                          He studied at Macedonia Baptist College which is part of the ministry of Bro. Ronnie Simpson. He lives in Asheboro NC with his lovely wife, Wendy. They have two daughters, two son-in-laws, and three precious grandchildren who are dearly loved!
+                        </p>
+                      </div>
+                    </div>
+                    <div class="col-share">
+                      <h2>Share</h2>
+                        <div class="share-content">
+                          <input type="text" value="https://scripturealone.com/sermons#leaving-your-first-love" style="display:none" id="myInputtlyfl">
+                          <button class="link-button" onclick="mytlyflFunction()"><i class="fa-solid fa-link"></i></button>
+            
+                          <script>
+                            function mytlyflFunction() {
+                              /* Get the text field */
+                              var copyText = document.getElementById("myInputtlyfl");
+              
+                              /* Select the text field */
+                              copyText.select();
+                              copyText.setSelectionRange(0, 99999); /* For mobile devices */
+              
+                              /* Copy the text inside the text field */
+                              navigator.clipboard.writeText(copyText.value);
+                              
+                              /* Alert the copied text */
+                              alert("Succesfully copied link");
+                            }
+                            </script>
+                            
+                        
+                            <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fscripturealone.com%2Fsermons%23leaving-your-first-love&amp;src=sdkpreparse" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                            
+                            <a href="https://twitter.com/intent/tweet?text=Listen%20to%20Leaving%20Your%20First%20Love%20by%20Harold%20MacMilliand%20on%20Scripture%20Alone&url=https%3A%2F%2Fscripturealone.com%2Fsermons%23leaving-your-first-love" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        
+                            <a href="https://web.whatsapp.com/send?text=https%3A%2F%2Fscripturealone.com%2Fsermons%23leaving-your-first-love" target="_blank"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+                            
+                            <a href="https://www.facebook.com/dialog/send?link=https%3A%2F%2Fscripturealone.com%2Fsermons%23leaving-your-first-love&app_id=291494419107518&redirect_uri=https%3A%2F%2Fwww.sharethis.com" target="_blank"><i class="fa-brands fa-facebook-messenger" aria-hidden="true"></i></a>
+            
+                            <a href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&su=Leaving+Your+First+Love+by+Harold+MacMillian+on+Scripture+Alone&body=https://scripturealone.com/sermons%23leaving-your-first-love" target="_blank"><i class="fa fa-solid fa-envelope"></i></a>
+                        </div>
+            
+                        <div class="col-description">
+                          <h2>More Info</h2>
+                          <p>Recorded on: April 27th, 2017</p>
+                          <p>Sermon by: Pastor Harold MacMillian</p>
+                          <p>Church: Midway Baptist Church</p>
+                          <p>Address: 6678 Ridge Rd. Lexington, NC 27295</p>
+                          <p>Phone: 336-259-8225</p>
+                          <p>Email: harold.mcmillian1@gmail.com</p>
+                          <a style="font-family: 'Encode Sans', sans-serif; font-size: 18px; text-align: center;"class="link" href="https://www.mbclexington.com/#contact" target="_blank">Contact Midway Baptist Church</a>
+                        </div>
+            
+                    <script>
+                    $('.share-ico').click(function() {
+                      $(this).parent().toggleClass('expand');
+                    });
+                    </script>
+                  </div>
+                </div>
+              </div>
+                <div class="section-4">
+                  <div class="commentbox"></div>
+                  <script src="https://unpkg.com/commentbox.io/dist/commentBox.min.js"></script>
+                  <script>commentBox('5757798738558976-proj')</script>
+                </div>
+                
+              
+              
+            </div>
+
+          </div>
+
+          <div data-filter-item data-filter-name="the dead church" id="the-dead-church" class="image" style="background: url(/images/thumbnails/thumbfinal/heritagebaptistchurch/haroldmacmillian/thedeadchurch.png);"><button class="modal-button" href="#thedeadchurch"></button></div>
+          
+
+          <!-- Trigger/Open the Modal
+          <button class="modal-button" href="#myModal1">Open Modal</button>-->
+
+          <!-- The Modal -->
+          <div id="thedeadchurch" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+              <div class="modal-header">
+                <span class="close">&times;</span>
+                <h2>The Dead Church</h2>
+              </div>
+              <div class="modal-body">
+                <div class="section-2-wog" id="watch">
+                  <div class="col-left"></div>
+                  <div class="audio-holder">
+                    <audio src="" id="audio"></audio>
+                    <div class="music-player">
+                      <!-- Inside music player element -->
+                      <h1 class="music-name">The Dead Church</h1>
+                      <p class="artist-name">Harold MacMillian</p>
+                      <div class="harold-disk"></div>
+                      <br />
+                      <br />
+                      <audio class="SA-audioplayer" controls>
+                        <source src="https://github.com/ItsShawn/sa-sermons/blob/main/MidwayBaptistChurch/HaroldMacMillian/2017.04.30.E%20The%20Dead%20Church%20-%20Harold%20McMillian%20-%205117203004.mp3?raw=true">
+                      </audio>
+                    </div>
+                    </div>        
+                    <div class="col-right"></div>    
+                  </div>
+                </div>
+                <div class="section-3-main">
+                  <div class="row-1">
+                    <h1 class="row-about"><a class="link" style="cursor: pointer">About Harold MacMillian</a></h1>
+                  </div>
+                  <div class="section-3-sub">
+                    <div class="col-bio-main">
+                      <div class="col-bio-1">
+                        <div class="col-bio-image">
+                          <img
+                            id="spencer-bio"
+                            src="/images/bio/harold-bio.png"
+                            alt="A photo of spencer smith for his bio"
+                          />
+                        </div>
+                        <div class="col-bio-socials">
+                          <div class="spencer-socials-icons">
+                            <!--<a href="https://www.youtube.com/c/spencersmith312" target="_blank"><i class="fa fa-brands fa-youtube"></i></a>-->
+                            <a href="https://www.facebook.com/Midway-Baptist-Church-of-Lexington-NC-108158671068695" target="_blank"><i class="fa fa-brands fa-facebook"></i></a>
+                            <a href="https://www.mbclexington.com/" target="_blank"><i class="fa-solid fa-window-restore"></i></a>
+                            <!--<a href="https://twitter.com/brospencer" target="_blank"><i class="fa fa-brands fa-twitter"></i></a>-->
+                            <a href="mailto:harold.mcmillian1@gmail.com" target="_blank"><i class="fa fa-solid fa-envelope"></i></a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-bio-2">
+                        <p>
+                          Pastor Harold McMillian pastored the Heritage Baptist Church which started as a mission on September 2, 2012 and was constituted on January 27, 2013
+                          <br />
+                          <br />
+                          On September 24, 2020, Heritage Baptist Church and its congregation merged with Midway Baptist Church of Lexington and their congregation, which Bro. McMillian now pastors.
+                          <br />
+                          <br />
+                          Pastor McMillian works a full time job and is a full time Pastor. He has a love for children, a love for people and a heart for missions.
+                          <br />
+                          <br />
+                          He studied at Macedonia Baptist College which is part of the ministry of Bro. Ronnie Simpson. He lives in Asheboro NC with his lovely wife, Wendy. They have two daughters, two son-in-laws, and three precious grandchildren who are dearly loved!
+                        </p>
+                      </div>
+                    </div>
+                    <div class="col-share">
+                      <h2>Share</h2>
+                        <div class="share-content">
+                          <input type="text" value="https://scripturealone.com/sermons#the-dead-church" style="display:none" id="myInputtdc">
+                          <button class="link-button" onclick="mytdcFunction()"><i class="fa-solid fa-link"></i></button>
+            
+                          <script>
+                            function mytdcFunction() {
+                              /* Get the text field */
+                              var copyText = document.getElementById("myInputtdc");
+              
+                              /* Select the text field */
+                              copyText.select();
+                              copyText.setSelectionRange(0, 99999); /* For mobile devices */
+              
+                              /* Copy the text inside the text field */
+                              navigator.clipboard.writeText(copyText.value);
+                              
+                              /* Alert the copied text */
+                              alert("Succesfully copied link");
+                            }
+                            </script>
+                            
+                        
+                            <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fscripturealone.com%2Fsermons%23the-dead-church&amp;src=sdkpreparse" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                            
+                            <a href="https://twitter.com/intent/tweet?text=Listen%20to%20The%20Dead%20Church%20by%20Harold%20MacMilliand%20on%20Scripture%20Alone&url=https%3A%2F%2Fscripturealone.com%2Fsermons%23the-dead-church" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        
+                            <a href="https://web.whatsapp.com/send?text=https%3A%2F%2Fscripturealone.com%2Fsermons%23the-dead-church" target="_blank"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+                            
+                            <a href="https://www.facebook.com/dialog/send?link=https%3A%2F%2Fscripturealone.com%2Fsermons%23the-dead-church&app_id=291494419107518&redirect_uri=https%3A%2F%2Fwww.sharethis.com" target="_blank"><i class="fa-brands fa-facebook-messenger" aria-hidden="true"></i></a>
+            
+                            <a href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&su=The+Dead+Church+by+Harold+MacMillian+on+Scripture+Alone&body=https://scripturealone.com/sermons%23the-dead-church" target="_blank"><i class="fa fa-solid fa-envelope"></i></a>
+                        </div>
+            
+                        <div class="col-description">
+                          <h2>More Info</h2>
+                          <p>Recorded on: April 30th, 2017</p>
+                          <p>Sermon by: Pastor Harold MacMillian</p>
+                          <p>Church: Midway Baptist Church</p>
+                          <p>Address: 6678 Ridge Rd. Lexington, NC 27295</p>
+                          <p>Phone: 336-259-8225</p>
+                          <p>Email: harold.mcmillian1@gmail.com</p>
+                          <a style="font-family: 'Encode Sans', sans-serif; font-size: 18px; text-align: center;"class="link" href="https://www.mbclexington.com/#contact" target="_blank">Contact Midway Baptist Church</a>
+                        </div>
+            
+                    <script>
+                    $('.share-ico').click(function() {
+                      $(this).parent().toggleClass('expand');
+                    });
+                    </script>
+                  </div>
+                </div>
+              </div>
+                <div class="section-4">
+                  <div class="commentbox"></div>
+                  <script src="https://unpkg.com/commentbox.io/dist/commentBox.min.js"></script>
+                  <script>commentBox('5757798738558976-proj')</script>
+                </div>
+                
+              
+              
+            </div>
+
+          </div>
+
+          <div data-filter-item data-filter-name="o alleluia" id="o-alleluia" class="image" style="background: url(/images/thumbnails/thumbfinal/heritagebaptistchurch/haroldmacmillian/oalleluia.png);"><button class="modal-button" href="#oalleluia"></button></div>
+          
+
+          <!-- Trigger/Open the Modal
+          <button class="modal-button" href="#myModal1">Open Modal</button>-->
+
+          <!-- The Modal -->
+          <div id="oalleluia" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+              <div class="modal-header">
+                <span class="close">&times;</span>
+                <h2>O Alleluia!</h2>
+              </div>
+              <div class="modal-body">
+                <div class="section-2-wog" id="watch">
+                  <div class="col-left"></div>
+                  <div class="audio-holder">
+                    <audio src="" id="audio"></audio>
+                    <div class="music-player">
+                      <!-- Inside music player element -->
+                      <h1 class="music-name">O Alleluia!</h1>
+                      <p class="artist-name">Harold MacMillian</p>
+                      <div class="harold-disk"></div>
+                      <br />
+                      <br />
+                      <audio class="SA-audioplayer" controls>
+                        <source src="https://github.com/ItsShawn/sa-sermons/blob/main/MidwayBaptistChurch/HaroldMacMillian/2017.05.07.A%20O%20Alleluia!%20-%20Harold%20McMillian%20-%2058171948157.mp3?raw=true">
+                      </audio>
+                    </div>
+                    </div>        
+                    <div class="col-right"></div>    
+                  </div>
+                </div>
+                <div class="section-3-main">
+                  <div class="row-1">
+                    <h1 class="row-about"><a class="link" style="cursor: pointer">About Harold MacMillian</a></h1>
+                  </div>
+                  <div class="section-3-sub">
+                    <div class="col-bio-main">
+                      <div class="col-bio-1">
+                        <div class="col-bio-image">
+                          <img
+                            id="spencer-bio"
+                            src="/images/bio/harold-bio.png"
+                            alt="A photo of spencer smith for his bio"
+                          />
+                        </div>
+                        <div class="col-bio-socials">
+                          <div class="spencer-socials-icons">
+                            <!--<a href="https://www.youtube.com/c/spencersmith312" target="_blank"><i class="fa fa-brands fa-youtube"></i></a>-->
+                            <a href="https://www.facebook.com/Midway-Baptist-Church-of-Lexington-NC-108158671068695" target="_blank"><i class="fa fa-brands fa-facebook"></i></a>
+                            <a href="https://www.mbclexington.com/" target="_blank"><i class="fa-solid fa-window-restore"></i></a>
+                            <!--<a href="https://twitter.com/brospencer" target="_blank"><i class="fa fa-brands fa-twitter"></i></a>-->
+                            <a href="mailto:harold.mcmillian1@gmail.com" target="_blank"><i class="fa fa-solid fa-envelope"></i></a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-bio-2">
+                        <p>
+                          Pastor Harold McMillian pastored the Heritage Baptist Church which started as a mission on September 2, 2012 and was constituted on January 27, 2013
+                          <br />
+                          <br />
+                          On September 24, 2020, Heritage Baptist Church and its congregation merged with Midway Baptist Church of Lexington and their congregation, which Bro. McMillian now pastors.
+                          <br />
+                          <br />
+                          Pastor McMillian works a full time job and is a full time Pastor. He has a love for children, a love for people and a heart for missions.
+                          <br />
+                          <br />
+                          He studied at Macedonia Baptist College which is part of the ministry of Bro. Ronnie Simpson. He lives in Asheboro NC with his lovely wife, Wendy. They have two daughters, two son-in-laws, and three precious grandchildren who are dearly loved!
+                        </p>
+                      </div>
+                    </div>
+                    <div class="col-share">
+                      <h2>Share</h2>
+                        <div class="share-content">
+                          <input type="text" value="https://scripturealone.com/sermons#o-alleluia" style="display:none" id="myInputoa">
+                          <button class="link-button" onclick="myoaFunction()"><i class="fa-solid fa-link"></i></button>
+            
+                          <script>
+                            function myoaFunction() {
+                              /* Get the text field */
+                              var copyText = document.getElementById("myInputoa");
+              
+                              /* Select the text field */
+                              copyText.select();
+                              copyText.setSelectionRange(0, 99999); /* For mobile devices */
+              
+                              /* Copy the text inside the text field */
+                              navigator.clipboard.writeText(copyText.value);
+                              
+                              /* Alert the copied text */
+                              alert("Succesfully copied link");
+                            }
+                            </script>
+                            
+                        
+                            <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fscripturealone.com%2Fsermons%23o-alleluia&amp;src=sdkpreparse" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                            
+                            <a href="https://twitter.com/intent/tweet?text=Listen%20to%20O%20Alleluia%20by%20Harold%20MacMilliand%20on%20Scripture%20Alone&url=https%3A%2F%2Fscripturealone.com%2Fsermons%23o-alleluia" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        
+                            <a href="https://web.whatsapp.com/send?text=https%3A%2F%2Fscripturealone.com%2Fsermons%23o-alleluia" target="_blank"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+                            
+                            <a href="https://www.facebook.com/dialog/send?link=https%3A%2F%2Fscripturealone.com%2Fsermons%23o-alleluia&app_id=291494419107518&redirect_uri=https%3A%2F%2Fwww.sharethis.com" target="_blank"><i class="fa-brands fa-facebook-messenger" aria-hidden="true"></i></a>
+            
+                            <a href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&su=O+Alleluia!+by+Harold+MacMillian+on+Scripture+Alone&body=https://scripturealone.com/sermons%23o-alleluia" target="_blank"><i class="fa fa-solid fa-envelope"></i></a>
+                        </div>
+            
+                        <div class="col-description">
+                          <h2>More Info</h2>
+                          <p>Recorded on: April 9th, 2017</p>
+                          <p>Sermon by: Pastor Harold MacMillian</p>
+                          <p>Church: Midway Baptist Church</p>
+                          <p>Address: 6678 Ridge Rd. Lexington, NC 27295</p>
+                          <p>Phone: 336-259-8225</p>
+                          <p>Email: harold.mcmillian1@gmail.com</p>
+                          <a style="font-family: 'Encode Sans', sans-serif; font-size: 18px; text-align: center;"class="link" href="https://www.mbclexington.com/#contact" target="_blank">Contact Midway Baptist Church</a>
+                        </div>
+            
+                    <script>
+                    $('.share-ico').click(function() {
+                      $(this).parent().toggleClass('expand');
+                    });
+                    </script>
+                  </div>
+                </div>
+              </div>
+                <div class="section-4">
+                  <div class="commentbox"></div>
+                  <script src="https://unpkg.com/commentbox.io/dist/commentBox.min.js"></script>
+                  <script>commentBox('5757798738558976-proj')</script>
+                </div>
+                
+              
+              
+            </div>
+
+          </div>
+
+          <div data-filter-item data-filter-name="blah blah" id="the-perspective-of-the-resurrection" class="image" style="background: url(/images/thumbnails/thumbfinal/heritagebaptistchurch/haroldmacmillian/theperspectiveoftheresurrection.png);"><button class="modal-button" href="#theperspectiveoftheresurrection"></button></div>
+          
+
+          <!-- Trigger/Open the Modal
+          <button class="modal-button" href="#myModal1">Open Modal</button>-->
+
+          <!-- The Modal -->
+          <div id="theperspectiveoftheresurrection" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+              <div class="modal-header">
+                <span class="close">&times;</span>
+                <h2>The Perspective of the Resurrection</h2>
+              </div>
+              <div class="modal-body">
+                <div class="section-2-wog" id="watch">
+                  <div class="col-left"></div>
+                  <div class="audio-holder">
+                    <audio src="" id="audio"></audio>
+                    <div class="music-player">
+                      <!-- Inside music player element -->
+                      <h1 class="music-name">The Perspective of the Resurrection</h1>
+                      <p class="artist-name">Harold MacMillian</p>
+                      <div class="harold-disk"></div>
+                      <br />
+                      <br />
+                      <audio class="SA-audioplayer" controls>
+                        <source src="https://github.com/ItsShawn/sa-sermons/blob/main/MidwayBaptistChurch/HaroldMacMillian/2017.04.16.A%20The%20Perspective%20Of%20The..%20-%20Harold%20McMillian%20-%20418171159522.mp3?raw=true">
+                      </audio>
+                    </div>
+                    </div>        
+                    <div class="col-right"></div>    
+                  </div>
+                </div>
+                <div class="section-3-main">
+                  <div class="row-1">
+                    <h1 class="row-about"><a class="link" style="cursor: pointer">About Harold MacMillian</a></h1>
+                  </div>
+                  <div class="section-3-sub">
+                    <div class="col-bio-main">
+                      <div class="col-bio-1">
+                        <div class="col-bio-image">
+                          <img
+                            id="spencer-bio"
+                            src="/images/bio/harold-bio.png"
+                            alt="A photo of spencer smith for his bio"
+                          />
+                        </div>
+                        <div class="col-bio-socials">
+                          <div class="spencer-socials-icons">
+                            <!--<a href="https://www.youtube.com/c/spencersmith312" target="_blank"><i class="fa fa-brands fa-youtube"></i></a>-->
+                            <a href="https://www.facebook.com/Midway-Baptist-Church-of-Lexington-NC-108158671068695" target="_blank"><i class="fa fa-brands fa-facebook"></i></a>
+                            <a href="https://www.mbclexington.com/" target="_blank"><i class="fa-solid fa-window-restore"></i></a>
+                            <!--<a href="https://twitter.com/brospencer" target="_blank"><i class="fa fa-brands fa-twitter"></i></a>-->
+                            <a href="mailto:harold.mcmillian1@gmail.com" target="_blank"><i class="fa fa-solid fa-envelope"></i></a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-bio-2">
+                        <p>
+                          Pastor Harold McMillian pastored the Heritage Baptist Church which started as a mission on September 2, 2012 and was constituted on January 27, 2013
+                          <br />
+                          <br />
+                          On September 24, 2020, Heritage Baptist Church and its congregation merged with Midway Baptist Church of Lexington and their congregation, which Bro. McMillian now pastors.
+                          <br />
+                          <br />
+                          Pastor McMillian works a full time job and is a full time Pastor. He has a love for children, a love for people and a heart for missions.
+                          <br />
+                          <br />
+                          He studied at Macedonia Baptist College which is part of the ministry of Bro. Ronnie Simpson. He lives in Asheboro NC with his lovely wife, Wendy. They have two daughters, two son-in-laws, and three precious grandchildren who are dearly loved!
+                        </p>
+                      </div>
+                    </div>
+                    <div class="col-share">
+                      <h2>Share</h2>
+                        <div class="share-content">
+                          <input type="text" value="https://scripturealone.com/sermons#the-perspective-of-the-resurrection" style="display:none" id="myInputtpofr">
+                          <button class="link-button" onclick="myblahFunction()"><i class="fa-solid fa-link"></i></button>
+            
+                          <script>
+                            function myblahFunction() {
+                              /* Get the text field */
+                              var copyText = document.getElementById("myInputtpofr");
+              
+                              /* Select the text field */
+                              copyText.select();
+                              copyText.setSelectionRange(0, 99999); /* For mobile devices */
+              
+                              /* Copy the text inside the text field */
+                              navigator.clipboard.writeText(copyText.value);
+                              
+                              /* Alert the copied text */
+                              alert("Succesfully copied link");
+                            }
+                            </script>
+                            
+                        
+                            <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fscripturealone.com%2Fsermons%23the-perspective-of-the-resurrection&amp;src=sdkpreparse" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                            
+                            <a href="https://twitter.com/intent/tweet?text=Listen%20to%20The%20Perspective%20of%20the%20Resurrection%20by%20Harold%20MacMilliand%20on%20Scripture%20Alone&url=https%3A%2F%2Fscripturealone.com%2Fsermons%23the-perspective-of-the-resurrection" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        
+                            <a href="https://web.whatsapp.com/send?text=https%3A%2F%2Fscripturealone.com%2Fsermons%23the-perspective-of-the-resurrection" target="_blank"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+                            
+                            <a href="https://www.facebook.com/dialog/send?link=https%3A%2F%2Fscripturealone.com%2Fsermons%23the-perspective-of-the-resurrection&app_id=291494419107518&redirect_uri=https%3A%2F%2Fwww.sharethis.com" target="_blank"><i class="fa-brands fa-facebook-messenger" aria-hidden="true"></i></a>
+            
+                            <a href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&su=The+Perspective+of+the+Resurrection+by+Harold+MacMillian+on+Scripture+Alone&body=https://scripturealone.com/sermons%23the-perspective-of-the-resurrection" target="_blank"><i class="fa fa-solid fa-envelope"></i></a>
+                        </div>
+            
+                        <div class="col-description">
+                          <h2>More Info</h2>
+                          <p>Recorded on: April 9th, 2017</p>
+                          <p>Sermon by: Pastor Harold MacMillian</p>
+                          <p>Church: Midway Baptist Church</p>
+                          <p>Address: 6678 Ridge Rd. Lexington, NC 27295</p>
+                          <p>Phone: 336-259-8225</p>
+                          <p>Email: harold.mcmillian1@gmail.com</p>
+                          <a style="font-family: 'Encode Sans', sans-serif; font-size: 18px; text-align: center;"class="link" href="https://www.mbclexington.com/#contact" target="_blank">Contact Midway Baptist Church</a>
+                        </div>
+            
+                    <script>
+                    $('.share-ico').click(function() {
+                      $(this).parent().toggleClass('expand');
+                    });
+                    </script>
+                  </div>
+                </div>
+              </div>
+                <div class="section-4">
+                  <div class="commentbox"></div>
+                  <script src="https://unpkg.com/commentbox.io/dist/commentBox.min.js"></script>
+                  <script>commentBox('5757798738558976-proj')</script>
+                </div>
+                
+              
+              
+            </div>
+
+          </div>
 
         
-        <div class="image"><img src="https://images.unsplash.com/photo-1541701494587-cb58502866ab?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YWJzdHJhY3QlMjBjb2xvdXJ8ZW58MHx8MHx8&w=1000&q=80" alt=""></div>
-        <div class="image"><img src="https://images.unsplash.com/photo-1541701494587-cb58502866ab?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YWJzdHJhY3QlMjBjb2xvdXJ8ZW58MHx8MHx8&w=1000&q=80" alt=""></div>
-        <div class="image"><img src="https://images.unsplash.com/photo-1541701494587-cb58502866ab?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YWJzdHJhY3QlMjBjb2xvdXJ8ZW58MHx8MHx8&w=1000&q=80" alt=""></div>
-        <div class="image"><img src="https://images.unsplash.com/photo-1541701494587-cb58502866ab?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YWJzdHJhY3QlMjBjb2xvdXJ8ZW58MHx8MHx8&w=1000&q=80" alt=""></div>
-        <div class="image"><img src="https://images.unsplash.com/photo-1541701494587-cb58502866ab?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YWJzdHJhY3QlMjBjb2xvdXJ8ZW58MHx8MHx8&w=1000&q=80" alt=""></div>
-        <div class="image"><img src="https://images.unsplash.com/photo-1541701494587-cb58502866ab?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YWJzdHJhY3QlMjBjb2xvdXJ8ZW58MHx8MHx8&w=1000&q=80" alt=""></div>
-        <div class="image"><img src="https://images.unsplash.com/photo-1541701494587-cb58502866ab?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YWJzdHJhY3QlMjBjb2xvdXJ8ZW58MHx8MHx8&w=1000&q=80" alt=""></div>
-        <div class="image"><img src="https://images.unsplash.com/photo-1541701494587-cb58502866ab?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YWJzdHJhY3QlMjBjb2xvdXJ8ZW58MHx8MHx8&w=1000&q=80" alt=""></div>
-        <div class="image"><img src="https://images.unsplash.com/photo-1541701494587-cb58502866ab?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YWJzdHJhY3QlMjBjb2xvdXJ8ZW58MHx8MHx8&w=1000&q=80" alt=""></div>
-        <div class="image"><img src="https://images.unsplash.com/photo-1541701494587-cb58502866ab?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YWJzdHJhY3QlMjBjb2xvdXJ8ZW58MHx8MHx8&w=1000&q=80" alt=""></div>
-        <div class="image"><img src="https://images.unsplash.com/photo-1541701494587-cb58502866ab?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YWJzdHJhY3QlMjBjb2xvdXJ8ZW58MHx8MHx8&w=1000&q=80" alt=""></div>
-        <div class="image"><img src="https://images.unsplash.com/photo-1541701494587-cb58502866ab?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YWJzdHJhY3QlMjBjb2xvdXJ8ZW58MHx8MHx8&w=1000&q=80" alt=""></div>
-        <div class="image"><img src="https://images.unsplash.com/photo-1541701494587-cb58502866ab?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YWJzdHJhY3QlMjBjb2xvdXJ8ZW58MHx8MHx8&w=1000&q=80" alt=""></div>
-        <div class="image"><img src="https://images.unsplash.com/photo-1541701494587-cb58502866ab?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YWJzdHJhY3QlMjBjb2xvdXJ8ZW58MHx8MHx8&w=1000&q=80" alt=""></div>
-        <div class="image"><img src="https://images.unsplash.com/photo-1541701494587-cb58502866ab?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YWJzdHJhY3QlMjBjb2xvdXJ8ZW58MHx8MHx8&w=1000&q=80" alt=""></div>
-        <div class="image"><img src="https://images.unsplash.com/photo-1541701494587-cb58502866ab?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YWJzdHJhY3QlMjBjb2xvdXJ8ZW58MHx8MHx8&w=1000&q=80" alt=""></div>
-        <div class="image"><img src="https://images.unsplash.com/photo-1541701494587-cb58502866ab?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YWJzdHJhY3QlMjBjb2xvdXJ8ZW58MHx8MHx8&w=1000&q=80" alt=""></div>
-        <div class="image"><img src="https://images.unsplash.com/photo-1541701494587-cb58502866ab?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YWJzdHJhY3QlMjBjb2xvdXJ8ZW58MHx8MHx8&w=1000&q=80" alt=""></div>
-        <div class="image"><img src="https://images.unsplash.com/photo-1541701494587-cb58502866ab?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YWJzdHJhY3QlMjBjb2xvdXJ8ZW58MHx8MHx8&w=1000&q=80" alt=""></div>
-        <div class="image"><img src="https://images.unsplash.com/photo-1541701494587-cb58502866ab?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YWJzdHJhY3QlMjBjb2xvdXJ8ZW58MHx8MHx8&w=1000&q=80" alt=""></div>
-        <div class="image"><img src="https://images.unsplash.com/photo-1541701494587-cb58502866ab?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YWJzdHJhY3QlMjBjb2xvdXJ8ZW58MHx8MHx8&w=1000&q=80" alt=""></div>
-        <div class="image"><img src="https://images.unsplash.com/photo-1541701494587-cb58502866ab?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YWJzdHJhY3QlMjBjb2xvdXJ8ZW58MHx8MHx8&w=1000&q=80" alt=""></div>
-        <div class="image"><img src="https://images.unsplash.com/photo-1541701494587-cb58502866ab?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YWJzdHJhY3QlMjBjb2xvdXJ8ZW58MHx8MHx8&w=1000&q=80" alt=""></div>
+        </div>
 
-        <div class="image" style="background: url(/images/thumbnails/thumbfinal/spencersmith/doctrinematters.png);"><button class="modal-button" href="#myModal2"></button></div>
+        
+
+          <div class="image" style="background: url(/images/thumbnails/thumbfinal/spencersmith/doctrinematters.png);"><button class="modal-button" href="#myModal2"></button></div>
 
           <!-- Trigger/Open the Modal
           <button class="modal-button" href="#myModal1">Open Modal</button>-->
@@ -427,8 +1791,8 @@
                     </div>
                     <div class="col-share">
                       <h2>Share</h2>
-                        <div class="share-content">
-                          <input type="text" value="https://itsshawn.github.io/sermons/victorybaptistchurch/chrisdroullard/when-your-faith-stands-trail" style="display:none" id="myInput">
+                        
+                          <!--<input type="text" value="https://itsshawn.github.io/sermons/victorybaptistchurch/chrisdroullard/when-your-faith-stands-trail" style="display:none" id="myInput">
                           <button class="link-button" onclick="myFunction()"><i class="fa-solid fa-link"></i></button>
             
                           <script>
@@ -446,8 +1810,24 @@
                             /* Alert the copied text */
                             alert("Succesfully copied link");
                           }
-                          </script>
+                          </script>-->
+                          <!--<div class="share-content">
+                            <div>
+                              <input type="button" value="Copy Url" onclick="Copy();" />
+                              <br />
                             
+                              Paste: <textarea id="urlCopied" rows="1" cols="30"></textarea>
+                          </div>
+
+                          <script type="text/javascript">
+                             function Copy() 
+                              {
+                                      //var Url = document.createElement("textarea");
+                                      urlCopied.innerHTML = window.location.href;
+                                      //Copied = Url.createTextRange();
+                                      //Copied.execCommand("Copy");
+                              }
+                          </script>-->
                         
                             <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fitsshawn.github.io%2Fsermons%2Fvictorybaptistchurch%2Fchrisdroullard%2Fwhen-your-faith-stands-trail&amp;src=sdkpreparse" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
                             
@@ -490,6 +1870,9 @@
             </div>
 
           </div>
+          
+        </div>
+
 
           
         </div>
@@ -574,6 +1957,18 @@
         </div>
       </footer>
     </div>
+
+    <!-- Search Filter -->
+    <script>
+      $(document).ready(function(){
+        $("#myInput").on("keyup", function() {
+          var value = $(this).val().toLowerCase();
+          $("#myDIV *").filter(function() {
+            $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+          });
+        });
+      });
+      </script>
 
     <!-- Video Popup -->
     <!--<script>

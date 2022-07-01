@@ -571,6 +571,12 @@ li {
   transform: scale(1.1);
 }
 
+.image-container {
+  height: 75vh;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
 /*.container .popup-video {
   position: fixed;
   top: 0;
@@ -676,6 +682,7 @@ li {
 .modal-body {
   padding: 2px 16px;
   background-color: #faf8f7;
+  height: 80vh;
 }
 
 .modal-footer {
@@ -790,157 +797,139 @@ li {
 /* Video Player End */
 
 /* Audio Player Start */
-.music-player {
-  width: 100%;
-  height: 100%;
-  border-radius: 20px;
-  background: rgba(51, 56, 59, 0.9);
-  box-shadow: 0 40px 100px rgba(51, 56, 59, 1);
-  padding: 30px;
-  overflow: hidden;
-  color: #faf8f7;
-}
-
-.music-player h1 {
-  font-family: "Montserrat", sans-serif;
-}
-
-.music-name,
-.artist-name {
-  text-align: center;
-  text-transform: capitalize;
-}
-
-.music-name {
-  font-size: 40px;
-  font-weight: 500;
-  margin-bottom: 10px;
-}
-
-.artist-name {
-  font-size: 20px;
-}
-
-.disk {
-  position: relative;
-  display: block;
-  margin: 40px auto;
-  width: 250px;
-  height: 250px;
-  border-radius: 50%;
-  background-image: url();
-  background-size: cover;
-  box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.08);
-}
-
-.song-slider {
-  width: 100%;
-  position: relative;
-}
-
-.seek-bar {
-  -webkit-appearance: none;
-  width: 100%;
-  height: 5px;
-  border-radius: 10px;
-  background: #a8a8a8;
-  overflow: hidden;
-  cursor: pointer;
-}
-
-.seek-bar::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  width: 1px;
-  height: 20px;
-  box-shadow: -400px 0 0 400px #faf8f7;
-}
-
-.current-time,
-.song-duration {
-  font-size: 14px;
-}
-
-.song-duration {
-  position: absolute;
-  right: 0;
-}
-
-.controls {
-  width: 60%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: auto;
-  margin-top: 20px;
-}
-
-.play-btn {
-  position: relative;
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  background: #faf8f7;
-  cursor: pointer;
-  border: none;
-}
-
-.play-btn span {
-  position: absolute;
-  top: 50%;
-  left: 25%;
-  transform: translateY(-50%);
-  width: 10px;
-  height: 30px;
-  border-radius: 2px;
-  background: #4d4d4d;
-  transition: 0.5s;
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-}
-
-.play-btn span:nth-child(2) {
-  left: 55%;
-  transform-origin: center;
-}
-
-.play-btn.pause span:nth-child(2) {
-  transform: translateY(-50%) scaleY(0);
-}
-
-.play-btn.pause span:nth-child(1) {
-  width: 35%;
-  left: 53%;
-  transform: translate(-50%, -50%);
-  border-radius: 0;
-  clip-path: polygon(0 0, 100% 50%, 100% 50%, 0% 100%);
-}
-
-.play-btn.pause {
-  animation: pulse 2s linear infinite;
-}
-
-@keyframes pulse {
-  0% {
-    box-shadow: 0;
+/* Using flex with the column direction to
+   align items in a vertical direction */
+   .player {
+    height: 95vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
   }
-  50% {
-    box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.1);
+   
+  .details {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 25px;
   }
-  100% {
-    box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.4);
+   
+  .track-art {
+    margin: 25px;
+    height: 250px;
+    width: 250px;
+    background-image: URL(
+       "https://source.unsplash.com/Qrspubmx6kE/640x360");
+    background-size: cover;
+    background-position: center;
+    border-radius: 15%;
   }
-}
-
-.btn {
-  width: 40px;
-  height: 40px;
-  background: #faf8f7;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: none;
-  cursor: pointer;
-}
+   
+  /* Changing the font sizes to suitable ones */
+  .now-playing {
+    font-size: 1rem;
+  }
+   
+  .track-name {
+    font-size: 3rem;
+  }
+   
+  .track-artist {
+    font-size: 1.5rem;
+  }
+   
+  /* Using flex with the row direction to
+     align items in a horizontal direction */
+  .buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+   
+  .playpause-track,
+  .prev-track,
+  .next-track {
+    padding: 25px;
+    opacity: 0.8;
+   
+    /* Smoothly transition the opacity */
+    transition: opacity .2s;
+  }
+   
+  /* Change the opacity when mouse is hovered */
+  .playpause-track:hover,
+  .prev-track:hover,
+  .next-track:hover {
+    opacity: 1.0;
+  }
+   
+  /* Define the slider width so that it scales properly */
+  .slider_container {
+    width: 75%;
+    max-width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+   
+  /* Modify the appearance of the slider */
+  .seek_slider, .volume_slider {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    height: 5px;
+    background: black;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+  }
+   
+  /* Modify the appearance of the slider thumb */
+  .seek_slider::-webkit-slider-thumb,
+  .volume_slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    background: white;
+    cursor: pointer;
+    border-radius: 50%;
+  }
+   
+  /* Change the opacity when mouse is hovered */
+  .seek_slider:hover,
+  .volume_slider:hover {
+    opacity: 1.0;
+  }
+   
+  .seek_slider {
+    width: 60%;
+  }
+   
+  .volume_slider {
+    width: 30%;
+  }
+   
+  .current-time,
+  .total-duration {
+    padding: 10px;
+  }
+   
+  i.fa-volume-down,
+  i.fa-volume-up {
+    padding: 10px;
+  }
+   
+  /* Change the mouse cursor to a pointer
+     when hovered over */
+  i.fa-play-circle,
+  i.fa-pause-circle,
+  i.fa-step-forward,
+  i.fa-step-backward {
+    cursor: pointer;
+  }
 /* Audio Player End */
 
 .col-left {
@@ -966,3 +955,9 @@ li {
   width: 5%;
   background-color: transparent;
 }
+
+.SA-audioplayer {
+  width: 100%;
+  border-radius: 25px;
+}
+

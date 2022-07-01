@@ -894,14 +894,14 @@
   font-size: 20px;
 }
 
-.disk {
+.harold-disk {
   position: relative;
   display: block;
   margin: 40px auto;
   width: 250px;
   height: 250px;
   border-radius: 50%;
-  background-image: url();
+  background-image: url(/images/audioplayer/harold-ap.png);
   background-size: cover;
   box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.08);
 }
@@ -1028,22 +1028,6 @@
   justify-content: center;
   align-items: center;*/
   /*background: #5f7a61;*/
-  font-family: "roboto", sans-serif;
-}
-
-.section-2-wog {
-  width: 100%;
-  height: 100%;
-  /*background-color: #faf8f7;*/
-  display: flex;
-  justify-content: space-between;
-  padding-top: 2.5em;
-  padding-bottom: 2.5em;
-  /*display: flex;
-  justify-content: center;
-  align-items: center;*/
-  /*background: #5f7a61;*/
-  background: #faf8f7;
   font-family: "roboto", sans-serif;
 }
 
@@ -1235,8 +1219,8 @@ footer {
 }
 
 .audio-holder {
-  width: 65%;
-  height: 720px;
+  width: 60%;
+  height: 100%;
   background-color: transparent;
 }
 
