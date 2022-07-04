@@ -1,0 +1,1456 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Marvin McKenzie | Devotionals | Scripture Alone</title>
+
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Play:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Stylesheets -->
+    <!--<link href="/sermons/sermons.css" rel="stylesheet" type="text/css" />-->
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/css/devotionals.css" />
+
+    
+    <!--<link href="search.css" rel="stylesheet" type="text/css" />-->
+
+    <!--<link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="package/css/swiper.min.css" />
+    <link rel="stylesheet" href="/css/styles.css" />
+
+    <!-- Scripts -->
+    <script
+      src="https://kit.fontawesome.com/40a1762593.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"
+      type="text/javascript"
+    ></script>
+
+    <link href="https://vjs.zencdn.net/7.17.0/video-js.css" rel="stylesheet" />
+
+    <!-- Sea -->
+    <link
+      href="https://unpkg.com/@videojs/themes@1/dist/sea/index.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="navigation">
+      <div class="nav-container">
+        <span class="logo">
+          <span class="logo-img">
+            <img src="/images/bible-img/biblev2.png">
+          </span>
+          <span class="logo-text">
+            <h1>Scripture Alone</h1>
+          </span>
+        </span>
+        <nav class="navbar">
+          <div class="nav-mobile">
+            <a class="nav-a" id="nav-ham" href="#!"><span id="ss"></span></a>        
+          </div>
+          <ul>
+            <li>
+              <a class="nav-a" href="#!">Read the Scripture</a>
+            </li>
+            <li>
+              <a class="nav-a" style="cursor: pointer;">Study Tools</a>
+              <ul>
+                <li>
+                  <a class="nav-a" href="#!">Commentaries</a>
+                </li>
+                <li>
+                  <a class="nav-a" href="#!">Study Groups</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a class="nav-a" style="cursor: pointer;">Plans</a>
+              <ul>
+                <li>
+                  <a class="nav-a" href="#!">Bible Reading Plans</a>
+                </li>
+                <li>
+                  <a class="nav-a" href="#!">Devotionals</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a class="nav-a" href="/sermons.html">Sermons</a>
+            </li>  
+            <button id="btn-login" disabled="true" onclick="login()">Log in</button>
+            <button id="btn-logout" disabled="true" onclick="logout()">Log out</button> 
+            <!--<li>
+              <a href="/dashboard.html"><div id="get-started" class="get-started">Get Started</div></a>
+            </li>
+            <li>
+              <a href="/signup.html">Sign up</a>
+            </li>-->   
+          </ul>
+        </nav>
+      </div>
+    </section>
+
+    <div class="dheader-sub">
+        <div class="dheader-img">
+            <img src="https://onuniverse-assets.imgix.net/5b52c474-acb0-4ef1-bb34-5d986baa504e.jpg?w=400&fit=crop&auto=compress%2Cformat&q=65&ixlib=js-2.2.0" class="dhead-img" alt="Avatar">
+        </div>
+        <div class="dheader-sub-text">
+            <h1>Marvin McKenzie</h1>
+            <p>Pastor Marvin McKenzie was saved at the age of eighteen. He has planted and pastored churches in Washington and Oregon. Dr. McKenzie served as the Executive Vice President of Pacific Coast Baptist Bible College, San Dimas, CA and then at Heartland Baptist Bible College, OKC, OK. 
+            <br />
+            <br />
+            Marvin and Anita have two sons; both are in the ministry in Baptist Churches in Washington State.</p>
+        </div>
+    </div>
+
+    <div class="dmain-sub">
+        <div class="ccolumn-1 left"></div>
+        <div class="ccolumn-2 middle" style="height: 100%;">
+
+            <h1 style="text-align: center; font-size: 60px;">November 2020</h1>
+
+            <button class="accordion">Daily Visit with God - Job 19:21 | 11/30/20</button>
+            <div class="panel">
+                <div style="max-width: 1280px; min-height: 720px">
+                    <video
+                      id="my-video"
+                      class="video-js vjs-big-play-centered vjs-fluid"
+                      controls
+                      preload="auto"
+                      width="640"
+                      height="264"
+                      poster="https://sp.rmbl.ws/s8/6/J/l/S/j/JlSjb.oq1b.1.jpg"
+                      data-setup="{}"
+                    >
+                      <source
+                        src="https://sp.rmbl.ws/s8/2/J/l/S/j/JlSjb.caa.1.mp4?u=3&b=0"
+                        type="video/mp4"
+                      />
+                      <p class="vjs-no-js">
+                        To view this video please enable JavaScript, and consider
+                        upgrading to a web browser that
+                        <a href="https://videojs.com/html5-video-support/" target="_blank"
+                          >supports HTML5 video</a
+                        >
+                      </p>
+                    </video>
+                  </div>
+            </div>
+
+            <button class="accordion">Daily Visit with God - Galatians 5:5 | 11/25/20</button>
+            <div class="panel">
+                <div style="max-width: 1280px; min-height: 720px">
+                    <video
+                      id="my-video"
+                      class="video-js vjs-big-play-centered vjs-fluid"
+                      controls
+                      preload="auto"
+                      width="640"
+                      height="264"
+                      poster="https://sp.rmbl.ws/s8/6/L/t/f/j/Ltfjb.oq1b.1.jpg"
+                      data-setup="{}"
+                    >
+                      <source
+                        src="https://sp.rmbl.ws/s8/2/L/t/f/j/Ltfjb.caa.1.mp4?u=3&b=0"
+                        type="video/mp4"
+                      />
+                      <p class="vjs-no-js">
+                        To view this video please enable JavaScript, and consider
+                        upgrading to a web browser that
+                        <a href="https://videojs.com/html5-video-support/" target="_blank"
+                          >supports HTML5 video</a
+                        >
+                      </p>
+                    </video>
+                  </div>
+            </div>
+
+            <button class="accordion">Daily Visit with God - Galatians 5:3 | 11/25/20</button>
+            <div class="panel">
+                <div style="max-width: 1280px; min-height: 720px">
+                    <video
+                      id="my-video"
+                      class="video-js vjs-big-play-centered vjs-fluid"
+                      controls
+                      preload="auto"
+                      width="640"
+                      height="264"
+                      poster="https://sp.rmbl.ws/s8/6/p/r/f/j/prfjb.oq1b.1.jpg"
+                      data-setup="{}"
+                    >
+                      <source
+                        src="https://sp.rmbl.ws/s8/2/p/r/f/j/prfjb.caa.1.mp4?u=3&b=0"
+                        type="video/mp4"
+                      />
+                      <p class="vjs-no-js">
+                        To view this video please enable JavaScript, and consider
+                        upgrading to a web browser that
+                        <a href="https://videojs.com/html5-video-support/" target="_blank"
+                          >supports HTML5 video</a
+                        >
+                      </p>
+                    </video>
+                  </div>
+            </div>
+
+            <button class="accordion">Daily Visit with God - Galatians 5:1 | 11/25/20</button>
+            <div class="panel">
+                <div style="max-width: 1280px; min-height: 720px">
+                    <video
+                      id="my-video"
+                      class="video-js vjs-big-play-centered vjs-fluid"
+                      controls
+                      preload="auto"
+                      width="640"
+                      height="264"
+                      poster="https://sp.rmbl.ws/s8/6/V/o/f/j/Vofjb.oq1b.1.jpg"
+                      data-setup="{}"
+                    >
+                      <source
+                        src="https://sp.rmbl.ws/s8/2/V/o/f/j/Vofjb.caa.1.mp4?u=3&b=0"
+                        type="video/mp4"
+                      />
+                      <p class="vjs-no-js">
+                        To view this video please enable JavaScript, and consider
+                        upgrading to a web browser that
+                        <a href="https://videojs.com/html5-video-support/" target="_blank"
+                          >supports HTML5 video</a
+                        >
+                      </p>
+                    </video>
+                  </div>
+            </div>
+
+            <button class="accordion">Daily Visit with God - Galatians 4:30 | 11/25/20</button>
+            <div class="panel">
+                <div style="max-width: 1280px; min-height: 720px">
+                    <video
+                      id="my-video"
+                      class="video-js vjs-big-play-centered vjs-fluid"
+                      controls
+                      preload="auto"
+                      width="640"
+                      height="264"
+                      poster="https://sp.rmbl.ws/s8/6/b/n/f/j/bnfjb.oq1b.1.jpg"
+                      data-setup="{}"
+                    >
+                      <source
+                        src="https://sp.rmbl.ws/s8/2/b/n/f/j/bnfjb.caa.1.mp4?u=3&b=0"
+                        type="video/mp4"
+                      />
+                      <p class="vjs-no-js">
+                        To view this video please enable JavaScript, and consider
+                        upgrading to a web browser that
+                        <a href="https://videojs.com/html5-video-support/" target="_blank"
+                          >supports HTML5 video</a
+                        >
+                      </p>
+                    </video>
+                  </div>
+            </div>
+
+            <button class="accordion">Daily Visit with God - Job 17:15-16 | 11/24/20</button>
+            <div class="panel">
+                <div style="max-width: 1280px; min-height: 720px">
+                    <video
+                      id="my-video"
+                      class="video-js vjs-big-play-centered vjs-fluid"
+                      controls
+                      preload="auto"
+                      width="640"
+                      height="264"
+                      poster="https://sp.rmbl.ws/s8/6/9/F/5/i/9F5ib.oq1b.1.jpg"
+                      data-setup="{}"
+                    >
+                      <source
+                        src="https://sp.rmbl.ws/s8/2/9/F/5/i/9F5ib.caa.1.mp4?u=3&b=0"
+                        type="video/mp4"
+                      />
+                      <p class="vjs-no-js">
+                        To view this video please enable JavaScript, and consider
+                        upgrading to a web browser that
+                        <a href="https://videojs.com/html5-video-support/" target="_blank"
+                          >supports HTML5 video</a
+                        >
+                      </p>
+                    </video>
+                  </div>
+            </div>
+
+            <button class="accordion">Daily Visit with God - Job 17:3 | 11/23/20</button>
+            <div class="panel">
+                <div style="max-width: 1280px; min-height: 720px">
+                    <video
+                      id="my-video"
+                      class="video-js vjs-big-play-centered vjs-fluid"
+                      controls
+                      preload="auto"
+                      width="640"
+                      height="264"
+                      poster="https://sp.rmbl.ws/s8/6/j/Y/M/i/jYMib.oq1b.1.jpg"
+                      data-setup="{}"
+                    >
+                      <source
+                        src="https://sp.rmbl.ws/s8/2/j/Y/M/i/jYMib.caa.1.mp4?u=3&b=0"
+                        type="video/mp4"
+                      />
+                      <p class="vjs-no-js">
+                        To view this video please enable JavaScript, and consider
+                        upgrading to a web browser that
+                        <a href="https://videojs.com/html5-video-support/" target="_blank"
+                          >supports HTML5 video</a
+                        >
+                      </p>
+                    </video>
+                  </div>
+            </div>
+
+            <button class="accordion">Daily Visit with God - Job 16:21 | 11/22/20</button>
+            <div class="panel">
+                <div style="max-width: 1280px; min-height: 720px">
+                    <video
+                      id="my-video"
+                      class="video-js vjs-big-play-centered vjs-fluid"
+                      controls
+                      preload="auto"
+                      width="640"
+                      height="264"
+                      poster="https://sp.rmbl.ws/s8/6/j/Y/M/i/jYMib.oq1b.1.jpg"
+                      data-setup="{}"
+                    >
+                      <source
+                        src="https://sp.rmbl.ws/s8/2/j/Y/M/i/jYMib.caa.1.mp4?u=3&b=0"
+                        type="video/mp4"
+                      />
+                      <p class="vjs-no-js">
+                        To view this video please enable JavaScript, and consider
+                        upgrading to a web browser that
+                        <a href="https://videojs.com/html5-video-support/" target="_blank"
+                          >supports HTML5 video</a
+                        >
+                      </p>
+                    </video>
+                  </div>
+            </div>
+
+            <button class="accordion">Daily Visit with God - Job 16:4 | 11/21/20</button>
+            <div class="panel">
+                <div style="max-width: 1280px; min-height: 720px">
+                    <video
+                      id="my-video"
+                      class="video-js vjs-big-play-centered vjs-fluid"
+                      controls
+                      preload="auto"
+                      width="640"
+                      height="264"
+                      poster="https://sp.rmbl.ws/s8/6/j/o/G/i/joGib.oq1b.1.jpg"
+                      data-setup="{}"
+                    >
+                      <source
+                        src="https://sp.rmbl.ws/s8/2/j/o/G/i/joGib.caa.1.mp4?u=3&b=0"
+                        type="video/mp4"
+                      />
+                      <p class="vjs-no-js">
+                        To view this video please enable JavaScript, and consider
+                        upgrading to a web browser that
+                        <a href="https://videojs.com/html5-video-support/" target="_blank"
+                          >supports HTML5 video</a
+                        >
+                      </p>
+                    </video>
+                  </div>
+            </div>
+
+            <button class="accordion">Daily Visit with God - Job 15:10 | 11/20/20</button>
+            <div class="panel">
+                <div style="max-width: 1280px; min-height: 720px">
+                    <video
+                      id="my-video"
+                      class="video-js vjs-big-play-centered vjs-fluid"
+                      controls
+                      preload="auto"
+                      width="640"
+                      height="264"
+                      poster="https://sp.rmbl.ws/s8/6/1/Y/t/i/1Ytib.oq1b.1.jpg"
+                      data-setup="{}"
+                    >
+                      <source
+                        src="https://sp.rmbl.ws/s8/2/1/Y/t/i/1Ytib.caa.1.mp4?u=3&b=0"
+                        type="video/mp4"
+                      />
+                      <p class="vjs-no-js">
+                        To view this video please enable JavaScript, and consider
+                        upgrading to a web browser that
+                        <a href="https://videojs.com/html5-video-support/" target="_blank"
+                          >supports HTML5 video</a
+                        >
+                      </p>
+                    </video>
+                  </div>
+            </div>
+
+            <button class="accordion">Daily Visit with God - Job 14:19 | 11/19/20</button>
+            <div class="panel">
+                <div style="max-width: 1280px; min-height: 720px">
+                    <video
+                      id="my-video"
+                      class="video-js vjs-big-play-centered vjs-fluid"
+                      controls
+                      preload="auto"
+                      width="640"
+                      height="264"
+                      poster="https://sp.rmbl.ws/s8/6/F/T/g/i/FTgib.oq1b.1.jpg"
+                      data-setup="{}"
+                    >
+                      <source
+                        src="https://sp.rmbl.ws/s8/2/F/T/g/i/FTgib.caa.1.mp4?u=3&b=0"
+                        type="video/mp4"
+                      />
+                      <p class="vjs-no-js">
+                        To view this video please enable JavaScript, and consider
+                        upgrading to a web browser that
+                        <a href="https://videojs.com/html5-video-support/" target="_blank"
+                          >supports HTML5 video</a
+                        >
+                      </p>
+                    </video>
+                  </div>
+            </div>
+
+            <button class="accordion">Daily Visit with God - Galatians 4:17-18 | 11/19/20</button>
+            <div class="panel">
+                <div style="max-width: 1280px; min-height: 720px">
+                    <video
+                      id="my-video"
+                      class="video-js vjs-big-play-centered vjs-fluid"
+                      controls
+                      preload="auto"
+                      width="640"
+                      height="264"
+                      poster="https://sp.rmbl.ws/s8/6/t/0/a/i/t0aib.oq1b.1.jpg"
+                      data-setup="{}"
+                    >
+                      <source
+                        src="https://sp.rmbl.ws/s8/2/t/0/a/i/t0aib.caa.1.mp4?u=3&b=0"
+                        type="video/mp4"
+                      />
+                      <p class="vjs-no-js">
+                        To view this video please enable JavaScript, and consider
+                        upgrading to a web browser that
+                        <a href="https://videojs.com/html5-video-support/" target="_blank"
+                          >supports HTML5 video</a
+                        >
+                      </p>
+                    </video>
+                  </div>
+            </div>
+
+            <button class="accordion">Daily Visit with God - Galatians 4:16-20 | 11/19/20</button>
+            <div class="panel">
+                <div style="max-width: 1280px; min-height: 720px">
+                    <video
+                      id="my-video"
+                      class="video-js vjs-big-play-centered vjs-fluid"
+                      controls
+                      preload="auto"
+                      width="640"
+                      height="264"
+                      poster="https://sp.rmbl.ws/s8/6/b/X/a/i/bXaib.oq1b.1.jpg"
+                      data-setup="{}"
+                    >
+                      <source
+                        src="https://sp.rmbl.ws/s8/2/b/X/a/i/bXaib.caa.1.mp4?u=3&b=0"
+                        type="video/mp4"
+                      />
+                      <p class="vjs-no-js">
+                        To view this video please enable JavaScript, and consider
+                        upgrading to a web browser that
+                        <a href="https://videojs.com/html5-video-support/" target="_blank"
+                          >supports HTML5 video</a
+                        >
+                      </p>
+                    </video>
+                  </div>
+            </div>
+
+            <button class="accordion">Daily Visit with God - Galatians 4:16-18 | 11/19/20</button>
+            <div class="panel">
+                <div style="max-width: 1280px; min-height: 720px">
+                    <video
+                      id="my-video"
+                      class="video-js vjs-big-play-centered vjs-fluid"
+                      controls
+                      preload="auto"
+                      width="640"
+                      height="264"
+                      poster="https://sp.rmbl.ws/s8/6/R/U/a/i/RUaib.oq1b.1.jpg"
+                      data-setup="{}"
+                    >
+                      <source
+                        src="https://sp.rmbl.ws/s8/2/R/U/a/i/RUaib.caa.1.mp4?u=3&b=0"
+                        type="video/mp4"
+                      />
+                      <p class="vjs-no-js">
+                        To view this video please enable JavaScript, and consider
+                        upgrading to a web browser that
+                        <a href="https://videojs.com/html5-video-support/" target="_blank"
+                          >supports HTML5 video</a
+                        >
+                      </p>
+                    </video>
+                  </div>
+            </div>
+
+            <button class="accordion">Daily Visit with God - Galatians 4:9 | 11/19/20</button>
+            <div class="panel">
+                <div style="max-width: 1280px; min-height: 720px">
+                    <video
+                      id="my-video"
+                      class="video-js vjs-big-play-centered vjs-fluid"
+                      controls
+                      preload="auto"
+                      width="640"
+                      height="264"
+                      poster="https://sp.rmbl.ws/s8/6/D/Q/a/i/DQaib.oq1b.1.jpg"
+                      data-setup="{}"
+                    >
+                      <source
+                        src="https://sp.rmbl.ws/s8/2/D/Q/a/i/DQaib.caa.1.mp4?u=3&b=0"
+                        type="video/mp4"
+                      />
+                      <p class="vjs-no-js">
+                        To view this video please enable JavaScript, and consider
+                        upgrading to a web browser that
+                        <a href="https://videojs.com/html5-video-support/" target="_blank"
+                          >supports HTML5 video</a
+                        >
+                      </p>
+                    </video>
+                  </div>
+            </div>
+
+            <button class="accordion">Daily Visit with God - Galatians 4:14-17 | 11/19/20</button>
+            <div class="panel">
+                <div style="max-width: 1280px; min-height: 720px">
+                    <video
+                      id="my-video"
+                      class="video-js vjs-big-play-centered vjs-fluid"
+                      controls
+                      preload="auto"
+                      width="640"
+                      height="264"
+                      poster="https://sp.rmbl.ws/s8/6/Z/S/a/i/ZSaib.oq1b.1.jpg"
+                      data-setup="{}"
+                    >
+                      <source
+                        src="https://sp.rmbl.ws/s8/2/Z/S/a/i/ZSaib.caa.1.mp4?u=3&b=0"
+                        type="video/mp4"
+                      />
+                      <p class="vjs-no-js">
+                        To view this video please enable JavaScript, and consider
+                        upgrading to a web browser that
+                        <a href="https://videojs.com/html5-video-support/" target="_blank"
+                          >supports HTML5 video</a
+                        >
+                      </p>
+                    </video>
+                  </div>
+            </div>
+
+            <button class="accordion">Daily Visit with God - Galatians 4:4 | 11/19/20</button>
+            <div class="panel">
+                <div style="max-width: 1280px; min-height: 720px">
+                    <video
+                      id="my-video"
+                      class="video-js vjs-big-play-centered vjs-fluid"
+                      controls
+                      preload="auto"
+                      width="640"
+                      height="264"
+                      poster="https://sp.rmbl.ws/s8/6/5/O/a/i/5Oaib.oq1b.1.jpg"
+                      data-setup="{}"
+                    >
+                      <source
+                        src="https://sp.rmbl.ws/s8/2/5/O/a/i/5Oaib.caa.1.mp4?u=3&b=0"
+                        type="video/mp4"
+                      />
+                      <p class="vjs-no-js">
+                        To view this video please enable JavaScript, and consider
+                        upgrading to a web browser that
+                        <a href="https://videojs.com/html5-video-support/" target="_blank"
+                          >supports HTML5 video</a
+                        >
+                      </p>
+                    </video>
+                  </div>
+            </div>
+
+            <button class="accordion">Daily Visit with God - Galatians 4:3 | 11/19/20</button>
+            <div class="panel">
+                <div style="max-width: 1280px; min-height: 720px">
+                    <video
+                      id="my-video"
+                      class="video-js vjs-big-play-centered vjs-fluid"
+                      controls
+                      preload="auto"
+                      width="640"
+                      height="264"
+                      poster="https://sp.rmbl.ws/s8/6/T/M/a/i/TMaib.oq1b.1.jpg"
+                      data-setup="{}"
+                    >
+                      <source
+                        src="https://sp.rmbl.ws/s8/2/T/M/a/i/TMaib.caa.1.mp4?u=3&b=0"
+                        type="video/mp4"
+                      />
+                      <p class="vjs-no-js">
+                        To view this video please enable JavaScript, and consider
+                        upgrading to a web browser that
+                        <a href="https://videojs.com/html5-video-support/" target="_blank"
+                          >supports HTML5 video</a
+                        >
+                      </p>
+                    </video>
+                  </div>
+            </div>
+
+            <button class="accordion">Daily Visit with God - Job 14:4 | 11/18/20</button>
+            <div class="panel">
+                <div style="max-width: 1280px; min-height: 720px">
+                    <video
+                      id="my-video"
+                      class="video-js vjs-big-play-centered vjs-fluid"
+                      controls
+                      preload="auto"
+                      width="640"
+                      height="264"
+                      poster="https://sp.rmbl.ws/s8/6/t/6/3/h/t63hb.oq1b.1.jpg"
+                      data-setup="{}"
+                    >
+                      <source
+                        src="https://sp.rmbl.ws/s8/2/t/6/3/h/t63hb.caa.1.mp4?u=3&b=0"
+                        type="video/mp4"
+                      />
+                      <p class="vjs-no-js">
+                        To view this video please enable JavaScript, and consider
+                        upgrading to a web browser that
+                        <a href="https://videojs.com/html5-video-support/" target="_blank"
+                          >supports HTML5 video</a
+                        >
+                      </p>
+                    </video>
+                  </div>
+            </div>
+
+            <button class="accordion">Daily Visit with God - Galatians 4:1-2 | 11/18/20</button>
+            <div class="panel">
+                <div style="max-width: 1280px; min-height: 720px">
+                    <video
+                      id="my-video"
+                      class="video-js vjs-big-play-centered vjs-fluid"
+                      controls
+                      preload="auto"
+                      width="640"
+                      height="264"
+                      poster="https://sp.rmbl.ws/s8/6/r/4/3/h/r43hb.oq1b.1.jpg"
+                      data-setup="{}"
+                    >
+                      <source
+                        src="https://sp.rmbl.ws/s8/2/r/4/3/h/r43hb.caa.1.mp4?u=3&b=0"
+                        type="video/mp4"
+                      />
+                      <p class="vjs-no-js">
+                        To view this video please enable JavaScript, and consider
+                        upgrading to a web browser that
+                        <a href="https://videojs.com/html5-video-support/" target="_blank"
+                          >supports HTML5 video</a
+                        >
+                      </p>
+                    </video>
+                  </div>
+            </div>
+
+            <button class="accordion">Daily Visit with God - Job 13:15 | 11/17/20</button>
+            <div class="panel">
+                <div style="max-width: 1280px; min-height: 720px">
+                    <video
+                      id="my-video"
+                      class="video-js vjs-big-play-centered vjs-fluid"
+                      controls
+                      preload="auto"
+                      width="640"
+                      height="264"
+                      poster="https://sp.rmbl.ws/s8/6/1/T/R/h/1TRhb.oq1b.1.jpg"
+                      data-setup="{}"
+                    >
+                      <source
+                        src="https://sp.rmbl.ws/s8/2/1/T/R/h/1TRhb.caa.1.mp4?u=3&b=0"
+                        type="video/mp4"
+                      />
+                      <p class="vjs-no-js">
+                        To view this video please enable JavaScript, and consider
+                        upgrading to a web browser that
+                        <a href="https://videojs.com/html5-video-support/" target="_blank"
+                          >supports HTML5 video</a
+                        >
+                      </p>
+                    </video>
+                  </div>
+            </div>
+
+            <button class="accordion">Daily Visit with God - Galatians 4:1 | 11/17/20</button>
+            <div class="panel">
+                <div style="max-width: 1280px; min-height: 720px">
+                    <video
+                      id="my-video"
+                      class="video-js vjs-big-play-centered vjs-fluid"
+                      controls
+                      preload="auto"
+                      width="640"
+                      height="264"
+                      poster="https://sp.rmbl.ws/s8/6/v/R/R/h/vRRhb.oq1b.1.jpg"
+                      data-setup="{}"
+                    >
+                      <source
+                        src="https://sp.rmbl.ws/s8/2/v/R/R/h/vRRhb.caa.1.mp4?u=3&b=0"
+                        type="video/mp4"
+                      />
+                      <p class="vjs-no-js">
+                        To view this video please enable JavaScript, and consider
+                        upgrading to a web browser that
+                        <a href="https://videojs.com/html5-video-support/" target="_blank"
+                          >supports HTML5 video</a
+                        >
+                      </p>
+                    </video>
+                  </div>
+            </div>
+
+            <button class="accordion">Daily Visit with God - Job 12:9-10 | 11/16/20</button>
+            <div class="panel">
+                <div style="max-width: 1280px; min-height: 720px">
+                    <video
+                      id="my-video"
+                      class="video-js vjs-big-play-centered vjs-fluid"
+                      controls
+                      preload="auto"
+                      width="640"
+                      height="264"
+                      poster="https://sp.rmbl.ws/s8/6/z/t/J/h/ztJhb.oq1b.1.jpg"
+                      data-setup="{}"
+                    >
+                      <source
+                        src="https://sp.rmbl.ws/s8/2/z/t/J/h/ztJhb.caa.1.mp4?u=3&b=0"
+                        type="video/mp4"
+                      />
+                      <p class="vjs-no-js">
+                        To view this video please enable JavaScript, and consider
+                        upgrading to a web browser that
+                        <a href="https://videojs.com/html5-video-support/" target="_blank"
+                          >supports HTML5 video</a
+                        >
+                      </p>
+                    </video>
+                  </div>
+            </div>
+
+            <button class="accordion">Daily Visit with God - Galatians 3:17 | 11/16/20</button>
+            <div class="panel">
+                <div style="max-width: 1280px; min-height: 720px">
+                    <video
+                      id="my-video"
+                      class="video-js vjs-big-play-centered vjs-fluid"
+                      controls
+                      preload="auto"
+                      width="640"
+                      height="264"
+                      poster="https://sp.rmbl.ws/s8/6/h/q/J/h/hqJhb.oq1b.1.jpg"
+                      data-setup="{}"
+                    >
+                      <source
+                        src="https://sp.rmbl.ws/s8/2/h/q/J/h/hqJhb.caa.1.mp4?u=3&b=0"
+                        type="video/mp4"
+                      />
+                      <p class="vjs-no-js">
+                        To view this video please enable JavaScript, and consider
+                        upgrading to a web browser that
+                        <a href="https://videojs.com/html5-video-support/" target="_blank"
+                          >supports HTML5 video</a
+                        >
+                      </p>
+                    </video>
+                  </div>
+            </div>
+
+            <button class="accordion">Daily Visit with God - Job 10:1-2 | 11/14/20</button>
+            <div class="panel">
+                <div style="max-width: 1280px; min-height: 720px">
+                    <video
+                      id="my-video"
+                      class="video-js vjs-big-play-centered vjs-fluid"
+                      controls
+                      preload="auto"
+                      width="640"
+                      height="264"
+                      poster="https://sp.rmbl.ws/s8/6/Z/5/m/h/Z5mhb.oq1b.1.jpg"
+                      data-setup="{}"
+                    >
+                      <source
+                        src="https://sp.rmbl.ws/s8/2/Z/5/m/h/Z5mhb.caa.1.mp4?u=3&b=0"
+                        type="video/mp4"
+                      />
+                      <p class="vjs-no-js">
+                        To view this video please enable JavaScript, and consider
+                        upgrading to a web browser that
+                        <a href="https://videojs.com/html5-video-support/" target="_blank"
+                          >supports HTML5 video</a
+                        >
+                      </p>
+                    </video>
+                  </div>
+            </div>
+
+            <button class="accordion">Daily Visit with God - Galatians 3:16 | 11/13/20</button>
+            <div class="panel">
+                <div style="max-width: 1280px; min-height: 720px">
+                    <video
+                      id="my-video"
+                      class="video-js vjs-big-play-centered vjs-fluid"
+                      controls
+                      preload="auto"
+                      width="640"
+                      height="264"
+                      poster="https://sp.rmbl.ws/s8/6/r/n/h/h/rnhhb.oq1b.1.jpg"
+                      data-setup="{}"
+                    >
+                      <source
+                        src="https://sp.rmbl.ws/s8/2/r/n/h/h/rnhhb.caa.1.mp4?u=3&b=0"
+                        type="video/mp4"
+                      />
+                      <p class="vjs-no-js">
+                        To view this video please enable JavaScript, and consider
+                        upgrading to a web browser that
+                        <a href="https://videojs.com/html5-video-support/" target="_blank"
+                          >supports HTML5 video</a
+                        >
+                      </p>
+                    </video>
+                  </div>
+            </div>
+
+            <button class="accordion">Daily Visit with God - Job 9:1-2 | 11/13/20</button>
+            <div class="panel">
+                <div style="max-width: 1280px; min-height: 720px">
+                    <video
+                      id="my-video"
+                      class="video-js vjs-big-play-centered vjs-fluid"
+                      controls
+                      preload="auto"
+                      width="640"
+                      height="264"
+                      poster="https://sp.rmbl.ws/s8/6/9/r/c/h/9rchb.oq1b.1.jpg"
+                      data-setup="{}"
+                    >
+                      <source
+                        src="https://sp.rmbl.ws/s8/2/9/r/c/h/9rchb.caa.1.mp4?u=3&b=0"
+                        type="video/mp4"
+                      />
+                      <p class="vjs-no-js">
+                        To view this video please enable JavaScript, and consider
+                        upgrading to a web browser that
+                        <a href="https://videojs.com/html5-video-support/" target="_blank"
+                          >supports HTML5 video</a
+                        >
+                      </p>
+                    </video>
+                  </div>
+            </div>
+
+            <button class="accordion">Daily Visit with God - Job 7:20 | 11/12/20</button>
+            <div class="panel">
+                <div style="max-width: 1280px; min-height: 720px">
+                    <video
+                      id="my-video"
+                      class="video-js vjs-big-play-centered vjs-fluid"
+                      controls
+                      preload="auto"
+                      width="640"
+                      height="264"
+                      poster="https://sp.rmbl.ws/s8/6/r/Z/7/g/rZ7gb.oq1b.1.jpg"
+                      data-setup="{}"
+                    >
+                      <source
+                        src="https://sp.rmbl.ws/s8/2/r/Z/7/g/rZ7gb.caa.1.mp4?u=3&b=0"
+                        type="video/mp4"
+                      />
+                      <p class="vjs-no-js">
+                        To view this video please enable JavaScript, and consider
+                        upgrading to a web browser that
+                        <a href="https://videojs.com/html5-video-support/" target="_blank"
+                          >supports HTML5 video</a
+                        >
+                      </p>
+                    </video>
+                  </div>
+            </div>
+
+            <button class="accordion">Daily Visit with God - Galatians 3:3 | 11/12/20</button>
+            <div class="panel">
+                <div style="max-width: 1280px; min-height: 720px">
+                    <video
+                      id="my-video"
+                      class="video-js vjs-big-play-centered vjs-fluid"
+                      controls
+                      preload="auto"
+                      width="640"
+                      height="264"
+                      poster="https://sp.rmbl.ws/s8/6/f/N/7/g/fN7gb.oq1b.1.jpg"
+                      data-setup="{}"
+                    >
+                      <source
+                        src="https://sp.rmbl.ws/s8/2/f/N/7/g/fN7gb.caa.1.mp4?u=3&b=0"
+                        type="video/mp4"
+                      />
+                      <p class="vjs-no-js">
+                        To view this video please enable JavaScript, and consider
+                        upgrading to a web browser that
+                        <a href="https://videojs.com/html5-video-support/" target="_blank"
+                          >supports HTML5 video</a
+                        >
+                      </p>
+                    </video>
+                  </div>
+            </div>
+
+            <button class="accordion">Daily Visit with God - Job 7:1 | 11/12/20</button>
+            <div class="panel">
+                <div style="max-width: 1280px; min-height: 720px">
+                    <video
+                      id="my-video"
+                      class="video-js vjs-big-play-centered vjs-fluid"
+                      controls
+                      preload="auto"
+                      width="640"
+                      height="264"
+                      poster="https://sp.rmbl.ws/s8/6/j/n/2/g/jn2gb.oq1b.1.jpg"
+                      data-setup="{}"
+                    >
+                      <source
+                        src="https://sp.rmbl.ws/s8/2/j/n/2/g/jn2gb.caa.1.mp4?u=3&b=0"
+                        type="video/mp4"
+                      />
+                      <p class="vjs-no-js">
+                        To view this video please enable JavaScript, and consider
+                        upgrading to a web browser that
+                        <a href="https://videojs.com/html5-video-support/" target="_blank"
+                          >supports HTML5 video</a
+                        >
+                      </p>
+                    </video>
+                  </div>
+            </div>
+
+            <button class="accordion">Daily Visit with God - Galatians 3:2-3 | 11/12/20</button>
+            <div class="panel">
+                <div style="max-width: 1280px; min-height: 720px">
+                    <video
+                      id="my-video"
+                      class="video-js vjs-big-play-centered vjs-fluid"
+                      controls
+                      preload="auto"
+                      width="640"
+                      height="264"
+                      poster=https://sp.rmbl.ws/s8/6/f/e/2/g/fe2gb.oq1b.1.jpg"
+                      data-setup="{}"
+                    >
+                      <source
+                        src="https://sp.rmbl.ws/s8/2/f/e/2/g/fe2gb.caa.1.mp4?u=3&b=0"
+                        type="video/mp4"
+                      />
+                      <p class="vjs-no-js">
+                        To view this video please enable JavaScript, and consider
+                        upgrading to a web browser that
+                        <a href="https://videojs.com/html5-video-support/" target="_blank"
+                          >supports HTML5 video</a
+                        >
+                      </p>
+                    </video>
+                  </div>
+            </div>
+
+            <button class="accordion">Daily Visit with God - Galatians 2:21 | 11/11/20</button>
+            <div class="panel">
+                <div style="max-width: 1280px; min-height: 720px">
+                    <video
+                      id="my-video"
+                      class="video-js vjs-big-play-centered vjs-fluid"
+                      controls
+                      preload="auto"
+                      width="640"
+                      height="264"
+                      poster="https://sp.rmbl.ws/s8/6/J/B/Q/g/JBQgb.oq1b.1.jpg"
+                      data-setup="{}"
+                    >
+                      <source
+                        src="https://sp.rmbl.ws/s8/2/J/B/Q/g/JBQgb.caa.1.mp4?u=3&b=0"
+                        type="video/mp4"
+                      />
+                      <p class="vjs-no-js">
+                        To view this video please enable JavaScript, and consider
+                        upgrading to a web browser that
+                        <a href="https://videojs.com/html5-video-support/" target="_blank"
+                          >supports HTML5 video</a
+                        >
+                      </p>
+                    </video>
+                  </div>
+            </div>
+
+            <button class="accordion">Daily Visit with God - Job 6:8 | 11/11/20</button>
+            <div class="panel">
+                <div style="max-width: 1280px; min-height: 720px">
+                    <video
+                      id="my-video"
+                      class="video-js vjs-big-play-centered vjs-fluid"
+                      controls
+                      preload="auto"
+                      width="640"
+                      height="264"
+                      poster="https://sp.rmbl.ws/s8/6/d/E/Q/g/dEQgb.oq1b.1.jpg"
+                      data-setup="{}"
+                    >
+                      <source
+                        src="https://sp.rmbl.ws/s8/2/d/E/Q/g/dEQgb.caa.1.mp4?u=3&b=0"
+                        type="video/mp4"
+                      />
+                      <p class="vjs-no-js">
+                        To view this video please enable JavaScript, and consider
+                        upgrading to a web browser that
+                        <a href="https://videojs.com/html5-video-support/" target="_blank"
+                          >supports HTML5 video</a
+                        >
+                      </p>
+                    </video>
+                  </div>
+            </div>
+
+            <button class="accordion">Daily Visit with God - Job 3:1 | 11/10/20</button>
+            <div class="panel">
+                <div style="max-width: 1280px; min-height: 720px">
+                    <video
+                      id="my-video"
+                      class="video-js vjs-big-play-centered vjs-fluid"
+                      controls
+                      preload="auto"
+                      width="640"
+                      height="264"
+                      poster="https://sp.rmbl.ws/s8/6/v/W/m/g/vWmgb.oq1b.1.jpg"
+                      data-setup="{}"
+                    >
+                      <source
+                        src="https://sp.rmbl.ws/s8/2/P/m/K/g/PmKgb.caa.1.mp4?u=3&b=0"
+                        type="video/mp4"
+                      />
+                      <p class="vjs-no-js">
+                        To view this video please enable JavaScript, and consider
+                        upgrading to a web browser that
+                        <a href="https://videojs.com/html5-video-support/" target="_blank"
+                          >supports HTML5 video</a
+                        >
+                      </p>
+                    </video>
+                  </div>
+            </div>
+
+            <button class="accordion">Daily Visit with God - Galatians 4:14 | 11/10/20</button>
+            <div class="panel">
+                <div style="max-width: 1280px; min-height: 720px">
+                    <video
+                      id="my-video"
+                      class="video-js vjs-big-play-centered vjs-fluid"
+                      controls
+                      preload="auto"
+                      width="640"
+                      height="264"
+                      poster="https://sp.rmbl.ws/s8/6/Z/x/L/g/ZxLgb.oq1b.1.jpg"
+                      data-setup="{}"
+                    >
+                      <source
+                        src="https://sp.rmbl.ws/s8/2/Z/x/L/g/ZxLgb.caa.1.mp4?u=3&b=0"
+                        type="video/mp4"
+                      />
+                      <p class="vjs-no-js">
+                        To view this video please enable JavaScript, and consider
+                        upgrading to a web browser that
+                        <a href="https://videojs.com/html5-video-support/" target="_blank"
+                          >supports HTML5 video</a
+                        >
+                      </p>
+                    </video>
+                  </div>
+            </div>
+
+            <button class="accordion">Daily Visit with God - Galatians 2:17 | 11/10/20</button>
+            <div class="panel">
+                <div style="max-width: 1280px; min-height: 720px">
+                    <video
+                      id="my-video"
+                      class="video-js vjs-big-play-centered vjs-fluid"
+                      controls
+                      preload="auto"
+                      width="640"
+                      height="264"
+                      poster="https://sp.rmbl.ws/s8/6/5/P/I/g/5PIgb.oq1b.1.jpg"
+                      data-setup="{}"
+                    >
+                      <source
+                        src="https://sp.rmbl.ws/s8/2/5/P/I/g/5PIgb.caa.1.mp4?u=3&b=0"
+                        type="video/mp4"
+                      />
+                      <p class="vjs-no-js">
+                        To view this video please enable JavaScript, and consider
+                        upgrading to a web browser that
+                        <a href="https://videojs.com/html5-video-support/" target="_blank"
+                          >supports HTML5 video</a
+                        >
+                      </p>
+                    </video>
+                  </div>
+            </div>
+
+            <button class="accordion">Daily Visit with God - Galatians 2:16 | 11/09/20</button>
+            <div class="panel">
+                <div style="max-width: 1280px; min-height: 720px">
+                    <video
+                      id="my-video"
+                      class="video-js vjs-big-play-centered vjs-fluid"
+                      controls
+                      preload="auto"
+                      width="640"
+                      height="264"
+                      poster="https://sp.rmbl.ws/s8/6/b/s/B/g/bsBgb.oq1b.1.jpg"
+                      data-setup="{}"
+                    >
+                      <source
+                        src="https://sp.rmbl.ws/s8/2/b/s/B/g/bsBgb.caa.1.mp4"
+                        type="video/mp4"
+                      />
+                      <p class="vjs-no-js">
+                        To view this video please enable JavaScript, and consider
+                        upgrading to a web browser that
+                        <a href="https://videojs.com/html5-video-support/" target="_blank"
+                          >supports HTML5 video</a
+                        >
+                      </p>
+                    </video>
+                  </div>
+            </div>
+
+            <button class="accordion">Daily Visit with God - Galatians 2:14 | 11/07/20</button>
+            <div class="panel">
+                <div style="max-width: 1280px; min-height: 720px">
+                    <video
+                      id="my-video"
+                      class="video-js vjs-big-play-centered vjs-fluid"
+                      controls
+                      preload="auto"
+                      width="640"
+                      height="264"
+                      poster="https://sp.rmbl.ws/s8/6/3/9/q/g/39qgb.oq1b.1.jpg"
+                      data-setup="{}"
+                    >
+                      <source
+                        src="https://sp.rmbl.ws/s8/2/3/9/q/g/39qgb.haa.1.mp4"
+                        type="video/mp4"
+                      />
+                      <p class="vjs-no-js">
+                        To view this video please enable JavaScript, and consider
+                        upgrading to a web browser that
+                        <a href="https://videojs.com/html5-video-support/" target="_blank"
+                          >supports HTML5 video</a
+                        >
+                      </p>
+                    </video>
+                  </div>
+            </div>
+
+            <button class="accordion">Daily Visit with God - Galatians 2:4 | 11/06/20</button>
+            <div class="panel">
+                <div style="max-width: 1280px; min-height: 720px">
+                    <video
+                      id="my-video"
+                      class="video-js vjs-big-play-centered vjs-fluid"
+                      controls
+                      preload="auto"
+                      width="640"
+                      height="264"
+                      poster="https://sp.rmbl.ws/s8/6/v/W/m/g/vWmgb.oq1b.1.jpg"
+                      data-setup="{}"
+                    >
+                      <source
+                        src="https://sp.rmbl.ws/s8/2/v/W/m/g/vWmgb.haa.1.mp4"
+                        type="video/mp4"
+                      />
+                      <p class="vjs-no-js">
+                        To view this video please enable JavaScript, and consider
+                        upgrading to a web browser that
+                        <a href="https://videojs.com/html5-video-support/" target="_blank"
+                          >supports HTML5 video</a
+                        >
+                      </p>
+                    </video>
+                  </div>
+            </div>
+
+            <button class="accordion">Daily Visit with God - Galatians 2:2 | 11/05/20</button>
+            <div class="panel">
+                <div style="max-width: 1280px; min-height: 720px">
+                    <video
+                      id="my-video"
+                      class="video-js vjs-big-play-centered vjs-fluid"
+                      controls
+                      preload="auto"
+                      width="640"
+                      height="264"
+                      poster="https://sp.rmbl.ws/s8/6/D/B/i/g/DBigb.oq1b.1.jpg"
+                      data-setup="{}"
+                    >
+                      <source
+                        src="https://sp.rmbl.ws/s8/2/D/B/i/g/DBigb.haa.1.mp4"
+                        type="video/mp4"
+                      />
+                      <p class="vjs-no-js">
+                        To view this video please enable JavaScript, and consider
+                        upgrading to a web browser that
+                        <a href="https://videojs.com/html5-video-support/" target="_blank"
+                          >supports HTML5 video</a
+                        >
+                      </p>
+                    </video>
+                  </div>
+            </div>
+        </div>
+        <div class="ccolumn-3 right"></div>
+    </div>
+
+
+    
+
+    <div class="section-5_sermons">
+      <!--footer starts from here-->
+      <footer class="footer-distributed">
+        <div class="footer-left">
+          <h3>Scripture Alone</h3>
+
+          <p class="footer-links">
+            <a href="/index.html">Home</a>
+            ·
+            <a href="/about.html">About</a>
+            ·
+            <a href="#">Uptime Status</a>
+            ·
+            <a href="/updates.html">Updates</a>
+            ·
+            <a href="/contact.html">Contact</a>
+          </p>
+
+          <p class="footer-company-name">Scripture Alone &copy; 2022</p>
+        </div>
+
+        <div class="footer-center">
+          <!--<div>
+          <i class="fa fa-map-marker"></i>
+          <p><span>21 Revolution Street</span> Delhi, India</p>
+          </div>
+          
+          <div>
+          <i class="fa fa-phone"></i>
+          <p>+1 555 123456</p>
+          </div>-->
+
+          <div>
+            <i class="fa fa-envelope"></i>
+            <p>
+              <a href="mailto:support@crosscrusaders.com"
+                >support@crosscrusaders.com</a
+              >
+            </p>
+          </div>
+        </div>
+
+        <div class="footer-right">
+          <p class="footer-company-about">
+            <span>About Scripture Alone</span>
+            Scripture Alone is a Bible app created by
+            <a href="https://crosscrusaders.com/">Cross Crusaders</a> in order
+            to combat the toleration of the false teachers in other apps and to
+            bring forward suppressed Bible preachers with doctrinally sound
+            content for the current time we are living in.
+          </p>
+
+          <div class="footer-icons">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://discord.gg/3YEd7KdJkz" target="blank"
+              ><i class="fa-brands fa-discord"></i
+            ></a>
+            <a
+              href="https://github.com/ItsShawn/itsshawn.github.io/"
+              target="blank"
+              ><i class="fa fa-github"></i
+            ></a>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="https://vjs.zencdn.net/7.17.0/video.min.js"></script>
+    <script>
+      $(function () {
+        var $refreshButton = $("#refresh");
+        var $results = $("#css_result");
+
+        function refresh() {
+          var css = $("style.cp-pen-styles").text();
+          $results.html(css);
+        }
+
+        refresh();
+        $refreshButton.click(refresh);
+
+        // Select all the contents when clicked
+        $results.click(function () {
+          $(this).select();
+        });
+      });
+    </script>
+    <script>
+      // Adding a vertical volume bar
+
+      var vid = document.getElementById("my-video");
+
+      var player = videojs(vid, {
+        controlBar: { volumePanel: { inline: false } },
+      });
+    </script>
+
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+        
+        for (i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.maxHeight) {
+              panel.style.maxHeight = null;
+            } else {
+              panel.style.maxHeight = panel.scrollHeight + "px";
+            } 
+          });
+        }
+    </script>
+
+    <script>
+      // After the DOM is loaded
+      window.addEventListener("load", function(e) {
+
+      // Hamburger or X
+      let navham = document.getElementById('nav-ham');
+      // 1st level (only one)
+      let navul = document.querySelector('nav > ul');
+      // 2nd level (many)
+      let navulliuls = document.querySelectorAll('nav > ul > li > ul');
+      // 1st level links that have a 2nd level dropdown (many)
+      let navullis = document.querySelectorAll('nav > ul > li a:not(:only-child)');
+
+      // Toggle 2nd level visibility
+      let toggle2nd = function(e) {
+        // Make 2nd level visible
+        let thisul = this.parentNode.querySelector('ul');
+        thisul.classList.toggle('active');
+        // Hide other dropdowns
+        for (let item of navulliuls) {
+          if (item !== thisul) {
+            item.classList.remove('active');
+          }
+        }
+        // Do not execute this link or hidenav
+        e.stopPropagation();
+      }
+
+      // Toggle mobile navigation bar
+      let togglenav = function(e) {
+        // Hamburger to X toggle
+        navham.classList.toggle('active');
+        // 1st level visible toggle
+        navul.classList.toggle('active');
+        // Do not execute hidenav
+        e.stopPropagation();
+      }
+
+      // Hide mobile navigation bar
+      let hidenav = function(e) {
+        // Hamburger
+        navham.classList.remove('active');
+        // 1st level visible toggle
+        navul.classList.remove('active');
+        e.stopPropagation();
+        // Hide 2nd level
+        for (let item of navulliuls) {
+          item.classList.remove('active');
+        }
+      }
+
+      // Toggle 2nd level visibility on click on any link that has a 2nd level dropdown
+      for (let item of navullis) {
+        item.addEventListener("click", toggle2nd, false);
+      }
+
+      // Hamburger or X click
+      navham.addEventListener("click", togglenav, false);
+
+      // Clicking away from dropdown will remove the dropdown class
+      document.documentElement.addEventListener("click", hidenav, false);
+      }, false);
+    </script>
+  </body>
+</html>
