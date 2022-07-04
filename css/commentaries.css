@@ -157,6 +157,7 @@
 .ccolumn-2 {
     height: 75vh;
     float: left;
+    padding: 50px;
 }
 
 .ccolumn-3 {
@@ -193,7 +194,7 @@ a {
 }
 
 #torrey-works {
-    font-size: 30px;
+    font-size: 22px;
     list-style-type: none;
     text-align: center;
 }
@@ -201,5 +202,8 @@ a {
 .torrey-header {
     text-align: center;
     padding-right: 17.5%;
+    padding-bottom: 10px;
 }
+
+
 
