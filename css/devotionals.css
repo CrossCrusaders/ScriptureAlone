@@ -287,17 +287,53 @@
     display: grid;
     grid-template-columns: auto auto auto auto;
     grid-gap: 10px;
-    background-color: #2196F3;
+    background-color: transparent;
     padding: 10px;
   }
   
   .grid-container > div {
+    border-radius: 25px;
     background-color: rgba(255, 255, 255, 0.8);
     text-align: center;
     padding: 20px 0;
     font-size: 30px;
+    box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
   
   .item1 {
     grid-column: 1 / span 1;
+  }
+
+  .grid-list {
+    text-decoration: none;
+    color: inherit;
+    
+  }
+
+  a {
+    text-decoration: none;
+    color: #33383b;
+  }
+  
+  .underline{
+    position: relative;
+  }
+  
+  .underline::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: 2px;
+    background-color: #33383b;
+    transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+  }
+  
+  @media (hover: hover) and (pointer: fine) {
+    .underline:hover::before{
+      left: 0;
+      right: auto;
+      width: 100%;
+    }
   }
