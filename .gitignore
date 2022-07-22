@@ -1,1 +1,4 @@
 node_modules
+/js/my_key.js
+
+keys.js
