@@ -1503,6 +1503,11 @@
   dependencies:
     "json-buffer" "3.0.0"
 
+"kjv@^1.0.0":
+  "integrity" "sha512-YIHFSpcXqlZ8YcOZMG7MgCKOj3MMICuHg5fZ9z9ovPYkhPQgtci2ppcO8FMUroRh48hwdsxPBa+Xdfop98/2yA=="
+  "resolved" "https://registry.npmjs.org/kjv/-/kjv-1.0.0.tgz"
+  "version" "1.0.0"
+
 "latest-version@^5.1.0":
   "integrity" "sha512-weT+r0kTkRQdCdYCNtkMwWXQTMEswKrFBkm4ckQOMVhhqhIMI1UT2hMj+1iigIhgSZm5gTmrRXBNoGUgaTY1xA=="
   "resolved" "https://registry.npmjs.org/latest-version/-/latest-version-5.1.0.tgz"

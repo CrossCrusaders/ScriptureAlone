@@ -4,7 +4,6 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    
     "devStart": "nodemon server.js"
   },
   "repository": {
@@ -27,6 +26,7 @@
     "express": "^4.18.1",
     "firebase": "^9.8.2",
     "jsonwebtoken": "^8.5.1",
+    "kjv": "^1.0.0",
     "mongodb": "^4.7.0",
     "mongoose": "^6.3.8",
     "yarn": "^1.22.19"
