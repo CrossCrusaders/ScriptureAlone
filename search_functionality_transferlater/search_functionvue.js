@@ -1,31 +1,50 @@
-"use strict";
-const app = Vue.createApp({
-    data() {
-        return {
-            product : 'testingThis'
-        }
-    }
-});
+//was attempting vue. but, on the side, not with this
 
-// this.responseAvailable = false;
+// // import axios from 'axios';
+// // import axios from 'axios'
+// const axios = require('axios').default;
+// const ref = require('vue');
 //
-// fetch("", {
-//     "method": "GET",
-//     "headers": {
-//
+// export default {
+//     setup() {
+//         const result = ref(null);
+//         axios.get('https://4.dbt.io/api/bibles/ENGESV/book?book_id&v=4&key=')
+//             .then((response)=>{
+//                 console.log('events:', response.data);
+//                 return  {result}
+//             })
+//             .catch((error)=>{
+//                 console.log(error);
+//             })
 //     }
-// })
-//     .then(response => {
-//         if(response.ok){
-//             return response.json()
-//         } else{
-//             alert("Server returned " + response.status + " : " + response.statusText);
-//         }
-//     })
-//     .then(response => {
-//         this.result = response.body;
-//         this.responseAvailable = true;
-//     })
-//     .catch(err => {
-//         console.log(err);
-//     });
+// }
+//
+// //
+// // export default {
+// //     setup() {
+// //         return {}
+// //     }
+// // }
+// //
+// // function useSearch() {
+// // }
+// //
+// // function useSorting() {
+// // }
+// //
+// // // this.responseAvailable = false;
+// //
+// // fetch("https://4.dbt.io/api/bibles/ENGESV/book?book_id&v=4&key=", {
+// //     "method": "GET",
+// //     "headers": {}
+// // })
+// //     .then((response) => {
+// //         return response.json();
+// //     }).then(function (data) {
+// //     console.log(data);
+// //     // doGetBibleBookNames(data);
+// // }).catch(function (jqXhr, status, error) {
+// //     console.log(jqXhr);
+// //     console.log(status);
+// //     console.log(error);
+// // });

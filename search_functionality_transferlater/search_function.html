@@ -2,65 +2,93 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Search the Bible</title>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
           type="text/css">
 </head>
-<body>
-<form class="bible_search" id="app">
-    <h1>{{ product }}</h1>
-</form>
+<body class="d-flex justify-content-center">
+<!--<span id="app">{{header}}</span>-->
 <!--<span class="the-info"></span>-->
+<container class="pt-5">
+<span class="doDisplayChapterHere pb-5 pt-5" class="col">
 
-<form action="/">
-    <h1>Search Bible:</h1><br>
-    <label for="bible_version">Choose a bible version:</label><br>
-    <select name="bible_version" id="bible_version">
+</span><br>
+
+<form class="d-grid col-sm-12 pt-5">
+    <h1>Search Bible:</h1>
+    <br><label for="bible_version">Choose a bible version:</label><br>
+    <select name="bible_version" id="bible_version" class="form-select form-select-sm">
+        <option selected>--Please choose an option--</option>
         <option value="ENGKJV">King James Version</option>
         <option value="ENGESV">English Standard Version</option>
-        <option value="#" disabled>TBD</option>
-        <option value="#" disabled>TBD</option>
+        <option value="ENGNAS">New American Standard Bible</option>
+        <option value="ENGASV" disabled>American Standard Bible</option>
+        <option value="ENGWWH" disabled>World English Bible - Winfred Henson</option>
+        <option value="ENGWMV" disabled>Wycliffe Modern</option>
+
     </select><br>
+
+
     <label for="bible_book">Choose a book:</label><br>
-    <select name="bible_book" id="bible_book" class="bible_book_options">
+    <select name="bible_book" id="bible_book" class="bible_book_options form-select form-select-sm">
+        <option value="">--Please choose an option--</option>
         <!--        <option value="MAT">Matthew</option>-->
         <!--        <option value="ENGESV">English Standard Version</option>-->
         <!--        <option value="#" disabled>TBD</option>-->
         <!--        <option value="#" disabled>TBD</option>-->
     </select><br>
-    <label for="bible_chapter">Choose a chapter:</label><br>
-    <select name="bible_version" id="bible_chapter">
-        <option value="ENGKJV">King James Version</option>
-        <option value="ENGESV">English Standard Version</option>
-        <option value="#" disabled>TBD</option>
-        <option value="#" disabled>TBD</option>
+
+
+    <label for="bible_chapter">Choose a chapter (just one at a time so far):</label><br>
+    <select name="bible_chapter" id="bible_chapter" class="bible_book_chapter form-select form-select-sm" disabled>
+        <option selected>--Please choose an option--</option>
+        <!--        based on the bible book, display chapter number options.-->
+        <!--        i.e Philemon has one chapter:-->
+        <!--        <option value="1">1</option>-->
+        <!--        i.e. Titus has 3 chapters-->
+        <!--        <option value="1">1</option>-->
+        <!--        <option value="2" disabled>2</option>-->
+        <!--        <option value="3" disabled>3</option>-->
     </select><br>
-    <label for="bible_chapter">Choose a verse:</label><br>
-    <select name="bible_verse" id="bible_verse">
-        <option value="ENGKJV">King James Version</option>
-        <option value="ENGESV">English Standard Version</option>
-        <option value="#" disabled>TBD</option>
+
+    <label for="bible_verse">Choose a verse:</label><br>
+    <select name="bible_verse" id="bible_verse" class="form-select form-select-sm" disabled>
+        <option selected>--Please choose an option--</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
         <option value="#" disabled>TBD</option>
     </select><br>
 
-    <button id="doSearchOnClick" class="">Search</button>
+    <button id="doSearchOnClick" class="col-6">Search</button>
 </form>
+
+</container>
 
 
 <script src="../keys.js"></script>
+<!--TRYING VUE.-->
+<script src="https://unpkg.com/vue@3"></script>
+<!--<script src="https://unpkg.com/vue@3.2.37/dist/vue.global.js"></script>-->
+<!--<script src="https://unpkg.com/axios/dist/axios.min.js"></script>-->
+<!--<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>-->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 <script src="search_function.js"></script>
-
-<!--TRYING VUE.-->
-<!--<script src="https://unpkg.com/vue@3"></script>-->
-<script src="https://unpkg.com/vue@3.2.37/dist/vue.global.js"></script>
-<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/3.2.37/vue.global.prod.min.js" integrity="sha512-8GokEWxcB/NrPU4O8BHTgd9dkLouAsvqCnk6BSa2CZw7QXh0QM8GHfS53xYW1QJJVyJWctlcdRQwu5UxeLVsNA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>-->
 <script src="search_functionvue.js"></script>
-<script>
-    const mountedApp = app.mount('#app');
-</script>
+
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/3.2.37/vue.global.prod.min.js" integrity="sha512-8GokEWxcB/NrPU4O8BHTgd9dkLouAsvqCnk6BSa2CZw7QXh0QM8GHfS53xYW1QJJVyJWctlcdRQwu5UxeLVsNA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>-->
+<!--<script>-->
+<!--    // const mountedApp = app.mount('#app');-->
+<!--    Vue.createApp({-->
+<!--        data(){-->
+<!--            return {-->
+<!--                header: 'testing'-->
+<!--            }-->
+<!--        }-->
+<!--    }).mount('#app')-->
+<!--</script>-->
 
 </body>
 </html>
