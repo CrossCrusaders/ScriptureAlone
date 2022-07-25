@@ -24,11 +24,14 @@
 
 .plans-body {
     background: #faf8f7;
-    color: #33383b;;
-    box-shadow: inset -53px -41px 198px #33383b, inset 95px -2px 200px #33383b;
+    color: #33383b;
+    /*box-shadow: inset -53px -41px 198px #33383b, inset 95px -2px 200px #33383b;*/
     display:flex;
     align-items:center;
-    height:50vh;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    min-height: 50vh;
+    max-height: auto;
     justify-content: center;
 }
 
@@ -42,7 +45,7 @@
     margin: 0 auto;
     display: inline-block;
     font-weight: normal;
-    font-size: 30px;
+    font-size: 25px;
   }
   
   h4:after {
