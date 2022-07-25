@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--    mobile view-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Search the Bible</title>
+    <!--    google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <!--    bootstrap 5 css link-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+          type="text/css">
+    <!--    css link-->
+    <link rel="stylesheet" href="search_bible.css" type="text/css">
+</head>
+<body class="d-flex justify-content-center pt-5">
+
+<!--wraps all the content-->
+<div class="d-grid col-10 col-lg-10">
+
+    <!--    wraps span that users selected chapter/ bible book-->
+    <div class="CSS_thatWrapsDisplayChapterHere overflow-auto mh-10">
+            <span class="doDisplayChapterHere pb-5 pt-1 col">
+
+            </span>
+    </div>
+    <br>
+
+    <!--    bible options/ user values for bible-->
+    <form class="">
+        <h1 class="search_bible_header text-center">Search Bible:</h1>
+
+        <!--        bible version/ user value for bible version -->
+        <br><label for="bible_version">Choose a bible version:</label><br>
+        <select name="bible_version" id="bible_version" class="bible_version form-select form-select-sm">
+            <option disabled>Please select a version</option>
+            <option value="ENGKJV">King James Version</option>
+            <option value="ENGESV">English Standard Version</option>
+            <option value="ENGNAS">New American Standard Bible</option>
+            <option value="#" disabled>TBD</option>
+            <option value="#" disabled>TBD</option>
+            <option value="#" disabled>TBD</option>
+        </select><br>
+
+        <!--        bible book/ user value for bible book -->
+        <label for="bible_book">Choose a book:</label><br>
+        <select name="bible_book" id="bible_book" class="bible_book_options form-select form-select-sm">
+            <option disabled>Please select a book</option>
+            <!--        <option value="MAT">Matthew</option>-->
+            <!--        <option value="ENGESV">English Standard Version</option>-->
+            <!--        <option value="#" disabled>TBD</option>-->
+            <!--        <option value="#" disabled>TBD</option>-->
+        </select><br>
+
+        <!--        bible chapter/ user value for bible chapter-->
+        <!--        maybe to be created once a user selects a book? or enabled... (in progress)-->
+        <label for="bible_chapter">Choose a chapter (needs to display based on book value...):</label><br>
+        <select name="bible_chapter" id="bible_chapter" class="bible_book_chapter form-select form-select-sm">
+            <option disabled>Please select a chapter</option>
+
+            <!--        based on the bible book, display chapter number options.-->
+            <!--        i.e Philemon has one chapter:-->
+            <!--        <option value="1">1</option>-->
+            <!--        i.e. Titus has 3 chapters-->
+            <!--        <option value="1">1</option>-->
+            <!--        <option value="2" disabled>2</option>-->
+            <!--        <option value="3" disabled>3</option>-->
+        </select><br>
+
+        <button id="doSearchOnClick" class="search_bible_button col-12">Search</button>
+    </form>
+</div>
+
+<!--scripts section-->
+<script src="../keys.js"></script>
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+<script src="search_bible.js"></script>
+
+</body>
+</html>
