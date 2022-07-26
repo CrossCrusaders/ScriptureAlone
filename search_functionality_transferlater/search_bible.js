@@ -85,13 +85,20 @@
 //doDisplayBibleBookNames is called in doFetchInfoForBibleBooks();
     function doDisplayBibleBookNames(data) {
         let bible_book_options = document.querySelector('.bible_book_options');
-
+        let chapter_options = document.querySelector('.bible_chapter');
 
         //book_group, book_id, book_id_osis, book_id_usfx,
         // book_order, chapters, name, name_short, testament, testament_order
         //^^ this is the data value titles.
+
         data.data.forEach((value, index, array) => {
-            // console.log(value);
+                let justAChapter = ``;
+            if (index === 0) value.chapters.forEach((chapter)=>{
+               justAChapter += `<option value="${chapter}">${chapter}</option>`;
+            });
+            chapter_options.insertAdjacentHTML('beforeend', `
+            ${justAChapter}
+            `)
             bible_book_options.insertAdjacentHTML('beforeend', `
         <option value="${value.book_id}">${value.name}</option>
 `)
@@ -109,7 +116,7 @@
             let chapter_options = document.querySelector('.bible_chapter');
             //if using switch case, to save retyping, making function variables.
             //empty the options to avoid repeats
-            let empty_options = () => chapter_options.innerHTML = "";
+            let empty_options = () => chapter_options.innerText = "";
             //get the array of chapters based on the index, make option for every chapter.
             let doGetChaptersFromIndex = (index) => data.data[index].chapters.forEach((chapterList) => {
                 let chapter = '';
@@ -125,10 +132,8 @@
 //for now, manually inputing every book_value case... needs to be refactored...
             switch (book_value) {
                 case 'GEN':
-                    console.log(`${book_value}`);
                     empty_options();
                     doGetChaptersFromIndex(0);
-                    // option_elements(`${book_value}`);
                     break;
                 case 'EXO':
                     empty_options();
@@ -423,8 +428,6 @@
 
 //doCallAllFunctions() is just a place to call all functions.
     function doCallAllFunctions() {
-
-
         doFetchInfoForBibleBooks();
 //    doSearchOnClick(): // connected to:
 //    function doFetchInfoForBibleVerses(version, book, chapter, displayinformation);
@@ -436,4 +439,4 @@
 
 })();
 
-//TODO: make option values default to 1-50 on page load. & refactor switch case...
+//TODO: find a shorter solution to line 133...
