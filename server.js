@@ -1,8 +1,24 @@
+const DB = process.env.DATABASE.replace(
+  '<password>',
+  process.env.DATABASE_PASSWORD
+);
+
+mongoose
+  .connect(DB, {
+    useNewUrlParser: true,
+    useCreateIndex: true,
+    useFindAndModify: false
+  })
+  .then(() => console.log('DB connnection successful!'));
+
+
 const express = require('express');
 const path = require('path');
 
 const app = express();
 const port = process.env.PORT || 8080;
+
+app.use(express.static(__dirname))
 
 // sendFile will go here
 app.get('/', function(req, res) {

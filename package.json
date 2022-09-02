@@ -28,7 +28,7 @@
     "jsonwebtoken": "^8.5.1",
     "kjv": "^1.0.0",
     "mongodb": "^4.7.0",
-    "mongoose": "^6.3.8",
+    "mongoose": "^6.5.4",
     "yarn": "^1.22.19"
   },
   "devDependencies": {
