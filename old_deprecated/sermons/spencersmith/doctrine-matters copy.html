@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Doctrine Matters - Spencer Smith | Scripture Alone</title>
+    <!--<link rel="stylesheet" href="/style.css" />-->
+
+    <link rel="stylesheet" href="/style.css"
+    <link rel="stylesheet" href="/sermons/latest-sermons.css" />
+    <link rel="stylesheet" href="/sermons/spencersmith/spencer.css" />
+    <link href="https://vjs.zencdn.net/7.17.0/video-js.css" rel="stylesheet" />
+    <script src="https://vjs.zencdn.net/7.17.0/video.min.js"></script>    
+    <link
+      href="https://unpkg.com/@videojs/themes@1/dist/sea/index.css"
+      rel="stylesheet"
+    />
+
+
+  </head>
+  <body>
+
+    <div class="section-2-mog" id="watch">
+      <div class="col-left"></div>
+      <div class="video-holder">
+        <div style="max-width: 1280px; min-height: 720px">
+          <video
+            id="my-video"
+            class="video-js vjs-big-play-centered vjs-fluid"
+            controls
+            preload="auto"
+            width="640"
+            height="264"
+            poster="/images/thumbnails/sermons/spencer/spencer-thumb-dm.jpg"
+            data-setup="{}"
+          >
+            <source
+              src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+              type="video/mp4"
+            />
+            <p class="vjs-no-js">
+              To view this video please enable JavaScript, and consider
+              upgrading to a web browser that
+              <a href="https://videojs.com/html5-video-support/" target="_blank"
+                >supports HTML5 video</a
+              >
+            </p>
+          </video>
+        </div>
+      </div>
+      <div class="col-right"></div>
+    </div>
+
+    
+    <script>
+      $(function () {
+        var $refreshButton = $("#refresh");
+        var $results = $("#css_result");
+
+        function refresh() {
+          var css = $("style.cp-pen-styles").text();
+          $results.html(css);
+        }
+
+        refresh();
+        $refreshButton.click(refresh);
+
+        // Select all the contents when clicked
+        $results.click(function () {
+          $(this).select();
+        });
+      });
+    </script>
+    <script>
+      // Adding a vertical volume bar
+
+      var vid = document.getElementById("my-video");
+
+      var player = videojs(vid, {
+        controlBar: { volumePanel: { inline: false } },
+      });
+    </script>
+
+    <script>
+      ocument.getElementById("copyButton2").addEventListener("click", function() {
+    copyToClipboardMsg(document.getElementById("copyTarget2"), "msg");
+});
+
+document.getElementById("pasteTarget").addEventListener("mousedown", function() {
+    this.value = "";
+});
+
+
+function copyToClipboardMsg(elem, msgElem) {
+	  var succeed = copyToClipboard(elem);
+    var msg;
+    if (!succeed) {
+        msg = "Copy not supported or blocked.  Press Ctrl+c to copy."
+    } else {
+        msg = "Text copied to the clipboard."
+    }
+    if (typeof msgElem === "string") {
+        msgElem = document.getElementById(msgElem);
+    }
+    msgElem.innerHTML = msg;
+    setTimeout(function() {
+        msgElem.innerHTML = "";
+    }, 2000);
+}
+
+function copyToClipboard(elem) {
+	  // create hidden text element, if it doesn't already exist
+    var targetId = "_hiddenCopyText_";
+    var isInput = elem.tagName === "INPUT" || elem.tagName === "TEXTAREA";
+    var origSelectionStart, origSelectionEnd;
+    if (isInput) {
+        // can just use the original source element for the selection and copy
+        target = elem;
+        origSelectionStart = elem.selectionStart;
+        origSelectionEnd = elem.selectionEnd;
+    } else {
+        // must use a temporary form element for the selection and copy
+        target = document.getElementById(targetId);
+        if (!target) {
+            var target = document.createElement("textarea");
+            target.style.position = "absolute";
+            target.style.left = "-9999px";
+            target.style.top = "0";
+            target.id = targetId;
+            document.body.appendChild(target);
+        }
+        target.textContent = elem.textContent;
+    }
+    // select the content
+    var currentFocus = document.activeElement;
+    target.focus();
+    target.setSelectionRange(0, target.value.length);
+    
+    // copy the selection
+    var succeed;
+    try {
+    	  succeed = document.execCommand("copy");
+    } catch(e) {
+        succeed = false;
+    }
+    // restore original focus
+    if (currentFocus && typeof currentFocus.focus === "function") {
+        currentFocus.focus();
+    }
+    
+    if (isInput) {
+        // restore prior selection
+        elem.setSelectionRange(origSelectionStart, origSelectionEnd);
+    } else {
+        // clear temporary content
+        target.textContent = "";
+    }
+    return succeed;
+}
+
+    </script>
+  </body>
+</html>

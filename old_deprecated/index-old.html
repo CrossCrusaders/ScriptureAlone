@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Scripture Alone</title>
+    <script
+      src="https://kit.fontawesome.com/40a1762593.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="search.css" rel="stylesheet" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Play:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap"
+      rel="stylesheet"
+    />
+    <!--<link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />-->
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="package/css/swiper.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Footer CSS -->
+    
+  </head>
+
+  <body>
+    <div class="section-1">
+      <div class="container">
+        <div class="navbar">
+          <div class="menu">
+            <h3 class="logo"><span></span></h3>
+            <div class="hamburger-menu">
+              <div class="bar"></div>
+            </div>
+          </div>
+        </div>
+  
+        <div class="main-container">
+          <div class="main">
+            <header>
+              <div class="inner-section"> <!-- overlay class-->
+                <div class="column-1">
+                  <div class="SA-title">
+                    <h1>Scripture Alone</h1>
+                  </div>
+                  <div class="SA-search">
+                    <div id="wrapper1">
+                        <form class="search-form" action="/form/submit" method="GET">
+                          <input type="search" value="" placeholder="Search the Bible" class="search-input">
+                          <button type="submit" class="search-button">
+                            <svg class="submit-button">
+                              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#search"></use>
+                            </svg>
+                          </button>
+                        </form>
+                        
+                        <svg xmlns="http://www.w3.org/2000/svg" width="0" height="0" display="none">
+                          <symbol id="search" viewBox="0 0 32 32">
+                            <path d="M 19.5 3 C 14.26514 3 10 7.2651394 10 12.5 C 10 14.749977 10.810825 16.807458 12.125 18.4375 L 3.28125 27.28125 L 4.71875 28.71875 L 13.5625 19.875 C 15.192542 21.189175 17.250023 22 19.5 22 C 24.73486 22 29 17.73486 29 12.5 C 29 7.2651394 24.73486 3 19.5 3 z M 19.5 5 C 23.65398 5 27 8.3460198 27 12.5 C 27 16.65398 23.65398 20 19.5 20 C 15.34602 20 12 16.65398 12 12.5 C 12 8.3460198 15.34602 5 19.5 5 z" />
+                          </symbol>
+                          <symbol id="user" viewBox="0 0 32 32">
+                            <path d="M 16 4 C 12.145852 4 9 7.1458513 9 11 C 9 13.393064 10.220383 15.517805 12.0625 16.78125 C 8.485554 18.302923 6 21.859881 6 26 L 8 26 C 8 21.533333 11.533333 18 16 18 C 20.466667 18 24 21.533333 24 26 L 26 26 C 26 21.859881 23.514446 18.302923 19.9375 16.78125 C 21.779617 15.517805 23 13.393064 23 11 C 23 7.1458513 19.854148 4 16 4 z M 16 6 C 18.773268 6 21 8.2267317 21 11 C 21 13.773268 18.773268 16 16 16 C 13.226732 16 11 13.773268 11 11 C 11 8.2267317 13.226732 6 16 6 z" /></symbol>
+                          <symbol id="images" viewbox="0 0 32 32">
+                            <path d="M 2 5 L 2 6 L 2 26 L 2 27 L 3 27 L 29 27 L 30 27 L 30 26 L 30 6 L 30 5 L 29 5 L 3 5 L 2 5 z M 4 7 L 28 7 L 28 20.90625 L 22.71875 15.59375 L 22 14.875 L 21.28125 15.59375 L 17.46875 19.40625 L 11.71875 13.59375 L 11 12.875 L 10.28125 13.59375 L 4 19.875 L 4 7 z M 24 9 C 22.895431 9 22 9.8954305 22 11 C 22 12.104569 22.895431 13 24 13 C 25.104569 13 26 12.104569 26 11 C 26 9.8954305 25.104569 9 24 9 z M 11 15.71875 L 20.1875 25 L 4 25 L 4 22.71875 L 11 15.71875 z M 22 17.71875 L 28 23.71875 L 28 25 L 23.03125 25 L 18.875 20.8125 L 22 17.71875 z" />
+                          </symbol>
+                          <symbol id="post" viewbox="0 0 32 32">
+                            <path d="M 3 5 L 3 6 L 3 23 C 3 25.209804 4.7901961 27 7 27 L 25 27 C 27.209804 27 29 25.209804 29 23 L 29 13 L 29 12 L 28 12 L 23 12 L 23 6 L 23 5 L 22 5 L 4 5 L 3 5 z M 5 7 L 21 7 L 21 12 L 21 13 L 21 23 C 21 23.73015 21.221057 24.41091 21.5625 25 L 7 25 C 5.8098039 25 5 24.190196 5 23 L 5 7 z M 7 9 L 7 10 L 7 13 L 7 14 L 8 14 L 18 14 L 19 14 L 19 13 L 19 10 L 19 9 L 18 9 L 8 9 L 7 9 z M 9 11 L 17 11 L 17 12 L 9 12 L 9 11 z M 23 14 L 27 14 L 27 23 C 27 24.190196 26.190196 25 25 25 C 23.809804 25 23 24.190196 23 23 L 23 14 z M 7 15 L 7 17 L 12 17 L 12 15 L 7 15 z M 14 15 L 14 17 L 19 17 L 19 15 L 14 15 z M 7 18 L 7 20 L 12 20 L 12 18 L 7 18 z M 14 18 L 14 20 L 19 20 L 19 18 L 14 18 z M 7 21 L 7 23 L 12 23 L 12 21 L 7 21 z M 14 21 L 14 23 L 19 23 L 19 21 L 14 21 z" />
+                          </symbol>
+                          <symbol id="special" viewbox="0 0 32 32">
+                            <path d="M 4 4 L 4 5 L 4 27 L 4 28 L 5 28 L 27 28 L 28 28 L 28 27 L 28 5 L 28 4 L 27 4 L 5 4 L 4 4 z M 6 6 L 26 6 L 26 26 L 6 26 L 6 6 z M 16 8.40625 L 13.6875 13.59375 L 8 14.1875 L 12.3125 18 L 11.09375 23.59375 L 16 20.6875 L 20.90625 23.59375 L 19.6875 18 L 24 14.1875 L 18.3125 13.59375 L 16 8.40625 z M 16 13.3125 L 16.5 14.40625 L 17 15.5 L 18.1875 15.59375 L 19.40625 15.6875 L 18.5 16.5 L 17.59375 17.3125 L 17.8125 18.40625 L 18.09375 19.59375 L 17 19 L 16 18.40625 L 15 19 L 14 19.59375 L 14.3125 18.40625 L 14.5 17.3125 L 13.59375 16.5 L 12.6875 15.6875 L 13.90625 15.59375 L 15.09375 15.5 L 15.59375 14.40625 L 16 13.3125 z" />
+                          </symbol>
+                        </svg>
+                  
+                      <select class="form-select" aria-label="Default select example">
+                        <option selected>--Select your version--</option>
+                        <option value="1">King James Version</option>
+                        <option value="2">New King James Version</option>
+                        <option value="3">English Standard Version</option>
+                        <option value="4">New American Standard Bible 1995</option>
+                      </select>
+                    </div>
+
+                    <div id="wrapper2">
+                      <!-- Trigger/Open The Modal -->
+                      <button class="button-9" role="button" id="myBtn" type="button">Bible Book List</button>
+                        
+                      <!-- The Modal -->
+                      <div id="myModal" class="modal">
+            
+                        <!-- Modal content -->
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h2>Modal Header</h2>
+                            <span class="close">&times;</span>
+                          </div>
+                          <div class="modal-body">
+                            <p>Some text in the Modal Body</p>
+                            <p>Some other text...</p>
+                          </div>
+                          <div class="modal-footer">
+                            <h3>Modal Footer</h3>
+                          </div>
+                        </div>
+            
+                      </div>
+            
+                    </div>
+                  </div>
+        
+  
+        </div>
+                <div class="column-2">
+                  <div class="banner-svg">
+                    <img src="images\Bible book 06.svg" alt="3d Bible Vector" />
+                  </div>
+                </div>
+              </div>
+            </header>
+          </div>
+  
+          <div class="shadow one"></div>
+          <div class="shadow two"></div>
+        </div>
+  
+        <div class="links">
+          <ul>
+            <li>
+              <a href="#" style="--i: 0.05s">Read the Bible</a>
+            </li>
+            <li>
+              <a href="#" style="--i: 0.1s">Study Tools</a>
+            </li>
+            <li>
+              <a href="#" style="--i: 0.15s">Plans</a>
+            </li>
+            <li>
+              <a href="/sermons.html" style="--i: 0.2s">Sermons</a>
+            </li>
+            <li>
+              <a href="#" style="--i: 0.25s"></a>
+            </li>
+            <li>
+              <a href="#" style="--i: 0.3s"></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      
+        
+      </div>
+    </div>
+    <div class="section-2">
+      <div class="row1">
+        <h1 id="votd">Verse of the Day</h1>
+      </div>
+      <div class="row2">
+        <div class="votd-blob">
+          <div class="votd-ref">1 Timothy 4:1 ESV</div>
+          <div class="votd-passage">
+            <p>Now the Spirit expressly says that in later times some will depart from the faith by devoting themselves to deceitful spirits and teachings of demons...</p>
+          </div>
+          <div class="votd-share">
+            <h4>Share Now</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section-3">
+      <div class="plans-wrapper">
+        <div class="plans-title">
+          <h1>Recommended Plans</h1>
+        </div>
+        <!-- Swiper -->
+        <div class="netflix-slider">
+          <h2>Latest Plans</h2>
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><a href="https://crosscrusaders.com/"><img src="http://placehold.jp/341x192.png" alt="Movie Title"></a></div>
+              <div class="swiper-slide"><a href="https://crosscrusaders.com/"><img src="http://placehold.jp/341x192.png" alt="Movie Title"></a></div>
+              <div class="swiper-slide"><a href="https://crosscrusaders.com/"><img src="http://placehold.jp/341x192.png" alt="Movie Title"></a></div>
+              <div class="swiper-slide"><a href="https://crosscrusaders.com/"><img src="http://placehold.jp/341x192.png" alt="Movie Title"></a></div>
+              <div class="swiper-slide"><a href="https://crosscrusaders.com/"><img src="http://placehold.jp/341x192.png" alt="Movie Title"></a></div>
+              <div class="swiper-slide"><a href="https://crosscrusaders.com/"><img src="http://placehold.jp/341x192.png" alt="Movie Title"></a></div>
+              <div class="swiper-slide"><a href="https://crosscrusaders.com/"><img src="http://placehold.jp/341x192.png" alt="Movie Title"></a></div>
+              <div class="swiper-slide"><a href="https://crosscrusaders.com/"><img src="http://placehold.jp/341x192.png" alt="Movie Title"></a></div>
+              <div class="swiper-slide"><a href="https://crosscrusaders.com/"><img src="http://placehold.jp/341x192.png" alt="Movie Title"></a></div>
+              <div class="swiper-slide"><a href="https://crosscrusaders.com/"><img src="http://placehold.jp/341x192.png" alt="Movie Title"></a></div>
+            </div>
+            <!-- Add Pagination -->
+            <!-- <div class="swiper-pagination"></div> -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </div>
+
+        <div class="netflix-slider">
+          <h2>Plans (A-Z)</h2>
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="http://placehold.jp/341x192.png" alt="Movie Title"></div>
+              <div class="swiper-slide"><img src="http://placehold.jp/341x192.png" alt="Movie Title"></div>
+              <div class="swiper-slide"><img src="http://placehold.jp/341x192.png" alt="Movie Title"></div>
+              <div class="swiper-slide"><img src="http://placehold.jp/341x192.png" alt="Movie Title"></div>
+              <div class="swiper-slide"><img src="http://placehold.jp/341x192.png" alt="Movie Title"></div>
+              <div class="swiper-slide"><img src="http://placehold.jp/341x192.png" alt="Movie Title"></div>
+              <div class="swiper-slide"><img src="http://placehold.jp/341x192.png" alt="Movie Title"></div>
+              <div class="swiper-slide"><img src="http://placehold.jp/341x192.png" alt="Movie Title"></div>
+              <div class="swiper-slide"><img src="http://placehold.jp/341x192.png" alt="Movie Title"></div>
+              <div class="swiper-slide"><img src="http://placehold.jp/341x192.png" alt="Movie Title"></div>
+            </div>
+            <!-- Add Pagination -->
+            <!-- <div class="swiper-pagination"></div> -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-4">
+      <div class="sermons-wrapper">
+        <div class="sermons-title">
+          <h1>Recommended Sermons</h1>
+        </div>
+        <!-- Swiper -->
+        <div class="netflix-slider">
+          <h2>Latest Sermons</h2>
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="http://placehold.jp/341x192.png" alt="Movie Title"></div>
+              <div class="swiper-slide"><img src="http://placehold.jp/341x192.png" alt="Movie Title"></div>
+              <div class="swiper-slide"><img src="http://placehold.jp/341x192.png" alt="Movie Title"></div>
+              <div class="swiper-slide"><img src="http://placehold.jp/341x192.png" alt="Movie Title"></div>
+              <div class="swiper-slide"><img src="http://placehold.jp/341x192.png" alt="Movie Title"></div>
+              <div class="swiper-slide"><img src="http://placehold.jp/341x192.png" alt="Movie Title"></div>
+              <div class="swiper-slide"><img src="http://placehold.jp/341x192.png" alt="Movie Title"></div>
+              <div class="swiper-slide"><img src="http://placehold.jp/341x192.png" alt="Movie Title"></div>
+              <div class="swiper-slide"><img src="http://placehold.jp/341x192.png" alt="Movie Title"></div>
+              <div class="swiper-slide"><img src="http://placehold.jp/341x192.png" alt="Movie Title"></div>
+            </div>
+            <!-- Add Pagination -->
+            <!-- <div class="swiper-pagination"></div> -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </div>
+
+        <div class="netflix-slider">
+          <h2>Audio Sermons (A-Z)</h2>
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="http://placehold.jp/341x192.png" alt="Movie Title"></div>
+              <div class="swiper-slide"><img src="http://placehold.jp/341x192.png" alt="Movie Title"></div>
+              <div class="swiper-slide"><img src="http://placehold.jp/341x192.png" alt="Movie Title"></div>
+              <div class="swiper-slide"><img src="http://placehold.jp/341x192.png" alt="Movie Title"></div>
+              <div class="swiper-slide"><img src="http://placehold.jp/341x192.png" alt="Movie Title"></div>
+              <div class="swiper-slide"><img src="http://placehold.jp/341x192.png" alt="Movie Title"></div>
+              <div class="swiper-slide"><img src="http://placehold.jp/341x192.png" alt="Movie Title"></div>
+              <div class="swiper-slide"><img src="http://placehold.jp/341x192.png" alt="Movie Title"></div>
+              <div class="swiper-slide"><img src="http://placehold.jp/341x192.png" alt="Movie Title"></div>
+              <div class="swiper-slide"><img src="http://placehold.jp/341x192.png" alt="Movie Title"></div>
+            </div>
+            <!-- Add Pagination -->
+            <!-- <div class="swiper-pagination"></div> -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </div>
+
+        <div class="netflix-slider">
+          <h2>Video Sermons (A-Z)</h2>
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="http://placehold.jp/341x192.png" alt="Movie Title"></div>
+              <div class="swiper-slide"><img src="http://placehold.jp/341x192.png" alt="Movie Title"></div>
+              <div class="swiper-slide"><img src="http://placehold.jp/341x192.png" alt="Movie Title"></div>
+              <div class="swiper-slide"><img src="http://placehold.jp/341x192.png" alt="Movie Title"></div>
+              <div class="swiper-slide"><img src="http://placehold.jp/341x192.png" alt="Movie Title"></div>
+              <div class="swiper-slide"><img src="http://placehold.jp/341x192.png" alt="Movie Title"></div>
+              <div class="swiper-slide"><img src="http://placehold.jp/341x192.png" alt="Movie Title"></div>
+              <div class="swiper-slide"><img src="http://placehold.jp/341x192.png" alt="Movie Title"></div>
+              <div class="swiper-slide"><img src="http://placehold.jp/341x192.png" alt="Movie Title"></div>
+              <div class="swiper-slide"><img src="http://placehold.jp/341x192.png" alt="Movie Title"></div>
+            </div>
+            <!-- Add Pagination -->
+            <!-- <div class="swiper-pagination"></div> -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-5">
+      <!--footer starts from here-->
+      <footer class="footer-distributed">
+ 
+        <div class="footer-left">
+        
+        <h3>Scripture Alone</h3>
+        
+        <p class="footer-links">
+        <a href="/index.html">Home</a>
+        ·
+        <a href="/about.html">About</a>
+        ·
+        <a href="#">Uptime Status</a>
+        ·
+        <a href="/updates.html">Updates</a>
+        ·
+        <a href="/contact.html">Contact</a>
+        </p>
+        
+        <p class="footer-company-name">Scripture Alone &copy; 2022</p>
+        </div>
+        
+        <div class="footer-center">
+        
+        <!--<div>
+        <i class="fa fa-map-marker"></i>
+        <p><span>21 Revolution Street</span> Delhi, India</p>
+        </div>
+        
+        <div>
+        <i class="fa fa-phone"></i>
+        <p>+1 555 123456</p>
+        </div>-->
+        
+        <div>
+        <i class="fa fa-envelope"></i>
+        <p><a href="mailto:support@crosscrusaders.com">support@crosscrusaders.com</a></p>
+        </div>
+        
+        </div>
+        
+        <div class="footer-right">
+        
+        <p class="footer-company-about">
+        <span>About Scripture Alone</span>
+        Scripture Alone is a Bible app created by <a class="link" href="https://crosscrusaders.com/">Cross Crusaders</a> in order to combat the toleration of the false teachers in other apps and to bring forward suppressed Bible preachers with doctrinally sound content for the current time we are living in.
+        </p>
+        
+        <div class="footer-icons">
+        
+        <a href="#"><i class="fa fa-facebook"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        <a href="https://discord.gg/3YEd7KdJkz" target="blank"><i class="fa-brands fa-discord"></i></a>
+        <a href="https://github.com/ItsShawn/itsshawn.github.io/" target="blank"><i class="fa fa-github"></i></a>
+        
+        
+        </div>
+        
+        </div>
+        
+      </footer>
+    </div>
+
+    
+    <!-- Bible API -->
+    
+
+    <script src="app.js"></script>
+    <script src="script.js"></script>
+    <script src="../js/my_key.js"></script>
+
+    <!-- Scripts for the Footer -->
+    
+
+    <!-- Swiper JS -->
+    <script src="package/js/swiper.min.js"></script>
+    
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper('.swiper-container', {
+        slidesPerView: 6,
+        spaceBetween: 10,
+        slidesPerGroup: 2,
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      });
+    </script>
+        
+    <!--<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>-->
+   
+    <script>
+      $('.search-input').focus(function(){
+      $(this).parent().addClass('focus');
+      }).blur(function(){
+      $(this).parent().removeClass('focus');
+      })
+    </script>
+    <script>
+      // Get the modal
+      var modal = document.getElementById("myModal");
+      
+      // Get the button that opens the modal
+      var btn = document.getElementById("myBtn");
+      
+      // Get the <span> element that closes the modal
+      var span = document.getElementsByClassName("close")[0];
+      
+      // When the user clicks the button, open the modal 
+      btn.onclick = function() {
+        modal.style.display = "block";
+      }
+      
+      // When the user clicks on <span> (x), close the modal
+      span.onclick = function() {
+        modal.style.display = "none";
+      }
+      
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function(event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      }
+      </script>
+    <script>
+      const versionList = document.querySelector(`#bible-version-list`);
+      let versionHTML = ``;
+      getBibleVersions().then((bibleVersionList) => {
+        const sortedVersions = sortVersionsByLanguage(bibleVersionList);
+
+        for (let languageGroup in sortedVersions) {
+          const language = languageGroup;
+          versionHTML += `<h4 class="list-heading"><span>${language}</span></h4><ul>`;
+          const versions = sortedVersions[languageGroup];
+          for (let version of versions) {
+            versionHTML += `<li class="bible">
+                              <a href="book.html?version=${version.id}&abbr=${
+              version.abbreviation
+            }">
+                                <abbr class="bible-version-abbr" title="${
+                                  version.name
+                                }">${version.abbreviation}</abbr>
+                                <span>
+                                  <span class="bible-version-name">${
+                                    version.name
+                                  }</span>
+                                  ${
+                                    version.description
+                                      ? '<span class="bible-version-desc">' +
+                                        version.description +
+                                        "</span>"
+                                      : ""
+                                  }
+                                </span>
+                              </a>
+                            </li>`;
+          }
+          versionHTML += `</ul>`;
+        }
+        versionList.innerHTML = versionHTML;
+      });
+
+      /**
+       * Gets Bible versions from API.Bible
+       * @returns {Promise} containing list of Bible versions
+       */
+      function getBibleVersions() {
+        return new Promise((resolve, reject) => {
+          const xhr = new XMLHttpRequest();
+          xhr.withCredentials = false;
+
+          xhr.addEventListener(`readystatechange`, function () {
+            if (this.readyState === this.DONE) {
+              const { data } = JSON.parse(this.responseText);
+              const versions = data.map((data) => {
+                return {
+                  name: data.name,
+                  id: data.id,
+                  abbreviation: data.abbreviation,
+                  description: data.description,
+                  language: data.language.name,
+                };
+              });
+
+              resolve(versions);
+            }
+          });
+
+          xhr.open(`GET`, `https://api.scripture.api.bible/v1/bibles`);
+          xhr.setRequestHeader(`api-key`, API_KEY);
+
+          xhr.onerror = () => reject(xhr.statusText);
+
+          xhr.send();
+        });
+      }
+
+      /**
+       * Sorts Bible versions by language and alphabetically by abbreviation
+       * @params {Object} bibleVersionList list of Bible versions
+       * @returns {Object} sorted list of Bibles
+       */
+      function sortVersionsByLanguage(bibleVersionList) {
+        let sortedVersions = {};
+
+        for (const version of bibleVersionList) {
+          if (!sortedVersions[version.language]) {
+            sortedVersions[version.language] = [];
+          }
+          sortedVersions[version.language].push(version);
+        }
+        for (const version in sortedVersions) {
+          sortedVersions[version].sort((a, b) => {
+            const nameA = a.abbreviation.toUpperCase();
+            const nameB = b.abbreviation.toUpperCase();
+            if (nameA < nameB) {
+              return -1;
+            }
+            if (nameA > nameB) {
+              return 1;
+            }
+            return 0;
+          });
+        }
+        return sortedVersions;
+      }
+    </script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+      integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      const hamburger = document.querySelector(".wrapper .hamburger");
+      hamburger.onclick = function () {
+        body = document.querySelector(".body");
+        body.classList.toggle("active");
+      };
+    </script>
+  </body>
+</html>

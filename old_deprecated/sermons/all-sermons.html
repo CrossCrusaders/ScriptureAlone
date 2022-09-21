@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>My Video Channel</title>
+	<meta name="description" content="My favorite videos for you to watch">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="/style.css">
+	<!--<link rel="stylesheet" href="/sermons/sermons.css">-->
+	<link rel="stylesheet" href="/sermons/latest-sermons.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+	 crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+	<!--<link rel="stylesheet" href="/venobox/venobox.css" type="text/css" media="screen" />-->
+	<link href="https://fonts.googleapis.com/css2?family=Play:wght@700&display=swap" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/@thelevicole/youtube-to-html5-loader@4.0.1/dist/YouTubeToHtml5.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.6.12/plyr.css" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/filterizr/2.2.4/filterizr.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/filterizr/2.2.4/vanilla.filterizr.min.js"></script>
+
+</head>
+
+<body>
+	<nav>
+		<div class="logo">Scripture Alone</div>
+		<input type="checkbox" id="click" />
+            <label for="click" class="menu-btn">
+              <i class="fas fa-bars"></i>
+            </label>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Read the Bible</a></li>
+              <li><a href="#">Study Tools</a></li>
+              <li><a href="#">Plans</a></li>
+              <li><a class="active" href="#">Sermons</a></li>
+            </ul>
+    </nav>
+    <div class="header-section">
+        <div class="header-col-1"></div>
+        <div class="header-col-2">
+            <div class="header-row-1"></div>
+            <div class="header-row-2">
+                <h1>All Sermons</h1>
+                <p>The following sermons have been provided by various speakers from
+                    churches and organizations which have been verified to follow the
+                    Bible and are doctrinally sound. Please read our
+                    <span><a href="#">what we believe</a></span> statement in order to
+                    further understand our stance on biblical matters.</p>
+                <button class="directory-button">Watch Now</button>
+            </div>
+            <div class="header-row-3"></div>
+        </div>
+        <div class="header-col-3"></div>
+        
+    </div>
+    <div class="index-directory">
+        <input type="text" id="myInput" placeholder="Search for sermons" data-search> 
+    </div>  
+        <div class="wrapper">              
+            <!-- Content -->
+            <section class="content__section">
+                <div class="playlist__one">
+                    <h2 class="playlist__title">Latest Sermons</h2>
+                    <div class="videos">
+                        <div class="video tooltip" style="background-image: url(/images/thumbnails/sermons/spencer/spencer-thumb-wdtbsate.jpg)">
+                           <span class="tooltiptext">What Does the Bible Say About the Enneagram?</span>
+                            <a class="" data-autoplay="true" data-vbtype="video" data-gall="myGallery" href="/sermons/spencersmith/what-does-the-bible-say-about-the-enneagram"><i class="fas fa-play-circle"></i></a>
+                        </div>
+                        <div class="video tooltip" style="background-image: url(/images/thumbnails/sermons/spencer/spencer-thumb-tvol.jpg)">
+                            <span class="tooltiptext">The Vanity of Life</span>
+                            <a class="" data-autoplay="true" data-vbtype="video" data-gall="myGallery" href="/sermons/spencersmith/the-vanity-of-life"><i class="fas fa-play-circle"></i></a>
+                        </div>
+                        <div class="video tooltip" style="background-image: url(/images/thumbnails/sermons/spencer/spencer-thumb-tmotmtmi.jpg)">
+                            <span class="tooltiptext">The Marks of the Man That Makes It</span>
+                            <a class="venobox" data-autoplay="true" data-vbtype="video" data-gall="myGallery" href="/sermons/spencersmith/the-marks-of-the-man-that-makes-it"><i class="fas fa-play-circle"></i></a>
+                        </div>
+                        <div class="video tooltip" style="background-image: url(/images/thumbnails/sermons/spencer/spencer-thumb-dm.jpg)">
+                            <span class="tooltiptext">Doctrine Matters</span>
+                            <a class="venobox" data-autoplay="true" data-vbtype="video" data-gall="myGallery" href="/sermons/spencersmith/doctrine-matters"><i class="fas fa-play-circle"></i></a>
+                        </div>
+                        <div class="video tooltip" style="background-image: url(/images/thumbnails/sermons/spencer/spencer-thumb-pftm.jpg)">
+                            <span class="tooltiptext">Profitable for the Ministry</span>
+                            <a class="venobox" data-autoplay="true" data-vbtype="video" data-gall="myGallery" href="/sermons/spencersmith/profitable-for-the-ministry"><i class="fas fa-play-circle"></i></a>
+                        </div>
+                        <div class="video tooltip" style="background-image: url(/images/thumbnails/sermons/spencer/spencer-thumb-wicm.jpg)">
+                            <span class="tooltiptext">What is Christian Manhood?</span>
+                            <a class="venobox" data-autoplay="true" data-vbtype="video" data-gall="myGallery" href="/sermons/spencersmith/what-is-christian-manhood"><i class="fas fa-play-circle"></i></a>
+                        </div>
+                        <div class="video tooltip" style="background-image: url(/images/thumbnails/sermons/spencer/spencer-thumb-witc.jpg)">
+                            <span class="tooltiptext">Witchcraft in the Church</span>
+                            <a class="venobox" data-autoplay="true" data-vbtype="video" data-gall="myGallery" href="/sermons/spencersmith/witchcraft-in-the-church"><i class="fas fa-play-circle"></i></a>
+                        </div>
+                        <div id="tdcitc" class="video tooltip" style="background-image: url(/images/thumbnails/sermons/shawn/shawn-thumb-tditc.jpg)">
+                            <span class="tooltiptext">The Doctrinal Compromises in the Church</span>
+                            <a class="venobox" data-autoplay="true" data-vbtype="video" data-gall="myGallery" href="http://youtu.be/SY3jQ9lr-rk"><i class="fas fa-play-circle"></i></a>
+                        </div> 
+                    </div>
+                </div>
+                <div class="playlist__two">
+                        <h4 class="playlist__subtitle">Spencer Smith</h4>
+                        <div class="videos" style="overflow-y: auto; overflow-x: hidden; height: auto">
+                            <div data-filter-item data-filter-name="the maniac of gadera" class="video" style="background-image: url(/images/thumbnails/sermons/spencer/spencer-thumb-mog.jpg)">
+                                <li><a href="#"><div class="titlebar">The Maniac of Gadera</div></a></li>
+                                <a class="venobox" data-autoplay="true" data-vbtype="inline" href="/sermons/spencersmith/the-maniac-of-gadera"><i class="fas fa-play-circle"></i></a>
+                            </div>
+                            <div data-filter-item data-filter-name="the will of god" class="video" style="background-image: url(/images/thumbnails/sermons/spencer/spencer-thumb-wog.jpg)">
+                                <li><a href="#"><div class="titlebar">The Will of God</div></a></li>
+                                <a class="venobox" data-autoplay="true" data-vbtype="video" data-gall="myGallery" href="/sermons/spencersmith/the-will-of-god"><i class="fas fa-play-circle"></i></a>
+                            </div>
+                            <div data-filter-item data-filter-name="what to do when you are overwhelmed" class="video" style="background-image: url(/images/thumbnails/sermons/spencer/spencer-thumb-overwhelmed.jpg)">
+                                <li><a href="#"><div class="titlebar">What To Do When You Are Overwhelmed</div></a></li>
+                                <a class="venobox" data-autoplay="true" data-vbtype="video" data-gall="myGallery" href="/sermons/spencersmith/what-to-do-when-you-are-overwhelmed"><i class="fas fa-play-circle"></i></a>
+                            </div>
+                            <div data-filter-item data-filter-name="thoughts on prayer" class="video" style="background-image: url(/images/thumbnails/sermons/spencer/spencer-thumb-top.jpg)">
+                                <div class="titlebar">Thoughts on Prayer</div>
+                                <a class="venobox" data-autoplay="true" data-vbtype="video" data-gall="myGallery" href="/sermons/spencersmith/thoughts-on-prayer"><i class="fas fa-play-circle"></i></a>
+                            </div>
+                            <div data-filter-item data-filter-name="what will ye do with jesus" class="video" style="background-image: url(/images/thumbnails/sermons/spencer/spencer-thumb-wwydwj.jpg)">
+                                <div class="titlebar">What Will Ye Do With Jesus</div>
+                                <a class="venobox" data-autoplay="true" data-vbtype="video" data-gall="myGallery" href="/sermons/spencersmith/what-will-ye-do-with-jesus"><i class="fas fa-play-circle"></i></a>
+                            </div>
+                            <div data-filter-item data-filter-name="why i am not a roman catholic" class="video" style="background-image: url(/images/thumbnails/sermons/spencer/spencer-thumb-wianarc.jpg)">
+                                <div class="titlebar">Why I Am Not A Roman Catholic</div>
+                                <a class="venobox" data-autoplay="true" data-vbtype="video" data-gall="myGallery" href="/sermons/spencersmith/why-i-am-not-a-roman-catholic"><i class="fas fa-play-circle"></i></a>
+                            </div>
+                            <div data-filter-item data-filter-name="the self righteous ruler" class="video" style="background-image: url(/images/thumbnails/sermons/spencer/spencer-thumb-tsrr.jpg)">
+                                <div class="titlebar">The Self Righteous Ruler</div>
+                                <a class="venobox" data-autoplay="true" data-vbtype="video" data-gall="myGallery" href="/sermons/spencersmith/the-self-righteous-ruler"><i class="fas fa-play-circle"></i></a>
+                            </div>
+                            <div data-filter-item data-filter-name="dull of hearing" class="video" style="background-image: url(/images/thumbnails/sermons/spencer/spencer-thumb-doh.jpg)">
+                                <div class="titlebar">Dull of Hearing</div>
+                                <a class="venobox" data-autoplay="true" data-vbtype="video" data-gall="myGallery" href="/sermons/spencersmith/dull-of-hearing"><i class="fas fa-play-circle"></i></a>
+                            </div>
+                            <div data-filter-item data-filter-name="the sorrows of succoth" class="video" style="background-image: url(/images/thumbnails/sermons/spencer/spencer-thumb-tsos.jpg)">
+                                <div class="titlebar">The Sorrows of Succoth</div>
+                                <a class="venobox" data-autoplay="true" data-vbtype="video" data-gall="myGallery" href="/sermons/spencersmith/the-sorrows-of-succoth"><i class="fas fa-play-circle"></i></a>
+                            </div>
+                            <div data-filter-item data-filter-name="the flesh vs spirit part 1" class="video" style="background-image: url(/images/thumbnails/sermons/spencer/spencer-thumb-tsvs1.jpg)">
+                                <div class="titlebar">The Flesh VS Spirit - Part 1</div>
+                                <a class="venobox" data-autoplay="true" data-vbtype="video" data-gall="myGallery" href="/sermons/spencersmith/the-flesh-vs-the-spirit-part-1"><i class="fas fa-play-circle"></i></a>
+                            </div>
+                            <div data-filter-item data-filter-name="the flesh vs spirit part 2" class="video" style="background-image: url(/images/thumbnails/sermons/spencer/spencer-thumb-tsvs2.jpg)">
+                                <div class="titlebar">The Flesh VS Spirit - Part 2</div>
+                                <a class="venobox" data-autoplay="true" data-vbtype="video" data-gall="myGallery" href="/sermons/spencersmith/the-flesh-vs-the-spirit-part-2"><i class="fas fa-play-circle"></i></a>
+                            </div>
+                            <div data-filter-item data-filter-name="the gospel" class="video" style="background-image: url(/images/thumbnails/sermons/spencer/spencer-thumb-tg.jpg)">
+                                <div class="titlebar">The Gospel</div>
+                                <a class="venobox" data-autoplay="true" data-vbtype="video" data-gall="myGallery" href="/sermons/spencersmith/the-gospel"><i class="fas fa-play-circle"></i></a>
+                            </div>
+                            <div data-filter-item data-filter-name="your prayer your purse your person" class="video" style="background-image: url(/images/thumbnails/sermons/spencer/spencer-thumb-ypypyp.jpg)">
+                                <div class="titlebar">Your Prayers, Your Purse, Your Person</div>
+                                <a class="venobox" data-autoplay="true" data-vbtype="video" data-gall="myGallery" href="/sermons/spencersmith/your-prayers-your-purse-your-person"><i class="fas fa-play-circle"></i></a>
+                            </div>
+                            <div data-filter-item data-filter-name="the road to ruin" class="video" style="background-image: url(/images/thumbnails/sermons/spencer/spencer-thumb-trtr.jpg)">
+                                <div class="titlebar">The Road to Ruin</div>
+                                <a class="venobox" data-autoplay="true" data-vbtype="video" data-gall="myGallery" href="/sermons/spencersmith/the-road-to-ruin"><i class="fas fa-play-circle"></i></a>
+                            </div>
+                            <div data-filter-item data-filter-name="spirit soul body" class="video" style="background-image: url(/images/thumbnails/sermons/spencer/spencer-thumb-ssb.jpg)">
+                                <div class="titlebar">Spirit, Soul, Body</div>
+                                <a class="venobox" data-autoplay="true" data-vbtype="video" data-gall="myGallery" href="/sermons/spencersmith/spirit-soul-body"><i class="fas fa-play-circle"></i></a>
+                            </div>
+                            <div data-filter-item data-filter-name="i believe god" class="video" style="background-image: url(/images/thumbnails/sermons/spencer/spencer-thumb-ibg.jpg)">
+                                <div class="titlebar">I Believe God</div>
+                                <a class="venobox" data-autoplay="true" data-vbtype="video" data-gall="myGallery" href="/sermons/spencersmith/i-believe-god"><i class="fas fa-play-circle"></i></a>
+                            </div>
+                            <div data-filter-item data-filter-name="what is the gospel" class="video" style="background-image: url(/images/thumbnails/sermons/spencer/spencer-thumb-tg2.jpg)">
+                                <div class="titlebar">What is the Gospel</div>
+                                <a class="venobox" data-autoplay="true" data-vbtype="video" data-gall="myGallery" href="/sermons/spencersmith/what-is-the-gospel"><i class="fas fa-play-circle"></i></a>
+                            </div>
+                            <div data-filter-item data-filter-name="stand in the gap ezekiel 22" class="video" style="background-image: url(/images/thumbnails/sermons/spencer/spencer-thumb-sitg.jpg)">
+                                <div class="titlebar">Stand in the Gap (Ezekiel 22)</div>
+                                <a class="venobox" data-autoplay="true" data-vbtype="video" data-gall="myGallery" href="/sermons/spencersmith/stand-in-the-gap"><i class="fas fa-play-circle"></i></a>
+                            </div>
+                            <div data-filter-item data-filter-name="the brass shield of contemporary christian music" class="video" style="background-image: url(/images/thumbnails/sermons/spencer/spencer-thumb-tbsoccm.jpg)">
+                                <div class="titlebar">The Brass Shield of Contemporary Christian Music</div>
+                                <a class="venobox" data-autoplay="true" data-vbtype="video" data-gall="myGallery" href="/sermons/spencersmith/the-brass-shield-of-contemporary-christian-music"><i class="fas fa-play-circle"></i></a>
+                            </div>
+                            <div data-filter-item data-filter-name="but he giveth more grace" class="video" style="background-image: url(/images/thumbnails/sermons/spencer/spencer-thumb-bhgmg.jpg)">
+                                <div class="titlebar">But He Giveth More Grace</div>
+                                <a class="venobox" data-autoplay="true" data-vbtype="video" data-gall="myGallery" href="/sermons/spencersmith/but-he-giveth-more-grace"><i class="fas fa-play-circle"></i></a>
+                            </div>
+                            <div data-filter-item data-filter-name="the three biggest lies of sin" class="video" style="background-image: url(/images/thumbnails/sermons/spencer/spencer-thumb-ttblos.jpg)">
+                                <div class="titlebar">The Three Biggest Lies of Sin</div>
+                                <a class="venobox" data-autoplay="true" data-vbtype="video" data-gall="myGallery" href="/sermons/spencersmith/the-three-biggest-lies-of-sin"><i class="fas fa-play-circle"></i></a>
+                            </div>
+                            <div data-filter-item data-filter-name="7 seven elements of walking with god" class="video" style="background-image: url(/images/thumbnails/sermons/spencer/spencer-thumb-tseowwg.jpg)">
+                                <div class="titlebar">7 Elements of Walking with God</div>
+                                <a class="venobox" data-autoplay="true" data-vbtype="video" data-gall="myGallery" href="/sermons/spencersmith/seven-elements-of-walking-with-god"><i class="fas fa-play-circle"></i></a>
+                            </div>
+                            <div data-filter-item data-filter-name="god's counsel man's choice life's consequences" class="video" style="background-image: url(/images/thumbnails/sermons/spencer/spencer-thumb-gc.jpg)">
+                                <div class="titlebar">God's Counsel - Man's Choice - Life's Consequences</div>
+                                <a class="venobox" data-autoplay="true" data-vbtype="video" data-gall="myGallery" href="/sermons/spencersmith/gods-counsel-mans-choice-lifes-consequences"><i class="fas fa-play-circle"></i></a>
+                            </div>
+                            <div data-filter-item data-filter-name="destruction" class="video" style="background-image: url(/images/thumbnails/sermons/spencer/spencer-thumb-d.jpg)">
+                                <div class="titlebar">Destruction</div>
+                                <a class="venobox" data-autoplay="true" data-vbtype="video" data-gall="myGallery" href="/sermons/spencersmith/destruction"><i class="fas fa-play-circle"></i></a>
+                            </div>
+                            <div data-filter-item data-filter-name="what is the correct christian music to listen to" class="video" style="background-image: url(/images/thumbnails/sermons/spencer/spencer-thumb-witccmtlt.PNG)">
+                                <div class="titlebar">What is the Correct Christian Music To Listen To</div>
+                                <a class="venobox" data-autoplay="true" data-vbtype="video" data-gall="myGallery" href="/sermons/spencersmith/what-is-the-correct-christian-music-to-listen-to"><i class="fas fa-play-circle"></i></a>
+                            </div>
+                            <div data-filter-item data-filter-name="missions" class="video" style="background-image: url(/images/thumbnails/sermons/spencer/spencer-thumb-m.jpg)">
+                                <div class="titlebar">Missions</div>
+                                <a class="venobox" data-autoplay="true" data-vbtype="video" data-gall="myGallery" href="/sermons/spencersmith/missions"><i class="fas fa-play-circle"></i></a>
+                            </div>
+                            <div data-filter-item data-filter-name="introudction to the book of philippians" class="video" style="background-image: url(/images/thumbnails/sermons/spencer/spencer-thumb-itboj.jpg)">
+                                <div class="titlebar">Introduction to the Book of Philippians</div>
+                                <a class="venobox" data-autoplay="true" data-vbtype="video" data-gall="myGallery" href="/sermons/spencersmith/introduction-to-the-book-of-philippians"><i class="fas fa-play-circle"></i></a>
+                            </div>
+                            <div data-filter-item data-filter-name="philippians chapter 1" class="video" style="background-image: url(/images/thumbnails/sermons/spencer/spencer-thumb-p1.jpg)">
+                                <div class="titlebar">Philippians: Chapter 1</div>
+                                <a class="venobox" data-autoplay="true" data-vbtype="video" data-gall="myGallery" href="/sermons/spencersmith/philippians-chapter-1"><i class="fas fa-play-circle"></i></a>
+                            </div>
+                            <div data-filter-item data-filter-name="philippians chapter 2" class="video" style="background-image: url(/images/thumbnails/sermons/spencer/spencer-thumb-p2.jpg)">
+                                <div class="titlebar">Philippians: Chapter 2</div>
+                                <a class="venobox" data-autoplay="true" data-vbtype="video" data-gall="myGallery" href="/sermons/spencersmith/philippians-chapter-2"><i class="fas fa-play-circle"></i></a>
+                            </div>
+                            <div data-filter-item data-filter-name="philippians chapter 3" class="video" style="background-image: url(/images/thumbnails/sermons/spencer/spencer-thumb-p3.jpg)">
+                                <div class="titlebar">Philippians: Chapter 3</div>
+                                <a class="venobox" data-autoplay="true" data-vbtype="video" data-gall="myGallery" href="/sermons/spencersmith/philippians-chapter-3"><i class="fas fa-play-circle"></i></a>
+                            </div>
+                            <div data-filter-item data-filter-name="philippians 4" class="video" style="background-image: url(/images/thumbnails/sermons/spencer/spencer-thumb-p4.jpg)">
+                                <div class="titlebar">Philippians: Chapter 4</div>
+                                <a class="venobox" data-autoplay="true" data-vbtype="video" data-gall="myGallery" href="/sermons/spencersmith/philippians-chapter-4"><i class="fas fa-play-circle"></i></a>
+                            </div>
+                            <div data-filter-item data-filter-name="the theology of boys" class="video" style="background-image: url(/images/thumbnails/sermons/spencer/spencer-thumb-ttob.jpg)">
+                                <div class="titlebar">The Theology of Boys</div>
+                                <a class="venobox" data-autoplay="true" data-vbtype="video" data-gall="myGallery" href="/sermons/spencersmith/the-theology-of-boys"><i class="fas fa-play-circle"></i></a>
+                            </div>
+                            <div data-filter-item data-filter-name="the theology of girls" class="video" style="background-image: url(/images/thumbnails/sermons/spencer/spencer-thumb-ttog.jpg)">
+                                <div class="titlebar">The Theology of Girls</div>
+                                <a class="venobox" data-autoplay="true" data-vbtype="video" data-gall="myGallery" href="/sermons/spencersmith/the-theology-of-girls"><i class="fas fa-play-circle"></i></a>
+                            </div>
+                            <div data-filter-item data-filter-name="the doctrine of jezebel" class="video" style="background-image: url(/images/thumbnails/sermons/spencer/spencer-thumb-tdoj.jpg)">
+                                <div class="titlebar">The Doctrine of Jezebel</div>
+                                <a class="venobox" data-autoplay="true" data-vbtype="video" data-gall="myGallery" href="/sermons/spencersmith/the-doctrine-of-jezebel"><i class="fas fa-play-circle"></i></a>
+                            </div>
+                            <div data-filter-item data-filter-name="be ye filled with the spirit" class="video" style="background-image: url(/images/thumbnails/sermons/spencer/spencer-thumb-byfwts.jpg)">
+                                <div class="titlebar">Be Ye Filled With The Spirit</div>
+                                <a class="venobox" data-autoplay="true" data-vbtype="video" data-gall="myGallery" href="/sermons/spencersmith/be-ye-filled-with-the-spirit"><i class="fas fa-play-circle"></i></a>
+                            </div>
+                            <div data-filter-item data-filter-name="the problem with the modern gospel" class="video" style="background-image: url(/images/thumbnails/sermons/spencer/spencer-thumb-tpwtmg.jpg)">
+                                <div class="titlebar">The Problem With The Modern Gospel</div>
+                                <a class="venobox" data-autoplay="true" data-vbtype="video" data-gall="myGallery" href="/sermons/spencersmith/the-problem-with-the-modern-gospel"><i class="fas fa-play-circle"></i></a>
+                            </div>
+                            <div data-filter-item data-filter-name="following christ" class="video" style="background-image: url(/images/thumbnails/sermons/spencer/spencer-thumb-fc.jpg)">
+                                <div class="titlebar">Following Christ</div>
+                                <a class="venobox" data-autoplay="true" data-vbtype="video" data-gall="myGallery" href="/sermons/spencersmith/following-christ"><i class="fas fa-play-circle"></i></a>
+                            </div>
+                            <div data-filter-item data-filter-name="the sin of silence" class="video" style="background-image: url(/images/thumbnails/sermons/spencer/spencer-thumb-tsosi.jpg)">
+                                <div class="titlebar">The Sin of Silence</div>
+                                <a class="venobox" data-autoplay="true" data-vbtype="video" data-gall="myGallery" href="/sermons/spencersmith/the-sin-of-silence"><i class="fas fa-play-circle"></i></a>
+                            </div>
+                            <div data-filter-item data-filter-name="when wisdom entereth into thine heart" class="video" style="background-image: url(/images/thumbnails/sermons/spencer/spencer-thumb-wweith.jpg)">
+                                <div class="titlebar">When Wisdom Entereth Into Thine Heart</div>
+                                <a class="venobox" data-autoplay="true" data-vbtype="video" data-gall="myGallery" href="/sermons/spencersmith/when-wisdom-entereth-into-thine-heart"><i class="fas fa-play-circle"></i></a>
+                            </div>
+                            <div data-filter-item data-filter-name="witchcraft in the church" class="video" style="background-image: url(/images/thumbnails/sermons/spencer/spencer-thumb-witc.jpg)">
+                                <div class="titlebar">Witchcraft in the Church</div>
+                                <a class="venobox" data-autoplay="true" data-vbtype="video" data-gall="myGallery" href="/sermons/spencersmith/witchcraft-in-the-church"><i class="fas fa-play-circle"></i></a>
+                            </div>
+                            <div data-filter-item data-filter-name="what is christian manhood" class="video" style="background-image: url(/images/thumbnails/sermons/spencer/spencer-thumb-wicm.jpg)">
+                                <div class="titlebar">What is Christian Manhood?</div>
+                                <a class="venobox" data-autoplay="true" data-vbtype="video" data-gall="myGallery" href="/sermons/spencersmith/what-is-christian-manhood"><i class="fas fa-play-circle"></i></a>
+                            </div>
+                            <div data-filter-item data-filter-name="profitable for the ministry" class="video" style="background-image: url(/images/thumbnails/sermons/spencer/spencer-thumb-pftm.jpg)">
+                                <div class="titlebar">Profitable for the Ministry</div>
+                                <a class="venobox" data-autoplay="true" data-vbtype="video" data-gall="myGallery" href="/sermons/spencersmith/profitable-for-the-ministry"><i class="fas fa-play-circle"></i></a>
+                            </div>
+                            <div data-filter-item data-filter-name="doctrine matters" class="video" style="background-image: url(/images/thumbnails/sermons/spencer/spencer-thumb-dm.jpg)">
+                                <div class="titlebar">Doctrine Matters</div>
+                                <a class="venobox" data-autoplay="true" data-vbtype="video" data-gall="myGallery" href="/sermons/spencersmith/doctrine-matters"><i class="fas fa-play-circle"></i></a>
+                            </div>
+                            <div data-filter-item data-filter-name="the marks of the man that makes it" class="video" style="background-image: url(/images/thumbnails/sermons/spencer/spencer-thumb-tmotmtmi.jpg)">
+                                <div class="titlebar">The Marks of the Man That Makes It</div>
+                                <a class="venobox" data-autoplay="true" data-vbtype="video" data-gall="myGallery" href="/sermons/spencersmith/the-marks-of-the-man-that-makes-it"><i class="fas fa-play-circle"></i></a>
+                            </div>
+                            <div data-filter-item data-filter-name="the vanity of life" class="video" style="background-image: url(/images/thumbnails/sermons/spencer/spencer-thumb-tvol.jpg)">
+                                <div class="titlebar">The Vanity of Life</div>
+                                <a class="venobox" data-autoplay="true" data-vbtype="video" data-gall="myGallery" href="/sermons/spencersmith/the-vanity-of-life"><i class="fas fa-play-circle"></i></a>
+                            </div>
+                            <div data-filter-item data-filter-name="what does the bible say about the enneagram" class="video" style="background-image: url(/images/thumbnails/sermons/spencer/spencer-thumb-wdtbsate.jpg)">
+                                <div class="titlebar">What Does the Bible Say About the Enneagram?</div>
+                                <a class="venobox" data-autoplay="true" data-vbtype="video" data-gall="myGallery" href="/sermons/spencersmith/what-does-the-bible-say-about-the-enneagram"><i class="fas fa-play-circle"></i></a>
+                            </div>
+                            
+                        
+                        </div>
+                            </div>
+                
+                <div class="playlist__three">
+                    <h4 class="playlist__subtitle" id="shawnh">Shawn H.</h4>
+                    <div class="videos">
+                        <div data-filter-item data-filter-name="the necessity of calling out false teachers" class="video" style="background-image: url(/images/thumbnails/sermons/shawn/shawn-thumb-tnocoft.jpg)">
+                            <div class="titlebar">The Necessity of Calling Out False Teachers</div>
+                            <a class="venobox" data-autoplay="true" data-vbtype="video" data-gall="myGallery" href="http://youtu.be/MI3-esEWahM"><i class="fas fa-play-circle"></i></a>
+                        </div>
+                        <div data-filter-item data-filter-name="the danger of ccm contemporary christian music" class="video" style="background-image: url(/images/thumbnails/sermons/shawn/shawn-thumb-tdoccm.jpg)">
+                            <div class="titlebar">The Danger of Contemporary Christian Music</div>
+                            <a class="venobox" data-autoplay="true" data-vbtype="video" data-gall="myGallery" href="http://youtu.be/SY3jQ9lr-rk"><i class="fas fa-play-circle"></i></a>
+                        </div>
+                        <div data-filter-item data-filter-name="the errancy of the modern gospel" class="video" style="background-image: url(/images/thumbnails/sermons/shawn/shawn-thumb-teotmg.jpg)">
+                            <div class="titlebar">The Errancy of the Modern Gospel</div>
+                            <a class="venobox" data-autoplay="true" data-vbtype="video" data-gall="myGallery" href="http://youtu.be/SY3jQ9lr-rk"><i class="fas fa-play-circle"></i></a>
+                        </div>
+                        <div data-filter-item data-filter-name="the instability of modern christianity" class="video" style="background-image: url(/images/thumbnails/sermons/shawn/shawn-thumb-tiomc.jpg)">
+                            <div class="titlebar">The Instability of Modern Christianity</div>
+                            <a class="venobox" data-autoplay="true" data-vbtype="video" data-gall="myGallery" href="http://youtu.be/SY3jQ9lr-rk"><i class="fas fa-play-circle"></i></a>
+                        </div>
+                        <div data-filter-item data-filter-name="the doctrinal compromises in the church" class="video" style="background-image: url(/images/thumbnails/sermons/shawn/shawn-thumb-tditc.jpg)">
+                            <div class="titlebar">The Doctrinal Compromises in the Church</div>
+                            <a class="venobox" data-autoplay="true" data-vbtype="video" data-gall="myGallery" href="http://youtu.be/SY3jQ9lr-rk"><i class="fas fa-play-circle"></i></a>
+                        </div>                       
+                    </div>
+                </div>
+
+            <div class="playlist__four">
+                <h2 class="playlist__title">Heritage Baptist Church</h2>
+                <h4 class="playlist__subtitle" id="haroldmacmillian">Harold MacMillian</h4>
+                <div id="myUL" class="videos" style="overflow-y: auto; overflow-x: hidden; height: auto">
+                    <div data-filter-item data-filter-name="what shall i give" class="video" style="background-image: url(/images/thumbnails/sermons/heritagebaptistchurch/haroldmacmillian/haroldmacmillian.png)">
+                        <div class="titlebar">What Shall I Give?</div>
+                        <a class="venobox" data-autoplay="true" data-vbtype="video" data-gall="myGallery" href="http://youtu.be/MI3-esEWahM"><i class="fas fa-play-circle"></i></a>
+                    </div>
+                    <div data-filter-item data-filter-name="did jesus make or drink wine" class="video" style="background-image: url(/images/thumbnails/sermons/heritagebaptistchurch/haroldmacmillian/haroldmacmillian.png)">
+                        <div class="titlebar">Did Jesus Make or Drink Wine?</div>
+                        <a class="venobox" data-autoplay="true" data-vbtype="video" data-gall="myGallery" href="http://youtu.be/SY3jQ9lr-rk"><i class="fas fa-play-circle"></i></a>
+                    </div>
+                    <div data-filter-item data-filter-name="everyone has an appointment" class="video" style="background-image: url(/images/thumbnails/sermons/heritagebaptistchurch/haroldmacmillian/haroldmacmillian.png)">
+                        <div class="titlebar">Everyone Has An Appointment</div>
+                        <a class="venobox" data-autoplay="true" data-vbtype="video" data-gall="myGallery" href="http://youtu.be/SY3jQ9lr-rk"><i class="fas fa-play-circle"></i></a>
+                    </div>
+                    <div data-filter-item data-filter-name="the dangers of looking back" class="video" style="background-image: url(/images/thumbnails/sermons/heritagebaptistchurch/haroldmacmillian/haroldmacmillian.png)">
+                        <div class="titlebar">The Dangers of Looking Back</div>
+                        <a class="venobox" data-autoplay="true" data-vbtype="video" data-gall="myGallery" href="http://youtu.be/SY3jQ9lr-rk"><i class="fas fa-play-circle"></i></a>
+                    </div>
+                    <div data-filter-item data-filter-name="the truth about easter" class="video" style="background-image: url(/images/thumbnails/sermons/heritagebaptistchurch/haroldmacmillian/haroldmacmillian.png)">
+                        <div class="titlebar">The Truth About Easter</div>
+                        <a class="venobox" data-autoplay="true" data-vbtype="video" data-gall="myGallery" href="http://youtu.be/SY3jQ9lr-rk"><i class="fas fa-play-circle"></i></a>
+                    </div>
+                    <div data-filter-item data-filter-name="are we robbing ourselves" class="video" style="background-image: url(/images/thumbnails/sermons/heritagebaptistchurch/haroldmacmillian/haroldmacmillian.png)">
+                        <div class="titlebar">Are We Robbing Ourselves</div>
+                        <a class="venobox" data-autoplay="true" data-vbtype="video" data-gall="myGallery" href="http://youtu.be/SY3jQ9lr-rk"><i class="fas fa-play-circle"></i></a>
+                    </div>
+                    <div data-filter-item data-filter-name="what love does" class="video" style="background-image: url(/images/thumbnails/sermons/heritagebaptistchurch/haroldmacmillian/haroldmacmillian.png)">
+                        <div class="titlebar">What Love Does</div>
+                        <a class="venobox" data-autoplay="true" data-vbtype="video" data-gall="myGallery" href="http://youtu.be/SY3jQ9lr-rk"><i class="fas fa-play-circle"></i></a>
+                    </div>
+                    <div data-filter-item data-filter-name="it's not over until god says" class="video" style="background-image: url(/images/thumbnails/sermons/heritagebaptistchurch/haroldmacmillian/haroldmacmillian.png)">
+                        <div class="titlebar">It's Not Over Until God Says</div>
+                        <a class="venobox" data-autoplay="true" data-vbtype="video" data-gall="myGallery" href="http://youtu.be/SY3jQ9lr-rk"><i class="fas fa-play-circle"></i></a>
+                    </div>
+                    <div data-filter-item data-filter-name="the day of the lord" class="video" style="background-image: url(/images/thumbnails/sermons/heritagebaptistchurch/haroldmacmillian/haroldmacmillian.png)">
+                        <div class="titlebar">The Day of the Lord</div>
+                        <a class="venobox" data-autoplay="true" data-vbtype="video" data-gall="myGallery" href="http://youtu.be/SY3jQ9lr-rk"><i class="fas fa-play-circle"></i></a>
+                    </div>
+                    <div data-filter-item data-filter-name="biblical tongues" class="video" style="background-image: url(/images/thumbnails/sermons/heritagebaptistchurch/haroldmacmillian/haroldmacmillian.png)">
+                        <div class="titlebar">Biblical Tongues</div>
+                        <a class="venobox" data-autoplay="true" data-vbtype="video" data-gall="myGallery" href="http://youtu.be/SY3jQ9lr-rk"><i class="fas fa-play-circle"></i></a>
+                    </div>
+                    <div data-filter-item data-filter-name="the doctrine of god" class="video" style="background-image: url(/images/thumbnails/sermons/heritagebaptistchurch/haroldmacmillian/haroldmacmillian.png)">
+                        <div class="titlebar">The Doctrine of God</div>
+                        <a class="venobox" data-autoplay="true" data-vbtype="video" data-gall="myGallery" href="http://youtu.be/SY3jQ9lr-rk"><i class="fas fa-play-circle"></i></a>
+                    </div>
+                    <div data-filter-item data-filter-name="all these things against me" class="video" style="background-image: url(/images/thumbnails/sermons/heritagebaptistchurch/haroldmacmillian/haroldmacmillian.png)">
+                        <div class="titlebar">All These Things Against Me</div>
+                        <a class="venobox" data-autoplay="true" data-vbtype="video" data-gall="myGallery" href="http://youtu.be/SY3jQ9lr-rk"><i class="fas fa-play-circle"></i></a>
+                    </div>
+                    <div data-filter-item data-filter-name="doctrine of jesus" class="video" style="background-image: url(/images/thumbnails/sermons/heritagebaptistchurch/haroldmacmillian/haroldmacmillian.png)">
+                        <div class="titlebar">Doctrine of Jesus Christ</div>
+                        <a class="venobox" data-autoplay="true" data-vbtype="video" data-gall="myGallery" href="http://youtu.be/SY3jQ9lr-rk"><i class="fas fa-play-circle"></i></a>
+                    </div>
+                    <div data-filter-item data-filter-name="the joy of following jesus" class="video" style="background-image: url(/images/thumbnails/sermons/heritagebaptistchurch/haroldmacmillian/haroldmacmillian.png)">
+                        <div class="titlebar">The Joy of Following Jesus</div>
+                        <a class="venobox" data-autoplay="true" data-vbtype="video" data-gall="myGallery" href="http://youtu.be/SY3jQ9lr-rk"><i class="fas fa-play-circle"></i></a>
+                    </div>
+                    <div data-filter-item data-filter-name="reasons for suffering" class="video" style="background-image: url(/images/thumbnails/sermons/heritagebaptistchurch/haroldmacmillian/haroldmacmillian.png)">
+                        <div class="titlebar">Reasons for Suffering</div>
+                        <a class="venobox" data-autoplay="true" data-vbtype="video" data-gall="myGallery" href="http://youtu.be/SY3jQ9lr-rk"><i class="fas fa-play-circle"></i></a>
+                    </div>
+                    <div data-filter-item data-filter-name="the choice in suffering" class="video" style="background-image: url(/images/thumbnails/sermons/heritagebaptistchurch/haroldmacmillian/haroldmacmillian.png)">
+                        <div class="titlebar">The Choice in Suffering</div>
+                        <a class="venobox" data-autoplay="true" data-vbtype="video" data-gall="myGallery" href="http://youtu.be/SY3jQ9lr-rk"><i class="fas fa-play-circle"></i></a>
+                    </div>
+                    <div data-filter-item data-filter-name="temptation of christ" class="video" style="background-image: url(/images/thumbnails/sermons/heritagebaptistchurch/haroldmacmillian/haroldmacmillian.png)">
+                        <div class="titlebar">Temptation of Christ</div>
+                        <a class="venobox" data-autoplay="true" data-vbtype="video" data-gall="myGallery" href="http://youtu.be/SY3jQ9lr-rk"><i class="fas fa-play-circle"></i></a>
+                    </div>
+                    <div data-filter-item data-filter-name="stand up for jesus" class="video" style="background-image: url(/images/thumbnails/sermons/heritagebaptistchurch/haroldmacmillian/haroldmacmillian.png)">
+                        <div class="titlebar">Stand Up For Jesus</div>
+                        <a class="venobox" data-autoplay="true" data-vbtype="video" data-gall="myGallery" href="http://youtu.be/SY3jQ9lr-rk"><i class="fas fa-play-circle"></i></a>
+                    </div>
+                    <div data-filter-item data-filter-name="is there not a cause" class="video" style="background-image: url(/images/thumbnails/sermons/heritagebaptistchurch/haroldmacmillian/haroldmacmillian.png)">
+                        <div class="titlebar">Is There Not a Cause?</div>
+                        <a class="venobox" data-autoplay="true" data-vbtype="video" data-gall="myGallery" href="http://youtu.be/SY3jQ9lr-rk"><i class="fas fa-play-circle"></i></a>
+                    </div>                       
+                </div>
+            </div>
+        </div>
+            </section> <!-- End Content Section -->
+        </div> <!-- End Wrapper -->
+        <script type="text/javascript" src="/jquery/jquery-3.4.1.min.js"></script>
+        <!--<script type="text/javascript" src="/venobox/venobox.min.js"></script>-->
+        <script src="https://cdn.plyr.io/3.6.12/plyr.js"></script>
+        <script>
+        const player = new Plyr('#player');
+        </script>
+        <script>
+        new YouTubeToHtml5({
+            withAudio: true // Filter streams to those with audio channels
+        });
+        </script>
+        <script>
+            $('[data-search]').on('keyup', function() {
+	            var searchVal = $(this).val();
+	            var filterItems = $('[data-filter-item]');
+
+                if ( searchVal != '' ) {
+                    filterItems.addClass('hidden');
+                    $('[data-filter-item][data-filter-name*="' + searchVal.toLowerCase() + '"]').removeClass('hidden');
+                } else {
+                    filterItems.removeClass('hidden');
+                }
+            });
+        </script>
+        <!--<script>
+            $(document).ready(() => {
+                $('.venobox').venobox({
+                    closeColor: '#f4f4f4',
+                    spinColor: '#f4f4f4',
+                    closeBackground: '#17191D',
+                    overlayColor: 'rgba(25,25,29,0.8)'
+                }); 
+                /*var player = videojs('my-player');
+                var ModelDialog = videojs.getComponent('ModalDialog');
+                
+                var modal = new ModalDialog(player, {
+                    // Persist after modal is closed
+                    temporary: false });
+
+                // Parent modal to player element
+                player.addChild(modal);
+                
+                // Event listeners
+                player.on('pause', () => {
+                    // Open modal when media playback is paused
+                    modal.open();
+                });
+                player.on('play', () => {
+                    // Close modal when media playback is resumed
+                    modal.close();
+                });*/
+
+                // Get the modal
+                //var modal = document.getElementById("myVodModal");
+                
+                // Get the button that opens the modal
+                //var btn = document.getElementById("myVodBtn");
+                
+                // Get the <span> element that closes the modal
+                //var span = document.getElementsByClassName("close")[0];
+                
+                // When the user clicks the button, open the modal 
+                //btn.onclick = function() {
+                //modal.style.display = "block";
+                //}
+                
+                // When the user clicks on <span> (x), close the modal
+                //span.onclick = function() {
+                //modal.style.display = "none";
+                //}
+                
+                // When the user clicks anywhere outside of the modal, close it
+                //window.onclick = function(event) {
+                //if (event.target == modal) {
+                //    modal.style.display = "none";
+                //}
+                //}
+
+            });
+
+        </script>-->
+    </body>
+</html>
