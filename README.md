@@ -16,3 +16,13 @@ The folder named "old_deprecated" will be deleted soon. Ensure all data is captu
 At the root of the project run `npm run dev`
 The project should run at http://127.0.0.1:5173/
 
+## Environment variables
+
+```
+.env                # loaded in all cases
+.env.local          # loaded in all cases, ignored by git
+.env.[mode]         # only loaded in specified mode
+.env.[mode].local   # only loaded in specified mode, ignored by git
+```
+`import.meta.env.VITE_SOME_KEY`
+
