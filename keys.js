@@ -1,0 +1,1 @@
+const BIBLE_API = '032624a5-a24f-4ba6-b67c-d9b2511cbe74';
