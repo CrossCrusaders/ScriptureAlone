@@ -8,7 +8,7 @@ import * as VueRouter from 'vue-router'
 
 const routes = [
   { path: '/', component: Home },
-  { path: '/search', component: BibleSearch },
+  { path: '/bible', component: BibleSearch },
 
   { path: '/auth/log-in', component: LogIn },
   { path: '/auth/register', component: Register },

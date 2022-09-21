@@ -42,7 +42,7 @@ const { breakpoint } = useBreakpoint()
 const menuItems = [
   {
     label: 'Read the Scripture',
-    link: '/bible/bible-search'
+    link: '/bible'
   },
   {
     label: 'Study Tools',
