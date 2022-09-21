@@ -78,7 +78,7 @@ func main() {
 			Method: http.MethodGet,
 			Path:   "/api/bibles",
 			Handler: func(c echo.Context) error {
-				ids := c.QueryParam(`bible_ids`)
+				ids := c.QueryParam(`bible_id`)
 				url := `https://api.scripture.api.bible/v1/bibles?language=eng`
 				if ids != `` {
 					url += `&ids=` + ids
@@ -162,6 +162,48 @@ func main() {
 
 				if chapterId != `` {
 					url += `/` + chapterId
+					url += `?content-type=html&include-notes=false&include-titles=true&include-chapter-numbers=false&include-verse-numbers=true&include-verse-spans=false`
+				}
+
+				log.Print(url)
+
+				client := http.Client{}
+				req, _ := http.NewRequest("GET", url, nil)
+
+				req.Header = http.Header{
+					"api-key":      {bibleApiKey},
+					"Content-Type": {"application/json"},
+				}
+				resp, _ := client.Do(req)
+
+				body, err := ioutil.ReadAll(resp.Body)
+
+				if err != nil {
+					log.Fatal(`Error parsing bible search response`)
+					return c.String(500, err.Error())
+				}
+
+				return c.String(200, string(body))
+			},
+			Middlewares: []echo.MiddlewareFunc{},
+		})
+
+		return nil
+	})
+
+	// Get specific verse
+	app.OnBeforeServe().Add(func(e *core.ServeEvent) error {
+		e.Router.AddRoute(echo.Route{
+			Method: http.MethodGet,
+			Path:   "/api/bibles/verses",
+			Handler: func(c echo.Context) error {
+				bibleId := c.QueryParam(`bible_id`)
+				verseId := c.QueryParam(`verse_id`)
+
+				url := `https://api.scripture.api.bible/v1/bibles/` + bibleId + `/verses`
+
+				if verseId != `` {
+					url += `/` + verseId
 					url += `?content-type=html&include-notes=false&include-titles=true&include-chapter-numbers=false&include-verse-numbers=true&include-verse-spans=false`
 				}
 

@@ -11,7 +11,7 @@ offset // the page
 
 /api/bibles
 
-bible_ids // comma separated list of bible ids to search for
+bible_id // comma separated list of bible ids to search for
 
 /api/bibles/books
 
@@ -23,3 +23,9 @@ book_id
 
 bible_id
 chapter_id
+
+
+/api/bibles/verses
+
+bible_id
+verse_id
