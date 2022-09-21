@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Marvin McKenzie | Devotionals | Scripture Alone</title>
+
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Play:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Stylesheets -->
+    <!--<link href="/sermons/sermons.css" rel="stylesheet" type="text/css" />-->
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/css/devotionals.css" />
+
+    <!--<link href="search.css" rel="stylesheet" type="text/css" />-->
+
+    <!--<link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="package/css/swiper.min.css" />
+    <link rel="stylesheet" href="/css/styles.css" />
+
+    <!-- Scripts -->
+    <script
+      src="https://kit.fontawesome.com/40a1762593.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"
+      type="text/javascript"
+    ></script>
+
+    <link href="https://vjs.zencdn.net/7.17.0/video-js.css" rel="stylesheet" />
+
+    <!-- Sea -->
+    <link
+      href="https://unpkg.com/@videojs/themes@1/dist/sea/index.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="navigation">
+      <div class="nav-container">
+        <span class="logo">
+          <span class="logo-img">
+            <img src="/images/bible-img/biblev2.png" />
+          </span>
+          <span class="logo-text">
+            <h1>Scripture Alone</h1>
+          </span>
+        </span>
+        <nav class="navbar">
+          <div class="nav-mobile">
+            <a class="nav-a" id="nav-ham" href="#!"><span id="ss"></span></a>
+          </div>
+          <ul>
+            <li>
+              <a class="nav-a" href="#!">Read the Scripture</a>
+            </li>
+            <li>
+              <a class="nav-a" style="cursor: pointer">Study Tools</a>
+              <ul>
+                <li>
+                  <a class="nav-a" href="#!">Commentaries</a>
+                </li>
+                <li>
+                  <a class="nav-a" href="#!">Study Groups</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a class="nav-a" style="cursor: pointer">Plans</a>
+              <ul>
+                <li>
+                  <a class="nav-a" href="#!">Bible Reading Plans</a>
+                </li>
+                <li>
+                  <a class="nav-a" href="#!">Devotionals</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a class="nav-a" href="/sermons.html">Sermons</a>
+            </li>
+            <button id="btn-login" disabled="true" onclick="login()">
+              Log in
+            </button>
+            <button id="btn-logout" disabled="true" onclick="logout()">
+              Log out
+            </button>
+            <!--<li>
+              <a href="/dashboard.html"><div id="get-started" class="get-started">Get Started</div></a>
+            </li>
+            <li>
+              <a href="/signup.html">Sign up</a>
+            </li>-->
+          </ul>
+        </nav>
+      </div>
+    </section>
+
+    <div class="dheader-sub">
+      <div class="dheader-img">
+        <img
+          src="https://onuniverse-assets.imgix.net/5b52c474-acb0-4ef1-bb34-5d986baa504e.jpg?w=400&fit=crop&auto=compress%2Cformat&q=65&ixlib=js-2.2.0"
+          class="dhead-img"
+          alt="Avatar"
+        />
+      </div>
+      <div class="dheader-sub-text">
+        <h1>Marvin McKenzie</h1>
+        <p>
+          Pastor Marvin McKenzie was saved at the age of eighteen. He has
+          planted and pastored churches in Washington and Oregon. Dr. McKenzie
+          served as the Executive Vice President of Pacific Coast Baptist Bible
+          College, San Dimas, CA and then at Heartland Baptist Bible College,
+          OKC, OK.
+          <br />
+          <br />
+          Marvin and Anita have two sons; both are in the ministry in Baptist
+          Churches in Washington State.
+        </p>
+      </div>
+    </div>
+
+    <div class="dmain-sub">
+      <div class="ccolumn-1 left"></div>
+      <div class="ccolumn-2 middle" style="height: 100%">
+        <h1 style="text-align: center; font-size: 60px">February 2022</h1>
+
+        <button class="accordion">
+          Daily Visit with God - Acts 13:4-14 | 02/28/22
+        </button>
+        <div class="panel">
+          <div style="max-width: 1280px; min-height: 720px">
+            <video
+              id="my-video"
+              class="video-js vjs-big-play-centered vjs-fluid"
+              controls
+              preload="auto"
+              width="640"
+              height="264"
+              poster="https://sp.rmbl.ws/s8/6/S/7/q/k/S7qkd.oq1b.1.jpg"
+              data-setup="{}"
+            >
+              <source
+                src="https://sp.rmbl.ws/s8/2/S/7/q/k/S7qkd.caa.mp4?u=3&b=0"
+                type="video/mp4"
+              />
+              <p class="vjs-no-js">
+                To view this video please enable JavaScript, and consider
+                upgrading to a web browser that
+                <a
+                  href="https://videojs.com/html5-video-support/"
+                  target="_blank"
+                  >supports HTML5 video</a
+                >
+              </p>
+            </video>
+          </div>
+        </div>
+
+        <button class="accordion">
+          Daily Visit with God - Acts 13:1 | 02/25/22
+        </button>
+        <div class="panel">
+          <div style="max-width: 1280px; min-height: 720px">
+            <video
+              id="my-video"
+              class="video-js vjs-big-play-centered vjs-fluid"
+              controls
+              preload="auto"
+              width="640"
+              height="264"
+              poster="https://sp.rmbl.ws/s8/1/O/x/1/j/Ox1jd.oq1b.2-small-Acts-131-The-Mysteries-of-G.jpg"
+              data-setup="{}"
+            >
+              <source
+                src="https://sp.rmbl.ws/s8/2/O/x/1/j/Ox1jd.caa.mp4?u=3&b=0"
+                type="video/mp4"
+              />
+              <p class="vjs-no-js">
+                To view this video please enable JavaScript, and consider
+                upgrading to a web browser that
+                <a
+                  href="https://videojs.com/html5-video-support/"
+                  target="_blank"
+                  >supports HTML5 video</a
+                >
+              </p>
+            </video>
+          </div>
+        </div>
+
+        <button class="accordion">
+          Daily Visit with God - Acts 12:24 | 02/24/22
+        </button>
+        <div class="panel">
+          <div style="max-width: 1280px; min-height: 720px">
+            <video
+              id="my-video"
+              class="video-js vjs-big-play-centered vjs-fluid"
+              controls
+              preload="auto"
+              width="640"
+              height="264"
+              poster="https://sp.rmbl.ws/s8/1/C/C/W/h/CCWhd.oq1b.2-small-Acts-1224-Regardless.jpg"
+              data-setup="{}"
+            >
+              <source
+                src="https://sp.rmbl.ws/s8/2/C/C/W/h/CCWhd.caa.mp4?u=3&b=0"
+                type="video/mp4"
+              />
+              <p class="vjs-no-js">
+                To view this video please enable JavaScript, and consider
+                upgrading to a web browser that
+                <a
+                  href="https://videojs.com/html5-video-support/"
+                  target="_blank"
+                  >supports HTML5 video</a
+                >
+              </p>
+            </video>
+          </div>
+        </div>
+
+        <button class="accordion">
+          Daily Visit with God - Acts 12:15 | 02/22/22
+        </button>
+        <div class="panel">
+          <div style="max-width: 1280px; min-height: 720px">
+            <video
+              id="my-video"
+              class="video-js vjs-big-play-centered vjs-fluid"
+              controls
+              preload="auto"
+              width="640"
+              height="264"
+              poster="https://sp.rmbl.ws/s8/1/4/n/S/g/4nSgd.oq1b.2-small-Acts-1215-Rhoda-Knew-the-Tr.jpg"
+              data-setup="{}"
+            >
+              <source
+                src="https://sp.rmbl.ws/s8/2/4/n/S/g/4nSgd.caa.mp4?u=3&b=0"
+                type="video/mp4"
+              />
+              <p class="vjs-no-js">
+                To view this video please enable JavaScript, and consider
+                upgrading to a web browser that
+                <a
+                  href="https://videojs.com/html5-video-support/"
+                  target="_blank"
+                  >supports HTML5 video</a
+                >
+              </p>
+            </video>
+          </div>
+        </div>
+
+        <button class="accordion">
+          Daily Visit with God - Acts 12:12 | 02/21/22
+        </button>
+        <div class="panel">
+          <div style="max-width: 1280px; min-height: 720px">
+            <video
+              id="my-video"
+              class="video-js vjs-big-play-centered vjs-fluid"
+              controls
+              preload="auto"
+              width="640"
+              height="264"
+              poster="https://sp.rmbl.ws/s8/1/6/D/n/g/6Dngd.oq1b.2-small-Acts-1212-Options.jpg"
+              data-setup="{}"
+            >
+              <source
+                src="https://sp.rmbl.ws/s8/2/6/D/n/g/6Dngd.caa.mp4?u=3&b=0"
+                type="video/mp4"
+              />
+              <p class="vjs-no-js">
+                To view this video please enable JavaScript, and consider
+                upgrading to a web browser that
+                <a
+                  href="https://videojs.com/html5-video-support/"
+                  target="_blank"
+                  >supports HTML5 video</a
+                >
+              </p>
+            </video>
+          </div>
+        </div>
+
+        <button class="accordion">
+          Daily Visit with God - Acts 12:5 | 02/18/22
+        </button>
+        <div class="panel">
+          <div style="max-width: 1280px; min-height: 720px">
+            <video
+              id="my-video"
+              class="video-js vjs-big-play-centered vjs-fluid"
+              controls
+              preload="auto"
+              width="640"
+              height="264"
+              poster="https://sp.rmbl.ws/s8/1/e/l/Q/e/elQed.oq1b.2-small-Acts-125-But-Prayer.jpg"
+              data-setup="{}"
+            >
+              <source
+                src="https://sp.rmbl.ws/s8/2/e/l/Q/e/elQed.caa.mp4?u=3&b=0"
+                type="video/mp4"
+              />
+              <p class="vjs-no-js">
+                To view this video please enable JavaScript, and consider
+                upgrading to a web browser that
+                <a
+                  href="https://videojs.com/html5-video-support/"
+                  target="_blank"
+                  >supports HTML5 video</a
+                >
+              </p>
+            </video>
+          </div>
+        </div>
+
+        <button class="accordion">
+          Daily Visit with God - Acts 12:4 | 02/17/22
+        </button>
+        <div class="panel">
+          <div style="max-width: 1280px; min-height: 720px">
+            <video
+              id="my-video"
+              class="video-js vjs-big-play-centered vjs-fluid"
+              controls
+              preload="auto"
+              width="640"
+              height="264"
+              poster="https://sp.rmbl.ws/s8/6/A/H/h/e/AHhed.oq1b.1.jpg"
+              data-setup="{}"
+            >
+              <source
+                src="https://sp.rmbl.ws/s8/2/A/H/h/e/AHhed.caa.mp4?u=3&b=0"
+                type="video/mp4"
+              />
+              <p class="vjs-no-js">
+                To view this video please enable JavaScript, and consider
+                upgrading to a web browser that
+                <a
+                  href="https://videojs.com/html5-video-support/"
+                  target="_blank"
+                  >supports HTML5 video</a
+                >
+              </p>
+            </video>
+          </div>
+        </div>
+
+        <button class="accordion">
+          Daily Visit with God - Acts 11:23 | 02/15/22
+        </button>
+        <div class="panel">
+          <div style="max-width: 1280px; min-height: 720px">
+            <video
+              id="my-video"
+              class="video-js vjs-big-play-centered vjs-fluid"
+              controls
+              preload="auto"
+              width="640"
+              height="264"
+              poster="https://sp.rmbl.ws/s8/1/8/z/N/d/8zNdd.oq1b.2-small-Acts-1123-Cleave-to-the-Lor.jpg"
+              data-setup="{}"
+            >
+              <source
+                src="https://sp.rmbl.ws/s8/2/8/z/N/d/8zNdd.caa.mp4?u=3&b=0"
+                type="video/mp4"
+              />
+              <p class="vjs-no-js">
+                To view this video please enable JavaScript, and consider
+                upgrading to a web browser that
+                <a
+                  href="https://videojs.com/html5-video-support/"
+                  target="_blank"
+                  >supports HTML5 video</a
+                >
+              </p>
+            </video>
+          </div>
+        </div>
+
+        <button class="accordion">
+          Daily Visit with God - Acts 11:22 | 02/14/22
+        </button>
+        <div class="panel">
+          <div style="max-width: 1280px; min-height: 720px">
+            <video
+              id="my-video"
+              class="video-js vjs-big-play-centered vjs-fluid"
+              controls
+              preload="auto"
+              width="640"
+              height="264"
+              poster="https://sp.rmbl.ws/s8/1/Y/V/p/c/YVpcd.oq1b.2-small-Acts-1122-It-Always-Does.jpg"
+              data-setup="{}"
+            >
+              <source
+                src="https://sp.rmbl.ws/s8/2/Y/V/p/c/YVpcd.caa.mp4?u=3&b=0"
+                type="video/mp4"
+              />
+              <p class="vjs-no-js">
+                To view this video please enable JavaScript, and consider
+                upgrading to a web browser that
+                <a
+                  href="https://videojs.com/html5-video-support/"
+                  target="_blank"
+                  >supports HTML5 video</a
+                >
+              </p>
+            </video>
+          </div>
+        </div>
+
+        <button class="accordion">
+          Daily Visit with God - Acts 11:17 | 02/10/22
+        </button>
+        <div class="panel">
+          <div style="max-width: 1280px; min-height: 720px">
+            <video
+              id="my-video"
+              class="video-js vjs-big-play-centered vjs-fluid"
+              controls
+              preload="auto"
+              width="640"
+              height="264"
+              poster="https://sp.rmbl.ws/s8/1/I/f/9/_/If9_c.oq1b.2-small-Acts-1117-A-Fresh-Wave-of-J.jpg"
+              data-setup="{}"
+            >
+              <source
+                src="https://sp.rmbl.ws/s8/2/I/f/9/_/If9_c.caa.mp4?u=3&b=0"
+                type="video/mp4"
+              />
+              <p class="vjs-no-js">
+                To view this video please enable JavaScript, and consider
+                upgrading to a web browser that
+                <a
+                  href="https://videojs.com/html5-video-support/"
+                  target="_blank"
+                  >supports HTML5 video</a
+                >
+              </p>
+            </video>
+          </div>
+        </div>
+
+        <button class="accordion">
+          Daily Visit with God - Acts 11:16 | 02/08/22
+        </button>
+        <div class="panel">
+          <div style="max-width: 1280px; min-height: 720px">
+            <video
+              id="my-video"
+              class="video-js vjs-big-play-centered vjs-fluid"
+              controls
+              preload="auto"
+              width="640"
+              height="264"
+              poster="https://sp.rmbl.ws/s8/1/W/W/7/-/WW7-c.oq1b.2-small-Acts-1116-They-Bowed-to-the.jpg"
+              data-setup="{}"
+            >
+              <source
+                src="https://sp.rmbl.ws/s8/2/W/W/7/-/WW7-c.caa.mp4?u=3&b=0"
+                type="video/mp4"
+              />
+              <p class="vjs-no-js">
+                To view this video please enable JavaScript, and consider
+                upgrading to a web browser that
+                <a
+                  href="https://videojs.com/html5-video-support/"
+                  target="_blank"
+                  >supports HTML5 video</a
+                >
+              </p>
+            </video>
+          </div>
+        </div>
+
+        <button class="accordion">
+          Daily Visit with God - Acts 11:9 | 02/07/22
+        </button>
+        <div class="panel">
+          <div style="max-width: 1280px; min-height: 720px">
+            <video
+              id="my-video"
+              class="video-js vjs-big-play-centered vjs-fluid"
+              controls
+              preload="auto"
+              width="640"
+              height="264"
+              poster="https://sp.rmbl.ws/s8/6/S/y/I/-/SyI-c.oq1b.1.jpg"
+              data-setup="{}"
+            >
+              <source
+                src="https://sp.rmbl.ws/s8/2/S/y/I/-/SyI-c.caa.mp4?u=3&b=0"
+                type="video/mp4"
+              />
+              <p class="vjs-no-js">
+                To view this video please enable JavaScript, and consider
+                upgrading to a web browser that
+                <a
+                  href="https://videojs.com/html5-video-support/"
+                  target="_blank"
+                  >supports HTML5 video</a
+                >
+              </p>
+            </video>
+          </div>
+        </div>
+
+        <button class="accordion">
+          Daily Visit with God - Acts 11:18 | 02/04/22
+        </button>
+        <div class="panel">
+          <div style="max-width: 1280px; min-height: 720px">
+            <video
+              id="my-video"
+              class="video-js vjs-big-play-centered vjs-fluid"
+              controls
+              preload="auto"
+              width="640"
+              height="264"
+              poster="https://sp.rmbl.ws/s8/1/Y/J/K/a/YJKad.oq1b.2-small-Acts-1118-The-Best-News-for.jpg"
+              data-setup="{}"
+            >
+              <source
+                src="https://sp.rmbl.ws/s8/2/Y/J/K/a/YJKad.caa.mp4?u=3&b=0"
+                type="video/mp4"
+              />
+              <p class="vjs-no-js">
+                To view this video please enable JavaScript, and consider
+                upgrading to a web browser that
+                <a
+                  href="https://videojs.com/html5-video-support/"
+                  target="_blank"
+                  >supports HTML5 video</a
+                >
+              </p>
+            </video>
+          </div>
+        </div>
+
+        <button class="accordion">
+          Daily Visit with God - Acts 10:44 | 02/04/22
+        </button>
+        <div class="panel">
+          <div style="max-width: 1280px; min-height: 720px">
+            <video
+              id="my-video"
+              class="video-js vjs-big-play-centered vjs-fluid"
+              controls
+              preload="auto"
+              width="640"
+              height="264"
+              poster="https://sp.rmbl.ws/s8/6/k/V/2/8/kV28c.oq1b.jpg"
+              data-setup="{}"
+            >
+              <source
+                src="https://sp.rmbl.ws/s8/2/k/V/2/8/kV28c.caa.mp4?u=3&b=0"
+                type="video/mp4"
+              />
+              <p class="vjs-no-js">
+                To view this video please enable JavaScript, and consider
+                upgrading to a web browser that
+                <a
+                  href="https://videojs.com/html5-video-support/"
+                  target="_blank"
+                  >supports HTML5 video</a
+                >
+              </p>
+            </video>
+          </div>
+        </div>
+
+        <button class="accordion">
+          Daily Visit with God - Acts 10:42 | 02/03/22
+        </button>
+        <div class="panel">
+          <div style="max-width: 1280px; min-height: 720px">
+            <video
+              id="my-video"
+              class="video-js vjs-big-play-centered vjs-fluid"
+              controls
+              preload="auto"
+              width="640"
+              height="264"
+              poster="https://sp.rmbl.ws/s8/6/C/4/z/8/C4z8c.oq1b.1.jpg"
+              data-setup="{}"
+            >
+              <source
+                src="https://sp.rmbl.ws/s8/2/C/4/z/8/C4z8c.caa.mp4?u=3&b=0"
+                type="video/mp4"
+              />
+              <p class="vjs-no-js">
+                To view this video please enable JavaScript, and consider
+                upgrading to a web browser that
+                <a
+                  href="https://videojs.com/html5-video-support/"
+                  target="_blank"
+                  >supports HTML5 video</a
+                >
+              </p>
+            </video>
+          </div>
+        </div>
+
+        <button class="accordion">
+          Daily Visit with God - Acts 10:41 | 02/01/22
+        </button>
+        <div class="panel">
+          <div style="max-width: 1280px; min-height: 720px">
+            <video
+              id="my-video"
+              class="video-js vjs-big-play-centered vjs-fluid"
+              controls
+              preload="auto"
+              width="640"
+              height="264"
+              poster="https://sp.rmbl.ws/s8/6/Q/7/6/7/Q767c.oq1b.jpg"
+              data-setup="{}"
+            >
+              <source
+                src="https://sp.rmbl.ws/s8/2/Q/7/6/7/Q767c.caa.mp4?u=3&b=0"
+                type="video/mp4"
+              />
+              <p class="vjs-no-js">
+                To view this video please enable JavaScript, and consider
+                upgrading to a web browser that
+                <a
+                  href="https://videojs.com/html5-video-support/"
+                  target="_blank"
+                  >supports HTML5 video</a
+                >
+              </p>
+            </video>
+          </div>
+        </div>
+
+      </div>
+      <div class="ccolumn-3 right"></div>
+    </div>
+
+    <div class="section-5_sermons">
+      <!--footer starts from here-->
+      <footer class="footer-distributed">
+        <div class="footer-left">
+          <h3>Scripture Alone</h3>
+
+          <p class="footer-links">
+            <a href="/index.html">Home</a>
+            ·
+            <a href="/about.html">About</a>
+            ·
+            <a href="#">Uptime Status</a>
+            ·
+            <a href="/updates.html">Updates</a>
+            ·
+            <a href="/contact.html">Contact</a>
+          </p>
+
+          <p class="footer-company-name">Scripture Alone &copy; 2022</p>
+        </div>
+
+        <div class="footer-center">
+          <!--<div>
+          <i class="fa fa-map-marker"></i>
+          <p><span>21 Revolution Street</span> Delhi, India</p>
+          </div>
+          
+          <div>
+          <i class="fa fa-phone"></i>
+          <p>+1 555 123456</p>
+          </div>-->
+
+          <div>
+            <i class="fa fa-envelope"></i>
+            <p>
+              <a href="mailto:support@crosscrusaders.com"
+                >support@crosscrusaders.com</a
+              >
+            </p>
+          </div>
+        </div>
+
+        <div class="footer-right">
+          <p class="footer-company-about">
+            <span>About Scripture Alone</span>
+            Scripture Alone is a Bible app created by
+            <a href="https://crosscrusaders.com/">Cross Crusaders</a> in order
+            to combat the toleration of the false teachers in other apps and to
+            bring forward suppressed Bible preachers with doctrinally sound
+            content for the current time we are living in.
+          </p>
+
+          <div class="footer-icons">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://discord.gg/3YEd7KdJkz" target="blank"
+              ><i class="fa-brands fa-discord"></i
+            ></a>
+            <a
+              href="https://github.com/ItsShawn/itsshawn.github.io/"
+              target="blank"
+              ><i class="fa fa-github"></i
+            ></a>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="https://vjs.zencdn.net/7.17.0/video.min.js"></script>
+    <script>
+      $(function () {
+        var $refreshButton = $("#refresh");
+        var $results = $("#css_result");
+
+        function refresh() {
+          var css = $("style.cp-pen-styles").text();
+          $results.html(css);
+        }
+
+        refresh();
+        $refreshButton.click(refresh);
+
+        // Select all the contents when clicked
+        $results.click(function () {
+          $(this).select();
+        });
+      });
+    </script>
+    <script>
+      // Adding a vertical volume bar
+
+      var vid = document.getElementById("my-video");
+
+      var player = videojs(vid, {
+        controlBar: { volumePanel: { inline: false } },
+      });
+    </script>
+
+    <script>
+      var acc = document.getElementsByClassName("accordion");
+      var i;
+
+      for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+          var panel = this.nextElementSibling;
+          if (panel.style.maxHeight) {
+            panel.style.maxHeight = null;
+          } else {
+            panel.style.maxHeight = panel.scrollHeight + "px";
+          }
+        });
+      }
+    </script>
+
+    <script>
+      // After the DOM is loaded
+      window.addEventListener(
+        "load",
+        function (e) {
+          // Hamburger or X
+          let navham = document.getElementById("nav-ham");
+          // 1st level (only one)
+          let navul = document.querySelector("nav > ul");
+          // 2nd level (many)
+          let navulliuls = document.querySelectorAll("nav > ul > li > ul");
+          // 1st level links that have a 2nd level dropdown (many)
+          let navullis = document.querySelectorAll(
+            "nav > ul > li a:not(:only-child)"
+          );
+
+          // Toggle 2nd level visibility
+          let toggle2nd = function (e) {
+            // Make 2nd level visible
+            let thisul = this.parentNode.querySelector("ul");
+            thisul.classList.toggle("active");
+            // Hide other dropdowns
+            for (let item of navulliuls) {
+              if (item !== thisul) {
+                item.classList.remove("active");
+              }
+            }
+            // Do not execute this link or hidenav
+            e.stopPropagation();
+          };
+
+          // Toggle mobile navigation bar
+          let togglenav = function (e) {
+            // Hamburger to X toggle
+            navham.classList.toggle("active");
+            // 1st level visible toggle
+            navul.classList.toggle("active");
+            // Do not execute hidenav
+            e.stopPropagation();
+          };
+
+          // Hide mobile navigation bar
+          let hidenav = function (e) {
+            // Hamburger
+            navham.classList.remove("active");
+            // 1st level visible toggle
+            navul.classList.remove("active");
+            e.stopPropagation();
+            // Hide 2nd level
+            for (let item of navulliuls) {
+              item.classList.remove("active");
+            }
+          };
+
+          // Toggle 2nd level visibility on click on any link that has a 2nd level dropdown
+          for (let item of navullis) {
+            item.addEventListener("click", toggle2nd, false);
+          }
+
+          // Hamburger or X click
+          navham.addEventListener("click", togglenav, false);
+
+          // Clicking away from dropdown will remove the dropdown class
+          document.documentElement.addEventListener("click", hidenav, false);
+        },
+        false
+      );
+    </script>
+  </body>
+</html>

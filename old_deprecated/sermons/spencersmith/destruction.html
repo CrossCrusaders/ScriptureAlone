@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Destruction - Spencer Smith | Scripture Alone</title>
+    <!--<link rel="stylesheet" href="/style.css" />-->
+    <script
+      src="https://kit.fontawesome.com/40a1762593.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="/sermons/sermons.css" />
+    <link rel="stylesheet" href="/sermons/latest-sermons.css" />
+    <link rel="stylesheet" href="/sermons/spencersmith/spencer.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Play:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link href="https://vjs.zencdn.net/7.17.0/video-js.css" rel="stylesheet" />
+
+    <!-- Sea -->
+    <link
+      href="https://unpkg.com/@videojs/themes@1/dist/sea/index.css"
+      rel="stylesheet"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/@thelevicole/youtube-to-html5-loader@4.0.1/dist/YouTubeToHtml5.min.js"></script>
+  </head>
+  <body>
+    <div id="fb-root"></div>
+    <script
+      async
+      defer
+      crossorigin="anonymous"
+      src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v13.0"
+      nonce="r7pWjEWJ"
+    ></script>
+    <nav>
+      <div class="logo">Scripture Alone</div>
+      <input type="checkbox" id="click" />
+      <label for="click" class="menu-btn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Read the Bible</a></li>
+        <li><a href="#">Study Tools</a></li>
+        <li><a href="#">Plans</a></li>
+        <li><a class="active" href="#">Sermons</a></li>
+      </ul>
+    </nav>
+    <!-- Header -->
+    <section class="top__section">
+      <header>
+        <h1>Destruction</h1>
+        <h2>Spencer Smith</h2>
+        <p>
+          Destruction was preached on February 8th, 2020. 
+        </p>
+        <a
+          class=""
+          data-autoplay="true"
+          data-vbtype="video"
+          data-gall="myGallery"
+          href="#watch"
+          ><button>Listen Now</button></a
+        >
+      </header>
+    </section>
+    <!-- End Header Section -->
+    <p style="background-color: #faf8f7; padding-left: 25px; padding-top: 10px; font-size: 30px;"><a href="https://itsshawn.github.io/sermons/all-sermons" class="link">Back to Menu</a></p>
+    <div class="section-2-wog" id="watch">
+      <div class="col-left"></div>
+      <div class="audio-holder">
+        <audio src="" id="audio"></audio>
+        <div class="music-player">
+          <!-- Inside music player element -->
+          <h1 class="music-name"></h1>
+          <p class="artist-name"></p>
+          <div class="disk"></div>
+          <div class="song-slider">
+            <input type="range" value="0" class="seek-bar">
+            <span class="current-time">00:00</span>
+            <span class="song-duration">00:00</span>
+        </div>
+        <div class="controls">
+          <button style="border-radius: 35px; height: 60px; width: 60px;" onclick="rewindAudio();"><i style="color: #4d4d4d; font-size: 40px;" class="fa-solid fa-backward-step"></i></button>
+          <button class="play-btn pause">
+              <span></span>
+              <span></span>
+          </button>
+          <button style="border-radius: 35px; height: 60px; width: 60px;" onclick="forwardAudio();"><i style="color: #4d4d4d; font-size: 40px;" class="fa-solid fa-forward-step"></i></button>
+        </div>
+        </div>
+
+        <p style="text-align: center">If the total length time appears NaN:NaN, please refresh the page 1-2 times before playing the file and the time will appear correctly.</p>
+
+        <!--<script src="/sermons/spencersmith/data.js"></script>-->
+        <script src="/sermons/spencersmith/destruction.js"></script>
+
+      </div>
+      <div class="col-right"></div>
+    </div>
+    <div class="section-3-main">
+      <div class="row-1">
+        <h1 class="row-about"><a class="link" style="cursor: pointer">About Spencer Smith</a></h1>
+      </div>
+      <div class="section-3-sub">
+        <div class="col-bio-main">
+          <div class="col-bio-1">
+            <div class="col-bio-image">
+              <img
+                id="spencer-bio"
+                src="/images/bio/spencer-bio.jpg"
+                alt="A photo of spencer smith for his bio"
+              />
+            </div>
+            <div class="col-bio-socials">
+              <div class="spencer-socials-icons">
+                <a href="https://www.youtube.com/c/spencersmith312" target="_blank"><i class="fa fa-brands fa-youtube"></i></a>
+                <a href="https://www.facebook.com/spencersmith312" target="_blank"><i class="fa fa-brands fa-facebook"></i></a>
+                <a href="https://twitter.com/brospencer" target="_blank"><i class="fa fa-brands fa-twitter"></i></a>
+                <a href="mailto:spencersmith312@gmail.com" target="_blank"><i class="fa fa-solid fa-envelope"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-bio-2">
+            <p>
+              Spencer Smith: Husband, Father of Four, Christian YouTuber, and
+              most importantly...a fundamentalist missionary.
+              <br />
+              <br />
+              Spencer Smith's life didn't start out so great. He grew up in an
+              unsaved family and lived in drunkenness and sin throughout his
+              teen years. At the age of 18, his youth pastor preached a sermon
+              which changed the heart and life of Spencer forever. He received
+              the calling to go to bible college and become a missionary to the
+              people of Kenya. There he, along with other fundamentalist
+              missionaries, founded <a class="link" href="https://www.lighthousebaptistkjv1611.com/">
+              Lighthouse Baptist Missions</a> to bring the true Gospel to the lost people of Kenya. He started
+              his <a class="link" href="https://www.youtube.com/c/spencersmith312">YouTube channel</a> in September 2007, but Spencer and his channel
+              started to become known through his well-made documentary series
+              <a class="link" href="https://youtube.com/playlist?list=PLYltRndgBlAu-bP_2dLU24Ag-3SkrBHTe">Third Adam (1, 2, 3, & 3X)</a>. He
+              continues to call out false teachers and bring out the truth in
+              the modern, false Christianity that is spreading more rampant than
+              ever. He occasionally posts sermons from his church as well as a
+              mini-series called "Morning Devotions" that he does for slight
+              humor.
+            </p>
+          </div>
+        </div>
+        <div class="col-share">
+          <h2>Share</h2>
+            <div class="share-content">
+              <input type="text" value="https://itsshawn.github.io/sermons/spencersmith/destruction" style="display:none" id="myInput">
+              <button class="link-button" onclick="myFunction()"><i class="fa-solid fa-link"></i></button>
+
+              <script>
+              function myFunction() {
+                /* Get the text field */
+                var copyText = document.getElementById("myInput");
+
+                /* Select the text field */
+                copyText.select();
+                copyText.setSelectionRange(0, 99999); /* For mobile devices */
+
+                /* Copy the text inside the text field */
+                navigator.clipboard.writeText(copyText.value);
+                
+                /* Alert the copied text */
+                alert("Succesfully copied link");
+              }
+              </script>
+                
+            
+                <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fitsshawn.github.io%2Fsermons%2Fspencersmith%2Fdestruction&amp;src=sdkpreparse" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                
+                <a href="https://twitter.com/intent/tweet?text=Listen%20to%20Destruction%20by%20Spencer%20Smith%20on%20Scripture%20Alone&url=https%3A%2F%2Fitsshawn.github.io%2Fsermons%2Fspencersmith%2Fdestruction" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            
+                <a href="https://web.whatsapp.com/send?text=https%3A%2F%2Fitsshawn.github.io%2Fsermons%2Fspencersmith%2Fdestruction" target="_blank"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+                
+                <a href="https://www.facebook.com/dialog/send?link=https%3A%2F%2Fitsshawn.github.io%2Fsermons%2Fspencersmith%2Fdestruction&app_id=291494419107518&redirect_uri=https%3A%2F%2Fwww.sharethis.com" target="_blank"><i class="fa-brands fa-facebook-messenger" aria-hidden="true"></i></a>
+
+                <a href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&su=Destruction+by+Spencer+Smith+on+Scripture+Alone&body=https://itsshawn.github.io/sermons/spencersmith/destruction" target="_blank"><i class="fa fa-solid fa-envelope"></i></a>
+            </div>
+
+        <script>
+        $('.share-ico').click(function() {
+          $(this).parent().toggleClass('expand');
+        });
+        </script>
+      </div>
+    </div>
+    <div class="section-4">
+      <div class="commentbox"></div>
+      <script src="https://unpkg.com/commentbox.io/dist/commentBox.min.js"></script>
+      <script>commentBox('5757798738558976-proj')</script>
+    </div>
+    <div class="section-5">
+      <!--footer starts from here-->
+      <footer class="footer-distributed">
+        <div class="footer-left">
+          <h3>Scripture Alone</h3>
+
+          <p class="footer-links">
+            <a href="/index">Home</a>
+            ·
+            <a href="/about">About</a>
+            ·
+            <a href="#">Uptime Status</a>
+            ·
+            <a href="/updates">Updates</a>
+            ·
+            <a href="/contact">Contact</a>
+          </p>
+
+          <p class="footer-company-name">Scripture Alone &copy; 2022</p>
+        </div>
+
+        <div class="footer-center">
+          <!--<div>
+        <i class="fa fa-map-marker"></i>
+        <p><span>21 Revolution Street</span> Delhi, India</p>
+        </div>
+        
+        <div>
+        <i class="fa fa-phone"></i>
+        <p>+1 555 123456</p>
+        </div>-->
+
+          <div>
+            <i class="fa fa-envelope"></i>
+            <p>
+              <a href="mailto:support@crosscrusaders.com"
+                >support@crosscrusaders.com</a
+              >
+            </p>
+          </div>
+        </div>
+
+        <div class="footer-right">
+          <p class="footer-company-about">
+            <span>About Scripture Alone</span>
+            Scripture Alone is a Bible app created by
+            <a class="link" style="color:aliceblue" href="https://crosscrusaders.com/">Cross Crusaders</a> in order
+            to combat the toleration of the false teachers in other apps and to
+            bring forward suppressed Bible preachers with doctrinally sound
+            content for the current time we are living in.
+          </p>
+
+          <div class="footer-icons">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://discord.gg/3YEd7KdJkz" target="blank"
+              ><i class="fa-brands fa-discord"></i
+            ></a>
+            <a
+              href="https://github.com/ItsShawn/itsshawn.github.io/"
+              target="blank"
+              ><i class="fa fa-github"></i
+            ></a>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="https://vjs.zencdn.net/7.17.0/video.min.js"></script>
+    <script>
+      $(function () {
+        var $refreshButton = $("#refresh");
+        var $results = $("#css_result");
+
+        function refresh() {
+          var css = $("style.cp-pen-styles").text();
+          $results.html(css);
+        }
+
+        refresh();
+        $refreshButton.click(refresh);
+
+        // Select all the contents when clicked
+        $results.click(function () {
+          $(this).select();
+        });
+      });
+    </script>
+    <script>
+      // Adding a vertical volume bar
+
+      var vid = document.getElementById("my-video");
+
+      var player = videojs(vid, {
+        controlBar: { volumePanel: { inline: false } },
+      });
+    </script>
+
+    <script>
+      ocument.getElementById("copyButton2").addEventListener("click", function() {
+    copyToClipboardMsg(document.getElementById("copyTarget2"), "msg");
+});
+
+document.getElementById("pasteTarget").addEventListener("mousedown", function() {
+    this.value = "";
+});
+
+
+function copyToClipboardMsg(elem, msgElem) {
+	  var succeed = copyToClipboard(elem);
+    var msg;
+    if (!succeed) {
+        msg = "Copy not supported or blocked.  Press Ctrl+c to copy."
+    } else {
+        msg = "Text copied to the clipboard."
+    }
+    if (typeof msgElem === "string") {
+        msgElem = document.getElementById(msgElem);
+    }
+    msgElem.innerHTML = msg;
+    setTimeout(function() {
+        msgElem.innerHTML = "";
+    }, 2000);
+}
+
+function copyToClipboard(elem) {
+	  // create hidden text element, if it doesn't already exist
+    var targetId = "_hiddenCopyText_";
+    var isInput = elem.tagName === "INPUT" || elem.tagName === "TEXTAREA";
+    var origSelectionStart, origSelectionEnd;
+    if (isInput) {
+        // can just use the original source element for the selection and copy
+        target = elem;
+        origSelectionStart = elem.selectionStart;
+        origSelectionEnd = elem.selectionEnd;
+    } else {
+        // must use a temporary form element for the selection and copy
+        target = document.getElementById(targetId);
+        if (!target) {
+            var target = document.createElement("textarea");
+            target.style.position = "absolute";
+            target.style.left = "-9999px";
+            target.style.top = "0";
+            target.id = targetId;
+            document.body.appendChild(target);
+        }
+        target.textContent = elem.textContent;
+    }
+    // select the content
+    var currentFocus = document.activeElement;
+    target.focus();
+    target.setSelectionRange(0, target.value.length);
+    
+    // copy the selection
+    var succeed;
+    try {
+    	  succeed = document.execCommand("copy");
+    } catch(e) {
+        succeed = false;
+    }
+    // restore original focus
+    if (currentFocus && typeof currentFocus.focus === "function") {
+        currentFocus.focus();
+    }
+    
+    if (isInput) {
+        // restore prior selection
+        elem.setSelectionRange(origSelectionStart, origSelectionEnd);
+    } else {
+        // clear temporary content
+        target.textContent = "";
+    }
+    return succeed;
+}
+
+    </script>
+  </body>
+</html>

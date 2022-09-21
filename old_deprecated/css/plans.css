@@ -1,0 +1,68 @@
+.plans-header {
+    background: url(/images/commentary-header.svg);
+    height: 40vh;
+    width: 100%;
+}
+
+.plans-header-text {
+    height: 60vh;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.plans-header h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 60px;
+}
+
+.plans-header h3 {
+    font-size: 30px;
+}
+
+.plans-body {
+    background: #faf8f7;
+    color: #33383b;
+    /*box-shadow: inset -53px -41px 198px #33383b, inset 95px -2px 200px #33383b;*/
+    display:flex;
+    align-items:center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    min-height: 50vh;
+    max-height: auto;
+    justify-content: center;
+}
+
+.typewriter {
+    font-family: 'Anonymous Pro', monospace;
+    width: 70%;  
+  }
+  
+  h4 {
+    overflow: hidden;
+    margin: 0 auto;
+    display: inline-block;
+    font-weight: normal;
+    font-size: 25px;
+  }
+  
+  h4:after {
+   content: '';
+    display: inline-block;
+    background-color: #33383b;
+    margin-left: 2px;
+    height: 25px;
+    width: 4px;
+    animation: cursor 0.4s infinite;
+    font-size: 50px;
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes cursor {
+    0% { opacity: 1; }
+      49% { opacity: 1; }
+      50% { opacity: 0; }
+      100% { opacity: 0; }
+  }
