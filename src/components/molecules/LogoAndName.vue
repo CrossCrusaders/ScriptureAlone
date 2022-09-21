@@ -2,7 +2,7 @@
   <div class="flex flex-row items-center gap-2">
     <logo>
     </logo>
-    <span class="text-3xl font-bold font-title text-gray-700">Scripture Alone</span>
+    <span class="text-xl md:text-3xl font-bold font-title text-gray-700">Scripture Alone</span>
   </div>
 </template>
 <script setup lang="ts">

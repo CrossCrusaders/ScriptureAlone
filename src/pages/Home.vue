@@ -31,8 +31,8 @@
     </div>
 
     <!-- Verse of the Day-->
-    <div class="flex flex-col gap-8 items-center mb-24">
-      <h2 class="font-bold font-title text-6xl">Verse of the Day</h2>
+    <div class="flex flex-col gap-8 items-center mb-24 p-2">
+      <h2 class="font-bold font-title text-6xl text-center">Verse of the Day</h2>
       <div class="rounded-lg border-2 border-solid border-gray-800 p-8 max-w-prose">
         <h3 class="font-title font-bold text-3xl text-gray-800 mb-8">1 Timothy 4:1 KJV</h3>
         <p class="text-xl">Now the Spirit speaketh expressly, that in the latter times some shall depart from the faith, giving heed to seducing spirits, and doctrines of devils;</p>
@@ -42,46 +42,18 @@
     <!-- Page Divider -->
     <Divider></Divider>
 
-    <!-- Latest Devotionals -->
-    <div class="relative p-16">
-      <h2 class="font-bold font-title mb-16 text-4xl">Recommended Devotionals</h2>
-
-      <swiper
-          :modules="modules"
-          :slides-per-view="4"
-          :space-between="50"
-          navigation
-          :pagination="{ clickable: true }"
-          :scrollbar="{ draggable: true }"
-        >
-        <swiper-slide v-for="slide of devotionalSlides" :key="slide.title">
-          <div class="h-48 bg-gray-200 flex justify-center items-center">
-            {{ slide.title }}
-          </div>
-        </swiper-slide>
-      </swiper>
+    <!-- Latest Devotionals Mobile-->
+    <div class="relative p-2 md:p-8 mb-16">
+      <h2 class="font-bold font-title mb-8 md:mb-16 text-4xl">Recommended Devotionals</h2>
+      <ContentCarousel :slides="devotionalSlides"></ContentCarousel>
     </div>
 
         
 
     <!-- Latest Devotionals -->
-    <div class="relative p-16">
-      <h2 class="font-bold font-title mb-16 text-4xl">Recommended Sermons</h2>
-
-      <swiper
-          :modules="modules"
-          :slides-per-view="4"
-          :space-between="50"
-          navigation
-          :pagination="{ clickable: true }"
-          :scrollbar="{ draggable: true }"
-        >
-        <swiper-slide v-for="slide of sermonSlides" :key="slide.title">
-          <div class="h-48 bg-gray-200 flex justify-center items-center">
-            {{ slide.title }}
-          </div>
-        </swiper-slide>
-      </swiper>
+    <div class="relative p-2 md:p-8 mb-16">
+      <h2 class="font-bold font-title mb-8 md:mb-16 text-4xl">Recommended Sermons</h2>
+      <ContentCarousel :slides="sermonSlides"></ContentCarousel>
     </div>
 
   </AppLayout>
@@ -95,12 +67,9 @@
   import AppInput from '../components/atoms/form-controls/AppInput.vue'
   import { ref } from 'vue'
   import Divider from '../components/atoms/Divider.vue'
-  import { Navigation, Pagination, Scrollbar, A11y } from 'swiper'
-  import { Swiper, SwiperSlide } from 'swiper/vue'
-  import 'swiper/css'
-  import 'swiper/css/navigation'
-  import 'swiper/css/pagination'
-  import 'swiper/css/scrollbar'
+  import ContentCarousel from '../components/molecules/ContentCarousel.vue'
+  import { useBreakpoint } from '../services/ViewportService'
+
  
 
   const searchModel = ref('')
@@ -110,7 +79,7 @@
 
   const callToActionIconClass = 'material-icons-outlined text-6xl'
 
-  const modules = [Navigation, Pagination, Scrollbar, A11y]
+  
 
   const devotionalSlides = [
     {
@@ -163,4 +132,6 @@
       title: 'Sermon 6'
     }
   ]
+
+  const { breakpoint } = useBreakpoint()
 </script>
