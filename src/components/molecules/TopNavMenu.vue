@@ -1,8 +1,17 @@
 <template>
   <nav v-if="breakpoint === 'sm'">
-    <span class="material-icons-outlined" @click="mobileMenuOpen = !mobileMenuOpen">menu</span>
-    <div class="absolute bg-gray-800 text-white left-0 right-0" v-if="showMobileMenuOpen">
-      Mobile Menu
+    <span class="material-icons-outlined" @click="mobileMenuOpen = true">menu</span>
+    <div class="fixed bg-gray-800 z-50 text-white left-0 right-0 top-0 bottom-0" v-if="showMobileMenuOpen">
+	  <span class="material-icons-outlined absolute right-2 top-2" @click="mobileMenuOpen = false">close</span>
+	  <div class="p-2" v-for="item in menuItems" :key="item.label">
+	    {{ item.label }}
+		<div v-if="item.children && item.children.length">
+		  <hr>
+		  <div class="p-2 pl-4" v-for="child in item.children" :key="child.label">
+            <a :href="child.link || '#'">{{ child.label }}</a>
+          </div>
+		</div>
+	  </div>
     </div>
   </nav>
   <nav v-else>
@@ -74,6 +83,5 @@ const showMobileMenuOpen = computed(() => {
   }
   .top-nav-menu-item:hover > ul{
     display: block;
-
   }
 </style>
