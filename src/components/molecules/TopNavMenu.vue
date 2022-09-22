@@ -58,6 +58,10 @@ const menuItems = [
     ]
   },
   {
+    label: 'Sermons',
+    link: '/sermons'
+  },
+  {
     label: 'Account',
     children: [
       {
