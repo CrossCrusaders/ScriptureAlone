@@ -5,7 +5,7 @@
       <div class="top-nav-menu__mobile-menu-panel transition-all bg-gray-800 z-50 text-white" v-if="showMobileMenuOpen">
         <span class="material-icons-outlined absolute right-2 top-2" @click="mobileMenuOpen = false">close</span>
         <div class="p-2" v-for="item in menuItems" :key="item.label">
-          {{ item.label }}
+          <a :href="item.link ? item.link : '#'" :textContent="item.label"></a>
           <div v-if="item.children && item.children.length">
             <hr>
             <div class="p-2 pl-4" v-for="child in item.children" :key="child.label">
