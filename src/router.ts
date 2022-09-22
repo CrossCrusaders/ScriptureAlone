@@ -4,6 +4,7 @@ import LogIn from './pages/Auth/LogIn.vue'
 import Register from './pages/Auth/Register.vue'
 import Commentaries from './pages/StudyTools/Commentaries.vue'
 import Sermons from './pages/Sermons/Sermons.vue'
+import SermonDetails from './pages/Sermons/SermonDetails.vue'
 
 import * as VueRouter from 'vue-router'
 
@@ -11,6 +12,7 @@ const routes = [
   { path: '/', component: Home },
   { path: '/bible', component: BibleSearch },
   { path: '/sermons', component: Sermons },
+  { path: '/sermons/:id', component: SermonDetails },
 
   { path: '/auth/log-in', component: LogIn },
   { path: '/auth/register', component: Register },

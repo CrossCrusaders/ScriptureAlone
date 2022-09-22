@@ -48,9 +48,11 @@
             Time: 53 min
           </p>
           <div class="flex-auto h-8"></div>
-          <AppButton variant="primary">
-            View Sermon
-          </AppButton>
+          <a href="/sermons/1" class="w-full block">
+            <AppButton variant="primary" class="w-full">
+              View Sermon
+            </AppButton>
+          </a>
         </div>
       </div>
 
@@ -80,14 +82,14 @@ const categories = reactive([
 ])
 
 const sermons = reactive([
-  { title: 'Sermon Title', description: 'This is a description. What more could you ask for?', categories: ['Salvation', 'Jesus'], duration: 3600000, iconName: 'book' },
-  { title: 'Sermon Title', description: 'This is a description. What more could you ask for?', categories: ['Salvation', 'Jesus'], duration: 3600000, iconName: 'book' },
-  { title: 'Sermon Title', description: 'This is a description. What more could you ask for?', categories: ['Salvation', 'Jesus'], duration: 3600000, iconName: 'book' },
-  { title: 'Sermon Title', description: 'This is a description. What more could you ask for?', categories: ['Salvation', 'Jesus'], duration: 3600000, iconName: 'book' },
-  { title: 'Sermon Title', description: 'This is a description. What more could you ask for?', categories: ['Salvation', 'Jesus'], duration: 3600000, iconName: 'book' },
-  { title: 'Sermon Title', description: 'This is a description. What more could you ask for?', categories: ['Salvation', 'Jesus'], duration: 3600000, iconName: 'book' },
-  { title: 'Sermon Title', description: 'This is a description. What more could you ask for?', categories: ['Salvation', 'Jesus'], duration: 3600000, iconName: 'book' },
-  { title: 'Sermon Title', description: 'This is a description. What more could you ask for?', categories: ['Salvation', 'Jesus'], duration: 3600000, iconName: 'book' }
+  { id: '1', title: 'Sermon Title', description: 'This is a description. What more could you ask for?', categories: ['Salvation', 'Jesus'], duration: 3600000, iconName: 'book' },
+  { id: '2', title: 'Sermon Title', description: 'This is a description. What more could you ask for?', categories: ['Salvation', 'Jesus'], duration: 3600000, iconName: 'book' },
+  { id: '3', title: 'Sermon Title', description: 'This is a description. What more could you ask for?', categories: ['Salvation', 'Jesus'], duration: 3600000, iconName: 'book' },
+  { id: '4', title: 'Sermon Title', description: 'This is a description. What more could you ask for?', categories: ['Salvation', 'Jesus'], duration: 3600000, iconName: 'book' },
+  { id: '5', title: 'Sermon Title', description: 'This is a description. What more could you ask for?', categories: ['Salvation', 'Jesus'], duration: 3600000, iconName: 'book' },
+  { id: '6', title: 'Sermon Title', description: 'This is a description. What more could you ask for?', categories: ['Salvation', 'Jesus'], duration: 3600000, iconName: 'book' },
+  { id: '7', title: 'Sermon Title', description: 'This is a description. What more could you ask for?', categories: ['Salvation', 'Jesus'], duration: 3600000, iconName: 'book' },
+  { id: '8', title: 'Sermon Title', description: 'This is a description. What more could you ask for?', categories: ['Salvation', 'Jesus'], duration: 3600000, iconName: 'book' }
 ])
 
 </script>
