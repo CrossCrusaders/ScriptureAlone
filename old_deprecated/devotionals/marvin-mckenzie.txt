@@ -1,0 +1,13 @@
+#Description and Avatar of Marvin McKenzie
+<div class="dheader-sub">
+        <div class="dheader-img">
+            <img src="https://onuniverse-assets.imgix.net/5b52c474-acb0-4ef1-bb34-5d986baa504e.jpg?w=400&fit=crop&auto=compress%2Cformat&q=65&ixlib=js-2.2.0" class="dhead-img" alt="Avatar">
+        </div>
+        <div class="dheader-sub-text">
+            <h1>Marvin McKenzie</h1>
+            <p>Pastor Marvin McKenzie was saved at the age of eighteen. He has planted and pastored churches in Washington and Oregon. Dr. McKenzie served as the Executive Vice President of Pacific Coast Baptist Bible College, San Dimas, CA and then at Heartland Baptist Bible College, OKC, OK. 
+            <br />
+            <br />
+            Marvin and Anita have two sons; both are in the ministry in Baptist Churches in Washington State.</p>
+        </div>
+ </div>
