@@ -45,6 +45,10 @@ const { breakpoint } = useBreakpoint()
 
 const menuItems = [
   {
+    label: 'Home',
+	link: '../'
+  },
+  {
     label: 'Read the Scripture',
     link: '/bible'
   },
