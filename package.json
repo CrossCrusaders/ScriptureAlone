@@ -9,7 +9,6 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@types/react": "^18.0.20",
     "pocketbase": "^0.7.1",
     "swiper": "^8.4.2",
     "vue": "^3.2.37",
