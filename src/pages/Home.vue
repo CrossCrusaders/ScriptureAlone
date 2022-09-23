@@ -34,9 +34,8 @@
     <div class="flex flex-col gap-8 items-center mb-24 p-2">
       <h2 class="font-bold font-title text-6xl text-center">Verse of the Day</h2>
       <div class="rounded-lg border-2 border-solid border-gray-800 p-8 max-w-prose">
-        <h3 id="verseName" class="font-title font-bold text-3xl text-gray-800 mb-8">1 Timothy 4:1 KJV</h3>
-        <p class="text-xl">Now the Spirit speaketh expressly, that in the latter times some shall depart from the faith,
-          giving heed to seducing spirits, and doctrines of devils;</p>
+        <h3 v-html="verseName" id="verseName" class="font-title font-bold text-3xl text-gray-800 mb-8"></h3>
+        <p v-html="verseText" id="verseText" class="text-xl"></p>
       </div>
     </div>
 
@@ -60,6 +59,13 @@
   </AppLayout>
 </template>
 
+<style>
+  .v{
+    padding-right: 0.5em;
+    font-weight: bold;
+  }
+</style>
+
 <script setup lang="ts">
 
 
@@ -72,8 +78,13 @@ import ContentCarousel from '../components/molecules/ContentCarousel.vue'
 import { useBreakpoint } from '../services/ViewportService'
 import { getVerseOfTheDay } from '../services/BibleService'
 
+const verseName = ref("");
+const verseText = ref("");
+
 onMounted(async () => {
-  getVerseOfTheDay();
+  var htmlVerse = await getVerseOfTheDay();
+  verseName.value = htmlVerse.data.reference;
+  verseText.value = htmlVerse.data.content;
 })
 
 const verseOfTheDayModel = ref('')
