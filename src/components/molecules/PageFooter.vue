@@ -20,15 +20,16 @@
           <p>Scripture Alone is a Bible app created by <a class="link" href="https://crosscrusaders.com/">Cross Crusaders</a> in order to combat the toleration of the false teachers in other apps and to bring forward suppressed Bible preachers with doctrinally sound content for the current time we are living in.</p>
         </div>
 		
-        <!--<div class="footer-icons">
-        
-          <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-          <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-          <a href="#"><i class="fa-brands fa-instagram"></i></a>
-          <a href="#"><i class="fa-brands fa-youtube"></i></a>
-          <a href="https://discord.gg/3YEd7KdJkz" target="blank"><i class="fa-brands fa-discord"></i></a>
-          <a href="https://github.com/ItsShawn/itsshawn.github.io/" target="blank"><i class="fa fa-github" aria-hidden="true"></i></a>
-        </div>-->
+		<br>
+		
+        <div>
+          <a href="#"><span class="fa fa-facebook fa-xl pr-1" aria-hidden="true"></span></a>
+          <a href="#"><span class="fa fa-twitter fa-xl pr-1" aria-hidden="true"></span></a>
+          <a href="#"><span class="fa-brands fa-instagram fa-xl pr-1"></span></a>
+          <a href="#"><span class="fa-brands fa-youtube fa-xl pr-1"></span></a>
+          <a href="https://discord.gg/3YEd7KdJkz" target="blank"><span class="fa-brands fa-discord fa-xl pr-1"></span></a>
+          <a href="https://github.com/ItsShawn/itsshawn.github.io/" target="blank"><span class="fa fa-github fa-xl pr-1" aria-hidden="true"></span></a>
+        </div>
       </div>
     </div>
   </div>
