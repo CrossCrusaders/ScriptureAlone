@@ -34,7 +34,7 @@
     <div class="flex flex-col gap-8 items-center mb-24 p-2">
       <h2 class="font-bold font-title text-6xl text-center">Verse of the Day</h2>
       <div class="rounded-lg border-2 border-solid border-gray-800 p-8 max-w-prose">
-        <h3 class="font-title font-bold text-3xl text-gray-800 mb-8">1 Timothy 4:1 KJV</h3>
+        <h3 id="verseName" class="font-title font-bold text-3xl text-gray-800 mb-8">1 Timothy 4:1 KJV</h3>
         <p class="text-xl">Now the Spirit speaketh expressly, that in the latter times some shall depart from the faith, giving heed to seducing spirits, and doctrines of devils;</p>
       </div>
     </div>
@@ -65,13 +65,17 @@
   import AppLayout from '../components/templates/AppLayout.vue'
   import PageContent from '../components/templates/PageContent.vue'
   import AppInput from '../components/atoms/form-controls/AppInput.vue'
-  import { ref } from 'vue'
+  import { ref, onMounted } from 'vue'
   import Divider from '../components/atoms/Divider.vue'
   import ContentCarousel from '../components/molecules/ContentCarousel.vue'
   import { useBreakpoint } from '../services/ViewportService'
+  import { getVerseOfTheDay } from '../services/BibleService'
 
+    onMounted(async () => {
+	  getVerseOfTheDay();
+    })
  
-
+  const verseOfTheDayModel = ref('')
   const searchModel = ref('')
   const callToActionItemClass = ['border-2', 'border-solid', 'border-gray-800', 'w-full', 
     'rounded', 'pl-4', 'pr-4', 'pt-16', 'pb-16', 'flex', 'flex-col', 'items-center', 
