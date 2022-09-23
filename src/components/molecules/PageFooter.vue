@@ -9,7 +9,7 @@
           · <a href="/updates.html">Updates</a> · <a href="/contact.html">Contact</a></p>
         <p class="text-xs">Scripture Alone © 2022</p>
       </div>
-      <div class="footerSection">
+      <div class="footerSection md:pl-20">
         <p><i class="material-icons-outlined pr-1">mail</i>
           <a class="mb-2 absolute" href="mailto:support@crosscrusaders.com">support@crosscrusaders.com</a>
         </p>
