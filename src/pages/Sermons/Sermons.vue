@@ -6,7 +6,7 @@
       <div class="rounded-xl bg-slate-200 px-6 py-12 md:py-16 items-center mb-16 md:mt-8">
         <!-- Inner flex parent -->
         <div class="flex flex-col md:flex-row gap-4">
-          <img src="logo-bible.png" class="object-contain hidden md:block max-h-32" />
+          <img src="/logo-bible.png" class="object-contain hidden md:block max-h-32" />
           <div class=" mb-4 md:mb-0">
             <h2 class="text-4xl font-bold mb-2 text-slate-900">Featured</h2>
             <p class="text-slate-600">
