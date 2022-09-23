@@ -2,21 +2,32 @@
   <nav v-if="breakpoint === 'sm'">
     <span class="material-icons-outlined" @click="mobileMenuOpen = true">menu</span>
     <Transition>
-      <div class="top-nav-menu__mobile-menu-panel transition-all bg-gray-800 z-50 text-white" v-if="showMobileMenuOpen">
+      <div class="top-nav-menu__mobile-menu-panel transition-all bg-gray-800 z-50 text-white px-4 py-2"
+        v-if="showMobileMenuOpen">
+        <LogoAndName variant="dark"></LogoAndName>
+        <div class="mb-4"></div>
         <span class="material-icons-outlined absolute right-4 top-6" @click="mobileMenuOpen = false">close</span>
-        <div class="p-2" v-for="item in menuItems" :key="item.label">
+        <div :class="mobileLinkClass" v-for="item in menuItems" :key="item.label">
           <a :href="item.link ? item.link : '#'" :textContent="item.label"></a>
           <div v-if="item.children && item.children.length">
             <hr>
-            <div class="p-2 pl-4" v-for="child in item.children" :key="child.label">
+            <div :class="[mobileLinkClass]" v-for="child in item.children" :key="child.label">
               <a :href="child.link || '#'">{{ child.label }}</a>
             </div>
+          </div>
+        </div>
+        <div v-if="!user">
+          <div :class="mobileLinkClass">
+            <a href="/auth/log-in">Log In</a>
+          </div>
+          <div :class="mobileLinkClass">
+            <a href="/auth/register">Register</a>
           </div>
         </div>
       </div>
     </Transition>
   </nav>
-  <nav v-else>
+  <nav class="w-full flex flex-row justify-between" v-else>
     <ul class="flex flex-row gap-4 items-center">
       <li v-for="item in menuItems" :key="item.label" class="top-nav-menu-item">
         <a class="font-bold text-gray-700  p-2 flex flex-row gap-4 items-center" :href="item.link || '#'">
@@ -32,6 +43,13 @@
         </ul>
       </li>
     </ul>
+    <div v-if="!user">
+      <!-- If Not Logged In: -->
+
+      <AppButton href="/auth/log-in" variant="primary-minimal">Log In</AppButton>
+      <AppButton href="/auth/register" variant="primary">Sign Up</AppButton>
+
+    </div>
   </nav>
 
 </template>
@@ -40,13 +58,19 @@
 
 import { computed, reactive, ref, watch } from 'vue';
 import { useBreakpoint } from '../../services/ViewportService'
+import { useAuth } from '../../services/AuthService'
+import AppButton from '../atoms/form-controls/AppButton.vue'
+import LogoAndName from './LogoAndName.vue';
 
 const { breakpoint } = useBreakpoint()
+const { user } = useAuth()
+
+const mobileLinkClass = "px-3 py-3"
 
 const menuItems = [
   {
     label: 'Home',
-	link: '../'
+    link: '../'
   },
   {
     label: 'Read the Scripture',
@@ -64,15 +88,6 @@ const menuItems = [
   {
     label: 'Sermons',
     link: '/sermons'
-  },
-  {
-    label: 'Account',
-    children: [
-      {
-        label: 'Log In',
-        link: '/auth/log-in'
-      }
-    ]
   }
 ]
 
