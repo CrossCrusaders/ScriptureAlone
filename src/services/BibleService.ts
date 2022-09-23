@@ -10,6 +10,8 @@ export async function getVerseOfTheDay(verse:any){
 	});
 
 	const DailyVerse = await getVerse(verse);
+
+	console.log(DailyVerse)
     
 	return DailyVerse;
 }
@@ -30,6 +32,7 @@ export async function getNewDailyVerse(){
 	verseList.forEach(x => verseListUpdated.push(x.verseId));
 
 	//Returns the verse abbreviation
+	while(verseListUpdated[verseNum] == undefined){}
 	return verseListUpdated[verseNum];
 }
 
