@@ -4,7 +4,7 @@
     <!-- inner-content container parent-->
     <div class="flex flex-col md:flex-row gap-2 justify-between text-white">
       <div class="footerSection">
-        <p class="font-bold text-4xl">Scripture Alone</p>
+        <p class="font-bold text-3xl">Scripture Alone</p>
 		<p><a href="/index.html">Home</a> · <a href="/about.html">About</a> · <a href="#">Uptime Status</a> · <a href="/updates.html">Updates</a> · <a href="/contact.html">Contact</a></p>
 		<p class="text-xs">Scripture Alone © 2022</p>
       </div>
@@ -37,11 +37,11 @@
 <style lang="css" scoped>
   .footerSection{
     width: 33.35%;
-	margin: 2em;
+	margin-right: 2em;
   }
   @media screen and (max-width: 900px) {
     .footerSection{
-	  width: 200%;
+	  width: 95%;
 	  margin-bottom: 2em;
 	  display: absolute;
 	}
