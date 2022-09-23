@@ -1,12 +1,12 @@
 <template>
   <!-- Outer parent-->
-  <div class="bg-gray-800 p-8">
+  <div class="bg-gray-800 p-8 py-10 md:py-16">
     <!-- inner-content container parent-->
     <div class="flex flex-col md:flex-row gap-2 justify-between text-white">
       <div class="footerSection">
-        <p class="font-bold text-3xl">Scripture Alone</p>
-        <p><a href="/index.html">Home</a> · <a href="/about.html">About</a> · <a href="#">Uptime Status</a> · <a
-            href="/updates.html">Updates</a> · <a href="/contact.html">Contact</a></p>
+        <p class="font-bold text-3xl mb-2">Scripture Alone</p>
+        <p class="mb-2"><a href="/index.html">Home</a> · <a href="/about.html">About</a> · <a href="#">Uptime Status</a>
+          · <a href="/updates.html">Updates</a> · <a href="/contact.html">Contact</a></p>
         <p class="text-xs">Scripture Alone © 2022</p>
       </div>
       <div class="footerSection">
@@ -16,7 +16,7 @@
       </div>
       <div class="footerSection">
         <div>
-          <p class="font-bold">About Scripture Alone</p>
+          <p class="font-bold mb-2">About Scripture Alone</p>
         </div>
         <div>
           <p>Scripture Alone is a Bible app created by <a class="link" href="https://crosscrusaders.com/">Cross
