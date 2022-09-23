@@ -76,18 +76,19 @@ import { ref, onMounted } from 'vue'
 import Divider from '../components/atoms/Divider.vue'
 import ContentCarousel from '../components/molecules/ContentCarousel.vue'
 import { useBreakpoint } from '../services/ViewportService'
-import { getVerseOfTheDay } from '../services/BibleService'
+import { getVerseOfTheDay, getNewDailyVerse } from '../services/BibleService'
 
 const verseName = ref("");
 const verseText = ref("");
 
 onMounted(async () => {
-  var htmlVerse = await getVerseOfTheDay();
+  var verseAbbreviation = await getNewDailyVerse();
+  console.log(verseAbbreviation)
+  var htmlVerse = await getVerseOfTheDay(verseAbbreviation);
   verseName.value = htmlVerse.data.reference;
   verseText.value = htmlVerse.data.content;
 })
 
-const verseOfTheDayModel = ref('')
 const searchModel = ref('')
 const callToActionItemClass = ['border-slate-700', 'w-full', 'cursor-pointer', 'bg-slate-200',
   'rounded-xl', 'pl-4', 'pr-4', 'pt-16', 'pb-16', 'flex', 'flex-col', 'items-center', 'text-slate-900',
