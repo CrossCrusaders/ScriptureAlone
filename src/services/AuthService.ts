@@ -1,6 +1,16 @@
+import { ref } from "vue"
 import PocketBaseClient from "./PocketBaseClient"
 
+// Global State
+const userLocalStorageKey = '__scripture_alone_user__'
 
+const existingToken = localStorage.getItem(userLocalStorageKey)
+
+const token = ref(existingToken)
+const user = ref(null)
+
+
+// Utility Functions
 export const logIn = async ({ email, password }: { email: string, password: string }) => {
   const result = await PocketBaseClient.users.authViaEmail(email, password)
   return result
@@ -27,4 +37,21 @@ export const register = async ({ email, password, username }: { email: string, p
   // TODO: When we have an email server-- await client.users.requestVerification(user.email)
 
   return authedUser
+}
+
+export const isAuthenticated = async () => {
+  return true
+}
+
+
+// Composable
+export function useAuth() {
+
+  return {
+    token,
+    user,
+    isAuthenticated,
+    logIn,
+    register
+  }
 }
