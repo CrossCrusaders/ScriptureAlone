@@ -2,7 +2,7 @@
   <nav v-if="breakpoint === 'sm'">
     <span class="material-icons-outlined" @click="mobileMenuOpen = true">menu</span>
     <Transition>
-      <div class="top-nav-menu__mobile-menu-panel transition-all bg-gray-800 z-50 text-white p-4"
+      <div class="top-nav-menu__mobile-menu-panel transition-all bg-gray-800 z-50 text-white px-4 py-2"
         v-if="showMobileMenuOpen">
         <LogoAndName variant="dark"></LogoAndName>
         <div class="mb-4"></div>
