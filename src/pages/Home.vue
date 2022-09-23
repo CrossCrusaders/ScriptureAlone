@@ -35,7 +35,8 @@
       <h2 class="font-bold font-title text-6xl text-center">Verse of the Day</h2>
       <div class="rounded-lg border-2 border-solid border-gray-800 p-8 max-w-prose">
         <h3 id="verseName" class="font-title font-bold text-3xl text-gray-800 mb-8">1 Timothy 4:1 KJV</h3>
-        <p class="text-xl">Now the Spirit speaketh expressly, that in the latter times some shall depart from the faith, giving heed to seducing spirits, and doctrines of devils;</p>
+        <p class="text-xl">Now the Spirit speaketh expressly, that in the latter times some shall depart from the faith,
+          giving heed to seducing spirits, and doctrines of devils;</p>
       </div>
     </div>
 
@@ -48,7 +49,7 @@
       <ContentCarousel :slides="devotionalSlides"></ContentCarousel>
     </div>
 
-        
+
 
     <!-- Latest Devotionals -->
     <div class="relative p-2 md:p-8 mb-16">
@@ -60,82 +61,82 @@
 </template>
 
 <script setup lang="ts">
-  
 
-  import AppLayout from '../components/templates/AppLayout.vue'
-  import PageContent from '../components/templates/PageContent.vue'
-  import AppInput from '../components/atoms/form-controls/AppInput.vue'
-  import { ref, onMounted } from 'vue'
-  import Divider from '../components/atoms/Divider.vue'
-  import ContentCarousel from '../components/molecules/ContentCarousel.vue'
-  import { useBreakpoint } from '../services/ViewportService'
-  import { getVerseOfTheDay } from '../services/BibleService'
 
-    onMounted(async () => {
-	  getVerseOfTheDay();
-    })
- 
-  const verseOfTheDayModel = ref('')
-  const searchModel = ref('')
-  const callToActionItemClass = ['border-2', 'border-solid', 'border-gray-800', 'w-full', 
-    'rounded', 'pl-4', 'pr-4', 'pt-16', 'pb-16', 'flex', 'flex-col', 'items-center', 
-    'justify-center', 'text-4xl', 'font-bold', 'font-title', 'hover:bg-black', 'hover:text-white', 'transition-all']
+import AppLayout from '../components/templates/AppLayout.vue'
+import PageContent from '../components/templates/PageContent.vue'
+import AppInput from '../components/atoms/form-controls/AppInput.vue'
+import { ref, onMounted } from 'vue'
+import Divider from '../components/atoms/Divider.vue'
+import ContentCarousel from '../components/molecules/ContentCarousel.vue'
+import { useBreakpoint } from '../services/ViewportService'
+import { getVerseOfTheDay } from '../services/BibleService'
 
-  const callToActionIconClass = 'material-icons-outlined text-6xl'
+onMounted(async () => {
+  getVerseOfTheDay();
+})
 
-  
+const verseOfTheDayModel = ref('')
+const searchModel = ref('')
+const callToActionItemClass = ['border-slate-700', 'w-full', 'cursor-pointer', 'bg-slate-200',
+  'rounded-xl', 'pl-4', 'pr-4', 'pt-16', 'pb-16', 'flex', 'flex-col', 'items-center', 'text-slate-900',
+  'justify-center', 'text-4xl', 'font-bold', 'font-title', 'hover:bg-slate-800', 'hover:text-white', 'transition-all']
 
-  const devotionalSlides = [
-    {
-      image: '',
-      title: 'Devo 1'
-    },
-    {
-      image: '',
-      title: 'Devo 2'
-    },
-    {
-      image: '',
-      title: 'Devo 3'
-    },
-    {
-      image: '',
-      title: 'Devo 4'
-    },
-    {
-      image: '',
-      title: 'Devo 5'
-    },{
-      image: '',
-      title: 'Devo 6'
-    }
-  ]
+const callToActionIconClass = 'material-icons-outlined text-6xl'
 
-  const sermonSlides = [
-    {
-      image: '',
-      title: 'Sermon 1'
-    },
-    {
-      image: '',
-      title: 'Sermon 2'
-    },
-    {
-      image: '',
-      title: 'Sermon 3'
-    },
-    {
-      image: '',
-      title: 'Sermon 4'
-    },
-    {
-      image: '',
-      title: 'Sermon 5'
-    },{
-      image: '',
-      title: 'Sermon 6'
-    }
-  ]
 
-  const { breakpoint } = useBreakpoint()
+
+const devotionalSlides = [
+  {
+    image: '',
+    title: 'Devo 1'
+  },
+  {
+    image: '',
+    title: 'Devo 2'
+  },
+  {
+    image: '',
+    title: 'Devo 3'
+  },
+  {
+    image: '',
+    title: 'Devo 4'
+  },
+  {
+    image: '',
+    title: 'Devo 5'
+  }, {
+    image: '',
+    title: 'Devo 6'
+  }
+]
+
+const sermonSlides = [
+  {
+    image: '',
+    title: 'Sermon 1'
+  },
+  {
+    image: '',
+    title: 'Sermon 2'
+  },
+  {
+    image: '',
+    title: 'Sermon 3'
+  },
+  {
+    image: '',
+    title: 'Sermon 4'
+  },
+  {
+    image: '',
+    title: 'Sermon 5'
+  }, {
+    image: '',
+    title: 'Sermon 6'
+  }
+]
+
+const { breakpoint } = useBreakpoint()
 </script>
