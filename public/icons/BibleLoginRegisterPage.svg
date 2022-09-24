@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:svg="http://www.w3.org/2000/svg" id="svg1" viewBox="0 0 241.16 170.09" version="1.0" y="0" x="0">
+  <g id="g4874" stroke="#000" stroke-width="5" transform="translate(-106.42 -552.93)">
+    <path id="path2354" d="m108.92 624.83l63.11 95.69c20.36-28.5 67.18-46.83 93.65-40.72 32.57-22.39 69.22-18.32 79.4-10.18l-73.29-95.68s-50.9-14.25-71.26 16.28c-36.64-16.28-81.43 10.18-91.61 34.61z" fill-rule="evenodd"/>
+    <path id="path2356" d="m116.72 612.21l54.97 83.47c22.39-40.72 67.18-59.04 89.58-32.57 34.61-48.87 75.32 0 79.39 0l-73.29-99.76s-48.86-22.4-69.22 8.14c-20.35-16.29-69.21 4.07-81.43 40.72z" fill="#fff" fill-rule="evenodd"/>
+    <path id="path3599" d="m199.51 571.9l63.12 85.51c8.14 12.21-8.15 34.61 26.46 48.86" fill="none"/>
+  </g>
+  <metadata>
+    <rdf:RDF>
+      <cc:Work>
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+        <cc:license rdf:resource="http://creativecommons.org/licenses/publicdomain/"/>
+        <dc:publisher>
+          <cc:Agent rdf:about="http://openclipart.org/">
+            <dc:title>Openclipart</dc:title>
+          </cc:Agent>
+        </dc:publisher>
+        <dc:title>Open Bible</dc:title>
+        <dc:date>2009-04-01T07:50:10</dc:date>
+        <dc:description>An open bible by Aaron Johnson</dc:description>
+        <dc:source>http://openclipart.org/detail/23578/open-bible-by-anonymous-23578</dc:source>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>Anonymous</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:subject>
+          <rdf:Bag>
+            <rdf:li>bible</rdf:li>
+            <rdf:li>black and white</rdf:li>
+            <rdf:li>book</rdf:li>
+            <rdf:li>christianity</rdf:li>
+            <rdf:li>clip art</rdf:li>
+            <rdf:li>clipart</rdf:li>
+            <rdf:li>education</rdf:li>
+            <rdf:li>line art</rdf:li>
+            <rdf:li>outline</rdf:li>
+            <rdf:li>paper</rdf:li>
+            <rdf:li>religion</rdf:li>
+          </rdf:Bag>
+        </dc:subject>
+      </cc:Work>
+      <cc:License rdf:about="http://creativecommons.org/licenses/publicdomain/">
+        <cc:permits rdf:resource="http://creativecommons.org/ns#Reproduction"/>
+        <cc:permits rdf:resource="http://creativecommons.org/ns#Distribution"/>
+        <cc:permits rdf:resource="http://creativecommons.org/ns#DerivativeWorks"/>
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+</svg>

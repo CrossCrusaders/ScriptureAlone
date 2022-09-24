@@ -13,19 +13,26 @@
               your saved sermons and devotionals! Already have an
               account? <a href="/auth/log-in" class="underline text-red-700">Log in</a></p>
             <form @submit="handleFormSubmit($event)">
-              <app-input name="email" type="text" v-model="registerModel.email">
-                Email Address
-              </app-input>
-              <app-input name="username" type="text" v-model="registerModel.username">
-                Display Name
-              </app-input>
-              <app-input name="password" type="password" v-model="registerModel.password">
-                Password
-              </app-input>
-              <app-button type="submit">Create Account</app-button>
+              <div>
+                <app-button type="submit"><span class="fa fa-google fa-lg pr-2"></span>Sign Up With Google</app-button>
+              </div>
+              <br>
+              <div>
+                <app-input name="email" type="text" v-model="registerModel.email">
+                  Email Address
+                </app-input>
+                <app-input name="username" type="text" v-model="registerModel.username">
+                  Display Name
+                </app-input>
+                <app-input name="password" type="password" v-model="registerModel.password">
+                  Password
+                </app-input>
+                <app-button type="submit">Create Account</app-button>
+                </div>
             </form>
           </div>
         </div>
+        <img class="pl-10" style="width: 40em;" src="../../../public/icons/BibleLoginRegisterPage.svg"/>
       </div>
     </page-content>
   </app-layout>
