@@ -9,12 +9,12 @@
           · <a href="/updates.html">Updates</a> · <a href="/contact.html">Contact</a></p>
         <p class="text-xs">Scripture Alone © 2022</p>
       </div>
-      <div class="footerSection md:pl-20">
+      <div class="footerSection md:pl-5 lg:pl-20">
         <p><i class="material-icons-outlined pr-1">mail</i>
           <a class="mb-2 absolute" href="mailto:support@crosscrusaders.com">support@crosscrusaders.com</a>
         </p>
       </div>
-      <div class="footerSection">
+      <div class="footerSection md:pl-20">
         <div>
           <p class="font-bold mb-2">About Scripture Alone</p>
         </div>
@@ -27,13 +27,13 @@
         <br>
 
         <div>
-          <a href="#"><span class="fa fa-facebook fa-xl pr-1" aria-hidden="true"></span></a>
-          <a href="#"><span class="fa fa-twitter fa-xl pr-1" aria-hidden="true"></span></a>
-          <a href="#"><span class="fa-brands fa-instagram fa-xl pr-1"></span></a>
-          <a href="#"><span class="fa-brands fa-youtube fa-xl pr-1"></span></a>
+          <a href="#"><span class="fa fa-facebook fa-xl pr-3" aria-hidden="true"></span></a>
+          <a href="#"><span class="fa fa-twitter fa-xl pr-3" aria-hidden="true"></span></a>
+          <a href="#"><span class="fa-brands fa-instagram fa-xl pr-3"></span></a>
+          <a href="#"><span class="fa-brands fa-youtube fa-xl pr-3"></span></a>
           <a href="https://discord.gg/3YEd7KdJkz" target="blank"><span
-              class="fa-brands fa-discord fa-xl pr-1"></span></a>
-          <a href="https://github.com/ItsShawn/itsshawn.github.io/" target="blank"><span class="fa fa-github fa-xl pr-1"
+              class="fa-brands fa-discord fa-xl pr-3"></span></a>
+          <a href="https://github.com/ItsShawn/itsshawn.github.io/" target="blank"><span class="fa fa-github fa-xl pr-3"
               aria-hidden="true"></span></a>
         </div>
       </div>
