@@ -1,7 +1,8 @@
 
 import PocketBase from 'pocketbase'
 
-// TODO: use an environment configuration
-const PocketBaseClient = new PocketBase(import.meta.env.VITE_POCKETBASE_URL)
+export const pocketBaseApiUrl = import.meta.env.VITE_POCKETBASE_URL
+
+const PocketBaseClient = new PocketBase(pocketBaseApiUrl)
 
 export default PocketBaseClient

@@ -60,10 +60,10 @@
 </template>
 
 <style>
-  .v{
-    padding-right: 0.5em;
-    font-weight: bold;
-  }
+.v {
+  padding-right: 0.5em;
+  font-weight: bold;
+}
 </style>
 
 <script setup lang="ts">
@@ -76,15 +76,13 @@ import { ref, onMounted } from 'vue'
 import Divider from '../components/atoms/Divider.vue'
 import ContentCarousel from '../components/molecules/ContentCarousel.vue'
 import { useBreakpoint } from '../services/ViewportService'
-import { getVerseOfTheDay, getNewDailyVerse } from '../services/BibleService'
+import { getVerseOfTheDay } from '../services/BibleService'
 
 const verseName = ref("");
 const verseText = ref("");
 
 onMounted(async () => {
-  var verseAbbreviation = await getNewDailyVerse();
-  console.log(verseAbbreviation)
-  var htmlVerse = await getVerseOfTheDay(verseAbbreviation);
+  var htmlVerse = await getVerseOfTheDay();
   verseName.value = htmlVerse.data.reference;
   verseText.value = htmlVerse.data.content;
 })
