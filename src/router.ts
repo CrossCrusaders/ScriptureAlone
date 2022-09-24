@@ -3,8 +3,8 @@ import BibleSearch from './pages/Bible/BibleSearch.vue'
 import LogIn from './pages/Auth/LogIn.vue'
 import Register from './pages/Auth/Register.vue'
 import Commentaries from './pages/StudyTools/Commentaries.vue'
-import Sermons from './pages/Sermons/Sermons.vue'
-import SermonDetails from './pages/Sermons/SermonDetails.vue'
+import Sermons from './sermons/pages/Sermons.vue'
+import SermonDetails from './sermons/pages/SermonDetails.vue'
 
 import * as VueRouter from 'vue-router'
 

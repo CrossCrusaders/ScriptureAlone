@@ -68,29 +68,48 @@
 import AppLayout from '../../components/templates/AppLayout.vue'
 import PageContent from '../../components/templates/PageContent.vue'
 import AppButton from '../../components/atoms/form-controls/AppButton.vue'
-import { reactive, ref } from 'vue';
-import Icon from '../../components/atoms/Icon.vue';
-import Divider from '../../components/atoms/Divider.vue';
+import { onMounted, reactive, ref } from 'vue'
+import Icon from '../../components/atoms/Icon.vue'
+import Divider from '../../components/atoms/Divider.vue'
+import { getFeaturedSermon, getRecentSermons, getSermonCategories } from '../../sermons/services/SermonService'
 
 
-const categories = reactive([
-  { label: 'Category A', iconName: 'book' },
-  { label: 'Category B', iconName: 'book' },
-  { label: 'Category C', iconName: 'book' },
-  { label: 'Category D', iconName: 'book' },
-  { label: 'Category E', iconName: 'book' }
-])
+const loading = true
 
-const sermons = reactive([
-  { id: '1', title: 'Sermon Title', description: 'This is a description. What more could you ask for?', categories: ['Salvation', 'Jesus'], duration: 3600000, iconName: 'book' },
-  { id: '2', title: 'Sermon Title', description: 'This is a description. What more could you ask for?', categories: ['Salvation', 'Jesus'], duration: 3600000, iconName: 'book' },
-  { id: '3', title: 'Sermon Title', description: 'This is a description. What more could you ask for?', categories: ['Salvation', 'Jesus'], duration: 3600000, iconName: 'book' },
-  { id: '4', title: 'Sermon Title', description: 'This is a description. What more could you ask for?', categories: ['Salvation', 'Jesus'], duration: 3600000, iconName: 'book' },
-  { id: '5', title: 'Sermon Title', description: 'This is a description. What more could you ask for?', categories: ['Salvation', 'Jesus'], duration: 3600000, iconName: 'book' },
-  { id: '6', title: 'Sermon Title', description: 'This is a description. What more could you ask for?', categories: ['Salvation', 'Jesus'], duration: 3600000, iconName: 'book' },
-  { id: '7', title: 'Sermon Title', description: 'This is a description. What more could you ask for?', categories: ['Salvation', 'Jesus'], duration: 3600000, iconName: 'book' },
-  { id: '8', title: 'Sermon Title', description: 'This is a description. What more could you ask for?', categories: ['Salvation', 'Jesus'], duration: 3600000, iconName: 'book' }
-])
+const categories = ref<any>([])
+
+const sermons = ref<any>([])
+
+const page = ref(1)
+const countPerPage = 8
+
+onMounted(async () => {
+  try {
+
+    const featuredSermonPromise = getFeaturedSermon()
+    const recentSermomsPromise = getRecentSermons(page.value, countPerPage)
+    const categoriesPromise = getSermonCategories()
+
+    const [
+      featuredSermons,
+      recentSermons,
+      sermonCategories
+    ] = await Promise.all([
+      featuredSermonPromise,
+      recentSermomsPromise,
+      categoriesPromise
+    ])
+
+
+    categories.value = sermonCategories.items
+    sermons.value = recentSermons.items
+
+  }
+  finally {
+
+  }
+
+})
 
 </script>
 
