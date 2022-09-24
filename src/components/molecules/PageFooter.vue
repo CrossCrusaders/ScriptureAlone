@@ -27,14 +27,12 @@
         <br>
 
         <div>
-          <a href="#"><span class="fa fa-facebook fa-xl pr-3" aria-hidden="true"></span></a>
-          <a href="#"><span class="fa fa-twitter fa-xl pr-3" aria-hidden="true"></span></a>
-          <a href="#"><span class="fa-brands fa-instagram fa-xl pr-3"></span></a>
-          <a href="#"><span class="fa-brands fa-youtube fa-xl pr-3"></span></a>
-          <a href="https://discord.gg/3YEd7KdJkz" target="blank"><span
-              class="fa-brands fa-discord fa-xl pr-3"></span></a>
-          <a href="https://github.com/ItsShawn/itsshawn.github.io/" target="blank"><span class="fa fa-github fa-xl pr-3"
-              aria-hidden="true"></span></a>
+          <a href="#"><span class="fa fa-facebook fa-xl pr-3 transition duration-150 ease-in-out hover:text-gray-400" aria-hidden="true"></span></a>
+          <a href="#"><span class="fa fa-twitter fa-xl pr-3 transition duration-150 ease-in-out hover:text-gray-400" aria-hidden="true"></span></a>
+          <a href="#"><span class="fa-brands fa-instagram fa-xl pr-3 transition duration-150 ease-in-out hover:text-gray-400"></span></a>
+          <a href="#"><span class="fa-brands fa-youtube fa-xl pr-3 transition duration-150 ease-in-out hover:text-gray-400"></span></a>
+          <a href="https://discord.gg/3YEd7KdJkz" target="blank"><span class="fa-brands fa-discord fa-xl pr-3 transition duration-150 ease-in-out hover:text-gray-400"></span></a>
+          <a href="https://github.com/ItsShawn/itsshawn.github.io/" target="blank"><span class="fa fa-github fa-xl pr-3 transition duration-150 ease-in-out hover:text-gray-400" aria-hidden="true"></span></a>
         </div>
       </div>
     </div>
