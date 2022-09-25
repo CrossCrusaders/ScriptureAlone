@@ -41,14 +41,14 @@
           <p class="text-slate-600 text-md font-body mb-3">
             Categories:
             <span v-for="(category, innerIndex) in sermon.categories">
-              {{ category }},&nbsp;
+              {{ category.label }},&nbsp;
             </span>
           </p>
-          <p class="text-slate-600 text-md font-body mb-3">
-            Time: 53 min
+          <p v-if="sermon.duration" class="text-slate-600 text-md font-body mb-3">
+            Time: {{ formatMillisecondsAsReadableDuration(sermon.duration) }}
           </p>
           <div class="flex-auto h-8"></div>
-          <a href="/sermons/1" class="w-full block">
+          <a :href="'/sermons/' + sermon.id" class="w-full block">
             <AppButton variant="primary" class="w-full">
               View Sermon
             </AppButton>
@@ -72,6 +72,7 @@ import { onMounted, reactive, ref } from 'vue'
 import Icon from '../../components/atoms/Icon.vue'
 import Divider from '../../components/atoms/Divider.vue'
 import { getFeaturedSermon, getRecentSermons, getSermonCategories } from '../../sermons/services/SermonService'
+import { formatMillisecondsAsReadableDuration } from '../../services/FormatService'
 
 
 const loading = true
@@ -102,7 +103,7 @@ onMounted(async () => {
 
 
     categories.value = sermonCategories.items
-    sermons.value = recentSermons.items
+    sermons.value = recentSermons
 
   }
   finally {
