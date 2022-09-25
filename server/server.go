@@ -233,6 +233,43 @@ func main() {
 		return nil
 	})
 
+	// Get specific passages
+	app.OnBeforeServe().Add(func(e *core.ServeEvent) error {
+		e.Router.AddRoute(echo.Route{
+			Method: http.MethodGet,
+			Path:   "/api/bibles/passages",
+			Handler: func(c echo.Context) error {
+				bibleId := c.QueryParam(`bible_id`)
+				passageId := c.QueryParam(`passage_id`)
+
+				url := `https://api.scripture.api.bible/v1/bibles/` + bibleId + `/passages/` + passageId + `?content-type=html&include-notes=false&include-titles=false&include-chapter-numbers=false&include-verse-numbers=true&include-verse-spans=false&use-org-id=false`
+
+				log.Print(url)
+
+				client := http.Client{}
+				req, _ := http.NewRequest("GET", url, nil)
+
+				req.Header = http.Header{
+					"api-key":      {bibleApiKey},
+					"Content-Type": {"application/json"},
+				}
+				resp, _ := client.Do(req)
+
+				body, err := ioutil.ReadAll(resp.Body)
+
+				if err != nil {
+					log.Fatal(`Error parsing bible search response`)
+					return c.String(500, err.Error())
+				}
+
+				return c.String(200, string(body))
+			},
+			Middlewares: []echo.MiddlewareFunc{},
+		})
+
+		return nil
+	})
+
 	if err := app.Start(); err != nil {
 		log.Fatal(err)
 	}

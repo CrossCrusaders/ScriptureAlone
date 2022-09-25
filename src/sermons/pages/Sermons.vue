@@ -36,19 +36,22 @@
       <!-- Sermons Display -->
       <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 md:gap-8 mb-24">
         <div v-for="(sermon, index) in sermons" :key="index" class="flex flex-col bg-slate-200 rounded-2xl p-6">
-          <h3 class="text-slate-900 text-xl font-title font-bold mb-2">{{ sermon.title }}</h3>
+          <h3 class="text-slate-900 text-xl font-title font-bold mb-0">{{ sermon.title }}</h3>
+          <p class="text-slate-700 text-sm font-body mb-2">{{ sermon.author.firstName }}&nbsp;{{ sermon.author.lastName
+          }}
+          </p>
           <p class="text-slate-700 text-md font-body mb-3">{{ sermon.description }}</p>
-          <p class="text-slate-600 text-md font-body mb-3">
-            Categories:
+          <p class="text-slate-600 text-md text-sm font-body mb-0">
+            Tags:
             <span v-for="(category, innerIndex) in sermon.categories">
-              {{ category }},&nbsp;
+              {{ category.label }},&nbsp;
             </span>
           </p>
-          <p class="text-slate-600 text-md font-body mb-3">
-            Time: 53 min
+          <p v-if="sermon.duration" class="text-slate-600 text-md font-body text-sm mb-3">
+            Duration: {{ formatMillisecondsAsReadableDuration(sermon.duration) }}
           </p>
           <div class="flex-auto h-8"></div>
-          <a href="/sermons/1" class="w-full block">
+          <a :href="'/sermons/' + sermon.id" class="w-full block">
             <AppButton variant="primary" class="w-full">
               View Sermon
             </AppButton>
@@ -68,29 +71,49 @@
 import AppLayout from '../../components/templates/AppLayout.vue'
 import PageContent from '../../components/templates/PageContent.vue'
 import AppButton from '../../components/atoms/form-controls/AppButton.vue'
-import { reactive, ref } from 'vue';
-import Icon from '../../components/atoms/Icon.vue';
-import Divider from '../../components/atoms/Divider.vue';
+import { onMounted, reactive, ref } from 'vue'
+import Icon from '../../components/atoms/Icon.vue'
+import Divider from '../../components/atoms/Divider.vue'
+import { getFeaturedSermon, getRecentSermons, getSermonCategories } from '../../sermons/services/SermonService'
+import { formatMillisecondsAsReadableDuration } from '../../services/FormatService'
 
 
-const categories = reactive([
-  { label: 'Category A', iconName: 'book' },
-  { label: 'Category B', iconName: 'book' },
-  { label: 'Category C', iconName: 'book' },
-  { label: 'Category D', iconName: 'book' },
-  { label: 'Category E', iconName: 'book' }
-])
+const loading = true
 
-const sermons = reactive([
-  { id: '1', title: 'Sermon Title', description: 'This is a description. What more could you ask for?', categories: ['Salvation', 'Jesus'], duration: 3600000, iconName: 'book' },
-  { id: '2', title: 'Sermon Title', description: 'This is a description. What more could you ask for?', categories: ['Salvation', 'Jesus'], duration: 3600000, iconName: 'book' },
-  { id: '3', title: 'Sermon Title', description: 'This is a description. What more could you ask for?', categories: ['Salvation', 'Jesus'], duration: 3600000, iconName: 'book' },
-  { id: '4', title: 'Sermon Title', description: 'This is a description. What more could you ask for?', categories: ['Salvation', 'Jesus'], duration: 3600000, iconName: 'book' },
-  { id: '5', title: 'Sermon Title', description: 'This is a description. What more could you ask for?', categories: ['Salvation', 'Jesus'], duration: 3600000, iconName: 'book' },
-  { id: '6', title: 'Sermon Title', description: 'This is a description. What more could you ask for?', categories: ['Salvation', 'Jesus'], duration: 3600000, iconName: 'book' },
-  { id: '7', title: 'Sermon Title', description: 'This is a description. What more could you ask for?', categories: ['Salvation', 'Jesus'], duration: 3600000, iconName: 'book' },
-  { id: '8', title: 'Sermon Title', description: 'This is a description. What more could you ask for?', categories: ['Salvation', 'Jesus'], duration: 3600000, iconName: 'book' }
-])
+const categories = ref<any>([])
+
+const sermons = ref<any>([])
+
+const page = ref(1)
+const countPerPage = 8
+
+onMounted(async () => {
+  try {
+
+    const featuredSermonPromise = getFeaturedSermon()
+    const recentSermomsPromise = getRecentSermons(page.value, countPerPage)
+    const categoriesPromise = getSermonCategories()
+
+    const [
+      featuredSermons,
+      recentSermons,
+      sermonCategories
+    ] = await Promise.all([
+      featuredSermonPromise,
+      recentSermomsPromise,
+      categoriesPromise
+    ])
+
+
+    categories.value = sermonCategories.items
+    sermons.value = recentSermons
+
+  }
+  finally {
+
+  }
+
+})
 
 </script>
 
