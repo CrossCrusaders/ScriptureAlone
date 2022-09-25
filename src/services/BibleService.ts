@@ -22,7 +22,6 @@ export async function getVerseOfTheDay() {
 
 	const record = await PocketBaseClient.records.getOne(
 		'versesOfTheDay', chosenVerse.id)
-	debugger;
 	const dailyVerse = await getVerse(record.verseId);
 
 	return dailyVerse;
