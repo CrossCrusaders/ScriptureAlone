@@ -40,7 +40,7 @@
 </template>
 
 <script setup lang="ts">
-import { reactive } from 'vue';
+import { onMounted, reactive } from 'vue';
 import AppLayout from '../../components/templates/AppLayout.vue'
 import PageContent from '../../components/templates/PageContent.vue'
 import AppButton from '../../components/atoms/form-controls/AppButton.vue';
@@ -80,5 +80,9 @@ const sermon = reactive(sermonDetail)
 
 const formatAddress = (addr: any) =>
   `${addr.streetAddress1} ${addr.city}, ${addr.state} ${addr.postalCode}`
+
+onMounted(async () => {
+
+})
 
 </script>

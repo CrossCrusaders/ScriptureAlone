@@ -88,31 +88,23 @@ const page = ref(1)
 const countPerPage = 8
 
 onMounted(async () => {
-  try {
 
-    const featuredSermonPromise = getFeaturedSermon()
-    const recentSermomsPromise = getRecentSermons(page.value, countPerPage)
-    const categoriesPromise = getSermonCategories()
+  const featuredSermonPromise = getFeaturedSermon()
+  const recentSermomsPromise = getRecentSermons(page.value, countPerPage)
+  const categoriesPromise = getSermonCategories()
 
-    const [
-      featuredSermons,
-      recentSermons,
-      sermonCategories
-    ] = await Promise.all([
-      featuredSermonPromise,
-      recentSermomsPromise,
-      categoriesPromise
-    ])
+  const [
+    featuredSermon,
+    recentSermons,
+    sermonCategories
+  ] = await Promise.all([
+    featuredSermonPromise,
+    recentSermomsPromise,
+    categoriesPromise
+  ])
 
-
-    categories.value = sermonCategories.items
-    sermons.value = recentSermons
-
-  }
-  finally {
-
-  }
-
+  categories.value = sermonCategories.items
+  sermons.value = recentSermons
 })
 
 </script>
