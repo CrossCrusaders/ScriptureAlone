@@ -14,9 +14,12 @@
               account? <a href="/auth/log-in" class="underline text-red-700">Log in</a></p>
             <form @submit="handleFormSubmit($event)">
               <div>
-                <app-button type="submit"><span class="fa fa-google fa-lg pr-2"></span>Sign Up With Google</app-button>
+                <app-button type="submit">
+                  <Icon icon-name="google" class="w-6 h-6 inline invert"></Icon> Sign Up Using Google
+                </app-button>
               </div>
-              <br>
+              <p class="my-6 text-xl font-bold font-title text-slate-800">Or Sign Up With Email</p>
+
               <div>
                 <app-input name="email" type="text" v-model="registerModel.email">
                   Email Address
@@ -28,11 +31,11 @@
                   Password
                 </app-input>
                 <app-button type="submit">Create Account</app-button>
-                </div>
+              </div>
             </form>
           </div>
         </div>
-        <img class="pl-10" style="width: 40em;" src="../../../public/icons/BibleLoginRegisterPage.svg"/>
+        <img class="pl-10 hidden md:block md:w-3/6" src="/icons/BibleLoginRegisterPage.svg" />
       </div>
     </page-content>
   </app-layout>
@@ -43,6 +46,7 @@ import AppLayout from '../../components/templates/AppLayout.vue'
 import PageContent from '../../components/templates/PageContent.vue'
 import AppInput from '../../components/atoms/form-controls/AppInput.vue'
 import AppButton from '../../components/atoms/form-controls/AppButton.vue'
+import Icon from '../../components/atoms/Icon.vue'
 import { register } from '../../services/AuthService'
 import { reactive, ref } from 'vue'
 import { useRouter } from 'vue-router'

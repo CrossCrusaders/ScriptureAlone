@@ -11,21 +11,18 @@
     <!-- Calls To Action -->
     <div class="flex flex-col md:flex-row gap-2 items-center justify-between mb-24 p-2">
       <a :class="callToActionItemClass">
-        <span :class="[callToActionIconClass]">
-          menu_book
-        </span>
+        <Icon icon-name="book-cross" :class="[callToActionIconClass]">
+        </Icon>
         Verse of the day
       </a>
       <a :class="callToActionItemClass">
-        <span :class="[callToActionIconClass]">
-          library_books
-        </span>
+        <Icon icon-name="notebook-edit" :class="[callToActionIconClass]">
+        </Icon>
         Devotionals
       </a>
       <a :class="callToActionItemClass">
-        <span :class="[callToActionIconClass]">
-          emoji_people
-        </span>
+        <Icon icon-name="cross" :class="[callToActionIconClass]">
+        </Icon>
         Sermons
       </a>
     </div>
@@ -77,6 +74,7 @@ import Divider from '../components/atoms/Divider.vue'
 import ContentCarousel from '../components/molecules/ContentCarousel.vue'
 import { useBreakpoint } from '../services/ViewportService'
 import { getVerseOfTheDay } from '../services/BibleService'
+import Icon from '../components/atoms/Icon.vue'
 
 const verseName = ref("");
 const verseText = ref("");
@@ -88,11 +86,11 @@ onMounted(async () => {
 })
 
 const searchModel = ref('')
-const callToActionItemClass = ['border-slate-700', 'w-full', 'cursor-pointer', 'bg-slate-200',
+const callToActionItemClass = ['cta-item border-slate-700', 'w-full', 'cursor-pointer', 'bg-slate-200',
   'rounded-xl', 'pl-4', 'pr-4', 'pt-16', 'pb-16', 'flex', 'flex-col', 'items-center', 'text-slate-900',
   'justify-center', 'text-4xl', 'font-bold', 'font-title', 'hover:bg-slate-800', 'hover:text-white', 'transition-all']
 
-const callToActionIconClass = 'material-icons-outlined text-6xl'
+const callToActionIconClass = 'cta-icon w-20 h-20 mb-2'
 
 
 
@@ -150,3 +148,14 @@ const sermonSlides = [
 
 const { breakpoint } = useBreakpoint()
 </script>
+
+<style>
+.cta-item .cta-icon {
+  filter: invert(0);
+  transition: filter 150ms ease;
+}
+
+.cta-item:hover .cta-icon {
+  filter: invert(1);
+}
+</style>

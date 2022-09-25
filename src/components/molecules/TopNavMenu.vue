@@ -32,7 +32,7 @@
       <li v-for="item in menuItems" :key="item.label" class="top-nav-menu-item">
         <a class="font-bold text-gray-700  p-2 flex flex-row gap-4 items-center" :href="item.link || '#'">
           <span class="underline">{{ item.label }}</span>
-          <span v-if="item.children && item.children.length" class="material-icons-outlined">expand_more</span>
+          <Icon v-if="item.children && item.children.length" icon-name="chevron-down"></Icon>
         </a>
         <ul class="top-nav-submenu p-4 bg-gray-800 text-white min-w-fit  shadow-lg rounded"
           v-if="item.children && item.children.length">
@@ -61,6 +61,7 @@ import { useBreakpoint } from '../../services/ViewportService'
 import { useAuth } from '../../services/AuthService'
 import AppButton from '../atoms/form-controls/AppButton.vue'
 import LogoAndName from './LogoAndName.vue';
+import Icon from '../atoms/Icon.vue';
 
 const { breakpoint } = useBreakpoint()
 const { user } = useAuth()
