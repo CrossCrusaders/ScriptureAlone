@@ -10,7 +10,8 @@
         <p class="text-xs">Scripture Alone © 2022</p>
       </div>
       <div class="footerSection md:pl-0 lg:pl-40">
-        <p><i class="material-icons-outlined pr-1">mail</i>
+        <p>
+          <Icon icon-name="email" class="w-6 h-6 inline invert mr-2"></Icon>
           <a class="mb-2 absolute" href="mailto:support@crosscrusaders.com">support@crosscrusaders.com</a>
         </p>
       </div>
@@ -27,17 +28,28 @@
         <br>
 
         <div>
-          <a href="#"><span class="fa fa-facebook fa-xl pr-3 transition duration-150 ease-in-out hover:text-gray-400" aria-hidden="true"></span></a>
-          <a href="#"><span class="fa fa-twitter fa-xl pr-3 transition duration-150 ease-in-out hover:text-gray-400" aria-hidden="true"></span></a>
-          <a href="#"><span class="fa-brands fa-instagram fa-xl pr-3 transition duration-150 ease-in-out hover:text-gray-400"></span></a>
-          <a href="#"><span class="fa-brands fa-youtube fa-xl pr-3 transition duration-150 ease-in-out hover:text-gray-400"></span></a>
-          <a href="https://discord.gg/3YEd7KdJkz" target="blank"><span class="fa-brands fa-discord fa-xl pr-3 transition duration-150 ease-in-out hover:text-gray-400"></span></a>
-          <a href="https://github.com/ItsShawn/itsshawn.github.io/" target="blank"><span class="fa fa-github fa-xl pr-3 transition duration-150 ease-in-out hover:text-gray-400" aria-hidden="true"></span></a>
+          <a href="#"><span class="fa fa-facebook fa-xl pr-3 transition duration-150 ease-in-out hover:text-gray-400"
+              aria-hidden="true"></span></a>
+          <a href="#"><span class="fa fa-twitter fa-xl pr-3 transition duration-150 ease-in-out hover:text-gray-400"
+              aria-hidden="true"></span></a>
+          <a href="#"><span
+              class="fa-brands fa-instagram fa-xl pr-3 transition duration-150 ease-in-out hover:text-gray-400"></span></a>
+          <a href="#"><span
+              class="fa-brands fa-youtube fa-xl pr-3 transition duration-150 ease-in-out hover:text-gray-400"></span></a>
+          <a href="https://discord.gg/3YEd7KdJkz" target="blank"><span
+              class="fa-brands fa-discord fa-xl pr-3 transition duration-150 ease-in-out hover:text-gray-400"></span></a>
+          <a href="https://github.com/ItsShawn/itsshawn.github.io/" target="blank"><span
+              class="fa fa-github fa-xl pr-3 transition duration-150 ease-in-out hover:text-gray-400"
+              aria-hidden="true"></span></a>
         </div>
       </div>
     </div>
   </div>
 </template>
+
+<script setup lang="ts">
+import Icon from '../atoms/Icon.vue'
+</script>
 
 <style lang="css" scoped>
 .footerSection {
@@ -51,19 +63,20 @@
     margin-bottom: 2em;
     display: absolute;
   }
-  .middle{
+
+  .middle {
     padding-left: 0em;
   }
 }
 
 @media screen and (max-width: 1500px) {
-  .middle{
+  .middle {
     padding-left: 0em;
   }
 }
 
 @media screen and (max-width: 898989800px) {
-  .middle{
+  .middle {
     padding-left: 10em;
   }
 }

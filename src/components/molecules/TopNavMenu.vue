@@ -1,12 +1,12 @@
 <template>
   <nav v-if="breakpoint === 'sm'">
-    <span class="material-icons-outlined" @click="mobileMenuOpen = true">menu</span>
+    <Icon icon-name="menu" @click="mobileMenuOpen = true"></Icon>
     <Transition>
       <div class="top-nav-menu__mobile-menu-panel transition-all bg-gray-800 z-50 text-white px-4 py-2"
         v-if="showMobileMenuOpen">
         <LogoAndName variant="dark"></LogoAndName>
         <div class="mb-4"></div>
-        <span class="material-icons-outlined absolute right-4 top-6" @click="mobileMenuOpen = false">close</span>
+        <Icon icon-name="close" class="w-6 h-6 invert absolute right-4 top-6" @click="mobileMenuOpen = false"></Icon>
         <div :class="mobileLinkClass" v-for="item in menuItems" :key="item.label">
           <a :href="item.link ? item.link : '#'" :textContent="item.label"></a>
           <div v-if="item.children && item.children.length">
