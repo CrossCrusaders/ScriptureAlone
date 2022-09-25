@@ -36,16 +36,19 @@
       <!-- Sermons Display -->
       <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 md:gap-8 mb-24">
         <div v-for="(sermon, index) in sermons" :key="index" class="flex flex-col bg-slate-200 rounded-2xl p-6">
-          <h3 class="text-slate-900 text-xl font-title font-bold mb-2">{{ sermon.title }}</h3>
+          <h3 class="text-slate-900 text-xl font-title font-bold mb-0">{{ sermon.title }}</h3>
+          <p class="text-slate-700 text-sm font-body mb-2">{{ sermon.author.firstName }}&nbsp;{{ sermon.author.lastName
+          }}
+          </p>
           <p class="text-slate-700 text-md font-body mb-3">{{ sermon.description }}</p>
-          <p class="text-slate-600 text-md font-body mb-3">
-            Categories:
+          <p class="text-slate-600 text-md text-sm font-body mb-0">
+            Tags:
             <span v-for="(category, innerIndex) in sermon.categories">
               {{ category.label }},&nbsp;
             </span>
           </p>
-          <p v-if="sermon.duration" class="text-slate-600 text-md font-body mb-3">
-            Time: {{ formatMillisecondsAsReadableDuration(sermon.duration) }}
+          <p v-if="sermon.duration" class="text-slate-600 text-md font-body text-sm mb-3">
+            Duration: {{ formatMillisecondsAsReadableDuration(sermon.duration) }}
           </p>
           <div class="flex-auto h-8"></div>
           <a :href="'/sermons/' + sermon.id" class="w-full block">
