@@ -57,8 +57,8 @@
 <script setup lang="ts">
 
 import { computed, reactive, ref, watch } from 'vue';
-import { useBreakpoint } from '../../services/ViewportService'
-import { useAuth } from '../../services/AuthService'
+import { useBreakpoint } from '../../browser/ViewportService'
+import { useAuth } from '../../auth/services/AuthService'
 import AppButton from '../atoms/form-controls/AppButton.vue'
 import LogoAndName from './LogoAndName.vue';
 import Icon from '../atoms/Icon.vue';

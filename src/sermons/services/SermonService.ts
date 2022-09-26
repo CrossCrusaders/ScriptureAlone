@@ -1,4 +1,4 @@
-import PocketBaseClient from '../../services/PocketBaseClient'
+import PocketBaseClient from '../../api/PocketBaseClient'
 import { transformSermonResponses } from '../Sermon'
 
 export const getRecentSermons = async (offset: number, count: number) => {

@@ -66,15 +66,15 @@
 <script setup lang="ts">
 
 
-import AppLayout from '../components/templates/AppLayout.vue'
-import PageContent from '../components/templates/PageContent.vue'
-import AppInput from '../components/atoms/form-controls/AppInput.vue'
+import AppLayout from '../../components/templates/AppLayout.vue'
+import PageContent from '../../components/templates/PageContent.vue'
+import AppInput from '../../components/atoms/form-controls/AppInput.vue'
 import { ref, onMounted } from 'vue'
-import Divider from '../components/atoms/Divider.vue'
-import ContentCarousel from '../components/molecules/ContentCarousel.vue'
-import { useBreakpoint } from '../services/ViewportService'
-import { getVerseOfTheDay } from '../services/BibleService'
-import Icon from '../components/atoms/Icon.vue'
+import Divider from '../../components/atoms/Divider.vue'
+import ContentCarousel from '../../components/molecules/ContentCarousel.vue'
+import { useBreakpoint } from '../../browser/ViewportService'
+import { getVerseOfTheDay } from '../../bible/services/BibleService'
+import Icon from '../../components/atoms/Icon.vue'
 
 const verseName = ref("");
 const verseText = ref("");

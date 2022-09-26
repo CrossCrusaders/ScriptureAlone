@@ -75,7 +75,7 @@ import { onMounted, reactive, ref } from 'vue'
 import Icon from '../../components/atoms/Icon.vue'
 import Divider from '../../components/atoms/Divider.vue'
 import { getFeaturedSermon, getRecentSermons, getSermonCategories } from '../../sermons/services/SermonService'
-import { formatMillisecondsAsReadableDuration } from '../../services/FormatService'
+import { formatMillisecondsAsReadableDuration } from '../../core/services/FormatService'
 
 
 const loading = true

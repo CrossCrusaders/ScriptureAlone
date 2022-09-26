@@ -43,7 +43,7 @@ import PageContent from '../../components/templates/PageContent.vue'
 import AppInput from '../../components/atoms/form-controls/AppInput.vue'
 import AppButton from '../../components/atoms/form-controls/AppButton.vue'
 import Icon from '../../components/atoms/Icon.vue'
-import { logIn } from '../../services/AuthService'
+import { logIn } from '../services/AuthService'
 import { reactive, ref } from 'vue'
 import { useRouter } from 'vue-router'
 
