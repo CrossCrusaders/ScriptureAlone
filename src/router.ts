@@ -1,5 +1,5 @@
 import Home from './core/pages/Home.vue'
-import BibleSearch from './bible/pages/BibleSearch.vue'
+import BibleReader from './bible/pages/BibleReader.vue'
 import LogIn from './auth/pages/LogIn.vue'
 import Register from './auth/pages/Register.vue'
 import Commentaries from './commentaries/pages/Commentaries.vue'
@@ -10,7 +10,7 @@ import * as VueRouter from 'vue-router'
 
 const routes = [
   { path: '/', component: Home },
-  { path: '/bible', component: BibleSearch },
+  { path: '/bible', component: BibleReader },
   { path: '/sermons', component: Sermons },
   { path: '/sermons/:id', component: SermonDetails },
 
