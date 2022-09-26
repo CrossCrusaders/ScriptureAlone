@@ -11,17 +11,17 @@
     <!-- Calls To Action -->
     <div class="flex flex-col md:flex-row gap-2 items-center justify-between mb-24 p-2">
       <a :class="callToActionItemClass">
-        <Icon icon-name="book-cross" :class="[callToActionIconClass]" :size="20">
+        <Icon icon-name="book-cross" :class="[callToActionIconClass]" :size="16">
         </Icon>
         Verse of the day
       </a>
       <a :class="callToActionItemClass">
-        <Icon icon-name="notebook-edit" :class="[callToActionIconClass]" :size="20">
+        <Icon icon-name="notebook-edit" :class="[callToActionIconClass]" :size="16">
         </Icon>
         Devotionals
       </a>
       <a :class="callToActionItemClass">
-        <Icon icon-name="cross" :class="[callToActionIconClass]" :size="20">
+        <Icon icon-name="cross" :class="[callToActionIconClass]" :size="16">
         </Icon>
         Sermons
       </a>
