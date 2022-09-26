@@ -1,4 +1,4 @@
-import { Author } from "../authors/Author"
+import { Author, transformAuthorResponse } from "../authors/Author"
 
 export interface Category {
   created: Date,
@@ -52,7 +52,7 @@ export const transformSermonResponse = (response: any): Sermon => {
     }
 
     if (author) {
-      sermon.author = { ...author }
+      sermon.author = transformAuthorResponse({ ...author })
     }
   }
 
