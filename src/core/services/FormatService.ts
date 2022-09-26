@@ -1,3 +1,5 @@
+import { Address } from '../Address'
+
 export const formatMillisecondsAsReadableDuration = (durationMs: number) => {
 
   const msPerSecond = 1000
@@ -28,4 +30,22 @@ export const formatMillisecondsAsReadableDuration = (durationMs: number) => {
   } else {
     return durationMs + 'ms'
   }
+}
+
+export const formatAddress = (addr: Address) => {
+
+  let addressString = ''
+
+  if (addr.streetAddress1)
+    addressString += addr.streetAddress1
+  if (addr.streetAddress2)
+    addressString += ` ${addr.streetAddress2}`
+  if (addr.city)
+    addressString += ` ${addr.city},`
+  if (addr.region)
+    addressString += ` ${addr.region},`
+  if (addr.postalCode)
+    addressString += ` ${addr.postalCode}`
+
+  return addressString
 }
