@@ -12,7 +12,7 @@
 </template>
 
 <script setup lang="ts">
-import { useBreakpoint } from '../../services/ViewportService';
+import { useBreakpoint } from '../../browser/ViewportService';
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper'
 import { Swiper, SwiperSlide } from 'swiper/vue'
 import 'swiper/css'

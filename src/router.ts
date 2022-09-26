@@ -1,8 +1,8 @@
-import Home from './pages/Home.vue'
-import BibleSearch from './pages/Bible/BibleSearch.vue'
-import LogIn from './pages/Auth/LogIn.vue'
-import Register from './pages/Auth/Register.vue'
-import Commentaries from './pages/StudyTools/Commentaries.vue'
+import Home from './core/pages/Home.vue'
+import BibleSearch from './bible/pages/BibleSearch.vue'
+import LogIn from './auth/pages/LogIn.vue'
+import Register from './auth/pages/Register.vue'
+import Commentaries from './commentaries/pages/Commentaries.vue'
 import Sermons from './sermons/pages/Sermons.vue'
 import SermonDetails from './sermons/pages/SermonDetails.vue'
 

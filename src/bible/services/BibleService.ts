@@ -1,5 +1,5 @@
 
-import PocketBaseClient, { pocketBaseApiUrl } from './PocketBaseClient';
+import PocketBaseClient, { pocketBaseApiUrl } from '../../api/PocketBaseClient';
 export const bibleIdKjv = 'de4e12af7f28f599-02';
 
 const votdCacheKey = `__scripture_alone_votd__`

@@ -1,5 +1,5 @@
 import { ref } from "vue"
-import PocketBaseClient from "./PocketBaseClient"
+import PocketBaseClient from "../../api/PocketBaseClient"
 
 // Global State
 const userLocalStorageKey = '__scripture_alone_user__'
