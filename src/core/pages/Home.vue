@@ -10,7 +10,7 @@
 
     <!-- Calls To Action -->
     <div class="flex flex-col md:flex-row gap-2 items-center justify-between mb-24 p-2">
-      <a :class="callToActionItemClass">
+      <a :class="callToActionItemClass" href="#VOTD">
         <Icon icon-name="book-cross" :class="[callToActionIconClass]" :size="16">
         </Icon>
         Verse of the day
@@ -28,7 +28,7 @@
     </div>
 
     <!-- Verse of the Day-->
-    <div class="flex flex-col gap-8 items-center mb-24 p-2">
+    <div class="flex flex-col gap-8 items-center mb-24 p-2" id="VOTD">
       <h2 class="font-bold font-title text-6xl text-center">Verse of the Day</h2>
       <div class="rounded-lg border-2 border-solid border-gray-800 p-8 max-w-prose">
         <h3 v-html="verseName" id="verseName" class="font-title font-bold text-3xl text-gray-800 mb-8"></h3>
