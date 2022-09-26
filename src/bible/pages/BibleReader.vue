@@ -3,13 +3,13 @@
     <PageContent>
 
       <div class="bible-reader-toolbar flex flex-row mb-4 sticky top-0 pt-4 pb-4 bg-white">
-        <select v-model="selectedBook" class="border-b-[3px] border-solid">
+        <select v-model="selectedBook" class="border-b-[3px] border-solid border-gray-200">
           <option v-for="book of availableBooks" :value="book.id">
             {{book.name}}
           </option>
         </select>
 
-        <select v-model="selectedChapter" class="ml-3 border-b-[3px] border-solid">
+        <select v-model="selectedChapter" class="ml-3 border-b-[3px] border-solid border-gray-200" >
           <option v-for="chapter of availableChapters[selectedBook]" :value="chapter.number">
             {{chapter.number}}
           </option>
