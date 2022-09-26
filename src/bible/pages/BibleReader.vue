@@ -37,7 +37,7 @@ const loadAvailableSelections = async () => {
   const BibleBooks = await import(`../../assets/bible/books.json`)
   const BibleBookChapters = await import(`../../assets/bible/chapters.json`)
   availableBooks.value = BibleBooks.default as any
-  availableChapters.value = BibleBookChapters
+  availableChapters.value = BibleBookChapters.data
 }
 const loadChapter = async () => {
   const response = await getChapter(selectedBook.value, selectedChapter.value)
