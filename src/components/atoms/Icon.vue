@@ -1,13 +1,14 @@
 <template>
-  <img :class="[$attrs.class ? $attrs.class : 'w-6 h-6 fill-slate-800' ]" v-if="props.iconType === 'mdi'"
-    :src="iconSrc" />
+  <img :class="iconClass" :src="iconSrc" />
 </template>
 
 <script setup lang="ts">
 
 // https://materialdesignicons.com/ 
 
-import { computed } from 'vue';
+import { computed, useAttrs } from 'vue';
+
+const attrs = useAttrs()
 
 const props = defineProps({
   iconName: {
@@ -17,11 +18,31 @@ const props = defineProps({
   iconType: {
     type: String,
     default: 'mdi'
+  },
+  size: {
+    type: Number,
+    default: 6
+  },
+  invert: {
+    type: Boolean,
+    default: false
   }
 })
 
 const iconSrc = computed(() => {
   return `/mdi/${props.iconName}.svg`
+})
+
+const iconClass = computed(() => {
+  let cssClass = attrs.class
+  if (props.size) {
+    cssClass += ` w-${props.size} h-${props.size} inline `
+  }
+  if (props.invert) {
+    cssClass += ` invert `
+  }
+
+  return cssClass
 })
 
 </script>

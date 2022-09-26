@@ -11,17 +11,17 @@
     <!-- Calls To Action -->
     <div class="flex flex-col md:flex-row gap-2 items-center justify-between mb-24 p-2">
       <a :class="callToActionItemClass">
-        <Icon icon-name="book-cross" :class="[callToActionIconClass]">
+        <Icon icon-name="book-cross" :class="[callToActionIconClass]" :size="20">
         </Icon>
         Verse of the day
       </a>
       <a :class="callToActionItemClass">
-        <Icon icon-name="notebook-edit" :class="[callToActionIconClass]">
+        <Icon icon-name="notebook-edit" :class="[callToActionIconClass]" :size="20">
         </Icon>
         Devotionals
       </a>
       <a :class="callToActionItemClass">
-        <Icon icon-name="cross" :class="[callToActionIconClass]">
+        <Icon icon-name="cross" :class="[callToActionIconClass]" :size="20">
         </Icon>
         Sermons
       </a>
@@ -90,7 +90,7 @@ const callToActionItemClass = ['cta-item border-slate-700', 'w-full', 'cursor-po
   'rounded-xl', 'pl-4', 'pr-4', 'pt-16', 'pb-16', 'flex', 'flex-col', 'items-center', 'text-slate-900',
   'justify-center', 'text-4xl', 'font-bold', 'font-title', 'hover:bg-slate-800', 'hover:text-white', 'transition-all']
 
-const callToActionIconClass = 'cta-icon w-20 h-20 mb-2'
+const callToActionIconClass = 'cta-icon mb-2'
 
 
 
