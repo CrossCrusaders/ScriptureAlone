@@ -35,6 +35,24 @@
           </div>
 
           <Divider></Divider>
+
+          <IconCallToAction>
+            <template v-slot:title>
+              <p class="text-2xl text-gray-100">This is the Title</p>
+            </template>
+
+            <template v-slot:image>
+              <Icon icon-name="face"></Icon>
+            </template>
+
+            <template v-slot:button>
+              <Button class="float-right">Something</Button>
+            </template>
+
+            <template v-slot:dis>
+              <p class="text-xs">hu</p>
+            </template>
+          </IconCallToAction>
         </div>
       </div>
     </PageContent>
@@ -51,6 +69,7 @@ import { formatAddress } from '../../core/services/FormatService'
 import { getSermon } from '../services/SermonService'
 import { useRoute, useRouter } from 'vue-router'
 import { Sermon } from '../Sermon';
+import IconCallToAction from '../../components/molecules/IconCallToAction.vue';
 
 
 const loading = ref(true)

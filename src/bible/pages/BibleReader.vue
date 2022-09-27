@@ -1,15 +1,14 @@
 <template>
   <AppLayout>
     <PageContent>
-
       <div class="bible-reader-toolbar flex flex-row mb-4 sticky top-0 pt-4 pb-4 bg-white" style="justify-content: center;">
-        <select v-model="selectedBook" class="border-b-[3px] border-solid border-gray-200">
+        <select v-model="selectedBook" class="active:outline-none focus:outline-none border-b-[3px] border-solid border-gray-200">
           <option v-for="book of availableBooks" :value="book.id">
             {{book.name}}
           </option>
         </select>
 
-        <select v-model="selectedChapter" class="ml-3 border-b-[3px] border-solid border-gray-200" >
+        <select v-model="selectedChapter" class="active:outline-none focus:outline-none ml-3 border-b-[3px] border-solid border-gray-200" >
           <option v-for="chapter of availableChapters[selectedBook]" :value="chapter.number">
             {{chapter.number}}
           </option>
