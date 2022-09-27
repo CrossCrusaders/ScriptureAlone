@@ -38,19 +38,19 @@
 
           <IconCallToAction>
             <template v-slot:title>
-              <p class="text-2xl text-gray-100">This is the Title</p>
+              <p class="text-2xl text-[#959595]">This is the Title</p>
             </template>
 
             <template v-slot:image>
               <Icon icon-name="face"></Icon>
             </template>
 
-            <template v-slot:button>
-              <Button class="float-right">Something</Button>
+            <template v-slot:button>      
+              <Button class="text-white"><div class="bg-gray-800 p-2 relative w-40 rounded-full">Something</div></Button>
             </template>
 
             <template v-slot:dis>
-              <p class="text-xs">hu</p>
+              <p class="text-sm">hu</p>
             </template>
           </IconCallToAction>
         </div>
