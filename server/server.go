@@ -24,8 +24,54 @@ func goDotEnvVariable(key string) string {
 
 func main() {
 	bibleApiKey := goDotEnvVariable("BIBLE_API_KEY")
+	bibleBrainApiKey := goDotEnvVariable("BIBLE_BRAIN_API_KEY")
 	log.Print(bibleApiKey)
 	app := pocketbase.New()
+
+	// Proxy to bible brain api
+	app.OnBeforeServe().Add(func(e *core.ServeEvent) error {
+		e.Router.AddRoute(echo.Route{
+			Method: http.MethodGet,
+			Path:   "/api/bible-brain/:path",
+			Handler: func(c echo.Context) error {
+
+				path := c.PathParam("path")
+				query := c.QueryString()
+				url := "https://4.dbt.io/api/" + path
+
+				if query != "" {
+					url += "?" + query + "&key=" + bibleBrainApiKey
+				} else {
+					url += "?key=" + bibleBrainApiKey
+				}
+
+				log.Println(url)
+
+				client := http.Client{}
+				req, _ := http.NewRequest("GET", url, nil)
+				req.Header = http.Header{
+					"Content-Type": {"application/json"},
+				}
+				resp, err := client.Do(req)
+				if err != nil {
+					log.Fatal(err)
+					return c.String(500, err.Error())
+				}
+
+				body, err := ioutil.ReadAll(resp.Body)
+
+				if err != nil {
+					log.Fatal(err)
+					return c.String(500, err.Error())
+				}
+
+				return c.String(200, string(body))
+			},
+			Middlewares: []echo.MiddlewareFunc{},
+		})
+
+		return nil
+	})
 
 	//search
 	app.OnBeforeServe().Add(func(e *core.ServeEvent) error {
