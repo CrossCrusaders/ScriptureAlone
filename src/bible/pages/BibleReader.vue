@@ -24,12 +24,14 @@
 import { onMounted, ref, watch } from 'vue';
 import AppLayout from '../../components/templates/AppLayout.vue'
 import PageContent from '../../components/templates/PageContent.vue'
-import { getChapter } from '../../bible/services/BibleService'
+import { getVerses } from '../../bible/services/BibleService'
 
 
 const availableBooks = ref<any[]>([])
 const availableChapters = ref<any>({})
 const loadedChapter = ref('')
+
+const selectedBible = ref('ENGKJV')
 const selectedBook = ref('JHN')
 const selectedChapter = ref(1)
 
@@ -40,11 +42,16 @@ const loadAvailableSelections = async () => {
   availableChapters.value = BibleBookChapters.data
 }
 const loadChapter = async () => {
-  const response = await getChapter(selectedBook.value, selectedChapter.value)
-  loadedChapter.value = response.content
+  const response = await getVerses(selectedBible.value, selectedBook.value, selectedChapter.value)
+  const chapterText = response.reduce((aggregate, verse, index) => {
+    return aggregate + `<p class="verse"><span class="verse-number">${verse.verse_start_alt}<span> <span class="verse-text">${verse.verse_text}</span></p> `
+  }, "")
+  loadedChapter.value = chapterText
 }
 
 watch(selectedBook, () => {
+  if (selectedChapter.value != 1)
+    return selectedChapter.value = 1
   loadChapter()
 })
 

@@ -1,13 +1,25 @@
 
 import PocketBaseClient from '../../api/PocketBaseClient';
 import Config from '../../core/services/ConfigService';
-import { BibleChapter } from '../BibleChapter';
-export const bibleIdKjv = 'de4e12af7f28f599-02';
+import { BibleChapter, BibleVerse } from '../BibleChapter';
+
+
+// export const bibleIdKjv = 'de4e12af7f28f599-02';
+export const bibleIdKjv = 'ENGKJV'
 
 const votdCacheKey = `__scripture_alone_votd__`
 const votdCachedItem = sessionStorage.getItem(votdCacheKey)
 let versesOfTheDayCache = votdCachedItem ? JSON.parse(votdCachedItem) : null
 
+
+function getDayOfTheYear() {
+	var now = new Date();
+	var start = new Date(now.getFullYear(), 0, 0);
+	var diff = now.getTime() - start.getTime();
+	var oneDay = 1000 * 60 * 60 * 24;
+	var day = Math.floor(diff / oneDay);
+	return day
+}
 
 export async function getVerseOfTheDay() {
 	if (!versesOfTheDayCache) {
@@ -16,33 +28,49 @@ export async function getVerseOfTheDay() {
 		sessionStorage.setItem(votdCacheKey, JSON.stringify(verses))
 	}
 
-	const today = new Date().setHours(0, 0, 0, 0)
 	const length = versesOfTheDayCache.length
-
-	const chosenIndex = Math.floor((today / 1000000)) % length
+	const chosenIndex = getDayOfTheYear() % length
 	const chosenVerse = versesOfTheDayCache[chosenIndex]
 
-	const record = await PocketBaseClient.records.getOne(
-		'versesOfTheDay', chosenVerse.id)
-	const dailyVerse = await getVerse(record.verseId);
+	const verses = chosenVerse.verseId.split('-')
 
-	return dailyVerse;
+	let verseResponse = []
+	let verseReference = ''
+
+	if (verses.length === 2) {
+		const [book, chapter, verse1] = verses[0].split('.')
+		const [_, __, verse2] = verses[1].split('.')
+		verseResponse = await getVerses(bibleIdKjv, book, chapter, verse1, verse2)
+		verseReference = `${verseResponse[0].book_name} ${chapter}:${verse1}-${verse2}`
+	} else if (verses.length === 1) {
+		const [book, chapter, verse] = verses[0].split('.')
+		verseResponse = await getVerses(bibleIdKjv, book, chapter, verse, verse)
+		verseReference = `${verseResponse[0].book_name} ${chapter}:${verse}`
+	} else {
+		throw new Error('Invalid Verse of the Day Format')
+	}
+
+	const verseText = verseResponse.reduce((aggregate, verse) => {
+		return aggregate + `${verse.verse_start_alt} ${verse.verse_text} `
+	}, '')
+
+	return {
+		verseReference,
+		verseText
+	}
 }
 
-export async function getVerse(verse: string) {
-	const response = await fetch(`${Config.pocketBaseApiUrl}api/bibles/verses?bible_id=${bibleIdKjv}&verse_id=${verse}`);
-	const results = await response.json();
-	return results;
-}
+export async function getVerses(bibleId: string, book: string, chapter: number, startVerse?: number, endVerse?: number): Promise<BibleVerse[]> {
+	let url = `${Config.bibleApiUrl}bibles/filesets/${bibleId}/${book}/${chapter}?v=4`
 
-export async function getChapter(
-	bookId: string,
-	chapterNumber: number,
-	bibleId: string = bibleIdKjv): Promise<BibleChapter> {
-	const response = await fetch(`${Config.pocketBaseApiUrl}api/bibles/chapters?bible_id=${bibleId}&chapter_id=${bookId}.${chapterNumber}`);
+	if (startVerse)
+		url += `&verse_start=${startVerse}`
+
+	if (endVerse)
+		url += `&verse_end=${endVerse}`
+
+	const response = await fetch(url);
 	const results = await response.json();
 	return results.data;
 }
-
-export const bibleBookIds = []
 

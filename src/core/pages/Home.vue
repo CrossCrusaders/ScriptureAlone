@@ -81,8 +81,9 @@ const verseText = ref("");
 
 onMounted(async () => {
   var htmlVerse = await getVerseOfTheDay();
-  verseName.value = htmlVerse.data.reference + " KJV";
-  verseText.value = htmlVerse.data.content;
+
+  verseName.value = htmlVerse.verseReference + " KJV";
+  verseText.value = htmlVerse.verseText;
 })
 
 const searchModel = ref('')
