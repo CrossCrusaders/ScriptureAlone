@@ -21,6 +21,7 @@
       </div>
       <div class="bible-reader-content max-w-prose mx-auto leading-loose" v-html="loadedChapter"></div>
     </PageContent>
+    <div class="mb-8"></div>
   </AppLayout>
 </template>
 
@@ -68,6 +69,8 @@ const loadChapter = async () => {
     selectedBookId: selectedBookId.value || 'JHN',
     selectedChapter: selectedChapterNumber.value || 1
   })
+
+  window.scrollTo({ top: 0 })
 }
 
 

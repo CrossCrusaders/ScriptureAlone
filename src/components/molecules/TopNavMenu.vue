@@ -27,14 +27,14 @@
       </div>
     </Transition>
   </nav>
-  <nav class="w-full flex flex-row justify-between" v-else>
+  <nav class="w-full flex flex-row justify-between items-center" v-else>
     <ul class="flex flex-row gap-4 items-center">
       <li v-for="item in menuItems" :key="item.label" class="top-nav-menu-item">
         <a class="font-bold text-gray-700  p-2 flex flex-row gap-4 items-center" :href="item.link || '#'">
           <span class="underline">{{ item.label }}</span>
           <Icon v-if="item.children && item.children.length" icon-name="chevron-down"></Icon>
         </a>
-        <ul class="top-nav-submenu p-4 bg-gray-800 text-white min-w-fit  shadow-lg rounded"
+        <ul class="top-nav-submenu p-4 bg-gray-800 text-white min-w-fit  shadow-lg rounded z-40"
           v-if="item.children && item.children.length">
           <li v-for="child in item.children" :key="child.label">
             <a class="font-bold underline whitespace-nowrap text-center w-full" :href="child.link || '#'">{{ child.label
