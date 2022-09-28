@@ -44,15 +44,14 @@
         </div>
       </div>
     </PageContent>
+    <AppModal v-model="showPlayerModal" v-slot="{ close }">
+      <div class="p2">
+        <AppAudioPlayer :audio-src="sermonAudioSrc"></AppAudioPlayer>
+        <button @click="close()">Close</button>
+      </div>
+    </AppModal>
+
   </AppLayout>
-
-  <AppModal v-model="showPlayerModal" v-slot="{ close }">
-    <div class="p2">
-      <AppAudioPlayer :audio-src="sermonAudioSrc"></AppAudioPlayer>
-      <button @click="close()">Close</button>
-    </div>
-  </AppModal>
-
 </template>
 
 <script setup lang="ts">
