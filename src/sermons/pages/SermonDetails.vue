@@ -46,7 +46,7 @@
     </PageContent>
     <AppModal v-model="showPlayerModal" v-slot="{ close }">
       <div class="p2">
-        <AppAudioPlayer :audio-src="sermonAudioSrc"></AppAudioPlayer>
+        <AudioPlayer :audio-src="sermonAudioSrc"></AudioPlayer>
         <button @click="close()">Close</button>
       </div>
     </AppModal>
@@ -55,13 +55,14 @@
 </template>
 
 <script setup lang="ts">
-import { computed, onMounted, ref } from 'vue';
+import { computed, onMounted, ref } from 'vue'
+
 import AppLayout from '../../components/templates/AppLayout.vue'
 import PageContent from '../../components/templates/PageContent.vue'
 import AppButton from '../../components/atoms/form-controls/AppButton.vue'
 import Divider from '../../components/atoms/Divider.vue'
 import AppModal from '../../components/templates/AppModal.vue'
-import AppAudioPlayer from '../../components/organisms/AppAudioPlayer.vue'
+import AudioPlayer from '../../components/organisms/AudioPlayer.vue'
 
 import { formatAddress } from '../../core/services/FormatService'
 import { getSermon } from '../services/SermonService'
@@ -69,6 +70,7 @@ import { useRoute } from 'vue-router'
 import { Sermon } from '../Sermon'
 import { format } from 'date-fns'
 import { formatMillisecondsAsReadableDuration } from '../../core/services/FormatService'
+
 
 const loading = ref(true)
 const sermonDetail = ref<Sermon>()
