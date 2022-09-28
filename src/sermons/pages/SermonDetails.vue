@@ -27,6 +27,26 @@
             <AppButton variant="primary-outline" v-if="sermonVideoSrc">Play Video</AppButton>
           </div>
           <Divider></Divider>
+
+          <IconCallToAction>
+            <template v-slot:title>
+              <p class="text-2xl text-[#959595]">This is the Title</p>
+            </template>
+
+            <template v-slot:image>
+              <Icon icon-name="face"></Icon>
+            </template>
+
+            <template v-slot:button>
+              <Button class="text-white">
+                <div class="bg-gray-800 p-2 relative w-40 rounded-full">Something</div>
+              </Button>
+            </template>
+
+            <template v-slot:dis>
+              <p class="text-sm">hu</p>
+            </template>
+          </IconCallToAction>
         </div>
       </div>
     </PageContent>
@@ -54,9 +74,10 @@ import AuthorPreviewColumn from '../components/AuthorPreviewColumn.vue'
 import { formatAddress } from '../../core/services/FormatService'
 import { getSermon } from '../services/SermonService'
 import { useRoute } from 'vue-router'
-import { Sermon } from '../Sermon'
 import { format } from 'date-fns'
 import { formatMillisecondsAsReadableDuration } from '../../core/services/FormatService'
+import { Sermon } from '../Sermon'
+import IconCallToAction from '../../components/molecules/IconCallToAction.vue'
 
 
 const loading = ref(true)
