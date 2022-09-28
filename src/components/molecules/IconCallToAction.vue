@@ -1,6 +1,6 @@
 <template>
 
-  <div class="flex bg-slate-200 p-8 gap-4 rounded-3xl flex-row justify-start">
+  <div class="flex p-8 gap-4 flex-row justify-start">
     <!-- Image Slot Parent -->
     <div class="">
       <slot name="image"></slot>
