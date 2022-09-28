@@ -1,5 +1,7 @@
 import { ref } from "vue"
 import PocketBaseClient from "../../api/PocketBaseClient"
+import { setLocalCacheItem } from "../../core/services/LocalStorageService"
+import { User } from "../User"
 
 // Global State
 const userLocalStorageKey = '__scripture_alone_user__'
@@ -7,12 +9,16 @@ const userLocalStorageKey = '__scripture_alone_user__'
 const existingToken = localStorage.getItem(userLocalStorageKey)
 
 const token = ref(existingToken)
-const user = ref(null)
+const user = ref<User | null>(null)
+
 
 
 // Utility Functions
 export const logIn = async ({ email, password }: { email: string, password: string }) => {
   const result = await PocketBaseClient.users.authViaEmail(email, password)
+  user.value = result.user as any
+  token.value = result.token
+
   return result
 }
 
@@ -46,7 +52,10 @@ export const isAuthenticated = async () => {
 
 // Composable
 export function useAuth() {
-
+  if (PocketBaseClient.authStore.isValid) {
+    user.value = PocketBaseClient.authStore.model as any
+    token.value = PocketBaseClient.authStore.token
+  }
   return {
     token,
     user,
