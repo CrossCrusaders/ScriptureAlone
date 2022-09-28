@@ -2,14 +2,14 @@
   <AppLayout>
     <div class="bible-reader-toolbar flex flex-row mb-4 sticky top-0 pt-4 pb-4 bg-slate-200"
       style="justify-content: center;">
-      <select v-model="selectedBookId" class="border-b-[3px] border-solid bg-transparent border-slate-400 py-1 px-2">
+      <select v-model="selectedBookId" class="active:outline-none focus:outline-none border-b-[3px] border-solid bg-transparent border-slate-400 py-1 px-2">
         <option v-for="book of availableBooks" :value="book.id">
           {{book.name}}
         </option>
       </select>
 
       <select v-model="selectedChapterNumber"
-        class="ml-3 border-b-[3px] border-solid bg-transparent border-slate-400 py-1 px-2">
+        class="active:outline-none focus:outline-none ml-3 border-b-[3px] border-solid bg-transparent border-slate-400 py-1 px-2">
         <option v-for="chapter of availableChapters[selectedBookId]" :value="chapter.number">
           {{chapter.number}}
         </option>
