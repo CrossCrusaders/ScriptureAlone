@@ -4,21 +4,7 @@
 
       <div class="flex flex-col-reverse md:flex-row gap-2 md:gap-8 mt-8" v-if="!loading && !!sermonDetail">
         <div class="md:w-2/6">
-          <!-- Left Side -->
-          <img :src="sermonDetail.author?.profileImage"
-            class="object-cover max-h-40 w-full md:max-h-64 rounded-lg mb-4" />
-          <div class="mb-8">
-            <p class="font-bold text-slate-800 mb-2">Speaker: {{ sermonDetail.author?.firstName + ' ' +
-            sermonDetail.author?.lastName }}</p>
-            <p class="font-bold text-slate-800">Church: {{ sermonDetail.author?.church.name }}</p>
-          </div>
-          <!-- Church Contact info-->
-          <div class="mb-8">
-            <p class="text-slate-800 mb-2">Address: {{ sermonDetail.author?.church ?
-            formatAddress(sermonDetail.author.church) : null }}</p>
-            <p class="text-slate-800">Email: {{ sermonDetail.author?.church.email }}</p>
-
-          </div>
+          <AuthorPreviewColumn :author="sermonDetail.author"></AuthorPreviewColumn>
           <!--TODO: Share Icons -->
 
         </div>
@@ -44,14 +30,14 @@
         </div>
       </div>
     </PageContent>
-    <AppModal v-model="showPlayerModal" v-slot="{ close }">
-      <div class="p2">
-        <AudioPlayer :audio-src="sermonAudioSrc"></AudioPlayer>
-        <button @click="close()">Close</button>
-      </div>
-    </AppModal>
-
   </AppLayout>
+
+  <AppModal v-model="showPlayerModal" @beforeClose="beforeAudioModalClose()" v-slot="{ close }">
+    <div class="p2">
+      <AudioPlayer :audio-src="sermonAudioSrc"></AudioPlayer>
+      <button @click="close()">Close</button>
+    </div>
+  </AppModal>
 </template>
 
 <script setup lang="ts">
@@ -63,6 +49,7 @@ import AppButton from '../../components/atoms/form-controls/AppButton.vue'
 import Divider from '../../components/atoms/Divider.vue'
 import AppModal from '../../components/templates/AppModal.vue'
 import AudioPlayer from '../../components/organisms/AudioPlayer.vue'
+import AuthorPreviewColumn from '../components/AuthorPreviewColumn.vue'
 
 import { formatAddress } from '../../core/services/FormatService'
 import { getSermon } from '../services/SermonService'
@@ -86,11 +73,8 @@ onMounted(async () => {
     id = id[0]
 
   const sermon = await getSermon(id)
-
   sermonDetail.value = sermon
-
   loading.value = false
-
 })
 
 const sermonAudioSrc = computed(() => {
@@ -107,6 +91,8 @@ const sermonLastUpdatedDisplay = computed(() => {
   return format(date, 'MM/dd/yyyy')
 })
 
-
+const beforeAudioModalClose = () => {
+  // TODO: find a way to stop the audio from playing when the modal is closed
+}
 
 </script>

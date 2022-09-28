@@ -1,6 +1,6 @@
 <template>
-  <vue-final-modal v-slot="{ close }" v-bind="$attrs" classes="modal-container" content-class="modal-content">
-    <slot :close="close"></slot>
+  <vue-final-modal v-slot="{ params, close }" v-bind="$attrs" classes="modal-container" content-class="modal-content">
+    <slot v-bind="params" :close="close"></slot>
 
     <button class="absolute top-2 right-2" @click="close">
       <Icon icon-name="close"></Icon>
