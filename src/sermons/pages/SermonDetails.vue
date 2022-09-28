@@ -66,16 +66,15 @@ import AudioPlayer from '../../components/organisms/AudioPlayer.vue'
 
 import { formatAddress } from '../../core/services/FormatService'
 import { getSermon } from '../services/SermonService'
-import { useRoute, useRouter } from 'vue-router'
+import { useRoute } from 'vue-router'
 import { Sermon } from '../Sermon'
 import { format } from 'date-fns'
 import { formatMillisecondsAsReadableDuration } from '../../core/services/FormatService'
 
-
 const loading = ref(true)
 const sermonDetail = ref<Sermon>()
 const route = useRoute()
-const router = useRouter()
+const showPlayerModal = ref(false)
 
 onMounted(async () => {
 
@@ -107,6 +106,6 @@ const sermonLastUpdatedDisplay = computed(() => {
   return format(date, 'MM/dd/yyyy')
 })
 
-const showPlayerModal = ref(false)
+
 
 </script>
