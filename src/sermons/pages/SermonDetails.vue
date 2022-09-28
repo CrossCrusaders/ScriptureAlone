@@ -30,7 +30,7 @@
 
           <IconCallToAction>
             <template v-slot:title>
-              <p class="text-2xl text-[#959595]">This is the Title</p>
+              <p class="text-2xl text-slate-400">This is the Title</p>
             </template>
 
             <template v-slot:image>
@@ -38,7 +38,7 @@
             </template>
 
             <template v-slot:button>
-              <Button class="text-white">
+              <Button class="text-white float-right">
                 <div class="bg-gray-800 p-2 relative w-40 rounded-full">Something</div>
               </Button>
             </template>
