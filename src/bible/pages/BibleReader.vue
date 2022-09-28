@@ -8,7 +8,7 @@
         </option>
       </select>
 
-      <select v-model="selectedChapter"
+      <select v-model="selectedChapterNumber"
         class="ml-3 border-b-[3px] border-solid bg-transparent border-slate-400 py-1 px-2">
         <option v-for="chapter of availableChapters[selectedBookId]" :value="chapter.number">
           {{chapter.number}}
@@ -17,7 +17,7 @@
     </div>
     <PageContent>
       <div class="max-w-prose mx-auto">
-        <h2 class="text-2xl font-bold text-center mb-4">{{ selectedBook.name }}&nbsp;{{ selectedChapter }}</h2>
+        <h2 class="text-2xl font-bold text-center mb-4">{{ selectedBook.name }}&nbsp;{{ selectedChapterNumber }}</h2>
       </div>
       <div class="bible-reader-content max-w-prose mx-auto leading-loose" v-html="loadedChapter"></div>
     </PageContent>
@@ -46,13 +46,8 @@ const availableChapters = ref<any>({})
 const loadedChapter = ref('')
 const selectedBibleId = ref('ENGKJV')
 const selectedBookId = ref('JHN')
-const selectedChapter = ref(1)
+const selectedChapterNumber = ref(1)
 
-const selectedPassage = reactive({
-  bibleId: 'ENGKJV',
-  bookId: 'JHN',
-  chapter: 1
-})
 
 const loadAvailableSelections = async () => {
   const BibleBooks = await import(`../../assets/bible/books.json`)
@@ -62,7 +57,7 @@ const loadAvailableSelections = async () => {
 }
 
 const loadChapter = async () => {
-  const response = await getVerses(selectedBibleId.value, selectedBookId.value, selectedChapter.value)
+  const response = await getVerses(selectedBibleId.value, selectedBookId.value, selectedChapterNumber.value)
   const chapterText = response.reduce((aggregate, verse, index) => {
     return aggregate + `<p class="verse"><span class="verse-number">${verse.verse_start_alt}</span> <span class="verse-text">${verse.verse_text}</span></p> `
   }, "")
@@ -71,20 +66,11 @@ const loadChapter = async () => {
   await setLocalCacheItem(localCacheKeyLastLoadedChapter, {
     selectedBibleId: selectedBibleId.value || 'ENGKJV',
     selectedBookId: selectedBookId.value || 'JHN',
-    selectedChapter: selectedChapter.value || 1
+    selectedChapter: selectedChapterNumber.value || 1
   })
 }
 
-watch(selectedBookId, () => {
-  if (selectedChapter.value != 1)
-    return selectedChapter.value = 1
 
-  loadChapter()
-})
-
-watch(selectedChapter, () => {
-  loadChapter()
-})
 
 onMounted(async () => {
 
@@ -93,8 +79,20 @@ onMounted(async () => {
   if (localCache) {
     selectedBibleId.value = localCache.selectedBibleId
     selectedBookId.value = localCache.selectedBookId
-    selectedChapter.value = localCache.selectedChapter
+    selectedChapterNumber.value = localCache.selectedChapter
   }
+
+  // Register watchers after cache has been loaded 
+  watch(selectedBookId, () => {
+    if (selectedChapterNumber.value != 1)
+      return selectedChapterNumber.value = 1
+    loadChapter()
+  })
+
+  watch(selectedChapterNumber, () => {
+    loadChapter()
+  })
+
   loadAvailableSelections()
   loadChapter()
 })
