@@ -15,12 +15,12 @@
         </Icon>
         Verse of the day
       </a>
-      <a :class="callToActionItemClass">
+      <a :class="callToActionItemClass" href="/devotionals">
         <Icon icon-name="notebook-edit" :class="[callToActionIconClass]" :size="16">
         </Icon>
         Devotionals
       </a>
-      <a :class="callToActionItemClass">
+      <a :class="callToActionItemClass" href="/sermons">
         <Icon icon-name="cross" :class="[callToActionIconClass]" :size="16">
         </Icon>
         Sermons
@@ -57,7 +57,7 @@
 </template>
 
 <style>
-.v {
+.verse-number {
   padding-right: 0.5em;
   font-weight: bold;
 }
