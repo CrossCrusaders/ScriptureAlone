@@ -29,23 +29,20 @@
           <Divider></Divider>
 
           <IconCallToAction>
-            <template v-slot:title>
-              <p class="text-2xl text-slate-400">This is the Title</p>
-            </template>
-
             <template v-slot:image>
-              <Icon icon-name="face"></Icon>
+              <Icon icon-name="cross" :size="16"></Icon>
             </template>
 
-            <template v-slot:button>
-              <Button class="text-white float-right">
-                <div class="bg-gray-800 p-2 relative w-40 rounded-full">Something</div>
-              </Button>
+            <div>
+              <h1 class="text-2xl font-title font-bold">This is the Title</h1>
+              <p class="font-body font-lg leading-relaxed">This is the body</p>
+            </div>
+            <template v-slot:action>
+              <AppButton>
+                Click Me!
+              </AppButton>
             </template>
 
-            <template v-slot:dis>
-              <p class="text-sm">hu</p>
-            </template>
           </IconCallToAction>
         </div>
       </div>
@@ -78,6 +75,7 @@ import { format } from 'date-fns'
 import { formatMillisecondsAsReadableDuration } from '../../core/services/FormatService'
 import { Sermon } from '../Sermon'
 import IconCallToAction from '../../components/molecules/IconCallToAction.vue'
+import Icon from '../../components/atoms/Icon.vue'
 
 
 const loading = ref(true)
