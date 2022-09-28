@@ -19,26 +19,40 @@
             <p class="text-slate-800">Email: {{ sermonDetail.author?.church.email }}</p>
 
           </div>
-          <!-- Share -->
+          <!--TODO: Share Icons -->
 
         </div>
         <!-- Right Side -->
         <div class="md:w-4/6 flex-auto">
           <h1 class="font-title font-bold text-4xl mb-2 text-slate-800">{{ sermonDetail.title }}</h1>
+          <p class="text-slate-500">Updated: {{ sermonLastUpdatedDisplay }} &bullet;
+            <span class="text-slate-500" v-if="sermonDetail.duration">
+              Duration: {{ formatMillisecondsAsReadableDuration(
+              sermonDetail.duration) }}
+            </span>
+          </p>
+
           <p class="mb-8 text-slate-500 font-bold">{{ sermonDetail.sermonDate }}</p>
           <p class="mb-8 text-slate-700 leading-normal">
             {{ sermonDetail.description }}
           </p>
           <div class="flex gap-4 mb-16">
-            <AppButton variant="primary" v-if="sermonAudioLink">Play Audio</AppButton>
-            <AppButton variant="primary-outline" v-if="sermonVideoLink">Play Video</AppButton>
+            <AppButton variant="primary" @click="showPlayerModal = true" v-if="sermonAudioSrc">Play Audio</AppButton>
+            <AppButton variant="primary-outline" v-if="sermonVideoSrc">Play Video</AppButton>
           </div>
-
           <Divider></Divider>
         </div>
       </div>
     </PageContent>
   </AppLayout>
+
+  <AppModal v-model="showPlayerModal" v-slot="{ close }">
+    <div class="p2">
+      <AudioPlayer :audio-src="sermonAudioSrc"></AudioPlayer>
+      <button @click="close()">Close</button>
+    </div>
+  </AppModal>
+
 </template>
 
 <script setup lang="ts">
@@ -47,10 +61,15 @@ import AppLayout from '../../components/templates/AppLayout.vue'
 import PageContent from '../../components/templates/PageContent.vue'
 import AppButton from '../../components/atoms/form-controls/AppButton.vue'
 import Divider from '../../components/atoms/Divider.vue'
+import AppModal from '../../components/templates/AppModal.vue'
+import AudioPlayer from '../../components/organisms/AudioPlayer.vue'
+
 import { formatAddress } from '../../core/services/FormatService'
 import { getSermon } from '../services/SermonService'
 import { useRoute, useRouter } from 'vue-router'
-import { Sermon } from '../Sermon';
+import { Sermon } from '../Sermon'
+import { format } from 'date-fns'
+import { formatMillisecondsAsReadableDuration } from '../../core/services/FormatService'
 
 
 const loading = ref(true)
@@ -74,12 +93,20 @@ onMounted(async () => {
 
 })
 
-const sermonAudioLink = computed(() => {
+const sermonAudioSrc = computed(() => {
   return sermonDetail.value?.externalAudioFileUrl || sermonDetail.value?.audioFile
 })
 
-const sermonVideoLink = computed(() => {
+const sermonVideoSrc = computed(() => {
   return sermonDetail.value?.externalVideoFileUrl
 })
+
+const sermonLastUpdatedDisplay = computed(() => {
+  const strDate = (sermonDetail.value?.sermonDate || sermonDetail.value?.updated) as any
+  const date = new Date(strDate.split(' ')[0])
+  return format(date, 'MM/dd/yyyy')
+})
+
+const showPlayerModal = ref(false)
 
 </script>

@@ -51,7 +51,7 @@ export async function getVerseOfTheDay() {
 	}
 
 	const verseText = verseResponse.reduce((aggregate, verse) => {
-		return aggregate + `${verse.verse_start_alt} ${verse.verse_text} `
+		return aggregate + `<span class="verse-number">${verse.verse_start_alt}</span>${verse.verse_text} `
 	}, '')
 
 	return {
