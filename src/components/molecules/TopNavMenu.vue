@@ -50,6 +50,10 @@
       <AppButton href="/auth/register" variant="primary">Sign Up</AppButton>
 
     </div>
+    <div v-else>
+      <a>Hello {{ user.profile.name }}</a>
+
+    </div>
   </nav>
 
 </template>

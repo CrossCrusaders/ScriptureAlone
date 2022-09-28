@@ -35,7 +35,7 @@
             </form>
           </div>
         </div>
-        <img class="pl-10 hidden md:block md:w-3/6" src="/icons/BibleLoginRegisterPage.svg" />
+        <img class="pl-10 hidden md:block md:w-3/6 opacity-40" src="/icons/BibleLoginRegisterPage.svg" />
       </div>
     </page-content>
   </app-layout>
