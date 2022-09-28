@@ -48,7 +48,7 @@
 
   <AppModal v-model="showPlayerModal" v-slot="{ close }">
     <div class="p2">
-      <AudioPlayer :audio-src="sermonAudioSrc"></AudioPlayer>
+      <!-- <AudioPlayer :audio-src="sermonAudioSrc"></AudioPlayer> -->
       <button @click="close()">Close</button>
     </div>
   </AppModal>
@@ -62,7 +62,7 @@ import PageContent from '../../components/templates/PageContent.vue'
 import AppButton from '../../components/atoms/form-controls/AppButton.vue'
 import Divider from '../../components/atoms/Divider.vue'
 import AppModal from '../../components/templates/AppModal.vue'
-import AudioPlayer from '../../components/organisms/AudioPlayer.vue'
+// import AudioPlayer from '../../components/organisms/AudioPlayer.vue'
 
 import { formatAddress } from '../../core/services/FormatService'
 import { getSermon } from '../services/SermonService'
