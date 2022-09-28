@@ -1,6 +1,8 @@
 <template>
-  <audio controls :src="props.audioSrc">
-  </audio>
+  <div>
+    <audio controls :src="props.audioSrc">
+    </audio>
+  </div>
 </template>
 
 <script setup lang="ts">
