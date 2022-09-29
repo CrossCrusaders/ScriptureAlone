@@ -1,4 +1,5 @@
 import { Author, transformAuthorResponse } from "../authors/Author"
+import { getStorageBucketItemUrl } from "../core/services/StorageService"
 
 export interface Category {
   created: Date,
@@ -54,6 +55,10 @@ export const transformSermonResponse = (response: any): Sermon => {
     if (author) {
       sermon.author = transformAuthorResponse({ ...author })
     }
+  }
+
+  if (sermon.audioFile) {
+    sermon.audioFile = getStorageBucketItemUrl(sermon.collectionId, sermon.id, sermon.audioFile)
   }
 
   return sermon
