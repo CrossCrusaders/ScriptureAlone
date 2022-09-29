@@ -1,0 +1,12 @@
+[
+  {
+    "id": "ENGKJV",
+    "name": "King James Version",
+    "abbreviation": "KJV"
+  },
+  {
+    "id": "ENGESV",
+    "name": "English Standard Version",
+    "abbreviation": "ESV"
+  }
+]

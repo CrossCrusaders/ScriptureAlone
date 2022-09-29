@@ -2,7 +2,8 @@
   <AppLayout>
     <div class="bible-reader-toolbar flex flex-row mb-4 sticky top-0 pt-4 pb-4 bg-slate-200"
       style="justify-content: center;">
-      <select v-model="selectedBookId" class="active:outline-none focus:outline-none border-b-[3px] border-solid bg-transparent border-slate-400 py-1 px-2">
+      <select v-model="selectedBookId"
+        class="active:outline-none focus:outline-none border-b-[3px] border-solid bg-transparent border-slate-400 py-1 px-2">
         <option v-for="book of availableBooks" :value="book.id">
           {{book.name}}
         </option>
@@ -14,58 +15,79 @@
           {{chapter.number}}
         </option>
       </select>
+
+      <select v-model="selectedBibleTranslationId"
+        class="active:outline-none focus:outline-none ml-3 border-b-[3px] border-solid bg-transparent border-slate-400 py-1 px-2">
+        <option v-for="translation of availableTranslations" :value="translation.id">
+          {{translation.abbreviation}}
+        </option>
+      </select>
     </div>
     <PageContent>
       <div class="max-w-prose mx-auto">
-        <h2 class="text-2xl font-bold text-center mb-4">{{ selectedBook.name }}&nbsp;{{ selectedChapterNumber }}</h2>
+        <h2 class="text-2xl font-bold text-center mb-4">{{ selectedBook.book?.name }}&nbsp;{{ selectedChapterNumber }}
+        </h2>
       </div>
       <div class="bible-reader-content max-w-prose mx-auto leading-loose" v-html="loadedChapter"></div>
     </PageContent>
     <div class="mb-8"></div>
   </AppLayout>
+  <!-- <AppButton @click="onPrevChapterButtonClicked" variant="primary-outline"
+    class="fixed top-1/2 left-1 md:left-16 xl:left-1/4 bg-white ">
+    <Icon icon-name="chevron-left"></Icon>
+  </AppButton>
+  <AppButton @click="onNextChapterButtonClicked" variant="primary-outline"
+    class="fixed top-1/2 right-1 md:right-16 xl:right-1/4 bg-white ">
+    <Icon icon-name="chevron-right"></Icon>
+  </AppButton> -->
 </template>
 
 <script setup lang="ts">
-import { onMounted, ref, watch } from 'vue';
+import { onMounted, ref, watch } from 'vue'
 import AppLayout from '../../components/templates/AppLayout.vue'
 import PageContent from '../../components/templates/PageContent.vue'
 import { getVerses } from '../../bible/services/BibleService'
-import { computed, reactive } from '@vue/reactivity';
+import { computed, reactive } from '@vue/reactivity'
 import { setLocalCacheItem, getLocalCacheItem } from '../../core/services/LocalStorageService'
+import Icon from '../../components/atoms/Icon.vue'
+import AppButton from '../../components/atoms/form-controls/AppButton.vue'
 
 
 export interface LocalBibleSelectionCache {
   selectedBookId: string
   selectedChapter: number
-  selectedBibleId: string
+  selectedBibleTranslationId: string
 }
 
 const localCacheKeyLastLoadedChapter = '__scripture_alone_last_loaded_bible_info__'
 
+const availableTranslations = ref<any[]>([])
 const availableBooks = ref<any[]>([])
 const availableChapters = ref<any>({})
 const loadedChapter = ref('')
-const selectedBibleId = ref('ENGKJV')
+const selectedBibleTranslationId = ref('ENGKJV')
 const selectedBookId = ref('JHN')
 const selectedChapterNumber = ref(1)
 
 
 const loadAvailableSelections = async () => {
+  const BibleTranslations = await import(`../../assets/bible/bibles.json`)
   const BibleBooks = await import(`../../assets/bible/books.json`)
   const BibleBookChapters = await import(`../../assets/bible/chapters.json`)
   availableBooks.value = BibleBooks.default as any
   availableChapters.value = BibleBookChapters.data
+  availableTranslations.value = BibleTranslations.default
 }
 
 const loadChapter = async () => {
-  const response = await getVerses(selectedBibleId.value, selectedBookId.value, selectedChapterNumber.value)
+  const response = await getVerses(selectedBibleTranslationId.value, selectedBookId.value, selectedChapterNumber.value)
   const chapterText = response.reduce((aggregate, verse, index) => {
     return aggregate + `<p class="verse"><span class="verse-number">${verse.verse_start_alt}</span> <span class="verse-text">${verse.verse_text}</span></p> `
   }, "")
   loadedChapter.value = chapterText
 
   await setLocalCacheItem(localCacheKeyLastLoadedChapter, {
-    selectedBibleId: selectedBibleId.value || 'ENGKJV',
+    selectedBibleTranslationId: selectedBibleTranslationId.value || 'ENGKJV',
     selectedBookId: selectedBookId.value || 'JHN',
     selectedChapter: selectedChapterNumber.value || 1
   })
@@ -77,36 +99,73 @@ const loadChapter = async () => {
 
 onMounted(async () => {
 
-  const localCache: LocalBibleSelectionCache | null = await getLocalCacheItem(localCacheKeyLastLoadedChapter)
+  // 1. Load available bible information
+  loadAvailableSelections()
 
+  // 2. Load any local user cache data
+  const localCache: LocalBibleSelectionCache | null = await getLocalCacheItem(localCacheKeyLastLoadedChapter)
   if (localCache) {
-    selectedBibleId.value = localCache.selectedBibleId
-    selectedBookId.value = localCache.selectedBookId
-    selectedChapterNumber.value = localCache.selectedChapter
+    selectedBibleTranslationId.value = localCache.selectedBibleTranslationId || selectedBibleTranslationId.value
+    selectedBookId.value = localCache.selectedBookId || selectedBookId.value
+    selectedChapterNumber.value = localCache.selectedChapter || selectedChapterNumber.value
   }
 
-  // Register watchers after cache has been loaded 
+  // 3. Register watchers after cache has been loaded
   watch(selectedBookId, () => {
     if (selectedChapterNumber.value != 1)
       return selectedChapterNumber.value = 1
     loadChapter()
   })
 
-  watch(selectedChapterNumber, () => {
+  watch([selectedChapterNumber, selectedBibleTranslationId], () => {
     loadChapter()
   })
 
-  loadAvailableSelections()
+  // 4. Request the chapter text for the current selected chapter
   loadChapter()
 })
 
 const selectedBook = computed(() => {
-  const selectedBookItem = availableBooks.value.find(availableBook => availableBook.id === selectedBookId.value)
-  if (selectedBookItem)
-    return selectedBookItem
+  const selectedBookItemIndex = availableBooks.value.findIndex(availableBook => availableBook.id === selectedBookId.value)
 
-  return {}
+  if (selectedBookItemIndex > -1)
+    return { book: availableBooks.value[selectedBookItemIndex], index: selectedBookItemIndex }
+
+  return { book: {}, index: 0 }
 })
+
+const onNextChapterButtonClicked = () => {
+  const { book, index } = selectedBook.value
+  const currentChapter = selectedChapterNumber.value
+
+  const availableBookChapters = availableChapters.value[selectedBookId.value] as any[]
+
+  if (currentChapter >= availableBookChapters.length) {
+
+    selectedBookId.value = availableBooks.value[index + 1].id
+  }
+  else {
+    selectedChapterNumber.value = parseInt(selectedChapterNumber.value as any) + 1
+    return
+  }
+}
+
+const onPrevChapterButtonClicked = () => {
+  const { book, index } = selectedBook.value
+  const currentChapter = selectedChapterNumber.value
+
+  const availableBookChapters = availableChapters.value[selectedBookId.value] as any[]
+
+  if (currentChapter <= 1) {
+    selectedBookId.value = availableBooks.value[index - 1].id
+    selectedChapterNumber.value = availableChapters.value[selectedBookId.value].length - 1
+  }
+  else {
+    selectedChapterNumber.value = parseInt(selectedChapterNumber.value as any) - 1
+    return
+  }
+}
+
 </script>
 
 <style>
