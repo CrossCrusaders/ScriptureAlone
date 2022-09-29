@@ -32,14 +32,14 @@
     </PageContent>
     <div class="mb-8"></div>
   </AppLayout>
-  <!-- <AppButton @click="onPrevChapterButtonClicked" variant="primary-outline"
-    class="fixed top-1/2 left-1 md:left-16 xl:left-1/4 bg-white ">
+  <AppButton @click="onPrevChapterButtonClicked" variant="primary-outline"
+    class="fixed top-1/2 left-1 md:left-16 xl:left-1/4 bg-white " size="sm">
     <Icon icon-name="chevron-left"></Icon>
   </AppButton>
   <AppButton @click="onNextChapterButtonClicked" variant="primary-outline"
-    class="fixed top-1/2 right-1 md:right-16 xl:right-1/4 bg-white ">
+    class="fixed top-1/2 right-1 md:right-16 xl:right-1/4 bg-white " size="sm">
     <Icon icon-name="chevron-right"></Icon>
-  </AppButton> -->
+  </AppButton>
 </template>
 
 <script setup lang="ts">
@@ -69,7 +69,10 @@ const selectedBibleTranslationId = ref('ENGKJV')
 const selectedBookId = ref('JHN')
 const selectedChapterNumber = ref(1)
 
-
+/**
+ * Gather all of the JSON data for the bible 
+ * translations, books and chapters
+ */
 const loadAvailableSelections = async () => {
   const BibleTranslations = await import(`../../assets/bible/bibles.json`)
   const BibleBooks = await import(`../../assets/bible/books.json`)
@@ -79,6 +82,9 @@ const loadAvailableSelections = async () => {
   availableTranslations.value = BibleTranslations.default
 }
 
+/**
+ * Query the API to download the text for a bible.
+ */
 const loadChapter = async () => {
   const response = await getVerses(selectedBibleTranslationId.value, selectedBookId.value, selectedChapterNumber.value)
   const chapterText = response.reduce((aggregate, verse, index) => {

@@ -1,21 +1,25 @@
 <template>
   <a v-if="props.href" :href="props.href" v-bind="$attrs"
-    :class="[buttonClass, buttonVariantClasses[buttonVariantKey]]">
+    :class="[buttonClass, buttonVariantClasses[buttonVariant], buttonSizeClasses[buttonSize]]">
     <slot></slot>
   </a>
-  <button v-else v-bind="$attrs" :class="[buttonClass, buttonVariantClasses[buttonVariantKey]]">
+  <button v-else v-bind="$attrs"
+    :class="[buttonClass, buttonVariantClasses[buttonVariant], buttonSizeClasses[buttonSize]]">
     <slot></slot>
   </button>
 </template>
 
 <script setup lang="ts">
+import { computed } from 'vue'
+
 interface AppButtonProps {
   variant?: 'primary' | 'accent' | 'primary-outline' | 'accent-outline' | 'primary-minimal',
-  href?: string
+  href?: string,
+  size?: 'sm' | 'md' | 'lg'
 }
 const props = defineProps<AppButtonProps>()
 
-const buttonClass = `rounded-full pt-2 pb-2 pr-6 pl-6 min-w-fit whitespace-nowrap`
+const buttonClass = `rounded-full min-w-fit whitespace-nowrap`
 const buttonVariantClasses = {
   'primary': 'border-solid border-2 border-slate-800 bg-slate-800 text-white',
   accent: 'border-solid border-2 border-red-700 bg-red-700 text-white',
@@ -24,6 +28,19 @@ const buttonVariantClasses = {
   'primary-minimal': `border-solid border-2 border-transparent text-slate-800 bg-transparent`
 }
 
-const buttonVariantKey = props.variant || 'primary'
+const buttonSizeClasses = {
+  'sm': `pt-2 pb-2 pr-2 pl-2 `,
+  'md': `pt-2 pb-2 pr-6 pl-6`,
+  'lg': `??`
+}
+
+
+const buttonVariant = computed(() => {
+  return props.variant || 'primary'
+})
+
+const buttonSize = computed(() => {
+  return props.size || 'md'
+})
 
 </script>

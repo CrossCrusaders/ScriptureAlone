@@ -57,7 +57,7 @@ export const transformSermonResponse = (response: any): Sermon => {
     }
   }
 
-  if (sermon.audioFile) {
+  if (sermon.audioFile && sermon.collectionId && sermon.id) {
     sermon.audioFile = getStorageBucketItemUrl(sermon.collectionId, sermon.id, sermon.audioFile)
   }
 
