@@ -105,6 +105,9 @@ onMounted(async () => {
 
   categories.value = devotionalCategories.items
   devotionals.value = recentDevotionals
+
+  console.log(devotionalCategories.items)
+  console.log(recentDevotionals)
 })
 
 </script>
