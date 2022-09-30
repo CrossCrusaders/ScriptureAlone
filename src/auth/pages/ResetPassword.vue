@@ -1,6 +1,13 @@
-<template></template>
+<template>
 
-<script>
+  <div>
+
+  </div>
+</template>
+
+<script setup lang="ts">
+import { onMounted } from 'vue';
+
 
 onMounted(() => {
 

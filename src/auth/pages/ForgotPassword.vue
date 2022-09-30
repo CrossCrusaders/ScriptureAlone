@@ -1,7 +1,9 @@
 <template>
-  You forgot your password?
-  That's too bad :(
+  <div>
+    You forgot your password?
+    That's too bad :(
+  </div>
 </template>
-<script>
+<script setup lang="ts">
 
 </script>
