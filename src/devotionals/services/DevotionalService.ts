@@ -1,24 +1,25 @@
 import PocketBaseClient from '../../api/PocketBaseClient'
-import { transformSermonResponse, transformSermonResponses } from '../Devotionals'
+import { transformDevotionalResponse, transformDevotionalResponses } from '../Devotional'
 
-export const getRecentSermons = async (offset: number, count: number) => {
-  const sermonsResponse = await PocketBaseClient.records.getList('sermons', offset, count, { sort: '-created', expand: 'categories,author' })
-  const sermons = transformSermonResponses(sermonsResponse.items)
-  return sermons
+export const getRecentDevotionals = async (offset: number, count: number) => {
+  const devotionalsResponse = await PocketBaseClient.records.getList('devotionals', offset, count, { sort: '-created', expand: 'categories,author' })
+  const devotionals = transformDevotionalResponses(devotionalsResponse.items)
+  console.log(devotionals)
+  return devotionals
 }
 
-export const getFeaturedSermon = async () => {
-  const response = await PocketBaseClient.records.getOne('sermons', '', { sort: '-created' })
-  return transformSermonResponse(response)
+export const getFeaturedDevotional = async () => {
+  const response = await PocketBaseClient.records.getOne('devotionals', '', { sort: '-created' })
+  return transformDevotionalResponse(response)
 }
 
-export const getSermon = async (id: string) => {
-  const response = await PocketBaseClient.records.getOne('sermons', id, { expand: 'categories,author,author.church' })
-  return transformSermonResponse(response)
+export const getDevotional = async (id: string) => {
+  const response = await PocketBaseClient.records.getOne('devotionals', id, { expand: 'categories,sections,author,author.church' })
+  return transformDevotionalResponse(response)
 }
 
-export const getSermonCategories = async () => {
-  const categories = await PocketBaseClient.records.getList('sermonCategories')
+export const getDevotionalCategories = async () => {
+  const categories = await PocketBaseClient.records.getList('devotionalCategories')
   return categories
 }
 

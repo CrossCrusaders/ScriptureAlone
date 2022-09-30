@@ -11,7 +11,7 @@ export interface Category {
 
 }
 
-export interface Sermon {
+export interface Devotional {
   id?: string
   coverImage?: any
   description?: string
@@ -20,7 +20,7 @@ export interface Sermon {
   externalVideoFileUrl?: string
   audioFile?: string,
 
-  sermonDate?: Date
+  devotionalDate?: Date
   title?: string
   transcript?: string
   created?: Date
@@ -36,8 +36,8 @@ export interface Sermon {
 }
 
 
-export const transformSermonResponse = (response: any): Sermon => {
-  const sermon: Sermon = {
+export const transformDevotionalResponse = (response: any): Devotional => {
+  const devotional: Devotional = {
     ...response,
     collectionId: response['@collectionId'],
     collectionName: response['@collectionName'],
@@ -49,21 +49,21 @@ export const transformSermonResponse = (response: any): Sermon => {
     const { categories, author } = response['@expand']
 
     if (categories) {
-      sermon.categories = [...categories]
+      devotional.categories = [...categories]
     }
 
     if (author) {
-      sermon.author = transformAuthorResponse({ ...author })
+      devotional.author = transformAuthorResponse({ ...author })
     }
   }
 
-  if (sermon.audioFile && sermon.collectionId && sermon.id) {
-    sermon.audioFile = getStorageBucketItemUrl(sermon.collectionId, sermon.id, sermon.audioFile)
+  if (devotional.audioFile && devotional.collectionId && devotional.id) {
+    devotional.audioFile = getStorageBucketItemUrl(devotional.collectionId, devotional.id, devotional.audioFile)
   }
 
-  return sermon
+  return devotional
 }
 
-export const transformSermonResponses = (responses: any[]) =>
-  responses.map(r => transformSermonResponse(r))
+export const transformDevotionalResponses = (responses: any[]) =>
+  responses.map(r => transformDevotionalResponse(r))
 
