@@ -121,7 +121,6 @@ const onNextChapterButtonClicked = async () => {
   if (!selectedChapter.value)
     return
   const currentChapterSequence = selectedChapter.value.sequenceNumber
-
   const nextData: BibleChapter = await getNextChapterBySequenceNumber(currentChapterSequence)
   if (!nextData)
     return

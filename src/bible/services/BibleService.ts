@@ -161,7 +161,7 @@ async function _getPreviousChapterBySequenceNumber(sequenceNumber: number) {
 }
 
 async function _getNextChapterBySequenceNumber(sequenceNumber: number) {
-	if (sequenceNumber >= bibleBooksCache!.length - 1) {
+	if (sequenceNumber >= bibleChaptersCache!.length - 1) {
 		sequenceNumber = 0
 	} else {
 		sequenceNumber = sequenceNumber + 1
