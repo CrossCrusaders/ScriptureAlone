@@ -45,6 +45,11 @@ export const register = async ({ email, password, username }: { email: string, p
   return authedUser
 }
 
+export const logOut = async () => {
+
+  PocketBaseClient.authStore.clear()
+}
+
 export const isAuthenticated = async () => {
   return true
 }
