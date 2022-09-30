@@ -1,6 +1,7 @@
 
 import PocketBaseClient from '../../api/PocketBaseClient'
 import Config from '../../core/services/ConfigService'
+import { getLocalCacheItem, getSessionCacheItem, setLocalCacheItem, setSessionCacheItem } from '../../core/services/LocalStorageService'
 import { BibleBook } from '../BibleBook'
 import { BibleChapter } from '../BibleChapter'
 import { BibleVerse } from '../BibleVerse'
@@ -8,8 +9,8 @@ import { BibleVerse } from '../BibleVerse'
 export const bibleIdKjv = 'ENGKJV'
 
 const votdCacheKey = `__scripture_alone_votd__`
-const votdCachedItem = sessionStorage.getItem(votdCacheKey)
-let versesOfTheDayCache = votdCachedItem ? JSON.parse(votdCachedItem) : null
+
+let versesOfTheDayCache: any = null
 
 let cacheLoaded = false
 let bibleChaptersCache: BibleChapter[] | null = null
@@ -27,9 +28,12 @@ function getDayOfTheYear() {
 
 export async function getVerseOfTheDay() {
 	if (!versesOfTheDayCache) {
-		const verses = await PocketBaseClient.records.getFullList('versesOfTheDay')
-		versesOfTheDayCache = verses
-		sessionStorage.setItem(votdCacheKey, JSON.stringify(verses))
+		versesOfTheDayCache = await getSessionCacheItem(votdCacheKey)
+		if (!versesOfTheDayCache) {
+			const verses = await PocketBaseClient.records.getFullList('versesOfTheDay')
+			versesOfTheDayCache = verses
+			await setSessionCacheItem(votdCacheKey, verses)
+		}
 	}
 
 	const length = versesOfTheDayCache.length
@@ -64,7 +68,6 @@ export async function getVerseOfTheDay() {
 	}
 }
 
-
 /**
  * Primary function for querying the bible API
  * and getting bible verses
@@ -79,7 +82,7 @@ export async function getVerses(bibleId: string, book: string, chapter: number, 
 		}
 	}
 
-	const dataStr = sessionStorage.getItem(key)
+	const dataStr = await getLocalCacheItem(key)
 	if (dataStr)
 		return JSON.parse(dataStr)
 
@@ -96,7 +99,7 @@ export async function getVerses(bibleId: string, book: string, chapter: number, 
 	const results = await response.json();
 	const data = results.data;
 
-	sessionStorage.setItem(key, JSON.stringify(data))
+	await setLocalCacheItem(key, JSON.stringify(data))
 
 	return data
 }

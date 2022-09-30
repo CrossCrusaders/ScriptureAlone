@@ -62,8 +62,14 @@ import Icon from '../../components/atoms/Icon.vue'
 import AppButton from '../../components/atoms/form-controls/AppButton.vue'
 import { BibleBook } from '../BibleBook'
 import { BibleTranslation } from '../BibleTranslation'
+import { useRoute, useRouter } from 'vue-router'
 
 
+export interface BiblePageQueryParams {
+  t?: string //translations
+  c?: string //chapter
+  b?: string // book
+}
 export interface LocalBibleSelectionCache {
   selectedBookId: string
   selectedChapter: number
@@ -81,6 +87,9 @@ const selectedBookId = ref('JHN')
 const selectedChapterNumber = ref(1)
 
 const loadedChapterContent = ref('')
+
+const router = useRouter()
+const route = useRoute()
 
 const selectedBook = computed(() => availableBooks.value.find(book => book.bookId === selectedBookId.value))
 const selectedChapter = computed(() => {
@@ -103,15 +112,23 @@ const loadChapterContent = async () => {
     selectedChapter: selectedChapterNumber.value || 1
   })
 
+  router.replace({ path: '/bible', query: { t: selectedBibleTranslationId.value, b: selectedBookId.value, c: selectedChapterNumber.value } })
+
   window.scrollTo({ top: 0 })
 }
 
 
 
 onMounted(async () => {
-
+  const { t, b, c } = route.query as BiblePageQueryParams
   const localCache: LocalBibleSelectionCache | null = await getLocalCacheItem(localCacheKeyLastLoadedChapter)
-  if (localCache) {
+
+  if (t && b && c) {
+    selectedBibleTranslationId.value = t || selectedBibleTranslationId.value
+    selectedBookId.value = b || selectedBookId.value
+    selectedChapterNumber.value = parseInt(c) || selectedChapterNumber.value
+  }
+  else if (localCache) {
     selectedBibleTranslationId.value = localCache.selectedBibleTranslationId || selectedBibleTranslationId.value
     selectedBookId.value = localCache.selectedBookId || selectedBookId.value
     selectedChapterNumber.value = localCache.selectedChapter || selectedChapterNumber.value
