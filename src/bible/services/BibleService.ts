@@ -3,6 +3,7 @@ import PocketBaseClient from '../../api/PocketBaseClient'
 import Config from '../../core/services/ConfigService'
 import { BibleBook } from '../BibleBook'
 import { BibleChapter } from '../BibleChapter'
+import { BibleVerse } from '../BibleVerse'
 
 export const bibleIdKjv = 'ENGKJV'
 
