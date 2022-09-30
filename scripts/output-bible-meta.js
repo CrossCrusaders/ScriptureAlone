@@ -4,40 +4,45 @@
 import fs from 'fs'
 import fetch from 'node-fetch'
 
-
+// https://dev.api.scripturealone.app/api/bible-brain/bibles/ENGKJV?v=4
+// response.data.books
 async function run() {
-  const response = await fetch('https://dev.api.scripturealone.app/api/bibles/books?bible_id=de4e12af7f28f599-02')
+  const response = await fetch('https://dev.api.scripturealone.app/api/bible-brain/bibles/ENGKJV?v=4')
   const result = await response.json()
-  const data = result.data
+  const { books } = result.data
 
-  const books = []
-  const chapters = {}
+  /**
+[{
+  bookId: 'JHN',
+  name: 'John',
+  nameShort: 'John',
+  chapterNumber: 1,
+  sequenceNumber: $index
+}]
+   */
+  const bibleMetaArray = []
 
-  data.forEach(item => {
+  let sequence = 0
+  books.forEach(book => {
 
-    books.push({
-      id: item.id,
-      abbreviation: item.abbreviation,
-      name: item.name,
-      nameLong: item.nameLong,
-    })
+    const { book_id, chapters, name, name_short, testment } = book
 
-    chapters[item.id] = []
+    chapters.forEach(chapter => {
 
-    item.chapters.filter(i => i.number !== 'intro').forEach(chapter => {
-
-      chapters[item.id].push({
-        "id": chapter.id,
-        "bookId": chapter.bookId,
-        "number": chapter.number,
-        "position": chapter.position
+      bibleMetaArray.push({
+        bookId: book_id,
+        name: name,
+        nameShort: name_short,
+        chapterNumber: chapter,
+        sequenceNumber: sequence++,
+        testment
       })
     })
 
   })
 
-  fs.writeFileSync('./books.json', JSON.stringify(books))
-  fs.writeFileSync('./chapters.json', JSON.stringify(chapters))
+  fs.writeFileSync('./bible-books.json', JSON.stringify(bibleMetaArray))
+  
 }
 
 
