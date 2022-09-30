@@ -25,8 +25,8 @@ const routes = [
   { path: '/sermons/:id', component: SermonDetails },
 
   //Devotionals
-  { path: '/devotionals', component: Sermons },
-  { path: '/devotionals/:id', component: SermonDetails },
+  { path: '/devotionals', component: Devotionals },
+  { path: '/devotionals/:id', component: DevotionalDetails },
 
   //Account Management
   { path: '/auth/log-in', component: LogIn },
