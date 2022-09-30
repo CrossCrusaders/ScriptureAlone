@@ -1,17 +1,14 @@
 
-import PocketBaseClient from '../../api/PocketBaseClient';
-import Config from '../../core/services/ConfigService';
-import { BibleBook, BibleChapter, BibleVerse } from '../BibleChapter';
+import PocketBaseClient from '../../api/PocketBaseClient'
+import Config from '../../core/services/ConfigService'
+import { BibleBook } from '../BibleBook'
+import { BibleChapter } from '../BibleChapter'
 
-
-// export const bibleIdKjv = 'de4e12af7f28f599-02';
 export const bibleIdKjv = 'ENGKJV'
 
 const votdCacheKey = `__scripture_alone_votd__`
 const votdCachedItem = sessionStorage.getItem(votdCacheKey)
 let versesOfTheDayCache = votdCachedItem ? JSON.parse(votdCachedItem) : null
-
-
 
 let cacheLoaded = false
 let bibleChaptersCache: BibleChapter[] | null = null
@@ -103,7 +100,6 @@ export async function getVerses(bibleId: string, book: string, chapter: number, 
 	return data
 }
 
-
 async function loadBibleData() {
 	const BibleTranslations = await import(`../../assets/bible/translations.json`)
 	const BibleBookChapters = await import(`../../assets/bible/bible-books.json`)
@@ -150,7 +146,6 @@ async function _getBooks() {
 	return bibleBooksCache
 }
 
-
 async function _getPreviousChapterBySequenceNumber(sequenceNumber: number) {
 	if (sequenceNumber == 0) {
 		sequenceNumber = bibleChaptersCache!.length - 1
@@ -168,7 +163,6 @@ async function _getNextChapterBySequenceNumber(sequenceNumber: number) {
 	}
 	return _getChapterBySequenceNumber(sequenceNumber)
 }
-
 
 export async function getChaptersByBookId(bookId: string) {
 	return bibleCacheMonad(() => _getChaptersByBookId(bookId))

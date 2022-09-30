@@ -44,15 +44,24 @@
 
 <script setup lang="ts">
 
-import { onMounted, ref, watch } from 'vue'
+import { onMounted, ref } from 'vue'
 import AppLayout from '../../components/templates/AppLayout.vue'
 import PageContent from '../../components/templates/PageContent.vue'
-import { getBooks, getChapterBySequenceNumber, getChaptersByBookId, getTranslations, getVerses, getPreviousChapterBySequenceNumber, getNextChapterBySequenceNumber } from '../../bible/services/BibleService'
-import { BibleChapter, BibleTranslation, BibleVerse, BibleBook } from '../../bible/BibleChapter'
+import {
+  getBooks,
+  getChaptersByBookId,
+  getTranslations,
+  getVerses,
+  getPreviousChapterBySequenceNumber,
+  getNextChapterBySequenceNumber
+} from '../../bible/services/BibleService'
+import { BibleChapter } from '../../bible/BibleChapter'
 import { computed, reactive } from '@vue/reactivity'
 import { setLocalCacheItem, getLocalCacheItem } from '../../core/services/LocalStorageService'
 import Icon from '../../components/atoms/Icon.vue'
 import AppButton from '../../components/atoms/form-controls/AppButton.vue'
+import { BibleBook } from '../BibleBook'
+import { BibleTranslation } from '../BibleTranslation'
 
 
 export interface LocalBibleSelectionCache {
@@ -164,7 +173,6 @@ const onSelectedBibleTranslationIdChanged = async (evt: any) => {
   selectedBibleTranslationId.value = value
   await loadChapterContent()
 }
-
 
 </script>
 
