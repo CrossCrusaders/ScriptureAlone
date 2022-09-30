@@ -1,7 +1,7 @@
 
 import PocketBaseClient from '../../api/PocketBaseClient';
 import Config from '../../core/services/ConfigService';
-import { BibleChapter, BibleVerse } from '../BibleChapter';
+import { BibleBook, BibleChapter, BibleVerse } from '../BibleChapter';
 
 
 // export const bibleIdKjv = 'de4e12af7f28f599-02';
@@ -11,6 +11,12 @@ const votdCacheKey = `__scripture_alone_votd__`
 const votdCachedItem = sessionStorage.getItem(votdCacheKey)
 let versesOfTheDayCache = votdCachedItem ? JSON.parse(votdCachedItem) : null
 
+
+
+let cacheLoaded = false
+let bibleChaptersCache: BibleChapter[] | null = null
+let bibleBooksCache: BibleBook[] | null = null
+let bibleTranslationsCache: any[] | null = null
 
 function getDayOfTheYear() {
 	var now = new Date();
@@ -60,7 +66,26 @@ export async function getVerseOfTheDay() {
 	}
 }
 
+
+/**
+ * Primary function for querying the bible API
+ * and getting bible verses
+ */
 export async function getVerses(bibleId: string, book: string, chapter: number, startVerse?: number, endVerse?: number): Promise<BibleVerse[]> {
+
+	let key = `${bibleId}.${book}.${chapter}`
+	if (startVerse) {
+		key += `.${startVerse}`
+		if (endVerse) {
+			key += `.${endVerse}`
+		}
+	}
+
+	const dataStr = sessionStorage.getItem(key)
+	if (dataStr)
+		return JSON.parse(dataStr)
+
+
 	let url = `${Config.bibleApiUrl}bibles/filesets/${bibleId}/${book}/${chapter}?v=4`
 
 	if (startVerse)
@@ -71,6 +96,100 @@ export async function getVerses(bibleId: string, book: string, chapter: number, 
 
 	const response = await fetch(url);
 	const results = await response.json();
-	return results.data;
+	const data = results.data;
+
+	sessionStorage.setItem(key, JSON.stringify(data))
+
+	return data
 }
 
+
+async function loadBibleData() {
+	const BibleTranslations = await import(`../../assets/bible/translations.json`)
+	const BibleBookChapters = await import(`../../assets/bible/bible-books.json`)
+	bibleTranslationsCache = BibleTranslations.default
+	bibleChaptersCache = BibleBookChapters.default
+
+	// Map the chapters to the unique books of the bible
+	// for selection purposes
+	const bibleBooksHash: any = {}
+	bibleBooksCache = []
+	bibleChaptersCache.forEach(chapter => {
+		if (!bibleBooksHash[chapter.bookId]) {
+			bibleBooksHash[chapter.bookId] = true
+			const book = { ...chapter }
+
+			bibleBooksCache?.push(book)
+		}
+	})
+
+	cacheLoaded = true
+}
+
+async function bibleCacheMonad(fn: Function) {
+	if (!cacheLoaded) {
+		await loadBibleData()
+	}
+	return await fn()
+}
+
+async function _getChaptersByBookId(bookId: string) {
+	return bibleChaptersCache!
+		.filter(item => item.bookId.toLowerCase() === bookId.toLowerCase())
+		.sort((a, b) => a.sequenceNumber - b.sequenceNumber)
+}
+
+async function _getChapterBySequenceNumber(sequenceNumber: number) {
+	if (sequenceNumber < 0 || sequenceNumber >= bibleChaptersCache!.length) {
+		return null
+	}
+	return bibleChaptersCache![sequenceNumber]
+}
+
+async function _getBooks() {
+	return bibleBooksCache
+}
+
+
+async function _getPreviousChapterBySequenceNumber(sequenceNumber: number) {
+	if (sequenceNumber == 0) {
+		sequenceNumber = bibleChaptersCache!.length - 1
+	} else {
+		sequenceNumber = sequenceNumber - 1
+	}
+	return _getChapterBySequenceNumber(sequenceNumber)
+}
+
+async function _getNextChapterBySequenceNumber(sequenceNumber: number) {
+	if (sequenceNumber >= bibleChaptersCache!.length - 1) {
+		sequenceNumber = 0
+	} else {
+		sequenceNumber = sequenceNumber + 1
+	}
+	return _getChapterBySequenceNumber(sequenceNumber)
+}
+
+
+export async function getChaptersByBookId(bookId: string) {
+	return bibleCacheMonad(() => _getChaptersByBookId(bookId))
+}
+
+export async function getChapterBySequenceNumber(sequenceNumber: number) {
+	return bibleCacheMonad(() => _getChapterBySequenceNumber(sequenceNumber))
+}
+
+export async function getBooks() {
+	return bibleCacheMonad(() => _getBooks())
+}
+
+export async function getTranslations() {
+	return bibleCacheMonad(() => bibleTranslationsCache)
+}
+
+export async function getPreviousChapterBySequenceNumber(sequenceNumber: number) {
+	return bibleCacheMonad(() => _getPreviousChapterBySequenceNumber(sequenceNumber))
+}
+
+export async function getNextChapterBySequenceNumber(sequenceNumber: number) {
+	return bibleCacheMonad(() => _getNextChapterBySequenceNumber(sequenceNumber))
+}

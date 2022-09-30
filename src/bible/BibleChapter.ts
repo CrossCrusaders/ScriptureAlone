@@ -1,12 +1,14 @@
-export interface BibleChapter {
-  id: string
-  content: string
-  copyright: string
-  next: { id: string, number: string, bookId: string }
-  previous: { id: string, number: string, bookId: string },
-  reference: string,
-  verseCount: number
+export interface BibleBook {
+  bookId: string
+  sequenceNumber: number
+  name: string
+  nameShort: string
 }
+
+export interface BibleChapter extends BibleBook {
+  chapterNumber: number
+}
+
 
 export interface BibleVerse {
   book_id: string
@@ -19,4 +21,10 @@ export interface BibleVerse {
   verse_start: number
   verse_start_alt: string
   verse_text: string
+}
+
+export interface BibleTranslation {
+  id: string,
+  name: string
+  abbreviation: string
 }
