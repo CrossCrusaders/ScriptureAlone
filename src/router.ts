@@ -14,11 +14,15 @@ import SermonDetails from './sermons/pages/SermonDetails.vue'
 import Devotionals from './devotionals/pages/Devotionals.vue'
 import DevotionalDetails from './devotionals/pages/DevotionalDetails.vue'
 
+import UserDashboard from './user/pages/UserDashboard.vue'
+
 import * as VueRouter from 'vue-router'
 
 const routes = [
   { path: '/', component: Home },
   { path: '/bible', component: BibleReader },
+
+  { path: '/dashboard', component: UserDashboard },
 
   //Sermons
   { path: '/sermons', component: Sermons },

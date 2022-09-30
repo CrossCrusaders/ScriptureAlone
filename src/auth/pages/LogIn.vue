@@ -54,7 +54,7 @@ const router = useRouter()
 const handleFormSubmit = async (event: Event) => {
   event.preventDefault()
   const result = await logIn(logInModel)
-  router.push('/')
+  router.push('/dashboard')
 }
 
 </script>

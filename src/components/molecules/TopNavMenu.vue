@@ -51,7 +51,7 @@
 
     </div>
     <div v-else>
-      <a>Hello {{ user.profile.name }}</a>
+      <a href="/dashboard">Hello {{ user.profile.name }}</a>
 
     </div>
   </nav>
