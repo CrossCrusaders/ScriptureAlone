@@ -3,7 +3,7 @@
     <!-- Search Hero -->
     <div class="flex flex-col items-center mb-24">
       <img class="object-contain max-h-80 block mb-4" src="/logo-bible.png" />
-      <h1 class="font-bold font-title text-3xl md:text-5xl lg:text-6xl mb-2 bg-gradient-to-r from-[#1e293b] to-[#e2e8f0] text-transparent bg-clip-text">Scripture Alone</h1>
+      <h1 class="font-bold font-title text-3xl md:text-5xl lg:text-6xl mb-2 bg-gradient-to-r from-[#1e293b] to-[#57687f] text-transparent bg-clip-text">Scripture Alone</h1>
       <p class="font-body text-lg mb-2">Sound Doctrine Guaranteed</p>
       <AppInput v-model="searchModel" class="w-80" placeholder="Search The Scripture"></AppInput>
     </div>
