@@ -29,7 +29,7 @@
 
     <!-- Verse of the Day-->
     <div class="flex flex-col gap-8 items-center mb-24 p-2" id="VOTD">
-      <h2 class="font-bold font-title text-6xl text-center bg-gradient-to-r from-[#1e293b] to-[#57687f] text-transparent bg-clip-text pb-1">Verse of the Day</h2>
+      <h2 class="font-bold font-title text-6xl text-center bg-gradient-to-r from-[#57687f] to-[#1e293b] text-transparent bg-clip-text pb-1">Verse of the Day</h2>
       <div class="rounded-lg border-2 border-solid border-gray-800 p-8 max-w-prose">
         <h3 v-html="verseName" id="verseName" class="font-title font-bold text-3xl text-gray-800 mb-8"></h3>
         <p v-html="verseText" id="verseText" class="text-xl"></p>

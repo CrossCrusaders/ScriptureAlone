@@ -4,7 +4,7 @@
 
       <div class="flex flex-col-reverse md:flex-row gap-2 md:gap-8 mt-8" v-if="!loading && !!devotionalDetail">
         <div class="md:w-2/6">
-          <AuthorPreviewColumn :author="devotionalDetail.author"></AuthorPreviewColumn>
+          <AuthorPreviewColumn :devoObject="devotionalDetail"></AuthorPreviewColumn>
           <!--TODO: Share Icons -->
 
         </div>
@@ -108,6 +108,8 @@ const loading = ref(true)
 const devotionalDetail = ref<Devotional>()
 const route = useRoute()
 const showPlayerModal = ref(false)
+
+console.log(devotionalDetail)
 
 onMounted(async () => {
 
