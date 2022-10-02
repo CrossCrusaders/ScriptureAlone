@@ -40,7 +40,7 @@
           <p class="text-slate-700 text-sm font-body mb-2">{{ sermon.author.firstName }}&nbsp;{{ sermon.author.lastName
           }}
           </p>
-          <p class="text-slate-700 text-md font-body mb-3">{{ sermon.description }}</p>
+          <p class="text-slate-700 text-md font-body mb-3 break-words">{{ sermon.description }}</p>
           <p class="text-slate-600 text-md text-sm font-body mb-0">
             Tags:
             <span v-for="(category, innerIndex) in sermon.categories">

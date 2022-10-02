@@ -40,9 +40,9 @@
           <p class="text-slate-700 text-sm font-body mb-2">{{ devotional.author.firstName }}&nbsp;{{ devotional.author.lastName
           }}
           </p>
-          <p class="text-slate-700 text-md font-body mb-3">{{ devotional.description }}</p>
+          <p class="text-slate-700 text-md font-body mb-3 break-words">{{ devotional.description }}</p>
           <p class="text-slate-600 text-md text-sm font-body mb-0">
-            Tags:
+            <b>Tags: </b>
             <span v-for="(category, innerIndex) in devotional.categories">
               {{ category.label }},&nbsp;
             </span>

@@ -16,6 +16,12 @@
               Duration: {{ formatMillisecondsAsReadableDuration(
                 devotionalDetail.duration) }}
             </span>
+            <p class="text-slate-800 text-md text-sm font-body mb-0">
+            <b>Tags: </b>
+            <span v-for="(category, innerIndex) in devotionalDetail.categories">
+              {{ category.label }},&nbsp;
+            </span>
+          </p>
           </p>
 
           <p class="mb-8 text-slate-500 font-bold">{{ devotionalDetail.devotionalDate }}</p>
@@ -102,6 +108,7 @@ import { formatMillisecondsAsReadableDuration } from '../../core/services/Format
 import { Devotional } from '../Devotional'
 import IconCallToAction from '../../components/molecules/IconCallToAction.vue'
 import Icon from '../../components/atoms/Icon.vue'
+import { prop } from 'dom7'
 
 
 const loading = ref(true)
@@ -122,6 +129,7 @@ onMounted(async () => {
   const devotional = await getDevotional(id)
   devotionalDetail.value = devotional
   loading.value = false
+  console.log(devotional)
 })
 
 const devotionalAudioSrc = computed(() => {
