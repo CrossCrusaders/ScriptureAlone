@@ -33,8 +33,6 @@
             <AppButton variant="primary-outline" v-if="devotionalVideoSrc">Play Video</AppButton>
           </div>
           <Divider></Divider>
-
-          <accordion></accordion>
           
         </div>
       </div>
