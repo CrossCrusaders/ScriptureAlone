@@ -33,6 +33,19 @@
             <AppButton variant="primary-outline" v-if="devotionalVideoSrc">Play Video</AppButton>
           </div>
           <Divider></Divider>
+
+          <Accordion class="mb-2">
+            <template v-slot:Item1>
+            
+            </template>
+            <template v-slot:Item2>
+            
+            </template>
+            <template v-slot:Item3>
+            
+            </template>
+          </Accordion>
+          <br>
           
         </div>
       </div>
@@ -109,9 +122,9 @@ import { formatMillisecondsAsReadableDuration } from '../../core/services/Format
 import { Devotional } from '../Devotional'
 import IconCallToAction from '../../components/molecules/IconCallToAction.vue'
 import Icon from '../../components/atoms/Icon.vue'
+import Accordion from '../components/Accordion.vue'
 
 import { prop } from 'dom7'
-//import accordion from '../components/accordion.vue'
 
 
 const loading = ref(true)
