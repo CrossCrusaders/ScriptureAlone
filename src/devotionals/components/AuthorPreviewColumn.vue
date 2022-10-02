@@ -25,11 +25,11 @@ export interface AuthorPreviewColumnProps {
 }
 const props = defineProps<AuthorPreviewColumnProps>()
 
-  console.log(props)
+//@ts-expect-error
+var imgURL:any = PocketBaseClient.records.getFileUrl(props.devoObject, props.devoObject?.coverImage, {});
 
-var imgURL = PocketBaseClient.records.getFileUrl(props.devoObject, props.devoObject?.coverImage, {});
-
-
-console.log(imgURL)
+if(props.devoObject?.coverImage == ""){
+  imgURL = props.devoObject?.author?.profileImage;
+}
 
 </script>
