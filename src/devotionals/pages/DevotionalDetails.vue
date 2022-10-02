@@ -33,6 +33,9 @@
             <AppButton variant="primary-outline" v-if="devotionalVideoSrc">Play Video</AppButton>
           </div>
           <Divider></Divider>
+
+          <accordion></accordion>
+          
         </div>
       </div>
       <div class="lg:flex lg:flex-row gap-10">
@@ -108,7 +111,9 @@ import { formatMillisecondsAsReadableDuration } from '../../core/services/Format
 import { Devotional } from '../Devotional'
 import IconCallToAction from '../../components/molecules/IconCallToAction.vue'
 import Icon from '../../components/atoms/Icon.vue'
+
 import { prop } from 'dom7'
+//import accordion from '../components/accordion.vue'
 
 
 const loading = ref(true)

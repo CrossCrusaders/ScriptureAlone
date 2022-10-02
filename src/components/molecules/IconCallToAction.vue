@@ -1,5 +1,4 @@
 <template>
-
   <div class="flex p-8 gap-4 flex-col md:flex-row justify-start">
     <div class="flex gap-4 flex-row justify-start flex-auto">
       <!-- Image Slot Parent -->
@@ -21,8 +20,6 @@
       <slot name="action"></slot>
     </div>
   </div>
-
-
 </template>
   
 <script setup lang="ts">
