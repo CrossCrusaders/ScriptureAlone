@@ -10,7 +10,7 @@
           <div class=" mb-4 md:mb-0">
             <h2 class="text-4xl font-bold mb-2 text-slate-900">Featured</h2>
             <p class="text-slate-600">
-              Be sure to checkout the featured sermons this week and get the most our of your bible.
+              Be sure to checkout the featured sermons this week and get the most out of your bible.
               We pray it will be edifying to the listener and help you grow in your walk with Christ.
             </p>
           </div>

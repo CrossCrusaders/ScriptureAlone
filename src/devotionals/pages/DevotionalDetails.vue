@@ -18,9 +18,10 @@
             </span>
             <p class="text-slate-800 text-md text-sm font-body mb-0">
             <b>Tags: </b>
-            <span v-for="(category, innerIndex) in devotionalDetail.categories">
-              {{ category.label }},&nbsp;
-            </span>
+            <a v-for="(category, innerIndex) in devotionalDetail.categories">
+              <a v-if="devotionalDetail.categories != undefined && category != devotionalDetail.categories[devotionalDetail.categories.length - 1]">{{ category.label }},&nbsp;</a>
+              <a v-else>{{ category.label }}&nbsp;</a>
+            </a>
           </p>
           </p>
 

@@ -10,8 +10,7 @@
           <div class=" mb-4 md:mb-0">
             <h2 class="text-4xl font-bold mb-2 text-slate-900">Featured</h2>
             <p class="text-slate-600">
-              Be sure to checkout the featured devotionals this week and get the most our of your bible.
-              We pray it will be edifying to the listener and help you grow in your walk with Christ.
+              Devo description here. ihdshfskhdgkjhduighaehguiwheiu uewhguihriguse njng srnjgnsinguidsghen  uhcvnsdndv jsvn jvdjn sdjn vdnjbjndjnsnj
             </p>
           </div>
           <div class="flex flex-col gap-2 justify-center">
@@ -41,11 +40,13 @@
           }}
           </p>
           <p class="text-slate-700 text-md font-body mb-3 break-words">{{ devotional.description }}</p>
-          <p class="text-slate-600 text-md text-sm font-body mb-0">
+          <!-- Needs fixed to not break mid-word -->
+          <p class="text-slate-600 text-md text-sm font-body mb-0" style="word-wrap: break-word;">
             <b>Tags: </b>
-            <span v-for="(category, innerIndex) in devotional.categories">
-              {{ category.label }},&nbsp;
-            </span>
+            <a v-for="(category, innerIndex) in devotional.categories">
+              <a v-if="devotional.categories != undefined && category != devotional.categories[devotional.categories.length - 1]">{{ category.label }},&nbsp;</a>
+              <a v-else>{{ category.label }}&nbsp;</a>
+            </a>
           </p>
           <p v-if="devotional.duration" class="text-slate-600 text-md font-body text-sm mb-3">
             Duration: {{ formatMillisecondsAsReadableDuration(devotional.duration) }}
