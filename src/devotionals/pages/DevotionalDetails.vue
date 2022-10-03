@@ -35,14 +35,23 @@
           <Divider></Divider>
 
           <Accordion class="mb-2">
-            <template v-slot:Item1>
-            
+            <template v-slot:Item1Title>
+              {{ devotionalDetail.accordionText?.split(" | ")[0] }}
             </template>
-            <template v-slot:Item2>
-            
+            <template v-slot:Item1Cont>
+              {{ devotionalDetail.accordionText?.split(" | ")[1] }}
             </template>
-            <template v-slot:Item3>
-            
+            <template v-slot:Item2Title>
+              {{ devotionalDetail.accordionText?.split(" | ")[2] }}
+            </template>
+            <template v-slot:Item2Cont>
+              {{ devotionalDetail.accordionText?.split(" | ")[3] }}
+            </template>
+            <template v-slot:Item3Title>
+              {{ devotionalDetail.accordionText?.split(" | ")[4] }}
+            </template>
+            <template v-slot:Item3Cont>
+              {{ devotionalDetail.accordionText?.split(" | ")[5] }}
             </template>
           </Accordion>
           <br>
@@ -132,8 +141,6 @@ const devotionalDetail = ref<Devotional>()
 const route = useRoute()
 const showPlayerModal = ref(false)
 
-console.log(devotionalDetail)
-
 onMounted(async () => {
 
   // The Devotional ID
@@ -145,7 +152,6 @@ onMounted(async () => {
   const devotional = await getDevotional(id)
   devotionalDetail.value = devotional
   loading.value = false
-  console.log(devotional)
 })
 
 const devotionalAudioSrc = computed(() => {

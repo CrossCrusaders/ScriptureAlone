@@ -25,6 +25,7 @@ export interface Devotional {
   transcript?: string
   created?: Date
   updated?: Date
+  accordionText?: string
 
   categories?: Category[]
   author?: Author
