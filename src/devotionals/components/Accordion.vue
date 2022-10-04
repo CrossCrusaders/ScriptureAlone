@@ -50,10 +50,10 @@
     cursor: pointer;
     display: flex;
     justify-content: space-between;
+    background-color: whitesmoke;
+    padding: 1em;
   }
-  .title,
   .description {
-    border: 1px solid lightgray;
-    padding: 5px;
+    padding: 0.8em;
   }
 </style>
