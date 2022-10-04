@@ -12,7 +12,7 @@ import Icon from '../../components/atoms/Icon.vue';
         <b><slot name="Item1Title"></slot></b>
       </div>
       <div>
-        <Icon v-if="contents.Item1Expanded" icon-name="close" :size="6"></Icon>
+        <Icon v-if="contents.Item1Expanded" icon-name="minus" :size="6"></Icon>
         <Icon v-else icon-name="plus" :size="6"></Icon>
       </div>
     </div>
@@ -24,7 +24,7 @@ import Icon from '../../components/atoms/Icon.vue';
         <b><slot name="Item2Title"></slot></b>
       </div>
       <div>
-        <Icon v-if="contents.Item2Expanded" icon-name="close" :size="6"></Icon>
+        <Icon v-if="contents.Item2Expanded" icon-name="minus" :size="6"></Icon>
         <Icon v-else icon-name="plus" :size="6"></Icon>
       </div>
     </div>
@@ -36,7 +36,7 @@ import Icon from '../../components/atoms/Icon.vue';
         <b><slot name="Item3Title"></slot></b>
       </div>
       <div>
-        <Icon v-if="contents.Item3Expanded" icon-name="close" :size="6"></Icon>
+        <Icon v-if="contents.Item3Expanded" icon-name="minus" :size="6"></Icon>
         <Icon v-else icon-name="plus" :size="6"></Icon>
       </div>
     </div>
