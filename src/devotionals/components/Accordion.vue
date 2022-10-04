@@ -1,5 +1,6 @@
 <script lang="ts" setup>
   import { reactive } from 'vue'
+import Icon from '../../components/atoms/Icon.vue';
 
   let contents = reactive({ Item1Expanded:false, Item2Expanded:false, Item3Expanded:false });
 </script>
@@ -11,8 +12,8 @@
         <b><slot name="Item1Title"></slot></b>
       </div>
       <div>
-        <span v-if="contents.Item1Expanded">&#x2191;</span>
-        <span v-else>&#x2193;</span>
+        <Icon v-if="contents.Item1Expanded" icon-name="close" :size="6"></Icon>
+        <Icon v-else icon-name="plus" :size="6"></Icon>
       </div>
     </div>
     <div class="description" v-if="contents.Item1Expanded">
@@ -23,8 +24,8 @@
         <b><slot name="Item2Title"></slot></b>
       </div>
       <div>
-        <span v-if="contents.Item2Expanded">&#x2191;</span>
-        <span v-else>&#x2193;</span>
+        <Icon v-if="contents.Item2Expanded" icon-name="close" :size="6"></Icon>
+        <Icon v-else icon-name="plus" :size="6"></Icon>
       </div>
     </div>
     <div class="description" v-if="contents.Item2Expanded">
@@ -35,8 +36,8 @@
         <b><slot name="Item3Title"></slot></b>
       </div>
       <div>
-        <span v-if="contents.Item3Expanded">&#x2191;</span>
-        <span v-else>&#x2193;</span>
+        <Icon v-if="contents.Item3Expanded" icon-name="close" :size="6"></Icon>
+        <Icon v-else icon-name="plus" :size="6"></Icon>
       </div>
     </div>
     <div class="description" v-if="contents.Item3Expanded">
