@@ -16,7 +16,10 @@ import DevotionalDetails from './devotionals/pages/DevotionalDetails.vue'
 
 import UserDashboard from './user/pages/UserDashboard.vue'
 
+import ComponentTestPage from './test/ComponentTestPage.vue'
+
 import * as VueRouter from 'vue-router'
+import Config from './core/services/ConfigService'
 
 const routes = [
   { path: '/', component: Home },
@@ -38,6 +41,9 @@ const routes = [
 
   { path: '/study-tools/commentaries', component: Commentaries }
 ]
+
+if (Config.environment === 'dev')
+  routes.push({ path: '/test', component: ComponentTestPage })
 
 const router = VueRouter.createRouter({
   history: VueRouter.createWebHistory(),
