@@ -132,7 +132,7 @@ import { formatMillisecondsAsReadableDuration } from '../../core/services/Format
 import { Devotional } from '../Devotional'
 import IconCallToAction from '../../components/molecules/IconCallToAction.vue'
 import Icon from '../../components/atoms/Icon.vue'
-import Accordion from '../components/Accordion.vue'
+import Accordion from '../../components/molecules/Accordion.vue'
 
 import { prop } from 'dom7'
 
