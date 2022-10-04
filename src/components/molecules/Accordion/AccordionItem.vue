@@ -141,5 +141,8 @@ async function onLeave(el: HTMLElement, done: Function) {
 
 .title-wrap {
   cursor: pointer;
+  background-color: whitesmoke;
+  padding: 0.8em;
+  border-bottom: 1px solid lightgray;
 }
 </style>
