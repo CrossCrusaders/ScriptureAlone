@@ -5,6 +5,7 @@ import BibleReader from './bible/pages/BibleReader.vue'
 //Account Management
 import LogIn from './auth/pages/LogIn.vue'
 import Register from './auth/pages/Register.vue'
+import LogOut from './auth/pages/LogOut.vue'
 //
 import Commentaries from './commentaries/pages/Commentaries.vue'
 //Sermons
@@ -38,6 +39,7 @@ const routes = [
   //Account Management
   { path: '/auth/log-in', component: LogIn },
   { path: '/auth/register', component: Register },
+  { path: '/auth/log-out', component: LogOut },
 
   { path: '/study-tools/commentaries', component: Commentaries }
 ]

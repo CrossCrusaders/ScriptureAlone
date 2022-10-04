@@ -2,33 +2,26 @@
   <AppLayout>
     <PageContent>
 
-      <!-- Sermons Hero -->
-      <div class="rounded-xl bg-slate-200 px-6 py-12 md:py-16 items-center mb-16 md:mt-8">
-        <!-- Inner flex parent -->
-        <div class="flex flex-col md:flex-row gap-4">
+      <PageHero>
+        <template v-slot:image>
           <img src="/logo-bible.png" class="object-contain hidden md:block max-h-32" />
-          <div class=" mb-4 md:mb-0">
-            <h2 class="text-4xl font-bold mb-2 text-slate-900">Featured</h2>
-            <p class="text-slate-600">
-              Be sure to checkout the featured sermons this week and get the most out of your bible.
-              We pray it will be edifying to the listener and help you grow in your walk with Christ.
-            </p>
-          </div>
-          <div class="flex flex-col gap-2 justify-center">
-            <AppButton>Watch Now</AppButton>
-            <AppButton variant="primary-outline">View All Sermons</AppButton>
-          </div>
-        </div>
-      </div>
+        </template>
+        <h2 class="text-4xl font-bold mb-2 text-slate-900">Featured</h2>
+        <p class="text-slate-600">
+          Be sure to checkout the featured sermons this week and get the most out of your bible.
+          We pray it will be edifying to the listener and help you grow in your walk with Christ.
+        </p>
+        <template v-slot:actions>
+          <AppButton>Watch Now</AppButton>
+          <AppButton variant="primary-outline">View All Sermons</AppButton>
+        </template>
+      </PageHero>
 
       <!-- Categories-->
       <div class="hidden md:flex flex-row justify-between items-center mb-16">
-        <div class="rounded-lg bg-slate-200 p-2 px-4" v-for="(category, index) in categories" :key="index">
-          <div class="flex flex-row items-center h-full gap-2">
-            <Icon :icon-name="category.iconName"></Icon>
-            <span>{{category.label}}</span>
-          </div>
-        </div>
+        <Badge :icon-name="category.iconName" :label="category.label" v-for="(category, index) in categories"
+          :key="index">
+        </Badge>
       </div>
 
       <Divider class="mb-16"></Divider>
@@ -71,11 +64,13 @@
 import AppLayout from '../../components/templates/AppLayout.vue'
 import PageContent from '../../components/templates/PageContent.vue'
 import AppButton from '../../components/atoms/form-controls/AppButton.vue'
+import Badge from '../../components/molecules/Badge.vue'
 import { onMounted, reactive, ref } from 'vue'
 import Icon from '../../components/atoms/Icon.vue'
 import Divider from '../../components/atoms/Divider.vue'
 import { getFeaturedSermon, getRecentSermons, getSermonCategories } from '../../sermons/services/SermonService'
 import { formatMillisecondsAsReadableDuration } from '../../core/services/FormatService'
+import PageHero from '../../components/molecules/PageHero.vue'
 
 
 const loading = true

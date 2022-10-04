@@ -24,6 +24,10 @@
             <a href="/auth/register">Register</a>
           </div>
         </div>
+        <div v-else>
+          <a :class="mobileLinkClass" href="/dashboard">My Account</a>
+          <a :class="mobileLinkClass" href="/auth/log-out">Log Out</a>
+        </div>
       </div>
     </Transition>
   </nav>
@@ -44,15 +48,11 @@
       </li>
     </ul>
     <div v-if="!user">
-      <!-- If Not Logged In: -->
-
       <AppButton href="/auth/log-in" variant="primary-minimal">Log In</AppButton>
       <AppButton href="/auth/register" variant="primary">Sign Up</AppButton>
-
     </div>
-    <div v-else>
-      <a href="/dashboard">Hello {{ user.profile.name }}</a>
-
+    <div v-else class="pr-2">
+      <a class="hover:underline" href="/dashboard">Hello {{ user.profile.name }}</a>
     </div>
   </nav>
 
@@ -60,17 +60,17 @@
 
 <script setup lang="ts">
 
-import { computed, reactive, ref, watch } from 'vue';
+import { computed, ref } from 'vue';
 import { useBreakpoint } from '../../browser/ViewportService'
 import { useAuth } from '../../auth/services/AuthService'
 import AppButton from '../atoms/form-controls/AppButton.vue'
-import LogoAndName from './LogoAndName.vue';
-import Icon from '../atoms/Icon.vue';
+import LogoAndName from './LogoAndName.vue'
+import Icon from '../atoms/Icon.vue'
 
 const { breakpoint } = useBreakpoint()
 const { user } = useAuth()
 
-const mobileLinkClass = "px-3 py-3"
+const mobileLinkClass = "block px-3 py-3"
 
 const menuItems = [
   {
