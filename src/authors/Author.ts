@@ -1,5 +1,5 @@
 import { Church } from "../church/Church";
-import { getStorageBucketItemUrl } from "../core/services/BucketStorageService";
+import { getAttachmentUrl } from "../core/services/AttachmentPocketBase";
 
 export interface Author {
   id: string
@@ -27,7 +27,9 @@ export const transformAuthorResponse = (response: any): Author => {
 
   }
 
-  author.profileImage = getStorageBucketItemUrl(author.collectionId, author.id, author.profileImage)
+  //Tyler, you may want to look at this.
+  //@ts-expect-error
+  author.profileImage = getAttachmentUrl(author, "author")
 
   return author
 }
