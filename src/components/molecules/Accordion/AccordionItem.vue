@@ -137,6 +137,7 @@ async function onLeave(el: HTMLElement, done: Function) {
   visibility: hidden;
   position: relative;
   overflow: hidden;
+  padding-left: 0.5em;
 }
 
 .title-wrap {

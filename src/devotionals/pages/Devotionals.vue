@@ -22,7 +22,7 @@
 
       <!-- Categories-->
       <div class="hidden md:flex flex-row justify-between items-center mb-16">
-        <div class="rounded-lg bg-slate-200 p-2 px-4" v-for="(category, index) in categories" :key="index">
+        <div @click="getDevotionalsInCategories(category.id)" class="cursor-pointer rounded-lg bg-slate-200 p-2 px-4" v-for="(category, index) in categories" :key="index">
           <div class="flex flex-row items-center h-full gap-2">
             <Icon :icon-name="category.iconName"></Icon>
             <span>{{category.label}}</span>
@@ -75,7 +75,7 @@ import AppButton from '../../components/atoms/form-controls/AppButton.vue'
 import { onMounted, reactive, ref } from 'vue'
 import Icon from '../../components/atoms/Icon.vue'
 import Divider from '../../components/atoms/Divider.vue'
-import { getFeaturedDevotional, getRecentDevotionals, getDevotionalCategories } from '../../devotionals/services/DevotionalService'
+import { getFeaturedDevotional, getRecentDevotionals, getDevotionalCategories, getDevotionalsInCategories } from '../../devotionals/services/DevotionalService'
 import { formatMillisecondsAsReadableDuration } from '../../core/services/FormatService'
 
 
@@ -106,9 +106,6 @@ onMounted(async () => {
 
   categories.value = devotionalCategories.items
   devotionals.value = recentDevotionals
-
-  console.log(devotionalCategories.items)
-  console.log(recentDevotionals)
 })
 
 </script>

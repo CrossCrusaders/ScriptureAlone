@@ -37,27 +37,32 @@
             <AppButton variant="primary-outline" v-if="devotionalVideoSrc">Play Video</AppButton>
           </div>
           <Divider></Divider>
-          <!-- 
-          <Accordion class="mb-2">
-            <template v-slot:Item1Title>
-              {{ devotionalDetail.accordionText?.split(" | ")[0] }}
-            </template>
-            <template v-slot:Item1Cont>
-              {{ devotionalDetail.accordionText?.split(" | ")[1] }}
-            </template>
-            <template v-slot:Item2Title>
-              {{ devotionalDetail.accordionText?.split(" | ")[2] }}
-            </template>
-            <template v-slot:Item2Cont>
-              {{ devotionalDetail.accordionText?.split(" | ")[3] }}
-            </template>
-            <template v-slot:Item3Title>
-              {{ devotionalDetail.accordionText?.split(" | ")[4] }}
-            </template>
-            <template v-slot:Item3Cont>
-              {{ devotionalDetail.accordionText?.split(" | ")[5] }}
-            </template>
-          </Accordion> -->
+          <Accordion>
+            <AccordionItem>
+              <template v-slot:title>
+                <h2>{{ devotionalDetail.accordionText?.split(" | ")[0] }}</h2>
+              </template>
+              <div>
+                {{ devotionalDetail.accordionText?.split(" | ")[1] }}
+              </div>
+            </AccordionItem>
+            <AccordionItem>
+              <template v-slot:title>
+                <h2>{{ devotionalDetail.accordionText?.split(" | ")[2] }}</h2>
+              </template>
+              <div>
+                {{ devotionalDetail.accordionText?.split(" | ")[3] }}
+              </div>
+            </AccordionItem>
+            <AccordionItem>
+              <template v-slot:title>
+                <h2>{{ devotionalDetail.accordionText?.split(" | ")[4] }}</h2>
+              </template>
+              <div>
+                {{ devotionalDetail.accordionText?.split(" | ")[5] }}
+              </div>
+            </AccordionItem>
+          </Accordion>
           <br>
 
         </div>
@@ -135,7 +140,8 @@ import { formatMillisecondsAsReadableDuration } from '../../core/services/Format
 import { Devotional } from '../Devotional'
 import IconCallToAction from '../../components/molecules/IconCallToAction.vue'
 import Icon from '../../components/atoms/Icon.vue'
-// import Accordion from '../../components/molecules/Accordion.vue'
+import Accordion from '../../components/molecules/Accordion/Accordion.vue'
+import AccordionItem from '../../components/molecules/Accordion/AccordionItem.vue'
 
 import { prop } from 'dom7'
 

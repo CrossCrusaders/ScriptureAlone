@@ -4,7 +4,6 @@ import { transformDevotionalResponse, transformDevotionalResponses } from '../De
 export const getRecentDevotionals = async (offset: number, count: number) => {
   const devotionalsResponse = await PocketBaseClient.records.getList('devotionals', offset, count, { sort: '-created', expand: 'categories,author' })
   const devotionals = transformDevotionalResponses(devotionalsResponse.items)
-  console.log(devotionals)
   return devotionals
 }
 
@@ -23,3 +22,8 @@ export const getDevotionalCategories = async () => {
   return categories
 }
 
+export const getDevotionalsInCategories = async (category:string) => {
+  console.log(category)
+  const devotionalsInCategories = await PocketBaseClient.records.getFullList('devotionals', 200, { filter: `categories ~ "${category}"` })
+  console.log(devotionalsInCategories)
+}
