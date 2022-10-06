@@ -3,6 +3,10 @@
     :class="[buttonClass, buttonVariantClasses[buttonVariant], buttonSizeClasses[buttonSize]]">
     <slot></slot>
   </a>
+  <RouterLink v-else-if="props.to" :to="props.to" v-bind="$attrs"
+    :class="[buttonClass, buttonVariantClasses[buttonVariant], buttonSizeClasses[buttonSize]]">
+    <slot></slot>
+  </RouterLink>
   <button v-else v-bind="$attrs"
     :class="[buttonClass, buttonVariantClasses[buttonVariant], buttonSizeClasses[buttonSize]]">
     <slot></slot>
@@ -15,6 +19,7 @@ import { computed } from 'vue'
 interface AppButtonProps {
   variant?: 'primary' | 'accent' | 'primary-outline' | 'accent-outline' | 'primary-minimal',
   href?: string,
+  to?: string,
   size?: 'sm' | 'md' | 'lg'
 }
 const props = defineProps<AppButtonProps>()

@@ -3,33 +3,37 @@
     <!-- Search Hero -->
     <div class="flex flex-col items-center mb-24">
       <img class="object-contain max-h-80 block mb-4" src="/logo-bible.png" />
-      <h1 class="font-bold font-title text-3xl md:text-5xl lg:text-6xl mb-2 bg-gradient-to-r from-[#1e293b] to-[#57687f] text-transparent bg-clip-text">Scripture Alone</h1>
+      <h1
+        class="font-bold font-title text-3xl md:text-5xl lg:text-6xl mb-2 bg-gradient-to-r from-[#1e293b] to-[#57687f] text-transparent bg-clip-text">
+        Scripture Alone</h1>
       <p class="font-body text-lg mb-2">Sound Doctrine Guaranteed</p>
       <AppInput v-model="searchModel" class="w-80" placeholder="Search The Scripture"></AppInput>
     </div>
 
     <!-- Calls To Action -->
     <div class="flex flex-col md:flex-row gap-2 items-center justify-between mb-24 p-2">
-      <a :class="callToActionItemClass" href="#VOTD">
+      <RouterLink :class="callToActionItemClass" to="#VOTD">
         <Icon icon-name="book-cross" :class="[callToActionIconClass]" :size="16">
         </Icon>
         Verse of the day
-      </a>
-      <a :class="callToActionItemClass" href="/devotionals">
+      </RouterLink>
+      <RouterLink :class="callToActionItemClass" to="/devotionals">
         <Icon icon-name="notebook-edit" :class="[callToActionIconClass]" :size="16">
         </Icon>
         Devotionals
-      </a>
-      <a :class="callToActionItemClass" href="/sermons">
+      </RouterLink>
+      <RouterLink :class="callToActionItemClass" to="/sermons">
         <Icon icon-name="cross" :class="[callToActionIconClass]" :size="16">
         </Icon>
         Sermons
-      </a>
+      </RouterLink>
     </div>
 
     <!-- Verse of the Day-->
     <div class="flex flex-col gap-8 items-center mb-24 p-2" id="VOTD">
-      <h2 class="font-bold font-title text-6xl text-center bg-gradient-to-r from-[#57687f] to-[#1e293b] text-transparent bg-clip-text pb-1">Verse of the Day</h2>
+      <h2
+        class="font-bold font-title text-6xl text-center bg-gradient-to-r from-[#57687f] to-[#1e293b] text-transparent bg-clip-text pb-1">
+        Verse of the Day</h2>
       <div class="rounded-lg border-2 border-solid border-gray-800 p-8 max-w-prose">
         <h3 v-html="verseName" id="verseName" class="font-title font-bold text-3xl text-gray-800 mb-8"></h3>
         <p v-html="verseText" id="verseText" class="text-xl"></p>
@@ -76,11 +80,11 @@ import { useBreakpoint } from '../../browser/ViewportService'
 import { getVerseOfTheDay } from '../../bible/services/BibleService'
 import Icon from '../../components/atoms/Icon.vue'
 
-const verseName = ref("");
-const verseText = ref("");
+const verseName = ref("")
+const verseText = ref("")
 
 onMounted(async () => {
-  var htmlVerse = await getVerseOfTheDay();
+  var htmlVerse = await getVerseOfTheDay()
 
   verseName.value = htmlVerse.verseReference + " KJV";
   verseText.value = htmlVerse.verseText;

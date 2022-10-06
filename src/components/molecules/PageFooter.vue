@@ -29,8 +29,9 @@
         <br>
 
         <div>
-          <a href="#"><span class="fa fa-facebook fa-xl pr-3 transition duration-150 ease-in-out hover:text-gray-400"
-              aria-hidden="true"></span></a>
+          <RouterLink to="#"><span
+              class="fa fa-facebook fa-xl pr-3 transition duration-150 ease-in-out hover:text-gray-400"
+              aria-hidden="true"></span></RouterLink>
           <a href="#"><span class="fa fa-twitter fa-xl pr-3 transition duration-150 ease-in-out hover:text-gray-400"
               aria-hidden="true"></span></a>
           <a href="#"><span

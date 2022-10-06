@@ -8,25 +8,25 @@
         <div class="mb-4"></div>
         <Icon icon-name="close" class="w-6 h-6 invert absolute right-4 top-6" @click="mobileMenuOpen = false"></Icon>
         <div :class="mobileLinkClass" v-for="item in menuItems" :key="item.label">
-          <a :href="item.link ? item.link : '#'" :textContent="item.label"></a>
+          <RouterLink :to="item.link ? item.link : '#'" :textContent="item.label"></RouterLink>
           <div v-if="item.children && item.children.length">
             <hr>
             <div :class="[mobileLinkClass]" v-for="child in item.children" :key="child.label">
-              <a :href="child.link || '#'">{{ child.label }}</a>
+              <RouterLink :to="child.link || '#'">{{ child.label }}</RouterLink>
             </div>
           </div>
         </div>
         <div v-if="!user">
           <div :class="mobileLinkClass">
-            <a href="/auth/log-in">Log In</a>
+            <RouterLink to="/auth/log-in">Log In</RouterLink>
           </div>
           <div :class="mobileLinkClass">
-            <a href="/auth/register">Register</a>
+            <RouterLink to="/auth/register">Register</RouterLink>
           </div>
         </div>
         <div v-else>
-          <a :class="mobileLinkClass" href="/dashboard">My Account</a>
-          <a :class="mobileLinkClass" href="/auth/log-out">Log Out</a>
+          <RouterLink :class="mobileLinkClass" to="/dashboard">My Account</RouterLink>
+          <RouterLink :class="mobileLinkClass" to="/auth/log-out">Log Out</RouterLink>
         </div>
       </div>
     </Transition>
@@ -34,15 +34,16 @@
   <nav class="w-full flex flex-row justify-between items-center" v-else>
     <ul class="flex flex-row gap-4 items-center">
       <li v-for="item in menuItems" :key="item.label" class="top-nav-menu-item">
-        <a class="font-bold text-gray-700  p-2 flex flex-row gap-4 items-center" :href="item.link || '#'">
+        <RouterLink class="font-bold text-gray-700  p-2 flex flex-row gap-4 items-center" :to="item.link || '#'">
           <span class="underline">{{ item.label }}</span>
           <Icon v-if="item.children && item.children.length" icon-name="chevron-down"></Icon>
-        </a>
+        </RouterLink>
         <ul class="top-nav-submenu p-4 bg-gray-800 text-white min-w-fit  shadow-lg rounded z-40"
           v-if="item.children && item.children.length">
           <li v-for="child in item.children" :key="child.label">
-            <a class="font-bold underline whitespace-nowrap text-center w-full" :href="child.link || '#'">{{ child.label
-            }}</a>
+            <RouterLink class="font-bold underline whitespace-nowrap text-center w-full" :to="child.link || '#'">{{
+            child.label
+            }}</RouterLink>
           </li>
         </ul>
       </li>
@@ -52,7 +53,7 @@
       <AppButton href="/auth/register" variant="primary">Sign Up</AppButton>
     </div>
     <div v-else class="pr-2">
-      <a class="hover:underline" href="/dashboard">Hello {{ user.profile.name }}</a>
+      <UserProfileBadge to="/dashboard"></UserProfileBadge>
     </div>
   </nav>
 
@@ -66,6 +67,7 @@ import { useAuth } from '../../auth/services/AuthService'
 import AppButton from '../atoms/form-controls/AppButton.vue'
 import LogoAndName from './LogoAndName.vue'
 import Icon from '../atoms/Icon.vue'
+import UserProfileBadge from '../organisms/UserProfileBadge.vue';
 
 const { breakpoint } = useBreakpoint()
 const { user } = useAuth()
