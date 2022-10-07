@@ -9,7 +9,7 @@ const userLocalStorageKey = '__scripture_alone_user__'
 const existingToken = localStorage.getItem(userLocalStorageKey)
 
 const token = ref(existingToken)
-const user = ref<User | null>(null)
+const user = ref<User | null | undefined>(null)
 
 
 

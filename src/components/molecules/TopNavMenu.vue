@@ -25,7 +25,9 @@
           </div>
         </div>
         <div v-else>
-          <RouterLink :class="mobileLinkClass" to="/dashboard">My Account</RouterLink>
+          <RouterLink to="/dashboard">
+            <UserProfileBadge></UserProfileBadge>
+          </RouterLink>
           <RouterLink :class="mobileLinkClass" to="/auth/log-out">Log Out</RouterLink>
         </div>
       </div>
@@ -53,7 +55,9 @@
       <AppButton href="/auth/register" variant="primary">Sign Up</AppButton>
     </div>
     <div v-else class="pr-2">
-      <UserProfileBadge to="/dashboard"></UserProfileBadge>
+      <RouterLink to="/dashboard">
+        <UserProfileBadge></UserProfileBadge>
+      </RouterLink>
     </div>
   </nav>
 

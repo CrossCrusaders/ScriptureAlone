@@ -15,7 +15,7 @@
       <RouterLink :class="callToActionItemClass" to="#VOTD">
         <Icon icon-name="book-cross" :class="[callToActionIconClass]" :size="16">
         </Icon>
-        Verse of the day
+        <span class="text-center whitespace-nowrap text-ellipsis">Verse of the day</span>
       </RouterLink>
       <RouterLink :class="callToActionItemClass" to="/devotionals">
         <Icon icon-name="notebook-edit" :class="[callToActionIconClass]" :size="16">

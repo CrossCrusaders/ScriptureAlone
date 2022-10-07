@@ -1,5 +1,5 @@
 import { Author, transformAuthorResponse } from "../authors/Author"
-import { getAttachmentUrl } from "../core/services/AttachmentPocketBase"
+import { getBucketUrl } from "../core/services/BucketStorageService"
 
 export interface Category {
   created: Date,
@@ -58,7 +58,7 @@ export const transformSermonResponse = (response: any): Sermon => {
   }
 
   if (sermon.audioFile && sermon.collectionId && sermon.id) {
-    sermon.audioFile = getAttachmentUrl(sermon, "sermon")
+    sermon.audioFile = getBucketUrl(sermon, sermon.audioFile)
   }
 
   return sermon

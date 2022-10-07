@@ -5,7 +5,7 @@
       <PageHero>
         <template v-slot:image>
 
-          <img src="https://via.placeholder.com/150" class="object-contain max-h-32 w-32 rounded-full" />
+          <img :src="userProfileImage" class="object-cover max-h-32 w-32 h-32 max-w-32 rounded-full" />
 
         </template>
 
@@ -28,9 +28,11 @@ import AppLayout from '../../components/templates/AppLayout.vue'
 import PageContent from '../../components/templates/PageContent.vue'
 import PageHero from '../../components/molecules/PageHero.vue'
 import AppButton from '../../components/atoms/form-controls/AppButton.vue'
-import { useAuth } from '../../auth/services/AuthService';
+import { useAuth } from '../../auth/services/AuthService'
+import { getUserProfileImage } from '../services/UserService'
 
 const { user } = useAuth()
+const userProfileImage = getUserProfileImage(user.value)
 </script>
 
 <style>
