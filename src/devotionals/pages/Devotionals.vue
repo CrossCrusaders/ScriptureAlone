@@ -30,7 +30,15 @@
         </div>
       </div>
 
-      <Divider class="mb-16"></Divider>
+      <div class="flex justify-center">
+        <div class="outline outline-2 outline-slate-300 bg-slate-200 rounded-full p-4">
+          <input type="text" placeholder="Search for devotionals" class="focus:outline-none active:outline-none bg-slate-200"/>
+          <Icon icon-name="magnify" :size="8"></Icon>
+        </div>
+      </div>
+
+      <br>
+      <br>
 
       <!-- Devotionals Display -->
       <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 md:gap-8 mb-24">
