@@ -33,14 +33,40 @@
       </div>
 
       <div class="flex justify-center">
+<<<<<<< HEAD
+        <div
+          class="outline outline-2 outline-slate-300 bg-slate-200 rounded-full p-4"
+        >
+          <input
+            id="searchBar"
+            type="text"
+            placeholder="Search for devotionals"
+            class="focus:outline-none active:outline-none bg-slate-200"
+          />
+          <Icon icon-name="magnify" :size="8" class="cursor-pointer"></Icon>
+=======
         <div class="outline outline-2 outline-slate-300 bg-slate-200 rounded-full p-4">
           <input id="searchBar" type="text" placeholder="Search for devotionals"
             class="focus:outline-none active:outline-none bg-slate-200" />
           <Icon icon-name="magnify" :size="8"></Icon>
+>>>>>>> 24f029a6f1e62779ae5111d996b9e19b3ab94293
         </div>
       </div>
 
       <br>
+<<<<<<< HEAD
+      <br>
+
+      <!-- Devotionals Display -->
+      <div
+        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 md:gap-8 mb-24"
+      >
+        <div
+          v-for="(devotional, index) in devotionalsTag"
+          :key="index"
+          class="flex flex-col bg-slate-200 rounded-2xl p-6"
+        >
+=======
       <select id="filter" value="tag"
         class="active:outline-none focus:outline-none border-b-[3px] border-solid bg-transparent border-slate-400 py-1 px-2">
         <option value="tag">
@@ -56,6 +82,7 @@
       <!-- Devotionals Display -->
       <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 md:gap-8 mb-24">
         <div v-for="(devotional, index) in devotionals" :key="index" class="flex flex-col bg-slate-200 rounded-2xl p-6">
+>>>>>>> 24f029a6f1e62779ae5111d996b9e19b3ab94293
           <h3 class="text-slate-900 text-xl font-title font-bold mb-0">
             {{ devotional.title }}
           </h3>
@@ -80,6 +107,56 @@
             </a>
           </p>
           <p v-if="devotional.duration" class="text-slate-600 text-md font-body text-sm mb-3">
+            Duration:
+            {{ formatMillisecondsAsReadableDuration(devotional.duration) }}
+          </p>
+          <div class="flex-auto h-8"></div>
+          <a :href="'/devotionals/' + devotional.id" class="w-full block">
+            <AppButton variant="primary" class="w-full">
+              View Devotional
+            </AppButton>
+          </a>
+        </div>
+
+
+        <div
+          v-for="(devotional, index) in devotionalsTitle"
+          :key="index"
+          class="flex flex-col bg-slate-200 rounded-2xl p-6"
+        >
+          <h3 class="text-slate-900 text-xl font-title font-bold mb-0">
+            {{ devotional.title }}
+          </h3>
+          <p class="text-slate-700 text-sm font-body mb-2">
+            {{ devotional.author.firstName }}&nbsp;{{
+              devotional.author.lastName
+            }}
+          </p>
+          <p class="text-slate-700 text-md font-body mb-3 break-words">
+            {{ devotional.description }}
+          </p>
+         
+          <p
+            class="text-slate-600 text-md text-sm font-body mb-0"
+            style="word-wrap: break-word"
+          >
+            <b>Tags: </b>
+            <a v-for="(category, innerIndex) in devotional.categories">
+              <a
+                v-if="
+                  devotional.categories != undefined &&
+                  category !=
+                    devotional.categories[devotional.categories.length - 1]
+                "
+                >{{ category.label }},&nbsp;</a
+              >
+              <a v-else>{{ category.label }}&nbsp;</a>
+            </a>
+          </p>
+          <p
+            v-if="devotional.duration"
+            class="text-slate-600 text-md font-body text-sm mb-3"
+          >
             Duration:
             {{ formatMillisecondsAsReadableDuration(devotional.duration) }}
           </p>
@@ -116,12 +193,25 @@ const loading = true;
 
 const categories = ref<any>([]);
 
-const devotionals = ref<any>([]);
+const devotionalsTag = ref<any>([]);
+const devotionalsTitle = ref<any>([]);
 
 const page = ref(1);
 const countPerPage = 8;
 
 onMounted(async () => {
+<<<<<<< HEAD
+  var Filter = document.getElementById("filter");
+  var SearchBar = document.getElementById("searchBar")
+  const searchedDevotionalsTitlePromise = await searchDevotionals("", `${SearchBar?.value}`);
+  const searchedDevotionalsTagPromise = await searchDevotionals(`${SearchBar?.value}`, "");
+
+  if(Filter?.value == "tag"){
+    
+  }
+  else{
+    
+=======
   var Filter = document.getElementById("filter") as any;
   var SearchBar = document.getElementById("searchBar") as any
   var searchedDevotionalsPromise: any;
@@ -131,17 +221,25 @@ onMounted(async () => {
   }
   else {
     searchedDevotionalsPromise = searchDevotionals(`${SearchBar?.value}`, "");
+>>>>>>> 24f029a6f1e62779ae5111d996b9e19b3ab94293
   }
   const categoriesPromise = getDevotionalCategories();
 
-  const [searchedDevotionals, devotionalCategories] =
+  const [searchedDevotionalsTag, searchedDevotionalsTitle, devotionalCategories] =
     await Promise.all([
-      searchedDevotionalsPromise,
+      searchedDevotionalsTagPromise,
+      searchedDevotionalsTitlePromise,
       categoriesPromise,
     ]);
 
   categories.value = devotionalCategories.items;
-  devotionals.value = searchedDevotionals;
+  devotionalsTag.value = searchedDevotionalsTag;
+  devotionalsTitle.value = searchedDevotionalsTitle;
+
+  console.log("Devo Tag : ")
+  console.log(devotionalsTag)
+  console.log("Devo Title :")
+  console.log(devotionalsTitle)
 });
 </script>
 
