@@ -23,12 +23,14 @@ export const getDevotionalCategories = async () => {
 }
 
 export const searchDevotionals = async (category:string, searchTerm:string) => {
+  var response:any;
   if(category != ""){
-    const devotionalsInCategories = await PocketBaseClient.records.getFullList('devotionals', 200, { filter: `categories ~ "${category}"` })
-    return devotionalsInCategories;
+    const devotionalsInCategories = await PocketBaseClient.records.getFullList('devotionals', 200, { filter: `categories.label ~ "${category}"`, expand: 'categories,sections,author,author.church' })
+    response = transformDevotionalResponses(devotionalsInCategories)
   }
   else{
-    const devotionalsInSearch = await PocketBaseClient.records.getFullList('devotionals', 200, { filter: `title ~ "${searchTerm}"` })
-    return devotionalsInSearch;
+    const devotionalsInSearch = await PocketBaseClient.records.getFullList('devotionals', 200, { filter: `title ~ "${searchTerm}" && categories.label !~ "${searchTerm}"`, expand: 'categories,sections,author,author.church' })
+    response = transformDevotionalResponses(devotionalsInSearch)
   }
+  return response;
 }
