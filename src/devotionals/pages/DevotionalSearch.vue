@@ -48,6 +48,7 @@
           class="outline outline-2 outline-slate-300 bg-slate-200 rounded-full p-4"
         >
           <input
+            id="searchBar"
             type="text"
             placeholder="Search for devotionals"
             class="focus:outline-none active:outline-none bg-slate-200"
@@ -56,8 +57,17 @@
         </div>
       </div>
 
-      <br />
-      <br />
+      <br>
+      <select id="filter" value="tag" class="active:outline-none focus:outline-none border-b-[3px] border-solid bg-transparent border-slate-400 py-1 px-2">
+        <option value="tag">
+          Search By Tag
+        </option>
+        <option value="title">
+          Search By Title
+        </option>
+      </select>
+      <br>
+      <br>
 
       <!-- Devotionals Display -->
       <div
@@ -143,22 +153,26 @@ const page = ref(1);
 const countPerPage = 8;
 
 onMounted(async () => {
-  const featuredDevotionalPromise = getFeaturedDevotional();
-  const recentDevotionalsPromise = getRecentDevotionals(
-    page.value,
-    countPerPage
-  );
+  var Filter = document.getElementById("filter");
+  var SearchBar = document.getElementById("searchBar")
+  var searchedDevotionalsPromise:any;
+
+  if(Filter?.value == "tag"){
+    searchedDevotionalsPromise = searchDevotionals("", `${SearchBar?.value}`);
+  }
+  else{
+    searchedDevotionalsPromise = searchDevotionals(`${SearchBar?.value}`, "");
+  }
   const categoriesPromise = getDevotionalCategories();
 
-  const [featuredDevotional, recentDevotionals, devotionalCategories] =
+  const [searchedDevotionals, devotionalCategories] =
     await Promise.all([
-      featuredDevotionalPromise,
-      recentDevotionalsPromise,
+      searchedDevotionalsPromise,
       categoriesPromise,
     ]);
 
   categories.value = devotionalCategories.items;
-  devotionals.value = recentDevotionals;
+  devotionals.value = searchedDevotionals;
 });
 </script>
 

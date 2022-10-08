@@ -14,6 +14,7 @@ import SermonDetails from './sermons/pages/SermonDetails.vue'
 //Devotionals
 import Devotionals from './devotionals/pages/Devotionals.vue'
 import DevotionalDetails from './devotionals/pages/DevotionalDetails.vue'
+import DevotionalSearch from './devotionals/pages/DevotionalSearch.vue'
 
 import UserDashboard from './user/pages/UserDashboard.vue'
 
@@ -35,6 +36,7 @@ const routes = [
   //Devotionals
   { path: '/devotionals', component: Devotionals },
   { path: '/devotionals/:id', component: DevotionalDetails },
+  { path: '/devotionals/search/:tags', component: DevotionalSearch },
 
   //Account Management
   { path: '/auth/log-in', component: LogIn },
