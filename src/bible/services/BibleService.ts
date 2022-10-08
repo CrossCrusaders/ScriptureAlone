@@ -192,13 +192,33 @@ export async function getNextChapterBySequenceNumber(sequenceNumber: number) {
 	return bibleCacheMonad(() => _getNextChapterBySequenceNumber(sequenceNumber))
 }
 
+export interface BibleSearchMetaPagination {
+	count: number
+	current_page: number
+	per_page: number
+	total: number
+	total_pages: number
+}
+
+export interface BibleSearchMeta {
+	pagination: BibleSearchMetaPagination
+}
 
 export async function searchBible(bibleId: string, query: string, page: number, perPage: number) {
 
-	const url = `https://${Config.bibleApiUrl}bible-brain/search?query=${encodeURI(query)}&fileset_id=${bibleId}&limit=${perPage}&page=${page}&v=4`
+	const url = `${Config.bibleApiUrl}search?query=${encodeURI(query)}&fileset_id=${bibleId}&limit=${perPage}&page=${page}&v=4`
 
 	const searchResponse = await fetch(url)
 	const searchResults = await searchResponse.json()
 
-	debugger
+	return searchResults.verses as {
+		data: BibleVerse[], meta: BibleSearchMeta
+	}
+}
+
+export function getReferenceFromVerse(verse: BibleVerse) {
+	let reference = `${verse.book_name} ${verse.chapter}:${verse.verse_start}`
+	if (verse.verse_start != verse.verse_end)
+		reference += `-${verse.verse_end}`
+	return reference
 }

@@ -1,10 +1,10 @@
 
 
-export const setLocalCacheItem = async (key: string, value: any) => {
+export const setLocalCacheItem = (key: string, value: any) => {
   localStorage.setItem(key, JSON.stringify(value))
 }
 
-export const getLocalCacheItem = async (key: string) => {
+export const getLocalCacheItem = (key: string) => {
   const storedItemString = localStorage.getItem(key)
   if (!storedItemString)
     return null
@@ -13,11 +13,11 @@ export const getLocalCacheItem = async (key: string) => {
 }
 
 
-export const setSessionCacheItem = async (key: string, value: any) => {
+export const setSessionCacheItem = (key: string, value: any) => {
   sessionStorage.setItem(key, JSON.stringify(value))
 }
 
-export const getSessionCacheItem = async (key: string) => {
+export const getSessionCacheItem = (key: string) => {
   const storedItemString = sessionStorage.getItem(key)
   if (!storedItemString)
     return null
