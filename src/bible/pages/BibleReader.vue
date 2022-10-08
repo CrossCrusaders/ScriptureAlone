@@ -108,12 +108,15 @@ const loadChapterContent = async () => {
   const response = await getVerses(selectedBibleTranslationId.value, selectedBookId.value, selectedChapterNumber.value)
   const chapterText = response.reduce((aggregate, verse) => {
     let verseCssClass = 'verse'
-
     if (shouldHighlight && highlightRange.length && verse.verse_start >= highlightRange[0] && verse.verse_start <= highlightRange[1]) {
-
+      verseCssClass += ' verse-highlight'
     }
-    return aggregate + `<p class="verse"><span class="verse-number">${verse.verse_start_alt}</span> <span class="verse-text">${verse.verse_text}</span></p> `
+    return aggregate + `<p id="verse-${verse.verse_start}" class="${verseCssClass}"><span class="verse-number">${verse.verse_start_alt}</span> <span class="verse-text">${verse.verse_text}</span></p> `
   }, "")
+
+
+
+
   loadedChapterContent.value = chapterText
   availableChapters.value = await getChaptersByBookId(selectedBookId.value)
   await setLocalCacheItem(localCacheKeyLastLoadedChapter, {
@@ -123,8 +126,14 @@ const loadChapterContent = async () => {
   })
 
   router.replace({ path: '/bible', query: { ...route.query, t: selectedBibleTranslationId.value, b: selectedBookId.value, c: selectedChapterNumber.value } })
+  if (shouldHighlight)
+    setTimeout(() => {
+      document.querySelector(`#verse-${highlightRange[0]}`)?.scrollIntoView()
+    }, 100)
+  else
+    window.scrollTo({ top: 0 })
 
-  window.scrollTo({ top: 0 })
+  shouldHighlight = false
 }
 
 
@@ -142,6 +151,11 @@ onMounted(async () => {
     selectedBibleTranslationId.value = localCache.selectedBibleTranslationId || selectedBibleTranslationId.value
     selectedBookId.value = localCache.selectedBookId || selectedBookId.value
     selectedChapterNumber.value = localCache.selectedChapter || selectedChapterNumber.value
+  }
+
+  if (vs && ve) {
+    shouldHighlight = true
+    highlightRange = [parseInt(vs), ve ? parseInt(ve) : parseInt(vs)]
   }
 
   availableBooks.value = await getBooks()
@@ -221,15 +235,24 @@ const onSelectedBibleTranslationIdChanged = async (evt: any) => {
   font-style: italic;
 }
 
-.verse-highlight {}
+.verse {
+  scroll-margin-top: 128px;
+}
+
+.verse-highlight {
+  animation-name: highlightFade;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  background-color: rgba(255, 255, 0, .4)
+}
 
 @keyframes highlightFade {
   from {
-    background-color: red;
+    background-color: rgba(255, 255, 0, 1)
   }
 
   to {
-    background-color: yellow;
+    background-color: rgba(255, 255, 0, .2)
   }
 }
 </style>
