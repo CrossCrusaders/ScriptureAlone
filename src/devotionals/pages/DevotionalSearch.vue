@@ -90,6 +90,44 @@
             </AppButton>
           </a>
         </div>
+
+
+        <div v-for="(devotional, index) in devotionalsTitle" :key="index"
+          class="flex flex-col bg-slate-200 rounded-2xl p-6">
+          <h3 class="text-slate-900 text-xl font-title font-bold mb-0">
+            {{ devotional.title }}
+          </h3>
+          <p class="text-slate-700 text-sm font-body mb-2">
+            {{ devotional.author.firstName }}&nbsp;{{
+            devotional.author.lastName
+            }}
+          </p>
+          <p class="text-slate-700 text-md font-body mb-3 break-words">
+            {{ devotional.description }}
+          </p>
+
+          <p class="text-slate-600 text-md text-sm font-body mb-0" style="word-wrap: break-word">
+            <b>Tags: </b>
+            <a v-for="(category, innerIndex) in devotional.categories">
+              <a v-if="
+                devotional.categories != undefined &&
+                category !=
+                  devotional.categories[devotional.categories.length - 1]
+              ">{{ category.label }},&nbsp;</a>
+              <a v-else>{{ category.label }}&nbsp;</a>
+            </a>
+          </p>
+          <p v-if="devotional.duration" class="text-slate-600 text-md font-body text-sm mb-3">
+            Duration:
+            {{ formatMillisecondsAsReadableDuration(devotional.duration) }}
+          </p>
+          <div class="flex-auto h-8"></div>
+          <a :href="'/devotionals/' + devotional.id" class="w-full block">
+            <AppButton variant="primary" class="w-full">
+              View Devotional
+            </AppButton>
+          </a>
+        </div>
       </div>
 
       <!-- My Plans -->
@@ -116,10 +154,13 @@ const loading = true;
 
 const categories = ref<any>([]);
 
-const devotionals = ref<any>([]);
+const devotionalsTag = ref<any>([]);
+const devotionalsTitle = ref<any>([]);
 
 const page = ref(1);
 const countPerPage = 8;
+// TODO: Kenyon remove this I added for a qucik fix
+const devotionals: any = []
 
 onMounted(async () => {
   var Filter = document.getElementById("filter") as any;
@@ -134,14 +175,22 @@ onMounted(async () => {
   }
   const categoriesPromise = getDevotionalCategories();
 
-  const [searchedDevotionals, devotionalCategories] =
-    await Promise.all([
-      searchedDevotionalsPromise,
-      categoriesPromise,
-    ]);
+  // TODO: Kenyon fix
+  // const [searchedDevotionalsTag, searchedDevotionalsTitle, devotionalCategories] =
+  //   await Promise.all([
+  //     searchedDevotionalsTagPromise,
+  //     searchedDevotionalsTitlePromise,
+  //     categoriesPromise,
+  //   ]);
 
-  categories.value = devotionalCategories.items;
-  devotionals.value = searchedDevotionals;
+  // categories.value = devotionalCategories.items;
+  // devotionalsTag.value = searchedDevotionalsTag;
+  // devotionalsTitle.value = searchedDevotionalsTitle;
+
+  // console.log("Devo Tag : ")
+  // console.log(devotionalsTag)
+  // console.log("Devo Title :")
+  // console.log(devotionalsTitle)
 });
 </script>
 
