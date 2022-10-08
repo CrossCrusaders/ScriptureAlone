@@ -1,5 +1,5 @@
 import { Author, transformAuthorResponse } from "../authors/Author"
-import { getBucketUrl } from "../core/services/BucketStorageService"
+import { getBucketUrl } from "../api/BucketStorageService"
 
 export interface Category {
   created: Date,

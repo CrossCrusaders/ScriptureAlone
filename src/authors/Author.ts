@@ -1,5 +1,5 @@
 import { Church } from "../church/Church";
-import { getBucketUrl } from "../core/services/BucketStorageService";
+import { getBucketUrl } from "../api/BucketStorageService";
 
 export interface Author {
   id: string

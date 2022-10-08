@@ -7,7 +7,9 @@
         class="font-bold font-title text-3xl md:text-5xl lg:text-6xl mb-2 bg-gradient-to-r from-[#1e293b] to-[#57687f] text-transparent bg-clip-text">
         Scripture Alone</h1>
       <p class="font-body text-lg mb-2">Sound Doctrine Guaranteed</p>
-      <AppInput v-model="searchModel" class="w-80" placeholder="Search The Scripture"></AppInput>
+      <form @submit="handleSearchSubmit($event)">
+        <AppInput v-model="searchModel" class="w-80" placeholder="Search The Scripture"></AppInput>
+      </form>
     </div>
 
     <!-- Calls To Action -->
@@ -79,6 +81,7 @@ import ContentCarousel from '../../components/molecules/ContentCarousel.vue'
 import { useBreakpoint } from '../../browser/ViewportService'
 import { getVerseOfTheDay } from '../../bible/services/BibleService'
 import Icon from '../../components/atoms/Icon.vue'
+import { useRouter } from 'vue-router'
 
 const verseName = ref("")
 const verseText = ref("")
@@ -152,6 +155,17 @@ const sermonSlides = [
 ]
 
 const { breakpoint } = useBreakpoint()
+
+const router = useRouter()
+
+const handleSearchSubmit = async (event: Event) => {
+  event.preventDefault()
+
+  if (searchModel.value && searchModel.value.length) {
+    router.push(`/bible/search?q=${encodeURI(searchModel.value.substring(0, 255))}`)
+  }
+
+}
 </script>
 
 <style>

@@ -57,7 +57,7 @@ import {
 } from '../../bible/services/BibleService'
 import { BibleChapter } from '../../bible/BibleChapter'
 import { computed, reactive } from '@vue/reactivity'
-import { setLocalCacheItem, getLocalCacheItem } from '../../core/services/LocalStorageService'
+import { setLocalCacheItem, getLocalCacheItem } from '../../cache/services/LocalStorageService'
 import Icon from '../../components/atoms/Icon.vue'
 import AppButton from '../../components/atoms/form-controls/AppButton.vue'
 import { BibleBook } from '../BibleBook'

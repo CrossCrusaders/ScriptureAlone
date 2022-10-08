@@ -13,7 +13,7 @@
 
 <script setup lang="ts">
 import { inject, onMounted, reactive, ref } from 'vue'
-import { animationFramePromise, defaultAnimationBezier, timeoutPromise } from '../../../core/services/AnimationService';
+import { animationFramePromise, defaultAnimationBezier, timeoutPromise } from '../../../animations/services/AnimationService';
 import { AccordionService } from './AccordionService'
 
 

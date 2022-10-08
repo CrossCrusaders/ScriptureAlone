@@ -1,7 +1,8 @@
 //Home
-import Home from './core/pages/Home.vue'
+import Home from './home/pages/Home.vue'
 //Bible Reader
 import BibleReader from './bible/pages/BibleReader.vue'
+import BibleSearch from './bible/pages/BibleSearch.vue'
 //Account Management
 import LogIn from './auth/pages/LogIn.vue'
 import Register from './auth/pages/Register.vue'
@@ -21,11 +22,12 @@ import UserDashboard from './user/pages/UserDashboard.vue'
 import ComponentTestPage from './test/ComponentTestPage.vue'
 
 import * as VueRouter from 'vue-router'
-import Config from './core/services/ConfigService'
+import Config from './config/services/ConfigService'
 
 const routes = [
   { path: '/', component: Home },
   { path: '/bible', component: BibleReader },
+  { path: '/bible/search', component: BibleSearch },
 
   { path: '/dashboard', component: UserDashboard },
 

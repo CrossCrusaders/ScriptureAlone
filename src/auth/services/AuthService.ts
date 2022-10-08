@@ -1,6 +1,6 @@
 import { ref } from "vue"
 import PocketBaseClient from "../../api/PocketBaseClient"
-import { setLocalCacheItem } from "../../core/services/LocalStorageService"
+import { setLocalCacheItem } from "../../cache/services/LocalStorageService"
 import { User } from "../User"
 
 // Global State

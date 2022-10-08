@@ -1,5 +1,5 @@
 import { User } from "../../auth/User";
-import { getBucketUrl } from "../../core/services/BucketStorageService";
+import { getBucketUrl } from "../../api/BucketStorageService";
 
 export async function getUser() {
 

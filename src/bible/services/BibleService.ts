@@ -1,7 +1,7 @@
 
 import PocketBaseClient from '../../api/PocketBaseClient'
-import Config from '../../core/services/ConfigService'
-import { getLocalCacheItem, getSessionCacheItem, setLocalCacheItem, setSessionCacheItem } from '../../core/services/LocalStorageService'
+import Config from '../../config/services/ConfigService'
+import { getLocalCacheItem, getSessionCacheItem, setLocalCacheItem, setSessionCacheItem } from '../../cache/services/LocalStorageService'
 import { BibleBook } from '../BibleBook'
 import { BibleChapter } from '../BibleChapter'
 import { BibleVerse } from '../BibleVerse'
@@ -190,4 +190,15 @@ export async function getPreviousChapterBySequenceNumber(sequenceNumber: number)
 
 export async function getNextChapterBySequenceNumber(sequenceNumber: number) {
 	return bibleCacheMonad(() => _getNextChapterBySequenceNumber(sequenceNumber))
+}
+
+
+export async function searchBible(bibleId: string, query: string, page: number, perPage: number) {
+
+	const url = `https://${Config.bibleApiUrl}bible-brain/search?query=${encodeURI(query)}&fileset_id=${bibleId}&limit=${perPage}&page=${page}&v=4`
+
+	const searchResponse = await fetch(url)
+	const searchResults = await searchResponse.json()
+
+	debugger
 }

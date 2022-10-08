@@ -1,6 +1,6 @@
 
 import PocketBase from 'pocketbase'
-import Config from '../core/services/ConfigService'
+import Config from '../config/services/ConfigService'
 
 const PocketBaseClient = new PocketBase(Config.pocketBaseApiUrl)
 
