@@ -1,8 +1,6 @@
 <template>
   <AppLayout>
     <PageContent class="p-2">
-
-
       <h1 class="text-2xl mb-4 font-title font-bold text-slate-700">Bible Search Results</h1>
       <Spinner color="slate-800" v-if="pageLoading"></Spinner>
       <div v-else>

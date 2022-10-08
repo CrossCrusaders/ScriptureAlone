@@ -69,6 +69,8 @@ export interface BiblePageQueryParams {
   t?: string //translations
   c?: string //chapter
   b?: string // book
+  vs?: string // verse-start
+  ve?: string //verse-end
 }
 export interface LocalBibleSelectionCache {
   selectedBookId: string
@@ -88,6 +90,9 @@ const selectedChapterNumber = ref(1)
 
 const loadedChapterContent = ref('')
 
+let shouldHighlight = false
+let highlightRange: number[] = []
+
 const router = useRouter()
 const route = useRoute()
 
@@ -102,6 +107,11 @@ const selectedChapter = computed(() => {
 const loadChapterContent = async () => {
   const response = await getVerses(selectedBibleTranslationId.value, selectedBookId.value, selectedChapterNumber.value)
   const chapterText = response.reduce((aggregate, verse) => {
+    let verseCssClass = 'verse'
+
+    if (shouldHighlight && highlightRange.length && verse.verse_start >= highlightRange[0] && verse.verse_start <= highlightRange[1]) {
+
+    }
     return aggregate + `<p class="verse"><span class="verse-number">${verse.verse_start_alt}</span> <span class="verse-text">${verse.verse_text}</span></p> `
   }, "")
   loadedChapterContent.value = chapterText
@@ -112,7 +122,7 @@ const loadChapterContent = async () => {
     selectedChapter: selectedChapterNumber.value || 1
   })
 
-  router.replace({ path: '/bible', query: { t: selectedBibleTranslationId.value, b: selectedBookId.value, c: selectedChapterNumber.value } })
+  router.replace({ path: '/bible', query: { ...route.query, t: selectedBibleTranslationId.value, b: selectedBookId.value, c: selectedChapterNumber.value } })
 
   window.scrollTo({ top: 0 })
 }
@@ -120,7 +130,7 @@ const loadChapterContent = async () => {
 
 
 onMounted(async () => {
-  const { t, b, c } = route.query as BiblePageQueryParams
+  const { t, b, c, vs, ve } = route.query as BiblePageQueryParams
   const localCache: LocalBibleSelectionCache | null = await getLocalCacheItem(localCacheKeyLastLoadedChapter)
 
   if (t && b && c) {
@@ -209,5 +219,17 @@ const onSelectedBibleTranslationIdChanged = async (evt: any) => {
 .bible-reader-content .verse .verse-number {
   font-weight: 500;
   font-style: italic;
+}
+
+.verse-highlight {}
+
+@keyframes highlightFade {
+  from {
+    background-color: red;
+  }
+
+  to {
+    background-color: yellow;
+  }
 }
 </style>

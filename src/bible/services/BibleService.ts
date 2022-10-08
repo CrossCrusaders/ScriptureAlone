@@ -171,6 +171,13 @@ async function _getNextChapterBySequenceNumber(sequenceNumber: number) {
 	return _getChapterBySequenceNumber(sequenceNumber)
 }
 
+async function _getBookIdBySearchTerm(term: string) {
+	return bibleBookLookupCache!.find(book => {
+		const matchingTerm = book.searchTerms.find(bookTerm => bookTerm.toLowerCase().trim() == term.toLowerCase().trim())
+		return !!matchingTerm
+	})
+}
+
 export async function getChaptersByBookId(bookId: string) {
 	return bibleCacheMonad(() => _getChaptersByBookId(bookId))
 }
@@ -226,9 +233,39 @@ export function getReferenceFromVerse(verse: BibleVerse) {
 	return reference
 }
 
+export async function getBookIdBySearchTerm(term: string) {
+	return bibleCacheMonad(() => _getBookIdBySearchTerm(term))
+}
 
-const bibleReferenceRegex = /(\d*)\s*([a-z]+)\s*(\d+)(?::(\d+))?(\s*-\s*(\d+)(?:\s*([a-z]+)\s*(\d+))?(?::(\d+))?)?/ig
-export function isBibleReference(query: string) {
+const bibleReferenceRegex = /(\d*)\s*([a-z]+)\s*(\d+)(?::(\d+))?(\s*-\s*(\d+)(?:\s*([a-z]+)\s*(\d+))?(?::(\d+))?)?/i
+export async function isBibleReference(query: string) {
 	const tokens = bibleReferenceRegex.exec(query)
-	debugger
+	if (!tokens)
+		return false
+
+	let [fullQuery,
+		numericModifier,
+		bookName,
+		chapter,
+		startVerse,
+		dashedEndverse,
+		endVerse
+	] = tokens
+
+	let bookSearchTerm = `${numericModifier ? numericModifier + ' ' : ''}${bookName}`
+
+	const book: BibleBookLookup = await getBookIdBySearchTerm(bookSearchTerm)
+	if (!book)
+		return null
+
+	const bibleVerseRef: BibleVerse = {
+		book_id: book.bookId,
+		book_name: book.name,
+		chapter: parseInt(chapter, 10),
+		verse_start: parseInt(startVerse),
+		verse_end: parseInt(endVerse || startVerse),
+		verse_text: ''
+	}
+	return bibleVerseRef
+
 }

@@ -79,7 +79,7 @@ import { ref, onMounted } from 'vue'
 import Divider from '../../components/atoms/Divider.vue'
 import ContentCarousel from '../../components/molecules/ContentCarousel.vue'
 import { useBreakpoint } from '../../browser/ViewportService'
-import { getVerseOfTheDay } from '../../bible/services/BibleService'
+import { getVerseOfTheDay, isBibleReference } from '../../bible/services/BibleService'
 import Icon from '../../components/atoms/Icon.vue'
 import { useRouter } from 'vue-router'
 
@@ -99,8 +99,6 @@ const callToActionItemClass = ['cta-item border-slate-700', 'w-full', 'cursor-po
   'justify-center', 'text-4xl', 'font-bold', 'font-title', 'hover:bg-slate-800', 'hover:text-white', 'transition-all']
 
 const callToActionIconClass = 'cta-icon mb-2'
-
-
 
 const devotionalSlides = [
   {
@@ -160,9 +158,13 @@ const router = useRouter()
 
 const handleSearchSubmit = async (event: Event) => {
   event.preventDefault()
-
   if (searchModel.value && searchModel.value.length) {
-    router.push(`/bible/search?q=${encodeURI(searchModel.value.substring(0, 255))}`)
+    const result = await isBibleReference(searchModel.value)
+    if (result) {
+      return router.push(`/bible?t=ENGKJV&c=${result.chapter}&b=${result.book_id}&vs=${result.verse_start}&ve=${result.verse_end}`)
+    } else {
+      return router.push(`/bible/search?q=${encodeURI(searchModel.value.substring(0, 255))}`)
+    }
   }
 
 }
