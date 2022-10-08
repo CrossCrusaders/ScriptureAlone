@@ -1,0 +1,568 @@
+[
+  {
+    "bookId": "GEN",
+    "name": "Genesis",
+    "searchTerms": [
+      "gen",
+      "genesis"
+    ]
+  },
+  {
+    "bookId": "EXO",
+    "name": "Exodus",
+    "searchTerms": [
+      "exo",
+      "exodus"
+    ]
+  },
+  {
+    "bookId": "LEV",
+    "name": "Leviticus",
+    "searchTerms": [
+      "lev",
+      "leviticus"
+    ]
+  },
+  {
+    "bookId": "NUM",
+    "name": "Numbers",
+    "searchTerms": [
+      "num",
+      "numbers"
+    ]
+  },
+  {
+    "bookId": "DEU",
+    "name": "Deuteronomy",
+    "searchTerms": [
+      "deu",
+      "deuteronomy"
+    ]
+  },
+  {
+    "bookId": "JOS",
+    "name": "Joshua",
+    "searchTerms": [
+      "jos",
+      "jsh",
+      "josh",
+      "joshua"
+    ]
+  },
+  {
+    "bookId": "JDG",
+    "name": "Judges",
+    "searchTerms": [
+      "jdg",
+      "jdgs",
+      "judges"
+    ]
+  },
+  {
+    "bookId": "RUT",
+    "name": "Ruth",
+    "searchTerms": [
+      "ruth",
+      "rth"
+    ]
+  },
+  {
+    "bookId": "1SA",
+    "name": "1 Samuel",
+    "searchTerms": [
+      "1 sam",
+      "1 samuel",
+      "1sa"
+    ]
+  },
+  {
+    "bookId": "2SA",
+    "name": "2 Samuel",
+    "searchTerms": [
+      "2 sam",
+      "2 samuel",
+      "2sa"
+    ]
+  },
+  {
+    "bookId": "1KI",
+    "name": "1 Kings",
+    "searchTerms": [
+      "1 kings",
+      "1 king",
+      "1 ki",
+      "1ki"
+    ]
+  },
+  {
+    "bookId": "2KI",
+    "name": "2 Kings",
+    "searchTerms": [
+      "2 kings",
+      "2 king",
+      "2 ki",
+      "2ki"
+    ]
+  },
+  {
+    "bookId": "1CH",
+    "name": "1 Chronicles",
+    "searchTerms": [
+      "1 chronicles",
+      "1 chron",
+      "1 ch",
+      "1ch"
+    ]
+  },
+  {
+    "bookId": "2CH",
+    "name": "2 Chronicles",
+    "searchTerms": [
+      "2 chronicles",
+      "2 chron",
+      "2 ch",
+      "2ch"
+    ]
+  },
+  {
+    "bookId": "EZR",
+    "name": "Ezra",
+    "searchTerms": [
+      "ezra",
+      "ezr",
+      "ez"
+    ]
+  },
+  {
+    "bookId": "NEH",
+    "name": "Nehemiah",
+    "searchTerms": [
+      "nehemiah",
+      "neh"
+    ]
+  },
+  {
+    "bookId": "EST",
+    "name": "Esther",
+    "searchTerms": [
+      "esther",
+      "esth",
+      "est"
+    ]
+  },
+  {
+    "bookId": "JOB",
+    "name": "Job",
+    "searchTerms": [
+      "job"
+    ]
+  },
+  {
+    "bookId": "PSA",
+    "name": "Psalms",
+    "searchTerms": [
+      "psalms",
+      "psalm",
+      "psa"
+    ]
+  },
+  {
+    "bookId": "PRO",
+    "name": "Proverbs",
+    "searchTerms": [
+      "proverbs",
+      "proverb",
+      "pro"
+    ]
+  },
+  {
+    "bookId": "ECC",
+    "name": "Ecclesiastes",
+    "searchTerms": [
+      "ecclesiastes",
+      "ecc"
+    ]
+  },
+  {
+    "bookId": "SNG",
+    "name": "Song of Solomon",
+    "searchTerms": [
+      "song of solomon",
+      "song",
+      "sng",
+      "sos"
+    ]
+  },
+  {
+    "bookId": "ISA",
+    "name": "Isaiah",
+    "searchTerms": [
+      "isaiah",
+      "isa"
+    ]
+  },
+  {
+    "bookId": "JER",
+    "name": "Jeremiah",
+    "searchTerms": [
+      "jeremiah",
+      "jer"
+    ]
+  },
+  {
+    "bookId": "LAM",
+    "name": "Lamentations",
+    "searchTerms": [
+      "lamentations",
+      "lam"
+    ]
+  },
+  {
+    "bookId": "EZK",
+    "name": "Ezekiel",
+    "searchTerms": [
+      "ezekiel",
+      "ezk",
+      "eze"
+    ]
+  },
+  {
+    "bookId": "DAN",
+    "name": "Daniel",
+    "searchTerms": [
+      "daniel",
+      "dan"
+    ]
+  },
+  {
+    "bookId": "HOS",
+    "name": "Hosea",
+    "searchTerms": [
+      "hosea",
+      "hos"
+    ]
+  },
+  {
+    "bookId": "JOL",
+    "name": "Joel",
+    "searchTerms": [
+      "joel"
+    ]
+  },
+  {
+    "bookId": "AMO",
+    "name": "Amos",
+    "searchTerms": [
+      "amos"
+    ]
+  },
+  {
+    "bookId": "OBA",
+    "name": "Obadiah",
+    "searchTerms": [
+      "obadiah",
+      "oba"
+    ]
+  },
+  {
+    "bookId": "JON",
+    "name": "Jonah",
+    "searchTerms": [
+      "jonah",
+      "jon"
+    ]
+  },
+  {
+    "bookId": "MIC",
+    "name": "Micah",
+    "searchTerms": [
+      "micah",
+      "mic"
+    ]
+  },
+  {
+    "bookId": "NAM",
+    "name": "Nahum",
+    "searchTerms": [
+      "nahum",
+      "nah"
+    ]
+  },
+  {
+    "bookId": "HAB",
+    "name": "Habakkuk",
+    "searchTerms": [
+      "habakkuk",
+      "hab"
+    ]
+  },
+  {
+    "bookId": "ZEP",
+    "name": "Zephaniah",
+    "searchTerms": [
+      "zephaniah",
+      "zeph",
+      "zep"
+    ]
+  },
+  {
+    "bookId": "HAG",
+    "name": "Haggai",
+    "searchTerms": [
+      "haggai",
+      "hag"
+    ]
+  },
+  {
+    "bookId": "ZEC",
+    "name": "Zechariah",
+    "searchTerms": [
+      "zechariah",
+      "zech",
+      "zec"
+    ]
+  },
+  {
+    "bookId": "MAL",
+    "name": "Malachi",
+    "searchTerms": [
+      "malachi",
+      "mal"
+    ]
+  },
+  {
+    "bookId": "MAT",
+    "name": "Matthew",
+    "searchTerms": [
+      "matthew",
+      "matt",
+      "mat"
+    ]
+  },
+  {
+    "bookId": "MRK",
+    "name": "Mark",
+    "searchTerms": [
+      "mark",
+      "mar"
+    ]
+  },
+  {
+    "bookId": "LUK",
+    "name": "Luke",
+    "searchTerms": [
+      "luke",
+      "luk",
+      "lk"
+    ]
+  },
+  {
+    "bookId": "JHN",
+    "name": "John",
+    "searchTerms": [
+      "john",
+      "jhn",
+      "jn"
+    ]
+  },
+  {
+    "bookId": "ACT",
+    "name": "Acts",
+    "searchTerms": [
+      "acts",
+      "act"
+    ]
+  },
+  {
+    "bookId": "ROM",
+    "name": "Romans",
+    "searchTerms": [
+      "romans",
+      "rom"
+    ]
+  },
+  {
+    "bookId": "1CO",
+    "name": "1 Corinthians",
+    "searchTerms": [
+      "1 corinthians",
+      "1 cor",
+      "1cor"
+    ]
+  },
+  {
+    "bookId": "2CO",
+    "name": "2 Corinthians",
+    "searchTerms": [
+      "2 corinthians",
+      "2 cor",
+      "2cor"
+    ]
+  },
+  {
+    "bookId": "GAL",
+    "name": "Galatians",
+    "searchTerms": [
+      "galatians",
+      "gal"
+    ]
+  },
+  {
+    "bookId": "EPH",
+    "name": "Ephesians",
+    "searchTerms": [
+      "ephesians",
+      "eph"
+    ]
+  },
+  {
+    "bookId": "PHP",
+    "name": "Philippians",
+    "searchTerms": [
+      "philippians",
+      "phl"
+    ]
+  },
+  {
+    "bookId": "COL",
+    "name": "Colossians",
+    "searchTerms": [
+      "colossians",
+      "col"
+    ]
+  },
+  {
+    "bookId": "1TH",
+    "name": "1 Thessalonians",
+    "searchTerms": [
+      "1 thessalonians",
+      "1 thes",
+      "1thes",
+      "1th"
+    ]
+  },
+  {
+    "bookId": "2TH",
+    "name": "2 Thessalonians",
+    "searchTerms": [
+      "2 thessalonians",
+      "2 thes",
+      "2thes",
+      "2th"
+    ]
+  },
+  {
+    "bookId": "1TI",
+    "name": "1 Timothy",
+    "searchTerms": [
+      "1 timothy",
+      "1 tim",
+      "1tim",
+      "1ti"
+    ]
+  },
+  {
+    "bookId": "2TI",
+    "name": "2 Timothy",
+    "searchTerms": [
+      "2 timothy",
+      "2 tim",
+      "2tim",
+      "2ti"
+    ]
+  },
+  {
+    "bookId": "TIT",
+    "name": "Titus",
+    "searchTerms": [
+      "titus",
+      "tit"
+    ]
+  },
+  {
+    "bookId": "PHM",
+    "name": "Philemon",
+    "searchTerms": [
+      "philemon",
+      "phm"
+    ]
+  },
+  {
+    "bookId": "HEB",
+    "name": "Hebrews",
+    "searchTerms": [
+      "hebrews",
+      "heb"
+    ]
+  },
+  {
+    "bookId": "JAS",
+    "name": "James",
+    "searchTerms": [
+      "james",
+      "jas"
+    ]
+  },
+  {
+    "bookId": "1PE",
+    "name": "1 Peter",
+    "searchTerms": [
+      "1 peter",
+      "1 pet",
+      "1pe"
+    ]
+  },
+  {
+    "bookId": "2PE",
+    "name": "2 Peter",
+    "searchTerms": [
+      "2 peter",
+      "2 pet",
+      "2pe"
+    ]
+  },
+  {
+    "bookId": "1JN",
+    "name": "1 John",
+    "searchTerms": [
+      "1 john",
+      "1 jhn",
+      "1jn"
+    ]
+  },
+  {
+    "bookId": "2JN",
+    "name": "2 John",
+    "searchTerms": [
+      "2 john",
+      "2 jhn",
+      "2jn"
+    ]
+  },
+  {
+    "bookId": "3JN",
+    "name": "3 John",
+    "searchTerms": [
+      "3 john",
+      "3 jhn",
+      "3jn"
+    ]
+  },
+  {
+    "bookId": "JUD",
+    "name": "Jude",
+    "searchTerms": [
+      "jude",
+      "jud"
+    ]
+  },
+  {
+    "bookId": "REV",
+    "name": "Revelation",
+    "searchTerms": [
+      "revelation",
+      "rev",
+      "revelations"
+    ]
+  }
+]

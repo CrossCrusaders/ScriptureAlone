@@ -2,7 +2,7 @@
 import PocketBaseClient from '../../api/PocketBaseClient'
 import Config from '../../config/services/ConfigService'
 import { getLocalCacheItem, getSessionCacheItem, setLocalCacheItem, setSessionCacheItem } from '../../cache/services/LocalStorageService'
-import { BibleBook } from '../BibleBook'
+import { BibleBook, BibleBookLookup } from '../BibleBook'
 import { BibleChapter } from '../BibleChapter'
 import { BibleVerse } from '../BibleVerse'
 
@@ -16,6 +16,7 @@ let cacheLoaded = false
 let bibleChaptersCache: BibleChapter[] | null = null
 let bibleBooksCache: BibleBook[] | null = null
 let bibleTranslationsCache: any[] | null = null
+let bibleBookLookupCache: BibleBookLookup[] | null = null
 
 function getDayOfTheYear() {
 	var now = new Date();
@@ -107,8 +108,10 @@ export async function getVerses(bibleId: string, book: string, chapter: number, 
 async function loadBibleData() {
 	const BibleTranslations = await import(`../../assets/bible/translations.json`)
 	const BibleBookChapters = await import(`../../assets/bible/bible-books.json`)
+	const BibleBookLookup = await import('../../assets/bible/bible-book-lookup.json')
 	bibleTranslationsCache = BibleTranslations.default
 	bibleChaptersCache = BibleBookChapters.default
+	bibleBookLookupCache = BibleBookLookup.default
 
 	// Map the chapters to the unique books of the bible
 	// for selection purposes
@@ -221,4 +224,11 @@ export function getReferenceFromVerse(verse: BibleVerse) {
 	if (verse.verse_start != verse.verse_end)
 		reference += `-${verse.verse_end}`
 	return reference
+}
+
+
+const bibleReferenceRegex = /(\d*)\s*([a-z]+)\s*(\d+)(?::(\d+))?(\s*-\s*(\d+)(?:\s*([a-z]+)\s*(\d+))?(?::(\d+))?)?/ig
+export function isBibleReference(query: string) {
+	const tokens = bibleReferenceRegex.exec(query)
+	debugger
 }
