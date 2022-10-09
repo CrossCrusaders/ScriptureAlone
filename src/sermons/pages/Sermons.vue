@@ -33,7 +33,8 @@
           <p class="text-slate-700 text-sm font-body mb-2">{{ sermon.author.firstName }}&nbsp;{{ sermon.author.lastName
           }}
           </p>
-          <p class="text-slate-700 text-md font-body mb-3 break-words">{{ formatDescription(sermon.description) }}</p>
+          <p class="text-slate-700 text-md font-body mb-3 break-words">{{ formatMaxLengthText(sermon.description, 64) }}
+          </p>
           <p class="text-slate-600 text-md text-sm font-body mb-0">
             Tags:
             <span v-for="(category, innerIndex) in sermon.categories">
@@ -69,7 +70,7 @@ import { onMounted, reactive, ref } from 'vue'
 import Icon from '../../components/atoms/Icon.vue'
 import Divider from '../../components/atoms/Divider.vue'
 import { getFeaturedSermon, getRecentSermons, getSermonCategories } from '../../sermons/services/SermonService'
-import { formatMillisecondsAsReadableDuration } from '../../core/services/FormatService'
+import { formatMillisecondsAsReadableDuration, formatMaxLengthText } from '../../core/services/FormatService'
 import PageHero from '../../components/molecules/PageHero.vue'
 
 
@@ -101,13 +102,6 @@ onMounted(async () => {
   categories.value = sermonCategories.items
   sermons.value = recentSermons
 })
-
-const formatDescription = (description: string) => {
-  const maxLen = 64
-  if (description.length < maxLen)
-    return description
-  return description.substring(0, maxLen - 3) + '...'
-}
 
 </script>
 

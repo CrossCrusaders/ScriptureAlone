@@ -49,3 +49,9 @@ export const formatAddress = (addr: Address) => {
 
   return addressString
 }
+
+export const formatMaxLengthText = (text: string, maxLength: number) => {
+  if (text.length < maxLength)
+    return text
+  return text.substring(0, maxLength - 3) + '...'
+}

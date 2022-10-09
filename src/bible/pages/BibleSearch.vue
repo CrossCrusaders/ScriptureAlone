@@ -1,23 +1,50 @@
 <template>
   <AppLayout>
-    <div class=" mb-4 sticky top-0 bg-slate-100 px-2 py-4">
-      <PageContent class=" flex flex-row gap-4 items-center ">
-        <h1 class="text-lg md:text-2xl font-title text-slate-700">Search Results For: <strong>{{ currentQuery
-        }}</strong>
-        </h1>
-        <BibleTranslationSelect v-model="currentBibleId"></BibleTranslationSelect>
+    <div class=" mb-4 sticky top-0 bg-slate-100 px-2 py-2 md:py-4">
+      <PageContent>
+        <div class="flex flex-row gap-4 items-center flex-wrap">
+          <div class="truncate flex flex-row gap-4 items-center">
+            <RouterLink to="/">
+              <Icon class="min-w-fit" icon-name="arrow-left"></Icon>
+            </RouterLink>
+            <h1 class=" truncate text-lg md:text-2xl font-title text-slate-700">
+              Search Results: <strong :title="currentQuery">{{
+              currentQuery
+              }}</strong>
+            </h1>
+          </div>
+          <BibleTranslationSelect v-model="currentBibleId"></BibleTranslationSelect>
+          <p class="flex-auto"></p>
+          <p class="text-sm sm:text-md">Page
+            <AppSelect v-model="currentPage">
+              <option v-for="index in currentBibleSearchMeta?.pagination?.total_pages" :key="index">{{ index }}</option>
+            </AppSelect> of {{ currentBibleSearchMeta?.pagination?.total_pages }}
+          </p>
+        </div>
       </PageContent>
     </div>
     <PageContent class="p-2">
 
       <Spinner color="slate-800" class="mx-auto mt-8" v-if="pageLoading"></Spinner>
-      <div v-else>
-        <div class="p-4 px-4 cursor-pointer border-b-solid hover:bg-slate-200 rounded transition-all max-w-prose"
+      <div v-else class="max-w-prose">
+        <div class="p-4 px-4 cursor-pointer border-b-solid hover:bg-slate-200 rounded transition-all"
           v-for="verse of currentBibleSearchData" :key="getReferenceFromVerse(verse)" @click="onVerseClicked(verse)">
           <h3 class="mb-1 text-lg font-title font-semibold">{{ getReferenceFromVerse(verse) }}</h3>
           <span v-html="formatVerseSearchResultText(verse)"></span>
         </div>
+
+        <div class="flex flex-row justify-between">
+          <span>
+            <a v-if="currentPage != 1" class="py-4 block cursor-pointer underline text-red-700"
+              @click="onPreviousPageClicked">Previous Page</a>
+          </span>
+          <span>
+            <a v-if="currentPage != currentBibleSearchMeta?.pagination?.total_pages"
+              class="py-4 block cursor-pointer underline text-red-700" @click="onNextPageClicked">Next Page</a>
+          </span>
+        </div>
       </div>
+
     </PageContent>
   </AppLayout>
 </template>
@@ -47,11 +74,16 @@ import {
 import Spinner from '../../components/atoms/Spinner.vue';
 import BibleTranslationSelect from '../../components/organisms/BibleTranslationSelect.vue';
 import { BiblePageQueryParams } from './BibleReader.vue';
+import AppSelect from '../../components/atoms/form-controls/AppSelect.vue';
+import { formatMaxLengthText } from '../../core/services/FormatService';
+import Icon from '../../components/atoms/Icon.vue';
+
+
 
 interface BibleSearchQueryParams {
   q: string
   bibleId?: string
-  page?: number
+  page?: number | string
 }
 
 const resultsPerPage = 25
@@ -93,7 +125,7 @@ onMounted(async () => {
     page = 1
 
   currentQuery.value = q
-  currentPage.value = page
+  currentPage.value = parseInt(page as string)
   currentBibleId.value = bibleId
 
 
@@ -144,5 +176,13 @@ const onVerseClicked = (verse: BibleVerse) => {
       ve: verse.verse_end
     }
   })
+}
+
+const onPreviousPageClicked = () => {
+  currentPage.value -= 1
+}
+
+const onNextPageClicked = () => {
+  currentPage.value += 1
 }
 </script>
