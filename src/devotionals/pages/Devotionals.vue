@@ -2,28 +2,20 @@
   <AppLayout>
     <PageContent>
       <!-- Devotionals Hero -->
-      <div
-        class="rounded-xl bg-slate-200 px-6 py-12 md:py-16 items-center mb-16 md:mt-8"
-      >
+      <div class="rounded-xl bg-slate-200 px-6 py-12 md:py-16 items-center mb-16 md:mt-8">
         <!-- Inner flex parent -->
         <div class="flex flex-col md:flex-row gap-4">
-          <img
-            src="/logo-bible.png"
-            class="object-contain hidden md:block max-h-32"
-          />
+          <img src="/logo-bible.png" class="object-contain hidden md:block max-h-32" />
           <div class="mb-4 md:mb-0">
             <h2 class="text-4xl font-bold mb-2 text-slate-900">Featured</h2>
             <p class="text-slate-600">
-              Devo description here. ihdshfskhdgkjhduighaehguiwheiu
-              uewhguihriguse njng srnjgnsinguidsghen uhcvnsdndv jsvn jvdjn sdjn
-              vdnjbjndjnsnj
+              Devo description here. ihdshfskhdgkjhduighaehguiwheiu uewhguihriguse njng
+              srnjgnsinguidsghen uhcvnsdndv jsvn jvdjn sdjn vdnjbjndjnsnj
             </p>
           </div>
           <div class="flex flex-col gap-2 justify-center">
             <AppButton>Watch Now</AppButton>
-            <AppButton variant="primary-outline"
-              >View All Devotionals</AppButton
-            >
+            <AppButton variant="primary-outline">View All Devotionals</AppButton>
           </div>
         </div>
       </div>
@@ -44,9 +36,7 @@
       </div>
 
       <div class="flex justify-center">
-        <div
-          class="outline outline-2 outline-slate-300 bg-slate-200 rounded-full p-4"
-        >
+        <div class="outline outline-2 outline-slate-300 bg-slate-200 rounded-full p-4">
           <input
             type="text"
             placeholder="Search for devotionals"
@@ -72,9 +62,7 @@
             {{ devotional.title }}
           </h3>
           <p class="text-slate-700 text-sm font-body mb-2">
-            {{ devotional.author.firstName }}&nbsp;{{
-              devotional.author.lastName
-            }}
+            {{ devotional.author.firstName }}&nbsp;{{ devotional.author.lastName }}
           </p>
           <p class="text-slate-700 text-md font-body mb-3 break-words">
             {{ devotional.description }}
@@ -89,8 +77,7 @@
               <a
                 v-if="
                   devotional.categories != undefined &&
-                  category !=
-                    devotional.categories[devotional.categories.length - 1]
+                  category != devotional.categories[devotional.categories.length - 1]
                 "
                 >{{ category.label }},&nbsp;</a
               >
@@ -106,9 +93,7 @@
           </p>
           <div class="flex-auto h-8"></div>
           <a :href="'/devotionals/' + devotional.id" class="w-full block">
-            <AppButton variant="primary" class="w-full">
-              View Devotional
-            </AppButton>
+            <AppButton variant="primary" class="w-full"> View Devotional </AppButton>
           </a>
         </div>
       </div>
@@ -144,18 +129,18 @@ const countPerPage = 8;
 
 onMounted(async () => {
   const featuredDevotionalPromise = getFeaturedDevotional();
-  const recentDevotionalsPromise = getRecentDevotionals(
-    page.value,
-    countPerPage
-  );
+  const recentDevotionalsPromise = getRecentDevotionals(page.value, countPerPage);
   const categoriesPromise = getDevotionalCategories();
 
-  const [featuredDevotional, recentDevotionals, devotionalCategories] =
-    await Promise.all([
-      featuredDevotionalPromise,
-      recentDevotionalsPromise,
-      categoriesPromise,
-    ]);
+  const [
+    featuredDevotional,
+    recentDevotionals,
+    devotionalCategories,
+  ] = await Promise.all([
+    featuredDevotionalPromise,
+    recentDevotionalsPromise,
+    categoriesPromise,
+  ]);
 
   categories.value = devotionalCategories.items;
   devotionals.value = recentDevotionals;
