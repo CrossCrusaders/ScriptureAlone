@@ -1,16 +1,21 @@
 <template>
   <AppLayout>
-    <PageContent class="p-2">
-      <div class=" flex flex-col md:flex-row gap-2 justify-between">
-        <h1 class="text-2xl mb-4 font-title text-slate-700">Search Results For: <strong>{{ currentQuery
+    <div class=" mb-4 sticky top-0 bg-slate-100 px-2 py-4">
+      <PageContent class=" flex flex-row gap-4 items-center ">
+        <h1 class="text-lg md:text-2xl font-title text-slate-700">Search Results For: <strong>{{ currentQuery
         }}</strong>
-          <select></select>
         </h1>
-      </div>
-      <Spinner color="slate-800" v-if="pageLoading"></Spinner>
+        <BibleTranslationSelect v-model="currentBibleId"></BibleTranslationSelect>
+      </PageContent>
+    </div>
+    <PageContent class="p-2">
+
+      <Spinner color="slate-800" class="mx-auto mt-8" v-if="pageLoading"></Spinner>
       <div v-else>
-        <div class="p-4 px-4" v-for="verse of currentBibleSearchData" :key="getReferenceFromVerse(verse)">
-          <span class="">{{ getReferenceFromVerse(verse) }}</span> - <span>{{ verse.verse_text }}</span>
+        <div class="p-4 px-4 cursor-pointer border-b-solid hover:bg-slate-200 rounded transition-all max-w-prose"
+          v-for="verse of currentBibleSearchData" :key="getReferenceFromVerse(verse)" @click="onVerseClicked(verse)">
+          <h3 class="mb-1 text-lg font-title font-semibold">{{ getReferenceFromVerse(verse) }}</h3>
+          <span v-html="formatVerseSearchResultText(verse)"></span>
         </div>
       </div>
     </PageContent>
@@ -18,11 +23,16 @@
 </template>
 
 <script setup lang="ts">
-import { onMounted, ref } from 'vue';
+/**
+ * TODO: implement last 5 search result page caching or something
+ * similar so that if the user hits back a few times it will cache
+ * the result
+ */
+import { onMounted, ref, watch } from 'vue';
 import { useRoute, useRouter } from 'vue-router';
 import AppLayout from '../../components/templates/AppLayout.vue'
 import PageContent from '../../components/templates/PageContent.vue'
-import { getUserSetting, setUserSetting } from '../../user/services/LocalUserSettingsService'
+import { getUserSetting, setUserSetting, setUserSettings } from '../../user/services/LocalUserSettingsService'
 import { BibleBook } from '../BibleBook';
 import { BibleTranslation } from '../BibleTranslation';
 import { BibleVerse } from '../BibleVerse';
@@ -35,6 +45,8 @@ import {
   getReferenceFromVerse
 } from '../services/BibleService';
 import Spinner from '../../components/atoms/Spinner.vue';
+import BibleTranslationSelect from '../../components/organisms/BibleTranslationSelect.vue';
+import { BiblePageQueryParams } from './BibleReader.vue';
 
 interface BibleSearchQueryParams {
   q: string
@@ -57,8 +69,6 @@ const availableBooks = ref<BibleBook[]>([])
 const availableTranslations = ref<BibleTranslation[]>([])
 
 const pageLoading = ref(true)
-
-
 
 onMounted(async () => {
 
@@ -86,18 +96,53 @@ onMounted(async () => {
   currentPage.value = page
   currentBibleId.value = bibleId
 
-  router.replace({ path: '/bible/search', query: { q: currentQuery.value, bibleId: currentBibleId.value, page: currentPage.value } })
 
-  const [books, translations, bibleSearch] = await Promise.all([getBooks(), getTranslations(), searchBible(currentBibleId.value, currentQuery.value, currentPage.value, resultsPerPage)])
+
+  const [books, translations, _] = await Promise.all([getBooks(), getTranslations(), search()])
 
   availableBooks.value = books
   availableTranslations.value = translations
-  const { data, meta } = bibleSearch
-
-  currentBibleSearchData.value = data
-  currentBibleSearchMeta.value = meta
 
   pageLoading.value = false
 
+  watch([currentBibleId, currentPage, currentQuery], ([newBibleId], [oldBibleId]) => {
+    search()
+    if (newBibleId !== oldBibleId) {
+      setUserSettings({ lastSearchedBibleId: newBibleId })
+    }
+  })
 })
+
+const search = async () => {
+  pageLoading.value = true
+  try {
+    router.replace({ path: '/bible/search', query: { q: currentQuery.value, bibleId: currentBibleId.value, page: currentPage.value } })
+    const { data, meta } = await searchBible(currentBibleId.value, currentQuery.value, currentPage.value, resultsPerPage)
+
+    currentBibleSearchData.value = data
+    currentBibleSearchMeta.value = meta
+  }
+  finally {
+    pageLoading.value = false
+  }
+}
+
+const formatVerseSearchResultText = (verse: BibleVerse) => {
+  // TODO: when we implement our own search API we can tokenize searching with \b
+  // const verseText = verse.verse_text.replace(new RegExp('\\b(' + currentQuery.value + ')\\b', 'ig'), `<strong>$1</strong>`)
+  const verseText = verse.verse_text.replace(new RegExp('(' + currentQuery.value + ')', 'ig'), `<strong>$1</strong>`)
+  // return `<span>${getReferenceFromVerse(verse)}</span> - <span>${verseText}</span>` // INLINE REFERENCE FORMAT
+  return `<span>${verseText}</span>` // TEXT ONLY FORMAT
+}
+const onVerseClicked = (verse: BibleVerse) => {
+  router.push({
+    path: '/bible', query: {
+      t: currentBibleId.value,
+      b: verse.book_id,
+      c: verse.chapter,
+      vs: verse.verse_start,
+      ve: verse.verse_end
+    }
+  })
+}
 </script>

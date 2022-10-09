@@ -8,5 +8,15 @@
     "id": "ENGESV",
     "name": "English Standard Version",
     "abbreviation": "ESV"
+  },
+  {
+    "id": "ENGNAS",
+    "name": "New American Standard Bible",
+    "abbreviation": "NASB"
+  },
+  {
+    "id": "ENGNKJV",
+    "name": "New King James Version",
+    "abbreviation": "NKJV"
   }
 ]
