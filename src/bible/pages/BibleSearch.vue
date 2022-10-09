@@ -153,6 +153,7 @@ const search = async () => {
 
     currentBibleSearchData.value = data
     currentBibleSearchMeta.value = meta
+    window.scrollTo({ top: 0 })
   }
   finally {
     pageLoading.value = false
