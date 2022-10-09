@@ -1,7 +1,12 @@
 <template>
   <AppLayout>
     <PageContent class="p-2">
-      <h1 class="text-2xl mb-4 font-title font-bold text-slate-700">Bible Search Results</h1>
+      <div class=" flex flex-col md:flex-row gap-2 justify-between">
+        <h1 class="text-2xl mb-4 font-title text-slate-700">Search Results For: <strong>{{ currentQuery
+        }}</strong>
+          <select></select>
+        </h1>
+      </div>
       <Spinner color="slate-800" v-if="pageLoading"></Spinner>
       <div v-else>
         <div class="p-4 px-4" v-for="verse of currentBibleSearchData" :key="getReferenceFromVerse(verse)">

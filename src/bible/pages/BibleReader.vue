@@ -1,34 +1,32 @@
 <template>
   <AppLayout>
-    <div class="bible-reader-toolbar flex flex-row mb-4 sticky top-0 pt-4 pb-4 bg-slate-200"
+    <div class="bible-reader-toolbar flex flex-row mb-4 sticky top-0 pt-4 pb-4 gap-2 bg-slate-200"
       style="justify-content: center;">
-      <select :value="selectedBookId" @input="onSelectedBookIdChanged"
-        class="active:outline-none focus:outline-none border-b-[3px] border-solid bg-transparent border-slate-400 py-1 px-2">
+      <AppSelect :value="selectedBookId" @update:model-value="onSelectedBookIdChanged">
         <option v-for="book of availableBooks" :value="book.bookId">
           {{book.name}}
         </option>
-      </select>
+      </AppSelect>
 
-      <select :value="selectedChapterNumber" @input="onSelectedChapterNumberChanged"
-        class="active:outline-none focus:outline-none ml-3 border-b-[3px] border-solid bg-transparent border-slate-400 py-1 px-2">
+      <AppSelect :value="selectedChapterNumber" @update:model-value="onSelectedChapterNumberChanged">
         <option v-for="chapter of availableChapters" :value="chapter.chapterNumber">
           {{chapter.chapterNumber}}
         </option>
-      </select>
+      </AppSelect>
 
-      <select :value="selectedBibleTranslationId" @input="onSelectedBibleTranslationIdChanged"
-        class="active:outline-none focus:outline-none ml-3 border-b-[3px] border-solid bg-transparent border-slate-400 py-1 px-2">
+      <AppSelect :value="selectedBibleTranslationId" @update:model-value="onSelectedBibleTranslationIdChanged">
         <option v-for="translation of availableTranslations" :value="translation.id">
           {{translation.abbreviation}}
         </option>
-      </select>
+      </AppSelect>
     </div>
     <PageContent>
       <div class="max-w-prose mx-auto">
         <h2 class="text-2xl font-bold text-center mb-4">{{ selectedBook?.name }}&nbsp;{{ selectedChapterNumber }}
         </h2>
       </div>
-      <div class="bible-reader-content max-w-prose mx-auto leading-loose" v-html="loadedChapterContent"></div>
+      <Spinner class="mx-auto" v-if="pageLoading"></Spinner>
+      <div v-else class="bible-reader-content max-w-prose mx-auto leading-loose" v-html="loadedChapterContent"></div>
     </PageContent>
     <div class="mb-8"></div>
   </AppLayout>
@@ -63,6 +61,8 @@ import AppButton from '../../components/atoms/form-controls/AppButton.vue'
 import { BibleBook } from '../BibleBook'
 import { BibleTranslation } from '../BibleTranslation'
 import { useRoute, useRouter } from 'vue-router'
+import AppSelect from '../../components/atoms/form-controls/AppSelect.vue'
+import Spinner from '../../components/atoms/Spinner.vue'
 
 
 export interface BiblePageQueryParams {
@@ -89,6 +89,7 @@ const selectedBookId = ref('JHN')
 const selectedChapterNumber = ref(1)
 
 const loadedChapterContent = ref('')
+const pageLoading = ref(false)
 
 let shouldHighlight = false
 let highlightRange: number[] = []
@@ -105,35 +106,41 @@ const selectedChapter = computed(() => {
  * Query the API to download the text for a bible.
  */
 const loadChapterContent = async () => {
-  const response = await getVerses(selectedBibleTranslationId.value, selectedBookId.value, selectedChapterNumber.value)
-  const chapterText = response.reduce((aggregate, verse) => {
-    let verseCssClass = 'verse'
-    if (shouldHighlight && highlightRange.length && verse.verse_start >= highlightRange[0] && verse.verse_start <= highlightRange[1]) {
-      verseCssClass += ' verse-highlight'
-    }
-    return aggregate + `<p id="verse-${verse.verse_start}" class="${verseCssClass}"><span class="verse-number">${verse.verse_start_alt}</span> <span class="verse-text">${verse.verse_text}</span></p> `
-  }, "")
+  pageLoading.value = true
+  try {
+    const response = await getVerses(selectedBibleTranslationId.value, selectedBookId.value, selectedChapterNumber.value)
+    const chapterText = response.reduce((aggregate, verse) => {
+      let verseCssClass = 'verse'
+      if (shouldHighlight && highlightRange.length && verse.verse_start >= highlightRange[0] && verse.verse_start <= highlightRange[1]) {
+        verseCssClass += ' verse-highlight'
+      }
+      return aggregate + `<p id="verse-${verse.verse_start}" class="${verseCssClass}"><span class="verse-number">${verse.verse_start_alt}</span> <span class="verse-text">${verse.verse_text}</span></p> `
+    }, "")
 
 
 
 
-  loadedChapterContent.value = chapterText
-  availableChapters.value = await getChaptersByBookId(selectedBookId.value)
-  await setLocalCacheItem(localCacheKeyLastLoadedChapter, {
-    selectedBibleTranslationId: selectedBibleTranslationId.value || 'ENGKJV',
-    selectedBookId: selectedBookId.value || 'JHN',
-    selectedChapter: selectedChapterNumber.value || 1
-  })
+    loadedChapterContent.value = chapterText
+    availableChapters.value = await getChaptersByBookId(selectedBookId.value)
+    await setLocalCacheItem(localCacheKeyLastLoadedChapter, {
+      selectedBibleTranslationId: selectedBibleTranslationId.value || 'ENGKJV',
+      selectedBookId: selectedBookId.value || 'JHN',
+      selectedChapter: selectedChapterNumber.value || 1
+    })
 
-  router.replace({ path: '/bible', query: { ...route.query, t: selectedBibleTranslationId.value, b: selectedBookId.value, c: selectedChapterNumber.value } })
-  if (shouldHighlight)
-    setTimeout(() => {
-      document.querySelector(`#verse-${highlightRange[0]}`)?.scrollIntoView()
-    }, 100)
-  else
-    window.scrollTo({ top: 0 })
+    router.replace({ path: '/bible', query: { ...route.query, t: selectedBibleTranslationId.value, b: selectedBookId.value, c: selectedChapterNumber.value } })
+    if (shouldHighlight)
+      setTimeout(() => {
+        document.querySelector(`#verse-${highlightRange[0]}`)?.scrollIntoView()
+      }, 100)
+    else
+      window.scrollTo({ top: 0 })
 
-  shouldHighlight = false
+    shouldHighlight = false
+  }
+  finally {
+    pageLoading.value = false
+  }
 }
 
 
@@ -193,8 +200,7 @@ const onPrevChapterButtonClicked = async () => {
   await loadChapterContent()
 }
 
-const onSelectedBookIdChanged = async (evt: any) => {
-  const { value } = evt.target
+const onSelectedBookIdChanged = async (value: any) => {
 
   selectedBookId.value = value
   selectedChapterNumber.value = 1
@@ -203,14 +209,12 @@ const onSelectedBookIdChanged = async (evt: any) => {
   await loadChapterContent()
 }
 
-const onSelectedChapterNumberChanged = async (evt: any) => {
-  const { value } = evt.target
+const onSelectedChapterNumberChanged = async (value: any) => {
   selectedChapterNumber.value = value
   await loadChapterContent()
 }
 
-const onSelectedBibleTranslationIdChanged = async (evt: any) => {
-  const { value } = evt.target
+const onSelectedBibleTranslationIdChanged = async (value: any) => {
   selectedBibleTranslationId.value = value
   await loadChapterContent()
 }
