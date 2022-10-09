@@ -2,7 +2,7 @@
   <AppLayout>
     <!-- Search Hero -->
     <div class="flex flex-col items-center mb-24">
-      <img class="object-contain max-h-80 block mb-4" src="/logo-bible.png" />
+      <img class="object-contain max-h-40 md:max-h-80 block mb-4" src="/logo-bible.png" />
       <h1
         class="font-bold font-title text-3xl md:text-5xl lg:text-6xl mb-2 bg-gradient-to-r from-[#1e293b] to-[#57687f] text-transparent bg-clip-text">
         Scripture Alone</h1>
@@ -14,11 +14,11 @@
 
     <!-- Calls To Action -->
     <div class="flex flex-col md:flex-row gap-2 items-center justify-between mb-24 p-2">
-      <RouterLink :class="callToActionItemClass" to="#VOTD">
+      <a :class="callToActionItemClass" href="#VOTD">
         <Icon icon-name="book-cross" :class="[callToActionIconClass]" :size="16">
         </Icon>
         <span class="text-center whitespace-nowrap text-ellipsis">Verse of the day</span>
-      </RouterLink>
+      </a>
       <RouterLink :class="callToActionItemClass" to="/devotionals">
         <Icon icon-name="notebook-edit" :class="[callToActionIconClass]" :size="16">
         </Icon>
