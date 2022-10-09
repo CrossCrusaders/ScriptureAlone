@@ -2,27 +2,26 @@
   <AppLayout>
     <div class="bible-reader-toolbar flex flex-row mb-4 sticky top-0 pt-4 pb-4 gap-2 bg-slate-200"
       style="justify-content: center;">
-      <AppSelect :value="selectedBookId" @update:model-value="onSelectedBookIdChanged">
+      <AppSelect :model-value="selectedBookId" @update:model-value="onSelectedBookIdChanged">
         <option v-for="book of availableBooks" :value="book.bookId">
           {{book.name}}
         </option>
       </AppSelect>
 
-      <AppSelect :value="selectedChapterNumber" @update:model-value="onSelectedChapterNumberChanged">
+      <AppSelect :model-value="selectedChapterNumber" @update:model-value="onSelectedChapterNumberChanged">
         <option v-for="chapter of availableChapters" :value="chapter.chapterNumber">
           {{chapter.chapterNumber}}
         </option>
       </AppSelect>
 
-      <AppSelect :value="selectedBibleTranslationId" @update:model-value="onSelectedBibleTranslationIdChanged">
-        <option v-for="translation of availableTranslations" :value="translation.id">
-          {{translation.abbreviation}}
-        </option>
-      </AppSelect>
+      <BibleTranslationSelect :model-value="selectedBibleTranslationId"
+        @update:model-value="onSelectedBibleTranslationIdChanged">
+      </BibleTranslationSelect>
     </div>
     <PageContent>
       <div class="max-w-prose mx-auto">
-        <h2 class="text-2xl font-bold text-center mb-4">{{ selectedBook?.name }}&nbsp;{{ selectedChapterNumber }}
+        <h2 class="text-2xl font-bold text-center mb-4">
+          {{ selectedBook?.name }}&nbsp;{{ selectedChapterNumber }}
         </h2>
       </div>
       <Spinner class="mx-auto" v-if="pageLoading"></Spinner>
@@ -63,6 +62,7 @@ import { BibleTranslation } from '../BibleTranslation'
 import { useRoute, useRouter } from 'vue-router'
 import AppSelect from '../../components/atoms/form-controls/AppSelect.vue'
 import Spinner from '../../components/atoms/Spinner.vue'
+import BibleTranslationSelect from '../../components/organisms/BibleTranslationSelect.vue'
 
 
 export interface BiblePageQueryParams {

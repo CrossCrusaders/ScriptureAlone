@@ -194,6 +194,10 @@ export async function getTranslations() {
 	return bibleCacheMonad(() => bibleTranslationsCache)
 }
 
+export async function getTranslationById(translationId: string) {
+	return bibleCacheMonad(() => bibleTranslationsCache?.find(tr => tr.id == translationId))
+}
+
 export async function getPreviousChapterBySequenceNumber(sequenceNumber: number) {
 	return bibleCacheMonad(() => _getPreviousChapterBySequenceNumber(sequenceNumber))
 }
