@@ -38,7 +38,7 @@ const routes = [
   //Devotionals
   { path: '/devotionals', component: Devotionals },
   { path: '/devotionals/:id', component: DevotionalDetails },
-  { path: '/devotionals/search/:tags', component: DevotionalSearch },
+  { path: '/devotionals/search/:category', component: DevotionalSearch },
 
   //Account Management
   { path: '/auth/log-in', component: LogIn },

@@ -23,7 +23,7 @@
       <!-- Categories-->
       <div class="hidden md:flex flex-row justify-between items-center mb-16">
         <div
-          @click="searchDevotionals(category.id, '')"
+          @click="searchDevotionals(category.id, 0)"
           class="cursor-pointer rounded-lg bg-slate-200 p-2 px-4"
           v-for="(category, index) in categories"
           :key="index"
