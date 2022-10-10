@@ -1,3 +1,4 @@
+import { A11yMethods } from 'swiper/types/modules/a11y'
 import PocketBaseClient from '../../api/PocketBaseClient'
 import { transformDevotionalResponse, transformDevotionalResponses } from '../Devotional'
 
@@ -22,14 +23,22 @@ export const getDevotionalCategories = async () => {
   return categories
 }
 
-export const searchDevotionals = async (category:string, searchTerm:string) => {
+export const searchDevotionals = async (searchTerm:string, type:number) => {
   var response:any;
-  if(category != ""){
-    const devotionalsInCategories = await PocketBaseClient.records.getFullList('devotionals', 200, { filter: `categories.label ~ "${category}"`, expand: 'categories,sections,author,author.church' })
-    response = transformDevotionalResponses(devotionalsInCategories)
+  if(type == 0){
+    const devotionalsInSearch = await PocketBaseClient.records.getFullList('devotionals', 200, { filter: `categories.label ~ "${searchTerm}"`, expand: 'categories,sections,author,author.church' })
+    response = transformDevotionalResponses(devotionalsInSearch)
   }
-  else{
+  else if(type == 1){
     const devotionalsInSearch = await PocketBaseClient.records.getFullList('devotionals', 200, { filter: `title ~ "${searchTerm}" && categories.label !~ "${searchTerm}"`, expand: 'categories,sections,author,author.church' })
+    response = transformDevotionalResponses(devotionalsInSearch)
+  }
+  else if(type == 2){
+    const devotionalsInSearch = await PocketBaseClient.records.getFullList('devotionals', 200, { filter: `description ~ "${searchTerm}" && title !~ "${searchTerm}" && categories.label !~ "${searchTerm}"`, expand: 'categories,sections,author,author.church' })
+    response = transformDevotionalResponses(devotionalsInSearch)
+  }
+  else if(type == 3){
+    const devotionalsInSearch = await PocketBaseClient.records.getFullList('devotionals', 200, { filter: `author.firstName ~ "${searchTerm}" && description !~ "${searchTerm}" && title !~ "${searchTerm}" && categories.label !~ "${searchTerm}"`, expand: 'categories,sections,author,author.church' })
     response = transformDevotionalResponses(devotionalsInSearch)
   }
   return response;
