@@ -2,46 +2,33 @@
   <AppLayout>
     <PageContent>
       <!-- Devotionals Hero -->
-      <div class="rounded-xl bg-slate-200 px-6 py-12 md:py-16 items-center mb-16 md:mt-8">
-        <!-- Inner flex parent -->
-        <div class="flex flex-col md:flex-row gap-4">
+
+      <PageHero>
+        <template v-slot:image>
           <img src="/logo-bible.png" class="object-contain hidden md:block max-h-32" />
-          <div class="mb-4 md:mb-0">
-            <h2 class="text-4xl font-bold mb-2 text-slate-900">Featured</h2>
-            <p class="text-slate-600">
-              Devo description here. ihdshfskhdgkjhduighaehguiwheiu uewhguihriguse njng
-              srnjgnsinguidsghen uhcvnsdndv jsvn jvdjn sdjn vdnjbjndjnsnj
-            </p>
-          </div>
-          <div class="flex flex-col gap-2 justify-center">
-            <AppButton>Watch Now</AppButton>
-            <AppButton variant="primary-outline">View All Devotionals</AppButton>
-          </div>
-        </div>
-      </div>
+        </template>
+        <h2 class="text-4xl font-bold mb-2 text-slate-900">Featured</h2>
+        <p class="text-slate-600">
+          Devo description here. ihdshfskhdgkjhduighaehguiwheiu uewhguihriguse njng
+          srnjgnsinguidsghen uhcvnsdndv jsvn jvdjn sdjn vdnjbjndjnsnj
+        </p>
+        <template v-slot:actions>
+          <AppButton>Watch Now</AppButton>
+          <AppButton variant="primary-outline">View All Devotionals</AppButton>
+        </template>
+      </PageHero>
 
       <!-- Categories-->
       <div class="hidden md:flex flex-row justify-between items-center mb-16">
-        <div
-          @click="searchDevotionals(category.id, 0)"
-          class="cursor-pointer rounded-lg bg-slate-200 p-2 px-4"
-          v-for="(category, index) in categories"
-          :key="index"
-        >
-          <div class="flex flex-row items-center h-full gap-2">
-            <Icon :icon-name="category.iconName"></Icon>
-            <span>{{ category.label }}</span>
-          </div>
-        </div>
+        <Badge @click="searchDevotionals(category.id, 0)" :icon-name="category.iconName" :label="category.label"
+          v-for="(category, index) in categories" :key="index">
+        </Badge>
       </div>
 
       <div class="flex justify-center">
         <div class="outline outline-2 outline-slate-300 bg-slate-200 rounded-full p-4">
-          <input
-            type="text"
-            placeholder="Search for devotionals"
-            class="focus:outline-none active:outline-none bg-slate-200"
-          />
+          <input type="text" placeholder="Search for devotionals"
+            class="focus:outline-none active:outline-none bg-slate-200" />
           <Icon icon-name="magnify" :size="8"></Icon>
         </div>
       </div>
@@ -50,44 +37,29 @@
       <br />
 
       <!-- Devotionals Display -->
-      <div
-        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 md:gap-8 mb-24"
-      >
-        <div
-          v-for="(devotional, index) in devotionals"
-          :key="index"
-          class="flex flex-col bg-slate-200 rounded-2xl p-6"
-        >
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 md:gap-8 mb-24">
+        <div v-for="(devotional, index) in devotionals" :key="index" class="flex flex-col bg-slate-200 rounded-2xl p-6">
           <h3 class="text-slate-900 text-xl font-title font-bold mb-0">
-            {{ devotional.title }}
+            {{ formatMaxLengthText(devotional.title, 32) }}
           </h3>
           <p class="text-slate-700 text-sm font-body mb-2">
             {{ devotional.author.firstName }}&nbsp;{{ devotional.author.lastName }}
           </p>
-          <p class="text-slate-700 text-md font-body mb-3 break-words">
-            {{ devotional.description }}
+          <p class="text-slate-700 text-md font-body mb-3 break-words" :title="devotional.description">
+            {{ formatMaxLengthText(devotional.description, 64) }}
           </p>
           <!-- Needs fixed to not break mid-word -->
-          <p
-            class="text-slate-600 text-md text-sm font-body mb-0"
-            style="word-wrap: break-word"
-          >
+          <p class="text-slate-600 text-md text-sm font-body mb-0" style="word-wrap: break-word">
             <b>Tags: </b>
             <a v-for="(category, innerIndex) in devotional.categories">
-              <a
-                v-if="
-                  devotional.categories != undefined &&
-                  category != devotional.categories[devotional.categories.length - 1]
-                "
-                >{{ category.label }},&nbsp;</a
-              >
+              <a v-if="
+                devotional.categories != undefined &&
+                category != devotional.categories[devotional.categories.length - 1]
+              ">{{ category.label }},&nbsp;</a>
               <a v-else>{{ category.label }}&nbsp;</a>
             </a>
           </p>
-          <p
-            v-if="devotional.duration"
-            class="text-slate-600 text-md font-body text-sm mb-3"
-          >
+          <p v-if="devotional.duration" class="text-slate-600 text-md font-body text-sm mb-3">
             Duration:
             {{ formatMillisecondsAsReadableDuration(devotional.duration) }}
           </p>
@@ -104,19 +76,21 @@
 </template>
 
 <script setup lang="ts">
-import AppLayout from "../../components/templates/AppLayout.vue";
-import PageContent from "../../components/templates/PageContent.vue";
-import AppButton from "../../components/atoms/form-controls/AppButton.vue";
-import { onMounted, reactive, ref } from "vue";
-import Icon from "../../components/atoms/Icon.vue";
-import Divider from "../../components/atoms/Divider.vue";
+import AppLayout from "../../components/templates/AppLayout.vue"
+import PageContent from "../../components/templates/PageContent.vue"
+import AppButton from "../../components/atoms/form-controls/AppButton.vue"
+import { onMounted, reactive, ref } from "vue"
+import Icon from "../../components/atoms/Icon.vue"
+import Divider from "../../components/atoms/Divider.vue"
 import {
   getFeaturedDevotional,
   getRecentDevotionals,
   getDevotionalCategories,
   searchDevotionals,
-} from "../../devotionals/services/DevotionalService";
-import { formatMillisecondsAsReadableDuration } from "../../core/services/FormatService";
+} from "../../devotionals/services/DevotionalService"
+import { formatMillisecondsAsReadableDuration, formatMaxLengthText } from "../../core/services/FormatService"
+import PageHero from "../../components/molecules/PageHero.vue"
+import Badge from '../../components/molecules/Badge.vue'
 
 const loading = true;
 
