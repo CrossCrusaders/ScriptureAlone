@@ -1,30 +1,73 @@
 <template>
-  <div class="mb-4">
-    <label class="block text-slate-600 font-bold">
-      <slot></slot>
-    </label>
-    <input v-bind="$attrs" :value="props.modelValue" @input="handleInput" :class="[inputClass]" />
+  <label class="block text-slate-600 font-bold px-2">
+    <slot></slot>
+  </label>
+  <div :class="[inputOuterWrapperClass]">
+    <div :class="['prefix-wrapper', props.prefixClass]">
+      <slot name="prefix"></slot>
+    </div>
+    <div class="input-wrapper flex-auto">
+      <input class="py-2 h-full w-full outline-none bg-transparent" v-bind="$attrs" :value="props.modelValue"
+        @input="onInputInput" @focus="onInputFocus" @blur="onInputBlur" />
+    </div>
+    <div :class="['postfix-wrapper', props.postfixClass]">
+      <slot name="postfix"></slot>
+    </div>
   </div>
 </template>
 
 <script setup lang="ts">
-import { ref, watch } from "vue"
+import { computed, ref, watch } from "vue"
+
+
+
+const inputOuterWrapperClass = computed(() => {
+  let baseClass = `
+  input-outer-wrapper
+  shadow-lg
+  rounded-full 
+  px-4 
+  border-solid 
+  border-2 
+  transition-all
+  box-border
+  flex flex-row items-center gap-2
+  max-h-14 h-14
+  w-full
+  `
+
+  if (!isFocused.value) {
+    baseClass += `border-slate-400 bg-slate-100 `
+  } else {
+    baseClass += `border-slate-800 bg-white`
+  }
+
+  return baseClass
+
+})
 
 const props = defineProps([
-  'isError',
-  'modelValue'
+  'modelValue',
+  'postfixClass',
+  'prefixClass'
 ])
 const emit = defineEmits([
   'update:modelValue'
 ])
-const inputClass = `border-solid border-2 border-slate-400 shadow-lg rounded-full bg-slate-100 block w-full py-2 px-4 focus:border-slate-800 focus:bg-white outline-none box-border`
-const errorClass = ref(props.isError ? 'border-red-500' : 'border-gray-800')
 
-watch(props.isError, () => {
-  errorClass.value = props.isError ? 'border-red-500' : 'border-gray-800'
-})
+const isFocused = ref(false)
+const isDirty = ref(false)
 
-const handleInput = (newVal: any) => {
+const onInputInput = (newVal: any) => {
   emit('update:modelValue', newVal.target.value)
+}
+
+const onInputFocus = () => {
+  isFocused.value = true
+}
+
+const onInputBlur = () => {
+  isFocused.value = false
+  isDirty.value = true
 }
 </script>

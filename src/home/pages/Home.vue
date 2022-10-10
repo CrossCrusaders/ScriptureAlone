@@ -8,7 +8,14 @@
         Scripture Alone</h1>
       <p class="font-body text-lg mb-2">Sound Doctrine Guaranteed</p>
       <form @submit="handleSearchSubmit($event)">
-        <AppInput v-model="searchModel" class="w-80" placeholder="Search The Scripture"></AppInput>
+        <AppInput v-model="searchModel" class="w-80" placeholder="Search The Scripture">
+          <template v-slot:prefix>
+            <Icon icon-name="magnify"></Icon>
+          </template>
+          <template v-slot:postfix>
+            <BibleTranslationSelect v-model="searchTranslationId"></BibleTranslationSelect>
+          </template>
+        </AppInput>
       </form>
     </div>
 
@@ -82,9 +89,11 @@ import { useBreakpoint } from '../../browser/ViewportService'
 import { getVerseOfTheDay, isBibleReference } from '../../bible/services/BibleService'
 import Icon from '../../components/atoms/Icon.vue'
 import { useRouter } from 'vue-router'
+import BibleTranslationSelect from '../../components/organisms/BibleTranslationSelect.vue'
 
 const verseName = ref("")
 const verseText = ref("")
+
 
 onMounted(async () => {
   var htmlVerse = await getVerseOfTheDay()
@@ -94,6 +103,7 @@ onMounted(async () => {
 })
 
 const searchModel = ref('')
+const searchTranslationId = ref('ENGKJV')
 const callToActionItemClass = ['cta-item border-slate-700', 'w-full', 'cursor-pointer', 'bg-slate-200',
   'rounded-xl', 'pl-4', 'pr-4', 'pt-16', 'pb-16', 'flex', 'flex-col', 'items-center', 'text-slate-900',
   'justify-center', 'text-4xl', 'font-bold', 'font-title', 'hover:bg-slate-800', 'hover:text-white', 'transition-all']
@@ -161,9 +171,9 @@ const handleSearchSubmit = async (event: Event) => {
   if (searchModel.value && searchModel.value.length) {
     const result = await isBibleReference(searchModel.value)
     if (result) {
-      return router.push(`/bible?t=ENGKJV&c=${result.chapter}&b=${result.book_id}&vs=${result.verse_start}&ve=${result.verse_end}`)
+      return router.push(`/bible?t=${searchTranslationId.value}&c=${result.chapter}&b=${result.book_id}&vs=${result.verse_start}&ve=${result.verse_end}`)
     } else {
-      return router.push(`/bible/search?q=${encodeURI(searchModel.value.substring(0, 255))}`)
+      return router.push(`/bible/search?t=${searchTranslationId.value}&q=${encodeURI(searchModel.value.substring(0, 255))}`)
     }
   }
 

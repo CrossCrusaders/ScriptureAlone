@@ -82,7 +82,7 @@ import Icon from '../../components/atoms/Icon.vue';
 
 interface BibleSearchQueryParams {
   q: string
-  bibleId?: string
+  t?: string
   page?: number | string
 }
 
@@ -106,7 +106,7 @@ onMounted(async () => {
 
   const queryParams: BibleSearchQueryParams = route.query as any
 
-  let { q, bibleId, page } = queryParams
+  let { q, t: bibleId, page } = queryParams
 
   // If there is no query, redirect to the home page
   if (!q)
