@@ -8,7 +8,7 @@
         Scripture Alone</h1>
       <p class="font-body text-lg mb-2">Sound Doctrine Guaranteed</p>
       <form @submit="handleSearchSubmit($event)">
-        <AppInput v-model="searchModel" class="w-80" placeholder="Search The Scripture">
+        <AppInput v-model="searchModel" placeholder="Search The Scripture">
           <template v-slot:prefix>
             <Icon icon-name="magnify"></Icon>
           </template>
