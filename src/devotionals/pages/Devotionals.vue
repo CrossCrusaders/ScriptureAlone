@@ -61,7 +61,7 @@
 
       <!-- Devotionals Display -->
       <div
-        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 md:gap-8 mb-24"
+        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 md:gap-8 mb-12"
         ref="searchResults"
       >
         <div
@@ -116,6 +116,9 @@
           </a>
         </div>
       </div>
+      <div class="flex justify-center">
+        <button class="text-slate-400 mb-12" @click="nextPage()">View More ></button>
+      </div>
 
       <!-- My Plans -->
     </PageContent>
@@ -169,10 +172,10 @@ onMounted(async () => {
   const queryParams: SearchDevo = route.query as any;
   let { q, n, s } = queryParams;
 
-  if (!q) {
+  if (!q && !n && !s) {
     searchDevos("", 0, 0, true);
   } else {
-    searchDevos(searchModel.value, 1, 8, false);
+    searchDevos(searchModel.value, n, s, false);
   }
 });
 
@@ -180,7 +183,7 @@ const handleSearchSubmit = async (event: Event) => {
   event.preventDefault();
   if (searchModel.value && searchModel.value.length) {
     await router.push(
-      `?q=${encodeURI(searchModel.value.substring(0, 255))}&n=${1}&s=${8}`
+      `?q=${encodeURI(searchModel.value.substring(0, 255))}&n=1&s=${8}`
     );
     searchDevos(searchModel.value, 0, 0, false);
   } else {
@@ -189,13 +192,31 @@ const handleSearchSubmit = async (event: Event) => {
   }
 };
 
+
+
+const nextPage = async () => {
+  const queryParams: SearchDevo = route.query as any;
+  let { q, n, s } = queryParams;
+  console.log(q)
+  console.log(n)
+  console.log(+n + +1)
+  console.log(s)
+  if(q && n && s){
+    await router.push(
+      `?q=${encodeURI(q)}&n=${+n + +1}&s=${s}`
+    );
+    searchDevos(q, +n + +1, s, false)
+  }
+};
+
 async function searchDevos(
   searchTerm: string,
   pageNumber: number,
   pageSize: number,
-  isFullList: boolean
+  isBlank: boolean
 ) {
-  if (!isFullList) {
+  if (!isBlank) {
+    console.log(pageNumber)
     const searchedDevotionalsTitlePromise = await searchDevotionals(
       searchTerm,
       0,
