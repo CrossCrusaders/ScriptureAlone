@@ -62,6 +62,7 @@
       <!-- Devotionals Display -->
       <div
         class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 md:gap-8 mb-24"
+        ref="searchResults"
       >
         <div
           v-for="(devotional, index) in devotionals"
@@ -123,9 +124,9 @@
 
 <script setup lang="ts">
 export interface SearchDevo {
-  q: string,
-  pageNum: number,
-  pageSize: number
+  q: string;
+  n: number;
+  s: number;
 }
 import AppLayout from "../../components/templates/AppLayout.vue";
 import PageContent from "../../components/templates/PageContent.vue";
@@ -162,11 +163,87 @@ const searchModel = ref("");
 const route = useRoute();
 const router = useRouter();
 
+const searchResultsElement = ref("searchResults");
+
 onMounted(async () => {
   const queryParams: SearchDevo = route.query as any;
-  let { q, pageNum, pageSize } = queryParams;
+  let { q, n, s } = queryParams;
 
   if (!q) {
+    searchDevos("", 0, 0, true);
+  } else {
+    searchDevos(searchModel.value, 1, 8, false);
+  }
+});
+
+const handleSearchSubmit = async (event: Event) => {
+  event.preventDefault();
+  if (searchModel.value && searchModel.value.length) {
+    await router.push(
+      `?q=${encodeURI(searchModel.value.substring(0, 255))}&n=${1}&s=${8}`
+    );
+    searchDevos(searchModel.value, 0, 0, false);
+  } else {
+    await router.replace("/devotionals");
+    searchDevos("", 1, 8, true);
+  }
+};
+
+async function searchDevos(
+  searchTerm: string,
+  pageNumber: number,
+  pageSize: number,
+  isFullList: boolean
+) {
+  if (!isFullList) {
+    const searchedDevotionalsTitlePromise = await searchDevotionals(
+      searchTerm,
+      0,
+      pageNumber,
+      pageSize
+    );
+    const searchedDevotionalsTagPromise = await searchDevotionals(
+      searchTerm,
+      1,
+      pageNumber,
+      pageSize
+    );
+    const searchedDevotionalsDescriptionPromise = await searchDevotionals(
+      searchTerm,
+      2,
+      pageNumber,
+      pageSize
+    );
+    const searchedDevotionalsAuthorPromise = await searchDevotionals(
+      searchTerm,
+      3,
+      pageNumber,
+      pageSize
+    );
+    const categoriesPromise = getDevotionalCategories();
+
+    const [
+      searchedDevotionalsTag,
+      searchedDevotionalsTitle,
+      searchedDevotionalsDescription,
+      searchedDevotionalsAuthor,
+      devotionalCategories,
+    ] = await Promise.all([
+      searchedDevotionalsTagPromise,
+      searchedDevotionalsTitlePromise,
+      searchedDevotionalsDescriptionPromise,
+      searchedDevotionalsAuthorPromise,
+      categoriesPromise,
+    ]);
+
+    categories.value = devotionalCategories.items;
+    devotionals.value = searchedDevotionalsTag.concat(
+      searchedDevotionalsTitle.concat(
+        searchedDevotionalsDescription.concat(searchedDevotionalsAuthor)
+      )
+    );
+  }
+  else{
     const featuredDevotionalPromise = getFeaturedDevotional();
     const recentDevotionalsPromise = getRecentDevotionals(
       page.value,
@@ -184,46 +261,7 @@ onMounted(async () => {
     categories.value = devotionalCategories.items;
     devotionals.value = recentDevotionals;
   }
-  else{
-    console.log(q)
-    console.log(pageNum)
-    console.log(pageSize)
-
-    const searchedDevotionalsTitlePromise = await searchDevotionals(q, 0, pageNum, pageSize);
-    const searchedDevotionalsTagPromise = await searchDevotionals(q, 1, pageNum, pageSize);
-    const searchedDevotionalsDescriptionPromise = await searchDevotionals(q, 2, pageNum, pageSize);
-    const searchedDevotionalsAuthorPromise = await searchDevotionals(q, 3, pageNum, pageSize);
-    const categoriesPromise = getDevotionalCategories();
-
-    const [
-    searchedDevotionalsTag,
-    searchedDevotionalsTitle,
-    searchedDevotionalsDescription,
-    searchedDevotionalsAuthor,
-    devotionalCategories,
-  ] = await Promise.all([
-    searchedDevotionalsTagPromise,
-    searchedDevotionalsTitlePromise,
-    searchedDevotionalsDescriptionPromise,
-    searchedDevotionalsAuthorPromise,
-    categoriesPromise,
-  ]);
-
-  categories.value = devotionalCategories.items;
-  devotionals.value = searchedDevotionalsTag.concat(searchedDevotionalsTitle.concat(searchedDevotionalsDescription.concat(searchedDevotionalsAuthor)));
-  }
-});
-
-const handleSearchSubmit = async (event: Event) => {
-  event.preventDefault();
-  if (searchModel.value && searchModel.value.length) {
-    return router.push(
-      `?q=${encodeURI(
-        searchModel.value.substring(0, 255)
-      )}&pageNum=${1}&pageSize=${10}`
-    );
-  }
-};
+}
 </script>
 
 <style>
