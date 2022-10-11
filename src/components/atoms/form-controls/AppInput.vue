@@ -19,8 +19,6 @@
 <script setup lang="ts">
 import { computed, ref, watch } from "vue"
 
-
-
 const inputOuterWrapperClass = computed(() => {
   let baseClass = `
   input-outer-wrapper
@@ -35,6 +33,7 @@ const inputOuterWrapperClass = computed(() => {
   max-h-14 h-14
   w-full
   max-w-full
+  mb-4
   `
 
   if (!isFocused.value) {

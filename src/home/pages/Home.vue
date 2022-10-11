@@ -8,14 +8,17 @@
         Scripture Alone</h1>
       <p class="font-body text-lg mb-2">Sound Doctrine Guaranteed</p>
       <form @submit="handleSearchSubmit($event)">
-        <AppInput v-model="searchModel" placeholder="Search The Scripture">
-          <template v-slot:prefix>
-            <Icon icon-name="magnify"></Icon>
-          </template>
-          <template v-slot:postfix>
-            <BibleTranslationSelect v-model="searchTranslationId"></BibleTranslationSelect>
-          </template>
-        </AppInput>
+        <div class="px-2">
+          <AppInput type="input" name="query" v-model="searchModel" placeholder="Search The Scripture">
+            <template v-slot:prefix>
+              <Icon icon-name="magnify"></Icon>
+            </template>
+            <template v-slot:postfix>
+              <BibleTranslationSelect v-model="searchTranslationId"></BibleTranslationSelect>
+            </template>
+          </AppInput>
+          <AppButton variant="primary-light" class="block w-full md:hidden mt-4" type="submit">Search</AppButton>
+        </div>
       </form>
     </div>
 
@@ -90,6 +93,7 @@ import { getVerseOfTheDay, isBibleReference } from '../../bible/services/BibleSe
 import Icon from '../../components/atoms/Icon.vue'
 import { useRouter } from 'vue-router'
 import BibleTranslationSelect from '../../components/organisms/BibleTranslationSelect.vue'
+import AppButton from '../../components/atoms/form-controls/AppButton.vue'
 
 const verseName = ref("")
 const verseText = ref("")

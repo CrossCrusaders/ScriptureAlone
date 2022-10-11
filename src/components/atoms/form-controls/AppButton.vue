@@ -17,19 +17,22 @@
 import { computed } from 'vue'
 
 interface AppButtonProps {
-  variant?: 'primary' | 'accent' | 'primary-outline' | 'accent-outline' | 'primary-minimal',
+  variant?: 'primary' | 'accent' | 'primary-outline' | 'accent-outline' | 'primary-minimal' | 'primary-light',
   href?: string,
   to?: string,
-  size?: 'sm' | 'md' | 'lg'
+  size?: 'sm' | 'md' | 'lg',
+  disabled?: boolean
 }
 const props = defineProps<AppButtonProps>()
 
 const buttonClass = `rounded-full min-w-fit whitespace-nowrap`
 const buttonVariantClasses = {
   'primary': 'border-solid border-2 border-slate-800 bg-slate-800 text-white',
+  'primary-light': 'border-solid border-2 border-slate-600 bg-gradient-to-r from-slate-800 to-slate-600 text-white',
   accent: 'border-solid border-2 border-red-700 bg-red-700 text-white',
   'primary-outline': `border-solid border-2 border-slate-800 text-slate-800 bg-transparent`,
   'accent-outline': 'border-solid border-2 border-red-700 text-red-700 bg-transparent',
+
   'primary-minimal': `border-solid border-2 border-transparent text-slate-800 bg-transparent`
 }
 
