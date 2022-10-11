@@ -92,7 +92,7 @@ const route = useRoute()
 const router = useRouter()
 
 const currentQuery = ref('')
-const currentPage = ref<number>(1)
+const currentPage = ref<number | string>(1)
 const currentBibleId = ref<string>('ENGKJV')
 const currentBibleSearchData = ref<BibleVerse[]>([])
 const currentBibleSearchMeta = ref<Partial<BibleSearchMeta>>({})
@@ -127,7 +127,6 @@ onMounted(async () => {
   currentQuery.value = q
   currentPage.value = parseInt(page as string)
   currentBibleId.value = bibleId
-
 
 
   const [books, translations, _] = await Promise.all([getBooks(), getTranslations(), search()])
@@ -180,10 +179,22 @@ const onVerseClicked = (verse: BibleVerse) => {
 }
 
 const onPreviousPageClicked = () => {
-  currentPage.value -= 1
+  let nextValue
+  if (typeof currentPage.value == 'string') {
+    nextValue = parseInt(currentPage.value) - 1
+  } else {
+    nextValue = currentPage.value - 1
+  }
+  currentPage.value = nextValue
 }
 
 const onNextPageClicked = () => {
-  currentPage.value += 1
+  let nextValue
+  if (typeof currentPage.value == 'string') {
+    nextValue = parseInt(currentPage.value) + 1
+  } else {
+    nextValue = currentPage.value + 1
+  }
+  currentPage.value = nextValue
 }
 </script>
