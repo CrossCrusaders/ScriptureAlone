@@ -117,7 +117,9 @@
         </div>
       </div>
       <div class="flex justify-center">
-        <button class="text-slate-400 mb-12" @click="nextPage()">View More ></button>
+        <button class="text-slate-400 mb-12" @click="nextPage($event)">
+          View More >
+        </button>
       </div>
 
       <!-- My Plans -->
@@ -130,6 +132,7 @@ export interface SearchDevo {
   q: string;
   n: number;
   s: number;
+  h: boolean
 }
 import AppLayout from "../../components/templates/AppLayout.vue";
 import PageContent from "../../components/templates/PageContent.vue";
@@ -170,10 +173,11 @@ const searchResultsElement = ref("searchResults");
 
 onMounted(async () => {
   const queryParams: SearchDevo = route.query as any;
-  let { q, n, s } = queryParams;
-
-  if (!q && !n && !s) {
-    searchDevos("", 0, 0, true);
+  let { q, n, s, h } = queryParams;
+  if (!q && !n && !s && !h) {
+    searchDevos("", 1, 8, true);
+  } else if(!q && n && s && h) {
+    searchDevos("", n, s, true);
   } else {
     searchDevos(searchModel.value, n, s, false);
   }
@@ -192,20 +196,21 @@ const handleSearchSubmit = async (event: Event) => {
   }
 };
 
-
-
-const nextPage = async () => {
+const nextPage = async (event: Event) => {
+  event.preventDefault();
   const queryParams: SearchDevo = route.query as any;
-  let { q, n, s } = queryParams;
-  console.log(q)
-  console.log(n)
-  console.log(+n + +1)
-  console.log(s)
-  if(q && n && s){
-    await router.push(
-      `?q=${encodeURI(q)}&n=${+n + +1}&s=${s}`
-    );
-    searchDevos(q, +n + +1, s, false)
+  let { q, n, s, h } = queryParams;
+  if (q && n && s && !h) {
+    await router.push(`?q=${encodeURI(q)}&n=${+n + +1}&s=${s}`);
+    searchDevos(q, +n + +1, s, false);
+  }
+  else if(!q && !n && !s && !h){
+    await router.push(`?n=${2}&s=${8}&h=${true}`);
+    searchDevos("", 1, 8, true);
+  }
+  else if(!q && n && s && h){
+    await router.push(`?n=${+n + +1}&s=${s}&h=${h}`);
+    searchDevos("", n, s, true);
   }
 };
 
@@ -216,7 +221,7 @@ async function searchDevos(
   isBlank: boolean
 ) {
   if (!isBlank) {
-    console.log(pageNumber)
+    console.log(pageNumber);
     const searchedDevotionalsTitlePromise = await searchDevotionals(
       searchTerm,
       0,
@@ -263,12 +268,11 @@ async function searchDevos(
         searchedDevotionalsDescription.concat(searchedDevotionalsAuthor)
       )
     );
-  }
-  else{
+  } else {
     const featuredDevotionalPromise = getFeaturedDevotional();
     const recentDevotionalsPromise = getRecentDevotionals(
-      page.value,
-      countPerPage
+      pageNumber,
+      pageSize
     );
     const categoriesPromise = getDevotionalCategories();
 
