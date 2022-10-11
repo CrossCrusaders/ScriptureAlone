@@ -28,29 +28,9 @@
 
       <!-- Sermons Display -->
       <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 md:gap-8 mb-24">
-        <div v-for="(sermon, index) in sermons" :key="index" class="flex flex-col bg-slate-200 rounded-2xl p-6">
-          <h3 class="text-slate-900 text-xl font-title font-bold mb-0">{{ sermon.title }}</h3>
-          <p class="text-slate-700 text-sm font-body mb-2">{{ sermon.author.firstName }}&nbsp;{{ sermon.author.lastName
-          }}
-          </p>
-          <p class="text-slate-700 text-md font-body mb-3 break-words">{{ formatMaxLengthText(sermon.description, 64) }}
-          </p>
-          <p class="text-slate-600 text-md text-sm font-body mb-0">
-            Tags:
-            <span v-for="(category, innerIndex) in sermon.categories">
-              {{ category.label }},&nbsp;
-            </span>
-          </p>
-          <p v-if="sermon.duration" class="text-slate-600 text-md font-body text-sm mb-3">
-            Duration: {{ formatMillisecondsAsReadableDuration(sermon.duration) }}
-          </p>
-          <div class="flex-auto h-8"></div>
-          <a :href="'/sermons/' + sermon.id" class="w-full block">
-            <AppButton variant="primary" class="w-full">
-              View Sermon
-            </AppButton>
-          </a>
-        </div>
+        <ContentPreviewCard v-for="(sermon, index) in sermons" :key="index" :content="sermon" button-title="View Sermon"
+          @click:button="router.push(`/sermons/${sermon.id}`)">
+        </ContentPreviewCard>
       </div>
 
 
@@ -72,7 +52,10 @@ import Divider from '../../components/atoms/Divider.vue'
 import { getFeaturedSermon, getRecentSermons, getSermonCategories } from '../../sermons/services/SermonService'
 import { formatMillisecondsAsReadableDuration, formatMaxLengthText } from '../../core/services/FormatService'
 import PageHero from '../../components/molecules/PageHero.vue'
+import ContentPreviewCard from '../../components/molecules/ContentPreviewCard.vue'
+import { useRouter } from 'vue-router'
 
+const router = useRouter()
 
 const loading = true
 
