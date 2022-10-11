@@ -23,22 +23,26 @@ export const getDevotionalCategories = async () => {
   return categories
 }
 
-export const searchDevotionals = async (searchTerm:string, type:number) => {
+export const searchDevotionals = async (searchTerm:string, type:number, pageNum:number, pageSize:number) => {
   var response:any;
   if(type == 0){
-    const devotionalsInSearch = await PocketBaseClient.records.getFullList('devotionals', 200, { filter: `categories.label ~ "${searchTerm}"`, expand: 'categories,sections,author,author.church' })
+    const devotionalsInSearch = await PocketBaseClient.records.getList('devotionals', pageNum, pageSize, { filter: `categories.label ~ "${searchTerm}"`, expand: 'categories,sections,author,author.church' })
+    //@ts-expect-error
     response = transformDevotionalResponses(devotionalsInSearch)
   }
   else if(type == 1){
-    const devotionalsInSearch = await PocketBaseClient.records.getFullList('devotionals', 200, { filter: `title ~ "${searchTerm}" && categories.label !~ "${searchTerm}"`, expand: 'categories,sections,author,author.church' })
+    const devotionalsInSearch = await PocketBaseClient.records.getList('devotionals', pageNum, pageSize, { filter: `title ~ "${searchTerm}" && categories.label !~ "${searchTerm}"`, expand: 'categories,sections,author,author.church' })
+    //@ts-expect-error
     response = transformDevotionalResponses(devotionalsInSearch)
   }
   else if(type == 2){
-    const devotionalsInSearch = await PocketBaseClient.records.getFullList('devotionals', 200, { filter: `description ~ "${searchTerm}" && title !~ "${searchTerm}" && categories.label !~ "${searchTerm}"`, expand: 'categories,sections,author,author.church' })
+    const devotionalsInSearch = await PocketBaseClient.records.getList('devotionals', pageNum, pageSize, { filter: `description ~ "${searchTerm}" && title !~ "${searchTerm}" && categories.label !~ "${searchTerm}"`, expand: 'categories,sections,author,author.church' })
+    //@ts-expect-error
     response = transformDevotionalResponses(devotionalsInSearch)
   }
   else if(type == 3){
-    const devotionalsInSearch = await PocketBaseClient.records.getFullList('devotionals', 200, { filter: `author.firstName ~ "${searchTerm}" && description !~ "${searchTerm}" && title !~ "${searchTerm}" && categories.label !~ "${searchTerm}"`, expand: 'categories,sections,author,author.church' })
+    const devotionalsInSearch = await PocketBaseClient.records.getList('devotionals', pageNum, pageSize, { filter: `author.firstName ~ "${searchTerm}" && description !~ "${searchTerm}" && title !~ "${searchTerm}" && categories.label !~ "${searchTerm}"`, expand: 'categories,sections,author,author.church' })
+    //@ts-expect-error
     response = transformDevotionalResponses(devotionalsInSearch)
   }
   return response;
