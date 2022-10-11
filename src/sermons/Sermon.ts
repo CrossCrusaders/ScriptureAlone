@@ -61,6 +61,10 @@ export const transformSermonResponse = (response: any): Sermon => {
     sermon.audioFile = getBucketUrl(sermon, sermon.audioFile)
   }
 
+  if (sermon.coverImage) {
+    sermon.coverImage = getBucketUrl(sermon, sermon.coverImage)
+  }
+
   return sermon
 }
 

@@ -150,7 +150,7 @@ const search = async () => {
   pageLoading.value = true
   try {
     router.replace({ path: '/bible/search', query: { q: currentQuery.value, bibleId: currentBibleId.value, page: currentPage.value } })
-    const { data, meta } = await searchBible(currentBibleId.value, currentQuery.value, currentPage.value, resultsPerPage)
+    const { data, meta } = await searchBible(currentBibleId.value, currentQuery.value, currentPage.value as number, resultsPerPage)
 
     currentBibleSearchData.value = data
     currentBibleSearchMeta.value = meta
