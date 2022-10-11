@@ -7,7 +7,7 @@
       <slot name="prefix"></slot>
     </div>
     <div class="input-wrapper flex-auto">
-      <input class="py-2 h-full w-full outline-none bg-transparent" v-bind="$attrs" :value="props.modelValue"
+      <input class="py-2 h-full w-full max-w-full outline-none bg-transparent" v-bind="$attrs" :value="props.modelValue"
         @input="onInputInput" @focus="onInputFocus" @blur="onInputBlur" />
     </div>
     <div :class="['postfix-wrapper', props.postfixClass]">
@@ -34,6 +34,7 @@ const inputOuterWrapperClass = computed(() => {
   flex flex-row items-center gap-2
   max-h-14 h-14
   w-full
+  max-w-full
   `
 
   if (!isFocused.value) {
