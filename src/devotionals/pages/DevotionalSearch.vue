@@ -267,6 +267,7 @@ const countPerPage = 8;
 const route = useRoute();
 
 onMounted(async () => {
+  
   let { category } = route.params;
   if (Array.isArray(category))
     category = category[0];
