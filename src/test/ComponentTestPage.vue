@@ -51,6 +51,8 @@
   <AppInput>
     Label
   </AppInput>
+
+  <SermonsPreviewGrid></SermonsPreviewGrid>
 </template>
 
 <script setup lang="ts">
@@ -60,6 +62,7 @@ import AppSelect from '../components/atoms/form-controls/AppSelect.vue';
 import { ref, watch } from 'vue';
 import AppInput from '../components/atoms/form-controls/AppInput.vue';
 import Icon from '../components/atoms/Icon.vue';
+import SermonsPreviewGrid from '../sermons/components/SermonsPreviewGrid.vue';
 
 const testSelectValue = ref('b')
 const history = ref('')

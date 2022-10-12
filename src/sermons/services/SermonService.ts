@@ -22,3 +22,7 @@ export const getSermonCategories = async () => {
   return categories
 }
 
+export const searchSermons = async (page: number = 1, perPage: number = 8, searchParams?: any) => {
+  const sermons = await PocketBaseClient.records.getList('sermons', page, perPage, { sort: '-created', expand: 'categories,author', ...searchParams })
+  return transformSermonResponses(sermons.items)
+}
