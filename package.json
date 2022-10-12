@@ -6,9 +6,14 @@
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "ionic:build": "npm run build",
+    "ionic:serve": "npm run dev"
   },
   "dependencies": {
+    "@capacitor/android": "^4.3.0",
+    "@capacitor/core": "^4.3.0",
+    "@capacitor/ios": "^4.3.0",
     "date-fns": "^2.29.3",
     "pocketbase": "^0.7.1",
     "swiper": "^8.4.2",
@@ -17,8 +22,10 @@
     "vue-router": "^4.1.5"
   },
   "devDependencies": {
+    "@capacitor/cli": "^4.3.0",
     "@vitejs/plugin-vue": "^3.1.0",
     "autoprefixer": "^10.4.11",
+    "cordova-res": "^0.15.4",
     "node-fetch": "^3.2.10",
     "postcss": "^8.4.16",
     "tailwindcss": "^3.1.8",
