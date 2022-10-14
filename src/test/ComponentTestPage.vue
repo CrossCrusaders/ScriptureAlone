@@ -54,8 +54,7 @@
 
   <SermonsPreviewGrid></SermonsPreviewGrid>
 
-  <CategoryDisplayCard title="love" color-start="#FF00AA"></CategoryDisplayCard>
-  <AuthorDisplayCard :profile-image="testImage" first-name="Peter" last-name="Chamberlain"></AuthorDisplayCard>
+
 </template>
 
 <script setup lang="ts">
