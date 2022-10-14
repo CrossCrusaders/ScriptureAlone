@@ -6,15 +6,15 @@
 </template>
 
 <script setup lang="ts">
-import { ContentPreview } from './ContentPreviewCard.vue'
-import ContentPreviewCard from './ContentPreviewCard.vue'
+import ContentPreviewCard, { ContentPreview } from './ContentPreviewCard.vue'
+
 
 
 export interface ContentPreviewGridProps {
   content: ContentPreview[]
 }
 
-const props = withDefaults(defineProps<ContentPreviewGridProps>(), { content: <any>[] })
+const props = withDefaults(defineProps<ContentPreviewGridProps>(), { content: [] as any })
 const emit = defineEmits(['click:button'])
 
 </script>
