@@ -1,5 +1,5 @@
 <template>
-
+  <!-- 
   <AppInput>
     <template v-slot:prefix>
       <Icon icon-name="account"></Icon>
@@ -50,9 +50,11 @@
 
   <AppInput>
     Label
-  </AppInput>
+  </AppInput> -->
 
   <SermonsPreviewGrid></SermonsPreviewGrid>
+
+
 </template>
 
 <script setup lang="ts">
@@ -63,6 +65,8 @@ import { ref, watch } from 'vue';
 import AppInput from '../components/atoms/form-controls/AppInput.vue';
 import Icon from '../components/atoms/Icon.vue';
 import SermonsPreviewGrid from '../sermons/components/SermonsPreviewGrid.vue';
+import CategoryDisplayCard from '../components/molecules/CategoryDisplayCard.vue';
+import AuthorDisplayCard from '../components/molecules/AuthorDisplayCard.vue';
 
 const testSelectValue = ref('b')
 const history = ref('')
@@ -70,6 +74,8 @@ const history = ref('')
 watch(testSelectValue, (val) => {
   history.value += val + '\n'
 })
+
+const testImage = 'https://dev.api.scripturealone.app/api/files/veem6fdz392vlvr/zcbv10jnvcaw3bn/peter_chamberland_GoLkCeI0k4.png'
 
 const accordionTestItems = [
   {

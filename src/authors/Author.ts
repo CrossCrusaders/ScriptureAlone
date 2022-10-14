@@ -33,3 +33,5 @@ export const transformAuthorResponse = (response: any): Author => {
 
   return author
 }
+
+export const transformAuthorResponses = (responses: any[]) => responses.map(response => transformAuthorResponse(response))

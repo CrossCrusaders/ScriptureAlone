@@ -18,21 +18,37 @@
       </PageHero>
 
       <!-- Categories-->
-      <div class="hidden md:flex flex-row justify-between items-center mb-16">
-        <Badge :icon-name="category.iconName" :label="category.label" v-for="(category, index) in categories"
-          :key="index">
-        </Badge>
-      </div>
+      <section class="mb-14" id="topics-section">
+        <h2 class="font-title text-3xl font-bold mb-2 text-slate-700">Featured Preachers</h2>
+        <div class="flex flex-col md:flex-row justify-between items-center gap-4 mb-4">
+          <AuthorDisplayCard :link="'/sermons/authors/' + author.id" v-for="(author, index) in authors" :key="index"
+            :author="author">
+          </AuthorDisplayCard>
+        </div>
+        <div class="flex flex-row justify-center">
+          <RouterLink class="text-lg text-slate-600" to="/sermons/authors">View More ></RouterLink>
+        </div>
+      </section>
 
-      <Divider class="mb-16"></Divider>
+      <!-- Authors -->
+      <section id="authors-section" class="mb-14">
+        <h2 class="font-title text-3xl font-bold mb-2 text-slate-700">Daily Topics</h2>
+        <div class="flex flex-col md:flex-row justify-between items-center gap-4 mb-4">
+          <CategoryDisplayCard :link="'/sermons/topics/' + category.key" v-for="(category, index) in categories"
+            :category="category" :key="index">
+          </CategoryDisplayCard>
+        </div>
+        <div class="flex flex-row justify-center">
+          <RouterLink class="text-lg text-slate-600" to="/sermons/topics">View More ></RouterLink>
+        </div>
+      </section>
 
-      <!-- Sermons Display -->
-      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 md:gap-8 mb-24">
-        <ContentPreviewCard v-for="(sermon, index) in sermons" :key="index" :content="sermon" button-title="View Sermon"
-          @click:button="router.push(`/sermons/${sermon.id}`)">
-        </ContentPreviewCard>
-      </div>
-
+      <!-- <Divider class="mb-16"></Divider> -->
+      <!-- Recent Sermons -->
+      <section class="mb-14">
+        <h2 class="font-title text-3xl font-bold mb-2 text-slate-700">Recent Sermons</h2>
+        <SermonsPreviewGrid></SermonsPreviewGrid>
+      </section>
 
       <!-- My Plans -->
 
@@ -50,16 +66,22 @@ import { onMounted, reactive, ref } from 'vue'
 import Icon from '../../components/atoms/Icon.vue'
 import Divider from '../../components/atoms/Divider.vue'
 import { getFeaturedSermon, getRecentSermons, getSermonCategories } from '../../sermons/services/SermonService'
-import { formatMillisecondsAsReadableDuration, formatMaxLengthText } from '../../core/services/FormatService'
 import PageHero from '../../components/molecules/PageHero.vue'
 import ContentPreviewCard from '../../components/molecules/ContentPreviewCard.vue'
 import { useRouter } from 'vue-router'
+import SermonsPreviewGrid from '../components/SermonsPreviewGrid.vue'
+import { getFeaturedAuthors } from '../../authors/services/AuthorService'
+import { Author } from '../../authors/Author'
+import { Category } from '../Sermon'
+import CategoryDisplayCard from '../../components/molecules/CategoryDisplayCard.vue'
+import AuthorDisplayCard from '../../components/molecules/AuthorDisplayCard.vue'
 
 const router = useRouter()
 
 const loading = true
 
-const categories = ref<any>([])
+const categories = ref<Category[]>([])
+const authors = ref<Author[]>([])
 
 const sermons = ref<any>([])
 
@@ -67,23 +89,20 @@ const page = ref(1)
 const countPerPage = 8
 
 onMounted(async () => {
-
-  const featuredSermonPromise = getFeaturedSermon()
-  const recentSermomsPromise = getRecentSermons(page.value, countPerPage)
+  // const featuredSermonPromise = getFeaturedSermon()
   const categoriesPromise = getSermonCategories()
+  const authorsPromise = getFeaturedAuthors(3)
 
   const [
-    featuredSermon,
-    recentSermons,
+    authorsResult,
     sermonCategories
   ] = await Promise.all([
-    featuredSermonPromise,
-    recentSermomsPromise,
+    authorsPromise,
     categoriesPromise
   ])
 
-  categories.value = sermonCategories.items
-  sermons.value = recentSermons
+  categories.value = sermonCategories.slice(0, 3)
+  authors.value = authorsResult
 })
 
 </script>

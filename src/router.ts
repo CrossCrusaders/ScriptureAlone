@@ -12,6 +12,11 @@ import Commentaries from './commentaries/pages/Commentaries.vue'
 //Sermons
 import Sermons from './sermons/pages/Sermons.vue'
 import SermonDetails from './sermons/pages/SermonDetails.vue'
+import SermonAuthors from './sermons/pages/SermonAuthors.vue'
+import SermonCategories from './sermons/pages/SermonCategories.vue'
+import SermonAuthorCollection from './sermons/pages/SermonAuthorCollection.vue'
+import SermonCategoryCollection from './sermons/pages/SermonCategoryCollection.vue'
+
 //Devotionals
 import Devotionals from './devotionals/pages/Devotionals.vue'
 import DevotionalDetails from './devotionals/pages/DevotionalDetails.vue'
@@ -33,6 +38,10 @@ const routes = [
 
   //Sermons
   { path: '/sermons', component: Sermons },
+  { path: '/sermons/authors', component: SermonAuthors },
+  { path: '/sermons/topics', component: SermonCategories },
+  { path: '/sermons/authors/:authorId', component: SermonAuthorCollection },
+  { path: '/sermons/topics/:categoryKey', component: SermonCategoryCollection },
   { path: '/sermons/:id', component: SermonDetails },
 
   //Devotionals

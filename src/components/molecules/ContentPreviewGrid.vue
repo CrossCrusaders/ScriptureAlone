@@ -8,8 +8,6 @@
 <script setup lang="ts">
 import ContentPreviewCard, { ContentPreview } from './ContentPreviewCard.vue'
 
-
-
 export interface ContentPreviewGridProps {
   content: ContentPreview[]
 }
