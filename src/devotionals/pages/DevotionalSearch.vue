@@ -279,7 +279,7 @@ onMounted(async () => {
   const searchedDevotionalsDescriptionPromise = await searchDevotionals(category, 2);
   const searchedDevotionalsAuthorPromise = await searchDevotionals(category, 3);
   const categoriesPromise = getDevotionalCategories();
-
+  
   const [
     searchedDevotionalsTag,
     searchedDevotionalsTitle,

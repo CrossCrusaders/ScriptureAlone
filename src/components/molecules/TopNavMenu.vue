@@ -91,8 +91,8 @@ const menuItems = [
     label: 'Study Tools',
     children: [
       {
-        label: 'Commentaries',
-        link: '/study-tools/commentaries'
+        label: 'Devotionals',
+        link: '/devotionals'
       }
     ]
   },

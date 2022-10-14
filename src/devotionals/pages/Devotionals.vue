@@ -65,11 +65,12 @@
         ref="searchResults"
       >
         <div
+          name="devoHolder"
           v-for="(devotional, index) in devotionals"
           :key="index"
           class="flex flex-col bg-slate-200 rounded-2xl p-6"
         >
-          <h3 class="text-slate-900 text-xl font-title font-bold mb-0">
+          <h3 class="text-slate-900 text-xl font-title font-bold mb-0 break-words">
             {{ formatMaxLengthText(devotional.title, 32) }}
           </h3>
           <p class="text-slate-700 text-sm font-body mb-2">
@@ -169,17 +170,16 @@ const searchModel = ref("");
 const route = useRoute();
 const router = useRouter();
 
-const searchResultsElement = ref("searchResults");
+const devotionalElements = ref("devoHolder");
+
 
 onMounted(async () => {
   const queryParams: SearchDevo = route.query as any;
   let { q, n, s, h } = queryParams;
-  if (!q && !n && !s && !h) {
-    searchDevos("", 1, 8, true);
-  } else if(!q && n && s && h) {
+  if(!q && n && s && h) {
     searchDevos("", n, s, true);
-  } else {
-    searchDevos(searchModel.value, n, s, false);
+  } else if(q && n && s && !h) {
+    searchDevos(q, n, s, false);
   }
 });
 
@@ -189,7 +189,7 @@ const handleSearchSubmit = async (event: Event) => {
     await router.push(
       `?q=${encodeURI(searchModel.value.substring(0, 255))}&n=1&s=${8}`
     );
-    searchDevos(searchModel.value, 0, 0, false);
+    searchDevos(searchModel.value, 1, 8, false);
   } else {
     await router.replace("/devotionals");
     searchDevos("", 1, 8, true);
@@ -204,71 +204,31 @@ const nextPage = async (event: Event) => {
     await router.push(`?q=${encodeURI(q)}&n=${+n + +1}&s=${s}`);
     searchDevos(q, +n + +1, s, false);
   }
-  else if(!q && !n && !s && !h){
-    await router.push(`?n=${2}&s=${8}&h=${true}`);
-    searchDevos("", 1, 8, true);
-  }
   else if(!q && n && s && h){
-    await router.push(`?n=${+n + +1}&s=${s}&h=${h}`);
-    searchDevos("", n, s, true);
+    await router.push(`?n=${+n + +1}&s=${s}&h=${true}`);
+    searchDevos("", +n + +1, s, true);
   }
 };
 
-async function searchDevos(
-  searchTerm: string,
-  pageNumber: number,
-  pageSize: number,
-  isBlank: boolean
-) {
+async function searchDevos(searchTerm: string, pageNumber: number, pageSize: number, isBlank: boolean) {
   if (!isBlank) {
-    console.log(pageNumber);
-    const searchedDevotionalsTitlePromise = await searchDevotionals(
-      searchTerm,
-      0,
-      pageNumber,
-      pageSize
-    );
-    const searchedDevotionalsTagPromise = await searchDevotionals(
-      searchTerm,
-      1,
-      pageNumber,
-      pageSize
-    );
-    const searchedDevotionalsDescriptionPromise = await searchDevotionals(
-      searchTerm,
-      2,
-      pageNumber,
-      pageSize
-    );
-    const searchedDevotionalsAuthorPromise = await searchDevotionals(
-      searchTerm,
-      3,
-      pageNumber,
-      pageSize
-    );
+    const searchedDevotionalsTagPromise = await searchDevotionals(searchTerm, pageNumber, pageSize);
     const categoriesPromise = getDevotionalCategories();
 
     const [
       searchedDevotionalsTag,
-      searchedDevotionalsTitle,
-      searchedDevotionalsDescription,
-      searchedDevotionalsAuthor,
       devotionalCategories,
     ] = await Promise.all([
       searchedDevotionalsTagPromise,
-      searchedDevotionalsTitlePromise,
-      searchedDevotionalsDescriptionPromise,
-      searchedDevotionalsAuthorPromise,
       categoriesPromise,
     ]);
 
     categories.value = devotionalCategories.items;
-    devotionals.value = searchedDevotionalsTag.concat(
-      searchedDevotionalsTitle.concat(
-        searchedDevotionalsDescription.concat(searchedDevotionalsAuthor)
-      )
-    );
+    devotionals.value = searchedDevotionalsTag;
   } else {
+    if(pageNumber == 1){
+      await router.push(`?n=1&s=${8}&h=${true}`);
+    }
     const featuredDevotionalPromise = getFeaturedDevotional();
     const recentDevotionalsPromise = getRecentDevotionals(
       pageNumber,
