@@ -11,6 +11,7 @@ export interface Category {
   colorStart: string
   textColor: string
   customCss: any
+  key: string
 }
 
 /**

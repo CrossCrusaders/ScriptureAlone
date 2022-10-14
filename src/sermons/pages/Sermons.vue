@@ -18,23 +18,37 @@
       </PageHero>
 
       <!-- Categories-->
-      <div class="flex flex-col md:flex-row justify-between items-center mb-16 gap-4">
-        <AuthorDisplayCard v-for="(author, index) in authors" :key="index" :author="author">
-        </AuthorDisplayCard>
-      </div>
+      <section class="mb-16" id="topics-section">
+        <h2 class="font-title text-3xl font-bold mb-2 text-slate-700">Preachers</h2>
+        <div class="flex flex-col md:flex-row justify-between items-center gap-4 mb-4">
+          <AuthorDisplayCard :link="'/sermons/authors/' + author.id" v-for="(author, index) in authors" :key="index"
+            :author="author">
+          </AuthorDisplayCard>
+        </div>
+        <div class="flex flex-row justify-center">
+          <RouterLink class="text-lg text-slate-600" to="/sermons/authors">View More ></RouterLink>
+        </div>
+      </section>
 
       <!-- Authors -->
-      <div class="flex flex-col md:flex-row justify-between items-center mb-16 gap-4">
-        <CategoryDisplayCard v-for="(category, index) in categories" :category="category" :key="index">
-        </CategoryDisplayCard>
-      </div>
+      <section id="authors-section" class="mb-16">
+        <h2 class="font-title text-3xl font-bold mb-2 text-slate-700">Topics</h2>
+        <div class="flex flex-col md:flex-row justify-between items-center gap-4 mb-4">
+          <CategoryDisplayCard :link="'/sermons/topics/' + category.key" v-for="(category, index) in categories"
+            :category="category" :key="index">
+          </CategoryDisplayCard>
+        </div>
+        <div class="flex flex-row justify-center">
+          <RouterLink class="text-lg text-slate-600" to="/sermons/topics">View More ></RouterLink>
+        </div>
+      </section>
 
-
-      <Divider class="mb-16"></Divider>
-
-
-      <SermonsPreviewGrid></SermonsPreviewGrid>
-
+      <!-- <Divider class="mb-16"></Divider> -->
+      <!-- Recent Sermons -->
+      <section>
+        <h2 class="font-title text-3xl font-bold mb-2 text-slate-700">Recent Sermons</h2>
+        <SermonsPreviewGrid></SermonsPreviewGrid>
+      </section>
 
       <!-- My Plans -->
 
@@ -77,20 +91,18 @@ const countPerPage = 8
 onMounted(async () => {
   // const featuredSermonPromise = getFeaturedSermon()
   const categoriesPromise = getSermonCategories()
-  const authorsPromise = getFeaturedAuthors()
+  const authorsPromise = getFeaturedAuthors(3)
 
   const [
-    // featuredSermon,
     authorsResult,
     sermonCategories
   ] = await Promise.all([
-    // featuredSermonPromise,
     authorsPromise,
     categoriesPromise
   ])
 
   categories.value = sermonCategories.slice(0, 3)
-  authors.value = authorsResult.slice(0, 3)
+  authors.value = authorsResult
 })
 
 </script>

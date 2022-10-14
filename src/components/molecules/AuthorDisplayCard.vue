@@ -1,7 +1,9 @@
 <template>
-  <div v-bind="$attrs" class="author-display-card" :style="styleObject">
-    <span class="text-white">{{ fullName }}</span>
-  </div>
+  <RouterLink class="w-full" :to="props.link || ''">
+    <div v-bind="$attrs" class="author-display-card" :style="styleObject">
+      <span class="text-white">{{ fullName }}</span>
+    </div>
+  </RouterLink>
 </template>
 
 <script setup lang="ts">
@@ -10,6 +12,7 @@ import { Author } from '../../authors/Author'
 
 interface AuthorDisplayCardProps {
   author: Author
+  link?: string
 }
 
 const props = withDefaults(defineProps<AuthorDisplayCardProps>(), {})

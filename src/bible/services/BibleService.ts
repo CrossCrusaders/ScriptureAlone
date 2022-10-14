@@ -5,6 +5,7 @@ import { getLocalCacheItem, getSessionCacheItem, setLocalCacheItem, setSessionCa
 import { BibleBook, BibleBookLookup } from '../BibleBook'
 import { BibleChapter } from '../BibleChapter'
 import { BibleVerse } from '../BibleVerse'
+import { getDayOfTheYear } from '../../core/services/TimeService'
 
 export const bibleIdKjv = 'ENGKJV'
 
@@ -18,14 +19,7 @@ let bibleBooksCache: BibleBook[] | null = null
 let bibleTranslationsCache: any[] | null = null
 let bibleBookLookupCache: BibleBookLookup[] | null = null
 
-function getDayOfTheYear() {
-	var now = new Date();
-	var start = new Date(now.getFullYear(), 0, 0);
-	var diff = now.getTime() - start.getTime();
-	var oneDay = 1000 * 60 * 60 * 24;
-	var day = Math.floor(diff / oneDay);
-	return day
-}
+
 
 export async function getVerseOfTheDay() {
 	if (!versesOfTheDayCache) {

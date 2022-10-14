@@ -1,7 +1,9 @@
 <template>
-  <div v-bind="$attrs" class="category-display-card" :style="styleObject">
-    <span>{{ props.category?.label }}</span>
-  </div>
+  <RouterLink class="block w-full" :to="props.link || ''">
+    <div v-bind="$attrs" class="category-display-card" :style="styleObject">
+      <span>{{ props.category?.label }}</span>
+    </div>
+  </RouterLink>
 </template>
 
 <script setup lang="ts">
@@ -13,8 +15,9 @@ interface CategoryDisplayCardProps {
     colorStart?: string
     colorEnd?: string
     textColor?: string
-    link?: string
+    key?: string
   }
+  link?: string
 }
 
 const props = defineProps<CategoryDisplayCardProps>()
