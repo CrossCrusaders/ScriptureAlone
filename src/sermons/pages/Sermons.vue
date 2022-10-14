@@ -18,20 +18,22 @@
       </PageHero>
 
       <!-- Categories-->
-      <div class="hidden md:flex flex-row justify-between items-center mb-16">
-        <Badge :icon-name="category.iconName" :label="category.label" v-for="(category, index) in categories"
-          :key="index">
-        </Badge>
+      <div class="flex flex-col md:flex-row justify-between items-center mb-16 gap-4">
+        <AuthorDisplayCard v-for="(author, index) in authors" :key="index" :author="author">
+        </AuthorDisplayCard>
       </div>
+
+      <!-- Authors -->
+      <div class="flex flex-col md:flex-row justify-between items-center mb-16 gap-4">
+        <CategoryDisplayCard v-for="(category, index) in categories" :category="category" :key="index">
+        </CategoryDisplayCard>
+      </div>
+
 
       <Divider class="mb-16"></Divider>
 
-      <!-- Sermons Display -->
-      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 md:gap-8 mb-24">
-        <ContentPreviewCard v-for="(sermon, index) in sermons" :key="index" :content="sermon" button-title="View Sermon"
-          @click:button="router.push(`/sermons/${sermon.id}`)">
-        </ContentPreviewCard>
-      </div>
+
+      <SermonsPreviewGrid></SermonsPreviewGrid>
 
 
       <!-- My Plans -->
@@ -50,16 +52,22 @@ import { onMounted, reactive, ref } from 'vue'
 import Icon from '../../components/atoms/Icon.vue'
 import Divider from '../../components/atoms/Divider.vue'
 import { getFeaturedSermon, getRecentSermons, getSermonCategories } from '../../sermons/services/SermonService'
-import { formatMillisecondsAsReadableDuration, formatMaxLengthText } from '../../core/services/FormatService'
 import PageHero from '../../components/molecules/PageHero.vue'
 import ContentPreviewCard from '../../components/molecules/ContentPreviewCard.vue'
 import { useRouter } from 'vue-router'
+import SermonsPreviewGrid from '../components/SermonsPreviewGrid.vue'
+import { getFeaturedAuthors } from '../../authors/services/AuthorService'
+import { Author } from '../../authors/Author'
+import { Category } from '../Sermon'
+import CategoryDisplayCard from '../../components/molecules/CategoryDisplayCard.vue'
+import AuthorDisplayCard from '../../components/molecules/AuthorDisplayCard.vue'
 
 const router = useRouter()
 
 const loading = true
 
-const categories = ref<any>([])
+const categories = ref<Category[]>([])
+const authors = ref<Author[]>([])
 
 const sermons = ref<any>([])
 
@@ -67,23 +75,22 @@ const page = ref(1)
 const countPerPage = 8
 
 onMounted(async () => {
-
-  const featuredSermonPromise = getFeaturedSermon()
-  const recentSermomsPromise = getRecentSermons(page.value, countPerPage)
+  // const featuredSermonPromise = getFeaturedSermon()
   const categoriesPromise = getSermonCategories()
+  const authorsPromise = getFeaturedAuthors()
 
   const [
-    featuredSermon,
-    recentSermons,
+    // featuredSermon,
+    authorsResult,
     sermonCategories
   ] = await Promise.all([
-    featuredSermonPromise,
-    recentSermomsPromise,
+    // featuredSermonPromise,
+    authorsPromise,
     categoriesPromise
   ])
 
-  categories.value = sermonCategories.items
-  sermons.value = recentSermons
+  categories.value = sermonCategories.slice(0, 3)
+  authors.value = authorsResult.slice(0, 3)
 })
 
 </script>

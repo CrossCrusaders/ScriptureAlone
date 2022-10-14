@@ -3,13 +3,38 @@ import { getBucketUrl } from "../api/BucketStorageService"
 
 export interface Category {
   created: Date,
-  iconName: string,
-  iconType: string,
-  id: string,
-  label: string,
-  updated: Date,
-
+  iconName: string
+  id: string
+  label: string
+  updated: Date
+  colorEnd: string
+  colorStart: string
+  textColor: string
+  customCss: any
 }
+
+/**
+@collectionId: "td6b1l9mrk0pshl"
+@collectionName: "sermonCategories"
+colorEnd: "#5f0963"
+colorStart:"#a000a8"
+created: "2022-09-24 12:07:20.954"
+customCss: null
+iconName: "cross"
+iconType: ""
+id: "pq9ks66fu4nje8h"
+label: "Salvation"
+textColor: "#ffffff"
+updated: "2022-10-14 11:28:24.508"
+ */
+
+export const transformCategoryResponse = (response: any) => {
+  return {
+    ...response
+  } as Category
+}
+
+export const transformCategoryResponses = (responses: any[]) => responses.map(r => transformCategoryResponse(r))
 
 export interface Sermon {
   id?: string

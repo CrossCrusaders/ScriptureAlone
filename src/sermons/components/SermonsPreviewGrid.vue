@@ -4,6 +4,7 @@
 
 <script setup lang="ts">
 import { onMounted, ref } from 'vue';
+import { useRouter } from 'vue-router';
 import ContentPreviewGrid from '../../components/molecules/ContentPreviewGrid.vue'
 import { Sermon } from '../Sermon';
 import { searchSermons } from '../services/SermonService'
@@ -12,6 +13,7 @@ export interface SermonsPreviewGridProps {
   queryParams?: any
   page?: number
   perPage?: number
+  link?: string
 }
 
 const props = withDefaults(defineProps<SermonsPreviewGridProps>(), {
@@ -19,6 +21,9 @@ const props = withDefaults(defineProps<SermonsPreviewGridProps>(), {
   perPage: 8
 })
 const loadedSermons = ref<Sermon[]>([])
+
+const router = useRouter()
+const emit = defineEmits(['click:button'])
 
 onMounted(async () => {
 
@@ -28,7 +33,10 @@ onMounted(async () => {
 })
 
 const onSermonCardClicked = (sermon: Sermon) => {
-  debugger;
+  if (props.link)
+    router.push(props.link)
+
+  emit('click:button')
 }
 </script>
 
