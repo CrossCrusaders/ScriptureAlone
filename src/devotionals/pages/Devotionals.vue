@@ -176,12 +176,10 @@ const devotionalElements = ref("devoHolder");
 onMounted(async () => {
   const queryParams: SearchDevo = route.query as any;
   let { q, n, s, h } = queryParams;
-  if (!q && !n && !s && !h) {
-    searchDevos("", 1, 8, true);
-  } else if(!q && n && s && h) {
+  if(!q && n && s && h) {
     searchDevos("", n, s, true);
-  } else {
-    searchDevos(searchModel.value, n, s, false);
+  } else if(q && n && s && !h) {
+    searchDevos(q, n, s, false);
   }
 });
 
@@ -214,32 +212,19 @@ const nextPage = async (event: Event) => {
 
 async function searchDevos(searchTerm: string, pageNumber: number, pageSize: number, isBlank: boolean) {
   if (!isBlank) {
-    const searchedDevotionalsTitlePromise = await searchDevotionals(searchTerm, 0, pageNumber, pageSize);
-    const searchedDevotionalsTagPromise = await searchDevotionals(searchTerm, 1, pageNumber, pageSize);
-    const searchedDevotionalsDescriptionPromise = await searchDevotionals(searchTerm, 2, pageNumber, pageSize);
-    const searchedDevotionalsAuthorPromise = await searchDevotionals(searchTerm, 3, pageNumber, pageSize);
+    const searchedDevotionalsTagPromise = await searchDevotionals(searchTerm, pageNumber, pageSize);
     const categoriesPromise = getDevotionalCategories();
 
     const [
       searchedDevotionalsTag,
-      searchedDevotionalsTitle,
-      searchedDevotionalsDescription,
-      searchedDevotionalsAuthor,
       devotionalCategories,
     ] = await Promise.all([
       searchedDevotionalsTagPromise,
-      searchedDevotionalsTitlePromise,
-      searchedDevotionalsDescriptionPromise,
-      searchedDevotionalsAuthorPromise,
       categoriesPromise,
     ]);
 
     categories.value = devotionalCategories.items;
-    devotionals.value = searchedDevotionalsTag.concat(
-      searchedDevotionalsTitle.concat(
-        searchedDevotionalsDescription.concat(searchedDevotionalsAuthor)
-      )
-    );
+    devotionals.value = searchedDevotionalsTag;
   } else {
     if(pageNumber == 1){
       await router.push(`?n=1&s=${8}&h=${true}`);
