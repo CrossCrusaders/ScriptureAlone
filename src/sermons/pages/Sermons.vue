@@ -18,7 +18,7 @@
       </PageHero>
 
       <!-- Categories-->
-      <section class="mb-16" id="topics-section">
+      <section class="mb-14" id="topics-section">
         <h2 class="font-title text-3xl font-bold mb-2 text-slate-700">Preachers</h2>
         <div class="flex flex-col md:flex-row justify-between items-center gap-4 mb-4">
           <AuthorDisplayCard :link="'/sermons/authors/' + author.id" v-for="(author, index) in authors" :key="index"
@@ -31,7 +31,7 @@
       </section>
 
       <!-- Authors -->
-      <section id="authors-section" class="mb-16">
+      <section id="authors-section" class="mb-14">
         <h2 class="font-title text-3xl font-bold mb-2 text-slate-700">Topics</h2>
         <div class="flex flex-col md:flex-row justify-between items-center gap-4 mb-4">
           <CategoryDisplayCard :link="'/sermons/topics/' + category.key" v-for="(category, index) in categories"
@@ -45,7 +45,7 @@
 
       <!-- <Divider class="mb-16"></Divider> -->
       <!-- Recent Sermons -->
-      <section>
+      <section class="mb-14">
         <h2 class="font-title text-3xl font-bold mb-2 text-slate-700">Recent Sermons</h2>
         <SermonsPreviewGrid></SermonsPreviewGrid>
       </section>

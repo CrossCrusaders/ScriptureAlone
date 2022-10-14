@@ -33,8 +33,8 @@ onMounted(async () => {
 })
 
 const onSermonCardClicked = (sermon: Sermon) => {
-  if (props.link)
-    router.push(props.link)
+
+  router.push(`/sermons/${sermon.id}`)
 
   emit('click:button')
 }

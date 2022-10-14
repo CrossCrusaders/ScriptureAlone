@@ -1,6 +1,7 @@
 <template>
   <RouterLink class="w-full" :to="props.link || ''">
     <div v-bind="$attrs" class="author-display-card" :style="styleObject">
+      <div class="absolute bottom-0 left-0 right-0 h-14 author-name-backdrop"></div>
       <span class="text-white">{{ fullName }}</span>
     </div>
   </RouterLink>
@@ -47,18 +48,24 @@ const fullName = computed(() => {
   border-radius: .5rem;
   position: relative;
   cursor: pointer;
+  overflow: hidden;
   width: 100%;
 }
 
 .author-display-card>span {
-  text-shadow:
+  /* text-shadow:
     -1px -1px 0 #000,
     1px -1px 0 #000,
     -1px 1px 0 #000,
-    1px 1px 0 #000;
+    1px 1px 0 #000; */
   bottom: 8px;
   right: 8px;
   position: absolute;
   font-size: 1.5rem;
+}
+
+.author-name-backdrop {
+
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 100%);
 }
 </style>
