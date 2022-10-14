@@ -1,7 +1,7 @@
 <template>
   <RouterLink class="w-full" :to="props.link || ''">
     <div v-bind="$attrs" class="author-display-card" :style="styleObject">
-      <div class="absolute bottom-0 left-0 right-0 h-14 author-name-backdrop"></div>
+      <div class="absolute bottom-0 left-0 right-0 top-0 author-name-backdrop"></div>
       <span class="text-white">{{ fullName }}</span>
     </div>
   </RouterLink>
@@ -20,7 +20,7 @@ const props = withDefaults(defineProps<AuthorDisplayCardProps>(), {})
 
 const styleObject = computed(() => {
   return {
-    'background-image': `url(${props.author?.profileImage})`,
+    'background-image': `url(${props.author?.profileImage || '/logo-bible.png'})`,
     'background-position': 'center center',
     'background-size': 'cover',
   }
