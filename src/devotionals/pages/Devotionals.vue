@@ -70,7 +70,7 @@
           :key="index"
           class="flex flex-col bg-slate-200 rounded-2xl p-6"
         >
-          <h3 class="text-slate-900 text-xl font-title font-bold mb-0">
+          <h3 class="text-slate-900 text-xl font-title font-bold mb-0 break-words">
             {{ formatMaxLengthText(devotional.title, 32) }}
           </h3>
           <p class="text-slate-700 text-sm font-body mb-2">
@@ -171,6 +171,7 @@ const route = useRoute();
 const router = useRouter();
 
 const devotionalElements = ref("devoHolder");
+
 
 onMounted(async () => {
   const queryParams: SearchDevo = route.query as any;
