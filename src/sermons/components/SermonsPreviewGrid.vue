@@ -21,8 +21,8 @@ const props = withDefaults(defineProps<SermonsPreviewGridProps>(), {
   page: 1,
   perPage: 8
 })
-const loadedSermons = ref<ContentPreview[]>([])
 
+const loadedSermons = ref<ContentPreview[]>([])
 const router = useRouter()
 const emit = defineEmits(['click:button'])
 
@@ -34,9 +34,7 @@ onMounted(async () => {
 })
 
 const onSermonCardClicked = (sermon: Sermon) => {
-
   router.push(`/sermons/${sermon.id}`)
-
   emit('click:button')
 }
 </script>
