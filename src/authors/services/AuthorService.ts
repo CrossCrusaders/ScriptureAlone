@@ -2,8 +2,18 @@ import PocketBaseClient from "../../api/PocketBaseClient"
 import { getDayOfTheYear } from "../../core/services/TimeService"
 import { transformAuthorResponse, transformAuthorResponses } from "../Author"
 
-export const searchAuthors = async (page: number = 1, perPage: number = 8, searchParams?: any) => {
-  const sermons = await PocketBaseClient.records.getList('authors', page, perPage, { sort: '-created', ...searchParams })
+export const searchAuthors = async (query?: string, page: number = 1, perPage: number = 8, searchParams?: any) => {
+  const params = {
+    sort: '-created',
+    ...searchParams
+  }
+  if (query) {
+    const searchTokens = query.trim().split(' ')
+    searchTokens.forEach((token, index) => {
+      params.filter += `${(index > 0) ? '||' : ''}(firstName~'${token}'||lastName~'${token}')`
+    })
+  }
+  const sermons = await PocketBaseClient.records.getList('authors', page, perPage, params)
   return transformAuthorResponses(sermons.items)
 }
 
