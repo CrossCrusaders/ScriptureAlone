@@ -1,7 +1,7 @@
 <template>
   <AppLayout>
     <PageContent>
-      4
+
     </PageContent>
   </AppLayout>
 </template>

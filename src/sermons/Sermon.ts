@@ -29,7 +29,7 @@ textColor: "#ffffff"
 updated: "2022-10-14 11:28:24.508"
  */
 
-export const transformCategoryResponse = (response: any) => {
+export const transformCategoryResponse = (response: any): Category => {
   return {
     ...response
   } as Category

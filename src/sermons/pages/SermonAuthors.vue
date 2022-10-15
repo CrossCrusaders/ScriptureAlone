@@ -11,7 +11,6 @@
               <AppButton variant="primary-minimal" size="sm" type="submit" v-if="!hasSearch">
                 <Icon icon-name="magnify"></Icon>
               </AppButton>
-
               <AppButton variant="primary-minimal" @click="onClearClicked" size="sm" v-else>
                 <Icon icon-name="close"></Icon>
               </AppButton>

@@ -28,7 +28,7 @@ const emit = defineEmits(['click:button'])
 
 onMounted(async () => {
 
-  const result = await searchSermons()
+  const result = await searchSermons(null, props.page, props.perPage, props.queryParams)
 
   loadedSermons.value = result as ContentPreview[]
 })
