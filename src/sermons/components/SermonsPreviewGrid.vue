@@ -21,22 +21,18 @@ const props = withDefaults(defineProps<SermonsPreviewGridProps>(), {
   page: 1,
   perPage: 8
 })
-const loadedSermons = ref<ContentPreview[]>([])
 
+const loadedSermons = ref<ContentPreview[]>([])
 const router = useRouter()
 const emit = defineEmits(['click:button'])
 
 onMounted(async () => {
-
-  const result = await searchSermons()
-
+  const result = await searchSermons(null, props.page, props.perPage, props.queryParams)
   loadedSermons.value = result as ContentPreview[]
 })
 
 const onSermonCardClicked = (sermon: Sermon) => {
-
   router.push(`/sermons/${sermon.id}`)
-
   emit('click:button')
 }
 </script>

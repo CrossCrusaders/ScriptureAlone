@@ -55,3 +55,19 @@ export const formatMaxLengthText = (text: string, maxLength: number) => {
     return text
   return text.substring(0, maxLength - 3) + '...'
 }
+
+export const formatName = (firstName: string | any, lastName?: string) => {
+
+  if (!firstName)
+    return ''
+
+  if (typeof firstName === 'string') {
+    return `${firstName} ${lastName}`.trim()
+  }
+
+  const fName = firstName.firstName || firstName.givenName
+  const lName = firstName.lastName || firstName.familyName
+
+  return `${fName} ${lName}`.trim()
+
+}
