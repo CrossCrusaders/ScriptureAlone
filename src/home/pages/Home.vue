@@ -98,7 +98,6 @@
         Recommended Devotionals
       </h2>
       <ContentCarousel
-        ref="devoCar"
         :slides="devoList"
       ></ContentCarousel>
     </div>
@@ -108,8 +107,7 @@
       <h2 class="font-bold font-title mb-8 md:mb-16 text-4xl">
         Recommended Sermons
       </h2>
-      <ContentCarousel 
-        ref="sermonCar"
+      <ContentCarousel
         :slides="sermonList"
       ></ContentCarousel>
     </div>
@@ -148,63 +146,11 @@ import { getRecentSermons } from '../../sermons/services/SermonService'
 const verseName = ref("");
 const verseText = ref("");
 
-let devoList = ref([
-  {
-    image: "",
-    title: "",
-  },
-  {
-    image: "",
-    title: "",
-  },
-  {
-    image: "",
-    title: "",
-  },
-  {
-    image: "",
-    title: "",
-  },
-  {
-    image: "",
-    title: "",
-  },
-  {
-    image: "",
-    title: "",
-  }
-])
+let devoList = ref([{},{},{},{},{},{}])
 let devoImgs = [String]
-const devoCar = ref([]);
 
-let sermonList = ref([
-  {
-    image: "",
-    title: "",
-  },
-  {
-    image: "",
-    title: "",
-  },
-  {
-    image: "",
-    title: "",
-  },
-  {
-    image: "",
-    title: "",
-  },
-  {
-    image: "",
-    title: "",
-  },
-  {
-    image: "",
-    title: "",
-  }
-])
+let sermonList = ref([{},{},{},{},{},{}])
 let sermonImgs = [String]
-const sermonCar = ref([]);
 
 onMounted(async () => {
   var htmlVerse = await getVerseOfTheDay();
@@ -263,7 +209,7 @@ onMounted(async () => {
       sermonImgs[i] = recentSermons[i].author?.profileImage;
     }
     else{
-      sermonImgs[i] = recentSermons[i].coverImage
+      sermonImgs[i] = recentSermons[i].coverImage;
     }
   }
 
@@ -301,16 +247,6 @@ onMounted(async () => {
     },
   ];
 });
-
-watch(devoList, () => {
-  //@ts-expect-error
-  devoCar.value = devoList;
-})
-
-watch(sermonList, () => {
-  //@ts-expect-error
-  sermonCar.value = sermonList;
-})
 
 const searchModel = ref("");
 const searchTranslationId = ref("ENGKJV");
