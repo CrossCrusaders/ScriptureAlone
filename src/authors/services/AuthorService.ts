@@ -29,3 +29,9 @@ export const getFeaturedAuthors = async (count: number = 6) => {
   const response = await PocketBaseClient.records.getList('authors', selectedPage, count, { sort: '-created', filter: "profileImage!=null" })
   return transformAuthorResponses(response.items)
 }
+
+export const getAuthor = async (authorId: string) => {
+
+  const response = await PocketBaseClient.records.getOne('authors', authorId, { expand: 'church' })
+  return transformAuthorResponse(response)
+}

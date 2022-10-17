@@ -4,17 +4,18 @@
 
       <div class="flex flex-col-reverse md:flex-row gap-2 md:gap-8 mt-8" v-if="!loading && author">
         <div class="md:w-2/6">
-          <AuthorPreviewColumn :author="author"></AuthorPreviewColumn>
+          <AuthorPreviewColumn :show-church-info="false" :author="author"></AuthorPreviewColumn>
           <!--TODO: Share Icons -->
 
         </div>
         <!-- Right Side -->
         <div class="md:w-4/6 flex-auto">
           <h1 class="font-title font-bold text-4xl mb-2 text-slate-800" v-if="author">{{ formatName(author) }}</h1>
-
+          <ChurchContactInfo :church="author.church"></ChurchContactInfo>
 
         </div>
       </div>
+      <SermonsPreviewGrid :per-page="16" :page="currentPage" v-if="queryParams"></SermonsPreviewGrid>
 
     </PageContent>
   </AppLayout>
@@ -24,12 +25,14 @@
 import { onMounted, ref } from 'vue'
 import AppLayout from '../../components/templates/AppLayout.vue'
 import PageContent from '../../components/templates/PageContent.vue'
-import { } from '../../authors/services/AuthorService'
+import { getAuthor } from '../../authors/services/AuthorService'
 import { } from '../services/SermonService'
 import { useRoute } from 'vue-router'
 import { Author } from '../../authors/Author'
 import AuthorPreviewColumn from '../components/AuthorPreviewColumn.vue'
+import SermonsPreviewGrid from '../components/SermonsPreviewGrid.vue'
 import { formatName } from '../../core/services/FormatService'
+import ChurchContactInfo from '../../components/molecules/ChurchContactInfo.vue'
 
 const route = useRoute()
 
@@ -38,9 +41,15 @@ const authorId = route.params.authorId as string
 const author = ref<Author>()
 const loading = ref<boolean>(false)
 
-onMounted(async () => {
+const queryParams = ref<any>()
+const currentPage = ref<number>(1)
 
+onMounted(async () => {
+  author.value = await getAuthor(authorId)
+  queryParams.value = { filter: `author='${author.value.id}'` }
 })
+
+
 </script>
 
 <style scoped>

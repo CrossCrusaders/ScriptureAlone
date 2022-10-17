@@ -58,6 +58,9 @@ export const formatMaxLengthText = (text: string, maxLength: number) => {
 
 export const formatName = (firstName: string | any, lastName?: string) => {
 
+  if (!firstName)
+    return ''
+
   if (typeof firstName === 'string') {
     return `${firstName} ${lastName}`.trim()
   }

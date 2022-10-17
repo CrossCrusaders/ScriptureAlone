@@ -4,7 +4,7 @@
     <p class="font-bold text-slate-800 mb-2">Speaker: {{ formatName(props.author) }} </p>
   </div>
   <!-- Church Contact info-->
-  <div class="mb-8" v-if="props.author?.church">
+  <div class="mb-8" v-if="props.showChurchInfo && props.author?.church">
     <ChurchContactInfo :church="props.author?.church"></ChurchContactInfo>
   </div>
 </template>
@@ -16,7 +16,8 @@ import ChurchContactInfo from '../../components/molecules/ChurchContactInfo.vue'
 
 export interface AuthorPreviewColumnProps {
   author?: Author
+  showChurchInfo?: boolean
 }
-const props = defineProps<AuthorPreviewColumnProps>()
+const props = withDefaults(defineProps<AuthorPreviewColumnProps>(), { showChurchInfo: true })
 
 </script>
