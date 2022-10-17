@@ -19,14 +19,14 @@ import PocketBaseClient from '../../api/PocketBaseClient'
 import { Author } from '../../authors/Author'
 import { formatAddress } from '../../core/services/FormatService'
 import { Devotional } from '../Devotional';
+import { getBucketUrl } from '../../api/BucketStorageService'
 
 export interface AuthorPreviewColumnProps {
   devoObject?: Devotional
 }
 const props = defineProps<AuthorPreviewColumnProps>()
 
-//@ts-expect-error
-var imgURL:any = PocketBaseClient.records.getFileUrl(props.devoObject, props.devoObject?.coverImage, {});
+var imgURL:any = getBucketUrl(props.devoObject, props.devoObject?.coverImage, {});
 
 if(props.devoObject?.coverImage == ""){
   imgURL = props.devoObject?.author?.profileImage;

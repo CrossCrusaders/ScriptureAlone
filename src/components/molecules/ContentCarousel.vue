@@ -3,9 +3,12 @@
     <swiper :modules="modules" :slides-per-view="slidesPerView" :space-between="50" navigation
       :pagination="{ clickable: true }" :scrollbar="{ draggable: true }">
       <swiper-slide v-for="slide of props.slides" :key="slide.title">
-        <div class="h-48 bg-gray-200 flex justify-center items-center">
-          {{ slide.title }}
+        <div class="h-48 bg-gray-200 flex justify-center items-center overflow-hidden">
+          <a :href="slide.link" class="flex justify-center items-center overflow-hidden">
+            <img style="object-fit: cover;" :src="slide.image" />
+          </a>
         </div>
+        <p class="z-10 font-bold mb-8">{{ slide.title }}</p>
       </swiper-slide>
     </swiper>
   </div>
@@ -22,14 +25,13 @@ import 'swiper/css/scrollbar'
 import { computed } from 'vue'
 
 export interface ContentSlide {
-  imgSrc?: string
+  image?: string
   title?: string
-  href?: string
+  link?: string
 }
 
 export interface ContentCarouselProps {
   slides: ContentSlide[]
-
 }
 
 const modules = [Navigation, Pagination, Scrollbar, A11y]
