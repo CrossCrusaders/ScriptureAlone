@@ -18,7 +18,7 @@
             </span>
           </p>
 
-          <p class="mb-8 text-slate-500 font-bold">{{ sermonDetail.sermonDate }}</p>
+          <p class="mb-8 text-slate-500 font-bold">{{ format(sermonDetail.sermonDate || new Date(), 'MM/dd/yyyy') }}</p>
           <p class="mb-8 text-slate-700 leading-normal">
             {{ sermonDetail.description }}
           </p>
@@ -29,47 +29,7 @@
           <Divider></Divider>
         </div>
       </div>
-      <div class="lg:flex lg:flex-row gap-10">
-        <!-- My Plans -->
-        <div class="bg-slate-200 rounded-3xl w-full mb-4">
-          <IconCallToAction class="w-full gap-2">
-            <template v-slot:image>
-              <Icon icon-name="clipboard-list" :size="16"></Icon>
-            </template>
-
-            <div>
-              <h1 class="text-xl whitespace-nowrap font-title font-bold">My Plans</h1>
-              <p class="font-body font-lg leading-relaxed">This is the body</p>
-            </div>
-
-            <template v-slot:action>
-              <AppButton>
-                Click Me!
-              </AppButton>
-            </template>
-          </IconCallToAction>
-        </div>
-
-        <!-- Recommended Plans -->
-        <div class="bg-slate-200 rounded-3xl w-full mb-4">
-          <IconCallToAction class="w-full gap-2">
-            <template v-slot:image>
-              <Icon icon-name="thumb-up" :size="16"></Icon>
-            </template>
-
-            <div>
-              <h1 class="text-xl whitespace-nowrap font-title font-bold">Recommended Plans</h1>
-              <p class="font-body font-sm leading-relaxed">This is the body</p>
-            </div>
-
-            <template v-slot:action>
-              <AppButton>
-                Click Me!
-              </AppButton>
-            </template>
-          </IconCallToAction>
-        </div>
-      </div>
+      <UserRecommendationFooter></UserRecommendationFooter>
       <br><br>
     </PageContent>
   </AppLayout>
@@ -102,6 +62,7 @@ import { formatMillisecondsAsReadableDuration } from '../../core/services/Format
 import { Sermon } from '../Sermon'
 import IconCallToAction from '../../components/molecules/IconCallToAction.vue'
 import Icon from '../../components/atoms/Icon.vue'
+import UserRecommendationFooter from '../../components/organisms/UserRecommendationFooter.vue'
 
 
 const loading = ref(true)
@@ -131,13 +92,13 @@ const sermonVideoSrc = computed(() => {
 })
 
 const sermonLastUpdatedDisplay = computed(() => {
-  const strDate = (sermonDetail.value?.sermonDate || sermonDetail.value?.updated) as any
-  const date = new Date(strDate.split(' ')[0])
+  const date = (sermonDetail.value?.sermonDate || sermonDetail.value?.updated) as any
   return format(date, 'MM/dd/yyyy')
 })
 
 const beforeAudioModalClose = () => {
   // TODO: find a way to stop the audio from playing when the modal is closed
 }
+
 
 </script>

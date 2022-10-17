@@ -91,6 +91,15 @@ export const transformSermonResponse = (response: any): Sermon => {
     sermon.coverImage = getBucketUrl(sermon, sermon.coverImage)
   }
 
+  if (sermon.sermonDate)
+    sermon.sermonDate = new Date((sermon.sermonDate as any).replace(' ', 'T'))
+
+  if (sermon.updated)
+    sermon.updated = new Date((sermon.updated as any).replace(' ', 'T'))
+
+  if (sermon.created)
+    sermon.created = new Date((sermon.created as any).replace(' ', 'T'))
+
   return sermon
 }
 

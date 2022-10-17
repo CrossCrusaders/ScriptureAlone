@@ -15,7 +15,9 @@
 
         </div>
       </div>
-      <SermonsPreviewGrid :per-page="16" :page="currentPage" v-if="queryParams"></SermonsPreviewGrid>
+      <div v-if="queryParams">
+        <SermonsPreviewGrid :per-page="16" :page="currentPage" :query-params="queryParams"></SermonsPreviewGrid>
+      </div>
 
     </PageContent>
   </AppLayout>
@@ -46,7 +48,7 @@ const currentPage = ref<number>(1)
 
 onMounted(async () => {
   author.value = await getAuthor(authorId)
-  queryParams.value = { filter: `author='${author.value.id}'` }
+  queryParams.value = { filter: `author='${authorId}'` }
 })
 
 
