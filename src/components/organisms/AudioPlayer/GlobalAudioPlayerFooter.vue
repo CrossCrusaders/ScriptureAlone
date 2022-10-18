@@ -6,17 +6,23 @@
 
       </div>
       <div
-        class="h-40 md:h-20 flex flex-col md:flex-row items-center fixed bottom-0 left-0 right-0 justify-center player-bar bg-red-900 gap-4 p-4">
-        <div>
-          <h2 class="text-white text-md font-bold font-title">
-            Now Playing:
-          </h2>
-          <p class="text-white text-md font-bold font-title"> {{ globalAudioPayload?.title }}</p>
+        class="h-40 md:h-20 flex flex-col md:flex-row items-center fixed bottom-0 left-0 right-0 justify-center player-bar bg-red-900 gap-4 p-1 md:p-4">
+        <div class="flex flex-row justify-between gap-8 w-full">
+          <div class="py-2">
+            <h2 class="text-white text-md font-bold font-title">
+              Now Playing:
+            </h2>
+            <p class="text-white text-md font-bold font-title"> {{ globalAudioPayload?.title }}</p>
+          </div>
+          <AppButton v-if="breakpoint === 'sm'" variant="primary-minimal" size="sm" @click="onCloseClicked">
+            <Icon :invert="true" icon-name="close"></Icon>
+          </AppButton>
         </div>
-        <div class="flex-auto md:max-w-prose">
+        <div class="flex-auto md:max-w-prose w-full p-4 md:p-0">
           <AudioPlayer :state="globalAudioState" :audio-src="globalAudioPayload?.url"></AudioPlayer>
         </div>
-        <AppButton variant="primary-minimal" size="sm" @click="onCloseClicked">
+        <AppButton v-if="breakpoint === 'md' || breakpoint === 'lg'" variant="primary-minimal" size="sm"
+          @click="onCloseClicked">
           <Icon :invert="true" icon-name="close"></Icon>
         </AppButton>
       </div>
