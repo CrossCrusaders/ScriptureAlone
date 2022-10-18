@@ -62,6 +62,9 @@ export const transformDevotionalResponse = (response: any): Devotional => {
     devotional.audioFile = getBucketUrl(devotional, devotional.audioFile)
   }
 
+  if (devotional.coverImage)
+    devotional.coverImage = getBucketUrl(devotional, devotional.coverImage)
+
   return devotional
 }
 

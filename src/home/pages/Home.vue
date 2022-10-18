@@ -2,64 +2,36 @@
   <AppLayout>
     <!-- Search Hero -->
     <div class="flex flex-col items-center mb-24">
-      <img
-        class="object-contain max-h-40 md:max-h-80 block mb-4"
-        src="/logo-bible.png"
-      />
+      <img class="object-contain max-h-40 md:max-h-80 block mb-4" src="/logo-bible.png" />
       <h1
-        class="font-bold font-title text-3xl md:text-5xl lg:text-6xl mb-2 bg-gradient-to-r from-[#1e293b] to-[#57687f] text-transparent bg-clip-text"
-      >
+        class="font-bold font-title text-3xl md:text-5xl lg:text-6xl mb-2 bg-gradient-to-r from-[#1e293b] to-[#57687f] text-transparent bg-clip-text">
         Scripture Alone
       </h1>
       <p class="font-body text-lg mb-2">Sound Doctrine Guaranteed</p>
       <form @submit="handleSearchSubmit($event)">
         <div class="px-2">
-          <AppInput
-            type="input"
-            name="query"
-            v-model="searchModel"
-            placeholder="Search The Scripture"
-          >
+          <AppInput type="input" name="query" v-model="searchModel" placeholder="Search The Scripture">
             <template v-slot:prefix>
               <Icon icon-name="magnify"></Icon>
             </template>
             <template v-slot:postfix>
-              <BibleTranslationSelect
-                v-model="searchTranslationId"
-              ></BibleTranslationSelect>
+              <BibleTranslationSelect v-model="searchTranslationId"></BibleTranslationSelect>
             </template>
           </AppInput>
-          <AppButton
-            variant="primary-light"
-            class="block w-full md:hidden mt-4"
-            type="submit"
-            >Search</AppButton
-          >
+          <AppButton variant="primary-light" class="block w-full md:hidden mt-4" type="submit">Search</AppButton>
         </div>
       </form>
     </div>
 
     <!-- Calls To Action -->
-    <div
-      class="flex flex-col md:flex-row gap-2 items-center justify-between mb-24 p-2"
-    >
+    <div class="flex flex-col md:flex-row gap-2 items-center justify-between mb-24 p-2">
       <a :class="callToActionItemClass" href="#VOTD">
-        <Icon
-          icon-name="book-cross"
-          :class="[callToActionIconClass]"
-          :size="16"
-        >
+        <Icon icon-name="book-cross" :class="[callToActionIconClass]" :size="16">
         </Icon>
-        <span class="text-center whitespace-nowrap text-ellipsis"
-          >Verse of the day</span
-        >
+        <span class="text-center whitespace-nowrap text-ellipsis">Verse of the day</span>
       </a>
       <RouterLink :class="callToActionItemClass" to="/devotionals">
-        <Icon
-          icon-name="notebook-edit"
-          :class="[callToActionIconClass]"
-          :size="16"
-        >
+        <Icon icon-name="notebook-edit" :class="[callToActionIconClass]" :size="16">
         </Icon>
         Devotionals
       </RouterLink>
@@ -73,18 +45,11 @@
     <!-- Verse of the Day-->
     <div class="flex flex-col gap-8 items-center mb-24 p-2" id="VOTD">
       <h2
-        class="font-bold font-title text-6xl text-center bg-gradient-to-r from-[#57687f] to-[#1e293b] text-transparent bg-clip-text pb-1"
-      >
+        class="font-bold font-title text-6xl text-center bg-gradient-to-r from-[#57687f] to-[#1e293b] text-transparent bg-clip-text pb-1">
         Verse of the Day
       </h2>
-      <div
-        class="rounded-lg border-2 border-solid border-gray-800 p-8 max-w-prose"
-      >
-        <h3
-          v-html="verseName"
-          id="verseName"
-          class="font-title font-bold text-3xl text-gray-800 mb-8"
-        ></h3>
+      <div class="rounded-lg border-2 border-solid border-gray-800 p-8 max-w-prose">
+        <h3 v-html="verseName" id="verseName" class="font-title font-bold text-3xl text-gray-800 mb-8"></h3>
         <p v-html="verseText" id="verseText" class="text-xl"></p>
       </div>
     </div>
@@ -97,9 +62,7 @@
       <h2 class="font-bold font-title mb-8 md:mb-16 text-4xl">
         Recommended Devotionals
       </h2>
-      <ContentCarousel
-        :slides="devoList"
-      ></ContentCarousel>
+      <ContentCarousel :slides="devoList"></ContentCarousel>
     </div>
 
     <!-- Latest Devotionals -->
@@ -107,9 +70,7 @@
       <h2 class="font-bold font-title mb-8 md:mb-16 text-4xl">
         Recommended Sermons
       </h2>
-      <ContentCarousel
-        :slides="sermonList"
-      ></ContentCarousel>
+      <ContentCarousel :slides="sermonList"></ContentCarousel>
     </div>
   </AppLayout>
 </template>
@@ -146,11 +107,9 @@ import { getRecentSermons } from '../../sermons/services/SermonService'
 const verseName = ref("");
 const verseText = ref("");
 
-let devoList = ref([{},{},{},{},{},{}])
-let devoImgs = [String]
+let devoList = ref<any[]>([])
+let sermonList = ref<any[]>([])
 
-let sermonList = ref([{},{},{},{},{},{}])
-let sermonImgs = [String]
 
 onMounted(async () => {
   var htmlVerse = await getVerseOfTheDay();
@@ -162,90 +121,24 @@ onMounted(async () => {
   const recentSermonsPromise = getRecentSermons(1, 6);
   const [recentDevotionals, recentSermons] = await Promise.all([recentDevotionalsPromise, recentSermonsPromise]);
 
-  for (let i = 0; i < devoList.value.length; i++) {
-    if(recentDevotionals[i].coverImage == ""){
-      devoImgs[i] = recentDevotionals[i].author?.profileImage;
-    }
-    else{
-      devoImgs[i] = getBucketUrl(recentDevotionals[i], recentDevotionals[i].coverImage);
-    }
-  }
+  const defaultImage = '/logo-bible.png'
 
-  devoList.value = [
-    {
-      image: devoImgs[0],
-      title: recentDevotionals[0].title,
-      link: `devotionals/${recentDevotionals[0].id}`
-    },
-    {
-      image: devoImgs[1],
-      title: recentDevotionals[1].title,
-      link: `devotionals/${recentDevotionals[1].id}`
-    },
-    {
-      image: devoImgs[2],
-      title: recentDevotionals[2].title,
-      link: `devotionals/${recentDevotionals[2].id}`
-    },
-    {
-      image: devoImgs[3],
-      title: recentDevotionals[3].title,
-      link: `devotionals/${recentDevotionals[3].id}`
-    },
-    {
-      image: devoImgs[4],
-      title: recentDevotionals[4].title,
-      link: `devotionals/${recentDevotionals[4].id}`
-    },
-    {
-      image: devoImgs[5],
-      title: recentDevotionals[5].title,
-      link: `devotionals/${recentDevotionals[5].id}`
-    },
-  ];
-
-  for (let i = 0; i < sermonList.value.length; i++) {
-    if(recentSermons[i].coverImage == ""){
-      sermonImgs[i] = recentSermons[i].author?.profileImage;
+  devoList.value = recentDevotionals.map(devo => {
+    return {
+      image: devo.coverImage || devo.author?.profileImage || defaultImage,
+      title: devo.title,
+      link: `devotionals/${devo.id}`
     }
-    else{
-      sermonImgs[i] = recentSermons[i].coverImage;
+  })
+
+  sermonList.value = recentSermons.map(sermon => {
+    return {
+      image: sermon.coverImage || sermon.author?.profileImage || defaultImage,
+      title: sermon.title,
+      link: `sermons/${sermon.id}`
     }
-  }
+  })
 
-
-  sermonList.value = [
-    {
-      image: sermonImgs[0],
-      title: recentSermons[0].title,
-      link: `sermons/${recentSermons[0].id}`
-    },
-    {
-      image: sermonImgs[1],
-      title: recentSermons[1].title,
-      link: `sermons/${recentSermons[1].id}`
-    },
-    {
-      image: sermonImgs[2],
-      title: recentSermons[2].title,
-      link: `sermons/${recentSermons[2].id}`
-    },
-    {
-      image: sermonImgs[3],
-      title: recentSermons[3].title,
-      link: `sermons/${recentSermons[3].id}`
-    },
-    {
-      image: sermonImgs[4],
-      title: recentSermons[4].title,
-      link: `sermons/${recentSermons[4].id}`
-    },
-    {
-      image: sermonImgs[5],
-      title: recentSermons[5].title,
-      link: `sermons/${recentSermons[5].id}`
-    },
-  ];
 });
 
 const searchModel = ref("");

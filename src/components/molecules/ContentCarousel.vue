@@ -3,10 +3,10 @@
     <swiper :modules="modules" :slides-per-view="slidesPerView" :space-between="50" navigation
       :pagination="{ clickable: true }" :scrollbar="{ draggable: true }">
       <swiper-slide v-for="slide of props.slides" :key="slide.title">
-        <div class="h-48 bg-gray-200 flex justify-center items-center overflow-hidden">
-          <a :href="slide.link" class="flex justify-center items-center overflow-hidden">
-            <img style="object-fit: cover;" :src="slide.image" />
-          </a>
+        <div class="h-56">
+          <RouterLink :to="slide.link || '/'">
+            <img class="object-cover w-full h-full" :src="slide.image" />
+          </RouterLink>
         </div>
         <p class="z-10 font-bold mb-8">{{ slide.title }}</p>
       </swiper-slide>
