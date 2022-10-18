@@ -85,7 +85,6 @@ const {
 } = useGlobalAudioPlayer()
 
 onMounted(async () => {
-
   // The Sermon ID
   let { id } = route.params
 
