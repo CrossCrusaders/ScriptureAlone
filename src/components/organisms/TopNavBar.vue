@@ -1,8 +1,8 @@
 <template>
   <div class="flex flex-row justify-between items-center gap-8 pt-2 pb-2 pl-4 pr-4">
-    <a href="/">
+    <RouterLink to="/">
       <logo-and-name></logo-and-name>
-    </a>
+    </RouterLink>
     <TopNavMenu></TopNavMenu>
   </div>
 </template>
