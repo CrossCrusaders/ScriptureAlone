@@ -1,5 +1,6 @@
 <template>
-  <img :src="props.author?.profileImage" class="object-cover max-h-64 w-full md:max-h-64 rounded-lg mb-4" />
+  <img :src="props.sermon?.coverImage || props.author?.profileImage"
+    class="object-cover max-h-64 w-full md:max-h-64 rounded-lg mb-4" />
   <div class="mb-4">
     <p class="font-bold text-slate-800 mb-2">Speaker: <AuthorPageNameLink :author="props.author"></AuthorPageNameLink>
     </p>
@@ -14,8 +15,10 @@
 import { Author } from '../../authors/Author'
 import ChurchContactInfo from '../../components/molecules/ChurchContactInfo.vue'
 import AuthorPageNameLink from '../../components/atoms/AuthorPageNameLink.vue'
+import { Sermon } from '../Sermon'
 
 export interface AuthorPreviewColumnProps {
+  sermon?: Sermon
   author?: Author
   showChurchInfo?: boolean
 }
