@@ -20,11 +20,9 @@ export const transformAuthorResponse = (response: any): Author => {
   }
 
   if (response['@expand']) {
-
     if (response['@expand'].church) {
       author.church = { ...response['@expand'].church }
     }
-
   }
 
 

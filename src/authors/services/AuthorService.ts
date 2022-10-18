@@ -31,7 +31,10 @@ export const getFeaturedAuthors = async (count: number = 6) => {
 }
 
 export const getAuthor = async (authorId: string) => {
-
   const response = await PocketBaseClient.records.getOne('authors', authorId, { expand: 'church' })
   return transformAuthorResponse(response)
+}
+
+export const getAuthorByChurch = async (churchId: string) => {
+
 }

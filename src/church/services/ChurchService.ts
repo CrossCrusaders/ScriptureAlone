@@ -6,3 +6,8 @@ export const getChurchesByState = async (state: string): Promise<Church[]> => {
   const results = await PocketBaseClient.records.getFullList('churches', 100, { filter: `region='${state}'` })
   return results as any
 }
+
+export const getChurch = async (churchId: string): Promise<Church> => {
+  const response: any = await PocketBaseClient.records.getOne('churches', churchId)
+  return response as Church
+}
