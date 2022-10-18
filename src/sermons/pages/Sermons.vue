@@ -17,8 +17,13 @@
         </template>
       </PageHero>
 
+      <!-- Churches -->
+      <section class="mb-14" id="church-section">
+        <h2 class="font-title text-3xl font-bold mb-2 text-slate-700">Search By Church</h2>
+        <ChurchSearchSelection></ChurchSearchSelection>
+      </section>
       <!-- Categories-->
-      <section class="mb-14" id="topics-section">
+      <section class="mb-14" id="authors-section">
         <h2 class="font-title text-3xl font-bold mb-2 text-slate-700">Featured Preachers</h2>
         <div class="flex flex-col md:flex-row justify-between items-center gap-4 mb-4">
           <AuthorDisplayCard :link="'/sermons/authors/' + author.id" v-for="(author, index) in authors" :key="index"
@@ -31,7 +36,7 @@
       </section>
 
       <!-- Authors -->
-      <section id="authors-section" class="mb-14">
+      <section id="topics-section" class="mb-14">
         <h2 class="font-title text-3xl font-bold mb-2 text-slate-700">Daily Topics</h2>
         <div class="flex flex-col md:flex-row justify-between items-center gap-4 mb-4">
           <CategoryDisplayCard :link="'/sermons/topics/' + category.key" v-for="(category, index) in categories"
@@ -55,41 +60,29 @@
     </PageContent>
   </AppLayout>
 
+
+
 </template>
 
 <script setup lang="ts">
 import AppLayout from '../../components/templates/AppLayout.vue'
 import PageContent from '../../components/templates/PageContent.vue'
 import AppButton from '../../components/atoms/form-controls/AppButton.vue'
-import Badge from '../../components/molecules/Badge.vue'
-import { onMounted, reactive, ref } from 'vue'
-import Icon from '../../components/atoms/Icon.vue'
-import Divider from '../../components/atoms/Divider.vue'
-import { getFeaturedSermon, getRecentSermons, getSermonCategories } from '../../sermons/services/SermonService'
+import { onMounted, ref } from 'vue'
+import { getSermonCategories } from '../../sermons/services/SermonService'
 import PageHero from '../../components/molecules/PageHero.vue'
-import ContentPreviewCard from '../../components/molecules/ContentPreviewCard.vue'
-import { useRouter } from 'vue-router'
 import SermonsPreviewGrid from '../components/SermonsPreviewGrid.vue'
 import { getFeaturedAuthors } from '../../authors/services/AuthorService'
 import { Author } from '../../authors/Author'
 import { Category } from '../Sermon'
 import CategoryDisplayCard from '../../components/molecules/CategoryDisplayCard.vue'
 import AuthorDisplayCard from '../../components/molecules/AuthorDisplayCard.vue'
-
-const router = useRouter()
-
-const loading = true
+import ChurchSearchSelection from '../../components/organisms/ChurchSearchSelection.vue'
 
 const categories = ref<Category[]>([])
 const authors = ref<Author[]>([])
 
-const sermons = ref<any>([])
-
-const page = ref(1)
-const countPerPage = 8
-
 onMounted(async () => {
-  // const featuredSermonPromise = getFeaturedSermon()
   const categoriesPromise = getSermonCategories()
   const authorsPromise = getFeaturedAuthors(3)
 
@@ -104,6 +97,7 @@ onMounted(async () => {
   categories.value = sermonCategories.slice(0, 3)
   authors.value = authorsResult
 })
+
 
 </script>
 
