@@ -4,7 +4,7 @@
 
       <div class="flex flex-col-reverse md:flex-row gap-2 md:gap-8 mt-8" v-if="!loading && !!devotionalDetail">
         <div class="md:w-2/6">
-          <AuthorPreviewColumn :devoObject="devotionalDetail"></AuthorPreviewColumn>
+          <AuthorPreviewColumn :show-church-info="true" :author="devotionalDetail.author" :devo="devotionalDetail"></AuthorPreviewColumn>
           <!--TODO: Share Icons -->
 
         </div>
@@ -152,7 +152,6 @@ const route = useRoute()
 const showPlayerModal = ref(false)
 
 onMounted(async () => {
-
   // The Devotional ID
   let { id } = route.params
 
@@ -162,6 +161,7 @@ onMounted(async () => {
   const devotional = await getDevotional(id)
   devotionalDetail.value = devotional
   loading.value = false
+  console.log(devotional)
 })
 
 const devotionalAudioSrc = computed(() => {

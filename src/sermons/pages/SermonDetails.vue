@@ -71,7 +71,6 @@ const route = useRoute()
 const showPlayerModal = ref(false)
 
 onMounted(async () => {
-
   // The Sermon ID
   let { id } = route.params
 
