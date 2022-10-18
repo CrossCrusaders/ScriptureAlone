@@ -1,5 +1,6 @@
 import PocketBaseClient from '../../api/PocketBaseClient'
 import { transformCategoryResponse, transformCategoryResponses, transformSermonResponse, transformSermonResponses } from '../Sermon'
+import { SermonSearch } from '../SermonSearch'
 
 export const getRecentSermons = async (offset: number, count: number) => {
   const sermonsResponse = await PocketBaseClient.records.getList('sermons', offset, count, { sort: '-created', expand: 'categories,author' })
@@ -22,9 +23,10 @@ export const getSermonsByAuthor = async (authorId: string, page: number = 1, per
   return transformSermonResponses(sermons.items)
 }
 
-export const searchSermons = async (query: string | null, page: number = 1, perPage: number = 8, searchParams?: any) => {
-  const sermons = await PocketBaseClient.records.getList('sermons', page, perPage, { sort: '-created', expand: 'categories,author', ...searchParams })
-  return transformSermonResponses(sermons.items)
+export const searchSermons = async (query: string | null, page: number = 1, perPage: number = 8, searchParams?: any): Promise<SermonSearch> => {
+  const sermons: any = await PocketBaseClient.records.getList('sermons', page, perPage, { sort: '-created', expand: 'categories,author', ...searchParams })
+  sermons.items = transformSermonResponses(sermons.items) as any
+  return sermons as SermonSearch
 }
 
 // Sermon Categories -- TODO: Probably need to abstract to separate file
