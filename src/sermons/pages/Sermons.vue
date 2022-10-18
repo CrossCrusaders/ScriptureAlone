@@ -20,7 +20,7 @@
       <!-- Churches -->
       <section class="mb-14" id="church-section">
         <h2 class="font-title text-3xl font-bold mb-2 text-slate-700">Search By Church</h2>
-        <ChurchSearchSelection></ChurchSearchSelection>
+        <ChurchSearchSelection @update:church="onChurchSelected($event)"></ChurchSearchSelection>
       </section>
       <!-- Categories-->
       <section class="mb-14" id="authors-section">
@@ -78,9 +78,13 @@ import { Category } from '../Sermon'
 import CategoryDisplayCard from '../../components/molecules/CategoryDisplayCard.vue'
 import AuthorDisplayCard from '../../components/molecules/AuthorDisplayCard.vue'
 import ChurchSearchSelection from '../../components/organisms/ChurchSearchSelection.vue'
+import { Church } from '../../church/Church'
+import { useRouter } from 'vue-router'
+
 
 const categories = ref<Category[]>([])
 const authors = ref<Author[]>([])
+const router = useRouter()
 
 onMounted(async () => {
   const categoriesPromise = getSermonCategories()
@@ -96,8 +100,12 @@ onMounted(async () => {
 
   categories.value = sermonCategories.slice(0, 3)
   authors.value = authorsResult
+
 })
 
+const onChurchSelected = (church: Church) => {
+  router.push(`/sermons/churches/${church.id}`)
+}
 
 </script>
 

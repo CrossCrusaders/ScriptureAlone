@@ -16,6 +16,7 @@ import SermonAuthors from './sermons/pages/SermonAuthors.vue'
 import SermonCategories from './sermons/pages/SermonCategories.vue'
 import SermonAuthorCollection from './sermons/pages/SermonAuthorCollection.vue'
 import SermonCategoryCollection from './sermons/pages/SermonCategoryCollection.vue'
+import SermonChurchCollection from './sermons/pages/SermonChurchCollection.vue'
 
 //Devotionals
 import Devotionals from './devotionals/pages/Devotionals.vue'
@@ -42,6 +43,7 @@ const routes = [
   { path: '/sermons/topics', component: SermonCategories },
   { path: '/sermons/authors/:authorId', component: SermonAuthorCollection },
   { path: '/sermons/topics/:categoryKey', component: SermonCategoryCollection },
+  { path: '/sermons/churches/:churchId', component: SermonChurchCollection },
   { path: '/sermons/:id', component: SermonDetails },
 
   //Devotionals
@@ -63,7 +65,14 @@ if (Config.environment === 'dev')
 
 const router = VueRouter.createRouter({
   history: VueRouter.createWebHistory(),
-  routes: routes
+  routes: routes,
+  scrollBehavior(to, from, savedPosition) {
+    if (savedPosition) {
+      return savedPosition
+    } else {
+      return { top: 0 }
+    }
+  }
 })
 
 export default router
