@@ -2,35 +2,64 @@
   <AppLayout>
     <!-- Search Hero -->
     <div class="flex flex-col items-center mb-24">
-      <img class="object-contain max-h-40 md:max-h-80 block mb-4" src="/logo-bible.png" />
+      <img
+        class="object-contain max-h-40 md:max-h-80 block mb-4"
+        src="/logo-bible.png"
+      />
       <h1
-        class="font-bold font-title text-3xl md:text-5xl lg:text-6xl mb-2 bg-gradient-to-r from-[#1e293b] to-[#57687f] text-transparent bg-clip-text">
-        Scripture Alone</h1>
+        class="font-bold font-title text-3xl md:text-5xl lg:text-6xl mb-2 bg-gradient-to-r from-[#1e293b] to-[#57687f] text-transparent bg-clip-text"
+      >
+        Scripture Alone
+      </h1>
       <p class="font-body text-lg mb-2">Sound Doctrine Guaranteed</p>
       <form @submit="handleSearchSubmit($event)">
         <div class="px-2">
-          <AppInput type="input" name="query" v-model="searchModel" placeholder="Search The Scripture">
+          <AppInput
+            type="input"
+            name="query"
+            v-model="searchModel"
+            placeholder="Search The Scripture"
+          >
             <template v-slot:prefix>
               <Icon icon-name="magnify"></Icon>
             </template>
             <template v-slot:postfix>
-              <BibleTranslationSelect v-model="searchTranslationId"></BibleTranslationSelect>
+              <BibleTranslationSelect
+                v-model="searchTranslationId"
+              ></BibleTranslationSelect>
             </template>
           </AppInput>
-          <AppButton variant="primary-light" class="block w-full md:hidden mt-4" type="submit">Search</AppButton>
+          <AppButton
+            variant="primary-light"
+            class="block w-full md:hidden mt-4"
+            type="submit"
+            >Search</AppButton
+          >
         </div>
       </form>
     </div>
 
     <!-- Calls To Action -->
-    <div class="flex flex-col md:flex-row gap-2 items-center justify-between mb-24 p-2">
+    <div
+      class="flex flex-col md:flex-row gap-2 items-center justify-between mb-24 p-2"
+    >
       <a :class="callToActionItemClass" href="#VOTD">
-        <Icon icon-name="book-cross" :class="[callToActionIconClass]" :size="16">
+        <Icon
+          icon-name="book-cross"
+          :class="[callToActionIconClass]"
+          :size="16"
+        >
         </Icon>
-        <span class="text-center whitespace-nowrap text-ellipsis">Verse of the day</span>
+        <span class="text-center whitespace-nowrap text-ellipsis"
+          >Verse of the day</span
+        >
       </a>
       <RouterLink :class="callToActionItemClass" to="/devotionals">
-        <Icon icon-name="notebook-edit" :class="[callToActionIconClass]" :size="16">
+        <Icon
+          icon-name="notebook-edit"
+          :class="[callToActionIconClass]"
+          :size="16"
+        >
         </Icon>
         Devotionals
       </RouterLink>
@@ -44,10 +73,18 @@
     <!-- Verse of the Day-->
     <div class="flex flex-col gap-8 items-center mb-24 p-2" id="VOTD">
       <h2
-        class="font-bold font-title text-6xl text-center bg-gradient-to-r from-[#57687f] to-[#1e293b] text-transparent bg-clip-text pb-1">
-        Verse of the Day</h2>
-      <div class="rounded-lg border-2 border-solid border-gray-800 p-8 max-w-prose">
-        <h3 v-html="verseName" id="verseName" class="font-title font-bold text-3xl text-gray-800 mb-8"></h3>
+        class="font-bold font-title text-6xl text-center bg-gradient-to-r from-[#57687f] to-[#1e293b] text-transparent bg-clip-text pb-1"
+      >
+        Verse of the Day
+      </h2>
+      <div
+        class="rounded-lg border-2 border-solid border-gray-800 p-8 max-w-prose"
+      >
+        <h3
+          v-html="verseName"
+          id="verseName"
+          class="font-title font-bold text-3xl text-gray-800 mb-8"
+        ></h3>
         <p v-html="verseText" id="verseText" class="text-xl"></p>
       </div>
     </div>
@@ -57,18 +94,23 @@
 
     <!-- Latest Devotionals Mobile-->
     <div class="relative p-2 md:p-8 mb-16">
-      <h2 class="font-bold font-title mb-8 md:mb-16 text-4xl">Recommended Devotionals</h2>
-      <ContentCarousel :slides="devotionalSlides"></ContentCarousel>
+      <h2 class="font-bold font-title mb-8 md:mb-16 text-4xl">
+        Recommended Devotionals
+      </h2>
+      <ContentCarousel
+        :slides="devoList"
+      ></ContentCarousel>
     </div>
-
-
 
     <!-- Latest Devotionals -->
     <div class="relative p-2 md:p-8 mb-16">
-      <h2 class="font-bold font-title mb-8 md:mb-16 text-4xl">Recommended Sermons</h2>
-      <ContentCarousel :slides="sermonSlides"></ContentCarousel>
+      <h2 class="font-bold font-title mb-8 md:mb-16 text-4xl">
+        Recommended Sermons
+      </h2>
+      <ContentCarousel
+        :slides="sermonList"
+      ></ContentCarousel>
     </div>
-
   </AppLayout>
 </template>
 
@@ -80,108 +122,180 @@
 </style>
 
 <script setup lang="ts">
+import AppLayout from "../../components/templates/AppLayout.vue";
+import PageContent from "../../components/templates/PageContent.vue";
+import AppInput from "../../components/atoms/form-controls/AppInput.vue";
+import { ref, onMounted, watch } from "vue";
+import Divider from "../../components/atoms/Divider.vue";
+import ContentCarousel from "../../components/molecules/ContentCarousel.vue";
+import { useBreakpoint } from "../../browser/ViewportService";
+import {
+  getVerseOfTheDay,
+  isBibleReference,
+} from "../../bible/services/BibleService";
+import Icon from "../../components/atoms/Icon.vue";
+import { useRouter } from "vue-router";
+import BibleTranslationSelect from "../../components/organisms/BibleTranslationSelect.vue";
+import AppButton from "../../components/atoms/form-controls/AppButton.vue";
 
+import { getBucketUrl } from '../../api/BucketStorageService'
 
-import AppLayout from '../../components/templates/AppLayout.vue'
-import PageContent from '../../components/templates/PageContent.vue'
-import AppInput from '../../components/atoms/form-controls/AppInput.vue'
-import { ref, onMounted } from 'vue'
-import Divider from '../../components/atoms/Divider.vue'
-import ContentCarousel from '../../components/molecules/ContentCarousel.vue'
-import { useBreakpoint } from '../../browser/ViewportService'
-import { getVerseOfTheDay, isBibleReference } from '../../bible/services/BibleService'
-import Icon from '../../components/atoms/Icon.vue'
-import { useRouter } from 'vue-router'
-import BibleTranslationSelect from '../../components/organisms/BibleTranslationSelect.vue'
-import AppButton from '../../components/atoms/form-controls/AppButton.vue'
+import { getRecentDevotionals } from '../../devotionals/services/DevotionalService';
+import { getRecentSermons } from '../../sermons/services/SermonService'
 
-const verseName = ref("")
-const verseText = ref("")
+const verseName = ref("");
+const verseText = ref("");
 
+let devoList = ref([{},{},{},{},{},{}])
+let devoImgs = [String]
+
+let sermonList = ref([{},{},{},{},{},{}])
+let sermonImgs = [String]
 
 onMounted(async () => {
-  var htmlVerse = await getVerseOfTheDay()
+  var htmlVerse = await getVerseOfTheDay();
 
   verseName.value = htmlVerse.verseReference + " KJV";
   verseText.value = htmlVerse.verseText;
-})
 
-const searchModel = ref('')
-const searchTranslationId = ref('ENGKJV')
-const callToActionItemClass = ['cta-item border-slate-700', 'w-full', 'cursor-pointer', 'bg-slate-200',
-  'rounded-xl', 'pl-4', 'pr-4', 'pt-16', 'pb-16', 'flex', 'flex-col', 'items-center', 'text-slate-900',
-  'justify-center', 'text-4xl', 'font-bold', 'font-title', 'hover:bg-slate-800', 'hover:text-white', 'transition-all']
+  const recentDevotionalsPromise = getRecentDevotionals(1, 6);
+  const recentSermonsPromise = getRecentSermons(1, 6);
+  const [recentDevotionals, recentSermons] = await Promise.all([recentDevotionalsPromise, recentSermonsPromise]);
 
-const callToActionIconClass = 'cta-icon mb-2'
-
-const devotionalSlides = [
-  {
-    image: '',
-    title: 'Devo 1'
-  },
-  {
-    image: '',
-    title: 'Devo 2'
-  },
-  {
-    image: '',
-    title: 'Devo 3'
-  },
-  {
-    image: '',
-    title: 'Devo 4'
-  },
-  {
-    image: '',
-    title: 'Devo 5'
-  }, {
-    image: '',
-    title: 'Devo 6'
-  }
-]
-
-const sermonSlides = [
-  {
-    image: '',
-    title: 'Sermon 1'
-  },
-  {
-    image: '',
-    title: 'Sermon 2'
-  },
-  {
-    image: '',
-    title: 'Sermon 3'
-  },
-  {
-    image: '',
-    title: 'Sermon 4'
-  },
-  {
-    image: '',
-    title: 'Sermon 5'
-  }, {
-    image: '',
-    title: 'Sermon 6'
-  }
-]
-
-const { breakpoint } = useBreakpoint()
-
-const router = useRouter()
-
-const handleSearchSubmit = async (event: Event) => {
-  event.preventDefault()
-  if (searchModel.value && searchModel.value.length) {
-    const result = await isBibleReference(searchModel.value)
-    if (result) {
-      return router.push(`/bible?t=${searchTranslationId.value}&c=${result.chapter}&b=${result.book_id}&vs=${result.verse_start}&ve=${result.verse_end}`)
-    } else {
-      return router.push(`/bible/search?t=${searchTranslationId.value}&q=${encodeURI(searchModel.value.substring(0, 255))}`)
+  for (let i = 0; i < devoList.value.length; i++) {
+    if(recentDevotionals[i].coverImage == ""){
+      devoImgs[i] = recentDevotionals[i].author?.profileImage;
+    }
+    else{
+      devoImgs[i] = getBucketUrl(recentDevotionals[i], recentDevotionals[i].coverImage);
     }
   }
 
-}
+  devoList.value = [
+    {
+      image: devoImgs[0],
+      title: recentDevotionals[0].title,
+      link: `devotionals/${recentDevotionals[0].id}`
+    },
+    {
+      image: devoImgs[1],
+      title: recentDevotionals[1].title,
+      link: `devotionals/${recentDevotionals[1].id}`
+    },
+    {
+      image: devoImgs[2],
+      title: recentDevotionals[2].title,
+      link: `devotionals/${recentDevotionals[2].id}`
+    },
+    {
+      image: devoImgs[3],
+      title: recentDevotionals[3].title,
+      link: `devotionals/${recentDevotionals[3].id}`
+    },
+    {
+      image: devoImgs[4],
+      title: recentDevotionals[4].title,
+      link: `devotionals/${recentDevotionals[4].id}`
+    },
+    {
+      image: devoImgs[5],
+      title: recentDevotionals[5].title,
+      link: `devotionals/${recentDevotionals[5].id}`
+    },
+  ];
+
+  for (let i = 0; i < sermonList.value.length; i++) {
+    if(recentSermons[i].coverImage == ""){
+      sermonImgs[i] = recentSermons[i].author?.profileImage;
+    }
+    else{
+      sermonImgs[i] = recentSermons[i].coverImage;
+    }
+  }
+
+
+  sermonList.value = [
+    {
+      image: sermonImgs[0],
+      title: recentSermons[0].title,
+      link: `sermons/${recentSermons[0].id}`
+    },
+    {
+      image: sermonImgs[1],
+      title: recentSermons[1].title,
+      link: `sermons/${recentSermons[1].id}`
+    },
+    {
+      image: sermonImgs[2],
+      title: recentSermons[2].title,
+      link: `sermons/${recentSermons[2].id}`
+    },
+    {
+      image: sermonImgs[3],
+      title: recentSermons[3].title,
+      link: `sermons/${recentSermons[3].id}`
+    },
+    {
+      image: sermonImgs[4],
+      title: recentSermons[4].title,
+      link: `sermons/${recentSermons[4].id}`
+    },
+    {
+      image: sermonImgs[5],
+      title: recentSermons[5].title,
+      link: `sermons/${recentSermons[5].id}`
+    },
+  ];
+});
+
+const searchModel = ref("");
+const searchTranslationId = ref("ENGKJV");
+const callToActionItemClass = [
+  "cta-item border-slate-700",
+  "w-full",
+  "cursor-pointer",
+  "bg-slate-200",
+  "rounded-xl",
+  "pl-4",
+  "pr-4",
+  "pt-16",
+  "pb-16",
+  "flex",
+  "flex-col",
+  "items-center",
+  "text-slate-900",
+  "justify-center",
+  "text-4xl",
+  "font-bold",
+  "font-title",
+  "hover:bg-slate-800",
+  "hover:text-white",
+  "transition-all",
+];
+
+const callToActionIconClass = "cta-icon mb-2";
+
+const { breakpoint } = useBreakpoint();
+
+const router = useRouter();
+
+const handleSearchSubmit = async (event: Event) => {
+  event.preventDefault();
+  if (searchModel.value && searchModel.value.length) {
+    const result = await isBibleReference(searchModel.value);
+    if (result) {
+      return router.push(
+        `/bible?t=${searchTranslationId.value}&c=${result.chapter}&b=${result.book_id}&vs=${result.verse_start}&ve=${result.verse_end}`
+      );
+    } else {
+      return router.push(
+        `/bible/search?t=${searchTranslationId.value}&q=${encodeURI(
+          searchModel.value.substring(0, 255)
+        )}`
+      );
+    }
+  }
+};
 </script>
 
 <style>
