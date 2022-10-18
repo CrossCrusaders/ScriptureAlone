@@ -1,5 +1,6 @@
 <template>
   <ContentPreviewGrid :content="loadedSermons" @click:button="onSermonCardClicked"></ContentPreviewGrid>
+  <div v-if="props.paginationControls"></div>
 </template>
 
 <script setup lang="ts">
