@@ -23,7 +23,18 @@
             {{ sermonDetail.description }}
           </p>
           <div class="flex gap-4 mb-16">
-            <AppButton variant="primary" @click="onPlayAudioClicked()" v-if="sermonAudioSrc">Play Audio</AppButton>
+            <AppButton variant="primary" @click="onPlayAudioClicked()"
+              v-if="sermonAudioSrc && globalAudioState !== AudioPlayerState.playing">{{ 'Play Audio' }}
+            </AppButton>
+            <div v-if="sermonAudioSrc && globalAudioState === AudioPlayerState.playing">
+              <AppButton variant="primary-minimal" :disabled="true">{{ 'Now Playing' }}
+              </AppButton>
+
+              <AppButton to="/bible" variant="accent">{{ 'Open Bible' }}
+              </AppButton>
+
+            </div>
+
             <AppButton variant="primary-outline" v-if="sermonVideoSrc">Play Video</AppButton>
           </div>
           <Divider></Divider>
@@ -34,13 +45,13 @@
     </PageContent>
   </AppLayout>
 
-  <AppModal v-model="showPlayerModal" @beforeClose="beforeAudioModalClose()" v-slot="{ close }">
+  <!-- <AppModal v-model="showPlayerModal" @beforeClose="beforeAudioModalClose()" v-slot="{ close }">
     <div class="p-4">
       <h2 class="font-title font-bold text-2xl mb-4 text-slate-800">Now Playing: {{ sermonDetail?.title }}</h2>
-      <!-- <AudioPlayer :audio-src="sermonAudioSrc"></AudioPlayer> -->
+      <AudioPlayer :audio-src="sermonAudioSrc"></AudioPlayer>
       <button @click="close()">Close</button>
     </div>
-  </AppModal>
+  </AppModal> -->
 </template>
 
 <script setup lang="ts">
@@ -69,7 +80,8 @@ const showPlayerModal = ref(false)
 
 const {
   setGlobalAudioPayload,
-  setGlobalAudioState
+  setGlobalAudioState,
+  globalAudioState
 } = useGlobalAudioPlayer()
 
 onMounted(async () => {
@@ -97,10 +109,6 @@ const sermonLastUpdatedDisplay = computed(() => {
   const date = (sermonDetail.value?.sermonDate || sermonDetail.value?.updated) as any
   return format(date, 'MM/dd/yyyy')
 })
-
-const beforeAudioModalClose = () => {
-  // TODO: find a way to stop the audio from playing when the modal is closed
-}
 
 const onPlayAudioClicked = () => {
 

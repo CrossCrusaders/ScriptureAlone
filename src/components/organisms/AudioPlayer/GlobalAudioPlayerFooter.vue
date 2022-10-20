@@ -6,13 +6,17 @@
 
       </div>
       <div
-        class="z-50 h-40 md:h-20 flex flex-col md:flex-row items-center fixed bottom-0 left-0 right-0 justify-center player-bar bg-red-900 md:gap-4 p-1 md:p-4">
-        <div class="flex flex-row justify-between md:justify-start md:gap-8 w-full md:w-auto">
-          <div class="p-4">
+        class="z-50 h-40 md:h-20 flex flex-col md:flex-row items-center fixed bottom-0 left-0 right-0 justify-center player-bar bg-red-900 md:gap-4 pt-1 pl-2 pb-0 md:p-4">
+        <div class="flex flex-row justify-between md:justify-start md:gap-8 w-full md:w-auto items-start">
+          <div class="">
             <h2 class="text-white text-md font-title">
               Now Playing:
             </h2>
-            <p class="text-white text-md font-bold font-title"> {{ globalAudioPayload?.title }}</p>
+            <p class="text-white text-md font-bold font-title" :title="globalAudioPayload?.title"> {{ breakpoint ===
+            'sm' ?
+            formatMaxLengthText(globalAudioPayload?.title || '',
+            34): globalAudioPayload?.title }}
+            </p>
           </div>
           <AppButton v-if="breakpoint === 'sm'" variant="primary-minimal" size="sm" @click="onCloseClicked">
             <Icon :invert="true" icon-name="close"></Icon>
@@ -37,6 +41,7 @@ import AudioPlayer from './AudioPlayer.vue';
 import AppButton from '../../atoms/form-controls/AppButton.vue';
 import Icon from '../../atoms/Icon.vue';
 import { useBreakpoint } from '../../../browser/ViewportService';
+import { formatMaxLengthText } from '../../../core/services/FormatService'
 
 
 const { breakpoint } = useBreakpoint()
