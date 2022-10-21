@@ -1,7 +1,8 @@
 <template>
   <AppLayout>
     <PageContent>
-      <h1 class="max-w-prose mx-auto text-slate-800 text-center text-5xl font-title font-bold mt-8 mb-8">Search
+      <h1 id="page-title__sermon-authors"
+        class="max-w-prose mx-auto text-slate-800 text-center text-5xl font-title font-bold mt-8 mb-8">Search
         Preachers
       </h1>
       <div class="max-w-prose mx-auto mb-8">
@@ -18,10 +19,20 @@
           </AppInput>
         </form>
       </div>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 p-4">
-        <AuthorDisplayCard :link="'/sermons/authors/' + author.id" v-for="(author, index) in authors" :key="index"
-          :author="author">
-        </AuthorDisplayCard>
+      <InfiniteScrollContent @scroll:end="onScrollEnd">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 p-4">
+          <AuthorDisplayCard :link="'/sermons/authors/' + author.id" v-for="(author, index) in authors" :key="index"
+            :author="author">
+          </AuthorDisplayCard>
+        </div>
+      </InfiniteScrollContent>
+      <div v-if="reachedEnd">
+        <p class="text-center text-xl font-bold mb-4">End of Results</p>
+        <p class="text-center text-xl mb-8 underline">
+          <a href="#page-title__sermon-authors">
+            Back To Top?
+          </a>
+        </p>
       </div>
     </PageContent>
   </AppLayout>
@@ -38,11 +49,13 @@ import { Author } from '../../authors/Author';
 import { onMounted, ref } from 'vue';
 import { searchAuthors } from '../../authors/services/AuthorService';
 import AppButton from '../../components/atoms/form-controls/AppButton.vue';
+import InfiniteScrollContent from '../../components/templates/InfiniteScrollContent.vue';
 
 
 const router = useRouter()
 const route = useRoute()
 const loading = ref<boolean>(false)
+const reachedEnd = ref<boolean>(false)
 
 const hasSearch = ref(false)
 
@@ -53,12 +66,17 @@ const currentPage = ref(1)
 const countPerPage = 27
 
 const onFormSubmit = async () => {
+  authors.value = []
+  reachedEnd.value = false
   loadSearchedAuthors()
 }
 
 const onClearClicked = async () => {
   currentQuery.value = ''
+  reachedEnd.value = false
+  authors.value = []
   loadSearchedAuthors()
+
 }
 
 
@@ -70,7 +88,9 @@ const loadSearchedAuthors = async () => {
     else
       hasSearch.value = false
     const authorsResult = await searchAuthors(currentQuery.value, currentPage.value, countPerPage)
-    authors.value = authorsResult
+    authors.value = authors.value.concat(authorsResult.items)
+    if (authorsResult.page >= authorsResult.totalPages)
+      reachedEnd.value = true
   }
   finally {
     loading.value = false
@@ -82,6 +102,13 @@ onMounted(async () => {
   loadSearchedAuthors()
 })
 
+const onScrollEnd = async () => {
+  if (!reachedEnd.value) {
+    currentPage.value += 1
+    await loadSearchedAuthors()
+  }
+
+}
 </script>
 
 <style scoped>
