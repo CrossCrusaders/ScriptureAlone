@@ -1,6 +1,7 @@
 import { A11yMethods } from 'swiper/types/modules/a11y'
 import PocketBaseClient from '../../api/PocketBaseClient'
 import { transformDevotionalResponse, transformDevotionalResponses } from '../Devotional'
+import { searchAuthorsBothNames } from '../../authors/services/AuthorService'
 
 export const getRecentDevotionals = async (offset: number, count: number) => {
   const devotionalsResponse = await PocketBaseClient.records.getList('devotionals', offset, count, { sort: '-created', expand: 'categories,author' })
@@ -25,7 +26,20 @@ export const getDevotionalCategories = async () => {
 
 export const searchDevotionals = async (searchTerm: string, pageNum?: number, pageSize?: number) => {
   var response: any;
-  const devotionalsInSearch = await PocketBaseClient.records.getList('devotionals', pageNum, pageSize, { filter: `categories.label ~ "${searchTerm}" || title ~ "${searchTerm}" || description ~ "${searchTerm}"`, expand: 'categories,sections,author,author.church' })
+  var filter = await getFiterForSearch(searchTerm);
+
+  const devotionalsInSearch = await PocketBaseClient.records.getList('devotionals', pageNum, pageSize, { filter: filter, expand: 'categories,sections,author,author.church' })
   response = transformDevotionalResponses(devotionalsInSearch.items)
+
   return response;
+}
+
+export const getFiterForSearch = async (searchTerm: string) => {
+  let Filter = `title ~ "${searchTerm}" || description ~ "${searchTerm}" || categories.label ~ "${searchTerm}"`;
+  let authors = await searchAuthorsBothNames(searchTerm, 0, 0);
+
+  for(let i = 0; i < authors.length; i++){
+    Filter = Filter + ` || author = "${authors[i].id}"`;
+  }
+  return Filter;
 }
