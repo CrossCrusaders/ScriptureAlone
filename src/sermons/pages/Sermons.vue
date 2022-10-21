@@ -53,6 +53,9 @@
       <section class="mb-14">
         <h2 class="font-title text-3xl font-bold mb-2 text-slate-700">Recent Sermons</h2>
         <SermonsPreviewGrid></SermonsPreviewGrid>
+        <div class="flex flex-row justify-center">
+          <RouterLink class="text-lg text-slate-600" to="/sermons/search">View More ></RouterLink>
+        </div>
       </section>
 
       <!-- My Plans -->
