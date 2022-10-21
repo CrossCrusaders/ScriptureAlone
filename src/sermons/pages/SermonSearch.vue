@@ -39,19 +39,13 @@
 <script setup lang="ts">
 import AppLayout from '../../components/templates/AppLayout.vue'
 import PageContent from '../../components/templates/PageContent.vue'
-import AppInput from '../../components/atoms/form-controls/AppInput.vue';
+import AppInput from '../../components/atoms/form-controls/AppInput.vue'
 import Icon from '../../components/atoms/Icon.vue'
-import AuthorDisplayCard from '../../components/molecules/AuthorDisplayCard.vue';
-import { useRoute, useRouter } from 'vue-router';
-import { Author } from '../../authors/Author';
-import { onMounted, ref } from 'vue';
-import { searchAuthors } from '../../authors/services/AuthorService';
-import AppButton from '../../components/atoms/form-controls/AppButton.vue';
-import InfiniteScrollContent from '../../components/templates/InfiniteScrollContent.vue';
+import { ref } from 'vue'
+import AppButton from '../../components/atoms/form-controls/AppButton.vue'
+import InfiniteScrollContent from '../../components/templates/InfiniteScrollContent.vue'
 import SermonsPreviewGrid from '../components/SermonsPreviewGrid.vue'
 
-const router = useRouter()
-const route = useRoute()
 const loading = ref<boolean>(false)
 const reachedEnd = ref<boolean>(false)
 const queryParams = ref<any>({})
@@ -78,15 +72,10 @@ const onClearClicked = async () => {
 }
 
 
-onMounted(async () => {
-
-})
-
 const onScrollEnd = async () => {
   if (!reachedEnd.value) {
     currentPage.value += 1
   }
-
 }
 </script>
 
