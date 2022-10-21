@@ -57,3 +57,8 @@ export const getAuthor = async (authorId: string) => {
   const response = await PocketBaseClient.records.getOne('authors', authorId, { expand: 'church' })
   return transformAuthorResponse(response)
 }
+
+export const getAuthorsByChurch = async (churchId: string) => {
+  const response = await PocketBaseClient.records.getFullList('authors', 50, { sort: '-created', filter: `church='${churchId}'` })
+  return transformAuthorResponses(response)
+}

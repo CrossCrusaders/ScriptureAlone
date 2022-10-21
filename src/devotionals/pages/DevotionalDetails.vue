@@ -128,7 +128,7 @@ import PageContent from '../../components/templates/PageContent.vue'
 import AppButton from '../../components/atoms/form-controls/AppButton.vue'
 import Divider from '../../components/atoms/Divider.vue'
 import AppModal from '../../components/templates/AppModal.vue'
-import AudioPlayer from '../../components/organisms/AudioPlayer.vue'
+import AudioPlayer from '../../components/organisms/AudioPlayer/AudioPlayer.vue'
 import AuthorPreviewColumn from '../components/AuthorPreviewColumn.vue'
 import { useBreakpoint } from '../../browser/ViewportService'
 

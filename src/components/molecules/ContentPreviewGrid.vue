@@ -6,13 +6,16 @@
 </template>
 
 <script setup lang="ts">
+import { Pagination } from '../../core/Pagination';
 import ContentPreviewCard, { ContentPreview } from './ContentPreviewCard.vue'
 
 export interface ContentPreviewGridProps {
   content: ContentPreview[]
 }
 
-const props = withDefaults(defineProps<ContentPreviewGridProps>(), { content: [] as any })
+const props = withDefaults(defineProps<ContentPreviewGridProps>(), {
+  content: [] as any
+})
 const emit = defineEmits(['click:button'])
 
 </script>

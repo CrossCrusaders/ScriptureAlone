@@ -1,4 +1,4 @@
-
+import { ref } from "vue"
 
 let currentTop = 0
 
@@ -13,3 +13,16 @@ export const enablePageScrolling = () => {
   document.body.style.position = ''
   document.body.style.overflow = ''
 }
+
+const scrollTop = ref(0)
+
+window.addEventListener('scroll', () => {
+  scrollTop.value = window.scrollY
+})
+
+export const useScroll = () => {
+  return {
+    scrollTop
+  }
+}
+
