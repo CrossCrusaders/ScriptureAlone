@@ -21,27 +21,17 @@
         </template>
       </PageHero>
 
-      <!-- Categories-->
-      <div class="hidden md:flex flex-row justify-between items-center mb-16">
-        <Badge
-          :icon-name="category.iconName"
-          :label="category.label"
-          v-for="(category, index) in categories"
-          :key="index"
-        >
-        </Badge>
-      </div>
-
-      <form @submit="handleSearchSubmit($event)">
-        <div class="px-2">
+      <form @submit="handleSearchSubmit($event)" class="flex justify-center">
+        <div class="px-2 w-full md:w-1/2">
           <AppInput
+            id="searchBar"
             type="input"
             name="query"
             v-model="searchModel"
-            placeholder="Search The Scripture"
+            placeholder="Search Devotionals"
           >
             <template v-slot:prefix>
-              <Icon icon-name="magnify"></Icon>
+              
             </template>
             <template v-slot:postfix>
               <Icon icon-name="magnify"></Icon>
@@ -70,36 +60,26 @@
           :key="index"
           class="flex flex-col bg-slate-200 rounded-2xl p-6"
         >
-          <h3 class="text-slate-900 text-xl font-title font-bold mb-0 break-words">
-            {{ formatMaxLengthText(devotional.title, 32) }}
-          </h3>
-          <p class="text-slate-700 text-sm font-body mb-2">
-            {{ devotional.author.firstName }}&nbsp;{{
-              devotional.author.lastName
-            }}
-          </p>
-          <p
+          <span class="text-slate-900 text-xl font-title font-semibold mb-0 break-words" v-html="formatSearchResultText(formatMaxLengthText(devotional.title, 32))"></span>
+          <p class="text-slate-700 text-sm font-body mb-2" v-html="formatSearchResultText(devotional.author.firstName + ' ' + devotional.author.lastName)"></p>
+          <span
             class="text-slate-700 text-md font-body mb-3 break-words"
             :title="devotional.description"
+            v-html="formatSearchResultText(formatMaxLengthText(devotional.description, 64))"
           >
-            {{ formatMaxLengthText(devotional.description, 64) }}
-          </p>
+          </span>
           <!-- Needs fixed to not break mid-word -->
           <p
             class="text-slate-600 text-md text-sm font-body mb-0"
             style="word-wrap: break-word"
           >
             <b>Tags: </b>
-            <a v-for="(category, innerIndex) in devotional.categories">
+            <a v-for="(category, index) in devotional.categories">
               <a
-                v-if="
-                  devotional.categories != undefined &&
-                  category !=
-                    devotional.categories[devotional.categories.length - 1]
-                "
-                >{{ category.label }},&nbsp;</a
-              >
-              <a v-else>{{ category.label }}&nbsp;</a>
+                v-if="devotional.categories != undefined && category != devotional.categories[devotional.categories.length - 1]" v-html="formatSearchResultText(category.label + ', ')">
+                
+              </a>
+              <a v-else v-html="formatSearchResultText(category.label)"></a>
             </a>
           </p>
           <p
@@ -132,8 +112,7 @@
 export interface SearchDevo {
   q: string;
   n: number;
-  s: number;
-  h: boolean
+  s: number
 }
 import AppLayout from "../../components/templates/AppLayout.vue";
 import PageContent from "../../components/templates/PageContent.vue";
@@ -155,12 +134,15 @@ import PageHero from "../../components/molecules/PageHero.vue";
 import Badge from "../../components/molecules/Badge.vue";
 import { useRouter, useRoute } from "vue-router";
 import AppInput from "../../components/atoms/form-controls/AppInput.vue";
+import { Devotional } from "../Devotional";
 
 const loading = true;
 
 const categories = ref<any>([]);
 
 const devotionals = ref<any>([]);
+
+const search = ref("");
 
 const page = ref(1);
 const countPerPage = 8;
@@ -175,11 +157,12 @@ const devotionalElements = ref("devoHolder");
 
 onMounted(async () => {
   const queryParams: SearchDevo = route.query as any;
-  let { q, n, s, h } = queryParams;
-  if(!q && n && s && h) {
-    searchDevos("", n, s, true);
-  } else if(q && n && s && !h) {
+  let { q, n, s } = queryParams;
+  if(q && n && s) {
     searchDevos(q, n, s, false);
+  }
+  else{
+    searchDevos("", n, s, true);
   }
 });
 
@@ -199,18 +182,19 @@ const handleSearchSubmit = async (event: Event) => {
 const nextPage = async (event: Event) => {
   event.preventDefault();
   const queryParams: SearchDevo = route.query as any;
-  let { q, n, s, h } = queryParams;
-  if (q && n && s && !h) {
+  let { q, n, s } = queryParams;
+  if (q && n && s) {
     await router.push(`?q=${encodeURI(q)}&n=${+n + +1}&s=${s}`);
     searchDevos(q, +n + +1, s, false);
   }
-  else if(!q && n && s && h){
-    await router.push(`?n=${+n + +1}&s=${s}&h=${true}`);
+  else if(!q){
+    await router.replace("/devotionals");
     searchDevos("", +n + +1, s, true);
   }
 };
 
 async function searchDevos(searchTerm: string, pageNumber: number, pageSize: number, isBlank: boolean) {
+  search.value = searchTerm;
   if (!isBlank) {
     const searchedDevotionalsTagPromise = await searchDevotionals(searchTerm, pageNumber, pageSize);
     const categoriesPromise = getDevotionalCategories();
@@ -227,7 +211,7 @@ async function searchDevos(searchTerm: string, pageNumber: number, pageSize: num
     devotionals.value = searchedDevotionalsTag;
   } else {
     if(pageNumber == 1){
-      await router.push(`?n=1&s=${8}&h=${true}`);
+      await router.replace("/devotionals");
     }
     const featuredDevotionalPromise = getFeaturedDevotional();
     const recentDevotionalsPromise = getRecentDevotionals(
@@ -246,6 +230,20 @@ async function searchDevos(searchTerm: string, pageNumber: number, pageSize: num
     categories.value = devotionalCategories.items;
     devotionals.value = recentDevotionals;
   }
+}
+
+const formatSearchResultText = (devo: string) => {
+  var searches = search.value.split(" ");
+  var Text = "";
+  for(let i = 0; i < searches.length; i++){
+    if(i != 0){
+      Text = Text.replace(new RegExp('(' + searches[i] + ')', 'ig'), `<strong>$1</strong>`);
+    }
+    else{
+      Text = devo.replace(new RegExp('(' + searches[i] + ')', 'ig'), `<strong>$1</strong>`);
+    }
+  }
+  return `<span>${Text}</span>`
 }
 </script>
 

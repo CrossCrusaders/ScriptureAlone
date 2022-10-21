@@ -1,35 +1,26 @@
 <template>
-  <img :src="imgURL" class="object-cover max-h-40 w-full md:max-h-64 rounded-lg mb-4" />
-  <div class="mb-8">
-    <p class="font-bold text-slate-800 mb-2">Speaker: {{ props.devoObject?.author?.firstName + ' ' +
-    props.devoObject?.author?.lastName }}</p>
-    <p class="font-bold text-slate-800">Church: {{ props.devoObject?.author?.church.name }}</p>
+  <img :src="props.devo?.coverImage || props.author?.profileImage" class="object-cover max-h-40 w-full md:max-h-64 rounded-lg mb-4" />
+  <div class="mb-4">
+    <p class="font-bold text-slate-800 mb-2">Speaker: <AuthorPageNameLink :author="props.author"></AuthorPageNameLink>
+    </p>
   </div>
   <!-- Church Contact info-->
-  <div class="mb-8">
-    <p class="text-slate-800 mb-2">Address: {{ props.devoObject?.author?.church ?
-    formatAddress(props.devoObject?.author.church) : null }}</p>
-    <p class="text-slate-800">Email: {{ props.devoObject?.author?.church.email }}</p>
-
+  <div class="mb-8" v-if="props.showChurchInfo && props.author?.church">
+    <ChurchContactInfo :church="props.author?.church"></ChurchContactInfo>
   </div>
 </template>
 
 <script setup lang="ts">
-import PocketBaseClient from '../../api/PocketBaseClient'
 import { Author } from '../../authors/Author'
-import { formatAddress } from '../../core/services/FormatService'
-import { Devotional } from '../Devotional';
-import { getBucketUrl } from '../../api/BucketStorageService'
+import ChurchContactInfo from '../../components/molecules/ChurchContactInfo.vue'
+import AuthorPageNameLink from '../../components/atoms/AuthorPageNameLink.vue'
+import { Devotional } from '../Devotional'
 
 export interface AuthorPreviewColumnProps {
-  devoObject?: Devotional
+  devo?: Devotional
+  author?: Author
+  showChurchInfo?: boolean
 }
-const props = defineProps<AuthorPreviewColumnProps>()
-
-var imgURL:any = getBucketUrl(props.devoObject, props.devoObject?.coverImage, {});
-
-if(props.devoObject?.coverImage == ""){
-  imgURL = props.devoObject?.author?.profileImage;
-}
+const props = withDefaults(defineProps<AuthorPreviewColumnProps>(), { showChurchInfo: true })
 
 </script>
