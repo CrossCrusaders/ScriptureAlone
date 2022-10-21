@@ -17,6 +17,7 @@ import SermonCategories from './sermons/pages/SermonCategories.vue'
 import SermonAuthorCollection from './sermons/pages/SermonAuthorCollection.vue'
 import SermonCategoryCollection from './sermons/pages/SermonCategoryCollection.vue'
 import SermonChurchCollection from './sermons/pages/SermonChurchCollection.vue'
+import SermonSearch from './sermons/pages/SermonSearch.vue'
 
 //Devotionals
 import Devotionals from './devotionals/pages/Devotionals.vue'
@@ -39,6 +40,7 @@ const routes = [
 
   //Sermons
   { path: '/sermons', component: Sermons },
+  { path: '/sermons/search', component: SermonSearch },
   { path: '/sermons/authors', component: SermonAuthors },
   { path: '/sermons/topics', component: SermonCategories },
   { path: '/sermons/authors/:authorId', component: SermonAuthorCollection },
