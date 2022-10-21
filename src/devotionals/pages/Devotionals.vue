@@ -158,11 +158,14 @@ const devotionalElements = ref("devoHolder");
 onMounted(async () => {
   const queryParams: SearchDevo = route.query as any;
   let { q, n, s } = queryParams;
-  if(q && n && s) {
+  if(q != "" && n && s) {
     searchDevos(q, n, s, false);
   }
-  else{
+  else if(q == "" && n && s) {
     searchDevos("", n, s, true);
+  }
+  else{
+    searchDevos("", 1, 8, true);
   }
 });
 
@@ -183,13 +186,17 @@ const nextPage = async (event: Event) => {
   event.preventDefault();
   const queryParams: SearchDevo = route.query as any;
   let { q, n, s } = queryParams;
-  if (q && n && s) {
+  if (q != "" && n && s) {
     await router.push(`?q=${encodeURI(q)}&n=${+n + +1}&s=${s}`);
     searchDevos(q, +n + +1, s, false);
   }
-  else if(!q){
-    await router.replace("/devotionals");
+  else if(q == "" && n && s){
+    await router.push(`?q=&n=${+n + +1}&s=${s}`);
     searchDevos("", +n + +1, s, true);
+  }
+  else{
+    await router.push(`?q=&n=${2}&s=${8}`);
+    searchDevos("", 2, 8, true);
   }
 };
 
@@ -210,9 +217,6 @@ async function searchDevos(searchTerm: string, pageNumber: number, pageSize: num
     categories.value = devotionalCategories.items;
     devotionals.value = searchedDevotionalsTag;
   } else {
-    if(pageNumber == 1){
-      await router.replace("/devotionals");
-    }
     const featuredDevotionalPromise = getFeaturedDevotional();
     const recentDevotionalsPromise = getRecentDevotionals(
       pageNumber,

@@ -1,5 +1,5 @@
 <template>
-  <img :src="props.author?.profileImage" class="object-cover max-h-40 w-full md:max-h-64 rounded-lg mb-4" />
+  <img :src="props.sermonImage || props.author?.profileImage" class="object-cover max-h-40 w-full md:max-h-64 rounded-lg mb-4" />
   <div class="mb-4">
     <p class="font-bold text-slate-800 mb-2">Speaker: <AuthorPageNameLink :author="props.author"></AuthorPageNameLink>
     </p>
@@ -17,7 +17,7 @@ import AuthorPageNameLink from '../../components/atoms/AuthorPageNameLink.vue'
 import { Sermon } from '../Sermon'
 
 export interface AuthorPreviewColumnProps {
-  sermon?: Sermon
+  sermonImage?: string
   author?: Author
   showChurchInfo?: boolean
 }
