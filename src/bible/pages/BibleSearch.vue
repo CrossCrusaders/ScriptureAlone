@@ -108,8 +108,6 @@ onMounted(async () => {
 
   let { q, t: bibleId, page } = queryParams
 
-  console.log(queryParams)
-
   // If there is no query, redirect to the home page
   if (!q)
     router.replace('/')
