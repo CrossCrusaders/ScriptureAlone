@@ -122,6 +122,7 @@ const onPlayAudioClicked = () => {
     author: formatName(author),
     currentTime: 0,
     url: sermonAudioSrc.value,
+    contentPage: `/sermons/${id}`
   })
 
   setGlobalAudioState(AudioPlayerState.playing)
