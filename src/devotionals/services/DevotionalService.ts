@@ -1,7 +1,7 @@
 import { A11yMethods } from 'swiper/types/modules/a11y'
 import PocketBaseClient from '../../api/PocketBaseClient'
 import { transformDevotionalResponse, transformDevotionalResponses } from '../Devotional'
-import { searchAuthorsBothNames } from '../../authors/services/AuthorService'
+import { searchAuthors } from '../../authors/services/AuthorService'
 
 export const getRecentDevotionals = async (offset: number, count: number) => {
   const devotionalsResponse = await PocketBaseClient.records.getList('devotionals', offset, count, { sort: '-created', expand: 'categories,author' })
@@ -36,10 +36,10 @@ export const searchDevotionals = async (searchTerm: string, pageNum?: number, pa
 
 export const getFiterForSearch = async (searchTerm: string) => {
   let Filter = `title ~ "${searchTerm}" || description ~ "${searchTerm}" || categories.label ~ "${searchTerm}"`;
-  let authors = await searchAuthorsBothNames(searchTerm, 0, 0);
+  let authors = await searchAuthors(searchTerm, 0, 0);
 
-  for(let i = 0; i < authors.length; i++){
-    Filter = Filter + ` || author = "${authors[i].id}"`;
+  for (let i = 0; i < authors.items.length; i++) {
+    Filter = Filter + ` || author = "${authors.items[i].id}"`;
   }
   return Filter;
 }

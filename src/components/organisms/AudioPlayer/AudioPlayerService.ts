@@ -17,6 +17,7 @@ export interface GlobalAudioPayload {
   title?: string
   author?: string
   currentTime?: number
+  contentPage?: string
 }
 
 export function useGlobalAudioPlayer() {

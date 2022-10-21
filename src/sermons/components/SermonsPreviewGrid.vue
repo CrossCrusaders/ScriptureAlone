@@ -1,6 +1,11 @@
 <template>
   <ContentPreviewGrid :content="loadedSermons" @click:button="onSermonCardClicked"></ContentPreviewGrid>
   <div v-if="props.paginationControls"></div>
+  <div v-if="props.infiniteScroll">
+    <div v-if="loading" class="flex justify-center">
+      <Spinner color="slate-800"></Spinner>
+    </div>
+  </div>
 </template>
 
 <script setup lang="ts">
@@ -11,6 +16,7 @@ import ContentPreviewGrid from '../../components/molecules/ContentPreviewGrid.vu
 import { Pagination } from '../../core/Pagination';
 import { Sermon } from '../Sermon';
 import { searchSermons } from '../services/SermonService'
+import Spinner from '../../components/atoms/Spinner.vue';
 
 export interface SermonsPreviewGridProps {
   queryParams?: any
@@ -18,13 +24,17 @@ export interface SermonsPreviewGridProps {
   perPage?: number
   link?: string
   paginationControls?: boolean
+  infiniteScroll?: boolean
+  query?: string | null
 }
 
 const props = withDefaults(defineProps<SermonsPreviewGridProps>(), {
   page: 1,
-  perPage: 8
+  perPage: 8,
+  query: null
 })
 
+const loading = ref<boolean>(false)
 const loadedSermons = ref<ContentPreview[]>([])
 const router = useRouter()
 const emit = defineEmits([
@@ -37,11 +47,24 @@ const emit = defineEmits([
 
 const pagination = ref<Pagination | null>(null)
 
-const loadSearchedSermons = async () => {
-  const { items, ...paginationData } = await searchSermons(null, props.page, props.perPage, props.queryParams)
-  loadedSermons.value = items as ContentPreview[]
-  pagination.value = paginationData
-  emit('data:loaded', { items, ...paginationData })
+const loadSearchedSermons = async (forceReset = false) => {
+  if (pagination.value && pagination.value.totalPages === pagination.value.page && !forceReset) {
+    loading.value = false
+    return
+  }
+  loading.value = true
+  try {
+    const { items, ...paginationData } = await searchSermons(props.query, props.page, props.perPage, props.queryParams)
+    if (props.infiniteScroll && !forceReset) {
+      loadedSermons.value = loadedSermons.value.concat(items as ContentPreview[])
+    }
+    else
+      loadedSermons.value = items as ContentPreview[]
+    pagination.value = paginationData
+    emit('data:loaded', { items, ...paginationData })
+  } finally {
+    loading.value = false
+  }
 }
 
 onMounted(async () => {
@@ -49,16 +72,23 @@ onMounted(async () => {
 
   // Initialize watch after initial load
   watch(() => props.page, (currentPage, prevPage) => {
+    loading.value = true
+    setTimeout(() => {
 
-    loadSearchedSermons()
+      loadSearchedSermons()
 
-    if (currentPage > prevPage)
-      emit('page:next')
-    else if (currentPage < prevPage)
-      emit('page:previous')
+      if (currentPage > prevPage)
+        emit('page:next')
+      else if (currentPage < prevPage)
+        emit('page:previous')
+    }, 800)
   })
   watch(() => props.perPage, () => loadSearchedSermons())
   watch(() => props.queryParams, () => loadSearchedSermons())
+
+  watch(() => props.query, (currentQuery, prevQuery) => {
+    loadSearchedSermons(true)
+  })
 })
 
 

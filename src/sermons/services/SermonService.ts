@@ -24,7 +24,22 @@ export const getSermonsByAuthor = async (authorId: string, page: number = 1, per
 }
 
 export const searchSermons = async (query: string | null, page: number = 1, perPage: number = 8, searchParams?: any): Promise<SermonSearch> => {
-  const sermons: any = await PocketBaseClient.records.getList('sermons', page, perPage, { sort: '-created', expand: 'categories,author', ...searchParams })
+
+  const params = { sort: '-created', expand: 'categories,author', ...searchParams }
+
+  if (query) {
+
+    const tokens = query.trim().split(' ')
+    const filter = tokens.reduce((str, currentToken, index) => {
+      if (index)
+        str += '||'
+      str += `(categories.label~"${currentToken}"||title~"${currentToken}"||description~"${currentToken}")`
+      return str
+    }, '')
+
+    params.filter = filter
+  }
+  const sermons: any = await PocketBaseClient.records.getList('sermons', page, perPage, params)
   sermons.items = transformSermonResponses(sermons.items) as any
   return sermons as SermonSearch
 }
