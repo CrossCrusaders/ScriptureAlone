@@ -8,9 +8,10 @@
       <h3 class="text-white text-xl font-title font-bold mb-2" :title="props.content?.title">{{
       formatMaxLengthText(props.content?.title || '', 32) }}
       </h3>
-      <a @click="emit('click:author')" class="text-slate-100 text-sm font-body mb-2 hover:underline cursor-pointer">{{
-      formatName(props.content?.author || '')
-      }}
+      <a @click="emit('click:author', props?.content.author)"
+        class="text-slate-100 text-sm font-body mb-2 hover:underline cursor-pointer">{{
+        formatName(props.content?.author || '')
+        }}
       </a>
       <p class="text-slate-100 text-md font-body mb-3 break-words" :title="props.content?.description">{{
       formatMaxLengthText(props.content?.description ||

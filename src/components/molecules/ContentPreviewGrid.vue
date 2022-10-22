@@ -1,7 +1,7 @@
 <template>
   <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-4">
     <ContentPreviewCard v-for="content of props.content" :content="content" :button-title="props.buttonTitle"
-      @click:button="emit('click:button', content)"></ContentPreviewCard>
+      @click:button="emit('click:button', content)" @click:author="emit('click:author', $event)"></ContentPreviewCard>
   </div>
 </template>
 
@@ -17,7 +17,7 @@ export interface ContentPreviewGridProps {
 const props = withDefaults(defineProps<ContentPreviewGridProps>(), {
   content: [] as any
 })
-const emit = defineEmits(['click:button'])
+const emit = defineEmits(['click:button', 'click:author'])
 
 </script>
 

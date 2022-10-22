@@ -30,7 +30,8 @@
       </form>
 
       <!-- Devotionals Grid Display -->
-      <ContentPreviewGrid :content="devotionals" @click:button="router.push(`/devotionals/${$event.id}`)">
+      <ContentPreviewGrid @click:author="router.push(`/authors/${$event.id}`)" :content="devotionals"
+        @click:button="router.push(`/devotionals/${$event.id}`)">
       </ContentPreviewGrid>
 
 
