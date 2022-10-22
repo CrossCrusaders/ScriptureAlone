@@ -18,7 +18,7 @@
 
       <div v-if="queryParams">
         <InfiniteScrollContent @scroll:end="onScrollEnd">
-          <SermonsPreviewGrid @data:loaded="loading = false" :infinite-scroll="true" :per-page="16" :page="currentPage"
+          <SermonsPreviewGrid @data:loaded="loading = false" :append-content="true" :per-page="16" :page="currentPage"
             :query-params="queryParams">
           </SermonsPreviewGrid>
         </InfiniteScrollContent>
@@ -37,7 +37,7 @@ import { getAuthor } from '../../authors/services/AuthorService'
 import { } from '../services/SermonService'
 import { useRoute } from 'vue-router'
 import { Author } from '../../authors/Author'
-import AuthorPreviewColumn from '../components/AuthorPreviewColumn.vue'
+import AuthorPreviewColumn from '../../components/molecules/AuthorPreviewColumn.vue'
 import SermonsPreviewGrid from '../components/SermonsPreviewGrid.vue'
 import { formatName } from '../../core/services/FormatService'
 import ChurchContactInfo from '../../components/molecules/ChurchContactInfo.vue'

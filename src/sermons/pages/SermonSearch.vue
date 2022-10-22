@@ -20,7 +20,7 @@
         </form>
       </div>
       <InfiniteScrollContent @scroll:end="onScrollEnd">
-        <SermonsPreviewGrid @data:loaded="loading = false" :infinite-scroll="true" :per-page="16" :page="currentPage"
+        <SermonsPreviewGrid @data:loaded="loading = false" :append-content="true" :per-page="16" :page="currentPage"
           :query="searchedQuery" :query-params="queryParams">
         </SermonsPreviewGrid>
       </InfiniteScrollContent>

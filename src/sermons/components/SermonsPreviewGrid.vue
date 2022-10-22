@@ -1,7 +1,8 @@
 <template>
-  <ContentPreviewGrid :content="loadedSermons" @click:button="onSermonCardClicked"></ContentPreviewGrid>
+  <ContentPreviewGrid :content="loadedSermons" :button-title="'View Sermon'" @click:button="onSermonCardClicked">
+  </ContentPreviewGrid>
   <div v-if="props.paginationControls"></div>
-  <div v-if="props.infiniteScroll">
+  <div v-if="props.appendContent">
     <div v-if="loading" class="flex justify-center">
       <Spinner color="slate-800"></Spinner>
     </div>
@@ -24,7 +25,7 @@ export interface SermonsPreviewGridProps {
   perPage?: number
   link?: string
   paginationControls?: boolean
-  infiniteScroll?: boolean
+  appendContent?: boolean
   query?: string | null
 }
 
@@ -55,7 +56,7 @@ const loadSearchedSermons = async (forceReset = false) => {
   loading.value = true
   try {
     const { items, ...paginationData } = await searchSermons(props.query, props.page, props.perPage, props.queryParams)
-    if (props.infiniteScroll && !forceReset) {
+    if (props.appendContent && !forceReset) {
       loadedSermons.value = loadedSermons.value.concat(items as ContentPreview[])
     }
     else

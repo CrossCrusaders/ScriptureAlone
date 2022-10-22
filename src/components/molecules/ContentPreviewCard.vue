@@ -1,17 +1,17 @@
 <template>
-  <div class="content-preview-card flex flex-col rounded-2xl relative  bg-transparent overflow-hidden">
+  <div class="content-preview-card flex flex-col rounded-2xl relative  bg-transparent overflow-hidden h-72">
 
-    <img :src="previewImage" class="object-cover h-full w-full absolute top-0 left-0 right-0 bottom-0 -z-20 " />
+    <img v-if="previewImage" :src="previewImage"
+      class="object-cover h-full w-full absolute top-0 left-0 right-0 bottom-0 -z-20 " />
     <div class="absolute top-0 left-0 right-0 bottom-0 -z-20 h-full w-full bg-slate-800 opacity-75 "></div>
-    <div class="flex flex-col p-6 flex-auto">
-
-      <h3 class="text-white text-xl font-title font-bold mb-0" :title="props.content?.title">{{
+    <div class="flex flex-col px-4 py-6 flex-auto">
+      <h3 class="text-white text-xl font-title font-bold mb-2" :title="props.content?.title">{{
       formatMaxLengthText(props.content?.title || '', 32) }}
       </h3>
-      <p class="text-slate-100 text-sm font-body mb-2">{{ props.content?.author?.firstName }}&nbsp;{{
-      props.content?.author?.lastName
+      <a @click="emit('click:author')" class="text-slate-100 text-sm font-body mb-2 hover:underline cursor-pointer">{{
+      formatName(props.content?.author || '')
       }}
-      </p>
+      </a>
       <p class="text-slate-100 text-md font-body mb-3 break-words" :title="props.content?.description">{{
       formatMaxLengthText(props.content?.description ||
       '', 48) }}
@@ -26,8 +26,7 @@
         Duration: {{ formatMillisecondsAsReadableDuration(props.content?.duration) }}
       </p>
       <div class="flex-auto mb-2"></div>
-
-      <AppButton variant="primary" class="w-full" @click="emit('click:button', props.content)">
+      <AppButton variant="white-outline" class="w-full" @click="emit('click:button', props.content)">
         {{ props.buttonTitle }}
       </AppButton>
 
@@ -40,7 +39,8 @@ import { Author } from '../../authors/Author'
 import { Category } from '../../devotionals/Devotional'
 import {
   formatMillisecondsAsReadableDuration,
-  formatMaxLengthText
+  formatMaxLengthText,
+  formatName
 } from '../../core/services/FormatService'
 import { computed, reactive } from 'vue'
 import { getBucketUrl } from '../../api/BucketStorageService'
@@ -65,17 +65,20 @@ const props = withDefaults(defineProps<ContentProps>(), {
   buttonTitle: 'View Details'
 })
 const emit = defineEmits([
-  'click:button'
+  'click:button',
+  'click:author'
 ])
 
 const previewImage = computed(() => {
   if (!props.content)
-    return null
+    return '/logo-bible.png'
 
   if (props.content.coverImage)
     return props.content.coverImage
-  if (props.content.author)
+  if (props.content.author && props.content.author.profileImage)
     return props.content.author.profileImage
+
+  return '/logo-bible.png'
 })
 
 </script>

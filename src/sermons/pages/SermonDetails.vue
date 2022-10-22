@@ -5,7 +5,7 @@
       <div class="flex flex-col-reverse md:flex-row gap-2 md:gap-8 mt-8" v-if="!loading && !!sermonDetail">
         <div class="md:w-2/6">
           <AuthorPreviewColumn :show-church-info="true" :author="sermonDetail.author"
-            :sermonImage="sermonDetail.coverImage"></AuthorPreviewColumn>
+            :coverImage="sermonDetail.coverImage"></AuthorPreviewColumn>
           <!--TODO: Share Icons -->
 
         </div>
@@ -64,7 +64,7 @@ import AppButton from '../../components/atoms/form-controls/AppButton.vue'
 import Divider from '../../components/atoms/Divider.vue'
 import AppModal from '../../components/templates/AppModal.vue'
 import AudioPlayer from '../../components/organisms/AudioPlayer/AudioPlayer.vue'
-import AuthorPreviewColumn from '../components/AuthorPreviewColumn.vue'
+import AuthorPreviewColumn from '../../components/molecules/AuthorPreviewColumn.vue'
 import { getSermon } from '../services/SermonService'
 import { useRoute } from 'vue-router'
 import { format } from 'date-fns'
