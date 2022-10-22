@@ -8,13 +8,13 @@
           <img src="/logo-bible.png" class="object-contain hidden md:block max-h-32" />
         </template>
         <h2 class="text-4xl font-bold mb-2 text-slate-900">Daily Devotionals</h2>
-        <p class="text-slate-600">
-          Devo description here. ihdshfskhdgkjhduighaehguiwheiu uewhguihriguse
-          njng srnjgnsinguidsghen uhcvnsdndv jsvn jvdjn sdjn vdnjbjndjnsnj
+        <p class="text-slate-600 max-w-prose">
+          Find devotionals that will encourage you as you walk with the Lord. Devotionals are great way to enhance your
+          daily bible reading program
+          and find help in a time of need for whatever you may be facing. We pray you are encouraged.
         </p>
         <template v-slot:actions>
-          <AppButton>Read Now</AppButton>
-
+          <!-- <AppButton>Read Now</AppButton> -->
         </template>
       </PageHero>
 
@@ -54,9 +54,8 @@ export interface SearchDevo {
 import AppLayout from "../../components/templates/AppLayout.vue"
 import PageContent from "../../components/templates/PageContent.vue"
 import AppButton from "../../components/atoms/form-controls/AppButton.vue"
-import { onMounted, reactive, ref } from "vue"
+import { onMounted, ref } from "vue"
 import Icon from "../../components/atoms/Icon.vue"
-import Divider from "../../components/atoms/Divider.vue"
 import {
   getFeaturedDevotional,
   getRecentDevotionals,
@@ -64,20 +63,14 @@ import {
   searchDevotionals,
 } from "../../devotionals/services/DevotionalService"
 import PageHero from "../../components/molecules/PageHero.vue"
-import Badge from "../../components/molecules/Badge.vue"
 import { useRouter, useRoute } from "vue-router"
 import AppInput from "../../components/atoms/form-controls/AppInput.vue"
-import { Devotional } from "../Devotional"
 import ContentPreviewGrid from "../../components/molecules/ContentPreviewGrid.vue"
 
 const loading = true
-
 const categories = ref<any>([])
-
 const devotionals = ref<any>([])
-
 const search = ref("")
-
 const page = ref(1)
 const countPerPage = 8
 
@@ -85,9 +78,6 @@ const searchModel = ref("")
 
 const route = useRoute()
 const router = useRouter()
-
-const devotionalElements = ref("devoHolder")
-
 
 onMounted(async () => {
   const queryParams: SearchDevo = route.query as any

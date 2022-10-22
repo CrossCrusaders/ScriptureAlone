@@ -21,7 +21,7 @@
       </div>
       <InfiniteScrollContent @scroll:end="onScrollEnd">
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 p-4">
-          <AuthorDisplayCard :link="'/sermons/authors/' + author.id" v-for="(author, index) in authors" :key="index"
+          <AuthorDisplayCard :link="'/authors/' + author.id" v-for="(author, index) in authors" :key="index"
             :author="author">
           </AuthorDisplayCard>
         </div>

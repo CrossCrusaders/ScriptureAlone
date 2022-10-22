@@ -2,7 +2,9 @@
   <AppLayout>
     <!-- Search Hero -->
     <div class="flex flex-col items-center mb-24">
-      <img class="object-contain max-h-40 md:max-h-80 block mb-4" src="/logo-bible.png" />
+      <RouterLink to="/bible">
+        <img class="object-contain max-h-40 md:max-h-80 block mb-4" src="/logo-bible.png" />
+      </RouterLink>
       <h1
         class="font-bold font-title text-3xl md:text-5xl lg:text-6xl mb-2 bg-gradient-to-r from-[#1e293b] to-[#57687f] text-transparent bg-clip-text">
         Scripture Alone

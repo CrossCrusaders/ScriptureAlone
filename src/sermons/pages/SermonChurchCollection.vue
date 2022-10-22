@@ -5,7 +5,7 @@
       <div class="my-8">
         <h2 class="text-3xl font-bold text-slate-700 mb-2 font-title ">Preachers</h2>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-          <AuthorDisplayCard v-for="author of authors" :author="author" :link="`/sermons/authors/${author.id}`">
+          <AuthorDisplayCard v-for="author of authors" :author="author" :link="`/authors/${author.id}`">
           </AuthorDisplayCard>
         </div>
       </div>

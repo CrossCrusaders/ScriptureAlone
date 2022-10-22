@@ -2,7 +2,7 @@
   <AppLayout>
     <PageContent>
 
-      <div class="flex flex-col-reverse md:flex-row gap-2 md:gap-8 mt-8" v-if="!loading && author">
+      <div class="flex flex-col-reverse md:flex-row gap-2 md:gap-8 mt-8" v-if="author">
         <div class="md:w-2/6">
           <AuthorPreviewColumn :show-church-info="false" :author="author"></AuthorPreviewColumn>
           <!--TODO: Share Icons -->
@@ -34,11 +34,11 @@ import { onMounted, ref } from 'vue'
 import AppLayout from '../../components/templates/AppLayout.vue'
 import PageContent from '../../components/templates/PageContent.vue'
 import { getAuthor } from '../../authors/services/AuthorService'
-import { } from '../services/SermonService'
+import { } from '../../sermons/services/SermonService'
 import { useRoute } from 'vue-router'
 import { Author } from '../../authors/Author'
 import AuthorPreviewColumn from '../../components/molecules/AuthorPreviewColumn.vue'
-import SermonsPreviewGrid from '../components/SermonsPreviewGrid.vue'
+import SermonsPreviewGrid from '../../sermons/components/SermonsPreviewGrid.vue'
 import { formatName } from '../../core/services/FormatService'
 import ChurchContactInfo from '../../components/molecules/ChurchContactInfo.vue'
 import InfiniteScrollContent from '../../components/templates/InfiniteScrollContent.vue'

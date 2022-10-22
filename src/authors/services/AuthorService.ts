@@ -30,8 +30,9 @@ export const getFeaturedAuthors = async (count: number = 6) => {
   const totalDbCount = 40
   const totalPageCount = Math.floor(totalDbCount / count)
   const doty = getDayOfTheYear()
-  const selectedPage = (doty % totalDbCount) + 1
+  const selectedPage = (doty % totalPageCount) + 1
   // --
+
 
   const response = await PocketBaseClient.records.getList('authors', selectedPage, count, { sort: '-created', filter: "profileImage!=null" })
   return transformAuthorResponses(response.items)

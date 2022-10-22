@@ -1,5 +1,5 @@
 <template>
-  <RouterLink :to="'/sermons/authors/' + props.author?.id">
+  <RouterLink :to="'/authors/' + props.author?.id">
     <span>{{ formatName(props.author) }}</span>
   </RouterLink>
 </template>

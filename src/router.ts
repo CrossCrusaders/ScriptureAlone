@@ -14,7 +14,7 @@ import Sermons from './sermons/pages/Sermons.vue'
 import SermonDetails from './sermons/pages/SermonDetails.vue'
 import SermonAuthors from './sermons/pages/SermonAuthors.vue'
 import SermonCategories from './sermons/pages/SermonCategories.vue'
-import SermonAuthorCollection from './sermons/pages/SermonAuthorCollection.vue'
+// import SermonAuthorCollection from './sermons/pages/SermonAuthorCollection.vue'
 import SermonCategoryCollection from './sermons/pages/SermonCategoryCollection.vue'
 import SermonChurchCollection from './sermons/pages/SermonChurchCollection.vue'
 import SermonSearch from './sermons/pages/SermonSearch.vue'
@@ -23,6 +23,9 @@ import SermonSearch from './sermons/pages/SermonSearch.vue'
 import Devotionals from './devotionals/pages/Devotionals.vue'
 import DevotionalDetails from './devotionals/pages/DevotionalDetails.vue'
 import DevotionalSearch from './devotionals/pages/DevotionalSearch.vue'
+
+//Author
+import Author from './authors/pages/Author.vue'
 
 import UserDashboard from './user/pages/UserDashboard.vue'
 
@@ -43,16 +46,18 @@ const routes = [
   { path: '/sermons/search', component: SermonSearch },
   { path: '/sermons/authors', component: SermonAuthors },
   { path: '/sermons/topics', component: SermonCategories },
-  { path: '/sermons/authors/:authorId', component: SermonAuthorCollection },
+  // { path: '/sermons/authors/:authorId', component: SermonAuthorCollection },
   { path: '/sermons/topics/:categoryKey', component: SermonCategoryCollection },
   { path: '/sermons/churches/:churchId', component: SermonChurchCollection },
   { path: '/sermons/:id', component: SermonDetails },
 
   //Devotionals
   { path: '/devotionals', component: Devotionals },
-  { path: '/devotionals/search', component: DevotionalSearch },
+  // { path: '/devotionals/search', component: DevotionalSearch },
   { path: '/devotionals/:id', component: DevotionalDetails },
 
+  // Authors
+  { path: '/authors/:authorId', component: Author },
 
   //Account Management
   { path: '/auth/log-in', component: LogIn },
