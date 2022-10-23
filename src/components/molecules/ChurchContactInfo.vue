@@ -4,6 +4,8 @@
     <p class="text-slate-800 mb-px" v-if="props.church?.streetAddress1">Address: {{ formatAddress(props.church) }}</p>
     <p class="text-slate-800 mb-px" v-if="props.church?.phone">Phone: {{ props.church.phone }}</p>
     <p class="text-slate-800 mb-px" v-if="props.church?.email">Email: {{ props?.church.email }}</p>
+    <p class="text-slate-800 mb-px" v-if="props.church?.website">Website: <a :href="props?.church.website">{{ props?.church.website }}</a></p>
+    <p class="text-slate-800 mb-px" v-if="props.church?.socialMedia">Social Media: {{ props?.church.socialMedia }}</p>
   </div>
 </template>
 
