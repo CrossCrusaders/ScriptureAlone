@@ -1,5 +1,5 @@
 <template>
-  <div class="rounded-xl bg-slate-200 px-6 py-12 md:py-16 items-center mb-16 md:mt-8">
+  <div class="rounded-xl bg-slate-200 px-6 py-12 md:py-16 items-center mb-16 md:mt-8 -z-10">
     <!-- Inner flex parent -->
     <div class="flex flex-col md:flex-row gap-4">
 
