@@ -20,10 +20,10 @@
           <p class="text-slate-800 text-md text-sm font-body mb-0">
             <b>Tags: </b>
             <a v-for="(category, innerIndex) in devotionalDetail.categories">
-              <a
-                v-if="devotionalDetail.categories != undefined && category != devotionalDetail.categories[devotionalDetail.categories.length - 1]">{{
-                category.label }},&nbsp;</a>
-              <a v-else>{{ category.label }}&nbsp;</a>
+              <RouterLink
+                v-if="devotionalDetail.categories != undefined && category != devotionalDetail.categories[devotionalDetail.categories.length - 1]" :to="'/devotionals?q=' + category.label + '&n=1&s=8'">{{
+                category.label }},&nbsp;</RouterLink>
+              <RouterLink v-else :to="'/devotionals?q=' + category.label + '&n=1&s=8'">{{ category.label }}&nbsp;</RouterLink>
             </a>
           </p>
           </p>
@@ -143,6 +143,7 @@ import IconCallToAction from '../../components/molecules/IconCallToAction.vue'
 import Icon from '../../components/atoms/Icon.vue'
 import Accordion from '../../components/molecules/Accordion/Accordion.vue'
 import AccordionItem from '../../components/molecules/Accordion/AccordionItem.vue'
+import { RouterLink } from 'vue-router'
 
 import { prop } from 'dom7'
 

@@ -85,6 +85,7 @@ onMounted(async () => {
   let { q, n, s } = queryParams
   if (q != "" && n && s) {
     searchDevos(q, n, s, false)
+    searchModel.value = q;
   }
   else if (q == "" && n && s) {
     searchDevos("", n, s, true)
