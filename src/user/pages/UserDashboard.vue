@@ -105,11 +105,6 @@ async function goToPage(link:string){
     await router.replace(link);
   }
 }
-
-const emit = defineEmits([
-  'click:button',
-  'click:author'
-])
 </script>
 
 <style>
