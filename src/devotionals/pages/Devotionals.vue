@@ -18,11 +18,17 @@
         </template>
       </PageHero>
 
-      <form @submit="handleSearchSubmit($event)" class="flex justify-center mb-10">
+      <form @submit.prevent="handleSearchSubmit($event)" class="flex justify-center mb-10">
         <div class="px-2 w-full md:w-1/2">
           <AppInput id="searchBar" type="input" name="query" v-model="searchModel" placeholder="Search Devotionals">
             <template v-slot:postfix>
-              <Icon icon-name="magnify"></Icon>
+              <AppButton variant="primary-minimal" size="sm" v-if="hasSearch" @click="clearCurrentSearch">
+                <Icon icon-name="close"></Icon>
+              </AppButton>
+              <AppButton variant="primary-minimal" size="sm" v-else type="submit">
+                <Icon icon-name="magnify"></Icon>
+              </AppButton>
+
             </template>
           </AppInput>
           <AppButton variant="primary-light" class="block w-full md:hidden mt-4" type="submit">Search</AppButton>
@@ -30,149 +36,90 @@
       </form>
 
       <!-- Devotionals Grid Display -->
-      <ContentPreviewGrid @click:author="router.push(`/authors/${$event.id}`)" :content="devotionals"
-        @click:button="router.push(`/devotionals/${$event.id}`)">
-      </ContentPreviewGrid>
+      <div class="mb-10">
+        <DevotionalsPreviewGrid :query="currentSearchQuery" :page="currentPage" :show-spinner-while-loading="true"
+          @click:button="router.push(`/devotionals/${$event.id}`)" @data:loaded="onDevotionalDataLoaded">
+        </DevotionalsPreviewGrid>
+        <div class="flex justify-between mt-2 mb-12 p-4">
+          <div>
+            <AppButton @click="onPreviousPageClicked" v-if="currentPaginationData?.page != 1" variant="primary-outline">
+              &lt;&nbsp;Previous Page
+            </AppButton>
+          </div>
 
+          <div>
+            <AppButton @click="onNextPageClicked"
+              v-if="currentPaginationData?.page != currentPaginationData?.totalPages" variant="primary-outline">
+              Next Page&nbsp;&gt;
+            </AppButton>
+          </div>
+        </div>
 
-      <div class="flex justify-center">
-        <button class="text-slate-400 mb-12" @click="nextPage($event)">
-          View More >
-        </button>
       </div>
 
       <!-- My Plans -->
+      <UserRecommendationFooter></UserRecommendationFooter>
     </PageContent>
   </AppLayout>
 </template>
 
 <script setup lang="ts">
-export interface SearchDevo {
-  q: string
-  n: number
-  s: number
-}
+
 import AppLayout from "../../components/templates/AppLayout.vue"
 import PageContent from "../../components/templates/PageContent.vue"
 import AppButton from "../../components/atoms/form-controls/AppButton.vue"
-import { onMounted, ref } from "vue"
+import { computed, onMounted, ref } from "vue"
 import Icon from "../../components/atoms/Icon.vue"
-import {
-  getFeaturedDevotional,
-  getRecentDevotionals,
-  getDevotionalCategories,
-  searchDevotionals,
-} from "../../devotionals/services/DevotionalService"
+
 import PageHero from "../../components/molecules/PageHero.vue"
 import { useRouter, useRoute } from "vue-router"
 import AppInput from "../../components/atoms/form-controls/AppInput.vue"
-import ContentPreviewGrid from "../../components/molecules/ContentPreviewGrid.vue"
+import DevotionalsPreviewGrid from "../components/DevotionalsPreviewGrid.vue"
+import UserRecommendationFooter from "../../components/organisms/UserRecommendationFooter.vue"
+import { DevotionalSearch } from "../DevotionalSearch"
+import { Pagination } from "../../core/Pagination"
+import Spinner from "../../components/atoms/Spinner.vue"
 
-const loading = true
-const categories = ref<any>([])
-const devotionals = ref<any>([])
-const search = ref("")
-const page = ref(1)
-const countPerPage = 8
-
+const loading = ref<boolean>(false)
 const searchModel = ref("")
-
-const route = useRoute()
 const router = useRouter()
 
-onMounted(async () => {
-  const queryParams: SearchDevo = route.query as any
-  let { q, n, s } = queryParams
-  if (q != "" && n && s) {
-    searchDevos(q, n, s, false)
-    searchModel.value = q;
-  }
-  else if (q == "" && n && s) {
-    searchDevos("", n, s, true)
-  }
-  else {
-    searchDevos("", 1, 8, true)
-  }
-})
+const currentPaginationData = ref<Pagination>()
+const currentPage = ref<number>(1)
+const currentSearchQuery = ref<string>('')
+
 
 const handleSearchSubmit = async (event: Event) => {
-  event.preventDefault()
-  if (searchModel.value && searchModel.value.length) {
-    await router.push(
-      `?q=${encodeURI(searchModel.value.substring(0, 255))}&n=1&s=${8}`
-    )
-    searchDevos(searchModel.value, 1, 8, false)
-  } else {
-    await router.replace("/devotionals")
-    searchDevos("", 1, 8, true)
-  }
+  currentSearchQuery.value = searchModel.value
+
 }
 
-const nextPage = async (event: Event) => {
-  event.preventDefault()
-  const queryParams: SearchDevo = route.query as any
-  let { q, n, s } = queryParams
-  if (q != "" && n && s) {
-    await router.push(`?q=${encodeURI(q)}&n=${+n + +1}&s=${s}`)
-    searchDevos(q, +n + +1, s, false)
-  }
-  else if (q == "" && n && s) {
-    await router.push(`?q=&n=${+n + +1}&s=${s}`)
-    searchDevos("", +n + +1, s, true)
-  }
-  else {
-    await router.push(`?q=&n=${2}&s=${8}`)
-    searchDevos("", 2, 8, true)
-  }
+const onDevotionalDataLoaded = async (data: DevotionalSearch) => {
+  const { items, ...pagination } = data
+  currentPaginationData.value = { ...pagination }
+  loading.value = false
 }
 
-async function searchDevos(searchTerm: string, pageNumber: number, pageSize: number, isBlank: boolean) {
-  search.value = searchTerm
-  if (!isBlank) {
-    const searchedDevotionalsTagPromise = await searchDevotionals(searchTerm, pageNumber, pageSize)
-    const categoriesPromise = getDevotionalCategories()
+const hasSearch = computed(() => !!currentSearchQuery.value)
 
-    const [
-      searchedDevotionalsTag,
-      devotionalCategories,
-    ] = await Promise.all([
-      searchedDevotionalsTagPromise,
-      categoriesPromise,
-    ])
-
-    categories.value = devotionalCategories.items
-    devotionals.value = searchedDevotionalsTag
-  } else {
-    const featuredDevotionalPromise = getFeaturedDevotional()
-    const recentDevotionalsPromise = getRecentDevotionals(
-      pageNumber,
-      pageSize
-    )
-    const categoriesPromise = getDevotionalCategories()
-
-    const [featuredDevotional, recentDevotionals, devotionalCategories] =
-      await Promise.all([
-        featuredDevotionalPromise,
-        recentDevotionalsPromise,
-        categoriesPromise,
-      ])
-
-    categories.value = devotionalCategories.items
-    devotionals.value = recentDevotionals
-  }
+const clearCurrentSearch = () => {
+  currentSearchQuery.value = ''
+  currentPage.value = 1
 }
 
-const formatSearchResultText = (devo: string) => {
-  var searches = search.value.split(" ")
-  var Text = ""
-  for (let i = 0; i < searches.length; i++) {
-    if (i != 0) {
-      Text = Text.replace(new RegExp('(' + searches[i] + ')', 'ig'), `<strong>$1</strong>`)
-    }
-    else {
-      Text = devo.replace(new RegExp('(' + searches[i] + ')', 'ig'), `<strong>$1</strong>`)
-    }
+const onPreviousPageClicked = () => {
+  if (!loading.value && currentPage.value > 1) {
+    currentPage.value -= 1
+    loading.value = true
   }
-  return `<span>${Text}</span>`
+}
+const onNextPageClicked = () => {
+  if (!loading.value) {
+    if (currentPaginationData.value)
+      currentPage.value = Math.min(currentPage.value + 1, currentPaginationData.value.totalPages)
+    else
+      currentPage.value += 1
+    loading.value = true
+  }
 }
 </script>

@@ -1,6 +1,9 @@
 <template>
-  <ContentPreviewGrid :content="loadedSermons" :button-title="'View Sermon'" @click:button="onSermonCardClicked"
-    @click:author="onSermonAuthorClicked">
+  <div class="flex justify-center" v-if="props.showSpinnerWhileLoading && loading">
+    <Spinner color="slate-800"></Spinner>
+  </div>
+  <ContentPreviewGrid v-else :content="loadedDevotionals" :button-title="'View Devotional'"
+    @click:button="onDevotionalCardClicked" @click:author="onDevotionalAuthorClicked">
   </ContentPreviewGrid>
   <div v-if="props.paginationControls"></div>
   <div v-if="props.appendContent">
@@ -16,12 +19,13 @@ import { useRouter } from 'vue-router';
 import { ContentPreview } from '../../components/molecules/ContentPreviewCard.vue';
 import ContentPreviewGrid from '../../components/molecules/ContentPreviewGrid.vue'
 import { Pagination } from '../../core/Pagination';
-import { Sermon } from '../Sermon';
-import { searchSermons } from '../services/SermonService'
+
+import { searchDevotionals } from '../services/DevotionalService'
 import Spinner from '../../components/atoms/Spinner.vue';
+import { Devotional } from '../Devotional';
 import { Author } from '../../authors/Author';
 
-export interface SermonsPreviewGridProps {
+export interface DevotionalsPreviewGridProps {
   queryParams?: any
   page?: number
   perPage?: number
@@ -29,20 +33,20 @@ export interface SermonsPreviewGridProps {
   paginationControls?: boolean
   appendContent?: boolean
   query?: string | null
+  showSpinnerWhileLoading?: boolean
 }
 
-const props = withDefaults(defineProps<SermonsPreviewGridProps>(), {
+const props = withDefaults(defineProps<DevotionalsPreviewGridProps>(), {
   page: 1,
   perPage: 8,
   query: null
 })
 
 const loading = ref<boolean>(false)
-const loadedSermons = ref<ContentPreview[]>([])
+const loadedDevotionals = ref<ContentPreview[]>([])
 const router = useRouter()
 const emit = defineEmits([
   'click:button', // TODO: better name?
-  'click:author',
   'page:change',
   'page:next',
   'page:previous',
@@ -51,19 +55,19 @@ const emit = defineEmits([
 
 const pagination = ref<Pagination | null>(null)
 
-const loadSearchedSermons = async (forceReset = false) => {
-  if (pagination.value && pagination.value.totalPages === pagination.value.page && !forceReset) {
-    loading.value = false
-    return
-  }
+const loadSearchedDevotionals = async (forceReset = false) => {
+  // if (pagination.value && pagination.value.totalPages === pagination.value.page && !forceReset) {
+  //   loading.value = false
+  //   return
+  // }
   loading.value = true
   try {
-    const { items, ...paginationData } = await searchSermons(props.query, props.page, props.perPage, props.queryParams)
+    const { items, ...paginationData } = await searchDevotionals(props.query, props.page, props.perPage, props.queryParams)
     if (props.appendContent && !forceReset) {
-      loadedSermons.value = loadedSermons.value.concat(items as ContentPreview[])
+      loadedDevotionals.value = loadedDevotionals.value.concat(items as ContentPreview[])
     }
     else
-      loadedSermons.value = items as ContentPreview[]
+      loadedDevotionals.value = items as ContentPreview[]
     pagination.value = paginationData
     emit('data:loaded', { items, ...paginationData })
   } finally {
@@ -72,38 +76,37 @@ const loadSearchedSermons = async (forceReset = false) => {
 }
 
 onMounted(async () => {
-  loadSearchedSermons()
+  loadSearchedDevotionals()
 
   // Initialize watch after initial load
   watch(() => props.page, (currentPage, prevPage) => {
     loading.value = true
     setTimeout(() => {
 
-      loadSearchedSermons()
+      loadSearchedDevotionals()
 
       if (currentPage > prevPage)
         emit('page:next')
       else if (currentPage < prevPage)
         emit('page:previous')
-    }, 800)
+    }, 500)
   })
-  watch(() => props.perPage, () => loadSearchedSermons())
-  watch(() => props.queryParams, () => loadSearchedSermons())
+  watch(() => props.perPage, () => loadSearchedDevotionals())
+  watch(() => props.queryParams, () => loadSearchedDevotionals())
 
   watch(() => props.query, (currentQuery, prevQuery) => {
-    loadSearchedSermons(true)
+    loadSearchedDevotionals(true)
   })
 })
 
 
-const onSermonCardClicked = (sermon: Sermon) => {
-  router.push(`/sermons/${sermon.id}`)
+const onDevotionalCardClicked = (devotional: Devotional) => {
+  router.push(`/devotionals/${devotional.id}`)
   emit('click:button')
 }
 
-const onSermonAuthorClicked = (author: Author) => {
+const onDevotionalAuthorClicked = (author: Author) => {
   router.push(`/authors/${author.id}`)
-  emit('click:author')
 }
 </script>
 

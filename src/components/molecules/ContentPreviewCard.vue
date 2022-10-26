@@ -74,6 +74,8 @@ const previewImage = computed(() => {
     return '/logo-bible.png'
   if (props.content.coverImage)
     return props.content.coverImage
+  if (props.content.externalCoverImageUrl)
+    return props.content.externalCoverImageUrl
   if (props.content.author && props.content.author.profileImage)
     return props.content.author.profileImage
 

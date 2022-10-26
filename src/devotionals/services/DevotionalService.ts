@@ -2,6 +2,7 @@ import { A11yMethods } from 'swiper/types/modules/a11y'
 import PocketBaseClient from '../../api/PocketBaseClient'
 import { transformDevotionalResponse, transformDevotionalResponses } from '../Devotional'
 import { searchAuthors } from '../../authors/services/AuthorService'
+import { DevotionalSearch } from '../DevotionalSearch'
 
 export const getRecentDevotionals = async (offset: number, count: number) => {
   const devotionalsResponse = await PocketBaseClient.records.getList('devotionals', offset, count, { sort: '-created', expand: 'categories,author' })
@@ -24,22 +25,20 @@ export const getDevotionalCategories = async () => {
   return categories
 }
 
-export const searchDevotionals = async (searchTerm: string, pageNum?: number, pageSize?: number) => {
-  var response: any;
-  var filter = await getFiterForSearch(searchTerm);
 
-  const devotionalsInSearch = await PocketBaseClient.records.getList('devotionals', pageNum, pageSize, { filter: filter, expand: 'categories,sections,author,author.church' })
-  response = transformDevotionalResponses(devotionalsInSearch.items)
-
-  return response;
-}
-
-export const getFiterForSearch = async (searchTerm: string) => {
-  let Filter = `title ~ "${searchTerm}" || description ~ "${searchTerm}" || categories.label ~ "${searchTerm}"`;
-  let authors = await searchAuthors(searchTerm, 0, 0);
-
-  for (let i = 0; i < authors.items.length; i++) {
-    Filter = Filter + ` || author = "${authors.items[i].id}"`;
+export const searchDevotionals = async (query: string | null, page: number = 1, perPage: number = 8, searchParams?: any): Promise<DevotionalSearch> => {
+  const params = { sort: '-devotionalDate,-created', expand: 'categories,author,sections', ...searchParams }
+  if (query) {
+    const tokens = query.trim().split(' ')
+    const filter = tokens.reduce((str, currentToken, index) => {
+      if (index)
+        str += '||'
+      str += `(categories.label~"${currentToken}"||title~"${currentToken}"||description~"${currentToken}"||author.firstName~"${currentToken}"||author.lastName~"${currentToken}")`
+      return str
+    }, '')
+    params.filter = filter
   }
-  return Filter;
+  const devotionals: any = await PocketBaseClient.records.getList('devotionals', page, perPage, params)
+  devotionals.items = transformDevotionalResponses(devotionals.items) as any
+  return devotionals as DevotionalSearch
 }

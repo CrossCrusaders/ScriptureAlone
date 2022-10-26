@@ -11,3 +11,5 @@ export function getUserProfileImage(user?: User | null | undefined) {
 
   return "/logo-bible.png"
 }
+
+export const defaultImage = '/logo-bible.png'
