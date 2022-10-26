@@ -82,4 +82,8 @@ const router = VueRouter.createRouter({
   }
 })
 
+router.afterEach((to, from, fail) => {
+  console.log(fail)
+})
+
 export default router
