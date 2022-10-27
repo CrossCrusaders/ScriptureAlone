@@ -1,10 +1,10 @@
 <template>
-  <div class="absolute w-full h-full" style="background-color:white; z-index: 10;" v-if="sermonVideoSrc && globalVideoState === VideoPlayerState.playing">
+  <!--<div class="absolute w-full h-full" style="background-color:white; z-index: 10;" v-if="sermonVideoSrc && globalVideoState === VideoPlayerState.playing">
     <div class="w-full h-full flex justify-center">
       <video class="w-1/2" :src="sermonVideoSrc" autoplay="autoplay" controls></video>
     </div>
     <button @click="globalVideoState = VideoPlayerState.hidden">Hello</button>
-  </div>
+  </div>-->
   <AppLayout>
     <PageContent>
       <div class="flex flex-col-reverse md:flex-row gap-2 md:gap-8 mt-8" v-if="!loading && !!sermonDetail">

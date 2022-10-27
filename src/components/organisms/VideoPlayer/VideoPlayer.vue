@@ -1,6 +1,6 @@
 <template>
   <div class="flex flex-row justify-center">
-    <video ref="videoEl" class="w-full max-w-prose" controls :src="props.videoSrc">
+    <video ref="videoEl" id="video" autoplay="autoplay" class="w-32 max-w-prose" @click="fullscreen()" :src="props.videoSrc">
     </video>
   </div>
 </template>
@@ -36,5 +36,10 @@ onMounted(() => {
     el.play()
   }
 })
+
+const fullscreen = function(){
+  //@ts-expect-error
+  document.getElementById("video").style = "position: absolute; width: 20em;"
+}
 
 </script>
