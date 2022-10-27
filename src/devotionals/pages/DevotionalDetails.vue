@@ -15,15 +15,19 @@
           <p class="text-slate-500">Updated: {{ devotionalLastUpdatedDisplay }} &bullet;
             <span class="text-slate-500" v-if="devotionalDetail.duration">
               Duration: {{ formatMillisecondsAsReadableDuration(
-              devotionalDetail.duration) }}
+                  devotionalDetail.duration)
+              }}
             </span>
           <p class="text-slate-800 text-md text-sm font-body mb-0">
             <b>Tags: </b>
             <a v-for="(category, innerIndex) in devotionalDetail.categories">
               <RouterLink
-                v-if="devotionalDetail.categories != undefined && category != devotionalDetail.categories[devotionalDetail.categories.length - 1]" :to="'/devotionals?q=' + category.label + '&n=1&s=8'">{{
-                category.label }},&nbsp;</RouterLink>
-              <RouterLink v-else :to="'/devotionals?q=' + category.label + '&n=1&s=8'">{{ category.label }}&nbsp;</RouterLink>
+                v-if="devotionalDetail.categories != undefined && category != devotionalDetail.categories[devotionalDetail.categories.length - 1]"
+                :to="'/devotionals?q=' + category.label + '&n=1&s=8'">{{
+                    category.label
+                }},&nbsp;</RouterLink>
+              <RouterLink v-else :to="'/devotionals?q=' + category.label + '&n=1&s=8'">{{ category.label }}&nbsp;
+              </RouterLink>
             </a>
           </p>
           </p>

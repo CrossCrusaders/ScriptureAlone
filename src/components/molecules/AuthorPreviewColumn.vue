@@ -2,7 +2,8 @@
   <img :src="props.coverImage || props.author?.profileImage || defaultImage"
     class="object-cover max-h-40 w-full md:max-h-64 rounded-lg mb-4" />
   <div class="mb-4">
-    <p class="font-bold text-slate-800 mb-2">Speaker: <AuthorPageNameLink :author="props.author"></AuthorPageNameLink>
+    <p class="font-bold text-slate-800 mb-2">
+      Author: <AuthorPageNameLink :author="props.author"></AuthorPageNameLink>
     </p>
   </div>
   <!-- Church Contact info-->

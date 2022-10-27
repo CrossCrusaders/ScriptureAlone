@@ -43,14 +43,14 @@
         <div class="flex justify-between mt-2 mb-12 p-4">
           <div>
             <AppButton @click="onPreviousPageClicked" v-if="currentPaginationData?.page != 1" variant="primary-outline">
-              &lt;&nbsp;Previous Page
+              &lt;&nbsp;Previous
             </AppButton>
           </div>
 
           <div>
             <AppButton @click="onNextPageClicked"
               v-if="currentPaginationData?.page != currentPaginationData?.totalPages" variant="primary-outline">
-              Next Page&nbsp;&gt;
+              Next&nbsp;&gt;
             </AppButton>
           </div>
         </div>
