@@ -1,7 +1,12 @@
 <template>
+  <div class="absolute w-full h-full" style="background-color:white; z-index: 10;" v-if="sermonVideoSrc && globalVideoState === VideoPlayerState.playing">
+    <div class="w-full h-full flex justify-center">
+      <video class="w-1/2" :src="sermonVideoSrc" autoplay="autoplay" controls></video>
+    </div>
+    <button @click="globalVideoState = VideoPlayerState.hidden">Hello</button>
+  </div>
   <AppLayout>
     <PageContent>
-
       <div class="flex flex-col-reverse md:flex-row gap-2 md:gap-8 mt-8" v-if="!loading && !!sermonDetail">
         <div class="md:w-2/6">
           <AuthorPreviewColumn :show-church-info="true" :author="sermonDetail.author"
@@ -36,7 +41,9 @@
 
             </div>
 
-            <AppButton variant="primary-outline" v-if="sermonVideoSrc">Play Video</AppButton>
+            <AppButton variant="primary" @click="onPlayVideoClicked()"
+              v-if="sermonVideoSrc && globalVideoState !== VideoPlayerState.playing">{{ 'Play Video' }}
+            </AppButton>
           </div>
           <Divider></Divider>
         </div>
@@ -63,7 +70,6 @@ import PageContent from '../../components/templates/PageContent.vue'
 import AppButton from '../../components/atoms/form-controls/AppButton.vue'
 import Divider from '../../components/atoms/Divider.vue'
 import AppModal from '../../components/templates/AppModal.vue'
-import AudioPlayer from '../../components/organisms/AudioPlayer/AudioPlayer.vue'
 import AuthorPreviewColumn from '../../components/molecules/AuthorPreviewColumn.vue'
 import { getSermon } from '../services/SermonService'
 import { useRoute } from 'vue-router'
@@ -72,6 +78,7 @@ import { formatMillisecondsAsReadableDuration, formatName } from '../../core/ser
 import { Sermon } from '../Sermon'
 import UserRecommendationFooter from '../../components/organisms/UserRecommendationFooter.vue'
 import { AudioPlayerState, useGlobalAudioPlayer } from '../../components/organisms/AudioPlayer/AudioPlayerService'
+import { VideoPlayerState, useGlobalVideoPlayer } from '../../components/organisms/VideoPlayer/VideoPlayerService'
 
 
 const loading = ref(true)
@@ -84,6 +91,11 @@ const {
   setGlobalAudioState,
   globalAudioState
 } = useGlobalAudioPlayer()
+const {
+  setGlobalVideoPayload,
+  setGlobalVideoState,
+  globalVideoState
+} = useGlobalVideoPlayer()
 
 onMounted(async () => {
   // The Sermon ID
@@ -126,6 +138,23 @@ const onPlayAudioClicked = () => {
   })
 
   setGlobalAudioState(AudioPlayerState.playing)
+}
+const onPlayVideoClicked = () => {
+
+  if (!sermonDetail.value)
+    return
+  const { title, id, author } = sermonDetail.value
+
+  setGlobalVideoPayload({
+    id: id!,
+    title: title!,
+    author: formatName(author),
+    currentTime: 0,
+    url: sermonVideoSrc.value,
+    contentPage: `/sermons/${id}`
+  })
+
+  setGlobalVideoState(VideoPlayerState.playing)
 }
 
 </script>
