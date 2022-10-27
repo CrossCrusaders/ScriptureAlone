@@ -64,7 +64,7 @@ const {
 
 
 const showPlayer = computed(() => {
-  return (globalVideoState.value === VideoPlayerState.playing) || (globalVideoState.value === VideoPlayerState.paused)
+  return (globalVideoState.value === VideoPlayerState.miniPlaying) || (globalVideoState.value === VideoPlayerState.miniPaused)
 })
 
 const onCloseClicked = () => {

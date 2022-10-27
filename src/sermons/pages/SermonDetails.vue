@@ -1,10 +1,12 @@
 <template>
-  <!--<div class="absolute w-full h-full" style="background-color:white; z-index: 10;" v-if="sermonVideoSrc && globalVideoState === VideoPlayerState.playing">
-    <div class="w-full h-full flex justify-center">
-      <video class="w-1/2" :src="sermonVideoSrc" autoplay="autoplay" controls></video>
+  <div class="absolute w-full h-full" style="background-color:white; z-index: 10;" v-if="sermonVideoSrc && globalVideoState === VideoPlayerState.fullscreenPlaying">
+    <div class="w-full h-1/2 flex justify-center">
+      <video class="w-1/2" style="height:min-content;" :src="sermonVideoSrc" autoplay="autoplay" controls></video>
     </div>
-    <button @click="globalVideoState = VideoPlayerState.hidden">Hello</button>
-  </div>-->
+    <button @click="globalVideoState = VideoPlayerState.miniPlaying">Minimize []</button>
+    <br>
+    <button @click="globalVideoState = VideoPlayerState.hidden">Close X</button>
+  </div>
   <AppLayout>
     <PageContent>
       <div class="flex flex-col-reverse md:flex-row gap-2 md:gap-8 mt-8" v-if="!loading && !!sermonDetail">
@@ -42,8 +44,16 @@
             </div>
 
             <AppButton variant="primary" @click="onPlayVideoClicked()"
-              v-if="sermonVideoSrc && globalVideoState !== VideoPlayerState.playing">{{ 'Play Video' }}
+              v-if="sermonVideoSrc && globalVideoState !== VideoPlayerState.miniPlaying && globalVideoState != VideoPlayerState.fullscreenPlaying">{{ 'Play Video' }}
             </AppButton>
+            <div v-if="sermonAudioSrc && globalVideoState === VideoPlayerState.miniPlaying">
+              <AppButton variant="primary-minimal" :disabled="true">{{ 'Now Playing' }}
+              </AppButton>
+
+              <AppButton to="/bible" variant="accent">{{ 'Open Bible' }}
+              </AppButton>
+
+            </div>
           </div>
           <Divider></Divider>
         </div>
@@ -52,14 +62,6 @@
       <br><br>
     </PageContent>
   </AppLayout>
-
-  <!-- <AppModal v-model="showPlayerModal" @beforeClose="beforeAudioModalClose()" v-slot="{ close }">
-    <div class="p-4">
-      <h2 class="font-title font-bold text-2xl mb-4 text-slate-800">Now Playing: {{ sermonDetail?.title }}</h2>
-      <AudioPlayer :audio-src="sermonAudioSrc"></AudioPlayer>
-      <button @click="close()">Close</button>
-    </div>
-  </AppModal> -->
 </template>
 
 <script setup lang="ts">
@@ -85,6 +87,7 @@ const loading = ref(true)
 const sermonDetail = ref<Sermon>()
 const route = useRoute()
 const showPlayerModal = ref(false)
+var fullscreen = ref(false);
 
 const {
   setGlobalAudioPayload,
@@ -107,6 +110,7 @@ onMounted(async () => {
   const sermon = await getSermon(id)
   sermonDetail.value = sermon
   loading.value = false
+  globalVideoState.value = VideoPlayerState.hidden;
 })
 
 const sermonAudioSrc = computed(() => {
@@ -154,7 +158,7 @@ const onPlayVideoClicked = () => {
     contentPage: `/sermons/${id}`
   })
 
-  setGlobalVideoState(VideoPlayerState.playing)
+  setGlobalVideoState(VideoPlayerState.miniPlaying)
 }
 
 </script>
