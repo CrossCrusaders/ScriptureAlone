@@ -17,7 +17,7 @@
 import { computed } from 'vue'
 
 interface AppButtonProps {
-  variant?: 'primary' | 'accent' | 'primary-outline' | 'accent-outline' | 'primary-minimal' | 'primary-light' | 'secondary' | 'white-outline',
+  variant?: 'primary' | 'accent' | 'primary-outline' | 'accent-outline' | 'primary-minimal' | 'primary-light' | 'secondary' | 'white-outline' | 'minimal',
   href?: string,
   to?: string,
   size?: 'sm' | 'md' | 'lg',
@@ -35,7 +35,8 @@ const buttonVariantClasses = {
 
   'primary-minimal': `border-solid border-2 border-transparent text-slate-800 bg-transparent`,
   'secondary': `border-solid border-2 border-red-800 bg-red-800 text-white`,
-  'white-outline': `border-solid border-2 border-white bg-transparent text-white`
+  'white-outline': `border-solid border-2 border-white bg-transparent text-white`,
+  'minimal': 'border-transparent bg-transparent'
 }
 
 const buttonSizeClasses = {

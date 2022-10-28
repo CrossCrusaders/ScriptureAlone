@@ -3,6 +3,7 @@ import { getBucketUrl } from "../../api/BucketStorageService";
 import { useRouter } from "vue-router";
 import { useAuth } from "../../auth/services/AuthService";
 import PocketBaseClient from "../../api/PocketBaseClient";
+import { UserFavoriteSermon } from "../UserFavoriteSermon";
 
 const { user } = useAuth()
 
@@ -40,10 +41,7 @@ export async function toggleUserFavoriteSermon(sermonId: string) {
 
   const existingFavorite = await PocketBaseClient.records.getList('userFavoriteSermons', 1, 1, { filter: `user='${user.value.id}' && sermon='${sermonId}'` })
   if (existingFavorite.items.length) {
-    // TODO: delete
-    debugger
     const deleted = await PocketBaseClient.records.delete('userFavoriteSermons', existingFavorite.items[0].id)
-
     return ToggleAction.deleted
   }
   else {
@@ -75,4 +73,20 @@ export async function toggleUserFavoriteDevotionalId(devotionalId: string) {
 
     return ToggleAction.created
   }
+}
+
+export async function getAllUserFavoriteSermons(): Promise<UserFavoriteSermon[]> {
+  if (!user.value)
+    return []
+
+  const results = await PocketBaseClient.records.getFullList('userFavoriteSermons', 255, { filter: `user=${user.value.id}` })
+  return results as any[]
+}
+
+export async function getAllUserFavoriteDevotionals() {
+  if (!user.value)
+    return
+
+  const results = await PocketBaseClient.records.getFullList('userFavoriteSermons', 255, { filter: `user=${user.value.id}` })
+  return results as any[]
 }
