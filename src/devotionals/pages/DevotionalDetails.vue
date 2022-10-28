@@ -43,30 +43,15 @@
           </div>
           <Divider></Divider>
           <Accordion>
-            <AccordionItem>
+            <AccordionItem v-for="section of devotionalDetail.sections">
               <template v-slot:title>
-                <h2>{{ devotionalDetail.accordionText?.split(" | ")[0] }}</h2>
+                <h2>{{ section.title }}</h2>
               </template>
               <div>
                 {{ devotionalDetail.accordionText?.split(" | ")[1] }}
               </div>
             </AccordionItem>
-            <AccordionItem>
-              <template v-slot:title>
-                <h2>{{ devotionalDetail.accordionText?.split(" | ")[2] }}</h2>
-              </template>
-              <div>
-                {{ devotionalDetail.accordionText?.split(" | ")[3] }}
-              </div>
-            </AccordionItem>
-            <AccordionItem>
-              <template v-slot:title>
-                <h2>{{ devotionalDetail.accordionText?.split(" | ")[4] }}</h2>
-              </template>
-              <div>
-                {{ devotionalDetail.accordionText?.split(" | ")[5] }}
-              </div>
-            </AccordionItem>
+
           </Accordion>
           <br>
 

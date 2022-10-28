@@ -16,7 +16,7 @@ export const getFeaturedDevotional = async () => {
 }
 
 export const getDevotional = async (id: string) => {
-  const response = await PocketBaseClient.records.getOne('devotionals', id, { expand: 'categories,sections,author,author.church,coverImage,accordionText' })
+  const response = await PocketBaseClient.records.getOne('devotionals', id, { expand: 'categories,sections,author,author.church' })
   return transformDevotionalResponse(response)
 }
 

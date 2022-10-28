@@ -3,7 +3,7 @@
     <Spinner color="slate-800"></Spinner>
   </div>
   <ContentPreviewGrid v-else :content="loadedDevotionals" :button-title="'View Devotional'"
-    @click:button="onDevotionalCardClicked" @click:author="onDevotionalAuthorClicked">
+    @click:button="onDevotionalCardClicked($event)" @click:author="onDevotionalAuthorClicked">
   </ContentPreviewGrid>
   <div v-if="props.paginationControls"></div>
   <div v-if="props.appendContent">
