@@ -1,7 +1,8 @@
 <template>
-  <div class="absolute w-full h-full" style="background-color:white; z-index: 10;" v-if="sermonVideoSrc && globalVideoState === VideoPlayerState.fullscreenPlaying">
+  <div class="absolute w-full h-full" style="background-color:white; z-index: 10;"
+    v-if="sermonVideoSrc && globalVideoState === VideoPlayerState.fullscreenPlaying">
     <div class="w-full h-1/2 flex justify-center">
-      <video class="w-1/2" style="height:min-content;" :src="sermonVideoSrc" autoplay="autoplay" controls></video>
+      <video class="w-1/2" style="height:min-content;" :src="sermonVideoSrc" autoplay="true" controls></video>
     </div>
     <button @click="globalVideoState = VideoPlayerState.miniPlaying">Minimize []</button>
     <br>
@@ -22,7 +23,8 @@
           <p class="text-slate-500">Updated: {{ sermonLastUpdatedDisplay }} &bullet;
             <span class="text-slate-500" v-if="sermonDetail.duration">
               Duration: {{ formatMillisecondsAsReadableDuration(
-              sermonDetail.duration) }}
+                  sermonDetail.duration)
+              }}
             </span>
           </p>
 
@@ -44,7 +46,8 @@
             </div>
 
             <AppButton variant="primary" @click="onPlayVideoClicked()"
-              v-if="sermonVideoSrc && globalVideoState !== VideoPlayerState.miniPlaying && globalVideoState != VideoPlayerState.fullscreenPlaying">{{ 'Play Video' }}
+              v-if="sermonVideoSrc && globalVideoState !== VideoPlayerState.miniPlaying && globalVideoState != VideoPlayerState.fullscreenPlaying">
+              {{ 'Play Video' }}
             </AppButton>
             <div v-if="sermonAudioSrc && globalVideoState === VideoPlayerState.miniPlaying">
               <AppButton variant="primary-minimal" :disabled="true">{{ 'Now Playing' }}

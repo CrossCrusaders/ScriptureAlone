@@ -45,7 +45,7 @@
           <Accordion>
             <AccordionItem v-for="section of devotionalDetail.sections">
               <template v-slot:title>
-                <h2>{{ section.title }}</h2>
+                <h2>{{ section?.title }}</h2>
               </template>
               <div>
                 {{ devotionalDetail.accordionText?.split(" | ")[1] }}

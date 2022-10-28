@@ -12,7 +12,7 @@ export interface Category {
 }
 
 export interface DevotionalSection {
-
+  title?: string
 }
 
 export interface Devotional {
@@ -39,7 +39,7 @@ export interface Devotional {
 
   duration: number
 
-  sections: DevotionalSection
+  sections: DevotionalSection[]
 }
 
 

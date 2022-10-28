@@ -1,6 +1,6 @@
 <template>
   <div class="flex flex-row justify-center" @click="fullscreen()">
-    <video ref="videoEl" id="video" autoplay="autoplay" class="w-32 max-w-prose" :src="props.videoSrc">
+    <video ref="videoEl" id="video" autoplay="true" class="w-32 max-w-prose" :src="props.videoSrc">
     </video>
   </div>
 </template>
@@ -43,7 +43,7 @@ onMounted(() => {
   }
 })
 
-const fullscreen = function(){
+const fullscreen = function () {
   setGlobalVideoState(VideoPlayerState.fullscreenPlaying)
 }
 
