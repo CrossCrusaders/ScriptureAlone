@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-row justify-center" @click="fullscreen()">
+  <div class="flex flex-row justify-center">
     <video ref="videoEl" id="video" autoplay="true" class="w-32 max-w-prose" :src="props.videoSrc">
     </video>
   </div>
@@ -28,7 +28,7 @@ const props = defineProps<VideoPlayerProps>()
 watch(() => props.state, (currentState) => {
   const el = (videoEl.value! as HTMLVideoElement)
 
-  if (currentState === VideoPlayerState.miniPlaying) {
+  if (currentState === VideoPlayerState.playing) {
     el.play()
   } else {
     el.pause()
@@ -38,13 +38,9 @@ watch(() => props.state, (currentState) => {
 onMounted(() => {
 
   const el = (videoEl.value! as HTMLVideoElement)
-  if (props.state === VideoPlayerState.miniPlaying) {
+  if (props.state === VideoPlayerState.playing) {
     el.play()
   }
 })
-
-const fullscreen = function () {
-  setGlobalVideoState(VideoPlayerState.fullscreenPlaying)
-}
 
 </script>

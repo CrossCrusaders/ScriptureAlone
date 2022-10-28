@@ -2,11 +2,9 @@ import { ref } from 'vue'
 import { setLocalCacheItem } from '../../../cache/services/LocalStorageService'
 
 export enum VideoPlayerState {
-  miniPaused, // visible stopped
-  miniPlaying, // visible playing
-  hidden,   // hidden stopped
-  fullscreenPaused,
-  fullscreenPlaying,
+  paused = "paused", // visible stopped
+  playing = "playing", // visible playing
+  hidden = "hidden",   // hidden stopped
 }
 
 const globalVideoPayload = ref<GlobalVideoPayload | null>(null)

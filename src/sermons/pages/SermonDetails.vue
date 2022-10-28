@@ -1,13 +1,4 @@
 <template>
-  <div class="absolute w-full h-full" style="background-color:white; z-index: 10;"
-    v-if="sermonVideoSrc && globalVideoState === VideoPlayerState.fullscreenPlaying">
-    <div class="w-full h-1/2 flex justify-center">
-      <video class="w-1/2" style="height:min-content;" :src="sermonVideoSrc" autoplay="true" controls></video>
-    </div>
-    <button @click="globalVideoState = VideoPlayerState.miniPlaying">Minimize []</button>
-    <br>
-    <button @click="globalVideoState = VideoPlayerState.hidden">Close X</button>
-  </div>
   <AppLayout>
     <PageContent>
       <div class="flex flex-col-reverse md:flex-row gap-2 md:gap-8 mt-8" v-if="!loading && !!sermonDetail">
@@ -32,6 +23,7 @@
           <p class="mb-8 text-slate-700 leading-normal">
             {{ sermonDetail.description }}
           </p>
+          <!-- Buttons -->
           <div class="flex gap-4 mb-16">
             <AppButton variant="primary" @click="onPlayAudioClicked()"
               v-if="sermonAudioSrc && globalAudioState !== AudioPlayerState.playing">{{ 'Play Audio' }}
@@ -46,22 +38,31 @@
             </div>
 
             <AppButton variant="primary" @click="onPlayVideoClicked()"
-              v-if="sermonVideoSrc && globalVideoState !== VideoPlayerState.miniPlaying && globalVideoState != VideoPlayerState.fullscreenPlaying">
+              v-if="sermonVideoSrc && globalVideoState !== VideoPlayerState.playing">
               {{ 'Play Video' }}
             </AppButton>
-            <div v-if="sermonAudioSrc && globalVideoState === VideoPlayerState.miniPlaying">
+            <div v-if="sermonAudioSrc && globalVideoState === VideoPlayerState.playing">
               <AppButton variant="primary-minimal" :disabled="true">{{ 'Now Playing' }}
               </AppButton>
 
-              <AppButton to="/bible" variant="accent">{{ 'Open Bible' }}
+              <AppButton @click="globalVideoState = VideoPlayerState.hidden" variant="accent">{{ 'Close' }}
               </AppButton>
 
             </div>
           </div>
+          <!-- Video -->
+          <Transition name="video">
+            <video v-if="sermonVideoSrc && globalVideoState === VideoPlayerState.playing" class="w-2/3" :src="sermonVideoSrc" controlslist="nodownload" autoplay="true" controls></video>
+          </Transition>
           <Divider></Divider>
         </div>
       </div>
-      <UserRecommendationFooter></UserRecommendationFooter>
+      <Transition name="playing" v-if="globalVideoState === VideoPlayerState.playing" appear>
+        <UserRecommendationFooter v-if="globalVideoState === VideoPlayerState.playing"></UserRecommendationFooter>
+      </Transition>
+      <Transition name="hidden" v-if="globalVideoState === VideoPlayerState.hidden" appear>
+        <UserRecommendationFooter v-if="globalVideoState === VideoPlayerState.hidden"></UserRecommendationFooter>
+      </Transition>
       <br><br>
     </PageContent>
   </AppLayout>
@@ -91,6 +92,8 @@ const sermonDetail = ref<Sermon>()
 const route = useRoute()
 const showPlayerModal = ref(false)
 var fullscreen = ref(false);
+
+console.log(VideoPlayerState.playing)
 
 const {
   setGlobalAudioPayload,
@@ -161,7 +164,35 @@ const onPlayVideoClicked = () => {
     contentPage: `/sermons/${id}`
   })
 
-  setGlobalVideoState(VideoPlayerState.miniPlaying)
+  setGlobalVideoState(VideoPlayerState.playing)
 }
 
 </script>
+<style>
+.video-enter-active,
+.video-leave-active {
+  transition: transform 0.2s ease;
+}
+.video-enter-from,
+.video-leave-to {
+  transform: scale(0);
+}
+
+.playing-enter-active,
+.playing-leave-active {
+  transition: transform 0.5s ease;
+}
+.playing-enter-from,
+.playing-leave-to {
+  transform: translateY(-50px);
+}
+
+.hidden-enter-active,
+.hidden-leave-active {
+  transition: transform 0.5s ease;
+}
+.hidden-enter-from,
+.hidden-leave-to {
+  transform: translateY(50px);
+}
+</style>
