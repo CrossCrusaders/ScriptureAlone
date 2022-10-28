@@ -4,7 +4,11 @@
       <div class="flex flex-col-reverse md:flex-row gap-2 md:gap-8 mt-8" v-if="!loading && !!sermonDetail">
         <div class="md:w-2/6">
           <AuthorPreviewColumn :show-church-info="true" :author="sermonDetail.author"
-            :coverImage="sermonDetail.coverImage"></AuthorPreviewColumn>
+            :coverImage="sermonDetail.coverImage">
+            <template v-slot:cover-image="{ image }">
+              <SermonCoverImage :cover-image="image" :sermon-id="sermonDetail?.id"></SermonCoverImage>
+            </template>
+          </AuthorPreviewColumn>
           <!--TODO: Share Icons -->
 
         </div>
@@ -52,7 +56,8 @@
           </div>
           <!-- Video -->
           <Transition name="video">
-            <video v-if="sermonVideoSrc && globalVideoState === VideoPlayerState.playing" class="w-2/3" :src="sermonVideoSrc" controlslist="nodownload" autoplay="true" controls></video>
+            <video v-if="sermonVideoSrc && globalVideoState === VideoPlayerState.playing" class="w-2/3"
+              :src="sermonVideoSrc" controlslist="nodownload" autoplay="true" controls></video>
           </Transition>
           <Divider></Divider>
         </div>
@@ -85,6 +90,7 @@ import { Sermon } from '../Sermon'
 import UserRecommendationFooter from '../../components/organisms/UserRecommendationFooter.vue'
 import { AudioPlayerState, useGlobalAudioPlayer } from '../../components/organisms/AudioPlayer/AudioPlayerService'
 import { VideoPlayerState, useGlobalVideoPlayer } from '../../components/organisms/VideoPlayer/VideoPlayerService'
+import SermonCoverImage from '../components/SermonCoverImage.vue'
 
 
 const loading = ref(true)
@@ -139,8 +145,8 @@ const onPlayAudioClicked = () => {
   const { title, id, author } = sermonDetail.value
 
   setGlobalAudioPayload({
-    id: id!,
-    title: title!,
+    id: id,
+    title: title,
     author: formatName(author),
     currentTime: 0,
     url: sermonAudioSrc.value,
@@ -173,6 +179,7 @@ const onPlayVideoClicked = () => {
 .video-leave-active {
   transition: transform 0.2s ease;
 }
+
 .video-enter-from,
 .video-leave-to {
   transform: scale(0);
@@ -182,6 +189,7 @@ const onPlayVideoClicked = () => {
 .playing-leave-active {
   transition: transform 0.5s ease;
 }
+
 .playing-enter-from,
 .playing-leave-to {
   transform: translateY(-50px);
@@ -191,6 +199,7 @@ const onPlayVideoClicked = () => {
 .hidden-leave-active {
   transition: transform 0.5s ease;
 }
+
 .hidden-enter-from,
 .hidden-leave-to {
   transform: translateY(50px);
