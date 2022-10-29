@@ -42,3 +42,13 @@ export const searchDevotionals = async (query: string | null, page: number = 1, 
   devotionals.items = transformDevotionalResponses(devotionals.items) as any
   return devotionals as DevotionalSearch
 }
+
+
+export const getUserFavoriteDevotionals = async (userId: string, page: number = 1, perPage: number = 8) => {
+  const results = await PocketBaseClient.records.getList('userFavoriteDevotionals', page, perPage, { filter: `user='${userId}'`, expand: 'devotional,devotional.categories,devotional.author' })
+  const { items, ...pagination } = results
+  return {
+    items: items.map(item => transformDevotionalResponse(item['@expand'].devotional)),
+    ...pagination
+  } as DevotionalSearch
+}

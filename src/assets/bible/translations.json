@@ -13,15 +13,5 @@
     "id": "ENGNAS",
     "name": "New American Standard Bible",
     "abbreviation": "NASB"
-  },
-  {
-    "id": "ENGASV",
-    "name": "American Standard Version",
-    "abbreviation": "ASV"
-  },
-  {
-    "id": "SPARVC",
-    "name": "Reina Valera, Revisada y Corregida (1865)",
-    "abbreviation": "RVC"
   }
 ]

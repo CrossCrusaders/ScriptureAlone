@@ -71,3 +71,13 @@ export const searchSermonCategories = async (query?: string, page: number = 1, p
   const categories = await PocketBaseClient.records.getList('sermonCategories', page, perPage, params)
   return transformCategoryResponses(categories.items)
 }
+
+export const getUserFavoriteSermons = async (userId: string, page: number = 1, perPage: number = 8) => {
+  const results = await PocketBaseClient.records.getList('userFavoriteSermons', page, perPage, { filter: `user='${userId}'`, expand: 'sermon,sermon.categories,sermon.author' })
+  const { items, ...pagination } = results
+
+  return {
+    items: items.map(item => transformSermonResponse(item['@expand'].sermon)),
+    ...pagination
+  }
+}

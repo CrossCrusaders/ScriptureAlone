@@ -5,6 +5,9 @@
       <div class="flex flex-col-reverse md:flex-row gap-2 md:gap-8 mt-8" v-if="!loading && !!devotionalDetail">
         <div class="md:w-2/6">
           <AuthorPreviewColumn :show-church-info="true" :author="devotionalDetail.author" :devo="devotionalDetail">
+            <template v-slot:cover-image="{ image }">
+              <DevotionalCoverImage :cover-image="image" :devotional-id="devotionalDetail?.id"></DevotionalCoverImage>
+            </template>
           </AuthorPreviewColumn>
           <!--TODO: Share Icons -->
 
@@ -133,7 +136,7 @@ import Icon from '../../components/atoms/Icon.vue'
 import Accordion from '../../components/molecules/Accordion/Accordion.vue'
 import AccordionItem from '../../components/molecules/Accordion/AccordionItem.vue'
 import { RouterLink } from 'vue-router'
-
+import DevotionalCoverImage from '../components/DevotionalCoverImage.vue'
 import { prop } from 'dom7'
 
 

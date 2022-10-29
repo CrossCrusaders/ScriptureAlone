@@ -24,14 +24,6 @@ export function getUserProfileImage(user?: User | null | undefined) {
 
 export const defaultImage = '/logo-bible.png'
 
-// export async function isUserFavoriteSermon(sermonId: string) {
-//   if (!user.value)
-//     return false
-//   const existingFavorite = await PocketBaseClient.records.getList('userFavoriteSermons', 1, 1, { filter: `user='${user.value.id}' && sermon='${sermonId}'` })
-//   return !!existingFavorite.items.length
-// }
-
-// User Favorites
 
 const isUserFavoriteSermonsDirty = ref(true)
 const isUserFavoriteDevotionalsDirty = ref(true)
@@ -71,9 +63,10 @@ export async function toggleUserFavoriteDevotional(devotionalId: string) {
 
   const existingFavorite = allUserFavoriteDevotionals.value.find(fav => fav.devotional === devotionalId) // await PocketBaseClient.records.getList('userFavoriteDevotionals', 1, 1, { filter: `user='${user.value.id}' && devotional='${devotionalId}'` })
   if (existingFavorite) {
-    // TODO: delete
+
+    allUserFavoriteDevotionals.value = [...allUserFavoriteDevotionals.value].filter(item => item.devotional != existingFavorite.devotional)
     const deleted = await PocketBaseClient.records.delete('userFavoriteDevotionals', existingFavorite.id)
-    allUserFavoriteDevotionals.value = [...allUserFavoriteDevotionals.value].filter(item => item.devotional != existingFavorite.id)
+
     return ToggleAction.deleted
   }
   else {
