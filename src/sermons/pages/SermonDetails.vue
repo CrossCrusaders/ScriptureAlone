@@ -13,12 +13,12 @@
 
         </div>
         <!-- Right Side -->
-        <div class="md:w-4/6 flex-auto">
+        <div class="md:w-4/6 flex-auto pb-8">
           <h1 class="font-title font-bold text-4xl mb-2 text-slate-800">{{ sermonDetail.title }}</h1>
           <p class="text-slate-500">Updated: {{ sermonLastUpdatedDisplay }} &bullet;
             <span class="text-slate-500" v-if="sermonDetail.duration">
               Duration: {{ formatMillisecondsAsReadableDuration(
-                  sermonDetail.duration)
+              sermonDetail.duration)
               }}
             </span>
           </p>
@@ -51,23 +51,19 @@
 
               <AppButton @click="globalVideoState = VideoPlayerState.hidden" variant="accent">{{ 'Close' }}
               </AppButton>
-
             </div>
           </div>
           <!-- Video -->
           <Transition name="video">
-            <video v-if="sermonVideoSrc && globalVideoState === VideoPlayerState.playing" class="w-2/3"
+            <video v-if="sermonVideoSrc && globalVideoState === VideoPlayerState.playing" class="w-full"
               :src="sermonVideoSrc" controlslist="nodownload" autoplay="true" controls></video>
           </Transition>
-          <Divider></Divider>
+
         </div>
       </div>
-      <Transition name="playing" v-if="globalVideoState === VideoPlayerState.playing" appear>
-        <UserRecommendationFooter v-if="globalVideoState === VideoPlayerState.playing"></UserRecommendationFooter>
-      </Transition>
-      <Transition name="hidden" v-if="globalVideoState === VideoPlayerState.hidden" appear>
-        <UserRecommendationFooter v-if="globalVideoState === VideoPlayerState.hidden"></UserRecommendationFooter>
-      </Transition>
+
+      <UserRecommendationFooter></UserRecommendationFooter>
+
       <br><br>
     </PageContent>
   </AppLayout>
@@ -98,8 +94,6 @@ const sermonDetail = ref<Sermon>()
 const route = useRoute()
 const showPlayerModal = ref(false)
 var fullscreen = ref(false);
-
-console.log(VideoPlayerState.playing)
 
 const {
   setGlobalAudioPayload,
@@ -177,31 +171,16 @@ const onPlayVideoClicked = () => {
 <style>
 .video-enter-active,
 .video-leave-active {
-  transition: transform 0.2s ease;
+  transition: all 250ms ease ;
+  will-change: opacity;
+  opacity: 1;
+  max-height: 350px;
 }
 
 .video-enter-from,
 .video-leave-to {
-  transform: scale(0);
-}
-
-.playing-enter-active,
-.playing-leave-active {
-  transition: transform 0.5s ease;
-}
-
-.playing-enter-from,
-.playing-leave-to {
-  transform: translateY(-50px);
-}
-
-.hidden-enter-active,
-.hidden-leave-active {
-  transition: transform 0.5s ease;
-}
-
-.hidden-enter-from,
-.hidden-leave-to {
-  transform: translateY(50px);
+  /* transform: scale(0); */
+  opacity: 0;
+  max-height: 0;
 }
 </style>

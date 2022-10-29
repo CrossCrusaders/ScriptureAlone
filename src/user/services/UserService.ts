@@ -24,7 +24,6 @@ export function getUserProfileImage(user?: User | null | undefined) {
 
 export const defaultImage = '/logo-bible.png'
 
-
 const isUserFavoriteSermonsDirty = ref(true)
 const isUserFavoriteDevotionalsDirty = ref(true)
 
