@@ -30,7 +30,7 @@
 
     <!-- Calls To Action -->
     <div class="flex flex-col md:flex-row gap-2 items-center justify-between mb-24 p-2">
-      <a :class="callToActionItemClass" href="#VOTD">
+      <a :class="callToActionItemClass" href="#votd">
         <Icon icon-name="book-cross" :class="[callToActionIconClass]" :size="16">
         </Icon>
         <span class="text-center whitespace-nowrap text-ellipsis">Verse of the day</span>
@@ -48,8 +48,8 @@
     </div>
 
     <!-- Verse of the Day-->
-    <div class="flex flex-col gap-8 items-center mb-24 p-2" id="VOTD">
-      <h2
+    <div class="flex flex-col gap-8 items-center mb-24 p-2">
+      <h2 id="votd" name="votd"
         class="font-bold font-title text-6xl text-center bg-gradient-to-r from-[#57687f] to-[#1e293b] text-transparent bg-clip-text pb-1">
         Verse of the Day
       </h2>
@@ -154,10 +154,9 @@ const callToActionItemClass = [
   "cursor-pointer",
   "bg-slate-200",
   "rounded-xl",
-  "pl-4",
-  "pr-4",
-  "pt-16",
-  "pb-16",
+  "px-4",
+  "py-8",
+  "md:py-16",
   "flex",
   "flex-col",
   "items-center",

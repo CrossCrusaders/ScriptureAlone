@@ -40,8 +40,6 @@ async function run() {
     })
   })
 
-  console.log(bibleBooksArray)
-
   fs.writeFileSync('./bible-book-lookup.json', JSON.stringify(bibleBooksArray))
 }
 

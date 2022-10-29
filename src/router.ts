@@ -74,7 +74,14 @@ const router = VueRouter.createRouter({
   history: VueRouter.createWebHistory(),
   routes: routes,
   scrollBehavior(to, from, savedPosition) {
-    if (savedPosition) {
+
+    if (to.hash) {
+      return {
+        selector: to.hash,
+        behavior: 'smooth',
+        offset: { y: 80 }
+      }
+    } else if (savedPosition) {
       return savedPosition
     } else {
       return { top: 0 }

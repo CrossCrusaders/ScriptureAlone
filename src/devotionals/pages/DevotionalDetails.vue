@@ -155,7 +155,6 @@ onMounted(async () => {
   const devotional = await getDevotional(id)
   devotionalDetail.value = devotional
   loading.value = false
-  console.log(devotional)
 })
 
 const devotionalAudioSrc = computed(() => {

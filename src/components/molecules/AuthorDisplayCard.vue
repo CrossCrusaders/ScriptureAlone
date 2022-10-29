@@ -44,7 +44,7 @@ const fullName = computed(() => {
   justify-content: center;
   align-items: center;
   min-width: 250px;
-  min-height: 200px;
+  min-height: 250px;
   border-radius: .5rem;
   position: relative;
   cursor: pointer;
