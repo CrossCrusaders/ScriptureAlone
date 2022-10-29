@@ -3,26 +3,29 @@
     <!-- Search Hero -->
     <div class="flex flex-col items-center mb-24">
       <RouterLink to="/bible">
-        <img class="object-contain max-h-40 md:max-h-80 block mb-4" src="/logo-bible.png" />
+        <img class="transition-all hover:rotate-12 hover:scale-105 object-contain max-h-40 md:max-h-60 block mb-4"
+          src="/logo-bible.png" />
       </RouterLink>
-      <h1
-        class="font-bold font-title text-3xl md:text-5xl lg:text-6xl mb-2 bg-gradient-to-r from-[#1e293b] to-[#57687f] text-transparent bg-clip-text">
-        Scripture Alone
-      </h1>
-      <p class="font-body text-lg mb-2">Sound Doctrine Guaranteed</p>
-      <form @submit="handleSearchSubmit($event)">
-        <div class="px-2">
-          <AppInput type="input" name="query" v-model="searchModel" placeholder="Search The Scripture">
-            <template v-slot:prefix>
-              <Icon icon-name="magnify"></Icon>
-            </template>
-            <template v-slot:postfix>
-              <BibleTranslationSelect v-model="searchTranslationId"></BibleTranslationSelect>
-            </template>
-          </AppInput>
-          <AppButton variant="primary-light" class="block w-full md:hidden mt-4" type="submit">Search</AppButton>
-        </div>
-      </form>
+      <div class="flex flex-col items-center">
+        <h1 class=" font-bold font-title text-3xl md:text-5xl lg:text-6xl mb-2 bg-gradient-to-r from-[#1e293b]
+        to-[#57687f] text-transparent bg-clip-text">
+          Scripture Alone
+        </h1>
+        <p class="font-body text-lg mb-2">Sound Doctrine Guaranteed</p>
+        <form @submit="handleSearchSubmit($event)">
+          <div class="px-2">
+            <AppInput type="input" name="query" v-model="searchModel" placeholder="Search The Scripture">
+              <template v-slot:prefix>
+                <Icon icon-name="magnify"></Icon>
+              </template>
+              <template v-slot:postfix>
+                <BibleTranslationSelect v-model="searchTranslationId"></BibleTranslationSelect>
+              </template>
+            </AppInput>
+            <AppButton variant="primary-light" class="block w-full md:hidden mt-4" type="submit">Search</AppButton>
+          </div>
+        </form>
+      </div>
     </div>
 
     <!-- Calls To Action -->

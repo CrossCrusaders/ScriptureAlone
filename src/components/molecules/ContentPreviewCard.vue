@@ -4,18 +4,24 @@
     <img v-if="previewImage" :src="previewImage"
       class="object-cover h-full w-full absolute top-0 left-0 right-0 bottom-0 z-0 " />
     <div class="absolute top-0 left-0 right-0 bottom-0 z-10 h-full w-full bg-slate-800 opacity-75 "></div>
-    <div class="flex flex-col px-4 py-6 flex-auto">
-      <h3 class="text-white text-xl font-title font-bold mb-2 z-20" :title="props.content?.title">{{
-      formatMaxLengthText(props.content?.title || '', 32) }}
-      </h3>
+    <div class="flex flex-col px-3 py-6 flex-auto relative">
+      <div class="flex items-start justify-between flex-auto z-10">
+        <h3 class="text-white text-xl font-title font-bold mb-2 mr-6 z-20" :title="props.content?.title">{{
+            formatMaxLengthText(props.content?.title || '', 32)
+        }}
+        </h3>
+        <FavoriteButton v-if="props.showFavorite" :is-favorite="props.isFavorite" class="absolute right-1 top-4 z-30"
+          :invert="true" @click="emit('click:favorite', props.content)"></FavoriteButton>
+      </div>
       <a @click="emit('click:author', props?.content.author)"
         class="text-slate-100 text-sm font-body mb-2 hover:underline cursor-pointer z-20">{{
-        formatName(props.content?.author || '')
+            formatName(props.content?.author || '')
         }}
       </a>
       <p class="text-slate-100 text-md font-body mb-3 break-words z-20" :title="props.content?.description">{{
-      formatMaxLengthText(props.content?.description ||
-      '', 48) }}
+          formatMaxLengthText(props.content?.description ||
+            '', 48)
+      }}
       </p>
       <p class="text-slate-200 text-md text-sm font-body mb-0 z-20">
         Tags:
@@ -45,6 +51,7 @@ import {
 import { computed, reactive } from 'vue'
 import { getBucketUrl } from '../../api/BucketStorageService'
 import AppButton from '../atoms/form-controls/AppButton.vue'
+import FavoriteButton from '../atoms/FavoriteButton.vue'
 export interface ContentPreview {
   id?: string
   title?: string
@@ -59,14 +66,19 @@ export interface ContentPreview {
 export interface ContentProps {
   content: ContentPreview
   buttonTitle?: string
+  isFavorite?: boolean
+  showFavorite?: boolean
 }
 
 const props = withDefaults(defineProps<ContentProps>(), {
-  buttonTitle: 'View Details'
+  buttonTitle: 'View Details',
+  isFavorite: false,
+  showFavorite: false
 })
 const emit = defineEmits([
   'click:button',
-  'click:author'
+  'click:author',
+  'click:favorite'
 ])
 
 const previewImage = computed(() => {

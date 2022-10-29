@@ -46,14 +46,18 @@ import Icon from '../../components/atoms/Icon.vue'
 import { logIn } from '../services/AuthService'
 import { reactive, ref } from 'vue'
 import { useRouter } from 'vue-router'
+import { useUserFavorites } from '../../user/services/UserService'
 
 const logInModel = reactive({ email: '', password: '' })
 
 const router = useRouter()
 
+const { loadFavorites } = useUserFavorites()
 const handleFormSubmit = async (event: Event) => {
   event.preventDefault()
   const result = await logIn(logInModel)
+  await loadFavorites()
+
   router.push('/dashboard')
 }
 

@@ -1,6 +1,7 @@
 <template>
-  <ContentPreviewGrid :content="loadedSermons" :button-title="'View Sermon'" @click:button="onSermonCardClicked"
-    @click:author="onSermonAuthorClicked">
+  <ContentPreviewGrid :show-favorite="!!user" :is-favorite="isFavoriteSermon" :content="loadedSermons"
+    :button-title="'View Sermon'" @click:button="onSermonCardClicked" @click:author="onSermonAuthorClicked"
+    @click:favorite="onFavoriteSermonClicked($event)">
   </ContentPreviewGrid>
   <div v-if="props.paginationControls"></div>
   <div v-if="props.appendContent">
@@ -20,6 +21,8 @@ import { Sermon } from '../Sermon';
 import { searchSermons } from '../services/SermonService'
 import Spinner from '../../components/atoms/Spinner.vue';
 import { Author } from '../../authors/Author';
+import { useUserFavorites } from '../../user/services/UserService';
+import { useAuth } from '../../auth/services/AuthService';
 
 export interface SermonsPreviewGridProps {
   queryParams?: any
@@ -48,6 +51,9 @@ const emit = defineEmits([
   'page:previous',
   'data:loaded'
 ])
+
+const { loadFavorites, isUserFavoriteSermon, toggleUserFavoriteSermon } = useUserFavorites()
+const { user } = useAuth()
 
 const pagination = ref<Pagination | null>(null)
 
@@ -93,6 +99,8 @@ onMounted(async () => {
   watch(() => props.query, (currentQuery, prevQuery) => {
     loadSearchedSermons(true)
   })
+
+  await loadFavorites()
 })
 
 
@@ -104,6 +112,19 @@ const onSermonCardClicked = (sermon: Sermon) => {
 const onSermonAuthorClicked = (author: Author) => {
   router.push(`/authors/${author.id}`)
   emit('click:author')
+}
+
+const isFavoriteSermon = (sermon: Sermon) => {
+  if (!sermon || !sermon.id)
+    return false
+
+  return isUserFavoriteSermon(sermon.id)
+}
+
+const onFavoriteSermonClicked = (sermon: Sermon) => {
+  if (!sermon || !sermon.id)
+    return false
+  toggleUserFavoriteSermon(sermon.id)
 }
 </script>
 

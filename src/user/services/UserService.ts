@@ -1,9 +1,11 @@
-import { User } from "../../auth/User";
-import { getBucketUrl } from "../../api/BucketStorageService";
-import { useRouter } from "vue-router";
-import { useAuth } from "../../auth/services/AuthService";
-import PocketBaseClient from "../../api/PocketBaseClient";
-import { UserFavoriteSermon } from "../UserFavoriteSermon";
+import { User } from "../../auth/User"
+import { getBucketUrl } from "../../api/BucketStorageService"
+import { useRouter } from "vue-router"
+import { useAuth } from "../../auth/services/AuthService"
+import PocketBaseClient from "../../api/PocketBaseClient"
+import { UserFavoriteSermon } from "../UserFavoriteSermon"
+import { ref } from "vue"
+import { UserFavoriteDevotional } from "../UserFavoriteDevotional"
 
 const { user } = useAuth()
 
@@ -11,10 +13,6 @@ export enum ToggleAction {
   noop,
   deleted,
   created,
-}
-
-export async function getUser() {
-
 }
 
 export function getUserProfileImage(user?: User | null | undefined) {
@@ -26,67 +24,127 @@ export function getUserProfileImage(user?: User | null | undefined) {
 
 export const defaultImage = '/logo-bible.png'
 
-export async function isUserFavoriteSermon(sermonId: string) {
-  if (!user.value)
-    return false
-  const existingFavorite = await PocketBaseClient.records.getList('userFavoriteSermons', 1, 1, { filter: `user='${user.value.id}' && sermon='${sermonId}'` })
-  return !!existingFavorite.items.length
-}
+// export async function isUserFavoriteSermon(sermonId: string) {
+//   if (!user.value)
+//     return false
+//   const existingFavorite = await PocketBaseClient.records.getList('userFavoriteSermons', 1, 1, { filter: `user='${user.value.id}' && sermon='${sermonId}'` })
+//   return !!existingFavorite.items.length
+// }
+
+// User Favorites
+
+const isUserFavoriteSermonsDirty = ref(true)
+const isUserFavoriteDevotionalsDirty = ref(true)
+
+const allUserFavoriteSermons = ref<UserFavoriteSermon[]>([])
+const allUserFavoriteDevotionals = ref<UserFavoriteDevotional[]>([])
+
 
 
 export async function toggleUserFavoriteSermon(sermonId: string) {
+  let action = ToggleAction.noop
+
   if (!user.value)
     return ToggleAction.noop
 
 
-  const existingFavorite = await PocketBaseClient.records.getList('userFavoriteSermons', 1, 1, { filter: `user='${user.value.id}' && sermon='${sermonId}'` })
-  if (existingFavorite.items.length) {
-    const deleted = await PocketBaseClient.records.delete('userFavoriteSermons', existingFavorite.items[0].id)
+  const existingFavorite = allUserFavoriteSermons.value.find(fav => fav.sermon === sermonId) // await PocketBaseClient.records.getList('userFavoriteSermons', 1, 1, { filter: `user='${user.value.id}' && sermon='${sermonId}'` })
+  if (existingFavorite) {
+    allUserFavoriteSermons.value = [...allUserFavoriteSermons.value].filter(item => item.sermon != existingFavorite.sermon)
+    const deleted = await PocketBaseClient.records.delete('userFavoriteSermons', existingFavorite.id)
     return ToggleAction.deleted
   }
   else {
-
-    const favorite = await PocketBaseClient.records.create('userFavoriteSermons', {
+    const userFavoriteSermon = {
       sermon: sermonId,
       user: user.value.id
-    })
+    }
+    const favorite: any = await PocketBaseClient.records.create('userFavoriteSermons', userFavoriteSermon)
+    allUserFavoriteSermons.value = [...allUserFavoriteSermons.value, favorite]
     return ToggleAction.created
   }
 }
 
-export async function toggleUserFavoriteDevotionalId(devotionalId: string) {
+export async function toggleUserFavoriteDevotional(devotionalId: string) {
   if (!user.value)
     return ToggleAction.noop
 
-  const existingFavorite = await PocketBaseClient.records.getList('userFavoriteDevotionals', 1, 1, { filter: `user='${user.value.id}' && devotional='${devotionalId}'` })
-  if (existingFavorite.items.length) {
+  const existingFavorite = allUserFavoriteDevotionals.value.find(fav => fav.devotional === devotionalId) // await PocketBaseClient.records.getList('userFavoriteDevotionals', 1, 1, { filter: `user='${user.value.id}' && devotional='${devotionalId}'` })
+  if (existingFavorite) {
     // TODO: delete
-    const deleted = await PocketBaseClient.records.delete('userFavoriteDevotionals', existingFavorite.items[0].id)
-
+    const deleted = await PocketBaseClient.records.delete('userFavoriteDevotionals', existingFavorite.id)
+    allUserFavoriteDevotionals.value = [...allUserFavoriteDevotionals.value].filter(item => item.devotional != existingFavorite.id)
     return ToggleAction.deleted
   }
   else {
-    const favorite = await PocketBaseClient.records.create('userFavoriteDevotionals', {
+    const userFavoriteDevotional = {
       devotional: devotionalId,
       user: user.value.id
-    })
-
+    }
+    const favorite: any = await PocketBaseClient.records.create('userFavoriteDevotionals', userFavoriteDevotional)
+    allUserFavoriteDevotionals.value = [...allUserFavoriteDevotionals.value, favorite]
     return ToggleAction.created
   }
 }
+
 
 export async function getAllUserFavoriteSermons(): Promise<UserFavoriteSermon[]> {
   if (!user.value)
     return []
-
-  const results = await PocketBaseClient.records.getFullList('userFavoriteSermons', 255, { filter: `user=${user.value.id}` })
+  const results = await PocketBaseClient.records.getFullList('userFavoriteSermons', 255, { filter: `user='${user.value.id}'` })
   return results as any[]
 }
 
-export async function getAllUserFavoriteDevotionals() {
+export async function getAllUserFavoriteDevotionals(): Promise<UserFavoriteDevotional[]> {
+  if (!user.value)
+    return []
+
+  const results = await PocketBaseClient.records.getFullList('userFavoriteDevotionals', 255, { filter: `user='${user.value.id}'` })
+  return results as any[]
+}
+
+export const loadFavorites = async () => {
+  // No user... no favorites
   if (!user.value)
     return
 
-  const results = await PocketBaseClient.records.getFullList('userFavoriteSermons', 255, { filter: `user=${user.value.id}` })
-  return results as any[]
+
+  if (isUserFavoriteSermonsDirty.value) {
+    const favoriteSermons = await getAllUserFavoriteSermons()
+    allUserFavoriteSermons.value = favoriteSermons
+    isUserFavoriteSermonsDirty.value = false
+  }
+  if (isUserFavoriteDevotionalsDirty.value) {
+    const favoriteDevotionals = await getAllUserFavoriteDevotionals()
+    allUserFavoriteDevotionals.value = favoriteDevotionals
+    isUserFavoriteDevotionalsDirty.value = false
+  }
+
+
+}
+
+export const isUserFavoriteSermon = (sermonId: string) => {
+  return allUserFavoriteSermons.value.some(favoriteSermon => favoriteSermon.sermon === sermonId)
+}
+
+export const isUserFavoriteDevotional = (devotionalId: string) => {
+  return allUserFavoriteDevotionals.value.some(favoriteDevo => favoriteDevo.devotional === devotionalId)
+}
+
+
+export function useUserFavorites() {
+
+  return {
+    loadFavorites,
+    isUserFavoriteSermon,
+    isUserFavoriteDevotional,
+    toggleUserFavoriteSermon,
+    toggleUserFavoriteDevotional,
+    markFavoriteSermonsDirty() {
+      isUserFavoriteSermonsDirty.value = true
+    },
+    markFavoriteDevotionalsDirty() {
+      isUserFavoriteDevotionalsDirty.value = true
+    }
+  }
 }

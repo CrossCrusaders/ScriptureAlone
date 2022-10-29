@@ -2,8 +2,9 @@
   <div class="flex justify-center" v-if="props.showSpinnerWhileLoading && loading">
     <Spinner color="slate-800"></Spinner>
   </div>
-  <ContentPreviewGrid v-else :content="loadedDevotionals" :button-title="'View Devotional'"
-    @click:button="onDevotionalCardClicked($event)" @click:author="onDevotionalAuthorClicked">
+  <ContentPreviewGrid :show-favorite="!!user" :is-favorite="isFavoriteDevotional" v-else :content="loadedDevotionals"
+    :button-title="'View Devotional'" @click:button="onDevotionalCardClicked($event)"
+    @click:favorite="onFavoriteClicked" @click:author="onDevotionalAuthorClicked">
   </ContentPreviewGrid>
   <div v-if="props.paginationControls"></div>
   <div v-if="props.appendContent">
@@ -24,6 +25,8 @@ import { searchDevotionals } from '../services/DevotionalService'
 import Spinner from '../../components/atoms/Spinner.vue';
 import { Devotional } from '../Devotional';
 import { Author } from '../../authors/Author';
+import { useUserFavorites } from '../../user/services/UserService';
+import { useAuth } from '../../auth/services/AuthService';
 
 export interface DevotionalsPreviewGridProps {
   queryParams?: any
@@ -41,6 +44,9 @@ const props = withDefaults(defineProps<DevotionalsPreviewGridProps>(), {
   perPage: 8,
   query: null
 })
+
+const { loadFavorites, toggleUserFavoriteDevotional, isUserFavoriteDevotional } = useUserFavorites()
+const { user } = useAuth()
 
 const loading = ref<boolean>(false)
 const loadedDevotionals = ref<ContentPreview[]>([])
@@ -75,8 +81,10 @@ const loadSearchedDevotionals = async (forceReset = false) => {
   }
 }
 
+
 onMounted(async () => {
   loadSearchedDevotionals()
+
 
   // Initialize watch after initial load
   watch(() => props.page, (currentPage, prevPage) => {
@@ -97,6 +105,7 @@ onMounted(async () => {
   watch(() => props.query, (currentQuery, prevQuery) => {
     loadSearchedDevotionals(true)
   })
+  await loadFavorites()
 })
 
 
@@ -108,6 +117,22 @@ const onDevotionalCardClicked = (devotional: Devotional) => {
 const onDevotionalAuthorClicked = (author: Author) => {
   router.push(`/authors/${author.id}`)
 }
+
+const isFavoriteDevotional = (devotional: Devotional) => {
+  if (!devotional || !devotional.id)
+    return false
+
+  return isUserFavoriteDevotional(devotional.id)
+}
+
+
+const onFavoriteClicked = (devotional: Devotional) => {
+  if (!devotional || !devotional.id)
+    return false
+
+  return toggleUserFavoriteDevotional(devotional.id)
+}
+
 </script>
 
 <style>
