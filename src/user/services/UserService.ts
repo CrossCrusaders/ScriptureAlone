@@ -39,6 +39,7 @@ export async function toggleUserFavoriteSermon(sermonId: string) {
     return ToggleAction.noop
 
 
+
   const existingFavorite = allUserFavoriteSermons.value.find(fav => fav.sermon === sermonId) // await PocketBaseClient.records.getList('userFavoriteSermons', 1, 1, { filter: `user='${user.value.id}' && sermon='${sermonId}'` })
   if (existingFavorite) {
     allUserFavoriteSermons.value = [...allUserFavoriteSermons.value].filter(item => item.sermon != existingFavorite.sermon)

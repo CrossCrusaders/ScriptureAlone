@@ -30,25 +30,18 @@
           <!-- Buttons -->
           <div class="flex gap-4 mb-16">
             <AppButton variant="primary" @click="onPlayAudioClicked()"
-              v-if="sermonAudioSrc && globalAudioState !== AudioPlayerState.playing">{{ 'Play Audio' }}
+              v-if="sermonAudioSrc && globalAudioState !== AudioPlayerState.playing && globalVideoState !== VideoPlayerState.playing">{{ 'Play Audio' }}
             </AppButton>
-            <div v-if="sermonAudioSrc && globalAudioState === AudioPlayerState.playing">
-              <AppButton variant="primary-minimal" :disabled="true">{{ 'Now Playing' }}
-              </AppButton>
-
-              <AppButton to="/bible" variant="accent">{{ 'Open Bible' }}
-              </AppButton>
-
-            </div>
+            <AppButton v-if="sermonAudioSrc && globalAudioState === AudioPlayerState.playing" @click="globalAudioState = AudioPlayerState.hidden" variant="accent">{{ 'Close' }}
+            </AppButton>
+            <AppButton v-if="sermonAudioSrc && globalAudioState === AudioPlayerState.playing" to="/bible" variant="accent">{{ 'Open Bible' }}
+            </AppButton>
 
             <AppButton variant="primary" @click="onPlayVideoClicked()"
-              v-if="sermonVideoSrc && globalVideoState !== VideoPlayerState.playing">
+              v-if="sermonVideoSrc && globalVideoState !== VideoPlayerState.playing && globalAudioState !== AudioPlayerState.playing">
               {{ 'Play Video' }}
             </AppButton>
             <div v-if="sermonAudioSrc && globalVideoState === VideoPlayerState.playing">
-              <AppButton variant="primary-minimal" :disabled="true">{{ 'Now Playing' }}
-              </AppButton>
-
               <AppButton @click="globalVideoState = VideoPlayerState.hidden" variant="accent">{{ 'Close' }}
               </AppButton>
             </div>
