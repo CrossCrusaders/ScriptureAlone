@@ -29,20 +29,21 @@
         <br>
 
         <div>
-          <RouterLink to="#"><span
-              class="fa fa-facebook fa-xl pr-3 transition duration-150 ease-in-out hover:text-gray-400"
-              aria-hidden="true"></span></RouterLink>
-          <a href="#"><span class="fa fa-twitter fa-xl pr-3 transition duration-150 ease-in-out hover:text-gray-400"
-              aria-hidden="true"></span></a>
-          <a href="#"><span
-              class="fa-brands fa-instagram fa-xl pr-3 transition duration-150 ease-in-out hover:text-gray-400"></span></a>
-          <a href="#"><span
-              class="fa-brands fa-youtube fa-xl pr-3 transition duration-150 ease-in-out hover:text-gray-400"></span></a>
+          <a to="https://www.facebook.com/profile.php?id=100087131003164"><span 
+            class="fa fa-facebook fa-xl pr-3 transition duration-150 ease-in-out hover:text-gray-400"
+            aria-hidden="true"></span></a>
+          <a href="https://twitter.com/ItsShawnH"><span
+            class="fa fa-twitter fa-xl pr-3 transition duration-150 ease-in-out hover:text-gray-400"
+            aria-hidden="true"></span></a>
+          <a href="https://www.instagram.com/realcrosscrusaders"><span
+            class="fa-brands fa-instagram fa-xl pr-3 transition duration-150 ease-in-out hover:text-gray-400"></span></a>
+          <a href="https://www.youtube.com/crosscrusaders"><span
+            class="fa-brands fa-youtube fa-xl pr-3 transition duration-150 ease-in-out hover:text-gray-400"></span></a>
           <a href="https://discord.gg/3YEd7KdJkz" target="blank"><span
-              class="fa-brands fa-discord fa-xl pr-3 transition duration-150 ease-in-out hover:text-gray-400"></span></a>
+            class="fa-brands fa-discord fa-xl pr-3 transition duration-150 ease-in-out hover:text-gray-400"></span></a>
           <a href="https://github.com/ItsShawn/itsshawn.github.io/" target="blank"><span
-              class="fa fa-github fa-xl pr-3 transition duration-150 ease-in-out hover:text-gray-400"
-              aria-hidden="true"></span></a>
+            class="fa fa-github fa-xl pr-3 transition duration-150 ease-in-out hover:text-gray-400"
+            aria-hidden="true"></span></a>
         </div>
       </div>
     </div>
