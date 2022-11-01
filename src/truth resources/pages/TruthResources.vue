@@ -16,8 +16,10 @@
             
           </template>
         </PageHero>
-
+        <h2 class="text-2xl font-bold mb-2 text-slate-900">Series:</h2>
         <ContentCarousel :slides="Series"></ContentCarousel>
+        <Divider></Divider>
+        
   
         <!-- My Plans -->
         <UserRecommendationFooter></UserRecommendationFooter>
@@ -38,6 +40,7 @@
   import AppInput from "../../components/atoms/form-controls/AppInput.vue"
   import DevotionalsPreviewGrid from "../components/DevotionalsPreviewGrid.vue"
   import UserRecommendationFooter from "../../components/organisms/UserRecommendationFooter.vue"
+  import Divider from '../../components/atoms/Divider.vue'
 
   import { getRecentTruthResources } from '../services/TruthResourceService'
 
