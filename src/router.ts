@@ -1,15 +1,20 @@
-//Home
+// Home
 import Home from './home/pages/Home.vue'
-//Bible Reader
+
+// Bible Reader
 import BibleReader from './bible/pages/BibleReader.vue'
 import BibleSearch from './bible/pages/BibleSearch.vue'
-//Account Management
+
+// Account Management
 import LogIn from './auth/pages/LogIn.vue'
 import Register from './auth/pages/Register.vue'
 import LogOut from './auth/pages/LogOut.vue'
-//
+import UserDashboard from './user/pages/UserDashboard.vue'
+
+// 
 import Commentaries from './commentaries/pages/Commentaries.vue'
-//Sermons
+
+// Sermons
 import Sermons from './sermons/pages/Sermons.vue'
 import SermonDetails from './sermons/pages/SermonDetails.vue'
 import SermonAuthors from './sermons/pages/SermonAuthors.vue'
@@ -19,15 +24,17 @@ import SermonCategoryCollection from './sermons/pages/SermonCategoryCollection.v
 import SermonChurchCollection from './sermons/pages/SermonChurchCollection.vue'
 import SermonSearch from './sermons/pages/SermonSearch.vue'
 
-//Devotionals
+// Devotionals
 import Devotionals from './devotionals/pages/Devotionals.vue'
 import DevotionalDetails from './devotionals/pages/DevotionalDetails.vue'
-import DevotionalSearch from './devotionals/pages/DevotionalSearch.vue'
 
-//Author
+// Author
 import Author from './authors/pages/Author.vue'
 
-import UserDashboard from './user/pages/UserDashboard.vue'
+// Truth Resources
+import TruthResources from './truth resources/pages/TruthResources.vue'
+
+
 
 import ComponentTestPage from './test/ComponentTestPage.vue'
 
@@ -35,13 +42,14 @@ import * as VueRouter from 'vue-router'
 import Config from './config/services/ConfigService'
 
 const routes = [
+  // Home
   { path: '/', component: Home },
+
+  // Bible
   { path: '/bible', component: BibleReader },
-  { path: '/bible/search', component: BibleSearch },
+  { path: '/bible/search', component: BibleSearch },,
 
-  { path: '/dashboard', component: UserDashboard },
-
-  //Sermons
+  // Sermons
   { path: '/sermons', component: Sermons },
   { path: '/sermons/search', component: SermonSearch },
   { path: '/sermons/authors', component: SermonAuthors },
@@ -51,20 +59,23 @@ const routes = [
   { path: '/sermons/churches/:churchId', component: SermonChurchCollection },
   { path: '/sermons/:id', component: SermonDetails },
 
-  //Devotionals
+  // Devotionals
   { path: '/devotionals', component: Devotionals },
-  // { path: '/devotionals/search', component: DevotionalSearch },
   { path: '/devotionals/:id', component: DevotionalDetails },
 
   // Authors
   { path: '/authors/:authorId', component: Author },
 
-  //Account Management
+  // Account Management
   { path: '/auth/log-in', component: LogIn },
   { path: '/auth/register', component: Register },
   { path: '/auth/log-out', component: LogOut },
+  { path: '/dashboard', component: UserDashboard },
 
-  { path: '/study-tools/commentaries', component: Commentaries }
+  { path: '/study-tools/commentaries', component: Commentaries },
+
+  // Truth Resources
+  { path: "/truthres", component: TruthResources }
 ]
 
 if (Config.environment === 'dev')
