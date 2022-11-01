@@ -19,7 +19,9 @@
         <h2 class="text-2xl font-bold mb-2 text-slate-900">Series:</h2>
         <ContentCarousel :slides="Series"></ContentCarousel>
         <Divider></Divider>
-        
+
+        <h2 class="text-2xl font-bold mb-2 text-slate-900">Text Material:</h2>
+        <Icon icon-name="cross"></Icon>
   
         <!-- My Plans -->
         <UserRecommendationFooter></UserRecommendationFooter>
@@ -43,6 +45,7 @@
   import Divider from '../../components/atoms/Divider.vue'
 
   import { getRecentTruthResources } from '../services/TruthResourceService'
+  import TruthResourcesList from '../components/TruthResourcesList.vue'
 
   const Series = ref();
   
