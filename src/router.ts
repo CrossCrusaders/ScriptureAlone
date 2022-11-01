@@ -47,7 +47,7 @@ const routes = [
 
   // Bible
   { path: '/bible', component: BibleReader },
-  { path: '/bible/search', component: BibleSearch },,
+  { path: '/bible/search', component: BibleSearch },
 
   // Sermons
   { path: '/sermons', component: Sermons },
@@ -75,7 +75,7 @@ const routes = [
   { path: '/study-tools/commentaries', component: Commentaries },
 
   // Truth Resources
-  { path: "/truthres", component: TruthResources }
+  { path: '/truthres', component: TruthResources }
 ]
 
 if (Config.environment === 'dev')
