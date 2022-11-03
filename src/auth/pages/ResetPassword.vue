@@ -1,7 +1,13 @@
 <template>
   <AppLayout>
     <PageContent>
-      <div class="max-w-prose">
+      <div v-if="isSuccess">
+        <h1 class="mb-4 text-3xl font-title font-bold">Success!</h1>
+        <p>You have changed your password. <RouterLink class="underline text-red-700" to="/auth/log-in">Click Here
+          </RouterLink> to log in with your new
+          password.</p>
+      </div>
+      <div class="max-w-prose" v-else>
         <h1 class="mb-4 text-3xl font-title font-bold">Reset Password</h1>
         <p class="mb-4">Enter your a new password</p>
         <AppInput v-model="passwordModel.password">
