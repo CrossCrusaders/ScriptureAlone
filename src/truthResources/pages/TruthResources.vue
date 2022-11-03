@@ -20,8 +20,7 @@
         <ContentCarousel :slides="Series"></ContentCarousel>
         <Divider></Divider>
 
-        <h2 class="text-2xl font-bold mb-2 text-slate-900">Text Material:</h2>
-        <Icon icon-name="cross"></Icon>
+        <TruthResourcesList :resources="NonSeries"></TruthResourcesList>
   
         <!-- My Plans -->
         <UserRecommendationFooter></UserRecommendationFooter>
@@ -30,38 +29,47 @@
   </template>
   
 <script setup lang="ts">
-  import AppLayout from "../../components/templates/AppLayout.vue"
-  import PageContent from "../../components/templates/PageContent.vue"
-  import AppButton from "../../components/atoms/form-controls/AppButton.vue"
-  import Icon from "../../components/atoms/Icon.vue"
-  import { onMounted, ref } from 'vue'
-  import ContentCarousel from '../../components/molecules/ContentCarousel.vue'
+import AppLayout from "../../components/templates/AppLayout.vue"
+import PageContent from "../../components/templates/PageContent.vue"
+import AppButton from "../../components/atoms/form-controls/AppButton.vue"
+import Icon from "../../components/atoms/Icon.vue"
+import { onMounted, ref } from 'vue'
+import ContentCarousel from '../../components/molecules/ContentCarousel.vue'
   
-  import PageHero from "../../components/molecules/PageHero.vue"
-  import { useRouter } from "vue-router"
-  import AppInput from "../../components/atoms/form-controls/AppInput.vue"
-  import DevotionalsPreviewGrid from "../components/DevotionalsPreviewGrid.vue"
-  import UserRecommendationFooter from "../../components/organisms/UserRecommendationFooter.vue"
-  import Divider from '../../components/atoms/Divider.vue'
+import PageHero from "../../components/molecules/PageHero.vue"
+import { useRouter } from "vue-router"
+import AppInput from "../../components/atoms/form-controls/AppInput.vue"
+import DevotionalsPreviewGrid from "../components/DevotionalsPreviewGrid.vue"
+import UserRecommendationFooter from "../../components/organisms/UserRecommendationFooter.vue"
+import Divider from '../../components/atoms/Divider.vue'
 
-  import { getRecentTruthResources } from '../services/TruthResourceService'
-  import TruthResourcesList from '../components/TruthResourcesList.vue'
+import { getRecentTruthResources } from '../services/TruthResourceService'
+import TruthResourcesList from '../components/TruthResourcesList.vue'
 
-  const Series = ref();
+const Series = ref();
+const NonSeries = ref();
   
-  const router = useRouter()
+const router = useRouter()
 
-  onMounted(async () => {
-    const defaultImage = '/logo-bible.png'
-    const recentTruthResourcesPromise = getRecentTruthResources(1, 6);
-    const [recentTruthResources] = await Promise.all([recentTruthResourcesPromise]);
-    Series.value = recentTruthResources.map((series) => {
-      return {
-        image: series.coverImage || series.author?.profileImage || defaultImage,
-        title: series.title,
-        link: `devotionals/${series.id}`
-      }
-    })
+onMounted(async () => {
+  const defaultImage = '/logo-bible.png'
+  const recentTruthResourcesSeriesPromise = await getRecentTruthResources(1, 6, true);
+  const recentTruthResourcesNonSeriesPromise = await getRecentTruthResources(1, 6, false);
+  const [recentTruthResourcesSeries, recentTruthResourcesNonSeries] = await Promise.all([recentTruthResourcesSeriesPromise, recentTruthResourcesNonSeriesPromise]);
+  Series.value = recentTruthResourcesSeries.map((series) => {
+    return {
+      image: series.coverImage || series.author?.profileImage || defaultImage,
+      title: series.title,
+      link: `devotionals/${series.id}`
+    }
   })
+  NonSeries.value = recentTruthResourcesNonSeries.map((series) => {
+    return {
+      image: series.coverImage || series.author?.profileImage || defaultImage,
+      title: series.title,
+      link: `devotionals/${series.id}`,
+    }
+  })
+})
 </script>
   

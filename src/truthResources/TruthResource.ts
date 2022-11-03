@@ -33,6 +33,8 @@ export interface TruthResource {
   collectionId?: string
   collectionName?: string
 
+  isSeries?: boolean
+
   //duration: number
 }
 
