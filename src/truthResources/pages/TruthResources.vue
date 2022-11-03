@@ -20,7 +20,7 @@
         <ContentCarousel :slides="Series"></ContentCarousel>
         <Divider></Divider>
 
-        <TruthResourcesList :resources1="NonSeries1" :resources2="NonSeries2"></TruthResourcesList>
+        <TruthResourcesList :resources="NonSeries"></TruthResourcesList>
   
         <!-- My Plans -->
         <UserRecommendationFooter></UserRecommendationFooter>
@@ -47,55 +47,84 @@ import { getRecentTruthResources } from '../services/TruthResourceService'
 import TruthResourcesList from '../components/TruthResourcesList.vue'
 
 const Series = ref();
-const NonSeries1 = ref();
+const NonSeries = ref();
 const NonSeries2 = ref();
   
 const router = useRouter()
 
 onMounted(async () => {
   const defaultImage = '/logo-bible.png'
+  /*
   const recentTruthResourcesSeriesPromise = await getRecentTruthResources(1, 6, true);
   const recentTruthResourcesNonSeriesPromise = await getRecentTruthResources(1, 6, false);
   const [recentTruthResourcesSeries, recentTruthResourcesNonSeries] = await Promise.all([recentTruthResourcesSeriesPromise, recentTruthResourcesNonSeriesPromise]);
-  // Set the "Series" value to only the "image", "title", and "link" of each resource that is a series.
   Series.value = recentTruthResourcesSeries.map((series) => {
     return {
       image: series.coverImage || series.author?.profileImage || defaultImage,
       title: series.title,
       link: `devotionals/${series.id}`
     }
-  })
+  })*/
 
-  var List:any = [];
-  // NonSeries1
-  NonSeries1.value = recentTruthResourcesNonSeries;
-  List = [];
-  for(let i = 0; i < Math.round(NonSeries1.value.length/2); i++){
-    List.push(NonSeries1.value[i])
-  }
-  NonSeries1.value = List;
-  NonSeries1.value = NonSeries1.value.map((series:any) => {
+  const recentTruthResourcesNonSeries = [
+    {
+      coverImage: "no",
+      title: "Title 1",
+      id: "yehuf",
+      author: {
+        profileImage: ""
+      }
+    },
+    {
+      coverImage: "grrr",
+      title: "Title 2",
+      id: "r56dv",
+      author: {
+        profileImage: ""
+      }
+    },
+    {
+      coverImage: "nod",
+      title: "Title 3",
+      id: "rhhtrthr",
+      author: {
+        profileImage: ""
+      }
+    },
+    {
+      coverImage: "he",
+      title: "Title 4",
+      id: "ttthh",
+      author: {
+        profileImage: ""
+      }
+    },
+    {
+      coverImage: "he",
+      title: "Title 5",
+      id: "ttthh",
+      author: {
+        profileImage: ""
+      }
+    },
+    {
+      coverImage: "he",
+      title: "Title 6",
+      id: "ttthh",
+      author: {
+        profileImage: ""
+      }
+    }
+  ]
+
+  NonSeries.value = recentTruthResourcesNonSeries.map((series) => {
     return {
       image: series.coverImage || series.author?.profileImage || defaultImage,
       title: series.title,
       link: `devotionals/${series.id}`,
     }
   })
-
-  // NonSeries2
-  NonSeries2.value = recentTruthResourcesNonSeries;
-  List = [];
-  for(let i = Math.round(NonSeries2.value.length/2); i < NonSeries2.value.length; i++){
-    List.push(NonSeries2.value[i])
-  }
-  NonSeries2.value = List;
-  NonSeries2.value = NonSeries2.value.map((series:any) => {
-    return {
-      image: series.coverImage || series.author?.profileImage || defaultImage,
-      title: series.title,
-      link: `devotionals/${series.id}`,
-    }
-  })
+  console.log(NonSeries.value)
 })
 </script>
   
