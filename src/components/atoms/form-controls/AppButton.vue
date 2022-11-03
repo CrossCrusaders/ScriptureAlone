@@ -25,7 +25,7 @@ interface AppButtonProps {
 }
 const props = defineProps<AppButtonProps>()
 
-const buttonClass = `rounded-full min-w-fit whitespace-nowrap`
+const buttonClass = computed(() => `rounded-full min-w-fit whitespace-nowrap ${props.disabled ? 'pointer-events-none' : 'pointer-events-auto'}`)
 const buttonVariantClasses = {
   'primary': 'border-solid border-2 border-slate-800 bg-slate-800 text-white',
   'primary-light': 'border-solid border-2 border-slate-600 bg-gradient-to-r from-slate-800 to-slate-600 text-white',

@@ -11,7 +11,15 @@ const existingToken = localStorage.getItem(userLocalStorageKey)
 const token = ref(existingToken)
 const user = ref<User | null | undefined>(null)
 
+export const requestResetPasswordLink = async (email: string) => {
+  await PocketBaseClient.users.requestPasswordReset(email)
+  return true
+}
 
+export const resetPassword = async (token: string, password: string, confirmPassword: string) => {
+  await PocketBaseClient.users.confirmPasswordReset(token, password, confirmPassword)
+  return true
+}
 
 // Utility Functions
 export const logIn = async ({ email, password }: { email: string, password: string }) => {
@@ -41,6 +49,7 @@ export const register = async ({ email, password, username }: { email: string, p
 
   // send verification email
   // TODO: When we have an email server-- await client.users.requestVerification(user.email)
+
 
   return authedUser
 }

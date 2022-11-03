@@ -9,8 +9,10 @@ import BibleSearch from './bible/pages/BibleSearch.vue'
 import LogIn from './auth/pages/LogIn.vue'
 import Register from './auth/pages/Register.vue'
 import LogOut from './auth/pages/LogOut.vue'
-import UserDashboard from './user/pages/UserDashboard.vue'
+import ForgotPassword from './auth/pages/ForgotPassword.vue'
+import ResetPassword from './auth/pages/ResetPassword.vue'
 
+import UserDashboard from './user/pages/UserDashboard.vue'
 // 
 import Commentaries from './commentaries/pages/Commentaries.vue'
 
@@ -19,7 +21,6 @@ import Sermons from './sermons/pages/Sermons.vue'
 import SermonDetails from './sermons/pages/SermonDetails.vue'
 import SermonAuthors from './sermons/pages/SermonAuthors.vue'
 import SermonCategories from './sermons/pages/SermonCategories.vue'
-// import SermonAuthorCollection from './sermons/pages/SermonAuthorCollection.vue'
 import SermonCategoryCollection from './sermons/pages/SermonCategoryCollection.vue'
 import SermonChurchCollection from './sermons/pages/SermonChurchCollection.vue'
 import SermonSearch from './sermons/pages/SermonSearch.vue'
@@ -32,10 +33,7 @@ import DevotionalDetails from './devotionals/pages/DevotionalDetails.vue'
 import Author from './authors/pages/Author.vue'
 
 // Truth Resources
-import TruthResources from './truth resources/pages/TruthResources.vue'
-
-
-
+import TruthResources from './truthResources/pages/TruthResources.vue'
 import ComponentTestPage from './test/ComponentTestPage.vue'
 
 import * as VueRouter from 'vue-router'
@@ -54,7 +52,6 @@ const routes = [
   { path: '/sermons/search', component: SermonSearch },
   { path: '/sermons/authors', component: SermonAuthors },
   { path: '/sermons/topics', component: SermonCategories },
-  // { path: '/sermons/authors/:authorId', component: SermonAuthorCollection },
   { path: '/sermons/topics/:categoryKey', component: SermonCategoryCollection },
   { path: '/sermons/churches/:churchId', component: SermonChurchCollection },
   { path: '/sermons/:id', component: SermonDetails },
@@ -70,12 +67,14 @@ const routes = [
   { path: '/auth/log-in', component: LogIn },
   { path: '/auth/register', component: Register },
   { path: '/auth/log-out', component: LogOut },
+  { path: '/auth/forgot-password', component: ForgotPassword },
+  { path: '/auth/confirm-password-reset', component: ResetPassword },
   { path: '/dashboard', component: UserDashboard },
 
   { path: '/study-tools/commentaries', component: Commentaries },
 
   // Truth Resources
-  { path: '/truthres', component: TruthResources }
+  { path: '/truth-resources', component: TruthResources }
 ]
 
 if (Config.environment === 'dev')
