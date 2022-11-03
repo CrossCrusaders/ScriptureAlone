@@ -13,12 +13,12 @@
               your saved sermons and devotionals! Already have an
               account? <a href="/auth/log-in" class="underline text-red-700">Log in</a></p>
             <form @submit="handleFormSubmit($event)">
-              <div>
+              <!-- <div>
                 <app-button type="submit">
                   <Icon icon-name="google" class="w-6 h-6 inline invert"></Icon> Sign Up Using Google
                 </app-button>
-              </div>
-              <p class="my-6 text-xl font-bold font-title text-slate-800">Or Sign Up With Email</p>
+              </div> -->
+              <p class="my-6 text-xl font-bold font-title text-slate-800">Sign Up With Email</p>
 
               <div>
                 <app-input name="email" type="text" v-model="registerModel.email">
@@ -35,7 +35,7 @@
             </form>
           </div>
         </div>
-        <img class="pl-10 hidden md:block md:w-3/6 opacity-40" src="/icons/BibleLoginRegisterPage.svg" />
+        <!-- <img class="pl-10 hidden md:block md:w-3/6 opacity-40" src="/icons/BibleLoginRegisterPage.svg" /> -->
       </div>
     </page-content>
   </app-layout>

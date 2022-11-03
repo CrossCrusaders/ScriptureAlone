@@ -37,8 +37,8 @@ export const register = async ({ email, password, username }: { email: string, p
     passwordConfirm: password,
   })
 
-  const authedUser = await logIn({ email, password })
 
+  let authedUser = await logIn({ email, password })
   if (!user || !user.profile)
     throw new Error('Failed to create user')
 
@@ -47,6 +47,7 @@ export const register = async ({ email, password, username }: { email: string, p
     name: username,
   })
 
+  authedUser = await logIn({ email, password })
   // send verification email
   // TODO: When we have an email server-- await client.users.requestVerification(user.email)
 
