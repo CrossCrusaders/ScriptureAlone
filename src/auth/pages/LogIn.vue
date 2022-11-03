@@ -13,25 +13,33 @@
               your saved sermons and devotionals! Don't have an
               account? <a href="/auth/register" class="underline text-red-700">Create one</a></p>
             <form @submit="handleFormSubmit($event)">
-              <div>
+              <!-- <div>
                 <app-button type="submit">
                   <Icon icon-name="google" class="w-6 h-6 inline invert"></Icon> Log In With Google
                 </app-button>
-              </div>
-              <p class="my-6 text-xl font-bold font-title text-slate-800">Or Log In With Email</p>
+              </div> -->
+              <p class="my-6 text-xl font-bold font-title text-slate-800">Log In With Email</p>
               <div>
                 <app-input name="email" type="text" v-model="logInModel.email">
                   Email Address
                 </app-input>
+
                 <app-input name="password" type="password" v-model="logInModel.password">
-                  Password
+                  <div class="flex flex-row items-center justify-between">
+                    Password <RouterLink class="underline text-red-700 font-normal text-sm" to="/auth/forgot-password">
+                      Forgot
+                      your
+                      password?
+
+                    </RouterLink>
+                  </div>
                 </app-input>
                 <app-button type="submit">Log In</app-button>
               </div>
             </form>
           </div>
         </div>
-        <img class="pl-10 hidden md:block md:w-3/6 opacity-40" src="/icons/BibleLoginRegisterPage.svg" />
+        <!-- <img class="pl-10 hidden md:block md:w-3/6 opacity-40" src="/icons/BibleLoginRegisterPage.svg" /> -->
       </div>
     </page-content>
   </app-layout>
