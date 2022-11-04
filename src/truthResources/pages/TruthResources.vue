@@ -54,7 +54,6 @@ const router = useRouter()
 
 onMounted(async () => {
   const defaultImage = '/logo-bible.png'
-  /*
   const recentTruthResourcesSeriesPromise = await getRecentTruthResources(1, 6, true);
   const recentTruthResourcesNonSeriesPromise = await getRecentTruthResources(1, 6, false);
   const [recentTruthResourcesSeries, recentTruthResourcesNonSeries] = await Promise.all([recentTruthResourcesSeriesPromise, recentTruthResourcesNonSeriesPromise]);
@@ -64,58 +63,7 @@ onMounted(async () => {
       title: series.title,
       link: `devotionals/${series.id}`
     }
-  })*/
-
-  const recentTruthResourcesNonSeries = [
-    {
-      coverImage: "no",
-      title: "Title 1",
-      id: "yehuf",
-      author: {
-        profileImage: ""
-      }
-    },
-    {
-      coverImage: "grrr",
-      title: "Title 2",
-      id: "r56dv",
-      author: {
-        profileImage: ""
-      }
-    },
-    {
-      coverImage: "nod",
-      title: "Title 3",
-      id: "rhhtrthr",
-      author: {
-        profileImage: ""
-      }
-    },
-    {
-      coverImage: "he",
-      title: "Title 4",
-      id: "ttthh",
-      author: {
-        profileImage: ""
-      }
-    },
-    {
-      coverImage: "he",
-      title: "Title 5",
-      id: "ttthh",
-      author: {
-        profileImage: ""
-      }
-    },
-    {
-      coverImage: "he",
-      title: "Title 6",
-      id: "ttthh",
-      author: {
-        profileImage: ""
-      }
-    }
-  ]
+  })
 
   NonSeries.value = recentTruthResourcesNonSeries.map((series) => {
     return {
