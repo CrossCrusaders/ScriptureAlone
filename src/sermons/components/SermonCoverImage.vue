@@ -6,7 +6,7 @@
 <script setup lang="ts">
 import { onMounted, ref } from 'vue';
 import CoverImageWithFavorite from '../../components/molecules/CoverImageWithFavorite.vue';
-import { isUserFavoriteSermon, ToggleAction, toggleUserFavoriteSermon } from '../../user/services/UserService';
+import { isUserFavoriteSermon, loadFavorites, ToggleAction, toggleUserFavoriteSermon } from '../../user/services/UserService';
 
 const props = defineProps([
   'sermonId',
@@ -15,6 +15,7 @@ const props = defineProps([
 const isFavorite = ref(false)
 
 onMounted(async () => {
+  await loadFavorites()
   isFavorite.value = await isUserFavoriteSermon(props.sermonId)
 })
 
