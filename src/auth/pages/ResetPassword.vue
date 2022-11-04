@@ -1,19 +1,20 @@
 <template>
   <AppLayout>
     <PageContent>
+      <div class="mt-4"></div>
       <div v-if="isSuccess">
-        <h1 class="mb-4 text-3xl font-title font-bold">Success!</h1>
+        <h1 class="mb-4 text-3xl font-title font-bold text-slate-800">Success!</h1>
         <p>You have changed your password. <RouterLink class="underline text-red-700" to="/auth/log-in">Click Here
           </RouterLink> to log in with your new
           password.</p>
       </div>
       <div class="max-w-prose" v-else>
-        <h1 class="mb-4 text-3xl font-title font-bold">Reset Password</h1>
+        <h1 class="mb-4 text-3xl font-title font-bold text-slate-800">Reset Password</h1>
         <p class="mb-4">Enter your a new password</p>
         <AppInput v-model="passwordModel.password">
           Password
         </AppInput>
-        <AppInput v-model="passwordModel.confirmPassword">
+        <AppInput @keypress.enter="onChangePasswordClick" v-model="passwordModel.confirmPassword">
           Confirm Password
         </AppInput>
         <AppButton :disabled="hasError" @click="onChangePasswordClick" variant="primary">
@@ -34,6 +35,7 @@ import { resetPassword } from '../services/AuthService';
 
 const router = useRouter()
 const route = useRoute()
+const loading = ref(false)
 
 const passwordModel = reactive({
   password: '',
@@ -57,7 +59,10 @@ onMounted(() => {
 })
 
 const onChangePasswordClick = async () => {
+  if (loading.value)
+    return
 
+  loading.value = true
   isDirty.value = true
   if (hasError.value)
     return
