@@ -47,13 +47,22 @@ export async function toggleUserFavoriteSermon(sermonId: string) {
     return ToggleAction.deleted
   }
   else {
-    const userFavoriteSermon = {
-      sermon: sermonId,
-      user: user.value.id
+    const favoriteSermons = await getAllUserFavoriteSermons();
+    var isFavoriteAlready = false;
+    favoriteSermons.forEach((sermon) => {
+      if(sermon.sermon == sermonId){
+        isFavoriteAlready = true;
+      }
+    })
+    if(isFavoriteAlready == false){
+      const userFavoriteSermon = {
+        sermon: sermonId,
+        user: user.value.id
+      }
+      const favorite: any = await PocketBaseClient.records.create('userFavoriteSermons', userFavoriteSermon)
+      allUserFavoriteSermons.value = [...allUserFavoriteSermons.value, favorite]
+      return ToggleAction.created
     }
-    const favorite: any = await PocketBaseClient.records.create('userFavoriteSermons', userFavoriteSermon)
-    allUserFavoriteSermons.value = [...allUserFavoriteSermons.value, favorite]
-    return ToggleAction.created
   }
 }
 
@@ -100,7 +109,6 @@ export const loadFavorites = async () => {
   // No user... no favorites
   if (!user.value)
     return
-
 
   if (isUserFavoriteSermonsDirty.value) {
     const favoriteSermons = await getAllUserFavoriteSermons()
