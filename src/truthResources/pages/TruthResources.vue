@@ -1,8 +1,7 @@
 <template>
     <AppLayout>
       <PageContent>
-  
-        <!-- Devotionals Hero -->
+        <!-- Truth Resources Hero -->
         <PageHero>
           <template v-slot:image>
             <img src="/logo-bible.png" class="object-contain hidden md:block max-h-32" />
@@ -48,9 +47,8 @@ import TruthResourcesList from '../components/TruthResourcesList.vue'
 
 const Series = ref();
 const NonSeries = ref();
-const NonSeries2 = ref();
   
-const router = useRouter()
+const router = useRouter();
 
 onMounted(async () => {
   const defaultImage = '/logo-bible.png'
@@ -61,7 +59,7 @@ onMounted(async () => {
     return {
       image: series.coverImage || series.author?.profileImage || defaultImage,
       title: series.title,
-      link: `devotionals/${series.id}`
+      link: `truth-resources/${series.id}`
     }
   })
 
@@ -69,7 +67,7 @@ onMounted(async () => {
     return {
       image: series.coverImage || series.author?.profileImage || defaultImage,
       title: series.title,
-      link: `devotionals/${series.id}`,
+      link: `truth-resources/${series.id}`,
     }
   })
   console.log(NonSeries.value)

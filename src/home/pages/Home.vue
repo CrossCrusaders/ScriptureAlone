@@ -33,7 +33,7 @@
       <a :class="callToActionItemClass" href="#votd">
         <Icon icon-name="book-cross" :class="[callToActionIconClass]" :size="16">
         </Icon>
-        <span class="text-center whitespace-nowrap text-ellipsis">Verse of the day</span>
+        <span class="text-center whitespace-nowrap text-ellipsis">Verse of the Day</span>
       </a>
       <RouterLink :class="callToActionItemClass" to="/devotionals">
         <Icon icon-name="notebook-edit" :class="[callToActionIconClass]" :size="16">
