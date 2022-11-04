@@ -1,3 +1,4 @@
+import { Profile } from './../../auth/User';
 import { User } from "../../auth/User"
 import { getBucketUrl } from "../../api/BucketStorageService"
 import { useRouter } from "vue-router"
@@ -120,8 +121,6 @@ export const loadFavorites = async () => {
     allUserFavoriteDevotionals.value = favoriteDevotionals
     isUserFavoriteDevotionalsDirty.value = false
   }
-
-
 }
 
 export const isUserFavoriteSermon = (sermonId: string) => {
@@ -132,9 +131,7 @@ export const isUserFavoriteDevotional = (devotionalId: string) => {
   return allUserFavoriteDevotionals.value.some(favoriteDevo => favoriteDevo.devotional === devotionalId)
 }
 
-
 export function useUserFavorites() {
-
   return {
     loadFavorites,
     isUserFavoriteSermon,
@@ -148,4 +145,23 @@ export function useUserFavorites() {
       isUserFavoriteDevotionalsDirty.value = true
     }
   }
+}
+
+export async function updateUserProfile(name: string | Blob, bio: string | Blob, pfp: File, user?: User | null | undefined) {
+  if(!user)
+    return;
+
+  var formData = new FormData();
+
+  formData.append('avatar', pfp);
+  formData.append('name', name);
+  formData.append('bio', bio);
+
+  const updatedProfile = await PocketBaseClient.records.update('profiles', user.profile.id, formData)
+
+  user.profile = updatedProfile;
+
+  await PocketBaseClient.users.refresh();
+
+  return user;
 }

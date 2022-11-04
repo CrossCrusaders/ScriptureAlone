@@ -12,7 +12,10 @@ import LogOut from './auth/pages/LogOut.vue'
 import ForgotPassword from './auth/pages/ForgotPassword.vue'
 import ResetPassword from './auth/pages/ResetPassword.vue'
 
+// User
 import UserDashboard from './user/pages/UserDashboard.vue'
+import UserSettings from './user/pages/UserSettings.vue'
+
 // 
 import Commentaries from './commentaries/pages/Commentaries.vue'
 
@@ -69,7 +72,10 @@ const routes = [
   { path: '/auth/log-out', component: LogOut },
   { path: '/auth/forgot-password', component: ForgotPassword },
   { path: '/auth/confirm-password-reset', component: ResetPassword },
+
+  // User
   { path: '/dashboard', component: UserDashboard },
+  { path: "/dashboard/settings", component: UserSettings },
 
   { path: '/study-tools/commentaries', component: Commentaries },
 

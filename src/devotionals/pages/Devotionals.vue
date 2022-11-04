@@ -91,7 +91,6 @@ const currentSearchQuery = ref<string>('')
 
 const handleSearchSubmit = async (event: Event) => {
   currentSearchQuery.value = searchModel.value
-
 }
 
 const onDevotionalDataLoaded = async (data: DevotionalSearch) => {

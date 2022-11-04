@@ -8,7 +8,7 @@
     </div>
     <div class="input-wrapper flex-auto">
       <input class="py-2 h-full w-full max-w-full outline-none bg-transparent" v-bind="$attrs" :value="props.modelValue"
-        @input="onInputInput" @focus="onInputFocus" @blur="onInputBlur" />
+        @input="onInputInput" @focus="onInputFocus" @blur="onInputBlur"/>
     </div>
     <div :class="['postfix-wrapper', props.postfixClass]">
       <slot name="postfix"></slot>
