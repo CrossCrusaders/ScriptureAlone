@@ -1,8 +1,9 @@
 <template>
   <AppLayout>
     <PageContent>
+      <div class="mt-4"></div>
       <div v-if="linkSent">
-        <h1 class="mb-4 text-3xl font-title font-bold">Reset Link Sent!</h1>
+        <h1 class="mb-4 text-3xl font-title font-bold text-slate-800">Reset Link Sent!</h1>
         <p class="mb-4">Check your email address for a password reset link, If you don't see it right away check your
           <strong>spam folder!</strong>
         </p>
@@ -11,9 +12,9 @@
         </RouterLink>
       </div>
       <div class="max-w-prose" v-else>
-        <h1 class="mb-4 text-3xl font-title font-bold">Forgot Password?</h1>
+        <h1 class="mb-4 text-3xl font-title font-bold text-slate-800">Forgot Password?</h1>
         <p class="mb-4">Enter your account email address and we will send you a password reset link</p>
-        <AppInput v-model="emailModel">
+        <AppInput @keypress.enter="onSubmitClick" v-model="emailModel">
           Email Address
         </AppInput>
         <AppButton :disabled="hasError" variant="primary" @click="onSubmitClick">
@@ -37,7 +38,6 @@ const linkSent = ref(false)
 const emailModel = ref('')
 
 const onSubmitClick = async () => {
-  debugger
   requestResetPasswordLink(emailModel.value)
   linkSent.value = true
 }
