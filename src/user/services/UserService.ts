@@ -147,13 +147,13 @@ export function useUserFavorites() {
   }
 }
 
-export async function updateUserProfile(name: string | Blob, bio: string | Blob, pfp: File, user?: User | null | undefined) {
+export async function updateUserProfile(name: string | Blob, bio: string | Blob, pfp: File | null, user?: User | null | undefined) {
   if(!user)
     return;
 
   var formData = new FormData();
 
-  formData.append('avatar', pfp);
+  formData.append('avatar', pfp || "");
   formData.append('name', name);
   formData.append('bio', bio);
 

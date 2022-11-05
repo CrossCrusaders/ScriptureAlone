@@ -14,29 +14,30 @@
         </h2>
       </PageHero>
       <div class="flex justify-center mb-10">
-        <div class="relative overflow-hidden inline-block">
+        <div>
           <h2 class="text-xl font-bold mb-2 text-slate-700">Avatar:</h2>
-          <button
-            class="border-2 border-solid rounded border-slate-700 text-slate-700 bg-white pl-2 pr-2 pt-4 pb-4 text-lg font-bold"
-          >
-            Upload
-          </button>
-          <input
-            type="file"
-            id="fileInput"
-            class="absolute left-0 top-0 opacity-0 text-xl"
-          />
-          <p id="ImageName"></p>
+          <div class="relative overflow-hidden inline-block">
+            <button class="border-2 border-solid rounded border-slate-700 text-slate-700 bg-white pl-4 pr-4 pt-2 pb-2 text-lg font-bold">Upload Avatar</button>
+            <input
+              type="file"
+              id="fileInput"
+              class="text-lg absolute left-0 top-0 opacity-0"
+              @change="setNeedsSaved(false)"
+            />
+          </div>
         </div>
       </div>
       <form class="flex justify-center mb-10">
         <div class="px-2 w-full md:w-1/2">
           <h2 class="text-xl font-bold mb-2 text-slate-700">Name:</h2>
           <AppInput
+            :isNotSearch="true"
             id="name"
             type="input"
             placeholder="Username"
+            :value="user?.profile.name"
             v-model="nameInput"
+            @update:modelValue="setNeedsSaved(true, nameInput)"
           ></AppInput>
         </div>
       </form>
@@ -45,7 +46,7 @@
         <AppButton variant="primary-outline" to="/auth/log-out"
           >Log Out</AppButton
         >
-        <AppButton @click="updateProfile()" variant="primary-outline"
+        <AppButton v-if="needsSaved" @click="updateProfile()" variant="primary-outline"
           >Save</AppButton
         >
       </div>
@@ -102,12 +103,15 @@ const userProfileImage = ref();
 
 const router = useRouter();
 
-const nameInput = ref("");
+const nameInput = ref();
 
 const favoriteDevotionals = ref<any>([]);
 const favoriteSermons = ref<any>([]);
 
+const needsSaved = ref(false);
+
 onMounted(async () => {
+  nameInput.value = user.value?.profile.name;
   userProfileImage.value = getUserProfileImage(user.value);
 
   if (!user.value) return router.replace("/");
@@ -132,8 +136,9 @@ async function goToPage(link: string) {
     await router.replace(link);
   }
 }
-const fileInput = document.getElementById("fileInput");
+
 async function updateProfile() {
+  var fileInput = document.getElementById("fileInput");
   user.value = await updateUserProfile(
     nameInput.value,
     "This Might Be A Bio",
@@ -141,7 +146,37 @@ async function updateProfile() {
     user.value
   );
   userProfileImage.value = getUserProfileImage(user.value);
+  needsSaved.value = false;
+}
+
+function setNeedsSaved(isNameBar:boolean, value?:string){
+  if(isNameBar){
+    needsSaved.value = true;
+    if(value == user.value?.profile.name){
+      needsSaved.value = false;
+    }
+  }
+  else{
+    needsSaved.value = true;
+  }
 }
 </script>
 
-<style></style>
+<style>
+.upload-btn-wrapper {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.btn {
+  border: 2px solid gray;
+  color: gray;
+  background-color: white;
+  padding: 8px 20px;
+  border-radius: 8px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+</style>

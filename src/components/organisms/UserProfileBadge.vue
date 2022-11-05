@@ -9,11 +9,16 @@
 </template>
 
 <script setup lang="ts">
-import { computed } from 'vue';
+import { computed, ref } from 'vue';
 import { useAuth } from '../../auth/services/AuthService'
 import { getUserProfileImage } from '../../user/services/UserService'
 const { user } = useAuth()
 
-const profileImage = getUserProfileImage(user.value)
+const profileImage = ref();
+profileImage.value = getUserProfileImage(user.value)
+// TODO Find Better Solution than Looping forever
+setInterval(function(){
+  profileImage.value = getUserProfileImage(user.value)
+}, 100)
 
 </script>

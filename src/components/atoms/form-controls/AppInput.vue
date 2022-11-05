@@ -43,13 +43,13 @@ const inputOuterWrapperClass = computed(() => {
   }
 
   return baseClass
-
 })
 
 const props = defineProps([
   'modelValue',
   'postfixClass',
-  'prefixClass'
+  'prefixClass',
+  'isNotSearch'
 ])
 const emit = defineEmits([
   'update:modelValue'
