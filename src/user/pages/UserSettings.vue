@@ -63,51 +63,21 @@ import PageHero from "../../components/molecules/PageHero.vue";
 import { useAuth } from "../../auth/services/AuthService";
 import {
   getUserProfileImage,
-  useUserFavorites,
   updateUserProfile,
 } from "../services/UserService";
 import Badge from "../../components/molecules/Badge.vue";
-import ContentPreviewGrid from "../../components/molecules/ContentPreviewGrid.vue";
-import {
-  getRecentDevotionals,
-  getUserFavoriteDevotionals,
-} from "../../devotionals/services/DevotionalService";
-import {
-  getRecentSermons,
-  getUserFavoriteSermons,
-} from "../../sermons/services/SermonService";
 import Divider from "../../components/atoms/Divider.vue";
-import IconPhoto from "../../components/atoms/IconPhoto.vue";
 import PocketBaseClient from "../../api/PocketBaseClient";
+import { getBucketUrl } from '../../api/BucketStorageService.js'
 import AppInput from "../../components/atoms/form-controls/AppInput.vue";
 import AppButton from "../../components/atoms/form-controls/AppButton.vue";
 
-const categories = ref<any>([
-  { name: "Read VOTD", link: "/#VOTD", badge: "book-heart" },
-  { name: "Are you failing?", link: "", badge: "hands-pray" },
-  {
-    name: "Are you truly saved?",
-    link: "https://independentbaptist.church/salvation",
-    badge: "cross",
-  },
-  {
-    name: "Join a Bible-based church.",
-    link: "https://independentbaptist.church/",
-    badge: "church",
-  },
-]);
-
 const { user } = useAuth();
-const { loadFavorites } = useUserFavorites();
 const userProfileImage = ref();
 
 const router = useRouter();
 
 const nameInput = ref();
-
-const favoriteDevotionals = ref<any>([]);
-const favoriteSermons = ref<any>([]);
-
 const needsSaved = ref(false);
 
 onMounted(async () => {
@@ -115,38 +85,31 @@ onMounted(async () => {
   userProfileImage.value = getUserProfileImage(user.value);
 
   if (!user.value) return router.replace("/");
-
-  const devotionalSearch = await getUserFavoriteDevotionals(
-    user.value.id,
-    1,
-    8
-  );
-  const sermonSearch = await getUserFavoriteSermons(user.value.id, 1, 8);
-
-  favoriteDevotionals.value = devotionalSearch.items;
-  favoriteSermons.value = sermonSearch.items;
-
-  await loadFavorites();
 });
-
-async function goToPage(link: string) {
-  if (link.startsWith("https://")) {
-    window.location.href = link;
-  } else {
-    await router.replace(link);
-  }
-}
 
 async function updateProfile() {
   var fileInput = document.getElementById("fileInput");
-  user.value = await updateUserProfile(
-    nameInput.value,
-    "This Might Be A Bio",
-    fileInput?.files[0],
-    user.value
-  );
-  userProfileImage.value = getUserProfileImage(user.value);
-  needsSaved.value = false;
+  if(fileInput?.files.length != 0){
+    user.value = await updateUserProfile(
+      nameInput.value,
+      "Christian, Game Dev, Software Engineer, Web Designer.",
+      fileInput?.files[0],
+      user.value
+    );
+    userProfileImage.value = getUserProfileImage(user.value);
+    needsSaved.value = false;
+  }
+  else{
+    let pfpBlob = await fetch(getBucketUrl(user.value?.profile, user.value?.profile.avatar, {})).then(r => r.blob());
+    user.value = await updateUserProfile(
+      nameInput.value,
+      "Christian, Game Dev, Software Engineer, Web Designer.",
+      pfpBlob,
+      user.value
+    );
+    userProfileImage.value = getUserProfileImage(user.value);
+    needsSaved.value = false;
+  }
 }
 
 function setNeedsSaved(isNameBar:boolean, value?:string){
@@ -162,21 +125,4 @@ function setNeedsSaved(isNameBar:boolean, value?:string){
 }
 </script>
 
-<style>
-.upload-btn-wrapper {
-  position: relative;
-  overflow: hidden;
-  display: inline-block;
-}
-
-.btn {
-  border: 2px solid gray;
-  color: gray;
-  background-color: white;
-  padding: 8px 20px;
-  border-radius: 8px;
-  font-size: 20px;
-  font-weight: bold;
-}
-
-</style>
+<style></style>

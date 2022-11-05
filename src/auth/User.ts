@@ -5,6 +5,8 @@ export interface Profile {
 }
 
 export interface User {
+  [x: string]: any
+  user: any
   created: Date
   email: string
   id: string

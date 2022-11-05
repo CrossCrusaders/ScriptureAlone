@@ -147,7 +147,7 @@ export function useUserFavorites() {
   }
 }
 
-export async function updateUserProfile(name: string | Blob, bio: string | Blob, pfp: File | null, user?: User | null | undefined) {
+export async function updateUserProfile(name: string | Blob, bio: string | Blob, pfp: File | Blob | null, user?: User | null | undefined) {
   if(!user)
     return;
 
