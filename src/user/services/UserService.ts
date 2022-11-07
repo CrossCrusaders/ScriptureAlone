@@ -51,11 +51,11 @@ export async function toggleUserFavoriteSermon(sermonId: string) {
     const favoriteSermons = await getAllUserFavoriteSermons();
     var isFavoriteAlready = false;
     favoriteSermons.forEach((sermon) => {
-      if(sermon.sermon == sermonId){
+      if (sermon.sermon == sermonId) {
         isFavoriteAlready = true;
       }
     })
-    if(isFavoriteAlready == false){
+    if (isFavoriteAlready == false) {
       const userFavoriteSermon = {
         sermon: sermonId,
         user: user.value.id
@@ -148,7 +148,7 @@ export function useUserFavorites() {
 }
 
 export async function updateUserProfile(name: string | Blob, bio: string | Blob, pfp: File | Blob | null, user?: User | null | undefined) {
-  if(!user)
+  if (!user)
     return;
 
   var formData = new FormData();
@@ -159,7 +159,7 @@ export async function updateUserProfile(name: string | Blob, bio: string | Blob,
 
   const updatedProfile = await PocketBaseClient.records.update('profiles', user.profile.id, formData)
 
-  user.profile = updatedProfile;
+  user.profile = updatedProfile as any;
 
   await PocketBaseClient.users.refresh();
 
