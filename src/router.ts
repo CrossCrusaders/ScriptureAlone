@@ -37,6 +37,8 @@ import Author from './authors/pages/Author.vue'
 
 // Truth Resources
 import TruthResources from './truthResources/pages/TruthResources.vue'
+import TruthResourcesDetails from './truthResources/pages/TruthResourcesDetails.vue'
+
 import ComponentTestPage from './test/ComponentTestPage.vue'
 
 import * as VueRouter from 'vue-router'
@@ -80,7 +82,8 @@ const routes = [
   { path: '/study-tools/commentaries', component: Commentaries },
 
   // Truth Resources
-  { path: '/truth-resources', component: TruthResources }
+  { path: '/truth-resources', component: TruthResources },
+  { path: '/truth-resources/:id', component: TruthResourcesDetails }
 ]
 
 if (Config.environment === 'dev')

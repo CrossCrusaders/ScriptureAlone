@@ -13,3 +13,8 @@ export const getRecentTruthResources = async (offset: number, count: number, isS
         return devotionals
     }
 }
+
+export const getTruthResource = async (id: string) => {
+    const response = await PocketBaseClient.records.getOne('truthResources', id, { expand: 'title,description,author,author.church' })
+    return transformTruthResourceResponse(response)
+  }

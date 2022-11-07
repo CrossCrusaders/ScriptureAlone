@@ -8,7 +8,6 @@ export interface Category {
   id: string,
   label: string,
   updated: Date,
-
 }
 
 export interface TruthResource {
@@ -23,8 +22,8 @@ export interface TruthResource {
   //devotionalDate?: Date
   title?: string
   //transcript?: string
-  //created?: Date
-  //updated?: Date
+  created?: Date
+  updated?: Date
   //accordionText?: string
 
   //categories?: Category[]
@@ -35,7 +34,7 @@ export interface TruthResource {
 
   isSeries?: boolean
 
-  //duration: number
+  duration: number
 }
 
 
