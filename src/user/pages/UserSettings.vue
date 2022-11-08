@@ -34,17 +34,24 @@
                 <div class="flex flex-col gap-4 overflow-hidden inline-block">
                   <div class="relative overflow-hidden inline-block">
                     <button
-                      class="border-2 border-solid rounded border-slate-700 text-slate-700 bg-white text-lg font-bold max-h-16 w-48 h-16 max-w-48">
-                      Change Profile Picture
+                      class="border-2 border-solid rounded border-slate-700 text-slate-700 bg-white text-lg font-bold max-h-8 w-32 h-8 max-w-32 md:w-48 md:max-w-48">
+                      Change Image
                     </button>
                     <input type="file" id="fileInput"
-                      class="text-lg absolute left-0 top-0 opacity-0 max-h-16 w-48 h-16 max-w-48" ref="pfpInput"
+                      class="text-lg absolute left-0 top-0 opacity-0 max-h-8 w-48 h-8 max-w-48" ref="pfpInput"
                       @change="getTempPFP($event); setNeedsSaved(2, TabState, $event);" />
                   </div>
                   <div class="relative overflow-hidden inline-block">
                     <button
-                      class="border-2 border-solid rounded border-slate-700 text-slate-700 bg-white text-lg font-bold max-h-8 w-48 h-8 max-w-48"
-                      @click="tempUserProfileImage = userProfileImage; pfpInput.value = null; setNeedsSaved(1, TabState, null);">
+                      class="border-2 border-solid rounded border-slate-700 text-slate-700 bg-white text-lg font-bold max-h-8 w-32 h-8 max-w-32 md:w-48 md:max-w-48"
+                      @click="resetTempPFP(); setNeedsSaved(1, TabState, null);">
+                      Reset Image
+                    </button>
+                  </div>
+                  <div class="relative overflow-hidden inline-block">
+                    <button
+                      class="border-2 border-solid rounded border-slate-700 text-slate-700 bg-white text-lg font-bold max-h-8 w-32 h-8 max-w-32 md:w-48 md:max-w-48"
+                      @click="removeTempPFP(); setNeedsSaved(1, TabState, null);">
                       Remove Image
                     </button>
                   </div>
@@ -151,7 +158,6 @@ const TabState = ref(TabStates.Profile);
 const needsSaved = ref(false);
 
 onMounted(async () => {
-  //changePassword.value = false;
   nameInput.value = user.value?.profile.name;
   emailInput.value = user.value?.email;
   userProfileImage.value = getUserProfileImage(user.value);
@@ -167,24 +173,40 @@ async function updateProfile(Tab: string) {
   canSaveAgain.value = false;
   if(Tab == TabStates.Profile){
     var fileInput: any = document.getElementById("fileInput");
+    var isNull = false;
+    var image:any;
+    if(tempUserProfileImage.value == "/logo-bible.png"){
+      isNull = true;
+    }
     if (fileInput?.files.length != 0) {
+      if(isNull){
+        image = null; 
+      }
+      else{
+        image = fileInput?.files[0];
+      }
+      
       user.value = await updateUserProfile(
         nameInput.value,
         "",
-        fileInput?.files[0],
+        image,
         user.value
       );
       userProfileImage.value = getUserProfileImage(user.value);
       needsSaved.value = false;
       canSaveAgain.value = true;
     } else {
-      let pfpBlob = await fetch(
-        getBucketUrl(user.value?.profile, user.value?.profile.avatar, {})
-      ).then((r) => r.blob());
+      if(isNull){
+        image = null; 
+      }
+      else{
+        image =  await fetch(getBucketUrl(user.value?.profile, user.value?.profile.avatar, {})).then((r) => r.blob());
+      }
+     
       user.value = await updateUserProfile(
         nameInput.value,
         "",
-        pfpBlob,
+        image,
         user.value
       );
       userProfileImage.value = getUserProfileImage(user.value);
@@ -220,12 +242,13 @@ async function setNeedsSaved(Element: number, Tab: string | null |any, value?: a
     else {
       needsSaved.value = true;
       if (Element == 1) {
-        tempUserProfileImage.value = userProfileImage.value;
-        needsSaved.value = false;
+        if(tempUserProfileImage.value == userProfileImage){
+          needsSaved.value = false;
+        }
       }
       else if (Element == 2) {
-        var tempPFP = await getTempPFP(value);
-        if (tempPFP == userProfileImage.value) {
+        var tempPFP:any = await getTempPFP(value);
+        if (tempPFP == userProfileImage.value || tempPFP == "/logo-bible.png") {
           needsSaved.value = false;
         }
       }
@@ -274,9 +297,18 @@ async function getTempPFP(event: any) {
   reader.addEventListener("load", () => {
     const uploaded_image = reader.result;
     tempUserProfileImage.value = uploaded_image;
-    return tempUserProfileImage;
+    return tempUserProfileImage.value;
   });
   reader.readAsDataURL(srcElement.files[0]);
+}
+async function resetTempPFP() {
+  tempUserProfileImage.value = userProfileImage.value;
+  pfpInput.value = null;
+}
+async function removeTempPFP() {
+  console.log("remove")
+  tempUserProfileImage.value = "/logo-bible.png"
+  console.log(tempUserProfileImage)
 }
 </script>
 
