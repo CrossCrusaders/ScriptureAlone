@@ -39,12 +39,12 @@
                     </button>
                     <input type="file" id="fileInput"
                       class="text-lg absolute left-0 top-0 opacity-0 max-h-16 w-48 h-16 max-w-48" ref="pfpInput"
-                      @change="getTempPFP($event); setNeedsSaved(false, $event, false, true);" />
+                      @change="getTempPFP($event); setNeedsSaved(2, TabState, $event);" />
                   </div>
                   <div class="relative overflow-hidden inline-block">
                     <button
                       class="border-2 border-solid rounded border-slate-700 text-slate-700 bg-white text-lg font-bold max-h-8 w-48 h-8 max-w-48"
-                      @click="tempUserProfileImage = userProfileImage; pfpInput.value = null; setNeedsSaved(false, null, true);">
+                      @click="tempUserProfileImage = userProfileImage; pfpInput.value = null; setNeedsSaved(1, TabState, null);">
                       Remove Image
                     </button>
                   </div>
@@ -56,29 +56,34 @@
             <div class="px-2 w-full md:w-1/2">
               <h2 class="text-xl font-bold mb-2 text-slate-700">Name:</h2>
               <AppInput :isNotSearch="true" id="name" type="input" placeholder="Username" v-model="nameInput"
-                @update:modelValue="setNeedsSaved(true, nameInput)"></AppInput>
+                @update:modelValue="setNeedsSaved(0, TabState, nameInput)"></AppInput>
             </div>
           </form>
         </div>
         <!-- Account Tab -->
-        <div v-if="TabState == TabStates.Account">
+        <div v-else-if="TabState == TabStates.Account">
           <form class="flex justify-center mb-4">
             <div class="px-2 w-full md:w-1/2">
               <h2 class="text-xl font-bold mb-2 text-slate-700">Email:</h2>
               <AppInput :isNotSearch="true" id="name" type="input" placeholder="Email" v-model="emailInput"
-                @update:modelValue="setNeedsSaved(true, nameInput)"></AppInput>
+                @update:modelValue="setNeedsSaved(3, TabState, emailInput)"></AppInput>
             </div>
           </form>
-          <form class="flex justify-center mb-4">
+          <form class="flex justify-center mb-4 flex-col md:flex-row">
             <div class="px-2 w-full md:w-1/2">
               <h2 class="text-xl font-bold mb-2 text-slate-700">Password:</h2>
               <AppInput :isNotSearch="true" id="name" type="input" placeholder="Password" v-model="passwordInput"
-                @update:modelValue="setNeedsSaved(true, nameInput)"></AppInput>
+                @update:modelValue="setNeedsSaved(4, TabState, passwordInput, confirmPasswordInput)"></AppInput>
+            </div>
+            <div class="px-2 w-full md:w-1/2">
+              <h2 class="text-xl font-bold mb-2 text-slate-700">Confirm Password:</h2>
+              <AppInput :isNotSearch="true" id="name" type="input" placeholder="Password" v-model="confirmPasswordInput"
+                @update:modelValue="setNeedsSaved(5, TabState, confirmPasswordInput, passwordInput)"></AppInput>
             </div>
           </form>
         </div>
         <!-- Notifications Tab -->
-        <div v-if="TabState == TabStates.Notifications">
+        <div v-else-if="TabState == TabStates.Notifications">
           <div class="flex justify-center mb-4">
             <div>
               <h2 class="text-xl font-bold mb-2 text-slate-700">Push Notifications:</h2>
@@ -98,7 +103,7 @@
         </div>
         <div class="flex flex-row gap-2 justify-center items-center mb-2">
           <AppButton variant="primary-outline" to="/auth/log-out">Log Out</AppButton>
-          <AppButton v-if="needsSaved" @click="updateProfile()" variant="primary-outline">Save</AppButton>
+          <AppButton v-if="needsSaved" @click="updateProfile(TabState)" variant="primary-outline">Save</AppButton>
         </div>
       </div>
     </PageContent>
@@ -126,6 +131,7 @@ import { change } from "dom7";
 const { user } = useAuth();
 const userProfileImage = ref();
 const tempUserProfileImage = ref();
+const canSaveAgain = ref(true);
 
 const router = useRouter();
 
@@ -133,6 +139,7 @@ const nameInput = ref();
 const pfpInput = ref();
 const emailInput = ref();
 const passwordInput = ref();
+const confirmPasswordInput = ref();
 
 const TabStates = {
   Profile: "Profile",
@@ -144,6 +151,7 @@ const TabState = ref(TabStates.Profile);
 const needsSaved = ref(false);
 
 onMounted(async () => {
+  //changePassword.value = false;
   nameInput.value = user.value?.profile.name;
   emailInput.value = user.value?.email;
   userProfileImage.value = getUserProfileImage(user.value);
@@ -152,51 +160,111 @@ onMounted(async () => {
   if (!user.value) return router.replace("/");
 });
 
-async function updateProfile() {
-  var fileInput: any = document.getElementById("fileInput");
-  if (fileInput?.files.length != 0) {
-    user.value = await updateUserProfile(
-      nameInput.value,
-      "",
-      fileInput?.files[0],
-      user.value
-    );
-    userProfileImage.value = getUserProfileImage(user.value);
-    needsSaved.value = false;
-  } else {
-    let pfpBlob = await fetch(
-      getBucketUrl(user.value?.profile, user.value?.profile.avatar, {})
-    ).then((r) => r.blob());
-    user.value = await updateUserProfile(
-      nameInput.value,
-      "",
-      pfpBlob,
-      user.value
-    );
-    userProfileImage.value = getUserProfileImage(user.value);
-    needsSaved.value = false;
+async function updateProfile(Tab: string) {
+  if(canSaveAgain.value != true)
+    return;
+
+  canSaveAgain.value = false;
+  if(Tab == TabStates.Profile){
+    var fileInput: any = document.getElementById("fileInput");
+    if (fileInput?.files.length != 0) {
+      user.value = await updateUserProfile(
+        nameInput.value,
+        "",
+        fileInput?.files[0],
+        user.value
+      );
+      userProfileImage.value = getUserProfileImage(user.value);
+      needsSaved.value = false;
+      canSaveAgain.value = true;
+    } else {
+      let pfpBlob = await fetch(
+        getBucketUrl(user.value?.profile, user.value?.profile.avatar, {})
+      ).then((r) => r.blob());
+      user.value = await updateUserProfile(
+        nameInput.value,
+        "",
+        pfpBlob,
+        user.value
+      );
+      userProfileImage.value = getUserProfileImage(user.value);
+      needsSaved.value = false;
+      canSaveAgain.value = true;
+    }
+  }
+  else if(Tab == TabStates.Account){
+
+  }
+  else if(Tab == TabStates.Notifications){
+
   }
 }
 
-async function setNeedsSaved(isNameBar: boolean, value?: any, isRemove?: boolean, isChange?: boolean) {
-  if (isNameBar) {
-    needsSaved.value = true;
-    if (value == user.value?.profile.name) {
-      needsSaved.value = false;
-    }
-  }
-  else {
-    needsSaved.value = true;
-    if (isRemove) {
-      tempUserProfileImage.value = userProfileImage.value;
-      needsSaved.value = false;
-    }
-    else if (isChange) {
-      var tempPFP = await getTempPFP(value);
-      if (tempPFP == userProfileImage.value) {
+async function setNeedsSaved(Element: number, Tab: string | null |any, value?: any, addValue?: any) {
+  /*
+    Element Values:
+    0 = nameInput
+    1 = removeBtn
+    2 = changeBtn
+    3 = emailInput
+    4 = passwordInput
+    5 = confirmPasswordInput
+  */
+  if(Tab == TabStates.Profile){
+    if (Element == 0) {
+      needsSaved.value = true;
+      if (value == user.value?.profile.name) {
         needsSaved.value = false;
       }
     }
+    else {
+      needsSaved.value = true;
+      if (Element == 1) {
+        tempUserProfileImage.value = userProfileImage.value;
+        needsSaved.value = false;
+      }
+      else if (Element == 2) {
+        var tempPFP = await getTempPFP(value);
+        if (tempPFP == userProfileImage.value) {
+          needsSaved.value = false;
+        }
+      }
+    }
+  }
+  else if(Tab == TabStates.Account){
+    if(Element == 3){
+      needsSaved.value = true;
+      if(value == user.value?.email){
+        needsSaved.value = false;
+      }
+      else{
+        passwordInput.value = "";
+        confirmPasswordInput.value = "";
+      }
+    }
+    else{
+      needsSaved.value = true;
+      emailInput.value = user.value?.email;
+      if(Element == 4){
+        if(value.length < 5){
+          needsSaved.value = false;
+        }
+        else if(value != addValue){
+          needsSaved.value = false;
+        }
+      }
+      else if(Element == 5){
+        if(value.length < 5){
+          needsSaved.value = false;
+        }
+        else if(value != addValue){
+          needsSaved.value = false;
+        }
+      }
+    }
+  }
+  else if(Tab == TabStates.Notifications){
+
   }
 }
 
