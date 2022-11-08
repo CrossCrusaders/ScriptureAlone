@@ -8,7 +8,11 @@
         <h2 class="text-4xl font-bold mb-2 text-slate-900">
           Hello, {{ user?.profile.name }}!
         </h2>
+        <p>
+          {{ user?.profile.bio }}
+        </p>
       </PageHero>
+      <Divider></Divider>
       <div class="flex flex-col gap-2">
         <h2 class="text-2xl font-bold mb-2 text-slate-700">{{ TabState }}:</h2>
         <div class="flex gap-1">
@@ -131,9 +135,6 @@ const router = useRouter();
 
 const nameInput = ref();
 const pfpInput = ref();
-const emailInput = ref();
-const passwordInput = ref();
-const confirmPasswordInput = ref();
 
 const TabStates = {
   Profile: "Profile",
@@ -145,12 +146,11 @@ const TabState = ref(TabStates.Profile);
 const needsSaved = ref(false);
 
 onMounted(async () => {
+  if (!user.value) return router.replace("/");
+
   nameInput.value = user.value?.profile.name;
-  emailInput.value = user.value?.email;
   userProfileImage.value = getUserProfileImage(user.value);
   tempUserProfileImage.value = getUserProfileImage(user.value);
-
-  if (!user.value) return router.replace("/");
 });
 
 async function updateProfile(Tab: string) {
@@ -229,7 +229,7 @@ async function setNeedsSaved(Element: number, Tab: string | null |any, value?: a
     else {
       needsSaved.value = true;
       if (Element == 1) {
-        if(tempUserProfileImage.value == userProfileImage){
+        if(tempUserProfileImage.value == userProfileImage.value){
           needsSaved.value = false;
         }
       }
@@ -242,36 +242,7 @@ async function setNeedsSaved(Element: number, Tab: string | null |any, value?: a
     }
   }
   else if(Tab == TabStates.Account){
-    if(Element == 3){
-      needsSaved.value = true;
-      if(value == user.value?.email){
-        needsSaved.value = false;
-      }
-      else{
-        passwordInput.value = "";
-        confirmPasswordInput.value = "";
-      }
-    }
-    else{
-      needsSaved.value = true;
-      emailInput.value = user.value?.email;
-      if(Element == 4){
-        if(value.length < 5){
-          needsSaved.value = false;
-        }
-        else if(value != addValue){
-          needsSaved.value = false;
-        }
-      }
-      else if(Element == 5){
-        if(value.length < 5){
-          needsSaved.value = false;
-        }
-        else if(value != addValue){
-          needsSaved.value = false;
-        }
-      }
-    }
+    
   }
   else if(Tab == TabStates.Notifications){
 
@@ -290,12 +261,13 @@ async function getTempPFP(event: any) {
 }
 async function resetTempPFP() {
   tempUserProfileImage.value = userProfileImage.value;
-  pfpInput.value = null;
+  var fileInput: any = document.getElementById("fileInput");
+  fileInput.value = null;
 }
 async function removeTempPFP() {
-  console.log("remove")
   tempUserProfileImage.value = "/logo-bible.png"
-  console.log(tempUserProfileImage)
+  var fileInput: any = document.getElementById("fileInput");
+  fileInput.value = null;
 }
 </script>
 
