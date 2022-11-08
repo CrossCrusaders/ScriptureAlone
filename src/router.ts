@@ -11,6 +11,7 @@ import Register from './auth/pages/Register.vue'
 import LogOut from './auth/pages/LogOut.vue'
 import ForgotPassword from './auth/pages/ForgotPassword.vue'
 import ResetPassword from './auth/pages/ResetPassword.vue'
+import ChangePassword from './auth/pages/ChangePassword.vue'
 
 // User
 import UserDashboard from './user/pages/UserDashboard.vue'
@@ -74,6 +75,7 @@ const routes = [
   { path: '/auth/log-out', component: LogOut },
   { path: '/auth/forgot-password', component: ForgotPassword },
   { path: '/auth/confirm-password-reset', component: ResetPassword },
+  { path: '/auth/change-password', component: ChangePassword },
 
   // User
   { path: '/dashboard', component: UserDashboard },

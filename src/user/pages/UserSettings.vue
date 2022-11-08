@@ -23,7 +23,7 @@
       <div class="w-full border-2 border-solid rounded-tr-lg rounded-br-lg rounded-bl-lg border-slate-400 mb-4 p-4">
         <!-- Profile Tab -->
         <div v-if="TabState == TabStates.Profile">
-          <div class="flex justify-center mb-4 mt-2">
+          <div class="flex justify-center mb-4 mt-4">
             <div>
               <h2 class="text-xl font-bold mb-2 text-slate-700">Avatar:</h2>
               <div class="flex flex-row gap-4 overflow-hidden inline-block">
@@ -69,31 +69,18 @@
         </div>
         <!-- Account Tab -->
         <div v-else-if="TabState == TabStates.Account">
-          <form class="flex justify-center mb-4">
-            <div class="px-2 w-full md:w-1/2">
-              <h2 class="text-xl font-bold mb-2 text-slate-700">Email:</h2>
-              <AppInput :isNotSearch="true" id="name" type="input" placeholder="Email" v-model="emailInput"
-                @update:modelValue="setNeedsSaved(3, TabState, emailInput)"></AppInput>
-            </div>
-          </form>
-          <form class="flex justify-center mb-4 flex-col md:flex-row">
-            <div class="px-2 w-full md:w-1/2">
-              <h2 class="text-xl font-bold mb-2 text-slate-700">Password:</h2>
-              <AppInput :isNotSearch="true" id="name" type="input" placeholder="Password" v-model="passwordInput"
-                @update:modelValue="setNeedsSaved(4, TabState, passwordInput, confirmPasswordInput)"></AppInput>
-            </div>
-            <div class="px-2 w-full md:w-1/2">
-              <h2 class="text-xl font-bold mb-2 text-slate-700">Confirm Password:</h2>
-              <AppInput :isNotSearch="true" id="name" type="input" placeholder="Password" v-model="confirmPasswordInput"
-                @update:modelValue="setNeedsSaved(5, TabState, confirmPasswordInput, passwordInput)"></AppInput>
-            </div>
-          </form>
+          <div class="flex justify-center mb-4 mt-2">
+            <AppButton to="/">Change Email</AppButton>
+          </div>
+          <div class="flex justify-center mb-4">
+            <AppButton to="/auth/change-password">Change Password</AppButton>
+          </div>
         </div>
         <!-- Notifications Tab -->
         <div v-else-if="TabState == TabStates.Notifications">
-          <div class="flex justify-center mb-4">
+          <div class="flex justify-center">
             <div>
-              <h2 class="text-xl font-bold mb-2 text-slate-700">Push Notifications:</h2>
+              <h2 class="text-xl font-bold mb-4 mt-4 text-slate-700">Push Notifications:</h2>
               <div class="flex justify-center overflow-hidden inline-block">
                 <input type="checkbox" class="w-6 h-6" value="true" />
               </div>
@@ -108,10 +95,10 @@
             </div>
           </div>
         </div>
-        <div class="flex flex-row gap-2 justify-center items-center mb-2">
-          <AppButton variant="primary-outline" to="/auth/log-out">Log Out</AppButton>
-          <AppButton v-if="needsSaved" @click="updateProfile(TabState)" variant="primary-outline">Save</AppButton>
-        </div>
+      </div>
+      <div class="flex flex-row gap-2 justify-center items-center mb-2">
+        <AppButton variant="primary-outline" to="/auth/log-out">Log Out</AppButton>
+        <AppButton v-if="needsSaved" @click="updateProfile(TabState)" variant="primary-outline">Save</AppButton>
       </div>
     </PageContent>
   </AppLayout>
