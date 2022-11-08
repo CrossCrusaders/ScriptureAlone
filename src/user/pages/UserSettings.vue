@@ -1,6 +1,7 @@
 <template>
   <AppLayout>
-    <PageContent>
+    <!-- Profile Tab -->
+    <PageContent v-if="TabState == TabStates.Profile">
       <PageHero>
         <template v-slot:image>
           <img @click="" :src="userProfileImage" class="max-h-32 w-32 h-32 max-w-32 rounded-full" />
@@ -13,6 +14,144 @@
         <div class="flex justify-center mb-4 mt-2">
           <div>
             <h2 class="text-xl font-bold mb-2 text-slate-700">Avatar:</h2>
+            <div class="flex flex-row gap-4 overflow-hidden inline-block">
+              <div>
+                <img @click="" :src="tempUserProfileImage"
+                  class="max-h-32 w-32 h-32 max-w-32 hover:brightness-75 transition-all rounded-full" />
+              </div>
+              <div class="flex flex-col gap-4 overflow-hidden inline-block">
+                <div class="relative overflow-hidden inline-block">
+                  <button
+                    class="border-2 border-solid rounded border-slate-700 text-slate-700 bg-white text-lg font-bold max-h-16 w-48 h-16 max-w-48">
+                    Change Profile Picture
+                  </button>
+                  <input type="file" id="fileInput"
+                    class="text-lg absolute left-0 top-0 opacity-0 max-h-16 w-48 h-16 max-w-48" ref="pfpInput"
+                    @change="getTempPFP($event); setNeedsSaved(false, $event, false, true);" />
+                </div>
+                <div class="relative overflow-hidden inline-block">
+                  <button
+                    class="border-2 border-solid rounded border-slate-700 text-slate-700 bg-white text-lg font-bold max-h-8 w-48 h-8 max-w-48"
+                    @click="tempUserProfileImage = userProfileImage; pfpInput.value = null; setNeedsSaved(false, null, true);">
+                    Remove Image
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <form class="flex justify-center mb-4">
+          <div class="px-2 w-full md:w-1/2">
+            <h2 class="text-xl font-bold mb-2 text-slate-700">Name:</h2>
+            <AppInput :isNotSearch="true" id="name" type="input" placeholder="Username" v-model="nameInput"
+              @update:modelValue="setNeedsSaved(true, nameInput)"></AppInput>
+          </div>
+        </form>
+        <div class="flex justify-center mb-4">
+          <div>
+            <h2 class="text-xl font-bold mb-2 text-slate-700">Push Notifications:</h2>
+            <div class="flex justify-center overflow-hidden inline-block">
+              <input type="checkbox" class="w-6 h-6" value="true" />
+            </div>
+          </div>
+        </div>
+        <div class="flex justify-center mb-4">
+          <div>
+            <h2 class="text-xl font-bold mb-2 text-slate-700">Email Notifications:</h2>
+            <div class="flex justify-center inline-block">
+              <input type="checkbox" class="w-6 h-6" value="true" />
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-row gap-2 justify-center items-center mb-2">
+          <AppButton variant="primary-outline" to="/auth/log-out">Log Out</AppButton>
+          <AppButton v-if="needsSaved" @click="updateProfile()" variant="primary-outline">Save</AppButton>
+        </div>
+      </div>
+    </PageContent>
+    <!-- Account Tab -->
+    <PageContent v-else-if="TabState == TabStates.Account">
+      <PageHero>
+        <template v-slot:image>
+          <img @click="" :src="userProfileImage" class="max-h-32 w-32 h-32 max-w-32 rounded-full" />
+        </template>
+        <h2 class="text-4xl font-bold mb-2 text-slate-900">
+          Hello {{ user?.profile.name }}
+        </h2>
+      </PageHero>
+      <div class="w-full border-2 border-solid rounded border-slate-400 mb-4 p-4">
+        <div class="flex justify-center mb-4 mt-2">
+          <div>
+            <h2 class="text-xl font-bold mb-2 text-slate-700">Account:</h2>
+            <div class="flex flex-row gap-4 overflow-hidden inline-block">
+              <div>
+                <img @click="" :src="tempUserProfileImage"
+                  class="max-h-32 w-32 h-32 max-w-32 hover:brightness-75 transition-all rounded-full" />
+              </div>
+              <div class="flex flex-col gap-4 overflow-hidden inline-block">
+                <div class="relative overflow-hidden inline-block">
+                  <button
+                    class="border-2 border-solid rounded border-slate-700 text-slate-700 bg-white text-lg font-bold max-h-16 w-48 h-16 max-w-48">
+                    Change Profile Picture
+                  </button>
+                  <input type="file" id="fileInput"
+                    class="text-lg absolute left-0 top-0 opacity-0 max-h-16 w-48 h-16 max-w-48" ref="pfpInput"
+                    @change="getTempPFP($event); setNeedsSaved(false, $event, false, true);" />
+                </div>
+                <div class="relative overflow-hidden inline-block">
+                  <button
+                    class="border-2 border-solid rounded border-slate-700 text-slate-700 bg-white text-lg font-bold max-h-8 w-48 h-8 max-w-48"
+                    @click="tempUserProfileImage = userProfileImage; pfpInput.value = null; setNeedsSaved(false, null, true);">
+                    Remove Image
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <form class="flex justify-center mb-4">
+          <div class="px-2 w-full md:w-1/2">
+            <h2 class="text-xl font-bold mb-2 text-slate-700">Name:</h2>
+            <AppInput :isNotSearch="true" id="name" type="input" placeholder="Username" v-model="nameInput"
+              @update:modelValue="setNeedsSaved(true, nameInput)"></AppInput>
+          </div>
+        </form>
+        <div class="flex justify-center mb-4">
+          <div>
+            <h2 class="text-xl font-bold mb-2 text-slate-700">Push Notifications:</h2>
+            <div class="flex justify-center overflow-hidden inline-block">
+              <input type="checkbox" class="w-6 h-6" value="true" />
+            </div>
+          </div>
+        </div>
+        <div class="flex justify-center mb-4">
+          <div>
+            <h2 class="text-xl font-bold mb-2 text-slate-700">Email Notifications:</h2>
+            <div class="flex justify-center inline-block">
+              <input type="checkbox" class="w-6 h-6" value="true" />
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-row gap-2 justify-center items-center mb-2">
+          <AppButton variant="primary-outline" to="/auth/log-out">Log Out</AppButton>
+          <AppButton v-if="needsSaved" @click="updateProfile()" variant="primary-outline">Save</AppButton>
+        </div>
+      </div>
+    </PageContent>
+    <!-- Notifications Tab -->
+    <PageContent v-else-if="TabState == TabStates.Notifications">
+      <PageHero>
+        <template v-slot:image>
+          <img @click="" :src="userProfileImage" class="max-h-32 w-32 h-32 max-w-32 rounded-full" />
+        </template>
+        <h2 class="text-4xl font-bold mb-2 text-slate-900">
+          Hello {{ user?.profile.name }}
+        </h2>
+      </PageHero>
+      <div class="w-full border-2 border-solid rounded border-slate-400 mb-4 p-4">
+        <div class="flex justify-center mb-4 mt-2">
+          <div>
+            <h2 class="text-xl font-bold mb-2 text-slate-700">Notifications:</h2>
             <div class="flex flex-row gap-4 overflow-hidden inline-block">
               <div>
                 <img @click="" :src="tempUserProfileImage"
@@ -98,6 +237,13 @@ const router = useRouter();
 const nameInput = ref();
 const pfpInput = ref();
 
+const TabStates = {
+  Profile: 0,
+  Account: 1,
+  Notifications: 2
+};
+const TabState = ref(TabStates.Profile);
+
 const needsSaved = ref(false);
 
 onMounted(async () => {
@@ -113,7 +259,7 @@ async function updateProfile() {
   if (fileInput?.files.length != 0) {
     user.value = await updateUserProfile(
       nameInput.value,
-      "Christian, Game Dev, Software Engineer, Web Designer.",
+      "",
       fileInput?.files[0],
       user.value
     );
@@ -125,7 +271,7 @@ async function updateProfile() {
     ).then((r) => r.blob());
     user.value = await updateUserProfile(
       nameInput.value,
-      "Christian, Game Dev, Software Engineer, Web Designer.",
+      "",
       pfpBlob,
       user.value
     );

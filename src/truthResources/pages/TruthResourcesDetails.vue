@@ -146,17 +146,20 @@
   })
   
   const devotionalAudioSrc = computed(() => {
-    return truthResourceDetail.value?.externalAudioFileUrl || truthResourceDetail.value?.audioFile
+    //return truthResourceDetail.value?.externalAudioFileUrl || truthResourceDetail.value?.audioFile
+    return ""
   })
   
   const devotionalVideoSrc = computed(() => {
-    return truthResourceDetail.value?.externalVideoFileUrl
+    //return truthResourceDetail.value?.externalVideoFileUrl
+    return ""
   })
   
   const devotionalLastUpdatedDisplay = computed(() => {
-    const strDate = (truthResourceDetail.value?.devotionalDate || truthResourceDetail.value?.updated) as any
-    const date = new Date(strDate.split(' ')[0])
-    return format(date, 'MM/dd/yyyy')
+    //const strDate = (truthResourceDetail.value?.devotionalDate || truthResourceDetail.value?.updated) as any
+    //const date = new Date(strDate.split(' ')[0])
+    //return format(date, 'MM/dd/yyyy')
+    return ""
   })
   
   const beforeAudioModalClose = () => {
