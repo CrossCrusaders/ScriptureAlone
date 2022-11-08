@@ -6,16 +6,21 @@
           <img @click="" :src="userProfileImage" class="max-h-32 w-32 h-32 max-w-32 rounded-full" />
         </template>
         <h2 class="text-4xl font-bold mb-2 text-slate-900">
-          Hello {{ user?.profile.name }}
+          Hello, {{ user?.profile.name }}!
         </h2>
       </PageHero>
-      <div class="flex flex-row gap-4">
+      <div class="flex flex-col gap-2">
         <h2 class="text-2xl font-bold mb-2 text-slate-700">{{ TabState }}:</h2>
-        <button ref="ProfileBtn"  @click="TabState = TabStates.Profile">Profile</button>
-        <button ref="AccountBtn"  @click="TabState = TabStates.Account">Account</button>
-        <button ref="NotifBtn" @click="TabState = TabStates.Notifications">Notifications</button>
+        <div class="flex gap-1">
+          <button v-if="TabState != TabStates.Profile" class="border-t-2 border-l-2 border-r-2 border-solid rounded-tl-lg rounded-tr-lg border-slate-400 p-1 hover:bg-slate-200 transition-all" @click="TabState = TabStates.Profile; needsSaved = false; tempUserProfileImage = userProfileImage">Profile</button>
+          <button v-else class="bg-slate-400 border-t-2 border-l-2 border-r-2 border-solid rounded-tl-lg rounded-tr-lg border-slate-400 p-1">Profile</button>
+          <button v-if="TabState != TabStates.Account" class="border-t-2 border-l-2 border-r-2 border-solid rounded-tl-lg rounded-tr-lg border-slate-400 p-1 hover:bg-slate-200 transition-all" @click="TabState = TabStates.Account; needsSaved = false">Account</button>
+          <button v-else class="bg-slate-400 border-t-2 border-l-2 border-r-2 border-solid rounded-tl-lg rounded-tr-lg border-slate-400 p-1">Account</button>
+          <button v-if="TabState != TabStates.Notifications" class="border-t-2 border-l-2 border-r-2 border-solid rounded-tl-lg rounded-tr-lg border-slate-400 p-1 hover:bg-slate-200 transition-all" @click="TabState = TabStates.Notifications; needsSaved = false">Notifications</button>
+          <button v-else class="bg-slate-400 border-t-2 border-l-2 border-r-2 border-solid rounded-tl-lg rounded-tr-lg border-slate-400 p-1">Notifications</button>
+        </div>
       </div>
-      <div class="w-full border-2 border-solid rounded border-slate-400 mb-4 p-4">
+      <div class="w-full border-2 border-solid rounded-tr-lg rounded-br-lg rounded-bl-lg border-slate-400 mb-4 p-4">
         <!-- Profile Tab -->
         <div v-if="TabState == TabStates.Profile">
           <div class="flex justify-center mb-4 mt-2">
@@ -57,7 +62,20 @@
         </div>
         <!-- Account Tab -->
         <div v-if="TabState == TabStates.Account">
-         
+          <form class="flex justify-center mb-4">
+            <div class="px-2 w-full md:w-1/2">
+              <h2 class="text-xl font-bold mb-2 text-slate-700">Email:</h2>
+              <AppInput :isNotSearch="true" id="name" type="input" placeholder="Email" v-model="emailInput"
+                @update:modelValue="setNeedsSaved(true, nameInput)"></AppInput>
+            </div>
+          </form>
+          <form class="flex justify-center mb-4">
+            <div class="px-2 w-full md:w-1/2">
+              <h2 class="text-xl font-bold mb-2 text-slate-700">Password:</h2>
+              <AppInput :isNotSearch="true" id="name" type="input" placeholder="Password" v-model="passwordInput"
+                @update:modelValue="setNeedsSaved(true, nameInput)"></AppInput>
+            </div>
+          </form>
         </div>
         <!-- Notifications Tab -->
         <div v-if="TabState == TabStates.Notifications">
@@ -113,10 +131,8 @@ const router = useRouter();
 
 const nameInput = ref();
 const pfpInput = ref();
-
-const ProfileBtn = ref();
-const AccountBtn = ref();
-const NotifBtn = ref();
+const emailInput = ref();
+const passwordInput = ref();
 
 const TabStates = {
   Profile: "Profile",
@@ -129,6 +145,7 @@ const needsSaved = ref(false);
 
 onMounted(async () => {
   nameInput.value = user.value?.profile.name;
+  emailInput.value = user.value?.email;
   userProfileImage.value = getUserProfileImage(user.value);
   tempUserProfileImage.value = getUserProfileImage(user.value);
 
