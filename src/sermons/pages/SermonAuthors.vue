@@ -12,7 +12,7 @@
               <AppButton variant="primary-minimal" size="sm" type="submit" v-if="!hasSearch">
                 <Icon icon-name="magnify"></Icon>
               </AppButton>
-              <AppButton variant="primary-minimal" @click="onClearClicked" size="sm" v-else>
+              <AppButton variant="primary-minimal" @focus="onClearClicked" size="sm" v-else>
                 <Icon icon-name="close"></Icon>
               </AppButton>
             </template>
@@ -47,9 +47,10 @@ import AuthorDisplayCard from '../../components/molecules/AuthorDisplayCard.vue'
 import { useRoute, useRouter } from 'vue-router';
 import { Author } from '../../authors/Author';
 import { onMounted, ref } from 'vue';
-import { searchAuthors } from '../../authors/services/AuthorService';
+//import { searchAuthors } from '../../authors/services/AuthorService';
 import AppButton from '../../components/atoms/form-controls/AppButton.vue';
 import InfiniteScrollContent from '../../components/templates/InfiniteScrollContent.vue';
+import { getSearchAuthors } from '../../search/services/searchService';
 
 
 const router = useRouter()
@@ -87,7 +88,7 @@ const loadSearchedAuthors = async () => {
       hasSearch.value = true
     else
       hasSearch.value = false
-    const authorsResult = await searchAuthors(currentQuery.value, currentPage.value, countPerPage)
+    const authorsResult = await getSearchAuthors(currentQuery.value, currentPage.value, countPerPage)
     authors.value = authors.value.concat(authorsResult.items)
     if (authorsResult.page >= authorsResult.totalPages)
       reachedEnd.value = true
