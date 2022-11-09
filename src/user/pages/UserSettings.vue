@@ -115,7 +115,7 @@ import AppLayout from "../../components/templates/AppLayout.vue";
 import PageContent from "../../components/templates/PageContent.vue";
 import PageHero from "../../components/molecules/PageHero.vue";
 import { useAuth } from "../../auth/services/AuthService";
-import { getUserProfileImage, updateUserProfile } from "../services/UserService";
+import { getUserProfileImage, updateUserProfile, refreshUser } from "../services/UserService";
 import Badge from "../../components/molecules/Badge.vue";
 import Divider from "../../components/atoms/Divider.vue";
 import PocketBaseClient from "../../api/PocketBaseClient";
@@ -148,8 +148,11 @@ const needsSaved = ref(false);
 onMounted(async () => {
   if (!user.value) return router.replace("/");
 
+  var Refresher = await refreshUser();
+
   nameInput.value = user.value?.profile.name;
   userProfileImage.value = getUserProfileImage(user.value);
+  console.log(userProfileImage.value)
   tempUserProfileImage.value = getUserProfileImage(user.value);
 });
 

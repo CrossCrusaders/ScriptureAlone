@@ -161,7 +161,11 @@ export async function updateUserProfile(name: string | Blob, bio: string | Blob,
 
   user.profile = updatedProfile as any;
 
-  await PocketBaseClient.users.refresh();
+  await refreshUser()
 
   return user;
+}
+
+export async function refreshUser(){
+  await PocketBaseClient.users.refresh();
 }

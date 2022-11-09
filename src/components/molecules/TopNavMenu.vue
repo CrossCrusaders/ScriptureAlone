@@ -65,9 +65,10 @@
 
 <script setup lang="ts">
 
-import { computed, ref } from 'vue';
+import { computed, ref, onMounted } from 'vue';
 import { useBreakpoint } from '../../browser/ViewportService'
 import { useAuth } from '../../auth/services/AuthService'
+import { refreshUser } from '../../user/services/UserService'
 import AppButton from '../atoms/form-controls/AppButton.vue'
 import LogoAndName from './LogoAndName.vue'
 import Icon from '../atoms/Icon.vue'
@@ -75,6 +76,10 @@ import UserProfileBadge from '../organisms/UserProfileBadge.vue';
 
 const { breakpoint } = useBreakpoint()
 const { user } = useAuth()
+
+onMounted(async() => {
+  var Refresher = await refreshUser();
+})
 
 const mobileLinkClass = "block px-3 py-3"
 
