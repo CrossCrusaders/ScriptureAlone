@@ -1,7 +1,4 @@
-# This workflow will do a clean installation of node dependencies, cache/restore them, build the source code and run tests across different versions of node
-# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-nodejs
-
-name: Node.js CI
+name: Build and Deploy
 
 on:
   push:
@@ -28,14 +25,14 @@ jobs:
     - run: npm i
     - run: npm run build
     - run: scp -r ./dist/* scripturealone@scripturealone.app:/var/www/html
-    - name: SCP Upload
-      # You may pin to the exact commit or the version.
-      # uses: betanzos/scp-upload@6681a6d4596e23b96314c6c4ae2c154d4c4d346c
-      uses: betanzos/scp-upload@v1
+    - name: scp-deployer
+      uses: siva1024/scp-deployer@v1.0
       with:
-        source: ./dist/*
+        # ssh remote host
         host: scripturealone.app
+        # ssh remote user
         username: scripturealone
         key: ${{ secrets.PRIVATE_KEY }}
-        remote_dir: /var/www/html
-        recursive: true
+        source: ./dist/*
+        # destination to download on server
+        target: /var/www/html
