@@ -12,7 +12,7 @@
               <AppButton variant="primary-minimal" size="sm" type="submit" v-if="!hasSearch">
                 <Icon icon-name="magnify"></Icon>
               </AppButton>
-              <AppButton variant="primary-minimal" @click="onClearClicked" size="sm" v-else>
+              <AppButton variant="primary-minimal" @focus="onClearClicked" size="sm" v-else>
                 <Icon icon-name="close"></Icon>
               </AppButton>
             </template>
@@ -59,9 +59,12 @@ const currentPage = ref(1)
 const countPerPage = 27
 
 const onFormSubmit = async () => {
-  searchedQuery.value = currentQuery.value
-  currentPage.value = 1
-  hasSearch.value = true
+  searchedQuery.value = currentQuery.value;
+  currentPage.value = 1;
+  hasSearch.value = true;
+  if(searchedQuery.value == ""){
+    hasSearch.value = false;
+  }
 }
 
 const onClearClicked = async () => {
