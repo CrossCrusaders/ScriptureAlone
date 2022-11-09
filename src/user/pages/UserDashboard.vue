@@ -86,8 +86,8 @@ import { useAuth } from '../../auth/services/AuthService'
 import { getUserProfileImage, useUserFavorites, refreshUser } from '../services/UserService'
 import Badge from '../../components/molecules/Badge.vue'
 import ContentPreviewGrid from '../../components/molecules/ContentPreviewGrid.vue'
-import { getRecentDevotionals, getUserFavoriteDevotionals } from '../../devotionals/services/DevotionalService'
-import { getRecentSermons, getUserFavoriteSermons } from '../../sermons/services/SermonService'
+import { getUserFavoriteDevotionals } from '../../devotionals/services/DevotionalService'
+import { getUserFavoriteSermons } from '../../sermons/services/SermonService'
 import Divider from '../../components/atoms/Divider.vue'
 
 const categories = ref<any>([{ name: "Read VOTD", link: "/#VOTD", badge: "book-heart" }, { name: "Are you failing?", link: "", badge: "hands-pray" }, { name: "Are you truly saved?", link: "https://independentbaptist.church/salvation", badge: "cross" }, { name: "Join a Bible-based church.", link: "https://independentbaptist.church/", badge: "church" }]);
