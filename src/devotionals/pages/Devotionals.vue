@@ -1,124 +1,84 @@
 <template>
   <AppLayout>
     <PageContent>
-
-      <!-- Devotionals Hero -->
-      <PageHero>
-        <template v-slot:image>
-          <img src="/logo-bible.png" class="object-contain hidden md:block max-h-32" />
-        </template>
-        <h2 class="text-4xl font-bold mb-2 text-slate-900">Daily Devotionals</h2>
-        <p class="text-slate-600 max-w-prose">
-          Find devotionals that will encourage you as you walk with the Lord. Devotionals are great way to enhance your
-          daily bible reading program
-          and find help in a time of need for whatever you may be facing. We pray you are encouraged.
-        </p>
-        <template v-slot:actions>
-          <!-- <AppButton>Read Now</AppButton> -->
-        </template>
-      </PageHero>
-
-      <form @submit.prevent="handleSearchSubmit($event)" class="flex justify-center mb-10">
-        <div class="px-2 w-full md:w-1/2">
-          <AppInput id="searchBar" type="input" name="query" v-model="searchModel" placeholder="Search Devotionals">
+      <h1 id="page-title__devotional-authors"
+        class="max-w-prose mx-auto text-slate-800 text-center text-5xl font-title font-bold mt-8 mb-8">Search
+        Devotionals
+      </h1>
+      <div class="max-w-prose mx-auto mb-8">
+        <form @submit.prevent="onFormSubmit">
+          <AppInput placeholder="Search For Devotionals" v-model="currentQuery">
             <template v-slot:postfix>
-              <AppButton variant="primary-minimal" size="sm" v-if="hasSearch" @click="clearCurrentSearch">
-                <Icon icon-name="close"></Icon>
-              </AppButton>
-              <AppButton variant="primary-minimal" size="sm" v-else type="submit">
+              <AppButton variant="primary-minimal" size="sm" type="submit" v-if="!hasSearch">
                 <Icon icon-name="magnify"></Icon>
               </AppButton>
-
+              <AppButton variant="primary-minimal" @click="onClearClicked" size="sm" v-else>
+                <Icon icon-name="close"></Icon>
+              </AppButton>
             </template>
           </AppInput>
-          <AppButton variant="primary-light" class="block w-full md:hidden mt-4" type="submit">Search</AppButton>
-        </div>
-      </form>
-
-      <!-- Devotionals Grid Display -->
-      <div class="mb-10">
-        <DevotionalsPreviewGrid :query="currentSearchQuery" :page="currentPage" :show-spinner-while-loading="true"
-          @click:button="router.push(`/devotionals/${$event.id}`)" @data:loaded="onDevotionalDataLoaded">
-        </DevotionalsPreviewGrid>
-        <div class="flex justify-between mt-2 mb-12 p-4">
-          <div>
-            <AppButton @click="onPreviousPageClicked" v-if="currentPaginationData?.page != 1" variant="primary-outline">
-              &lt;&nbsp;Previous
-            </AppButton>
-          </div>
-
-          <div>
-            <AppButton @click="onNextPageClicked"
-              v-if="currentPaginationData?.page != currentPaginationData?.totalPages" variant="primary-outline">
-              Next&nbsp;&gt;
-            </AppButton>
-          </div>
-        </div>
-
+        </form>
       </div>
-
-      <!-- My Plans -->
-      <UserRecommendationFooter></UserRecommendationFooter>
+      <InfiniteScrollContent @scroll:end="onScrollEnd">
+        <DevotionalsPreviewGrid @data:loaded="loading = false" :append-content="true" :per-page="16" :page="currentPage"
+          :query="searchedQuery" :query-params="queryParams">
+        </DevotionalsPreviewGrid>
+      </InfiniteScrollContent>
+      <div v-if="reachedEnd">
+        <p class="text-center text-xl font-bold mb-4">End of Results</p>
+        <p class="text-center text-xl mb-8 underline">
+          <a href="#page-title__devotional-authors">
+            Back To Top?
+          </a>
+        </p>
+      </div>
     </PageContent>
   </AppLayout>
 </template>
 
 <script setup lang="ts">
-
-import AppLayout from "../../components/templates/AppLayout.vue"
-import PageContent from "../../components/templates/PageContent.vue"
-import AppButton from "../../components/atoms/form-controls/AppButton.vue"
-import { computed, onMounted, ref } from "vue"
-import Icon from "../../components/atoms/Icon.vue"
-
-import PageHero from "../../components/molecules/PageHero.vue"
-import { useRouter, useRoute } from "vue-router"
-import AppInput from "../../components/atoms/form-controls/AppInput.vue"
-import DevotionalsPreviewGrid from "../components/DevotionalsPreviewGrid.vue"
-import UserRecommendationFooter from "../../components/organisms/UserRecommendationFooter.vue"
-import { DevotionalSearch } from "../DevotionalSearch"
-import { Pagination } from "../../core/Pagination"
-import Spinner from "../../components/atoms/Spinner.vue"
+import AppLayout from '../../components/templates/AppLayout.vue'
+import PageContent from '../../components/templates/PageContent.vue'
+import AppInput from '../../components/atoms/form-controls/AppInput.vue'
+import Icon from '../../components/atoms/Icon.vue'
+import { ref } from 'vue'
+import AppButton from '../../components/atoms/form-controls/AppButton.vue'
+import InfiniteScrollContent from '../../components/templates/InfiniteScrollContent.vue'
+import DevotionalsPreviewGrid from '../components/DevotionalsPreviewGrid.vue'
 
 const loading = ref<boolean>(false)
-const searchModel = ref("")
-const router = useRouter()
+const reachedEnd = ref<boolean>(false)
+const queryParams = ref<any>({})
 
-const currentPaginationData = ref<Pagination>()
-const currentPage = ref<number>(1)
-const currentSearchQuery = ref<string>('')
+const hasSearch = ref(false)
 
+const currentQuery = ref<string>('')
+const searchedQuery = ref<string>('')
 
-const handleSearchSubmit = async (event: Event) => {
-  currentSearchQuery.value = searchModel.value
-}
+const currentPage = ref(1)
+const countPerPage = 27
 
-const onDevotionalDataLoaded = async (data: DevotionalSearch) => {
-  const { items, ...pagination } = data
-  currentPaginationData.value = { ...pagination }
-  loading.value = false
-}
-
-const hasSearch = computed(() => !!currentSearchQuery.value)
-
-const clearCurrentSearch = () => {
-  currentSearchQuery.value = ''
+const onFormSubmit = async () => {
+  searchedQuery.value = currentQuery.value
   currentPage.value = 1
+  hasSearch.value = true
 }
 
-const onPreviousPageClicked = () => {
-  if (!loading.value && currentPage.value > 1) {
-    currentPage.value -= 1
-    loading.value = true
-  }
+const onClearClicked = async () => {
+  searchedQuery.value = ''
+  currentQuery.value = ''
+  currentPage.value = 1
+  hasSearch.value = false
 }
-const onNextPageClicked = () => {
-  if (!loading.value) {
-    if (currentPaginationData.value)
-      currentPage.value = Math.min(currentPage.value + 1, currentPaginationData.value.totalPages)
-    else
-      currentPage.value += 1
-    loading.value = true
+
+
+const onScrollEnd = async () => {
+  if (!reachedEnd.value) {
+    currentPage.value += 1
   }
 }
 </script>
+
+<style scoped>
+
+</style>

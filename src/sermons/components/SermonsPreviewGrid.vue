@@ -18,12 +18,13 @@ import { ContentPreview } from '../../components/molecules/ContentPreviewCard.vu
 import ContentPreviewGrid from '../../components/molecules/ContentPreviewGrid.vue'
 import { Pagination } from '../../core/Pagination';
 import { Sermon } from '../Sermon';
-import { searchSermons } from '../services/SermonService'
 import Spinner from '../../components/atoms/Spinner.vue';
 import { Author } from '../../authors/Author';
 import { useUserFavorites } from '../../user/services/UserService';
 import { useAuth } from '../../auth/services/AuthService';
 
+import { getSearch } from '../../search/services/searchService'
+ 
 export interface SermonsPreviewGridProps {
   queryParams?: any
   page?: number
@@ -64,7 +65,7 @@ const loadSearchedSermons = async (forceReset = false) => {
   }
   loading.value = true
   try {
-    const { items, ...paginationData } = await searchSermons(props.query, props.page, props.perPage, props.queryParams)
+    const { items, ...paginationData } = await getSearch('sermons', props.query, props.page, props.perPage, props.queryParams)
     if (props.appendContent && !forceReset) {
       loadedSermons.value = loadedSermons.value.concat(items as ContentPreview[])
     }

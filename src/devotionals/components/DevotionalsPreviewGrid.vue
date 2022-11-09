@@ -1,10 +1,7 @@
 <template>
-  <div class="flex justify-center" v-if="props.showSpinnerWhileLoading && loading">
-    <Spinner color="slate-800"></Spinner>
-  </div>
-  <ContentPreviewGrid :show-favorite="!!user" :is-favorite="isFavoriteDevotional" v-else :content="loadedDevotionals"
-    :button-title="'View Devotional'" @click:button="onDevotionalCardClicked($event)"
-    @click:favorite="onFavoriteClicked" @click:author="onDevotionalAuthorClicked">
+  <ContentPreviewGrid :show-favorite="!!user" :is-favorite="isFavoriteDevotional" :content="loadedDevotionals"
+    :button-title="'View Devotional'" @click:button="onDevotionalCardClicked" @click:author="onDevotionalAuthorClicked"
+    @click:favorite="onFavoriteDevotionalClicked($event)">
   </ContentPreviewGrid>
   <div v-if="props.paginationControls"></div>
   <div v-if="props.appendContent">
@@ -20,14 +17,14 @@ import { useRouter } from 'vue-router';
 import { ContentPreview } from '../../components/molecules/ContentPreviewCard.vue';
 import ContentPreviewGrid from '../../components/molecules/ContentPreviewGrid.vue'
 import { Pagination } from '../../core/Pagination';
-
-import { searchDevotionals } from '../services/DevotionalService'
-import Spinner from '../../components/atoms/Spinner.vue';
 import { Devotional } from '../Devotional';
+import Spinner from '../../components/atoms/Spinner.vue';
 import { Author } from '../../authors/Author';
 import { useUserFavorites } from '../../user/services/UserService';
 import { useAuth } from '../../auth/services/AuthService';
 
+import { getSearch } from '../../search/services/searchService'
+ 
 export interface DevotionalsPreviewGridProps {
   queryParams?: any
   page?: number
@@ -36,7 +33,6 @@ export interface DevotionalsPreviewGridProps {
   paginationControls?: boolean
   appendContent?: boolean
   query?: string | null
-  showSpinnerWhileLoading?: boolean
 }
 
 const props = withDefaults(defineProps<DevotionalsPreviewGridProps>(), {
@@ -45,30 +41,31 @@ const props = withDefaults(defineProps<DevotionalsPreviewGridProps>(), {
   query: null
 })
 
-const { loadFavorites, toggleUserFavoriteDevotional, isUserFavoriteDevotional } = useUserFavorites()
-const { user } = useAuth()
-
 const loading = ref<boolean>(false)
 const loadedDevotionals = ref<ContentPreview[]>([])
 const router = useRouter()
 const emit = defineEmits([
   'click:button', // TODO: better name?
+  'click:author',
   'page:change',
   'page:next',
   'page:previous',
   'data:loaded'
 ])
 
+const { loadFavorites, isUserFavoriteDevotional, toggleUserFavoriteDevotional } = useUserFavorites()
+const { user } = useAuth()
+
 const pagination = ref<Pagination | null>(null)
 
 const loadSearchedDevotionals = async (forceReset = false) => {
-  // if (pagination.value && pagination.value.totalPages === pagination.value.page && !forceReset) {
-  //   loading.value = false
-  //   return
-  // }
+  if (pagination.value && pagination.value.totalPages === pagination.value.page && !forceReset) {
+    loading.value = false
+    return
+  }
   loading.value = true
   try {
-    const { items, ...paginationData } = await searchDevotionals(props.query, props.page, props.perPage, props.queryParams)
+    const { items, ...paginationData } = await getSearch('devotionals', props.query, props.page, props.perPage, props.queryParams)
     if (props.appendContent && !forceReset) {
       loadedDevotionals.value = loadedDevotionals.value.concat(items as ContentPreview[])
     }
@@ -81,10 +78,8 @@ const loadSearchedDevotionals = async (forceReset = false) => {
   }
 }
 
-
 onMounted(async () => {
   loadSearchedDevotionals()
-
 
   // Initialize watch after initial load
   watch(() => props.page, (currentPage, prevPage) => {
@@ -97,7 +92,7 @@ onMounted(async () => {
         emit('page:next')
       else if (currentPage < prevPage)
         emit('page:previous')
-    }, 500)
+    }, 800)
   })
   watch(() => props.perPage, () => loadSearchedDevotionals())
   watch(() => props.queryParams, () => loadSearchedDevotionals())
@@ -105,6 +100,7 @@ onMounted(async () => {
   watch(() => props.query, (currentQuery, prevQuery) => {
     loadSearchedDevotionals(true)
   })
+
   await loadFavorites()
 })
 
@@ -116,6 +112,7 @@ const onDevotionalCardClicked = (devotional: Devotional) => {
 
 const onDevotionalAuthorClicked = (author: Author) => {
   router.push(`/authors/${author.id}`)
+  emit('click:author')
 }
 
 const isFavoriteDevotional = (devotional: Devotional) => {
@@ -125,14 +122,11 @@ const isFavoriteDevotional = (devotional: Devotional) => {
   return isUserFavoriteDevotional(devotional.id)
 }
 
-
-const onFavoriteClicked = (devotional: Devotional) => {
+const onFavoriteDevotionalClicked = (devotional: Devotional) => {
   if (!devotional || !devotional.id)
     return false
-
-  return toggleUserFavoriteDevotional(devotional.id)
+  toggleUserFavoriteDevotional(devotional.id)
 }
-
 </script>
 
 <style>
