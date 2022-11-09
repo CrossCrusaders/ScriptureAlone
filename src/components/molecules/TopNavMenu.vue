@@ -98,6 +98,10 @@ const menuItems = [
       {
         label: 'Devotionals',
         link: '/devotionals'
+      },
+      {
+        label: 'Truth Resources',
+        link: "/truth-resources"
       }
     ]
   },
