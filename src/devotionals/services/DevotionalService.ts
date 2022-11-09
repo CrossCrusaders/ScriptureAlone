@@ -1,7 +1,6 @@
 import { A11yMethods } from 'swiper/types/modules/a11y'
 import PocketBaseClient from '../../api/PocketBaseClient'
 import { transformDevotionalResponse, transformDevotionalResponses } from '../Devotional'
-import { searchAuthors } from '../../authors/services/AuthorService'
 import { DevotionalSearch } from '../DevotionalSearch'
 
 export const getFeaturedDevotional = async () => {

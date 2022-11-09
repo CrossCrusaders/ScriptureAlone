@@ -39,7 +39,7 @@
                   <div class="relative overflow-hidden inline-block">
                     <button
                       class="border-2 border-solid rounded border-slate-700 text-slate-700 bg-white text-lg font-bold max-h-8 w-32 h-8 max-w-32 md:w-48 md:max-w-48">
-                      Change Image
+                      Change
                     </button>
                     <input type="file" id="fileInput"
                       class="text-lg absolute left-0 top-0 opacity-0 max-h-8 w-48 h-8 max-w-48" ref="pfpInput"
@@ -49,14 +49,14 @@
                     <button
                       class="border-2 border-solid rounded border-slate-700 text-slate-700 bg-white text-lg font-bold max-h-8 w-32 h-8 max-w-32 md:w-48 md:max-w-48"
                       @click="resetTempPFP(); setNeedsSaved(1, TabState, null);">
-                      Reset Image
+                      Reset
                     </button>
                   </div>
                   <div class="relative overflow-hidden inline-block">
                     <button
                       class="border-2 border-solid rounded border-slate-700 text-slate-700 bg-white text-lg font-bold max-h-8 w-32 h-8 max-w-32 md:w-48 md:max-w-48"
                       @click="removeTempPFP(); setNeedsSaved(1, TabState, null);">
-                      Remove Image
+                      Remove
                     </button>
                   </div>
                 </div>
@@ -148,11 +148,8 @@ const needsSaved = ref(false);
 onMounted(async () => {
   if (!user.value) return router.replace("/");
 
-  var Refresher = await refreshUser();
-
   nameInput.value = user.value?.profile.name;
   userProfileImage.value = getUserProfileImage(user.value);
-  console.log(userProfileImage.value)
   tempUserProfileImage.value = getUserProfileImage(user.value);
 });
 
