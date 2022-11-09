@@ -1,3 +1,4 @@
+import { Devotional } from './../../devotionals/Devotional';
 import { Profile } from './../../auth/User';
 import { User } from "../../auth/User"
 import { getBucketUrl } from "../../api/BucketStorageService"
@@ -68,26 +69,36 @@ export async function toggleUserFavoriteSermon(sermonId: string) {
 }
 
 export async function toggleUserFavoriteDevotional(devotionalId: string) {
+  let action = ToggleAction.noop
+
   if (!user.value)
     return ToggleAction.noop
 
-  const existingFavorite = allUserFavoriteDevotionals.value.find(fav => fav.devotional === devotionalId) // await PocketBaseClient.records.getList('userFavoriteDevotionals', 1, 1, { filter: `user='${user.value.id}' && devotional='${devotionalId}'` })
-  if (existingFavorite) {
 
+
+  const existingFavorite = allUserFavoriteDevotionals.value.find(fav => fav.devotional === devotionalId) // await PocketBaseClient.records.getList('userFavoriteSermons', 1, 1, { filter: `user='${user.value.id}' && sermon='${sermonId}'` })
+  if (existingFavorite) {
     allUserFavoriteDevotionals.value = [...allUserFavoriteDevotionals.value].filter(item => item.devotional != existingFavorite.devotional)
     const deleted = await PocketBaseClient.records.delete('userFavoriteDevotionals', existingFavorite.id)
-
     return ToggleAction.deleted
   }
   else {
-    const userFavoriteDevotional = {
-      devotional: devotionalId,
-      user: user.value.id
+    const favoriteDevotionals = await getAllUserFavoriteDevotionals();
+    var isFavoriteAlready = false;
+    favoriteDevotionals.forEach((devotional) => {
+      if (devotional.devotional == devotionalId) {
+        isFavoriteAlready = true;
+      }
+    })
+    if (isFavoriteAlready == false) {
+      const userFavoriteDevotional = {
+        devotional: devotionalId,
+        user: user.value.id
+      }
+      const favorite: any = await PocketBaseClient.records.create('userFavoriteDevotionals', userFavoriteDevotional)
+      allUserFavoriteSermons.value = [...allUserFavoriteSermons.value, favorite]
+      return ToggleAction.created
     }
-    console.log(userFavoriteDevotional)
-    const favorite: any = await PocketBaseClient.records.create('userFavoriteDevotionals', userFavoriteDevotional)
-    allUserFavoriteDevotionals.value = [...allUserFavoriteDevotionals.value, favorite]
-    return ToggleAction.created
   }
 }
 
