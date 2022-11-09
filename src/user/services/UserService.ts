@@ -84,6 +84,7 @@ export async function toggleUserFavoriteDevotional(devotionalId: string) {
       devotional: devotionalId,
       user: user.value.id
     }
+    console.log(userFavoriteDevotional)
     const favorite: any = await PocketBaseClient.records.create('userFavoriteDevotionals', userFavoriteDevotional)
     allUserFavoriteDevotionals.value = [...allUserFavoriteDevotionals.value, favorite]
     return ToggleAction.created

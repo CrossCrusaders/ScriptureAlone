@@ -65,7 +65,7 @@ const loadSearchedDevotionals = async (forceReset = false) => {
   }
   loading.value = true
   try {
-    const { items, ...paginationData } = await getSearch('devotionals', props.query, props.page, props.perPage, props.queryParams)
+    const { items, ...paginationData } = await getSearch('devotionals', props.query || undefined, props.page, props.perPage, props.queryParams)
     if (props.appendContent && !forceReset) {
       loadedDevotionals.value = loadedDevotionals.value.concat(items as ContentPreview[])
     }

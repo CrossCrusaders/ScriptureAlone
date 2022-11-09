@@ -46,8 +46,6 @@ import AppButton from '../../components/atoms/form-controls/AppButton.vue'
 import InfiniteScrollContent from '../../components/templates/InfiniteScrollContent.vue'
 import SermonsPreviewGrid from '../components/SermonsPreviewGrid.vue'
 
-import { getSearch } from '../../search/services/searchService'
-
 const loading = ref<boolean>(false)
 const reachedEnd = ref<boolean>(false)
 const queryParams = ref<any>({})
