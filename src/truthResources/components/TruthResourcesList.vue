@@ -1,6 +1,6 @@
 <template>
     <h2 class="text-2xl font-bold mb-2 text-slate-900">Text Material:</h2>
-    <div class="flex justify-center pb-8">
+    <div class="flex justify-center pb-8 pt-4">
         <div class="w-1/3 flex flex-col">
             <RouterLink class="pb-1" v-for="resource of getHalfOne" :to="`/${baseUrl}/${resource.id}` || '/'"><Icon icon-name="paper" :size="8"></Icon> {{ resource.title }}</RouterLink>
         </div>
