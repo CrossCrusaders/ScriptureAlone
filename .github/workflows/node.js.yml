@@ -27,3 +27,15 @@ jobs:
         cache: 'npm'
     - run: npm i
     - run: npm run build
+    - run: scp -r ./dist/* scripturealone@scripturealone.app:/var/www/html
+    - name: SCP Upload
+      # You may pin to the exact commit or the version.
+      # uses: betanzos/scp-upload@6681a6d4596e23b96314c6c4ae2c154d4c4d346c
+      uses: betanzos/scp-upload@v1
+      with:
+        source: ./dist/*
+        host: scripturealone.app
+        username: scripturealone
+        key: ${{ secrets.PRIVATE_KEY }}
+        remote_dir: /var/www/html
+        recursive: true
