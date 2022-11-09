@@ -16,16 +16,16 @@
           </template>
         </PageHero>
         <h2 class="text-2xl font-bold mb-2 text-slate-900">Series:</h2>
-        <ContentCarousel :slides="Series"></ContentCarousel>
+        <ContentCarousel :slides="Series" base-url="truth-resources"></ContentCarousel>
         <Divider></Divider>
 
-        <TruthResourcesList :resources="NonSeries"></TruthResourcesList>
+        <TruthResourcesList :resources="NonSeries" base-url="truth-resources"></TruthResourcesList>
   
         <!-- My Plans -->
         <UserRecommendationFooter></UserRecommendationFooter>
       </PageContent>
     </AppLayout>
-  </template>
+</template>
   
 <script setup lang="ts">
 import AppLayout from "../../components/templates/AppLayout.vue"
@@ -42,8 +42,9 @@ import DevotionalsPreviewGrid from "../components/DevotionalsPreviewGrid.vue"
 import UserRecommendationFooter from "../../components/organisms/UserRecommendationFooter.vue"
 import Divider from '../../components/atoms/Divider.vue'
 
-import { getRecentTruthResources } from '../services/TruthResourceService'
 import TruthResourcesList from '../components/TruthResourcesList.vue'
+
+import { getSearch } from '../../search/services/searchService'
 
 const Series = ref();
 const NonSeries = ref();
@@ -51,26 +52,12 @@ const NonSeries = ref();
 const router = useRouter();
 
 onMounted(async () => {
-  const defaultImage = '/logo-bible.png'
-  const recentTruthResourcesSeriesPromise = await getRecentTruthResources(1, 6, true);
-  const recentTruthResourcesNonSeriesPromise = await getRecentTruthResources(1, 6, false);
+  const recentTruthResourcesSeriesPromise = await getSearch("truthResources", "", 1, 6, { filter: "isSeries = true" });
+  const recentTruthResourcesNonSeriesPromise = await getSearch("truthResources", "", 1, 6, { filter: "isSeries = false" });
   const [recentTruthResourcesSeries, recentTruthResourcesNonSeries] = await Promise.all([recentTruthResourcesSeriesPromise, recentTruthResourcesNonSeriesPromise]);
-  Series.value = recentTruthResourcesSeries.map((series) => {
-    return {
-      image: series.coverImage || series.author?.profileImage || defaultImage,
-      title: series.title,
-      link: `truth-resources/${series.id}`
-    }
-  })
+  Series.value = recentTruthResourcesSeries.items
 
-  NonSeries.value = recentTruthResourcesNonSeries.map((series) => {
-    return {
-      image: series.coverImage || series.author?.profileImage || defaultImage,
-      title: series.title,
-      link: `truth-resources/${series.id}`,
-    }
-  })
-  console.log(NonSeries.value)
+  NonSeries.value = recentTruthResourcesNonSeries.items
 })
 </script>
   

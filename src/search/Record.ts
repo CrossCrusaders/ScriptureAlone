@@ -4,9 +4,10 @@ export interface Record {
     // Global
     id: string
     title: string
+    collectionId: string
+    collectionName: string
+    coverImage: any
 
-
-    coverImage?: any
     description?: string
     externalAudioFileUrl?: string
     externalCoverImageUrl?: string
@@ -20,9 +21,6 @@ export interface Record {
     categories?: Category[]
     author?: Author
     recordDate?: Date
-  
-    collectionId?: string
-    collectionName?: string
   
     duration?: number
 }

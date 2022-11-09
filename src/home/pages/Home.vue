@@ -62,20 +62,20 @@
     <!-- Page Divider -->
     <Divider></Divider>
 
-    <!-- Latest Devotionals Mobile-->
+    <!-- Latest Sermons -->
     <div class="relative p-2 md:p-8 mb-16">
       <h2 class="font-bold font-title mb-8 md:mb-16 text-4xl">
-        Recommended Devotionals
+        Recommended Sermons
       </h2>
-      <ContentCarousel :slides="devoList"></ContentCarousel>
+      <ContentCarousel :slides="sermonList" base-url="sermons"></ContentCarousel>
     </div>
 
     <!-- Latest Devotionals -->
     <div class="relative p-2 md:p-8 mb-16">
       <h2 class="font-bold font-title mb-8 md:mb-16 text-4xl">
-        Recommended Sermons
+        Recommended Devotionals
       </h2>
-      <ContentCarousel :slides="sermonList"></ContentCarousel>
+      <ContentCarousel :slides="devoList" base-url="devotionals"></ContentCarousel>
     </div>
   </AppLayout>
 </template>
@@ -106,8 +106,7 @@ import AppButton from "../../components/atoms/form-controls/AppButton.vue";
 
 import { getBucketUrl } from '../../api/BucketStorageService'
 
-import { getRecentDevotionals } from '../../devotionals/services/DevotionalService';
-import { getRecentSermons } from '../../sermons/services/SermonService'
+import { getSearch } from '../../search/services/searchService'
 
 const verseName = ref("");
 const verseText = ref("");
@@ -122,28 +121,14 @@ onMounted(async () => {
   verseName.value = htmlVerse.verseReference + " KJV";
   verseText.value = htmlVerse.verseText;
 
-  const recentDevotionalsPromise = getRecentDevotionals(1, 6);
-  const recentSermonsPromise = getRecentSermons(1, 6);
+  const recentDevotionalsPromise = getSearch("devotionals", "", 1, 6);
+  const recentSermonsPromise = getSearch("sermons", "", 1, 6);
   const [recentDevotionals, recentSermons] = await Promise.all([recentDevotionalsPromise, recentSermonsPromise]);
 
   const defaultImage = '/logo-bible.png'
 
-  devoList.value = recentDevotionals.map(devo => {
-    return {
-      image: devo.coverImage || devo.author?.profileImage || defaultImage,
-      title: devo.title,
-      link: `devotionals/${devo.id}`
-    }
-  })
-
-  sermonList.value = recentSermons.map(sermon => {
-    return {
-      image: sermon.coverImage || sermon.author?.profileImage || defaultImage,
-      title: sermon.title,
-      link: `sermons/${sermon.id}`
-    }
-  })
-
+  devoList.value = recentDevotionals.items
+  sermonList.value = recentSermons.items
 });
 
 const searchModel = ref("");

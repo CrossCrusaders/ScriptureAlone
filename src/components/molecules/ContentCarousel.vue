@@ -4,8 +4,8 @@
       :pagination="{ clickable: true }" :scrollbar="{ draggable: true }">
       <swiper-slide v-for="slide of props.slides" :key="slide.title">
         <div class="h-56">
-          <RouterLink :to="slide.link || '/'">
-            <img class="object-cover w-full h-full" :src="slide.image" />
+          <RouterLink :to="`/${props.baseUrl}/${slide.id}` || '/'">
+            <img class="object-cover w-full h-full" :src="slide.coverImage || slide.author?.profileImage || '/logo-bible.png'" />
           </RouterLink>
         </div>
         <p class="z-10 font-bold mb-8">{{ slide.title }}</p>
@@ -23,15 +23,18 @@ import 'swiper/css/navigation'
 import 'swiper/css/pagination'
 import 'swiper/css/scrollbar'
 import { computed } from 'vue'
+import { Author } from '../../authors/Author';
 
 export interface ContentSlide {
-  image?: string
+  coverImage?: string
   title?: string
-  link?: string
+  id?: string
+  author?: Author
 }
 
 export interface ContentCarouselProps {
   slides: ContentSlide[]
+  baseUrl: string
 }
 
 const modules = [Navigation, Pagination, Scrollbar, A11y]

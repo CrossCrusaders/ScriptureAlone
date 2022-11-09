@@ -1,12 +1,5 @@
 import PocketBaseClient from '../../api/PocketBaseClient'
 import { transformCategoryResponse, transformCategoryResponses, transformSermonResponse, transformSermonResponses } from '../Sermon'
-import { SermonSearch } from '../SermonSearch'
-
-export const getRecentSermons = async (offset: number, count: number) => {
-  const sermonsResponse = await PocketBaseClient.records.getList('sermons', offset, count, { sort: '-created', expand: 'categories,author' })
-  const sermons = transformSermonResponses(sermonsResponse.items)
-  return sermons
-}
 
 export const getFeaturedSermon = async () => {
   const response = await PocketBaseClient.records.getOne('sermons', '', { sort: '-created' })

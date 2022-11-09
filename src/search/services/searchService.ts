@@ -15,14 +15,14 @@ export async function getSearch(collection: string, query: string | null, page: 
         return str
       }, '')
     
-      params.filter = filter
+    params.filter = filter
   }
   const records: any = await PocketBaseClient.records.getList(collection, page, perPage, params)
-  records.items = transformRecordResponses(records.items) as any
+  records.items = await transformRecordResponses(records.items, collection) as any
   return records;
 }
 
-export const transformRecordResponse = (response: any): Record => {
+export const transformRecordResponse = (response: any, collection: string): Record => {
   const record: Record = {
     ...response,
     collectionId: response['@collectionId'],
@@ -57,8 +57,8 @@ export const transformRecordResponse = (response: any): Record => {
   if (record.created)
     record.created = new Date((record.created as any).replace(' ', 'T'))
   
-  return record
+  return record;
 }
   
-export const transformRecordResponses = (responses: any[]) =>
-  responses.map(r => transformRecordResponse(r))
+export const transformRecordResponses = (responses: any[], collection: string) =>
+  responses.map(r => transformRecordResponse(r, collection))
