@@ -31,17 +31,17 @@
     <!-- Calls To Action -->
     <div class="flex flex-col md:flex-row gap-2 items-center justify-between mb-24 p-2">
       <a :class="callToActionItemClass" href="#votd">
-        <Icon icon-name="book-cross" :class="[callToActionIconClass]" :size="16">
+        <Icon icon-name="book-cross" :class="[callToActionIconClass]" :size="56">
         </Icon>
         <span class="text-center whitespace-nowrap text-ellipsis">Verse of the Day</span>
       </a>
       <RouterLink :class="callToActionItemClass" to="/devotionals">
-        <Icon icon-name="notebook-edit" :class="[callToActionIconClass]" :size="16">
+        <Icon icon-name="notebook-edit" :class="[callToActionIconClass]" :size="56">
         </Icon>
         Devotionals
       </RouterLink>
       <RouterLink :class="callToActionItemClass" to="/sermons">
-        <Icon icon-name="cross" :class="[callToActionIconClass]" :size="16">
+        <Icon icon-name="cross" :class="[callToActionIconClass]" :size="56">
         </Icon>
         Sermons
       </RouterLink>

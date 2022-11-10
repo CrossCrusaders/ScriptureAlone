@@ -14,6 +14,7 @@
     "@capacitor/android": "^4.3.0",
     "@capacitor/core": "^4.3.0",
     "@capacitor/ios": "^4.3.0",
+    "@mdi/font": "^7.0.96",
     "date-fns": "^2.29.3",
     "pocketbase": "^0.7.1",
     "swiper": "^8.4.2",

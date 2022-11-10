@@ -64,7 +64,7 @@
         <div class="bg-slate-200 rounded-3xl w-full mb-4">
           <IconCallToAction class="w-full gap-2">
             <template v-slot:image>
-              <Icon icon-name="clipboard-list" :size="16"></Icon>
+              <Icon icon-name="clipboard-list" :size="56"></Icon>
             </template>
 
             <div>
@@ -84,7 +84,7 @@
         <div class="bg-slate-200 rounded-3xl w-full mb-4">
           <IconCallToAction class="w-full gap-2">
             <template v-slot:image>
-              <Icon icon-name="thumb-up" :size="16"></Icon>
+              <Icon icon-name="thumb-up" :size="56"></Icon>
             </template>
 
             <div>

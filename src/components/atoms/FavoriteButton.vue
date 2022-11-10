@@ -1,6 +1,7 @@
 <template>
   <AppButton size="sm" v-bind="$attrs" variant="minimal" @click="emit('click')">
-    <Icon :invert="props.invert && !props.isFavorite" :icon-name="props.isFavorite ? 'heart-red' : 'heart-outline'">
+    <Icon :invert="props.invert && !props.isFavorite" :icon-name="props.isFavorite ? 'heart' : 'heart-outline'"
+      :color="props.isFavorite ? 'red' : 'white'">
     </Icon>
   </AppButton>
 </template>

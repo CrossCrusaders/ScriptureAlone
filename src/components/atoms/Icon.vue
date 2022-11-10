@@ -1,10 +1,8 @@
 <template>
-  <img :class="iconClass" :src="iconSrc" />
+  <span :class="[`mdi mdi-${props.iconName}`]" :style="iconStyles"></span>
 </template>
 
 <script setup lang="ts">
-
-// https://materialdesignicons.com/ 
 
 import { computed, useAttrs } from 'vue';
 
@@ -21,11 +19,14 @@ const props = defineProps({
   },
   size: {
     type: Number,
-    default: 6
+    default: 24
   },
   invert: {
     type: Boolean,
     default: false
+  },
+  color: {
+    type: String
   }
 })
 
@@ -33,24 +34,14 @@ const iconSrc = computed(() => {
   return `/mdi/${props.iconName}.svg`
 })
 
-const iconClass = computed(() => {
-  let cssClass = attrs.class
-  if (props.size) {
-    cssClass += ` w-${props.size} h-${props.size} inline `
+const iconStyles = computed(() => {
+  return {
+    width: `${props.size}px`,
+    height: `${props.size}px`,
+    'font-size': `${props.size}px`,
+    color: props.color
   }
-  if (props.invert) {
-    cssClass += ` invert `
-  }
-
-  return cssClass
 })
 
-</script>
 
-<style scoped>
-img {
-  /* width: 24px;
-  height: 24px; */
-  object-fit: contain;
-}
-</style>
+</script>
