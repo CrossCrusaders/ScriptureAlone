@@ -25,4 +25,20 @@ jobs:
         cache: 'npm'
     - run: npm i
     - run: npm run build
+    - name: SSH Action
+      # You may pin to the exact commit or the version.
+      # uses: invi5H/ssh-action@ece33b57060e562f8d17b6c20b715de95204bbf2
+      uses: invi5H/ssh-action@v1.0.0
+      with:
+        # A unique name for the server
+        NAME: scripturealone
+        # The SSH username
+        SSH_USER: scripturealone
+        # The hostname or the IP address
+        SSH_HOST: scripturealone.app
+        # The SSH port
+        SSH_PORT: 22
+        # The full string SSH key
+        SSH_KEY: ${{ secrets.PRIVATE_KEY }}
+    - run: "echo \"Hello\" > test.txt"
     
