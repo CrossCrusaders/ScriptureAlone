@@ -124,7 +124,7 @@ import AppInput from "../../components/atoms/form-controls/AppInput.vue";
 import AppButton from "../../components/atoms/form-controls/AppButton.vue";
 import Icon from "../../components/atoms/Icon.vue";
 import { hasChanged } from "@vue/shared";
-import { change } from "dom7";
+import { change, is } from "dom7";
 
 const { user } = useAuth();
 const userProfileImage = ref();
@@ -161,83 +161,49 @@ async function updateProfile(Tab: string) {
   if(canSaveAgain.value != true)
     return;
 
+  var isNull = false;
+  var image:any;
+  if(tempUserProfileImage.value == "/logo-bible.png"){
+    isNull = true;
+  }
+  if(isNull){
+    image = null;
+  }
+
   canSaveAgain.value = false;
   if(Tab == TabStates.Profile){
     var fileInput: any = document.getElementById("fileInput");
-    var isNull = false;
-    var image:any;
-    if(tempUserProfileImage.value == "/logo-bible.png"){
-      isNull = true;
-    }
+    
     if (fileInput?.files.length != 0) {
-      if(isNull){
-        image = null; 
-      }
-      else{
+      if(!isNull){
         image = fileInput?.files[0];
       }
-      user.value = await updateUserProfile(
-        nameInput.value,
-        "",
-        image,
-        user.value,
-        pushNotifications.value,
-        emailNotifications.value
-      );
-      userProfileImage.value = getUserProfileImage(user.value);
-      needsSaved.value = false;
-      canSaveAgain.value = true;
     } else {
-      var isNull = false;
-      var image:any;
-      if(tempUserProfileImage.value == "/logo-bible.png"){
-        isNull = true;
-      }
-      
-      if(isNull){
-        image = null; 
-      }
-      else{
+      if(!isNull){
         image = await fetch(getBucketUrl(user.value?.profile, user.value?.profile.avatar, {})).then((r) => r.blob());
       }
-      user.value = await updateUserProfile(
-        nameInput.value,
-        "",
-        image,
-        user.value,
-        pushNotifications.value,
-        emailNotifications.value
-      );
-      userProfileImage.value = getUserProfileImage(user.value);
-      needsSaved.value = false;
-      canSaveAgain.value = true;
     }
   }
   else if(Tab == TabStates.Account){
 
   }
   else if(Tab == TabStates.Notifications){
-    if(tempUserProfileImage.value == "/logo-bible.png"){
-      isNull = true;
+    if(!isNull){
+      image =  await fetch(getBucketUrl(user.value?.profile, user.value?.profile.avatar, {})).then((r) => r.blob());
     }
-    if(isNull){
-      image = null; 
-    }
-      else{
-        image =  await fetch(getBucketUrl(user.value?.profile, user.value?.profile.avatar, {})).then((r) => r.blob());
-      }
-      user.value = await updateUserProfile(
-        nameInput.value,
-        "",
-        image,
-        user.value,
-        pushNotifications.value,
-        emailNotifications.value
-      );
-      userProfileImage.value = getUserProfileImage(user.value);
-      needsSaved.value = false;
-      canSaveAgain.value = true;
   }
+
+  user.value = await updateUserProfile(
+    nameInput.value,
+    "",
+    image,
+    user.value,
+    pushNotifications.value,
+    emailNotifications.value
+  );
+  userProfileImage.value = getUserProfileImage(user.value);
+  needsSaved.value = false;
+  canSaveAgain.value = true;
 }
 
 async function setNeedsSaved(Element: number, Tab: string | null |any, value?: any, addValue?: any) {
