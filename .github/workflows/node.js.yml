@@ -28,7 +28,7 @@ jobs:
     - name: ls -a via ssh
       uses: garygrossgarten/github-action-ssh@release
       with:
-        command: "echo \"Hello\" > test.txt"
+        command: "./deploy-client.sh"
         host: scripturealone.app
         username: scripturealone
         privateKey: ${{ secrets.PRIVATE_KEY}}
