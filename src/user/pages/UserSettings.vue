@@ -16,11 +16,11 @@
       <div class="flex flex-col gap-2">
         <h2 class="text-2xl font-bold mb-2 text-slate-700">{{ TabState }}:</h2>
         <div class="flex gap-1">
-          <button v-if="TabState != TabStates.Profile" class="border-t-2 border-l-2 border-r-2 border-solid rounded-tl-lg rounded-tr-lg border-slate-400 p-1 hover:bg-slate-200 transition-all" @click="TabState = TabStates.Profile; needsSaved = false; tempUserProfileImage = userProfileImage">Profile</button>
+          <button v-if="TabState != TabStates.Profile" class="border-t-2 border-l-2 border-r-2 border-solid rounded-tl-lg rounded-tr-lg border-slate-400 p-1 hover:bg-slate-200 transition-all" @click="updateTabs(TabStates.Profile)">Profile</button>
           <button v-else class="bg-slate-400 border-t-2 border-l-2 border-r-2 border-solid rounded-tl-lg rounded-tr-lg border-slate-400 p-1">Profile</button>
-          <button v-if="TabState != TabStates.Account" class="border-t-2 border-l-2 border-r-2 border-solid rounded-tl-lg rounded-tr-lg border-slate-400 p-1 hover:bg-slate-200 transition-all" @click="TabState = TabStates.Account; needsSaved = false">Account</button>
+          <button v-if="TabState != TabStates.Account" class="border-t-2 border-l-2 border-r-2 border-solid rounded-tl-lg rounded-tr-lg border-slate-400 p-1 hover:bg-slate-200 transition-all" @click="updateTabs(TabStates.Account)">Account</button>
           <button v-else class="bg-slate-400 border-t-2 border-l-2 border-r-2 border-solid rounded-tl-lg rounded-tr-lg border-slate-400 p-1">Account</button>
-          <button v-if="TabState != TabStates.Notifications" class="border-t-2 border-l-2 border-r-2 border-solid rounded-tl-lg rounded-tr-lg border-slate-400 p-1 hover:bg-slate-200 transition-all" @click="TabState = TabStates.Notifications; needsSaved = false">Notifications</button>
+          <button v-if="TabState != TabStates.Notifications" class="border-t-2 border-l-2 border-r-2 border-solid rounded-tl-lg rounded-tr-lg border-slate-400 p-1 hover:bg-slate-200 transition-all" @click="updateTabs(TabStates.Notifications)">Notifications</button>
           <button v-else class="bg-slate-400 border-t-2 border-l-2 border-r-2 border-solid rounded-tl-lg rounded-tr-lg border-slate-400 p-1">Notifications</button>
         </div>
       </div>
@@ -86,7 +86,7 @@
             <div>
               <h2 class="text-xl font-bold mb-4 mt-4 text-slate-700">Push Notifications:</h2>
               <div class="flex justify-center overflow-hidden inline-block">
-                <input type="checkbox" class="w-6 h-6" value="true" />
+                <input v-model="pushNotifications" @change="setNeedsSaved(6, TabState, pushNotifications)" type="checkbox" class="w-6 h-6" value="true" />
               </div>
             </div>
           </div>
@@ -94,7 +94,7 @@
             <div>
               <h2 class="text-xl font-bold mb-2 text-slate-700">Email Notifications:</h2>
               <div class="flex justify-center inline-block">
-                <input type="checkbox" class="w-6 h-6" value="true" />
+                <input v-model="emailNotifications" @change="setNeedsSaved(7, TabState, emailNotifications)" type="checkbox" class="w-6 h-6" value="true" />
               </div>
             </div>
           </div>
@@ -135,6 +135,8 @@ const router = useRouter();
 
 const nameInput = ref();
 const pfpInput = ref();
+const pushNotifications = ref();
+const emailNotifications = ref();
 
 const TabStates = {
   Profile: "Profile",
@@ -151,6 +153,8 @@ onMounted(async () => {
   nameInput.value = user.value?.profile.name;
   userProfileImage.value = getUserProfileImage(user.value);
   tempUserProfileImage.value = getUserProfileImage(user.value);
+  pushNotifications.value = user.value.profile.pushNotifications;
+  emailNotifications.value = user.value.profile.emailNotifications;
 });
 
 async function updateProfile(Tab: string) {
@@ -172,33 +176,37 @@ async function updateProfile(Tab: string) {
       else{
         image = fileInput?.files[0];
       }
-      
       user.value = await updateUserProfile(
         nameInput.value,
         "",
         image,
         user.value,
-        true,
-        true
+        pushNotifications.value,
+        emailNotifications.value
       );
       userProfileImage.value = getUserProfileImage(user.value);
       needsSaved.value = false;
       canSaveAgain.value = true;
     } else {
+      var isNull = false;
+      var image:any;
+      if(tempUserProfileImage.value == "/logo-bible.png"){
+        isNull = true;
+      }
+      
       if(isNull){
         image = null; 
       }
       else{
-        image =  await fetch(getBucketUrl(user.value?.profile, user.value?.profile.avatar, {})).then((r) => r.blob());
+        image = await fetch(getBucketUrl(user.value?.profile, user.value?.profile.avatar, {})).then((r) => r.blob());
       }
-     
       user.value = await updateUserProfile(
         nameInput.value,
         "",
         image,
         user.value,
-        true,
-        true
+        pushNotifications.value,
+        emailNotifications.value
       );
       userProfileImage.value = getUserProfileImage(user.value);
       needsSaved.value = false;
@@ -209,7 +217,26 @@ async function updateProfile(Tab: string) {
 
   }
   else if(Tab == TabStates.Notifications){
-
+    if(tempUserProfileImage.value == "/logo-bible.png"){
+      isNull = true;
+    }
+    if(isNull){
+      image = null; 
+    }
+      else{
+        image =  await fetch(getBucketUrl(user.value?.profile, user.value?.profile.avatar, {})).then((r) => r.blob());
+      }
+      user.value = await updateUserProfile(
+        nameInput.value,
+        "",
+        image,
+        user.value,
+        pushNotifications.value,
+        emailNotifications.value
+      );
+      userProfileImage.value = getUserProfileImage(user.value);
+      needsSaved.value = false;
+      canSaveAgain.value = true;
   }
 }
 
@@ -222,6 +249,8 @@ async function setNeedsSaved(Element: number, Tab: string | null |any, value?: a
     3 = emailInput
     4 = passwordInput
     5 = confirmPasswordInput
+    6 = pushNotifications
+    7 = emailNotifications
   */
   if(Tab == TabStates.Profile){
     if (Element == 0) {
@@ -249,7 +278,17 @@ async function setNeedsSaved(Element: number, Tab: string | null |any, value?: a
     
   }
   else if(Tab == TabStates.Notifications){
-
+    needsSaved.value = true;
+    if(Element == 6){
+      if(value == user.value?.profile.pushNotifications){
+        needsSaved.value = false;
+      }
+    }
+    else if(Element == 7){
+      if(value == user.value?.profile.emailNotifications){
+        needsSaved.value = false;
+      }
+    }
   }
 }
 
@@ -272,6 +311,16 @@ async function removeTempPFP() {
   tempUserProfileImage.value = "/logo-bible.png"
   var fileInput: any = document.getElementById("fileInput");
   fileInput.value = null;
+}
+
+async function updateTabs(Tab: string){
+  tempUserProfileImage.value = userProfileImage.value;
+  nameInput.value = user.value?.profile.name;
+  pushNotifications.value = user.value?.profile.pushNotifications;
+  emailNotifications.value = user.value?.profile.emailNotifications;
+
+  TabState.value = Tab;
+  needsSaved.value = false;
 }
 </script>
 

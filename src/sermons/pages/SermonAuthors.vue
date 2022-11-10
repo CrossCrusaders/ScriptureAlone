@@ -47,7 +47,6 @@ import AuthorDisplayCard from '../../components/molecules/AuthorDisplayCard.vue'
 import { useRoute, useRouter } from 'vue-router';
 import { Author } from '../../authors/Author';
 import { onMounted, ref } from 'vue';
-//import { searchAuthors } from '../../authors/services/AuthorService';
 import AppButton from '../../components/atoms/form-controls/AppButton.vue';
 import InfiniteScrollContent from '../../components/templates/InfiniteScrollContent.vue';
 import { getSearchAuthors } from '../../search/services/searchService';
