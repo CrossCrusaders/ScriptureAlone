@@ -17,18 +17,18 @@ jobs:
         node-version: [16.x]
 
     steps:
-    - uses: actions/checkout@v3
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v3
-      with:
-        node-version: ${{ matrix.node-version }}
-        cache: 'npm'
-    - run: npm i
-    - run: npm run build
-    - name: ls -a via ssh
+#     - uses: actions/checkout@v3
+#     - name: Use Node.js ${{ matrix.node-version }}
+#       uses: actions/setup-node@v3
+#       with:
+#         node-version: ${{ matrix.node-version }}
+#         cache: 'npm'
+#     - run: npm i
+#     - run: npm run build
+    - name: Server Deploy
       uses: garygrossgarten/github-action-ssh@release
       with:
-        command: "./deploy-client.sh"
+        command: "bash && ./deploy-client.sh"
         host: scripturealone.app
         username: scripturealone
         privateKey: ${{ secrets.PRIVATE_KEY}}
