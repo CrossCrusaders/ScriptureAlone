@@ -159,7 +159,7 @@ export function useUserFavorites() {
   }
 }
 
-export async function updateUserProfile(name: string | Blob, bio: string | Blob, pfp: File | Blob | null, user?: User | null | undefined) {
+export async function updateUserProfile(name: string | Blob, bio: string | Blob, pfp: File | Blob | null, user: User | null | undefined, pushNotifications: boolean, emailNotifications: boolean) {
   if (!user)
     return;
 
@@ -168,6 +168,8 @@ export async function updateUserProfile(name: string | Blob, bio: string | Blob,
   formData.append('avatar', pfp || "");
   formData.append('name', name);
   formData.append('bio', bio);
+  formData.append('pushNotifications', pushNotifications.toString());
+  formData.append('emailNotifications', emailNotifications.toString())
 
   const updatedProfile = await PocketBaseClient.records.update('profiles', user.profile.id, formData)
 

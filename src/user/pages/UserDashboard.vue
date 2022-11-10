@@ -26,26 +26,6 @@
       </div>
       <br>
 
-      <!-- Favorite Devotionals -->
-      <PageHero>
-        <div class="flex justify-center">
-          <h1
-            class="font-bold font-title text-3xl md:text-5xl lg:text-6xl mb-2 bg-gradient-to-r from-[#1e293b] to-[#57687f] text-transparent bg-clip-text">
-            Favorited Devotionals
-          </h1>
-        </div>
-        <Divider></Divider>
-
-        <ContentPreviewGrid v-if="favoriteDevotionals?.length" @click:author="router.push(`/authors/${$event.id}`)"
-          :content="favoriteDevotionals" @click:button="router.push(`/devotionals/${$event.id}`)">
-        </ContentPreviewGrid>
-        <div v-else class="flex flex-col gap-3 items-center py-4">
-          <p class="text-xl mb-2">You haven't favorited any devotionals yet!</p>
-          <div>
-            <AppButton to="/devotionals" variant="primary">Browse Devotionals</AppButton>
-          </div>
-        </div>
-      </PageHero>
       <!-- Favorite Sermons -->
       <PageHero>
         <div class="flex justify-center">
@@ -63,6 +43,27 @@
           <p class="text-xl mb-2">You haven't favorited any sermons yet!</p>
           <div>
             <AppButton to="/sermons" variant="primary">Browse Sermons</AppButton>
+          </div>
+        </div>
+      </PageHero>
+
+      <!-- Favorite Devotionals -->
+      <PageHero>
+        <div class="flex justify-center">
+          <h1
+            class="font-bold font-title text-3xl md:text-5xl lg:text-6xl mb-2 bg-gradient-to-r from-[#1e293b] to-[#57687f] text-transparent bg-clip-text">
+            Favorited Devotionals
+          </h1>
+        </div>
+        <Divider></Divider>
+
+        <ContentPreviewGrid v-if="favoriteDevotionals?.length" @click:author="router.push(`/authors/${$event.id}`)"
+          :content="favoriteDevotionals" @click:button="router.push(`/devotionals/${$event.id}`)">
+        </ContentPreviewGrid>
+        <div v-else class="flex flex-col gap-3 items-center py-4">
+          <p class="text-xl mb-2">You haven't favorited any devotionals yet!</p>
+          <div>
+            <AppButton to="/devotionals" variant="primary">Browse Devotionals</AppButton>
           </div>
         </div>
       </PageHero>

@@ -2,7 +2,6 @@ import PocketBaseClient from "../../api/PocketBaseClient"
 import { Record } from '../Record'
 import { getBucketUrl } from '../../api/BucketStorageService'
 import { transformAuthorResponse } from '../../authors/Author'
-//import { searchAuthors } from "../../authors/services/AuthorService"
 import { AuthorSearch } from "../../authors/AuthorSearch"
 import { Author, transformAuthorResponses } from "../../authors/Author"
 
@@ -11,7 +10,12 @@ export async function getSearch(collection: string, query: string | undefined, p
 
   if (query) {
     var authors = await getSearchAuthors(query)
-    params.filter = ""
+    if(params.filters = undefined){
+      params.filter = ""
+    }
+    else{
+      params.filters = params.filters + " || "
+    }
     authors.items.forEach((author, index) => {
       params.filter += `author.id = "${author.id}" || `;
     })
@@ -38,7 +42,9 @@ export async function getSearchAuthors(query?: string, page: number = 1, perPage
   }
   if (query) {
     const searchTokens = query.trim().split(' ')
+    console.log(searchTokens)
     searchTokens.forEach((token, index) => {
+      console.log(token)
       params.filter += `${(index > 0) ? '||' : ''}(firstName~'${token}'||lastName~'${token}')`
     })
   }

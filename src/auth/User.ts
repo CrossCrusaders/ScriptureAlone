@@ -3,6 +3,8 @@ export interface Profile {
   name: string
   avatar: string
   bio: string
+  pushNotifications: boolean
+  emailNotifications: boolean
 }
 
 export interface User {

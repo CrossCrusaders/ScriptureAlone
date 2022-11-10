@@ -45,6 +45,8 @@ export const register = async ({ email, password, username }: { email: string, p
 
   const updatedProfile = await PocketBaseClient.records.update('profiles', user.profile.id, {
     name: username,
+    pushNotifications: true,
+    emailNotifications: true,
   })
 
   authedUser = await logIn({ email, password })
@@ -56,7 +58,6 @@ export const register = async ({ email, password, username }: { email: string, p
 }
 
 export const logOut = async () => {
-
   PocketBaseClient.authStore.clear()
   user.value = null
 }

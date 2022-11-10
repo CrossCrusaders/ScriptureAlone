@@ -177,7 +177,9 @@ async function updateProfile(Tab: string) {
         nameInput.value,
         "",
         image,
-        user.value
+        user.value,
+        true,
+        true
       );
       userProfileImage.value = getUserProfileImage(user.value);
       needsSaved.value = false;
@@ -194,7 +196,9 @@ async function updateProfile(Tab: string) {
         nameInput.value,
         "",
         image,
-        user.value
+        user.value,
+        true,
+        true
       );
       userProfileImage.value = getUserProfileImage(user.value);
       needsSaved.value = false;

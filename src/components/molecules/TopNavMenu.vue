@@ -78,7 +78,8 @@ const { breakpoint } = useBreakpoint()
 const { user } = useAuth()
 
 onMounted(async() => {
-  var Refresher = await refreshUser();
+  if(user.value != null)
+    var Refresher = await refreshUser();
 })
 
 const mobileLinkClass = "block px-3 py-3"
