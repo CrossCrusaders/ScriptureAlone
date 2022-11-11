@@ -35,7 +35,6 @@ const iconSrc = computed(() => {
 })
 
 const iconStyles = computed(() => {
-  console.log(props.color)
   return {
     width: `${props.size}px`,
     height: `${props.size}px`,
