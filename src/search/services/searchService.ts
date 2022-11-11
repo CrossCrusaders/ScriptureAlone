@@ -30,7 +30,6 @@ export async function getSearch(collection: string, query: string | undefined, p
     
     params.filter = params.filter + filter;
   }
-  console.log(params.filter)
   const records: any = await PocketBaseClient.records.getList(collection, page, perPage, params)
   records.items = await transformRecordResponses(records.items, collection) as any
   return records;
@@ -43,16 +42,12 @@ export async function getSearchAuthors(query?: string, page: number = 1, perPage
   }
   if (query != "" && query) {
     const searchTokens = query.trim().split(' ')
-    console.log(searchTokens)
     searchTokens.forEach((token, index) => {
-      console.log(token)
       params.filter += `${(index > 0) ? '||' : ''}(firstName~'${token}'||lastName~'${token}')`
     })
   }
 
-  console.log(params.filter)
   const response = await PocketBaseClient.records.getList('authors', page, perPage, params)
-  console.log(response)
 
   const authors = transformAuthorResponses(response.items)
 
