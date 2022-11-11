@@ -11,7 +11,7 @@
       </div>
       <div class="mb-8 md:w-4/12 flex flex-col items-center">
         <p class="flex flex-row w-full md:justify-center">
-          <Icon icon-name="email" class="invert mr-2" color="white"></Icon>
+          <Icon icon-name="email" class="mr-2" color="white"></Icon>
           <a class="mt-1 mb-1" href="mailto:scripturealone@crosscrusaders.com">scripturealone@crosscrusaders.com</a>
         </p>
       </div>
