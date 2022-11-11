@@ -1,0 +1,26 @@
+# This workflow will do a clean installation of node dependencies, cache/restore them, build the source code and run tests across different versions of node
+# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-nodejs
+
+name: Server Deploy CI
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [16.x]
+
+    steps:
+    - name: Server Deploy
+      uses: garygrossgarten/github-action-ssh@release
+      with:
+        command: /home/scripturealone/deploy-client.sh
+        host: scripturealone.app
+        username: scripturealone
+        privateKey: ${{ secrets.PRIVATE_KEY }}
