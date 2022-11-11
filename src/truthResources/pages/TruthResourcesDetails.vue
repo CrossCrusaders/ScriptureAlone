@@ -15,13 +15,7 @@
         <!-- Right Side -->
         <div class="md:w-4/6 flex-auto">
           <h1 class="font-title font-bold text-4xl mb-2 text-slate-800">{{ truthResourceDetail.title }}</h1>
-          <p class="text-slate-500">Updated: {{ devotionalLastUpdatedDisplay }} &bullet;
-            <span class="text-slate-500" v-if="truthResourceDetail.duration">
-              Duration: {{ formatMillisecondsAsReadableDuration(
-                  truthResourceDetail.duration)
-              }}
-            </span>
-          </p>
+          <p class="text-slate-500">Updated: {{ devotionalLastUpdatedDisplay }} &bullet;</p>
 
           <!--<p class="mb-8 text-slate-500 font-bold">{{ devotionalDetail.truthResourceDate }}</p>-->
           <p class="mb-8 text-slate-700 leading-normal">
@@ -33,20 +27,10 @@
             <AppButton variant="primary-outline" v-if="devotionalVideoSrc">Play Video</AppButton>
           </div>
           <Divider></Divider>
-          <!--
-            <Accordion>
-              <AccordionItem v-for="section of devotionalDetail.sections">
-                <template v-slot:title>
-                  <h2>{{ section?.title }}</h2>
-                </template>
-                <div>
-                  {{ devotionalDetail.accordionText?.split(" | ")[1] }}
-                </div>
-              </AccordionItem>
-  
-            </Accordion>
-            <br>-->
-
+          <div>
+            <VuePdf v-for="page in truthResourceDetail.pageAmount" :key="page" :src="getBucketUrl(truthResourceDetail, truthResourceDetail.pdf)" :page="page" />
+          </div>
+          <br>
         </div>
       </div>
       <div class="lg:flex lg:flex-row gap-10">
@@ -127,12 +111,15 @@ import AccordionItem from '../../components/molecules/Accordion/AccordionItem.vu
 import { RouterLink } from 'vue-router'
 import TruthResourceCoverImage from '../components/TruthResourceCoverImage.vue'
 import { prop } from 'dom7'
+import { getBucketUrl } from '../../api/BucketStorageService'
 
 
 const loading = ref(true)
 const truthResourceDetail = ref<TruthResource>()
 const route = useRoute()
 const showPlayerModal = ref(false)
+
+const numOfPages = ref(5);
 
 onMounted(async () => {
   // The Devotional ID
