@@ -8,9 +8,9 @@ import { Author, transformAuthorResponses } from "../../authors/Author"
 export async function getSearch(collection: string, query: string | undefined, page: number, perPage: number, queryParams?: any){
   const params = { sort: '-created', expand: 'categories,author', ...queryParams }
 
-  if (query) {
+  if (query != "" && query) {
     var authors = await getSearchAuthors(query)
-    if(params.filters = undefined){
+    if(params.filters == undefined){
       params.filter = ""
     }
     else{
@@ -30,6 +30,7 @@ export async function getSearch(collection: string, query: string | undefined, p
     
     params.filter = params.filter + filter;
   }
+  console.log(params.filter)
   const records: any = await PocketBaseClient.records.getList(collection, page, perPage, params)
   records.items = await transformRecordResponses(records.items, collection) as any
   return records;
@@ -40,7 +41,7 @@ export async function getSearchAuthors(query?: string, page: number = 1, perPage
     sort: '-created',
     ...searchParams
   }
-  if (query) {
+  if (query != "" && query) {
     const searchTokens = query.trim().split(' ')
     console.log(searchTokens)
     searchTokens.forEach((token, index) => {
@@ -48,7 +49,10 @@ export async function getSearchAuthors(query?: string, page: number = 1, perPage
       params.filter += `${(index > 0) ? '||' : ''}(firstName~'${token}'||lastName~'${token}')`
     })
   }
+
+  console.log(params.filter)
   const response = await PocketBaseClient.records.getList('authors', page, perPage, params)
+  console.log(response)
 
   const authors = transformAuthorResponses(response.items)
 
