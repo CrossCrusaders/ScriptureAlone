@@ -12,7 +12,7 @@
           </RouterLink>
         </div>
         <div class="max-w-prose" v-else>
-          <h1 class="mb-4 text-3xl font-title font-bold text-slate-800">Change Password?</h1>
+          <h1 class="mb-4 text-3xl font-title font-bold text-slate-800">Change Email?</h1>
           <p class="mb-4">Enter your account email address and we will send you a password reset link</p>
           <AppInput @keypress.enter="onSubmitClick" v-model="emailModel">
             Email Address
@@ -30,7 +30,7 @@
   import AppInput from '../../components/atoms/form-controls/AppInput.vue';
   import AppLayout from '../../components/templates/AppLayout.vue';
   import PageContent from '../../components/templates/PageContent.vue';
-  import { requestResetPasswordLink, resetPassword } from '../services/AuthService';
+  import { requestResetEmailLink } from '../services/AuthService';
   
   
   const linkSent = ref(false)
@@ -38,7 +38,7 @@
   const emailModel = ref('')
   
   const onSubmitClick = async () => {
-    requestResetPasswordLink(emailModel.value)
+    requestResetEmailLink(emailModel.value)
     linkSent.value = true
   }
   

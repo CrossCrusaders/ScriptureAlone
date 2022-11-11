@@ -4,7 +4,7 @@
       <div class="mt-4"></div>
       <div v-if="linkSent">
         <h1 class="mb-4 text-3xl font-title font-bold text-slate-800">Reset Link Sent!</h1>
-        <p class="mb-4">Check your email address for a password reset link, If you don't see it right away check your
+        <p class="mb-4">Check your email for a password reset link, If you don't see it right away check your
           <strong>spam folder!</strong>
         </p>
         <RouterLink class="underline text-red-700" to="/">
