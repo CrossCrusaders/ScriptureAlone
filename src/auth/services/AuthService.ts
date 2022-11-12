@@ -21,6 +21,16 @@ export const resetPassword = async (token: string, password: string, confirmPass
   return true
 }
 
+export const requestResetEmailLink = async (newEmail: string) => {
+  await PocketBaseClient.users.requestEmailChange(newEmail)
+  return true
+}
+
+export const resetEmail = async (token: string, password: string) => {
+  await PocketBaseClient.users.confirmEmailChange(token, password)
+  return true
+}
+
 // Utility Functions
 export const logIn = async ({ email, password }: { email: string, password: string }) => {
   const result = await PocketBaseClient.users.authViaEmail(email, password)

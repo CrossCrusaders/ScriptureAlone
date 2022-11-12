@@ -52,17 +52,9 @@ import AppInput from '../../components/atoms/form-controls/AppInput.vue'
 import AppButton from '../../components/atoms/form-controls/AppButton.vue'
 import Icon from '../../components/atoms/Icon.vue'
 import { logIn } from '../services/AuthService'
-import { reactive, onMounted } from 'vue'
+import { reactive } from 'vue'
 import { useRouter } from 'vue-router'
 import { useUserFavorites } from '../../user/services/UserService'
-import { useAuth } from '../services/AuthService'
-
-const { user } = useAuth();
-
-onMounted(async () => {
-  if(!!user)
-    router.replace('/dashboard')
-})
 
 const logInModel = reactive({ email: '', password: '' })
 

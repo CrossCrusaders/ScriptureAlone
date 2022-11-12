@@ -74,7 +74,7 @@
         <!-- Account Tab -->
         <div v-else-if="TabState == TabStates.Account">
           <div class="flex justify-center mb-4 mt-2">
-            <AppButton to="/">Change Email</AppButton>
+            <AppButton to="/auth/change-email">Change Email</AppButton>
           </div>
           <div class="flex justify-center mb-4">
             <AppButton to="/auth/change-password">Change Password</AppButton>

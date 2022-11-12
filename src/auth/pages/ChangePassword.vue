@@ -13,7 +13,7 @@
         </div>
         <div class="max-w-prose" v-else>
           <h1 class="mb-4 text-3xl font-title font-bold text-slate-800">Change Password?</h1>
-          <p class="mb-4">Enter your account email address and we will send you a password reset link</p>
+          <p class="mb-4">Enter your account email address and we will send you a password reset link.</p>
           <AppInput @keypress.enter="onSubmitClick" v-model="emailModel">
             Email Address
           </AppInput>
