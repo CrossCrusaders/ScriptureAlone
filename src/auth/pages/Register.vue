@@ -48,8 +48,16 @@ import AppInput from '../../components/atoms/form-controls/AppInput.vue'
 import AppButton from '../../components/atoms/form-controls/AppButton.vue'
 import Icon from '../../components/atoms/Icon.vue'
 import { register } from '../services/AuthService'
-import { reactive, ref } from 'vue'
+import { reactive, onMounted } from 'vue'
 import { useRouter } from 'vue-router'
+import { useAuth } from '../services/AuthService'
+
+const { user } = useAuth();
+
+onMounted(async () => {
+  if(!!user)
+    router.replace('/dashboard')
+})
 
 const registerModel = reactive({ email: '', password: '', username: '' })
 
