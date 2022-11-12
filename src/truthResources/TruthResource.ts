@@ -34,8 +34,7 @@ export interface TruthResource {
 
   isSeries?: boolean
 
-  pdf: any
-  pageAmount: number
+  duration: number
 }
 
 
