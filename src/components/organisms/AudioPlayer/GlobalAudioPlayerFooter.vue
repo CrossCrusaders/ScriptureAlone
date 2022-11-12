@@ -28,7 +28,7 @@
           </div>
 
           <AppButton v-if="breakpoint === 'sm'" variant="primary-minimal" size="sm" @click="onCloseClicked">
-            <Icon :invert="true" icon-name="close"></Icon>
+            <Icon color="white" icon-name="close"></Icon>
           </AppButton>
         </div>
         <div class="h-fit md:flex-auto md:max-w-prose w-full p-4 md:p-0">
@@ -36,7 +36,7 @@
         </div>
         <AppButton v-if="breakpoint === 'md' || breakpoint === 'lg'" variant="primary-minimal" size="sm"
           @click="onCloseClicked">
-          <Icon :invert="true" icon-name="close"></Icon>
+          <Icon color="white" icon-name="close"></Icon>
         </AppButton>
       </div>
     </div>

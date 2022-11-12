@@ -1,10 +1,10 @@
 <template>
-  <span :class="[`mdi mdi-${props.iconName}`]" :style="iconStyles"></span>
+  <span :class="[`mdi mdi-${props.iconName} ${iconClass}`]" :style="iconStyles"></span>
 </template>
 
 <script setup lang="ts">
 
-import { computed, useAttrs } from 'vue';
+import { computed, useAttrs, ref } from 'vue';
 
 const attrs = useAttrs()
 
@@ -27,6 +27,9 @@ const props = defineProps({
   },
   color: {
     type: String
+  },
+  hoverColor: {
+    type: String
   }
 })
 
@@ -39,9 +42,12 @@ const iconStyles = computed(() => {
     width: `${props.size}px`,
     height: `${props.size}px`,
     'font-size': `${props.size}px`,
-    color: props.color
+    color: props.color,
   }
 })
 
+const iconClass = ref(`hover:${props.hoverColor}`);
+
+console.log(iconClass.value)
 
 </script>
