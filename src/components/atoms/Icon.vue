@@ -47,7 +47,4 @@ const iconStyles = computed(() => {
 })
 
 const iconClass = ref(`hover:${props.hoverColor}`);
-
-console.log(iconClass.value)
-
 </script>
