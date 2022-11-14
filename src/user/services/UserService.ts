@@ -74,6 +74,8 @@ export async function toggleUserFavoriteDevotional(devotionalId: string) {
   if (!user.value)
     return ToggleAction.noop
 
+
+
   const existingFavorite = allUserFavoriteDevotionals.value.find(fav => fav.devotional === devotionalId) // await PocketBaseClient.records.getList('userFavoriteSermons', 1, 1, { filter: `user='${user.value.id}' && sermon='${sermonId}'` })
   if (existingFavorite) {
     allUserFavoriteDevotionals.value = [...allUserFavoriteDevotionals.value].filter(item => item.devotional != existingFavorite.devotional)
@@ -94,7 +96,7 @@ export async function toggleUserFavoriteDevotional(devotionalId: string) {
         user: user.value.id
       }
       const favorite: any = await PocketBaseClient.records.create('userFavoriteDevotionals', userFavoriteDevotional)
-      allUserFavoriteSermons.value = [...allUserFavoriteSermons.value, favorite]
+      allUserFavoriteDevotionals.value = [...allUserFavoriteDevotionals.value, favorite]
       return ToggleAction.created
     }
   }
@@ -111,7 +113,6 @@ export async function getAllUserFavoriteSermons(): Promise<UserFavoriteSermon[]>
 export async function getAllUserFavoriteDevotionals(): Promise<UserFavoriteDevotional[]> {
   if (!user.value)
     return []
-
   const results = await PocketBaseClient.records.getFullList('userFavoriteDevotionals', 255, { filter: `user='${user.value.id}'` })
   return results as any[]
 }
