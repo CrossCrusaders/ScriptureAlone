@@ -24,6 +24,7 @@ const props = withDefaults(defineProps<ContentPreviewGridProps>(), {
 const emit = defineEmits(['click:button', 'click:author', 'click:favorite'])
 
 const isFavorite = (content: any) => {
+  console.log(props.isFavorite)
   if (props.isFavorite)
     return props.isFavorite(content)
   return false

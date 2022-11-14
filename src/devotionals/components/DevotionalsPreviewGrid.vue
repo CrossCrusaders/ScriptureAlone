@@ -1,5 +1,5 @@
 <template>
-  <ContentPreviewGrid :show-favorite="!!user" :is-favorite="isFavoriteDevotional" :content="loadedDevotionals"
+  <ContentPreviewGrid :show-favorite="true" :is-favorite="isFavoriteDevotional" :content="loadedDevotionals"
     :button-title="'View Devotional'" @click:button="onDevotionalCardClicked" @click:author="onDevotionalAuthorClicked"
     @click:favorite="onFavoriteDevotionalClicked($event)">
   </ContentPreviewGrid>
@@ -24,6 +24,7 @@ import { useUserFavorites } from '../../user/services/UserService';
 import { useAuth } from '../../auth/services/AuthService';
 
 import { getSearch } from '../../search/services/searchService'
+import PocketBaseClient from '../../api/PocketBaseClient';
  
 export interface DevotionalsPreviewGridProps {
   queryParams?: any
@@ -116,6 +117,9 @@ const onDevotionalAuthorClicked = (author: Author) => {
 }
 
 const isFavoriteDevotional = (devotional: Devotional) => {
+  if(user.value == null)
+    return false
+   
   if (!devotional || !devotional.id)
     return false
 
@@ -123,6 +127,9 @@ const isFavoriteDevotional = (devotional: Devotional) => {
 }
 
 const onFavoriteDevotionalClicked = (devotional: Devotional) => {
+  if(user.value == null)
+    router.replace("/auth/log-in")
+
   if (!devotional || !devotional.id)
     return false
   toggleUserFavoriteDevotional(devotional.id)
