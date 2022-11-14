@@ -28,7 +28,7 @@
           </div>
           <Divider></Divider>
           <div class="border-2 border-slate-400 border-solid">
-            <VuePdf style="border-bottom-color: 000000; border-bottom-style: solid; border-bottom-width: 2px;" v-for="page in truthResourceDetail.pageAmount" :key="page" :src="getBucketUrl(truthResourceDetail, truthResourceDetail.pdf)" :page="page" />
+            <VuePdf v-for="page in truthResourceDetail.pageAmount" :key="page" :src="getBucketUrl(truthResourceDetail, truthResourceDetail.pdf)" :page="page" />
           </div>
           <br>
         </div>
