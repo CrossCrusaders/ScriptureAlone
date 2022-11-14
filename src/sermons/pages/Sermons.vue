@@ -48,7 +48,6 @@
         </div>
       </section>
 
-      <!-- <Divider class="mb-16"></Divider> -->
       <!-- Recent Sermons -->
       <section class="mb-14">
         <h2 class="font-title text-3xl font-bold mb-2 text-slate-700">Recent Sermons</h2>

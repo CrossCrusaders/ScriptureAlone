@@ -1,5 +1,5 @@
 <template>
-  <ContentPreviewGrid :show-favorite="!!user" :is-favorite="isFavoriteSermon" :content="loadedSermons"
+  <ContentPreviewGrid :show-favorite="true" :is-favorite="isFavoriteSermon" :content="loadedSermons"
     :button-title="'View Sermon'" @click:button="onSermonCardClicked" @click:author="onSermonAuthorClicked"
     @click:favorite="onFavoriteSermonClicked($event)">
   </ContentPreviewGrid>
@@ -104,7 +104,6 @@ onMounted(async () => {
   await loadFavorites()
 })
 
-
 const onSermonCardClicked = (sermon: Sermon) => {
   router.push(`/sermons/${sermon.id}`)
   emit('click:button')
@@ -123,6 +122,9 @@ const isFavoriteSermon = (sermon: Sermon) => {
 }
 
 const onFavoriteSermonClicked = (sermon: Sermon) => {
+  if(user.value == null)
+    router.replace("/auth/log-in")
+    
   if (!sermon || !sermon.id)
     return false
   toggleUserFavoriteSermon(sermon.id)
