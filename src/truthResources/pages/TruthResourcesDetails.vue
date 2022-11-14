@@ -15,16 +15,16 @@
         <!-- Right Side -->
         <div class="md:w-4/6 flex-auto">
           <h1 class="font-title font-bold text-4xl mb-2 text-slate-800">{{ truthResourceDetail.title }}</h1>
-          <p class="text-slate-500">Updated: {{ devotionalLastUpdatedDisplay }} &bullet;</p>
+          <p class="text-slate-500">Updated: {{ truthResourceLastUpdatedDisplay }}</p>
 
-          <!--<p class="mb-8 text-slate-500 font-bold">{{ devotionalDetail.truthResourceDate }}</p>-->
+          <p class="mb-8 text-slate-500 font-bold">{{ truthResourceDetail.truthResourceDate }}</p>
           <p class="mb-8 text-slate-700 leading-normal">
             {{ truthResourceDetail.description }}
           </p>
           <div class="flex gap-4 mb-16">
-            <AppButton variant="primary" @click="showPlayerModal = true" v-if="devotionalAudioSrc">Play Audio
+            <AppButton variant="primary" @click="showPlayerModal = true" v-if="truthResourceAudioSrc">Play Audio
             </AppButton>
-            <AppButton variant="primary-outline" v-if="devotionalVideoSrc">Play Video</AppButton>
+            <AppButton variant="primary-outline" v-if="truthResourceVideoSrc">Play Video</AppButton>
           </div>
           <Divider></Divider>
           <div class="border-2 border-slate-400 border-solid">
@@ -80,7 +80,7 @@
 
   <AppModal v-model="showPlayerModal" @beforeClose="beforeAudioModalClose()" v-slot="{ close }">
     <div class="p2">
-      <AudioPlayer :audio-src="devotionalAudioSrc"></AudioPlayer>
+      <AudioPlayer :audio-src="truthResourceAudioSrc"></AudioPlayer>
       <button @click="close()">Close</button>
     </div>
   </AppModal>
@@ -122,7 +122,7 @@ const showPlayerModal = ref(false)
 const numOfPages = ref(5);
 
 onMounted(async () => {
-  // The Devotional ID
+  // The Truth Resource ID
   let { id } = route.params
 
   if (Array.isArray(id))
@@ -133,21 +133,20 @@ onMounted(async () => {
   loading.value = false;
 })
 
-const devotionalAudioSrc = computed(() => {
+const truthResourceAudioSrc = computed(() => {
   //return truthResourceDetail.value?.externalAudioFileUrl || truthResourceDetail.value?.audioFile
   return ""
 })
 
-const devotionalVideoSrc = computed(() => {
+const truthResourceVideoSrc = computed(() => {
   //return truthResourceDetail.value?.externalVideoFileUrl
   return ""
 })
 
-const devotionalLastUpdatedDisplay = computed(() => {
-  //const strDate = (truthResourceDetail.value?.devotionalDate || truthResourceDetail.value?.updated) as any
-  //const date = new Date(strDate.split(' ')[0])
-  //return format(date, 'MM/dd/yyyy')
-  return ""
+const truthResourceLastUpdatedDisplay = computed(() => {
+  const strDate = (truthResourceDetail.value?.truthResourceDate || truthResourceDetail.value?.updated) as any
+  const date = new Date(strDate.split(' ')[0])
+  return format(date, 'MM/dd/yyyy')
 })
 
 const beforeAudioModalClose = () => {

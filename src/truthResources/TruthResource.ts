@@ -14,6 +14,7 @@ export interface TruthResource {
   id?: string
   coverImage?: any
   description?: string
+  truthResourceDate?: Date
   //externalAudioFileUrl?: string
   //externalCoverImageUrl?: string
   //externalVideoFileUrl?: string
