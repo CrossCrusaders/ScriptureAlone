@@ -19,6 +19,11 @@
       </BibleTranslationSelect>
       
     </div>
+    <div class="w-full fixed left-0 bottom-0">
+      <div class="w-full flex justify-center bg-white">
+        <img v-if="selectedBibleTranslationId != 'ENGKJV'" class=" h-1/2" :src="PopUpImage"/>
+      </div>
+    </div>
     <div class="w-full flex justify-center">
       <form class="w-full md:w-1/2 lg:w-1/3" @submit="handleSearchSubmit($event)">
         <div class="px-2">
@@ -78,6 +83,8 @@ import AppInput from '../../components/atoms/form-controls/AppInput.vue'
 import Spinner from '../../components/atoms/Spinner.vue'
 import BibleTranslationSelect from '../../components/organisms/BibleTranslationSelect.vue'
 import { isBibleReference, searchBible } from '../../bible/services/BibleService'
+import PocketBaseClient from '../../api/PocketBaseClient'
+import { getBucketUrl } from '../../api/BucketStorageService'
 
 
 export interface BiblePageQueryParams {
@@ -111,6 +118,8 @@ let highlightRange: number[] = []
 
 const router = useRouter()
 const route = useRoute()
+
+const PopUpImage = ref('');
 
 const selectedBook = computed(() => availableBooks.value.find(book => book.bookId === selectedBookId.value))
 const selectedChapter = computed(() => {
@@ -161,6 +170,9 @@ const loadChapterContent = async () => {
 
 
 onMounted(async () => {
+  var image = await PocketBaseClient.records.getList('truthResources', 1, 1)
+  console.log(image)
+  PopUpImage.value = getBucketUrl(image.items[0], image.items[0].coverImage);
   getNewVerses();
 })
 
