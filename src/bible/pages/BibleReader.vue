@@ -19,13 +19,13 @@
       </BibleTranslationSelect>
       
     </div>
-      <div class="w-full fixed left-0 bottom-0">
+    <Transition name="popup">
+      <div v-if="selectedBibleTranslationId != 'ENGKJV'" class="w-full fixed left-0 bottom-0">
         <div class="w-full flex justify-center bg-white">
-          <Transition name="popup">
-            <img id="popup" v-if="selectedBibleTranslationId != 'ENGKJV'" :src="PopUpImage"/>
-          </Transition>
+          <img id="popup" :src="PopUpImage"/>
         </div>
       </div>
+    </Transition>
     <div class="w-full flex justify-center">
       <form class="w-full md:w-1/2 lg:w-1/3" @submit="handleSearchSubmit($event)">
         <div class="px-2">
