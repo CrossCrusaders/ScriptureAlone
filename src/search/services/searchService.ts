@@ -6,7 +6,7 @@ import { AuthorSearch } from "../../authors/AuthorSearch"
 import { Author, transformAuthorResponses } from "../../authors/Author"
 
 export async function getSearch(collection: string, query: string | undefined, page: number, perPage: number, queryParams?: any){
-  const params = { sort: '-created', expand: 'categories,author', ...queryParams }
+  const params = { sort: `-${collection.slice(0, collection.length - 1)}Date`, expand: 'categories,author', ...queryParams }
 
   if (query != "" && query) {
     var authors = await getSearchAuthors(query)

@@ -20,7 +20,9 @@ export interface Record {
   
     categories?: Category[]
     author?: Author
-    recordDate?: Date
+    sermonDate?: Date
+    devotionalDate?: Date
+    truthResourceDate?: Date
   
     duration?: number
 }
