@@ -17,7 +17,10 @@
       <BibleTranslationSelect :model-value="selectedBibleTranslationId"
         @update:model-value="onSelectedBibleTranslationIdChanged">
       </BibleTranslationSelect>
-      <form @submit="handleSearchSubmit($event)">
+      
+    </div>
+    <div class="w-full flex justify-center">
+      <form class="w-full md:w-1/2 lg:w-1/3" @submit="handleSearchSubmit($event)">
         <div class="px-2">
           <AppInput type="input" name="query" v-model="searchModel" placeholder="Search The Scripture">
             <template v-slot:prefix>

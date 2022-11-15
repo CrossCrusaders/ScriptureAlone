@@ -13,16 +13,6 @@
               }}</strong>
             </h1>
           </div>
-          <form @submit="handleSearchSubmit($event)">
-            <div class="px-2">
-              <AppInput type="input" name="query" v-model="searchModel" placeholder="Search The Scripture">
-                <template v-slot:prefix>
-                  <Icon icon-name="magnify"></Icon>
-                </template>
-              </AppInput>
-              <AppButton variant="primary-light" class="block w-full md:hidden mt-4" type="submit">Search</AppButton>
-            </div>
-          </form>
           <BibleTranslationSelect v-model="currentBibleId"></BibleTranslationSelect>
           <p class="flex-auto"></p>
           <p class="text-sm sm:text-md">Page
@@ -32,6 +22,18 @@
           </p>
         </div>
       </PageContent>
+    </div>
+    <div class="w-full flex justify-center">
+      <form class="w-full md:w-1/2 lg:w-1/3" @submit="handleSearchSubmit($event)">
+        <div class="px-2">
+          <AppInput type="input" name="query" v-model="searchModel" placeholder="Search The Scripture">
+            <template v-slot:prefix>
+              <Icon icon-name="magnify"></Icon>
+            </template>
+          </AppInput>
+          <AppButton variant="primary-light" class="block w-full md:hidden mt-4" type="submit">Search</AppButton>
+        </div>
+      </form>
     </div>
     <PageContent class="p-2">
 
