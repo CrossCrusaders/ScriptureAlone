@@ -219,6 +219,8 @@ export async function searchBible(bibleId: string, query: string, page: number, 
 	const searchResponse = await fetch(url)
 	const searchResults = await searchResponse.json()
 
+	console.log(searchResults)
+
 	return searchResults.verses as {
 		data: BibleVerse[], meta: BibleSearchMeta
 	}

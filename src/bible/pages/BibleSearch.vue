@@ -13,6 +13,16 @@
               }}</strong>
             </h1>
           </div>
+          <form @submit="handleSearchSubmit($event)">
+            <div class="px-2">
+              <AppInput type="input" name="query" v-model="searchModel" placeholder="Search The Scripture">
+                <template v-slot:prefix>
+                  <Icon icon-name="magnify"></Icon>
+                </template>
+              </AppInput>
+              <AppButton variant="primary-light" class="block w-full md:hidden mt-4" type="submit">Search</AppButton>
+            </div>
+          </form>
           <BibleTranslationSelect v-model="currentBibleId"></BibleTranslationSelect>
           <p class="flex-auto"></p>
           <p class="text-sm sm:text-md">Page
@@ -75,8 +85,13 @@ import Spinner from '../../components/atoms/Spinner.vue';
 import BibleTranslationSelect from '../../components/organisms/BibleTranslationSelect.vue';
 import { BiblePageQueryParams } from './BibleReader.vue';
 import AppSelect from '../../components/atoms/form-controls/AppSelect.vue';
+import AppButton from '../../components/atoms/form-controls/AppButton.vue';
+import AppInput from '../../components/atoms/form-controls/AppInput.vue';
 import { formatMaxLengthText } from '../../core/services/FormatService';
 import Icon from '../../components/atoms/Icon.vue';
+import {
+  isBibleReference,
+} from "../../bible/services/BibleService";
 
 
 
@@ -197,4 +212,31 @@ const onNextPageClicked = () => {
   }
   currentPage.value = nextValue
 }
+
+const searchModel = ref("");
+const searchTranslationId = ref("ENGKJV");
+
+const handleSearchSubmit = async (event: Event) => {
+  event.preventDefault();
+  if (searchModel.value && searchModel.value.length) {
+    const result = await isBibleReference(searchModel.value);
+    if (result) {
+      const { data, meta } = await searchBible(currentBibleId.value, currentQuery.value, currentPage.value as number, resultsPerPage)
+
+      currentBibleSearchData.value = data
+      currentBibleSearchMeta.value = meta
+      window.scrollTo({ top: 0 })
+      return router.replace(
+        `/bible?t=${searchTranslationId.value}&c=${result.chapter}&b=${result.book_id}&vs=${result.verse_start}&ve=${result.verse_end}`
+      );
+    } else {
+      currentQuery.value = searchModel.value;
+      return router.replace(
+        `/bible/search?q=${encodeURI(
+          searchModel.value.substring(0, 255)
+        )}&t=${searchTranslationId.value}`
+      );
+    }
+  }
+};
 </script>

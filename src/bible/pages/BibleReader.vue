@@ -17,6 +17,16 @@
       <BibleTranslationSelect :model-value="selectedBibleTranslationId"
         @update:model-value="onSelectedBibleTranslationIdChanged">
       </BibleTranslationSelect>
+      <form @submit="handleSearchSubmit($event)">
+        <div class="px-2">
+          <AppInput type="input" name="query" v-model="searchModel" placeholder="Search The Scripture">
+            <template v-slot:prefix>
+              <Icon icon-name="magnify"></Icon>
+            </template>
+          </AppInput>
+          <AppButton variant="primary-light" class="block w-full md:hidden mt-4" type="submit">Search</AppButton>
+        </div>
+      </form>
     </div>
     <PageContent>
       <div class="max-w-prose mx-auto">
@@ -61,8 +71,10 @@ import { BibleBook } from '../BibleBook'
 import { BibleTranslation } from '../BibleTranslation'
 import { useRoute, useRouter } from 'vue-router'
 import AppSelect from '../../components/atoms/form-controls/AppSelect.vue'
+import AppInput from '../../components/atoms/form-controls/AppInput.vue'
 import Spinner from '../../components/atoms/Spinner.vue'
 import BibleTranslationSelect from '../../components/organisms/BibleTranslationSelect.vue'
+import { isBibleReference, searchBible } from '../../bible/services/BibleService'
 
 
 export interface BiblePageQueryParams {
@@ -146,29 +158,7 @@ const loadChapterContent = async () => {
 
 
 onMounted(async () => {
-  const { t, b, c, vs, ve } = route.query as BiblePageQueryParams
-  const localCache: LocalBibleSelectionCache | null = await getLocalCacheItem(localCacheKeyLastLoadedChapter)
-
-  if (t && b && c) {
-    selectedBibleTranslationId.value = t || selectedBibleTranslationId.value
-    selectedBookId.value = b || selectedBookId.value
-    selectedChapterNumber.value = parseInt(c) || selectedChapterNumber.value
-  }
-  else if (localCache) {
-    selectedBibleTranslationId.value = localCache.selectedBibleTranslationId || selectedBibleTranslationId.value
-    selectedBookId.value = localCache.selectedBookId || selectedBookId.value
-    selectedChapterNumber.value = localCache.selectedChapter || selectedChapterNumber.value
-  }
-
-  if (vs && ve) {
-    shouldHighlight = true
-    highlightRange = [parseInt(vs), ve ? parseInt(ve) : parseInt(vs)]
-  }
-
-  availableBooks.value = await getBooks()
-  availableTranslations.value = await getTranslations()
-
-  await loadChapterContent()
+  getNewVerses();
 })
 
 // Event Handlers 
@@ -219,6 +209,55 @@ const onSelectedBibleTranslationIdChanged = async (value: any) => {
   await loadChapterContent()
 }
 
+const searchModel = ref("");
+const handleSearchSubmit = async (event: Event) => {
+  event.preventDefault();
+  if (searchModel.value && searchModel.value.length) {
+    const result = await isBibleReference(searchModel.value);
+    if (result) {
+      selectedBookId.value = result.book_id;
+      selectedChapterNumber.value = result.chapter;
+
+      window.scrollTo({ top: 0 })
+      await router.replace(
+        `/bible?t=${selectedBibleTranslationId.value}&c=${result.chapter}&b=${result.book_id}&vs=${result.verse_start}&ve=${result.verse_end}`
+      );
+      return getNewVerses();
+    } else {
+      return router.replace(
+        `/bible/search?q=${encodeURI(
+          searchModel.value.substring(0, 255)
+        )}&t=${selectedBibleTranslationId.value}`
+      );
+    }
+  }
+};
+
+async function getNewVerses(){
+  const { t, b, c, vs, ve } = route.query as BiblePageQueryParams
+  const localCache: LocalBibleSelectionCache | null = await getLocalCacheItem(localCacheKeyLastLoadedChapter)
+
+  if (t && b && c) {
+    selectedBibleTranslationId.value = t || selectedBibleTranslationId.value
+    selectedBookId.value = b || selectedBookId.value
+    selectedChapterNumber.value = parseInt(c) || selectedChapterNumber.value
+  }
+  else if (localCache) {
+    selectedBibleTranslationId.value = localCache.selectedBibleTranslationId || selectedBibleTranslationId.value
+    selectedBookId.value = localCache.selectedBookId || selectedBookId.value
+    selectedChapterNumber.value = localCache.selectedChapter || selectedChapterNumber.value
+  }
+
+  if (vs && ve) {
+    shouldHighlight = true
+    highlightRange = [parseInt(vs), ve ? parseInt(ve) : parseInt(vs)]
+  }
+
+  availableBooks.value = await getBooks()
+  availableTranslations.value = await getTranslations()
+
+  await loadChapterContent()
+}
 </script>
 
 <style>
