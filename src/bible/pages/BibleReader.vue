@@ -57,6 +57,7 @@
     class="fixed top-1/2 right-1 md:right-16 xl:right-1/4 bg-white " size="sm">
     <Icon icon-name="chevron-right"></Icon>
   </AppButton>
+  <p v-if="selectedBibleTranslationId != 'ENGKJV'" class="mb-28"></p>
 </template>
 
 <script setup lang="ts">
@@ -142,8 +143,6 @@ const loadChapterContent = async () => {
       }
       return aggregate + `<p id="verse-${verse.verse_start}" class="${verseCssClass}"><span class="verse-number">${verse.verse_start_alt}</span> <span class="verse-text">${verse.verse_text}</span></p> `
     }, "")
-
-
 
 
     loadedChapterContent.value = chapterText
