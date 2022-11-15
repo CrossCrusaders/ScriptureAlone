@@ -2,7 +2,7 @@
 
   <div class="rounded-lg bg-slate-200 p-2 px-4">
     <div class="flex flex-row items-center h-full gap-2">
-      <Icon :icon-name="props.iconName"></Icon>
+      <Icon class="mb-3" :icon-name="props.iconName"></Icon>
       <span>{{props.label}}</span>
     </div>
   </div>

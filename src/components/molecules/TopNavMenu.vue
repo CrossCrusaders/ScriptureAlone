@@ -6,7 +6,7 @@
         v-if="showMobileMenuOpen">
         <LogoAndName variant="dark"></LogoAndName>
         <div class="mb-4"></div>
-        <Icon icon-name="close" class="w-6 h-6 invert absolute right-4 top-6" @click="mobileMenuOpen = false"></Icon>
+        <Icon icon-name="close" color="white" class="w-6 h-6 absolute right-4 top-6" @click="mobileMenuOpen = false"></Icon>
         <div :class="mobileLinkClass" v-for="item in menuItems" :key="item.label">
           <RouterLink :to="item.link ? item.link : '#'" :textContent="item.label"></RouterLink>
           <div v-if="item.children && item.children.length">
