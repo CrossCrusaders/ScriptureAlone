@@ -19,11 +19,13 @@
       </BibleTranslationSelect>
       
     </div>
-    <div class="w-full fixed left-0 bottom-0">
-      <div class="w-full flex justify-center bg-white">
-        <img v-if="selectedBibleTranslationId != 'ENGKJV'" class=" h-1/2" :src="PopUpImage"/>
+      <div class="w-full fixed left-0 bottom-0">
+        <div class="w-full flex justify-center bg-white">
+          <Transition name="popup">
+            <img id="popup" v-if="selectedBibleTranslationId != 'ENGKJV'" :src="PopUpImage"/>
+          </Transition>
+        </div>
       </div>
-    </div>
     <div class="w-full flex justify-center">
       <form class="w-full md:w-1/2 lg:w-1/3" @submit="handleSearchSubmit($event)">
         <div class="px-2">
@@ -167,12 +169,13 @@ const loadChapterContent = async () => {
   }
 }
 
-
-
 onMounted(async () => {
-  var image = await PocketBaseClient.records.getList('truthResources', 1, 1)
-  console.log(image)
-  PopUpImage.value = getBucketUrl(image.items[0], image.items[0].coverImage);
+  var image = await PocketBaseClient.records.getFullList('truthResources', 200, { filter:"isPartOfPopups=true" })
+  var max = image.length-1;
+  var min = 0;
+  var imageNum = Math.round(Math.random() * (max - min) + min);
+  console.log(imageNum)
+  PopUpImage.value = getBucketUrl(image[imageNum], image[imageNum].coverImage);
   getNewVerses();
 })
 
@@ -311,6 +314,25 @@ async function getNewVerses(){
 
   to {
     background-color: rgba(255, 255, 0, .2)
+  }
+}
+
+#popup{
+  height: 50vh;
+}
+
+.popup-enter-active {
+  animation: popup 0.5s;
+}
+.popup-leave-active {
+  animation: popup 0.5s reverse;
+}
+@keyframes popup {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0%);
   }
 }
 </style>
