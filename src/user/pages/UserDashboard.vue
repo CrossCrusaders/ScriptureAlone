@@ -14,8 +14,7 @@
           We're glad you are here, remember to read the verse of the day!
         </p>
         <template v-slot:actions>
-          <AppButton>Watch Now</AppButton>
-          <AppButton variant="primary-outline">View All Sermons</AppButton>
+          <AppButton to="/dashboard/settings">Settings</AppButton>
         </template>
       </PageHero>
 
