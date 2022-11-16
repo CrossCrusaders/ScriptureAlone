@@ -35,8 +35,9 @@ export interface TruthResource {
 
   isSeries?: boolean
 
-  pdf: any
+  pdf?: any
   pageAmount: number
+  externalPDFLink?: string
 }
 
 

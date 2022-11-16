@@ -5,8 +5,9 @@
         <div class="md:w-2/6">
           <AuthorPreviewColumn :show-church-info="true" :author="truthResourceDetail.author">
             <template v-slot:cover-image="{ image }">
-              <TruthResourceCoverImage :resource="truthResourceDetail" :truth-resource-id="truthResourceDetail?.id">
+              <TruthResourceCoverImage v-if="truthResourceDetail.coverImage" :resource="truthResourceDetail" :truth-resource-id="truthResourceDetail?.id">
               </TruthResourceCoverImage>
+              <p v-else></p>
             </template>
           </AuthorPreviewColumn>
           <!--TODO: Share Icons -->
@@ -28,7 +29,7 @@
           </div>
           <Divider></Divider>
           <div class="border-2 border-slate-400 border-solid">
-            <VuePdf v-for="page in truthResourceDetail.pageAmount" :key="page" :src="getBucketUrl(truthResourceDetail, truthResourceDetail.pdf)" :page="page" />
+            <VuePdf v-for="page in truthResourceDetail.pageAmount" :key="page" :src="getBucketUrl(truthResourceDetail, truthResourceDetail.pdf || truthResourceDetail.externalPDFLink)" :page="page" />
           </div>
           <br>
         </div>

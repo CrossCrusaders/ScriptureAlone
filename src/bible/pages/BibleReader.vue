@@ -22,7 +22,8 @@
     <Transition name="popup">
       <div v-if="selectedBibleTranslationId != 'ENGKJV'" class="w-full fixed left-0 bottom-0">
         <div class="w-full flex justify-center bg-white">
-          <img id="popup" :src="PopUpImage"/>
+          <!--<img id="popup" :src="PopUpImage"/>--> 
+          <p id="popup">Hello</p>
         </div>
       </div>
     </Transition>
