@@ -28,7 +28,7 @@
             <AppButton variant="primary-outline" v-if="truthResourceVideoSrc">Play Video</AppButton>
           </div>
           <Divider></Divider>
-          <div class="border-2 border-slate-400 border-solid">
+          <div class="border-2 border-slate-400 border-solid" style="overflow:scroll; height:55em;">
             <VuePdf v-for="page in truthResourceDetail.pageAmount" :key="page" :src="getBucketUrl(truthResourceDetail, truthResourceDetail.pdf || truthResourceDetail.externalPDFLink)" :page="page" />
           </div>
           <br>
