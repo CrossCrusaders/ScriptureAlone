@@ -41,6 +41,7 @@ import Author from './authors/pages/Author.vue'
 // Truth Resources
 import TruthResources from './truthResources/pages/TruthResources.vue'
 import TruthResourcesDetails from './truthResources/pages/TruthResourcesDetails.vue'
+import TextMaterials from './truthResources/pages/TextMaterials.vue'
 
 import ComponentTestPage from './test/ComponentTestPage.vue'
 
@@ -89,7 +90,9 @@ const routes = [
 
   // Truth Resources
   { path: '/truth-resources', component: TruthResources },
-  { path: '/truth-resources/:id', component: TruthResourcesDetails }
+  { path: '/truth-resources/:id', component: TruthResourcesDetails },
+  { path: '/truth-resources/text-materials', component: TextMaterials },
+  { path: '/truth-resources/series', component: TextMaterials }
 ]
 
 if (Config.environment === 'dev')

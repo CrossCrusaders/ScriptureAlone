@@ -15,12 +15,9 @@
             
           </template>
         </PageHero>
-        <h2 class="text-2xl font-bold mb-2 text-slate-900">Series:</h2>
-        <ContentCarousel :slides="Series" base-url="truth-resources"></ContentCarousel>
         <Divider></Divider>
 
         <TruthResourcesList :resources="NonSeries" base-url="truth-resources"></TruthResourcesList>
-        <RouterLink to="/truth-resources/text-material">View More ></RouterLink>
   
         <!-- My Plans -->
         <UserRecommendationFooter></UserRecommendationFooter>
@@ -53,11 +50,9 @@ const NonSeries = ref();
 const router = useRouter();
 
 onMounted(async () => {
-  const recentTruthResourcesSeriesPromise = await getSearch("truthResources", "", 1, 6, { filter: "isSeries = true" });
-  const recentTruthResourcesNonSeriesPromise = await getSearch("truthResources", "", 1, 6, { filter: "isSeries = false" });
-  const [recentTruthResourcesSeries, recentTruthResourcesNonSeries] = await Promise.all([recentTruthResourcesSeriesPromise, recentTruthResourcesNonSeriesPromise]);
-  
-  Series.value = recentTruthResourcesSeries.items
+  const recentTruthResourcesNonSeriesPromise = await getSearch("truthResources", "", 0, 0, { filter: "isSeries = false" });
+  const [recentTruthResourcesNonSeries] = await Promise.all([recentTruthResourcesNonSeriesPromise]);
+
   NonSeries.value = recentTruthResourcesNonSeries.items
 })
 </script>
