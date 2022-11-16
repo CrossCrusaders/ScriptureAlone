@@ -65,7 +65,7 @@ const loadSearchedSermons = async (forceReset = false) => {
   }
   loading.value = true
   try {
-    const { items, ...paginationData } = await getSearch('sermons', props.query || undefined, props.page, props.perPage, props.queryParams)
+    const { items, ...paginationData } = await getSearch('sermons', props.query || undefined, props.page, props.perPage, props.queryParams, false, true)
     if (props.appendContent && !forceReset) {
       loadedSermons.value = loadedSermons.value.concat(items as ContentPreview[])
     }

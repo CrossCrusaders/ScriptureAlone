@@ -21,9 +21,10 @@
     </div>
     <Transition name="popup">
       <div v-if="selectedBibleTranslationId != 'ENGKJV'" class="w-full fixed left-0 bottom-0">
-        <div class="w-full flex justify-center bg-white">
-          <!--<img id="popup" :src="PopUpImage"/>--> 
-          <p id="popup">Hello</p>
+        <div id="popup" class="w-full flex justify-center bg-gradient-to-r from-cyan-500 to-blue-500" style="align-items: center;">
+          <div>
+            <p class="p-4 text-white text-2xl md:text-5xl">{{ PopUpText }}</p>
+          </div>
         </div>
       </div>
     </Transition>
@@ -123,7 +124,7 @@ let highlightRange: number[] = []
 const router = useRouter()
 const route = useRoute()
 
-const PopUpImage = ref('');
+const PopUpText = ref('');
 
 const selectedBook = computed(() => availableBooks.value.find(book => book.bookId === selectedBookId.value))
 const selectedChapter = computed(() => {
@@ -170,12 +171,11 @@ const loadChapterContent = async () => {
 }
 
 onMounted(async () => {
-  var image = await PocketBaseClient.records.getFullList('truthResources', 200, { filter:"isPartOfPopups=true" })
-  var max = image.length-1;
+  var records = await PocketBaseClient.records.getFullList('truthResources', 200, { expand: "title", filter: "isPartOfPopups=true" })
+  var max = records.length-1;
   var min = 0;
-  var imageNum = Math.round(Math.random() * (max - min) + min);
-  console.log(imageNum)
-  PopUpImage.value = getBucketUrl(image[imageNum], image[imageNum].coverImage);
+  var recordNum = Math.round(Math.random() * (max - min) + min);
+  PopUpText.value = records[recordNum].title;
   getNewVerses();
 })
 
@@ -318,7 +318,7 @@ async function getNewVerses(){
 }
 
 #popup{
-  height: 50vh;
+  height: 40vh;
 }
 
 .popup-enter-active {

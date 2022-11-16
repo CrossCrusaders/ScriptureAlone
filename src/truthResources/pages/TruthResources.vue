@@ -17,10 +17,15 @@
         </PageHero>
         <h2 class="text-2xl font-bold mb-2 text-slate-900">Series:</h2>
         <ContentCarousel :slides="Series" base-url="truth-resources"></ContentCarousel>
+        <div class="flex justify-center mb-4 mt-4">
+          <RouterLink to="/truth-resources/series">View More ></RouterLink>
+        </div>
         <Divider></Divider>
 
         <TruthResourcesList :resources="NonSeries" base-url="truth-resources"></TruthResourcesList>
-        <RouterLink to="/truth-resources/text-material">View More ></RouterLink>
+        <div class="flex justify-center mb-4">
+          <RouterLink to="/truth-resources/text-materials">View More ></RouterLink>
+        </div>
   
         <!-- My Plans -->
         <UserRecommendationFooter></UserRecommendationFooter>

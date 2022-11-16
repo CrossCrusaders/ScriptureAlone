@@ -43,6 +43,7 @@ import Divider from '../../components/atoms/Divider.vue'
 import TruthResourcesList from '../components/TruthResourcesList.vue'
 
 import { getSearch } from '../../search/services/searchService'
+import { mouseover } from "dom7"
 
 const Series = ref();
 const NonSeries = ref();

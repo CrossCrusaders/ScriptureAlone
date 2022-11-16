@@ -5,26 +5,36 @@ import { transformAuthorResponse } from '../../authors/Author'
 import { AuthorSearch } from "../../authors/AuthorSearch"
 import { Author, transformAuthorResponses } from "../../authors/Author"
 
-export async function getSearch(collection: string, query: string | undefined, page: number, perPage: number, queryParams?: any){
+export async function getSearch(collection: string, query: string | undefined, page: number, perPage: number, queryParams?: any, isAnd?: boolean, hasCat?: boolean){
   const params = { sort: `-${collection.slice(0, collection.length - 1)}Date`, expand: 'categories,author', ...queryParams }
 
   if (query != "" && query) {
     var authors = await getSearchAuthors(query)
-    if(params.filters == undefined){
+    if(params.filter == undefined){
       params.filter = ""
     }
     else{
-      params.filters = params.filters + " || "
+      if(isAnd){
+        params.filter = params.filter + " && "
+      }
+      else{
+        params.filter = params.filter + " || "
+      }
     }
     authors.items.forEach((author, index) => {
-      params.filter += `author.id = "${author.id}" || `;
+      params.filter += `author.id = '${author.id}' || `;
     })
 
     const tokens = query.trim().split(' ')
     const filter = tokens.reduce((str, currentToken, index) => {
       if (index)
         str += '||'
-        str += `(categories.label~"${currentToken}"||title~"${currentToken}"||description~"${currentToken}")`
+        if(hasCat){
+          str += `(categories.label~'${currentToken}'||title~'${currentToken}'||description~'${currentToken}')`
+        }
+        else{
+          str += `(title~'${currentToken}'||description~'${currentToken}')`
+        }
         return str
       }, '')
     
