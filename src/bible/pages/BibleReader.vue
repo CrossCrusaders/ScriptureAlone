@@ -21,11 +21,13 @@
     </div>
     <Transition name="popup">
       <div v-if="selectedBibleTranslationId != 'ENGKJV'" class="w-full fixed left-0 bottom-0">
-        <div id="popup" class="w-full flex justify-center bg-gradient-to-r from-cyan-500 to-blue-500" style="align-items: center;">
-          <div>
-            <p class="p-4 text-white text-2xl md:text-5xl">{{ PopUpText }}</p>
+        <RouterLink :to="PopUpLink">
+          <div id="popup" class="w-full flex justify-center bg-gradient-to-r from-cyan-500 to-purple-500" style="align-items: center;">
+            <div>
+              <p class="p-4 text-white text-2xl md:text-5xl">{{ PopUpText }}</p>
+            </div>
           </div>
-        </div>
+        </RouterLink>
       </div>
     </Transition>
     <div class="w-full flex justify-center">
@@ -89,7 +91,6 @@ import Spinner from '../../components/atoms/Spinner.vue'
 import BibleTranslationSelect from '../../components/organisms/BibleTranslationSelect.vue'
 import { isBibleReference, searchBible } from '../../bible/services/BibleService'
 import PocketBaseClient from '../../api/PocketBaseClient'
-import { getBucketUrl } from '../../api/BucketStorageService'
 
 
 export interface BiblePageQueryParams {
@@ -125,6 +126,7 @@ const router = useRouter()
 const route = useRoute()
 
 const PopUpText = ref('');
+const PopUpLink = ref('');
 
 const selectedBook = computed(() => availableBooks.value.find(book => book.bookId === selectedBookId.value))
 const selectedChapter = computed(() => {
@@ -176,6 +178,7 @@ onMounted(async () => {
   var min = 0;
   var recordNum = Math.round(Math.random() * (max - min) + min);
   PopUpText.value = records[recordNum].title;
+  PopUpLink.value = "/truth-resources/" + records[recordNum].id;
   getNewVerses();
 })
 
