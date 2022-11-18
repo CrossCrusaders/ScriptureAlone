@@ -24,7 +24,6 @@ import { useUserFavorites } from '../../user/services/UserService';
 import { useAuth } from '../../auth/services/AuthService';
 
 import { getSearch } from '../../search/services/searchService'
-import PocketBaseClient from '../../api/PocketBaseClient';
  
 export interface DevotionalsPreviewGridProps {
   queryParams?: any
