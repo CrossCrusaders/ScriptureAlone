@@ -1,60 +1,87 @@
 <template>
-    <AppLayout>
-      <PageContent>
-        <!-- Truth Resources Hero -->
-        <PageHero>
-          <template v-slot:image>
-            <img src="/logo-bible.png" class="object-contain hidden md:block max-h-32" />
-          </template>
-          <h2 class="text-4xl font-bold mb-2 text-slate-900">Truth Resources</h2>
-          <p class="text-slate-600 max-w-prose">
-            Some text yeah. UHIFdjfrenkgtnjvgjgr5jgnj54rng j gnjg j4gnkjnmndkgflrefjk. hijkiefljefgklrjgkkgjk5gj 54jkg jctkc gjk45jkg5jk5jg4kjg5k45gk45ktl4ejgk5g. i ito545jjitjhufhrhj4iwrj iw4 r4utio4jr 89rui i4u999  9 i45ferk.
-            Don't speak in tongues, kids.
-          </p>
-          <template v-slot:actions>
-            
-          </template>
-        </PageHero>
-        <Divider></Divider>
-
-        <TruthResourcesList :resources="NonSeries" base-url="truth-resources"></TruthResourcesList>
-  
-        <!-- My Plans -->
-        <UserRecommendationFooter></UserRecommendationFooter>
-      </PageContent>
-    </AppLayout>
+  <AppLayout>
+    <PageContent>
+      <h1 id="page-title__sermon-authors"
+        class="max-w-prose mx-auto text-slate-800 text-center text-5xl font-title font-bold mt-8 mb-8">Search
+        Truth Resource Text Materials
+      </h1>
+      <div class="max-w-prose mx-auto mb-8">
+        <form @submit.prevent="onFormSubmit">
+          <AppInput placeholder="Search For Truth Resources" v-model="currentQuery">
+            <template v-slot:postfix>
+              <AppButton variant="primary-minimal" size="sm" type="submit" v-if="!hasSearch">
+                <Icon icon-name="magnify"></Icon>
+              </AppButton>
+              <AppButton variant="primary-minimal" @focus="onClearClicked" size="sm" v-else>
+                <Icon icon-name="close"></Icon>
+              </AppButton>
+            </template>
+          </AppInput>
+        </form>
+      </div>
+      <InfiniteScrollContent @scroll:end="onScrollEnd">
+        <TruthResourcesPreviewGrid @data:loaded="loading = false" :append-content="true" :per-page="16" :page="currentPage"
+          :query="searchedQuery" :query-params="queryParams">
+        </TruthResourcesPreviewGrid>
+      </InfiniteScrollContent>
+      <div v-if="reachedEnd">
+        <p class="text-center text-xl font-bold mb-4">End of Results</p>
+        <p class="text-center text-xl mb-8 underline">
+          <a href="#page-title__truth-resource-authors">
+            Back To Top?
+          </a>
+        </p>
+      </div>
+    </PageContent>
+  </AppLayout>
 </template>
-  
+
 <script setup lang="ts">
-import AppLayout from "../../components/templates/AppLayout.vue"
-import PageContent from "../../components/templates/PageContent.vue"
-import AppButton from "../../components/atoms/form-controls/AppButton.vue"
-import Icon from "../../components/atoms/Icon.vue"
-import { onMounted, ref } from 'vue'
-import ContentCarousel from '../../components/molecules/ContentCarousel.vue'
-  
-import PageHero from "../../components/molecules/PageHero.vue"
-import { useRouter } from "vue-router"
-import AppInput from "../../components/atoms/form-controls/AppInput.vue"
-import DevotionalsPreviewGrid from "../components/DevotionalsPreviewGrid.vue"
-import UserRecommendationFooter from "../../components/organisms/UserRecommendationFooter.vue"
-import Divider from '../../components/atoms/Divider.vue'
+import AppLayout from '../../components/templates/AppLayout.vue'
+import PageContent from '../../components/templates/PageContent.vue'
+import AppInput from '../../components/atoms/form-controls/AppInput.vue'
+import Icon from '../../components/atoms/Icon.vue'
+import { ref } from 'vue'
+import AppButton from '../../components/atoms/form-controls/AppButton.vue'
+import InfiniteScrollContent from '../../components/templates/InfiniteScrollContent.vue'
+import TruthResourcesPreviewGrid from '../components/TruthResourcesPreviewGrid.vue'
 
-import TruthResourcesList from '../components/TruthResourcesList.vue'
+const loading = ref<boolean>(false)
+const reachedEnd = ref<boolean>(false)
+const queryParams = ref<any>({ filter: "isSeries = false" })
 
-import { getSearch } from '../../search/services/searchService'
-import { mouseover } from "dom7"
+const hasSearch = ref(false)
 
-const Series = ref();
-const NonSeries = ref();
-  
-const router = useRouter();
+const currentQuery = ref<string>('')
+const searchedQuery = ref<string>('')
 
-onMounted(async () => {
-  const recentTruthResourcesNonSeriesPromise = await getSearch("truthResources", "", 0, 0, { filter: "isSeries = false" });
-  const [recentTruthResourcesNonSeries] = await Promise.all([recentTruthResourcesNonSeriesPromise]);
+const currentPage = ref(1)
+const countPerPage = 27
 
-  NonSeries.value = recentTruthResourcesNonSeries.items
-})
+const onFormSubmit = async () => {
+  searchedQuery.value = currentQuery.value;
+  currentPage.value = 1;
+  hasSearch.value = true;
+  if(searchedQuery.value == ""){
+    hasSearch.value = false;
+  }
+}
+
+const onClearClicked = async () => {
+  searchedQuery.value = ''
+  currentQuery.value = ''
+  currentPage.value = 1
+  hasSearch.value = false
+}
+
+
+const onScrollEnd = async () => {
+  if (!reachedEnd.value) {
+    currentPage.value += 1
+  }
+}
 </script>
-  
+
+<style scoped>
+
+</style>

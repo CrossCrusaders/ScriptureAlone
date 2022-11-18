@@ -63,7 +63,7 @@
     }
     loading.value = true
     try {
-      const { items, ...paginationData } = await getSearch('truthResources', props.query || undefined, props.page, props.perPage, props.queryParams, true, false)
+      const { items, ...paginationData } = await getSearch('truthResources', props.query || undefined, props.page, props.perPage, props.queryParams, true)
       if (props.appendContent && !forceReset) {
         loadedTruthResources.value = loadedTruthResources.value.concat(items as ContentPreview[])
       }

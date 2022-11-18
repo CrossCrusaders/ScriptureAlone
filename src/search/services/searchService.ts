@@ -5,11 +5,12 @@ import { transformAuthorResponse } from '../../authors/Author'
 import { AuthorSearch } from "../../authors/AuthorSearch"
 import { Author, transformAuthorResponses } from "../../authors/Author"
 
-export async function getSearch(collection: string, query: string | undefined, page: number, perPage: number, queryParams?: any, isAnd?: boolean, hasCat?: boolean){
+export async function getSearch(collection: string, query: string | undefined, page: number, perPage: number, queryParams?: any, isAnd?: boolean){
   const params = { sort: `-${collection.slice(0, collection.length - 1)}Date`, expand: 'categories,author', ...queryParams }
 
-  if (query != "" && query) {
+  if (query != "" && query != null && query != undefined && query) {
     var authors = await getSearchAuthors(query)
+    console.log(authors)
     if(params.filter == undefined){
       params.filter = ""
     }
@@ -29,17 +30,15 @@ export async function getSearch(collection: string, query: string | undefined, p
     const filter = tokens.reduce((str, currentToken, index) => {
       if (index)
         str += '||'
-        if(hasCat){
-          str += `(categories.label~'${currentToken}'||title~'${currentToken}'||description~'${currentToken}')`
-        }
-        else{
-          str += `(title~'${currentToken}'||description~'${currentToken}')`
-        }
+        str += `(categories.label~"${currentToken}"||title~"${currentToken}"||description~"${currentToken}")`
         return str
       }, '')
     
     params.filter = params.filter + filter;
   }
+
+  console.log(params.filter)
+
   const records: any = await PocketBaseClient.records.getList(collection, page, perPage, params)
   records.items = await transformRecordResponses(records.items, collection) as any
   return records;
@@ -52,27 +51,32 @@ export async function getSearchAuthors(query?: string, page: number = 1, perPage
   }
   if (query != "" && query) {
     const searchTokens = query.trim().split(' ')
+    if(params.filter == undefined){
+      params.filter = ""
+    }
     searchTokens.forEach((token, index) => {
-      params.filter += `${(index > 0) ? '||' : ''}(firstName~'${token}'||lastName~'${token}')`
+      params.filter += `${(index > 0) ? '||' : ''}(firstName~"${token}"||lastName~"${token}")`
     })
   }
-
   const response = await PocketBaseClient.records.getList('authors', page, perPage, params)
 
   const authors = transformAuthorResponses(response.items)
+  console.log(authors)
 
   var name = "";
   var returnAuthors:Author[] = [];
   authors.forEach((author) => {
-    name = `${author.firstName} ${author.lastName}`
+    name = `${author.firstName.trim()} ${author.lastName.trim()}`
+    console.log(name)
     if(name.includes(query || "")){
       returnAuthors.push(author);
     }
   });
+  console.log(returnAuthors)
 
   return {
     ...response,
-    items: returnAuthors,
+    items: authors,
   } as AuthorSearch
 }
 
