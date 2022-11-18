@@ -27,7 +27,7 @@
         Tags:
         <span v-for="(category, innerIndex) in props.content?.categories">
           <a v-if="props.content?.categories?.length != innerIndex + 1">{{ category.label }},&nbsp;</a>
-          <a v-else>{{ category.label }}&nbsp;</a>
+          <a v-else>{{ category.label }}</a>
         </span>
       </p>
       <p v-if="props.content?.duration" class="text-slate-200 text-md font-body text-sm mb-3 z-20">
