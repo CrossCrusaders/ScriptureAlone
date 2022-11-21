@@ -90,7 +90,7 @@ import { getUserFavoriteDevotionals } from '../../devotionals/services/Devotiona
 import { getUserFavoriteSermons } from '../../sermons/services/SermonService'
 import Divider from '../../components/atoms/Divider.vue'
 
-const categories = ref<any>([{ name: "Read VOTD", link: "/#VOTD", badge: "book-heart" }, { name: "Are you failing?", link: "", badge: "hands-pray" }, { name: "Are you truly saved?", link: "https://independentbaptist.church/salvation", badge: "cross" }, { name: "Join a Bible-based church.", link: "https://independentbaptist.church/", badge: "church" }]);
+const categories = ref<any>([{ name: "Read VOTD", link: "/#votd", badge: "book-heart" }, { name: "Are you failing?", link: "", badge: "hands-pray" }, { name: "Are you truly saved?", link: "https://independentbaptist.church/salvation", badge: "cross" }, { name: "Join a Bible-based church.", link: "https://independentbaptist.church/", badge: "church" }]);
 
 
 const { user } = useAuth()

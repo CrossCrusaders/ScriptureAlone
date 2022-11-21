@@ -100,11 +100,9 @@ import {
   isBibleReference,
 } from "../../bible/services/BibleService";
 import Icon from "../../components/atoms/Icon.vue";
-import { useRouter } from "vue-router";
+import { useRouter, useRoute } from "vue-router";
 import BibleTranslationSelect from "../../components/organisms/BibleTranslationSelect.vue";
 import AppButton from "../../components/atoms/form-controls/AppButton.vue";
-
-import { getBucketUrl } from '../../api/BucketStorageService'
 
 import { getSearch } from '../../search/services/searchService'
 
@@ -114,8 +112,13 @@ const verseText = ref("");
 let devoList = ref<any[]>([])
 let sermonList = ref<any[]>([])
 
+const route = useRoute()
 
 onMounted(async () => {
+  if(route.query.votd == 't'){
+    document.getElementById("votd")?.scrollIntoView();
+  }
+
   var htmlVerse = await getVerseOfTheDay();
 
   verseName.value = htmlVerse.verseReference + " KJV";
@@ -156,8 +159,6 @@ const callToActionItemClass = [
 ];
 
 const callToActionIconClass = "cta-icon mb-2";
-
-const { breakpoint } = useBreakpoint();
 
 const router = useRouter();
 

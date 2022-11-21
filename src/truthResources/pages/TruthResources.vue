@@ -8,8 +8,7 @@
           </template>
           <h2 class="text-4xl font-bold mb-2 text-slate-900">Truth Resources</h2>
           <p class="text-slate-600 max-w-prose">
-            Some text yeah. UHIFdjfrenkgtnjvgjgr5jgnj54rng j gnjg j4gnkjnmndkgflrefjk. hijkiefljefgklrjgkkgjk5gj 54jkg jctkc gjk45jkg5jk5jg4kjg5k45gk45ktl4ejgk5g. i ito545jjitjhufhrhj4iwrj iw4 r4utio4jr 89rui i4u999  9 i45ferk.
-            Don't speak in tongues, kids.
+            Truth Resources is the best place to gather essential information to guide new converts as well as believers in the truth of God's Word. Read articles and watch videos to teach you the history of the manuscripts and the logical reasoning behind why we believe what we believe.
           </p>
           <template v-slot:actions>
             
