@@ -91,7 +91,7 @@
 import AppLayout from "../../components/templates/AppLayout.vue";
 import PageContent from "../../components/templates/PageContent.vue";
 import AppInput from "../../components/atoms/form-controls/AppInput.vue";
-import { ref, onMounted, watch } from "vue";
+import { ref, onMounted } from "vue";
 import Divider from "../../components/atoms/Divider.vue";
 import ContentCarousel from "../../components/molecules/ContentCarousel.vue";
 import { useBreakpoint } from "../../browser/ViewportService";
@@ -114,11 +114,13 @@ let sermonList = ref<any[]>([])
 
 const route = useRoute()
 
-onMounted(async () => {
+window.onload = function(){
   if(route.query.votd == 't'){
-    document.getElementById("votd")?.scrollIntoView();
+    document.getElementById("votd")?.scrollIntoView({ behavior: "smooth" });
   }
+}
 
+onMounted(async () => {
   var htmlVerse = await getVerseOfTheDay();
 
   verseName.value = htmlVerse.verseReference + " KJV";
