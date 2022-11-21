@@ -30,20 +30,20 @@
 
     <!-- Calls To Action -->
     <div class="flex flex-col md:flex-row gap-2 items-center justify-between mb-24 p-2">
-      <a :class="callToActionItemClass" href="#votd">
+      <a :class="callToActionItemClass" href="?votd=t">
         <Icon icon-name="book-cross" color="black" hoverColor="text-white" :class="[callToActionIconClass]" :size="56">
         </Icon>
-        <span class="text-center whitespace-nowrap text-ellipsis">Verse of the Day</span>
+        <span class="text-center text-xl lg:text-4xl">Verse of the Day</span>
       </a>
       <RouterLink :class="callToActionItemClass" to="/devotionals">
         <Icon icon-name="notebook-edit" color="black" hoverColor="text-white" :class="[callToActionIconClass]" :size="56">
         </Icon>
-        Devotionals
+        <span class="text-xl md:text-2xl lg:text-4xl">Devotionals</span>
       </RouterLink>
       <RouterLink :class="callToActionItemClass" to="/sermons">
         <Icon icon-name="cross" color="black" hoverColor="text-white" :class="[callToActionIconClass]" :size="56">
         </Icon>
-        Sermons
+        <span class="text-xl md:text-2xl lg:text-4xl">Sermons</span>
       </RouterLink>
     </div>
 
@@ -138,7 +138,10 @@ const searchModel = ref("");
 const searchTranslationId = ref("ENGKJV");
 const callToActionItemClass = [
   "cta-item border-slate-700",
+  "md:w-2/6",
   "w-full",
+  "h-48",
+  "lg:h-64",
   "cursor-pointer",
   "bg-slate-200",
   "rounded-xl",
