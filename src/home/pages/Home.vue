@@ -114,12 +114,6 @@ let sermonList = ref<any[]>([])
 
 const route = useRoute()
 
-window.onload = function(){
-  if(route.query.votd == 't'){
-    document.getElementById("votd")?.scrollIntoView({ behavior: "smooth" });
-  }
-}
-
 onMounted(async () => {
   var htmlVerse = await getVerseOfTheDay();
 
@@ -134,6 +128,10 @@ onMounted(async () => {
 
   devoList.value = recentDevotionals.items
   sermonList.value = recentSermons.items
+
+  if(route.query.votd == 't'){
+    document.getElementById("votd")?.scrollIntoView({ behavior: "smooth" });
+  }
 });
 
 const searchModel = ref("");
