@@ -43,7 +43,6 @@ import ContentCarousel from '../../components/molecules/ContentCarousel.vue'
 import PageHero from "../../components/molecules/PageHero.vue"
 import { useRouter } from "vue-router"
 import AppInput from "../../components/atoms/form-controls/AppInput.vue"
-import DevotionalsPreviewGrid from "../components/DevotionalsPreviewGrid.vue"
 import UserRecommendationFooter from "../../components/organisms/UserRecommendationFooter.vue"
 import Divider from '../../components/atoms/Divider.vue'
 

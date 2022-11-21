@@ -4,7 +4,8 @@ const config: CapacitorConfig = {
   appId: 'app.scripturealone.crosscrusaders',
   appName: 'Scripture Alone',
   webDir: 'dist',
-  bundledWebRuntime: false
+  bundledWebRuntime: false,
+  hideLogs: true
 };
 
 export default config;

@@ -14,7 +14,7 @@
         </div>
 
         <template v-slot:action>
-          <AppButton to="/dashboard">
+          <AppButton class="text-center" to="/dashboard">
             Show Me!
           </AppButton>
         </template>
@@ -33,7 +33,7 @@
         </div>
 
         <template v-slot:action>
-          <AppButton variant="secondary" to="/auth/register">
+          <AppButton class="text-center" variant="secondary" to="/auth/register">
             Sign Up
           </AppButton>
         </template>
@@ -55,7 +55,7 @@
 
         <template v-slot:action>
 
-          <AppButton variant="primary-outline" to="/#votd">
+          <AppButton class="text-center" variant="primary-outline" to="/#votd">
             Go!
           </AppButton>
         </template>
