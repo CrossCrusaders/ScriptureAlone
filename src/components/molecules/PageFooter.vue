@@ -29,7 +29,7 @@
         <br>
 
         <div>
-          <a to="https://www.facebook.com/profile.php?id=100087131003164"><span 
+          <a to="https://facebook.com/shawn.henly707"><span 
             class="fa fa-facebook fa-xl pr-3 transition duration-150 ease-in-out hover:text-gray-400"
             aria-hidden="true"></span></a>
           <a href="https://twitter.com/ItsShawnH"><span
