@@ -39,7 +39,7 @@
             class="fa-brands fa-instagram fa-xl pr-3 transition duration-150 ease-in-out hover:text-gray-400"></span></a>
           <a href="https://www.youtube.com/crosscrusaders"><span
             class="fa-brands fa-youtube fa-xl pr-3 transition duration-150 ease-in-out hover:text-gray-400"></span></a>
-          <a href="https://discord.gg/3YEd7KdJkz" target="blank"><span
+          <a href="https://discord.gg/3BdrYPtE38" target="blank"><span
             class="fa-brands fa-discord fa-xl pr-3 transition duration-150 ease-in-out hover:text-gray-400"></span></a>
           <a href="https://github.com/ItsShawn/itsshawn.github.io/" target="blank"><span
             class="fa fa-github fa-xl pr-3 transition duration-150 ease-in-out hover:text-gray-400"
