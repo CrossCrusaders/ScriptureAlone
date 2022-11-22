@@ -54,7 +54,7 @@
       <AppButton href="/auth/log-in" variant="primary-minimal">Log In</AppButton>
       <AppButton href="/auth/register" variant="primary">Sign Up</AppButton>
     </div>
-    <div v-else class="pr-2">
+    <div v-else>
       <RouterLink to="/dashboard">
         <UserProfileBadge></UserProfileBadge>
       </RouterLink>
