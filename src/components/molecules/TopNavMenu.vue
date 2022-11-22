@@ -35,11 +35,14 @@
   </nav>
   <nav class="w-full flex flex-row justify-between items-center" v-else>
     <ul class="flex flex-row gap-4 items-center">
-      <li v-for="item in menuItems" :key="item.label" class="top-nav-menu-item">
-        <RouterLink class="font-bold text-gray-700  p-2 flex flex-row gap-4 items-center" :to="item.link || '#'">
+      <li v-for="item in menuItems" :key="item.label" class="top-nav-menu-item mt-2">
+        <RouterLink v-if="item.link != null" class="font-bold text-gray-700  p-2 flex flex-row gap-4 items-center" :to="item.link">
           <span class="underline">{{ item.label }}</span>
-          <Icon v-if="item.children && item.children.length" icon-name="chevron-down"></Icon>
         </RouterLink>
+        <span v-else class="font-bold text-gray-700 p-2 flex flex-row items-center">
+          <span class="underline">{{ item.label }}</span>
+          <Icon v-if="item.children && item.children.length" icon-name="chevron-down" class="mb-3"></Icon>
+        </span>
         <ul class="top-nav-submenu p-4 bg-gray-800 text-white min-w-fit  shadow-lg rounded z-40"
           v-if="item.children && item.children.length">
           <li v-for="child in item.children" :key="child.label">
