@@ -1,7 +1,6 @@
 <template>
   <div class="min-h-screen flex flex-col">
     <top-nav-bar></top-nav-bar>
-    <donate-button></donate-button>
     <div class="flex-auto">
       <slot></slot>
     </div>

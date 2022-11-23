@@ -1,6 +1,6 @@
 <template>
-    <div class="w-full flex" style="justify-content:right;">
-      <AppButton href="#" class="mr-4 absolute z-50 border-white md:border-none" variant="primary">Donate</AppButton>
+    <div>
+      <AppButton href="#" variant="primary">Donate</AppButton>
     </div>
 </template>
 

@@ -30,6 +30,9 @@
           </RouterLink>
           <RouterLink :class="mobileLinkClass" to="/auth/log-out">Log Out</RouterLink>
         </div>
+        <div>
+          <a class="ml-3" href="#">Donate</a>
+        </div>
       </div>
     </Transition>
   </nav>
@@ -53,6 +56,9 @@
         </ul>
       </li>
     </ul>
+    <div>
+      <DonateButton></DonateButton>
+    </div>
     <div v-if="!user">
       <AppButton href="/auth/log-in" variant="primary-minimal">Log In</AppButton>
       <AppButton href="/auth/register" variant="primary">Sign Up</AppButton>
@@ -75,6 +81,7 @@ import AppButton from '../atoms/form-controls/AppButton.vue'
 import LogoAndName from './LogoAndName.vue'
 import Icon from '../atoms/Icon.vue'
 import UserProfileBadge from '../organisms/UserProfileBadge.vue';
+import DonateButton from './DonateButton.vue';
 
 const { breakpoint } = useBreakpoint()
 const { user } = useAuth()
