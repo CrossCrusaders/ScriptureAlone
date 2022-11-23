@@ -54,7 +54,7 @@
         Verse of the Day
       </h2>
       <div class="rounded-lg border-2 border-solid border-gray-800 p-8 max-w-prose">
-        <h3 v-html="verseName" id="verseName" class="font-title font-bold text-3xl text-gray-800 mb-8"></h3>
+        <h3 v-html="verseName" id="verseName" class="font-title font-bold text-2xl md:text-3xl text-gray-800 mb-8"></h3>
         <p v-html="verseText" id="verseText" class="text-xl"></p>
       </div>
     </div>
