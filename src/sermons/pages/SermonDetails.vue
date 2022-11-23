@@ -41,7 +41,7 @@
               v-if="sermonVideoSrc && globalVideoState !== VideoPlayerState.playing && globalAudioState !== AudioPlayerState.playing">
               {{ 'Play Video' }}
             </AppButton>
-            <div v-if="sermonAudioSrc && globalVideoState === VideoPlayerState.playing">
+            <div v-if="sermonVideoSrc && globalVideoState === VideoPlayerState.playing">
               <AppButton @click="globalVideoState = VideoPlayerState.hidden" variant="accent">{{ 'Close' }}
               </AppButton>
             </div>

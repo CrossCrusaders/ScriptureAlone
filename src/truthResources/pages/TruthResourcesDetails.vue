@@ -3,89 +3,70 @@
     <PageContent>
       <div class="flex flex-col-reverse md:flex-row gap-2 md:gap-8 mt-8" v-if="!loading && !!truthResourceDetail">
         <div class="md:w-2/6">
-          <AuthorPreviewColumn :show-church-info="true" :author="truthResourceDetail.author">
+          <AuthorPreviewColumn :show-church-info="true" :author="truthResourceDetail.author"
+            :coverImage="truthResourceDetail.coverImage">
             <template v-slot:cover-image="{ image }">
-              <TruthResourceCoverImage v-if="truthResourceDetail.coverImage" :resource="truthResourceDetail" :truth-resource-id="truthResourceDetail?.id">
-              </TruthResourceCoverImage>
-              <p v-else></p>
+              <SermonCoverImage :cover-image="image" :sermon-id="truthResourceDetail?.id"></SermonCoverImage>
             </template>
           </AuthorPreviewColumn>
           <!--TODO: Share Icons -->
 
         </div>
         <!-- Right Side -->
-        <div class="md:w-4/6 flex-auto">
+        <div class="md:w-4/6 flex-auto pb-8">
           <h1 class="font-title font-bold text-4xl mb-2 text-slate-800">{{ truthResourceDetail.title }}</h1>
-          <p class="text-slate-500">Updated: {{ truthResourceLastUpdatedDisplay }}</p>
+          <p class="text-slate-500">Updated: {{ truthResourceLastUpdatedDisplay }} &bullet;
+            <span class="text-slate-500" v-if="truthResourceDetail.duration">
+              Duration: {{ formatMillisecondsAsReadableDuration(
+                truthResourceDetail.duration)
+              }}
+            </span>
+          </p>
 
-          <p class="mb-8 text-slate-500 font-bold">{{ truthResourceDetail.truthResourceDate }}</p>
+          <p class="mb-8 text-slate-500 font-bold">{{ format(truthResourceDetail.truthResourceDate || new Date(), 'MM/dd/yyyy') }}</p>
           <p class="mb-8 text-slate-700 leading-normal">
             {{ truthResourceDetail.description }}
           </p>
+          <!-- Buttons -->
           <div class="flex gap-4 mb-16">
-            <AppButton variant="primary" @click="showPlayerModal = true" v-if="truthResourceAudioSrc">Play Audio
+            <AppButton variant="primary" @click="onPlayAudioClicked()"
+              v-if="truthResourceAudioSrc && globalAudioState !== AudioPlayerState.playing && globalVideoState !== VideoPlayerState.playing">{{ 'Play Audio' }}
             </AppButton>
-            <AppButton variant="primary-outline" v-if="truthResourceVideoSrc">Play Video</AppButton>
+            <AppButton v-if="truthResourceAudioSrc && globalAudioState === AudioPlayerState.playing" @click="globalAudioState = AudioPlayerState.hidden" variant="accent">{{ 'Close' }}
+            </AppButton>
+            <AppButton v-if="truthResourceAudioSrc && globalAudioState === AudioPlayerState.playing" to="/bible" variant="accent">{{ 'Open Bible' }}
+            </AppButton>
+
+            <AppButton variant="primary" @click="onPlayVideoClicked()"
+              v-if="truthResourceVideoSrc && globalVideoState !== VideoPlayerState.playing && globalAudioState !== AudioPlayerState.playing">
+              {{ 'Play Video' }}
+            </AppButton>
+            <div v-if="truthResourceVideoSrc && globalVideoState === VideoPlayerState.playing">
+              <AppButton @click="globalVideoState = VideoPlayerState.hidden" variant="accent">{{ 'Close' }}
+              </AppButton>
+            </div>
           </div>
-          <Divider></Divider>
-          <div class="overflow-scroll border-2 border-slate-400 border-solid" style="height:55em;">
-            <VuePdf v-for="page in truthResourceDetail.pageAmount" :key="page" :src="getBucketUrl(truthResourceDetail, truthResourceDetail.pdf || truthResourceDetail.externalPDFLink)" :page="page" />
-          </div>
-          <br>
+          <!-- Video -->
+          <Transition name="video">
+            <video v-if="truthResourceVideoSrc && globalVideoState === VideoPlayerState.playing" class="w-full"
+              :src="truthResourceVideoSrc" controlslist="nodownload" autoplay="true" controls></video>
+          </Transition>
         </div>
       </div>
-      <div class="lg:flex lg:flex-row gap-10">
-        <!-- My Plans -->
-        <div class="bg-slate-200 rounded-3xl w-full mb-4">
-          <IconCallToAction class="w-full gap-2">
-            <template v-slot:image>
-              <Icon icon-name="clipboard-list" :size="56"></Icon>
-            </template>
 
-            <div>
-              <h1 class="text-xl whitespace-nowrap font-title font-bold">My Plans</h1>
-              <p class="font-body font-lg leading-relaxed">This is the body</p>
-            </div>
-
-            <template v-slot:action>
-              <AppButton>
-                Click Me!
-              </AppButton>
-            </template>
-          </IconCallToAction>
-        </div>
-
-        <!-- Recommended Plans -->
-        <div class="bg-slate-200 rounded-3xl w-full mb-4">
-          <IconCallToAction class="w-full gap-2">
-            <template v-slot:image>
-              <Icon icon-name="thumb-up" :size="56"></Icon>
-            </template>
-
-            <div>
-              <h1 class="text-xl whitespace-nowrap font-title font-bold">Recommended Plans</h1>
-              <p class="font-body font-sm leading-relaxed">This is the body</p>
-            </div>
-
-            <template v-slot:action>
-              <AppButton>
-                Click Me!
-              </AppButton>
-            </template>
-          </IconCallToAction>
+      <div class="w-full flex" style="justify-content: right;" v-if="!loading && !!truthResourceDetail">
+        <div class="overflow-scroll border-2 border-slate-400 border-solid w-1/2 mb-4" style="height:38em;">
+          <VuePdf v-for="page in truthResourceDetail.pageAmount" :key="page" :src="getBucketUrl(truthResourceDetail, truthResourceDetail.pdf || truthResourceDetail.externalPDFLink)" :page="page" />
         </div>
       </div>
+
+      <UserRecommendationFooter></UserRecommendationFooter>
+
       <br><br>
     </PageContent>
   </AppLayout>
-
-  <AppModal v-model="showPlayerModal" @beforeClose="beforeAudioModalClose()" v-slot="{ close }">
-    <div class="p2">
-      <AudioPlayer :audio-src="truthResourceAudioSrc"></AudioPlayer>
-      <button @click="close()">Close</button>
-    </div>
-  </AppModal>
 </template>
+
   
 <script setup lang="ts">
 import { computed, onMounted, ref } from 'vue'
@@ -94,25 +75,29 @@ import AppLayout from '../../components/templates/AppLayout.vue'
 import PageContent from '../../components/templates/PageContent.vue'
 import AppButton from '../../components/atoms/form-controls/AppButton.vue'
 import Divider from '../../components/atoms/Divider.vue'
-import AppModal from '../../components/templates/AppModal.vue'
-import AudioPlayer from '../../components/organisms/AudioPlayer/AudioPlayer.vue'
 import AuthorPreviewColumn from '../../components/molecules/AuthorPreviewColumn.vue'
-import { useBreakpoint } from '../../browser/ViewportService'
-
+import UserRecommendationFooter from '../../components/organisms/UserRecommendationFooter.vue'
 import { formatAddress } from '../../core/services/FormatService'
 import { getTruthResource } from '../services/TruthResourceService'
 import { useRoute } from 'vue-router'
 import { format } from 'date-fns'
-import { formatMillisecondsAsReadableDuration } from '../../core/services/FormatService'
+import { formatMillisecondsAsReadableDuration, formatName } from '../../core/services/FormatService'
 import { TruthResource } from '../TruthResource'
-import IconCallToAction from '../../components/molecules/IconCallToAction.vue'
-import Icon from '../../components/atoms/Icon.vue'
-import Accordion from '../../components/molecules/Accordion/Accordion.vue'
-import AccordionItem from '../../components/molecules/Accordion/AccordionItem.vue'
-import { RouterLink } from 'vue-router'
 import TruthResourceCoverImage from '../components/TruthResourceCoverImage.vue'
-import { prop } from 'dom7'
+import { VideoPlayerState, useGlobalVideoPlayer } from '../../components/organisms/VideoPlayer/VideoPlayerService'
+import { AudioPlayerState, useGlobalAudioPlayer } from '../../components/organisms/AudioPlayer/AudioPlayerService'
 import { getBucketUrl } from '../../api/BucketStorageService'
+
+const {
+  setGlobalAudioPayload,
+  setGlobalAudioState,
+  globalAudioState
+} = useGlobalAudioPlayer()
+const {
+  setGlobalVideoPayload,
+  setGlobalVideoState,
+  globalVideoState
+} = useGlobalVideoPlayer()
 
 
 const loading = ref(true)
@@ -135,13 +120,11 @@ onMounted(async () => {
 })
 
 const truthResourceAudioSrc = computed(() => {
-  //return truthResourceDetail.value?.externalAudioFileUrl || truthResourceDetail.value?.audioFile
-  return ""
+  return truthResourceDetail.value?.externalAudioFileUrl || truthResourceDetail.value?.externalAudioFileUrl
 })
 
 const truthResourceVideoSrc = computed(() => {
-  //return truthResourceDetail.value?.externalVideoFileUrl
-  return ""
+  return truthResourceDetail.value?.externalVideoFileUrl
 })
 
 const truthResourceLastUpdatedDisplay = computed(() => {
@@ -152,6 +135,42 @@ const truthResourceLastUpdatedDisplay = computed(() => {
 
 const beforeAudioModalClose = () => {
   // TODO: find a way to stop the audio from playing when the modal is closed
+}
+
+const onPlayVideoClicked = () => {
+
+  if (!truthResourceDetail.value)
+    return
+  const { title, id, author } = truthResourceDetail.value
+
+  setGlobalVideoPayload({
+    id: id!,
+    title: title!,
+    author: formatName(author),
+    currentTime: 0,
+    url: truthResourceVideoSrc.value,
+    contentPage: `/truth-resources/${id}`
+  })
+
+  setGlobalVideoState(VideoPlayerState.playing)
+}
+
+const onPlayAudioClicked = () => {
+
+if (!truthResourceDetail.value)
+  return
+const { title, id, author } = truthResourceDetail.value
+
+setGlobalAudioPayload({
+  id: id,
+  title: title,
+  author: formatName(author),
+  currentTime: 0,
+  url: truthResourceAudioSrc.value,
+  contentPage: `/truth-resources/${id}`
+})
+
+setGlobalAudioState(AudioPlayerState.playing)
 }
 
 </script>

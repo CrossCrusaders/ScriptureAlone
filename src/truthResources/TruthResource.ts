@@ -15,12 +15,7 @@ export interface TruthResource {
   coverImage?: any
   description?: string
   truthResourceDate?: Date
-  //externalAudioFileUrl?: string
-  //externalCoverImageUrl?: string
-  //externalVideoFileUrl?: string
-  //audioFile?: string,
 
-  //devotionalDate?: Date
   title?: string
   //transcript?: string
   created?: Date
@@ -38,6 +33,9 @@ export interface TruthResource {
   pdf?: any
   pageAmount: number
   externalPDFLink?: string
+  externalVideoFileUrl?: string
+  externalAudioFileUrl?: string
+  duration?: number
 }
 
 
