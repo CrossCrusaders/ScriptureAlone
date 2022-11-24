@@ -30,8 +30,8 @@
           </RouterLink>
           <RouterLink :class="mobileLinkClass" to="/auth/log-out">Log Out</RouterLink>
         </div>
-        <div>
-          <a class="ml-3" href="#">Donate</a>
+        <div :class="mobileLinkClass">
+          <a href="#">Donate</a>
         </div>
       </div>
     </Transition>

@@ -1,6 +1,6 @@
 <template>
   <div class="flex flex-row justify-center">
-    <audio ref="audioEl" class="w-full max-w-prose" controls :src="props.audioSrc">
+    <audio ref="audioEl" class="w-full max-w-prose" controls controlslist="nodownload" :src="props.audioSrc">
     </audio>
   </div>
 </template>
