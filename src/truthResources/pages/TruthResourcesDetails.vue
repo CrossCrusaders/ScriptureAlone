@@ -6,7 +6,7 @@
           <AuthorPreviewColumn :show-church-info="true" :author="truthResourceDetail.author"
             :coverImage="truthResourceDetail.coverImage">
             <template v-slot:cover-image="{ image }">
-              <SermonCoverImage :cover-image="image" :sermon-id="truthResourceDetail?.id"></SermonCoverImage>
+              <TruthResourceCoverImage :cover-image="image" :sermon-id="truthResourceDetail?.id"></TruthResourceCoverImage>
             </template>
           </AuthorPreviewColumn>
           <!--TODO: Share Icons -->
@@ -23,7 +23,7 @@
             </span>
           </p>
 
-          <p class="mb-8 text-slate-500 font-bold">{{ format(truthResourceDetail.truthResourceDate || new Date(), 'MM/dd/yyyy') }}</p>
+          <p v-if="truthResourceCreatedDisplay != '' && truthResourceCreatedDisplay != null && truthResourceCreatedDisplay != undefined" class="mb-8 text-slate-500 font-bold">{{ truthResourceCreatedDisplay }}</p>
           <p class="mb-8 text-slate-700 leading-normal">
             {{ truthResourceDetail.description }}
           </p>
@@ -129,6 +129,11 @@ const truthResourceVideoSrc = computed(() => {
 
 const truthResourceLastUpdatedDisplay = computed(() => {
   const strDate = (truthResourceDetail.value?.truthResourceDate || truthResourceDetail.value?.updated) as any
+  const date = new Date(strDate.split(' ')[0])
+  return format(date, 'MM/dd/yyyy')
+})
+const truthResourceCreatedDisplay = computed(() => {
+  const strDate = (truthResourceDetail.value?.truthResourceDate || new Date()) as any
   const date = new Date(strDate.split(' ')[0])
   return format(date, 'MM/dd/yyyy')
 })
