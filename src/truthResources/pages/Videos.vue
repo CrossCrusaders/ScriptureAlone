@@ -48,7 +48,7 @@
   
   const loading = ref<boolean>(false)
   const reachedEnd = ref<boolean>(false)
-  const queryParams = ref<any>({ filter: "isSeries = true" })
+  const queryParams = ref<any>({ filter: "isVideo = true" })
   
   const hasSearch = ref(false)
   

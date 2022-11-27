@@ -14,14 +14,14 @@
             
           </template>
         </PageHero>
-        <h2 class="text-2xl font-bold mb-2 text-slate-900">Series:</h2>
-        <ContentCarousel :slides="Series" base-url="truth-resources"></ContentCarousel>
+        <h2 class="text-2xl font-bold mb-2 text-slate-900">Video:</h2>
+        <ContentCarousel :slides="Video" base-url="truth-resources"></ContentCarousel>
         <div class="flex justify-center mb-4 mt-4">
-          <RouterLink to="/truth-resources/series">View More ></RouterLink>
+          <RouterLink to="/truth-resources/videos">View More ></RouterLink>
         </div>
         <Divider></Divider>
 
-        <TruthResourcesList :resources="NonSeries" base-url="truth-resources"></TruthResourcesList>
+        <TruthResourcesList :resources="NonVideo" base-url="truth-resources"></TruthResourcesList>
         <div class="flex justify-center mb-4">
           <RouterLink to="/truth-resources/text-materials">View More ></RouterLink>
         </div>
@@ -50,18 +50,18 @@ import TruthResourcesList from '../components/TruthResourcesList.vue'
 
 import { getSearch } from '../../search/services/searchService'
 
-const Series = ref();
-const NonSeries = ref();
+const Video = ref();
+const NonVideo = ref();
   
 const router = useRouter();
 
 onMounted(async () => {
-  const recentTruthResourcesSeriesPromise = await getSearch("truthResources", "", 1, 6, { filter: "isSeries = true" });
-  const recentTruthResourcesNonSeriesPromise = await getSearch("truthResources", "", 1, 6, { filter: "isSeries = false" });
-  const [recentTruthResourcesSeries, recentTruthResourcesNonSeries] = await Promise.all([recentTruthResourcesSeriesPromise, recentTruthResourcesNonSeriesPromise]);
+  const recentTruthResourcesVideoPromise = await getSearch("truthResources", "", 1, 6, { filter: "isVideo = true" });
+  const recentTruthResourcesNonVideoPromise = await getSearch("truthResources", "", 1, 6, { filter: "isVideo = false" });
+  const [recentTruthResourcesVideo, recentTruthResourcesNonVideo] = await Promise.all([recentTruthResourcesVideoPromise, recentTruthResourcesNonVideoPromise]);
   
-  Series.value = recentTruthResourcesSeries.items
-  NonSeries.value = recentTruthResourcesNonSeries.items
+  Video.value = recentTruthResourcesVideo.items
+  NonVideo.value = recentTruthResourcesNonVideo.items
 })
 </script>
   

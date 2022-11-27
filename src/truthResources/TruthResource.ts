@@ -28,7 +28,7 @@ export interface TruthResource {
   collectionId?: string
   collectionName?: string
 
-  isSeries?: boolean
+  isVideo?: boolean
 
   pdf?: any
   pageAmount: number

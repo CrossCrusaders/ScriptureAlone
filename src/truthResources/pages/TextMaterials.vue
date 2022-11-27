@@ -48,7 +48,7 @@ import TruthResourcesPreviewGrid from '../components/TruthResourcesPreviewGrid.v
 
 const loading = ref<boolean>(false)
 const reachedEnd = ref<boolean>(false)
-const queryParams = ref<any>({ filter: "isSeries = false" })
+const queryParams = ref<any>({ filter: "isVideo = false" })
 
 const hasSearch = ref(false)
 
