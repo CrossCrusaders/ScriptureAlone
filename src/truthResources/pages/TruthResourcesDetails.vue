@@ -23,7 +23,7 @@
             </span>
           </p>
 
-          <p v-if="truthResourceCreatedDisplay != '' && truthResourceCreatedDisplay != null && truthResourceCreatedDisplay != undefined" class="mb-8 text-slate-500 font-bold">{{ truthResourceCreatedDisplay }}</p>
+          <p v-if="truthResourceDetail.truthResourceDate" class="mb-8 text-slate-500 font-bold">{{ truthResourceCreatedDisplay }}</p>
           <p class="mb-8 text-slate-700 leading-normal">
             {{ truthResourceDetail.description }}
           </p>
@@ -54,7 +54,7 @@
         </div>
       </div>
 
-      <div class="w-full flex" style="justify-content: right;" v-if="!loading && !!truthResourceDetail">
+      <div class="w-full flex" style="justify-content: right;" v-if="!loading && !!truthResourceDetail && (truthResourceDetail.externalPDFLink || truthResourceDetail.pdf)">
         <div class="overflow-scroll border-2 border-slate-400 border-solid w-1/2 mb-4" style="height:38em;">
           <VuePdf v-for="page in truthResourceDetail.pageAmount" :key="page" :src="getBucketUrl(truthResourceDetail, truthResourceDetail.pdf || truthResourceDetail.externalPDFLink)" :page="page" />
         </div>
@@ -124,6 +124,7 @@ const truthResourceAudioSrc = computed(() => {
 })
 
 const truthResourceVideoSrc = computed(() => {
+  console.log(truthResourceDetail.value?.externalVideoFileUrl)
   return truthResourceDetail.value?.externalVideoFileUrl
 })
 
