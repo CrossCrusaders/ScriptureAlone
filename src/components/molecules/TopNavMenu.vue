@@ -30,9 +30,9 @@
           </RouterLink>
           <RouterLink :class="mobileLinkClass" to="/auth/log-out">Log Out</RouterLink>
         </div>
-        <div :class="mobileLinkClass">
+        <!--<div :class="mobileLinkClass">
           <a href="#">Donate</a>
-        </div>
+        </div>-->
       </div>
     </Transition>
   </nav>
@@ -56,9 +56,9 @@
         </ul>
       </li>
     </ul>
-    <div>
+    <!--<div>
       <DonateButton></DonateButton>
-    </div>
+    </div>-->
     <div v-if="!user">
       <AppButton href="/auth/log-in" variant="primary-minimal">Log In</AppButton>
       <AppButton href="/auth/register" variant="primary">Sign Up</AppButton>
