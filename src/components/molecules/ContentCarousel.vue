@@ -1,6 +1,6 @@
 <template>
   <div class="relative">
-    <swiper :modules="modules" :slides-per-view="slidesPerView" :space-between="50" navigation
+    <swiper :modules="modules" :slides-per-view="slidesPerView" :space-between="12" navigation
       :pagination="{ clickable: true }" :scrollbar="{ draggable: true }">
       <swiper-slide v-for="slide of props.slides" :key="slide.title">
         <div class="h-56">

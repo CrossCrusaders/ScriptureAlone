@@ -55,7 +55,7 @@
       </div>
 
       <div class="w-full flex" style="justify-content: right;" v-if="!loading && !!truthResourceDetail && (truthResourceDetail.externalPDFLink || truthResourceDetail.pdf)">
-        <div class="overflow-scroll border-2 border-slate-400 border-solid w-1/2 mb-4" style="height:38em;">
+        <div class="overflow-scroll border-2 border-slate-400 border-solid w-full md:w-2/3 mb-4" style="height:38em;">
           <VuePdf v-for="page in truthResourceDetail.pageAmount" :key="page" :src="getBucketUrl(truthResourceDetail, truthResourceDetail.pdf || truthResourceDetail.externalPDFLink)" :page="page" />
         </div>
       </div>
