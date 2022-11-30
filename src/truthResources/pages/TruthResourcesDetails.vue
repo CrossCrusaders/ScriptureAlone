@@ -50,13 +50,12 @@
           <Transition name="video">
             <video v-if="truthResourceVideoSrc && globalVideoState === VideoPlayerState.playing" class="w-full"
               :src="truthResourceVideoSrc" controlslist="nodownload" autoplay="true" controls></video>
+            <div class="w-full flex" v-else-if="!loading && !!truthResourceDetail && (truthResourceDetail.externalPDFLink || truthResourceDetail.pdf)">
+              <div class="overflow-scroll border-2 border-slate-400 border-solid w-full mb-4" style="height:45em;">
+                <VuePdf v-for="page in truthResourceDetail.pageAmount" :key="page" :src="getBucketUrl(truthResourceDetail, truthResourceDetail.pdf || truthResourceDetail.externalPDFLink)" :page="page" />
+              </div>
+            </div>
           </Transition>
-        </div>
-      </div>
-
-      <div class="w-full flex" style="justify-content: right;" v-if="!loading && !!truthResourceDetail && (truthResourceDetail.externalPDFLink || truthResourceDetail.pdf)">
-        <div class="overflow-scroll border-2 border-slate-400 border-solid w-full md:w-2/3 mb-4" style="height:38em;">
-          <VuePdf v-for="page in truthResourceDetail.pageAmount" :key="page" :src="getBucketUrl(truthResourceDetail, truthResourceDetail.pdf || truthResourceDetail.externalPDFLink)" :page="page" />
         </div>
       </div>
 
