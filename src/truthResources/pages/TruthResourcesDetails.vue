@@ -6,7 +6,7 @@
           <AuthorPreviewColumn :show-church-info="true" :author="truthResourceDetail.author"
             :coverImage="truthResourceDetail.coverImage">
             <template v-slot:cover-image="{ image }">
-              <TruthResourceCoverImage :cover-image="image" :sermon-id="truthResourceDetail?.id"></TruthResourceCoverImage>
+              <TruthResourceCoverImage :cover-image="image" :truth-resource-id="truthResourceDetail?.id"></TruthResourceCoverImage>
             </template>
           </AuthorPreviewColumn>
           <!--TODO: Share Icons -->

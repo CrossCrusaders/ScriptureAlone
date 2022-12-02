@@ -10,11 +10,6 @@ export interface Category {
   updated: Date,
 }
 
-export interface DevotionalSection {
-  title?: string
-  content?: string
-}
-
 export interface Devotional {
   id?: string
   coverImage?: any
@@ -39,7 +34,12 @@ export interface Devotional {
 
   duration: number
 
-  sections: DevotionalSection[]
+  contentTitle?: string
+  vBook?: string
+  vChap?: number
+  vVerseS?: number
+  vVerseE?: number
+  content?: string
 }
 
 
@@ -53,7 +53,7 @@ export const transformDevotionalResponse = (response: any): Devotional => {
   // The @expand indicates that there are relationships to map
   if (response['@expand']) {
 
-    const { categories, author, sections } = response['@expand']
+    const { categories, author } = response['@expand']
 
     if (categories) {
       devotional.categories = [...categories]
@@ -61,10 +61,6 @@ export const transformDevotionalResponse = (response: any): Devotional => {
 
     if (author) {
       devotional.author = transformAuthorResponse({ ...author })
-    }
-
-    if (sections) {
-      devotional.sections = [...sections]
     }
   }
 
