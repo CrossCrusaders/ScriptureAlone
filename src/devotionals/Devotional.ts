@@ -8,11 +8,11 @@ export interface Category {
   id: string,
   label: string,
   updated: Date,
-
 }
 
 export interface DevotionalSection {
   title?: string
+  content?: string
 }
 
 export interface Devotional {

@@ -24,7 +24,7 @@
         <RouterLink :to="PopUpLink">
           <div id="popup" class="w-full flex justify-center bg-gradient-to-r from-cyan-500 to-purple-500" style="align-items: center;">
             <div>
-              <p class="p-4 text-white text-2xl md:text-5xl">{{ PopUpText }}</p>
+              <p class="p-4 text-white text-2xl md:text-5xl md:font-bold">{{ PopUpText }}</p>
             </div>
           </div>
         </RouterLink>

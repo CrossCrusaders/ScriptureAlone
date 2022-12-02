@@ -10,7 +10,6 @@ export class AccordionService {
   }
 
   closeAll() {
-
     this.items.forEach(item => {
       item.isOpen = false
     })

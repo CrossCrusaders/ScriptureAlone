@@ -91,3 +91,11 @@ export function useAuth() {
     register
   }
 }
+
+export async function deleteAccount(email: string, password: string){
+  const result = await PocketBaseClient.users.authViaEmail(email, password)
+  if(result.user != null && result.user != undefined){
+    var DeleteTheAccount = await PocketBaseClient.users.delete(result.user.id);
+    var LogOut = await logOut()
+  }
+}

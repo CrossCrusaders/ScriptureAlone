@@ -14,6 +14,7 @@ import ResetPassword from './auth/pages/ResetPassword.vue'
 import ChangePassword from './auth/pages/ChangePassword.vue'
 import ChangEmail from './auth/pages/ChangeEmail.vue'
 import ResetEmail from './auth/pages/ResetEmail.vue'
+import DeleteAccount from './auth/pages/DeleteAccount.vue'
 
 // User
 import UserDashboard from './user/pages/UserDashboard.vue'
@@ -82,6 +83,7 @@ const routes = [
   { path: '/auth/change-password', component: ChangePassword },
   { path: '/auth/change-email', component: ChangEmail },
   { path: '/auth/confirm-email-reset', component: ResetEmail },
+  { path: '/auth/delete-account', component: DeleteAccount },
 
   // User
   { path: '/dashboard', component: UserDashboard },

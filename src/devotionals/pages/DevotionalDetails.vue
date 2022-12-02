@@ -50,7 +50,7 @@
                 <h2>{{ section?.title }}</h2>
               </template>
               <div>
-                {{ devotionalDetail.accordionText?.split(" | ")[1] }}
+                {{ section?.content }}
               </div>
             </AccordionItem>
 

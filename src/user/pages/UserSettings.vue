@@ -79,6 +79,9 @@
           <div class="flex justify-center mb-4">
             <AppButton to="/auth/change-password">Change Password</AppButton>
           </div>
+          <div class="flex justify-center mb-4">
+            <AppButton to="/auth/delete-account" variant="secondary">Delete Account</AppButton>
+          </div>
         </div>
         <!-- Notifications Tab -->
         <div v-else-if="TabState == TabStates.Notifications">
