@@ -50,7 +50,7 @@
           <Transition name="video">
             <video v-if="devotionalVideoSrc && globalVideoState === VideoPlayerState.playing" class="w-full"
               :src="devotionalVideoSrc" controlslist="nodownload" autoplay="true" controls></video>
-            <div class="w-full flex flex-col gap-3" v-else-if="!loading && !devotionalVideoSrc && !!devotionalDetail && devotionalDetail.contentTitle && devotionalDetail.content">
+            <div class="w-full flex flex-col gap-3" v-else-if="!loading && !devotionalVideoSrc && !!devotionalDetail && devotionalDetail.contentTitle != undefined && devotionalDetail.content != undefined">
               <Divider></Divider>
               <div class="flex justify-center">
                 <p class="font-title text-3xl font-bold">{{ devotionalDetail.contentTitle }}</p>
@@ -115,7 +115,7 @@ onMounted(async () => {
 
   if (Array.isArray(id))
     id = id[0]
-
+  console.log(id)
   const devotional = await getDevotional(id);
   devotionalDetail.value = devotional;
   verseText.value = await getVerse();
@@ -182,12 +182,16 @@ setGlobalAudioState(AudioPlayerState.playing)
 }
 
 async function getVerse(){
-  const verseTxt = await getVerses("ENGKJV", devotionalDetail.value?.vBook || "", devotionalDetail.value?.vChap || 0, devotionalDetail.value?.vVerseS || undefined, devotionalDetail.value?.vVerseE)
-  var FinishedVerseText = "";
-  verseTxt.forEach((verse) => {
-    FinishedVerseText += `${verse.verse_start} ${verse.verse_text} `;
-  });
-  return FinishedVerseText;
+  if(devotionalDetail.value?.content != "" && devotionalDetail.value?.contentTitle != "" && devotionalDetail.value?.vBook != ""){
+
+    const verseTxt = await getVerses("ENGKJV", devotionalDetail.value?.vBook || "John", devotionalDetail.value?.vChap || 1, devotionalDetail.value?.vVerseS || 1, devotionalDetail.value?.vVerseE || 1)
+    var FinishedVerseText = "";
+    verseTxt.forEach((verse) => {
+      FinishedVerseText += `${verse.verse_start} ${verse.verse_text} `;
+    });
+    return FinishedVerseText;
+  }
+  return "";
 }
 </script>
   
