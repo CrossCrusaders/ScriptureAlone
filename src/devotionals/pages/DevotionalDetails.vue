@@ -55,9 +55,9 @@
               <div class="flex justify-center">
                 <p class="font-title text-3xl font-bold">{{ devotionalDetail.contentTitle }}</p>
               </div>
-              <p v-if="devotionalDetail.vVerseE != devotionalDetail.vVerseS"><span class="font-bold text-xl">{{ devotionalDetail.vBook + " " + devotionalDetail.vChap + ":" + devotionalDetail.vVerseS + "-" + devotionalDetail.vVerseE }}</span><span class="font-normal text-xl">{{ ' - "' + verseText + '"' }}</span></p>
-              <p v-else><span class="font-bold text-xl">{{ devotionalDetail.vBook + " " + devotionalDetail.vChap + ":" + devotionalDetail.vVerseS }}</span><span class="font-normal text-xl">{{ ' - "' + verseText + '"' }}</span></p>
-              <p>{{ devotionalDetail.content }}</p>
+              <p v-if="devotionalDetail.vVerseE != devotionalDetail.vVerseS"><span class="font-bold text-xl">{{ bookName + " " + devotionalDetail.vChap + ":" + devotionalDetail.vVerseS + "-" + devotionalDetail.vVerseE }}</span><span class="font-normal text-xl">{{ ' - "' + verseText + '"' }}</span></p>
+              <p v-else><span class="font-bold text-xl">{{ bookName + " " + devotionalDetail.vChap + ":" + devotionalDetail.vVerseS }}</span><span class="font-normal text-xl">{{ ' - "' + verseText + '"' }}</span></p>
+              <p v-html="devotionalDetail.content"></p>
             </div>
           </Transition>
         </div>
@@ -108,6 +108,7 @@ const route = useRoute()
 const showPlayerModal = ref(false)
 
 const verseText = ref<string>();
+const bookName = ref<string>();
 
 onMounted(async () => {
   // The Truth Resource ID
@@ -118,6 +119,7 @@ onMounted(async () => {
   console.log(id)
   const devotional = await getDevotional(id);
   devotionalDetail.value = devotional;
+  devotionalDetail.value.content = devotionalDetail.value?.content?.replaceAll('\n', "<br>");
   verseText.value = await getVerse();
   loading.value = false;
 })
@@ -182,16 +184,16 @@ setGlobalAudioState(AudioPlayerState.playing)
 }
 
 async function getVerse(){
-  if(devotionalDetail.value?.content != "" && devotionalDetail.value?.contentTitle != "" && devotionalDetail.value?.vBook != ""){
-
-    const verseTxt = await getVerses("ENGKJV", devotionalDetail.value?.vBook || "John", devotionalDetail.value?.vChap || 1, devotionalDetail.value?.vVerseS || 1, devotionalDetail.value?.vVerseE || 1)
+  if(devotionalDetail.value?.content != "" && devotionalDetail.value?.contentTitle != "" && devotionalDetail.value?.vBook != "" && devotionalDetail.value?.vChap != 0){
+    const verseTxt = await getVerses("ENGKJV", devotionalDetail.value?.vBook || "", devotionalDetail.value?.vChap || 1, devotionalDetail.value?.vVerseS, devotionalDetail.value?.vVerseE)
+    bookName.value = verseTxt[0].book_name;
     var FinishedVerseText = "";
     verseTxt.forEach((verse) => {
       FinishedVerseText += `${verse.verse_start} ${verse.verse_text} `;
     });
-    return FinishedVerseText;
+    return FinishedVerseText.trim();
   }
-  return "";
+  return;
 }
 </script>
   
