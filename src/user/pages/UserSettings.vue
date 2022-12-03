@@ -20,8 +20,8 @@
           <button v-else class="bg-slate-400 border-t-2 border-l-2 border-r-2 border-solid rounded-tl-lg rounded-tr-lg border-slate-400 p-1">Profile</button>
           <button v-if="TabState != TabStates.Account" class="border-t-2 border-l-2 border-r-2 border-solid rounded-tl-lg rounded-tr-lg border-slate-400 p-1 hover:bg-slate-200 transition-all" @click="updateTabs(TabStates.Account)">Account</button>
           <button v-else class="bg-slate-400 border-t-2 border-l-2 border-r-2 border-solid rounded-tl-lg rounded-tr-lg border-slate-400 p-1">Account</button>
-          <button v-if="TabState != TabStates.Notifications" class="border-t-2 border-l-2 border-r-2 border-solid rounded-tl-lg rounded-tr-lg border-slate-400 p-1 hover:bg-slate-200 transition-all" @click="updateTabs(TabStates.Notifications)">Notifications</button>
-          <button v-else class="bg-slate-400 border-t-2 border-l-2 border-r-2 border-solid rounded-tl-lg rounded-tr-lg border-slate-400 p-1">Notifications</button>
+          <!--<button v-if="TabState != TabStates.Notifications" class="border-t-2 border-l-2 border-r-2 border-solid rounded-tl-lg rounded-tr-lg border-slate-400 p-1 hover:bg-slate-200 transition-all" @click="updateTabs(TabStates.Notifications)">Notifications</button>
+          <button v-else class="bg-slate-400 border-t-2 border-l-2 border-r-2 border-solid rounded-tl-lg rounded-tr-lg border-slate-400 p-1">Notifications</button>-->
         </div>
       </div>
       <div class="w-full border-2 border-solid rounded-tr-lg rounded-br-lg rounded-bl-lg border-slate-400 mb-4 p-4">
