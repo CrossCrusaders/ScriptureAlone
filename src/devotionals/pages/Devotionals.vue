@@ -21,7 +21,7 @@
       </div>
       <div class="max-w-prose mx-auto mb-8 flex flex-row gap-6 font-title font-semibold text-slate-500">
         <div>
-          <AppSelect class="mr-4" v-model="minMonth">
+          <AppSelect class="mr-0 md:mr-4" v-model="minMonth">
             <option v-for="mon in monthDays" :value="mon.index">
               {{ mon.name }}
             </option>
@@ -32,9 +32,9 @@
             </option>
           </AppSelect>
         </div>
-        <p>-</p>
+        <p class="font-bold mt-1 md:mt-2">&#8212;</p>
         <div>
-          <AppSelect class="mr-4" v-model="maxMonth">
+          <AppSelect class="mr-0 md:mr-4" v-model="maxMonth">
             <option v-for="mon in monthDays" :value="mon.index">
               {{ mon?.name }}
             </option>
