@@ -24,6 +24,7 @@ import { useUserFavorites } from '../../user/services/UserService';
 import { useAuth } from '../../auth/services/AuthService';
 
 import { getSearch } from '../../search/services/searchService'
+import { string32 } from 'pdfjs-dist/types/src/shared/util';
  
 export interface DevotionalsPreviewGridProps {
   queryParams?: any
@@ -32,13 +33,17 @@ export interface DevotionalsPreviewGridProps {
   link?: string
   paginationControls?: boolean
   appendContent?: boolean
-  query?: string | null
+  query?: string | null,
+  minDate: string,
+  maxDate: string
 }
 
 const props = withDefaults(defineProps<DevotionalsPreviewGridProps>(), {
   page: 1,
   perPage: 8,
-  query: null
+  query: null,
+  minDate: "2010-01-01",
+  maxDate: (new Date()).getFullYear().toString()
 })
 
 const loading = ref<boolean>(false)
@@ -65,7 +70,7 @@ const loadSearchedDevotionals = async (forceReset = false) => {
   }
   loading.value = true
   try {
-    const { items, ...paginationData } = await getSearch('devotionals', props.query || undefined, props.page, props.perPage, props.queryParams, false)
+    const { items, ...paginationData } = await getSearch('devotionals', props.query || undefined, props.page, props.perPage, { filter: `devotionalDate >= "${props.minDate}" && devotionalDate <= "${props.maxDate}"` }, true)
     if (props.appendContent && !forceReset) {
       loadedDevotionals.value = loadedDevotionals.value.concat(items as ContentPreview[])
     }
@@ -99,6 +104,19 @@ onMounted(async () => {
 
   watch(() => props.query, (currentQuery, prevQuery) => {
     loadSearchedDevotionals(true)
+  })
+
+  watch(() => props.maxDate, (currentMaxDate) => {
+    loading.value = true
+    setTimeout(() => {
+      loadSearchedDevotionals(true);
+    }, 800)
+  })
+  watch(() => props.minDate, (currentMinDate) => {
+    loading.value = true
+    setTimeout(() => {
+      loadSearchedDevotionals(true);
+    }, 800)
   })
 
   await loadFavorites()

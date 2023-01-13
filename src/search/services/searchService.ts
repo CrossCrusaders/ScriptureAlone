@@ -6,6 +6,7 @@ import { AuthorSearch } from "../../authors/AuthorSearch"
 import { Author, transformAuthorResponses } from "../../authors/Author"
 
 export async function getSearch(collection: string, query: string | undefined, page: number, perPage: number, queryParams?: any, isAnd?: boolean){
+  console.log("Made it to the getSearch function.")
   const params = { sort: `-${collection.slice(0, collection.length - 1)}Date`, expand: 'categories,author', ...queryParams }
 
   if (query != "" && query != null && query != undefined && query) {
@@ -35,7 +36,7 @@ export async function getSearch(collection: string, query: string | undefined, p
     
     params.filter = params.filter + filter;
   }
-
+  console.log(params)
   const records: any = await PocketBaseClient.records.getList(collection, page, perPage, params)
   records.items = await transformRecordResponses(records.items, collection) as any
   return records;
