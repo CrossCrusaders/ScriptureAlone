@@ -1,4 +1,3 @@
-
 import PocketBaseClient from '../../api/PocketBaseClient'
 import Config from '../../config/services/ConfigService'
 import { getLocalCacheItem, getSessionCacheItem, setLocalCacheItem, setSessionCacheItem } from '../../cache/services/LocalStorageService'
@@ -95,8 +94,22 @@ export async function getVerses(bibleId: string, book: string, chapter: number, 
 	const data = results.data;
 
 	await setLocalCacheItem(key, JSON.stringify(data))
-
 	return data
+}
+
+export async function checkVersesForHighlight(book:string, chapter:string, verses:any){
+	var filter = "(";
+	verses.forEach((verse:string, index:number)=>{
+		filter += 'verse_ref="'+book+"."+chapter+"."+verse+'"';
+		if(index != verses.length-1){
+			filter += "||";
+		}
+		else{
+			filter += `) && user = "${PocketBaseClient.authStore.model?.id}"`
+		}
+	})
+	var returnVerses = await PocketBaseClient.records.getFullList('highlights', 200, { filter })
+	return returnVerses;
 }
 
 async function loadBibleData() {
@@ -264,7 +277,8 @@ export async function isBibleReference(query: string) {
 		chapter: parseInt(chapter, 10),
 		verse_start: parseInt(startVerse),
 		verse_end: parseInt(endVerse || startVerse),
-		verse_text: ''
+		verse_text: '',
+		highlight: false
 	}
 	return bibleVerseRef
 

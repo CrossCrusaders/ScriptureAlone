@@ -9,4 +9,5 @@ export interface BibleVerse {
   verse_start: number
   verse_start_alt?: string
   verse_text: string
+  highlight: boolean
 }

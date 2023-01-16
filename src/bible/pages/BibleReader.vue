@@ -89,8 +89,9 @@ import AppSelect from '../../components/atoms/form-controls/AppSelect.vue'
 import AppInput from '../../components/atoms/form-controls/AppInput.vue'
 import Spinner from '../../components/atoms/Spinner.vue'
 import BibleTranslationSelect from '../../components/organisms/BibleTranslationSelect.vue'
-import { isBibleReference, searchBible } from '../../bible/services/BibleService'
+import { isBibleReference, searchBible, checkVersesForHighlight } from '../../bible/services/BibleService'
 import PocketBaseClient from '../../api/PocketBaseClient'
+import { BibleVerse } from '../BibleVerse'
 
 
 export interface BiblePageQueryParams {
@@ -140,10 +141,22 @@ const loadChapterContent = async () => {
   pageLoading.value = true
   try {
     const response = await getVerses(selectedBibleTranslationId.value, selectedBookId.value, selectedChapterNumber.value)
+    var versesHighlights = await checkVersesForHighlight(response[0].book_id, response[0].chapter.toString(), response.map(r=>r.verse_start));
+    response.forEach((verse:any, index:number)=>{
+      versesHighlights.forEach((highlightVerse:any)=>{
+        if(verse.book_id+"."+verse.chapter+"."+verse.verse_start == highlightVerse.verse_ref.toUpperCase()){
+          response[index].highlight = true;
+          console.log(response[index])
+        }
+      })
+    })
     const chapterText = response.reduce((aggregate, verse) => {
       let verseCssClass = 'verse'
       if (shouldHighlight && highlightRange.length && verse.verse_start >= highlightRange[0] && verse.verse_start <= highlightRange[1]) {
         verseCssClass += ' verse-highlight'
+      }
+      if(verse.highlight){
+        verseCssClass += " verse-highlighted";
       }
       return aggregate + `<p id="verse-${verse.verse_start}" class="${verseCssClass}"><span class="verse-number">${verse.verse_start_alt}</span> <span class="verse-text">${verse.verse_text}</span></p> `
     }, "")
@@ -308,6 +321,10 @@ async function getNewVerses(){
   animation-duration: 2s;
   animation-fill-mode: forwards;
   background-color: rgba(255, 255, 0, .4)
+}
+
+.verse-highlighted {
+  background-color: rgba(0, 255, 0, .2)
 }
 
 @keyframes highlightFade {
