@@ -113,21 +113,16 @@
 
 <script setup lang="ts">
 import { ref, onMounted } from "vue";
-import { useRouter, useRoute } from "vue-router";
+import { useRouter } from "vue-router";
 import AppLayout from "../../components/templates/AppLayout.vue";
 import PageContent from "../../components/templates/PageContent.vue";
 import PageHero from "../../components/molecules/PageHero.vue";
 import { useAuth } from "../../auth/services/AuthService";
-import { getUserProfileImage, updateUserProfile, refreshUser } from "../services/UserService";
-import Badge from "../../components/molecules/Badge.vue";
+import { getUserProfileImage, updateUserProfile } from "../services/UserService";
 import Divider from "../../components/atoms/Divider.vue";
-import PocketBaseClient from "../../api/PocketBaseClient";
 import { getBucketUrl } from "../../api/BucketStorageService.js";
 import AppInput from "../../components/atoms/form-controls/AppInput.vue";
 import AppButton from "../../components/atoms/form-controls/AppButton.vue";
-import Icon from "../../components/atoms/Icon.vue";
-import { hasChanged } from "@vue/shared";
-import { change, is } from "dom7";
 
 const { user } = useAuth();
 const userProfileImage = ref();
