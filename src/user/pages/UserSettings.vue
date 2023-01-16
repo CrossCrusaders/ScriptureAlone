@@ -3,7 +3,7 @@
     <PageContent>
       <PageHero>
         <template v-slot:image>
-          <img @click="" :src="userProfileImage" class="max-h-32 w-32 h-32 max-w-32 rounded-full" />
+          <img @click="" :src="userProfileImage" class="object-cover max-h-32 w-32 h-32 max-w-32 rounded-full" />
         </template>
         <h2 class="text-4xl font-bold mb-2 text-slate-900">
           Hello, {{ user?.profile.name }}!
@@ -33,7 +33,7 @@
               <div class="flex flex-row gap-4 overflow-hidden inline-block">
                 <div>
                   <img @click="" :src="tempUserProfileImage"
-                    class="max-h-32 w-32 h-32 max-w-32 hover:brightness-75 transition-all rounded-full" />
+                    class="object-cover max-h-32 w-32 h-32 max-w-32 hover:brightness-75 transition-all rounded-full" />
                 </div>
                 <div class="flex flex-col gap-4 overflow-hidden inline-block">
                   <div class="relative overflow-hidden inline-block">
