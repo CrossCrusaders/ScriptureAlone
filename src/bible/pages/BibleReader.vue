@@ -4,25 +4,26 @@
       style="justify-content: center;">
       <AppSelect :model-value="selectedBookId" @update:model-value="onSelectedBookIdChanged">
         <option v-for="book of availableBooks" :value="book.bookId">
-          {{book.name}}
+          {{ book.name }}
         </option>
       </AppSelect>
 
       <AppSelect :model-value="selectedChapterNumber" @update:model-value="onSelectedChapterNumberChanged">
         <option v-for="chapter of availableChapters" :value="chapter.chapterNumber">
-          {{chapter.chapterNumber}}
+          {{ chapter.chapterNumber }}
         </option>
       </AppSelect>
 
       <BibleTranslationSelect :model-value="selectedBibleTranslationId"
         @update:model-value="onSelectedBibleTranslationIdChanged">
       </BibleTranslationSelect>
-      
+
     </div>
     <Transition name="popup">
       <div v-if="selectedBibleTranslationId != 'ENGKJV'" class="w-full fixed left-0 bottom-0">
         <RouterLink :to="PopUpLink">
-          <div id="popup" class="w-full flex justify-center bg-gradient-to-r from-cyan-500 to-purple-500" style="align-items: center;">
+          <div id="popup" class="w-full flex justify-center bg-gradient-to-r from-cyan-500 to-purple-500"
+            style="align-items: center;">
             <div>
               <p class="p-4 text-white text-2xl md:text-5xl md:font-bold">{{ PopUpText }}</p>
             </div>
@@ -44,8 +45,16 @@
     </div>
     <PageContent>
       <div class="max-w-prose mx-auto">
-        <h2 class="text-2xl font-bold text-center mb-4">
-          {{ selectedBook?.name }}&nbsp;{{ selectedChapterNumber }}
+        <h2 class="text-2xl font-bold text-center mb-4 h-14 flex align-middle">
+          <AppButton @click="onPrevChapterButtonClicked" v-if="breakpoint == 'sm'" variant="primary-outline"
+            style="float:left;" size="sm">
+            <Icon icon-name="chevron-left"></Icon>
+          </AppButton>
+          <span class="m-auto">{{ selectedBook?.name }}&nbsp;{{ selectedChapterNumber }}</span>
+          <AppButton @click="onNextChapterButtonClicked" v-if="breakpoint == 'sm'" variant="primary-outline"
+            style="float:right;" size="sm">
+            <Icon icon-name="chevron-right"></Icon>
+          </AppButton>
         </h2>
       </div>
       <Spinner class="mx-auto" v-if="pageLoading"></Spinner>
@@ -53,19 +62,19 @@
     </PageContent>
     <div class="mb-8"></div>
   </AppLayout>
-  <AppButton @click="onPrevChapterButtonClicked" variant="primary-outline"
-    class="fixed top-1/2 left-1 md:left-16 xl:left-1/4 bg-white " size="sm">
+  <AppButton @click="onPrevChapterButtonClicked" v-if="breakpoint != 'sm'" variant="primary-outline"
+    class="fixed top-1/2 left-1 md:left-16 xl:left-1/5 bg-white " size="sm">
     <Icon icon-name="chevron-left"></Icon>
   </AppButton>
-  <AppButton @click="onNextChapterButtonClicked" variant="primary-outline"
-    class="fixed top-1/2 right-1 md:right-16 xl:right-1/4 bg-white " size="sm">
+  <AppButton @click="onNextChapterButtonClicked" v-if="breakpoint != 'sm'" variant="primary-outline"
+    class="fixed top-1/2 right-1 md:right-16 xl:right-1/5 bg-white " size="sm">
     <Icon icon-name="chevron-right"></Icon>
   </AppButton>
   <p v-if="selectedBibleTranslationId != 'ENGKJV'" class="mb-28"></p>
 </template>
 
 <script setup lang="ts">
-
+import { useBreakpoint } from '../../browser/ViewportService'
 import { onMounted, ref } from 'vue'
 import AppLayout from '../../components/templates/AppLayout.vue'
 import PageContent from '../../components/templates/PageContent.vue'
@@ -93,7 +102,6 @@ import { isBibleReference, searchBible, checkVersesForHighlight } from '../../bi
 import PocketBaseClient from '../../api/PocketBaseClient'
 import { BibleVerse } from '../BibleVerse'
 
-
 export interface BiblePageQueryParams {
   t?: string //translations
   c?: string //chapter
@@ -106,6 +114,8 @@ export interface LocalBibleSelectionCache {
   selectedChapter: number
   selectedBibleTranslationId: string
 }
+
+const { breakpoint } = useBreakpoint();
 
 const localCacheKeyLastLoadedChapter = '__scripture_alone_last_loaded_bible_info__'
 
@@ -141,10 +151,10 @@ const loadChapterContent = async () => {
   pageLoading.value = true
   try {
     const response = await getVerses(selectedBibleTranslationId.value, selectedBookId.value, selectedChapterNumber.value)
-    var versesHighlights = await checkVersesForHighlight(response[0].book_id, response[0].chapter.toString(), response.map(r=>r.verse_start));
-    response.forEach((verse:any, index:number)=>{
-      versesHighlights.forEach((highlightVerse:any)=>{
-        if(verse.book_id+"."+verse.chapter+"."+verse.verse_start == highlightVerse.verse_ref.toUpperCase()){
+    var versesHighlights = await checkVersesForHighlight(response[0].book_id, response[0].chapter.toString(), response.map(r => r.verse_start));
+    response.forEach((verse: any, index: number) => {
+      versesHighlights.forEach((highlightVerse: any) => {
+        if (verse.book_id + "." + verse.chapter + "." + verse.verse_start == highlightVerse.verse_ref.toUpperCase()) {
           response[index].highlight = true;
           console.log(response[index])
         }
@@ -155,7 +165,7 @@ const loadChapterContent = async () => {
       if (shouldHighlight && highlightRange.length && verse.verse_start >= highlightRange[0] && verse.verse_start <= highlightRange[1]) {
         verseCssClass += ' verse-highlight'
       }
-      if(verse.highlight){
+      if (verse.highlight) {
         verseCssClass += " verse-highlighted";
       }
       return aggregate + `<p id="verse-${verse.verse_start}" class="${verseCssClass}"><span class="verse-number">${verse.verse_start_alt}</span> <span class="verse-text">${verse.verse_text}</span></p> `
@@ -187,7 +197,7 @@ const loadChapterContent = async () => {
 
 onMounted(async () => {
   var records = await PocketBaseClient.records.getFullList('truthResources', 200, { expand: "title", filter: "isPartOfPopups=true" })
-  var max = records.length-1;
+  var max = records.length - 1;
   var min = 0;
   var recordNum = Math.round(Math.random() * (max - min) + min);
   PopUpText.value = records[recordNum].title;
@@ -267,7 +277,7 @@ const handleSearchSubmit = async (event: Event) => {
   }
 };
 
-async function getNewVerses(){
+async function getNewVerses() {
   const { t, b, c, vs, ve } = route.query as BiblePageQueryParams
   const localCache: LocalBibleSelectionCache | null = await getLocalCacheItem(localCacheKeyLastLoadedChapter)
 
@@ -337,20 +347,23 @@ async function getNewVerses(){
   }
 }
 
-#popup{
+#popup {
   height: 40vh;
 }
 
 .popup-enter-active {
   animation: popup 0.5s;
 }
+
 .popup-leave-active {
   animation: popup 0.5s reverse;
 }
+
 @keyframes popup {
   0% {
     transform: translateY(100%);
   }
+
   100% {
     transform: translateY(0%);
   }
