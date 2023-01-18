@@ -112,6 +112,11 @@ export async function checkVersesForHighlight(book:string, chapter:string, verse
 	return returnVerses;
 }
 
+export async function getUserHighlightedVerses(id:string){
+	var returnVerses = await PocketBaseClient.records.getFullList('highlights', 200, { filter: `user="${id}"` })
+	return returnVerses;
+}
+
 async function loadBibleData() {
 	const BibleTranslations = await import(`../../assets/bible/translations.json`)
 	const BibleBookChapters = await import(`../../assets/bible/bible-books.json`)

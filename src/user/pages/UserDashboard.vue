@@ -18,12 +18,32 @@
         </template>
       </PageHero>
 
-      <div class="hidden md:flex flex-row justify-between items-center mb-16">
+      <div class="hidden md:flex flex-row justify-between items-center mb-12">
         <Badge v-for="(category, index) in categories" @click="goToPage(category.link)" :icon-name="category.badge"
           :label="category.name" :key="index" class="cursor-pointer">
         </Badge>
       </div>
       <br>
+
+      <!-- Highlighted Verses -->
+      <PageHero>
+        <div class="flex justify-center">
+          <h1
+            class="font-bold font-title text-3xl md:text-5xl lg:text-6xl mb-2 bg-gradient-to-r from-[#1e293b] to-[#57687f] text-transparent bg-clip-text pb-2">
+            Highlighted Verses
+          </h1>
+        </div>
+        <Divider></Divider>
+        <div v-for="verse in verses" v-if="verses.length">
+          <RouterLink :to="`bible?t=${getLocalCacheItem('__scripture_alone_last_loaded_bible_info__').selectedBibleTranslationId}&b=${verse.verse_ref.split('.')[0]}&c=${verse.verse_ref.split('.')[1]}&vs=${verse.verse_ref.split('.')[2]}&ve=${verse.verse_ref.split('.')[2]}`">{{ verse.verse_ref }}</RouterLink>
+        </div>
+        <div v-else class="flex flex-col gap-3 items-center py-4">
+          <p class="text-xl mb-2">You haven't hightlighted any verses yet!</p>
+          <div>
+            <AppButton to="/sermons" variant="primary">Browse Sermons</AppButton>
+          </div>
+        </div>
+      </PageHero>
 
       <!-- Favorite Sermons -->
       <PageHero>
@@ -77,21 +97,25 @@
 
 <script setup lang="ts">
 import { ref, onMounted } from 'vue'
-import { useRouter, useRoute } from "vue-router"
+import { useRouter } from "vue-router"
 import AppLayout from '../../components/templates/AppLayout.vue'
 import PageContent from '../../components/templates/PageContent.vue'
 import PageHero from '../../components/molecules/PageHero.vue'
 import AppButton from '../../components/atoms/form-controls/AppButton.vue'
 import { useAuth } from '../../auth/services/AuthService'
-import { getUserProfileImage, useUserFavorites, refreshUser } from '../services/UserService'
+import { getUserProfileImage, useUserFavorites } from '../services/UserService'
 import Badge from '../../components/molecules/Badge.vue'
 import ContentPreviewGrid from '../../components/molecules/ContentPreviewGrid.vue'
 import { getUserFavoriteDevotionals } from '../../devotionals/services/DevotionalService'
 import { getUserFavoriteSermons } from '../../sermons/services/SermonService'
+import { getUserHighlightedVerses } from '../../bible/services/BibleService'
 import Divider from '../../components/atoms/Divider.vue'
+import PocketBaseClient from '../../api/PocketBaseClient'
+import { getLocalCacheItem } from '../../cache/services/LocalStorageService'
 
 const categories = ref<any>([{ name: "Read VOTD", link: "/?votd=t", badge: "book-heart" }, { name: "Are you failing?", link: "", badge: "hands-pray" }, { name: "Are you truly saved?", link: "https://independentbaptist.church/salvation", badge: "cross" }, { name: "Join a Bible-based church.", link: "https://independentbaptist.church/", badge: "church" }]);
 
+const verses = ref<any>([]);
 
 const { user } = useAuth()
 const { loadFavorites } = useUserFavorites()
@@ -113,6 +137,7 @@ onMounted(async () => {
   favoriteSermons.value = sermonSearch.items;
 
   await loadFavorites()
+  verses.value = await getUserHighlightedVerses(PocketBaseClient.authStore.model?.id || "");
 })
 
 
