@@ -151,12 +151,11 @@ const loadChapterContent = async () => {
   pageLoading.value = true
   try {
     const response = await getVerses(selectedBibleTranslationId.value, selectedBookId.value, selectedChapterNumber.value)
-    var versesHighlights = await checkVersesForHighlight(response[0].book_id, response[0].chapter.toString(), response.map(r => r.verse_start));
+    var versesHighlights = await checkVersesForHighlight(response[0].book_id, response[0].chapter.toString());
     response.forEach((verse: any, index: number) => {
       versesHighlights.forEach((highlightVerse: any) => {
-        if (verse.book_id + "." + verse.chapter + "." + verse.verse_start == highlightVerse.verse_ref.toUpperCase()) {
+        if (verse.book_id + "." + verse.chapter + "." + verse.verse_start == `${highlightVerse.book_id}.${highlightVerse.chapter}.${highlightVerse.verse_number}`) {
           response[index].highlight = true;
-          console.log(response[index])
         }
       })
     })

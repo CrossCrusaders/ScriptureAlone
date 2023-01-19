@@ -97,17 +97,8 @@ export async function getVerses(bibleId: string, book: string, chapter: number, 
 	return data
 }
 
-export async function checkVersesForHighlight(book:string, chapter:string, verses:any){
-	var filter = "(";
-	verses.forEach((verse:string, index:number)=>{
-		filter += 'verse_ref="'+book+"."+chapter+"."+verse+'"';
-		if(index != verses.length-1){
-			filter += "||";
-		}
-		else{
-			filter += `) && user = "${PocketBaseClient.authStore.model?.id}"`
-		}
-	})
+export async function checkVersesForHighlight(book:string, chapter:string){
+	var filter = `book_id="${book}" && chapter=${chapter} && user="${PocketBaseClient.authStore.model?.id}"`
 	var returnVerses = await PocketBaseClient.records.getFullList('highlights', 200, { filter })
 	return returnVerses;
 }
@@ -236,8 +227,6 @@ export async function searchBible(bibleId: string, query: string, page: number, 
 
 	const searchResponse = await fetch(url)
 	const searchResults = await searchResponse.json()
-
-	console.log(searchResults)
 
 	return searchResults.verses as {
 		data: BibleVerse[], meta: BibleSearchMeta

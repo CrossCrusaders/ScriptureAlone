@@ -144,7 +144,7 @@ onMounted(async () => {
   await loadFavorites()
   verses.value = await getUserHighlightedVerses(PocketBaseClient.authStore.model?.id || "");
   verses.value.forEach(async (verse: any) => {
-    versesData.value.push(await getVerses(getLocalCacheItem('__scripture_alone_last_loaded_bible_info__').selectedBibleTranslationId, verse.verse_ref.split(".")[0], parseInt(verse.verse_ref.split(".")[1]), parseInt(verse.verse_ref.split(".")[2]), parseInt(verse.verse_ref.split(".")[2])));
+    versesData.value.push(await getVerses(getLocalCacheItem('__scripture_alone_last_loaded_bible_info__').selectedBibleTranslationId, verse.book_id, parseInt(verse.chapter), parseInt(verse.verse_number), parseInt(verse.verse_number)));
   })
 })
 
