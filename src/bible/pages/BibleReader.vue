@@ -58,7 +58,9 @@
         </h2>
       </div>
       <Spinner class="mx-auto" v-if="pageLoading"></Spinner>
-      <div v-else class="bible-reader-content max-w-prose mx-auto leading-loose" v-html="loadedChapterContent"></div>
+      <div v-else class="bible-reader-content max-w-prose mx-auto leading-loose">
+        <p v-for="verse in loadedChapterContent" @click="openMenu = true" :id="`verse-${verse.verseStart}`" :class="verse.css"><span class="verse-number">{{verse.verseStartAlt}}</span><span class="verse-text">{{verse.verseText}}</span></p>
+      </div>
     </PageContent>
     <div class="mb-8"></div>
   </AppLayout>
@@ -71,6 +73,11 @@
     <Icon icon-name="chevron-right"></Icon>
   </AppButton>
   <p v-if="selectedBibleTranslationId != 'ENGKJV'" class="mb-28"></p>
+  <AppModal v-model="openMenu" v-slot="{ close }">
+    <div class="p4">
+      <p class="max-w-prose mb-4">Future Update!</p>
+    </div>
+  </AppModal>
 </template>
 
 <script setup lang="ts">
@@ -87,7 +94,7 @@ import {
   getNextChapterBySequenceNumber
 } from '../../bible/services/BibleService'
 import { BibleChapter } from '../../bible/BibleChapter'
-import { computed, reactive } from '@vue/reactivity'
+import { computed } from '@vue/reactivity'
 import { setLocalCacheItem, getLocalCacheItem } from '../../cache/services/LocalStorageService'
 import Icon from '../../components/atoms/Icon.vue'
 import AppButton from '../../components/atoms/form-controls/AppButton.vue'
@@ -96,11 +103,11 @@ import { BibleTranslation } from '../BibleTranslation'
 import { useRoute, useRouter } from 'vue-router'
 import AppSelect from '../../components/atoms/form-controls/AppSelect.vue'
 import AppInput from '../../components/atoms/form-controls/AppInput.vue'
+import AppModal from '../../components/templates/AppModal.vue'
 import Spinner from '../../components/atoms/Spinner.vue'
 import BibleTranslationSelect from '../../components/organisms/BibleTranslationSelect.vue'
-import { isBibleReference, searchBible, checkVersesForHighlight } from '../../bible/services/BibleService'
+import { isBibleReference, checkVersesForHighlight } from '../../bible/services/BibleService'
 import PocketBaseClient from '../../api/PocketBaseClient'
-import { BibleVerse } from '../BibleVerse'
 
 export interface BiblePageQueryParams {
   t?: string //translations
@@ -127,8 +134,10 @@ const selectedBibleTranslationId = ref('ENGKJV')
 const selectedBookId = ref('JHN')
 const selectedChapterNumber = ref(1)
 
-const loadedChapterContent = ref('')
+const loadedChapterContent = ref<any>([])
 const pageLoading = ref(false)
+
+const openMenu = ref(false);
 
 let shouldHighlight = false
 let highlightRange: number[] = []
@@ -159,17 +168,18 @@ const loadChapterContent = async () => {
         }
       })
     })
-    const chapterText = response.reduce((aggregate, verse) => {
-      let verseCssClass = 'verse'
+    var chapterText = <any>[];
+    response.forEach((verse:any)=>{
+      let verseCssClass = 'cursor-pointer hover:bg-slate-100 transition-all px-2 verse'
       if (shouldHighlight && highlightRange.length && verse.verse_start >= highlightRange[0] && verse.verse_start <= highlightRange[1]) {
         verseCssClass += ' verse-highlight'
       }
       if (verse.highlight) {
         verseCssClass += " verse-highlighted";
       }
-      return aggregate + `<p id="verse-${verse.verse_start}" class="${verseCssClass}"><span class="verse-number">${verse.verse_start_alt}</span> <span class="verse-text">${verse.verse_text}</span></p> `
-    }, "")
-
+      let object = { verseText: verse.verse_text, verseStart: verse.verse_start, verseStartAlt: verse.verse_start_alt, css: verseCssClass }
+      chapterText.push(object);
+    })
 
     loadedChapterContent.value = chapterText
     availableChapters.value = await getChaptersByBookId(selectedBookId.value)
