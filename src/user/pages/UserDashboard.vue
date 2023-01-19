@@ -34,13 +34,17 @@
           </h1>
         </div>
         <Divider></Divider>
-        <div v-for="verse in verses" v-if="verses.length">
-          <RouterLink :to="`bible?t=${getLocalCacheItem('__scripture_alone_last_loaded_bible_info__').selectedBibleTranslationId}&b=${verse.verse_ref.split('.')[0]}&c=${verse.verse_ref.split('.')[1]}&vs=${verse.verse_ref.split('.')[2]}&ve=${verse.verse_ref.split('.')[2]}`">{{ verse.verse_ref }}</RouterLink>
+        <div v-for="verse in versesData" v-if="versesData.length"
+          @click="router.push(`bible?t=${getLocalCacheItem('__scripture_alone_last_loaded_bible_info__').selectedBibleTranslationId}&b=${verse[0].book_id}&c=${verse[0].chapter}&vs=${verse[0].verse_start}&ve=${verse[0].verse_end}`)"
+          class="rounded bg-slate-100 hover:bg-white cursor-pointer m-2 p-2">
+          <p class="font-bold">
+            {{ `${verse[0].book_name} ${verse[0].chapter}:${verse[0].verse_start}` }}</p>
+          <p>{{ verse[0].verse_text }}</p>
         </div>
         <div v-else class="flex flex-col gap-3 items-center py-4">
           <p class="text-xl mb-2">You haven't hightlighted any verses yet!</p>
           <div>
-            <AppButton to="/sermons" variant="primary">Browse Sermons</AppButton>
+            <AppButton to="/bible" variant="primary">Read The Bible</AppButton>
           </div>
         </div>
       </PageHero>
@@ -108,7 +112,7 @@ import Badge from '../../components/molecules/Badge.vue'
 import ContentPreviewGrid from '../../components/molecules/ContentPreviewGrid.vue'
 import { getUserFavoriteDevotionals } from '../../devotionals/services/DevotionalService'
 import { getUserFavoriteSermons } from '../../sermons/services/SermonService'
-import { getUserHighlightedVerses } from '../../bible/services/BibleService'
+import { getUserHighlightedVerses, getVerses } from '../../bible/services/BibleService'
 import Divider from '../../components/atoms/Divider.vue'
 import PocketBaseClient from '../../api/PocketBaseClient'
 import { getLocalCacheItem } from '../../cache/services/LocalStorageService'
@@ -116,6 +120,7 @@ import { getLocalCacheItem } from '../../cache/services/LocalStorageService'
 const categories = ref<any>([{ name: "Read VOTD", link: "/?votd=t", badge: "book-heart" }, { name: "Are you failing?", link: "", badge: "hands-pray" }, { name: "Are you truly saved?", link: "https://independentbaptist.church/salvation", badge: "cross" }, { name: "Join a Bible-based church.", link: "https://independentbaptist.church/", badge: "church" }]);
 
 const verses = ref<any>([]);
+const versesData = ref<any>([]);
 
 const { user } = useAuth()
 const { loadFavorites } = useUserFavorites()
@@ -138,6 +143,9 @@ onMounted(async () => {
 
   await loadFavorites()
   verses.value = await getUserHighlightedVerses(PocketBaseClient.authStore.model?.id || "");
+  verses.value.forEach(async (verse: any) => {
+    versesData.value.push(await getVerses(getLocalCacheItem('__scripture_alone_last_loaded_bible_info__').selectedBibleTranslationId, verse.verse_ref.split(".")[0], parseInt(verse.verse_ref.split(".")[1]), parseInt(verse.verse_ref.split(".")[2]), parseInt(verse.verse_ref.split(".")[2])));
+  })
 })
 
 
