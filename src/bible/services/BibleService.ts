@@ -272,7 +272,7 @@ export async function isBibleReference(query: string) {
 		verse_start: parseInt(startVerse),
 		verse_end: parseInt(endVerse || startVerse),
 		verse_text: '',
-		highlight: false
+		highlight: ""
 	}
 	return bibleVerseRef
 

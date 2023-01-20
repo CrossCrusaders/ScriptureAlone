@@ -178,7 +178,7 @@ const loadChapterContent = async () => {
     response.forEach((verse: any, index: number) => {
       versesHighlights.forEach((highlightVerse: any) => {
         if (verse.book_id + "." + verse.chapter + "." + verse.verse_start == `${highlightVerse.book_id}.${highlightVerse.chapter}.${highlightVerse.verse_number}`) {
-          response[index].highlight = true;
+          response[index].highlight = highlightVerse.color;
         }
       })
     })
@@ -189,7 +189,7 @@ const loadChapterContent = async () => {
         verseCssClass += ' verse-highlight'
       }
       if (verse.highlight) {
-        verseCssClass += " verse-highlighted";
+        verseCssClass += ` verse-highlighted-${verse.highlight}`;
       }
       let object = { book_id: verse.book_id, book: verse.book_name, chapter: verse.chapter, verseText: verse.verse_text, verseStart: verse.verse_start, verseStartAlt: verse.verse_start_alt, css: verseCssClass }
       chapterText.push(object);
@@ -360,8 +360,20 @@ function copyString(str: string) {
   background-color: rgba(255, 255, 0, .4)
 }
 
-.verse-highlighted {
+.verse-highlighted-green {
   background-color: rgba(0, 255, 0, .2)
+}
+.verse-highlighted-blue {
+  background-color: rgba(0, 0, 255, .2)
+}
+.verse-highlighted-red {
+  background-color: rgba(255, 0, 0, .2)
+}
+.verse-highlighted-pink {
+  background-color: rgba(255, 0, 170, .2)
+}
+.verse-highlighted-yellow {
+  background-color: rgba(217, 255, 0, .2)
 }
 
 @keyframes highlightFade {
