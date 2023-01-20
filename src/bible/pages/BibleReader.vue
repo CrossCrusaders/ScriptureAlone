@@ -59,7 +59,10 @@
       </div>
       <Spinner class="mx-auto" v-if="pageLoading"></Spinner>
       <div v-else class="bible-reader-content max-w-prose mx-auto leading-loose">
-        <p v-for="verse in loadedChapterContent" @click="openMenu = true" :id="`verse-${verse.verseStart}`" :class="verse.css"><span class="verse-number">{{verse.verseStartAlt}}</span><span class="verse-text">{{verse.verseText}}</span></p>
+        <p v-for="verse in loadedChapterContent" @click="openMenu = true; menuVerse = verse;"
+          :id="`verse-${verse.verseStart}`" :class="verse.css"><span class="verse-number">{{
+            verse.verseStartAlt
+          }}</span><span class="verse-text">{{ verse.verseText }}</span></p>
       </div>
     </PageContent>
     <div class="mb-8"></div>
@@ -74,8 +77,18 @@
   </AppButton>
   <p v-if="selectedBibleTranslationId != 'ENGKJV'" class="mb-28"></p>
   <AppModal v-model="openMenu" v-slot="{ close }">
-    <div class="p4">
-      <p class="max-w-prose mb-4">Future Update!</p>
+    <div class="p-4 text-white flex flex-col gap-2">
+      <div class="bg-slate-200 p-2 rounded text-black">
+        <p class="font-bold">{{ menuVerse.book + " " + menuVerse.chapter + ":" + menuVerse.verseStart }}</p>
+        <p>{{ menuVerse.verseText }}</p>
+      </div>
+      <button
+        class="mx-auto bg-green-500 hover:bg-green-400 active:bg-green-600 transition-all p-2 rounded w-full md:w-1/2"
+        @click="highlightVerse(menuVerse.book_id, menuVerse.chapter, menuVerse.verseStart)">Highlight Verse</button>
+      <button
+        class="mx-auto bg-cyan-500 hover:bg-cyan-400 active:bg-cyan-600 transition-all p-2 rounded w-full md:w-1/2"
+        @click="copyString(menuVerse.book+' '+menuVerse.chapter+':'+menuVerse.verseStart+' - '+menuVerse.verseText)">Copy
+        Verse</button>
     </div>
   </AppModal>
 </template>
@@ -106,7 +119,7 @@ import AppInput from '../../components/atoms/form-controls/AppInput.vue'
 import AppModal from '../../components/templates/AppModal.vue'
 import Spinner from '../../components/atoms/Spinner.vue'
 import BibleTranslationSelect from '../../components/organisms/BibleTranslationSelect.vue'
-import { isBibleReference, checkVersesForHighlight } from '../../bible/services/BibleService'
+import { isBibleReference, checkVersesForHighlight, highlightVerse } from '../../bible/services/BibleService'
 import PocketBaseClient from '../../api/PocketBaseClient'
 
 export interface BiblePageQueryParams {
@@ -138,6 +151,7 @@ const loadedChapterContent = ref<any>([])
 const pageLoading = ref(false)
 
 const openMenu = ref(false);
+const menuVerse = ref({ verseText: "", verseStart: "", book: "", chapter: "", book_id: "" });
 
 let shouldHighlight = false
 let highlightRange: number[] = []
@@ -169,7 +183,7 @@ const loadChapterContent = async () => {
       })
     })
     var chapterText = <any>[];
-    response.forEach((verse:any)=>{
+    response.forEach((verse: any) => {
       let verseCssClass = 'cursor-pointer hover:bg-slate-100 transition-all px-2 verse'
       if (shouldHighlight && highlightRange.length && verse.verse_start >= highlightRange[0] && verse.verse_start <= highlightRange[1]) {
         verseCssClass += ' verse-highlight'
@@ -177,7 +191,7 @@ const loadChapterContent = async () => {
       if (verse.highlight) {
         verseCssClass += " verse-highlighted";
       }
-      let object = { verseText: verse.verse_text, verseStart: verse.verse_start, verseStartAlt: verse.verse_start_alt, css: verseCssClass }
+      let object = { book_id: verse.book_id, book: verse.book_name, chapter: verse.chapter, verseText: verse.verse_text, verseStart: verse.verse_start, verseStartAlt: verse.verse_start_alt, css: verseCssClass }
       chapterText.push(object);
     })
 
@@ -310,6 +324,10 @@ async function getNewVerses() {
   availableTranslations.value = await getTranslations()
 
   await loadChapterContent()
+}
+
+function copyString(str: string) {
+  navigator.clipboard.writeText(str)
 }
 </script>
 

@@ -277,3 +277,7 @@ export async function isBibleReference(query: string) {
 	return bibleVerseRef
 
 }
+
+export async function highlightVerse(book_id: string, chapter: number | string, verse_number: number | string){
+	await PocketBaseClient.records.create('highlights', { book_id, chapter, verse_number, user: PocketBaseClient.authStore.model?.id })
+}
