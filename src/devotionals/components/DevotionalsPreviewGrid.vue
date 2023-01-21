@@ -70,7 +70,7 @@ const loadSearchedDevotionals = async (forceReset = false) => {
   }
   loading.value = true
   try {
-    const { items, ...paginationData } = await getSearch('devotionals', props.query || undefined, props.page, props.perPage, { filter: `devotionalDate >= "${props.minDate}" && devotionalDate <= "${props.maxDate}"` }, true)
+    const { items, ...paginationData } = await getSearch('devotionals', props.query || undefined, props.page, props.perPage, ["categories.label", "title", "description"], { filter: `devotionalDate >= "${props.minDate}" && devotionalDate <= "${props.maxDate}"` }, true)
     if (props.appendContent && !forceReset) {
       loadedDevotionals.value = loadedDevotionals.value.concat(items as ContentPreview[])
     }

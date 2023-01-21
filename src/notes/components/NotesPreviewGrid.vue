@@ -1,6 +1,6 @@
 <template>
-    <ContentPreviewGrid :show-favorite="false" :content="loadedTruthResources"
-      :button-title="'View Truth Resource'" @click:button="onTruthResourceCardClicked" @click:author="onTruthResourceAuthorClicked">
+    <ContentPreviewGrid :show-favorite="false" :content="loadedNotes"
+      :button-title="'Edit/View Note'" @click:button="onNoteCardClicked">
     </ContentPreviewGrid>
     <div v-if="props.paginationControls"></div>
     <div v-if="props.appendContent">
@@ -16,15 +16,12 @@
   import { ContentPreview } from '../../components/molecules/ContentPreviewCard.vue';
   import ContentPreviewGrid from '../../components/molecules/ContentPreviewGrid.vue'
   import { Pagination } from '../../core/Pagination';
-  import { TruthResource } from '../TruthResource';
+  import { Note } from '../Note';
   import Spinner from '../../components/atoms/Spinner.vue';
-  import { Author } from '../../authors/Author';
-  import { useUserFavorites } from '../../user/services/UserService';
-  import { useAuth } from '../../auth/services/AuthService';
   
   import { getSearch } from '../../search/services/searchService'
    
-  export interface TruthResourcePreviewGridProps {
+  export interface NotesPreviewGridProps {
     queryParams?: any
     page?: number
     perPage?: number
@@ -34,14 +31,14 @@
     query?: string | null
   }
   
-  const props = withDefaults(defineProps<TruthResourcePreviewGridProps>(), {
+  const props = withDefaults(defineProps<NotesPreviewGridProps>(), {
     page: 1,
     perPage: 8,
     query: null
   })
   
   const loading = ref<boolean>(false)
-  const loadedTruthResources = ref<ContentPreview[]>([])
+  const loadedNotes = ref<ContentPreview[]>([])
   const router = useRouter()
   const emit = defineEmits([
     'click:button', // TODO: better name?
@@ -51,24 +48,22 @@
     'page:previous',
     'data:loaded'
   ])
-
-  const { user } = useAuth()
   
   const pagination = ref<Pagination | null>(null)
   
-  const loadSearchedTruthResources = async (forceReset = false) => {
+  const loadSearchedNotes = async (forceReset = false) => {
     if (pagination.value && pagination.value.totalPages === pagination.value.page && !forceReset) {
       loading.value = false
       return
     }
     loading.value = true
     try {
-      const { items, ...paginationData } = await getSearch('truthResources', props.query || undefined, props.page, props.perPage, ["categories.label", "title", "description"], props.queryParams, true)
+      const { items, ...paginationData } = await getSearch('notes', props.query || undefined, props.page, props.perPage, ["title", "text"], props.queryParams, true)
       if (props.appendContent && !forceReset) {
-        loadedTruthResources.value = loadedTruthResources.value.concat(items as ContentPreview[])
+        loadedNotes.value = loadedNotes.value.concat(items as ContentPreview[])
       }
       else
-      loadedTruthResources.value = items as ContentPreview[]
+      loadedNotes.value = items as ContentPreview[]
       pagination.value = paginationData
       emit('data:loaded', { items, ...paginationData })
     } finally {
@@ -77,14 +72,14 @@
   }
   
   onMounted(async () => {
-    loadSearchedTruthResources()
+    loadSearchedNotes()
   
     // Initialize watch after initial load
     watch(() => props.page, (currentPage, prevPage) => {
       loading.value = true
       setTimeout(() => {
   
-        loadSearchedTruthResources()
+        loadSearchedNotes()
   
         if (currentPage > prevPage)
           emit('page:next')
@@ -92,23 +87,18 @@
           emit('page:previous')
       }, 800)
     })
-    watch(() => props.perPage, () => loadSearchedTruthResources())
-    watch(() => props.queryParams, () => loadSearchedTruthResources())
+    watch(() => props.perPage, () => loadSearchedNotes())
+    watch(() => props.queryParams, () => loadSearchedNotes())
   
     watch(() => props.query, (currentQuery, prevQuery) => {
-      loadSearchedTruthResources(true)
+      loadSearchedNotes(true)
     })
   
   })
   
-  const onTruthResourceCardClicked = (truthResource: TruthResource) => {
-    router.push(`/truth-resources/${truthResource.id}`)
+  const onNoteCardClicked = (note: Note) => {
+    router.push(`/notes/${note.id}`)
     emit('click:button')
-  }
-  
-  const onTruthResourceAuthorClicked = (author: Author) => {
-    router.push(`/authors/${author.id}`)
-    emit('click:author')
   }
 </script>
   
