@@ -1,5 +1,6 @@
 // Home
 import Home from './home/pages/Home.vue'
+import FourZeroFour from './home/pages/404.vue'
 
 // Bible Reader
 import BibleReader from './bible/pages/BibleReader.vue'
@@ -95,7 +96,10 @@ const routes = [
   { path: '/truth-resources', component: TruthResources },
   { path: '/truth-resources/:id', component: TruthResourcesDetails },
   { path: '/truth-resources/text-materials', component: TruthResourceTextMaterials },
-  { path: '/truth-resources/videos', component: TruthResourceVideo }
+  { path: '/truth-resources/videos', component: TruthResourceVideo },
+
+  // 404
+  { path: '/:pathMatch(.*)', component: FourZeroFour }
 ]
 
 if (Config.environment === 'dev')
