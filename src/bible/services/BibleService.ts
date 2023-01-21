@@ -278,6 +278,21 @@ export async function isBibleReference(query: string) {
 
 }
 
-export async function highlightVerse(book_id: string, chapter: number | string, verse_number: number | string){
-	await PocketBaseClient.records.create('highlights', { book_id, chapter, verse_number, user: PocketBaseClient.authStore.model?.id })
+export async function highlightVerse(book_id: string, chapter: number | string, verse_number: number | string, color: string){
+	let update = null;
+	var verses = await checkVersesForHighlight(book_id, chapter.toString());
+	verses.forEach((verse)=>{
+		if(verse.verse_number == verse_number)
+			update = verse.id;
+	})
+	if(update){
+		if(color == "none"){
+			await PocketBaseClient.records.delete('highlights', update);
+			return;
+		}
+		await PocketBaseClient.records.update('highlights', update, { color })
+	}
+	else{
+		await PocketBaseClient.records.create('highlights', { book_id, chapter, verse_number, user: PocketBaseClient.authStore.model?.id, color })
+	}
 }

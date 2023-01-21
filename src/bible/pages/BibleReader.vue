@@ -77,17 +77,32 @@
   </AppButton>
   <p v-if="selectedBibleTranslationId != 'ENGKJV'" class="mb-28"></p>
   <AppModal v-model="openMenu" v-slot="{ close }">
-    <div class="p-4 text-white flex flex-col gap-2">
+    <div class="p-4 text-white flex flex-col gap-2" style="text-align:center;">
       <div class="bg-slate-200 p-2 rounded text-black">
         <p class="font-bold">{{ menuVerse.book + " " + menuVerse.chapter + ":" + menuVerse.verseStart }}</p>
         <p>{{ menuVerse.verseText }}</p>
       </div>
-      <button
-        class="mx-auto bg-green-500 hover:bg-green-400 active:bg-green-600 transition-all p-2 rounded w-full md:w-1/2"
-        @click="highlightVerse(menuVerse.book_id, menuVerse.chapter, menuVerse.verseStart)">Highlight Verse</button>
+      <div class="w-full flex flex-col justify-center">
+        <p class="font-bold text-lg underline text-slate-800 mb-1">Highlight:</p>
+        <div class="flex flex-row gap-2 justify-center">
+          <button class="border-black border-2 rounded w-16 h-16"
+            @click="handleHighlightVerse('none')"></button>
+          <button class="verse-highlighted-green rounded w-16 h-16"
+            @click="handleHighlightVerse('green')"></button>
+          <button class="verse-highlighted-red rounded w-16 h-16"
+            @click="handleHighlightVerse('red')"></button>
+          <button class="verse-highlighted-blue rounded w-16 h-16"
+            @click="handleHighlightVerse('blue')"></button>
+          <button class="verse-highlighted-yellow rounded w-16 h-16"
+            @click="handleHighlightVerse('yellow')"></button>
+          <button class="verse-highlighted-pink rounded w-16 h-16"
+            @click="handleHighlightVerse('pink')"></button>
+        </div>
+      </div>
+      <p class="font-bold text-lg underline text-slate-800">Other:</p>
       <button
         class="mx-auto bg-cyan-500 hover:bg-cyan-400 active:bg-cyan-600 transition-all p-2 rounded w-full md:w-1/2"
-        @click="copyString(menuVerse.book+' '+menuVerse.chapter+':'+menuVerse.verseStart+' - '+menuVerse.verseText)">Copy
+        @click="copyString(menuVerse.book + ' ' + menuVerse.chapter + ':' + menuVerse.verseStart + ' - ' + menuVerse.verseText)">Copy
         Verse</button>
     </div>
   </AppModal>
@@ -329,6 +344,12 @@ async function getNewVerses() {
 function copyString(str: string) {
   navigator.clipboard.writeText(str)
 }
+
+async function handleHighlightVerse(color: string){
+  await highlightVerse(menuVerse.value.book_id, menuVerse.value.chapter, menuVerse.value.verseStart, color);
+  openMenu.value = false;
+  await loadChapterContent();
+}
 </script>
 
 <style>
@@ -363,15 +384,19 @@ function copyString(str: string) {
 .verse-highlighted-green {
   background-color: rgba(0, 255, 0, .2)
 }
+
 .verse-highlighted-blue {
   background-color: rgba(0, 0, 255, .2)
 }
+
 .verse-highlighted-red {
   background-color: rgba(255, 0, 0, .2)
 }
+
 .verse-highlighted-pink {
   background-color: rgba(255, 0, 170, .2)
 }
+
 .verse-highlighted-yellow {
   background-color: rgba(217, 255, 0, .2)
 }
