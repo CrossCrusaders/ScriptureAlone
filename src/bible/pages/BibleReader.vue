@@ -60,9 +60,7 @@
       <Spinner class="mx-auto" v-if="pageLoading"></Spinner>
       <div v-else class="bible-reader-content max-w-prose mx-auto leading-loose">
         <p v-for="verse in loadedChapterContent" @click="openMenu = true; menuVerse = verse;"
-          :id="`verse-${verse.verseStart}`" :class="verse.css"><span class="verse-number">{{
-            verse.verseStartAlt
-          }}</span><span class="verse-text">{{ verse.verseText }}</span></p>
+          :class="verse.css" v-html="verse.verse_text"></p>
       </div>
     </PageContent>
     <div class="mb-8"></div>
@@ -78,31 +76,25 @@
   <p v-if="selectedBibleTranslationId != 'ENGKJV'" class="mb-28"></p>
   <AppModal v-model="openMenu" v-slot="{ close }">
     <div class="p-4 text-white flex flex-col gap-2" style="text-align:center;">
-      <div class="bg-slate-200 p-2 rounded text-black">
-        <p class="font-bold">{{ menuVerse.book + " " + menuVerse.chapter + ":" + menuVerse.verseStart }}</p>
-        <p>{{ menuVerse.verseText }}</p>
+      <p class="font-bold text-black text-xl" v-if="menuVerse.verse_start != menuVerse.verse_end">{{ menuVerse.book_name_alt + " " + menuVerse.chapter + ":" + menuVerse.verse_start + "-" + menuVerse.verse_end }}</p>
+      <p class="font-bold text-black text-xl" v-else>{{ menuVerse.book_name_alt + " " + menuVerse.chapter + ":" + menuVerse.verse_start }}</p>
+      <div class="bg-slate-200 p-2 rounded text-black" v-html="menuVerse.verse_text">
       </div>
       <div class="w-full flex flex-col justify-center">
         <p class="font-bold text-lg underline text-slate-800 mb-1">Highlight:</p>
         <div class="flex flex-row gap-2 justify-center">
-          <button class="border-black border-2 rounded w-16 h-16"
-            @click="handleHighlightVerse('none')"></button>
-          <button class="verse-highlighted-green rounded w-16 h-16"
-            @click="handleHighlightVerse('green')"></button>
-          <button class="verse-highlighted-red rounded w-16 h-16"
-            @click="handleHighlightVerse('red')"></button>
-          <button class="verse-highlighted-blue rounded w-16 h-16"
-            @click="handleHighlightVerse('blue')"></button>
-          <button class="verse-highlighted-yellow rounded w-16 h-16"
-            @click="handleHighlightVerse('yellow')"></button>
-          <button class="verse-highlighted-pink rounded w-16 h-16"
-            @click="handleHighlightVerse('pink')"></button>
+          <button class="border-black border-2 rounded w-16 h-16" @click="handleHighlightVerse('none')"></button>
+          <button class="verse-highlighted-green rounded w-16 h-16" @click="handleHighlightVerse('green')"></button>
+          <button class="verse-highlighted-red rounded w-16 h-16" @click="handleHighlightVerse('red')"></button>
+          <button class="verse-highlighted-blue rounded w-16 h-16" @click="handleHighlightVerse('blue')"></button>
+          <button class="verse-highlighted-yellow rounded w-16 h-16" @click="handleHighlightVerse('yellow')"></button>
+          <button class="verse-highlighted-pink rounded w-16 h-16" @click="handleHighlightVerse('pink')"></button>
         </div>
       </div>
       <p class="font-bold text-lg underline text-slate-800">Other:</p>
       <button
         class="mx-auto bg-cyan-500 hover:bg-cyan-400 active:bg-cyan-600 transition-all p-2 rounded w-full md:w-1/2"
-        @click="copyString(menuVerse.book + ' ' + menuVerse.chapter + ':' + menuVerse.verseStart + ' - ' + menuVerse.verseText)">Copy
+        @click="copyString(menuVerse.book_name_alt + ' ' + menuVerse.chapter + ':' + menuVerse.verse_start + ' -' + extractStringFromHTML(menuVerse.verse_text))">Copy
         Verse</button>
     </div>
   </AppModal>
@@ -166,7 +158,7 @@ const loadedChapterContent = ref<any>([])
 const pageLoading = ref(false)
 
 const openMenu = ref(false);
-const menuVerse = ref({ verseText: "", verseStart: "", book: "", chapter: "", book_id: "" });
+const menuVerse = ref({ verse_text: "", verse_start: "", verse_end: "", book_name: "", book_name_alt: "", chapter: "", book_id: "" });
 
 let shouldHighlight = false
 let highlightRange: number[] = []
@@ -191,9 +183,21 @@ const loadChapterContent = async () => {
     const response = await getVerses(selectedBibleTranslationId.value, selectedBookId.value, selectedChapterNumber.value)
     var versesHighlights = await checkVersesForHighlight(response[0].book_id, response[0].chapter.toString());
     response.forEach((verse: any, index: number) => {
+      verse.verse_text = `<span class="verse-number">${ verse.verse_start_alt }</span><span class="verse-text">${ verse.verse_text }</span>`
       versesHighlights.forEach((highlightVerse: any) => {
-        if (verse.book_id + "." + verse.chapter + "." + verse.verse_start == `${highlightVerse.book_id}.${highlightVerse.chapter}.${highlightVerse.verse_number}`) {
-          response[index].highlight = highlightVerse.color;
+        var versesAfter = Array.from(
+          { length: (highlightVerse.verse_end-1) - (highlightVerse.verse_start-1) },
+          (_, i) => (highlightVerse.verse_start-1) + 1 + i
+        )
+        if (verse.verse_start >= highlightVerse.verse_start && verse.verse_start <= highlightVerse.verse_end) {
+          if((verse.verse_start != highlightVerse.verse_end && verse.verse_start < highlightVerse.verse_end) || verse.verse_start == highlightVerse.verse_end){
+            verse.highlight = highlightVerse.color;
+            versesAfter.forEach(()=>{
+              response[index].verse_text += `<p style="verse-number"><span class="verse-number">${ response[index+1].verse_start_alt }</span><span class="verse-text">${ response[index+1].verse_text }</span></p>`;
+              response[index].verse_end = response[index+1].verse_end;
+              response.splice(index+1, 1);
+            })
+          }
         }
       })
     })
@@ -206,10 +210,9 @@ const loadChapterContent = async () => {
       if (verse.highlight) {
         verseCssClass += ` verse-highlighted-${verse.highlight}`;
       }
-      let object = { book_id: verse.book_id, book: verse.book_name, chapter: verse.chapter, verseText: verse.verse_text, verseStart: verse.verse_start, verseStartAlt: verse.verse_start_alt, css: verseCssClass }
+      let object =  { ...verse, css: verseCssClass }
       chapterText.push(object);
     })
-
     loadedChapterContent.value = chapterText
     availableChapters.value = await getChaptersByBookId(selectedBookId.value)
     await setLocalCacheItem(localCacheKeyLastLoadedChapter, {
@@ -345,10 +348,43 @@ function copyString(str: string) {
   navigator.clipboard.writeText(str)
 }
 
-async function handleHighlightVerse(color: string){
-  await highlightVerse(menuVerse.value.book_id, menuVerse.value.chapter, menuVerse.value.verseStart, color);
+async function handleHighlightVerse(color: string) {
+  await highlightVerse(menuVerse.value.book_id, menuVerse.value.chapter, menuVerse.value.verse_start, menuVerse.value.verse_end, color);
   openMenu.value = false;
   await loadChapterContent();
+}
+
+function extractStringFromHTML(strInput: string){
+  var strReturn = <any>[];
+  var hold:any;
+  let nextIsSafe = 0;
+  hold = strInput.split(/[<>]/);
+  hold.forEach((str:string)=>{
+    if(str != "")
+      strReturn.push(str);
+  })
+  hold = [];
+  strReturn.forEach((str:string)=>{
+    if(nextIsSafe == 0 && !isNaN(parseInt(str))){
+      hold.push(str);
+      nextIsSafe = 3;
+    }
+    else if(nextIsSafe == 1){
+      hold.push(str);
+      nextIsSafe = 0;
+    }
+    else{
+      if(nextIsSafe != 0)
+        nextIsSafe--;
+    }
+  })
+  strReturn = "";
+  hold.forEach((str:string)=>{
+    if(!isNaN(parseInt(str)))
+      str = `[${str}]`;
+    strReturn += ` ${str}`
+  })
+  return strReturn;
 }
 </script>
 

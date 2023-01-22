@@ -46,10 +46,6 @@ import TruthResourcesDetails from './truthResources/pages/TruthResourcesDetails.
 import TruthResourceTextMaterials from './truthResources/pages/TextMaterials.vue'
 import TruthResourceVideo from './truthResources/pages/Videos.vue'
 
-// Notes
-import Notes from './notes/pages/Notes.vue'
-import EditNote from './notes/pages/EditNote.vue'
-
 import ComponentTestPage from './test/ComponentTestPage.vue'
 
 import * as VueRouter from 'vue-router'
@@ -101,10 +97,6 @@ const routes = [
   { path: '/truth-resources/:id', component: TruthResourcesDetails },
   { path: '/truth-resources/text-materials', component: TruthResourceTextMaterials },
   { path: '/truth-resources/videos', component: TruthResourceVideo },
-
-  // Notes
-  { path: '/notes', component: Notes },
-  { path: '/notes/:id', component: EditNote },
 
   // 404
   { path: '/:pathMatch(.*)', component: FourZeroFour }

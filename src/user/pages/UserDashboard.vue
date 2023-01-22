@@ -35,11 +35,15 @@
         </div>
         <Divider></Divider>
         <div v-for="verse in versesData" v-if="versesData.length"
-          @click="router.push(`bible?t=${getLocalCacheItem('__scripture_alone_last_loaded_bible_info__').selectedBibleTranslationId}&b=${verse[0].book_id}&c=${verse[0].chapter}&vs=${verse[0].verse_start}&ve=${verse[0].verse_end}`)"
+          @click="router.push(`bible?t=${getLocalCacheItem('__scripture_alone_last_loaded_bible_info__').selectedBibleTranslationId}&b=${verse[0].book_id}&c=${verse[0].chapter}&vs=${verse[0].verse_start}&ve=${verse[verse.length-1].verse_end}`)"
           class="rounded bg-slate-100 hover:bg-white cursor-pointer m-2 p-2">
-          <p class="font-bold">
-            {{ `${verse[0].book_name} ${verse[0].chapter}:${verse[0].verse_start}` }}</p>
-          <p>{{ verse[0].verse_text }}</p>
+          <p class="font-bold" v-if="verse[0].verse_start != verse[verse.length-1].verse_start">
+            {{ `${verse[0].book_name_alt} ${verse[0].chapter}:${verse[0].verse_start}-${verse[verse.length-1].verse_end}` }}</p>
+          <p class="font-bold" v-else>
+            {{ `${verse[0].book_name_alt} ${verse[0].chapter}:${verse[0].verse_start}` }}</p>
+          <p v-for="v in verse">
+            {{ v.verse_start + " " + v.verse_text }}
+          </p>
         </div>
         <div v-else class="flex flex-col gap-3 items-center py-4">
           <p class="text-xl mb-2">You haven't hightlighted any verses yet!</p>
@@ -144,7 +148,8 @@ onMounted(async () => {
   await loadFavorites()
   verses.value = await getUserHighlightedVerses(PocketBaseClient.authStore.model?.id || "");
   verses.value.forEach(async (verse: any) => {
-    versesData.value.push(await getVerses(getLocalCacheItem('__scripture_alone_last_loaded_bible_info__').selectedBibleTranslationId, verse.book_id, parseInt(verse.chapter), parseInt(verse.verse_number), parseInt(verse.verse_number)));
+    console.log(await getVerses(getLocalCacheItem('__scripture_alone_last_loaded_bible_info__').selectedBibleTranslationId, verse.book_id, parseInt(verse.chapter), parseInt(verse.verse_start), parseInt(verse.verse_end)))
+    versesData.value.push(await getVerses(getLocalCacheItem('__scripture_alone_last_loaded_bible_info__').selectedBibleTranslationId, verse.book_id, parseInt(verse.chapter), parseInt(verse.verse_start), parseInt(verse.verse_end)));
   })
 })
 
