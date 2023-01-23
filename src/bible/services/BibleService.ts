@@ -55,7 +55,6 @@ export async function getVerseOfTheDay() {
 	const verseText = verseResponse.reduce((aggregate, verse) => {
 		return aggregate + `<span class="verse-number">${verse.verse_start_alt}</span>${verse.verse_text} `
 	}, '')
-
 	return {
 		verseReference,
 		verseText
@@ -67,7 +66,6 @@ export async function getVerseOfTheDay() {
  * and getting bible verses
  */
 export async function getVerses(bibleId: string, book: string, chapter: number, startVerse?: number, endVerse?: number): Promise<BibleVerse[]> {
-
 	let key = `${bibleId}.${book}.${chapter}`
 	if (startVerse) {
 		key += `.${startVerse}`
@@ -93,8 +91,14 @@ export async function getVerses(bibleId: string, book: string, chapter: number, 
 	const results = await response.json();
 	const data = results.data;
 
-	await setLocalCacheItem(key, JSON.stringify(data))
-	return data
+	var returnData = <any>[];
+	data.forEach((value:any) => {
+		if(parseInt(value.verse_start) >= (startVerse || 1) && parseInt(value.verse_start) <= (endVerse || 1))
+			returnData.push(value);
+	});
+
+	await setLocalCacheItem(key, JSON.stringify(returnData));
+	return returnData;
 }
 
 export async function checkVersesForHighlight(book:string, chapter:string){
