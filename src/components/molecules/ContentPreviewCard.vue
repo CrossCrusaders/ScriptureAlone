@@ -49,8 +49,7 @@ import {
   formatMaxLengthText,
   formatName
 } from '../../core/services/FormatService'
-import { computed, reactive } from 'vue'
-import { getBucketUrl } from '../../api/BucketStorageService'
+import { computed } from 'vue'
 import AppButton from '../atoms/form-controls/AppButton.vue'
 import FavoriteButton from '../atoms/FavoriteButton.vue'
 export interface ContentPreview {

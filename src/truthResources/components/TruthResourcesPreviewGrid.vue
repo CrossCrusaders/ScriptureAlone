@@ -19,7 +19,6 @@
   import { TruthResource } from '../TruthResource';
   import Spinner from '../../components/atoms/Spinner.vue';
   import { Author } from '../../authors/Author';
-  import { useUserFavorites } from '../../user/services/UserService';
   import { useAuth } from '../../auth/services/AuthService';
   
   import { getSearch } from '../../search/services/searchService'

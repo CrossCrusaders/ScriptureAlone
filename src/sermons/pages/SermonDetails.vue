@@ -68,8 +68,6 @@ import { computed, onMounted, ref } from 'vue'
 import AppLayout from '../../components/templates/AppLayout.vue'
 import PageContent from '../../components/templates/PageContent.vue'
 import AppButton from '../../components/atoms/form-controls/AppButton.vue'
-import Divider from '../../components/atoms/Divider.vue'
-import AppModal from '../../components/templates/AppModal.vue'
 import AuthorPreviewColumn from '../../components/molecules/AuthorPreviewColumn.vue'
 import { getSermon } from '../services/SermonService'
 import { useRoute } from 'vue-router'
@@ -85,8 +83,6 @@ import SermonCoverImage from '../components/SermonCoverImage.vue'
 const loading = ref(true)
 const sermonDetail = ref<Sermon>()
 const route = useRoute()
-const showPlayerModal = ref(false)
-var fullscreen = ref(false);
 
 const {
   setGlobalAudioPayload,
