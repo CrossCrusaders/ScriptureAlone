@@ -42,11 +42,11 @@ export async function getVerseOfTheDay() {
 	if (verses.length === 2) {
 		const [book, chapter, verse1] = verses[0].split('.')
 		const [_, __, verse2] = verses[1].split('.')
-		verseResponse = await getVerses(bibleIdKjv, book, chapter, verse1, verse2, true)
+		verseResponse = await getVerses(bibleIdKjv, book, chapter, verse1, verse2)
 		verseReference = `${verseResponse[0].book_name} ${chapter}:${verse1}-${verse2}`
 	} else if (verses.length === 1) {
 		const [book, chapter, verse] = verses[0].split('.')
-		verseResponse = await getVerses(bibleIdKjv, book, chapter, verse, verse, true)
+		verseResponse = await getVerses(bibleIdKjv, book, chapter, verse, verse)
 		verseReference = `${verseResponse[0].book_name} ${chapter}:${verse}`
 	} else {
 		throw new Error('Invalid Verse of the Day Format')
@@ -55,6 +55,7 @@ export async function getVerseOfTheDay() {
 	const verseText = verseResponse.reduce((aggregate, verse) => {
 		return aggregate + `<span class="verse-number">${verse.verse_start_alt}</span>${verse.verse_text} `
 	}, '')
+
 	return {
 		verseReference,
 		verseText
@@ -65,54 +66,44 @@ export async function getVerseOfTheDay() {
  * Primary function for querying the bible API
  * and getting bible verses
  */
-export async function getVerses(bibleId: string, book: string, chapter: number, startVerse?: number, endVerse?: number, trim?: boolean): Promise<BibleVerse[]> {
-	// combine all the inputs into a single key
-	var key = `${bibleId}.${book}.${chapter}.${startVerse}`;
-	if (endVerse != startVerse || !endVerse) {
-		key += `.${endVerse}`;
-	}
+export async function getVerses(bibleId: string, book: string, chapter: number, startVerse?: number, endVerse?: number): Promise<BibleVerse[]> {
 
-	// check if the data is already in the cache
-	let data = await getLocalCacheItem(key);
-	if (data) {
-		return JSON.parse(data);
-	}
-
-	// if not, fetch the data from the API
-	let url = `${Config.bibleApiUrl}bibles/filesets/${bibleId}/${book}/${chapter}?v=4`;
-
+	let key = `${bibleId}.${book}.${chapter}`
 	if (startVerse) {
-		url += `&verse_start=${startVerse}`;
+		key += `.${startVerse}`
+		if (endVerse) {
+			key += `.${endVerse}`
+		}
 	}
 
-	if (endVerse) {
-		url += `&verse_end=${endVerse}`;
-	}
+	const dataStr = await getLocalCacheItem(key)
+	if (dataStr)
+		return JSON.parse(dataStr)
+
+
+	let url = `${Config.bibleApiUrl}bibles/filesets/${bibleId}/${book}/${chapter}?v=4`
+
+	if (startVerse)
+		url += `&verse_start=${startVerse}`
+
+	if (endVerse)
+		url += `&verse_end=${endVerse}`
 
 	const response = await fetch(url);
 	const results = await response.json();
-	data = results.data;
+	const data = results.data;
 
-	if (trim) {
-		// filter the data to only include the requested verses
-		data = data.filter((value: any) => {
-			return parseInt(value.verse_start) >= (startVerse || 1) && parseInt(value.verse_start) <= (endVerse || 1);
-		});
-	}
-
-	// store the data in the cache
-	await setLocalCacheItem(key, JSON.stringify(data));
-	return data;
+	await setLocalCacheItem(key, JSON.stringify(data))
+	return data
 }
 
-
-export async function checkVersesForHighlight(book: string, chapter: string) {
-	var filter = `book_id="${book}"&&chapter=${chapter}&&user="${PocketBaseClient.authStore.model?.id}"`
+export async function checkVersesForHighlight(book:string, chapter:string){
+	var filter = `book_id="${book}" && chapter=${chapter} && user="${PocketBaseClient.authStore.model?.id}"`
 	var returnVerses = await PocketBaseClient.records.getFullList('highlights', 200, { filter })
 	return returnVerses;
 }
 
-export async function getUserHighlightedVerses(id: string) {
+export async function getUserHighlightedVerses(id:string){
 	var returnVerses = await PocketBaseClient.records.getFullList('highlights', 200, { filter: `user="${id}"` })
 	return returnVerses;
 }
@@ -287,23 +278,21 @@ export async function isBibleReference(query: string) {
 
 }
 
-export async function highlightVerse(book_id: string, chapter: number | string, verses: any[], color: string) {
-	let update = "";
-	var versesThatAreHighlighted = await checkVersesForHighlight(book_id, chapter.toString());
-	verses.forEach(async(verse) => {
-		versesThatAreHighlighted.forEach((v) => {
-			if (verses.includes(v.verse))
-				update = verse.id;
-		})
-		if (update != "") {
-			if (color == "none") {
-				await PocketBaseClient.records.delete('highlights', update);
-				return;
-			}
-			await PocketBaseClient.records.update('highlights', update, { color })
-		}
-		else {
-			await PocketBaseClient.records.create('highlights', { book_id, chapter, verse, user: PocketBaseClient.authStore.model?.id, color })
-		}
+export async function highlightVerse(book_id: string, chapter: number | string, verse: number | string, color: string){
+	let update = null;
+	var verses = await checkVersesForHighlight(book_id, chapter.toString());
+	verses.forEach((v)=>{
+		if(v.verse == verse)
+			update = v.id;
 	})
+	if(update){
+		if(color == "none"){
+			await PocketBaseClient.records.delete('highlights', update);
+			return;
+		}
+		await PocketBaseClient.records.update('highlights', update, { color })
+	}
+	else{
+		await PocketBaseClient.records.create('highlights', { book_id, chapter, verse, user: PocketBaseClient.authStore.model?.id, color })
+	}
 }
