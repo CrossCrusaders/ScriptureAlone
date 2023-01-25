@@ -59,7 +59,8 @@
       </div>
       <Spinner class="mx-auto" v-if="pageLoading"></Spinner>
       <div v-else class="bible-reader-content max-w-prose mx-auto leading-loose">
-        <p v-for="verse in loadedChapterContent" @click="onVerseClicked(verse.verse_start, verse.highlight); openMenu = true; menuVerse = verse;"
+        <p v-for="verse in loadedChapterContent"
+          v-touch:hold="()=>{ onVerseClicked(verse, true); menuVerse = verse; openMenu = true; }" v-touch:tap="()=>onVerseClicked(verse)"
           :id="`verse-${verse.verse_start}`" :class="verse.css"><span class="verse-number">{{
             verse.verse_start_alt
           }}</span><span class="verse-text">{{ verse.verse_text }}</span></p>
@@ -85,12 +86,12 @@
       <div class="w-full flex flex-col justify-center">
         <p class="font-bold text-lg underline text-slate-800 mb-1">Highlight:</p>
         <div class="flex flex-row gap-2 justify-center">
-          <button class="border-black border-2 rounded w-16 h-16" @click="handleHighlightVerse('none')"></button>
-          <button class="verse-highlighted-green rounded w-16 h-16" @click="handleHighlightVerse('green')"></button>
-          <button class="verse-highlighted-red rounded w-16 h-16" @click="handleHighlightVerse('red')"></button>
-          <button class="verse-highlighted-blue rounded w-16 h-16" @click="handleHighlightVerse('blue')"></button>
-          <button class="verse-highlighted-yellow rounded w-16 h-16" @click="handleHighlightVerse('yellow')"></button>
-          <button class="verse-highlighted-pink rounded w-16 h-16" @click="handleHighlightVerse('pink')"></button>
+          <button class="border-black border-2 rounded w-10 h-10 md:w-16 md:h-16" @click="handleHighlightVerse('none')"></button>
+          <button class="verse-highlighted-green rounded w-10 h-10 md:w-16 md:h-16" @click="handleHighlightVerse('green')"></button>
+          <button class="verse-highlighted-red rounded w-10 h-10 md:w-16 md:h-16" @click="handleHighlightVerse('red')"></button>
+          <button class="verse-highlighted-blue rounded w-10 h-10 md:w-16 md:h-16" @click="handleHighlightVerse('blue')"></button>
+          <button class="verse-highlighted-yellow rounded w-10 h-10 md:w-16 md:h-16" @click="handleHighlightVerse('yellow')"></button>
+          <button class="verse-highlighted-pink rounded w-10 h-10 md:w-16 md:h-16" @click="handleHighlightVerse('pink')"></button>
         </div>
       </div>
       <p class="font-bold text-lg underline text-slate-800">Other:</p>
@@ -99,19 +100,19 @@
         @click="copyString(menuVerse.book_name_alt + ' ' + menuVerse.chapter + ':' + menuVerse.verse_start + ' - ' + menuVerse.verse_text)">Copy
         Verse</button>
       <button
-        class="mx-auto bg-cyan-500 hover:bg-cyan-400 active:bg-cyan-600 transition-all p-2 rounded w-full md:w-1/2"
+        class="mx-auto bg-yellow-500 hover:bg-yellow-400 active:bg-yellow-600 transition-all p-2 rounded w-full md:w-1/2"
         @click="noteModal = true">Add Note</button>
+      <p class="text-sm text-black">(Affects all currently selected verses)</p>
     </div>
   </AppModal>
   <AppModal v-model="noteModal" v-slot="{ close }">
     <div class="p-4 text-white flex flex-col gap-2" style="text-align:center;">
       <div class="bg-slate-200 rounded text-black">
-        <input v-model="noteTitle" placeholder="Note Title" class="text-black w-full h-full p-2 bg-slate-200 rounded"/>
+        <input v-model="noteTitle" placeholder="Note Title" class="text-black w-full h-full p-2 bg-slate-200 rounded" />
       </div>
       <div class="w-full flex flex-col justify-center">
         <textarea v-model="noteText" class="text-black bg-slate-100 rounded p-1 h-64"></textarea>
       </div>
-      <p class="font-bold text-lg underline text-slate-800">Other:</p>
       <button
         class="mx-auto bg-cyan-500 hover:bg-cyan-400 active:bg-cyan-600 transition-all p-2 rounded w-full md:w-1/2"
         @click="createNote(selectedBookId, selectedChapterNumber, selectedVerses, noteTitle, noteText); noteTitle = ''; noteText = ''; noteModal = false">Add</button>
@@ -121,7 +122,7 @@
 
 <script setup lang="ts">
 import { useBreakpoint } from '../../browser/ViewportService'
-import { onMounted, ref } from 'vue'
+import { onMounted, ref, watch } from 'vue'
 import AppLayout from '../../components/templates/AppLayout.vue'
 import PageContent from '../../components/templates/PageContent.vue'
 import {
@@ -172,7 +173,7 @@ const availableTranslations = ref<BibleTranslation[]>([])
 const selectedBibleTranslationId = ref('ENGKJV')
 const selectedBookId = ref('JHN')
 const selectedChapterNumber = ref(1)
-const selectedVerses = ref<any>({verses:[]});
+const selectedVerses = ref<any>({ verses: [] });
 
 const loadedChapterContent = ref<any>([])
 const pageLoading = ref(false)
@@ -221,7 +222,6 @@ const loadChapterContent = async () => {
       })
 
       let object = { ...verse, css: verseCssClass, highlight: highlightColor || "" }
-      console.log(object)
       chapterText.push(object);
     })
 
@@ -366,15 +366,15 @@ async function handleHighlightVerse(color: string) {
   await loadChapterContent();
 }
 
-async function onVerseClicked(verse: string | number, color: string){
-  console.log(color)
-  var verseElement = document.getElementById(`verse-${verse}`);
-  verseElement?.classList.toggle("verse-selected");
-  if(selectedVerses.value.verses.includes(verse)){
-    selectedVerses.value.verses.splice(selectedVerses.value.verses.indexOf(verse), 1);
+async function onVerseClicked(verse: any, willHighlight?: boolean) {
+  var verseElement = document.getElementById(`verse-${verse.verse_start}`);
+  if((willHighlight && !verseElement?.classList.contains("verse-selected")) || !willHighlight)
+    verseElement?.classList.toggle("verse-selected");
+  if (selectedVerses.value.verses.includes(verse.verse_start)) {
+    selectedVerses.value.verses.splice(selectedVerses.value.verses.indexOf(verse.verse_start), 1);
   }
-  else{
-    selectedVerses.value.verses.push(verse);
+  else {
+    selectedVerses.value.verses.push(verse.verse_start);
   }
   selectedVerses.value.verses.sort();
 }
