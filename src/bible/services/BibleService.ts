@@ -296,3 +296,7 @@ export async function highlightVerse(book_id: string, chapter: number | string, 
 		await PocketBaseClient.records.create('highlights', { book_id, chapter, verse, user: PocketBaseClient.authStore.model?.id, color })
 	}
 }
+
+export async function createNote(book_id: string, chapter: string | number, verses: Object, title: string, text: string) {
+    await PocketBaseClient.records.create('notes', { title, book_id, chapter, verses, text, user: PocketBaseClient.authStore.model?.id });
+}

@@ -59,7 +59,7 @@
       </div>
       <Spinner class="mx-auto" v-if="pageLoading"></Spinner>
       <div v-else class="bible-reader-content max-w-prose mx-auto leading-loose">
-        <p v-for="verse in loadedChapterContent" @click="openMenu = true; menuVerse = verse;"
+        <p v-for="verse in loadedChapterContent" @click="onVerseClicked(verse.verse_start, verse.highlight); openMenu = true; menuVerse = verse;"
           :id="`verse-${verse.verse_start}`" :class="verse.css"><span class="verse-number">{{
             verse.verse_start_alt
           }}</span><span class="verse-text">{{ verse.verse_text }}</span></p>
@@ -85,18 +85,12 @@
       <div class="w-full flex flex-col justify-center">
         <p class="font-bold text-lg underline text-slate-800 mb-1">Highlight:</p>
         <div class="flex flex-row gap-2 justify-center">
-          <button class="border-black border-2 rounded w-16 h-16"
-            @click="handleHighlightVerse('none')"></button>
-          <button class="verse-highlighted-green rounded w-16 h-16"
-            @click="handleHighlightVerse('green')"></button>
-          <button class="verse-highlighted-red rounded w-16 h-16"
-            @click="handleHighlightVerse('red')"></button>
-          <button class="verse-highlighted-blue rounded w-16 h-16"
-            @click="handleHighlightVerse('blue')"></button>
-          <button class="verse-highlighted-yellow rounded w-16 h-16"
-            @click="handleHighlightVerse('yellow')"></button>
-          <button class="verse-highlighted-pink rounded w-16 h-16"
-            @click="handleHighlightVerse('pink')"></button>
+          <button class="border-black border-2 rounded w-16 h-16" @click="handleHighlightVerse('none')"></button>
+          <button class="verse-highlighted-green rounded w-16 h-16" @click="handleHighlightVerse('green')"></button>
+          <button class="verse-highlighted-red rounded w-16 h-16" @click="handleHighlightVerse('red')"></button>
+          <button class="verse-highlighted-blue rounded w-16 h-16" @click="handleHighlightVerse('blue')"></button>
+          <button class="verse-highlighted-yellow rounded w-16 h-16" @click="handleHighlightVerse('yellow')"></button>
+          <button class="verse-highlighted-pink rounded w-16 h-16" @click="handleHighlightVerse('pink')"></button>
         </div>
       </div>
       <p class="font-bold text-lg underline text-slate-800">Other:</p>
@@ -104,6 +98,23 @@
         class="mx-auto bg-cyan-500 hover:bg-cyan-400 active:bg-cyan-600 transition-all p-2 rounded w-full md:w-1/2"
         @click="copyString(menuVerse.book_name_alt + ' ' + menuVerse.chapter + ':' + menuVerse.verse_start + ' - ' + menuVerse.verse_text)">Copy
         Verse</button>
+      <button
+        class="mx-auto bg-cyan-500 hover:bg-cyan-400 active:bg-cyan-600 transition-all p-2 rounded w-full md:w-1/2"
+        @click="noteModal = true">Add Note</button>
+    </div>
+  </AppModal>
+  <AppModal v-model="noteModal" v-slot="{ close }">
+    <div class="p-4 text-white flex flex-col gap-2" style="text-align:center;">
+      <div class="bg-slate-200 rounded text-black">
+        <input v-model="noteTitle" placeholder="Note Title" class="text-black w-full h-full p-2 bg-slate-200 rounded"/>
+      </div>
+      <div class="w-full flex flex-col justify-center">
+        <textarea v-model="noteText" class="text-black bg-slate-100 rounded p-1 h-64"></textarea>
+      </div>
+      <p class="font-bold text-lg underline text-slate-800">Other:</p>
+      <button
+        class="mx-auto bg-cyan-500 hover:bg-cyan-400 active:bg-cyan-600 transition-all p-2 rounded w-full md:w-1/2"
+        @click="createNote(selectedBookId, selectedChapterNumber, selectedVerses, noteTitle, noteText); noteTitle = ''; noteText = ''; noteModal = false">Add</button>
     </div>
   </AppModal>
 </template>
@@ -134,7 +145,7 @@ import AppInput from '../../components/atoms/form-controls/AppInput.vue'
 import AppModal from '../../components/templates/AppModal.vue'
 import Spinner from '../../components/atoms/Spinner.vue'
 import BibleTranslationSelect from '../../components/organisms/BibleTranslationSelect.vue'
-import { isBibleReference, checkVersesForHighlight, highlightVerse } from '../../bible/services/BibleService'
+import { isBibleReference, checkVersesForHighlight, highlightVerse, createNote } from '../../bible/services/BibleService'
 import PocketBaseClient from '../../api/PocketBaseClient'
 
 export interface BiblePageQueryParams {
@@ -161,12 +172,16 @@ const availableTranslations = ref<BibleTranslation[]>([])
 const selectedBibleTranslationId = ref('ENGKJV')
 const selectedBookId = ref('JHN')
 const selectedChapterNumber = ref(1)
+const selectedVerses = ref<any>({verses:[]});
 
 const loadedChapterContent = ref<any>([])
 const pageLoading = ref(false)
 
 const openMenu = ref(false);
 const menuVerse = ref({ verse_text: "", verse_start: "", book_name_alt: "", book_name: "", chapter: "", book_id: "" });
+const noteTitle = ref("");
+const noteText = ref("");
+const noteModal = ref(false);
 
 let shouldHighlight = false
 let highlightRange: number[] = []
@@ -185,7 +200,7 @@ const selectedChapter = computed(() => {
 /**
  * Query the API to download the text for a bible.
  */
- const loadChapterContent = async () => {
+const loadChapterContent = async () => {
   pageLoading.value = true
   try {
     const response = await getVerses(selectedBibleTranslationId.value, selectedBookId.value, selectedChapterNumber.value)
@@ -197,14 +212,16 @@ const selectedChapter = computed(() => {
       if (shouldHighlight && highlightRange.length && verse.verse_start >= highlightRange[0] && verse.verse_start <= highlightRange[1]) {
         verseCssClass += ' verse-highlight'
       }
-
+      var highlightColor = "";
       versesHighlights.forEach((highlightVerse: any) => {
         if (verse.verse_start == highlightVerse.verse) {
           verseCssClass += ` verse-highlighted-${highlightVerse.color}`;
+          highlightColor = highlightVerse.color;
         }
       })
-      
-      let object = { ...verse, css: verseCssClass }
+
+      let object = { ...verse, css: verseCssClass, highlight: highlightColor || "" }
+      console.log(object)
       chapterText.push(object);
     })
 
@@ -343,10 +360,23 @@ function copyString(str: string) {
   navigator.clipboard.writeText(str)
 }
 
-async function handleHighlightVerse(color: string){
+async function handleHighlightVerse(color: string) {
   await highlightVerse(menuVerse.value.book_id, menuVerse.value.chapter, menuVerse.value.verse_start, color);
   openMenu.value = false;
   await loadChapterContent();
+}
+
+async function onVerseClicked(verse: string | number, color: string){
+  console.log(color)
+  var verseElement = document.getElementById(`verse-${verse}`);
+  verseElement?.classList.toggle("verse-selected");
+  if(selectedVerses.value.verses.includes(verse)){
+    selectedVerses.value.verses.splice(selectedVerses.value.verses.indexOf(verse), 1);
+  }
+  else{
+    selectedVerses.value.verses.push(verse);
+  }
+  selectedVerses.value.verses.sort();
 }
 </script>
 
@@ -395,8 +425,16 @@ async function handleHighlightVerse(color: string){
   background-color: rgba(255, 0, 170, .2)
 }
 
+.verse-selected {
+  background-color: rgb(226 232 240);
+}
+
 .verse-highlighted-yellow {
   background-color: rgba(217, 255, 0, .2)
+}
+
+.verse-selected {
+  background-color: rgb(226 232 240);
 }
 
 @keyframes highlightFade {
