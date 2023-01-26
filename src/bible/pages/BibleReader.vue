@@ -61,6 +61,7 @@
       <div v-else class="bible-reader-content max-w-prose mx-auto leading-loose">
         <p v-for="verse in loadedChapterContent"
           v-touch:hold="() => { onVerseClicked(verse, true); menuVerse = verse; openMenu = true; }"
+          v-touch:longtap="() => { onVerseClicked(verse, true); menuVerse = verse; openMenu = true; }"
           v-touch:tap="() => onVerseClicked(verse)" :id="`verse-${verse.verse_start}`" :class="verse.css"><span
             class="verse-number">{{
               verse.verse_start_alt
