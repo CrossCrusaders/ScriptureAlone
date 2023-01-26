@@ -281,7 +281,7 @@ export async function isBibleReference(query: string) {
 export async function highlightVerse(book_id: string, chapter: number | string, verse: number | string, color: string){
 	let update = null;
 	var verses = await checkVersesForHighlight(book_id, chapter.toString());
-	verses.forEach((v)=>{
+	verses.forEach((v:any)=>{
 		if(v.verse == verse)
 			update = v.id;
 	})

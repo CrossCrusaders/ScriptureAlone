@@ -60,10 +60,11 @@
       <Spinner class="mx-auto" v-if="pageLoading"></Spinner>
       <div v-else class="bible-reader-content max-w-prose mx-auto leading-loose">
         <p v-for="verse in loadedChapterContent"
-          v-touch:hold="()=>{ onVerseClicked(verse, true); menuVerse = verse; openMenu = true; }" v-touch:tap="()=>onVerseClicked(verse)"
-          :id="`verse-${verse.verse_start}`" :class="verse.css"><span class="verse-number">{{
-            verse.verse_start_alt
-          }}</span><span class="verse-text">{{ verse.verse_text }}</span></p>
+          v-touch:hold="() => { onVerseClicked(verse, true); menuVerse = verse; openMenu = true; }"
+          v-touch:tap="() => onVerseClicked(verse)" :id="`verse-${verse.verse_start}`" :class="verse.css"><span
+            class="verse-number">{{
+              verse.verse_start_alt
+            }}</span><span class="verse-text">{{ verse.verse_text }}</span></p>
       </div>
     </PageContent>
     <div class="mb-8"></div>
@@ -86,12 +87,18 @@
       <div class="w-full flex flex-col justify-center">
         <p class="font-bold text-lg underline text-slate-800 mb-1">Highlight:</p>
         <div class="flex flex-row gap-2 justify-center">
-          <button class="border-black border-2 rounded w-10 h-10 md:w-16 md:h-16" @click="handleHighlightVerse('none')"></button>
-          <button class="verse-highlighted-green rounded w-10 h-10 md:w-16 md:h-16" @click="handleHighlightVerse('green')"></button>
-          <button class="verse-highlighted-red rounded w-10 h-10 md:w-16 md:h-16" @click="handleHighlightVerse('red')"></button>
-          <button class="verse-highlighted-blue rounded w-10 h-10 md:w-16 md:h-16" @click="handleHighlightVerse('blue')"></button>
-          <button class="verse-highlighted-yellow rounded w-10 h-10 md:w-16 md:h-16" @click="handleHighlightVerse('yellow')"></button>
-          <button class="verse-highlighted-pink rounded w-10 h-10 md:w-16 md:h-16" @click="handleHighlightVerse('pink')"></button>
+          <button class="border-black border-2 rounded w-10 h-10 md:w-16 md:h-16"
+            @click="handleHighlightVerse('none')"></button>
+          <button class="verse-highlighted-green rounded w-10 h-10 md:w-16 md:h-16"
+            @click="handleHighlightVerse('green')"></button>
+          <button class="verse-highlighted-red rounded w-10 h-10 md:w-16 md:h-16"
+            @click="handleHighlightVerse('red')"></button>
+          <button class="verse-highlighted-blue rounded w-10 h-10 md:w-16 md:h-16"
+            @click="handleHighlightVerse('blue')"></button>
+          <button class="verse-highlighted-yellow rounded w-10 h-10 md:w-16 md:h-16"
+            @click="handleHighlightVerse('yellow')"></button>
+          <button class="verse-highlighted-pink rounded w-10 h-10 md:w-16 md:h-16"
+            @click="handleHighlightVerse('pink')"></button>
         </div>
       </div>
       <p class="font-bold text-lg underline text-slate-800">Other:</p>
@@ -122,7 +129,7 @@
 
 <script setup lang="ts">
 import { useBreakpoint } from '../../browser/ViewportService'
-import { onMounted, ref, watch } from 'vue'
+import { onMounted, ref } from 'vue'
 import AppLayout from '../../components/templates/AppLayout.vue'
 import PageContent from '../../components/templates/PageContent.vue'
 import {
@@ -193,9 +200,9 @@ const route = useRoute()
 const PopUpText = ref('');
 const PopUpLink = ref('');
 
-const selectedBook = computed(() => availableBooks.value.find(book => book.bookId === selectedBookId.value))
+const selectedBook = computed(() => availableBooks.value.find((book: any) => book.bookId === selectedBookId.value))
 const selectedChapter = computed(() => {
-  return availableChapters.value.find(chapter => chapter.chapterNumber == selectedChapterNumber.value)
+  return availableChapters.value.find((chapter: any) => chapter.chapterNumber == selectedChapterNumber.value)
 })
 
 /**
@@ -206,10 +213,10 @@ const loadChapterContent = async () => {
   try {
     const response = await getVerses(selectedBibleTranslationId.value, selectedBookId.value, selectedChapterNumber.value)
     var versesHighlights = await checkVersesForHighlight(response[0].book_id, response[0].chapter.toString());
-    var chapterText = <any>[];
+    var chapterText: any[] = [];
 
     response.forEach((verse: any) => {
-      let verseCssClass = 'cursor-pointer hover:bg-slate-100 transition-all px-2 verse'
+      let verseCssClass = 'cursor-pointer transition-all px-2 verse'
       if (shouldHighlight && highlightRange.length && verse.verse_start >= highlightRange[0] && verse.verse_start <= highlightRange[1]) {
         verseCssClass += ' verse-highlight'
       }
@@ -368,7 +375,7 @@ async function handleHighlightVerse(color: string) {
 
 async function onVerseClicked(verse: any, willHighlight?: boolean) {
   var verseElement = document.getElementById(`verse-${verse.verse_start}`);
-  if((willHighlight && !verseElement?.classList.contains("verse-selected")) || !willHighlight)
+  if ((willHighlight && !verseElement?.classList.contains("verse-selected")) || !willHighlight)
     verseElement?.classList.toggle("verse-selected");
   if (selectedVerses.value.verses.includes(verse.verse_start)) {
     selectedVerses.value.verses.splice(selectedVerses.value.verses.indexOf(verse.verse_start), 1);

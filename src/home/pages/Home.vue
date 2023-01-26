@@ -118,8 +118,8 @@ onMounted(async () => {
   verseName.value = htmlVerse.verseReference + " KJV";
   verseText.value = htmlVerse.verseText;
 
-  const recentDevotionalsPromise = getSearch("devotionals", "", 1, 6);
-  const recentSermonsPromise = getSearch("sermons", "", 1, 6);
+  const recentDevotionalsPromise = getSearch("devotionals", "", 1, 6, []);
+  const recentSermonsPromise = getSearch("sermons", "", 1, 6, []);
   const [recentDevotionals, recentSermons] = await Promise.all([recentDevotionalsPromise, recentSermonsPromise]);
 
   const defaultImage = '/logo-bible.png'

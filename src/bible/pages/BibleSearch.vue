@@ -85,11 +85,9 @@ import {
 } from '../services/BibleService';
 import Spinner from '../../components/atoms/Spinner.vue';
 import BibleTranslationSelect from '../../components/organisms/BibleTranslationSelect.vue';
-import { BiblePageQueryParams } from './BibleReader.vue';
 import AppSelect from '../../components/atoms/form-controls/AppSelect.vue';
 import AppButton from '../../components/atoms/form-controls/AppButton.vue';
 import AppInput from '../../components/atoms/form-controls/AppInput.vue';
-import { formatMaxLengthText } from '../../core/services/FormatService';
 import Icon from '../../components/atoms/Icon.vue';
 import {
   isBibleReference,

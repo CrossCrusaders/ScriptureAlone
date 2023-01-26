@@ -56,8 +56,8 @@ const NonVideo = ref();
 const router = useRouter();
 
 onMounted(async () => {
-  const recentTruthResourcesVideoPromise = await getSearch("truthResources", "", 1, 6, { filter: "isVideo = true" });
-  const recentTruthResourcesNonVideoPromise = await getSearch("truthResources", "", 1, 6, { filter: "isVideo = false" });
+  const recentTruthResourcesVideoPromise = await getSearch("truthResources", "", 1, 6, [], { filter: "isVideo = true" });
+  const recentTruthResourcesNonVideoPromise = await getSearch("truthResources", "", 1, 6, [], { filter: "isVideo = false" });
   const [recentTruthResourcesVideo, recentTruthResourcesNonVideo] = await Promise.all([recentTruthResourcesVideoPromise, recentTruthResourcesNonVideoPromise]);
   
   Video.value = recentTruthResourcesVideo.items
