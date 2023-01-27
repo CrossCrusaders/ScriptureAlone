@@ -7,7 +7,7 @@
         <p class="font-bold text-3xl mb-2">Scripture Alone</p>
         <p class="mb-2"><a href="/">Home</a> · <a href="#">About</a> · <a href="#">Uptime Status</a>
           · <a href="#">Updates</a> · <a href="#">Contact</a></p>
-        <p class="text-xs">Scripture Alone © 2022</p>
+        <p class="text-xs">Scripture Alone © {{ (new Date).getFullYear() }}</p>
       </div>
       <div class="mb-8 md:w-4/12 flex flex-col items-center">
         <p class="flex flex-row w-full md:justify-center">

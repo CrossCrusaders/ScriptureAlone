@@ -79,7 +79,6 @@ import AppButton from '../../components/atoms/form-controls/AppButton.vue'
 import Divider from '../../components/atoms/Divider.vue'
 import AuthorPreviewColumn from '../../components/molecules/AuthorPreviewColumn.vue'
 import UserRecommendationFooter from '../../components/organisms/UserRecommendationFooter.vue'
-import { formatAddress } from '../../core/services/FormatService'
 import { getDevotional } from '../services/DevotionalService'
 import { useRoute } from 'vue-router'
 import { format } from 'date-fns'
@@ -111,7 +110,7 @@ const verseText = ref<string>();
 const bookName = ref<string>();
 
 onMounted(async () => {
-  // The Truth Resource ID
+  // The Devotional ID
   let { id } = route.params
 
   if (Array.isArray(id))

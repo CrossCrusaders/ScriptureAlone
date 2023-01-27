@@ -154,7 +154,8 @@ import AppInput from '../../components/atoms/form-controls/AppInput.vue'
 import AppModal from '../../components/templates/AppModal.vue'
 import Spinner from '../../components/atoms/Spinner.vue'
 import BibleTranslationSelect from '../../components/organisms/BibleTranslationSelect.vue'
-import { isBibleReference, checkVersesForHighlight, highlightVerse, createNote } from '../../bible/services/BibleService'
+import { isBibleReference, checkVersesForHighlight, highlightVerse } from '../../bible/services/BibleService'
+import { createNote } from '../../notes/services/NoteService'
 import PocketBaseClient from '../../api/PocketBaseClient'
 
 export interface BiblePageQueryParams {
@@ -181,7 +182,7 @@ const availableTranslations = ref<BibleTranslation[]>([])
 const selectedBibleTranslationId = ref('ENGKJV')
 const selectedBookId = ref('JHN')
 const selectedChapterNumber = ref(1)
-const selectedVerses = ref<any>({ verses: [] });
+const selectedVerses = ref<any>({ value: [] });
 
 const loadedChapterContent = ref<any>([])
 const pageLoading = ref(false)
@@ -378,13 +379,13 @@ async function onVerseClicked(verse: any, willHighlight?: boolean) {
   var verseElement = document.getElementById(`verse-${verse.verse_start}`);
   if ((willHighlight && !verseElement?.classList.contains("verse-selected")) || !willHighlight)
     verseElement?.classList.toggle("verse-selected");
-  if (selectedVerses.value.verses.includes(verse.verse_start)) {
-    selectedVerses.value.verses.splice(selectedVerses.value.verses.indexOf(verse.verse_start), 1);
+  if (selectedVerses.value.value.includes(verse.verse_start)) {
+    selectedVerses.value.value.splice(selectedVerses.value.value.indexOf(verse.verse_start), 1);
   }
   else {
-    selectedVerses.value.verses.push(verse.verse_start);
+    selectedVerses.value.value.push(verse.verse_start);
   }
-  selectedVerses.value.verses.sort();
+  selectedVerses.value.value.sort();
 }
 </script>
 

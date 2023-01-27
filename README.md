@@ -1,11 +1,5 @@
-<table>
-    <tr>
-        <td valign="center">
-            <img src="./README Assets/Banner-Light.png#gh-light-mode-only"/>
-            <img src="./README Assets/Banner-Dark.png#gh-dark-mode-only"/>
-        </td>
-    </tr>
-</table>
+<img width="100%" src="./README Assets/Banner-Light.png#gh-light-mode-only"/>
+<img width="100%" src="./README Assets/Banner-Dark.png#gh-dark-mode-only"/>
 
 # Install:
 To download our app, simply click the corresponding app store icon for your device. Once there, click the "Get" or "Install" button.
