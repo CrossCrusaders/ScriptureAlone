@@ -114,7 +114,7 @@ const route = useRoute()
 
 onMounted(async () => {
   var htmlVerse = await getVerseOfTheDay();
-
+  console.log(htmlVerse)
   verseName.value = htmlVerse.verseReference + " KJV";
   verseText.value = htmlVerse.verseText;
 

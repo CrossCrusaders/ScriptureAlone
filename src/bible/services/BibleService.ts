@@ -43,11 +43,11 @@ export async function getVerseOfTheDay() {
 		const [book, chapter, verse1] = verses[0].split('.')
 		const [_, __, verse2] = verses[1].split('.')
 		verseResponse = await getVerses(bibleIdKjv, book, chapter, verse1, verse2)
-		verseReference = `${verseResponse[0].book_name} ${chapter}:${verse1}-${verse2}`
+		verseReference = `${verseResponse[0].book_name_alt} ${chapter}:${verse1}-${verse2}`
 	} else if (verses.length === 1) {
 		const [book, chapter, verse] = verses[0].split('.')
 		verseResponse = await getVerses(bibleIdKjv, book, chapter, verse, verse)
-		verseReference = `${verseResponse[0].book_name} ${chapter}:${verse}`
+		verseReference = `${verseResponse[0].book_name_alt} ${chapter}:${verse}`
 	} else {
 		throw new Error('Invalid Verse of the Day Format')
 	}
