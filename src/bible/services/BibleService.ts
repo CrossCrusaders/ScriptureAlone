@@ -227,7 +227,7 @@ export async function searchBible(bibleId: string, query: string, page: number, 
 }
 
 export function getReferenceFromVerse(verse: BibleVerse) {
-	let reference = `${verse.book_name} ${verse.chapter}:${verse.verse_start}`
+	let reference = `${verse.book_name_alt} ${verse.chapter}:${verse.verse_start}`
 	if (verse.verse_start != verse.verse_end)
 		reference += `-${verse.verse_end}`
 	return reference
