@@ -97,13 +97,13 @@ export async function getVerses(bibleId: string, book: string, chapter: number, 
 	return data
 }
 
-export async function checkVersesForHighlight(book:string, chapter:string){
+export async function getHighlightedVerses(book: string, chapter: string) {
 	var filter = `book_id="${book}" && chapter=${chapter} && user="${PocketBaseClient.authStore.model?.id}"`
 	var returnVerses = await PocketBaseClient.records.getFullList('highlights', 200, { filter })
-	return returnVerses;
+	return returnVerses[0];
 }
 
-export async function getUserHighlightedVerses(id:string){
+export async function getUserHighlightedVerses(id: string) {
 	var returnVerses = await PocketBaseClient.records.getFullList('highlights', 200, { filter: `user="${id}"` })
 	return returnVerses;
 }
@@ -278,21 +278,39 @@ export async function isBibleReference(query: string) {
 
 }
 
-export async function highlightVerse(book_id: string, chapter: number | string, verse: number | string, color: string){
+export async function highlightVerse(book_id: string, chapter: number | string, verse: number | string, color: string) {
 	let update = null;
-	var verses = await checkVersesForHighlight(book_id, chapter.toString());
-	verses.forEach((v:any)=>{
-		if(v.verse == verse)
+	var verses = await getHighlightedVerses(book_id, chapter.toString());
+	verses.forEach((v: any) => {
+		if (v.verse == verse)
 			update = v.id;
 	})
-	if(update){
-		if(color == "none"){
+	if (update) {
+		if (color == "none") {
 			await PocketBaseClient.records.delete('highlights', update);
 			return;
 		}
 		await PocketBaseClient.records.update('highlights', update, { color })
 	}
-	else{
+	else {
 		await PocketBaseClient.records.create('highlights', { book_id, chapter, verse, user: PocketBaseClient.authStore.model?.id, color })
 	}
+}
+
+export async function highlightVerses(book: string, chapter: string, verses: number[], color: string) {
+	var currentlyHighlightedVerses: any = await getHighlightedVerses(book, chapter);
+	verses.forEach((verse: any) => {
+		let found = false;
+		currentlyHighlightedVerses.verse_data.value.forEach((v: any, i: number) => {
+			if (v.verse.toString() == verse.toString()) {
+				currentlyHighlightedVerses.verse_data.value[i].color = color;
+				found = true;
+				return;
+			}
+		})
+		if (!found) {
+			currentlyHighlightedVerses.verse_data.value.push({ verse, color });
+		}
+	});
+	PocketBaseClient.records.update("highlights", currentlyHighlightedVerses.id, { verse_data: currentlyHighlightedVerses.verse_data });
 }

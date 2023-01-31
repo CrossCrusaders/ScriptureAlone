@@ -60,9 +60,8 @@
       <Spinner class="mx-auto" v-if="pageLoading"></Spinner>
       <div v-else class="bible-reader-content max-w-prose mx-auto leading-loose">
         <p v-for="verse in loadedChapterContent"
-          v-touch:hold="() => { onVerseClicked(verse, true); menuVerse = verse; openMenu = true; }"
-          v-touch:longtap="() => { onVerseClicked(verse, true); menuVerse = verse; openMenu = true; }"
-          v-touch:tap="() => onVerseClicked(verse)" :id="`verse-${verse.verse_start}`" :class="verse.css"><span
+          v-touch:hold="() => { onVerseClicked(verse.verse_start, true); menuVerse = verse; openMenu = true; }"
+          v-touch:tap="() => onVerseClicked(verse.verse_start)" :id="`verse-${verse.verse_start}`" :class="verse.css"><span
             class="verse-number">{{
               verse.verse_start_alt
             }}</span><span class="verse-text">{{ verse.verse_text }}</span></p>
@@ -154,7 +153,7 @@ import AppInput from '../../components/atoms/form-controls/AppInput.vue'
 import AppModal from '../../components/templates/AppModal.vue'
 import Spinner from '../../components/atoms/Spinner.vue'
 import BibleTranslationSelect from '../../components/organisms/BibleTranslationSelect.vue'
-import { isBibleReference, checkVersesForHighlight, highlightVerse } from '../../bible/services/BibleService'
+import { isBibleReference, getHighlightedVerses, highlightVerses } from '../../bible/services/BibleService'
 import { createNote } from '../../notes/services/NoteService'
 import PocketBaseClient from '../../api/PocketBaseClient'
 
@@ -182,7 +181,7 @@ const availableTranslations = ref<BibleTranslation[]>([])
 const selectedBibleTranslationId = ref('ENGKJV')
 const selectedBookId = ref('JHN')
 const selectedChapterNumber = ref(1)
-const selectedVerses = ref<any>({ value: [] });
+const selectedVerses = ref<any[]>([]);
 
 const loadedChapterContent = ref<any>([])
 const pageLoading = ref(false)
@@ -214,7 +213,7 @@ const loadChapterContent = async () => {
   pageLoading.value = true
   try {
     const response = await getVerses(selectedBibleTranslationId.value, selectedBookId.value, selectedChapterNumber.value)
-    var versesHighlights = await checkVersesForHighlight(response[0].book_id, response[0].chapter.toString());
+    var versesHighlights = await getHighlightedVerses(response[0].book_id, response[0].chapter.toString());
     var chapterText: any[] = [];
 
     response.forEach((verse: any) => {
@@ -223,7 +222,7 @@ const loadChapterContent = async () => {
         verseCssClass += ' verse-highlight'
       }
       var highlightColor = "";
-      versesHighlights.forEach((highlightVerse: any) => {
+      versesHighlights.verse_data.value.forEach((highlightVerse: any) => {
         if (verse.verse_start == highlightVerse.verse) {
           verseCssClass += ` verse-highlighted-${highlightVerse.color}`;
           highlightColor = highlightVerse.color;
@@ -378,22 +377,23 @@ async function copyString(str: string) {
 }
 
 async function handleHighlightVerse(color: string) {
-  await highlightVerse(menuVerse.value.book_id, menuVerse.value.chapter, menuVerse.value.verse_start, color);
+  await highlightVerses(menuVerse.value.book_id, menuVerse.value.chapter, selectedVerses.value, color);
+  selectedVerses.value = [];
   openMenu.value = false;
   await loadChapterContent();
 }
 
-async function onVerseClicked(verse: any, willHighlight?: boolean) {
-  var verseElement = document.getElementById(`verse-${verse.verse_start}`);
+async function onVerseClicked(verse: number, willHighlight?: boolean) {
+  var verseElement = document.getElementById(`verse-${verse}`);
   if ((willHighlight && !verseElement?.classList.contains("verse-selected")) || !willHighlight)
     verseElement?.classList.toggle("verse-selected");
-  if (selectedVerses.value.value.includes(verse.verse_start)) {
-    selectedVerses.value.value.splice(selectedVerses.value.value.indexOf(verse.verse_start), 1);
+  if (selectedVerses.value.includes(verse) && !willHighlight) {
+    selectedVerses.value.splice(selectedVerses.value.indexOf(verse), 1);
   }
-  else {
-    selectedVerses.value.value.push(verse.verse_start);
+  else if(!selectedVerses.value.includes(verse)) {
+    selectedVerses.value.push(verse);
   }
-  selectedVerses.value.value.sort(sorter);
+  selectedVerses.value.sort(sorter);
 }
 
 function sorter(a:number, b:number) {
