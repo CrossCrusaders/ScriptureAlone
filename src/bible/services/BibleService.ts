@@ -299,6 +299,11 @@ export async function highlightVerse(book_id: string, chapter: number | string, 
 
 export async function highlightVerses(book: string, chapter: string, verses: number[], color: string) {
 	var currentlyHighlightedVerses: any = await getHighlightedVerses(book, chapter);
+	if(!currentlyHighlightedVerses){
+		await PocketBaseClient.records.create("highlights", { book_id: book, chapter, user: PocketBaseClient.authStore.model?.id, verse_data: { value: [] } }).then(async()=>{
+			currentlyHighlightedVerses = await getHighlightedVerses(book, chapter);
+		})
+	}
 	verses.forEach((verse: any) => {
 		let found = false;
 		currentlyHighlightedVerses.verse_data.value.forEach((v: any, i: number) => {
@@ -312,5 +317,5 @@ export async function highlightVerses(book: string, chapter: string, verses: num
 			currentlyHighlightedVerses.verse_data.value.push({ verse, color });
 		}
 	});
-	PocketBaseClient.records.update("highlights", currentlyHighlightedVerses.id, { verse_data: currentlyHighlightedVerses.verse_data });
+	return PocketBaseClient.records.update("highlights", currentlyHighlightedVerses.id, { verse_data: currentlyHighlightedVerses.verse_data });
 }

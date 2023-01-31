@@ -61,10 +61,11 @@
       <div v-else class="bible-reader-content max-w-prose mx-auto leading-loose">
         <p v-for="verse in loadedChapterContent"
           v-touch:hold="() => { onVerseClicked(verse.verse_start, true); menuVerse = verse; openMenu = true; }"
-          v-touch:tap="() => onVerseClicked(verse.verse_start)" :id="`verse-${verse.verse_start}`" :class="verse.css"><span
-            class="verse-number">{{
-              verse.verse_start_alt
-            }}</span><span class="verse-text">{{ verse.verse_text }}</span></p>
+          v-touch:tap="() => onVerseClicked(verse.verse_start)" :id="`verse-${verse.verse_start}`" :class="verse.css">
+          <span class="verse-number">{{
+            verse.verse_start_alt
+          }}</span><span class="verse-text">{{ verse.verse_text }}</span>
+        </p>
       </div>
     </PageContent>
     <div class="mb-8"></div>
@@ -222,12 +223,14 @@ const loadChapterContent = async () => {
         verseCssClass += ' verse-highlight'
       }
       var highlightColor = "";
-      versesHighlights.verse_data.value.forEach((highlightVerse: any) => {
-        if (verse.verse_start == highlightVerse.verse) {
-          verseCssClass += ` verse-highlighted-${highlightVerse.color}`;
-          highlightColor = highlightVerse.color;
-        }
-      })
+      if (versesHighlights) {
+        versesHighlights.verse_data.value.forEach((highlightVerse: any) => {
+          if (verse.verse_start == highlightVerse.verse) {
+            verseCssClass += ` verse-highlighted-${highlightVerse.color}`;
+            highlightColor = highlightVerse.color;
+          }
+        })
+      }
 
       let object = { ...verse, css: verseCssClass, highlight: highlightColor || "" }
       chapterText.push(object);
@@ -377,10 +380,11 @@ async function copyString(str: string) {
 }
 
 async function handleHighlightVerse(color: string) {
-  await highlightVerses(menuVerse.value.book_id, menuVerse.value.chapter, selectedVerses.value, color);
-  selectedVerses.value = [];
-  openMenu.value = false;
-  await loadChapterContent();
+  await highlightVerses(menuVerse.value.book_id, menuVerse.value.chapter, selectedVerses.value, color).then(async () => {
+    selectedVerses.value = [];
+    openMenu.value = false;
+    await loadChapterContent();
+  });
 }
 
 async function onVerseClicked(verse: number, willHighlight?: boolean) {
@@ -390,13 +394,13 @@ async function onVerseClicked(verse: number, willHighlight?: boolean) {
   if (selectedVerses.value.includes(verse) && !willHighlight) {
     selectedVerses.value.splice(selectedVerses.value.indexOf(verse), 1);
   }
-  else if(!selectedVerses.value.includes(verse)) {
+  else if (!selectedVerses.value.includes(verse)) {
     selectedVerses.value.push(verse);
   }
   selectedVerses.value.sort(sorter);
 }
 
-function sorter(a:number, b:number) {
+function sorter(a: number, b: number) {
   if (a < b) return -1;  // any negative number works
   if (a > b) return 1;   // any positive number works
   return 0; // equal values MUST yield zero
