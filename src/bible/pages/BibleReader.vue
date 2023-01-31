@@ -393,7 +393,13 @@ async function onVerseClicked(verse: any, willHighlight?: boolean) {
   else {
     selectedVerses.value.value.push(verse.verse_start);
   }
-  selectedVerses.value.value.sort();
+  selectedVerses.value.value.sort(sorter);
+}
+
+function sorter(a:number, b:number) {
+  if (a < b) return -1;  // any negative number works
+  if (a > b) return 1;   // any positive number works
+  return 0; // equal values MUST yield zero
 }
 </script>
 
