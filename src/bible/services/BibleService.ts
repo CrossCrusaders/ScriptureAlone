@@ -103,9 +103,15 @@ export async function getHighlightedVerses(book: string, chapter: string) {
 	return returnVerses[0];
 }
 
-export async function getUserHighlightedVerses(id: string) {
-	var returnVerses = await PocketBaseClient.records.getFullList('highlights', 200, { filter: `user="${id}"` })
-	return returnVerses;
+export async function getUserHighlightedVerses() {
+	var returnVerses = await PocketBaseClient.records.getFullList('highlights', 200, { filter: `user="${PocketBaseClient.authStore.model?.id}"` })
+	var verses: any = [];
+	returnVerses.forEach((chapter: any, index: number) => {
+		chapter.verse_data.value.forEach((verse: any) => {
+			verses.push({ book_id: chapter.book_id, chapter: chapter.chapter, verse })
+		})
+	});
+	return verses;
 }
 
 async function loadBibleData() {
@@ -299,8 +305,8 @@ export async function highlightVerse(book_id: string, chapter: number | string, 
 
 export async function highlightVerses(book: string, chapter: string, verses: number[], color: string) {
 	var currentlyHighlightedVerses: any = await getHighlightedVerses(book, chapter);
-	if(!currentlyHighlightedVerses){
-		await PocketBaseClient.records.create("highlights", { book_id: book, chapter, user: PocketBaseClient.authStore.model?.id, verse_data: { value: [] } }).then(async()=>{
+	if (!currentlyHighlightedVerses) {
+		await PocketBaseClient.records.create("highlights", { book_id: book, chapter, user: PocketBaseClient.authStore.model?.id, verse_data: { value: [] } }).then(async () => {
 			currentlyHighlightedVerses = await getHighlightedVerses(book, chapter);
 		})
 	}

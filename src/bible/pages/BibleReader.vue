@@ -60,7 +60,7 @@
       <Spinner class="mx-auto" v-if="pageLoading"></Spinner>
       <div v-else class="bible-reader-content max-w-prose mx-auto leading-loose">
         <p v-for="verse in loadedChapterContent"
-          v-touch:hold="() => { onVerseClicked(verse.verse_start, true); menuVerse = verse; openMenu = true; }"
+          v-touch:longtap="() => { onVerseClicked(verse.verse_start, true); menuVerse = verse; openMenu = true; }"
           v-touch:tap="() => onVerseClicked(verse.verse_start)" :id="`verse-${verse.verse_start}`" :class="verse.css">
           <span class="verse-number">{{
             verse.verse_start_alt
@@ -327,15 +327,15 @@ const handleSearchSubmit = async (event: Event) => {
       selectedChapterNumber.value = result.chapter;
 
       window.scrollTo({ top: 0 })
-      await router.replace(
+      await router.push(
         `/bible?t=${selectedBibleTranslationId.value}&c=${result.chapter}&b=${result.book_id}&vs=${result.verse_start}&ve=${result.verse_end}`
       );
       return getNewVerses();
     } else {
-      return router.replace(
+      return router.push(
         `/bible/search?q=${encodeURI(
           searchModel.value.substring(0, 255)
-        )}&t=${selectedBibleTranslationId.value}`
+        )}&t=${selectedBibleTranslationId.value}&page=1`
       );
     }
   }
@@ -450,10 +450,6 @@ function sorter(a: number, b: number) {
 
 .verse-highlighted-pink {
   background-color: rgba(255, 0, 170, .2)
-}
-
-.verse-selected {
-  background-color: rgb(226 232 240);
 }
 
 .verse-highlighted-yellow {

@@ -36,11 +36,11 @@
         <Divider></Divider>
         <div v-for="verse in versesData" v-if="versesData.length"
           @click="router.push(`bible?t=${getLocalCacheItem('__scripture_alone_last_loaded_bible_info__').selectedBibleTranslationId}&b=${verse[0].book_id}&c=${verse[0].chapter}&vs=${verse[0].verse_start}&ve=${verse[verse.length-1].verse_end}`)"
-          class="rounded bg-slate-100 hover:bg-white cursor-pointer m-2 p-2">
+          :class="`rounded verse-${verse.color} transition-all hover:bg-slate-300 cursor-pointer m-2 p-2`">
           <p class="font-bold">
             {{ `${verse[0].book_name_alt} ${verse[0].chapter}:${verse[0].verse_start}` }}</p>
           <p v-for="v in verse">
-            {{ v.verse_start + " " + v.verse_text }}
+            {{ v.verse_text }}
           </p>
         </div>
         <div v-else class="flex flex-col gap-3 items-center py-4">
@@ -116,12 +116,11 @@ import { getUserFavoriteDevotionals } from '../../devotionals/services/Devotiona
 import { getUserFavoriteSermons } from '../../sermons/services/SermonService'
 import { getUserHighlightedVerses, getVerses } from '../../bible/services/BibleService'
 import Divider from '../../components/atoms/Divider.vue'
-import PocketBaseClient from '../../api/PocketBaseClient'
 import { getLocalCacheItem } from '../../cache/services/LocalStorageService'
 
 const categories = ref<any>([{ name: "Read VOTD", link: "/?votd=t", badge: "book-heart" }, { name: "Are you failing?", link: "", badge: "hands-pray" }, { name: "Are you truly saved?", link: "https://independentbaptist.church/salvation", badge: "cross" }, { name: "Join a Bible-based church.", link: "https://independentbaptist.church/", badge: "church" }]);
 
-const verses = ref<any>([]);
+const chapters = ref<any>([]);
 const versesData = ref<any>([]);
 
 const { user } = useAuth()
@@ -144,10 +143,10 @@ onMounted(async () => {
   favoriteSermons.value = sermonSearch.items;
 
   await loadFavorites()
-  verses.value = await getUserHighlightedVerses(PocketBaseClient.authStore.model?.id || "");
-  verses.value.forEach(async (verse: any) => {
-    versesData.value.push(await getVerses(getLocalCacheItem('__scripture_alone_last_loaded_bible_info__').selectedBibleTranslationId, verse.book_id, parseInt(verse.chapter), parseInt(verse.verse), parseInt(verse.verse)));
-  })
+  chapters.value = await getUserHighlightedVerses();
+  chapters.value.forEach(async (verse: any) => {
+    versesData.value.push({...(await getVerses(getLocalCacheItem('__scripture_alone_last_loaded_bible_info__').selectedBibleTranslationId, verse.book_id, parseInt(verse.chapter), parseInt(verse.verse.verse), parseInt(verse.verse.verse))), color: verse.verse.color });
+  });
 })
 
 
@@ -162,5 +161,19 @@ async function goToPage(link: string) {
 </script>
 
 <style>
-
+.verse-green {
+  background-color: rgba(0, 255, 0, .2)
+}
+.verse-blue {
+  background-color: rgba(0, 0, 255, .2)
+}
+.verse-red {
+  background-color: rgba(255, 0, 0, .2)
+}
+.verse-pink {
+  background-color: rgba(255, 0, 170, .2)
+}
+.verse-yellow {
+  background-color: rgba(217, 255, 0, .2)
+}
 </style>

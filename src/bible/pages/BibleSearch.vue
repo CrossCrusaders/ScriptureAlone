@@ -226,12 +226,13 @@ const handleSearchSubmit = async (event: Event) => {
       currentBibleSearchData.value = data
       currentBibleSearchMeta.value = meta
       window.scrollTo({ top: 0 })
-      return router.replace(
+      return router.push(
         `/bible?t=${searchTranslationId.value}&c=${result.chapter}&b=${result.book_id}&vs=${result.verse_start}&ve=${result.verse_end}`
       );
     } else {
       currentQuery.value = searchModel.value;
-      return router.replace(
+      currentPage.value = 1;
+      return router.push(
         `/bible/search?q=${encodeURI(
           searchModel.value.substring(0, 255)
         )}&t=${searchTranslationId.value}`
