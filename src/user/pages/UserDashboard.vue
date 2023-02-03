@@ -34,14 +34,16 @@
           </h1>
         </div>
         <Divider></Divider>
-        <div v-for="verse in versesData" v-if="versesData.length"
-          @click="router.push(`bible?t=${getLocalCacheItem('__scripture_alone_last_loaded_bible_info__').selectedBibleTranslationId}&b=${verse[0].book_id}&c=${verse[0].chapter}&vs=${verse[0].verse_start}&ve=${verse[0].verse_end}`)"
-          :class="`rounded verse-${verse.color} transition-all hover:bg-slate-300 cursor-pointer m-2 p-2`">
-          <p class="font-bold">
-            {{ `${verse[0].book_name_alt} ${verse[0].chapter}:${verse[0].verse_start}` }}</p>
-          <p v-for="v in verse">
-            {{ v.verse_text }}
-          </p>
+        <div v-if="versesData.length" class="h-96 overflow-y-scroll">
+          <div v-for="verse in versesData"
+            @click="router.push(`bible?t=${getLocalCacheItem('__scripture_alone_last_loaded_bible_info__').selectedBibleTranslationId}&b=${verse[0].book_id}&c=${verse[0].chapter}&vs=${verse[0].verse_start}&ve=${verse[0].verse_end}`)"
+            :class="`rounded verse-${verse.color} transition-all hover:bg-slate-300 cursor-pointer m-2 p-2`">
+            <p class="font-bold">
+              {{ `${verse[0].book_name_alt} ${verse[0].chapter}:${verse[0].verse_start}` }}</p>
+            <p v-for="v in verse">
+              {{ v.verse_text }}
+            </p>
+          </div>
         </div>
         <div v-else class="flex flex-col gap-3 items-center py-4">
           <p class="text-xl mb-2">You haven't hightlighted any verses yet!</p>
@@ -145,7 +147,7 @@ onMounted(async () => {
   await loadFavorites()
   chapters.value = await getUserHighlightedVerses();
   chapters.value.forEach(async (verse: any) => {
-    versesData.value.push({...(await getVerses(getLocalCacheItem('__scripture_alone_last_loaded_bible_info__').selectedBibleTranslationId, verse.book_id, parseInt(verse.chapter), parseInt(verse.verse.verse), parseInt(verse.verse.verse))), color: verse.verse.color });
+    versesData.value.push({ ...(await getVerses(getLocalCacheItem('__scripture_alone_last_loaded_bible_info__').selectedBibleTranslationId, verse.book_id, parseInt(verse.chapter), parseInt(verse.verse.verse), parseInt(verse.verse.verse))), color: verse.verse.color });
   });
 })
 
@@ -164,15 +166,19 @@ async function goToPage(link: string) {
 .verse-green {
   background-color: rgba(0, 255, 0, .2)
 }
+
 .verse-blue {
   background-color: rgba(0, 0, 255, .2)
 }
+
 .verse-red {
   background-color: rgba(255, 0, 0, .2)
 }
+
 .verse-pink {
   background-color: rgba(255, 0, 170, .2)
 }
+
 .verse-yellow {
   background-color: rgba(217, 255, 0, .2)
 }
