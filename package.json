@@ -11,10 +11,12 @@
     "ionic:serve": "npm run dev"
   },
   "dependencies": {
+    "@capacitor-community/fcm": "^3.0.2",
     "@capacitor/android": "^4.3.0",
     "@capacitor/app": "^4.1.1",
     "@capacitor/core": "^4.3.0",
     "@capacitor/ios": "^4.3.0",
+    "@capacitor/push-notifications": "^4.1.2",
     "@mdi/font": "^7.0.96",
     "date-fns": "^2.29.3",
     "pocketbase": "^0.7.1",
