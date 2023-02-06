@@ -24,8 +24,7 @@ import { useUserFavorites } from '../../user/services/UserService';
 import { useAuth } from '../../auth/services/AuthService';
 
 import { getSearch } from '../../search/services/searchService'
-import { string32 } from 'pdfjs-dist/types/src/shared/util';
- 
+
 export interface DevotionalsPreviewGridProps {
   queryParams?: any
   page?: number
@@ -33,9 +32,10 @@ export interface DevotionalsPreviewGridProps {
   link?: string
   paginationControls?: boolean
   appendContent?: boolean
-  query?: string | null,
-  minDate: string,
-  maxDate: string
+  query?: string | null
+  minDate?: string
+  maxDate?: string
+  reload?: boolean
 }
 
 const props = withDefaults(defineProps<DevotionalsPreviewGridProps>(), {
@@ -43,7 +43,7 @@ const props = withDefaults(defineProps<DevotionalsPreviewGridProps>(), {
   perPage: 8,
   query: null,
   minDate: "2010-01-01",
-  maxDate: (new Date()).getFullYear().toString()
+  maxDate: `${(new Date()).getFullYear().toString()}-01-01`
 })
 
 const loading = ref<boolean>(false)
@@ -74,8 +74,9 @@ const loadSearchedDevotionals = async (forceReset = false) => {
     if (props.appendContent && !forceReset) {
       loadedDevotionals.value = loadedDevotionals.value.concat(items as ContentPreview[])
     }
-    else
-      loadedDevotionals.value = items as ContentPreview[]
+    else {
+      loadedDevotionals.value = items as ContentPreview[];
+    }
     pagination.value = paginationData
     emit('data:loaded', { items, ...paginationData })
   } finally {
@@ -84,13 +85,11 @@ const loadSearchedDevotionals = async (forceReset = false) => {
 }
 
 onMounted(async () => {
-  loadSearchedDevotionals()
-
   // Initialize watch after initial load
   watch(() => props.page, (currentPage, prevPage) => {
     loading.value = true
     setTimeout(() => {
-
+      // Most likely the first time this is run on page load
       loadSearchedDevotionals()
 
       if (currentPage > prevPage)
@@ -99,29 +98,22 @@ onMounted(async () => {
         emit('page:previous')
     }, 800)
   })
-  watch(() => props.perPage, () => loadSearchedDevotionals())
-  watch(() => props.queryParams, () => loadSearchedDevotionals())
+  watch(() => props.perPage, () => loadSearchedDevotionals(true))
+  watch(() => props.queryParams, () => loadSearchedDevotionals(true))
 
   watch(() => props.query, (currentQuery, prevQuery) => {
     loadSearchedDevotionals(true)
   })
 
-  watch(() => props.maxDate, (currentMaxDate) => {
-    loading.value = true
-    setTimeout(() => {
+  watch(() => props.reload, (value) => {
+    if (value) {
+      loading.value = true;
       loadSearchedDevotionals(true);
-    }, 800)
-  })
-  watch(() => props.minDate, (currentMinDate) => {
-    loading.value = true
-    setTimeout(() => {
-      loadSearchedDevotionals(true);
-    }, 800)
+    }
   })
 
   await loadFavorites()
 })
-
 
 const onDevotionalCardClicked = (devotional: Devotional) => {
   router.push(`/devotionals/${devotional.id}`)
@@ -134,9 +126,6 @@ const onDevotionalAuthorClicked = (author: Author) => {
 }
 
 const isFavoriteDevotional = (devotional: Devotional) => {
-  if(user.value == null)
-    return false
-   
   if (!devotional || !devotional.id)
     return false
 
@@ -144,7 +133,7 @@ const isFavoriteDevotional = (devotional: Devotional) => {
 }
 
 const onFavoriteDevotionalClicked = (devotional: Devotional) => {
-  if(user.value == null)
+  if (user.value == null)
     router.replace("/auth/log-in")
 
   if (!devotional || !devotional.id)

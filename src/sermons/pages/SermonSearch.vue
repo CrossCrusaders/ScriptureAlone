@@ -76,7 +76,8 @@ const onClearClicked = async () => {
 
 
 const onScrollEnd = async () => {
-  if (!reachedEnd.value) {
+  if (!reachedEnd.value && !loading.value) {
+    loading.value = true;
     currentPage.value += 1
   }
 }

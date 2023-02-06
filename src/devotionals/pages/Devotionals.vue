@@ -1,13 +1,13 @@
 <template>
   <AppLayout>
     <PageContent>
-      <h1 id="page-title__devotional-authors"
+      <h1 id="page-title__sermon-authors"
         class="max-w-prose mx-auto text-slate-800 text-center text-5xl font-title font-bold mt-8 mb-8">Search
-        Devotionals
+        Sermons
       </h1>
-      <div class="max-w-prose mx-auto">
+      <div class="max-w-prose mx-auto mb-8">
         <form @submit.prevent="onFormSubmit">
-          <AppInput placeholder="Search For Devotionals" v-model="currentQuery">
+          <AppInput placeholder="Search For Sermons" v-model="currentQuery">
             <template v-slot:postfix>
               <AppButton variant="primary-minimal" size="sm" type="submit" v-if="!hasSearch">
                 <Icon icon-name="magnify"></Icon>
@@ -47,14 +47,15 @@
         </div>
       </div>
       <InfiniteScrollContent @scroll:end="onScrollEnd">
-        <DevotionalsPreviewGrid @data:loaded="loading = false" :append-content="true" :per-page="16" :page="currentPage"
-          :query="searchedQuery" :query-params="queryParams" :min-date="minDevoDate" :max-date="maxDevoDate">
+        <DevotionalsPreviewGrid @data:loaded="loading = false" :append-content="true" :min-date="minDevoDate"
+          :max-date="maxDevoDate" :per-page="16" :page="currentPage" :query="searchedQuery" :reload="reload"
+          :query-params="queryParams">
         </DevotionalsPreviewGrid>
       </InfiniteScrollContent>
       <div v-if="reachedEnd">
         <p class="text-center text-xl font-bold mb-4">End of Results</p>
         <p class="text-center text-xl mb-8 underline">
-          <a href="#page-title__devotional-authors">
+          <a href="#page-title__sermon-authors">
             Back To Top?
           </a>
         </p>
@@ -64,12 +65,12 @@
 </template>
 
 <script setup lang="ts">
+import { onMounted, ref, watch } from 'vue';
 import AppLayout from '../../components/templates/AppLayout.vue'
 import PageContent from '../../components/templates/PageContent.vue'
 import AppInput from '../../components/atoms/form-controls/AppInput.vue'
 import AppSelect from '../../components/atoms/form-controls/AppSelect.vue'
 import Icon from '../../components/atoms/Icon.vue'
-import { onMounted, ref, watch } from 'vue'
 import AppButton from '../../components/atoms/form-controls/AppButton.vue'
 import InfiniteScrollContent from '../../components/templates/InfiniteScrollContent.vue'
 import DevotionalsPreviewGrid from '../components/DevotionalsPreviewGrid.vue'
@@ -84,7 +85,7 @@ const currentQuery = ref<string>('')
 const searchedQuery = ref<string>('')
 
 const currentPage = ref(1)
-const countPerPage = 27
+const reload = ref(false);
 
 const minYear = ref<any>();
 const minMonth = ref<any>();
@@ -116,23 +117,43 @@ const years = ref([
   "2017"
 ]);
 
-onMounted(async()=>{
+onMounted(async () => {
   watch(() => minMonth.value, () => {
     minDevoDate.value = transformDate(minMonth.value, minYear.value);
+    currentPage.value = 1;
+    reload.value = true;
+    setTimeout(() => {
+      reload.value = false;
+    }, 800)
   });
   watch(() => maxMonth.value, () => {
     maxDevoDate.value = transformDate(maxMonth.value, maxYear.value, true);
+    currentPage.value = 1;
+    reload.value = true;
+    setTimeout(() => {
+      reload.value = false;
+    }, 800)
   });
   watch(() => minYear.value, () => {
     minDevoDate.value = transformDate(minMonth.value, minYear.value);
+    currentPage.value = 1;
+    reload.value = true;
+    setTimeout(() => {
+      reload.value = false;
+    }, 800)
   });
   watch(() => maxYear.value, () => {
     maxDevoDate.value = transformDate(maxMonth.value, maxYear.value, true);
+    currentPage.value = 1;
+    reload.value = true;
+    setTimeout(() => {
+      reload.value = false;
+    }, 800)
   });
 
   maxMonth.value = ((new Date).getMonth() + 1).toString();
   maxYear.value = (new Date).getFullYear();
-  minYear.value = 2019;
+  minYear.value = 2017;
   minMonth.value = 0;
 })
 
@@ -140,7 +161,7 @@ const onFormSubmit = async () => {
   searchedQuery.value = currentQuery.value;
   currentPage.value = 1;
   hasSearch.value = true;
-  if(searchedQuery.value == ""){
+  if (searchedQuery.value == "") {
     hasSearch.value = false;
   }
 }
@@ -154,19 +175,20 @@ const onClearClicked = async () => {
 
 
 const onScrollEnd = async () => {
-  if (!reachedEnd.value) {
+  if (!reachedEnd.value && !loading.value) {
+    loading.value = true;
     currentPage.value += 1
   }
 }
 
-function transformDate(mm: any, yy: any, max?: boolean){
+function transformDate(mm: any, yy: any, max?: boolean) {
   var MM = mm;
   MM++;
   var DD;
   DD = "01";
-  if(max)
+  if (max)
     DD = monthDays.value[parseInt(mm)].value;
-  if(MM != ("10" || "11" || "12" || 10 || 11 || 12))
+  if (MM != ("10" || "11" || "12" || 10 || 11 || 12))
     MM = "0" + MM;
   return `${yy}-${MM}-${DD}`;
 }

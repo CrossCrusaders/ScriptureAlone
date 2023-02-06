@@ -43,7 +43,6 @@ export async function getSearch(collection: string, query: string | undefined, p
       })
       return str
     }, '')
-    console.log(params)
     params.filter = params.filter + filter;
   }
   const records: any = await PocketBaseClient.records.getList(collection, page, perPage, params)

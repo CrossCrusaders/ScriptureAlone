@@ -59,10 +59,11 @@ const getDeliveredNotifications = async () => {
     console.log('delivered notifications', notificationList);
 }
 
-registerNotifications();
-addListeners();
-getDeliveredNotifications();
-
-FCM.subscribeTo({ topic: "updates" })
-  .then((r) => alert(`subscribed to topic`))
-  .catch((err) => console.log(err));
+import { Capacitor } from '@capacitor/core';
+if (Capacitor.getPlatform() != "web") {
+    registerNotifications();
+    addListeners();
+    getDeliveredNotifications();
+    FCM.subscribeTo({ topic: "updates" })
+        .catch((err) => console.log(err));
+}
