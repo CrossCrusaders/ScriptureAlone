@@ -125,7 +125,7 @@ onMounted(async () => {
 
   // If there is no query, redirect to the home page
   if (!q)
-    router.replace('/')
+    router.push('/')
 
   const lastSearchedBibleId = getUserSetting('lastSearchedBibleId')
   // If there is no bible id specified
@@ -162,7 +162,7 @@ onMounted(async () => {
 const search = async () => {
   pageLoading.value = true
   try {
-    router.replace({ path: '/bible/search', query: { q: currentQuery.value, bibleId: currentBibleId.value, page: currentPage.value } })
+    router.push({ path: '/bible/search', query: { q: currentQuery.value, bibleId: currentBibleId.value, page: currentPage.value } })
     const { data, meta } = await searchBible(currentBibleId.value, currentQuery.value, currentPage.value as number, resultsPerPage)
 
     currentBibleSearchData.value = data

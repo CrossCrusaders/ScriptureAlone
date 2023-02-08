@@ -23,7 +23,7 @@ import { Author } from '../../authors/Author';
 import { useUserFavorites } from '../../user/services/UserService';
 import { useAuth } from '../../auth/services/AuthService';
 
-import { getSearch } from '../../search/services/searchService'
+import { getSearch } from '../../search/services/SearchService'
  
 export interface SermonsPreviewGridProps {
   queryParams?: any
@@ -123,7 +123,7 @@ const isFavoriteSermon = (sermon: Sermon) => {
 
 const onFavoriteSermonClicked = (sermon: Sermon) => {
   if(user.value == null)
-    router.replace("/auth/log-in")
+    router.push("/auth/log-in")
     
   if (!sermon || !sermon.id)
     return false

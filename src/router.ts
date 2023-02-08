@@ -50,6 +50,9 @@ import TruthResourceVideo from './truthResources/pages/Videos.vue'
 import NoteViewer from './notes/pages/NoteViewer.vue'
 import NoteEditor from './notes/pages/NoteEditor.vue'
 
+// Versions
+import VersionDetails from './versions/pages/VersionDetails.vue'
+
 import ComponentTestPage from './test/ComponentTestPage.vue'
 
 import * as VueRouter from 'vue-router'
@@ -104,6 +107,9 @@ const routes = [
 
   // Notes
   { path: '/note/:id', component: NoteViewer },
+
+  // Versions
+  { path: '/version/:id', component: VersionDetails },
 
   // 404
   { path: '/:pathMatch(.*)', component: FourZeroFour }

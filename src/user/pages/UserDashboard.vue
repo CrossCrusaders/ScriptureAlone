@@ -157,7 +157,7 @@ async function goToPage(link: string) {
     window.location.href = link;
   }
   else {
-    await router.replace(link);
+    await router.push(link);
   }
 }
 </script>

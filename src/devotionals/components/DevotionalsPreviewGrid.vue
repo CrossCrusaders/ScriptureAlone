@@ -23,7 +23,7 @@ import { Author } from '../../authors/Author';
 import { useUserFavorites } from '../../user/services/UserService';
 import { useAuth } from '../../auth/services/AuthService';
 
-import { getSearch } from '../../search/services/searchService'
+import { getSearch } from '../../search/services/SearchService'
 
 export interface DevotionalsPreviewGridProps {
   queryParams?: any
@@ -134,7 +134,7 @@ const isFavoriteDevotional = (devotional: Devotional) => {
 
 const onFavoriteDevotionalClicked = (devotional: Devotional) => {
   if (user.value == null)
-    router.replace("/auth/log-in")
+    router.push("/auth/log-in")
 
   if (!devotional || !devotional.id)
     return false

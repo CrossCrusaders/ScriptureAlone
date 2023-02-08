@@ -244,7 +244,7 @@ const loadChapterContent = async () => {
       selectedChapter: selectedChapterNumber.value || 1
     })
 
-    router.replace({ path: '/bible', query: { ...route.query, t: selectedBibleTranslationId.value, b: selectedBookId.value, c: selectedChapterNumber.value } })
+    router.push({ path: '/bible', query: { ...route.query, t: selectedBibleTranslationId.value, b: selectedBookId.value, c: selectedChapterNumber.value } })
     if (shouldHighlight)
       setTimeout(() => {
         document.querySelector(`#verse-${highlightRange[0]}`)?.scrollIntoView()
@@ -427,6 +427,9 @@ function sorter(a: number, b: number) {
 
 .verse {
   scroll-margin-top: 128px;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .verse-highlight {

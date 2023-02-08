@@ -102,7 +102,7 @@ import { useRouter, useRoute } from "vue-router";
 import BibleTranslationSelect from "../../components/organisms/BibleTranslationSelect.vue";
 import AppButton from "../../components/atoms/form-controls/AppButton.vue";
 
-import { getSearch } from '../../search/services/searchService'
+import { getSearch } from '../../search/services/SearchService'
 
 const verseName = ref("");
 const verseText = ref("");
