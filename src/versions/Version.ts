@@ -9,6 +9,7 @@ export interface Version {
     description?: string
     releaseDate?: Date
     version?: number
+    platforms?: string[]
 }
 
 

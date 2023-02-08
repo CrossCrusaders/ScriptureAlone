@@ -71,3 +71,19 @@ export const formatName = (firstName: string | any, lastName?: string) => {
   return `${fName} ${lName}`.trim()
 
 }
+
+export const formatDate = (date: any) => {
+  date = new Date(date);
+  if(date.getMonth() < 10 && date.getDate() < 10){
+    return date.getFullYear() + "-0" + date.getMonth() + "-0" + date.getDate();
+  }
+  else if(date.getMonth() < 10){
+    return date.getFullYear() + "-0" + date.getMonth() + "-" + date.getDate();
+  }
+  else if(date.getDate() < 10){
+    return date.getFullYear() + "-" + date.getMonth() + "-0" + date.getDate();
+  }
+  else{
+    return date.getFullYear() + "-" + date.getMonth() + "-" + date.getDate();
+  }
+}
