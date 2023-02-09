@@ -10,7 +10,7 @@ export interface Note {
 
     title: string
     text: string
-    verses: { value: any[] }
+    verses: any[]
     book_id: string
     chapter: number
 }
@@ -23,11 +23,11 @@ export const transformNoteResponse = (response: any): Note => {
     }
 
     var tempVerseHold: any[] = [];
-    note.verses.value.forEach(async (verse: number | object) => {
+    note.verses.forEach(async (verse: number | object) => {
         const verseResponse = await getVerses(getLocalCacheItem("__scripture_alone_last_loaded_bible_info__").selectedBibleTranslationId, note.book_id, note.chapter, verse as number, verse as number)
         tempVerseHold.push(verseResponse);
     });
-    note.verses.value = tempVerseHold;
+    note.verses = tempVerseHold;
     
     return note;
 }

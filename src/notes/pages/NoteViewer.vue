@@ -1,11 +1,12 @@
 <template>
     <AppLayout>
         <PageContent v-if="note">
-            <div class="flex justify-center">
-                <p class="font-bold text-2xl">{{ formatVerseRef(note?.verses.value) }}</p>
+            <div class="text-center">
+                <p class="font-bold text-2xl">{{ note?.title.toUpperCase() }}</p>
+                <p class="font-bold text-2xl">{{ formatVerseRef(note?.verses) }}</p>
             </div>
             <div class="bg-slate-200 rounded p-2 mb-2">
-                <span v-html="formatVerseText(note?.verses.value)"></span>
+                <span v-html="formatVerseText(note?.verses)"></span>
             </div>
             <textarea class="w-full bg-slate-100 rounded p-2 h-96" :value="note?.text"></textarea>
         </PageContent>
@@ -69,7 +70,7 @@ const formatVerseRef = (verses: any) => {
     } else {
         str += `${rangeStart}-${rangeEnd}`;
     }
-    if(str.includes(";"))
+    if (str.includes(";"))
         str += ";";
     return str;
 }

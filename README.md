@@ -17,7 +17,7 @@ Make sure you have a stable internet connection for the download. After the down
 <br>
 
 # Usage:
-We have created two videos explaining how to use Scripture Alone. You can view the Desktop tutorial [here](https://youtu.be/jwTIgb2xUGQ), or you can watch the mobile tutorial [here](https://youtu.be/wPBPVDNNtHU).
+We have created two videos explaining how to use Scripture Alone. You can view the desktop tutorial [here](https://youtu.be/jwTIgb2xUGQ), or you can watch the mobile tutorial [here](https://youtu.be/wPBPVDNNtHU).
 
 <!-- ## Preparing
 

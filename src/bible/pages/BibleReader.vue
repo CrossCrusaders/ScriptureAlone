@@ -85,8 +85,23 @@
         <p class="font-bold">{{ menuVerse.book_name_alt + " " + menuVerse.chapter + ":" + menuVerse.verse_start }}</p>
         <p>{{ menuVerse.verse_text }}</p>
       </div>
+      <div v-if="notesVerseIsIn.length" class="w-full flex flex-col justify-center">
+        <div class="flex flex-row justify-center align-center">
+          <Icon :size="20" icon-name="note" class="text-black"></Icon>
+          <p class="font-bold text-lg underline text-slate-800 mb-1">Notes on This Verse:</p>
+        </div>
+        <div class="flex flex-col gap-2">
+          <div v-for="note in notesVerseIsIn">
+            <RouterLink :to="`/note/${note.id}`"><button class="mx-auto bg-gray-200 hover:bg-gray-100 active:bg-gray-300 transition-all p-2 rounded w-full md:w-1/2 text-black"
+              @click="">{{ note.title }}</button></RouterLink>
+          </div>
+        </div>
+      </div>
       <div class="w-full flex flex-col justify-center">
-        <p class="font-bold text-lg underline text-slate-800 mb-1">Highlight:</p>
+        <div class="flex flex-row justify-center align-center">
+          <Icon :size="20" icon-name="pencil" class="text-black"></Icon>
+          <p class="font-bold text-lg underline text-slate-800 mb-1">Highlight Selected Verses:</p>
+        </div>
         <div class="flex flex-row gap-2 justify-center">
           <button class="border-black border-2 rounded w-10 h-10 md:w-16 md:h-16"
             @click="handleHighlightVerse('none')"></button>
@@ -102,7 +117,6 @@
             @click="handleHighlightVerse('pink')"></button>
         </div>
       </div>
-      <p class="font-bold text-lg underline text-slate-800">Other:</p>
       <button
         class="mx-auto bg-cyan-500 hover:bg-cyan-400 active:bg-cyan-600 transition-all p-2 rounded w-full md:w-1/2"
         @click="copyString(menuVerse.book_name_alt + ' ' + menuVerse.chapter + ':' + menuVerse.verse_start + ' - ' + menuVerse.verse_text)">Copy
@@ -110,7 +124,6 @@
       <button
         class="mx-auto bg-yellow-500 hover:bg-yellow-400 active:bg-yellow-600 transition-all p-2 rounded w-full md:w-1/2"
         @click="noteModal = true">Add Note</button>
-      <p class="text-sm text-black">(Affects all currently selected verses)</p>
     </div>
   </AppModal>
   <AppModal v-model="noteModal" v-slot="{ close }">
@@ -130,7 +143,7 @@
 
 <script setup lang="ts">
 import { useBreakpoint } from '../../browser/ViewportService'
-import { onMounted, ref } from 'vue'
+import { onMounted, ref, watch } from 'vue'
 import AppLayout from '../../components/templates/AppLayout.vue'
 import PageContent from '../../components/templates/PageContent.vue'
 import {
@@ -155,7 +168,7 @@ import AppModal from '../../components/templates/AppModal.vue'
 import Spinner from '../../components/atoms/Spinner.vue'
 import BibleTranslationSelect from '../../components/organisms/BibleTranslationSelect.vue'
 import { isBibleReference, getHighlightedVerses, highlightVerses } from '../../bible/services/BibleService'
-import { createNote } from '../../notes/services/NoteService'
+import { createNote, getAllNotesInChapter } from '../../notes/services/NoteService'
 import PocketBaseClient from '../../api/PocketBaseClient'
 
 export interface BiblePageQueryParams {
@@ -192,6 +205,8 @@ const menuVerse = ref({ verse_text: "", verse_start: "", book_name_alt: "", book
 const noteTitle = ref("");
 const noteText = ref("");
 const noteModal = ref(false);
+const availableNotes = ref<any[]>([]);
+const notesVerseIsIn = ref<any[]>([]);
 
 let shouldHighlight = false
 let highlightRange: number[] = []
@@ -252,7 +267,8 @@ const loadChapterContent = async () => {
     else
       window.scrollTo({ top: 0 })
 
-    shouldHighlight = false
+    shouldHighlight = false;
+    availableNotes.value = await getAllNotesInChapter(selectedBookId.value, selectedChapterNumber.value);
   }
   finally {
     pageLoading.value = false
@@ -266,13 +282,26 @@ onMounted(async () => {
   var recordNum = Math.round(Math.random() * (max - min) + min);
   PopUpText.value = records[recordNum].title;
   PopUpLink.value = "/truth-resources/" + records[recordNum].id;
-  getNewVerses();
+  await getNewVerses();
+  watch(() => openMenu.value, () => {
+    if (openMenu.value) {
+      availableNotes.value.forEach((note) => {
+        note.verses.forEach((verse: any) => {
+          if (verse[0].verse_start == menuVerse.value.verse_start) {
+            notesVerseIsIn.value.push(note);
+          }
+        });
+      });
+    }
+    else {
+      notesVerseIsIn.value = [];
+    }
+  });
 })
 
 // Event Handlers 
 
 const onNextChapterButtonClicked = async () => {
-
   if (!selectedChapter.value)
     return
   const currentChapterSequence = selectedChapter.value.sequenceNumber
@@ -281,7 +310,7 @@ const onNextChapterButtonClicked = async () => {
     return
   selectedBookId.value = nextData.bookId
   selectedChapterNumber.value = nextData.chapterNumber
-  await loadChapterContent()
+  await loadChapterContent();
 }
 
 const onPrevChapterButtonClicked = async () => {
@@ -295,7 +324,7 @@ const onPrevChapterButtonClicked = async () => {
 
   selectedBookId.value = nextData.bookId
   selectedChapterNumber.value = nextData.chapterNumber
-  await loadChapterContent()
+  await loadChapterContent();
 }
 
 const onSelectedBookIdChanged = async (value: any) => {
