@@ -107,7 +107,7 @@ export async function getUserHighlightedVerses() {
 	var returnVerses = await PocketBaseClient.records.getFullList('highlights', 200, { filter: `user="${PocketBaseClient.authStore.model?.id}"` })
 	var verses: any = [];
 	returnVerses.forEach((chapter: any, index: number) => {
-		chapter.verse_data.value.forEach((verse: any) => {
+		chapter.verse_data.forEach((verse: any) => {
 			verses.push({ book_id: chapter.book_id, chapter: chapter.chapter, verse })
 		})
 	});
@@ -284,44 +284,42 @@ export async function isBibleReference(query: string) {
 
 }
 
-export async function highlightVerse(book_id: string, chapter: number | string, verse: number | string, color: string) {
-	let update = null;
-	var verses = await getHighlightedVerses(book_id, chapter.toString());
-	verses.forEach((v: any) => {
-		if (v.verse == verse)
-			update = v.id;
-	})
-	if (update) {
-		if (color == "none") {
-			await PocketBaseClient.records.delete('highlights', update);
-			return;
-		}
-		await PocketBaseClient.records.update('highlights', update, { color })
-	}
-	else {
-		await PocketBaseClient.records.create('highlights', { book_id, chapter, verse, user: PocketBaseClient.authStore.model?.id, color })
-	}
-}
-
 export async function highlightVerses(book: string, chapter: string, verses: number[], color: string) {
 	var currentlyHighlightedVerses: any = await getHighlightedVerses(book, chapter);
+	var newCurrentlyHighlightedVerses = [];
 	if (!currentlyHighlightedVerses) {
-		await PocketBaseClient.records.create("highlights", { book_id: book, chapter, user: PocketBaseClient.authStore.model?.id, verse_data: { value: [] } }).then(async () => {
+		await PocketBaseClient.records.create("highlights", { book_id: book, chapter, user: PocketBaseClient.authStore.model?.id, verse_data: [] }).then(async () => {
 			currentlyHighlightedVerses = await getHighlightedVerses(book, chapter);
+			newCurrentlyHighlightedVerses = currentlyHighlightedVerses.verse_data || [];
 		})
+	}
+	else{
+		newCurrentlyHighlightedVerses = currentlyHighlightedVerses.verse_data || [];
 	}
 	verses.forEach((verse: any) => {
 		let found = false;
-		currentlyHighlightedVerses.verse_data.value.forEach((v: any, i: number) => {
+		newCurrentlyHighlightedVerses.forEach((v: any, i: number) => {
 			if (v.verse.toString() == verse.toString()) {
-				currentlyHighlightedVerses.verse_data.value[i].color = color;
-				found = true;
-				return;
+				if(color != "none"){
+					newCurrentlyHighlightedVerses[i].color = color;
+					found = true;
+					return;
+				}
+				else{
+					newCurrentlyHighlightedVerses.splice(i, 1);
+					found = true;
+					return;
+				}
 			}
 		})
 		if (!found) {
-			currentlyHighlightedVerses.verse_data.value.push({ verse, color });
+			newCurrentlyHighlightedVerses.push({ verse, color });
 		}
 	});
-	return PocketBaseClient.records.update("highlights", currentlyHighlightedVerses.id, { verse_data: currentlyHighlightedVerses.verse_data });
+	if(newCurrentlyHighlightedVerses == []){
+		return PocketBaseClient.records.delete("highlights", currentlyHighlightedVerses.id);
+	}
+	else{
+		return PocketBaseClient.records.update("highlights", currentlyHighlightedVerses.id, { verse_data: newCurrentlyHighlightedVerses });
+	}
 }

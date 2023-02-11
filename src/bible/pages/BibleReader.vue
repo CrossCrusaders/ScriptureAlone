@@ -239,7 +239,7 @@ const loadChapterContent = async () => {
       }
       var highlightColor = "";
       if (versesHighlights) {
-        versesHighlights.verse_data.value.forEach((highlightVerse: any) => {
+        versesHighlights.verse_data.forEach((highlightVerse: any) => {
           if (verse.verse_start == highlightVerse.verse) {
             verseCssClass += ` verse-highlighted-${highlightVerse.color}`;
             highlightColor = highlightVerse.color;

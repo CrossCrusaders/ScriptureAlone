@@ -122,7 +122,6 @@ const router = VueRouter.createRouter({
   history: VueRouter.createWebHistory(),
   routes: routes,
   scrollBehavior(to, from, savedPosition) {
-
     if (to.hash) {
       return {
         selector: to.hash,

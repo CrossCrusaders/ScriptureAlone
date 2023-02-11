@@ -34,7 +34,7 @@
           </h1>
         </div>
         <Divider></Divider>
-        <div v-if="versesData.length" class="h-96 overflow-y-scroll">
+        <div v-if="versesData.length" class="max-h-96 overflow-y-scroll">
           <div v-for="verse in versesData"
             @click="router.push(`bible?t=${getLocalCacheItem('__scripture_alone_last_loaded_bible_info__').selectedBibleTranslationId}&b=${verse[0].book_id}&c=${verse[0].chapter}&vs=${verse[0].verse_start}&ve=${verse[0].verse_end}`)"
             :class="`rounded verse-${verse.color} transition-all hover:bg-slate-300 cursor-pointer m-2 p-2`">
