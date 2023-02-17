@@ -1,3 +1,4 @@
+import { Version } from './../Version';
 import PocketBaseClient from '../../api/PocketBaseClient'
 import { transformVersionResponse } from '../Version'
 
