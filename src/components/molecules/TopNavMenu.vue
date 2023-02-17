@@ -46,13 +46,13 @@
           <span class="underline">{{ item.label }}</span>
           <Icon v-if="item.children && item.children.length" icon-name="chevron-down" class="mb-3"></Icon>
         </span>
-        <ul class="top-nav-submenu p-4 bg-gray-800 text-white min-w-fit  shadow-lg rounded z-40"
+        <ul class="top-nav-submenu p-4 bg-gray-800 text-white min-w-fit shadow-lg rounded z-40"
           v-if="item.children && item.children.length">
-          <li v-for="child in item.children" :key="child.label">
+          <p v-for="child in item.children" :key="child.label">
             <RouterLink class="font-bold underline whitespace-nowrap text-center w-full" :to="child.link || '#'">{{
             child.label
             }}</RouterLink>
-          </li>
+          </p>
         </ul>
       </li>
     </ul>
