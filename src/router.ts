@@ -51,6 +51,7 @@ import NoteViewer from './notes/pages/NoteViewer.vue'
 import NoteEditor from './notes/pages/NoteEditor.vue'
 
 // Versions
+import Updates from './versions/pages/Updates.vue'
 import VersionDetails from './versions/pages/VersionDetails.vue'
 
 import ComponentTestPage from './test/ComponentTestPage.vue'
@@ -109,7 +110,8 @@ const routes = [
   { path: '/note/:id', component: NoteViewer },
 
   // Versions
-  { path: '/version/:id', component: VersionDetails },
+  { path: '/versions', component: Updates },
+  { path: '/versions/:id', component: VersionDetails },
 
   // 404
   { path: '/:pathMatch(.*)', component: FourZeroFour }

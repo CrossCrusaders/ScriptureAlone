@@ -5,8 +5,8 @@
     <div class="flex flex-col md:flex-row gap-2 justify-between text-white">
       <div class="mb-8 md:w-4/12">
         <p class="font-bold text-3xl mb-2">Scripture Alone</p>
-        <p class="mb-2"><a href="/">Home</a> · <a href="#">Uptime Status</a>
-          · <a href="#">Updates</a></p>
+        <p class="mb-2"><RouterLink to="/">Home</RouterLink> · <a href="https://stats.uptimerobot.com/WzG2Eu6WXG" target="_blank">Uptime Status</a>
+          · <RouterLink to="/versions">Updates</RouterLink></p>
         <p class="text-xs">Scripture Alone © {{ (new Date).getFullYear() }}</p>
       </div>
       <div class="mb-8 md:w-4/12 flex flex-col items-center">
