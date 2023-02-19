@@ -96,7 +96,7 @@ const mobileLinkClass = "block px-3 py-3"
 const menuItems = [
   {
     label: 'Home',
-    link: '../'
+    link: '/'
   },
   {
     label: 'Read the Scripture',
