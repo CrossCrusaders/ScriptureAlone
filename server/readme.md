@@ -45,7 +45,11 @@ e.g. http://127.0.0.1:8090/api/bible-brain/**bibles/filesets/ENGKJV/JHN/1?v=4**
 
 See the bible brain API documentation for further details (https://documenter.getpostman.com/view/12519377/Tz5p6dp7)
 
+## Building the server
 
+run `go build` from within the server folder to create a binary file
+To properly execute the binary file you must also have a .env file with the 
+necessary API KEY values in the same directory.
 
 
 
