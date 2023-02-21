@@ -270,9 +270,9 @@ const loadChapterContent = async () => {
     shouldHighlight = false;
     availableNotes.value = await getAllNotesInChapter(selectedBookId.value, selectedChapterNumber.value);
   }
-  finally {
-    pageLoading.value = false
+  catch (err) {
   }
+  pageLoading.value = false
 }
 
 onMounted(async () => {
@@ -302,6 +302,8 @@ onMounted(async () => {
 // Event Handlers 
 
 const onNextChapterButtonClicked = async () => {
+  if(pageLoading.value)
+    return
   if (!selectedChapter.value)
     return
   const currentChapterSequence = selectedChapter.value.sequenceNumber
@@ -314,9 +316,10 @@ const onNextChapterButtonClicked = async () => {
 }
 
 const onPrevChapterButtonClicked = async () => {
+  if(pageLoading.value)
+    return
   if (!selectedChapter.value)
     return
-
   const currentChapterSequence = selectedChapter.value.sequenceNumber
   const nextData: BibleChapter = await getPreviousChapterBySequenceNumber(currentChapterSequence)
   if (!nextData)
@@ -328,7 +331,6 @@ const onPrevChapterButtonClicked = async () => {
 }
 
 const onSelectedBookIdChanged = async (value: any) => {
-
   selectedBookId.value = value
   selectedChapterNumber.value = 1
 

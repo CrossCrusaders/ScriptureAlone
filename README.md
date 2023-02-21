@@ -18,26 +18,3 @@ Make sure you have a stable internet connection for the download. After the down
 
 # Usage:
 We have created two videos explaining how to use Scripture Alone. You can view the desktop tutorial [here](https://youtu.be/jwTIgb2xUGQ), or you can watch the mobile tutorial [here](https://youtu.be/wPBPVDNNtHU).
-
-<!-- ## Preparing
-
-1. Ensure you have version 16 of NodeJS installed on your computer https://nodejs.org/en/download/
-
-2. At the root of the project execute the command `npm i` in your terminal
-
-
-## Running the project
-
-At the root of the project run `npm run dev`
-The project should run at http://127.0.0.1:5173/
-
-## Environment variables
-
-```
-.env                # loaded in all cases
-.env.local          # loaded in all cases, ignored by git
-.env.[mode]         # only loaded in specified mode
-.env.[mode].local   # only loaded in specified mode, ignored by git
-```
-`import.meta.env.VITE_SOME_KEY`
--->
