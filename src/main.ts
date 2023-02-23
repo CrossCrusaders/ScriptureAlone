@@ -92,7 +92,6 @@ if(platform != "web"){
     });
     const logCurrentNetworkStatus = async () => {
         const status = await Network.getStatus();
-        alert(JSON.stringify(status))
         setLocalCacheItem("__network_status__", status, true);
     };
     logCurrentNetworkStatus();
