@@ -76,7 +76,7 @@ export async function getVerses(bibleId: string, book: string, chapter: number, 
 			}
 		}
 
-		const dataStr = await getLocalCacheItem(key)
+		const dataStr = await getLocalCacheItem(key, false)
 		if (dataStr)
 			return JSON.parse(dataStr)
 
@@ -92,11 +92,11 @@ export async function getVerses(bibleId: string, book: string, chapter: number, 
 		const results = await response.json();
 		const data = results.data;
 
-		await setLocalCacheItem(key, JSON.stringify(data))
+		await setLocalCacheItem(key, data, true)
 		return data
 	}
 	else{
-		var data = await (await import(`../../assets/kjv-json/${book}/${chapter}.json`)).default
+		var data = await (await import(`/kjv-json/${book}/${chapter}.json`)).default
 		return data;
 	}
 }
@@ -290,7 +290,7 @@ export async function isBibleReference(query: string) {
 
 export async function highlightVerses(book: string, chapter: string, verses: number[], color: string) {
 	var currentlyHighlightedVerses: any = await getHighlightedVerses(book, chapter);
-	var newCurrentlyHighlightedVerses = [];
+	var newCurrentlyHighlightedVerses:any[] = [];
 	if (!currentlyHighlightedVerses) {
 		await PocketBaseClient.records.create("highlights", { book_id: book, chapter, user: PocketBaseClient.authStore.model?.id, verse_data: [] }).then(async () => {
 			currentlyHighlightedVerses = await getHighlightedVerses(book, chapter);
@@ -320,7 +320,7 @@ export async function highlightVerses(book: string, chapter: string, verses: num
 			newCurrentlyHighlightedVerses.push({ verse, color });
 		}
 	});
-	if(newCurrentlyHighlightedVerses == []){
+	if(newCurrentlyHighlightedVerses[0] === (undefined || null)){
 		return PocketBaseClient.records.delete("highlights", currentlyHighlightedVerses.id);
 	}
 	else{
