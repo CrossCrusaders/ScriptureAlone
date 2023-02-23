@@ -2,26 +2,46 @@ import { createApp } from 'vue'
 import './style.css'
 import VueApp from './App.vue'
 import router from './router'
-import vfmPlugin from 'vue-final-modal'
+import { vfmPlugin } from 'vue-final-modal'
 import VuePdf from 'vue3-pdfjs'
 import Vue3TouchEvents from "vue3-touch-events";
 
+// Functions
+import { setLocalCacheItem } from './cache/services/LocalStorageService';
+
+// Global Window Variables
+declare global {
+    interface Window {
+        networkStatus?: any;
+    }
+}
+
+// Vue App
 const app = createApp(VueApp)
-app.use(vfmPlugin)
 app.use(router)
 app.use(VuePdf)
-app.use(Vue3TouchEvents);
+app.use(Vue3TouchEvents)
+app.use(vfmPlugin({
+    key: '$vfm',
+    componentName: 'VueFinalModal',
+    dynamicContainerName: 'ModalsContainer'
+  }))
 app.mount('#app')
 
+// Capacitor.js Handle Back Button
 import { App } from '@capacitor/app';
-
 App.addListener('backButton', data => {
     window.history.back()
 })
 
+// Platform
+import { Capacitor } from '@capacitor/core';
+const platform = Capacitor.getPlatform();
+localStorage.setItem("__platform__", platform)
+
+// Notifications
 import { PushNotifications } from '@capacitor/push-notifications';
 import { FCM } from "@capacitor-community/fcm";
-
 const addListeners = async () => {
     await PushNotifications.addListener('registration', token => {
         console.info('Registration token: ', token.value);
@@ -39,7 +59,6 @@ const addListeners = async () => {
         console.log('Push notification action performed', notification.actionId, notification.inputValue);
     });
 }
-
 const registerNotifications = async () => {
     let permStatus = await PushNotifications.checkPermissions();
 
@@ -53,17 +72,28 @@ const registerNotifications = async () => {
 
     await PushNotifications.register();
 }
-
 const getDeliveredNotifications = async () => {
     const notificationList = await PushNotifications.getDeliveredNotifications();
     console.log('delivered notifications', notificationList);
 }
-
-import { Capacitor } from '@capacitor/core';
-if (Capacitor.getPlatform() != "web") {
+if (platform != "web") {
     registerNotifications();
     addListeners();
     getDeliveredNotifications();
     FCM.subscribeTo({ topic: "updates" })
         .catch((err) => console.log(err));
+}
+
+// Internet Connection
+import { Network } from '@capacitor/network';
+if(platform != "web"){
+    Network.addListener('networkStatusChange', status => {
+        setLocalCacheItem("__network_status__", status, true);
+    });
+    const logCurrentNetworkStatus = async () => {
+        const status = await Network.getStatus();
+        alert(JSON.stringify(status))
+        setLocalCacheItem("__network_status__", status, true);
+    };
+    logCurrentNetworkStatus();
 }

@@ -67,34 +67,39 @@ export async function getVerseOfTheDay() {
  * and getting bible verses
  */
 export async function getVerses(bibleId: string, book: string, chapter: number, startVerse?: number, endVerse?: number): Promise<BibleVerse[]> {
-
-	let key = `${bibleId}.${book}.${chapter}`
-	if (startVerse) {
-		key += `.${startVerse}`
-		if (endVerse) {
-			key += `.${endVerse}`
+	if(bibleId != bibleIdKjv){
+		let key = `${bibleId}.${book}.${chapter}`
+		if (startVerse) {
+			key += `.${startVerse}`
+			if (endVerse) {
+				key += `.${endVerse}`
+			}
 		}
+
+		const dataStr = await getLocalCacheItem(key)
+		if (dataStr)
+			return JSON.parse(dataStr)
+
+		let url = `${Config.bibleApiUrl}bibles/filesets/${bibleId}/${book}/${chapter}?v=4`
+
+		if (startVerse)
+			url += `&verse_start=${startVerse}`
+
+		if (endVerse)
+			url += `&verse_end=${endVerse}`
+
+		const response = await fetch(url);
+		const results = await response.json();
+		const data = results.data;
+
+		await setLocalCacheItem(key, JSON.stringify(data))
+		return data
 	}
-
-	const dataStr = await getLocalCacheItem(key)
-	if (dataStr)
-		return JSON.parse(dataStr)
-
-
-	let url = `${Config.bibleApiUrl}bibles/filesets/${bibleId}/${book}/${chapter}?v=4`
-
-	if (startVerse)
-		url += `&verse_start=${startVerse}`
-
-	if (endVerse)
-		url += `&verse_end=${endVerse}`
-
-	const response = await fetch(url);
-	const results = await response.json();
-	const data = results.data;
-
-	await setLocalCacheItem(key, JSON.stringify(data))
-	return data
+	else{
+		var data = await (await import(`../../assets/kjv-json/${book}/${chapter}.json`)).default
+		console.log(data)
+		return data;
+	}
 }
 
 export async function getHighlightedVerses(book: string, chapter: string) {

@@ -45,15 +45,15 @@
     </div>
     <PageContent>
       <div class="max-w-prose mx-auto">
-        <h2 class="text-2xl font-bold text-center mb-4 h-14 flex align-middle">
+        <h2 class="text-center mb-4 h-14 flex align-middle">
           <AppButton @click="onPrevChapterButtonClicked" v-if="breakpoint == 'sm'" variant="primary-outline"
-            style="float:left;" size="sm">
-            <Icon icon-name="chevron-left"></Icon>
+            class="float-left;" size="sm">
+            <img src="/mdi/chevron-left.svg" class="my-1 prev-next-button" />
           </AppButton>
-          <span class="m-auto">{{ selectedBook?.name }}&nbsp;{{ selectedChapterNumber }}</span>
+          <span class="m-auto text-2xl font-bold">{{ selectedBook?.name }}&nbsp;{{ selectedChapterNumber }}</span>
           <AppButton @click="onNextChapterButtonClicked" v-if="breakpoint == 'sm'" variant="primary-outline"
-            style="float:right;" size="sm">
-            <Icon icon-name="chevron-right"></Icon>
+            class="float-right;" size="sm">
+            <img src="/mdi/chevron-right.svg" class="my-1 prev-next-button" />
           </AppButton>
         </h2>
       </div>
@@ -72,11 +72,11 @@
   </AppLayout>
   <AppButton @click="onPrevChapterButtonClicked" v-if="breakpoint != 'sm'" variant="primary-outline"
     class="fixed top-1/2 left-1 md:left-16 xl:left-1/5 bg-white " size="sm">
-    <Icon icon-name="chevron-left"></Icon>
+    <img src="/mdi/chevron-left.svg" class="my-1 prev-next-button" />
   </AppButton>
   <AppButton @click="onNextChapterButtonClicked" v-if="breakpoint != 'sm'" variant="primary-outline"
     class="fixed top-1/2 right-1 md:right-16 xl:right-1/5 bg-white " size="sm">
-    <Icon icon-name="chevron-right"></Icon>
+    <img src="/mdi/chevron-right.svg" class="my-1 prev-next-button" />
   </AppButton>
   <p v-if="selectedBibleTranslationId != 'ENGKJV'" class="mb-28"></p>
   <AppModal v-model="openMenu" v-slot="{ close }">
@@ -92,8 +92,9 @@
         </div>
         <div class="flex flex-col gap-2">
           <div v-for="note in notesVerseIsIn">
-            <RouterLink :to="`/note/${note.id}`"><button class="mx-auto bg-gray-200 hover:bg-gray-100 active:bg-gray-300 transition-all p-2 rounded w-full md:w-1/2 text-black"
-              @click="">{{ note.title }}</button></RouterLink>
+            <RouterLink :to="`/note/${note.id}`"><button
+                class="mx-auto bg-gray-200 hover:bg-gray-100 active:bg-gray-300 transition-all p-2 rounded w-full md:w-1/2 text-black"
+                @click="">{{ note.title }}</button></RouterLink>
           </div>
         </div>
       </div>
@@ -117,8 +118,7 @@
             @click="handleHighlightVerse('pink')"></button>
         </div>
       </div>
-      <button
-        class="mx-auto bg-cyan-500 hover:bg-cyan-400 active:bg-cyan-600 transition-all p-2 rounded w-full md:w-1/2"
+      <button class="mx-auto bg-cyan-500 hover:bg-cyan-400 active:bg-cyan-600 transition-all p-2 rounded w-full md:w-1/2"
         @click="copyString(menuVerse.book_name_alt + ' ' + menuVerse.chapter + ':' + menuVerse.verse_start + ' - ' + menuVerse.verse_text)">Copy
         Verse</button>
       <button
@@ -134,8 +134,7 @@
       <div class="w-full flex flex-col justify-center">
         <textarea v-model="noteText" class="text-black bg-slate-100 rounded p-1 h-64"></textarea>
       </div>
-      <button
-        class="mx-auto bg-cyan-500 hover:bg-cyan-400 active:bg-cyan-600 transition-all p-2 rounded w-full md:w-1/2"
+      <button class="mx-auto bg-cyan-500 hover:bg-cyan-400 active:bg-cyan-600 transition-all p-2 rounded w-full md:w-1/2"
         @click="createNote(selectedBookId, selectedChapterNumber, selectedVerses, noteTitle, noteText); noteTitle = ''; noteText = ''; noteModal = false">Add</button>
     </div>
   </AppModal>
@@ -217,6 +216,9 @@ const route = useRoute()
 const PopUpText = ref('');
 const PopUpLink = ref('');
 
+const platform = ref("");
+const connectedToWifi = ref({ connected: false });
+
 const selectedBook = computed(() => availableBooks.value.find((book: any) => book.bookId === selectedBookId.value))
 const selectedChapter = computed(() => {
   return availableChapters.value.find((chapter: any) => chapter.chapterNumber == selectedChapterNumber.value)
@@ -229,8 +231,13 @@ const loadChapterContent = async () => {
   pageLoading.value = true
   try {
     const response = await getVerses(selectedBibleTranslationId.value, selectedBookId.value, selectedChapterNumber.value)
-    var versesHighlights = await getHighlightedVerses(response[0].book_id, response[0].chapter.toString());
+    var versesHighlights: any;
     var chapterText: any[] = [];
+    connectedToWifi.value = getLocalCacheItem("__network_status__", true);
+    platform.value = getLocalCacheItem("__platform__", false);
+    if ((connectedToWifi.value && connectedToWifi.value.connected)) {
+      versesHighlights = await getHighlightedVerses(response[0].book_id, response[0].chapter.toString());
+    }
 
     response.forEach((verse: any) => {
       let verseCssClass = 'cursor-pointer transition-all px-2 verse'
@@ -257,7 +264,7 @@ const loadChapterContent = async () => {
       selectedBibleTranslationId: selectedBibleTranslationId.value || 'ENGKJV',
       selectedBookId: selectedBookId.value || 'JHN',
       selectedChapter: selectedChapterNumber.value || 1
-    })
+    }, true)
 
     router.push({ path: '/bible', query: { ...route.query, t: selectedBibleTranslationId.value, b: selectedBookId.value, c: selectedChapterNumber.value } })
     if (shouldHighlight)
@@ -268,7 +275,8 @@ const loadChapterContent = async () => {
       window.scrollTo({ top: 0 })
 
     shouldHighlight = false;
-    availableNotes.value = await getAllNotesInChapter(selectedBookId.value, selectedChapterNumber.value);
+    if ((connectedToWifi.value && connectedToWifi.value.connected))
+      availableNotes.value = await getAllNotesInChapter(selectedBookId.value, selectedChapterNumber.value);
   }
   catch (err) {
   }
@@ -276,12 +284,14 @@ const loadChapterContent = async () => {
 }
 
 onMounted(async () => {
-  var records = await PocketBaseClient.records.getFullList('truthResources', 200, { expand: "title", filter: "isPartOfPopups=true" })
-  var max = records.length - 1;
-  var min = 0;
-  var recordNum = Math.round(Math.random() * (max - min) + min);
-  PopUpText.value = records[recordNum].title;
-  PopUpLink.value = "/truth-resources/" + records[recordNum].id;
+  if ((connectedToWifi.value && connectedToWifi.value.connected)) {
+    var records = await PocketBaseClient.records.getFullList('truthResources', 200, { expand: "title", filter: "isPartOfPopups=true" })
+    var max = records.length - 1;
+    var min = 0;
+    var recordNum = Math.round(Math.random() * (max - min) + min);
+    PopUpText.value = records[recordNum].title;
+    PopUpLink.value = "/truth-resources/" + records[recordNum].id;
+  }
   await getNewVerses();
   watch(() => openMenu.value, () => {
     if (openMenu.value) {
@@ -302,7 +312,7 @@ onMounted(async () => {
 // Event Handlers 
 
 const onNextChapterButtonClicked = async () => {
-  if(pageLoading.value)
+  if (pageLoading.value)
     return
   if (!selectedChapter.value)
     return
@@ -316,7 +326,7 @@ const onNextChapterButtonClicked = async () => {
 }
 
 const onPrevChapterButtonClicked = async () => {
-  if(pageLoading.value)
+  if (pageLoading.value)
     return
   if (!selectedChapter.value)
     return
@@ -374,7 +384,7 @@ const handleSearchSubmit = async (event: Event) => {
 
 async function getNewVerses() {
   const { t, b, c, vs, ve } = route.query as BiblePageQueryParams
-  const localCache: LocalBibleSelectionCache | null = await getLocalCacheItem(localCacheKeyLastLoadedChapter)
+  const localCache: LocalBibleSelectionCache | null = await getLocalCacheItem(localCacheKeyLastLoadedChapter, true)
 
   if (t && b && c) {
     selectedBibleTranslationId.value = t || selectedBibleTranslationId.value
@@ -524,5 +534,11 @@ function sorter(a: number, b: number) {
   100% {
     transform: translateY(0%);
   }
+}
+
+.prev-next-button {
+  width: 24px;
+  height: 24px;
+  line-height: 24px;
 }
 </style>

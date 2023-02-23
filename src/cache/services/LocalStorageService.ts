@@ -1,14 +1,20 @@
 
 
-export const setLocalCacheItem = (key: string, value: any) => {
-  localStorage.setItem(key, JSON.stringify(value))
+export const setLocalCacheItem = (key: string, value: any, isJson: boolean) => {
+  if(isJson)
+    localStorage.setItem(key, JSON.stringify(value))
+  else
+    localStorage.setItem(key, value)
 }
 
-export const getLocalCacheItem = (key: string) => {
+export const getLocalCacheItem = (key: string, isJson: boolean) => {
   const storedItemString = localStorage.getItem(key)
   if (!storedItemString)
     return null
 
+  if(!isJson)
+    return storedItemString
+    
   return JSON.parse(storedItemString)
 }
 

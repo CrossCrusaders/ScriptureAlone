@@ -28,7 +28,7 @@ export function useGlobalAudioPlayer() {
     },
     setGlobalAudioPayload(payload: GlobalAudioPayload) {
       globalAudioPayload.value = { ...payload }
-      setLocalCacheItem(audioStateLocalStorageKey, globalAudioPayload.value)
+      setLocalCacheItem(audioStateLocalStorageKey, globalAudioPayload.value, true)
     },
     globalAudioPayload,
     globalAudioState
