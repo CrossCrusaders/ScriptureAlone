@@ -97,7 +97,6 @@ export async function getVerses(bibleId: string, book: string, chapter: number, 
 	}
 	else{
 		var data = await (await import(`../../assets/kjv-json/${book}/${chapter}.json`)).default
-		console.log(data)
 		return data;
 	}
 }

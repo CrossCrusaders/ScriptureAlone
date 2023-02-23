@@ -233,9 +233,7 @@ const loadChapterContent = async () => {
     const response = await getVerses(selectedBibleTranslationId.value, selectedBookId.value, selectedChapterNumber.value)
     var versesHighlights: any;
     var chapterText: any[] = [];
-    connectedToWifi.value = getLocalCacheItem("__network_status__", true);
-    platform.value = getLocalCacheItem("__platform__", false);
-    if ((connectedToWifi.value && connectedToWifi.value.connected)) {
+    if ((connectedToWifi.value && connectedToWifi.value.connected) || platform.value == "web") {
       versesHighlights = await getHighlightedVerses(response[0].book_id, response[0].chapter.toString());
     }
 
@@ -275,7 +273,7 @@ const loadChapterContent = async () => {
       window.scrollTo({ top: 0 })
 
     shouldHighlight = false;
-    if ((connectedToWifi.value && connectedToWifi.value.connected))
+    if ((connectedToWifi.value && connectedToWifi.value.connected) || platform.value == "web")
       availableNotes.value = await getAllNotesInChapter(selectedBookId.value, selectedChapterNumber.value);
   }
   catch (err) {
@@ -284,7 +282,9 @@ const loadChapterContent = async () => {
 }
 
 onMounted(async () => {
-  if ((connectedToWifi.value && connectedToWifi.value.connected)) {
+  connectedToWifi.value = await getLocalCacheItem("__network_status__", true);
+  platform.value = await getLocalCacheItem("__platform__", false);
+  if ((connectedToWifi.value && connectedToWifi.value.connected) || platform.value == "web") {
     var records = await PocketBaseClient.records.getFullList('truthResources', 200, { expand: "title", filter: "isPartOfPopups=true" })
     var max = records.length - 1;
     var min = 0;
