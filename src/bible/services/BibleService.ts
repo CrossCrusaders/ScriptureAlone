@@ -38,14 +38,19 @@ export async function getVerseOfTheDay() {
 
 	let verseResponse = []
 	let verseReference = ''
+	let verseBookId, verseChapter
 
 	if (verses.length === 2) {
 		const [book, chapter, verse1] = verses[0].split('.')
+		verseBookId = book.toUpperCase();
+		verseChapter = chapter;
 		const [_, __, verse2] = verses[1].split('.')
 		verseResponse = await getVerses(bibleIdKjv, book, chapter, verse1, verse2)
 		verseReference = `${verseResponse[0].book_name_alt} ${chapter}:${verse1}-${verse2}`
 	} else if (verses.length === 1) {
 		const [book, chapter, verse] = verses[0].split('.')
+		verseBookId = book.toUpperCase();
+		verseChapter = chapter;
 		verseResponse = await getVerses(bibleIdKjv, book, chapter, verse, verse)
 		verseReference = `${verseResponse[0].book_name_alt} ${chapter}:${verse}`
 	} else {
@@ -58,7 +63,9 @@ export async function getVerseOfTheDay() {
 
 	return {
 		verseReference,
-		verseText
+		verseText,
+		verseBookId,
+		verseChapter
 	}
 }
 
@@ -98,7 +105,6 @@ export async function getVerses(bibleId: string, book: string, chapter: number, 
 	}
 	else {
 		var data = await (await import(`../../assets/kjv-json/${book}/${chapter}.json`)).default;
-		console.log(endVerse)
 		if (!startVerse)
 			return data;
 		else {

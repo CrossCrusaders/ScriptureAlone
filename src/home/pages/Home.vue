@@ -8,10 +8,26 @@
       </RouterLink>
       <div class="flex flex-col items-center">
         <h1 class="font-bold font-title text-3xl md:text-5xl lg:text-6xl mb-2 bg-gradient-to-r from-[#1e293b]
-        to-[#57687f] text-transparent bg-clip-text">
+          to-[#57687f] text-transparent bg-clip-text">
           Scripture Alone
         </h1>
         <p class="font-body text-lg mb-2">Sound Doctrine Guaranteed</p>
+
+        <!-- Verse of the Day-->
+        <Transition name="votdMenu">
+          <div v-if="verseText && verseName" class="flex flex-col gap-8 items-center mb-12 bg-gray-200 p-6 rounded-lg">
+            <h2 id="votd" name="votd"
+              class="font-bold font-title text-5xl text-center bg-gradient-to-r from-[#57687f] to-[#1e293b] text-transparent bg-clip-text">
+              Verse of the Day
+            </h2>
+            <div class="rounded-lg border-2 border-solid border-gray-800 p-8 max-w-prose">
+              <h3 v-html="verseName" id="verseName" class="font-title font-bold text-2xl md:text-3xl text-gray-800 mb-8">
+              </h3>
+              <p v-html="verseText" id="verseText" class="text-xl"></p>
+            </div>
+            <AppButton><RouterLink :to="`/bible?t=${searchTranslationId}&b=${verseBookId}&c=${verseChapter}`">Continue Reading</RouterLink></AppButton>
+          </div>
+        </Transition>
         <form @submit="handleSearchSubmit($event)">
           <div class="px-2">
             <AppInput type="input" name="query" v-model="searchModel" placeholder="Search The Scripture">
@@ -106,6 +122,8 @@ import { getSearch } from '../../search/services/SearchService'
 
 const verseName = ref("");
 const verseText = ref("");
+const verseBookId = ref("");
+const verseChapter = ref(0)
 
 let devoList = ref<any[]>([])
 let sermonList = ref<any[]>([])
@@ -116,6 +134,8 @@ onMounted(async () => {
   var htmlVerse = await getVerseOfTheDay();
   verseName.value = htmlVerse.verseReference + " KJV";
   verseText.value = htmlVerse.verseText;
+  verseBookId.value = htmlVerse.verseBookId;
+  verseChapter.value = htmlVerse.verseChapter;
 
   const recentDevotionalsPromise = getSearch("devotionals", "", 1, 6, []);
   const recentSermonsPromise = getSearch("sermons", "", 1, 6, []);
@@ -126,7 +146,7 @@ onMounted(async () => {
   devoList.value = recentDevotionals.items
   sermonList.value = recentSermons.items
 
-  if(route.query.votd == 't'){
+  if (route.query.votd == 't') {
     document.getElementById("votd")?.scrollIntoView({ behavior: "smooth" });
   }
 });
@@ -189,5 +209,33 @@ const handleSearchSubmit = async (event: Event) => {
 
 .cta-item:hover .cta-icon {
   filter: invert(1);
+}
+
+.votdMenu-enter-active,
+.votdMenu-leave-active {
+  animation: bounce-in 0.7s ease;
+  max-height: 100%;
+}
+
+.votdMenu-enter-from,
+.votdMenu-leave-to {
+  /* transform: scale(0); */
+  opacity: 0;
+  max-height: 0;
+}
+
+@keyframes bounce-in {
+  0% {
+    transform: translateY(-10em);
+    opacity: 0;
+  }
+  50% {
+    transform: translateY(-10em);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0em);
+    opacity: 1;
+  }
 }
 </style>

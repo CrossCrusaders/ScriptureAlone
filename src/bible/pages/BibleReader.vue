@@ -233,7 +233,7 @@ const loadChapterContent = async () => {
     const response = await getVerses(selectedBibleTranslationId.value, selectedBookId.value, selectedChapterNumber.value)
     var versesHighlights: any;
     var chapterText: any[] = [];
-    if ((connectedToWifi.value && connectedToWifi.value.connected) || platform.value == "web") {
+    if ((connectedToWifi.value && connectedToWifi.value.connected)) {
       versesHighlights = await getHighlightedVerses(response[0].book_id, response[0].chapter.toString());
     }
 
@@ -284,7 +284,7 @@ const loadChapterContent = async () => {
 onMounted(async () => {
   connectedToWifi.value = await getLocalCacheItem("__network_status__", true);
   platform.value = await getLocalCacheItem("__platform__", false);
-  if ((connectedToWifi.value && connectedToWifi.value.connected) || platform.value == "web") {
+  if ((connectedToWifi.value && connectedToWifi.value.connected)) {
     var records = await PocketBaseClient.records.getFullList('truthResources', 200, { expand: "title", filter: "isPartOfPopups=true" })
     var max = records.length - 1;
     var min = 0;
