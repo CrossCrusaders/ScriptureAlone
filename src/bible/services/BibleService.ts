@@ -67,7 +67,8 @@ export async function getVerseOfTheDay() {
  * and getting bible verses
  */
 export async function getVerses(bibleId: string, book: string, chapter: number, startVerse?: number, endVerse?: number): Promise<BibleVerse[]> {
-	if(bibleId != bibleIdKjv){
+	book = book.toUpperCase();
+	if (bibleId != bibleIdKjv) {
 		let key = `${bibleId}.${book}.${chapter}`
 		if (startVerse) {
 			key += `.${startVerse}`
@@ -95,9 +96,23 @@ export async function getVerses(bibleId: string, book: string, chapter: number, 
 		await setLocalCacheItem(key, data, true)
 		return data
 	}
-	else{
-		var data = await (await import(`../../assets/kjv-json/${book}/${chapter}.json`)).default
-		return data;
+	else {
+		var data = await (await import(`../../assets/kjv-json/${book}/${chapter}.json`)).default;
+		console.log(endVerse)
+		if (!startVerse)
+			return data;
+		else {
+			if (endVerse) {
+				return data.filter(function (verse:any) {
+					return (verse.verse_start_alt >= startVerse && verse.verse_end_alt <= endVerse);
+				});
+			}
+			else {
+				return data.filter(function (verse:any) {
+					return verse.verse_start_alt == startVerse;
+				});
+			}
+		}
 	}
 }
 
@@ -290,26 +305,26 @@ export async function isBibleReference(query: string) {
 
 export async function highlightVerses(book: string, chapter: string, verses: number[], color: string) {
 	var currentlyHighlightedVerses: any = await getHighlightedVerses(book, chapter);
-	var newCurrentlyHighlightedVerses:any[] = [];
+	var newCurrentlyHighlightedVerses: any[] = [];
 	if (!currentlyHighlightedVerses) {
 		await PocketBaseClient.records.create("highlights", { book_id: book, chapter, user: PocketBaseClient.authStore.model?.id, verse_data: [] }).then(async () => {
 			currentlyHighlightedVerses = await getHighlightedVerses(book, chapter);
 			newCurrentlyHighlightedVerses = currentlyHighlightedVerses.verse_data || [];
 		})
 	}
-	else{
+	else {
 		newCurrentlyHighlightedVerses = currentlyHighlightedVerses.verse_data || [];
 	}
 	verses.forEach((verse: any) => {
 		let found = false;
 		newCurrentlyHighlightedVerses.forEach((v: any, i: number) => {
 			if (v.verse.toString() == verse.toString()) {
-				if(color != "none"){
+				if (color != "none") {
 					newCurrentlyHighlightedVerses[i].color = color;
 					found = true;
 					return;
 				}
-				else{
+				else {
 					newCurrentlyHighlightedVerses.splice(i, 1);
 					found = true;
 					return;
@@ -320,10 +335,10 @@ export async function highlightVerses(book: string, chapter: string, verses: num
 			newCurrentlyHighlightedVerses.push({ verse, color });
 		}
 	});
-	if(newCurrentlyHighlightedVerses[0] === (undefined || null)){
+	if (newCurrentlyHighlightedVerses[0] === (undefined || null)) {
 		return PocketBaseClient.records.delete("highlights", currentlyHighlightedVerses.id);
 	}
-	else{
+	else {
 		return PocketBaseClient.records.update("highlights", currentlyHighlightedVerses.id, { verse_data: newCurrentlyHighlightedVerses });
 	}
 }
