@@ -23,14 +23,13 @@ const word = ref()
 onMounted(async() => {
     let { query } = route.params;
     word.value = await getWord(query as string);
-    word.value = {
+    /*word.value = {
         word: "Whosoever",
         pronunciation: "WHOSOEVER [who, so, and ever.]",
         definition: {
             type: "pronoun",
             text: "Any one; any person whatever.WHOSOEVER will, let him take of the water of life freely. Revelations 22."
-        }
-    }
+        }*/
 })
 </script>
 <style scoped lang="css"></style>
