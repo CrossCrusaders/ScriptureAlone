@@ -9,13 +9,6 @@ import Vue3TouchEvents from "vue3-touch-events";
 // Functions
 import { setLocalCacheItem } from './cache/services/LocalStorageService';
 
-// Global Window Variables
-declare global {
-    interface Window {
-        networkStatus?: any;
-    }
-}
-
 // Vue App
 const app = createApp(VueApp)
 app.use(router)
@@ -25,14 +18,8 @@ app.use(vfmPlugin({
     key: '$vfm',
     componentName: 'VueFinalModal',
     dynamicContainerName: 'ModalsContainer'
-  }))
+}))
 app.mount('#app')
-
-// Capacitor.js Handle Back Button
-import { App } from '@capacitor/app';
-App.addListener('backButton', data => {
-    window.history.back()
-})
 
 // Platform
 import { Capacitor } from '@capacitor/core';
@@ -86,7 +73,7 @@ if (platform != "web") {
 
 // Internet Connection
 import { Network } from '@capacitor/network';
-if(platform != "web"){
+if (platform != "web") {
     Network.addListener('networkStatusChange', status => {
         setLocalCacheItem("__network_status__", status, true);
     });
@@ -96,3 +83,13 @@ if(platform != "web"){
     };
     logCurrentNetworkStatus();
 }
+
+// Capacitor.js Handle Back Button
+import { App } from '@capacitor/app';
+App.addListener('backButton', ({ canGoBack }) => {
+    if (!canGoBack) {
+        App.exitApp();
+    } else {
+        window.history.back();
+    }
+});

@@ -125,7 +125,7 @@ import {
   isBibleReference,
 } from "../../bible/services/BibleService";
 import Icon from "../../components/atoms/Icon.vue";
-import { useRouter, useRoute } from "vue-router";
+import { useRouter } from "vue-router";
 import BibleTranslationSelect from "../../components/organisms/BibleTranslationSelect.vue";
 import AppButton from "../../components/atoms/form-controls/AppButton.vue";
 import { useBreakpoint } from '../../browser/ViewportService'
@@ -140,12 +140,9 @@ const verseChapter = ref(0)
 let devoList = ref<any[]>([])
 let sermonList = ref<any[]>([])
 
-const route = useRoute()
-
 const { breakpoint } = useBreakpoint();
 
 onMounted(async () => {
-  console.log(breakpoint.value)
   var htmlVerse = await getVerseOfTheDay();
   verseName.value = htmlVerse.verseReference + " KJV";
   verseText.value = htmlVerse.verseText;
@@ -156,14 +153,8 @@ onMounted(async () => {
   const recentSermonsPromise = getSearch("sermons", "", 1, 6, []);
   const [recentDevotionals, recentSermons] = await Promise.all([recentDevotionalsPromise, recentSermonsPromise]);
 
-  const defaultImage = '/logo-bible.png'
-
-  devoList.value = recentDevotionals.items
-  sermonList.value = recentSermons.items
-
-  if (route.query.votd == 't') {
-    document.getElementById("votd")?.scrollIntoView({ behavior: "smooth" });
-  }
+  devoList.value = recentDevotionals.items;
+  sermonList.value = recentSermons.items;
 });
 
 const searchModel = ref("");

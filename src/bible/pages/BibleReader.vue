@@ -264,7 +264,7 @@ const loadChapterContent = async () => {
       selectedChapter: selectedChapterNumber.value || 1
     }, true)
 
-    router.push({ path: '/bible', query: { ...route.query, t: selectedBibleTranslationId.value, b: selectedBookId.value, c: selectedChapterNumber.value } })
+    router.replace({ path: '/bible', query: { ...route.query, t: selectedBibleTranslationId.value, b: selectedBookId.value, c: selectedChapterNumber.value } })
     if (shouldHighlight)
       setTimeout(() => {
         document.querySelector(`#verse-${highlightRange[0]}`)?.scrollIntoView()
