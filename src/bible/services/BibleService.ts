@@ -1,38 +1,23 @@
 import PocketBaseClient from '../../api/PocketBaseClient'
 import Config from '../../config/services/ConfigService'
-import { getLocalCacheItem, getSessionCacheItem, setLocalCacheItem, setSessionCacheItem } from '../../cache/services/LocalStorageService'
 import { BibleBook, BibleBookLookup } from '../BibleBook'
 import { BibleChapter } from '../BibleChapter'
 import { BibleVerse } from '../BibleVerse'
 import { getDayOfTheYear } from '../../core/services/TimeService'
 
-export const bibleIdKjv = 'ENGKJV'
-
-const votdCacheKey = `__scripture_alone_votd__`
-
-let versesOfTheDayCache: any = null
-
 let cacheLoaded = false
 let bibleChaptersCache: BibleChapter[] | null = null
 let bibleBooksCache: BibleBook[] | null = null
-let bibleTranslationsCache: any[] | null = null
 let bibleBookLookupCache: BibleBookLookup[] | null = null
 
 
 
 export async function getVerseOfTheDay() {
-	if (!versesOfTheDayCache) {
-		versesOfTheDayCache = await getSessionCacheItem(votdCacheKey)
-		if (!versesOfTheDayCache) {
-			const verses = await PocketBaseClient.records.getFullList('versesOfTheDay')
-			versesOfTheDayCache = verses
-			await setSessionCacheItem(votdCacheKey, verses)
-		}
-	}
+	const votdVerses = await PocketBaseClient.records.getFullList('versesOfTheDay')
 
-	const length = versesOfTheDayCache.length
+	const length = votdVerses.length
 	const chosenIndex = getDayOfTheYear() % length
-	const chosenVerse = versesOfTheDayCache[chosenIndex]
+	const chosenVerse = votdVerses[chosenIndex]
 
 	const verses = chosenVerse.verseId.split('-')
 
@@ -45,13 +30,13 @@ export async function getVerseOfTheDay() {
 		verseBookId = book.toUpperCase();
 		verseChapter = chapter;
 		const [_, __, verse2] = verses[1].split('.')
-		verseResponse = await getVerses(bibleIdKjv, book, chapter, verse1, verse2)
+		verseResponse = await getVerses(book, chapter, verse1, verse2)
 		verseReference = `${verseResponse[0].book_name_alt} ${chapter}:${verse1}-${verse2}`
 	} else if (verses.length === 1) {
 		const [book, chapter, verse] = verses[0].split('.')
 		verseBookId = book.toUpperCase();
 		verseChapter = chapter;
-		verseResponse = await getVerses(bibleIdKjv, book, chapter, verse, verse)
+		verseResponse = await getVerses(book, chapter, verse, verse)
 		verseReference = `${verseResponse[0].book_name_alt} ${chapter}:${verse}`
 	} else {
 		throw new Error('Invalid Verse of the Day Format')
@@ -73,51 +58,22 @@ export async function getVerseOfTheDay() {
  * Primary function for querying the bible API
  * and getting bible verses
  */
-export async function getVerses(bibleId: string, book: string, chapter: number, startVerse?: number, endVerse?: number): Promise<BibleVerse[]> {
+export async function getVerses(book: string, chapter: number, startVerse?: number, endVerse?: number): Promise<BibleVerse[]> {
 	book = book.toUpperCase();
-	if (bibleId != bibleIdKjv) {
-		let key = `${bibleId}.${book}.${chapter}`
-		if (startVerse) {
-			key += `.${startVerse}`
-			if (endVerse) {
-				key += `.${endVerse}`
-			}
-		}
 
-		const dataStr = await getLocalCacheItem(key, false)
-		if (dataStr)
-			return JSON.parse(dataStr)
-
-		let url = `${Config.bibleApiUrl}bibles/filesets/${bibleId}/${book}/${chapter}?v=4`
-
-		if (startVerse)
-			url += `&verse_start=${startVerse}`
-
-		if (endVerse)
-			url += `&verse_end=${endVerse}`
-
-		const response = await fetch(url);
-		const results = await response.json();
-		const data = results.data;
-
-		await setLocalCacheItem(key, data, true)
-		return data
-	}
+	var data = await (await import(`../../assets/kjv-json/${book}/${chapter}.json`)).default;
+	if (!startVerse)
+		return data;
 	else {
-		var data = await (await import(`../../assets/kjv-json/${book}/${chapter}.json`)).default;
-		if (!startVerse)
-			return data;
+		if (endVerse) {
+			return data.filter(function (verse: any) {
+				return (verse.verse_start_alt >= startVerse && verse.verse_end_alt <= endVerse);
+			});
+		}
 		else {
-			if (endVerse) {
-				return data.filter(function (verse:any) {
-					return (verse.verse_start_alt >= startVerse && verse.verse_end_alt <= endVerse);
-				});
-			}
-			else {
-				return data.filter(function (verse:any) {
-					return verse.verse_start_alt == startVerse;
-				});
-			}
+			return data.filter(function (verse: any) {
+				return verse.verse_start_alt == startVerse;
+			});
 		}
 	}
 }
@@ -140,10 +96,8 @@ export async function getUserHighlightedVerses() {
 }
 
 async function loadBibleData() {
-	const BibleTranslations = await import(`../../assets/bible/translations.json`)
 	const BibleBookChapters = await import(`../../assets/bible/bible-books.json`)
 	const BibleBookLookup = await import('../../assets/bible/bible-book-lookup.json')
-	bibleTranslationsCache = BibleTranslations.default
 	bibleChaptersCache = BibleBookChapters.default
 	bibleBookLookupCache = BibleBookLookup.default
 
@@ -224,14 +178,6 @@ export async function getBooks() {
 	return bibleCacheMonad(() => _getBooks())
 }
 
-export async function getTranslations() {
-	return bibleCacheMonad(() => bibleTranslationsCache)
-}
-
-export async function getTranslationById(translationId: string) {
-	return bibleCacheMonad(() => bibleTranslationsCache?.find(tr => tr.id == translationId))
-}
-
 export async function getPreviousChapterBySequenceNumber(sequenceNumber: number) {
 	return bibleCacheMonad(() => _getPreviousChapterBySequenceNumber(sequenceNumber))
 }
@@ -252,9 +198,8 @@ export interface BibleSearchMeta {
 	pagination: BibleSearchMetaPagination
 }
 
-export async function searchBible(bibleId: string, query: string, page: number, perPage: number) {
-
-	const url = `${Config.bibleApiUrl}search?query=${encodeURI(query)}&fileset_id=${bibleId}&limit=${perPage}&page=${page}&v=4`
+export async function searchBible(query: string, page: number, perPage: number) {
+	const url = `${Config.bibleApiUrl}search?query=${encodeURI(query)}&fileset_id=ENGKJV&limit=${perPage}&page=${page}&v=4`
 
 	const searchResponse = await fetch(url)
 	const searchResults = await searchResponse.json()

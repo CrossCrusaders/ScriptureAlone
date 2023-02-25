@@ -24,7 +24,7 @@ export const transformNoteResponse = (response: any): Note => {
 
     var tempVerseHold: any[] = [];
     note.verses.forEach(async (verse: number | object) => {
-        const verseResponse = await getVerses(getLocalCacheItem("__scripture_alone_last_loaded_bible_info__", true).selectedBibleTranslationId, note.book_id, note.chapter, verse as number, verse as number)
+        const verseResponse = await getVerses(note.book_id, note.chapter, verse as number, verse as number)
         tempVerseHold.push(verseResponse);
     });
     note.verses = tempVerseHold;

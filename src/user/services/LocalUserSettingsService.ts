@@ -1,8 +1,6 @@
 import { getLocalCacheItem, setLocalCacheItem } from '../../cache/services/LocalStorageService'
 
 export interface UserSettings {
-  lastSearchedBibleId?: string
-  lastReadBibleId?: string
   lastReadBookId?: number
   lastReadChapter?: number
   visitedBefore?: boolean

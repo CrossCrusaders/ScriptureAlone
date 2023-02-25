@@ -13,24 +13,7 @@
           {{ chapter.chapterNumber }}
         </option>
       </AppSelect>
-
-      <BibleTranslationSelect :model-value="selectedBibleTranslationId"
-        @update:model-value="onSelectedBibleTranslationIdChanged">
-      </BibleTranslationSelect>
-
     </div>
-    <Transition name="popup">
-      <div v-if="selectedBibleTranslationId != 'ENGKJV'" class="w-full fixed left-0 bottom-0">
-        <RouterLink :to="PopUpLink">
-          <div id="popup" class="w-full flex justify-center bg-gradient-to-r from-cyan-500 to-purple-500"
-            style="align-items: center;">
-            <div>
-              <p class="p-4 text-white text-2xl md:text-5xl md:font-bold">{{ PopUpText }}</p>
-            </div>
-          </div>
-        </RouterLink>
-      </div>
-    </Transition>
     <div class="w-full flex justify-center">
       <form class="w-full md:w-1/2 lg:w-1/3" @submit="handleSearchSubmit($event)">
         <div class="px-2">
@@ -78,7 +61,6 @@
     class="fixed top-1/2 right-1 md:right-16 xl:right-1/5 bg-white " size="sm">
     <img src="/mdi/chevron-right.svg" class="my-1 prev-next-button" />
   </AppButton>
-  <p v-if="selectedBibleTranslationId != 'ENGKJV'" class="mb-28"></p>
   <AppModal v-model="openMenu" v-slot="{ close }">
     <div class="p-4 text-white flex flex-col gap-2" style="text-align:center;">
       <div class="bg-slate-200 p-2 rounded text-black">
@@ -148,7 +130,6 @@ import PageContent from '../../components/templates/PageContent.vue'
 import {
   getBooks,
   getChaptersByBookId,
-  getTranslations,
   getVerses,
   getPreviousChapterBySequenceNumber,
   getNextChapterBySequenceNumber
@@ -159,19 +140,15 @@ import { setLocalCacheItem, getLocalCacheItem } from '../../cache/services/Local
 import Icon from '../../components/atoms/Icon.vue'
 import AppButton from '../../components/atoms/form-controls/AppButton.vue'
 import { BibleBook } from '../BibleBook'
-import { BibleTranslation } from '../BibleTranslation'
 import { useRoute, useRouter } from 'vue-router'
 import AppSelect from '../../components/atoms/form-controls/AppSelect.vue'
 import AppInput from '../../components/atoms/form-controls/AppInput.vue'
 import AppModal from '../../components/templates/AppModal.vue'
 import Spinner from '../../components/atoms/Spinner.vue'
-import BibleTranslationSelect from '../../components/organisms/BibleTranslationSelect.vue'
 import { isBibleReference, getHighlightedVerses, highlightVerses } from '../../bible/services/BibleService'
 import { createNote, getAllNotesInChapter } from '../../notes/services/NoteService'
-import PocketBaseClient from '../../api/PocketBaseClient'
 
 export interface BiblePageQueryParams {
-  t?: string //translations
   c?: string //chapter
   b?: string // book
   vs?: string // verse-start
@@ -180,7 +157,6 @@ export interface BiblePageQueryParams {
 export interface LocalBibleSelectionCache {
   selectedBookId: string
   selectedChapter: number
-  selectedBibleTranslationId: string
 }
 
 const { breakpoint } = useBreakpoint();
@@ -189,9 +165,7 @@ const localCacheKeyLastLoadedChapter = '__scripture_alone_last_loaded_bible_info
 
 const availableBooks = ref<BibleBook[]>([])
 const availableChapters = ref<BibleChapter[]>([])
-const availableTranslations = ref<BibleTranslation[]>([])
 
-const selectedBibleTranslationId = ref('ENGKJV')
 const selectedBookId = ref('JHN')
 const selectedChapterNumber = ref(1)
 const selectedVerses = ref<any[]>([]);
@@ -213,9 +187,6 @@ let highlightRange: number[] = []
 const router = useRouter()
 const route = useRoute()
 
-const PopUpText = ref('');
-const PopUpLink = ref('');
-
 const platform = ref("");
 const connectedToWifi = ref({ connected: false });
 
@@ -230,7 +201,7 @@ const selectedChapter = computed(() => {
 const loadChapterContent = async () => {
   pageLoading.value = true
   try {
-    const response = await getVerses(selectedBibleTranslationId.value, selectedBookId.value, selectedChapterNumber.value)
+    const response = await getVerses(selectedBookId.value, selectedChapterNumber.value)
     var versesHighlights: any;
     var chapterText: any[] = [];
     if ((connectedToWifi.value && connectedToWifi.value.connected)) {
@@ -259,12 +230,11 @@ const loadChapterContent = async () => {
     loadedChapterContent.value = chapterText
     availableChapters.value = await getChaptersByBookId(selectedBookId.value)
     await setLocalCacheItem(localCacheKeyLastLoadedChapter, {
-      selectedBibleTranslationId: selectedBibleTranslationId.value || 'ENGKJV',
       selectedBookId: selectedBookId.value || 'JHN',
       selectedChapter: selectedChapterNumber.value || 1
     }, true)
 
-    router.replace({ path: '/bible', query: { ...route.query, t: selectedBibleTranslationId.value, b: selectedBookId.value, c: selectedChapterNumber.value } })
+    router.replace({ path: '/bible', query: { ...route.query, b: selectedBookId.value, c: selectedChapterNumber.value } })
     if (shouldHighlight)
       setTimeout(() => {
         document.querySelector(`#verse-${highlightRange[0]}`)?.scrollIntoView()
@@ -284,14 +254,6 @@ const loadChapterContent = async () => {
 onMounted(async () => {
   connectedToWifi.value = await getLocalCacheItem("__network_status__", true);
   platform.value = await getLocalCacheItem("__platform__", false);
-  if ((connectedToWifi.value && connectedToWifi.value.connected)) {
-    var records = await PocketBaseClient.records.getFullList('truthResources', 200, { expand: "title", filter: "isPartOfPopups=true" })
-    var max = records.length - 1;
-    var min = 0;
-    var recordNum = Math.round(Math.random() * (max - min) + min);
-    PopUpText.value = records[recordNum].title;
-    PopUpLink.value = "/truth-resources/" + records[recordNum].id;
-  }
   await getNewVerses();
   watch(() => openMenu.value, () => {
     if (openMenu.value) {
@@ -353,11 +315,6 @@ const onSelectedChapterNumberChanged = async (value: any) => {
   await loadChapterContent()
 }
 
-const onSelectedBibleTranslationIdChanged = async (value: any) => {
-  selectedBibleTranslationId.value = value
-  await loadChapterContent()
-}
-
 const searchModel = ref("");
 const handleSearchSubmit = async (event: Event) => {
   event.preventDefault();
@@ -369,30 +326,28 @@ const handleSearchSubmit = async (event: Event) => {
 
       window.scrollTo({ top: 0 })
       await router.push(
-        `/bible?t=${selectedBibleTranslationId.value}&c=${result.chapter}&b=${result.book_id}&vs=${result.verse_start}&ve=${result.verse_end}`
+        `/bible?c=${result.chapter}&b=${result.book_id}&vs=${result.verse_start}&ve=${result.verse_end}`
       );
       return getNewVerses();
     } else {
       return router.push(
         `/bible/search?q=${encodeURI(
           searchModel.value.substring(0, 255)
-        )}&t=${selectedBibleTranslationId.value}&page=1`
+        )}&page=1`
       );
     }
   }
 };
 
 async function getNewVerses() {
-  const { t, b, c, vs, ve } = route.query as BiblePageQueryParams
+  const { b, c, vs, ve } = route.query as BiblePageQueryParams
   const localCache: LocalBibleSelectionCache | null = await getLocalCacheItem(localCacheKeyLastLoadedChapter, true)
 
-  if (t && b && c) {
-    selectedBibleTranslationId.value = t || selectedBibleTranslationId.value
+  if (b && c) {
     selectedBookId.value = b || selectedBookId.value
     selectedChapterNumber.value = parseInt(c) || selectedChapterNumber.value
   }
   else if (localCache) {
-    selectedBibleTranslationId.value = localCache.selectedBibleTranslationId || selectedBibleTranslationId.value
     selectedBookId.value = localCache.selectedBookId || selectedBookId.value
     selectedChapterNumber.value = localCache.selectedChapter || selectedChapterNumber.value
   }
@@ -403,7 +358,6 @@ async function getNewVerses() {
   }
 
   availableBooks.value = await getBooks()
-  availableTranslations.value = await getTranslations()
 
   await loadChapterContent()
 }

@@ -36,7 +36,7 @@
         <Divider></Divider>
         <div v-if="versesData.length" class="max-h-96 overflow-y-scroll">
           <div v-for="verse in versesData"
-            @click="router.push(`bible?t=${getLocalCacheItem('__scripture_alone_last_loaded_bible_info__', true).selectedBibleTranslationId}&b=${verse[0].book_id}&c=${verse[0].chapter}&vs=${verse[0].verse_start}&ve=${verse[0].verse_end}`)"
+            @click="router.push(`bible?b=${verse[0].book_id}&c=${verse[0].chapter}&vs=${verse[0].verse_start}&ve=${verse[0].verse_end}`)"
             :class="`rounded verse-${verse.color} transition-all hover:bg-slate-300 cursor-pointer m-2 p-2`">
             <p class="font-bold">
               {{ `${verse[0].book_name_alt} ${verse[0].chapter}:${verse[0].verse_start}` }}</p>
@@ -147,7 +147,7 @@ onMounted(async () => {
   await loadFavorites()
   chapters.value = await getUserHighlightedVerses();
   chapters.value.forEach(async (verse: any) => {
-    versesData.value.push({ ...(await getVerses(getLocalCacheItem('__scripture_alone_last_loaded_bible_info__', true).selectedBibleTranslationId, verse.book_id, parseInt(verse.chapter), parseInt(verse.verse.verse), parseInt(verse.verse.verse))), color: verse.verse.color });
+    versesData.value.push({ ...(await getVerses(verse.book_id, parseInt(verse.chapter), parseInt(verse.verse.verse), parseInt(verse.verse.verse))), color: verse.verse.color });
   });
 })
 

@@ -19,9 +19,6 @@
               <template v-slot:prefix>
                 <Icon icon-name="magnify"></Icon>
               </template>
-              <template v-slot:postfix>
-                <BibleTranslationSelect v-model="searchTranslationId"></BibleTranslationSelect>
-              </template>
             </AppInput>
             <AppButton variant="primary-light" class="block w-full md:hidden mt-4" type="submit">Search</AppButton>
           </div>
@@ -126,7 +123,6 @@ import {
 } from "../../bible/services/BibleService";
 import Icon from "../../components/atoms/Icon.vue";
 import { useRouter } from "vue-router";
-import BibleTranslationSelect from "../../components/organisms/BibleTranslationSelect.vue";
 import AppButton from "../../components/atoms/form-controls/AppButton.vue";
 import { useBreakpoint } from '../../browser/ViewportService'
 
