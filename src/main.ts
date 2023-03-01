@@ -4,7 +4,7 @@ import VueApp from './App.vue'
 import router from './router'
 import { vfmPlugin } from 'vue-final-modal'
 import VuePdf from 'vue3-pdfjs'
-import Vue3TouchEvents from "vue3-touch-events";
+import Vue3TouchEvents from "vue3-touch-events"
 
 // Functions
 import { setLocalCacheItem } from './cache/services/LocalStorageService';

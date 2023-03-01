@@ -47,7 +47,14 @@
           v-touch:tap="() => onVerseClicked(verse.verse_start)" :id="`verse-${verse.verse_start}`" :class="verse.css">
           <span class="verse-number">{{
             verse.verse_start_alt
-          }}</span><span class="verse-text">{{ verse.verse_text }}</span>
+          }}</span><span class="verse-text">
+            <span v-for="word in verse.verse_text">
+              <RouterLink :to="`/websters/${getWordFromPastTense(word.split('|')[1])}`" v-if="word.includes('|')"
+                class="underline ml-1 hover:text-gray-500 transition-all">{{ word.split('|')[1] }}
+              </RouterLink>
+              <span v-else>{{ " " + word }}</span>
+            </span>
+          </span>
         </p>
       </div>
     </PageContent>
@@ -195,6 +202,8 @@ const selectedChapter = computed(() => {
   return availableChapters.value.find((chapter: any) => chapter.chapterNumber == selectedChapterNumber.value)
 })
 
+const WebstersWords = ref<any[]>([]);
+
 /**
  * Query the API to download the text for a bible.
  */
@@ -209,10 +218,26 @@ const loadChapterContent = async () => {
     }
 
     response.forEach((verse: any) => {
+      var tempVerseText: any = [];
+
       let verseCssClass = 'cursor-pointer transition-all px-2 verse'
       if (shouldHighlight && highlightRange.length && verse.verse_start >= highlightRange[0] && verse.verse_start <= highlightRange[1]) {
         verseCssClass += ' verse-highlight'
       }
+      verse.verse_text.split(" ").forEach((word: string, index: number) => {
+        if (WebstersWords.value.includes(word) || WebstersWords.value.includes((word.charAt(0).toUpperCase() + word.slice(1)).slice(0, word.length - 1))) {
+          tempVerseText.push(`|${word}`);
+        }
+        else {
+          if (index == 0)
+            tempVerseText.push(word);
+          else
+            tempVerseText.push(word);
+        }
+      });
+
+      verse.verse_text = tempVerseText;
+
       var highlightColor = "";
       if (versesHighlights) {
         versesHighlights.verse_data.forEach((highlightVerse: any) => {
@@ -234,7 +259,7 @@ const loadChapterContent = async () => {
       selectedChapter: selectedChapterNumber.value || 1
     }, true)
 
-    router.replace({ path: '/bible', query: { ...route.query, b: selectedBookId.value, c: selectedChapterNumber.value } })
+    router.push({ path: '/bible', query: { ...route.query, b: selectedBookId.value, c: selectedChapterNumber.value } })
     if (shouldHighlight)
       setTimeout(() => {
         document.querySelector(`#verse-${highlightRange[0]}`)?.scrollIntoView()
@@ -252,6 +277,10 @@ const loadChapterContent = async () => {
 }
 
 onMounted(async () => {
+  window.onpopstate = function (event) {
+    location.reload()
+  };
+  WebstersWords.value = (await import("../../assets/websters/words.json")).default;
   connectedToWifi.value = await getLocalCacheItem("__network_status__", true);
   platform.value = await getLocalCacheItem("__platform__", false);
   await getNewVerses();
@@ -271,7 +300,11 @@ onMounted(async () => {
   });
 })
 
-// Event Handlers 
+function getWordFromPastTense(word: string) {
+  return WebstersWords.value.includes(word) ? word : word.slice(0, word.length - 1)
+}
+
+// Event Handlers
 
 const onNextChapterButtonClicked = async () => {
   if (pageLoading.value)
