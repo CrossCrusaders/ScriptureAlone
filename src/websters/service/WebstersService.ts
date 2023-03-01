@@ -1,4 +1,5 @@
 import Config from "../../config/services/ConfigService";
+import { transformWordResponse } from '../Word'
 
 export async function getWord(word: string) {
     word = word.charAt(0).toUpperCase() + word.slice(1);
@@ -7,5 +8,5 @@ export async function getWord(word: string) {
     const wordResponse = await fetch(url);
     const wordResults = await wordResponse.json();
 
-    return wordResults;
+    return transformWordResponse(wordResults);
 }

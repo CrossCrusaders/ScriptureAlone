@@ -49,9 +49,10 @@
             verse.verse_start_alt
           }}</span><span class="verse-text">
             <span v-for="word in verse.verse_text_array">
-              <RouterLink :to="`/websters/${getWordFromPastTense(word.split('|')[1])}`" v-if="word.includes('|')"
-                class="underline ml-1 hover:text-gray-500 transition-all">{{ word.split('|')[1] }}
-              </RouterLink>
+              <button @click="handleOpenWordModal(getWordFromPastTense(word.split('|')[1]))"
+                :to="`/websters/${getWordFromPastTense(word.split('|')[1])}`" v-if="word.includes('|')"
+                class="underline ml-1 text-red-500 hover:text-gray-500 transition-all">{{ word.split('|')[1] }}
+              </button>
               <span v-else>{{ " " + word }}</span>
             </span>
           </span>
@@ -127,6 +128,18 @@
         @click="createNote(selectedBookId, selectedChapterNumber, selectedVerses, noteTitle, noteText); noteTitle = ''; noteText = ''; noteModal = false">Add</button>
     </div>
   </AppModal>
+  <AppModal v-model="wordDefModal" v-slot="{ close }">
+    <div class="px-4 pb-4 text-white flex flex-col gap-2" style="text-align:center;">
+      <div>
+        <p class="font-bold text-2xl text-black">{{ wordDef?.word }}</p>
+        <p class="font-bold text-black">{{ wordDef?.pronunciation }}</p>
+      </div>
+      <div class="bg-slate-200 p-2 rounded text-black">
+        <p class="font-bold">{{ wordDef?.definition.type }}</p>
+        <p>{{ wordDef?.definition.text }}</p>
+      </div>
+    </div>
+  </AppModal>
 </template>
 
 <script setup lang="ts">
@@ -154,6 +167,8 @@ import AppModal from '../../components/templates/AppModal.vue'
 import Spinner from '../../components/atoms/Spinner.vue'
 import { isBibleReference, getHighlightedVerses, highlightVerses } from '../../bible/services/BibleService'
 import { createNote, getAllNotesInChapter } from '../../notes/services/NoteService'
+import { Word } from '../../websters/Word'
+import { getWord } from '../../websters/service/WebstersService'
 
 export interface BiblePageQueryParams {
   c?: string //chapter
@@ -185,6 +200,8 @@ const menuVerse = ref({ verse_text: "", verse_start: "", book_name_alt: "", book
 const noteTitle = ref("");
 const noteText = ref("");
 const noteModal = ref(false);
+const wordDefModal = ref(false);
+const wordDef = ref<Word>();
 const availableNotes = ref<any[]>([]);
 const notesVerseIsIn = ref<any[]>([]);
 
@@ -231,7 +248,7 @@ const loadChapterContent = async () => {
         if (WebstersWords.value.includes(word) || WebstersWords.value.includes((word.charAt(0).toUpperCase() + word.slice(1)).slice(0, word.length - 1))) {
           tempVerseText[index] = (`|${word}`);
         }
-        if(index == tempVerseText.length-1)
+        if (index == tempVerseText.length - 1)
           verse.verse_text_array = tempVerseText;
       });
 
@@ -300,6 +317,12 @@ function getWordFromPastTense(word: string) {
 }
 
 // Event Handlers
+
+async function handleOpenWordModal(word: string) {
+  console.log(word)
+  wordDef.value = await getWord(word.toLowerCase());
+  wordDefModal.value = true;
+}
 
 const onNextChapterButtonClicked = async () => {
   if (pageLoading.value)
