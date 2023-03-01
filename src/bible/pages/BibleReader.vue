@@ -48,7 +48,7 @@
           <span class="verse-number">{{
             verse.verse_start_alt
           }}</span><span class="verse-text">
-            <span v-for="word in verse.verse_text">
+            <span v-for="word in verse.verse_text_array">
               <RouterLink :to="`/websters/${getWordFromPastTense(word.split('|')[1])}`" v-if="word.includes('|')"
                 class="underline ml-1 hover:text-gray-500 transition-all">{{ word.split('|')[1] }}
               </RouterLink>
@@ -208,6 +208,7 @@ const WebstersWords = ref<any[]>([]);
  * Query the API to download the text for a bible.
  */
 const loadChapterContent = async () => {
+  loadedChapterContent.value = [];
   pageLoading.value = true
   try {
     const response = await getVerses(selectedBookId.value, selectedChapterNumber.value)
@@ -216,7 +217,6 @@ const loadChapterContent = async () => {
     if ((connectedToWifi.value && connectedToWifi.value.connected)) {
       versesHighlights = await getHighlightedVerses(response[0].book_id, response[0].chapter.toString());
     }
-
     response.forEach((verse: any) => {
       var tempVerseText: any = [];
 
@@ -224,19 +224,16 @@ const loadChapterContent = async () => {
       if (shouldHighlight && highlightRange.length && verse.verse_start >= highlightRange[0] && verse.verse_start <= highlightRange[1]) {
         verseCssClass += ' verse-highlight'
       }
-      verse.verse_text.split(" ").forEach((word: string, index: number) => {
+      console.log(verse)
+      if (typeof verse.verse_start === 'string' || verse.verse_start instanceof String)
+        tempVerseText = verse.verse_text.split(" ");
+      tempVerseText.forEach((word: string, index: number) => {
         if (WebstersWords.value.includes(word) || WebstersWords.value.includes((word.charAt(0).toUpperCase() + word.slice(1)).slice(0, word.length - 1))) {
-          tempVerseText.push(`|${word}`);
+          tempVerseText[index] = (`|${word}`);
         }
-        else {
-          if (index == 0)
-            tempVerseText.push(word);
-          else
-            tempVerseText.push(word);
-        }
+        if(index == tempVerseText.length-1)
+          verse.verse_text_array = tempVerseText;
       });
-
-      verse.verse_text = tempVerseText;
 
       var highlightColor = "";
       if (versesHighlights) {
@@ -258,8 +255,8 @@ const loadChapterContent = async () => {
       selectedBookId: selectedBookId.value || 'JHN',
       selectedChapter: selectedChapterNumber.value || 1
     }, true)
-
-    router.push({ path: '/bible', query: { ...route.query, b: selectedBookId.value, c: selectedChapterNumber.value } })
+    console.log(loadedChapterContent.value)
+    router.replace({ path: '/bible', query: { ...route.query, b: selectedBookId.value, c: selectedChapterNumber.value } })
     if (shouldHighlight)
       setTimeout(() => {
         document.querySelector(`#verse-${highlightRange[0]}`)?.scrollIntoView()
@@ -272,14 +269,12 @@ const loadChapterContent = async () => {
       availableNotes.value = await getAllNotesInChapter(selectedBookId.value, selectedChapterNumber.value);
   }
   catch (err) {
+    console.log(err)
   }
   pageLoading.value = false
 }
 
 onMounted(async () => {
-  window.onpopstate = function (event) {
-    location.reload()
-  };
   WebstersWords.value = (await import("../../assets/websters/words.json")).default;
   connectedToWifi.value = await getLocalCacheItem("__network_status__", true);
   platform.value = await getLocalCacheItem("__platform__", false);
@@ -301,7 +296,7 @@ onMounted(async () => {
 })
 
 function getWordFromPastTense(word: string) {
-  return WebstersWords.value.includes(word) ? word : word.slice(0, word.length - 1)
+  return WebstersWords.value.includes(word) ? word.toLowerCase() : word.slice(0, word.length - 1).toLowerCase()
 }
 
 // Event Handlers
@@ -373,16 +368,12 @@ const handleSearchSubmit = async (event: Event) => {
 };
 
 async function getNewVerses() {
+  console.log("hello")
   const { b, c, vs, ve } = route.query as BiblePageQueryParams
-  const localCache: LocalBibleSelectionCache | null = await getLocalCacheItem(localCacheKeyLastLoadedChapter, true)
 
   if (b && c) {
     selectedBookId.value = b || selectedBookId.value
     selectedChapterNumber.value = parseInt(c) || selectedChapterNumber.value
-  }
-  else if (localCache) {
-    selectedBookId.value = localCache.selectedBookId || selectedBookId.value
-    selectedChapterNumber.value = localCache.selectedChapter || selectedChapterNumber.value
   }
 
   if (vs && ve) {
