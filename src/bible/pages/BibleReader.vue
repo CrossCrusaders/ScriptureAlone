@@ -49,9 +49,9 @@
             verse.verse_start_alt
           }}</span><span class="verse-text">
             <span v-for="word in verse.verse_text_array">
-              <button @click="handleOpenWordModal(getWordFromPastTense(word.split('|')[1]))"
+              <button @click="handleOpenWordModal(getWordFromPastTense(word.split('|')[1]), verse.verse_start)"
                 :to="`/websters/${getWordFromPastTense(word.split('|')[1])}`" v-if="word.includes('|')"
-                class="underline ml-1 text-red-500 hover:text-gray-500 transition-all">{{ word.split('|')[1] }}
+                class="underline ml-1 font-bold text-slate-500 hover:text-gray-500 transition-all">{{ word.split('|')[1] }}
               </button>
               <span v-else>{{ " " + word }}</span>
             </span>
@@ -318,8 +318,9 @@ function getWordFromPastTense(word: string) {
 
 // Event Handlers
 
-async function handleOpenWordModal(word: string) {
+async function handleOpenWordModal(word: string, verse: number) {
   console.log(word)
+  await onVerseClicked(verse)
   wordDef.value = await getWord(word.toLowerCase());
   wordDefModal.value = true;
 }
