@@ -23,7 +23,8 @@
           :label="category.name" :key="index" class="cursor-pointer">
         </Badge>
       </div>
-      <br>
+
+      <Divider></Divider>
 
       <!-- Highlighted Verses -->
       <PageHero>
@@ -52,6 +53,8 @@
           </div>
         </div>
       </PageHero>
+
+      <Divider></Divider>
 
       <!-- Favorite Sermons -->
       <PageHero>
@@ -94,6 +97,8 @@
           </div>
         </div>
       </PageHero>
+
+      <br>
 
       <div class="flex flex-row justify-center items-center mb-16">
         <AppButton variant="primary-outline" to="/auth/log-out">Log Out</AppButton>

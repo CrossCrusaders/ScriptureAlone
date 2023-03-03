@@ -241,7 +241,7 @@ const loadChapterContent = async () => {
       if (shouldHighlight && highlightRange.length && verse.verse_start >= highlightRange[0] && verse.verse_start <= highlightRange[1]) {
         verseCssClass += ' verse-highlight'
       }
-      console.log(verse)
+      
       if (typeof verse.verse_start === 'string' || verse.verse_start instanceof String)
         tempVerseText = verse.verse_text.split(" ");
       tempVerseText.forEach((word: string, index: number) => {
@@ -272,7 +272,7 @@ const loadChapterContent = async () => {
       selectedBookId: selectedBookId.value || 'JHN',
       selectedChapter: selectedChapterNumber.value || 1
     }, true)
-    console.log(loadedChapterContent.value)
+    
     router.replace({ path: '/bible', query: { ...route.query, b: selectedBookId.value, c: selectedChapterNumber.value } })
     if (shouldHighlight)
       setTimeout(() => {
@@ -319,7 +319,6 @@ function getWordFromPastTense(word: string) {
 // Event Handlers
 
 async function handleOpenWordModal(word: string, verse: number) {
-  console.log(word)
   await onVerseClicked(verse)
   wordDef.value = await getWord(word.toLowerCase());
   wordDefModal.value = true;
@@ -392,7 +391,6 @@ const handleSearchSubmit = async (event: Event) => {
 };
 
 async function getNewVerses() {
-  console.log("hello")
   const { b, c, vs, ve } = route.query as BiblePageQueryParams
 
   if (b && c) {

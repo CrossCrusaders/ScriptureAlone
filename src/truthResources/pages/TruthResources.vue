@@ -2,7 +2,7 @@
     <AppLayout>
       <PageContent>
         <!-- Truth Resources Hero -->
-        <PageHero>
+        <PageHero class="mb-4">
           <template v-slot:image>
             <img src="/logo-bible.png" class="object-contain hidden md:block max-h-32" />
           </template>

@@ -1,13 +1,13 @@
 <template>
   <AppLayout>
     <PageContent>
-      <h1 id="page-title__sermon-authors"
+      <h1 id="page-title__devotional-authors"
         class="max-w-prose mx-auto text-slate-800 text-center text-5xl font-title font-bold mt-8 mb-8">Search
-        Sermons
+        Devotionals
       </h1>
       <div class="max-w-prose mx-auto mb-8">
         <form @submit.prevent="onFormSubmit">
-          <AppInput placeholder="Search For Sermons" v-model="currentQuery">
+          <AppInput placeholder="Search For Devotionals" v-model="currentQuery">
             <template v-slot:postfix>
               <AppButton variant="primary-minimal" size="sm" type="submit" v-if="!hasSearch">
                 <Icon icon-name="magnify"></Icon>
@@ -55,7 +55,7 @@
       <div v-if="reachedEnd">
         <p class="text-center text-xl font-bold mb-4">End of Results</p>
         <p class="text-center text-xl mb-8 underline">
-          <a href="#page-title__sermon-authors">
+          <a href="#page-title__devotional-authors">
             Back To Top?
           </a>
         </p>
