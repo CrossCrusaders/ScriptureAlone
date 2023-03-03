@@ -134,9 +134,9 @@
         <p class="font-bold text-2xl text-black">{{ wordDef?.word }}</p>
         <p class="font-bold text-black">{{ wordDef?.pronunciation }}</p>
       </div>
-      <div class="bg-slate-200 p-2 rounded text-black">
-        <p class="font-bold">{{ wordDef?.definition.type }}</p>
-        <p>{{ wordDef?.definition.text }}</p>
+      <div class="bg-slate-200 p-2 rounded text-black" v-for="definition in wordDef?.definitions">
+        <p class="font-bold">{{ definition.type }}</p>
+        <p v-html="definition.text"></p>
       </div>
     </div>
   </AppModal>
@@ -245,7 +245,7 @@ const loadChapterContent = async () => {
       if (typeof verse.verse_start === 'string' || verse.verse_start instanceof String)
         tempVerseText = verse.verse_text.split(" ");
       tempVerseText.forEach((word: string, index: number) => {
-        if (WebstersWords.value.includes(word) || WebstersWords.value.includes((word.charAt(0).toUpperCase() + word.slice(1)).slice(0, word.length - 1))) {
+        if (WebstersWords.value.includes((word.charAt(0).toUpperCase() + word.slice(1)).slice(0, word.length)) || WebstersWords.value.includes((word.charAt(0).toUpperCase() + word.slice(1)).slice(0, word.length - 1))) {
           tempVerseText[index] = (`|${word}`);
         }
         if (index == tempVerseText.length - 1)
@@ -313,7 +313,7 @@ onMounted(async () => {
 })
 
 function getWordFromPastTense(word: string) {
-  return WebstersWords.value.includes(word) ? word.toLowerCase() : word.slice(0, word.length - 1).toLowerCase()
+  return WebstersWords.value.includes((word.charAt(0).toUpperCase() + word.slice(1)).slice(0, word.length)) ? word.toLowerCase() : word.slice(0, word.length - 1).toLowerCase()
 }
 
 // Event Handlers
@@ -321,6 +321,9 @@ function getWordFromPastTense(word: string) {
 async function handleOpenWordModal(word: string, verse: number) {
   await onVerseClicked(verse)
   wordDef.value = await getWord(word.toLowerCase());
+  wordDef.value.definitions.forEach((def)=>{
+    def.text.replaceAll("\n", "<br>");
+  })
   wordDefModal.value = true;
 }
 

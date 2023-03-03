@@ -1,10 +1,12 @@
 export interface Word {
     word: string
     pronunciation: string
-    definition: {
-        type: string
-        text: string
-    }
+    definitions: [
+        {
+            type: string
+            text: string
+        }
+    ]
 }
 
 export const transformWordResponse = (response: any): Word => {
