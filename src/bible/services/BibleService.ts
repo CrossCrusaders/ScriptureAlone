@@ -64,7 +64,7 @@ export async function getVerses(book: string, chapter: number, startVerse?: numb
 	var data = await (await import(`../../assets/kjv-json/${book}/${chapter}.json`)).default;
 
 	console.log(data)
-	
+
 	if (!startVerse)
 		return data;
 	else {
@@ -253,8 +253,7 @@ export async function isBibleReference(query: string) {
 		verse_start: parseInt(startVerse),
 		verse_end: parseInt(endVerse || startVerse),
 		text: '',
-		highlight: "",
-		chapter_info: ""
+		highlight: ""
 	}
 	return bibleVerseRef
 
