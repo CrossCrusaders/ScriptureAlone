@@ -1,1 +1,61 @@
-[{"book_id":"PSA","book_name_alt":"Psalms","chapter":"14","verse_start":"1","verse_start_alt":"1","verse_end":"1","verse_end_alt":"1","verse_text":"The fool hath said in his heart, There is no God. They are corrupt, they have done abominable works, there is none that doeth good."},{"book_id":"PSA","book_name_alt":"Psalms","chapter":"14","verse_start":"2","verse_start_alt":"2","verse_end":"2","verse_end_alt":"2","verse_text":"The LORD looked down from heaven upon the children of men, to see if there were any that did understand, and seek God."},{"book_id":"PSA","book_name_alt":"Psalms","chapter":"14","verse_start":"3","verse_start_alt":"3","verse_end":"3","verse_end_alt":"3","verse_text":"They are all gone aside, they are all together become filthy: there is none that doeth good, no, not one."},{"book_id":"PSA","book_name_alt":"Psalms","chapter":"14","verse_start":"4","verse_start_alt":"4","verse_end":"4","verse_end_alt":"4","verse_text":"Have all the workers of iniquity no knowledge? who eat up my people as they eat bread, and call not upon the LORD."},{"book_id":"PSA","book_name_alt":"Psalms","chapter":"14","verse_start":"5","verse_start_alt":"5","verse_end":"5","verse_end_alt":"5","verse_text":"There were they in great fear: for God is in the generation of the righteous."},{"book_id":"PSA","book_name_alt":"Psalms","chapter":"14","verse_start":"6","verse_start_alt":"6","verse_end":"6","verse_end_alt":"6","verse_text":"Ye have shamed the counsel of the poor, because the LORD is his refuge."},{"book_id":"PSA","book_name_alt":"Psalms","chapter":"14","verse_start":"7","verse_start_alt":"7","verse_end":"7","verse_end_alt":"7","verse_text":"Oh that the salvation of Israel were come out of Zion! when the LORD bringeth back the captivity of his people, Jacob shall rejoice, and Israel shall be glad."}]
+{
+  "info": "(To the chief Musician, <em>A Psalm</em> of David.)",
+  "verses": [
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 14,
+      "verse_start": 1,
+      "verse_end": 1,
+      "text": "The fool hath said in his heart, <em>There is</em> no God. They are corrupt, they have done abominable works, <em>there is</em> none that doeth good."
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 14,
+      "verse_start": 2,
+      "verse_end": 2,
+      "text": "The LORD looked down from heaven upon the children of men, to see if there were any that did understand, <em>and</em> seek God."
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 14,
+      "verse_start": 3,
+      "verse_end": 3,
+      "text": "They are all gone aside, they are <em>all</em> together become filthy: <em>there is</em> none that doeth good, no, not one."
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 14,
+      "verse_start": 4,
+      "verse_end": 4,
+      "text": "Have all the workers of iniquity no knowledge? who eat up my people <em>as</em> they eat bread, and call not upon the LORD."
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 14,
+      "verse_start": 5,
+      "verse_end": 5,
+      "text": "There were they in great fear: for God <em>is</em> in the generation of the righteous."
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 14,
+      "verse_start": 6,
+      "verse_end": 6,
+      "text": "Ye have shamed the counsel of the poor, because the LORD <em>is</em> his refuge."
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 14,
+      "verse_start": 7,
+      "verse_end": 7,
+      "text": "Oh that the salvation of Israel <em>were come</em> out of Zion! when the LORD bringeth back the captivity of his people, Jacob shall rejoice, <em>and</em> Israel shall be glad."
+    }
+  ]
+}

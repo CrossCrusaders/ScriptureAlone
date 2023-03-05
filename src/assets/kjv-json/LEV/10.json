@@ -1,1 +1,165 @@
-[{"book_id":"LEV","book_name_alt":"Leviticus","chapter":"10","verse_start":"1","verse_start_alt":"1","verse_end":"1","verse_end_alt":"1","verse_text":"And Nadab and Abihu, the sons of Aaron, took either of them his censer, and put fire therein, and put incense thereon, and offered strange fire before the LORD, which he commanded them not."},{"book_id":"LEV","book_name_alt":"Leviticus","chapter":"10","verse_start":"2","verse_start_alt":"2","verse_end":"2","verse_end_alt":"2","verse_text":"And there went out fire from the LORD, and devoured them, and they died before the LORD."},{"book_id":"LEV","book_name_alt":"Leviticus","chapter":"10","verse_start":"3","verse_start_alt":"3","verse_end":"3","verse_end_alt":"3","verse_text":"Then Moses said unto Aaron, This is it that the LORD spake, saying, I will be sanctified in them that come nigh me, and before all the people I will be glorified. And Aaron held his peace."},{"book_id":"LEV","book_name_alt":"Leviticus","chapter":"10","verse_start":"4","verse_start_alt":"4","verse_end":"4","verse_end_alt":"4","verse_text":"And Moses called Mishael and Elzaphan, the sons of Uzziel the uncle of Aaron, and said unto them, Come near, carry your brethren from before the sanctuary out of the camp."},{"book_id":"LEV","book_name_alt":"Leviticus","chapter":"10","verse_start":"5","verse_start_alt":"5","verse_end":"5","verse_end_alt":"5","verse_text":"So they went near, and carried them in their coats out of the camp; as Moses had said."},{"book_id":"LEV","book_name_alt":"Leviticus","chapter":"10","verse_start":"6","verse_start_alt":"6","verse_end":"6","verse_end_alt":"6","verse_text":"And Moses said unto Aaron, and unto Eleazar and unto Ithamar, his sons, Uncover not your heads, neither rend your clothes; lest ye die, and lest wrath come upon all the people: but let your brethren, the whole house of Israel, bewail the burning which the LORD hath kindled."},{"book_id":"LEV","book_name_alt":"Leviticus","chapter":"10","verse_start":"7","verse_start_alt":"7","verse_end":"7","verse_end_alt":"7","verse_text":"And ye shall not go out from the door of the tabernacle of the congregation, lest ye die: for the anointing oil of the LORD is upon you. And they did according to the word of Moses."},{"book_id":"LEV","book_name_alt":"Leviticus","chapter":"10","verse_start":"8","verse_start_alt":"8","verse_end":"8","verse_end_alt":"8","verse_text":"And the LORD spake unto Aaron, saying,"},{"book_id":"LEV","book_name_alt":"Leviticus","chapter":"10","verse_start":"9","verse_start_alt":"9","verse_end":"9","verse_end_alt":"9","verse_text":"Do not drink wine nor strong drink, thou, nor thy sons with thee, when ye go into the tabernacle of the congregation, lest ye die: it shall be a statute for ever throughout your generations:"},{"book_id":"LEV","book_name_alt":"Leviticus","chapter":"10","verse_start":"10","verse_start_alt":"10","verse_end":"10","verse_end_alt":"10","verse_text":"And that ye may put difference between holy and unholy, and between unclean and clean;"},{"book_id":"LEV","book_name_alt":"Leviticus","chapter":"10","verse_start":"11","verse_start_alt":"11","verse_end":"11","verse_end_alt":"11","verse_text":"And that ye may teach the children of Israel all the statutes which the LORD hath spoken unto them by the hand of Moses."},{"book_id":"LEV","book_name_alt":"Leviticus","chapter":"10","verse_start":"12","verse_start_alt":"12","verse_end":"12","verse_end_alt":"12","verse_text":"And Moses spake unto Aaron, and unto Eleazar and unto Ithamar, his sons that were left, Take the meat offering that remaineth of the offerings of the LORD made by fire, and eat it without leaven beside the altar: for it is most holy:"},{"book_id":"LEV","book_name_alt":"Leviticus","chapter":"10","verse_start":"13","verse_start_alt":"13","verse_end":"13","verse_end_alt":"13","verse_text":"And ye shall eat it in the holy place, because it is thy due, and thy sons’ due, of the sacrifices of the LORD made by fire: for so I am commanded."},{"book_id":"LEV","book_name_alt":"Leviticus","chapter":"10","verse_start":"14","verse_start_alt":"14","verse_end":"14","verse_end_alt":"14","verse_text":"And the wave breast and heave shoulder shall ye eat in a clean place; thou, and thy sons, and thy daughters with thee: for they be thy due, and thy sons’ due, which are given out of the sacrifices of peace offerings of the children of Israel."},{"book_id":"LEV","book_name_alt":"Leviticus","chapter":"10","verse_start":"15","verse_start_alt":"15","verse_end":"15","verse_end_alt":"15","verse_text":"The heave shoulder and the wave breast shall they bring with the offerings made by fire of the fat, to wave it for a wave offering before the LORD; and it shall be thine, and thy sons’ with thee, by a statute for ever; as the LORD hath commanded."},{"book_id":"LEV","book_name_alt":"Leviticus","chapter":"10","verse_start":"16","verse_start_alt":"16","verse_end":"16","verse_end_alt":"16","verse_text":"And Moses diligently sought the goat of the sin offering, and, behold, it was burnt: and he was angry with Eleazar and Ithamar, the sons of Aaron which were left alive, saying,"},{"book_id":"LEV","book_name_alt":"Leviticus","chapter":"10","verse_start":"17","verse_start_alt":"17","verse_end":"17","verse_end_alt":"17","verse_text":"Wherefore have ye not eaten the sin offering in the holy place, seeing it is most holy, and God hath given it you to bear the iniquity of the congregation, to make atonement for them before the LORD?"},{"book_id":"LEV","book_name_alt":"Leviticus","chapter":"10","verse_start":"18","verse_start_alt":"18","verse_end":"18","verse_end_alt":"18","verse_text":"Behold, the blood of it was not brought in within the holy place: ye should indeed have eaten it in the holy place, as I commanded."},{"book_id":"LEV","book_name_alt":"Leviticus","chapter":"10","verse_start":"19","verse_start_alt":"19","verse_end":"19","verse_end_alt":"19","verse_text":"And Aaron said unto Moses, Behold, this day have they offered their sin offering and their burnt offering before the LORD; and such things have befallen me: and if I had eaten the sin offering to day, should it have been accepted in the sight of the LORD?"},{"book_id":"LEV","book_name_alt":"Leviticus","chapter":"10","verse_start":"20","verse_start_alt":"20","verse_end":"20","verse_end_alt":"20","verse_text":"And when Moses heard that, he was content."}]
+{
+  "info": "",
+  "verses": [
+    {
+      "book_id": "LEV",
+      "book_name": "Leviticus",
+      "chapter": 10,
+      "verse_start": 1,
+      "verse_end": 1,
+      "text": "And Nadab and Abihu, the sons of Aaron, took either of them his censer, and put fire therein, and put incense thereon, and offered strange fire before the LORD, which he commanded them not."
+    },
+    {
+      "book_id": "LEV",
+      "book_name": "Leviticus",
+      "chapter": 10,
+      "verse_start": 2,
+      "verse_end": 2,
+      "text": "And there went out fire from the LORD, and devoured them, and they died before the LORD."
+    },
+    {
+      "book_id": "LEV",
+      "book_name": "Leviticus",
+      "chapter": 10,
+      "verse_start": 3,
+      "verse_end": 3,
+      "text": "Then Moses said unto Aaron, This <em>is it</em> that the LORD spake, saying, I will be sanctified in them that come nigh me, and before all the people I will be glorified. And Aaron held his peace."
+    },
+    {
+      "book_id": "LEV",
+      "book_name": "Leviticus",
+      "chapter": 10,
+      "verse_start": 4,
+      "verse_end": 4,
+      "text": "And Moses called Mishael and Elzaphan, the sons of Uzziel the uncle of Aaron, and said unto them, Come near, carry your brethren from before the sanctuary out of the camp."
+    },
+    {
+      "book_id": "LEV",
+      "book_name": "Leviticus",
+      "chapter": 10,
+      "verse_start": 5,
+      "verse_end": 5,
+      "text": "So they went near, and carried them in their coats out of the camp; as Moses had said."
+    },
+    {
+      "book_id": "LEV",
+      "book_name": "Leviticus",
+      "chapter": 10,
+      "verse_start": 6,
+      "verse_end": 6,
+      "text": "And Moses said unto Aaron, and unto Eleazar and unto Ithamar, his sons, Uncover not your heads, neither rend your clothes; lest ye die, and lest wrath come upon all the people: but let your brethren, the whole house of Israel, bewail the burning which the LORD hath kindled."
+    },
+    {
+      "book_id": "LEV",
+      "book_name": "Leviticus",
+      "chapter": 10,
+      "verse_start": 7,
+      "verse_end": 7,
+      "text": "And ye shall not go out from the door of the tabernacle of the congregation, lest ye die: for the anointing oil of the LORD <em>is</em> upon you. And they did according to the word of Moses."
+    },
+    {
+      "book_id": "LEV",
+      "book_name": "Leviticus",
+      "chapter": 10,
+      "verse_start": 8,
+      "verse_end": 8,
+      "text": "And the LORD spake unto Aaron, saying,"
+    },
+    {
+      "book_id": "LEV",
+      "book_name": "Leviticus",
+      "chapter": 10,
+      "verse_start": 9,
+      "verse_end": 9,
+      "text": "Do not drink wine nor strong drink, thou, nor thy sons with thee, when ye go into the tabernacle of the congregation, lest ye die: <em>it shall be</em> a statute for ever throughout your generations:"
+    },
+    {
+      "book_id": "LEV",
+      "book_name": "Leviticus",
+      "chapter": 10,
+      "verse_start": 10,
+      "verse_end": 10,
+      "text": "And that ye may put difference between holy and unholy, and between unclean and clean;"
+    },
+    {
+      "book_id": "LEV",
+      "book_name": "Leviticus",
+      "chapter": 10,
+      "verse_start": 11,
+      "verse_end": 11,
+      "text": "And that ye may teach the children of Israel all the statutes which the LORD hath spoken unto them by the hand of Moses."
+    },
+    {
+      "book_id": "LEV",
+      "book_name": "Leviticus",
+      "chapter": 10,
+      "verse_start": 12,
+      "verse_end": 12,
+      "text": "And Moses spake unto Aaron, and unto Eleazar and unto Ithamar, his sons that were left, Take the meat offering that remaineth of the offerings of the LORD made by fire, and eat it without leaven beside the altar: for it <em>is</em> most holy:"
+    },
+    {
+      "book_id": "LEV",
+      "book_name": "Leviticus",
+      "chapter": 10,
+      "verse_start": 13,
+      "verse_end": 13,
+      "text": "And ye shall eat it in the holy place, because it <em>is</em> thy due, and thy sons' due, of the sacrifices of the LORD made by fire: for so I am commanded."
+    },
+    {
+      "book_id": "LEV",
+      "book_name": "Leviticus",
+      "chapter": 10,
+      "verse_start": 14,
+      "verse_end": 14,
+      "text": "And the wave breast and heave shoulder shall ye eat in a clean place; thou, and thy sons, and thy daughters with thee: for <em>they be</em> thy due, and thy sons' due, <em>which</em> are given out of the sacrifices of peace offerings of the children of Israel."
+    },
+    {
+      "book_id": "LEV",
+      "book_name": "Leviticus",
+      "chapter": 10,
+      "verse_start": 15,
+      "verse_end": 15,
+      "text": "The heave shoulder and the wave breast shall they bring with the offerings made by fire of the fat, to wave <em>it for</em> a wave offering before the LORD; and it shall be thine, and thy sons' with thee, by a statute for ever; as the LORD hath commanded."
+    },
+    {
+      "book_id": "LEV",
+      "book_name": "Leviticus",
+      "chapter": 10,
+      "verse_start": 16,
+      "verse_end": 16,
+      "text": "And Moses diligently sought the goat of the sin offering, and, behold, it was burnt: and he was angry with Eleazar and Ithamar, the sons of Aaron <em>which were</em> left <em>alive</em>, saying,"
+    },
+    {
+      "book_id": "LEV",
+      "book_name": "Leviticus",
+      "chapter": 10,
+      "verse_start": 17,
+      "verse_end": 17,
+      "text": "Wherefore have ye not eaten the sin offering in the holy place, seeing it <em>is</em> most holy, and <em>God</em> hath given it you to bear the iniquity of the congregation, to make atonement for them before the LORD?"
+    },
+    {
+      "book_id": "LEV",
+      "book_name": "Leviticus",
+      "chapter": 10,
+      "verse_start": 18,
+      "verse_end": 18,
+      "text": "Behold, the blood of it was not brought in within the holy <em>place</em>: ye should indeed have eaten it in the holy <em>place</em>, as I commanded."
+    },
+    {
+      "book_id": "LEV",
+      "book_name": "Leviticus",
+      "chapter": 10,
+      "verse_start": 19,
+      "verse_end": 19,
+      "text": "And Aaron said unto Moses, Behold, this day have they offered their sin offering and their burnt offering before the LORD; and such things have befallen me: and <em>if</em> I had eaten the sin offering to day, should it have been accepted in the sight of the LORD?"
+    },
+    {
+      "book_id": "LEV",
+      "book_name": "Leviticus",
+      "chapter": 10,
+      "verse_start": 20,
+      "verse_end": 20,
+      "text": "And when Moses heard <em>that</em>, he was content."
+    }
+  ]
+}

@@ -1,1 +1,117 @@
-[{"book_id":"2CO","book_name_alt":"2 Corinthians","chapter":"13","verse_start":"1","verse_start_alt":"1","verse_end":"1","verse_end_alt":"1","verse_text":"This is the third time I am coming to you. In the mouth of two or three witnesses shall every word be established."},{"book_id":"2CO","book_name_alt":"2 Corinthians","chapter":"13","verse_start":"2","verse_start_alt":"2","verse_end":"2","verse_end_alt":"2","verse_text":"I told you before, and foretell you, as if I were present, the second time; and being absent now I write to them which heretofore have sinned, and to all other, that, if I come again, I will not spare:"},{"book_id":"2CO","book_name_alt":"2 Corinthians","chapter":"13","verse_start":"3","verse_start_alt":"3","verse_end":"3","verse_end_alt":"3","verse_text":"Since ye seek a proof of Christ speaking in me, which to you-ward is not weak, but is mighty in you."},{"book_id":"2CO","book_name_alt":"2 Corinthians","chapter":"13","verse_start":"4","verse_start_alt":"4","verse_end":"4","verse_end_alt":"4","verse_text":"For though he was crucified through weakness, yet he liveth by the power of God. For we also are weak in him, but we shall live with him by the power of God toward you."},{"book_id":"2CO","book_name_alt":"2 Corinthians","chapter":"13","verse_start":"5","verse_start_alt":"5","verse_end":"5","verse_end_alt":"5","verse_text":"Examine yourselves, whether ye be in the faith; prove your own selves. Know ye not your own selves, how that Jesus Christ is in you, except ye be reprobates?"},{"book_id":"2CO","book_name_alt":"2 Corinthians","chapter":"13","verse_start":"6","verse_start_alt":"6","verse_end":"6","verse_end_alt":"6","verse_text":"But I trust that ye shall know that we are not reprobates."},{"book_id":"2CO","book_name_alt":"2 Corinthians","chapter":"13","verse_start":"7","verse_start_alt":"7","verse_end":"7","verse_end_alt":"7","verse_text":"Now I pray to God that ye do no evil; not that we should appear approved, but that ye should do that which is honest, though we be as reprobates."},{"book_id":"2CO","book_name_alt":"2 Corinthians","chapter":"13","verse_start":"8","verse_start_alt":"8","verse_end":"8","verse_end_alt":"8","verse_text":"For we can do nothing against the truth, but for the truth."},{"book_id":"2CO","book_name_alt":"2 Corinthians","chapter":"13","verse_start":"9","verse_start_alt":"9","verse_end":"9","verse_end_alt":"9","verse_text":"For we are glad, when we are weak, and ye are strong: and this also we wish, even your perfection."},{"book_id":"2CO","book_name_alt":"2 Corinthians","chapter":"13","verse_start":"10","verse_start_alt":"10","verse_end":"10","verse_end_alt":"10","verse_text":"Therefore I write these things being absent, lest being present I should use sharpness, according to the power which the Lord hath given me to edification, and not to destruction."},{"book_id":"2CO","book_name_alt":"2 Corinthians","chapter":"13","verse_start":"11","verse_start_alt":"11","verse_end":"11","verse_end_alt":"11","verse_text":"Finally, brethren, farewell. Be perfect, be of good comfort, be of one mind, live in peace; and the God of love and peace shall be with you."},{"book_id":"2CO","book_name_alt":"2 Corinthians","chapter":"13","verse_start":"12","verse_start_alt":"12","verse_end":"12","verse_end_alt":"12","verse_text":"Greet one another with an holy kiss."},{"book_id":"2CO","book_name_alt":"2 Corinthians","chapter":"13","verse_start":"13","verse_start_alt":"13","verse_end":"13","verse_end_alt":"13","verse_text":"All the saints salute you."},{"book_id":"2CO","book_name_alt":"2 Corinthians","chapter":"13","verse_start":"14","verse_start_alt":"14","verse_end":"14","verse_end_alt":"14","verse_text":"The grace of the Lord Jesus Christ, and the love of God, and the communion of the Holy Ghost, be with you all. Amen."}]
+{
+  "info": "",
+  "verses": [
+    {
+      "book_id": "2CO",
+      "book_name": "2 Corinthians",
+      "chapter": 13,
+      "verse_start": 1,
+      "verse_end": 1,
+      "text": "<a href=\"../2-Corinthians-13-1/\" title=\"2 Corinthians 13:1 KJV verse detail\"><span id=\"3\" class=\"versehover\">1  \"JESUS_END\"This <em>is</em> the third <em>time</em> I am coming to you. In the mouth of two or three witnesses shall every word be established."
+    },
+    {
+      "book_id": "2CO",
+      "book_name": "2 Corinthians",
+      "chapter": 13,
+      "verse_start": 2,
+      "verse_end": 2,
+      "text": "<a href=\"../2-Corinthians-13-2/\" title=\"2 Corinthians 13:2 KJV verse detail\"><span id=\"4\" class=\"versehover\">2  \"JESUS_END\"I told you before, and foretell you, as if I were present, the second time; and being absent now I write to them which heretofore have sinned, and to all other, that, if I come again, I will not spare:"
+    },
+    {
+      "book_id": "2CO",
+      "book_name": "2 Corinthians",
+      "chapter": 13,
+      "verse_start": 3,
+      "verse_end": 3,
+      "text": "<a href=\"../2-Corinthians-13-3/\" title=\"2 Corinthians 13:3 KJV verse detail\"><span id=\"5\" class=\"versehover\">3  \"JESUS_END\"Since ye seek a proof of Christ speaking in me, which to you-ward is not weak, but is mighty in you."
+    },
+    {
+      "book_id": "2CO",
+      "book_name": "2 Corinthians",
+      "chapter": 13,
+      "verse_start": 4,
+      "verse_end": 4,
+      "text": "<a href=\"../2-Corinthians-13-4/\" title=\"2 Corinthians 13:4 KJV verse detail\"><span id=\"6\" class=\"versehover\">4  \"JESUS_END\"For though he was crucified through weakness, yet he liveth by the power of God. For we also are weak in him, but we shall live with him by the power of God toward you."
+    },
+    {
+      "book_id": "2CO",
+      "book_name": "2 Corinthians",
+      "chapter": 13,
+      "verse_start": 5,
+      "verse_end": 5,
+      "text": "<a href=\"../2-Corinthians-13-5/\" title=\"2 Corinthians 13:5 KJV verse detail\"><span id=\"7\" class=\"versehover\">5  \"JESUS_END\"Examine yourselves, whether ye be in the faith; prove your own selves. Know ye not your own selves, how that Jesus Christ is in you, except ye be reprobates?"
+    },
+    {
+      "book_id": "2CO",
+      "book_name": "2 Corinthians",
+      "chapter": 13,
+      "verse_start": 6,
+      "verse_end": 6,
+      "text": "<a href=\"../2-Corinthians-13-6/\" title=\"2 Corinthians 13:6 KJV verse detail\"><span id=\"8\" class=\"versehover\">6  \"JESUS_END\"But I trust that ye shall know that we are not reprobates."
+    },
+    {
+      "book_id": "2CO",
+      "book_name": "2 Corinthians",
+      "chapter": 13,
+      "verse_start": 7,
+      "verse_end": 7,
+      "text": "<a href=\"../2-Corinthians-13-7/\" title=\"2 Corinthians 13:7 KJV verse detail\"><span id=\"9\" class=\"versehover\">7  \"JESUS_END\"Now I pray to God that ye do no evil; not that we should appear approved, but that ye should do that which is honest, though we be as reprobates."
+    },
+    {
+      "book_id": "2CO",
+      "book_name": "2 Corinthians",
+      "chapter": 13,
+      "verse_start": 8,
+      "verse_end": 8,
+      "text": "<a href=\"../2-Corinthians-13-8/\" title=\"2 Corinthians 13:8 KJV verse detail\"><span id=\"10\" class=\"versehover\">8  \"JESUS_END\"For we can do nothing against the truth, but for the truth."
+    },
+    {
+      "book_id": "2CO",
+      "book_name": "2 Corinthians",
+      "chapter": 13,
+      "verse_start": 9,
+      "verse_end": 9,
+      "text": "<a href=\"../2-Corinthians-13-9/\" title=\"2 Corinthians 13:9 KJV verse detail\"><span id=\"11\" class=\"versehover\">9  \"JESUS_END\"For we are glad, when we are weak, and ye are strong: and this also we wish, <em>even</em> your perfection."
+    },
+    {
+      "book_id": "2CO",
+      "book_name": "2 Corinthians",
+      "chapter": 13,
+      "verse_start": 10,
+      "verse_end": 10,
+      "text": "<a href=\"../2-Corinthians-13-10/\" title=\"2 Corinthians 13:10 KJV verse detail\"><span id=\"12\" class=\"versehover\">10  \"JESUS_END\"Therefore I write these things being absent, lest being present I should use sharpness, according to the power which the Lord hath given me to edification, and not to destruction."
+    },
+    {
+      "book_id": "2CO",
+      "book_name": "2 Corinthians",
+      "chapter": 13,
+      "verse_start": 11,
+      "verse_end": 11,
+      "text": "<a href=\"../2-Corinthians-13-11/\" title=\"2 Corinthians 13:11 KJV verse detail\"><span id=\"13\" class=\"versehover\">11  \"JESUS_END\"Finally, brethren, farewell. Be perfect, be of good comfort, be of one mind, live in peace; and the God of love and peace shall be with you."
+    },
+    {
+      "book_id": "2CO",
+      "book_name": "2 Corinthians",
+      "chapter": 13,
+      "verse_start": 12,
+      "verse_end": 12,
+      "text": "<a href=\"../2-Corinthians-13-12/\" title=\"2 Corinthians 13:12 KJV verse detail\"><span id=\"14\" class=\"versehover\">12  \"JESUS_END\"Greet one another with an holy kiss."
+    },
+    {
+      "book_id": "2CO",
+      "book_name": "2 Corinthians",
+      "chapter": 13,
+      "verse_start": 13,
+      "verse_end": 13,
+      "text": "<a href=\"../2-Corinthians-13-13/\" title=\"2 Corinthians 13:13 KJV verse detail\"><span id=\"15\" class=\"versehover\">13  \"JESUS_END\"All the saints salute you."
+    },
+    {
+      "book_id": "2CO",
+      "book_name": "2 Corinthians",
+      "chapter": 13,
+      "verse_start": 14,
+      "verse_end": 14,
+      "text": "<a href=\"../2-Corinthians-13-14/\" title=\"2 Corinthians 13:14 KJV verse detail\"><span id=\"16\" class=\"versehover\">14  \"JESUS_END\"The grace of the Lord Jesus Christ, and the love of God, and the communion of the Holy Ghost, <em>be</em> with you all. Amen. (<em>The second <em>epistle</em> to the Corinthians was written from Philippi, <em>a city</em> of Macedonia, by Titus and Lucas.</em>)"
+    }
+  ]
+}

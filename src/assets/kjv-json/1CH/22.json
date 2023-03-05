@@ -1,1 +1,157 @@
-[{"book_id":"1CH","book_name_alt":"1 Chronicles","chapter":"22","verse_start":"1","verse_start_alt":"1","verse_end":"1","verse_end_alt":"1","verse_text":"Then David said, This is the house of the LORD God, and this is the altar of the burnt offering for Israel."},{"book_id":"1CH","book_name_alt":"1 Chronicles","chapter":"22","verse_start":"2","verse_start_alt":"2","verse_end":"2","verse_end_alt":"2","verse_text":"And David commanded to gather together the strangers that were in the land of Israel; and he set masons to hew wrought stones to build the house of God."},{"book_id":"1CH","book_name_alt":"1 Chronicles","chapter":"22","verse_start":"3","verse_start_alt":"3","verse_end":"3","verse_end_alt":"3","verse_text":"And David prepared iron in abundance for the nails for the doors of the gates, and for the joinings; and brass in abundance without weight;"},{"book_id":"1CH","book_name_alt":"1 Chronicles","chapter":"22","verse_start":"4","verse_start_alt":"4","verse_end":"4","verse_end_alt":"4","verse_text":"Also cedar trees in abundance: for the Zidonians and they of Tyre brought much cedar wood to David."},{"book_id":"1CH","book_name_alt":"1 Chronicles","chapter":"22","verse_start":"5","verse_start_alt":"5","verse_end":"5","verse_end_alt":"5","verse_text":"And David said, Solomon my son is young and tender, and the house that is to be builded for the LORD must be exceeding magnifical, of fame and of glory throughout all countries: I will therefore now make preparation for it. So David prepared abundantly before his death."},{"book_id":"1CH","book_name_alt":"1 Chronicles","chapter":"22","verse_start":"6","verse_start_alt":"6","verse_end":"6","verse_end_alt":"6","verse_text":"Then he called for Solomon his son, and charged him to build an house for the LORD God of Israel."},{"book_id":"1CH","book_name_alt":"1 Chronicles","chapter":"22","verse_start":"7","verse_start_alt":"7","verse_end":"7","verse_end_alt":"7","verse_text":"And David said to Solomon, My son, as for me, it was in my mind to build an house unto the name of the LORD my God:"},{"book_id":"1CH","book_name_alt":"1 Chronicles","chapter":"22","verse_start":"8","verse_start_alt":"8","verse_end":"8","verse_end_alt":"8","verse_text":"But the word of the LORD came to me, saying, Thou hast shed blood abundantly, and hast made great wars: thou shalt not build an house unto my name, because thou hast shed much blood upon the earth in my sight."},{"book_id":"1CH","book_name_alt":"1 Chronicles","chapter":"22","verse_start":"9","verse_start_alt":"9","verse_end":"9","verse_end_alt":"9","verse_text":"Behold, a son shall be born to thee, who shall be a man of rest; and I will give him rest from all his enemies round about: for his name shall be Solomon, and I will give peace and quietness unto Israel in his days."},{"book_id":"1CH","book_name_alt":"1 Chronicles","chapter":"22","verse_start":"10","verse_start_alt":"10","verse_end":"10","verse_end_alt":"10","verse_text":"He shall build an house for my name; and he shall be my son, and I will be his father; and I will establish the throne of his kingdom over Israel for ever."},{"book_id":"1CH","book_name_alt":"1 Chronicles","chapter":"22","verse_start":"11","verse_start_alt":"11","verse_end":"11","verse_end_alt":"11","verse_text":"Now, my son, the LORD be with thee; and prosper thou, and build the house of the LORD thy God, as he hath said of thee."},{"book_id":"1CH","book_name_alt":"1 Chronicles","chapter":"22","verse_start":"12","verse_start_alt":"12","verse_end":"12","verse_end_alt":"12","verse_text":"Only the LORD give thee wisdom and understanding, and give thee charge concerning Israel, that thou mayest keep the law of the LORD thy God."},{"book_id":"1CH","book_name_alt":"1 Chronicles","chapter":"22","verse_start":"13","verse_start_alt":"13","verse_end":"13","verse_end_alt":"13","verse_text":"Then shalt thou prosper, if thou takest heed to fulfil the statutes and judgments which the LORD charged Moses with concerning Israel: be strong, and of good courage; dread not, nor be dismayed."},{"book_id":"1CH","book_name_alt":"1 Chronicles","chapter":"22","verse_start":"14","verse_start_alt":"14","verse_end":"14","verse_end_alt":"14","verse_text":"Now, behold, in my trouble I have prepared for the house of the LORD an hundred thousand talents of gold, and a thousand thousand talents of silver; and of brass and iron without weight; for it is in abundance: timber also and stone have I prepared; and thou mayest add thereto."},{"book_id":"1CH","book_name_alt":"1 Chronicles","chapter":"22","verse_start":"15","verse_start_alt":"15","verse_end":"15","verse_end_alt":"15","verse_text":"Moreover there are workmen with thee in abundance, hewers and workers of stone and timber, and all manner of cunning men for every manner of work."},{"book_id":"1CH","book_name_alt":"1 Chronicles","chapter":"22","verse_start":"16","verse_start_alt":"16","verse_end":"16","verse_end_alt":"16","verse_text":"Of the gold, the silver, and the brass, and the iron, there is no number. Arise therefore, and be doing, and the LORD be with thee."},{"book_id":"1CH","book_name_alt":"1 Chronicles","chapter":"22","verse_start":"17","verse_start_alt":"17","verse_end":"17","verse_end_alt":"17","verse_text":"David also commanded all the princes of Israel to help Solomon his son, saying,"},{"book_id":"1CH","book_name_alt":"1 Chronicles","chapter":"22","verse_start":"18","verse_start_alt":"18","verse_end":"18","verse_end_alt":"18","verse_text":"Is not the LORD your God with you? and hath he not given you rest on every side? for he hath given the inhabitants of the land into mine hand; and the land is subdued before the LORD, and before his people."},{"book_id":"1CH","book_name_alt":"1 Chronicles","chapter":"22","verse_start":"19","verse_start_alt":"19","verse_end":"19","verse_end_alt":"19","verse_text":"Now set your heart and your soul to seek the LORD your God; arise therefore, and build ye the sanctuary of the LORD God, to bring the ark of the covenant of the LORD, and the holy vessels of God, into the house that is to be built to the name of the LORD."}]
+{
+  "info": "",
+  "verses": [
+    {
+      "book_id": "1CH",
+      "book_name": "1 Chronicles",
+      "chapter": 22,
+      "verse_start": 1,
+      "verse_end": 1,
+      "text": "<a href=\"../1-Chronicles-22-1/\" title=\"1 Chronicles 22:1 KJV verse detail\"><span id=\"3\" class=\"versehover\">1  \"JESUS_END\"Then David said, This <em>is</em> the house of the LORD God, and this <em>is</em> the altar of the burnt offering for Israel."
+    },
+    {
+      "book_id": "1CH",
+      "book_name": "1 Chronicles",
+      "chapter": 22,
+      "verse_start": 2,
+      "verse_end": 2,
+      "text": "<a href=\"../1-Chronicles-22-2/\" title=\"1 Chronicles 22:2 KJV verse detail\"><span id=\"4\" class=\"versehover\">2  \"JESUS_END\"And David commanded to gather together the strangers that <em>were</em> in the land of Israel; and he set masons to hew wrought stones to build the house of God."
+    },
+    {
+      "book_id": "1CH",
+      "book_name": "1 Chronicles",
+      "chapter": 22,
+      "verse_start": 3,
+      "verse_end": 3,
+      "text": "<a href=\"../1-Chronicles-22-3/\" title=\"1 Chronicles 22:3 KJV verse detail\"><span id=\"5\" class=\"versehover\">3  \"JESUS_END\"And David prepared iron in abundance for the nails for the doors of the gates, and for the joinings; and brass in abundance without weight;"
+    },
+    {
+      "book_id": "1CH",
+      "book_name": "1 Chronicles",
+      "chapter": 22,
+      "verse_start": 4,
+      "verse_end": 4,
+      "text": "<a href=\"../1-Chronicles-22-4/\" title=\"1 Chronicles 22:4 KJV verse detail\"><span id=\"6\" class=\"versehover\">4  \"JESUS_END\"Also cedar trees in abundance: for the Zidonians and they of Tyre brought much cedar wood to David."
+    },
+    {
+      "book_id": "1CH",
+      "book_name": "1 Chronicles",
+      "chapter": 22,
+      "verse_start": 5,
+      "verse_end": 5,
+      "text": "<a href=\"../1-Chronicles-22-5/\" title=\"1 Chronicles 22:5 KJV verse detail\"><span id=\"7\" class=\"versehover\">5  \"JESUS_END\"And David said, Solomon my son <em>is</em> young and tender, and the house <em>that is</em> to be builded for the LORD <em>must be</em> exceeding magnifical, of fame and of glory throughout all countries: I will <em>therefore</em> now make preparation for it. So David prepared abundantly before his death."
+    },
+    {
+      "book_id": "1CH",
+      "book_name": "1 Chronicles",
+      "chapter": 22,
+      "verse_start": 6,
+      "verse_end": 6,
+      "text": "<a href=\"../1-Chronicles-22-6/\" title=\"1 Chronicles 22:6 KJV verse detail\"><span id=\"8\" class=\"versehover\">6  \"JESUS_END\"Then he called for Solomon his son, and charged him to build an house for the LORD God of Israel."
+    },
+    {
+      "book_id": "1CH",
+      "book_name": "1 Chronicles",
+      "chapter": 22,
+      "verse_start": 7,
+      "verse_end": 7,
+      "text": "<a href=\"../1-Chronicles-22-7/\" title=\"1 Chronicles 22:7 KJV verse detail\"><span id=\"9\" class=\"versehover\">7  \"JESUS_END\"And David said to Solomon, My son, as for me, it was in my mind to build an house unto the name of the LORD my God:"
+    },
+    {
+      "book_id": "1CH",
+      "book_name": "1 Chronicles",
+      "chapter": 22,
+      "verse_start": 8,
+      "verse_end": 8,
+      "text": "<a href=\"../1-Chronicles-22-8/\" title=\"1 Chronicles 22:8 KJV verse detail\"><span id=\"10\" class=\"versehover\">8  \"JESUS_END\"But the word of the LORD came to me, saying, Thou hast shed blood abundantly, and hast made great wars: thou shalt not build an house unto my name, because thou hast shed much blood upon the earth in my sight."
+    },
+    {
+      "book_id": "1CH",
+      "book_name": "1 Chronicles",
+      "chapter": 22,
+      "verse_start": 9,
+      "verse_end": 9,
+      "text": "<a href=\"../1-Chronicles-22-9/\" title=\"1 Chronicles 22:9 KJV verse detail\"><span id=\"11\" class=\"versehover\">9  \"JESUS_END\"Behold, a son shall be born to thee, who shall be a man of rest; and I will give him rest from all his enemies round about: for his name shall be Solomon, and I will give peace and quietness unto Israel in his days."
+    },
+    {
+      "book_id": "1CH",
+      "book_name": "1 Chronicles",
+      "chapter": 22,
+      "verse_start": 10,
+      "verse_end": 10,
+      "text": "<a href=\"../1-Chronicles-22-10/\" title=\"1 Chronicles 22:10 KJV verse detail\"><span id=\"12\" class=\"versehover\">10  \"JESUS_END\"He shall build an house for my name; and he shall be my son, and I <em>will be</em> his father; and I will establish the throne of his kingdom over Israel for ever."
+    },
+    {
+      "book_id": "1CH",
+      "book_name": "1 Chronicles",
+      "chapter": 22,
+      "verse_start": 11,
+      "verse_end": 11,
+      "text": "<a href=\"../1-Chronicles-22-11/\" title=\"1 Chronicles 22:11 KJV verse detail\"><span id=\"13\" class=\"versehover\">11  \"JESUS_END\"Now, my son, the LORD be with thee; and prosper thou, and build the house of the LORD thy God, as he hath said of thee."
+    },
+    {
+      "book_id": "1CH",
+      "book_name": "1 Chronicles",
+      "chapter": 22,
+      "verse_start": 12,
+      "verse_end": 12,
+      "text": "<a href=\"../1-Chronicles-22-12/\" title=\"1 Chronicles 22:12 KJV verse detail\"><span id=\"14\" class=\"versehover\">12  \"JESUS_END\"Only the LORD give thee wisdom and understanding, and give thee charge concerning Israel, that thou mayest keep the law of the LORD thy God."
+    },
+    {
+      "book_id": "1CH",
+      "book_name": "1 Chronicles",
+      "chapter": 22,
+      "verse_start": 13,
+      "verse_end": 13,
+      "text": "<a href=\"../1-Chronicles-22-13/\" title=\"1 Chronicles 22:13 KJV verse detail\"><span id=\"15\" class=\"versehover\">13  \"JESUS_END\"Then shalt thou prosper, if thou takest heed to fulfil the statutes and judgments which the LORD charged Moses with concerning Israel: be strong, and of good courage; dread not, nor be dismayed."
+    },
+    {
+      "book_id": "1CH",
+      "book_name": "1 Chronicles",
+      "chapter": 22,
+      "verse_start": 14,
+      "verse_end": 14,
+      "text": "<a href=\"../1-Chronicles-22-14/\" title=\"1 Chronicles 22:14 KJV verse detail\"><span id=\"16\" class=\"versehover\">14  \"JESUS_END\"Now, behold, in my trouble I have prepared for the house of the LORD an hundred thousand talents of gold, and a thousand thousand talents of silver; and of brass and iron without weight; for it is in abundance: timber also and stone have I prepared; and thou mayest add thereto."
+    },
+    {
+      "book_id": "1CH",
+      "book_name": "1 Chronicles",
+      "chapter": 22,
+      "verse_start": 15,
+      "verse_end": 15,
+      "text": "<a href=\"../1-Chronicles-22-15/\" title=\"1 Chronicles 22:15 KJV verse detail\"><span id=\"17\" class=\"versehover\">15  \"JESUS_END\"Moreover <em>there are</em> workmen with thee in abundance, hewers and workers of stone and timber, and all manner of cunning men for every manner of work."
+    },
+    {
+      "book_id": "1CH",
+      "book_name": "1 Chronicles",
+      "chapter": 22,
+      "verse_start": 16,
+      "verse_end": 16,
+      "text": "<a href=\"../1-Chronicles-22-16/\" title=\"1 Chronicles 22:16 KJV verse detail\"><span id=\"18\" class=\"versehover\">16  \"JESUS_END\"Of the gold, the silver, and the brass, and the iron, <em>there is</em> no number. Arise <em>therefore</em>, and be doing, and the LORD be with thee."
+    },
+    {
+      "book_id": "1CH",
+      "book_name": "1 Chronicles",
+      "chapter": 22,
+      "verse_start": 17,
+      "verse_end": 17,
+      "text": "<a href=\"../1-Chronicles-22-17/\" title=\"1 Chronicles 22:17 KJV verse detail\"><span id=\"19\" class=\"versehover\">17  \"JESUS_END\"David also commanded all the princes of Israel to help Solomon his son, <em>saying</em>,"
+    },
+    {
+      "book_id": "1CH",
+      "book_name": "1 Chronicles",
+      "chapter": 22,
+      "verse_start": 18,
+      "verse_end": 18,
+      "text": "<a href=\"../1-Chronicles-22-18/\" title=\"1 Chronicles 22:18 KJV verse detail\"><span id=\"20\" class=\"versehover\">18  \"JESUS_END\"<em>Is</em> not the LORD your God with you? and hath he <em>not</em> given you rest on every side? for he hath given the inhabitants of the land into mine hand; and the land is subdued before the LORD, and before his people."
+    },
+    {
+      "book_id": "1CH",
+      "book_name": "1 Chronicles",
+      "chapter": 22,
+      "verse_start": 19,
+      "verse_end": 19,
+      "text": "<a href=\"../1-Chronicles-22-19/\" title=\"1 Chronicles 22:19 KJV verse detail\"><span id=\"21\" class=\"versehover\">19  \"JESUS_END\"Now set your heart and your soul to seek the LORD your God; arise therefore, and build ye the sanctuary of the LORD God, to bring the ark of the covenant of the LORD, and the holy vessels of God, into the house that is to be built to the name of the LORD."
+    }
+  ]
+}

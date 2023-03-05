@@ -1,1 +1,117 @@
-[{"book_id":"ISA","book_name_alt":"Isaiah","chapter":"16","verse_start":"1","verse_start_alt":"1","verse_end":"1","verse_end_alt":"1","verse_text":"Send ye the lamb to the ruler of the land from Sela to the wilderness, unto the mount of the daughter of Zion."},{"book_id":"ISA","book_name_alt":"Isaiah","chapter":"16","verse_start":"2","verse_start_alt":"2","verse_end":"2","verse_end_alt":"2","verse_text":"For it shall be, that, as a wandering bird cast out of the nest, so the daughters of Moab shall be at the fords of Arnon."},{"book_id":"ISA","book_name_alt":"Isaiah","chapter":"16","verse_start":"3","verse_start_alt":"3","verse_end":"3","verse_end_alt":"3","verse_text":"Take counsel, execute judgment; make thy shadow as the night in the midst of the noonday; hide the outcasts; bewray not him that wandereth."},{"book_id":"ISA","book_name_alt":"Isaiah","chapter":"16","verse_start":"4","verse_start_alt":"4","verse_end":"4","verse_end_alt":"4","verse_text":"Let mine outcasts dwell with thee, Moab; be thou a covert to them from the face of the spoiler: for the extortioner is at an end, the spoiler ceaseth, the oppressors are consumed out of the land."},{"book_id":"ISA","book_name_alt":"Isaiah","chapter":"16","verse_start":"5","verse_start_alt":"5","verse_end":"5","verse_end_alt":"5","verse_text":"And in mercy shall the throne be established: and he shall sit upon it in truth in the tabernacle of David, judging, and seeking judgment, and hasting righteousness."},{"book_id":"ISA","book_name_alt":"Isaiah","chapter":"16","verse_start":"6","verse_start_alt":"6","verse_end":"6","verse_end_alt":"6","verse_text":"We have heard of the pride of Moab; he is very proud: even of his haughtiness, and his pride, and his wrath: but his lies shall not be so."},{"book_id":"ISA","book_name_alt":"Isaiah","chapter":"16","verse_start":"7","verse_start_alt":"7","verse_end":"7","verse_end_alt":"7","verse_text":"Therefore shall Moab howl for Moab, every one shall howl: for the foundations of Kirhareseth shall ye mourn; surely they are stricken."},{"book_id":"ISA","book_name_alt":"Isaiah","chapter":"16","verse_start":"8","verse_start_alt":"8","verse_end":"8","verse_end_alt":"8","verse_text":"For the fields of Heshbon languish, and the vine of Sibmah: the lords of the heathen have broken down the principal plants thereof, they are come even unto Jazer, they wandered through the wilderness: her branches are stretched out, they are gone over the sea."},{"book_id":"ISA","book_name_alt":"Isaiah","chapter":"16","verse_start":"9","verse_start_alt":"9","verse_end":"9","verse_end_alt":"9","verse_text":"Therefore I will bewail with the weeping of Jazer the vine of Sibmah: I will water thee with my tears, O Heshbon, and Elealeh: for the shouting for thy summer fruits and for thy harvest is fallen."},{"book_id":"ISA","book_name_alt":"Isaiah","chapter":"16","verse_start":"10","verse_start_alt":"10","verse_end":"10","verse_end_alt":"10","verse_text":"And gladness is taken away, and joy out of the plentiful field; and in the vineyards there shall be no singing, neither shall there be shouting: the treaders shall tread out no wine in their presses; I have made their vintage shouting to cease."},{"book_id":"ISA","book_name_alt":"Isaiah","chapter":"16","verse_start":"11","verse_start_alt":"11","verse_end":"11","verse_end_alt":"11","verse_text":"Wherefore my bowels shall sound like an harp for Moab, and mine inward parts for Kirharesh."},{"book_id":"ISA","book_name_alt":"Isaiah","chapter":"16","verse_start":"12","verse_start_alt":"12","verse_end":"12","verse_end_alt":"12","verse_text":"And it shall come to pass, when it is seen that Moab is weary on the high place, that he shall come to his sanctuary to pray; but he shall not prevail."},{"book_id":"ISA","book_name_alt":"Isaiah","chapter":"16","verse_start":"13","verse_start_alt":"13","verse_end":"13","verse_end_alt":"13","verse_text":"This is the word that the LORD hath spoken concerning Moab since that time."},{"book_id":"ISA","book_name_alt":"Isaiah","chapter":"16","verse_start":"14","verse_start_alt":"14","verse_end":"14","verse_end_alt":"14","verse_text":"But now the LORD hath spoken, saying, Within three years, as the years of an hireling, and the glory of Moab shall be contemned, with all that great multitude; and the remnant shall be very small and feeble."}]
+{
+  "info": "",
+  "verses": [
+    {
+      "book_id": "ISA",
+      "book_name": "Isaiah",
+      "chapter": 16,
+      "verse_start": 1,
+      "verse_end": 1,
+      "text": "Send ye the lamb to the ruler of the land from Sela to the wilderness, unto the mount of the daughter of Zion."
+    },
+    {
+      "book_id": "ISA",
+      "book_name": "Isaiah",
+      "chapter": 16,
+      "verse_start": 2,
+      "verse_end": 2,
+      "text": "For it shall be, <em>that</em>, as a wandering bird cast out of the nest, <em>so</em> the daughters of Moab shall be at the fords of Arnon."
+    },
+    {
+      "book_id": "ISA",
+      "book_name": "Isaiah",
+      "chapter": 16,
+      "verse_start": 3,
+      "verse_end": 3,
+      "text": "Take counsel, execute judgment; make thy shadow as the night in the midst of the noonday; hide the outcasts; bewray not him that wandereth."
+    },
+    {
+      "book_id": "ISA",
+      "book_name": "Isaiah",
+      "chapter": 16,
+      "verse_start": 4,
+      "verse_end": 4,
+      "text": "Let mine outcasts dwell with thee, Moab; be thou a covert to them from the face of the spoiler: for the extortioner is at an end, the spoiler ceaseth, the oppressors are consumed out of the land."
+    },
+    {
+      "book_id": "ISA",
+      "book_name": "Isaiah",
+      "chapter": 16,
+      "verse_start": 5,
+      "verse_end": 5,
+      "text": "And in mercy shall the throne be established: and he shall sit upon it in truth in the tabernacle of David, judging, and seeking judgment, and hasting righteousness."
+    },
+    {
+      "book_id": "ISA",
+      "book_name": "Isaiah",
+      "chapter": 16,
+      "verse_start": 6,
+      "verse_end": 6,
+      "text": "We have heard of the pride of Moab; <em>he is</em> very proud: <em>even</em> of his haughtiness, and his pride, and his wrath: <em>but</em> his lies <em>shall</em> not <em>be</em> so."
+    },
+    {
+      "book_id": "ISA",
+      "book_name": "Isaiah",
+      "chapter": 16,
+      "verse_start": 7,
+      "verse_end": 7,
+      "text": "Therefore shall Moab howl for Moab, every one shall howl: for the foundations of Kirhareseth shall ye mourn; surely <em>they are</em> stricken."
+    },
+    {
+      "book_id": "ISA",
+      "book_name": "Isaiah",
+      "chapter": 16,
+      "verse_start": 8,
+      "verse_end": 8,
+      "text": "For the fields of Heshbon languish, <em>and</em> the vine of Sibmah: the lords of the heathen have broken down the principal plants thereof, they are come <em>even</em> unto Jazer, they wandered <em>through</em> the wilderness: her branches are stretched out, they are gone over the sea."
+    },
+    {
+      "book_id": "ISA",
+      "book_name": "Isaiah",
+      "chapter": 16,
+      "verse_start": 9,
+      "verse_end": 9,
+      "text": "Therefore I will bewail with the weeping of Jazer the vine of Sibmah: I will water thee with my tears, O Heshbon, and Elealeh: for the shouting for thy summer fruits and for thy harvest is fallen."
+    },
+    {
+      "book_id": "ISA",
+      "book_name": "Isaiah",
+      "chapter": 16,
+      "verse_start": 10,
+      "verse_end": 10,
+      "text": "And gladness is taken away, and joy out of the plentiful field; and in the vineyards there shall be no singing, neither shall there be shouting: the treaders shall tread out no wine in <em>their</em> presses; I have made <em>their vintage</em> shouting to cease."
+    },
+    {
+      "book_id": "ISA",
+      "book_name": "Isaiah",
+      "chapter": 16,
+      "verse_start": 11,
+      "verse_end": 11,
+      "text": "Wherefore my bowels shall sound like an harp for Moab, and mine inward parts for Kirharesh."
+    },
+    {
+      "book_id": "ISA",
+      "book_name": "Isaiah",
+      "chapter": 16,
+      "verse_start": 12,
+      "verse_end": 12,
+      "text": "And it shall come to pass, when it is seen that Moab is weary on the high place, that he shall come to his sanctuary to pray; but he shall not prevail."
+    },
+    {
+      "book_id": "ISA",
+      "book_name": "Isaiah",
+      "chapter": 16,
+      "verse_start": 13,
+      "verse_end": 13,
+      "text": "This <em>is</em> the word that the LORD hath spoken concerning Moab since that time."
+    },
+    {
+      "book_id": "ISA",
+      "book_name": "Isaiah",
+      "chapter": 16,
+      "verse_start": 14,
+      "verse_end": 14,
+      "text": "But now the LORD hath spoken, saying, Within three years, as the years of an hireling, and the glory of Moab shall be contemned, with all that great multitude; and the remnant <em>shall be</em> very small <em>and</em> feeble."
+    }
+  ]
+}

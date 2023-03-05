@@ -1,1 +1,93 @@
-[{"book_id":"1SA","book_name_alt":"1 Samuel","chapter":"29","verse_start":"1","verse_start_alt":"1","verse_end":"1","verse_end_alt":"1","verse_text":"Now the Philistines gathered together all their armies to Aphek: and the Israelites pitched by a fountain which is in Jezreel."},{"book_id":"1SA","book_name_alt":"1 Samuel","chapter":"29","verse_start":"2","verse_start_alt":"2","verse_end":"2","verse_end_alt":"2","verse_text":"And the lords of the Philistines passed on by hundreds, and by thousands: but David and his men passed on in the rereward with Achish."},{"book_id":"1SA","book_name_alt":"1 Samuel","chapter":"29","verse_start":"3","verse_start_alt":"3","verse_end":"3","verse_end_alt":"3","verse_text":"Then said the princes of the Philistines, What do these Hebrews here? And Achish said unto the princes of the Philistines, Is not this David, the servant of Saul the king of Israel, which hath been with me these days, or these years, and I have found no fault in him since he fell unto me unto this day?"},{"book_id":"1SA","book_name_alt":"1 Samuel","chapter":"29","verse_start":"4","verse_start_alt":"4","verse_end":"4","verse_end_alt":"4","verse_text":"And the princes of the Philistines were wroth with him; and the princes of the Philistines said unto him, Make this fellow return, that he may go again to his place which thou hast appointed him, and let him not go down with us to battle, lest in the battle he be an adversary to us: for wherewith should he reconcile himself unto his master? should it not be with the heads of these men?"},{"book_id":"1SA","book_name_alt":"1 Samuel","chapter":"29","verse_start":"5","verse_start_alt":"5","verse_end":"5","verse_end_alt":"5","verse_text":"Is not this David, of whom they sang one to another in dances, saying, Saul slew his thousands, and David his ten thousands?"},{"book_id":"1SA","book_name_alt":"1 Samuel","chapter":"29","verse_start":"6","verse_start_alt":"6","verse_end":"6","verse_end_alt":"6","verse_text":"Then Achish called David, and said unto him, Surely, as the LORD liveth, thou hast been upright, and thy going out and thy coming in with me in the host is good in my sight: for I have not found evil in thee since the day of thy coming unto me unto this day: nevertheless the lords favour thee not."},{"book_id":"1SA","book_name_alt":"1 Samuel","chapter":"29","verse_start":"7","verse_start_alt":"7","verse_end":"7","verse_end_alt":"7","verse_text":"Wherefore now return, and go in peace, that thou displease not the lords of the Philistines."},{"book_id":"1SA","book_name_alt":"1 Samuel","chapter":"29","verse_start":"8","verse_start_alt":"8","verse_end":"8","verse_end_alt":"8","verse_text":"And David said unto Achish, But what have I done? and what hast thou found in thy servant so long as I have been with thee unto this day, that I may not go fight against the enemies of my lord the king?"},{"book_id":"1SA","book_name_alt":"1 Samuel","chapter":"29","verse_start":"9","verse_start_alt":"9","verse_end":"9","verse_end_alt":"9","verse_text":"And Achish answered and said to David, I know that thou art good in my sight, as an angel of God: notwithstanding the princes of the Philistines have said, He shall not go up with us to the battle."},{"book_id":"1SA","book_name_alt":"1 Samuel","chapter":"29","verse_start":"10","verse_start_alt":"10","verse_end":"10","verse_end_alt":"10","verse_text":"Wherefore now rise up early in the morning with thy master’s servants that are come with thee: and as soon as ye be up early in the morning, and have light, depart."},{"book_id":"1SA","book_name_alt":"1 Samuel","chapter":"29","verse_start":"11","verse_start_alt":"11","verse_end":"11","verse_end_alt":"11","verse_text":"So David and his men rose up early to depart in the morning, to return into the land of the Philistines. And the Philistines went up to Jezreel."}]
+{
+  "info": "",
+  "verses": [
+    {
+      "book_id": "1SA",
+      "book_name": "1 Samuel",
+      "chapter": 29,
+      "verse_start": 1,
+      "verse_end": 1,
+      "text": "<a href=\"../1-Samuel-29-1/\" title=\"1 Samuel 29:1 KJV verse detail\"><span id=\"3\" class=\"versehover\">1  \"JESUS_END\"Now the Philistines gathered together all their armies to Aphek: and the Israelites pitched by a fountain which <em>is</em> in Jezreel."
+    },
+    {
+      "book_id": "1SA",
+      "book_name": "1 Samuel",
+      "chapter": 29,
+      "verse_start": 2,
+      "verse_end": 2,
+      "text": "<a href=\"../1-Samuel-29-2/\" title=\"1 Samuel 29:2 KJV verse detail\"><span id=\"4\" class=\"versehover\">2  \"JESUS_END\"And the lords of the Philistines passed on by hundreds, and by thousands: but David and his men passed on in the rereward with Achish."
+    },
+    {
+      "book_id": "1SA",
+      "book_name": "1 Samuel",
+      "chapter": 29,
+      "verse_start": 3,
+      "verse_end": 3,
+      "text": "<a href=\"../1-Samuel-29-3/\" title=\"1 Samuel 29:3 KJV verse detail\"><span id=\"5\" class=\"versehover\">3  \"JESUS_END\"Then said the princes of the Philistines, What <em>do</em> these Hebrews <em>here</em>? And Achish said unto the princes of the Philistines, <em>Is</em> not this David, the servant of Saul the king of Israel, which hath been with me these days, or these years, and I have found no fault in him since he fell <em>unto me</em> unto this day?"
+    },
+    {
+      "book_id": "1SA",
+      "book_name": "1 Samuel",
+      "chapter": 29,
+      "verse_start": 4,
+      "verse_end": 4,
+      "text": "<a href=\"../1-Samuel-29-4/\" title=\"1 Samuel 29:4 KJV verse detail\"><span id=\"6\" class=\"versehover\">4  \"JESUS_END\"And the princes of the Philistines were wroth with him; and the princes of the Philistines said unto him, Make this fellow return, that he may go again to his place which thou hast appointed him, and let him not go down with us to battle, lest in the battle he be an adversary to us: for wherewith should he reconcile himself unto his master? <em>should it</em> not <em>be</em> with the heads of these men?"
+    },
+    {
+      "book_id": "1SA",
+      "book_name": "1 Samuel",
+      "chapter": 29,
+      "verse_start": 5,
+      "verse_end": 5,
+      "text": "<a href=\"../1-Samuel-29-5/\" title=\"1 Samuel 29:5 KJV verse detail\"><span id=\"7\" class=\"versehover\">5  \"JESUS_END\"<em>Is</em> not this David, of whom they sang one to another in dances, saying, Saul slew his thousands, and David his ten thousands?"
+    },
+    {
+      "book_id": "1SA",
+      "book_name": "1 Samuel",
+      "chapter": 29,
+      "verse_start": 6,
+      "verse_end": 6,
+      "text": "<a href=\"../1-Samuel-29-6/\" title=\"1 Samuel 29:6 KJV verse detail\"><span id=\"8\" class=\"versehover\">6  \"JESUS_END\"Then Achish called David, and said unto him, Surely, <em>as</em> the LORD liveth, thou hast been upright, and thy going out and thy coming in with me in the host <em>is</em> good in my sight: for I have not found evil in thee since the day of thy coming unto me unto this day: nevertheless the lords favour thee not."
+    },
+    {
+      "book_id": "1SA",
+      "book_name": "1 Samuel",
+      "chapter": 29,
+      "verse_start": 7,
+      "verse_end": 7,
+      "text": "<a href=\"../1-Samuel-29-7/\" title=\"1 Samuel 29:7 KJV verse detail\"><span id=\"9\" class=\"versehover\">7  \"JESUS_END\"Wherefore now return, and go in peace, that thou displease not the lords of the Philistines."
+    },
+    {
+      "book_id": "1SA",
+      "book_name": "1 Samuel",
+      "chapter": 29,
+      "verse_start": 8,
+      "verse_end": 8,
+      "text": "<a href=\"../1-Samuel-29-8/\" title=\"1 Samuel 29:8 KJV verse detail\"><span id=\"10\" class=\"versehover\">8  \"JESUS_END\"And David said unto Achish, But what have I done? and what hast thou found in thy servant so long as I have been with thee unto this day, that I may not go fight against the enemies of my lord the king?"
+    },
+    {
+      "book_id": "1SA",
+      "book_name": "1 Samuel",
+      "chapter": 29,
+      "verse_start": 9,
+      "verse_end": 9,
+      "text": "<a href=\"../1-Samuel-29-9/\" title=\"1 Samuel 29:9 KJV verse detail\"><span id=\"11\" class=\"versehover\">9  \"JESUS_END\"And Achish answered and said to David, I know that thou <em>art</em> good in my sight, as an angel of God: notwithstanding the princes of the Philistines have said, He shall not go up with us to the battle."
+    },
+    {
+      "book_id": "1SA",
+      "book_name": "1 Samuel",
+      "chapter": 29,
+      "verse_start": 10,
+      "verse_end": 10,
+      "text": "<a href=\"../1-Samuel-29-10/\" title=\"1 Samuel 29:10 KJV verse detail\"><span id=\"12\" class=\"versehover\">10  \"JESUS_END\"Wherefore now rise up early in the morning with thy master's servants that are come with thee: and as soon as ye be up early in the morning, and have light, depart."
+    },
+    {
+      "book_id": "1SA",
+      "book_name": "1 Samuel",
+      "chapter": 29,
+      "verse_start": 11,
+      "verse_end": 11,
+      "text": "<a href=\"../1-Samuel-29-11/\" title=\"1 Samuel 29:11 KJV verse detail\"><span id=\"13\" class=\"versehover\">11  \"JESUS_END\"So David and his men rose up early to depart in the morning, to return into the land of the Philistines. And the Philistines went up to Jezreel."
+    }
+  ]
+}

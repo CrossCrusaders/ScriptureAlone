@@ -1,1 +1,173 @@
-[{"book_id":"2PE","book_name_alt":"2 Peter","chapter":"1","verse_start":"1","verse_start_alt":"1","verse_end":"1","verse_end_alt":"1","verse_text":"Simon Peter, a servant and an apostle of Jesus Christ, to them that have obtained like precious faith with us through the righteousness of God and our Saviour Jesus Christ:"},{"book_id":"2PE","book_name_alt":"2 Peter","chapter":"1","verse_start":"2","verse_start_alt":"2","verse_end":"2","verse_end_alt":"2","verse_text":"Grace and peace be multiplied unto you through the knowledge of God, and of Jesus our Lord,"},{"book_id":"2PE","book_name_alt":"2 Peter","chapter":"1","verse_start":"3","verse_start_alt":"3","verse_end":"3","verse_end_alt":"3","verse_text":"According as his divine power hath given unto us all things that pertain unto life and godliness, through the knowledge of him that hath called us to glory and virtue:"},{"book_id":"2PE","book_name_alt":"2 Peter","chapter":"1","verse_start":"4","verse_start_alt":"4","verse_end":"4","verse_end_alt":"4","verse_text":"Whereby are given unto us exceeding great and precious promises: that by these ye might be partakers of the divine nature, having escaped the corruption that is in the world through lust."},{"book_id":"2PE","book_name_alt":"2 Peter","chapter":"1","verse_start":"5","verse_start_alt":"5","verse_end":"5","verse_end_alt":"5","verse_text":"And beside this, giving all diligence, add to your faith virtue; and to virtue knowledge;"},{"book_id":"2PE","book_name_alt":"2 Peter","chapter":"1","verse_start":"6","verse_start_alt":"6","verse_end":"6","verse_end_alt":"6","verse_text":"And to knowledge temperance; and to temperance patience; and to patience godliness;"},{"book_id":"2PE","book_name_alt":"2 Peter","chapter":"1","verse_start":"7","verse_start_alt":"7","verse_end":"7","verse_end_alt":"7","verse_text":"And to godliness brotherly kindness; and to brotherly kindness charity."},{"book_id":"2PE","book_name_alt":"2 Peter","chapter":"1","verse_start":"8","verse_start_alt":"8","verse_end":"8","verse_end_alt":"8","verse_text":"For if these things be in you, and abound, they make you that ye shall neither be barren nor unfruitful in the knowledge of our Lord Jesus Christ."},{"book_id":"2PE","book_name_alt":"2 Peter","chapter":"1","verse_start":"9","verse_start_alt":"9","verse_end":"9","verse_end_alt":"9","verse_text":"But he that lacketh these things is blind, and cannot see afar off, and hath forgotten that he was purged from his old sins."},{"book_id":"2PE","book_name_alt":"2 Peter","chapter":"1","verse_start":"10","verse_start_alt":"10","verse_end":"10","verse_end_alt":"10","verse_text":"Wherefore the rather, brethren, give diligence to make your calling and election sure: for if ye do these things, ye shall never fall:"},{"book_id":"2PE","book_name_alt":"2 Peter","chapter":"1","verse_start":"11","verse_start_alt":"11","verse_end":"11","verse_end_alt":"11","verse_text":"For so an entrance shall be ministered unto you abundantly into the everlasting kingdom of our Lord and Saviour Jesus Christ."},{"book_id":"2PE","book_name_alt":"2 Peter","chapter":"1","verse_start":"12","verse_start_alt":"12","verse_end":"12","verse_end_alt":"12","verse_text":"Wherefore I will not be negligent to put you always in remembrance of these things, though ye know them, and be established in the present truth."},{"book_id":"2PE","book_name_alt":"2 Peter","chapter":"1","verse_start":"13","verse_start_alt":"13","verse_end":"13","verse_end_alt":"13","verse_text":"Yea, I think it meet, as long as I am in this tabernacle, to stir you up by putting you in remembrance;"},{"book_id":"2PE","book_name_alt":"2 Peter","chapter":"1","verse_start":"14","verse_start_alt":"14","verse_end":"14","verse_end_alt":"14","verse_text":"Knowing that shortly I must put off this my tabernacle, even as our Lord Jesus Christ hath shewed me."},{"book_id":"2PE","book_name_alt":"2 Peter","chapter":"1","verse_start":"15","verse_start_alt":"15","verse_end":"15","verse_end_alt":"15","verse_text":"Moreover I will endeavour that ye may be able after my decease to have these things always in remembrance."},{"book_id":"2PE","book_name_alt":"2 Peter","chapter":"1","verse_start":"16","verse_start_alt":"16","verse_end":"16","verse_end_alt":"16","verse_text":"For we have not followed cunningly devised fables, when we made known unto you the power and coming of our Lord Jesus Christ, but were eyewitnesses of his majesty."},{"book_id":"2PE","book_name_alt":"2 Peter","chapter":"1","verse_start":"17","verse_start_alt":"17","verse_end":"17","verse_end_alt":"17","verse_text":"For he received from God the Father honour and glory, when there came such a voice to him from the excellent glory, This is my beloved Son, in whom I am well pleased."},{"book_id":"2PE","book_name_alt":"2 Peter","chapter":"1","verse_start":"18","verse_start_alt":"18","verse_end":"18","verse_end_alt":"18","verse_text":"And this voice which came from heaven we heard, when we were with him in the holy mount."},{"book_id":"2PE","book_name_alt":"2 Peter","chapter":"1","verse_start":"19","verse_start_alt":"19","verse_end":"19","verse_end_alt":"19","verse_text":"We have also a more sure word of prophecy; whereunto ye do well that ye take heed, as unto a light that shineth in a dark place, until the day dawn, and the day star arise in your hearts:"},{"book_id":"2PE","book_name_alt":"2 Peter","chapter":"1","verse_start":"20","verse_start_alt":"20","verse_end":"20","verse_end_alt":"20","verse_text":"Knowing this first, that no prophecy of the scripture is of any private interpretation."},{"book_id":"2PE","book_name_alt":"2 Peter","chapter":"1","verse_start":"21","verse_start_alt":"21","verse_end":"21","verse_end_alt":"21","verse_text":"For the prophecy came not in old time by the will of man: but holy men of God spake as they were moved by the Holy Ghost."}]
+{
+  "info": "",
+  "verses": [
+    {
+      "book_id": "2PE",
+      "book_name": "2 Peter",
+      "chapter": 1,
+      "verse_start": 1,
+      "verse_end": 1,
+      "text": "<a href=\"../2-Peter-1-1/\" title=\"2 Peter 1:1 KJV verse detail\"><span id=\"3\" class=\"versehover\">1  \"JESUS_END\"Simon Peter, a servant and an apostle of Jesus Christ, to them that have obtained like precious faith with us through the righteousness of God and our Saviour Jesus Christ:"
+    },
+    {
+      "book_id": "2PE",
+      "book_name": "2 Peter",
+      "chapter": 1,
+      "verse_start": 2,
+      "verse_end": 2,
+      "text": "<a href=\"../2-Peter-1-2/\" title=\"2 Peter 1:2 KJV verse detail\"><span id=\"4\" class=\"versehover\">2  \"JESUS_END\"Grace and peace be multiplied unto you through the knowledge of God, and of Jesus our Lord,"
+    },
+    {
+      "book_id": "2PE",
+      "book_name": "2 Peter",
+      "chapter": 1,
+      "verse_start": 3,
+      "verse_end": 3,
+      "text": "<a href=\"../2-Peter-1-3/\" title=\"2 Peter 1:3 KJV verse detail\"><span id=\"5\" class=\"versehover\">3  \"JESUS_END\"According as his divine power hath given unto us all things that <em>pertain</em> unto life and godliness, through the knowledge of him that hath called us to glory and virtue:"
+    },
+    {
+      "book_id": "2PE",
+      "book_name": "2 Peter",
+      "chapter": 1,
+      "verse_start": 4,
+      "verse_end": 4,
+      "text": "<a href=\"../2-Peter-1-4/\" title=\"2 Peter 1:4 KJV verse detail\"><span id=\"6\" class=\"versehover\">4  \"JESUS_END\"Whereby are given unto us exceeding great and precious promises: that by these ye might be partakers of the divine nature, having escaped the corruption that is in the world through lust."
+    },
+    {
+      "book_id": "2PE",
+      "book_name": "2 Peter",
+      "chapter": 1,
+      "verse_start": 5,
+      "verse_end": 5,
+      "text": "<a href=\"../2-Peter-1-5/\" title=\"2 Peter 1:5 KJV verse detail\"><span id=\"7\" class=\"versehover\">5  \"JESUS_END\"And beside this, giving all diligence, add to your faith virtue; and to virtue knowledge;"
+    },
+    {
+      "book_id": "2PE",
+      "book_name": "2 Peter",
+      "chapter": 1,
+      "verse_start": 6,
+      "verse_end": 6,
+      "text": "<a href=\"../2-Peter-1-6/\" title=\"2 Peter 1:6 KJV verse detail\"><span id=\"8\" class=\"versehover\">6  \"JESUS_END\"And to knowledge temperance; and to temperance patience; and to patience godliness;"
+    },
+    {
+      "book_id": "2PE",
+      "book_name": "2 Peter",
+      "chapter": 1,
+      "verse_start": 7,
+      "verse_end": 7,
+      "text": "<a href=\"../2-Peter-1-7/\" title=\"2 Peter 1:7 KJV verse detail\"><span id=\"9\" class=\"versehover\">7  \"JESUS_END\"And to godliness brotherly kindness; and to brotherly kindness charity."
+    },
+    {
+      "book_id": "2PE",
+      "book_name": "2 Peter",
+      "chapter": 1,
+      "verse_start": 8,
+      "verse_end": 8,
+      "text": "<a href=\"../2-Peter-1-8/\" title=\"2 Peter 1:8 KJV verse detail\"><span id=\"10\" class=\"versehover\">8  \"JESUS_END\"For if these things be in you, and abound, they make <em>you that ye shall</em> neither <em>be</em> barren nor unfruitful in the knowledge of our Lord Jesus Christ."
+    },
+    {
+      "book_id": "2PE",
+      "book_name": "2 Peter",
+      "chapter": 1,
+      "verse_start": 9,
+      "verse_end": 9,
+      "text": "<a href=\"../2-Peter-1-9/\" title=\"2 Peter 1:9 KJV verse detail\"><span id=\"11\" class=\"versehover\">9  \"JESUS_END\"But he that lacketh these things is blind, and cannot see afar off, and hath forgotten that he was purged from his old sins."
+    },
+    {
+      "book_id": "2PE",
+      "book_name": "2 Peter",
+      "chapter": 1,
+      "verse_start": 10,
+      "verse_end": 10,
+      "text": "<a href=\"../2-Peter-1-10/\" title=\"2 Peter 1:10 KJV verse detail\"><span id=\"12\" class=\"versehover\">10  \"JESUS_END\"Wherefore the rather, brethren, give diligence to make your calling and election sure: for if ye do these things, ye shall never fall:"
+    },
+    {
+      "book_id": "2PE",
+      "book_name": "2 Peter",
+      "chapter": 1,
+      "verse_start": 11,
+      "verse_end": 11,
+      "text": "<a href=\"../2-Peter-1-11/\" title=\"2 Peter 1:11 KJV verse detail\"><span id=\"13\" class=\"versehover\">11  \"JESUS_END\"For so an entrance shall be ministered unto you abundantly into the everlasting kingdom of our Lord and Saviour Jesus Christ."
+    },
+    {
+      "book_id": "2PE",
+      "book_name": "2 Peter",
+      "chapter": 1,
+      "verse_start": 12,
+      "verse_end": 12,
+      "text": "<a href=\"../2-Peter-1-12/\" title=\"2 Peter 1:12 KJV verse detail\"><span id=\"14\" class=\"versehover\">12  \"JESUS_END\"Wherefore I will not be negligent to put you always in remembrance of these things, though ye know <em>them</em>, and be established in the present truth."
+    },
+    {
+      "book_id": "2PE",
+      "book_name": "2 Peter",
+      "chapter": 1,
+      "verse_start": 13,
+      "verse_end": 13,
+      "text": "<a href=\"../2-Peter-1-13/\" title=\"2 Peter 1:13 KJV verse detail\"><span id=\"15\" class=\"versehover\">13  \"JESUS_END\"Yea, I think it meet, as long as I am in this tabernacle, to stir you up by putting <em>you</em> in remembrance;"
+    },
+    {
+      "book_id": "2PE",
+      "book_name": "2 Peter",
+      "chapter": 1,
+      "verse_start": 14,
+      "verse_end": 14,
+      "text": "<a href=\"../2-Peter-1-14/\" title=\"2 Peter 1:14 KJV verse detail\"><span id=\"16\" class=\"versehover\">14  \"JESUS_END\"Knowing that shortly I must put off <em>this</em> my tabernacle, even as our Lord Jesus Christ hath shewed me."
+    },
+    {
+      "book_id": "2PE",
+      "book_name": "2 Peter",
+      "chapter": 1,
+      "verse_start": 15,
+      "verse_end": 15,
+      "text": "<a href=\"../2-Peter-1-15/\" title=\"2 Peter 1:15 KJV verse detail\"><span id=\"17\" class=\"versehover\">15  \"JESUS_END\"Moreover I will endeavour that ye may be able after my decease to have these things always in remembrance."
+    },
+    {
+      "book_id": "2PE",
+      "book_name": "2 Peter",
+      "chapter": 1,
+      "verse_start": 16,
+      "verse_end": 16,
+      "text": "<a href=\"../2-Peter-1-16/\" title=\"2 Peter 1:16 KJV verse detail\"><span id=\"18\" class=\"versehover\">16  \"JESUS_END\"For we have not followed cunningly devised fables, when we made known unto you the power and coming of our Lord Jesus Christ, but were eyewitnesses of his majesty."
+    },
+    {
+      "book_id": "2PE",
+      "book_name": "2 Peter",
+      "chapter": 1,
+      "verse_start": 17,
+      "verse_end": 17,
+      "text": "<a href=\"../2-Peter-1-17/\" title=\"2 Peter 1:17 KJV verse detail\"><span id=\"19\" class=\"versehover\">17  \"JESUS_END\"For he received from God the Father honour and glory, when there came such a voice to him from the excellent glory, This is my beloved Son, in whom I am well pleased."
+    },
+    {
+      "book_id": "2PE",
+      "book_name": "2 Peter",
+      "chapter": 1,
+      "verse_start": 18,
+      "verse_end": 18,
+      "text": "<a href=\"../2-Peter-1-18/\" title=\"2 Peter 1:18 KJV verse detail\"><span id=\"20\" class=\"versehover\">18  \"JESUS_END\"And this voice which came from heaven we heard, when we were with him in the holy mount."
+    },
+    {
+      "book_id": "2PE",
+      "book_name": "2 Peter",
+      "chapter": 1,
+      "verse_start": 19,
+      "verse_end": 19,
+      "text": "<a href=\"../2-Peter-1-19/\" title=\"2 Peter 1:19 KJV verse detail\"><span id=\"21\" class=\"versehover\">19  \"JESUS_END\"We have also a more sure word of prophecy; whereunto ye do well that ye take heed, as unto a light that shineth in a dark place, until the day dawn, and the day star arise in your hearts:"
+    },
+    {
+      "book_id": "2PE",
+      "book_name": "2 Peter",
+      "chapter": 1,
+      "verse_start": 20,
+      "verse_end": 20,
+      "text": "<a href=\"../2-Peter-1-20/\" title=\"2 Peter 1:20 KJV verse detail\"><span id=\"22\" class=\"versehover\">20  \"JESUS_END\"Knowing this first, that no prophecy of the scripture is of any private interpretation."
+    },
+    {
+      "book_id": "2PE",
+      "book_name": "2 Peter",
+      "chapter": 1,
+      "verse_start": 21,
+      "verse_end": 21,
+      "text": "<a href=\"../2-Peter-1-21/\" title=\"2 Peter 1:21 KJV verse detail\"><span id=\"23\" class=\"versehover\">21  \"JESUS_END\"For the prophecy came not in old time by the will of man: but holy men of God spake <em>as they were</em> moved by the Holy Ghost."
+    }
+  ]
+}

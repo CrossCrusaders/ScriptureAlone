@@ -1,1 +1,141 @@
-[{"book_id":"2TH","book_name_alt":"2 Thessalonians","chapter":"2","verse_start":"1","verse_start_alt":"1","verse_end":"1","verse_end_alt":"1","verse_text":"Now we beseech you, brethren, by the coming of our Lord Jesus Christ, and by our gathering together unto him,"},{"book_id":"2TH","book_name_alt":"2 Thessalonians","chapter":"2","verse_start":"2","verse_start_alt":"2","verse_end":"2","verse_end_alt":"2","verse_text":"That ye be not soon shaken in mind, or be troubled, neither by spirit, nor by word, nor by letter as from us, as that the day of Christ is at hand."},{"book_id":"2TH","book_name_alt":"2 Thessalonians","chapter":"2","verse_start":"3","verse_start_alt":"3","verse_end":"3","verse_end_alt":"3","verse_text":"Let no man deceive you by any means: for that day shall not come, except there come a falling away first, and that man of sin be revealed, the son of perdition;"},{"book_id":"2TH","book_name_alt":"2 Thessalonians","chapter":"2","verse_start":"4","verse_start_alt":"4","verse_end":"4","verse_end_alt":"4","verse_text":"Who opposeth and exalteth himself above all that is called God, or that is worshipped; so that he as God sitteth in the temple of God, shewing himself that he is God."},{"book_id":"2TH","book_name_alt":"2 Thessalonians","chapter":"2","verse_start":"5","verse_start_alt":"5","verse_end":"5","verse_end_alt":"5","verse_text":"Remember ye not, that, when I was yet with you, I told you these things?"},{"book_id":"2TH","book_name_alt":"2 Thessalonians","chapter":"2","verse_start":"6","verse_start_alt":"6","verse_end":"6","verse_end_alt":"6","verse_text":"And now ye know what withholdeth that he might be revealed in his time."},{"book_id":"2TH","book_name_alt":"2 Thessalonians","chapter":"2","verse_start":"7","verse_start_alt":"7","verse_end":"7","verse_end_alt":"7","verse_text":"For the mystery of iniquity doth already work: only he who now letteth will let, until he be taken out of the way."},{"book_id":"2TH","book_name_alt":"2 Thessalonians","chapter":"2","verse_start":"8","verse_start_alt":"8","verse_end":"8","verse_end_alt":"8","verse_text":"And then shall that Wicked be revealed, whom the Lord shall consume with the spirit of his mouth, and shall destroy with the brightness of his coming:"},{"book_id":"2TH","book_name_alt":"2 Thessalonians","chapter":"2","verse_start":"9","verse_start_alt":"9","verse_end":"9","verse_end_alt":"9","verse_text":"Even him, whose coming is after the working of Satan with all power and signs and lying wonders,"},{"book_id":"2TH","book_name_alt":"2 Thessalonians","chapter":"2","verse_start":"10","verse_start_alt":"10","verse_end":"10","verse_end_alt":"10","verse_text":"And with all deceivableness of unrighteousness in them that perish; because they received not the love of the truth, that they might be saved."},{"book_id":"2TH","book_name_alt":"2 Thessalonians","chapter":"2","verse_start":"11","verse_start_alt":"11","verse_end":"11","verse_end_alt":"11","verse_text":"And for this cause God shall send them strong delusion, that they should believe a lie:"},{"book_id":"2TH","book_name_alt":"2 Thessalonians","chapter":"2","verse_start":"12","verse_start_alt":"12","verse_end":"12","verse_end_alt":"12","verse_text":"That they all might be damned who believed not the truth, but had pleasure in unrighteousness."},{"book_id":"2TH","book_name_alt":"2 Thessalonians","chapter":"2","verse_start":"13","verse_start_alt":"13","verse_end":"13","verse_end_alt":"13","verse_text":"But we are bound to give thanks alway to God for you, brethren beloved of the Lord, because God hath from the beginning chosen you to salvation through sanctification of the Spirit and belief of the truth:"},{"book_id":"2TH","book_name_alt":"2 Thessalonians","chapter":"2","verse_start":"14","verse_start_alt":"14","verse_end":"14","verse_end_alt":"14","verse_text":"Whereunto he called you by our gospel, to the obtaining of the glory of our Lord Jesus Christ."},{"book_id":"2TH","book_name_alt":"2 Thessalonians","chapter":"2","verse_start":"15","verse_start_alt":"15","verse_end":"15","verse_end_alt":"15","verse_text":"Therefore, brethren, stand fast, and hold the traditions which ye have been taught, whether by word, or our epistle."},{"book_id":"2TH","book_name_alt":"2 Thessalonians","chapter":"2","verse_start":"16","verse_start_alt":"16","verse_end":"16","verse_end_alt":"16","verse_text":"Now our Lord Jesus Christ himself, and God, even our Father, which hath loved us, and hath given us everlasting consolation and good hope through grace,"},{"book_id":"2TH","book_name_alt":"2 Thessalonians","chapter":"2","verse_start":"17","verse_start_alt":"17","verse_end":"17","verse_end_alt":"17","verse_text":"Comfort your hearts, and stablish you in every good word and work."}]
+{
+  "info": "",
+  "verses": [
+    {
+      "book_id": "2TH",
+      "book_name": "2 Thessalonians",
+      "chapter": 2,
+      "verse_start": 1,
+      "verse_end": 1,
+      "text": "<a href=\"../2-Thessalonians-2-1/\" title=\"2 Thessalonians 2:1 KJV verse detail\"><span id=\"3\" class=\"versehover\">1  \"JESUS_END\"Now we beseech you, brethren, by the coming of our Lord Jesus Christ, and <em>by</em> our gathering together unto him,"
+    },
+    {
+      "book_id": "2TH",
+      "book_name": "2 Thessalonians",
+      "chapter": 2,
+      "verse_start": 2,
+      "verse_end": 2,
+      "text": "<a href=\"../2-Thessalonians-2-2/\" title=\"2 Thessalonians 2:2 KJV verse detail\"><span id=\"4\" class=\"versehover\">2  \"JESUS_END\"That ye be not soon shaken in mind, or be troubled, neither by spirit, nor by word, nor by letter as from us, as that the day of Christ is at hand."
+    },
+    {
+      "book_id": "2TH",
+      "book_name": "2 Thessalonians",
+      "chapter": 2,
+      "verse_start": 3,
+      "verse_end": 3,
+      "text": "<a href=\"../2-Thessalonians-2-3/\" title=\"2 Thessalonians 2:3 KJV verse detail\"><span id=\"5\" class=\"versehover\">3  \"JESUS_END\"Let no man deceive you by any means: for <em>that day shall not come</em>, except there come a falling away first, and that man of sin be revealed, the son of perdition;"
+    },
+    {
+      "book_id": "2TH",
+      "book_name": "2 Thessalonians",
+      "chapter": 2,
+      "verse_start": 4,
+      "verse_end": 4,
+      "text": "<a href=\"../2-Thessalonians-2-4/\" title=\"2 Thessalonians 2:4 KJV verse detail\"><span id=\"6\" class=\"versehover\">4  \"JESUS_END\"Who opposeth and exalteth himself above all that is called God, or that is worshipped; so that he as God sitteth in the temple of God, shewing himself that he is God."
+    },
+    {
+      "book_id": "2TH",
+      "book_name": "2 Thessalonians",
+      "chapter": 2,
+      "verse_start": 5,
+      "verse_end": 5,
+      "text": "<a href=\"../2-Thessalonians-2-5/\" title=\"2 Thessalonians 2:5 KJV verse detail\"><span id=\"7\" class=\"versehover\">5  \"JESUS_END\"Remember ye not, that, when I was yet with you, I told you these things?"
+    },
+    {
+      "book_id": "2TH",
+      "book_name": "2 Thessalonians",
+      "chapter": 2,
+      "verse_start": 6,
+      "verse_end": 6,
+      "text": "<a href=\"../2-Thessalonians-2-6/\" title=\"2 Thessalonians 2:6 KJV verse detail\"><span id=\"8\" class=\"versehover\">6  \"JESUS_END\"And now ye know what withholdeth that he might be revealed in his time."
+    },
+    {
+      "book_id": "2TH",
+      "book_name": "2 Thessalonians",
+      "chapter": 2,
+      "verse_start": 7,
+      "verse_end": 7,
+      "text": "<a href=\"../2-Thessalonians-2-7/\" title=\"2 Thessalonians 2:7 KJV verse detail\"><span id=\"9\" class=\"versehover\">7  \"JESUS_END\"For the mystery of iniquity doth already work: only he who now letteth <em>will let</em>, until he be taken out of the way."
+    },
+    {
+      "book_id": "2TH",
+      "book_name": "2 Thessalonians",
+      "chapter": 2,
+      "verse_start": 8,
+      "verse_end": 8,
+      "text": "<a href=\"../2-Thessalonians-2-8/\" title=\"2 Thessalonians 2:8 KJV verse detail\"><span id=\"10\" class=\"versehover\">8  \"JESUS_END\"And then shall that Wicked be revealed, whom the Lord shall consume with the spirit of his mouth, and shall destroy with the brightness of his coming:"
+    },
+    {
+      "book_id": "2TH",
+      "book_name": "2 Thessalonians",
+      "chapter": 2,
+      "verse_start": 9,
+      "verse_end": 9,
+      "text": "<a href=\"../2-Thessalonians-2-9/\" title=\"2 Thessalonians 2:9 KJV verse detail\"><span id=\"11\" class=\"versehover\">9  \"JESUS_END\"<em>Even him</em>, whose coming is after the working of Satan with all power and signs and lying wonders,"
+    },
+    {
+      "book_id": "2TH",
+      "book_name": "2 Thessalonians",
+      "chapter": 2,
+      "verse_start": 10,
+      "verse_end": 10,
+      "text": "<a href=\"../2-Thessalonians-2-10/\" title=\"2 Thessalonians 2:10 KJV verse detail\"><span id=\"12\" class=\"versehover\">10  \"JESUS_END\"And with all deceivableness of unrighteousness in them that perish; because they received not the love of the truth, that they might be saved."
+    },
+    {
+      "book_id": "2TH",
+      "book_name": "2 Thessalonians",
+      "chapter": 2,
+      "verse_start": 11,
+      "verse_end": 11,
+      "text": "<a href=\"../2-Thessalonians-2-11/\" title=\"2 Thessalonians 2:11 KJV verse detail\"><span id=\"13\" class=\"versehover\">11  \"JESUS_END\"And for this cause God shall send them strong delusion, that they should believe a lie:"
+    },
+    {
+      "book_id": "2TH",
+      "book_name": "2 Thessalonians",
+      "chapter": 2,
+      "verse_start": 12,
+      "verse_end": 12,
+      "text": "<a href=\"../2-Thessalonians-2-12/\" title=\"2 Thessalonians 2:12 KJV verse detail\"><span id=\"14\" class=\"versehover\">12  \"JESUS_END\"That they all might be damned who believed not the truth, but had pleasure in unrighteousness."
+    },
+    {
+      "book_id": "2TH",
+      "book_name": "2 Thessalonians",
+      "chapter": 2,
+      "verse_start": 13,
+      "verse_end": 13,
+      "text": "<a href=\"../2-Thessalonians-2-13/\" title=\"2 Thessalonians 2:13 KJV verse detail\"><span id=\"15\" class=\"versehover\">13  \"JESUS_END\"But we are bound to give thanks alway to God for you, brethren beloved of the Lord, because God hath from the beginning chosen you to salvation through sanctification of the Spirit and belief of the truth:"
+    },
+    {
+      "book_id": "2TH",
+      "book_name": "2 Thessalonians",
+      "chapter": 2,
+      "verse_start": 14,
+      "verse_end": 14,
+      "text": "<a href=\"../2-Thessalonians-2-14/\" title=\"2 Thessalonians 2:14 KJV verse detail\"><span id=\"16\" class=\"versehover\">14  \"JESUS_END\"Whereunto he called you by our gospel, to the obtaining of the glory of our Lord Jesus Christ."
+    },
+    {
+      "book_id": "2TH",
+      "book_name": "2 Thessalonians",
+      "chapter": 2,
+      "verse_start": 15,
+      "verse_end": 15,
+      "text": "<a href=\"../2-Thessalonians-2-15/\" title=\"2 Thessalonians 2:15 KJV verse detail\"><span id=\"17\" class=\"versehover\">15  \"JESUS_END\"Therefore, brethren, stand fast, and hold the traditions which ye have been taught, whether by word, or our epistle."
+    },
+    {
+      "book_id": "2TH",
+      "book_name": "2 Thessalonians",
+      "chapter": 2,
+      "verse_start": 16,
+      "verse_end": 16,
+      "text": "<a href=\"../2-Thessalonians-2-16/\" title=\"2 Thessalonians 2:16 KJV verse detail\"><span id=\"18\" class=\"versehover\">16  \"JESUS_END\"Now our Lord Jesus Christ himself, and God, even our Father, which hath loved us, and hath given <em>us</em> everlasting consolation and good hope through grace,"
+    },
+    {
+      "book_id": "2TH",
+      "book_name": "2 Thessalonians",
+      "chapter": 2,
+      "verse_start": 17,
+      "verse_end": 17,
+      "text": "<a href=\"../2-Thessalonians-2-17/\" title=\"2 Thessalonians 2:17 KJV verse detail\"><span id=\"19\" class=\"versehover\">17  \"JESUS_END\"Comfort your hearts, and stablish you in every good word and work."
+    }
+  ]
+}

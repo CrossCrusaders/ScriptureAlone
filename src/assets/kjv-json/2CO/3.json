@@ -1,1 +1,149 @@
-[{"book_id":"2CO","book_name_alt":"2 Corinthians","chapter":"3","verse_start":"1","verse_start_alt":"1","verse_end":"1","verse_end_alt":"1","verse_text":"Do we begin again to commend ourselves? or need we, as some others, epistles of commendation to you, or letters of commendation from you?"},{"book_id":"2CO","book_name_alt":"2 Corinthians","chapter":"3","verse_start":"2","verse_start_alt":"2","verse_end":"2","verse_end_alt":"2","verse_text":"Ye are our epistle written in our hearts, known and read of all men:"},{"book_id":"2CO","book_name_alt":"2 Corinthians","chapter":"3","verse_start":"3","verse_start_alt":"3","verse_end":"3","verse_end_alt":"3","verse_text":"Forasmuch as ye are manifestly declared to be the epistle of Christ ministered by us, written not with ink, but with the Spirit of the living God; not in tables of stone, but in fleshy tables of the heart."},{"book_id":"2CO","book_name_alt":"2 Corinthians","chapter":"3","verse_start":"4","verse_start_alt":"4","verse_end":"4","verse_end_alt":"4","verse_text":"And such trust have we through Christ to God-ward:"},{"book_id":"2CO","book_name_alt":"2 Corinthians","chapter":"3","verse_start":"5","verse_start_alt":"5","verse_end":"5","verse_end_alt":"5","verse_text":"Not that we are sufficient of ourselves to think any thing as of ourselves; but our sufficiency is of God;"},{"book_id":"2CO","book_name_alt":"2 Corinthians","chapter":"3","verse_start":"6","verse_start_alt":"6","verse_end":"6","verse_end_alt":"6","verse_text":"Who also hath made us able ministers of the new testament; not of the letter, but of the spirit: for the letter killeth, but the spirit giveth life."},{"book_id":"2CO","book_name_alt":"2 Corinthians","chapter":"3","verse_start":"7","verse_start_alt":"7","verse_end":"7","verse_end_alt":"7","verse_text":"But if the ministration of death, written and engraven in stones, was glorious, so that the children of Israel could not stedfastly behold the face of Moses for the glory of his countenance; which glory was to be done away:"},{"book_id":"2CO","book_name_alt":"2 Corinthians","chapter":"3","verse_start":"8","verse_start_alt":"8","verse_end":"8","verse_end_alt":"8","verse_text":"How shall not the ministration of the spirit be rather glorious?"},{"book_id":"2CO","book_name_alt":"2 Corinthians","chapter":"3","verse_start":"9","verse_start_alt":"9","verse_end":"9","verse_end_alt":"9","verse_text":"For if the ministration of condemnation be glory, much more doth the ministration of righteousness exceed in glory."},{"book_id":"2CO","book_name_alt":"2 Corinthians","chapter":"3","verse_start":"10","verse_start_alt":"10","verse_end":"10","verse_end_alt":"10","verse_text":"For even that which was made glorious had no glory in this respect, by reason of the glory that excelleth."},{"book_id":"2CO","book_name_alt":"2 Corinthians","chapter":"3","verse_start":"11","verse_start_alt":"11","verse_end":"11","verse_end_alt":"11","verse_text":"For if that which is done away was glorious, much more that which remaineth is glorious."},{"book_id":"2CO","book_name_alt":"2 Corinthians","chapter":"3","verse_start":"12","verse_start_alt":"12","verse_end":"12","verse_end_alt":"12","verse_text":"Seeing then that we have such hope, we use great plainness of speech:"},{"book_id":"2CO","book_name_alt":"2 Corinthians","chapter":"3","verse_start":"13","verse_start_alt":"13","verse_end":"13","verse_end_alt":"13","verse_text":"And not as Moses, which put a vail over his face, that the children of Israel could not stedfastly look to the end of that which is abolished:"},{"book_id":"2CO","book_name_alt":"2 Corinthians","chapter":"3","verse_start":"14","verse_start_alt":"14","verse_end":"14","verse_end_alt":"14","verse_text":"But their minds were blinded: for until this day remaineth the same vail untaken away in the reading of the old testament; which vail is done away in Christ."},{"book_id":"2CO","book_name_alt":"2 Corinthians","chapter":"3","verse_start":"15","verse_start_alt":"15","verse_end":"15","verse_end_alt":"15","verse_text":"But even unto this day, when Moses is read, the vail is upon their heart."},{"book_id":"2CO","book_name_alt":"2 Corinthians","chapter":"3","verse_start":"16","verse_start_alt":"16","verse_end":"16","verse_end_alt":"16","verse_text":"Nevertheless when it shall turn to the Lord, the vail shall be taken away."},{"book_id":"2CO","book_name_alt":"2 Corinthians","chapter":"3","verse_start":"17","verse_start_alt":"17","verse_end":"17","verse_end_alt":"17","verse_text":"Now the Lord is that Spirit: and where the Spirit of the Lord is, there is liberty."},{"book_id":"2CO","book_name_alt":"2 Corinthians","chapter":"3","verse_start":"18","verse_start_alt":"18","verse_end":"18","verse_end_alt":"18","verse_text":"But we all, with open face beholding as in a glass the glory of the Lord, are changed into the same image from glory to glory, even as by the Spirit of the LORD."}]
+{
+  "info": "",
+  "verses": [
+    {
+      "book_id": "2CO",
+      "book_name": "2 Corinthians",
+      "chapter": 3,
+      "verse_start": 1,
+      "verse_end": 1,
+      "text": "<a href=\"../2-Corinthians-3-1/\" title=\"2 Corinthians 3:1 KJV verse detail\"><span id=\"3\" class=\"versehover\">1  \"JESUS_END\"Do we begin again to commend ourselves? or need we, as some <em>others</em>, epistles of commendation to you, or <em>letters</em> of commendation from you?"
+    },
+    {
+      "book_id": "2CO",
+      "book_name": "2 Corinthians",
+      "chapter": 3,
+      "verse_start": 2,
+      "verse_end": 2,
+      "text": "<a href=\"../2-Corinthians-3-2/\" title=\"2 Corinthians 3:2 KJV verse detail\"><span id=\"4\" class=\"versehover\">2  \"JESUS_END\"Ye are our epistle written in our hearts, known and read of all men:"
+    },
+    {
+      "book_id": "2CO",
+      "book_name": "2 Corinthians",
+      "chapter": 3,
+      "verse_start": 3,
+      "verse_end": 3,
+      "text": "<a href=\"../2-Corinthians-3-3/\" title=\"2 Corinthians 3:3 KJV verse detail\"><span id=\"5\" class=\"versehover\">3  \"JESUS_END\"<em>Forasmuch as ye are</em> manifestly declared to be the epistle of Christ ministered by us, written not with ink, but with the Spirit of the living God; not in tables of stone, but in fleshy tables of the heart."
+    },
+    {
+      "book_id": "2CO",
+      "book_name": "2 Corinthians",
+      "chapter": 3,
+      "verse_start": 4,
+      "verse_end": 4,
+      "text": "<a href=\"../2-Corinthians-3-4/\" title=\"2 Corinthians 3:4 KJV verse detail\"><span id=\"6\" class=\"versehover\">4  \"JESUS_END\"And such trust have we through Christ to God-ward:"
+    },
+    {
+      "book_id": "2CO",
+      "book_name": "2 Corinthians",
+      "chapter": 3,
+      "verse_start": 5,
+      "verse_end": 5,
+      "text": "<a href=\"../2-Corinthians-3-5/\" title=\"2 Corinthians 3:5 KJV verse detail\"><span id=\"7\" class=\"versehover\">5  \"JESUS_END\"Not that we are sufficient of ourselves to think any thing as of ourselves; but our sufficiency <em>is</em> of God;"
+    },
+    {
+      "book_id": "2CO",
+      "book_name": "2 Corinthians",
+      "chapter": 3,
+      "verse_start": 6,
+      "verse_end": 6,
+      "text": "<a href=\"../2-Corinthians-3-6/\" title=\"2 Corinthians 3:6 KJV verse detail\"><span id=\"8\" class=\"versehover\">6  \"JESUS_END\"Who also hath made us able ministers of the new testament; not of the letter, but of the spirit: for the letter killeth, but the spirit giveth life."
+    },
+    {
+      "book_id": "2CO",
+      "book_name": "2 Corinthians",
+      "chapter": 3,
+      "verse_start": 7,
+      "verse_end": 7,
+      "text": "<a href=\"../2-Corinthians-3-7/\" title=\"2 Corinthians 3:7 KJV verse detail\"><span id=\"9\" class=\"versehover\">7  \"JESUS_END\"But if the ministration of death, written <em>and</em> engraven in stones, was glorious, so that the children of Israel could not stedfastly behold the face of Moses for the glory of his countenance; which <em>glory</em> was to be done away:"
+    },
+    {
+      "book_id": "2CO",
+      "book_name": "2 Corinthians",
+      "chapter": 3,
+      "verse_start": 8,
+      "verse_end": 8,
+      "text": "<a href=\"../2-Corinthians-3-8/\" title=\"2 Corinthians 3:8 KJV verse detail\"><span id=\"10\" class=\"versehover\">8  \"JESUS_END\"How shall not the ministration of the spirit be rather glorious?"
+    },
+    {
+      "book_id": "2CO",
+      "book_name": "2 Corinthians",
+      "chapter": 3,
+      "verse_start": 9,
+      "verse_end": 9,
+      "text": "<a href=\"../2-Corinthians-3-9/\" title=\"2 Corinthians 3:9 KJV verse detail\"><span id=\"11\" class=\"versehover\">9  \"JESUS_END\"For if the ministration of condemnation <em>be</em> glory, much more doth the ministration of righteousness exceed in glory."
+    },
+    {
+      "book_id": "2CO",
+      "book_name": "2 Corinthians",
+      "chapter": 3,
+      "verse_start": 10,
+      "verse_end": 10,
+      "text": "<a href=\"../2-Corinthians-3-10/\" title=\"2 Corinthians 3:10 KJV verse detail\"><span id=\"12\" class=\"versehover\">10  \"JESUS_END\"For even that which was made glorious had no glory in this respect, by reason of the glory that excelleth."
+    },
+    {
+      "book_id": "2CO",
+      "book_name": "2 Corinthians",
+      "chapter": 3,
+      "verse_start": 11,
+      "verse_end": 11,
+      "text": "<a href=\"../2-Corinthians-3-11/\" title=\"2 Corinthians 3:11 KJV verse detail\"><span id=\"13\" class=\"versehover\">11  \"JESUS_END\"For if that which is done away <em>was</em> glorious, much more that which remaineth <em>is</em> glorious."
+    },
+    {
+      "book_id": "2CO",
+      "book_name": "2 Corinthians",
+      "chapter": 3,
+      "verse_start": 12,
+      "verse_end": 12,
+      "text": "<a href=\"../2-Corinthians-3-12/\" title=\"2 Corinthians 3:12 KJV verse detail\"><span id=\"14\" class=\"versehover\">12  \"JESUS_END\"Seeing then that we have such hope, we use great plainness of speech:"
+    },
+    {
+      "book_id": "2CO",
+      "book_name": "2 Corinthians",
+      "chapter": 3,
+      "verse_start": 13,
+      "verse_end": 13,
+      "text": "<a href=\"../2-Corinthians-3-13/\" title=\"2 Corinthians 3:13 KJV verse detail\"><span id=\"15\" class=\"versehover\">13  \"JESUS_END\"And not as Moses, <em>which</em> put a vail over his face, that the children of Israel could not stedfastly look to the end of that which is abolished:"
+    },
+    {
+      "book_id": "2CO",
+      "book_name": "2 Corinthians",
+      "chapter": 3,
+      "verse_start": 14,
+      "verse_end": 14,
+      "text": "<a href=\"../2-Corinthians-3-14/\" title=\"2 Corinthians 3:14 KJV verse detail\"><span id=\"16\" class=\"versehover\">14  \"JESUS_END\"But their minds were blinded: for until this day remaineth the same vail untaken away in the reading of the old testament; which <em>vail</em> is done away in Christ."
+    },
+    {
+      "book_id": "2CO",
+      "book_name": "2 Corinthians",
+      "chapter": 3,
+      "verse_start": 15,
+      "verse_end": 15,
+      "text": "<a href=\"../2-Corinthians-3-15/\" title=\"2 Corinthians 3:15 KJV verse detail\"><span id=\"17\" class=\"versehover\">15  \"JESUS_END\"But even unto this day, when Moses is read, the vail is upon their heart."
+    },
+    {
+      "book_id": "2CO",
+      "book_name": "2 Corinthians",
+      "chapter": 3,
+      "verse_start": 16,
+      "verse_end": 16,
+      "text": "<a href=\"../2-Corinthians-3-16/\" title=\"2 Corinthians 3:16 KJV verse detail\"><span id=\"18\" class=\"versehover\">16  \"JESUS_END\"Nevertheless when it shall turn to the Lord, the vail shall be taken away."
+    },
+    {
+      "book_id": "2CO",
+      "book_name": "2 Corinthians",
+      "chapter": 3,
+      "verse_start": 17,
+      "verse_end": 17,
+      "text": "<a href=\"../2-Corinthians-3-17/\" title=\"2 Corinthians 3:17 KJV verse detail\"><span id=\"19\" class=\"versehover\">17  \"JESUS_END\"Now the Lord is that Spirit: and where the Spirit of the Lord <em>is</em>, there <em>is</em> liberty."
+    },
+    {
+      "book_id": "2CO",
+      "book_name": "2 Corinthians",
+      "chapter": 3,
+      "verse_start": 18,
+      "verse_end": 18,
+      "text": "<a href=\"../2-Corinthians-3-18/\" title=\"2 Corinthians 3:18 KJV verse detail\"><span id=\"20\" class=\"versehover\">18  \"JESUS_END\"But we all, with open face beholding as in a glass the glory of the Lord, are changed into the same image from glory to glory, <em>even</em> as by the Spirit of the Lord."
+    }
+  ]
+}

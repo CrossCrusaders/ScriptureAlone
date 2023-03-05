@@ -1,1 +1,109 @@
-[{"book_id":"ISA","book_name_alt":"Isaiah","chapter":"55","verse_start":"1","verse_start_alt":"1","verse_end":"1","verse_end_alt":"1","verse_text":"Ho, every one that thirsteth, come ye to the waters, and he that hath no money; come ye, buy, and eat; yea, come, buy wine and milk without money and without price."},{"book_id":"ISA","book_name_alt":"Isaiah","chapter":"55","verse_start":"2","verse_start_alt":"2","verse_end":"2","verse_end_alt":"2","verse_text":"Wherefore do ye spend money for that which is not bread? and your labour for that which satisfieth not? hearken diligently unto me, and eat ye that which is good, and let your soul delight itself in fatness."},{"book_id":"ISA","book_name_alt":"Isaiah","chapter":"55","verse_start":"3","verse_start_alt":"3","verse_end":"3","verse_end_alt":"3","verse_text":"Incline your ear, and come unto me: hear, and your soul shall live; and I will make an everlasting covenant with you, even the sure mercies of David."},{"book_id":"ISA","book_name_alt":"Isaiah","chapter":"55","verse_start":"4","verse_start_alt":"4","verse_end":"4","verse_end_alt":"4","verse_text":"Behold, I have given him for a witness to the people, a leader and commander to the people."},{"book_id":"ISA","book_name_alt":"Isaiah","chapter":"55","verse_start":"5","verse_start_alt":"5","verse_end":"5","verse_end_alt":"5","verse_text":"Behold, thou shalt call a nation that thou knowest not, and nations that knew not thee shall run unto thee because of the LORD thy God, and for the Holy One of Israel; for he hath glorified thee."},{"book_id":"ISA","book_name_alt":"Isaiah","chapter":"55","verse_start":"6","verse_start_alt":"6","verse_end":"6","verse_end_alt":"6","verse_text":"Seek ye the LORD while he may be found, call ye upon him while he is near:"},{"book_id":"ISA","book_name_alt":"Isaiah","chapter":"55","verse_start":"7","verse_start_alt":"7","verse_end":"7","verse_end_alt":"7","verse_text":"Let the wicked forsake his way, and the unrighteous man his thoughts: and let him return unto the LORD, and he will have mercy upon him; and to our God, for he will abundantly pardon."},{"book_id":"ISA","book_name_alt":"Isaiah","chapter":"55","verse_start":"8","verse_start_alt":"8","verse_end":"8","verse_end_alt":"8","verse_text":"For my thoughts are not your thoughts, neither are your ways my ways, saith the LORD."},{"book_id":"ISA","book_name_alt":"Isaiah","chapter":"55","verse_start":"9","verse_start_alt":"9","verse_end":"9","verse_end_alt":"9","verse_text":"For as the heavens are higher than the earth, so are my ways higher than your ways, and my thoughts than your thoughts."},{"book_id":"ISA","book_name_alt":"Isaiah","chapter":"55","verse_start":"10","verse_start_alt":"10","verse_end":"10","verse_end_alt":"10","verse_text":"For as the rain cometh down, and the snow from heaven, and returneth not thither, but watereth the earth, and maketh it bring forth and bud, that it may give seed to the sower, and bread to the eater:"},{"book_id":"ISA","book_name_alt":"Isaiah","chapter":"55","verse_start":"11","verse_start_alt":"11","verse_end":"11","verse_end_alt":"11","verse_text":"So shall my word be that goeth forth out of my mouth: it shall not return unto me void, but it shall accomplish that which I please, and it shall prosper in the thing whereto I sent it."},{"book_id":"ISA","book_name_alt":"Isaiah","chapter":"55","verse_start":"12","verse_start_alt":"12","verse_end":"12","verse_end_alt":"12","verse_text":"For ye shall go out with joy, and be led forth with peace: the mountains and the hills shall break forth before you into singing, and all the trees of the field shall clap their hands."},{"book_id":"ISA","book_name_alt":"Isaiah","chapter":"55","verse_start":"13","verse_start_alt":"13","verse_end":"13","verse_end_alt":"13","verse_text":"Instead of the thorn shall come up the fir tree, and instead of the brier shall come up the myrtle tree: and it shall be to the LORD for a name, for an everlasting sign that shall not be cut off."}]
+{
+  "info": "",
+  "verses": [
+    {
+      "book_id": "ISA",
+      "book_name": "Isaiah",
+      "chapter": 55,
+      "verse_start": 1,
+      "verse_end": 1,
+      "text": "Ho, every one that thirsteth, come ye to the waters, and he that hath no money; come ye, buy, and eat; yea, come, buy wine and milk without money and without price."
+    },
+    {
+      "book_id": "ISA",
+      "book_name": "Isaiah",
+      "chapter": 55,
+      "verse_start": 2,
+      "verse_end": 2,
+      "text": "Wherefore do ye spend money for <em>that which is</em> not bread? and your labour for <em>that which</em> satisfieth not? hearken diligently unto me, and eat ye <em>that which is</em> good, and let your soul delight itself in fatness."
+    },
+    {
+      "book_id": "ISA",
+      "book_name": "Isaiah",
+      "chapter": 55,
+      "verse_start": 3,
+      "verse_end": 3,
+      "text": "Incline your ear, and come unto me: hear, and your soul shall live; and I will make an everlasting covenant with you, <em>even</em> the sure mercies of David."
+    },
+    {
+      "book_id": "ISA",
+      "book_name": "Isaiah",
+      "chapter": 55,
+      "verse_start": 4,
+      "verse_end": 4,
+      "text": "Behold, I have given him <em>for</em> a witness to the people, a leader and commander to the people."
+    },
+    {
+      "book_id": "ISA",
+      "book_name": "Isaiah",
+      "chapter": 55,
+      "verse_start": 5,
+      "verse_end": 5,
+      "text": "Behold, thou shalt call a nation <em>that</em> thou knowest not, and nations <em>that</em> knew not thee shall run unto thee because of the LORD thy God, and for the Holy One of Israel; for he hath glorified thee."
+    },
+    {
+      "book_id": "ISA",
+      "book_name": "Isaiah",
+      "chapter": 55,
+      "verse_start": 6,
+      "verse_end": 6,
+      "text": "Seek ye the LORD while he may be found, call ye upon him while he is near:"
+    },
+    {
+      "book_id": "ISA",
+      "book_name": "Isaiah",
+      "chapter": 55,
+      "verse_start": 7,
+      "verse_end": 7,
+      "text": "Let the wicked forsake his way, and the unrighteous man his thoughts: and let him return unto the LORD, and he will have mercy upon him; and to our God, for he will abundantly pardon."
+    },
+    {
+      "book_id": "ISA",
+      "book_name": "Isaiah",
+      "chapter": 55,
+      "verse_start": 8,
+      "verse_end": 8,
+      "text": "For my thoughts <em>are</em> not your thoughts, neither <em>are</em> your ways my ways, saith the LORD."
+    },
+    {
+      "book_id": "ISA",
+      "book_name": "Isaiah",
+      "chapter": 55,
+      "verse_start": 9,
+      "verse_end": 9,
+      "text": "For <em>as</em> the heavens are higher than the earth, so are my ways higher than your ways, and my thoughts than your thoughts."
+    },
+    {
+      "book_id": "ISA",
+      "book_name": "Isaiah",
+      "chapter": 55,
+      "verse_start": 10,
+      "verse_end": 10,
+      "text": "For as the rain cometh down, and the snow from heaven, and returneth not thither, but watereth the earth, and maketh it bring forth and bud, that it may give seed to the sower, and bread to the eater:"
+    },
+    {
+      "book_id": "ISA",
+      "book_name": "Isaiah",
+      "chapter": 55,
+      "verse_start": 11,
+      "verse_end": 11,
+      "text": "So shall my word be that goeth forth out of my mouth: it shall not return unto me void, but it shall accomplish that which I please, and it shall prosper <em>in the thing</em> whereto I sent it."
+    },
+    {
+      "book_id": "ISA",
+      "book_name": "Isaiah",
+      "chapter": 55,
+      "verse_start": 12,
+      "verse_end": 12,
+      "text": "For ye shall go out with joy, and be led forth with peace: the mountains and the hills shall break forth before you into singing, and all the trees of the field shall clap <em>their</em> hands."
+    },
+    {
+      "book_id": "ISA",
+      "book_name": "Isaiah",
+      "chapter": 55,
+      "verse_start": 13,
+      "verse_end": 13,
+      "text": "Instead of the thorn shall come up the fir tree, and instead of the brier shall come up the myrtle tree: and it shall be to the LORD for a name, for an everlasting sign <em>that</em> shall not be cut off."
+    }
+  ]
+}

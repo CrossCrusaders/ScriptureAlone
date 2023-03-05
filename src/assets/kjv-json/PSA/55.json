@@ -1,1 +1,189 @@
-[{"book_id":"PSA","book_name_alt":"Psalms","chapter":"55","verse_start":"1","verse_start_alt":"1","verse_end":"1","verse_end_alt":"1","verse_text":"Give ear to my prayer, O God; and hide not thyself from my supplication."},{"book_id":"PSA","book_name_alt":"Psalms","chapter":"55","verse_start":"2","verse_start_alt":"2","verse_end":"2","verse_end_alt":"2","verse_text":"Attend unto me, and hear me: I mourn in my complaint, and make a noise;"},{"book_id":"PSA","book_name_alt":"Psalms","chapter":"55","verse_start":"3","verse_start_alt":"3","verse_end":"3","verse_end_alt":"3","verse_text":"Because of the voice of the enemy, because of the oppression of the wicked: for they cast iniquity upon me, and in wrath they hate me."},{"book_id":"PSA","book_name_alt":"Psalms","chapter":"55","verse_start":"4","verse_start_alt":"4","verse_end":"4","verse_end_alt":"4","verse_text":"My heart is sore pained within me: and the terrors of death are fallen upon me."},{"book_id":"PSA","book_name_alt":"Psalms","chapter":"55","verse_start":"5","verse_start_alt":"5","verse_end":"5","verse_end_alt":"5","verse_text":"Fearfulness and trembling are come upon me, and horror hath overwhelmed me."},{"book_id":"PSA","book_name_alt":"Psalms","chapter":"55","verse_start":"6","verse_start_alt":"6","verse_end":"6","verse_end_alt":"6","verse_text":"And I said, Oh that I had wings like a dove! for then would I fly away, and be at rest."},{"book_id":"PSA","book_name_alt":"Psalms","chapter":"55","verse_start":"7","verse_start_alt":"7","verse_end":"7","verse_end_alt":"7","verse_text":"Lo, then would I wander far off, and remain in the wilderness. Selah."},{"book_id":"PSA","book_name_alt":"Psalms","chapter":"55","verse_start":"8","verse_start_alt":"8","verse_end":"8","verse_end_alt":"8","verse_text":"I would hasten my escape from the windy storm and tempest."},{"book_id":"PSA","book_name_alt":"Psalms","chapter":"55","verse_start":"9","verse_start_alt":"9","verse_end":"9","verse_end_alt":"9","verse_text":"Destroy, O Lord, and divide their tongues: for I have seen violence and strife in the city."},{"book_id":"PSA","book_name_alt":"Psalms","chapter":"55","verse_start":"10","verse_start_alt":"10","verse_end":"10","verse_end_alt":"10","verse_text":"Day and night they go about it upon the walls thereof: mischief also and sorrow are in the midst of it."},{"book_id":"PSA","book_name_alt":"Psalms","chapter":"55","verse_start":"11","verse_start_alt":"11","verse_end":"11","verse_end_alt":"11","verse_text":"Wickedness is in the midst thereof: deceit and guile depart not from her streets."},{"book_id":"PSA","book_name_alt":"Psalms","chapter":"55","verse_start":"12","verse_start_alt":"12","verse_end":"12","verse_end_alt":"12","verse_text":"For it was not an enemy that reproached me; then I could have borne it: neither was it he that hated me that did magnify himself against me; then I would have hid myself from him:"},{"book_id":"PSA","book_name_alt":"Psalms","chapter":"55","verse_start":"13","verse_start_alt":"13","verse_end":"13","verse_end_alt":"13","verse_text":"But it was thou, a man mine equal, my guide, and mine acquaintance."},{"book_id":"PSA","book_name_alt":"Psalms","chapter":"55","verse_start":"14","verse_start_alt":"14","verse_end":"14","verse_end_alt":"14","verse_text":"We took sweet counsel together, and walked unto the house of God in company."},{"book_id":"PSA","book_name_alt":"Psalms","chapter":"55","verse_start":"15","verse_start_alt":"15","verse_end":"15","verse_end_alt":"15","verse_text":"Let death seize upon them, and let them go down quick into hell: for wickedness is in their dwellings, and among them."},{"book_id":"PSA","book_name_alt":"Psalms","chapter":"55","verse_start":"16","verse_start_alt":"16","verse_end":"16","verse_end_alt":"16","verse_text":"As for me, I will call upon God; and the LORD shall save me."},{"book_id":"PSA","book_name_alt":"Psalms","chapter":"55","verse_start":"17","verse_start_alt":"17","verse_end":"17","verse_end_alt":"17","verse_text":"Evening, and morning, and at noon, will I pray, and cry aloud: and he shall hear my voice."},{"book_id":"PSA","book_name_alt":"Psalms","chapter":"55","verse_start":"18","verse_start_alt":"18","verse_end":"18","verse_end_alt":"18","verse_text":"He hath delivered my soul in peace from the battle that was against me: for there were many with me."},{"book_id":"PSA","book_name_alt":"Psalms","chapter":"55","verse_start":"19","verse_start_alt":"19","verse_end":"19","verse_end_alt":"19","verse_text":"God shall hear, and afflict them, even he that abideth of old. Selah. Because they have no changes, therefore they fear not God."},{"book_id":"PSA","book_name_alt":"Psalms","chapter":"55","verse_start":"20","verse_start_alt":"20","verse_end":"20","verse_end_alt":"20","verse_text":"He hath put forth his hands against such as be at peace with him: he hath broken his covenant."},{"book_id":"PSA","book_name_alt":"Psalms","chapter":"55","verse_start":"21","verse_start_alt":"21","verse_end":"21","verse_end_alt":"21","verse_text":"The words of his mouth were smoother than butter, but war was in his heart: his words were softer than oil, yet were they drawn swords."},{"book_id":"PSA","book_name_alt":"Psalms","chapter":"55","verse_start":"22","verse_start_alt":"22","verse_end":"22","verse_end_alt":"22","verse_text":"Cast thy burden upon the LORD, and he shall sustain thee: he shall never suffer the righteous to be moved."},{"book_id":"PSA","book_name_alt":"Psalms","chapter":"55","verse_start":"23","verse_start_alt":"23","verse_end":"23","verse_end_alt":"23","verse_text":"But thou, O God, shalt bring them down into the pit of destruction: bloody and deceitful men shall not live out half their days; but I will trust in thee."}]
+{
+  "info": "(To the chief Musician on Neginoth, Maschil, <em>A Psalm</em> of David.)",
+  "verses": [
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 55,
+      "verse_start": 1,
+      "verse_end": 1,
+      "text": "Give ear to my prayer, O God; and hide not thyself from my supplication."
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 55,
+      "verse_start": 2,
+      "verse_end": 2,
+      "text": "Attend unto me, and hear me: I mourn in my complaint, and make a noise;"
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 55,
+      "verse_start": 3,
+      "verse_end": 3,
+      "text": "Because of the voice of the enemy, because of the oppression of the wicked: for they cast iniquity upon me, and in wrath they hate me."
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 55,
+      "verse_start": 4,
+      "verse_end": 4,
+      "text": "My heart is sore pained within me: and the terrors of death are fallen upon me."
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 55,
+      "verse_start": 5,
+      "verse_end": 5,
+      "text": "Fearfulness and trembling are come upon me, and horror hath overwhelmed me."
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 55,
+      "verse_start": 6,
+      "verse_end": 6,
+      "text": "And I said, Oh that I had wings like a dove! <em>for then</em> would I fly away, and be at rest."
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 55,
+      "verse_start": 7,
+      "verse_end": 7,
+      "text": "Lo, <em>then</em> would I wander far off, <em>and</em> remain in the wilderness. Selah."
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 55,
+      "verse_start": 8,
+      "verse_end": 8,
+      "text": "I would hasten my escape from the windy storm <em>and</em> tempest."
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 55,
+      "verse_start": 9,
+      "verse_end": 9,
+      "text": "Destroy, O Lord, <em>and</em> divide their tongues: for I have seen violence and strife in the city."
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 55,
+      "verse_start": 10,
+      "verse_end": 10,
+      "text": "Day and night they go about it upon the walls thereof: mischief also and sorrow <em>are</em> in the midst of it."
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 55,
+      "verse_start": 11,
+      "verse_end": 11,
+      "text": "Wickedness <em>is</em> in the midst thereof: deceit and guile depart not from her streets."
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 55,
+      "verse_start": 12,
+      "verse_end": 12,
+      "text": "For <em>it was</em> not an enemy <em>that</em> reproached me; then I could have borne <em>it</em>: neither <em>was it</em> he that hated me <em>that</em> did magnify <em>himself</em> against me; then I would have hid myself from him:"
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 55,
+      "verse_start": 13,
+      "verse_end": 13,
+      "text": "But <em>it was</em> thou, a man mine equal, my guide, and mine acquaintance."
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 55,
+      "verse_start": 14,
+      "verse_end": 14,
+      "text": "We took sweet counsel together, <em>and</em> walked unto the house of God in company."
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 55,
+      "verse_start": 15,
+      "verse_end": 15,
+      "text": "Let death seize upon them, <em>and</em> let them go down quick into hell: for wickedness <em>is</em> in their dwellings, <em>and</em> among them."
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 55,
+      "verse_start": 16,
+      "verse_end": 16,
+      "text": "As for me, I will call upon God; and the LORD shall save me."
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 55,
+      "verse_start": 17,
+      "verse_end": 17,
+      "text": "Evening, and morning, and at noon, will I pray, and cry aloud: and he shall hear my voice."
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 55,
+      "verse_start": 18,
+      "verse_end": 18,
+      "text": "He hath delivered my soul in peace from the battle <em>that was</em> against me: for there were many with me."
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 55,
+      "verse_start": 19,
+      "verse_end": 19,
+      "text": "God shall hear, and afflict them, even he that abideth of old. Selah. Because they have no changes, therefore they fear not God."
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 55,
+      "verse_start": 20,
+      "verse_end": 20,
+      "text": "He hath put forth his hands against such as be at peace with him: he hath broken his covenant."
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 55,
+      "verse_start": 21,
+      "verse_end": 21,
+      "text": "<em>The words</em> of his mouth were smoother than butter, but war <em>was</em> in his heart: his words were softer than oil, yet <em>were</em> they drawn swords."
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 55,
+      "verse_start": 22,
+      "verse_end": 22,
+      "text": "Cast thy burden upon the LORD, and he shall sustain thee: he shall never suffer the righteous to be moved."
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 55,
+      "verse_start": 23,
+      "verse_end": 23,
+      "text": "But thou, O God, shalt bring them down into the pit of destruction: bloody and deceitful men shall not live out half their days; but I will trust in thee."
+    }
+  ]
+}

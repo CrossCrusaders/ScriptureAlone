@@ -1,1 +1,101 @@
-[{"book_id":"ECC","book_name_alt":"Ecclesiastes","chapter":"6","verse_start":"1","verse_start_alt":"1","verse_end":"1","verse_end_alt":"1","verse_text":"There is an evil which I have seen under the sun, and it is common among men:"},{"book_id":"ECC","book_name_alt":"Ecclesiastes","chapter":"6","verse_start":"2","verse_start_alt":"2","verse_end":"2","verse_end_alt":"2","verse_text":"A man to whom God hath given riches, wealth, and honour, so that he wanteth nothing for his soul of all that he desireth, yet God giveth him not power to eat thereof, but a stranger eateth it: this is vanity, and it is an evil disease."},{"book_id":"ECC","book_name_alt":"Ecclesiastes","chapter":"6","verse_start":"3","verse_start_alt":"3","verse_end":"3","verse_end_alt":"3","verse_text":"If a man beget an hundred children, and live many years, so that the days of his years be many, and his soul be not filled with good, and also that he have no burial; I say, that an untimely birth is better than he."},{"book_id":"ECC","book_name_alt":"Ecclesiastes","chapter":"6","verse_start":"4","verse_start_alt":"4","verse_end":"4","verse_end_alt":"4","verse_text":"For he cometh in with vanity, and departeth in darkness, and his name shall be covered with darkness."},{"book_id":"ECC","book_name_alt":"Ecclesiastes","chapter":"6","verse_start":"5","verse_start_alt":"5","verse_end":"5","verse_end_alt":"5","verse_text":"Moreover he hath not seen the sun, nor known any thing: this hath more rest than the other."},{"book_id":"ECC","book_name_alt":"Ecclesiastes","chapter":"6","verse_start":"6","verse_start_alt":"6","verse_end":"6","verse_end_alt":"6","verse_text":"Yea, though he live a thousand years twice told, yet hath he seen no good: do not all go to one place?"},{"book_id":"ECC","book_name_alt":"Ecclesiastes","chapter":"6","verse_start":"7","verse_start_alt":"7","verse_end":"7","verse_end_alt":"7","verse_text":"All the labour of man is for his mouth, and yet the appetite is not filled."},{"book_id":"ECC","book_name_alt":"Ecclesiastes","chapter":"6","verse_start":"8","verse_start_alt":"8","verse_end":"8","verse_end_alt":"8","verse_text":"For what hath the wise more than the fool? what hath the poor, that knoweth to walk before the living?"},{"book_id":"ECC","book_name_alt":"Ecclesiastes","chapter":"6","verse_start":"9","verse_start_alt":"9","verse_end":"9","verse_end_alt":"9","verse_text":"Better is the sight of the eyes than the wandering of the desire: this is also vanity and vexation of spirit."},{"book_id":"ECC","book_name_alt":"Ecclesiastes","chapter":"6","verse_start":"10","verse_start_alt":"10","verse_end":"10","verse_end_alt":"10","verse_text":"That which hath been is named already, and it is known that it is man: neither may he contend with him that is mightier than he."},{"book_id":"ECC","book_name_alt":"Ecclesiastes","chapter":"6","verse_start":"11","verse_start_alt":"11","verse_end":"11","verse_end_alt":"11","verse_text":"Seeing there be many things that increase vanity, what is man the better?"},{"book_id":"ECC","book_name_alt":"Ecclesiastes","chapter":"6","verse_start":"12","verse_start_alt":"12","verse_end":"12","verse_end_alt":"12","verse_text":"For who knoweth what is good for man in this life, all the days of his vain life which he spendeth as a shadow? for who can tell a man what shall be after him under the sun?"}]
+{
+  "info": "",
+  "verses": [
+    {
+      "book_id": "ECC",
+      "book_name": "Ecclesiastes",
+      "chapter": 6,
+      "verse_start": 1,
+      "verse_end": 1,
+      "text": "There is an evil which I have seen under the sun, and it <em>is</em> common among men:"
+    },
+    {
+      "book_id": "ECC",
+      "book_name": "Ecclesiastes",
+      "chapter": 6,
+      "verse_start": 2,
+      "verse_end": 2,
+      "text": "A man to whom God hath given riches, wealth, and honour, so that he wanteth nothing for his soul of all that he desireth, yet God giveth him not power to eat thereof, but a stranger eateth it: this <em>is</em> vanity, and it <em>is</em> an evil disease."
+    },
+    {
+      "book_id": "ECC",
+      "book_name": "Ecclesiastes",
+      "chapter": 6,
+      "verse_start": 3,
+      "verse_end": 3,
+      "text": "If a man beget an hundred <em>children</em>, and live many years, so that the days of his years be many, and his soul be not filled with good, and also <em>that</em> he have no burial; I say, <em>that</em> an untimely birth <em>is</em> better than he."
+    },
+    {
+      "book_id": "ECC",
+      "book_name": "Ecclesiastes",
+      "chapter": 6,
+      "verse_start": 4,
+      "verse_end": 4,
+      "text": "For he cometh in with vanity, and departeth in darkness, and his name shall be covered with darkness."
+    },
+    {
+      "book_id": "ECC",
+      "book_name": "Ecclesiastes",
+      "chapter": 6,
+      "verse_start": 5,
+      "verse_end": 5,
+      "text": "Moreover he hath not seen the sun, nor known <em>any thing</em>: this hath more rest than the other."
+    },
+    {
+      "book_id": "ECC",
+      "book_name": "Ecclesiastes",
+      "chapter": 6,
+      "verse_start": 6,
+      "verse_end": 6,
+      "text": "Yea, though he live a thousand years twice <em>told</em>, yet hath he seen no good: do not all go to one place?"
+    },
+    {
+      "book_id": "ECC",
+      "book_name": "Ecclesiastes",
+      "chapter": 6,
+      "verse_start": 7,
+      "verse_end": 7,
+      "text": "All the labour of man <em>is</em> for his mouth, and yet the appetite is not filled."
+    },
+    {
+      "book_id": "ECC",
+      "book_name": "Ecclesiastes",
+      "chapter": 6,
+      "verse_start": 8,
+      "verse_end": 8,
+      "text": "For what hath the wise more than the fool? what hath the poor, that knoweth to walk before the living?"
+    },
+    {
+      "book_id": "ECC",
+      "book_name": "Ecclesiastes",
+      "chapter": 6,
+      "verse_start": 9,
+      "verse_end": 9,
+      "text": "Better <em>is</em> the sight of the eyes than the wandering of the desire: this <em>is</em> also vanity and vexation of spirit."
+    },
+    {
+      "book_id": "ECC",
+      "book_name": "Ecclesiastes",
+      "chapter": 6,
+      "verse_start": 10,
+      "verse_end": 10,
+      "text": "That which hath been is named already, and it is known that it <em>is</em> man: neither may he contend with him that is mightier than he."
+    },
+    {
+      "book_id": "ECC",
+      "book_name": "Ecclesiastes",
+      "chapter": 6,
+      "verse_start": 11,
+      "verse_end": 11,
+      "text": "Seeing there be many things that increase vanity, what <em>is</em> man the better?"
+    },
+    {
+      "book_id": "ECC",
+      "book_name": "Ecclesiastes",
+      "chapter": 6,
+      "verse_start": 12,
+      "verse_end": 12,
+      "text": "For who knoweth what <em>is</em> good for man in <em>this</em> life, all the days of his vain life which he spendeth as a shadow? for who can tell a man what shall be after him under the sun?"
+    }
+  ]
+}

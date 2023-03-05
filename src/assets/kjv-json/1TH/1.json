@@ -1,1 +1,85 @@
-[{"book_id":"1TH","book_name_alt":"1 Thessalonians","chapter":"1","verse_start":"1","verse_start_alt":"1","verse_end":"1","verse_end_alt":"1","verse_text":"Paul, and Silvanus, and Timotheus, unto the church of the Thessalonians which is in God the Father and in the Lord Jesus Christ: Grace be unto you, and peace, from God our Father, and the Lord Jesus Christ."},{"book_id":"1TH","book_name_alt":"1 Thessalonians","chapter":"1","verse_start":"2","verse_start_alt":"2","verse_end":"2","verse_end_alt":"2","verse_text":"We give thanks to God always for you all, making mention of you in our prayers;"},{"book_id":"1TH","book_name_alt":"1 Thessalonians","chapter":"1","verse_start":"3","verse_start_alt":"3","verse_end":"3","verse_end_alt":"3","verse_text":"Remembering without ceasing your work of faith, and labour of love, and patience of hope in our Lord Jesus Christ, in the sight of God and our Father;"},{"book_id":"1TH","book_name_alt":"1 Thessalonians","chapter":"1","verse_start":"4","verse_start_alt":"4","verse_end":"4","verse_end_alt":"4","verse_text":"Knowing, brethren beloved, your election of God."},{"book_id":"1TH","book_name_alt":"1 Thessalonians","chapter":"1","verse_start":"5","verse_start_alt":"5","verse_end":"5","verse_end_alt":"5","verse_text":"For our gospel came not unto you in word only, but also in power, and in the Holy Ghost, and in much assurance; as ye know what manner of men we were among you for your sake."},{"book_id":"1TH","book_name_alt":"1 Thessalonians","chapter":"1","verse_start":"6","verse_start_alt":"6","verse_end":"6","verse_end_alt":"6","verse_text":"And ye became followers of us, and of the Lord, having received the word in much affliction, with joy of the Holy Ghost:"},{"book_id":"1TH","book_name_alt":"1 Thessalonians","chapter":"1","verse_start":"7","verse_start_alt":"7","verse_end":"7","verse_end_alt":"7","verse_text":"So that ye were ensamples to all that believe in Macedonia and Achaia."},{"book_id":"1TH","book_name_alt":"1 Thessalonians","chapter":"1","verse_start":"8","verse_start_alt":"8","verse_end":"8","verse_end_alt":"8","verse_text":"For from you sounded out the word of the Lord not only in Macedonia and Achaia, but also in every place your faith to God-ward is spread abroad; so that we need not to speak any thing."},{"book_id":"1TH","book_name_alt":"1 Thessalonians","chapter":"1","verse_start":"9","verse_start_alt":"9","verse_end":"9","verse_end_alt":"9","verse_text":"For they themselves shew of us what manner of entering in we had unto you, and how ye turned to God from idols to serve the living and true God;"},{"book_id":"1TH","book_name_alt":"1 Thessalonians","chapter":"1","verse_start":"10","verse_start_alt":"10","verse_end":"10","verse_end_alt":"10","verse_text":"And to wait for his Son from heaven, whom he raised from the dead, even Jesus, which delivered us from the wrath to come."}]
+{
+  "info": "",
+  "verses": [
+    {
+      "book_id": "1TH",
+      "book_name": "1 Thessalonians",
+      "chapter": 1,
+      "verse_start": 1,
+      "verse_end": 1,
+      "text": "<a href=\"../1-Thessalonians-1-1/\" title=\"1 Thessalonians 1:1 KJV verse detail\"><span id=\"3\" class=\"versehover\">1  \"JESUS_END\"Paul, and Silvanus, and Timotheus, unto the church of the Thessalonians <em>which is</em> in God the Father and <em>in</em> the Lord Jesus Christ: Grace <em>be</em> unto you, and peace, from God our Father, and the Lord Jesus Christ."
+    },
+    {
+      "book_id": "1TH",
+      "book_name": "1 Thessalonians",
+      "chapter": 1,
+      "verse_start": 2,
+      "verse_end": 2,
+      "text": "<a href=\"../1-Thessalonians-1-2/\" title=\"1 Thessalonians 1:2 KJV verse detail\"><span id=\"4\" class=\"versehover\">2  \"JESUS_END\"We give thanks to God always for you all, making mention of you in our prayers;"
+    },
+    {
+      "book_id": "1TH",
+      "book_name": "1 Thessalonians",
+      "chapter": 1,
+      "verse_start": 3,
+      "verse_end": 3,
+      "text": "<a href=\"../1-Thessalonians-1-3/\" title=\"1 Thessalonians 1:3 KJV verse detail\"><span id=\"5\" class=\"versehover\">3  \"JESUS_END\"Remembering without ceasing your work of faith, and labour of love, and patience of hope in our Lord Jesus Christ, in the sight of God and our Father;"
+    },
+    {
+      "book_id": "1TH",
+      "book_name": "1 Thessalonians",
+      "chapter": 1,
+      "verse_start": 4,
+      "verse_end": 4,
+      "text": "<a href=\"../1-Thessalonians-1-4/\" title=\"1 Thessalonians 1:4 KJV verse detail\"><span id=\"6\" class=\"versehover\">4  \"JESUS_END\"Knowing, brethren beloved, your election of God."
+    },
+    {
+      "book_id": "1TH",
+      "book_name": "1 Thessalonians",
+      "chapter": 1,
+      "verse_start": 5,
+      "verse_end": 5,
+      "text": "<a href=\"../1-Thessalonians-1-5/\" title=\"1 Thessalonians 1:5 KJV verse detail\"><span id=\"7\" class=\"versehover\">5  \"JESUS_END\"For our gospel came not unto you in word only, but also in power, and in the Holy Ghost, and in much assurance; as ye know what manner of men we were among you for your sake."
+    },
+    {
+      "book_id": "1TH",
+      "book_name": "1 Thessalonians",
+      "chapter": 1,
+      "verse_start": 6,
+      "verse_end": 6,
+      "text": "<a href=\"../1-Thessalonians-1-6/\" title=\"1 Thessalonians 1:6 KJV verse detail\"><span id=\"8\" class=\"versehover\">6  \"JESUS_END\"And ye became followers of us, and of the Lord, having received the word in much affliction, with joy of the Holy Ghost:"
+    },
+    {
+      "book_id": "1TH",
+      "book_name": "1 Thessalonians",
+      "chapter": 1,
+      "verse_start": 7,
+      "verse_end": 7,
+      "text": "<a href=\"../1-Thessalonians-1-7/\" title=\"1 Thessalonians 1:7 KJV verse detail\"><span id=\"9\" class=\"versehover\">7  \"JESUS_END\"So that ye were ensamples to all that believe in Macedonia and Achaia."
+    },
+    {
+      "book_id": "1TH",
+      "book_name": "1 Thessalonians",
+      "chapter": 1,
+      "verse_start": 8,
+      "verse_end": 8,
+      "text": "<a href=\"../1-Thessalonians-1-8/\" title=\"1 Thessalonians 1:8 KJV verse detail\"><span id=\"10\" class=\"versehover\">8  \"JESUS_END\"For from you sounded out the word of the Lord not only in Macedonia and Achaia, but also in every place your faith to God-ward is spread abroad; so that we need not to speak any thing."
+    },
+    {
+      "book_id": "1TH",
+      "book_name": "1 Thessalonians",
+      "chapter": 1,
+      "verse_start": 9,
+      "verse_end": 9,
+      "text": "<a href=\"../1-Thessalonians-1-9/\" title=\"1 Thessalonians 1:9 KJV verse detail\"><span id=\"11\" class=\"versehover\">9  \"JESUS_END\"For they themselves shew of us what manner of entering in we had unto you, and how ye turned to God from idols to serve the living and true God;"
+    },
+    {
+      "book_id": "1TH",
+      "book_name": "1 Thessalonians",
+      "chapter": 1,
+      "verse_start": 10,
+      "verse_end": 10,
+      "text": "<a href=\"../1-Thessalonians-1-10/\" title=\"1 Thessalonians 1:10 KJV verse detail\"><span id=\"12\" class=\"versehover\">10  \"JESUS_END\"And to wait for his Son from heaven, whom he raised from the dead, <em>even</em> Jesus, which delivered us from the wrath to come."
+    }
+  ]
+}

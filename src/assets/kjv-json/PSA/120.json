@@ -1,1 +1,61 @@
-[{"book_id":"PSA","book_name_alt":"Psalms","chapter":"120","verse_start":"1","verse_start_alt":"1","verse_end":"1","verse_end_alt":"1","verse_text":"In my distress I cried unto the LORD, and he heard me."},{"book_id":"PSA","book_name_alt":"Psalms","chapter":"120","verse_start":"2","verse_start_alt":"2","verse_end":"2","verse_end_alt":"2","verse_text":"Deliver my soul, O LORD, from lying lips, and from a deceitful tongue."},{"book_id":"PSA","book_name_alt":"Psalms","chapter":"120","verse_start":"3","verse_start_alt":"3","verse_end":"3","verse_end_alt":"3","verse_text":"What shall be given unto thee? or what shall be done unto thee, thou false tongue?"},{"book_id":"PSA","book_name_alt":"Psalms","chapter":"120","verse_start":"4","verse_start_alt":"4","verse_end":"4","verse_end_alt":"4","verse_text":"Sharp arrows of the mighty, with coals of juniper."},{"book_id":"PSA","book_name_alt":"Psalms","chapter":"120","verse_start":"5","verse_start_alt":"5","verse_end":"5","verse_end_alt":"5","verse_text":"Woe is me, that I sojourn in Mesech, that I dwell in the tents of Kedar!"},{"book_id":"PSA","book_name_alt":"Psalms","chapter":"120","verse_start":"6","verse_start_alt":"6","verse_end":"6","verse_end_alt":"6","verse_text":"My soul hath long dwelt with him that hateth peace."},{"book_id":"PSA","book_name_alt":"Psalms","chapter":"120","verse_start":"7","verse_start_alt":"7","verse_end":"7","verse_end_alt":"7","verse_text":"I am for peace: but when I speak, they are for war."}]
+{
+  "info": "(A Song of degrees.)",
+  "verses": [
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 120,
+      "verse_start": 1,
+      "verse_end": 1,
+      "text": "In my distress I cried unto the LORD, and he heard me."
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 120,
+      "verse_start": 2,
+      "verse_end": 2,
+      "text": "Deliver my soul, O LORD, from lying lips, <em>and</em> from a deceitful tongue."
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 120,
+      "verse_start": 3,
+      "verse_end": 3,
+      "text": "What shall be given unto thee? or what shall be done unto thee, thou false tongue?"
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 120,
+      "verse_start": 4,
+      "verse_end": 4,
+      "text": "Sharp arrows of the mighty, with coals of juniper."
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 120,
+      "verse_start": 5,
+      "verse_end": 5,
+      "text": "Woe is me, that I sojourn in Mesech, <em>that</em> I dwell in the tents of Kedar!"
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 120,
+      "verse_start": 6,
+      "verse_end": 6,
+      "text": "My soul hath long dwelt with him that hateth peace."
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 120,
+      "verse_start": 7,
+      "verse_end": 7,
+      "text": "I <em>am for</em> peace: but when I speak, they <em>are</em> for war."
+    }
+  ]
+}

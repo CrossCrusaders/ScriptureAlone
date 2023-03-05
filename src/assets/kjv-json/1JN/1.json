@@ -1,1 +1,85 @@
-[{"book_id":"1JN","book_name_alt":"1 John","chapter":"1","verse_start":"1","verse_start_alt":"1","verse_end":"1","verse_end_alt":"1","verse_text":"That which was from the beginning, which we have heard, which we have seen with our eyes, which we have looked upon, and our hands have handled, of the Word of life;"},{"book_id":"1JN","book_name_alt":"1 John","chapter":"1","verse_start":"2","verse_start_alt":"2","verse_end":"2","verse_end_alt":"2","verse_text":"(For the life was manifested, and we have seen it, and bear witness, and shew unto you that eternal life, which was with the Father, and was manifested unto us;)"},{"book_id":"1JN","book_name_alt":"1 John","chapter":"1","verse_start":"3","verse_start_alt":"3","verse_end":"3","verse_end_alt":"3","verse_text":"That which we have seen and heard declare we unto you, that ye also may have fellowship with us: and truly our fellowship is with the Father, and with his Son Jesus Christ."},{"book_id":"1JN","book_name_alt":"1 John","chapter":"1","verse_start":"4","verse_start_alt":"4","verse_end":"4","verse_end_alt":"4","verse_text":"And these things write we unto you, that your joy may be full."},{"book_id":"1JN","book_name_alt":"1 John","chapter":"1","verse_start":"5","verse_start_alt":"5","verse_end":"5","verse_end_alt":"5","verse_text":"This then is the message which we have heard of him, and declare unto you, that God is light, and in him is no darkness at all."},{"book_id":"1JN","book_name_alt":"1 John","chapter":"1","verse_start":"6","verse_start_alt":"6","verse_end":"6","verse_end_alt":"6","verse_text":"If we say that we have fellowship with him, and walk in darkness, we lie, and do not the truth:"},{"book_id":"1JN","book_name_alt":"1 John","chapter":"1","verse_start":"7","verse_start_alt":"7","verse_end":"7","verse_end_alt":"7","verse_text":"But if we walk in the light, as he is in the light, we have fellowship one with another, and the blood of Jesus Christ his Son cleanseth us from all sin."},{"book_id":"1JN","book_name_alt":"1 John","chapter":"1","verse_start":"8","verse_start_alt":"8","verse_end":"8","verse_end_alt":"8","verse_text":"If we say that we have no sin, we deceive ourselves, and the truth is not in us."},{"book_id":"1JN","book_name_alt":"1 John","chapter":"1","verse_start":"9","verse_start_alt":"9","verse_end":"9","verse_end_alt":"9","verse_text":"If we confess our sins, he is faithful and just to forgive us our sins, and to cleanse us from all unrighteousness."},{"book_id":"1JN","book_name_alt":"1 John","chapter":"1","verse_start":"10","verse_start_alt":"10","verse_end":"10","verse_end_alt":"10","verse_text":"If we say that we have not sinned, we make him a liar, and his word is not in us."}]
+{
+  "info": "",
+  "verses": [
+    {
+      "book_id": "1JN",
+      "book_name": "1 John",
+      "chapter": 1,
+      "verse_start": 1,
+      "verse_end": 1,
+      "text": "<a href=\"../1-John-1-1/\" title=\"1 John 1:1 KJV verse detail\"><span id=\"3\" class=\"versehover\">1  \"JESUS_END\"That which was from the beginning, which we have heard, which we have seen with our eyes, which we have looked upon, and our hands have handled, of the Word of life;"
+    },
+    {
+      "book_id": "1JN",
+      "book_name": "1 John",
+      "chapter": 1,
+      "verse_start": 2,
+      "verse_end": 2,
+      "text": "<a href=\"../1-John-1-2/\" title=\"1 John 1:2 KJV verse detail\"><span id=\"4\" class=\"versehover\">2  \"JESUS_END\"(For the life was manifested, and we have seen <em>it</em>, and bear witness, and shew unto you that eternal life, which was with the Father, and was manifested unto us;)"
+    },
+    {
+      "book_id": "1JN",
+      "book_name": "1 John",
+      "chapter": 1,
+      "verse_start": 3,
+      "verse_end": 3,
+      "text": "<a href=\"../1-John-1-3/\" title=\"1 John 1:3 KJV verse detail\"><span id=\"5\" class=\"versehover\">3  \"JESUS_END\"That which we have seen and heard declare we unto you, that ye also may have fellowship with us: and truly our fellowship <em>is</em> with the Father, and with his Son Jesus Christ."
+    },
+    {
+      "book_id": "1JN",
+      "book_name": "1 John",
+      "chapter": 1,
+      "verse_start": 4,
+      "verse_end": 4,
+      "text": "<a href=\"../1-John-1-4/\" title=\"1 John 1:4 KJV verse detail\"><span id=\"6\" class=\"versehover\">4  \"JESUS_END\"And these things write we unto you, that your joy may be full."
+    },
+    {
+      "book_id": "1JN",
+      "book_name": "1 John",
+      "chapter": 1,
+      "verse_start": 5,
+      "verse_end": 5,
+      "text": "<a href=\"../1-John-1-5/\" title=\"1 John 1:5 KJV verse detail\"><span id=\"7\" class=\"versehover\">5  \"JESUS_END\"This then is the message which we have heard of him, and declare unto you, that God is light, and in him is no darkness at all."
+    },
+    {
+      "book_id": "1JN",
+      "book_name": "1 John",
+      "chapter": 1,
+      "verse_start": 6,
+      "verse_end": 6,
+      "text": "<a href=\"../1-John-1-6/\" title=\"1 John 1:6 KJV verse detail\"><span id=\"8\" class=\"versehover\">6  \"JESUS_END\"If we say that we have fellowship with him, and walk in darkness, we lie, and do not the truth:"
+    },
+    {
+      "book_id": "1JN",
+      "book_name": "1 John",
+      "chapter": 1,
+      "verse_start": 7,
+      "verse_end": 7,
+      "text": "<a href=\"../1-John-1-7/\" title=\"1 John 1:7 KJV verse detail\"><span id=\"9\" class=\"versehover\">7  \"JESUS_END\"But if we walk in the light, as he is in the light, we have fellowship one with another, and the blood of Jesus Christ his Son cleanseth us from all sin."
+    },
+    {
+      "book_id": "1JN",
+      "book_name": "1 John",
+      "chapter": 1,
+      "verse_start": 8,
+      "verse_end": 8,
+      "text": "<a href=\"../1-John-1-8/\" title=\"1 John 1:8 KJV verse detail\"><span id=\"10\" class=\"versehover\">8  \"JESUS_END\"If we say that we have no sin, we deceive ourselves, and the truth is not in us."
+    },
+    {
+      "book_id": "1JN",
+      "book_name": "1 John",
+      "chapter": 1,
+      "verse_start": 9,
+      "verse_end": 9,
+      "text": "<a href=\"../1-John-1-9/\" title=\"1 John 1:9 KJV verse detail\"><span id=\"11\" class=\"versehover\">9  \"JESUS_END\"If we confess our sins, he is faithful and just to forgive us <em>our</em> sins, and to cleanse us from all unrighteousness."
+    },
+    {
+      "book_id": "1JN",
+      "book_name": "1 John",
+      "chapter": 1,
+      "verse_start": 10,
+      "verse_end": 10,
+      "text": "<a href=\"../1-John-1-10/\" title=\"1 John 1:10 KJV verse detail\"><span id=\"12\" class=\"versehover\">10  \"JESUS_END\"If we say that we have not sinned, we make him a liar, and his word is not in us."
+    }
+  ]
+}

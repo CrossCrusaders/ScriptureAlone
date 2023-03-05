@@ -1,1 +1,101 @@
-[{"book_id":"PSA","book_name_alt":"Psalms","chapter":"97","verse_start":"1","verse_start_alt":"1","verse_end":"1","verse_end_alt":"1","verse_text":"The LORD reigneth; let the earth rejoice; let the multitude of isles be glad thereof."},{"book_id":"PSA","book_name_alt":"Psalms","chapter":"97","verse_start":"2","verse_start_alt":"2","verse_end":"2","verse_end_alt":"2","verse_text":"Clouds and darkness are round about him: righteousness and judgment are the habitation of his throne."},{"book_id":"PSA","book_name_alt":"Psalms","chapter":"97","verse_start":"3","verse_start_alt":"3","verse_end":"3","verse_end_alt":"3","verse_text":"A fire goeth before him, and burneth up his enemies round about."},{"book_id":"PSA","book_name_alt":"Psalms","chapter":"97","verse_start":"4","verse_start_alt":"4","verse_end":"4","verse_end_alt":"4","verse_text":"His lightnings enlightened the world: the earth saw, and trembled."},{"book_id":"PSA","book_name_alt":"Psalms","chapter":"97","verse_start":"5","verse_start_alt":"5","verse_end":"5","verse_end_alt":"5","verse_text":"The hills melted like wax at the presence of the LORD, at the presence of the Lord of the whole earth."},{"book_id":"PSA","book_name_alt":"Psalms","chapter":"97","verse_start":"6","verse_start_alt":"6","verse_end":"6","verse_end_alt":"6","verse_text":"The heavens declare his righteousness, and all the people see his glory."},{"book_id":"PSA","book_name_alt":"Psalms","chapter":"97","verse_start":"7","verse_start_alt":"7","verse_end":"7","verse_end_alt":"7","verse_text":"Confounded be all they that serve graven images, that boast themselves of idols: worship him, all ye gods."},{"book_id":"PSA","book_name_alt":"Psalms","chapter":"97","verse_start":"8","verse_start_alt":"8","verse_end":"8","verse_end_alt":"8","verse_text":"Zion heard, and was glad; and the daughters of Judah rejoiced because of thy judgments, O LORD."},{"book_id":"PSA","book_name_alt":"Psalms","chapter":"97","verse_start":"9","verse_start_alt":"9","verse_end":"9","verse_end_alt":"9","verse_text":"For thou, LORD, art high above all the earth: thou art exalted far above all gods."},{"book_id":"PSA","book_name_alt":"Psalms","chapter":"97","verse_start":"10","verse_start_alt":"10","verse_end":"10","verse_end_alt":"10","verse_text":"Ye that love the LORD, hate evil: he preserveth the souls of his saints; he delivereth them out of the hand of the wicked."},{"book_id":"PSA","book_name_alt":"Psalms","chapter":"97","verse_start":"11","verse_start_alt":"11","verse_end":"11","verse_end_alt":"11","verse_text":"Light is sown for the righteous, and gladness for the upright in heart."},{"book_id":"PSA","book_name_alt":"Psalms","chapter":"97","verse_start":"12","verse_start_alt":"12","verse_end":"12","verse_end_alt":"12","verse_text":"Rejoice in the LORD, ye righteous; and give thanks at the remembrance of his holiness."}]
+{
+  "info": "",
+  "verses": [
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 97,
+      "verse_start": 1,
+      "verse_end": 1,
+      "text": "The LORD reigneth; let the earth rejoice; let the multitude of isles be glad <em>thereof</em>."
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 97,
+      "verse_start": 2,
+      "verse_end": 2,
+      "text": "Clouds and darkness <em>are</em> round about him: righteousness and judgment <em>are</em> the habitation of his throne."
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 97,
+      "verse_start": 3,
+      "verse_end": 3,
+      "text": "A fire goeth before him, and burneth up his enemies round about."
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 97,
+      "verse_start": 4,
+      "verse_end": 4,
+      "text": "His lightnings enlightened the world: the earth saw, and trembled."
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 97,
+      "verse_start": 5,
+      "verse_end": 5,
+      "text": "The hills melted like wax at the presence of the LORD, at the presence of the Lord of the whole earth."
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 97,
+      "verse_start": 6,
+      "verse_end": 6,
+      "text": "The heavens declare his righteousness, and all the people see his glory."
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 97,
+      "verse_start": 7,
+      "verse_end": 7,
+      "text": "Confounded be all they that serve graven images, that boast themselves of idols: worship him, all <em>ye</em> gods."
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 97,
+      "verse_start": 8,
+      "verse_end": 8,
+      "text": "Zion heard, and was glad; and the daughters of Judah rejoiced because of thy judgments, O LORD."
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 97,
+      "verse_start": 9,
+      "verse_end": 9,
+      "text": "For thou, LORD, <em>art</em> high above all the earth: thou art exalted far above all gods."
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 97,
+      "verse_start": 10,
+      "verse_end": 10,
+      "text": "Ye that love the LORD, hate evil: he preserveth the souls of his saints; he delivereth them out of the hand of the wicked."
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 97,
+      "verse_start": 11,
+      "verse_end": 11,
+      "text": "Light is sown for the righteous, and gladness for the upright in heart."
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 97,
+      "verse_start": 12,
+      "verse_end": 12,
+      "text": "Rejoice in the LORD, ye righteous; and give thanks at the remembrance of his holiness."
+    }
+  ]
+}

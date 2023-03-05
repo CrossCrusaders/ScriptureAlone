@@ -1,1 +1,69 @@
-[{"book_id":"1CH","book_name_alt":"1 Chronicles","chapter":"20","verse_start":"1","verse_start_alt":"1","verse_end":"1","verse_end_alt":"1","verse_text":"And it came to pass, that after the year was expired, at the time that kings go out to battle, Joab led forth the power of the army, and wasted the country of the children of Ammon, and came and besieged Rabbah. But David tarried at Jerusalem. And Joab smote Rabbah, and destroyed it."},{"book_id":"1CH","book_name_alt":"1 Chronicles","chapter":"20","verse_start":"2","verse_start_alt":"2","verse_end":"2","verse_end_alt":"2","verse_text":"And David took the crown of their king from off his head, and found it to weigh a talent of gold, and there were precious stones in it; and it was set upon David’s head: and he brought also exceeding much spoil out of the city."},{"book_id":"1CH","book_name_alt":"1 Chronicles","chapter":"20","verse_start":"3","verse_start_alt":"3","verse_end":"3","verse_end_alt":"3","verse_text":"And he brought out the people that were in it, and cut them with saws, and with harrows of iron, and with axes. Even so dealt David with all the cities of the children of Ammon. And David and all the people returned to Jerusalem."},{"book_id":"1CH","book_name_alt":"1 Chronicles","chapter":"20","verse_start":"4","verse_start_alt":"4","verse_end":"4","verse_end_alt":"4","verse_text":"And it came to pass after this, that there arose war at Gezer with the Philistines; at which time Sibbechai the Hushathite slew Sippai, that was of the children of the giant: and they were subdued."},{"book_id":"1CH","book_name_alt":"1 Chronicles","chapter":"20","verse_start":"5","verse_start_alt":"5","verse_end":"5","verse_end_alt":"5","verse_text":"And there was war again with the Philistines; and Elhanan the son of Jair slew Lahmi the brother of Goliath the Gittite, whose spear staff was like a weaver’s beam."},{"book_id":"1CH","book_name_alt":"1 Chronicles","chapter":"20","verse_start":"6","verse_start_alt":"6","verse_end":"6","verse_end_alt":"6","verse_text":"And yet again there was war at Gath, where was a man of great stature, whose fingers and toes were four and twenty, six on each hand, and six on each foot and he also was the son of the giant."},{"book_id":"1CH","book_name_alt":"1 Chronicles","chapter":"20","verse_start":"7","verse_start_alt":"7","verse_end":"7","verse_end_alt":"7","verse_text":"But when he defied Israel, Jonathan the son of Shimea David’s brother slew him."},{"book_id":"1CH","book_name_alt":"1 Chronicles","chapter":"20","verse_start":"8","verse_start_alt":"8","verse_end":"8","verse_end_alt":"8","verse_text":"These were born unto the giant in Gath; and they fell by the hand of David, and by the hand of his servants."}]
+{
+  "info": "",
+  "verses": [
+    {
+      "book_id": "1CH",
+      "book_name": "1 Chronicles",
+      "chapter": 20,
+      "verse_start": 1,
+      "verse_end": 1,
+      "text": "<a href=\"../1-Chronicles-20-1/\" title=\"1 Chronicles 20:1 KJV verse detail\"><span id=\"3\" class=\"versehover\">1  \"JESUS_END\"And it came to pass, that after the year was expired, at the time that kings go out <em>to battle</em>, Joab led forth the power of the army, and wasted the country of the children of Ammon, and came and besieged Rabbah. But David tarried at Jerusalem. And Joab smote Rabbah, and destroyed it."
+    },
+    {
+      "book_id": "1CH",
+      "book_name": "1 Chronicles",
+      "chapter": 20,
+      "verse_start": 2,
+      "verse_end": 2,
+      "text": "<a href=\"../1-Chronicles-20-2/\" title=\"1 Chronicles 20:2 KJV verse detail\"><span id=\"4\" class=\"versehover\">2  \"JESUS_END\"And David took the crown of their king from off his head, and found it to weigh a talent of gold, and <em>there were</em> precious stones in it; and it was set upon David's head: and he brought also exceeding much spoil out of the city."
+    },
+    {
+      "book_id": "1CH",
+      "book_name": "1 Chronicles",
+      "chapter": 20,
+      "verse_start": 3,
+      "verse_end": 3,
+      "text": "<a href=\"../1-Chronicles-20-3/\" title=\"1 Chronicles 20:3 KJV verse detail\"><span id=\"5\" class=\"versehover\">3  \"JESUS_END\"And he brought out the people that <em>were</em> in it, and cut <em>them</em> with saws, and with harrows of iron, and with axes. Even so dealt David with all the cities of the children of Ammon. And David and all the people returned to Jerusalem."
+    },
+    {
+      "book_id": "1CH",
+      "book_name": "1 Chronicles",
+      "chapter": 20,
+      "verse_start": 4,
+      "verse_end": 4,
+      "text": "<a href=\"../1-Chronicles-20-4/\" title=\"1 Chronicles 20:4 KJV verse detail\"><span id=\"6\" class=\"versehover\">4  \"JESUS_END\"And it came to pass after this, that there arose war at Gezer with the Philistines; at which time Sibbechai the Hushathite slew Sippai, <em>that was</em> of the children of the giant: and they were subdued."
+    },
+    {
+      "book_id": "1CH",
+      "book_name": "1 Chronicles",
+      "chapter": 20,
+      "verse_start": 5,
+      "verse_end": 5,
+      "text": "<a href=\"../1-Chronicles-20-5/\" title=\"1 Chronicles 20:5 KJV verse detail\"><span id=\"7\" class=\"versehover\">5  \"JESUS_END\"And there was war again with the Philistines; and Elhanan the son of Jair slew Lahmi the brother of Goliath the Gittite, whose spear staff <em>was</em> like a weaver's beam."
+    },
+    {
+      "book_id": "1CH",
+      "book_name": "1 Chronicles",
+      "chapter": 20,
+      "verse_start": 6,
+      "verse_end": 6,
+      "text": "<a href=\"../1-Chronicles-20-6/\" title=\"1 Chronicles 20:6 KJV verse detail\"><span id=\"8\" class=\"versehover\">6  \"JESUS_END\"And yet again there was war at Gath, where was a man of <em>great</em> stature, whose fingers and toes <em>were</em> four and twenty, six <em>on each hand</em>, and six <em>on each foot</em>: and he also was the son of the giant."
+    },
+    {
+      "book_id": "1CH",
+      "book_name": "1 Chronicles",
+      "chapter": 20,
+      "verse_start": 7,
+      "verse_end": 7,
+      "text": "<a href=\"../1-Chronicles-20-7/\" title=\"1 Chronicles 20:7 KJV verse detail\"><span id=\"9\" class=\"versehover\">7  \"JESUS_END\"But when he defied Israel, Jonathan the son of Shimea David's brother slew him."
+    },
+    {
+      "book_id": "1CH",
+      "book_name": "1 Chronicles",
+      "chapter": 20,
+      "verse_start": 8,
+      "verse_end": 8,
+      "text": "<a href=\"../1-Chronicles-20-8/\" title=\"1 Chronicles 20:8 KJV verse detail\"><span id=\"10\" class=\"versehover\">8  \"JESUS_END\"These were born unto the giant in Gath; and they fell by the hand of David, and by the hand of his servants."
+    }
+  ]
+}

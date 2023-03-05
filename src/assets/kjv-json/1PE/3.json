@@ -1,1 +1,181 @@
-[{"book_id":"1PE","book_name_alt":"1 Peter","chapter":"3","verse_start":"1","verse_start_alt":"1","verse_end":"1","verse_end_alt":"1","verse_text":"Likewise, ye wives, be in subjection to your own husbands; that, if any obey not the word, they also may without the word be won by the conversation of the wives;"},{"book_id":"1PE","book_name_alt":"1 Peter","chapter":"3","verse_start":"2","verse_start_alt":"2","verse_end":"2","verse_end_alt":"2","verse_text":"While they behold your chaste conversation coupled with fear."},{"book_id":"1PE","book_name_alt":"1 Peter","chapter":"3","verse_start":"3","verse_start_alt":"3","verse_end":"3","verse_end_alt":"3","verse_text":"Whose adorning let it not be that outward adorning of plaiting the hair, and of wearing of gold, or of putting on of apparel;"},{"book_id":"1PE","book_name_alt":"1 Peter","chapter":"3","verse_start":"4","verse_start_alt":"4","verse_end":"4","verse_end_alt":"4","verse_text":"But let it be the hidden man of the heart, in that which is not corruptible, even the ornament of a meek and quiet spirit, which is in the sight of God of great price."},{"book_id":"1PE","book_name_alt":"1 Peter","chapter":"3","verse_start":"5","verse_start_alt":"5","verse_end":"5","verse_end_alt":"5","verse_text":"For after this manner in the old time the holy women also, who trusted in God, adorned themselves, being in subjection unto their own husbands:"},{"book_id":"1PE","book_name_alt":"1 Peter","chapter":"3","verse_start":"6","verse_start_alt":"6","verse_end":"6","verse_end_alt":"6","verse_text":"Even as Sara obeyed Abraham, calling him lord: whose daughters ye are, as long as ye do well, and are not afraid with any amazement."},{"book_id":"1PE","book_name_alt":"1 Peter","chapter":"3","verse_start":"7","verse_start_alt":"7","verse_end":"7","verse_end_alt":"7","verse_text":"Likewise, ye husbands, dwell with them according to knowledge, giving honour unto the wife, as unto the weaker vessel, and as being heirs together of the grace of life; that your prayers be not hindered."},{"book_id":"1PE","book_name_alt":"1 Peter","chapter":"3","verse_start":"8","verse_start_alt":"8","verse_end":"8","verse_end_alt":"8","verse_text":"Finally, be ye all of one mind, having compassion one of another, love as brethren, be pitiful, be courteous:"},{"book_id":"1PE","book_name_alt":"1 Peter","chapter":"3","verse_start":"9","verse_start_alt":"9","verse_end":"9","verse_end_alt":"9","verse_text":"Not rendering evil for evil, or railing for railing: but contrariwise blessing; knowing that ye are thereunto called, that ye should inherit a blessing."},{"book_id":"1PE","book_name_alt":"1 Peter","chapter":"3","verse_start":"10","verse_start_alt":"10","verse_end":"10","verse_end_alt":"10","verse_text":"For he that will love life, and see good days, let him refrain his tongue from evil, and his lips that they speak no guile:"},{"book_id":"1PE","book_name_alt":"1 Peter","chapter":"3","verse_start":"11","verse_start_alt":"11","verse_end":"11","verse_end_alt":"11","verse_text":"Let him eschew evil, and do good; let him seek peace, and ensue it."},{"book_id":"1PE","book_name_alt":"1 Peter","chapter":"3","verse_start":"12","verse_start_alt":"12","verse_end":"12","verse_end_alt":"12","verse_text":"For the eyes of the Lord are over the righteous, and his ears are open unto their prayers: but the face of the Lord is against them that do evil."},{"book_id":"1PE","book_name_alt":"1 Peter","chapter":"3","verse_start":"13","verse_start_alt":"13","verse_end":"13","verse_end_alt":"13","verse_text":"And who is he that will harm you, if ye be followers of that which is good?"},{"book_id":"1PE","book_name_alt":"1 Peter","chapter":"3","verse_start":"14","verse_start_alt":"14","verse_end":"14","verse_end_alt":"14","verse_text":"But and if ye suffer for righteousness’ sake, happy are ye: and be not afraid of their terror, neither be troubled;"},{"book_id":"1PE","book_name_alt":"1 Peter","chapter":"3","verse_start":"15","verse_start_alt":"15","verse_end":"15","verse_end_alt":"15","verse_text":"But sanctify the Lord God in your hearts: and be ready always to give an answer to every man that asketh you a reason of the hope that is in you with meekness and fear:"},{"book_id":"1PE","book_name_alt":"1 Peter","chapter":"3","verse_start":"16","verse_start_alt":"16","verse_end":"16","verse_end_alt":"16","verse_text":"Having a good conscience; that, whereas they speak evil of you, as of evildoers, they may be ashamed that falsely accuse your good conversation in Christ."},{"book_id":"1PE","book_name_alt":"1 Peter","chapter":"3","verse_start":"17","verse_start_alt":"17","verse_end":"17","verse_end_alt":"17","verse_text":"For it is better, if the will of God be so, that ye suffer for well doing, than for evil doing."},{"book_id":"1PE","book_name_alt":"1 Peter","chapter":"3","verse_start":"18","verse_start_alt":"18","verse_end":"18","verse_end_alt":"18","verse_text":"For Christ also hath once suffered for sins, the just for the unjust, that he might bring us to God, being put to death in the flesh, but quickened by the Spirit:"},{"book_id":"1PE","book_name_alt":"1 Peter","chapter":"3","verse_start":"19","verse_start_alt":"19","verse_end":"19","verse_end_alt":"19","verse_text":"By which also he went and preached unto the spirits in prison;"},{"book_id":"1PE","book_name_alt":"1 Peter","chapter":"3","verse_start":"20","verse_start_alt":"20","verse_end":"20","verse_end_alt":"20","verse_text":"Which sometime were disobedient, when once the longsuffering of God waited in the days of Noah, while the ark was a preparing, wherein few, that is, eight souls were saved by water."},{"book_id":"1PE","book_name_alt":"1 Peter","chapter":"3","verse_start":"21","verse_start_alt":"21","verse_end":"21","verse_end_alt":"21","verse_text":"The like figure whereunto even baptism doth also now save us (not the putting away of the filth of the flesh, but the answer of a good conscience toward God,) by the resurrection of Jesus Christ:"},{"book_id":"1PE","book_name_alt":"1 Peter","chapter":"3","verse_start":"22","verse_start_alt":"22","verse_end":"22","verse_end_alt":"22","verse_text":"Who is gone into heaven, and is on the right hand of God; angels and authorities and powers being made subject unto him."}]
+{
+  "info": "",
+  "verses": [
+    {
+      "book_id": "1PE",
+      "book_name": "1 Peter",
+      "chapter": 3,
+      "verse_start": 1,
+      "verse_end": 1,
+      "text": "<a href=\"../1-Peter-3-1/\" title=\"1 Peter 3:1 KJV verse detail\"><span id=\"3\" class=\"versehover\">1  \"JESUS_END\"Likewise, ye wives, <em>be</em> in subjection to your own husbands; that, if any obey not the word, they also may without the word be won by the conversation of the wives;"
+    },
+    {
+      "book_id": "1PE",
+      "book_name": "1 Peter",
+      "chapter": 3,
+      "verse_start": 2,
+      "verse_end": 2,
+      "text": "<a href=\"../1-Peter-3-2/\" title=\"1 Peter 3:2 KJV verse detail\"><span id=\"4\" class=\"versehover\">2  \"JESUS_END\"While they behold your chaste conversation <em>coupled</em> with fear."
+    },
+    {
+      "book_id": "1PE",
+      "book_name": "1 Peter",
+      "chapter": 3,
+      "verse_start": 3,
+      "verse_end": 3,
+      "text": "<a href=\"../1-Peter-3-3/\" title=\"1 Peter 3:3 KJV verse detail\"><span id=\"5\" class=\"versehover\">3  \"JESUS_END\"Whose adorning let it not be that outward <em>adorning</em> of plaiting the hair, and of wearing of gold, or of putting on of apparel;"
+    },
+    {
+      "book_id": "1PE",
+      "book_name": "1 Peter",
+      "chapter": 3,
+      "verse_start": 4,
+      "verse_end": 4,
+      "text": "<a href=\"../1-Peter-3-4/\" title=\"1 Peter 3:4 KJV verse detail\"><span id=\"6\" class=\"versehover\">4  \"JESUS_END\"But <em>let it be</em> the hidden man of the heart, in that which is not corruptible, <em>even the ornament</em> of a meek and quiet spirit, which is in the sight of God of great price."
+    },
+    {
+      "book_id": "1PE",
+      "book_name": "1 Peter",
+      "chapter": 3,
+      "verse_start": 5,
+      "verse_end": 5,
+      "text": "<a href=\"../1-Peter-3-5/\" title=\"1 Peter 3:5 KJV verse detail\"><span id=\"7\" class=\"versehover\">5  \"JESUS_END\"For after this manner in the old time the holy women also, who trusted in God, adorned themselves, being in subjection unto their own husbands:"
+    },
+    {
+      "book_id": "1PE",
+      "book_name": "1 Peter",
+      "chapter": 3,
+      "verse_start": 6,
+      "verse_end": 6,
+      "text": "<a href=\"../1-Peter-3-6/\" title=\"1 Peter 3:6 KJV verse detail\"><span id=\"8\" class=\"versehover\">6  \"JESUS_END\"Even as Sara obeyed Abraham, calling him lord: whose daughters ye are, as long as ye do well, and are not afraid with any amazement."
+    },
+    {
+      "book_id": "1PE",
+      "book_name": "1 Peter",
+      "chapter": 3,
+      "verse_start": 7,
+      "verse_end": 7,
+      "text": "<a href=\"../1-Peter-3-7/\" title=\"1 Peter 3:7 KJV verse detail\"><span id=\"9\" class=\"versehover\">7  \"JESUS_END\"Likewise, ye husbands, dwell with <em>them</em> according to knowledge, giving honour unto the wife, as unto the weaker vessel, and as being heirs together of the grace of life; that your prayers be not hindered."
+    },
+    {
+      "book_id": "1PE",
+      "book_name": "1 Peter",
+      "chapter": 3,
+      "verse_start": 8,
+      "verse_end": 8,
+      "text": "<a href=\"../1-Peter-3-8/\" title=\"1 Peter 3:8 KJV verse detail\"><span id=\"10\" class=\"versehover\">8  \"JESUS_END\"Finally, <em>be ye</em> all of one mind, having compassion one of another, love as brethren, <em>be</em> pitiful, <em>be</em> courteous:"
+    },
+    {
+      "book_id": "1PE",
+      "book_name": "1 Peter",
+      "chapter": 3,
+      "verse_start": 9,
+      "verse_end": 9,
+      "text": "<a href=\"../1-Peter-3-9/\" title=\"1 Peter 3:9 KJV verse detail\"><span id=\"11\" class=\"versehover\">9  \"JESUS_END\"Not rendering evil for evil, or railing for railing: but contrariwise blessing; knowing that ye are thereunto called, that ye should inherit a blessing."
+    },
+    {
+      "book_id": "1PE",
+      "book_name": "1 Peter",
+      "chapter": 3,
+      "verse_start": 10,
+      "verse_end": 10,
+      "text": "<a href=\"../1-Peter-3-10/\" title=\"1 Peter 3:10 KJV verse detail\"><span id=\"12\" class=\"versehover\">10  \"JESUS_END\"For he that will love life, and see good days, let him refrain his tongue from evil, and his lips that they speak no guile:"
+    },
+    {
+      "book_id": "1PE",
+      "book_name": "1 Peter",
+      "chapter": 3,
+      "verse_start": 11,
+      "verse_end": 11,
+      "text": "<a href=\"../1-Peter-3-11/\" title=\"1 Peter 3:11 KJV verse detail\"><span id=\"13\" class=\"versehover\">11  \"JESUS_END\"Let him eschew evil, and do good; let him seek peace, and ensue it."
+    },
+    {
+      "book_id": "1PE",
+      "book_name": "1 Peter",
+      "chapter": 3,
+      "verse_start": 12,
+      "verse_end": 12,
+      "text": "<a href=\"../1-Peter-3-12/\" title=\"1 Peter 3:12 KJV verse detail\"><span id=\"14\" class=\"versehover\">12  \"JESUS_END\"For the eyes of the Lord <em>are</em> over the righteous, and his ears <em>are open</em> unto their prayers: but the face of the Lord <em>is</em> against them that do evil."
+    },
+    {
+      "book_id": "1PE",
+      "book_name": "1 Peter",
+      "chapter": 3,
+      "verse_start": 13,
+      "verse_end": 13,
+      "text": "<a href=\"../1-Peter-3-13/\" title=\"1 Peter 3:13 KJV verse detail\"><span id=\"15\" class=\"versehover\">13  \"JESUS_END\"And who <em>is</em> he that will harm you, if ye be followers of that which is good?"
+    },
+    {
+      "book_id": "1PE",
+      "book_name": "1 Peter",
+      "chapter": 3,
+      "verse_start": 14,
+      "verse_end": 14,
+      "text": "<a href=\"../1-Peter-3-14/\" title=\"1 Peter 3:14 KJV verse detail\"><span id=\"16\" class=\"versehover\">14  \"JESUS_END\"But and if ye suffer for righteousness' sake, happy <em>are ye</em>: and be not afraid of their terror, neither be troubled;"
+    },
+    {
+      "book_id": "1PE",
+      "book_name": "1 Peter",
+      "chapter": 3,
+      "verse_start": 15,
+      "verse_end": 15,
+      "text": "<a href=\"../1-Peter-3-15/\" title=\"1 Peter 3:15 KJV verse detail\"><span id=\"17\" class=\"versehover\">15  \"JESUS_END\"But sanctify the Lord God in your hearts: and <em>be</em> ready always to <em>give</em> an answer to every man that asketh you a reason of the hope that is in you with meekness and fear:"
+    },
+    {
+      "book_id": "1PE",
+      "book_name": "1 Peter",
+      "chapter": 3,
+      "verse_start": 16,
+      "verse_end": 16,
+      "text": "<a href=\"../1-Peter-3-16/\" title=\"1 Peter 3:16 KJV verse detail\"><span id=\"18\" class=\"versehover\">16  \"JESUS_END\"Having a good conscience; that, whereas they speak evil of you, as of evildoers, they may be ashamed that falsely accuse your good conversation in Christ."
+    },
+    {
+      "book_id": "1PE",
+      "book_name": "1 Peter",
+      "chapter": 3,
+      "verse_start": 17,
+      "verse_end": 17,
+      "text": "<a href=\"../1-Peter-3-17/\" title=\"1 Peter 3:17 KJV verse detail\"><span id=\"19\" class=\"versehover\">17  \"JESUS_END\"For <em>it is</em> better, if the will of God be so, that ye suffer for well doing, than for evil doing."
+    },
+    {
+      "book_id": "1PE",
+      "book_name": "1 Peter",
+      "chapter": 3,
+      "verse_start": 18,
+      "verse_end": 18,
+      "text": "<a href=\"../1-Peter-3-18/\" title=\"1 Peter 3:18 KJV verse detail\"><span id=\"20\" class=\"versehover\">18  \"JESUS_END\"For Christ also hath once suffered for sins, the just for the unjust, that he might bring us to God, being put to death in the flesh, but quickened by the Spirit:"
+    },
+    {
+      "book_id": "1PE",
+      "book_name": "1 Peter",
+      "chapter": 3,
+      "verse_start": 19,
+      "verse_end": 19,
+      "text": "<a href=\"../1-Peter-3-19/\" title=\"1 Peter 3:19 KJV verse detail\"><span id=\"21\" class=\"versehover\">19  \"JESUS_END\"By which also he went and preached unto the spirits in prison;"
+    },
+    {
+      "book_id": "1PE",
+      "book_name": "1 Peter",
+      "chapter": 3,
+      "verse_start": 20,
+      "verse_end": 20,
+      "text": "<a href=\"../1-Peter-3-20/\" title=\"1 Peter 3:20 KJV verse detail\"><span id=\"22\" class=\"versehover\">20  \"JESUS_END\"Which sometime were disobedient, when once the longsuffering of God waited in the days of Noah, while the ark was a preparing, wherein few, that is, eight souls were saved by water."
+    },
+    {
+      "book_id": "1PE",
+      "book_name": "1 Peter",
+      "chapter": 3,
+      "verse_start": 21,
+      "verse_end": 21,
+      "text": "<a href=\"../1-Peter-3-21/\" title=\"1 Peter 3:21 KJV verse detail\"><span id=\"23\" class=\"versehover\">21  \"JESUS_END\"The like figure whereunto <em>even</em> baptism doth also now save us (not the putting away of the filth of the flesh, but the answer of a good conscience toward God,) by the resurrection of Jesus Christ:"
+    },
+    {
+      "book_id": "1PE",
+      "book_name": "1 Peter",
+      "chapter": 3,
+      "verse_start": 22,
+      "verse_end": 22,
+      "text": "<a href=\"../1-Peter-3-22/\" title=\"1 Peter 3:22 KJV verse detail\"><span id=\"24\" class=\"versehover\">22  \"JESUS_END\"Who is gone into heaven, and is on the right hand of God; angels and authorities and powers being made subject unto him."
+    }
+  ]
+}

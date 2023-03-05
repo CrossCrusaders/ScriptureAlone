@@ -1,1 +1,157 @@
-[{"book_id":"2CH","book_name_alt":"2 Chronicles","chapter":"10","verse_start":"1","verse_start_alt":"1","verse_end":"1","verse_end_alt":"1","verse_text":"And Rehoboam went to Shechem: for to Shechem were all Israel come to make him king."},{"book_id":"2CH","book_name_alt":"2 Chronicles","chapter":"10","verse_start":"2","verse_start_alt":"2","verse_end":"2","verse_end_alt":"2","verse_text":"And it came to pass, when Jeroboam the son of Nebat, who was in Egypt, whither he had fled from the presence of Solomon the king, heard it, that Jeroboam returned out of Egypt."},{"book_id":"2CH","book_name_alt":"2 Chronicles","chapter":"10","verse_start":"3","verse_start_alt":"3","verse_end":"3","verse_end_alt":"3","verse_text":"And they sent and called him. So Jeroboam and all Israel came and spake to Rehoboam, saying,"},{"book_id":"2CH","book_name_alt":"2 Chronicles","chapter":"10","verse_start":"4","verse_start_alt":"4","verse_end":"4","verse_end_alt":"4","verse_text":"Thy father made our yoke grievous: now therefore ease thou somewhat the grievous servitude of thy father, and his heavy yoke that he put upon us, and we will serve thee."},{"book_id":"2CH","book_name_alt":"2 Chronicles","chapter":"10","verse_start":"5","verse_start_alt":"5","verse_end":"5","verse_end_alt":"5","verse_text":"And he said unto them, Come again unto me after three days. And the people departed."},{"book_id":"2CH","book_name_alt":"2 Chronicles","chapter":"10","verse_start":"6","verse_start_alt":"6","verse_end":"6","verse_end_alt":"6","verse_text":"And king Rehoboam took counsel with the old men that had stood before Solomon his father while he yet lived, saying, What counsel give ye me to return answer to this people?"},{"book_id":"2CH","book_name_alt":"2 Chronicles","chapter":"10","verse_start":"7","verse_start_alt":"7","verse_end":"7","verse_end_alt":"7","verse_text":"And they spake unto him, saying, If thou be kind to this people, and please them, and speak good words to them, they will be thy servants for ever."},{"book_id":"2CH","book_name_alt":"2 Chronicles","chapter":"10","verse_start":"8","verse_start_alt":"8","verse_end":"8","verse_end_alt":"8","verse_text":"But he forsook the counsel which the old men gave him, and took counsel with the young men that were brought up with him, that stood before him."},{"book_id":"2CH","book_name_alt":"2 Chronicles","chapter":"10","verse_start":"9","verse_start_alt":"9","verse_end":"9","verse_end_alt":"9","verse_text":"And he said unto them, What advice give ye that we may return answer to this people, which have spoken to me, saying, Ease somewhat the yoke that thy father did put upon us?"},{"book_id":"2CH","book_name_alt":"2 Chronicles","chapter":"10","verse_start":"10","verse_start_alt":"10","verse_end":"10","verse_end_alt":"10","verse_text":"And the young men that were brought up with him spake unto him, saying, Thus shalt thou answer the people that spake unto thee, saying, Thy father made our yoke heavy, but make thou it somewhat lighter for us; thus shalt thou say unto them, My little finger shall be thicker than my father’s loins."},{"book_id":"2CH","book_name_alt":"2 Chronicles","chapter":"10","verse_start":"11","verse_start_alt":"11","verse_end":"11","verse_end_alt":"11","verse_text":"For whereas my father put a heavy yoke upon you, I will put more to your yoke: my father chastised you with whips, but I will chastise you with scorpions."},{"book_id":"2CH","book_name_alt":"2 Chronicles","chapter":"10","verse_start":"12","verse_start_alt":"12","verse_end":"12","verse_end_alt":"12","verse_text":"So Jeroboam and all the people came to Rehoboam on the third day, as the king bade, saying, Come again to me on the third day."},{"book_id":"2CH","book_name_alt":"2 Chronicles","chapter":"10","verse_start":"13","verse_start_alt":"13","verse_end":"13","verse_end_alt":"13","verse_text":"And the king answered them roughly; and king Rehoboam forsook the counsel of the old men,"},{"book_id":"2CH","book_name_alt":"2 Chronicles","chapter":"10","verse_start":"14","verse_start_alt":"14","verse_end":"14","verse_end_alt":"14","verse_text":"And answered them after the advice of the young men, saying, My father made your yoke heavy, but I will add thereto: my father chastised you with whips, but I will chastise you with scorpions."},{"book_id":"2CH","book_name_alt":"2 Chronicles","chapter":"10","verse_start":"15","verse_start_alt":"15","verse_end":"15","verse_end_alt":"15","verse_text":"So the king hearkened not unto the people: for the cause was of God, that the LORD might perform his word, which he spake by the hand of Ahijah the Shilonite to Jeroboam the son of Nebat."},{"book_id":"2CH","book_name_alt":"2 Chronicles","chapter":"10","verse_start":"16","verse_start_alt":"16","verse_end":"16","verse_end_alt":"16","verse_text":"And when all Israel saw that the king would not hearken unto them, the people answered the king, saying, What portion have we in David? and we have none inheritance in the son of Jesse: every man to your tents, O Israel: and now, David, see to thine own house. So all Israel went to their tents."},{"book_id":"2CH","book_name_alt":"2 Chronicles","chapter":"10","verse_start":"17","verse_start_alt":"17","verse_end":"17","verse_end_alt":"17","verse_text":"But as for the children of Israel that dwelt in the cities of Judah, Rehoboam reigned over them."},{"book_id":"2CH","book_name_alt":"2 Chronicles","chapter":"10","verse_start":"18","verse_start_alt":"18","verse_end":"18","verse_end_alt":"18","verse_text":"Then king Rehoboam sent Hadoram that was over the tribute; and the children of Israel stoned him with stones, that he died. But king Rehoboam made speed to get him up to his chariot, to flee to Jerusalem."},{"book_id":"2CH","book_name_alt":"2 Chronicles","chapter":"10","verse_start":"19","verse_start_alt":"19","verse_end":"19","verse_end_alt":"19","verse_text":"And Israel rebelled against the house of David unto this day."}]
+{
+  "info": "",
+  "verses": [
+    {
+      "book_id": "2CH",
+      "book_name": "2 Chronicles",
+      "chapter": 10,
+      "verse_start": 1,
+      "verse_end": 1,
+      "text": "<a href=\"../2-Chronicles-10-1/\" title=\"2 Chronicles 10:1 KJV verse detail\"><span id=\"3\" class=\"versehover\">1  \"JESUS_END\"And Rehoboam went to Shechem: for to Shechem were all Israel come to make him king."
+    },
+    {
+      "book_id": "2CH",
+      "book_name": "2 Chronicles",
+      "chapter": 10,
+      "verse_start": 2,
+      "verse_end": 2,
+      "text": "<a href=\"../2-Chronicles-10-2/\" title=\"2 Chronicles 10:2 KJV verse detail\"><span id=\"4\" class=\"versehover\">2  \"JESUS_END\"And it came to pass, when Jeroboam the son of Nebat, who <em>was</em> in Egypt, whither he had fled from the presence of Solomon the king, heard <em>it</em>, that Jeroboam returned out of Egypt."
+    },
+    {
+      "book_id": "2CH",
+      "book_name": "2 Chronicles",
+      "chapter": 10,
+      "verse_start": 3,
+      "verse_end": 3,
+      "text": "<a href=\"../2-Chronicles-10-3/\" title=\"2 Chronicles 10:3 KJV verse detail\"><span id=\"5\" class=\"versehover\">3  \"JESUS_END\"And they sent and called him. So Jeroboam and all Israel came and spake to Rehoboam, saying,"
+    },
+    {
+      "book_id": "2CH",
+      "book_name": "2 Chronicles",
+      "chapter": 10,
+      "verse_start": 4,
+      "verse_end": 4,
+      "text": "<a href=\"../2-Chronicles-10-4/\" title=\"2 Chronicles 10:4 KJV verse detail\"><span id=\"6\" class=\"versehover\">4  \"JESUS_END\"Thy father made our yoke grievous: now therefore ease thou somewhat the grievous servitude of thy father, and his heavy yoke that he put upon us, and we will serve thee."
+    },
+    {
+      "book_id": "2CH",
+      "book_name": "2 Chronicles",
+      "chapter": 10,
+      "verse_start": 5,
+      "verse_end": 5,
+      "text": "<a href=\"../2-Chronicles-10-5/\" title=\"2 Chronicles 10:5 KJV verse detail\"><span id=\"7\" class=\"versehover\">5  \"JESUS_END\"And he said unto them, Come again unto me after three days. And the people departed."
+    },
+    {
+      "book_id": "2CH",
+      "book_name": "2 Chronicles",
+      "chapter": 10,
+      "verse_start": 6,
+      "verse_end": 6,
+      "text": "<a href=\"../2-Chronicles-10-6/\" title=\"2 Chronicles 10:6 KJV verse detail\"><span id=\"8\" class=\"versehover\">6  \"JESUS_END\"And king Rehoboam took counsel with the old men that had stood before Solomon his father while he yet lived, saying, What counsel give ye <em>me</em> to return answer to this people?"
+    },
+    {
+      "book_id": "2CH",
+      "book_name": "2 Chronicles",
+      "chapter": 10,
+      "verse_start": 7,
+      "verse_end": 7,
+      "text": "<a href=\"../2-Chronicles-10-7/\" title=\"2 Chronicles 10:7 KJV verse detail\"><span id=\"9\" class=\"versehover\">7  \"JESUS_END\"And they spake unto him, saying, If thou be kind to this people, and please them, and speak good words to them, they will be thy servants for ever."
+    },
+    {
+      "book_id": "2CH",
+      "book_name": "2 Chronicles",
+      "chapter": 10,
+      "verse_start": 8,
+      "verse_end": 8,
+      "text": "<a href=\"../2-Chronicles-10-8/\" title=\"2 Chronicles 10:8 KJV verse detail\"><span id=\"10\" class=\"versehover\">8  \"JESUS_END\"But he forsook the counsel which the old men gave him, and took counsel with the young men that were brought up with him, that stood before him."
+    },
+    {
+      "book_id": "2CH",
+      "book_name": "2 Chronicles",
+      "chapter": 10,
+      "verse_start": 9,
+      "verse_end": 9,
+      "text": "<a href=\"../2-Chronicles-10-9/\" title=\"2 Chronicles 10:9 KJV verse detail\"><span id=\"11\" class=\"versehover\">9  \"JESUS_END\"And he said unto them, What advice give ye that we may return answer to this people, which have spoken to me, saying, Ease somewhat the yoke that thy father did put upon us?"
+    },
+    {
+      "book_id": "2CH",
+      "book_name": "2 Chronicles",
+      "chapter": 10,
+      "verse_start": 10,
+      "verse_end": 10,
+      "text": "<a href=\"../2-Chronicles-10-10/\" title=\"2 Chronicles 10:10 KJV verse detail\"><span id=\"12\" class=\"versehover\">10  \"JESUS_END\"And the young men that were brought up with him spake unto him, saying, Thus shalt thou answer the people that spake unto thee, saying, Thy father made our yoke heavy, but make thou <em>it</em> somewhat lighter for us; thus shalt thou say unto them, My little <em>finger</em> shall be thicker than my father's loins."
+    },
+    {
+      "book_id": "2CH",
+      "book_name": "2 Chronicles",
+      "chapter": 10,
+      "verse_start": 11,
+      "verse_end": 11,
+      "text": "<a href=\"../2-Chronicles-10-11/\" title=\"2 Chronicles 10:11 KJV verse detail\"><span id=\"13\" class=\"versehover\">11  \"JESUS_END\"For whereas my father put a heavy yoke upon you, I will put more to your yoke: my father chastised you with whips, but I <em>will chastise you</em> with scorpions."
+    },
+    {
+      "book_id": "2CH",
+      "book_name": "2 Chronicles",
+      "chapter": 10,
+      "verse_start": 12,
+      "verse_end": 12,
+      "text": "<a href=\"../2-Chronicles-10-12/\" title=\"2 Chronicles 10:12 KJV verse detail\"><span id=\"14\" class=\"versehover\">12  \"JESUS_END\"So Jeroboam and all the people came to Rehoboam on the third day, as the king bade, saying, Come again to me on the third day."
+    },
+    {
+      "book_id": "2CH",
+      "book_name": "2 Chronicles",
+      "chapter": 10,
+      "verse_start": 13,
+      "verse_end": 13,
+      "text": "<a href=\"../2-Chronicles-10-13/\" title=\"2 Chronicles 10:13 KJV verse detail\"><span id=\"15\" class=\"versehover\">13  \"JESUS_END\"And the king answered them roughly; and king Rehoboam forsook the counsel of the old men,"
+    },
+    {
+      "book_id": "2CH",
+      "book_name": "2 Chronicles",
+      "chapter": 10,
+      "verse_start": 14,
+      "verse_end": 14,
+      "text": "<a href=\"../2-Chronicles-10-14/\" title=\"2 Chronicles 10:14 KJV verse detail\"><span id=\"16\" class=\"versehover\">14  \"JESUS_END\"And answered them after the advice of the young men, saying, My father made your yoke heavy, but I will add thereto: my father chastised you with whips, but I <em>will chastise you</em> with scorpions."
+    },
+    {
+      "book_id": "2CH",
+      "book_name": "2 Chronicles",
+      "chapter": 10,
+      "verse_start": 15,
+      "verse_end": 15,
+      "text": "<a href=\"../2-Chronicles-10-15/\" title=\"2 Chronicles 10:15 KJV verse detail\"><span id=\"17\" class=\"versehover\">15  \"JESUS_END\"So the king hearkened not unto the people: for the cause was of God, that the LORD might perform his word, which he spake by the hand of Ahijah the Shilonite to Jeroboam the son of Nebat."
+    },
+    {
+      "book_id": "2CH",
+      "book_name": "2 Chronicles",
+      "chapter": 10,
+      "verse_start": 16,
+      "verse_end": 16,
+      "text": "<a href=\"../2-Chronicles-10-16/\" title=\"2 Chronicles 10:16 KJV verse detail\"><span id=\"18\" class=\"versehover\">16  \"JESUS_END\"And when all Israel <em>saw</em> that the king would not hearken unto them, the people answered the king, saying, What portion have we in David? and <em>we have</em> none inheritance in the son of Jesse: every man to your tents, O Israel: <em>and</em> now, David, see to thine own house. So all Israel went to their tents."
+    },
+    {
+      "book_id": "2CH",
+      "book_name": "2 Chronicles",
+      "chapter": 10,
+      "verse_start": 17,
+      "verse_end": 17,
+      "text": "<a href=\"../2-Chronicles-10-17/\" title=\"2 Chronicles 10:17 KJV verse detail\"><span id=\"19\" class=\"versehover\">17  \"JESUS_END\"But <em>as for</em> the children of Israel that dwelt in the cities of Judah, Rehoboam reigned over them."
+    },
+    {
+      "book_id": "2CH",
+      "book_name": "2 Chronicles",
+      "chapter": 10,
+      "verse_start": 18,
+      "verse_end": 18,
+      "text": "<a href=\"../2-Chronicles-10-18/\" title=\"2 Chronicles 10:18 KJV verse detail\"><span id=\"20\" class=\"versehover\">18  \"JESUS_END\"Then king Rehoboam sent Hadoram that <em>was</em> over the tribute; and the children of Israel stoned him with stones, that he died. But king Rehoboam made speed to get him up to <em>his</em> chariot, to flee to Jerusalem."
+    },
+    {
+      "book_id": "2CH",
+      "book_name": "2 Chronicles",
+      "chapter": 10,
+      "verse_start": 19,
+      "verse_end": 19,
+      "text": "<a href=\"../2-Chronicles-10-19/\" title=\"2 Chronicles 10:19 KJV verse detail\"><span id=\"21\" class=\"versehover\">19  \"JESUS_END\"And Israel rebelled against the house of David unto this day."
+    }
+  ]
+}

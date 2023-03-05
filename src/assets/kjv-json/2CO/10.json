@@ -1,1 +1,149 @@
-[{"book_id":"2CO","book_name_alt":"2 Corinthians","chapter":"10","verse_start":"1","verse_start_alt":"1","verse_end":"1","verse_end_alt":"1","verse_text":"Now I Paul myself beseech you by the meekness and gentleness of Christ, who in presence am base among you, but being absent am bold toward you:"},{"book_id":"2CO","book_name_alt":"2 Corinthians","chapter":"10","verse_start":"2","verse_start_alt":"2","verse_end":"2","verse_end_alt":"2","verse_text":"But I beseech you, that I may not be bold when I am present with that confidence, wherewith I think to be bold against some, which think of us as if we walked according to the flesh."},{"book_id":"2CO","book_name_alt":"2 Corinthians","chapter":"10","verse_start":"3","verse_start_alt":"3","verse_end":"3","verse_end_alt":"3","verse_text":"For though we walk in the flesh, we do not war after the flesh:"},{"book_id":"2CO","book_name_alt":"2 Corinthians","chapter":"10","verse_start":"4","verse_start_alt":"4","verse_end":"4","verse_end_alt":"4","verse_text":"(For the weapons of our warfare are not carnal, but mighty through God to the pulling down of strong holds;)"},{"book_id":"2CO","book_name_alt":"2 Corinthians","chapter":"10","verse_start":"5","verse_start_alt":"5","verse_end":"5","verse_end_alt":"5","verse_text":"Casting down imaginations, and every high thing that exalteth itself against the knowledge of God, and bringing into captivity every thought to the obedience of Christ;"},{"book_id":"2CO","book_name_alt":"2 Corinthians","chapter":"10","verse_start":"6","verse_start_alt":"6","verse_end":"6","verse_end_alt":"6","verse_text":"And having in a readiness to revenge all disobedience, when your obedience is fulfilled."},{"book_id":"2CO","book_name_alt":"2 Corinthians","chapter":"10","verse_start":"7","verse_start_alt":"7","verse_end":"7","verse_end_alt":"7","verse_text":"Do ye look on things after the outward appearance? If any man trust to himself that he is Christ’s, let him of himself think this again, that, as he is Christ’s, even so are we Christ’s."},{"book_id":"2CO","book_name_alt":"2 Corinthians","chapter":"10","verse_start":"8","verse_start_alt":"8","verse_end":"8","verse_end_alt":"8","verse_text":"For though I should boast somewhat more of our authority, which the Lord hath given us for edification, and not for your destruction, I should not be ashamed:"},{"book_id":"2CO","book_name_alt":"2 Corinthians","chapter":"10","verse_start":"9","verse_start_alt":"9","verse_end":"9","verse_end_alt":"9","verse_text":"That I may not seem as if I would terrify you by letters."},{"book_id":"2CO","book_name_alt":"2 Corinthians","chapter":"10","verse_start":"10","verse_start_alt":"10","verse_end":"10","verse_end_alt":"10","verse_text":"For his letters, say they, are weighty and powerful; but his bodily presence is weak, and his speech contemptible."},{"book_id":"2CO","book_name_alt":"2 Corinthians","chapter":"10","verse_start":"11","verse_start_alt":"11","verse_end":"11","verse_end_alt":"11","verse_text":"Let such an one think this, that, such as we are in word by letters when we are absent, such will we be also in deed when we are present."},{"book_id":"2CO","book_name_alt":"2 Corinthians","chapter":"10","verse_start":"12","verse_start_alt":"12","verse_end":"12","verse_end_alt":"12","verse_text":"For we dare not make ourselves of the number, or compare ourselves with some that commend themselves: but they measuring themselves by themselves, and comparing themselves among themselves, are not wise."},{"book_id":"2CO","book_name_alt":"2 Corinthians","chapter":"10","verse_start":"13","verse_start_alt":"13","verse_end":"13","verse_end_alt":"13","verse_text":"But we will not boast of things without our measure, but according to the measure of the rule which God hath distributed to us, a measure to reach even unto you."},{"book_id":"2CO","book_name_alt":"2 Corinthians","chapter":"10","verse_start":"14","verse_start_alt":"14","verse_end":"14","verse_end_alt":"14","verse_text":"For we stretch not ourselves beyond our measure, as though we reached not unto you: for we are come as far as to you also in preaching the gospel of Christ:"},{"book_id":"2CO","book_name_alt":"2 Corinthians","chapter":"10","verse_start":"15","verse_start_alt":"15","verse_end":"15","verse_end_alt":"15","verse_text":"Not boasting of things without our measure, that is, of other men’s labours; but having hope, when your faith is increased, that we shall be enlarged by you according to our rule abundantly,"},{"book_id":"2CO","book_name_alt":"2 Corinthians","chapter":"10","verse_start":"16","verse_start_alt":"16","verse_end":"16","verse_end_alt":"16","verse_text":"To preach the gospel in the regions beyond you, and not to boast in another man’s line of things made ready to our hand."},{"book_id":"2CO","book_name_alt":"2 Corinthians","chapter":"10","verse_start":"17","verse_start_alt":"17","verse_end":"17","verse_end_alt":"17","verse_text":"But he that glorieth, let him glory in the Lord."},{"book_id":"2CO","book_name_alt":"2 Corinthians","chapter":"10","verse_start":"18","verse_start_alt":"18","verse_end":"18","verse_end_alt":"18","verse_text":"For not he that commendeth himself is approved, but whom the Lord commendeth."}]
+{
+  "info": "",
+  "verses": [
+    {
+      "book_id": "2CO",
+      "book_name": "2 Corinthians",
+      "chapter": 10,
+      "verse_start": 1,
+      "verse_end": 1,
+      "text": "<a href=\"../2-Corinthians-10-1/\" title=\"2 Corinthians 10:1 KJV verse detail\"><span id=\"3\" class=\"versehover\">1  \"JESUS_END\"Now I Paul myself beseech you by the meekness and gentleness of Christ, who in presence <em>am</em> base among you, but being absent am bold toward you:"
+    },
+    {
+      "book_id": "2CO",
+      "book_name": "2 Corinthians",
+      "chapter": 10,
+      "verse_start": 2,
+      "verse_end": 2,
+      "text": "<a href=\"../2-Corinthians-10-2/\" title=\"2 Corinthians 10:2 KJV verse detail\"><span id=\"4\" class=\"versehover\">2  \"JESUS_END\"But I beseech <em>you</em>, that I may not be bold when I am present with that confidence, wherewith I think to be bold against some, which think of us as if we walked according to the flesh."
+    },
+    {
+      "book_id": "2CO",
+      "book_name": "2 Corinthians",
+      "chapter": 10,
+      "verse_start": 3,
+      "verse_end": 3,
+      "text": "<a href=\"../2-Corinthians-10-3/\" title=\"2 Corinthians 10:3 KJV verse detail\"><span id=\"5\" class=\"versehover\">3  \"JESUS_END\"For though we walk in the flesh, we do not war after the flesh:"
+    },
+    {
+      "book_id": "2CO",
+      "book_name": "2 Corinthians",
+      "chapter": 10,
+      "verse_start": 4,
+      "verse_end": 4,
+      "text": "<a href=\"../2-Corinthians-10-4/\" title=\"2 Corinthians 10:4 KJV verse detail\"><span id=\"6\" class=\"versehover\">4  \"JESUS_END\"(For the weapons of our warfare <em>are</em> not carnal, but mighty through God to the pulling down of strong holds;)"
+    },
+    {
+      "book_id": "2CO",
+      "book_name": "2 Corinthians",
+      "chapter": 10,
+      "verse_start": 5,
+      "verse_end": 5,
+      "text": "<a href=\"../2-Corinthians-10-5/\" title=\"2 Corinthians 10:5 KJV verse detail\"><span id=\"7\" class=\"versehover\">5  \"JESUS_END\"Casting down imaginations, and every high thing that exalteth itself against the knowledge of God, and bringing into captivity every thought to the obedience of Christ;"
+    },
+    {
+      "book_id": "2CO",
+      "book_name": "2 Corinthians",
+      "chapter": 10,
+      "verse_start": 6,
+      "verse_end": 6,
+      "text": "<a href=\"../2-Corinthians-10-6/\" title=\"2 Corinthians 10:6 KJV verse detail\"><span id=\"8\" class=\"versehover\">6  \"JESUS_END\"And having in a readiness to revenge all disobedience, when your obedience is fulfilled."
+    },
+    {
+      "book_id": "2CO",
+      "book_name": "2 Corinthians",
+      "chapter": 10,
+      "verse_start": 7,
+      "verse_end": 7,
+      "text": "<a href=\"../2-Corinthians-10-7/\" title=\"2 Corinthians 10:7 KJV verse detail\"><span id=\"9\" class=\"versehover\">7  \"JESUS_END\"Do ye look on things after the outward appearance? If any man trust to himself that he is Christ's, let him of himself think this again, that, as he <em>is</em> Christ's, even so <em>are</em> we Christ's."
+    },
+    {
+      "book_id": "2CO",
+      "book_name": "2 Corinthians",
+      "chapter": 10,
+      "verse_start": 8,
+      "verse_end": 8,
+      "text": "<a href=\"../2-Corinthians-10-8/\" title=\"2 Corinthians 10:8 KJV verse detail\"><span id=\"10\" class=\"versehover\">8  \"JESUS_END\"For though I should boast somewhat more of our authority, which the Lord hath given us for edification, and not for your destruction, I should not be ashamed:"
+    },
+    {
+      "book_id": "2CO",
+      "book_name": "2 Corinthians",
+      "chapter": 10,
+      "verse_start": 9,
+      "verse_end": 9,
+      "text": "<a href=\"../2-Corinthians-10-9/\" title=\"2 Corinthians 10:9 KJV verse detail\"><span id=\"11\" class=\"versehover\">9  \"JESUS_END\"That I may not seem as if I would terrify you by letters."
+    },
+    {
+      "book_id": "2CO",
+      "book_name": "2 Corinthians",
+      "chapter": 10,
+      "verse_start": 10,
+      "verse_end": 10,
+      "text": "<a href=\"../2-Corinthians-10-10/\" title=\"2 Corinthians 10:10 KJV verse detail\"><span id=\"12\" class=\"versehover\">10  \"JESUS_END\"For <em>his</em> letters, say they, <em>are</em> weighty and powerful; but <em>his</em> bodily presence <em>is</em> weak, and <em>his</em> speech contemptible."
+    },
+    {
+      "book_id": "2CO",
+      "book_name": "2 Corinthians",
+      "chapter": 10,
+      "verse_start": 11,
+      "verse_end": 11,
+      "text": "<a href=\"../2-Corinthians-10-11/\" title=\"2 Corinthians 10:11 KJV verse detail\"><span id=\"13\" class=\"versehover\">11  \"JESUS_END\"Let such an one think this, that, such as we are in word by letters when we are absent, such <em>will we be</em> also in deed when we are present."
+    },
+    {
+      "book_id": "2CO",
+      "book_name": "2 Corinthians",
+      "chapter": 10,
+      "verse_start": 12,
+      "verse_end": 12,
+      "text": "<a href=\"../2-Corinthians-10-12/\" title=\"2 Corinthians 10:12 KJV verse detail\"><span id=\"14\" class=\"versehover\">12  \"JESUS_END\"For we dare not make ourselves of the number, or compare ourselves with some that commend themselves: but they measuring themselves by themselves, and comparing themselves among themselves, are not wise."
+    },
+    {
+      "book_id": "2CO",
+      "book_name": "2 Corinthians",
+      "chapter": 10,
+      "verse_start": 13,
+      "verse_end": 13,
+      "text": "<a href=\"../2-Corinthians-10-13/\" title=\"2 Corinthians 10:13 KJV verse detail\"><span id=\"15\" class=\"versehover\">13  \"JESUS_END\"But we will not boast of things without <em>our</em> measure, but according to the measure of the rule which God hath distributed to us, a measure to reach even unto you."
+    },
+    {
+      "book_id": "2CO",
+      "book_name": "2 Corinthians",
+      "chapter": 10,
+      "verse_start": 14,
+      "verse_end": 14,
+      "text": "<a href=\"../2-Corinthians-10-14/\" title=\"2 Corinthians 10:14 KJV verse detail\"><span id=\"16\" class=\"versehover\">14  \"JESUS_END\"For we stretch not ourselves beyond <em>our measure</em>, as though we reached not unto you: for we are come as far as to you also in <em>preaching</em> the gospel of Christ:"
+    },
+    {
+      "book_id": "2CO",
+      "book_name": "2 Corinthians",
+      "chapter": 10,
+      "verse_start": 15,
+      "verse_end": 15,
+      "text": "<a href=\"../2-Corinthians-10-15/\" title=\"2 Corinthians 10:15 KJV verse detail\"><span id=\"17\" class=\"versehover\">15  \"JESUS_END\"Not boasting of things without <em>our</em> measure, <em>that is</em>, of other men's labours; but having hope, when your faith is increased, that we shall be enlarged by you according to our rule abundantly,"
+    },
+    {
+      "book_id": "2CO",
+      "book_name": "2 Corinthians",
+      "chapter": 10,
+      "verse_start": 16,
+      "verse_end": 16,
+      "text": "<a href=\"../2-Corinthians-10-16/\" title=\"2 Corinthians 10:16 KJV verse detail\"><span id=\"18\" class=\"versehover\">16  \"JESUS_END\"To preach the gospel in the <em>regions</em> beyond you, <em>and</em> not to boast in another man's line of things made ready to our hand."
+    },
+    {
+      "book_id": "2CO",
+      "book_name": "2 Corinthians",
+      "chapter": 10,
+      "verse_start": 17,
+      "verse_end": 17,
+      "text": "<a href=\"../2-Corinthians-10-17/\" title=\"2 Corinthians 10:17 KJV verse detail\"><span id=\"19\" class=\"versehover\">17  \"JESUS_END\"But he that glorieth, let him glory in the Lord."
+    },
+    {
+      "book_id": "2CO",
+      "book_name": "2 Corinthians",
+      "chapter": 10,
+      "verse_start": 18,
+      "verse_end": 18,
+      "text": "<a href=\"../2-Corinthians-10-18/\" title=\"2 Corinthians 10:18 KJV verse detail\"><span id=\"20\" class=\"versehover\">18  \"JESUS_END\"For not he that commendeth himself is approved, but whom the Lord commendeth."
+    }
+  ]
+}

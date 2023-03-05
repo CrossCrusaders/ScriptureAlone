@@ -1,1 +1,165 @@
-[{"book_id":"PSA","book_name_alt":"Psalms","chapter":"72","verse_start":"1","verse_start_alt":"1","verse_end":"1","verse_end_alt":"1","verse_text":"Give the king thy judgments, O God, and thy righteousness unto the king’s son."},{"book_id":"PSA","book_name_alt":"Psalms","chapter":"72","verse_start":"2","verse_start_alt":"2","verse_end":"2","verse_end_alt":"2","verse_text":"He shall judge thy people with righteousness, and thy poor with judgment."},{"book_id":"PSA","book_name_alt":"Psalms","chapter":"72","verse_start":"3","verse_start_alt":"3","verse_end":"3","verse_end_alt":"3","verse_text":"The mountains shall bring peace to the people, and the little hills, by righteousness."},{"book_id":"PSA","book_name_alt":"Psalms","chapter":"72","verse_start":"4","verse_start_alt":"4","verse_end":"4","verse_end_alt":"4","verse_text":"He shall judge the poor of the people, he shall save the children of the needy, and shall break in pieces the oppressor."},{"book_id":"PSA","book_name_alt":"Psalms","chapter":"72","verse_start":"5","verse_start_alt":"5","verse_end":"5","verse_end_alt":"5","verse_text":"They shall fear thee as long as the sun and moon endure, throughout all generations."},{"book_id":"PSA","book_name_alt":"Psalms","chapter":"72","verse_start":"6","verse_start_alt":"6","verse_end":"6","verse_end_alt":"6","verse_text":"He shall come down like rain upon the mown grass: as showers that water the earth."},{"book_id":"PSA","book_name_alt":"Psalms","chapter":"72","verse_start":"7","verse_start_alt":"7","verse_end":"7","verse_end_alt":"7","verse_text":"In his days shall the righteous flourish; and abundance of peace so long as the moon endureth."},{"book_id":"PSA","book_name_alt":"Psalms","chapter":"72","verse_start":"8","verse_start_alt":"8","verse_end":"8","verse_end_alt":"8","verse_text":"He shall have dominion also from sea to sea, and from the river unto the ends of the earth."},{"book_id":"PSA","book_name_alt":"Psalms","chapter":"72","verse_start":"9","verse_start_alt":"9","verse_end":"9","verse_end_alt":"9","verse_text":"They that dwell in the wilderness shall bow before him; and his enemies shall lick the dust."},{"book_id":"PSA","book_name_alt":"Psalms","chapter":"72","verse_start":"10","verse_start_alt":"10","verse_end":"10","verse_end_alt":"10","verse_text":"The kings of Tarshish and of the isles shall bring presents: the kings of Sheba and Seba shall offer gifts."},{"book_id":"PSA","book_name_alt":"Psalms","chapter":"72","verse_start":"11","verse_start_alt":"11","verse_end":"11","verse_end_alt":"11","verse_text":"Yea, all kings shall fall down before him: all nations shall serve him."},{"book_id":"PSA","book_name_alt":"Psalms","chapter":"72","verse_start":"12","verse_start_alt":"12","verse_end":"12","verse_end_alt":"12","verse_text":"For he shall deliver the needy when he crieth; the poor also, and him that hath no helper."},{"book_id":"PSA","book_name_alt":"Psalms","chapter":"72","verse_start":"13","verse_start_alt":"13","verse_end":"13","verse_end_alt":"13","verse_text":"He shall spare the poor and needy, and shall save the souls of the needy."},{"book_id":"PSA","book_name_alt":"Psalms","chapter":"72","verse_start":"14","verse_start_alt":"14","verse_end":"14","verse_end_alt":"14","verse_text":"He shall redeem their soul from deceit and violence: and precious shall their blood be in his sight."},{"book_id":"PSA","book_name_alt":"Psalms","chapter":"72","verse_start":"15","verse_start_alt":"15","verse_end":"15","verse_end_alt":"15","verse_text":"And he shall live, and to him shall be given of the gold of Sheba: prayer also shall be made for him continually; and daily shall he be praised."},{"book_id":"PSA","book_name_alt":"Psalms","chapter":"72","verse_start":"16","verse_start_alt":"16","verse_end":"16","verse_end_alt":"16","verse_text":"There shall be an handful of corn in the earth upon the top of the mountains; the fruit thereof shall shake like Lebanon: and they of the city shall flourish like grass of the earth."},{"book_id":"PSA","book_name_alt":"Psalms","chapter":"72","verse_start":"17","verse_start_alt":"17","verse_end":"17","verse_end_alt":"17","verse_text":"His name shall endure for ever: his name shall be continued as long as the sun: and men shall be blessed in him: all nations shall call him blessed."},{"book_id":"PSA","book_name_alt":"Psalms","chapter":"72","verse_start":"18","verse_start_alt":"18","verse_end":"18","verse_end_alt":"18","verse_text":"Blessed be the LORD God, the God of Israel, who only doeth wondrous things."},{"book_id":"PSA","book_name_alt":"Psalms","chapter":"72","verse_start":"19","verse_start_alt":"19","verse_end":"19","verse_end_alt":"19","verse_text":"And blessed be his glorious name for ever: and let the whole earth be filled with his glory; Amen, and Amen."},{"book_id":"PSA","book_name_alt":"Psalms","chapter":"72","verse_start":"20","verse_start_alt":"20","verse_end":"20","verse_end_alt":"20","verse_text":"The prayers of David the son of Jesse are ended."}]
+{
+  "info": "(<em>A Psalm</em> for Solomon.)",
+  "verses": [
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 72,
+      "verse_start": 1,
+      "verse_end": 1,
+      "text": "Give the king thy judgments, O God, and thy righteousness unto the king's son."
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 72,
+      "verse_start": 2,
+      "verse_end": 2,
+      "text": "He shall judge thy people with righteousness, and thy poor with judgment."
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 72,
+      "verse_start": 3,
+      "verse_end": 3,
+      "text": "The mountains shall bring peace to the people, and the little hills, by righteousness."
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 72,
+      "verse_start": 4,
+      "verse_end": 4,
+      "text": "He shall judge the poor of the people, he shall save the children of the needy, and shall break in pieces the oppressor."
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 72,
+      "verse_start": 5,
+      "verse_end": 5,
+      "text": "They shall fear thee as long as the sun and moon endure, throughout all generations."
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 72,
+      "verse_start": 6,
+      "verse_end": 6,
+      "text": "He shall come down like rain upon the mown grass: as showers <em>that</em> water the earth."
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 72,
+      "verse_start": 7,
+      "verse_end": 7,
+      "text": "In his days shall the righteous flourish; and abundance of peace so long as the moon endureth."
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 72,
+      "verse_start": 8,
+      "verse_end": 8,
+      "text": "He shall have dominion also from sea to sea, and from the river unto the ends of the earth."
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 72,
+      "verse_start": 9,
+      "verse_end": 9,
+      "text": "They that dwell in the wilderness shall bow before him; and his enemies shall lick the dust."
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 72,
+      "verse_start": 10,
+      "verse_end": 10,
+      "text": "The kings of Tarshish and of the isles shall bring presents: the kings of Sheba and Seba shall offer gifts."
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 72,
+      "verse_start": 11,
+      "verse_end": 11,
+      "text": "Yea, all kings shall fall down before him: all nations shall serve him."
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 72,
+      "verse_start": 12,
+      "verse_end": 12,
+      "text": "For he shall deliver the needy when he crieth; the poor also, and <em>him</em> that hath no helper."
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 72,
+      "verse_start": 13,
+      "verse_end": 13,
+      "text": "He shall spare the poor and needy, and shall save the souls of the needy."
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 72,
+      "verse_start": 14,
+      "verse_end": 14,
+      "text": "He shall redeem their soul from deceit and violence: and precious shall their blood be in his sight."
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 72,
+      "verse_start": 15,
+      "verse_end": 15,
+      "text": "And he shall live, and to him shall be given of the gold of Sheba: prayer also shall be made for him continually; <em>and</em> daily shall he be praised."
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 72,
+      "verse_start": 16,
+      "verse_end": 16,
+      "text": "There shall be an handful of corn in the earth upon the top of the mountains; the fruit thereof shall shake like Lebanon: and <em>they</em> of the city shall flourish like grass of the earth."
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 72,
+      "verse_start": 17,
+      "verse_end": 17,
+      "text": "His name shall endure for ever: his name shall be continued as long as the sun: and <em>men</em> shall be blessed in him: all nations shall call him blessed."
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 72,
+      "verse_start": 18,
+      "verse_end": 18,
+      "text": "Blessed <em>be</em> the LORD God, the God of Israel, who only doeth wondrous things."
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 72,
+      "verse_start": 19,
+      "verse_end": 19,
+      "text": "And blessed <em>be</em> his glorious name for ever: and let the whole earth be filled <em>with</em> his glory; Amen, and Amen."
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 72,
+      "verse_start": 20,
+      "verse_end": 20,
+      "text": "The prayers of David the son of Jesse are ended."
+    }
+  ]
+}

@@ -1,1 +1,29 @@
-[{"book_id":"EST","book_name_alt":"Esther","chapter":"10","verse_start":"1","verse_start_alt":"1","verse_end":"1","verse_end_alt":"1","verse_text":"And the king Ahasuerus laid a tribute upon the land, and upon the isles of the sea."},{"book_id":"EST","book_name_alt":"Esther","chapter":"10","verse_start":"2","verse_start_alt":"2","verse_end":"2","verse_end_alt":"2","verse_text":"And all the acts of his power and of his might, and the declaration of the greatness of Mordecai, whereunto the king advanced him, are they not written in the book of the chronicles of the kings of Media and Persia?"},{"book_id":"EST","book_name_alt":"Esther","chapter":"10","verse_start":"3","verse_start_alt":"3","verse_end":"3","verse_end_alt":"3","verse_text":"For Mordecai the Jew was next unto king Ahasuerus, and great among the Jews, and accepted of the multitude of his brethren, seeking the wealth of his people, and speaking peace to all his seed."}]
+{
+  "info": "",
+  "verses": [
+    {
+      "book_id": "EST",
+      "book_name": "Esther",
+      "chapter": 10,
+      "verse_start": 1,
+      "verse_end": 1,
+      "text": "And the king Ahasuerus laid a tribute upon the land, and <em>upon</em> the isles of the sea."
+    },
+    {
+      "book_id": "EST",
+      "book_name": "Esther",
+      "chapter": 10,
+      "verse_start": 2,
+      "verse_end": 2,
+      "text": "And all the acts of his power and of his might, and the declaration of the greatness of Mordecai, whereunto the king advanced him, <em>are</em> they not written in the book of the chronicles of the kings of Media and Persia?"
+    },
+    {
+      "book_id": "EST",
+      "book_name": "Esther",
+      "chapter": 10,
+      "verse_start": 3,
+      "verse_end": 3,
+      "text": "For Mordecai the Jew <em>was</em> next unto king Ahasuerus, and great among the Jews, and accepted of the multitude of his brethren, seeking the wealth of his people, and speaking peace to all his seed."
+    }
+  ]
+}

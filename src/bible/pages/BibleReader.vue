@@ -27,33 +27,38 @@
       </form>
     </div>
     <PageContent>
-      <div class="max-w-prose mx-auto">
-        <h2 class="text-center mb-4 h-14 flex align-middle">
+      <div class="max-w-prose mx-auto h-fit">
+        <h2 class="text-center mb-4 h-full flex align-middle">
           <AppButton @click="onPrevChapterButtonClicked" v-if="breakpoint == 'sm'" variant="primary-outline"
-            class="float-left;" size="sm">
+            class="float-left h-14" size="sm">
             <img src="/mdi/chevron-left.svg" class="my-1 prev-next-button" />
           </AppButton>
-          <span class="m-auto text-2xl font-bold">{{ selectedBook?.name }}&nbsp;{{ selectedChapterNumber }}</span>
+          <div class="m-auto flex flex-col h-full">
+            <span class="text-2xl font-bold">{{ selectedBook?.name }}&nbsp;{{ selectedChapterNumber }}</span>
+            <span v-if="loadedChapterContent?.info" v-html="loadedChapterContent?.info"></span>
+          </div>
           <AppButton @click="onNextChapterButtonClicked" v-if="breakpoint == 'sm'" variant="primary-outline"
-            class="float-right;" size="sm">
+            class="float-right h-14" size="sm">
             <img src="/mdi/chevron-right.svg" class="my-1 prev-next-button" />
           </AppButton>
         </h2>
       </div>
       <Spinner class="mx-auto" v-if="pageLoading"></Spinner>
       <div v-else class="bible-reader-content max-w-prose mx-auto leading-loose">
-        <p v-for="verse in loadedChapterContent"
+        <p v-for="verse in loadedChapterContent.verses"
           v-touch:longtap="() => { onVerseClicked(verse.verse_start, true); menuVerse = verse; openMenu = true; }"
           v-touch:tap="() => onVerseClicked(verse.verse_start)" :id="`verse-${verse.verse_start}`" :class="verse.css">
           <span class="verse-number">{{
-            verse.verse_start_alt
+            verse.verse_start
           }}</span><span class="verse-text">
-            <span v-for="word in verse.verse_text_array">
+            <span v-for="word in verse.text_array">
+              <button @click="handleOpenWordModal(getWordFromPastTense(word.split('|')[1].split('</span>')[0]), verse.verse_start)"
+                v-if="word.includes('<span') && word.includes('|')"
+                class="underline ml-1 font-bold text-red-700 hover:text-red-500 transition-all" v-html="word.split('|')[0]+word.split('|')[1]"></button>
               <button @click="handleOpenWordModal(getWordFromPastTense(word.split('|')[1]), verse.verse_start)"
-                :to="`/websters/${getWordFromPastTense(word.split('|')[1])}`" v-if="word.includes('|')"
-                class="underline ml-1 font-bold text-slate-500 hover:text-gray-500 transition-all">{{ word.split('|')[1] }}
-              </button>
-              <span v-else>{{ " " + word }}</span>
+                v-else-if="word.includes('|')"
+                class="underline ml-1 font-bold text-slate-500 hover:text-gray-500 transition-all" v-html="word.split('|')[1]"></button>
+              <span v-else v-html="' '+word"></span>
             </span>
           </span>
         </p>
@@ -72,8 +77,8 @@
   <AppModal v-model="openMenu" v-slot="{ close }">
     <div class="p-4 text-white flex flex-col gap-2" style="text-align:center;">
       <div class="bg-slate-200 p-2 rounded text-black">
-        <p class="font-bold">{{ menuVerse.book_name_alt + " " + menuVerse.chapter + ":" + menuVerse.verse_start }}</p>
-        <p>{{ menuVerse.verse_text }}</p>
+        <p class="font-bold">{{ menuVerse.book_name + " " + menuVerse.chapter + ":" + menuVerse.verse_start }}</p>
+        <p>{{ menuVerse.text }}</p>
       </div>
       <div v-if="notesVerseIsIn.length" class="w-full flex flex-col justify-center">
         <div class="flex flex-row justify-center align-center">
@@ -109,7 +114,7 @@
         </div>
       </div>
       <button class="mx-auto bg-cyan-500 hover:bg-cyan-400 active:bg-cyan-600 transition-all p-2 rounded w-full md:w-1/2"
-        @click="copyString(menuVerse.book_name_alt + ' ' + menuVerse.chapter + ':' + menuVerse.verse_start + ' - ' + menuVerse.verse_text)">Copy
+        @click="copyString(menuVerse.book_name + ' ' + menuVerse.chapter + ':' + menuVerse.verse_start + ' - ' + menuVerse.text)">Copy
         Verse</button>
       <button
         class="mx-auto bg-yellow-500 hover:bg-yellow-400 active:bg-yellow-600 transition-all p-2 rounded w-full md:w-1/2"
@@ -140,6 +145,13 @@
       </div>
     </div>
   </AppModal>
+  <!--<button class="w-full fixed bottom-0 left-0">
+    <div class="w-full h-full flex justify-center">
+      <div class="w-16 h-16 mb-12 bg-gray-300 border-2 border-gray-400 rounded-full drop-shadow-2xl">
+        <img src="/mdi/play.svg" class="m-2" />
+      </div>
+    </div>
+  </button>-->
 </template>
 
 <script setup lang="ts">
@@ -196,7 +208,7 @@ const loadedChapterContent = ref<any>([])
 const pageLoading = ref(false)
 
 const openMenu = ref(false);
-const menuVerse = ref({ verse_text: "", verse_start: "", book_name_alt: "", book_name: "", chapter: "", book_id: "" });
+const menuVerse = ref({ text: "", verse_start: "", book_name: "", chapter: "", book_id: "" });
 const noteTitle = ref("");
 const noteText = ref("");
 const noteModal = ref(false);
@@ -225,32 +237,54 @@ const WebstersWords = ref<any[]>([]);
  * Query the API to download the text for a bible.
  */
 const loadChapterContent = async () => {
-  loadedChapterContent.value = [];
+  loadedChapterContent.value = { info: "", verses: [] };
   pageLoading.value = true
   try {
     const response = await getVerses(selectedBookId.value, selectedChapterNumber.value)
+
+    loadedChapterContent.value.info = response.info
+
+    console.log(response)
+
     var versesHighlights: any;
     var chapterText: any[] = [];
     if ((connectedToWifi.value && connectedToWifi.value.connected)) {
-      versesHighlights = await getHighlightedVerses(response[0].book_id, response[0].chapter.toString());
+      versesHighlights = await getHighlightedVerses(response.verses[0].book_id, response.verses[0].chapter.toString());
     }
-    response.forEach((verse: any) => {
+
+    var ChristsWords = false;
+    response.verses.forEach((verse: any) => {
       var tempVerseText: any = [];
 
       let verseCssClass = 'cursor-pointer transition-all px-2 verse'
       if (shouldHighlight && highlightRange.length && verse.verse_start >= highlightRange[0] && verse.verse_start <= highlightRange[1]) {
         verseCssClass += ' verse-highlight'
       }
-      
-      if (typeof verse.verse_start === 'string' || verse.verse_start instanceof String)
-        tempVerseText = verse.verse_text.split(" ");
+
+      if (typeof verse.text === 'string' || verse.text instanceof String)
+        tempVerseText = verse.text.split(" ");
+      var transformedTempVerseText: any = []
       tempVerseText.forEach((word: string, index: number) => {
-        if (WebstersWords.value.includes((word.charAt(0).toUpperCase() + word.slice(1)).slice(0, word.length)) || WebstersWords.value.includes((word.charAt(0).toUpperCase() + word.slice(1)).slice(0, word.length - 1))) {
-          tempVerseText[index] = (`|${word}`);
+        if (WebstersWords.value.includes((word.charAt(0).toUpperCase() + word.slice(1)).slice(0, word.length)) || WebstersWords.value.includes((word.charAt(0).toUpperCase() + word.slice(1)).slice(0, word.length - 1)))
+          word = `|${word}`;
+        if (word == '"JESUS_START"') {
+          ChristsWords = true;
         }
-        if (index == tempVerseText.length - 1)
-          verse.verse_text_array = tempVerseText;
+        else if (word == '"JESUS_END"') {
+          ChristsWords = false;
+        }
+        else if (ChristsWords) {
+          transformedTempVerseText.push(`<span class="text-red-500">${word}</span>`)
+        }
+        else {
+          transformedTempVerseText.push(word)
+        }
+        if (index == tempVerseText.length - 1) {
+          verse.text_array = transformedTempVerseText;
+          console.log(verse.text_array)
+        }
       });
+
 
       var highlightColor = "";
       if (versesHighlights) {
@@ -266,13 +300,14 @@ const loadChapterContent = async () => {
       chapterText.push(object);
     })
 
-    loadedChapterContent.value = chapterText
+    loadedChapterContent.value.verses = chapterText;
+
     availableChapters.value = await getChaptersByBookId(selectedBookId.value)
     await setLocalCacheItem(localCacheKeyLastLoadedChapter, {
       selectedBookId: selectedBookId.value || 'JHN',
       selectedChapter: selectedChapterNumber.value || 1
     }, true)
-    
+
     router.replace({ path: '/bible', query: { ...route.query, b: selectedBookId.value, c: selectedChapterNumber.value } })
     if (shouldHighlight)
       setTimeout(() => {
@@ -321,8 +356,8 @@ function getWordFromPastTense(word: string) {
 async function handleOpenWordModal(word: string, verse: number) {
   await onVerseClicked(verse)
   wordDef.value = await getWord(word.toLowerCase());
-  wordDef.value.definitions.forEach((def)=>{
-    def.text.replaceAll("\n", "<br>");
+  wordDef.value.definitions.forEach((def) => {
+    def.text = def.text.replaceAll("\n", "<br>");
   })
   wordDefModal.value = true;
 }

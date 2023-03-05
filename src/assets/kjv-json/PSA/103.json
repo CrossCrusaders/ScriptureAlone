@@ -1,1 +1,181 @@
-[{"book_id":"PSA","book_name_alt":"Psalms","chapter":"103","verse_start":"1","verse_start_alt":"1","verse_end":"1","verse_end_alt":"1","verse_text":"Bless the LORD, O my soul: and all that is within me, bless his holy name."},{"book_id":"PSA","book_name_alt":"Psalms","chapter":"103","verse_start":"2","verse_start_alt":"2","verse_end":"2","verse_end_alt":"2","verse_text":"Bless the LORD, O my soul, and forget not all his benefits:"},{"book_id":"PSA","book_name_alt":"Psalms","chapter":"103","verse_start":"3","verse_start_alt":"3","verse_end":"3","verse_end_alt":"3","verse_text":"Who forgiveth all thine iniquities; who healeth all thy diseases;"},{"book_id":"PSA","book_name_alt":"Psalms","chapter":"103","verse_start":"4","verse_start_alt":"4","verse_end":"4","verse_end_alt":"4","verse_text":"Who redeemeth thy life from destruction; who crowneth thee with lovingkindness and tender mercies;"},{"book_id":"PSA","book_name_alt":"Psalms","chapter":"103","verse_start":"5","verse_start_alt":"5","verse_end":"5","verse_end_alt":"5","verse_text":"Who satisfieth thy mouth with good things; so that thy youth is renewed like the eagle’s."},{"book_id":"PSA","book_name_alt":"Psalms","chapter":"103","verse_start":"6","verse_start_alt":"6","verse_end":"6","verse_end_alt":"6","verse_text":"The LORD executeth righteousness and judgment for all that are oppressed."},{"book_id":"PSA","book_name_alt":"Psalms","chapter":"103","verse_start":"7","verse_start_alt":"7","verse_end":"7","verse_end_alt":"7","verse_text":"He made known his ways unto Moses, his acts unto the children of Israel."},{"book_id":"PSA","book_name_alt":"Psalms","chapter":"103","verse_start":"8","verse_start_alt":"8","verse_end":"8","verse_end_alt":"8","verse_text":"The LORD is merciful and gracious, slow to anger, and plenteous in mercy."},{"book_id":"PSA","book_name_alt":"Psalms","chapter":"103","verse_start":"9","verse_start_alt":"9","verse_end":"9","verse_end_alt":"9","verse_text":"He will not always chide: neither will he keep his anger for ever."},{"book_id":"PSA","book_name_alt":"Psalms","chapter":"103","verse_start":"10","verse_start_alt":"10","verse_end":"10","verse_end_alt":"10","verse_text":"He hath not dealt with us after our sins; nor rewarded us according to our iniquities."},{"book_id":"PSA","book_name_alt":"Psalms","chapter":"103","verse_start":"11","verse_start_alt":"11","verse_end":"11","verse_end_alt":"11","verse_text":"For as the heaven is high above the earth, so great is his mercy toward them that fear him."},{"book_id":"PSA","book_name_alt":"Psalms","chapter":"103","verse_start":"12","verse_start_alt":"12","verse_end":"12","verse_end_alt":"12","verse_text":"As far as the east is from the west, so far hath he removed our transgressions from us."},{"book_id":"PSA","book_name_alt":"Psalms","chapter":"103","verse_start":"13","verse_start_alt":"13","verse_end":"13","verse_end_alt":"13","verse_text":"Like as a father pitieth his children, so the LORD pitieth them that fear him."},{"book_id":"PSA","book_name_alt":"Psalms","chapter":"103","verse_start":"14","verse_start_alt":"14","verse_end":"14","verse_end_alt":"14","verse_text":"For he knoweth our frame; he remembereth that we are dust."},{"book_id":"PSA","book_name_alt":"Psalms","chapter":"103","verse_start":"15","verse_start_alt":"15","verse_end":"15","verse_end_alt":"15","verse_text":"As for man, his days are as grass: as a flower of the field, so he flourisheth."},{"book_id":"PSA","book_name_alt":"Psalms","chapter":"103","verse_start":"16","verse_start_alt":"16","verse_end":"16","verse_end_alt":"16","verse_text":"For the wind passeth over it, and it is gone; and the place thereof shall know it no more."},{"book_id":"PSA","book_name_alt":"Psalms","chapter":"103","verse_start":"17","verse_start_alt":"17","verse_end":"17","verse_end_alt":"17","verse_text":"But the mercy of the LORD is from everlasting to everlasting upon them that fear him, and his righteousness unto children’s children;"},{"book_id":"PSA","book_name_alt":"Psalms","chapter":"103","verse_start":"18","verse_start_alt":"18","verse_end":"18","verse_end_alt":"18","verse_text":"To such as keep his covenant, and to those that remember his commandments to do them."},{"book_id":"PSA","book_name_alt":"Psalms","chapter":"103","verse_start":"19","verse_start_alt":"19","verse_end":"19","verse_end_alt":"19","verse_text":"The LORD hath prepared his throne in the heavens; and his kingdom ruleth over all."},{"book_id":"PSA","book_name_alt":"Psalms","chapter":"103","verse_start":"20","verse_start_alt":"20","verse_end":"20","verse_end_alt":"20","verse_text":"Bless the LORD, ye his angels, that excel in strength, that do his commandments, hearkening unto the voice of his word."},{"book_id":"PSA","book_name_alt":"Psalms","chapter":"103","verse_start":"21","verse_start_alt":"21","verse_end":"21","verse_end_alt":"21","verse_text":"Bless ye the LORD, all ye his hosts; ye ministers of his, that do his pleasure."},{"book_id":"PSA","book_name_alt":"Psalms","chapter":"103","verse_start":"22","verse_start_alt":"22","verse_end":"22","verse_end_alt":"22","verse_text":"Bless the LORD, all his works in all places of his dominion: bless the LORD, O my soul."}]
+{
+  "info": "(<em>A Psalm</em> of David.)",
+  "verses": [
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 103,
+      "verse_start": 1,
+      "verse_end": 1,
+      "text": "Bless the LORD, O my soul: and all that is within me, <em>bless</em> his holy name."
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 103,
+      "verse_start": 2,
+      "verse_end": 2,
+      "text": "Bless the LORD, O my soul, and forget not all his benefits:"
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 103,
+      "verse_start": 3,
+      "verse_end": 3,
+      "text": "Who forgiveth all thine iniquities; who healeth all thy diseases;"
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 103,
+      "verse_start": 4,
+      "verse_end": 4,
+      "text": "Who redeemeth thy life from destruction; who crowneth thee with lovingkindness and tender mercies;"
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 103,
+      "verse_start": 5,
+      "verse_end": 5,
+      "text": "Who satisfieth thy mouth with good <em>things; so that</em> thy youth is renewed like the eagle's."
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 103,
+      "verse_start": 6,
+      "verse_end": 6,
+      "text": "The LORD executeth righteousness and judgment for all that are oppressed."
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 103,
+      "verse_start": 7,
+      "verse_end": 7,
+      "text": "He made known his ways unto Moses, his acts unto the children of Israel."
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 103,
+      "verse_start": 8,
+      "verse_end": 8,
+      "text": "The LORD <em>is</em> merciful and gracious, slow to anger, and plenteous in mercy."
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 103,
+      "verse_start": 9,
+      "verse_end": 9,
+      "text": "He will not always chide: neither will he keep <em>his anger</em> for ever."
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 103,
+      "verse_start": 10,
+      "verse_end": 10,
+      "text": "He hath not dealt with us after our sins; nor rewarded us according to our iniquities."
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 103,
+      "verse_start": 11,
+      "verse_end": 11,
+      "text": "For as the heaven is high above the earth, <em>so</em> great is his mercy toward them that fear him."
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 103,
+      "verse_start": 12,
+      "verse_end": 12,
+      "text": "As far as the east is from the west, <em>so</em> far hath he removed our transgressions from us."
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 103,
+      "verse_start": 13,
+      "verse_end": 13,
+      "text": "Like as a father pitieth <em>his</em> children, <em>so</em> the LORD pitieth them that fear him."
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 103,
+      "verse_start": 14,
+      "verse_end": 14,
+      "text": "For he knoweth our frame; he remembereth that we <em>are</em> dust."
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 103,
+      "verse_start": 15,
+      "verse_end": 15,
+      "text": "<em>As for</em> man, his days <em>are</em> as grass: as a flower of the field, so he flourisheth."
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 103,
+      "verse_start": 16,
+      "verse_end": 16,
+      "text": "For the wind passeth over it, and it is gone; and the place thereof shall know it no more."
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 103,
+      "verse_start": 17,
+      "verse_end": 17,
+      "text": "But the mercy of the LORD <em>is</em> from everlasting to everlasting upon them that fear him, and his righteousness unto children's children;"
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 103,
+      "verse_start": 18,
+      "verse_end": 18,
+      "text": "To such as keep his covenant, and to those that remember his commandments to do them."
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 103,
+      "verse_start": 19,
+      "verse_end": 19,
+      "text": "The LORD hath prepared his throne in the heavens; and his kingdom ruleth over all."
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 103,
+      "verse_start": 20,
+      "verse_end": 20,
+      "text": "Bless the LORD, ye his angels, that excel in strength, that do his commandments, hearkening unto the voice of his word."
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 103,
+      "verse_start": 21,
+      "verse_end": 21,
+      "text": "Bless ye the LORD, all <em>ye</em> his hosts; <em>ye</em> ministers of his, that do his pleasure."
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 103,
+      "verse_start": 22,
+      "verse_end": 22,
+      "text": "Bless the LORD, all his works in all places of his dominion: bless the LORD, O my soul."
+    }
+  ]
+}

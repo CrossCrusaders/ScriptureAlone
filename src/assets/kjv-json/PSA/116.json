@@ -1,1 +1,157 @@
-[{"book_id":"PSA","book_name_alt":"Psalms","chapter":"116","verse_start":"1","verse_start_alt":"1","verse_end":"1","verse_end_alt":"1","verse_text":"I love the LORD, because he hath heard my voice and my supplications."},{"book_id":"PSA","book_name_alt":"Psalms","chapter":"116","verse_start":"2","verse_start_alt":"2","verse_end":"2","verse_end_alt":"2","verse_text":"Because he hath inclined his ear unto me, therefore will I call upon him as long as I live."},{"book_id":"PSA","book_name_alt":"Psalms","chapter":"116","verse_start":"3","verse_start_alt":"3","verse_end":"3","verse_end_alt":"3","verse_text":"The sorrows of death compassed me, and the pains of hell gat hold upon me: I found trouble and sorrow."},{"book_id":"PSA","book_name_alt":"Psalms","chapter":"116","verse_start":"4","verse_start_alt":"4","verse_end":"4","verse_end_alt":"4","verse_text":"Then called I upon the name of the LORD; O LORD, I beseech thee, deliver my soul."},{"book_id":"PSA","book_name_alt":"Psalms","chapter":"116","verse_start":"5","verse_start_alt":"5","verse_end":"5","verse_end_alt":"5","verse_text":"Gracious is the LORD, and righteous; yea, our God is merciful."},{"book_id":"PSA","book_name_alt":"Psalms","chapter":"116","verse_start":"6","verse_start_alt":"6","verse_end":"6","verse_end_alt":"6","verse_text":"The LORD preserveth the simple: I was brought low, and he helped me."},{"book_id":"PSA","book_name_alt":"Psalms","chapter":"116","verse_start":"7","verse_start_alt":"7","verse_end":"7","verse_end_alt":"7","verse_text":"Return unto thy rest, O my soul; for the LORD hath dealt bountifully with thee."},{"book_id":"PSA","book_name_alt":"Psalms","chapter":"116","verse_start":"8","verse_start_alt":"8","verse_end":"8","verse_end_alt":"8","verse_text":"For thou hast delivered my soul from death, mine eyes from tears, and my feet from falling."},{"book_id":"PSA","book_name_alt":"Psalms","chapter":"116","verse_start":"9","verse_start_alt":"9","verse_end":"9","verse_end_alt":"9","verse_text":"I will walk before the LORD in the land of the living."},{"book_id":"PSA","book_name_alt":"Psalms","chapter":"116","verse_start":"10","verse_start_alt":"10","verse_end":"10","verse_end_alt":"10","verse_text":"I believed, therefore have I spoken: I was greatly afflicted:"},{"book_id":"PSA","book_name_alt":"Psalms","chapter":"116","verse_start":"11","verse_start_alt":"11","verse_end":"11","verse_end_alt":"11","verse_text":"I said in my haste, All men are liars."},{"book_id":"PSA","book_name_alt":"Psalms","chapter":"116","verse_start":"12","verse_start_alt":"12","verse_end":"12","verse_end_alt":"12","verse_text":"What shall I render unto the LORD for all his benefits toward me?"},{"book_id":"PSA","book_name_alt":"Psalms","chapter":"116","verse_start":"13","verse_start_alt":"13","verse_end":"13","verse_end_alt":"13","verse_text":"I will take the cup of salvation, and call upon the name of the LORD."},{"book_id":"PSA","book_name_alt":"Psalms","chapter":"116","verse_start":"14","verse_start_alt":"14","verse_end":"14","verse_end_alt":"14","verse_text":"I will pay my vows unto the LORD now in the presence of all his people."},{"book_id":"PSA","book_name_alt":"Psalms","chapter":"116","verse_start":"15","verse_start_alt":"15","verse_end":"15","verse_end_alt":"15","verse_text":"Precious in the sight of the LORD is the death of his saints."},{"book_id":"PSA","book_name_alt":"Psalms","chapter":"116","verse_start":"16","verse_start_alt":"16","verse_end":"16","verse_end_alt":"16","verse_text":"O LORD, truly I am thy servant; I am thy servant, and the son of thine handmaid: thou hast loosed my bonds."},{"book_id":"PSA","book_name_alt":"Psalms","chapter":"116","verse_start":"17","verse_start_alt":"17","verse_end":"17","verse_end_alt":"17","verse_text":"I will offer to thee the sacrifice of thanksgiving, and will call upon the name of the LORD."},{"book_id":"PSA","book_name_alt":"Psalms","chapter":"116","verse_start":"18","verse_start_alt":"18","verse_end":"18","verse_end_alt":"18","verse_text":"I will pay my vows unto the LORD now in the presence of all his people,"},{"book_id":"PSA","book_name_alt":"Psalms","chapter":"116","verse_start":"19","verse_start_alt":"19","verse_end":"19","verse_end_alt":"19","verse_text":"In the courts of the LORD’s house, in the midst of thee, O Jerusalem. Praise ye the LORD."}]
+{
+  "info": "",
+  "verses": [
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 116,
+      "verse_start": 1,
+      "verse_end": 1,
+      "text": "I love the LORD, because he hath heard my voice <em>and</em> my supplications."
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 116,
+      "verse_start": 2,
+      "verse_end": 2,
+      "text": "Because he hath inclined his ear unto me, therefore will I call upon <em>him</em> as long as I live."
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 116,
+      "verse_start": 3,
+      "verse_end": 3,
+      "text": "The sorrows of death compassed me, and the pains of hell gat hold upon me: I found trouble and sorrow."
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 116,
+      "verse_start": 4,
+      "verse_end": 4,
+      "text": "Then called I upon the name of the LORD; O LORD, I beseech thee, deliver my soul."
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 116,
+      "verse_start": 5,
+      "verse_end": 5,
+      "text": "Gracious <em>is</em> the LORD, and righteous; yea, our God <em>is</em> merciful."
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 116,
+      "verse_start": 6,
+      "verse_end": 6,
+      "text": "The LORD preserveth the simple: I was brought low, and he helped me."
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 116,
+      "verse_start": 7,
+      "verse_end": 7,
+      "text": "Return unto thy rest, O my soul; for the LORD hath dealt bountifully with thee."
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 116,
+      "verse_start": 8,
+      "verse_end": 8,
+      "text": "For thou hast delivered my soul from death, mine eyes from tears, <em>and</em> my feet from falling."
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 116,
+      "verse_start": 9,
+      "verse_end": 9,
+      "text": "I will walk before the LORD in the land of the living."
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 116,
+      "verse_start": 10,
+      "verse_end": 10,
+      "text": "I believed, therefore have I spoken: I was greatly afflicted:"
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 116,
+      "verse_start": 11,
+      "verse_end": 11,
+      "text": "I said in my haste, All men <em>are</em> liars."
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 116,
+      "verse_start": 12,
+      "verse_end": 12,
+      "text": "What shall I render unto the LORD <em>for</em> all his benefits toward me?"
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 116,
+      "verse_start": 13,
+      "verse_end": 13,
+      "text": "I will take the cup of salvation, and call upon the name of the LORD."
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 116,
+      "verse_start": 14,
+      "verse_end": 14,
+      "text": "I will pay my vows unto the LORD now in the presence of all his people."
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 116,
+      "verse_start": 15,
+      "verse_end": 15,
+      "text": "Precious in the sight of the LORD <em>is</em> the death of his saints."
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 116,
+      "verse_start": 16,
+      "verse_end": 16,
+      "text": "O LORD, truly I <em>am</em> thy servant; I <em>am</em> thy servant, <em>and</em> the son of thine handmaid: thou hast loosed my bonds."
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 116,
+      "verse_start": 17,
+      "verse_end": 17,
+      "text": "I will offer to thee the sacrifice of thanksgiving, and will call upon the name of the LORD."
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 116,
+      "verse_start": 18,
+      "verse_end": 18,
+      "text": "I will pay my vows unto the LORD now in the presence of all his people,"
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 116,
+      "verse_start": 19,
+      "verse_end": 19,
+      "text": "In the courts of the LORD'S house, in the midst of thee, O Jerusalem. Praise ye the LORD."
+    }
+  ]
+}

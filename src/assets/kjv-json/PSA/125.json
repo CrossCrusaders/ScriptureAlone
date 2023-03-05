@@ -1,1 +1,45 @@
-[{"book_id":"PSA","book_name_alt":"Psalms","chapter":"125","verse_start":"1","verse_start_alt":"1","verse_end":"1","verse_end_alt":"1","verse_text":"They that trust in the LORD shall be as mount Zion, which cannot be removed, but abideth for ever."},{"book_id":"PSA","book_name_alt":"Psalms","chapter":"125","verse_start":"2","verse_start_alt":"2","verse_end":"2","verse_end_alt":"2","verse_text":"As the mountains are round about Jerusalem, so the LORD is round about his people from henceforth even for ever."},{"book_id":"PSA","book_name_alt":"Psalms","chapter":"125","verse_start":"3","verse_start_alt":"3","verse_end":"3","verse_end_alt":"3","verse_text":"For the rod of the wicked shall not rest upon the lot of the righteous; lest the righteous put forth their hands unto iniquity."},{"book_id":"PSA","book_name_alt":"Psalms","chapter":"125","verse_start":"4","verse_start_alt":"4","verse_end":"4","verse_end_alt":"4","verse_text":"Do good, O LORD, unto those that be good, and to them that are upright in their hearts."},{"book_id":"PSA","book_name_alt":"Psalms","chapter":"125","verse_start":"5","verse_start_alt":"5","verse_end":"5","verse_end_alt":"5","verse_text":"As for such as turn aside unto their crooked ways, the LORD shall lead them forth with the workers of iniquity: but peace shall be upon Israel."}]
+{
+  "info": "(A Song of degrees.)",
+  "verses": [
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 125,
+      "verse_start": 1,
+      "verse_end": 1,
+      "text": "They that trust in the LORD <em>shall be</em> as mount Zion, <em>which</em> cannot be removed, <em>but</em> abideth for ever."
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 125,
+      "verse_start": 2,
+      "verse_end": 2,
+      "text": "As the mountains <em>are</em> round about Jerusalem, so the LORD <em>is</em> round about his people from henceforth even for ever."
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 125,
+      "verse_start": 3,
+      "verse_end": 3,
+      "text": "For the rod of the wicked shall not rest upon the lot of the righteous; lest the righteous put forth their hands unto iniquity."
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 125,
+      "verse_start": 4,
+      "verse_end": 4,
+      "text": "Do good, O LORD, unto <em>those that be</em> good, and <em>to them that are</em> upright in their hearts."
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 125,
+      "verse_start": 5,
+      "verse_end": 5,
+      "text": "As for such as turn aside unto their crooked ways, the LORD shall lead them forth with the workers of iniquity: <em>but</em> peace <em>shall be</em> upon Israel."
+    }
+  ]
+}

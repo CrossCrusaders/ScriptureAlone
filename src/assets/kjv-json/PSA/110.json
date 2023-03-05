@@ -1,1 +1,61 @@
-[{"book_id":"PSA","book_name_alt":"Psalms","chapter":"110","verse_start":"1","verse_start_alt":"1","verse_end":"1","verse_end_alt":"1","verse_text":"The LORD said unto my Lord, Sit thou at my right hand, until I make thine enemies thy footstool."},{"book_id":"PSA","book_name_alt":"Psalms","chapter":"110","verse_start":"2","verse_start_alt":"2","verse_end":"2","verse_end_alt":"2","verse_text":"The LORD shall send the rod of thy strength out of Zion: rule thou in the midst of thine enemies."},{"book_id":"PSA","book_name_alt":"Psalms","chapter":"110","verse_start":"3","verse_start_alt":"3","verse_end":"3","verse_end_alt":"3","verse_text":"Thy people shall be willing in the day of thy power, in the beauties of holiness from the womb of the morning: thou hast the dew of thy youth."},{"book_id":"PSA","book_name_alt":"Psalms","chapter":"110","verse_start":"4","verse_start_alt":"4","verse_end":"4","verse_end_alt":"4","verse_text":"The LORD hath sworn, and will not repent, Thou art a priest for ever after the order of Melchizedek."},{"book_id":"PSA","book_name_alt":"Psalms","chapter":"110","verse_start":"5","verse_start_alt":"5","verse_end":"5","verse_end_alt":"5","verse_text":"The Lord at thy right hand shall strike through kings in the day of his wrath."},{"book_id":"PSA","book_name_alt":"Psalms","chapter":"110","verse_start":"6","verse_start_alt":"6","verse_end":"6","verse_end_alt":"6","verse_text":"He shall judge among the heathen, he shall fill the places with the dead bodies; he shall wound the heads over many countries."},{"book_id":"PSA","book_name_alt":"Psalms","chapter":"110","verse_start":"7","verse_start_alt":"7","verse_end":"7","verse_end_alt":"7","verse_text":"He shall drink of the brook in the way: therefore shall he lift up the head."}]
+{
+  "info": "(A Psalm of David.)",
+  "verses": [
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 110,
+      "verse_start": 1,
+      "verse_end": 1,
+      "text": "The LORD said unto my Lord, Sit thou at my right hand, until I make thine enemies thy footstool."
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 110,
+      "verse_start": 2,
+      "verse_end": 2,
+      "text": "The LORD shall send the rod of thy strength out of Zion: rule thou in the midst of thine enemies."
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 110,
+      "verse_start": 3,
+      "verse_end": 3,
+      "text": "Thy people <em>shall be</em> willing in the day of thy power, in the beauties of holiness from the womb of the morning: thou hast the dew of thy youth."
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 110,
+      "verse_start": 4,
+      "verse_end": 4,
+      "text": "The LORD hath sworn, and will not repent, Thou <em>art</em> a priest for ever after the order of Melchizedek."
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 110,
+      "verse_start": 5,
+      "verse_end": 5,
+      "text": "The Lord at thy right hand shall strike through kings in the day of his wrath."
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 110,
+      "verse_start": 6,
+      "verse_end": 6,
+      "text": "He shall judge among the heathen, he shall fill <em>the places</em> with the dead bodies; he shall wound the heads over many countries."
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 110,
+      "verse_start": 7,
+      "verse_end": 7,
+      "text": "He shall drink of the brook in the way: therefore shall he lift up the head."
+    }
+  ]
+}

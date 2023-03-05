@@ -1,1 +1,109 @@
-[{"book_id":"REV","book_name_alt":"Revelation","chapter":"8","verse_start":"1","verse_start_alt":"1","verse_end":"1","verse_end_alt":"1","verse_text":"And when he had opened the seventh seal, there was silence in heaven about the space of half an hour."},{"book_id":"REV","book_name_alt":"Revelation","chapter":"8","verse_start":"2","verse_start_alt":"2","verse_end":"2","verse_end_alt":"2","verse_text":"And I saw the seven angels which stood before God; and to them were given seven trumpets."},{"book_id":"REV","book_name_alt":"Revelation","chapter":"8","verse_start":"3","verse_start_alt":"3","verse_end":"3","verse_end_alt":"3","verse_text":"And another angel came and stood at the altar, having a golden censer; and there was given unto him much incense, that he should offer it with the prayers of all saints upon the golden altar which was before the throne."},{"book_id":"REV","book_name_alt":"Revelation","chapter":"8","verse_start":"4","verse_start_alt":"4","verse_end":"4","verse_end_alt":"4","verse_text":"And the smoke of the incense, which came with the prayers of the saints, ascended up before God out of the angel’s hand."},{"book_id":"REV","book_name_alt":"Revelation","chapter":"8","verse_start":"5","verse_start_alt":"5","verse_end":"5","verse_end_alt":"5","verse_text":"And the angel took the censer, and filled it with fire of the altar, and cast it into the earth: and there were voices, and thunderings, and lightnings, and an earthquake."},{"book_id":"REV","book_name_alt":"Revelation","chapter":"8","verse_start":"6","verse_start_alt":"6","verse_end":"6","verse_end_alt":"6","verse_text":"And the seven angels which had the seven trumpets prepared themselves to sound."},{"book_id":"REV","book_name_alt":"Revelation","chapter":"8","verse_start":"7","verse_start_alt":"7","verse_end":"7","verse_end_alt":"7","verse_text":"The first angel sounded, and there followed hail and fire mingled with blood, and they were cast upon the earth: and the third part of trees was burnt up, and all green grass was burnt up."},{"book_id":"REV","book_name_alt":"Revelation","chapter":"8","verse_start":"8","verse_start_alt":"8","verse_end":"8","verse_end_alt":"8","verse_text":"And the second angel sounded, and as it were a great mountain burning with fire was cast into the sea: and the third part of the sea became blood;"},{"book_id":"REV","book_name_alt":"Revelation","chapter":"8","verse_start":"9","verse_start_alt":"9","verse_end":"9","verse_end_alt":"9","verse_text":"And the third part of the creatures which were in the sea, and had life, died; and the third part of the ships were destroyed."},{"book_id":"REV","book_name_alt":"Revelation","chapter":"8","verse_start":"10","verse_start_alt":"10","verse_end":"10","verse_end_alt":"10","verse_text":"And the third angel sounded, and there fell a great star from heaven, burning as it were a lamp, and it fell upon the third part of the rivers, and upon the fountains of waters;"},{"book_id":"REV","book_name_alt":"Revelation","chapter":"8","verse_start":"11","verse_start_alt":"11","verse_end":"11","verse_end_alt":"11","verse_text":"And the name of the star is called Wormwood: and the third part of the waters became wormwood; and many men died of the waters, because they were made bitter."},{"book_id":"REV","book_name_alt":"Revelation","chapter":"8","verse_start":"12","verse_start_alt":"12","verse_end":"12","verse_end_alt":"12","verse_text":"And the fourth angel sounded, and the third part of the sun was smitten, and the third part of the moon, and the third part of the stars; so as the third part of them was darkened, and the day shone not for a third part of it, and the night likewise."},{"book_id":"REV","book_name_alt":"Revelation","chapter":"8","verse_start":"13","verse_start_alt":"13","verse_end":"13","verse_end_alt":"13","verse_text":"And I beheld, and heard an angel flying through the midst of heaven, saying with a loud voice, Woe, woe, woe, to the inhabiters of the earth by reason of the other voices of the trumpet of the three angels, which are yet to sound!"}]
+{
+  "info": "",
+  "verses": [
+    {
+      "book_id": "REV",
+      "book_name": "Revelation",
+      "chapter": 8,
+      "verse_start": 1,
+      "verse_end": 1,
+      "text": "And when he had opened the seventh seal, there was silence in heaven about the space of half an hour."
+    },
+    {
+      "book_id": "REV",
+      "book_name": "Revelation",
+      "chapter": 8,
+      "verse_start": 2,
+      "verse_end": 2,
+      "text": "And I saw the seven angels which stood before God; and to them were given seven trumpets."
+    },
+    {
+      "book_id": "REV",
+      "book_name": "Revelation",
+      "chapter": 8,
+      "verse_start": 3,
+      "verse_end": 3,
+      "text": "And another angel came and stood at the altar, having a golden censer; and there was given unto him much incense, that he should offer <em>it</em> with the prayers of all saints upon the golden altar which was before the throne."
+    },
+    {
+      "book_id": "REV",
+      "book_name": "Revelation",
+      "chapter": 8,
+      "verse_start": 4,
+      "verse_end": 4,
+      "text": "And the smoke of the incense, <em>which came</em> with the prayers of the saints, ascended up before God out of the angel's hand."
+    },
+    {
+      "book_id": "REV",
+      "book_name": "Revelation",
+      "chapter": 8,
+      "verse_start": 5,
+      "verse_end": 5,
+      "text": "And the angel took the censer, and filled it with fire of the altar, and cast <em>it</em> into the earth: and there were voices, and thunderings, and lightnings, and an earthquake."
+    },
+    {
+      "book_id": "REV",
+      "book_name": "Revelation",
+      "chapter": 8,
+      "verse_start": 6,
+      "verse_end": 6,
+      "text": "And the seven angels which had the seven trumpets prepared themselves to sound."
+    },
+    {
+      "book_id": "REV",
+      "book_name": "Revelation",
+      "chapter": 8,
+      "verse_start": 7,
+      "verse_end": 7,
+      "text": "The first angel sounded, and there followed hail and fire mingled with blood, and they were cast upon the earth: and the third part of trees was burnt up, and all green grass was burnt up."
+    },
+    {
+      "book_id": "REV",
+      "book_name": "Revelation",
+      "chapter": 8,
+      "verse_start": 8,
+      "verse_end": 8,
+      "text": "And the second angel sounded, and as it were a great mountain burning with fire was cast into the sea: and the third part of the sea became blood;"
+    },
+    {
+      "book_id": "REV",
+      "book_name": "Revelation",
+      "chapter": 8,
+      "verse_start": 9,
+      "verse_end": 9,
+      "text": "And the third part of the creatures which were in the sea, and had life, died; and the third part of the ships were destroyed."
+    },
+    {
+      "book_id": "REV",
+      "book_name": "Revelation",
+      "chapter": 8,
+      "verse_start": 10,
+      "verse_end": 10,
+      "text": "And the third angel sounded, and there fell a great star from heaven, burning as it were a lamp, and it fell upon the third part of the rivers, and upon the fountains of waters;"
+    },
+    {
+      "book_id": "REV",
+      "book_name": "Revelation",
+      "chapter": 8,
+      "verse_start": 11,
+      "verse_end": 11,
+      "text": "And the name of the star is called Wormwood: and the third part of the waters became wormwood; and many men died of the waters, because they were made bitter."
+    },
+    {
+      "book_id": "REV",
+      "book_name": "Revelation",
+      "chapter": 8,
+      "verse_start": 12,
+      "verse_end": 12,
+      "text": "And the fourth angel sounded, and the third part of the sun was smitten, and the third part of the moon, and the third part of the stars; so as the third part of them was darkened, and the day shone not for a third part of it, and the night likewise."
+    },
+    {
+      "book_id": "REV",
+      "book_name": "Revelation",
+      "chapter": 8,
+      "verse_start": 13,
+      "verse_end": 13,
+      "text": "And I beheld, and heard an angel flying through the midst of heaven, saying with a loud voice, Woe, woe, woe, to the inhabiters of the earth by reason of the other voices of the trumpet of the three angels, which are yet to sound!"
+    }
+  ]
+}

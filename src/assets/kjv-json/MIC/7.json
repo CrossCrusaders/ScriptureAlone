@@ -1,1 +1,165 @@
-[{"book_id":"MIC","book_name_alt":"Micah","chapter":"7","verse_start":"1","verse_start_alt":"1","verse_end":"1","verse_end_alt":"1","verse_text":"Woe is me! for I am as when they have gathered the summer fruits, as the grapegleanings of the vintage: there is no cluster to eat: my soul desired the firstripe fruit."},{"book_id":"MIC","book_name_alt":"Micah","chapter":"7","verse_start":"2","verse_start_alt":"2","verse_end":"2","verse_end_alt":"2","verse_text":"The good man is perished out of the earth: and there is none upright among men: they all lie in wait for blood; they hunt every man his brother with a net."},{"book_id":"MIC","book_name_alt":"Micah","chapter":"7","verse_start":"3","verse_start_alt":"3","verse_end":"3","verse_end_alt":"3","verse_text":"That they may do evil with both hands earnestly, the prince asketh, and the judge asketh for a reward; and the great man, he uttereth his mischievous desire: so they wrap it up."},{"book_id":"MIC","book_name_alt":"Micah","chapter":"7","verse_start":"4","verse_start_alt":"4","verse_end":"4","verse_end_alt":"4","verse_text":"The best of them is as a brier: the most upright is sharper than a thorn hedge: the day of thy watchmen and thy visitation cometh; now shall be their perplexity."},{"book_id":"MIC","book_name_alt":"Micah","chapter":"7","verse_start":"5","verse_start_alt":"5","verse_end":"5","verse_end_alt":"5","verse_text":"Trust ye not in a friend, put ye not confidence in a guide: keep the doors of thy mouth from her that lieth in thy bosom."},{"book_id":"MIC","book_name_alt":"Micah","chapter":"7","verse_start":"6","verse_start_alt":"6","verse_end":"6","verse_end_alt":"6","verse_text":"For the son dishonoureth the father, the daughter riseth up against her mother, the daughter in law against her mother in law; a man’s enemies are the men of his own house."},{"book_id":"MIC","book_name_alt":"Micah","chapter":"7","verse_start":"7","verse_start_alt":"7","verse_end":"7","verse_end_alt":"7","verse_text":"Therefore I will look unto the LORD; I will wait for the God of my salvation: my God will hear me."},{"book_id":"MIC","book_name_alt":"Micah","chapter":"7","verse_start":"8","verse_start_alt":"8","verse_end":"8","verse_end_alt":"8","verse_text":"Rejoice not against me, O mine enemy: when I fall, I shall arise; when I sit in darkness, the LORD shall be a light unto me."},{"book_id":"MIC","book_name_alt":"Micah","chapter":"7","verse_start":"9","verse_start_alt":"9","verse_end":"9","verse_end_alt":"9","verse_text":"I will bear the indignation of the LORD, because I have sinned against him, until he plead my cause, and execute judgment for me: he will bring me forth to the light, and I shall behold his righteousness."},{"book_id":"MIC","book_name_alt":"Micah","chapter":"7","verse_start":"10","verse_start_alt":"10","verse_end":"10","verse_end_alt":"10","verse_text":"Then she that is mine enemy shall see it, and shame shall cover her which said unto me, Where is the LORD thy God? mine eyes shall behold her: now shall she be trodden down as the mire of the streets."},{"book_id":"MIC","book_name_alt":"Micah","chapter":"7","verse_start":"11","verse_start_alt":"11","verse_end":"11","verse_end_alt":"11","verse_text":"In the day that thy walls are to be built, in that day shall the decree be far removed."},{"book_id":"MIC","book_name_alt":"Micah","chapter":"7","verse_start":"12","verse_start_alt":"12","verse_end":"12","verse_end_alt":"12","verse_text":"In that day also he shall come even to thee from Assyria, and from the fortified cities, and from the fortress even to the river, and from sea to sea, and from mountain to mountain."},{"book_id":"MIC","book_name_alt":"Micah","chapter":"7","verse_start":"13","verse_start_alt":"13","verse_end":"13","verse_end_alt":"13","verse_text":"Notwithstanding the land shall be desolate because of them that dwell therein, for the fruit of their doings."},{"book_id":"MIC","book_name_alt":"Micah","chapter":"7","verse_start":"14","verse_start_alt":"14","verse_end":"14","verse_end_alt":"14","verse_text":"Feed thy people with thy rod, the flock of thine heritage, which dwell solitarily in the wood, in the midst of Carmel: let them feed in Bashan and Gilead, as in the days of old."},{"book_id":"MIC","book_name_alt":"Micah","chapter":"7","verse_start":"15","verse_start_alt":"15","verse_end":"15","verse_end_alt":"15","verse_text":"According to the days of thy coming out of the land of Egypt will I shew unto him marvellous things."},{"book_id":"MIC","book_name_alt":"Micah","chapter":"7","verse_start":"16","verse_start_alt":"16","verse_end":"16","verse_end_alt":"16","verse_text":"The nations shall see and be confounded at all their might: they shall lay their hand upon their mouth, their ears shall be deaf."},{"book_id":"MIC","book_name_alt":"Micah","chapter":"7","verse_start":"17","verse_start_alt":"17","verse_end":"17","verse_end_alt":"17","verse_text":"They shall lick the dust like a serpent, they shall move out of their holes like worms of the earth: they shall be afraid of the LORD our God, and shall fear because of thee."},{"book_id":"MIC","book_name_alt":"Micah","chapter":"7","verse_start":"18","verse_start_alt":"18","verse_end":"18","verse_end_alt":"18","verse_text":"Who is a God like unto thee, that pardoneth iniquity, and passeth by the transgression of the remnant of his heritage? he retaineth not his anger for ever, because he delighteth in mercy."},{"book_id":"MIC","book_name_alt":"Micah","chapter":"7","verse_start":"19","verse_start_alt":"19","verse_end":"19","verse_end_alt":"19","verse_text":"He will turn again, he will have compassion upon us; he will subdue our iniquities; and thou wilt cast all their sins into the depths of the sea."},{"book_id":"MIC","book_name_alt":"Micah","chapter":"7","verse_start":"20","verse_start_alt":"20","verse_end":"20","verse_end_alt":"20","verse_text":"Thou wilt perform the truth to Jacob, and the mercy to Abraham, which thou hast sworn unto our fathers from the days of old."}]
+{
+  "info": "",
+  "verses": [
+    {
+      "book_id": "MIC",
+      "book_name": "Micah",
+      "chapter": 7,
+      "verse_start": 1,
+      "verse_end": 1,
+      "text": "Woe is me! for I am as when they have gathered the summer fruits, as the grapegleanings of the vintage: <em>there is</em> no cluster to eat: my soul desired the firstripe fruit."
+    },
+    {
+      "book_id": "MIC",
+      "book_name": "Micah",
+      "chapter": 7,
+      "verse_start": 2,
+      "verse_end": 2,
+      "text": "The good <em>man</em> is perished out of the earth: and <em>there is</em> none upright among men: they all lie in wait for blood; they hunt every man his brother with a net."
+    },
+    {
+      "book_id": "MIC",
+      "book_name": "Micah",
+      "chapter": 7,
+      "verse_start": 3,
+      "verse_end": 3,
+      "text": "That they may do evil with both hands earnestly, the prince asketh, and the judge <em>asketh</em> for a reward; and the great <em>man</em>, he uttereth his mischievous desire: so they wrap it up."
+    },
+    {
+      "book_id": "MIC",
+      "book_name": "Micah",
+      "chapter": 7,
+      "verse_start": 4,
+      "verse_end": 4,
+      "text": "The best of them <em>is</em> as a brier: the most upright <em>is sharper</em> than a thorn hedge: the day of thy watchmen <em>and</em> thy visitation cometh; now shall be their perplexity."
+    },
+    {
+      "book_id": "MIC",
+      "book_name": "Micah",
+      "chapter": 7,
+      "verse_start": 5,
+      "verse_end": 5,
+      "text": "Trust ye not in a friend, put ye not confidence in a guide: keep the doors of thy mouth from her that lieth in thy bosom."
+    },
+    {
+      "book_id": "MIC",
+      "book_name": "Micah",
+      "chapter": 7,
+      "verse_start": 6,
+      "verse_end": 6,
+      "text": "For the son dishonoureth the father, the daughter riseth up against her mother, the daughter in law against her mother in law; a man's enemies <em>are</em> the men of his own house."
+    },
+    {
+      "book_id": "MIC",
+      "book_name": "Micah",
+      "chapter": 7,
+      "verse_start": 7,
+      "verse_end": 7,
+      "text": "Therefore I will look unto the LORD; I will wait for the God of my salvation: my God will hear me."
+    },
+    {
+      "book_id": "MIC",
+      "book_name": "Micah",
+      "chapter": 7,
+      "verse_start": 8,
+      "verse_end": 8,
+      "text": "Rejoice not against me, O mine enemy: when I fall, I shall arise; when I sit in darkness, the LORD <em>shall be</em> a light unto me."
+    },
+    {
+      "book_id": "MIC",
+      "book_name": "Micah",
+      "chapter": 7,
+      "verse_start": 9,
+      "verse_end": 9,
+      "text": "I will bear the indignation of the LORD, because I have sinned against him, until he plead my cause, and execute judgment for me: he will bring me forth to the light, <em>and</em> I shall behold his righteousness."
+    },
+    {
+      "book_id": "MIC",
+      "book_name": "Micah",
+      "chapter": 7,
+      "verse_start": 10,
+      "verse_end": 10,
+      "text": "Then <em>she that is</em> mine enemy shall see <em>it</em>, and shame shall cover her which said unto me, Where is the LORD thy God? mine eyes shall behold her: now shall she be trodden down as the mire of the streets."
+    },
+    {
+      "book_id": "MIC",
+      "book_name": "Micah",
+      "chapter": 7,
+      "verse_start": 11,
+      "verse_end": 11,
+      "text": "<em>In</em> the day that thy walls are to be built, <em>in</em> that day shall the decree be far removed."
+    },
+    {
+      "book_id": "MIC",
+      "book_name": "Micah",
+      "chapter": 7,
+      "verse_start": 12,
+      "verse_end": 12,
+      "text": "<em>In</em> that day <em>also</em> he shall come even to thee from Assyria, and <em>from</em> the fortified cities, and from the fortress even to the river, and from sea to sea, and <em>from</em> mountain to mountain."
+    },
+    {
+      "book_id": "MIC",
+      "book_name": "Micah",
+      "chapter": 7,
+      "verse_start": 13,
+      "verse_end": 13,
+      "text": "Notwithstanding the land shall be desolate because of them that dwell therein, for the fruit of their doings."
+    },
+    {
+      "book_id": "MIC",
+      "book_name": "Micah",
+      "chapter": 7,
+      "verse_start": 14,
+      "verse_end": 14,
+      "text": "Feed thy people with thy rod, the flock of thine heritage, which dwell solitarily <em>in</em> the wood, in the midst of Carmel: let them feed <em>in</em> Bashan and Gilead, as in the days of old."
+    },
+    {
+      "book_id": "MIC",
+      "book_name": "Micah",
+      "chapter": 7,
+      "verse_start": 15,
+      "verse_end": 15,
+      "text": "According to the days of thy coming out of the land of Egypt will I shew unto him marvellous <em>things</em>."
+    },
+    {
+      "book_id": "MIC",
+      "book_name": "Micah",
+      "chapter": 7,
+      "verse_start": 16,
+      "verse_end": 16,
+      "text": "The nations shall see and be confounded at all their might: they shall lay <em>their</em> hand upon <em>their</em> mouth, their ears shall be deaf."
+    },
+    {
+      "book_id": "MIC",
+      "book_name": "Micah",
+      "chapter": 7,
+      "verse_start": 17,
+      "verse_end": 17,
+      "text": "They shall lick the dust like a serpent, they shall move out of their holes like worms of the earth: they shall be afraid of the LORD our God, and shall fear because of thee."
+    },
+    {
+      "book_id": "MIC",
+      "book_name": "Micah",
+      "chapter": 7,
+      "verse_start": 18,
+      "verse_end": 18,
+      "text": "Who <em>is</em> a God like unto thee, that pardoneth iniquity, and passeth by the transgression of the remnant of his heritage? he retaineth not his anger for ever, because he delighteth <em>in</em> mercy."
+    },
+    {
+      "book_id": "MIC",
+      "book_name": "Micah",
+      "chapter": 7,
+      "verse_start": 19,
+      "verse_end": 19,
+      "text": "He will turn again, he will have compassion upon us; he will subdue our iniquities; and thou wilt cast all their sins into the depths of the sea."
+    },
+    {
+      "book_id": "MIC",
+      "book_name": "Micah",
+      "chapter": 7,
+      "verse_start": 20,
+      "verse_end": 20,
+      "text": "Thou wilt perform the truth to Jacob, <em>and</em> the mercy to Abraham, which thou hast sworn unto our fathers from the days of old."
+    }
+  ]
+}

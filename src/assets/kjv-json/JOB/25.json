@@ -1,1 +1,53 @@
-[{"book_id":"JOB","book_name_alt":"Job","chapter":"25","verse_start":"1","verse_start_alt":"1","verse_end":"1","verse_end_alt":"1","verse_text":"Then answered Bildad the Shuhite, and said,"},{"book_id":"JOB","book_name_alt":"Job","chapter":"25","verse_start":"2","verse_start_alt":"2","verse_end":"2","verse_end_alt":"2","verse_text":"Dominion and fear are with him, he maketh peace in his high places."},{"book_id":"JOB","book_name_alt":"Job","chapter":"25","verse_start":"3","verse_start_alt":"3","verse_end":"3","verse_end_alt":"3","verse_text":"Is there any number of his armies? and upon whom doth not his light arise?"},{"book_id":"JOB","book_name_alt":"Job","chapter":"25","verse_start":"4","verse_start_alt":"4","verse_end":"4","verse_end_alt":"4","verse_text":"How then can man be justified with God? or how can he be clean that is born of a woman?"},{"book_id":"JOB","book_name_alt":"Job","chapter":"25","verse_start":"5","verse_start_alt":"5","verse_end":"5","verse_end_alt":"5","verse_text":"Behold even to the moon, and it shineth not; yea, the stars are not pure in his sight."},{"book_id":"JOB","book_name_alt":"Job","chapter":"25","verse_start":"6","verse_start_alt":"6","verse_end":"6","verse_end_alt":"6","verse_text":"How much less man, that is a worm? and the son of man, which is a worm?"}]
+{
+  "info": "",
+  "verses": [
+    {
+      "book_id": "JOB",
+      "book_name": "Job",
+      "chapter": 25,
+      "verse_start": 1,
+      "verse_end": 1,
+      "text": "Then answered Bildad the Shuhite, and said,"
+    },
+    {
+      "book_id": "JOB",
+      "book_name": "Job",
+      "chapter": 25,
+      "verse_start": 2,
+      "verse_end": 2,
+      "text": "Dominion and fear <em>are</em> with him, he maketh peace in his high places."
+    },
+    {
+      "book_id": "JOB",
+      "book_name": "Job",
+      "chapter": 25,
+      "verse_start": 3,
+      "verse_end": 3,
+      "text": "Is there any number of his armies? and upon whom doth not his light arise?"
+    },
+    {
+      "book_id": "JOB",
+      "book_name": "Job",
+      "chapter": 25,
+      "verse_start": 4,
+      "verse_end": 4,
+      "text": "How then can man be justified with God? or how can he be clean <em>that is</em> born of a woman?"
+    },
+    {
+      "book_id": "JOB",
+      "book_name": "Job",
+      "chapter": 25,
+      "verse_start": 5,
+      "verse_end": 5,
+      "text": "Behold even to the moon, and it shineth not; yea, the stars are not pure in his sight."
+    },
+    {
+      "book_id": "JOB",
+      "book_name": "Job",
+      "chapter": 25,
+      "verse_start": 6,
+      "verse_end": 6,
+      "text": "How much less man, <em>that is</em> a worm? and the son of man, <em>which is</em> a worm?"
+    }
+  ]
+}

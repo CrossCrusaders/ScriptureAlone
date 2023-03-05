@@ -1,1 +1,173 @@
-[{"book_id":"2CO","book_name_alt":"2 Corinthians","chapter":"5","verse_start":"1","verse_start_alt":"1","verse_end":"1","verse_end_alt":"1","verse_text":"For we know that if our earthly house of this tabernacle were dissolved, we have a building of God, an house not made with hands, eternal in the heavens."},{"book_id":"2CO","book_name_alt":"2 Corinthians","chapter":"5","verse_start":"2","verse_start_alt":"2","verse_end":"2","verse_end_alt":"2","verse_text":"For in this we groan, earnestly desiring to be clothed upon with our house which is from heaven:"},{"book_id":"2CO","book_name_alt":"2 Corinthians","chapter":"5","verse_start":"3","verse_start_alt":"3","verse_end":"3","verse_end_alt":"3","verse_text":"If so be that being clothed we shall not be found naked."},{"book_id":"2CO","book_name_alt":"2 Corinthians","chapter":"5","verse_start":"4","verse_start_alt":"4","verse_end":"4","verse_end_alt":"4","verse_text":"For we that are in this tabernacle do groan, being burdened: not for that we would be unclothed, but clothed upon, that mortality might be swallowed up of life."},{"book_id":"2CO","book_name_alt":"2 Corinthians","chapter":"5","verse_start":"5","verse_start_alt":"5","verse_end":"5","verse_end_alt":"5","verse_text":"Now he that hath wrought us for the selfsame thing is God, who also hath given unto us the earnest of the Spirit."},{"book_id":"2CO","book_name_alt":"2 Corinthians","chapter":"5","verse_start":"6","verse_start_alt":"6","verse_end":"6","verse_end_alt":"6","verse_text":"Therefore we are always confident, knowing that, whilst we are at home in the body, we are absent from the Lord:"},{"book_id":"2CO","book_name_alt":"2 Corinthians","chapter":"5","verse_start":"7","verse_start_alt":"7","verse_end":"7","verse_end_alt":"7","verse_text":"(For we walk by faith, not by sight:)"},{"book_id":"2CO","book_name_alt":"2 Corinthians","chapter":"5","verse_start":"8","verse_start_alt":"8","verse_end":"8","verse_end_alt":"8","verse_text":"We are confident, I say, and willing rather to be absent from the body, and to be present with the Lord."},{"book_id":"2CO","book_name_alt":"2 Corinthians","chapter":"5","verse_start":"9","verse_start_alt":"9","verse_end":"9","verse_end_alt":"9","verse_text":"Wherefore we labour, that, whether present or absent, we may be accepted of him."},{"book_id":"2CO","book_name_alt":"2 Corinthians","chapter":"5","verse_start":"10","verse_start_alt":"10","verse_end":"10","verse_end_alt":"10","verse_text":"For we must all appear before the judgment seat of Christ; that every one may receive the things done in his body, according to that he hath done, whether it be good or bad."},{"book_id":"2CO","book_name_alt":"2 Corinthians","chapter":"5","verse_start":"11","verse_start_alt":"11","verse_end":"11","verse_end_alt":"11","verse_text":"Knowing therefore the terror of the Lord, we persuade men; but we are made manifest unto God; and I trust also are made manifest in your consciences."},{"book_id":"2CO","book_name_alt":"2 Corinthians","chapter":"5","verse_start":"12","verse_start_alt":"12","verse_end":"12","verse_end_alt":"12","verse_text":"For we commend not ourselves again unto you, but give you occasion to glory on our behalf, that ye may have somewhat to answer them which glory in appearance, and not in heart."},{"book_id":"2CO","book_name_alt":"2 Corinthians","chapter":"5","verse_start":"13","verse_start_alt":"13","verse_end":"13","verse_end_alt":"13","verse_text":"For whether we be beside ourselves, it is to God: or whether we be sober, it is for your cause."},{"book_id":"2CO","book_name_alt":"2 Corinthians","chapter":"5","verse_start":"14","verse_start_alt":"14","verse_end":"14","verse_end_alt":"14","verse_text":"For the love of Christ constraineth us; because we thus judge, that if one died for all, then were all dead:"},{"book_id":"2CO","book_name_alt":"2 Corinthians","chapter":"5","verse_start":"15","verse_start_alt":"15","verse_end":"15","verse_end_alt":"15","verse_text":"And that he died for all, that they which live should not henceforth live unto themselves, but unto him which died for them, and rose again."},{"book_id":"2CO","book_name_alt":"2 Corinthians","chapter":"5","verse_start":"16","verse_start_alt":"16","verse_end":"16","verse_end_alt":"16","verse_text":"Wherefore henceforth know we no man after the flesh: yea, though we have known Christ after the flesh, yet now henceforth know we him no more."},{"book_id":"2CO","book_name_alt":"2 Corinthians","chapter":"5","verse_start":"17","verse_start_alt":"17","verse_end":"17","verse_end_alt":"17","verse_text":"Therefore if any man be in Christ, he is a new creature: old things are passed away; behold, all things are become new."},{"book_id":"2CO","book_name_alt":"2 Corinthians","chapter":"5","verse_start":"18","verse_start_alt":"18","verse_end":"18","verse_end_alt":"18","verse_text":"And all things are of God, who hath reconciled us to himself by Jesus Christ, and hath given to us the ministry of reconciliation;"},{"book_id":"2CO","book_name_alt":"2 Corinthians","chapter":"5","verse_start":"19","verse_start_alt":"19","verse_end":"19","verse_end_alt":"19","verse_text":"To wit, that God was in Christ, reconciling the world unto himself, not imputing their trespasses unto them; and hath committed unto us the word of reconciliation."},{"book_id":"2CO","book_name_alt":"2 Corinthians","chapter":"5","verse_start":"20","verse_start_alt":"20","verse_end":"20","verse_end_alt":"20","verse_text":"Now then we are ambassadors for Christ, as though God did beseech you by us: we pray you in Christ’s stead, be ye reconciled to God."},{"book_id":"2CO","book_name_alt":"2 Corinthians","chapter":"5","verse_start":"21","verse_start_alt":"21","verse_end":"21","verse_end_alt":"21","verse_text":"For he hath made him to be sin for us, who knew no sin; that we might be made the righteousness of God in him."}]
+{
+  "info": "",
+  "verses": [
+    {
+      "book_id": "2CO",
+      "book_name": "2 Corinthians",
+      "chapter": 5,
+      "verse_start": 1,
+      "verse_end": 1,
+      "text": "<a href=\"../2-Corinthians-5-1/\" title=\"2 Corinthians 5:1 KJV verse detail\"><span id=\"3\" class=\"versehover\">1  \"JESUS_END\"For we know that if our earthly house of <em>this</em> tabernacle were dissolved, we have a building of God, an house not made with hands, eternal in the heavens."
+    },
+    {
+      "book_id": "2CO",
+      "book_name": "2 Corinthians",
+      "chapter": 5,
+      "verse_start": 2,
+      "verse_end": 2,
+      "text": "<a href=\"../2-Corinthians-5-2/\" title=\"2 Corinthians 5:2 KJV verse detail\"><span id=\"4\" class=\"versehover\">2  \"JESUS_END\"For in this we groan, earnestly desiring to be clothed upon with our house which is from heaven:"
+    },
+    {
+      "book_id": "2CO",
+      "book_name": "2 Corinthians",
+      "chapter": 5,
+      "verse_start": 3,
+      "verse_end": 3,
+      "text": "<a href=\"../2-Corinthians-5-3/\" title=\"2 Corinthians 5:3 KJV verse detail\"><span id=\"5\" class=\"versehover\">3  \"JESUS_END\"If so be that being clothed we shall not be found naked."
+    },
+    {
+      "book_id": "2CO",
+      "book_name": "2 Corinthians",
+      "chapter": 5,
+      "verse_start": 4,
+      "verse_end": 4,
+      "text": "<a href=\"../2-Corinthians-5-4/\" title=\"2 Corinthians 5:4 KJV verse detail\"><span id=\"6\" class=\"versehover\">4  \"JESUS_END\"For we that are in <em>this</em> tabernacle do groan, being burdened: not for that we would be unclothed, but clothed upon, that mortality might be swallowed up of life."
+    },
+    {
+      "book_id": "2CO",
+      "book_name": "2 Corinthians",
+      "chapter": 5,
+      "verse_start": 5,
+      "verse_end": 5,
+      "text": "<a href=\"../2-Corinthians-5-5/\" title=\"2 Corinthians 5:5 KJV verse detail\"><span id=\"7\" class=\"versehover\">5  \"JESUS_END\"Now he that hath wrought us for the selfsame thing <em>is</em> God, who also hath given unto us the earnest of the Spirit."
+    },
+    {
+      "book_id": "2CO",
+      "book_name": "2 Corinthians",
+      "chapter": 5,
+      "verse_start": 6,
+      "verse_end": 6,
+      "text": "<a href=\"../2-Corinthians-5-6/\" title=\"2 Corinthians 5:6 KJV verse detail\"><span id=\"8\" class=\"versehover\">6  \"JESUS_END\"Therefore <em>we are</em> always confident, knowing that, whilst we are at home in the body, we are absent from the Lord:"
+    },
+    {
+      "book_id": "2CO",
+      "book_name": "2 Corinthians",
+      "chapter": 5,
+      "verse_start": 7,
+      "verse_end": 7,
+      "text": "<a href=\"../2-Corinthians-5-7/\" title=\"2 Corinthians 5:7 KJV verse detail\"><span id=\"9\" class=\"versehover\">7  \"JESUS_END\"(For we walk by faith, not by sight:)"
+    },
+    {
+      "book_id": "2CO",
+      "book_name": "2 Corinthians",
+      "chapter": 5,
+      "verse_start": 8,
+      "verse_end": 8,
+      "text": "<a href=\"../2-Corinthians-5-8/\" title=\"2 Corinthians 5:8 KJV verse detail\"><span id=\"10\" class=\"versehover\">8  \"JESUS_END\"We are confident, <em>I say</em>, and willing rather to be absent from the body, and to be present with the Lord."
+    },
+    {
+      "book_id": "2CO",
+      "book_name": "2 Corinthians",
+      "chapter": 5,
+      "verse_start": 9,
+      "verse_end": 9,
+      "text": "<a href=\"../2-Corinthians-5-9/\" title=\"2 Corinthians 5:9 KJV verse detail\"><span id=\"11\" class=\"versehover\">9  \"JESUS_END\"Wherefore we labour, that, whether present or absent, we may be accepted of him."
+    },
+    {
+      "book_id": "2CO",
+      "book_name": "2 Corinthians",
+      "chapter": 5,
+      "verse_start": 10,
+      "verse_end": 10,
+      "text": "<a href=\"../2-Corinthians-5-10/\" title=\"2 Corinthians 5:10 KJV verse detail\"><span id=\"12\" class=\"versehover\">10  \"JESUS_END\"For we must all appear before the judgment seat of Christ; that every one may receive the things <em>done</em> in <em>his</em> body, according to that he hath done, whether <em>it be</em> good or bad."
+    },
+    {
+      "book_id": "2CO",
+      "book_name": "2 Corinthians",
+      "chapter": 5,
+      "verse_start": 11,
+      "verse_end": 11,
+      "text": "<a href=\"../2-Corinthians-5-11/\" title=\"2 Corinthians 5:11 KJV verse detail\"><span id=\"13\" class=\"versehover\">11  \"JESUS_END\"Knowing therefore the terror of the Lord, we persuade men; but we are made manifest unto God; and I trust also are made manifest in your consciences."
+    },
+    {
+      "book_id": "2CO",
+      "book_name": "2 Corinthians",
+      "chapter": 5,
+      "verse_start": 12,
+      "verse_end": 12,
+      "text": "<a href=\"../2-Corinthians-5-12/\" title=\"2 Corinthians 5:12 KJV verse detail\"><span id=\"14\" class=\"versehover\">12  \"JESUS_END\"For we commend not ourselves again unto you, but give you occasion to glory on our behalf, that ye may have somewhat to <em>answer</em> them which glory in appearance, and not in heart."
+    },
+    {
+      "book_id": "2CO",
+      "book_name": "2 Corinthians",
+      "chapter": 5,
+      "verse_start": 13,
+      "verse_end": 13,
+      "text": "<a href=\"../2-Corinthians-5-13/\" title=\"2 Corinthians 5:13 KJV verse detail\"><span id=\"15\" class=\"versehover\">13  \"JESUS_END\"For whether we be beside ourselves, <em>it is</em> to God: or whether we be sober, <em>it is</em> for your cause."
+    },
+    {
+      "book_id": "2CO",
+      "book_name": "2 Corinthians",
+      "chapter": 5,
+      "verse_start": 14,
+      "verse_end": 14,
+      "text": "<a href=\"../2-Corinthians-5-14/\" title=\"2 Corinthians 5:14 KJV verse detail\"><span id=\"16\" class=\"versehover\">14  \"JESUS_END\"For the love of Christ constraineth us; because we thus judge, that if one died for all, then were all dead:"
+    },
+    {
+      "book_id": "2CO",
+      "book_name": "2 Corinthians",
+      "chapter": 5,
+      "verse_start": 15,
+      "verse_end": 15,
+      "text": "<a href=\"../2-Corinthians-5-15/\" title=\"2 Corinthians 5:15 KJV verse detail\"><span id=\"17\" class=\"versehover\">15  \"JESUS_END\"And <em>that</em> he died for all, that they which live should not henceforth live unto themselves, but unto him which died for them, and rose again."
+    },
+    {
+      "book_id": "2CO",
+      "book_name": "2 Corinthians",
+      "chapter": 5,
+      "verse_start": 16,
+      "verse_end": 16,
+      "text": "<a href=\"../2-Corinthians-5-16/\" title=\"2 Corinthians 5:16 KJV verse detail\"><span id=\"18\" class=\"versehover\">16  \"JESUS_END\"Wherefore henceforth know we no man after the flesh: yea, though we have known Christ after the flesh, yet now henceforth know we <em>him</em> no more."
+    },
+    {
+      "book_id": "2CO",
+      "book_name": "2 Corinthians",
+      "chapter": 5,
+      "verse_start": 17,
+      "verse_end": 17,
+      "text": "<a href=\"../2-Corinthians-5-17/\" title=\"2 Corinthians 5:17 KJV verse detail\"><span id=\"19\" class=\"versehover\">17  \"JESUS_END\"Therefore if any man <em>be</em> in Christ, <em>he is</em> a new creature: old things are passed away; behold, all things are become new."
+    },
+    {
+      "book_id": "2CO",
+      "book_name": "2 Corinthians",
+      "chapter": 5,
+      "verse_start": 18,
+      "verse_end": 18,
+      "text": "<a href=\"../2-Corinthians-5-18/\" title=\"2 Corinthians 5:18 KJV verse detail\"><span id=\"20\" class=\"versehover\">18  \"JESUS_END\"And all things <em>are</em> of God, who hath reconciled us to himself by Jesus Christ, and hath given to us the ministry of reconciliation;"
+    },
+    {
+      "book_id": "2CO",
+      "book_name": "2 Corinthians",
+      "chapter": 5,
+      "verse_start": 19,
+      "verse_end": 19,
+      "text": "<a href=\"../2-Corinthians-5-19/\" title=\"2 Corinthians 5:19 KJV verse detail\"><span id=\"21\" class=\"versehover\">19  \"JESUS_END\"To wit, that God was in Christ, reconciling the world unto himself, not imputing their trespasses unto them; and hath committed unto us the word of reconciliation."
+    },
+    {
+      "book_id": "2CO",
+      "book_name": "2 Corinthians",
+      "chapter": 5,
+      "verse_start": 20,
+      "verse_end": 20,
+      "text": "<a href=\"../2-Corinthians-5-20/\" title=\"2 Corinthians 5:20 KJV verse detail\"><span id=\"22\" class=\"versehover\">20  \"JESUS_END\"Now then we are ambassadors for Christ, as though God did beseech <em>you</em> by us: we pray <em>you</em> in Christ's stead, be ye reconciled to God."
+    },
+    {
+      "book_id": "2CO",
+      "book_name": "2 Corinthians",
+      "chapter": 5,
+      "verse_start": 21,
+      "verse_end": 21,
+      "text": "<a href=\"../2-Corinthians-5-21/\" title=\"2 Corinthians 5:21 KJV verse detail\"><span id=\"23\" class=\"versehover\">21  \"JESUS_END\"For he hath made him <em>to be</em> sin for us, who knew no sin; that we might be made the righteousness of God in him."
+    }
+  ]
+}

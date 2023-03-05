@@ -1,1 +1,165 @@
-[{"book_id":"DEU","book_name_alt":"Deuteronomy","chapter":"8","verse_start":"1","verse_start_alt":"1","verse_end":"1","verse_end_alt":"1","verse_text":"All the commandments which I command thee this day shall ye observe to do, that ye may live, and multiply, and go in and possess the land which the LORD sware unto your fathers."},{"book_id":"DEU","book_name_alt":"Deuteronomy","chapter":"8","verse_start":"2","verse_start_alt":"2","verse_end":"2","verse_end_alt":"2","verse_text":"And thou shalt remember all the way which the LORD thy God led thee these forty years in the wilderness, to humble thee, and to prove thee, to know what was in thine heart, whether thou wouldest keep his commandments, or no."},{"book_id":"DEU","book_name_alt":"Deuteronomy","chapter":"8","verse_start":"3","verse_start_alt":"3","verse_end":"3","verse_end_alt":"3","verse_text":"And he humbled thee, and suffered thee to hunger, and fed thee with manna, which thou knewest not, neither did thy fathers know; that he might make thee know that man doth not live by bread only, but by every word that proceedeth out of the mouth of the LORD doth man live."},{"book_id":"DEU","book_name_alt":"Deuteronomy","chapter":"8","verse_start":"4","verse_start_alt":"4","verse_end":"4","verse_end_alt":"4","verse_text":"Thy raiment waxed not old upon thee, neither did thy foot swell, these forty years."},{"book_id":"DEU","book_name_alt":"Deuteronomy","chapter":"8","verse_start":"5","verse_start_alt":"5","verse_end":"5","verse_end_alt":"5","verse_text":"Thou shalt also consider in thine heart, that, as a man chasteneth his son, so the LORD thy God chasteneth thee."},{"book_id":"DEU","book_name_alt":"Deuteronomy","chapter":"8","verse_start":"6","verse_start_alt":"6","verse_end":"6","verse_end_alt":"6","verse_text":"Therefore thou shalt keep the commandments of the LORD thy God, to walk in his ways, and to fear him."},{"book_id":"DEU","book_name_alt":"Deuteronomy","chapter":"8","verse_start":"7","verse_start_alt":"7","verse_end":"7","verse_end_alt":"7","verse_text":"For the LORD thy God bringeth thee into a good land, a land of brooks of water, of fountains and depths that spring out of valleys and hills;"},{"book_id":"DEU","book_name_alt":"Deuteronomy","chapter":"8","verse_start":"8","verse_start_alt":"8","verse_end":"8","verse_end_alt":"8","verse_text":"A land of wheat, and barley, and vines, and fig trees, and pomegranates; a land of oil olive, and honey;"},{"book_id":"DEU","book_name_alt":"Deuteronomy","chapter":"8","verse_start":"9","verse_start_alt":"9","verse_end":"9","verse_end_alt":"9","verse_text":"A land wherein thou shalt eat bread without scarceness, thou shalt not lack any thing in it; a land whose stones are iron, and out of whose hills thou mayest dig brass."},{"book_id":"DEU","book_name_alt":"Deuteronomy","chapter":"8","verse_start":"10","verse_start_alt":"10","verse_end":"10","verse_end_alt":"10","verse_text":"When thou hast eaten and art full, then thou shalt bless the LORD thy God for the good land which he hath given thee."},{"book_id":"DEU","book_name_alt":"Deuteronomy","chapter":"8","verse_start":"11","verse_start_alt":"11","verse_end":"11","verse_end_alt":"11","verse_text":"Beware that thou forget not the LORD thy God, in not keeping his commandments, and his judgments, and his statutes, which I command thee this day:"},{"book_id":"DEU","book_name_alt":"Deuteronomy","chapter":"8","verse_start":"12","verse_start_alt":"12","verse_end":"12","verse_end_alt":"12","verse_text":"Lest when thou hast eaten and art full, and hast built goodly houses, and dwelt therein;"},{"book_id":"DEU","book_name_alt":"Deuteronomy","chapter":"8","verse_start":"13","verse_start_alt":"13","verse_end":"13","verse_end_alt":"13","verse_text":"And when thy herds and thy flocks multiply, and thy silver and thy gold is multiplied, and all that thou hast is multiplied;"},{"book_id":"DEU","book_name_alt":"Deuteronomy","chapter":"8","verse_start":"14","verse_start_alt":"14","verse_end":"14","verse_end_alt":"14","verse_text":"Then thine heart be lifted up, and thou forget the LORD thy God, which brought thee forth out of the land of Egypt, from the house of bondage;"},{"book_id":"DEU","book_name_alt":"Deuteronomy","chapter":"8","verse_start":"15","verse_start_alt":"15","verse_end":"15","verse_end_alt":"15","verse_text":"Who led thee through that great and terrible wilderness, wherein were fiery serpents, and scorpions, and drought, where there was no water; who brought thee forth water out of the rock of flint;"},{"book_id":"DEU","book_name_alt":"Deuteronomy","chapter":"8","verse_start":"16","verse_start_alt":"16","verse_end":"16","verse_end_alt":"16","verse_text":"Who fed thee in the wilderness with manna, which thy fathers knew not, that he might humble thee, and that he might prove thee, to do thee good at thy latter end;"},{"book_id":"DEU","book_name_alt":"Deuteronomy","chapter":"8","verse_start":"17","verse_start_alt":"17","verse_end":"17","verse_end_alt":"17","verse_text":"And thou say in thine heart, My power and the might of mine hand hath gotten me this wealth."},{"book_id":"DEU","book_name_alt":"Deuteronomy","chapter":"8","verse_start":"18","verse_start_alt":"18","verse_end":"18","verse_end_alt":"18","verse_text":"But thou shalt remember the LORD thy God: for it is he that giveth thee power to get wealth, that he may establish his covenant which he sware unto thy fathers, as it is this day."},{"book_id":"DEU","book_name_alt":"Deuteronomy","chapter":"8","verse_start":"19","verse_start_alt":"19","verse_end":"19","verse_end_alt":"19","verse_text":"And it shall be, if thou do at all forget the LORD thy God, and walk after other gods, and serve them, and worship them, I testify against you this day that ye shall surely perish."},{"book_id":"DEU","book_name_alt":"Deuteronomy","chapter":"8","verse_start":"20","verse_start_alt":"20","verse_end":"20","verse_end_alt":"20","verse_text":"As the nations which the LORD destroyeth before your face, so shall ye perish; because ye would not be obedient unto the voice of the LORD your God."}]
+{
+  "info": "",
+  "verses": [
+    {
+      "book_id": "DEU",
+      "book_name": "Deuteronomy",
+      "chapter": 8,
+      "verse_start": 1,
+      "verse_end": 1,
+      "text": "All the commandments which I command thee this day shall ye observe to do, that ye may live, and multiply, and go in and possess the land which the LORD sware unto your fathers."
+    },
+    {
+      "book_id": "DEU",
+      "book_name": "Deuteronomy",
+      "chapter": 8,
+      "verse_start": 2,
+      "verse_end": 2,
+      "text": "And thou shalt remember all the way which the LORD thy God led thee these forty years in the wilderness, to humble thee, <em>and</em> to prove thee, to know what <em>was</em> in thine heart, whether thou wouldest keep his commandments, or no."
+    },
+    {
+      "book_id": "DEU",
+      "book_name": "Deuteronomy",
+      "chapter": 8,
+      "verse_start": 3,
+      "verse_end": 3,
+      "text": "And he humbled thee, and suffered thee to hunger, and fed thee with manna, which thou knewest not, neither did thy fathers know; that he might make thee know that man doth not live by bread only, but by every <em>word</em> that proceedeth out of the mouth of the LORD doth man live."
+    },
+    {
+      "book_id": "DEU",
+      "book_name": "Deuteronomy",
+      "chapter": 8,
+      "verse_start": 4,
+      "verse_end": 4,
+      "text": "Thy raiment waxed not old upon thee, neither did thy foot swell, these forty years."
+    },
+    {
+      "book_id": "DEU",
+      "book_name": "Deuteronomy",
+      "chapter": 8,
+      "verse_start": 5,
+      "verse_end": 5,
+      "text": "Thou shalt also consider in thine heart, that, as a man chasteneth his son, <em>so</em> the LORD thy God chasteneth thee."
+    },
+    {
+      "book_id": "DEU",
+      "book_name": "Deuteronomy",
+      "chapter": 8,
+      "verse_start": 6,
+      "verse_end": 6,
+      "text": "Therefore thou shalt keep the commandments of the LORD thy God, to walk in his ways, and to fear him."
+    },
+    {
+      "book_id": "DEU",
+      "book_name": "Deuteronomy",
+      "chapter": 8,
+      "verse_start": 7,
+      "verse_end": 7,
+      "text": "For the LORD thy God bringeth thee into a good land, a land of brooks of water, of fountains and depths that spring out of valleys and hills;"
+    },
+    {
+      "book_id": "DEU",
+      "book_name": "Deuteronomy",
+      "chapter": 8,
+      "verse_start": 8,
+      "verse_end": 8,
+      "text": "A land of wheat, and barley, and vines, and fig trees, and pomegranates; a land of oil olive, and honey;"
+    },
+    {
+      "book_id": "DEU",
+      "book_name": "Deuteronomy",
+      "chapter": 8,
+      "verse_start": 9,
+      "verse_end": 9,
+      "text": "A land wherein thou shalt eat bread without scarceness, thou shalt not lack any <em>thing</em> in it; a land whose stones <em>are</em> iron, and out of whose hills thou mayest dig brass."
+    },
+    {
+      "book_id": "DEU",
+      "book_name": "Deuteronomy",
+      "chapter": 8,
+      "verse_start": 10,
+      "verse_end": 10,
+      "text": "When thou hast eaten and art full, then thou shalt bless the LORD thy God for the good land which he hath given thee."
+    },
+    {
+      "book_id": "DEU",
+      "book_name": "Deuteronomy",
+      "chapter": 8,
+      "verse_start": 11,
+      "verse_end": 11,
+      "text": "Beware that thou forget not the LORD thy God, in not keeping his commandments, and his judgments, and his statutes, which I command thee this day:"
+    },
+    {
+      "book_id": "DEU",
+      "book_name": "Deuteronomy",
+      "chapter": 8,
+      "verse_start": 12,
+      "verse_end": 12,
+      "text": "Lest <em>when</em> thou hast eaten and art full, and hast built goodly houses, and dwelt <em>therein</em>;"
+    },
+    {
+      "book_id": "DEU",
+      "book_name": "Deuteronomy",
+      "chapter": 8,
+      "verse_start": 13,
+      "verse_end": 13,
+      "text": "And <em>when</em> thy herds and thy flocks multiply, and thy silver and thy gold is multiplied, and all that thou hast is multiplied;"
+    },
+    {
+      "book_id": "DEU",
+      "book_name": "Deuteronomy",
+      "chapter": 8,
+      "verse_start": 14,
+      "verse_end": 14,
+      "text": "Then thine heart be lifted up, and thou forget the LORD thy God, which brought thee forth out of the land of Egypt, from the house of bondage;"
+    },
+    {
+      "book_id": "DEU",
+      "book_name": "Deuteronomy",
+      "chapter": 8,
+      "verse_start": 15,
+      "verse_end": 15,
+      "text": "Who led thee through that great and terrible wilderness, <em>wherein were</em> fiery serpents, and scorpions, and drought, where <em>there was</em> no water; who brought thee forth water out of the rock of flint;"
+    },
+    {
+      "book_id": "DEU",
+      "book_name": "Deuteronomy",
+      "chapter": 8,
+      "verse_start": 16,
+      "verse_end": 16,
+      "text": "Who fed thee in the wilderness with manna, which thy fathers knew not, that he might humble thee, and that he might prove thee, to do thee good at thy latter end;"
+    },
+    {
+      "book_id": "DEU",
+      "book_name": "Deuteronomy",
+      "chapter": 8,
+      "verse_start": 17,
+      "verse_end": 17,
+      "text": "And thou say in thine heart, My power and the might of <em>mine</em> hand hath gotten me this wealth."
+    },
+    {
+      "book_id": "DEU",
+      "book_name": "Deuteronomy",
+      "chapter": 8,
+      "verse_start": 18,
+      "verse_end": 18,
+      "text": "But thou shalt remember the LORD thy God: for <em>it is</em> he that giveth thee power to get wealth, that he may establish his covenant which he sware unto thy fathers, as <em>it is</em> this day."
+    },
+    {
+      "book_id": "DEU",
+      "book_name": "Deuteronomy",
+      "chapter": 8,
+      "verse_start": 19,
+      "verse_end": 19,
+      "text": "And it shall be, if thou do at all forget the LORD thy God, and walk after other gods, and serve them, and worship them, I testify against you this day that ye shall surely perish."
+    },
+    {
+      "book_id": "DEU",
+      "book_name": "Deuteronomy",
+      "chapter": 8,
+      "verse_start": 20,
+      "verse_end": 20,
+      "text": "As the nations which the LORD destroyeth before your face, so shall ye perish; because ye would not be obedient unto the voice of the LORD your God."
+    }
+  ]
+}

@@ -1,1 +1,69 @@
-[{"book_id":"EZK","book_name_alt":"Ezekiel","chapter":"15","verse_start":"1","verse_start_alt":"1","verse_end":"1","verse_end_alt":"1","verse_text":"And the word of the LORD came unto me, saying,"},{"book_id":"EZK","book_name_alt":"Ezekiel","chapter":"15","verse_start":"2","verse_start_alt":"2","verse_end":"2","verse_end_alt":"2","verse_text":"Son of man, What is the vine tree more than any tree, or than a branch which is among the trees of the forest?"},{"book_id":"EZK","book_name_alt":"Ezekiel","chapter":"15","verse_start":"3","verse_start_alt":"3","verse_end":"3","verse_end_alt":"3","verse_text":"Shall wood be taken thereof to do any work? or will men take a pin of it to hang any vessel thereon?"},{"book_id":"EZK","book_name_alt":"Ezekiel","chapter":"15","verse_start":"4","verse_start_alt":"4","verse_end":"4","verse_end_alt":"4","verse_text":"Behold, it is cast into the fire for fuel; the fire devoureth both the ends of it, and the midst of it is burned. Is it meet for any work?"},{"book_id":"EZK","book_name_alt":"Ezekiel","chapter":"15","verse_start":"5","verse_start_alt":"5","verse_end":"5","verse_end_alt":"5","verse_text":"Behold, when it was whole, it was meet for no work: how much less shall it be meet yet for any work, when the fire hath devoured it, and it is burned?"},{"book_id":"EZK","book_name_alt":"Ezekiel","chapter":"15","verse_start":"6","verse_start_alt":"6","verse_end":"6","verse_end_alt":"6","verse_text":"Therefore thus saith the Lord GOD; As the vine tree among the trees of the forest, which I have given to the fire for fuel, so will I give the inhabitants of Jerusalem."},{"book_id":"EZK","book_name_alt":"Ezekiel","chapter":"15","verse_start":"7","verse_start_alt":"7","verse_end":"7","verse_end_alt":"7","verse_text":"And I will set my face against them; they shall go out from one fire, and another fire shall devour them; and ye shall know that I am the LORD, when I set my face against them."},{"book_id":"EZK","book_name_alt":"Ezekiel","chapter":"15","verse_start":"8","verse_start_alt":"8","verse_end":"8","verse_end_alt":"8","verse_text":"And I will make the land desolate, because they have committed a trespass, saith the Lord GOD."}]
+{
+  "info": "",
+  "verses": [
+    {
+      "book_id": "EZK",
+      "book_name": "Ezekiel",
+      "chapter": 15,
+      "verse_start": 1,
+      "verse_end": 1,
+      "text": "And the word of the LORD came unto me, saying,"
+    },
+    {
+      "book_id": "EZK",
+      "book_name": "Ezekiel",
+      "chapter": 15,
+      "verse_start": 2,
+      "verse_end": 2,
+      "text": "Son of man, What is the vine tree more than any tree, <em>or than</em> a branch which is among the trees of the forest?"
+    },
+    {
+      "book_id": "EZK",
+      "book_name": "Ezekiel",
+      "chapter": 15,
+      "verse_start": 3,
+      "verse_end": 3,
+      "text": "Shall wood be taken thereof to do any work? or will <em>men</em> take a pin of it to hang any vessel thereon?"
+    },
+    {
+      "book_id": "EZK",
+      "book_name": "Ezekiel",
+      "chapter": 15,
+      "verse_start": 4,
+      "verse_end": 4,
+      "text": "Behold, it is cast into the fire for fuel; the fire devoureth both the ends of it, and the midst of it is burned. Is it meet for <em>any</em> work?"
+    },
+    {
+      "book_id": "EZK",
+      "book_name": "Ezekiel",
+      "chapter": 15,
+      "verse_start": 5,
+      "verse_end": 5,
+      "text": "Behold, when it was whole, it was meet for no work: how much less shall it be meet yet for <em>any</em> work, when the fire hath devoured it, and it is burned?"
+    },
+    {
+      "book_id": "EZK",
+      "book_name": "Ezekiel",
+      "chapter": 15,
+      "verse_start": 6,
+      "verse_end": 6,
+      "text": "Therefore thus saith the Lord GOD; As the vine tree among the trees of the forest, which I have given to the fire for fuel, so will I give the inhabitants of Jerusalem."
+    },
+    {
+      "book_id": "EZK",
+      "book_name": "Ezekiel",
+      "chapter": 15,
+      "verse_start": 7,
+      "verse_end": 7,
+      "text": "And I will set my face against them; they shall go out from <em>one</em> fire, and <em>another</em> fire shall devour them; and ye shall know that I <em>am</em> the LORD, when I set my face against them."
+    },
+    {
+      "book_id": "EZK",
+      "book_name": "Ezekiel",
+      "chapter": 15,
+      "verse_start": 8,
+      "verse_end": 8,
+      "text": "And I will make the land desolate, because they have committed a trespass, saith the Lord GOD."
+    }
+  ]
+}

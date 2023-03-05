@@ -1,1 +1,165 @@
-[{"book_id":"ECC","book_name_alt":"Ecclesiastes","chapter":"5","verse_start":"1","verse_start_alt":"1","verse_end":"1","verse_end_alt":"1","verse_text":"Keep thy foot when thou goest to the house of God, and be more ready to hear, than to give the sacrifice of fools: for they consider not that they do evil."},{"book_id":"ECC","book_name_alt":"Ecclesiastes","chapter":"5","verse_start":"2","verse_start_alt":"2","verse_end":"2","verse_end_alt":"2","verse_text":"Be not rash with thy mouth, and let not thine heart be hasty to utter any thing before God: for God is in heaven, and thou upon earth: therefore let thy words be few."},{"book_id":"ECC","book_name_alt":"Ecclesiastes","chapter":"5","verse_start":"3","verse_start_alt":"3","verse_end":"3","verse_end_alt":"3","verse_text":"For a dream cometh through the multitude of business; and a fool’s voice is known by multitude of words."},{"book_id":"ECC","book_name_alt":"Ecclesiastes","chapter":"5","verse_start":"4","verse_start_alt":"4","verse_end":"4","verse_end_alt":"4","verse_text":"When thou vowest a vow unto God, defer not to pay it; for he hath no pleasure in fools: pay that which thou hast vowed."},{"book_id":"ECC","book_name_alt":"Ecclesiastes","chapter":"5","verse_start":"5","verse_start_alt":"5","verse_end":"5","verse_end_alt":"5","verse_text":"Better is it that thou shouldest not vow, than that thou shouldest vow and not pay."},{"book_id":"ECC","book_name_alt":"Ecclesiastes","chapter":"5","verse_start":"6","verse_start_alt":"6","verse_end":"6","verse_end_alt":"6","verse_text":"Suffer not thy mouth to cause thy flesh to sin; neither say thou before the angel, that it was an error: wherefore should God be angry at thy voice, and destroy the work of thine hands?"},{"book_id":"ECC","book_name_alt":"Ecclesiastes","chapter":"5","verse_start":"7","verse_start_alt":"7","verse_end":"7","verse_end_alt":"7","verse_text":"For in the multitude of dreams and many words there are also divers vanities: but fear thou God."},{"book_id":"ECC","book_name_alt":"Ecclesiastes","chapter":"5","verse_start":"8","verse_start_alt":"8","verse_end":"8","verse_end_alt":"8","verse_text":"If thou seest the oppression of the poor, and violent perverting of judgment and justice in a province, marvel not at the matter: for he that is higher than the highest regardeth; and there be higher than they."},{"book_id":"ECC","book_name_alt":"Ecclesiastes","chapter":"5","verse_start":"9","verse_start_alt":"9","verse_end":"9","verse_end_alt":"9","verse_text":"Moreover the profit of the earth is for all: the king himself is served by the field."},{"book_id":"ECC","book_name_alt":"Ecclesiastes","chapter":"5","verse_start":"10","verse_start_alt":"10","verse_end":"10","verse_end_alt":"10","verse_text":"He that loveth silver shall not be satisfied with silver; nor he that loveth abundance with increase: this is also vanity."},{"book_id":"ECC","book_name_alt":"Ecclesiastes","chapter":"5","verse_start":"11","verse_start_alt":"11","verse_end":"11","verse_end_alt":"11","verse_text":"When goods increase, they are increased that eat them: and what good is there to the owners thereof, saving the beholding of them with their eyes?"},{"book_id":"ECC","book_name_alt":"Ecclesiastes","chapter":"5","verse_start":"12","verse_start_alt":"12","verse_end":"12","verse_end_alt":"12","verse_text":"The sleep of a labouring man is sweet, whether he eat little or much: but the abundance of the rich will not suffer him to sleep."},{"book_id":"ECC","book_name_alt":"Ecclesiastes","chapter":"5","verse_start":"13","verse_start_alt":"13","verse_end":"13","verse_end_alt":"13","verse_text":"There is a sore evil which I have seen under the sun, namely, riches kept for the owners thereof to their hurt."},{"book_id":"ECC","book_name_alt":"Ecclesiastes","chapter":"5","verse_start":"14","verse_start_alt":"14","verse_end":"14","verse_end_alt":"14","verse_text":"But those riches perish by evil travail: and he begetteth a son, and there is nothing in his hand."},{"book_id":"ECC","book_name_alt":"Ecclesiastes","chapter":"5","verse_start":"15","verse_start_alt":"15","verse_end":"15","verse_end_alt":"15","verse_text":"As he came forth of his mother’s womb, naked shall he return to go as he came, and shall take nothing of his labour, which he may carry away in his hand."},{"book_id":"ECC","book_name_alt":"Ecclesiastes","chapter":"5","verse_start":"16","verse_start_alt":"16","verse_end":"16","verse_end_alt":"16","verse_text":"And this also is a sore evil, that in all points as he came, so shall he go: and what profit hath he that hath laboured for the wind?"},{"book_id":"ECC","book_name_alt":"Ecclesiastes","chapter":"5","verse_start":"17","verse_start_alt":"17","verse_end":"17","verse_end_alt":"17","verse_text":"All his days also he eateth in darkness, and he hath much sorrow and wrath with his sickness."},{"book_id":"ECC","book_name_alt":"Ecclesiastes","chapter":"5","verse_start":"18","verse_start_alt":"18","verse_end":"18","verse_end_alt":"18","verse_text":"Behold that which I have seen: it is good and comely for one to eat and to drink, and to enjoy the good of all his labour that he taketh under the sun all the days of his life, which God giveth him: for it is his portion."},{"book_id":"ECC","book_name_alt":"Ecclesiastes","chapter":"5","verse_start":"19","verse_start_alt":"19","verse_end":"19","verse_end_alt":"19","verse_text":"Every man also to whom God hath given riches and wealth, and hath given him power to eat thereof, and to take his portion, and to rejoice in his labour; this is the gift of God."},{"book_id":"ECC","book_name_alt":"Ecclesiastes","chapter":"5","verse_start":"20","verse_start_alt":"20","verse_end":"20","verse_end_alt":"20","verse_text":"For he shall not much remember the days of his life; because God answereth him in the joy of his heart."}]
+{
+  "info": "",
+  "verses": [
+    {
+      "book_id": "ECC",
+      "book_name": "Ecclesiastes",
+      "chapter": 5,
+      "verse_start": 1,
+      "verse_end": 1,
+      "text": "Keep thy foot when thou goest to the house of God, and be more ready to hear, than to give the sacrifice of fools: for they consider not that they do evil."
+    },
+    {
+      "book_id": "ECC",
+      "book_name": "Ecclesiastes",
+      "chapter": 5,
+      "verse_start": 2,
+      "verse_end": 2,
+      "text": "Be not rash with thy mouth, and let not thine heart be hasty to utter <em>any</em> thing before God: for God <em>is</em> in heaven, and thou upon earth: therefore let thy words be few."
+    },
+    {
+      "book_id": "ECC",
+      "book_name": "Ecclesiastes",
+      "chapter": 5,
+      "verse_start": 3,
+      "verse_end": 3,
+      "text": "For a dream cometh through the multitude of business; and a fool's voice <em>is known</em> by multitude of words."
+    },
+    {
+      "book_id": "ECC",
+      "book_name": "Ecclesiastes",
+      "chapter": 5,
+      "verse_start": 4,
+      "verse_end": 4,
+      "text": "When thou vowest a vow unto God, defer not to pay it; for <em>he hath</em> no pleasure in fools: pay that which thou hast vowed."
+    },
+    {
+      "book_id": "ECC",
+      "book_name": "Ecclesiastes",
+      "chapter": 5,
+      "verse_start": 5,
+      "verse_end": 5,
+      "text": "Better <em>is it</em> that thou shouldest not vow, than that thou shouldest vow and not pay."
+    },
+    {
+      "book_id": "ECC",
+      "book_name": "Ecclesiastes",
+      "chapter": 5,
+      "verse_start": 6,
+      "verse_end": 6,
+      "text": "Suffer not thy mouth to cause thy flesh to sin; neither say thou before the angel, that it <em>was</em> an error: wherefore should God be angry at thy voice, and destroy the work of thine hands?"
+    },
+    {
+      "book_id": "ECC",
+      "book_name": "Ecclesiastes",
+      "chapter": 5,
+      "verse_start": 7,
+      "verse_end": 7,
+      "text": "For in the multitude of dreams and many words <em>there are</em> also <em>divers</em> vanities: but fear thou God."
+    },
+    {
+      "book_id": "ECC",
+      "book_name": "Ecclesiastes",
+      "chapter": 5,
+      "verse_start": 8,
+      "verse_end": 8,
+      "text": "If thou seest the oppression of the poor, and violent perverting of judgment and justice in a province, marvel not at the matter: for <em>he that is</em> higher than the highest regardeth; and <em>there be</em> higher than they."
+    },
+    {
+      "book_id": "ECC",
+      "book_name": "Ecclesiastes",
+      "chapter": 5,
+      "verse_start": 9,
+      "verse_end": 9,
+      "text": "Moreover the profit of the earth is for all: the king <em>himself</em> is served by the field."
+    },
+    {
+      "book_id": "ECC",
+      "book_name": "Ecclesiastes",
+      "chapter": 5,
+      "verse_start": 10,
+      "verse_end": 10,
+      "text": "He that loveth silver shall not be satisfied with silver; nor he that loveth abundance with increase: this <em>is</em> also vanity."
+    },
+    {
+      "book_id": "ECC",
+      "book_name": "Ecclesiastes",
+      "chapter": 5,
+      "verse_start": 11,
+      "verse_end": 11,
+      "text": "When goods increase, they are increased that eat them: and what good <em>is there</em> to the owners thereof, saving the beholding <em>of them</em> with their eyes?"
+    },
+    {
+      "book_id": "ECC",
+      "book_name": "Ecclesiastes",
+      "chapter": 5,
+      "verse_start": 12,
+      "verse_end": 12,
+      "text": "The sleep of a labouring man <em>is</em> sweet, whether he eat little or much: but the abundance of the rich will not suffer him to sleep."
+    },
+    {
+      "book_id": "ECC",
+      "book_name": "Ecclesiastes",
+      "chapter": 5,
+      "verse_start": 13,
+      "verse_end": 13,
+      "text": "There is a sore evil <em>which</em> I have seen under the sun, <em>namely</em>, riches kept for the owners thereof to their hurt."
+    },
+    {
+      "book_id": "ECC",
+      "book_name": "Ecclesiastes",
+      "chapter": 5,
+      "verse_start": 14,
+      "verse_end": 14,
+      "text": "But those riches perish by evil travail: and he begetteth a son, and <em>there is</em> nothing in his hand."
+    },
+    {
+      "book_id": "ECC",
+      "book_name": "Ecclesiastes",
+      "chapter": 5,
+      "verse_start": 15,
+      "verse_end": 15,
+      "text": "As he came forth of his mother's womb, naked shall he return to go as he came, and shall take nothing of his labour, which he may carry away in his hand."
+    },
+    {
+      "book_id": "ECC",
+      "book_name": "Ecclesiastes",
+      "chapter": 5,
+      "verse_start": 16,
+      "verse_end": 16,
+      "text": "And this also <em>is</em> a sore evil, <em>that</em> in all points as he came, so shall he go: and what profit hath he that hath laboured for the wind?"
+    },
+    {
+      "book_id": "ECC",
+      "book_name": "Ecclesiastes",
+      "chapter": 5,
+      "verse_start": 17,
+      "verse_end": 17,
+      "text": "All his days also he eateth in darkness, and <em>he hath</em> much sorrow and wrath with his sickness."
+    },
+    {
+      "book_id": "ECC",
+      "book_name": "Ecclesiastes",
+      "chapter": 5,
+      "verse_start": 18,
+      "verse_end": 18,
+      "text": "Behold <em>that</em> which I have seen: <em>it is</em> good and comely <em>for one</em> to eat and to drink, and to enjoy the good of all his labour that he taketh under the sun all the days of his life, which God giveth him: for it <em>is</em> his portion."
+    },
+    {
+      "book_id": "ECC",
+      "book_name": "Ecclesiastes",
+      "chapter": 5,
+      "verse_start": 19,
+      "verse_end": 19,
+      "text": "Every man also to whom God hath given riches and wealth, and hath given him power to eat thereof, and to take his portion, and to rejoice in his labour; this <em>is</em> the gift of God."
+    },
+    {
+      "book_id": "ECC",
+      "book_name": "Ecclesiastes",
+      "chapter": 5,
+      "verse_start": 20,
+      "verse_end": 20,
+      "text": "For he shall not much remember the days of his life; because God answereth <em>him</em> in the joy of his heart."
+    }
+  ]
+}

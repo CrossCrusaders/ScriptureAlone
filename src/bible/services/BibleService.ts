@@ -6,7 +6,7 @@ import { BibleVerse } from '../BibleVerse'
 import { getDayOfTheYear } from '../../core/services/TimeService'
 
 let cacheLoaded = false
-let bibleChaptersCache: BibleChapter[] | null = null
+let bibleChaptersCache: BibleChapter[] | any = null
 let bibleBooksCache: BibleBook[] | null = null
 let bibleBookLookupCache: BibleBookLookup[] | null = null
 
@@ -21,7 +21,7 @@ export async function getVerseOfTheDay() {
 
 	const verses = chosenVerse.verseId.split('-')
 
-	let verseResponse = []
+	let verseResponse = { verses: [{ verse_start: 0, text: "", book_name: "" }]  }
 	let verseReference = ''
 	let verseBookId, verseChapter
 
@@ -31,19 +31,19 @@ export async function getVerseOfTheDay() {
 		verseChapter = chapter;
 		const [_, __, verse2] = verses[1].split('.')
 		verseResponse = await getVerses(book, chapter, verse1, verse2)
-		verseReference = `${verseResponse[0].book_name_alt} ${chapter}:${verse1}-${verse2}`
+		verseReference = `${verseResponse.verses[0].book_name} ${chapter}:${verse1}-${verse2}`
 	} else if (verses.length === 1) {
 		const [book, chapter, verse] = verses[0].split('.')
 		verseBookId = book.toUpperCase();
 		verseChapter = chapter;
 		verseResponse = await getVerses(book, chapter, verse, verse)
-		verseReference = `${verseResponse[0].book_name_alt} ${chapter}:${verse}`
+		verseReference = `${verseResponse.verses[0].book_name} ${chapter}:${verse}`
 	} else {
 		throw new Error('Invalid Verse of the Day Format')
 	}
 
-	const verseText = verseResponse.reduce((aggregate, verse) => {
-		return aggregate + `<span class="verse-number">${verse.verse_start_alt}</span>${verse.verse_text} `
+	const verseText = verseResponse.verses.reduce((aggregate, verse) => {
+		return aggregate + `<span class="verse-number">${verse.verse_start}</span>${verse.text} `
 	}, '')
 
 	return {
@@ -58,22 +58,27 @@ export async function getVerseOfTheDay() {
  * Primary function for querying the bible API
  * and getting bible verses
  */
-export async function getVerses(book: string, chapter: number, startVerse?: number, endVerse?: number): Promise<BibleVerse[]> {
+export async function getVerses(book: string, chapter: number, startVerse?: number, endVerse?: number): Promise<{ info: string, verses: BibleVerse[] }> {
 	book = book.toUpperCase();
 
 	var data = await (await import(`../../assets/kjv-json/${book}/${chapter}.json`)).default;
+
+	console.log(data)
+	
 	if (!startVerse)
 		return data;
 	else {
 		if (endVerse) {
-			return data.filter(function (verse: any) {
-				return (verse.verse_start_alt >= startVerse && verse.verse_end_alt <= endVerse);
+			data.verses = data.verses.filter(function (verse: any) {
+				return (verse.verse_start >= startVerse && verse.verse_end <= endVerse);
 			});
+			return data;
 		}
 		else {
-			return data.filter(function (verse: any) {
-				return verse.verse_start_alt == startVerse;
+			data.verses = data.verses.filter(function (verse: any) {
+				return verse.verse_start == startVerse;
 			});
+			return data;
 		}
 	}
 }
@@ -105,7 +110,7 @@ async function loadBibleData() {
 	// for selection purposes
 	const bibleBooksHash: any = {}
 	bibleBooksCache = []
-	bibleChaptersCache.forEach(chapter => {
+	bibleChaptersCache?.forEach((chapter:any) => {
 		if (!bibleBooksHash[chapter.bookId]) {
 			bibleBooksHash[chapter.bookId] = true
 			const book = { ...chapter }
@@ -126,8 +131,8 @@ async function bibleCacheMonad(fn: Function) {
 
 async function _getChaptersByBookId(bookId: string) {
 	return bibleChaptersCache!
-		.filter(item => item.bookId.toLowerCase() === bookId.toLowerCase())
-		.sort((a, b) => a.sequenceNumber - b.sequenceNumber)
+		.filter((item:any) => item.bookId.toLowerCase() === bookId.toLowerCase())
+		.sort((a:any, b:any) => a.sequenceNumber - b.sequenceNumber)
 }
 
 async function _getChapterBySequenceNumber(sequenceNumber: number) {
@@ -210,7 +215,7 @@ export async function searchBible(query: string, page: number, perPage: number) 
 }
 
 export function getReferenceFromVerse(verse: BibleVerse) {
-	let reference = `${verse.book_name_alt} ${verse.chapter}:${verse.verse_start}`
+	let reference = `${verse.book_name} ${verse.chapter}:${verse.verse_start}`
 	if (verse.verse_start != verse.verse_end)
 		reference += `-${verse.verse_end}`
 	return reference
@@ -247,8 +252,9 @@ export async function isBibleReference(query: string) {
 		chapter: parseInt(chapter, 10),
 		verse_start: parseInt(startVerse),
 		verse_end: parseInt(endVerse || startVerse),
-		verse_text: '',
-		highlight: ""
+		text: '',
+		highlight: "",
+		chapter_info: ""
 	}
 	return bibleVerseRef
 

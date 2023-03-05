@@ -1,1 +1,173 @@
-[{"book_id":"1SA","book_name_alt":"1 Samuel","chapter":"3","verse_start":"1","verse_start_alt":"1","verse_end":"1","verse_end_alt":"1","verse_text":"And the child Samuel ministered unto the LORD before Eli. And the word of the LORD was precious in those days; there was no open vision."},{"book_id":"1SA","book_name_alt":"1 Samuel","chapter":"3","verse_start":"2","verse_start_alt":"2","verse_end":"2","verse_end_alt":"2","verse_text":"And it came to pass at that time, when Eli was laid down in his place, and his eyes began to wax dim, that he could not see;"},{"book_id":"1SA","book_name_alt":"1 Samuel","chapter":"3","verse_start":"3","verse_start_alt":"3","verse_end":"3","verse_end_alt":"3","verse_text":"And ere the lamp of God went out in the temple of the LORD, where the ark of God was, and Samuel was laid down to sleep;"},{"book_id":"1SA","book_name_alt":"1 Samuel","chapter":"3","verse_start":"4","verse_start_alt":"4","verse_end":"4","verse_end_alt":"4","verse_text":"That the LORD called Samuel: and he answered, Here am I."},{"book_id":"1SA","book_name_alt":"1 Samuel","chapter":"3","verse_start":"5","verse_start_alt":"5","verse_end":"5","verse_end_alt":"5","verse_text":"And he ran unto Eli, and said, Here am I; for thou calledst me. And he said, I called not; lie down again. And he went and lay down."},{"book_id":"1SA","book_name_alt":"1 Samuel","chapter":"3","verse_start":"6","verse_start_alt":"6","verse_end":"6","verse_end_alt":"6","verse_text":"And the LORD called yet again, Samuel. And Samuel arose and went to Eli, and said, Here am I; for thou didst call me. And he answered, I called not, my son; lie down again."},{"book_id":"1SA","book_name_alt":"1 Samuel","chapter":"3","verse_start":"7","verse_start_alt":"7","verse_end":"7","verse_end_alt":"7","verse_text":"Now Samuel did not yet know the LORD, neither was the word of the LORD yet revealed unto him."},{"book_id":"1SA","book_name_alt":"1 Samuel","chapter":"3","verse_start":"8","verse_start_alt":"8","verse_end":"8","verse_end_alt":"8","verse_text":"And the LORD called Samuel again the third time. And he arose and went to Eli, and said, Here am I; for thou didst call me. And Eli perceived that the LORD had called the child."},{"book_id":"1SA","book_name_alt":"1 Samuel","chapter":"3","verse_start":"9","verse_start_alt":"9","verse_end":"9","verse_end_alt":"9","verse_text":"Therefore Eli said unto Samuel, Go, lie down: and it shall be, if he call thee, that thou shalt say, Speak, LORD; for thy servant heareth. So Samuel went and lay down in his place."},{"book_id":"1SA","book_name_alt":"1 Samuel","chapter":"3","verse_start":"10","verse_start_alt":"10","verse_end":"10","verse_end_alt":"10","verse_text":"And the LORD came, and stood, and called as at other times, Samuel, Samuel. Then Samuel answered, Speak; for thy servant heareth."},{"book_id":"1SA","book_name_alt":"1 Samuel","chapter":"3","verse_start":"11","verse_start_alt":"11","verse_end":"11","verse_end_alt":"11","verse_text":"And the LORD said to Samuel, Behold, I will do a thing in Israel, at which both the ears of every one that heareth it shall tingle."},{"book_id":"1SA","book_name_alt":"1 Samuel","chapter":"3","verse_start":"12","verse_start_alt":"12","verse_end":"12","verse_end_alt":"12","verse_text":"In that day I will perform against Eli all things which I have spoken concerning his house: when I begin, I will also make an end."},{"book_id":"1SA","book_name_alt":"1 Samuel","chapter":"3","verse_start":"13","verse_start_alt":"13","verse_end":"13","verse_end_alt":"13","verse_text":"For I have told him that I will judge his house for ever for the iniquity which he knoweth; because his sons made themselves vile, and he restrained them not."},{"book_id":"1SA","book_name_alt":"1 Samuel","chapter":"3","verse_start":"14","verse_start_alt":"14","verse_end":"14","verse_end_alt":"14","verse_text":"And therefore I have sworn unto the house of Eli, that the iniquity of Eli’s house shall not be purged with sacrifice nor offering for ever."},{"book_id":"1SA","book_name_alt":"1 Samuel","chapter":"3","verse_start":"15","verse_start_alt":"15","verse_end":"15","verse_end_alt":"15","verse_text":"And Samuel lay until the morning, and opened the doors of the house of the LORD. And Samuel feared to shew Eli the vision."},{"book_id":"1SA","book_name_alt":"1 Samuel","chapter":"3","verse_start":"16","verse_start_alt":"16","verse_end":"16","verse_end_alt":"16","verse_text":"Then Eli called Samuel, and said, Samuel, my son. And he answered, Here am I."},{"book_id":"1SA","book_name_alt":"1 Samuel","chapter":"3","verse_start":"17","verse_start_alt":"17","verse_end":"17","verse_end_alt":"17","verse_text":"And he said, What is the thing that the LORD hath said unto thee? I pray thee hide it not from me: God do so to thee, and more also, if thou hide any thing from me of all the things that he said unto thee."},{"book_id":"1SA","book_name_alt":"1 Samuel","chapter":"3","verse_start":"18","verse_start_alt":"18","verse_end":"18","verse_end_alt":"18","verse_text":"And Samuel told him every whit, and hid nothing from him. And he said, It is the LORD: let him do what seemeth him good."},{"book_id":"1SA","book_name_alt":"1 Samuel","chapter":"3","verse_start":"19","verse_start_alt":"19","verse_end":"19","verse_end_alt":"19","verse_text":"And Samuel grew, and the LORD was with him, and did let none of his words fall to the ground."},{"book_id":"1SA","book_name_alt":"1 Samuel","chapter":"3","verse_start":"20","verse_start_alt":"20","verse_end":"20","verse_end_alt":"20","verse_text":"And all Israel from Dan even to Beersheba knew that Samuel was established to be a prophet of the LORD."},{"book_id":"1SA","book_name_alt":"1 Samuel","chapter":"3","verse_start":"21","verse_start_alt":"21","verse_end":"21","verse_end_alt":"21","verse_text":"And the LORD appeared again in Shiloh: for the LORD revealed himself to Samuel in Shiloh by the word of the LORD."}]
+{
+  "info": "",
+  "verses": [
+    {
+      "book_id": "1SA",
+      "book_name": "1 Samuel",
+      "chapter": 3,
+      "verse_start": 1,
+      "verse_end": 1,
+      "text": "<a href=\"../1-Samuel-3-1/\" title=\"1 Samuel 3:1 KJV verse detail\"><span id=\"3\" class=\"versehover\">1  \"JESUS_END\"And the child Samuel ministered unto the LORD before Eli. And the word of the LORD was precious in those days; <em>there was</em> no open vision."
+    },
+    {
+      "book_id": "1SA",
+      "book_name": "1 Samuel",
+      "chapter": 3,
+      "verse_start": 2,
+      "verse_end": 2,
+      "text": "<a href=\"../1-Samuel-3-2/\" title=\"1 Samuel 3:2 KJV verse detail\"><span id=\"4\" class=\"versehover\">2  \"JESUS_END\"And it came to pass at that time, when Eli <em>was</em> laid down in his place, and his eyes began to wax dim, <em>that</em> he could not see;"
+    },
+    {
+      "book_id": "1SA",
+      "book_name": "1 Samuel",
+      "chapter": 3,
+      "verse_start": 3,
+      "verse_end": 3,
+      "text": "<a href=\"../1-Samuel-3-3/\" title=\"1 Samuel 3:3 KJV verse detail\"><span id=\"5\" class=\"versehover\">3  \"JESUS_END\"And ere the lamp of God went out in the temple of the LORD, where the ark of God <em>was</em>, and Samuel was laid down <em>to sleep</em>;"
+    },
+    {
+      "book_id": "1SA",
+      "book_name": "1 Samuel",
+      "chapter": 3,
+      "verse_start": 4,
+      "verse_end": 4,
+      "text": "<a href=\"../1-Samuel-3-4/\" title=\"1 Samuel 3:4 KJV verse detail\"><span id=\"6\" class=\"versehover\">4  \"JESUS_END\"That the LORD called Samuel: and he answered, Here <em>am</em> I."
+    },
+    {
+      "book_id": "1SA",
+      "book_name": "1 Samuel",
+      "chapter": 3,
+      "verse_start": 5,
+      "verse_end": 5,
+      "text": "<a href=\"../1-Samuel-3-5/\" title=\"1 Samuel 3:5 KJV verse detail\"><span id=\"7\" class=\"versehover\">5  \"JESUS_END\"And he ran unto Eli, and said, Here <em>am</em> I; for thou calledst me. And he said, I called not; lie down again. And he went and lay down."
+    },
+    {
+      "book_id": "1SA",
+      "book_name": "1 Samuel",
+      "chapter": 3,
+      "verse_start": 6,
+      "verse_end": 6,
+      "text": "<a href=\"../1-Samuel-3-6/\" title=\"1 Samuel 3:6 KJV verse detail\"><span id=\"8\" class=\"versehover\">6  \"JESUS_END\"And the LORD called yet again, Samuel. And Samuel arose and went to Eli, and said, Here <em>am</em> I; for thou didst call me. And he answered, I called not, my son; lie down again."
+    },
+    {
+      "book_id": "1SA",
+      "book_name": "1 Samuel",
+      "chapter": 3,
+      "verse_start": 7,
+      "verse_end": 7,
+      "text": "<a href=\"../1-Samuel-3-7/\" title=\"1 Samuel 3:7 KJV verse detail\"><span id=\"9\" class=\"versehover\">7  \"JESUS_END\"Now Samuel did not yet know the LORD, neither was the word of the LORD yet revealed unto him."
+    },
+    {
+      "book_id": "1SA",
+      "book_name": "1 Samuel",
+      "chapter": 3,
+      "verse_start": 8,
+      "verse_end": 8,
+      "text": "<a href=\"../1-Samuel-3-8/\" title=\"1 Samuel 3:8 KJV verse detail\"><span id=\"10\" class=\"versehover\">8  \"JESUS_END\"And the LORD called Samuel again the third time. And he arose and went to Eli, and said, Here <em>am</em> I; for thou didst call me. And Eli perceived that the LORD had called the child."
+    },
+    {
+      "book_id": "1SA",
+      "book_name": "1 Samuel",
+      "chapter": 3,
+      "verse_start": 9,
+      "verse_end": 9,
+      "text": "<a href=\"../1-Samuel-3-9/\" title=\"1 Samuel 3:9 KJV verse detail\"><span id=\"11\" class=\"versehover\">9  \"JESUS_END\"Therefore Eli said unto Samuel, Go, lie down: and it shall be, if he call thee, that thou shalt say, Speak, LORD; for thy servant heareth. So Samuel went and lay down in his place."
+    },
+    {
+      "book_id": "1SA",
+      "book_name": "1 Samuel",
+      "chapter": 3,
+      "verse_start": 10,
+      "verse_end": 10,
+      "text": "<a href=\"../1-Samuel-3-10/\" title=\"1 Samuel 3:10 KJV verse detail\"><span id=\"12\" class=\"versehover\">10  \"JESUS_END\"And the LORD came, and stood, and called as at other times, Samuel, Samuel. Then Samuel answered, Speak; for thy servant heareth."
+    },
+    {
+      "book_id": "1SA",
+      "book_name": "1 Samuel",
+      "chapter": 3,
+      "verse_start": 11,
+      "verse_end": 11,
+      "text": "<a href=\"../1-Samuel-3-11/\" title=\"1 Samuel 3:11 KJV verse detail\"><span id=\"13\" class=\"versehover\">11  \"JESUS_END\"And the LORD said to Samuel, Behold, I will do a thing in Israel, at which both the ears of every one that heareth it shall tingle."
+    },
+    {
+      "book_id": "1SA",
+      "book_name": "1 Samuel",
+      "chapter": 3,
+      "verse_start": 12,
+      "verse_end": 12,
+      "text": "<a href=\"../1-Samuel-3-12/\" title=\"1 Samuel 3:12 KJV verse detail\"><span id=\"14\" class=\"versehover\">12  \"JESUS_END\"In that day I will perform against Eli all <em>things</em> which I have spoken concerning his house: when I begin, I will also make an end."
+    },
+    {
+      "book_id": "1SA",
+      "book_name": "1 Samuel",
+      "chapter": 3,
+      "verse_start": 13,
+      "verse_end": 13,
+      "text": "<a href=\"../1-Samuel-3-13/\" title=\"1 Samuel 3:13 KJV verse detail\"><span id=\"15\" class=\"versehover\">13  \"JESUS_END\"For I have told him that I will judge his house for ever for the iniquity which he knoweth; because his sons made themselves vile, and he restrained them not."
+    },
+    {
+      "book_id": "1SA",
+      "book_name": "1 Samuel",
+      "chapter": 3,
+      "verse_start": 14,
+      "verse_end": 14,
+      "text": "<a href=\"../1-Samuel-3-14/\" title=\"1 Samuel 3:14 KJV verse detail\"><span id=\"16\" class=\"versehover\">14  \"JESUS_END\"And therefore I have sworn unto the house of Eli, that the iniquity of Eli's house shall not be purged with sacrifice nor offering for ever."
+    },
+    {
+      "book_id": "1SA",
+      "book_name": "1 Samuel",
+      "chapter": 3,
+      "verse_start": 15,
+      "verse_end": 15,
+      "text": "<a href=\"../1-Samuel-3-15/\" title=\"1 Samuel 3:15 KJV verse detail\"><span id=\"17\" class=\"versehover\">15  \"JESUS_END\"And Samuel lay until the morning, and opened the doors of the house of the LORD. And Samuel feared to shew Eli the vision."
+    },
+    {
+      "book_id": "1SA",
+      "book_name": "1 Samuel",
+      "chapter": 3,
+      "verse_start": 16,
+      "verse_end": 16,
+      "text": "<a href=\"../1-Samuel-3-16/\" title=\"1 Samuel 3:16 KJV verse detail\"><span id=\"18\" class=\"versehover\">16  \"JESUS_END\"Then Eli called Samuel, and said, Samuel, my son. And he answered, Here <em>am</em> I."
+    },
+    {
+      "book_id": "1SA",
+      "book_name": "1 Samuel",
+      "chapter": 3,
+      "verse_start": 17,
+      "verse_end": 17,
+      "text": "<a href=\"../1-Samuel-3-17/\" title=\"1 Samuel 3:17 KJV verse detail\"><span id=\"19\" class=\"versehover\">17  \"JESUS_END\"And he said, What <em>is</em> the thing that <em>the LORD</em> hath said unto thee? I pray thee hide <em>it</em> not from me: God do so to thee, and more also, if thou hide <em>any</em> thing from me of all the things that he said unto thee."
+    },
+    {
+      "book_id": "1SA",
+      "book_name": "1 Samuel",
+      "chapter": 3,
+      "verse_start": 18,
+      "verse_end": 18,
+      "text": "<a href=\"../1-Samuel-3-18/\" title=\"1 Samuel 3:18 KJV verse detail\"><span id=\"20\" class=\"versehover\">18  \"JESUS_END\"And Samuel told him every whit, and hid nothing from him. And he said, It <em>is</em> the LORD: let him do what seemeth him good."
+    },
+    {
+      "book_id": "1SA",
+      "book_name": "1 Samuel",
+      "chapter": 3,
+      "verse_start": 19,
+      "verse_end": 19,
+      "text": "<a href=\"../1-Samuel-3-19/\" title=\"1 Samuel 3:19 KJV verse detail\"><span id=\"21\" class=\"versehover\">19  \"JESUS_END\"And Samuel grew, and the LORD was with him, and did let none of his words fall to the ground."
+    },
+    {
+      "book_id": "1SA",
+      "book_name": "1 Samuel",
+      "chapter": 3,
+      "verse_start": 20,
+      "verse_end": 20,
+      "text": "<a href=\"../1-Samuel-3-20/\" title=\"1 Samuel 3:20 KJV verse detail\"><span id=\"22\" class=\"versehover\">20  \"JESUS_END\"And all Israel from Dan even to Beersheba knew that Samuel <em>was</em> established <em>to be</em> a prophet of the LORD."
+    },
+    {
+      "book_id": "1SA",
+      "book_name": "1 Samuel",
+      "chapter": 3,
+      "verse_start": 21,
+      "verse_end": 21,
+      "text": "<a href=\"../1-Samuel-3-21/\" title=\"1 Samuel 3:21 KJV verse detail\"><span id=\"23\" class=\"versehover\">21  \"JESUS_END\"And the LORD appeared again in Shiloh: for the LORD revealed himself to Samuel in Shiloh by the word of the LORD."
+    }
+  ]
+}
