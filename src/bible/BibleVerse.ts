@@ -5,6 +5,6 @@ export interface BibleVerse {
   verse_end: number
   verse_start: number
   text: string
-  chapter_info: string
   highlight: string
+  verse_text?: string
 }

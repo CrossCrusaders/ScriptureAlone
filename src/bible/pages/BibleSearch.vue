@@ -154,7 +154,7 @@ const search = async () => {
 const formatVerseSearchResultText = (verse: BibleVerse) => {
   // TODO: when we implement our own search API we can tokenize searching with \b
   // const verseText = verse.verse_text.replace(new RegExp('\\b(' + currentQuery.value + ')\\b', 'ig'), `<strong>$1</strong>`)
-  const verseText = verse.verse_text.replace(new RegExp('(' + currentQuery.value + ')', 'ig'), `<strong>$1</strong>`)
+  const verseText = verse.verse_text?.replace(new RegExp('(' + currentQuery.value + ')', 'ig'), `<strong>$1</strong>`)
   // return `<span>${getReferenceFromVerse(verse)}</span> - <span>${verseText}</span>` // INLINE REFERENCE FORMAT
   return `<span>${verseText}</span>` // TEXT ONLY FORMAT
 }

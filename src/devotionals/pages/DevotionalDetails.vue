@@ -197,14 +197,14 @@ const onPlayAudioClicked = () => {
 
 async function getVerse() {
   if (devotionalDetail.value?.content != "" && devotionalDetail.value?.contentTitle != "" && devotionalDetail.value?.vBook != "" && devotionalDetail.value?.vChap != 0) {
-    const verseTxt = await getVerses("ENGKJV", devotionalDetail.value?.vBook || "", devotionalDetail.value?.vChap || 1, devotionalDetail.value?.vVerseS, devotionalDetail.value?.vVerseE)
-    bookName.value = verseTxt[0].book_name_alt;
+    const chapterData = await getVerses(devotionalDetail.value?.vBook || "", devotionalDetail.value?.vChap || 1, devotionalDetail.value?.vVerseS, devotionalDetail.value?.vVerseE)
+    bookName.value = chapterData.verses[0].book_name;
     var FinishedVerseText = "";
-    verseTxt.forEach((verse, index) => {
-      if(index == 0 && index == verseTxt.length-1)
-        FinishedVerseText += verse.verse_text;
+    chapterData.verses.forEach((verse, index) => {
+      if(index == 0 && index == chapterData.verses.length-1)
+        FinishedVerseText += verse.text;
       else
-        FinishedVerseText += `${verse.verse_start} ${verse.verse_text} `;
+        FinishedVerseText += `${verse.verse_start} ${verse.text} `;
     });
     return FinishedVerseText.trim();
   }
