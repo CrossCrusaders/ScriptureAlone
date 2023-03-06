@@ -53,9 +53,6 @@ import NoteViewer from './notes/pages/NoteViewer.vue'
 import Updates from './versions/pages/Updates.vue'
 import VersionDetails from './versions/pages/VersionDetails.vue'
 
-// Webster's 1828 Bible Dictionary
-import WebstersWord from './websters/pages/Word.vue'
-
 import ComponentTestPage from './test/ComponentTestPage.vue'
 
 import * as VueRouter from 'vue-router'
@@ -114,9 +111,6 @@ const routes = [
   // Versions
   { path: '/versions', component: Updates },
   { path: '/versions/:id', component: VersionDetails },
-
-  // Webster's 1828 Bible Dictionay
-  { path: '/websters/:query', component: WebstersWord },
 
   // 404
   { path: '/:pathMatch(.*)', component: FourZeroFour }

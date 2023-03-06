@@ -180,7 +180,7 @@ import Spinner from '../../components/atoms/Spinner.vue'
 import { isBibleReference, getHighlightedVerses, highlightVerses } from '../../bible/services/BibleService'
 import { createNote, getAllNotesInChapter } from '../../notes/services/NoteService'
 import { Word } from '../../websters/Word'
-import { getWord } from '../../websters/service/WebstersService'
+import { getWord } from '../../websters/services/WebstersService'
 
 export interface BiblePageQueryParams {
   c?: string //chapter
@@ -244,8 +244,6 @@ const loadChapterContent = async () => {
 
     loadedChapterContent.value.info = response.info
 
-    console.log(response)
-
     var versesHighlights: any;
     var chapterText: any[] = [];
     if ((connectedToWifi.value && connectedToWifi.value.connected)) {
@@ -253,6 +251,7 @@ const loadChapterContent = async () => {
     }
 
     var ChristsWords = false;
+    var isItalics = false;
     response.verses.forEach((verse: any) => {
       var tempVerseText: any = [];
 
@@ -267,21 +266,33 @@ const loadChapterContent = async () => {
       tempVerseText.forEach((word: string, index: number) => {
         if (WebstersWords.value.includes((word.charAt(0).toUpperCase() + word.slice(1)).slice(0, word.length)) || WebstersWords.value.includes((word.charAt(0).toUpperCase() + word.slice(1)).slice(0, word.length - 1)))
           word = `|${word}`;
+        
+        let push = true;
+
+        if(word.includes("<em>") && !word.includes("</em>"))
+          isItalics = true;
+        else if(!word.includes("<em>") && word.includes("</em>"))
+          isItalics = false;
+
+        if(isItalics)
+          word = `<em>${word}</em>`
+        
         if (word == '"JESUS_START"') {
           ChristsWords = true;
+          push = false;
         }
         else if (word == '"JESUS_END"') {
           ChristsWords = false;
+          push = false;
         }
-        else if (ChristsWords) {
-          transformedTempVerseText.push(`<span class="text-red-500">${word}</span>`)
-        }
-        else {
+        else if (ChristsWords)
+          word = `<span class="text-red-500">${word}</span>`;
+
+        if(push)
           transformedTempVerseText.push(word)
-        }
+
         if (index == tempVerseText.length - 1) {
           verse.text_array = transformedTempVerseText;
-          console.log(verse.text_array)
         }
       });
 

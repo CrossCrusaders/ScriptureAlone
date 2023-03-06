@@ -14,7 +14,7 @@ import AppLayout from '../../components/templates/AppLayout.vue';
 import PageContent from '../../components/templates/PageContent.vue';
 import { ref, onMounted } from 'vue';
 import { useRoute } from 'vue-router';
-import { getWord } from '../service/WebstersService'
+import { getWord } from '../services/WebstersService'
 
 const route = useRoute();
 
