@@ -60,10 +60,8 @@ export async function getVerseOfTheDay() {
  */
 export async function getVerses(book: string, chapter: number, startVerse?: number, endVerse?: number): Promise<{ info: string, verses: BibleVerse[] }> {
 	book = book.toUpperCase();
-
-	var data = await (await import(`../../assets/kjv-json/${book}/${chapter}.json`)).default;
-
-	console.log(data)
+	var data:any = null;
+	data = { ...await(await import(`../../assets/kjv-json/${book}/${chapter}.json`)).default };
 
 	if (!startVerse)
 		return data;
@@ -92,7 +90,7 @@ export async function getHighlightedVerses(book: string, chapter: string) {
 export async function getUserHighlightedVerses() {
 	var returnVerses = await PocketBaseClient.records.getFullList('highlights', 200, { filter: `user="${PocketBaseClient.authStore.model?.id}"` })
 	var verses: any = [];
-	returnVerses.forEach((chapter: any, index: number) => {
+	returnVerses.forEach((chapter: any) => {
 		chapter.verse_data.forEach((verse: any) => {
 			verses.push({ book_id: chapter.book_id, chapter: chapter.chapter, verse })
 		})

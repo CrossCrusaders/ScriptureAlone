@@ -81,7 +81,7 @@
     <div class="p-4 text-white flex flex-col gap-2" style="text-align:center;">
       <div class="bg-slate-200 p-2 rounded text-black">
         <p class="font-bold">{{ menuVerse.book_name + " " + menuVerse.chapter + ":" + menuVerse.verse_start }}</p>
-        <p>{{ menuVerse.text }}</p>
+        <p v-html="menuVerse.text"></p>
       </div>
       <div v-if="notesVerseIsIn.length" class="w-full flex flex-col justify-center">
         <div class="flex flex-row justify-center align-center">
@@ -185,7 +185,6 @@ import { createNote, getAllNotesInChapter } from '../../notes/services/NoteServi
 import { Word } from '../../websters/Word'
 import { getWord } from '../../websters/services/WebstersService'
 import { Preferences } from '@capacitor/preferences';
-import { removeData } from 'dom7'
 
 export interface BiblePageQueryParams {
   c?: string //chapter
@@ -357,6 +356,7 @@ onMounted(async () => {
     if (openMenu.value) {
       availableNotes.value.forEach((note) => {
         note.verses.forEach((verse: any) => {
+          console.log(verse)
           if (verse[0].verse_start == menuVerse.value.verse_start) {
             notesVerseIsIn.value.push(note);
           }

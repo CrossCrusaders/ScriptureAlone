@@ -40,10 +40,8 @@
             @click="router.push(`bible?b=${verse[0].book_id}&c=${verse[0].chapter}&vs=${verse[0].verse_start}&ve=${verse[0].verse_end}`)"
             :class="`rounded verse-${verse.color} transition-all hover:bg-slate-300 cursor-pointer m-2 p-2`">
             <p class="font-bold">
-              {{ `${verse[0].book_name_alt} ${verse[0].chapter}:${verse[0].verse_start}` }}</p>
-            <p v-for="v in verse">
-              {{ v.verse_text }}
-            </p>
+              {{ `${verse[0].book_name} ${verse[0].chapter}:${verse[0].verse_start}` }}</p>
+            <p v-for="v in verse" v-html="v.text"></p>
           </div>
         </div>
         <div v-else class="flex flex-col gap-3 items-center py-4">
@@ -123,7 +121,6 @@ import { getUserFavoriteDevotionals } from '../../devotionals/services/Devotiona
 import { getUserFavoriteSermons } from '../../sermons/services/SermonService'
 import { getUserHighlightedVerses, getVerses } from '../../bible/services/BibleService'
 import Divider from '../../components/atoms/Divider.vue'
-import { getLocalCacheItem } from '../../cache/services/LocalStorageService'
 
 const categories = ref<any>([{ name: "Read VOTD", link: "/?votd=t", badge: "book-heart" }, { name: "Are you failing?", link: "", badge: "hands-pray" }, { name: "Are you truly saved?", link: "https://independentbaptist.church/salvation", badge: "cross" }, { name: "Join a Bible-based church.", link: "https://independentbaptist.church/", badge: "church" }]);
 
@@ -152,7 +149,7 @@ onMounted(async () => {
   await loadFavorites()
   chapters.value = await getUserHighlightedVerses();
   chapters.value.forEach(async (verse: any) => {
-    versesData.value.push({ ...(await getVerses(verse.book_id, parseInt(verse.chapter), parseInt(verse.verse.verse), parseInt(verse.verse.verse))), color: verse.verse.color });
+    versesData.value.push({ ...(await getVerses(verse.book_id, parseInt(verse.chapter), parseInt(verse.verse.verse), parseInt(verse.verse.verse))).verses, color: verse.verse.color });
   });
 })
 

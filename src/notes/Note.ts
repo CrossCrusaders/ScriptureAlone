@@ -21,13 +21,6 @@ export const transformNoteResponse = (response: any): Note => {
         collectionId: response['@collectionId'],
         collectionName: response['@collectionName'],
     }
-
-    var tempVerseHold: any[] = [];
-    note.verses.forEach(async (verse: number | object) => {
-        const verseResponse = await getVerses(note.book_id, note.chapter, verse as number, verse as number)
-        tempVerseHold.push(verseResponse);
-    });
-    note.verses = tempVerseHold;
     
     return note;
 }

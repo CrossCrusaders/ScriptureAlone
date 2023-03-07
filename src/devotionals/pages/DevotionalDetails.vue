@@ -68,9 +68,7 @@
               + " " + devotionalDetail.vChap + ":" + devotionalDetail.vVerseS + "-" + devotionalDetail.vVerseE
               }}</span><span class="font-normal text-xl">{{ ' - "' + verseText + '"' }}</span></p>
               <p v-else><span class="font-bold text-xl">{{ bookName + " " + devotionalDetail.vChap + ":" +
-              devotionalDetail.vVerseS }}</span><span class="font-normal text-xl">{{
-    ' - "' + verseText + '"'
-  }}</span></p>
+              devotionalDetail.vVerseS }}</span><span class="font-normal text-xl" v-html="' - ' + verseText + ''"></span></p>
               <p v-html="devotionalDetail.content"></p>
             </div>
           </Transition>
@@ -118,7 +116,6 @@ const {
 const loading = ref(true)
 const devotionalDetail = ref<Devotional>()
 const route = useRoute()
-const showPlayerModal = ref(false)
 
 const verseText = ref<string>();
 const bookName = ref<string>();
