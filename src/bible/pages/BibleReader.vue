@@ -52,13 +52,16 @@
             verse.verse_start
           }}</span><span class="verse-text">
             <span v-for="word in verse.text_array">
-              <button @click="handleOpenWordModal(getWordFromPastTense(word.split('|')[1].split('</span>')[0]), verse.verse_start)"
+              <button
+                @click="handleOpenWordModal(getWordFromPastTense(word.split('|')[1].split('</span>')[0]), verse.verse_start)"
                 v-if="word.includes('<span') && word.includes('|')"
-                class="underline ml-1 font-bold text-red-700 hover:text-red-500 transition-all" v-html="word.split('|')[0]+word.split('|')[1]"></button>
+                class="underline ml-1 font-bold text-red-700 hover:text-red-500 transition-all"
+                v-html="word.split('|')[0] + word.split('|')[1]"></button>
               <button @click="handleOpenWordModal(getWordFromPastTense(word.split('|')[1]), verse.verse_start)"
                 v-else-if="word.includes('|')"
-                class="underline ml-1 font-bold text-slate-500 hover:text-gray-500 transition-all" v-html="word.split('|')[1]"></button>
-              <span v-else v-html="' '+word"></span>
+                class="underline ml-1 font-bold text-slate-500 hover:text-gray-500 transition-all"
+                v-html="word.split('|')[1]"></button>
+              <span v-else v-html="' ' + word"></span>
             </span>
           </span>
         </p>
@@ -181,6 +184,8 @@ import { isBibleReference, getHighlightedVerses, highlightVerses } from '../../b
 import { createNote, getAllNotesInChapter } from '../../notes/services/NoteService'
 import { Word } from '../../websters/Word'
 import { getWord } from '../../websters/services/WebstersService'
+import { Preferences } from '@capacitor/preferences';
+import { removeData } from 'dom7'
 
 export interface BiblePageQueryParams {
   c?: string //chapter
@@ -240,15 +245,23 @@ const loadChapterContent = async () => {
   loadedChapterContent.value = { info: "", verses: [] };
   pageLoading.value = true
   try {
+    if (platform.value != "web")
+      await Preferences.set({
+        key: 'LastBibleData',
+        value: JSON.stringify({
+          book: selectedBookId.value,
+          chapter: selectedChapterNumber.value
+        })
+      });
+
     const response = await getVerses(selectedBookId.value, selectedChapterNumber.value)
 
     loadedChapterContent.value.info = response.info
 
     var versesHighlights: any;
     var chapterText: any[] = [];
-    if ((connectedToWifi.value && connectedToWifi.value.connected)) {
+    if ((connectedToWifi.value && connectedToWifi.value.connected) || platform.value == "web")
       versesHighlights = await getHighlightedVerses(response.verses[0].book_id, response.verses[0].chapter.toString());
-    }
 
     var ChristsWords = false;
     var isItalics = false;
@@ -256,9 +269,8 @@ const loadChapterContent = async () => {
       var tempVerseText: any = [];
 
       let verseCssClass = 'cursor-pointer transition-all px-2 verse'
-      if (shouldHighlight && highlightRange.length && verse.verse_start >= highlightRange[0] && verse.verse_start <= highlightRange[1]) {
+      if (shouldHighlight && highlightRange.length && verse.verse_start >= highlightRange[0] && verse.verse_start <= highlightRange[1])
         verseCssClass += ' verse-highlight'
-      }
 
       if (typeof verse.text === 'string' || verse.text instanceof String)
         tempVerseText = verse.text.split(" ");
@@ -266,17 +278,17 @@ const loadChapterContent = async () => {
       tempVerseText.forEach((word: string, index: number) => {
         if (WebstersWords.value.includes((word.charAt(0).toUpperCase() + word.slice(1)).slice(0, word.length)) || WebstersWords.value.includes((word.charAt(0).toUpperCase() + word.slice(1)).slice(0, word.length - 1)))
           word = `|${word}`;
-        
+
         let push = true;
 
-        if(word.includes("<em>") && !word.includes("</em>"))
+        if (word.includes("<em>") && !word.includes("</em>"))
           isItalics = true;
-        else if(!word.includes("<em>") && word.includes("</em>"))
+        else if (!word.includes("<em>") && word.includes("</em>"))
           isItalics = false;
 
-        if(isItalics)
+        if (isItalics)
           word = `<em>${word}</em>`
-        
+
         if (word == '"JESUS_START"') {
           ChristsWords = true;
           push = false;
@@ -288,12 +300,11 @@ const loadChapterContent = async () => {
         else if (ChristsWords)
           word = `<span class="text-red-500">${word}</span>`;
 
-        if(push)
+        if (push)
           transformedTempVerseText.push(word)
 
-        if (index == tempVerseText.length - 1) {
+        if (index == tempVerseText.length - 1)
           verse.text_array = transformedTempVerseText;
-        }
       });
 
 
@@ -440,7 +451,17 @@ const handleSearchSubmit = async (event: Event) => {
 };
 
 async function getNewVerses() {
-  const { b, c, vs, ve } = route.query as BiblePageQueryParams
+  let { b, c, vs, ve } = route.query as BiblePageQueryParams
+
+  if (!b && !c && platform.value != "web") {
+    const ret: any = await Preferences.get({ key: 'LastBibleData' });
+    if (ret.value) {
+      const data = JSON.parse(ret.value);
+
+      b = data.book;
+      c = data.chapter;
+    }
+  }
 
   if (b && c) {
     selectedBookId.value = b || selectedBookId.value
