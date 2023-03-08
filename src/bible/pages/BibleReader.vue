@@ -418,7 +418,7 @@ async function startBibleAudio() {
 
   setGlobalAudioPayload({
     id: `${selectedBookId.value}.${selectedChapterNumber.value}`,
-    title: `${await selectedBook.value?.name} ${selectedChapterNumber.value}`,
+    title: `${await selectedBook.value?.name.replace(" ", "")} ${selectedChapterNumber.value}`,
     author: "",
     currentTime: 0,
     url,
