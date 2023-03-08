@@ -399,22 +399,24 @@ async function startBibleAudio() {
   let url = Config.bibleAudioUrl;
   availableBooks.value.forEach((book, i) => {
     if (book.bookId === selectedBookId.value) {
-      if (i + 1 < 10)
+      if (i+1 > 10)
+        url += i+1;
+      else if(i+1 < 10)
         url += `0${i + 1}`;
-      else
-        url += i + 1;
 
       url += `_${book.name.replace(" ", "")}_`;
     }
   });
   if (selectedChapterNumber.value > 99)
     url += selectedChapterNumber.value;
-  else if (selectedChapterNumber.value > 10)
+  else if (selectedChapterNumber.value > 9)
     url += `0${selectedChapterNumber.value}`
   else
     url += `00${selectedChapterNumber.value}`
 
   url += ".mp3"
+
+  console.log(url)
 
   setGlobalAudioPayload({
     id: `${selectedBookId.value}.${selectedChapterNumber.value}`,
