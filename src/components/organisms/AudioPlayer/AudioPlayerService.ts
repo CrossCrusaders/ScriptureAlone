@@ -4,7 +4,8 @@ import { setLocalCacheItem } from '../../../cache/services/LocalStorageService'
 export enum AudioPlayerState {
   paused, // visible stopped
   playing, // visible playing
-  hidden   // hidden stopped
+  hidden,   // hidden stopped
+  nextChapter // bible player next chapter
 }
 
 const globalAudioPayload = ref<GlobalAudioPayload | null>(null)
@@ -18,6 +19,7 @@ export interface GlobalAudioPayload {
   author?: string
   currentTime?: number
   contentPage?: string
+  additionalData?: any
 }
 
 export function useGlobalAudioPlayer() {

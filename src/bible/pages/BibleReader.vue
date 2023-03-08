@@ -404,12 +404,12 @@ async function startBibleAudio() {
       else
         url += i + 1;
 
-      url += `_${book.name}_`;
+      url += `_${book.name.replace(" ", "")}_`;
     }
   });
   if (selectedChapterNumber.value > 99)
     url += selectedChapterNumber.value;
-  else if(selectedChapterNumber.value > 10)
+  else if (selectedChapterNumber.value > 10)
     url += `0${selectedChapterNumber.value}`
   else
     url += `00${selectedChapterNumber.value}`
@@ -418,11 +418,12 @@ async function startBibleAudio() {
 
   setGlobalAudioPayload({
     id: `${selectedBookId.value}.${selectedChapterNumber.value}`,
-    title: `${await selectedBook.value?.name.replace(" ", "")} ${selectedChapterNumber.value}`,
+    title: `${await selectedBook.value?.name} ${selectedChapterNumber.value}`,
     author: "",
     currentTime: 0,
     url,
-    contentPage: `/bible?b=${selectedBookId.value}&c=${selectedChapter}`
+    contentPage: `/bible?b=${selectedBookId.value}&c=${selectedChapterNumber.value}`,
+    additionalData: { selectedBookId: selectedBookId.value, selectedChapterNumber: selectedChapterNumber.value, selectedBook: selectedBook.value?.name }
   })
 
   setGlobalAudioState(AudioPlayerState.playing)
@@ -672,6 +673,7 @@ function sorter(a: number, b: number) {
   animation: jump-in 0.7s ease;
   max-height: 100%;
 }
+
 .audioBiblePlayerButton-leave-active {
   animation: jump-out 0.7s ease;
   max-height: 100%;

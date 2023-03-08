@@ -51,9 +51,18 @@ import AppButton from '../../atoms/form-controls/AppButton.vue';
 import Icon from '../../atoms/Icon.vue';
 import { useBreakpoint } from '../../../browser/ViewportService';
 import { formatMaxLengthText } from '../../../core/services/FormatService'
-
+import { watch, onMounted, ref } from 'vue';
+import { BibleBook } from '../../../bible/BibleBook';
+import { getBooks } from '../../../bible/services/BibleService';
+import Config from '../../../config/services/ConfigService';
 
 const { breakpoint } = useBreakpoint()
+
+const availableBooks = ref<BibleBook[]>([]);
+const bookChapters = ref<any>();
+
+const currentBook = ref<any>();
+const currentBookChapters = ref<number>();
 
 const {
   setGlobalAudioState,
@@ -62,9 +71,14 @@ const {
   globalAudioState
 } = useGlobalAudioPlayer()
 
+onMounted(async () => {
+  availableBooks.value = await getBooks();
+  bookChapters.value = await (await import("../../../assets/bible/bible-chapters.json")).default
+})
+
 
 const showPlayer = computed(() => {
-  return (globalAudioState.value === AudioPlayerState.playing) || (globalAudioState.value === AudioPlayerState.paused)
+  return (globalAudioState.value === AudioPlayerState.playing) || (globalAudioState.value === AudioPlayerState.paused) || (globalAudioState.value === AudioPlayerState.nextChapter)
 })
 
 const onCloseClicked = () => {
@@ -81,6 +95,61 @@ const formatDisplayTitle = () => {
       34) : globalAudioPayload.value?.title
 }
 
+watch(() => globalAudioState.value || globalAudioPayload.value, async (currentValue) => {
+  if (currentValue == AudioPlayerState.nextChapter) {
+    if (currentBook.value == (undefined || null) || currentBookChapters.value == (undefined || null)) {
+      currentBook.value = availableBooks.value.find((book: any) => book.name === globalAudioPayload.value?.additionalData.selectedBook);
+      currentBookChapters.value = await (bookChapters.value.find((book: any) => book.name === currentBook.value.name)).chapters;
+    }
+
+    let url = Config.bibleAudioUrl;
+    let chapter = globalAudioPayload.value?.additionalData.selectedChapterNumber;
+
+    if (globalAudioPayload.value?.additionalData.selectedChapterNumber == currentBookChapters.value) {
+      const currentBookIndex = availableBooks.value.findIndex((book: any) => book.name === globalAudioPayload.value?.additionalData.selectedBook);
+      if(currentBookIndex + 1 <= 66){
+        currentBook.value = availableBooks.value[currentBookIndex + 1];
+      }
+      else{
+        currentBook.value = availableBooks.value[0];
+      }
+      currentBookChapters.value = await (bookChapters.value.find((book: any) => book.name === currentBook.value.name)).chapters
+      chapter = 1;
+    }
+    else {
+      chapter++;
+    }
+
+    availableBooks.value.forEach((book, i) => {
+      if (book.bookId === currentBook.value.bookId) {
+        if (i + 1 < 10)
+          url += `0${i + 1}`;
+        else
+          url += i + 1;
+
+        url += `_${book.name.replace(" ", "")}_`;
+      }
+    });
+    if (chapter > 99)
+      url += chapter;
+    else if (chapter > 10)
+      url += `0${chapter}`
+    else
+      url += `00${chapter}`
+    url += ".mp3"
+
+    await setGlobalAudioPayload({
+      id: `${currentBook.value.bookId}.${chapter}`,
+      title: `${currentBook.value.name} ${chapter}`,
+      author: "",
+      currentTime: 0,
+      url,
+      contentPage: `/bible?b=${currentBook.value.bookId}&c=${currentBookChapters.value}`,
+      additionalData: { selectedBookId: currentBook.value.bookId, selectedChapterNumber: chapter, selectedBook: currentBook.value.name }
+    })
+    await setGlobalAudioState(AudioPlayerState.playing)
+  }
+})
 </script>
 
 <style scoped>
