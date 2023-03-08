@@ -148,13 +148,27 @@
       </div>
     </div>
   </AppModal>
-  <!--<button class="w-full fixed bottom-0 left-0">
-    <div class="w-full h-full flex justify-center">
-      <div class="w-16 h-16 mb-12 bg-gray-300 border-2 border-gray-400 rounded-full drop-shadow-2xl">
-        <img src="/mdi/play.svg" class="m-2" />
+  <AppModal v-model="audioModal" v-slot="{ close }">
+    <div class="px-4 py-4 text-white flex flex-col gap-2" style="text-align:center;">
+      <div>
+        <p class="font-bold text-lg text-black">Here is where we will put the timeout selector</p>
+        <p class="font-bold text-black">{{ wordDef?.pronunciation }}</p>
+      </div>
+      <div class="text-white flex justify-center">
+        <button @click="startBibleAudio()" class="p-2 bg-slate-700 rounded w-24">Play</button>
       </div>
     </div>
-  </button>-->
+  </AppModal>
+  <Transition name="audioBiblePlayerButton">
+    <div v-if="audioModal == false" class="w-full fixed bottom-0 left-0">
+      <div class="w-full h-full flex justify-center">
+        <button @click="audioModal = true"
+          class="w-16 h-16 mb-12 bg-gray-300 border-2 border-gray-400 rounded-full drop-shadow-2xl">
+          <img src="/mdi/play.svg" class="m-2" />
+        </button>
+      </div>
+    </div>
+  </Transition>
 </template>
 
 <script setup lang="ts">
@@ -185,6 +199,8 @@ import { createNote, getAllNotesInChapter } from '../../notes/services/NoteServi
 import { Word } from '../../websters/Word'
 import { getWord } from '../../websters/services/WebstersService'
 import { Preferences } from '@capacitor/preferences';
+import { AudioPlayerState, useGlobalAudioPlayer } from '../../components/organisms/AudioPlayer/AudioPlayerService'
+import Config from '../../config/services/ConfigService'
 
 export interface BiblePageQueryParams {
   c?: string //chapter
@@ -218,6 +234,7 @@ const noteText = ref("");
 const noteModal = ref(false);
 const wordDefModal = ref(false);
 const wordDef = ref<Word>();
+const audioModal = ref(false);
 const availableNotes = ref<any[]>([]);
 const notesVerseIsIn = ref<any[]>([]);
 
@@ -371,6 +388,45 @@ onMounted(async () => {
 
 function getWordFromPastTense(word: string) {
   return WebstersWords.value.includes((word.charAt(0).toUpperCase() + word.slice(1)).slice(0, word.length)) ? word.toLowerCase() : word.slice(0, word.length - 1).toLowerCase()
+}
+
+const {
+  setGlobalAudioPayload,
+  setGlobalAudioState,
+  globalAudioState
+} = useGlobalAudioPlayer()
+async function startBibleAudio() {
+  let url = Config.bibleAudioUrl;
+  availableBooks.value.forEach((book, i) => {
+    if (book.bookId === selectedBookId.value) {
+      if (i + 1 < 10)
+        url += `0${i + 1}`;
+      else
+        url += i + 1;
+
+      url += `_${book.name}_`;
+    }
+  });
+  if (selectedChapterNumber.value > 99)
+    url += selectedChapterNumber.value;
+  else if(selectedChapterNumber.value > 10)
+    url += `0${selectedChapterNumber.value}`
+  else
+    url += `00${selectedChapterNumber.value}`
+
+  url += ".mp3"
+
+  setGlobalAudioPayload({
+    id: `${selectedBookId.value}.${selectedChapterNumber.value}`,
+    title: `${await selectedBook.value?.name} ${selectedChapterNumber.value}`,
+    author: "",
+    currentTime: 0,
+    url,
+    contentPage: `/bible?b=${selectedBookId.value}&c=${selectedChapter}`
+  })
+
+  setGlobalAudioState(AudioPlayerState.playing)
+  audioModal.value = false;
 }
 
 // Event Handlers
@@ -610,5 +666,43 @@ function sorter(a: number, b: number) {
   width: 24px;
   height: 24px;
   line-height: 24px;
+}
+
+.audioBiblePlayerButton-enter-active {
+  animation: jump-in 0.7s ease;
+  max-height: 100%;
+}
+
+.audioBiblePlayerButton-leave-active {
+  animation: jump-out 0.7s ease;
+  max-height: 100%;
+}
+
+@keyframes jump-in {
+  0% {
+    transform: translateY(10em);
+  }
+
+  25% {
+    transform: translateY(-3em);
+  }
+
+  100% {
+    transform: translateY(0em);
+  }
+}
+
+@keyframes jump-out {
+  0% {
+    transform: translateY(0em);
+  }
+
+  25% {
+    transform: translateY(-3em);
+  }
+
+  100% {
+    transform: translateY(10em);
+  }
 }
 </style>
