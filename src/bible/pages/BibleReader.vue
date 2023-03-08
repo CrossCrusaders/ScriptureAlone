@@ -160,7 +160,7 @@
     </div>
   </AppModal>
   <Transition name="audioBiblePlayerButton">
-    <div v-if="audioModal == false" class="w-full fixed bottom-0 left-0">
+    <div v-if="audioModal == false && globalAudioState == AudioPlayerState.hidden" class="w-full fixed bottom-0 left-0">
       <div class="w-full h-full flex justify-center">
         <button @click="audioModal = true"
           class="w-16 h-16 mb-12 bg-gray-300 border-2 border-gray-400 rounded-full drop-shadow-2xl">
@@ -672,7 +672,6 @@ function sorter(a: number, b: number) {
   animation: jump-in 0.7s ease;
   max-height: 100%;
 }
-
 .audioBiblePlayerButton-leave-active {
   animation: jump-out 0.7s ease;
   max-height: 100%;

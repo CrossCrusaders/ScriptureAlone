@@ -14,7 +14,7 @@
                 Now Playing:
               </h2>
               <p class="text-white text-md font-bold font-title underline" :title="globalAudioPayload?.title"> {{
-              formatDisplayTitle() }}
+                formatDisplayTitle() }}
               </p>
             </RouterLink>
           </div>
@@ -23,7 +23,7 @@
               Now Playing:
             </h2>
             <p class="text-white text-md font-bold font-title" :title="globalAudioPayload?.title"> {{
-            formatDisplayTitle() }}
+              formatDisplayTitle() }}
             </p>
           </div>
 
