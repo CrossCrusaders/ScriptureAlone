@@ -117,7 +117,7 @@
         </div>
       </div>
       <button class="mx-auto bg-cyan-500 hover:bg-cyan-400 active:bg-cyan-600 transition-all p-2 rounded w-full md:w-1/2"
-        @click="copyString(menuVerse.book_name + ' ' + menuVerse.chapter + ':' + menuVerse.verse_start + ' - ' + menuVerse.text)">Copy
+        @click="copyString(menuVerse.book_name + ' ' + menuVerse.chapter + ':' + menuVerse.verse_start + ' - ' + menuVerse.text.replaceAll('<em>', '').replaceAll('</em>', ''))">Copy
         Verse</button>
       <button
         class="mx-auto bg-yellow-500 hover:bg-yellow-400 active:bg-yellow-600 transition-all p-2 rounded w-full md:w-1/2"
@@ -133,7 +133,7 @@
         <textarea v-model="noteText" class="text-black bg-slate-100 rounded p-1 h-64"></textarea>
       </div>
       <button class="mx-auto bg-cyan-500 hover:bg-cyan-400 active:bg-cyan-600 transition-all p-2 rounded w-full md:w-1/2"
-        @click="createNote(selectedBookId, selectedChapterNumber, selectedVerses, noteTitle, noteText); noteTitle = ''; noteText = ''; noteModal = false">Add</button>
+        @click="createNote(selectedBookId, selectedChapterNumber, selectedVerses, noteTitle, noteText)">Add</button>
     </div>
   </AppModal>
   <AppModal v-model="wordDefModal" v-slot="{ close }">
@@ -373,8 +373,7 @@ onMounted(async () => {
     if (openMenu.value) {
       availableNotes.value.forEach((note) => {
         note.verses.forEach((verse: any) => {
-          console.log(verse)
-          if (verse[0].verse_start == menuVerse.value.verse_start) {
+          if (verse == menuVerse.value.verse_start) {
             notesVerseIsIn.value.push(note);
           }
         });

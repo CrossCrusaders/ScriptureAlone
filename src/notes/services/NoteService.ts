@@ -3,6 +3,7 @@ import { transformNoteResponse, transformNoteResponses } from '../Note';
 
 export async function createNote(book_id: string, chapter: string | number, verses: any, title: string, text: string) {
     await PocketBaseClient.records.create('notes', { title, book_id, chapter, verses, text, user: PocketBaseClient.authStore.model?.id });
+    location.reload();
 }
 
 export async function getNote(id: string) {
