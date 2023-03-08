@@ -133,7 +133,7 @@
         <textarea v-model="noteText" class="text-black bg-slate-100 rounded p-1 h-64"></textarea>
       </div>
       <button class="mx-auto bg-cyan-500 hover:bg-cyan-400 active:bg-cyan-600 transition-all p-2 rounded w-full md:w-1/2"
-        @click="createNote(selectedBookId, selectedChapterNumber, selectedVerses, noteTitle, noteText)">Add</button>
+        @click="createNote(selectedBookId, selectedChapterNumber, selectedVerses, noteTitle, noteText); reloadNotes()">Add</button>
     </div>
   </AppModal>
   <AppModal v-model="wordDefModal" v-slot="{ close }">
@@ -355,13 +355,17 @@ const loadChapterContent = async () => {
       window.scrollTo({ top: 0 })
 
     shouldHighlight = false;
-    if ((connectedToWifi.value && connectedToWifi.value.connected) || platform.value == "web")
-      availableNotes.value = await getAllNotesInChapter(selectedBookId.value, selectedChapterNumber.value);
+    await reloadNotes();
   }
   catch (err) {
     console.log(err)
   }
   pageLoading.value = false
+}
+
+async function reloadNotes(){
+  if ((connectedToWifi.value && connectedToWifi.value.connected) || platform.value == "web")
+    availableNotes.value = await getAllNotesInChapter(selectedBookId.value, selectedChapterNumber.value);
 }
 
 onMounted(async () => {
