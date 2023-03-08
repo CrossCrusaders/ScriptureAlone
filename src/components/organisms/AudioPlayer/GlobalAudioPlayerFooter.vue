@@ -107,7 +107,7 @@ watch(() => globalAudioState.value || globalAudioPayload.value, async (currentVa
 
     if (globalAudioPayload.value?.additionalData.selectedChapterNumber == currentBookChapters.value) {
       const currentBookIndex = availableBooks.value.findIndex((book: any) => book.name === globalAudioPayload.value?.additionalData.selectedBook);
-      if(currentBookIndex + 1 <= 66){
+      if(currentBookIndex + 1 != 66){
         currentBook.value = availableBooks.value[currentBookIndex + 1];
       }
       else{
@@ -132,7 +132,7 @@ watch(() => globalAudioState.value || globalAudioPayload.value, async (currentVa
     });
     if (chapter > 99)
       url += chapter;
-    else if (chapter > 10)
+    else if (chapter > 9)
       url += `0${chapter}`
     else
       url += `00${chapter}`
