@@ -194,8 +194,8 @@
   </AppModal>
   <AppModal v-model="audioModal" v-slot="{ close }">
     <div class="px-4 py-4 text-white flex flex-col gap-2 text-center">
-      <p class="text-2xl text-black font-bold">Timer:</p>
-      <div class="grid grid-rows-2 grid-flow-col w-full justify-center gap-2">
+      <p class="text-2xl text-black font-bold">Sleep Timer:</p>
+      <div class="flex items-center justify-center flex-col md:grid md:grid-rows-2 md:grid-flow-col w-full gap-2">
         <button v-for="choice in timerChoices" @click="currentTimerSelection = choice.time" class="w-24">
           <p v-if="currentTimerSelection == choice.time" class="text-white bg-red-600 rounded p-1 w-full text-sm">
             {{ choice.label }}
@@ -313,12 +313,12 @@ const audioTimer = ref();
 const currentTimerSelection = ref(0);
 const timerChoices = [
   { label: "No Timer", time: 0 },
-  { label: "20 Min.", time: 1200000 },
   { label: "5 Min.", time: 300000 },
-  { label: "30 Min.", time: 1800000 },
   { label: "10 Min.", time: 600000 },
-  { label: "1 Hr.", time: 3600000 },
   { label: "15 Min.", time: 900000 },
+  { label: "20 Min.", time: 1200000 },
+  { label: "30 Min.", time: 1800000 },
+  { label: "1 Hr.", time: 3600000 },
   { label: "1 Hr. 30 Min.", time: 5400000 },
 ];
 
