@@ -55,7 +55,10 @@ const loadSearchedVersions = async (forceReset = false) => {
     }
     loading.value = true
     try {
-        const { items, ...paginationData } = await getSearch('versions', undefined, props.page, props.perPage, [""], props.queryParams, false)
+        var { items, ...paginationData } = await getSearch('versions', undefined, props.page, props.perPage, [""], props.queryParams, false)
+        for(var item of items){
+            item.description = item.description.replaceAll('<li>', "").replaceAll("</li>", "")
+        }
         if (props.appendContent && !forceReset) {
             loadedVersions.value = loadedVersions.value.concat(await addVersionToTitle(items as ContentPreview[]))
         }
