@@ -31,7 +31,6 @@ onMounted(async () => {
         if(index != version.value.platforms.length-1)
             platforms.value += ", ";
     })
-    console.log(platforms.value)
 });
 </script>
 <style lang="css">
