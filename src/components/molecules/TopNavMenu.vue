@@ -118,6 +118,10 @@ const menuItems = [
   {
     label: 'Sermons',
     link: '/sermons'
+  },
+  {
+    label: 'App Version History',
+    link: '/versions'
   }
 ]
 
