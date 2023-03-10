@@ -41,7 +41,7 @@
               <p v-html="verseText" id="verseText" class="text-xl"></p>
             </div>
             <AppButton>
-              <RouterLink :to="`/bible?t=${searchTranslationId}&b=${verseBookId}&c=${verseChapter}`">Continue Reading
+              <RouterLink :to="`/bible?b=${verseBookId}&c=${verseChapter}`">Continue Reading
               </RouterLink>
             </AppButton>
           </div>
@@ -140,7 +140,7 @@ const { breakpoint } = useBreakpoint();
 
 onMounted(async () => {
   var htmlVerse = await getVerseOfTheDay();
-  verseName.value = htmlVerse.verseReference + " KJV";
+  verseName.value = htmlVerse.verseReference;
   verseText.value = htmlVerse.verseText;
   verseBookId.value = htmlVerse.verseBookId;
   verseChapter.value = htmlVerse.verseChapter;
@@ -154,7 +154,6 @@ onMounted(async () => {
 });
 
 const searchModel = ref("");
-const searchTranslationId = ref("ENGKJV");
 const callToActionItemClass = [
   "cta-item border-slate-700",
   "md:w-2/6",
@@ -190,11 +189,11 @@ const handleSearchSubmit = async (event: Event) => {
     const result = await isBibleReference(searchModel.value);
     if (result) {
       return router.push(
-        `/bible?t=${searchTranslationId.value}&c=${result.chapter}&b=${result.book_id}&vs=${result.verse_start}&ve=${result.verse_end}`
+        `/bible?c=${result.chapter}&b=${result.book_id}&vs=${result.verse_start}&ve=${result.verse_end}`
       );
     } else {
       return router.push(
-        `/bible/search?t=${searchTranslationId.value}&q=${encodeURI(
+        `/bible/search?q=${encodeURI(
           searchModel.value.substring(0, 255)
         )}`
       );

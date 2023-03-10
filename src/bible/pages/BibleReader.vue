@@ -51,8 +51,7 @@
             menuVerse = verse;
             openMenu = true;
           }
-        " v-touch:tap="() => onVerseClicked(verse.verse_start)" :id="`verse-${verse.verse_start}`"
-          :class="verse.css">
+        " v-touch:tap="() => onVerseClicked(verse.verse_start)" :id="`verse-${verse.verse_start}`" :class="verse.css">
           <span class="verse-number">{{ verse.verse_start }}</span><span class="verse-text">
             <span v-for="word in verse.text_array">
               <button @click="
@@ -175,7 +174,7 @@
             noteText
           );
         reloadNotes();
-                  ">
+                            ">
         Add
       </button>
     </div>
