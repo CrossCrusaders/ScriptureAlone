@@ -43,7 +43,7 @@ export async function getVerseOfTheDay() {
 	}
 
 	const verseText = verseResponse.verses.reduce((aggregate, verse) => {
-		return aggregate + `<span class="verse-number">${verse.verse_start}</span>${verse.text} `
+		return aggregate + `<span class="verse-number">${verse.verse_start}</span>${verse.text.replaceAll('"JESUS_START" ', '<span class="text-red-500">').replaceAll(' "JESUS_END"', "</span>")} `
 	}, '')
 
 	return {
