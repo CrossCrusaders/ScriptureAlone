@@ -7,7 +7,7 @@
                 <p class="mr-1">Platforms:</p>
                 <p v-html="platforms"></p>
             </div>
-            <p class="w-1/2 mb-4" v-html="version.description"></p>
+            <p class="mt-4 w-full md:w-1/2 mb-4" v-html="version.description"></p>
         </div>
     </AppLayout>
 </template>
