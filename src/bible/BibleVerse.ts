@@ -7,4 +7,5 @@ export interface BibleVerse {
   text: string
   highlight: string
   verse_text?: string
+  book_name_alt: string
 }
