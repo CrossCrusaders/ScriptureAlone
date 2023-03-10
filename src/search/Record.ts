@@ -23,6 +23,7 @@ export interface Record {
     sermonDate?: Date
     devotionalDate?: Date
     truthResourceDate?: Date
+    noteDate?: Date
   
     duration?: number
 }

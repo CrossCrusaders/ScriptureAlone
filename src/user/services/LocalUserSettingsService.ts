@@ -1,8 +1,6 @@
 import { getLocalCacheItem, setLocalCacheItem } from '../../cache/services/LocalStorageService'
 
 export interface UserSettings {
-  lastSearchedBibleId?: string
-  lastReadBibleId?: string
   lastReadBookId?: number
   lastReadChapter?: number
   visitedBefore?: boolean
@@ -12,7 +10,7 @@ export type UserSettingsKey = keyof UserSettings
 
 const userSettingsLocalStorageKey = '__sa_user_settings__'
 
-let userSettings: UserSettings = getLocalCacheItem(userSettingsLocalStorageKey)
+let userSettings: UserSettings = getLocalCacheItem(userSettingsLocalStorageKey, true)
 
 if (!userSettings) {
   userSettings = {}
@@ -28,7 +26,7 @@ export function getUserSettings() {
 
 export function setUserSetting(key: UserSettingsKey, value: any) {
   userSettings[key] = value
-  setLocalCacheItem(userSettingsLocalStorageKey, userSettings)
+  setLocalCacheItem(userSettingsLocalStorageKey, userSettings, true)
 }
 
 
@@ -36,7 +34,7 @@ export function setUserSettings(settings: Partial<UserSettings>) {
   for (const key in settings) {
     userSettings[key as UserSettingsKey] = settings[key as UserSettingsKey] as any
   }
-  setLocalCacheItem(userSettingsLocalStorageKey, userSettings)
+  setLocalCacheItem(userSettingsLocalStorageKey, userSettings, true)
 }
 
 // TODO: add a bunch of helper functions 

@@ -10,8 +10,6 @@
 <script setup lang="ts">
 import { defaultImage } from '../../user/services/UserService'
 import FavoriteButton from '../atoms/FavoriteButton.vue';
-import AppButton from '../atoms/form-controls/AppButton.vue'
-import Icon from '../atoms/Icon.vue'
 
 export interface CoverImageWithFavoriteProps {
   coverImage?: string,

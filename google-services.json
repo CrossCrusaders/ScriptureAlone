@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "935589431763",
+    "project_id": "scripture-alone-notifications",
+    "storage_bucket": "scripture-alone-notifications.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:935589431763:android:4cd5715d5a2317cef84726",
+        "android_client_info": {
+          "package_name": "app.scripturealone.crosscrusaders"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "935589431763-p4ifd6e3n9k3ubbmbf5gqltqiopobi93.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyByMY6o5a3DdBvTMPpxNDm5yoAOXuiIM_Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "935589431763-p4ifd6e3n9k3ubbmbf5gqltqiopobi93.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

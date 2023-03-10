@@ -19,12 +19,11 @@
   import { TruthResource } from '../TruthResource';
   import Spinner from '../../components/atoms/Spinner.vue';
   import { Author } from '../../authors/Author';
-  import { useUserFavorites } from '../../user/services/UserService';
   import { useAuth } from '../../auth/services/AuthService';
   
-  import { getSearch } from '../../search/services/searchService'
+  import { getSearch } from '../../search/services/SearchService'
    
-  export interface SermonsPreviewGridProps {
+  export interface TruthResourcePreviewGridProps {
     queryParams?: any
     page?: number
     perPage?: number
@@ -34,7 +33,7 @@
     query?: string | null
   }
   
-  const props = withDefaults(defineProps<SermonsPreviewGridProps>(), {
+  const props = withDefaults(defineProps<TruthResourcePreviewGridProps>(), {
     page: 1,
     perPage: 8,
     query: null
@@ -63,7 +62,7 @@
     }
     loading.value = true
     try {
-      const { items, ...paginationData } = await getSearch('truthResources', props.query || undefined, props.page, props.perPage, props.queryParams, true)
+      const { items, ...paginationData } = await getSearch('truthResources', props.query || undefined, props.page, props.perPage, ["categories.label", "title", "description"], props.queryParams, true)
       if (props.appendContent && !forceReset) {
         loadedTruthResources.value = loadedTruthResources.value.concat(items as ContentPreview[])
       }

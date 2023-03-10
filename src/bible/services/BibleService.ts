@@ -1,65 +1,56 @@
-
 import PocketBaseClient from '../../api/PocketBaseClient'
 import Config from '../../config/services/ConfigService'
-import { getLocalCacheItem, getSessionCacheItem, setLocalCacheItem, setSessionCacheItem } from '../../cache/services/LocalStorageService'
 import { BibleBook, BibleBookLookup } from '../BibleBook'
 import { BibleChapter } from '../BibleChapter'
 import { BibleVerse } from '../BibleVerse'
 import { getDayOfTheYear } from '../../core/services/TimeService'
 
-export const bibleIdKjv = 'ENGKJV'
-
-const votdCacheKey = `__scripture_alone_votd__`
-
-let versesOfTheDayCache: any = null
-
 let cacheLoaded = false
-let bibleChaptersCache: BibleChapter[] | null = null
+let bibleChaptersCache: BibleChapter[] | any = null
 let bibleBooksCache: BibleBook[] | null = null
-let bibleTranslationsCache: any[] | null = null
 let bibleBookLookupCache: BibleBookLookup[] | null = null
 
 
 
 export async function getVerseOfTheDay() {
-	if (!versesOfTheDayCache) {
-		versesOfTheDayCache = await getSessionCacheItem(votdCacheKey)
-		if (!versesOfTheDayCache) {
-			const verses = await PocketBaseClient.records.getFullList('versesOfTheDay')
-			versesOfTheDayCache = verses
-			await setSessionCacheItem(votdCacheKey, verses)
-		}
-	}
+	const votdVerses = await PocketBaseClient.records.getFullList('versesOfTheDay')
 
-	const length = versesOfTheDayCache.length
+	const length = votdVerses.length
 	const chosenIndex = getDayOfTheYear() % length
-	const chosenVerse = versesOfTheDayCache[chosenIndex]
+	const chosenVerse = votdVerses[chosenIndex]
 
 	const verses = chosenVerse.verseId.split('-')
 
-	let verseResponse = []
+	let verseResponse = { verses: [{ verse_start: 0, text: "", book_name: "" }]  }
 	let verseReference = ''
+	let verseBookId, verseChapter
 
 	if (verses.length === 2) {
 		const [book, chapter, verse1] = verses[0].split('.')
+		verseBookId = book.toUpperCase();
+		verseChapter = chapter;
 		const [_, __, verse2] = verses[1].split('.')
-		verseResponse = await getVerses(bibleIdKjv, book, chapter, verse1, verse2)
-		verseReference = `${verseResponse[0].book_name} ${chapter}:${verse1}-${verse2}`
+		verseResponse = await getVerses(book, chapter, verse1, verse2)
+		verseReference = `${verseResponse.verses[0].book_name} ${chapter}:${verse1}-${verse2}`
 	} else if (verses.length === 1) {
 		const [book, chapter, verse] = verses[0].split('.')
-		verseResponse = await getVerses(bibleIdKjv, book, chapter, verse, verse)
-		verseReference = `${verseResponse[0].book_name} ${chapter}:${verse}`
+		verseBookId = book.toUpperCase();
+		verseChapter = chapter;
+		verseResponse = await getVerses(book, chapter, verse, verse)
+		verseReference = `${verseResponse.verses[0].book_name} ${chapter}:${verse}`
 	} else {
 		throw new Error('Invalid Verse of the Day Format')
 	}
 
-	const verseText = verseResponse.reduce((aggregate, verse) => {
-		return aggregate + `<span class="verse-number">${verse.verse_start_alt}</span>${verse.verse_text} `
+	const verseText = verseResponse.verses.reduce((aggregate, verse) => {
+		return aggregate + `<span class="verse-number">${verse.verse_start}</span>${verse.text} `
 	}, '')
 
 	return {
 		verseReference,
-		verseText
+		verseText,
+		verseBookId,
+		verseChapter
 	}
 }
 
@@ -67,43 +58,49 @@ export async function getVerseOfTheDay() {
  * Primary function for querying the bible API
  * and getting bible verses
  */
-export async function getVerses(bibleId: string, book: string, chapter: number, startVerse?: number, endVerse?: number): Promise<BibleVerse[]> {
+export async function getVerses(book: string, chapter: number, startVerse?: number, endVerse?: number): Promise<{ info: string, verses: BibleVerse[] }> {
+	book = book.toUpperCase();
+	var data:any = null;
+	data = { ...await(await import(`../../assets/kjv-json/${book}/${chapter}.json`)).default };
 
-	let key = `${bibleId}.${book}.${chapter}`
-	if (startVerse) {
-		key += `.${startVerse}`
+	if (!startVerse)
+		return data;
+	else {
 		if (endVerse) {
-			key += `.${endVerse}`
+			data.verses = data.verses.filter(function (verse: any) {
+				return (verse.verse_start >= startVerse && verse.verse_end <= endVerse);
+			});
+			return data;
+		}
+		else {
+			data.verses = data.verses.filter(function (verse: any) {
+				return verse.verse_start == startVerse;
+			});
+			return data;
 		}
 	}
+}
 
-	const dataStr = await getLocalCacheItem(key)
-	if (dataStr)
-		return JSON.parse(dataStr)
+export async function getHighlightedVerses(book: string, chapter: string) {
+	var filter = `book_id="${book}" && chapter=${chapter} && user="${PocketBaseClient.authStore.model?.id}"`
+	var returnVerses = await PocketBaseClient.records.getFullList('highlights', 200, { filter })
+	return returnVerses[0];
+}
 
-
-	let url = `${Config.bibleApiUrl}bibles/filesets/${bibleId}/${book}/${chapter}?v=4`
-
-	if (startVerse)
-		url += `&verse_start=${startVerse}`
-
-	if (endVerse)
-		url += `&verse_end=${endVerse}`
-
-	const response = await fetch(url);
-	const results = await response.json();
-	const data = results.data;
-
-	await setLocalCacheItem(key, JSON.stringify(data))
-
-	return data
+export async function getUserHighlightedVerses() {
+	var returnVerses = await PocketBaseClient.records.getFullList('highlights', 200, { filter: `user="${PocketBaseClient.authStore.model?.id}"` })
+	var verses: any = [];
+	returnVerses.forEach((chapter: any) => {
+		chapter.verse_data.forEach((verse: any) => {
+			verses.push({ book_id: chapter.book_id, chapter: chapter.chapter, verse })
+		})
+	});
+	return verses;
 }
 
 async function loadBibleData() {
-	const BibleTranslations = await import(`../../assets/bible/translations.json`)
 	const BibleBookChapters = await import(`../../assets/bible/bible-books.json`)
 	const BibleBookLookup = await import('../../assets/bible/bible-book-lookup.json')
-	bibleTranslationsCache = BibleTranslations.default
 	bibleChaptersCache = BibleBookChapters.default
 	bibleBookLookupCache = BibleBookLookup.default
 
@@ -111,7 +108,7 @@ async function loadBibleData() {
 	// for selection purposes
 	const bibleBooksHash: any = {}
 	bibleBooksCache = []
-	bibleChaptersCache.forEach(chapter => {
+	bibleChaptersCache?.forEach((chapter:any) => {
 		if (!bibleBooksHash[chapter.bookId]) {
 			bibleBooksHash[chapter.bookId] = true
 			const book = { ...chapter }
@@ -132,8 +129,8 @@ async function bibleCacheMonad(fn: Function) {
 
 async function _getChaptersByBookId(bookId: string) {
 	return bibleChaptersCache!
-		.filter(item => item.bookId.toLowerCase() === bookId.toLowerCase())
-		.sort((a, b) => a.sequenceNumber - b.sequenceNumber)
+		.filter((item:any) => item.bookId.toLowerCase() === bookId.toLowerCase())
+		.sort((a:any, b:any) => a.sequenceNumber - b.sequenceNumber)
 }
 
 async function _getChapterBySequenceNumber(sequenceNumber: number) {
@@ -184,14 +181,6 @@ export async function getBooks() {
 	return bibleCacheMonad(() => _getBooks())
 }
 
-export async function getTranslations() {
-	return bibleCacheMonad(() => bibleTranslationsCache)
-}
-
-export async function getTranslationById(translationId: string) {
-	return bibleCacheMonad(() => bibleTranslationsCache?.find(tr => tr.id == translationId))
-}
-
 export async function getPreviousChapterBySequenceNumber(sequenceNumber: number) {
 	return bibleCacheMonad(() => _getPreviousChapterBySequenceNumber(sequenceNumber))
 }
@@ -212,14 +201,11 @@ export interface BibleSearchMeta {
 	pagination: BibleSearchMetaPagination
 }
 
-export async function searchBible(bibleId: string, query: string, page: number, perPage: number) {
-
-	const url = `${Config.bibleApiUrl}search?query=${encodeURI(query)}&fileset_id=${bibleId}&limit=${perPage}&page=${page}&v=4`
+export async function searchBible(query: string, page: number, perPage: number) {
+	const url = `${Config.bibleApiUrl}search?query=${encodeURI(query)}&fileset_id=ENGKJV&limit=${perPage}&page=${page}&v=4`
 
 	const searchResponse = await fetch(url)
 	const searchResults = await searchResponse.json()
-
-	console.log(searchResults)
 
 	return searchResults.verses as {
 		data: BibleVerse[], meta: BibleSearchMeta
@@ -264,8 +250,49 @@ export async function isBibleReference(query: string) {
 		chapter: parseInt(chapter, 10),
 		verse_start: parseInt(startVerse),
 		verse_end: parseInt(endVerse || startVerse),
-		verse_text: ''
+		text: '',
+		highlight: ""
 	}
 	return bibleVerseRef
 
+}
+
+export async function highlightVerses(book: string, chapter: string, verses: number[], color: string) {
+	var currentlyHighlightedVerses: any = await getHighlightedVerses(book, chapter);
+	var newCurrentlyHighlightedVerses: any[] = [];
+	if (!currentlyHighlightedVerses) {
+		await PocketBaseClient.records.create("highlights", { book_id: book, chapter, user: PocketBaseClient.authStore.model?.id, verse_data: [] }).then(async () => {
+			currentlyHighlightedVerses = await getHighlightedVerses(book, chapter);
+			newCurrentlyHighlightedVerses = currentlyHighlightedVerses.verse_data || [];
+		})
+	}
+	else {
+		newCurrentlyHighlightedVerses = currentlyHighlightedVerses.verse_data || [];
+	}
+	verses.forEach((verse: any) => {
+		let found = false;
+		newCurrentlyHighlightedVerses.forEach((v: any, i: number) => {
+			if (v.verse.toString() == verse.toString()) {
+				if (color != "none") {
+					newCurrentlyHighlightedVerses[i].color = color;
+					found = true;
+					return;
+				}
+				else {
+					newCurrentlyHighlightedVerses.splice(i, 1);
+					found = true;
+					return;
+				}
+			}
+		})
+		if (!found) {
+			newCurrentlyHighlightedVerses.push({ verse, color });
+		}
+	});
+	if (newCurrentlyHighlightedVerses[0] === (undefined || null)) {
+		return PocketBaseClient.records.delete("highlights", currentlyHighlightedVerses.id);
+	}
+	else {
+		return PocketBaseClient.records.update("highlights", currentlyHighlightedVerses.id, { verse_data: newCurrentlyHighlightedVerses });
+	}
 }

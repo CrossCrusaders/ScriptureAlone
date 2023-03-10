@@ -5,9 +5,9 @@
     <div class="flex flex-col md:flex-row gap-2 justify-between text-white">
       <div class="mb-8 md:w-4/12">
         <p class="font-bold text-3xl mb-2">Scripture Alone</p>
-        <p class="mb-2"><a href="/">Home</a> · <a href="#">About</a> · <a href="#">Uptime Status</a>
-          · <a href="#">Updates</a> · <a href="#">Contact</a></p>
-        <p class="text-xs">Scripture Alone © 2022</p>
+        <p class="mb-2"><RouterLink to="/">Home</RouterLink> · <a href="https://stats.uptimerobot.com/WzG2Eu6WXG" target="_blank">Uptime Status</a>
+          · <RouterLink to="/versions">Updates</RouterLink></p>
+        <p class="text-xs">Scripture Alone © {{ (new Date).getFullYear() }}</p>
       </div>
       <div class="mb-8 md:w-4/12 flex flex-col items-center">
         <p class="flex flex-row w-full md:justify-center">
@@ -21,7 +21,7 @@
         </div>
         <div>
           <p>Scripture Alone is a Bible app created by <a class="link underline text-red-200"
-              href="https://crosscrusaders.com/">Cross
+              href="https://crosscrusaders.com">Cross
               Crusaders</a> in order to combat the toleration of the false teachers in other apps and to bring forward
             suppressed Bible preachers with doctrinally sound content for the current time we are living in.</p>
         </div>
@@ -41,7 +41,7 @@
             class="fa-brands fa-youtube fa-xl pr-3 transition duration-150 ease-in-out hover:text-gray-400"></span></a>
           <a href="https://discord.gg/3BdrYPtE38" target="blank"><span
             class="fa-brands fa-discord fa-xl pr-3 transition duration-150 ease-in-out hover:text-gray-400"></span></a>
-          <a href="https://github.com/ItsShawn/itsshawn.github.io/" target="blank"><span
+          <a href="https://github.com/CrossCrusaders/scripturealone.app" target="blank"><span
             class="fa fa-github fa-xl pr-3 transition duration-150 ease-in-out hover:text-gray-400"
             aria-hidden="true"></span></a>
         </div>

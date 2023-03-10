@@ -13,7 +13,6 @@
               }}</strong>
             </h1>
           </div>
-          <BibleTranslationSelect v-model="currentBibleId"></BibleTranslationSelect>
           <p class="flex-auto"></p>
           <p class="text-sm sm:text-md">Page
             <AppSelect v-model="currentPage">
@@ -71,25 +70,18 @@ import { onMounted, ref, watch } from 'vue';
 import { useRoute, useRouter } from 'vue-router';
 import AppLayout from '../../components/templates/AppLayout.vue'
 import PageContent from '../../components/templates/PageContent.vue'
-import { getUserSetting, setUserSetting, setUserSettings } from '../../user/services/LocalUserSettingsService'
 import { BibleBook } from '../BibleBook';
-import { BibleTranslation } from '../BibleTranslation';
 import { BibleVerse } from '../BibleVerse';
 import {
-  bibleIdKjv,
   BibleSearchMeta,
   getBooks,
-  getTranslations,
   searchBible,
   getReferenceFromVerse
 } from '../services/BibleService';
 import Spinner from '../../components/atoms/Spinner.vue';
-import BibleTranslationSelect from '../../components/organisms/BibleTranslationSelect.vue';
-import { BiblePageQueryParams } from './BibleReader.vue';
 import AppSelect from '../../components/atoms/form-controls/AppSelect.vue';
 import AppButton from '../../components/atoms/form-controls/AppButton.vue';
 import AppInput from '../../components/atoms/form-controls/AppInput.vue';
-import { formatMaxLengthText } from '../../core/services/FormatService';
 import Icon from '../../components/atoms/Icon.vue';
 import {
   isBibleReference,
@@ -110,12 +102,10 @@ const router = useRouter()
 
 const currentQuery = ref('')
 const currentPage = ref<number | string>(1)
-const currentBibleId = ref<string>('ENGKJV')
 const currentBibleSearchData = ref<BibleVerse[]>([])
 const currentBibleSearchMeta = ref<Partial<BibleSearchMeta>>({})
 
 const availableBooks = ref<BibleBook[]>([])
-const availableTranslations = ref<BibleTranslation[]>([])
 
 const pageLoading = ref(true)
 
@@ -123,49 +113,34 @@ onMounted(async () => {
 
   const queryParams: BibleSearchQueryParams = route.query as any
 
-  let { q, t: bibleId, page } = queryParams
+  let { q, page } = queryParams
 
   // If there is no query, redirect to the home page
   if (!q)
-    router.replace('/')
-
-  const lastSearchedBibleId = getUserSetting('lastSearchedBibleId')
-  // If there is no bible id specified
-  // try to grab the last one from the settings
-  if (!bibleId) {
-    bibleId = (lastSearchedBibleId || getUserSetting('lastReadBibleId') || bibleIdKjv) as string
-    if (!lastSearchedBibleId || lastSearchedBibleId !== bibleId)
-      setUserSetting('lastSearchedBibleId', bibleId)
-  }
+    router.push('/')
 
   if (!page)
     page = 1
 
   currentQuery.value = q
   currentPage.value = parseInt(page as string)
-  currentBibleId.value = bibleId
 
-
-  const [books, translations, _] = await Promise.all([getBooks(), getTranslations(), search()])
+  const [books, _] = await Promise.all([getBooks(), search()])
 
   availableBooks.value = books
-  availableTranslations.value = translations
 
   pageLoading.value = false
 
-  watch([currentBibleId, currentPage, currentQuery], ([newBibleId], [oldBibleId]) => {
+  watch([currentPage, currentQuery], () => {
     search()
-    if (newBibleId !== oldBibleId) {
-      setUserSettings({ lastSearchedBibleId: newBibleId })
-    }
   })
 })
 
 const search = async () => {
   pageLoading.value = true
   try {
-    router.replace({ path: '/bible/search', query: { q: currentQuery.value, bibleId: currentBibleId.value, page: currentPage.value } })
-    const { data, meta } = await searchBible(currentBibleId.value, currentQuery.value, currentPage.value as number, resultsPerPage)
+    router.push({ path: '/bible/search', query: { q: currentQuery.value, page: currentPage.value } })
+    const { data, meta } = await searchBible(currentQuery.value, currentPage.value as number, resultsPerPage)
 
     currentBibleSearchData.value = data
     currentBibleSearchMeta.value = meta
@@ -179,14 +154,13 @@ const search = async () => {
 const formatVerseSearchResultText = (verse: BibleVerse) => {
   // TODO: when we implement our own search API we can tokenize searching with \b
   // const verseText = verse.verse_text.replace(new RegExp('\\b(' + currentQuery.value + ')\\b', 'ig'), `<strong>$1</strong>`)
-  const verseText = verse.verse_text.replace(new RegExp('(' + currentQuery.value + ')', 'ig'), `<strong>$1</strong>`)
+  const verseText = verse.verse_text?.replace(new RegExp('(' + currentQuery.value + ')', 'ig'), `<strong>$1</strong>`)
   // return `<span>${getReferenceFromVerse(verse)}</span> - <span>${verseText}</span>` // INLINE REFERENCE FORMAT
   return `<span>${verseText}</span>` // TEXT ONLY FORMAT
 }
 const onVerseClicked = (verse: BibleVerse) => {
   router.push({
     path: '/bible', query: {
-      t: currentBibleId.value,
       b: verse.book_id,
       c: verse.chapter,
       vs: verse.verse_start,
@@ -223,17 +197,18 @@ const handleSearchSubmit = async (event: Event) => {
   if (searchModel.value && searchModel.value.length) {
     const result = await isBibleReference(searchModel.value);
     if (result) {
-      const { data, meta } = await searchBible(currentBibleId.value, currentQuery.value, currentPage.value as number, resultsPerPage)
+      const { data, meta } = await searchBible(currentQuery.value, currentPage.value as number, resultsPerPage)
 
       currentBibleSearchData.value = data
       currentBibleSearchMeta.value = meta
       window.scrollTo({ top: 0 })
-      return router.replace(
+      return router.push(
         `/bible?t=${searchTranslationId.value}&c=${result.chapter}&b=${result.book_id}&vs=${result.verse_start}&ve=${result.verse_end}`
       );
     } else {
       currentQuery.value = searchModel.value;
-      return router.replace(
+      currentPage.value = 1;
+      return router.push(
         `/bible/search?q=${encodeURI(
           searchModel.value.substring(0, 255)
         )}&t=${searchTranslationId.value}`

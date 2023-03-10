@@ -71,3 +71,8 @@ export const formatName = (firstName: string | any, lastName?: string) => {
   return `${fName} ${lName}`.trim()
 
 }
+
+export const formatDate = (date: any) => {
+  date = new Date(date);  
+  return `${date.getMonth()+1}/${date.getDay()}/${date.getFullYear()}`;
+}

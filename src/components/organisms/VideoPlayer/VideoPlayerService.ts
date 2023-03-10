@@ -27,7 +27,7 @@ export function useGlobalVideoPlayer() {
     },
     setGlobalVideoPayload(payload: GlobalVideoPayload) {
       globalVideoPayload.value = { ...payload }
-      setLocalCacheItem(videoStateLocalStorageKey, globalVideoPayload.value)
+      setLocalCacheItem(videoStateLocalStorageKey, globalVideoPayload.value, true)
     },
     globalVideoPayload,
     globalVideoState

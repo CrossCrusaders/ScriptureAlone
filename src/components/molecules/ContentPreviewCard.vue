@@ -23,7 +23,7 @@
             '', 48)
       }}
       </p>
-      <p class="text-slate-200 text-md text-sm font-body mb-0 z-20">
+      <p v-if="props.showTag" class="text-slate-200 text-md text-sm font-body mb-0 z-20">
         Tags:
         <span v-for="(category, innerIndex) in props.content?.categories">
           <a v-if="props.content?.categories?.length != innerIndex + 1">{{ category.label }},&nbsp;</a>
@@ -49,8 +49,7 @@ import {
   formatMaxLengthText,
   formatName
 } from '../../core/services/FormatService'
-import { computed, reactive } from 'vue'
-import { getBucketUrl } from '../../api/BucketStorageService'
+import { computed } from 'vue'
 import AppButton from '../atoms/form-controls/AppButton.vue'
 import FavoriteButton from '../atoms/FavoriteButton.vue'
 export interface ContentPreview {
@@ -69,12 +68,14 @@ export interface ContentProps {
   buttonTitle?: string
   isFavorite?: boolean
   showFavorite?: boolean
+  showTag?: boolean
 }
 
 const props = withDefaults(defineProps<ContentProps>(), {
   buttonTitle: 'View Details',
   isFavorite: false,
-  showFavorite: false
+  showFavorite: false,
+  showTag: true
 })
 const emit = defineEmits([
   'click:button',

@@ -5,7 +5,12 @@ const config: CapacitorConfig = {
   appName: 'Scripture Alone',
   webDir: 'dist',
   bundledWebRuntime: false,
-  hideLogs: true
+  hideLogs: true,
+  plugins: {
+    PushNotifications: {
+      presentationOptions: ["badge", "sound", "alert"],
+    },
+  },
 };
 
 export default config;

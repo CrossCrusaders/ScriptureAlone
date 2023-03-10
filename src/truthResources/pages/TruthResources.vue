@@ -2,7 +2,7 @@
     <AppLayout>
       <PageContent>
         <!-- Truth Resources Hero -->
-        <PageHero>
+        <PageHero class="mb-4">
           <template v-slot:image>
             <img src="/logo-bible.png" class="object-contain hidden md:block max-h-32" />
           </template>
@@ -48,7 +48,7 @@ import Divider from '../../components/atoms/Divider.vue'
 
 import TruthResourcesList from '../components/TruthResourcesList.vue'
 
-import { getSearch } from '../../search/services/searchService'
+import { getSearch } from '../../search/services/SearchService'
 
 const Video = ref();
 const NonVideo = ref();
@@ -56,8 +56,8 @@ const NonVideo = ref();
 const router = useRouter();
 
 onMounted(async () => {
-  const recentTruthResourcesVideoPromise = await getSearch("truthResources", "", 1, 6, { filter: "isVideo = true" });
-  const recentTruthResourcesNonVideoPromise = await getSearch("truthResources", "", 1, 6, { filter: "isVideo = false" });
+  const recentTruthResourcesVideoPromise = await getSearch("truthResources", "", 1, 6, [], { filter: "isVideo = true" });
+  const recentTruthResourcesNonVideoPromise = await getSearch("truthResources", "", 1, 6, [], { filter: "isVideo = false" });
   const [recentTruthResourcesVideo, recentTruthResourcesNonVideo] = await Promise.all([recentTruthResourcesVideoPromise, recentTruthResourcesNonVideoPromise]);
   
   Video.value = recentTruthResourcesVideo.items

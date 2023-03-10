@@ -1,0 +1,405 @@
+{
+  "info": "(To the chief Musician, <em>A Psalm</em> of David, the servant of the LORD, who spake unto the LORD the words of this song in the day <em>that</em> the LORD delivered him from the hand of all his enemies, and from the hand of Saul: And he said,)",
+  "verses": [
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 18,
+      "verse_start": 1,
+      "verse_end": 1,
+      "text": "I will love thee, O LORD, my strength."
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 18,
+      "verse_start": 2,
+      "verse_end": 2,
+      "text": "The LORD <em>is</em> my rock, and my fortress, and my deliverer; my God, my strength, in whom I will trust; my buckler, and the horn of my salvation, <em>and</em> my high tower."
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 18,
+      "verse_start": 3,
+      "verse_end": 3,
+      "text": "I will call upon the LORD, <em>who is worthy</em> to be praised: so shall I be saved from mine enemies."
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 18,
+      "verse_start": 4,
+      "verse_end": 4,
+      "text": "The sorrows of death compassed me, and the floods of ungodly men made me afraid."
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 18,
+      "verse_start": 5,
+      "verse_end": 5,
+      "text": "The sorrows of hell compassed me about: the snares of death prevented me."
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 18,
+      "verse_start": 6,
+      "verse_end": 6,
+      "text": "In my distress I called upon the LORD, and cried unto my God: he heard my voice out of his temple, and my cry came before him, <em>even</em> into his ears."
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 18,
+      "verse_start": 7,
+      "verse_end": 7,
+      "text": "Then the earth shook and trembled; the foundations also of the hills moved and were shaken, because he was wroth."
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 18,
+      "verse_start": 8,
+      "verse_end": 8,
+      "text": "There went up a smoke out of his nostrils, and fire out of his mouth devoured: coals were kindled by it."
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 18,
+      "verse_start": 9,
+      "verse_end": 9,
+      "text": "He bowed the heavens also, and came down: and darkness <em>was</em> under his feet."
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 18,
+      "verse_start": 10,
+      "verse_end": 10,
+      "text": "And he rode upon a cherub, and did fly: yea, he did fly upon the wings of the wind."
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 18,
+      "verse_start": 11,
+      "verse_end": 11,
+      "text": "He made darkness his secret place; his pavilion round about him <em>were</em> dark waters <em>and</em> thick clouds of the skies."
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 18,
+      "verse_start": 12,
+      "verse_end": 12,
+      "text": "At the brightness <em>that was</em> before him his thick clouds passed, hail <em>stones</em> and coals of fire."
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 18,
+      "verse_start": 13,
+      "verse_end": 13,
+      "text": "The LORD also thundered in the heavens, and the Highest gave his voice; hail <em>stones</em> and coals of fire."
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 18,
+      "verse_start": 14,
+      "verse_end": 14,
+      "text": "Yea, he sent out his arrows, and scattered them; and he shot out lightnings, and discomfited them."
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 18,
+      "verse_start": 15,
+      "verse_end": 15,
+      "text": "Then the channels of waters were seen, and the foundations of the world were discovered at thy rebuke, O LORD, at the blast of the breath of thy nostrils."
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 18,
+      "verse_start": 16,
+      "verse_end": 16,
+      "text": "He sent from above, he took me, he drew me out of many waters."
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 18,
+      "verse_start": 17,
+      "verse_end": 17,
+      "text": "He delivered me from my strong enemy, and from them which hated me: for they were too strong for me."
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 18,
+      "verse_start": 18,
+      "verse_end": 18,
+      "text": "They prevented me in the day of my calamity: but the LORD was my stay."
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 18,
+      "verse_start": 19,
+      "verse_end": 19,
+      "text": "He brought me forth also into a large place; he delivered me, because he delighted in me."
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 18,
+      "verse_start": 20,
+      "verse_end": 20,
+      "text": "The LORD rewarded me according to my righteousness; according to the cleanness of my hands hath he recompensed me."
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 18,
+      "verse_start": 21,
+      "verse_end": 21,
+      "text": "For I have kept the ways of the LORD, and have not wickedly departed from my God."
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 18,
+      "verse_start": 22,
+      "verse_end": 22,
+      "text": "For all his judgments <em>were</em> before me, and I did not put away his statutes from me."
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 18,
+      "verse_start": 23,
+      "verse_end": 23,
+      "text": "I was also upright before him, and I kept myself from mine iniquity."
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 18,
+      "verse_start": 24,
+      "verse_end": 24,
+      "text": "Therefore hath the LORD recompensed me according to my righteousness, according to the cleanness of my hands in his eyesight."
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 18,
+      "verse_start": 25,
+      "verse_end": 25,
+      "text": "With the merciful thou wilt shew thyself merciful; with an upright man thou wilt shew thyself upright;"
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 18,
+      "verse_start": 26,
+      "verse_end": 26,
+      "text": "With the pure thou wilt shew thyself pure; and with the froward thou wilt shew thyself froward."
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 18,
+      "verse_start": 27,
+      "verse_end": 27,
+      "text": "For thou wilt save the afflicted people; but wilt bring down high looks."
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 18,
+      "verse_start": 28,
+      "verse_end": 28,
+      "text": "For thou wilt light my candle: the LORD my God will enlighten my darkness."
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 18,
+      "verse_start": 29,
+      "verse_end": 29,
+      "text": "For by thee I have run through a troop; and by my God have I leaped over a wall."
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 18,
+      "verse_start": 30,
+      "verse_end": 30,
+      "text": "<em>As for</em> God, his way <em>is</em> perfect: the word of the LORD is tried: he <em>is</em> a buckler to all those that trust in him."
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 18,
+      "verse_start": 31,
+      "verse_end": 31,
+      "text": "For who <em>is</em> God save the LORD? or who <em>is</em> a rock save our God?"
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 18,
+      "verse_start": 32,
+      "verse_end": 32,
+      "text": "<em>It is</em> God that girdeth me with strength, and maketh my way perfect."
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 18,
+      "verse_start": 33,
+      "verse_end": 33,
+      "text": "He maketh my feet like hinds' <em>feet</em>, and setteth me upon my high places."
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 18,
+      "verse_start": 34,
+      "verse_end": 34,
+      "text": "He teacheth my hands to war, so that a bow of steel is broken by mine arms."
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 18,
+      "verse_start": 35,
+      "verse_end": 35,
+      "text": "Thou hast also given me the shield of thy salvation: and thy right hand hath holden me up, and thy gentleness hath made me great."
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 18,
+      "verse_start": 36,
+      "verse_end": 36,
+      "text": "Thou hast enlarged my steps under me, that my feet did not slip."
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 18,
+      "verse_start": 37,
+      "verse_end": 37,
+      "text": "I have pursued mine enemies, and overtaken them: neither did I turn again till they were consumed."
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 18,
+      "verse_start": 38,
+      "verse_end": 38,
+      "text": "I have wounded them that they were not able to rise: they are fallen under my feet."
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 18,
+      "verse_start": 39,
+      "verse_end": 39,
+      "text": "For thou hast girded me with strength unto the battle: thou hast subdued under me those that rose up against me."
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 18,
+      "verse_start": 40,
+      "verse_end": 40,
+      "text": "Thou hast also given me the necks of mine enemies; that I might destroy them that hate me."
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 18,
+      "verse_start": 41,
+      "verse_end": 41,
+      "text": "They cried, but <em>there was</em> none to save <em>them: even</em> unto the LORD, but he answered them not."
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 18,
+      "verse_start": 42,
+      "verse_end": 42,
+      "text": "Then did I beat them small as the dust before the wind: I did cast them out as the dirt in the streets."
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 18,
+      "verse_start": 43,
+      "verse_end": 43,
+      "text": "Thou hast delivered me from the strivings of the people; <em>and</em> thou hast made me the head of the heathen: a people <em>whom</em> I have not known shall serve me."
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 18,
+      "verse_start": 44,
+      "verse_end": 44,
+      "text": "As soon as they hear of me, they shall obey me: the strangers shall submit themselves unto me."
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 18,
+      "verse_start": 45,
+      "verse_end": 45,
+      "text": "The strangers shall fade away, and be afraid out of their close places."
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 18,
+      "verse_start": 46,
+      "verse_end": 46,
+      "text": "The LORD liveth; and blessed <em>be</em> my rock; and let the God of my salvation be exalted."
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 18,
+      "verse_start": 47,
+      "verse_end": 47,
+      "text": "<em>It is</em> God that avengeth me, and subdueth the people under me."
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 18,
+      "verse_start": 48,
+      "verse_end": 48,
+      "text": "He delivereth me from mine enemies: yea, thou liftest me up above those that rise up against me: thou hast delivered me from the violent man."
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 18,
+      "verse_start": 49,
+      "verse_end": 49,
+      "text": "Therefore will I give thanks unto thee, O LORD, among the heathen, and sing praises unto thy name."
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 18,
+      "verse_start": 50,
+      "verse_end": 50,
+      "text": "Great deliverance giveth he to his king; and sheweth mercy to his anointed, to David, and to his seed for evermore."
+    }
+  ]
+}

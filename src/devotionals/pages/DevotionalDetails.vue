@@ -17,24 +17,29 @@
           <h1 class="font-title font-bold text-4xl mb-2 text-slate-800">{{ devotionalDetail.title }}</h1>
           <p class="text-slate-500">Updated: {{ devotionalLastUpdatedDisplay }} &bullet;
             <span class="text-slate-500" v-if="devotionalDetail.duration">
-              Duration: {{ formatMillisecondsAsReadableDuration(
-                devotionalDetail.duration)
+              Duration: {{
+                formatMillisecondsAsReadableDuration(
+                  devotionalDetail.duration)
               }}
             </span>
           </p>
 
-          <p v-if="devotionalDetail.devotionalDate" class="mb-8 text-slate-500 font-bold">{{ devotionalCreatedDisplay }}</p>
+          <p v-if="devotionalDetail.devotionalDate" class="mb-8 text-slate-500 font-bold">{{ devotionalCreatedDisplay }}
+          </p>
           <p class="mb-8 text-slate-700 leading-normal">
             {{ devotionalDetail.description }}
           </p>
           <!-- Buttons -->
           <div class="flex gap-4 mb-16">
             <AppButton variant="primary" @click="onPlayAudioClicked()"
-              v-if="devotionalAudioSrc && globalAudioState !== AudioPlayerState.playing && globalVideoState !== VideoPlayerState.playing">{{ 'Play Audio' }}
+              v-if="devotionalAudioSrc && globalAudioState !== AudioPlayerState.playing && globalVideoState !== VideoPlayerState.playing">
+              {{ 'Play Audio' }}
             </AppButton>
-            <AppButton v-if="devotionalAudioSrc && globalAudioState === AudioPlayerState.playing" @click="globalAudioState = AudioPlayerState.hidden" variant="accent">{{ 'Close' }}
+            <AppButton v-if="devotionalAudioSrc && globalAudioState === AudioPlayerState.playing"
+              @click="globalAudioState = AudioPlayerState.hidden" variant="accent">{{ 'Close' }}
             </AppButton>
-            <AppButton v-if="devotionalAudioSrc && globalAudioState === AudioPlayerState.playing" to="/bible" variant="accent">{{ 'Open Bible' }}
+            <AppButton v-if="devotionalAudioSrc && globalAudioState === AudioPlayerState.playing" to="/bible"
+              variant="accent">{{ 'Open Bible' }}
             </AppButton>
 
             <AppButton variant="primary" @click="onPlayVideoClicked()"
@@ -48,15 +53,22 @@
           </div>
           <!-- Video -->
           <Transition name="video">
-            <video v-if="devotionalVideoSrc && globalVideoState === VideoPlayerState.playing" class="w-full"
-              :src="devotionalVideoSrc" controlslist="nodownload" autoplay="true" controls></video>
-            <div class="w-full flex flex-col gap-3" v-else-if="!loading && !devotionalVideoSrc && !!devotionalDetail && devotionalDetail.contentTitle != undefined && devotionalDetail.content != undefined">
+            <vue-plyr v-if="devotionalVideoSrc && globalVideoState === VideoPlayerState.playing">
+              <video controls>
+                <source size="1080" :src="devotionalVideoSrc" type="video/mp4" />
+              </video>
+            </vue-plyr>
+            <div class="w-full flex flex-col gap-3"
+              v-else-if="!loading && !devotionalVideoSrc && !!devotionalDetail && devotionalDetail.contentTitle != undefined && devotionalDetail.content != undefined">
               <Divider></Divider>
               <div class="flex justify-center">
                 <p class="font-title text-3xl font-bold">{{ devotionalDetail.contentTitle }}</p>
               </div>
-              <p v-if="devotionalDetail.vVerseE != devotionalDetail.vVerseS"><span class="font-bold text-xl">{{ bookName + " " + devotionalDetail.vChap + ":" + devotionalDetail.vVerseS + "-" + devotionalDetail.vVerseE }}</span><span class="font-normal text-xl">{{ ' - "' + verseText + '"' }}</span></p>
-              <p v-else><span class="font-bold text-xl">{{ bookName + " " + devotionalDetail.vChap + ":" + devotionalDetail.vVerseS }}</span><span class="font-normal text-xl">{{ ' - "' + verseText + '"' }}</span></p>
+              <p v-if="devotionalDetail.vVerseE != devotionalDetail.vVerseS"><span class="font-bold text-xl">{{ bookName
+              + " " + devotionalDetail.vChap + ":" + devotionalDetail.vVerseS + "-" + devotionalDetail.vVerseE
+              }}</span><span class="font-normal text-xl">{{ ' - "' + verseText + '"' }}</span></p>
+              <p v-else><span class="font-bold text-xl">{{ bookName + " " + devotionalDetail.vChap + ":" +
+              devotionalDetail.vVerseS }}</span><span class="font-normal text-xl" v-html="' - ' + verseText + ''"></span></p>
               <p v-html="devotionalDetail.content"></p>
             </div>
           </Transition>
@@ -79,7 +91,6 @@ import AppButton from '../../components/atoms/form-controls/AppButton.vue'
 import Divider from '../../components/atoms/Divider.vue'
 import AuthorPreviewColumn from '../../components/molecules/AuthorPreviewColumn.vue'
 import UserRecommendationFooter from '../../components/organisms/UserRecommendationFooter.vue'
-import { formatAddress } from '../../core/services/FormatService'
 import { getDevotional } from '../services/DevotionalService'
 import { useRoute } from 'vue-router'
 import { format } from 'date-fns'
@@ -105,18 +116,16 @@ const {
 const loading = ref(true)
 const devotionalDetail = ref<Devotional>()
 const route = useRoute()
-const showPlayerModal = ref(false)
 
 const verseText = ref<string>();
 const bookName = ref<string>();
 
 onMounted(async () => {
-  // The Truth Resource ID
+  // The Devotional ID
   let { id } = route.params
 
   if (Array.isArray(id))
     id = id[0]
-  console.log(id)
   const devotional = await getDevotional(id);
   devotionalDetail.value = devotional;
   devotionalDetail.value.content = devotionalDetail.value?.content?.replaceAll('\n', "<br>");
@@ -167,33 +176,35 @@ const onPlayVideoClicked = () => {
 
 const onPlayAudioClicked = () => {
 
-if (!devotionalDetail.value)
-  return
-const { title, id, author } = devotionalDetail.value
+  if (!devotionalDetail.value)
+    return
+  const { title, id, author } = devotionalDetail.value
 
-setGlobalAudioPayload({
-  id: id,
-  title: title,
-  author: formatName(author),
-  currentTime: 0,
-  url: devotionalAudioSrc.value,
-  contentPage: `/devotionals/${id}`
-})
+  setGlobalAudioPayload({
+    id: id,
+    title: title,
+    author: formatName(author),
+    currentTime: 0,
+    url: devotionalAudioSrc.value,
+    contentPage: `/devotionals/${id}`
+  })
 
-setGlobalAudioState(AudioPlayerState.playing)
+  setGlobalAudioState(AudioPlayerState.playing)
 }
 
-async function getVerse(){
-  if(devotionalDetail.value?.content != "" && devotionalDetail.value?.contentTitle != "" && devotionalDetail.value?.vBook != "" && devotionalDetail.value?.vChap != 0){
-    const verseTxt = await getVerses("ENGKJV", devotionalDetail.value?.vBook || "", devotionalDetail.value?.vChap || 1, devotionalDetail.value?.vVerseS, devotionalDetail.value?.vVerseE)
-    bookName.value = verseTxt[0].book_name;
+async function getVerse() {
+  if (devotionalDetail.value?.content != "" && devotionalDetail.value?.contentTitle != "" && devotionalDetail.value?.vBook != "" && devotionalDetail.value?.vChap != 0) {
+    const chapterData = await getVerses(devotionalDetail.value?.vBook || "", devotionalDetail.value?.vChap || 1, devotionalDetail.value?.vVerseS, devotionalDetail.value?.vVerseE)
+    bookName.value = chapterData.verses[0].book_name;
     var FinishedVerseText = "";
-    verseTxt.forEach((verse) => {
-      FinishedVerseText += `${verse.verse_start} ${verse.verse_text} `;
+    chapterData.verses.forEach((verse, index) => {
+      if(index == 0 && index == chapterData.verses.length-1)
+        FinishedVerseText += verse.text;
+      else
+        FinishedVerseText += `${verse.verse_start} ${verse.text} `;
     });
     return FinishedVerseText.trim();
   }
   return;
 }
 </script>
-  

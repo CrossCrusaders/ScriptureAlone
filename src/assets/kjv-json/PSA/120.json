@@ -1,0 +1,61 @@
+{
+  "info": "(A Song of degrees.)",
+  "verses": [
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 120,
+      "verse_start": 1,
+      "verse_end": 1,
+      "text": "In my distress I cried unto the LORD, and he heard me."
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 120,
+      "verse_start": 2,
+      "verse_end": 2,
+      "text": "Deliver my soul, O LORD, from lying lips, <em>and</em> from a deceitful tongue."
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 120,
+      "verse_start": 3,
+      "verse_end": 3,
+      "text": "What shall be given unto thee? or what shall be done unto thee, thou false tongue?"
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 120,
+      "verse_start": 4,
+      "verse_end": 4,
+      "text": "Sharp arrows of the mighty, with coals of juniper."
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 120,
+      "verse_start": 5,
+      "verse_end": 5,
+      "text": "Woe is me, that I sojourn in Mesech, <em>that</em> I dwell in the tents of Kedar!"
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 120,
+      "verse_start": 6,
+      "verse_end": 6,
+      "text": "My soul hath long dwelt with him that hateth peace."
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 120,
+      "verse_start": 7,
+      "verse_end": 7,
+      "text": "I <em>am for</em> peace: but when I speak, they <em>are</em> for war."
+    }
+  ]
+}

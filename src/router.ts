@@ -1,5 +1,6 @@
 // Home
 import Home from './home/pages/Home.vue'
+import FourZeroFour from './home/pages/404.vue'
 
 // Bible Reader
 import BibleReader from './bible/pages/BibleReader.vue'
@@ -44,6 +45,13 @@ import TruthResources from './truthResources/pages/TruthResources.vue'
 import TruthResourcesDetails from './truthResources/pages/TruthResourcesDetails.vue'
 import TruthResourceTextMaterials from './truthResources/pages/TextMaterials.vue'
 import TruthResourceVideo from './truthResources/pages/Videos.vue'
+
+// Notes
+import NoteViewer from './notes/pages/NoteViewer.vue'
+
+// Versions
+import Updates from './versions/pages/Updates.vue'
+import VersionDetails from './versions/pages/VersionDetails.vue'
 
 import ComponentTestPage from './test/ComponentTestPage.vue'
 
@@ -95,7 +103,17 @@ const routes = [
   { path: '/truth-resources', component: TruthResources },
   { path: '/truth-resources/:id', component: TruthResourcesDetails },
   { path: '/truth-resources/text-materials', component: TruthResourceTextMaterials },
-  { path: '/truth-resources/videos', component: TruthResourceVideo }
+  { path: '/truth-resources/videos', component: TruthResourceVideo },
+
+  // Notes
+  { path: '/note/:id', component: NoteViewer },
+
+  // Versions
+  { path: '/versions', component: Updates },
+  { path: '/versions/:id', component: VersionDetails },
+
+  // 404
+  { path: '/:pathMatch(.*)', component: FourZeroFour }
 ]
 
 if (Config.environment === 'dev')
@@ -105,7 +123,6 @@ const router = VueRouter.createRouter({
   history: VueRouter.createWebHistory(),
   routes: routes,
   scrollBehavior(to, from, savedPosition) {
-
     if (to.hash) {
       return {
         selector: to.hash,

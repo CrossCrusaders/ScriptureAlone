@@ -1,0 +1,269 @@
+{
+  "info": "",
+  "verses": [
+    {
+      "book_id": "JHN",
+      "book_name": "John",
+      "chapter": 16,
+      "verse_start": 1,
+      "verse_end": 1,
+      "text": "\"JESUS_START\" These things have I spoken unto you, that ye should not be offended. \"JESUS_END\""
+    },
+    {
+      "book_id": "JHN",
+      "book_name": "John",
+      "chapter": 16,
+      "verse_start": 2,
+      "verse_end": 2,
+      "text": "\"JESUS_START\" They shall put you out of the synagogues: yea, the time cometh, that whosoever killeth you will think that he doeth God service. \"JESUS_END\""
+    },
+    {
+      "book_id": "JHN",
+      "book_name": "John",
+      "chapter": 16,
+      "verse_start": 3,
+      "verse_end": 3,
+      "text": "\"JESUS_START\" And these things will they do unto you, because they have not known the Father, nor me. \"JESUS_END\""
+    },
+    {
+      "book_id": "JHN",
+      "book_name": "John",
+      "chapter": 16,
+      "verse_start": 4,
+      "verse_end": 4,
+      "text": "\"JESUS_START\" But these things have I told you, that when the time shall come, ye may remember that I told you of them. And these things I said not unto you at the beginning, because I was with you. \"JESUS_END\""
+    },
+    {
+      "book_id": "JHN",
+      "book_name": "John",
+      "chapter": 16,
+      "verse_start": 5,
+      "verse_end": 5,
+      "text": "\"JESUS_START\" But now I go my way to him that sent me; and none of you asketh me, Whither goest thou? \"JESUS_END\""
+    },
+    {
+      "book_id": "JHN",
+      "book_name": "John",
+      "chapter": 16,
+      "verse_start": 6,
+      "verse_end": 6,
+      "text": "\"JESUS_START\" But because I have said these things unto you, sorrow hath filled your heart. \"JESUS_END\""
+    },
+    {
+      "book_id": "JHN",
+      "book_name": "John",
+      "chapter": 16,
+      "verse_start": 7,
+      "verse_end": 7,
+      "text": "\"JESUS_START\" Nevertheless I tell you the truth; It is expedient for you that I go away: for if I go not away, the Comforter will not come unto you; but if I depart, I will send him unto you. \"JESUS_END\""
+    },
+    {
+      "book_id": "JHN",
+      "book_name": "John",
+      "chapter": 16,
+      "verse_start": 8,
+      "verse_end": 8,
+      "text": "\"JESUS_START\" And when he is come, he will reprove the world of sin, and of righteousness, and of judgment: \"JESUS_END\""
+    },
+    {
+      "book_id": "JHN",
+      "book_name": "John",
+      "chapter": 16,
+      "verse_start": 9,
+      "verse_end": 9,
+      "text": "\"JESUS_START\" Of sin, because they believe not on me; \"JESUS_END\""
+    },
+    {
+      "book_id": "JHN",
+      "book_name": "John",
+      "chapter": 16,
+      "verse_start": 10,
+      "verse_end": 10,
+      "text": "\"JESUS_START\" Of righteousness, because I go to my Father, and ye see me no more; \"JESUS_END\""
+    },
+    {
+      "book_id": "JHN",
+      "book_name": "John",
+      "chapter": 16,
+      "verse_start": 11,
+      "verse_end": 11,
+      "text": "\"JESUS_START\" Of judgment, because the prince of this world is judged. \"JESUS_END\""
+    },
+    {
+      "book_id": "JHN",
+      "book_name": "John",
+      "chapter": 16,
+      "verse_start": 12,
+      "verse_end": 12,
+      "text": "\"JESUS_START\" I have yet many things to say unto you, but ye cannot bear them now. \"JESUS_END\""
+    },
+    {
+      "book_id": "JHN",
+      "book_name": "John",
+      "chapter": 16,
+      "verse_start": 13,
+      "verse_end": 13,
+      "text": "\"JESUS_START\" Howbeit when he, the Spirit of truth, is come, he will guide you into all truth: for he shall not speak of himself; but whatsoever he shall hear, <em>that</em> shall he speak: and he will shew you things to come. \"JESUS_END\""
+    },
+    {
+      "book_id": "JHN",
+      "book_name": "John",
+      "chapter": 16,
+      "verse_start": 14,
+      "verse_end": 14,
+      "text": "\"JESUS_START\" He shall glorify me: for he shall receive of mine, and shall shew <em>it</em> unto you. \"JESUS_END\""
+    },
+    {
+      "book_id": "JHN",
+      "book_name": "John",
+      "chapter": 16,
+      "verse_start": 15,
+      "verse_end": 15,
+      "text": "\"JESUS_START\" All things that the Father hath are mine: therefore said I, that he shall take of mine, and shall shew <em>it</em> unto you. \"JESUS_END\""
+    },
+    {
+      "book_id": "JHN",
+      "book_name": "John",
+      "chapter": 16,
+      "verse_start": 16,
+      "verse_end": 16,
+      "text": "\"JESUS_START\" A little while, and ye shall not see me: and again, a little while, and ye shall see me, because I go to the Father. \"JESUS_END\""
+    },
+    {
+      "book_id": "JHN",
+      "book_name": "John",
+      "chapter": 16,
+      "verse_start": 17,
+      "verse_end": 17,
+      "text": "Then said <em>some</em> of his disciples among themselves, What is this that he saith unto us, A little while, and ye shall not see me: and again, a little while, and ye shall see me: and, Because I go to the Father?"
+    },
+    {
+      "book_id": "JHN",
+      "book_name": "John",
+      "chapter": 16,
+      "verse_start": 18,
+      "verse_end": 18,
+      "text": "They said therefore, What is this that he saith, A little while? we cannot tell what he saith."
+    },
+    {
+      "book_id": "JHN",
+      "book_name": "John",
+      "chapter": 16,
+      "verse_start": 19,
+      "verse_end": 19,
+      "text": "Now Jesus knew that they were desirous to ask him, and said unto them, \"JESUS_START\" Do ye enquire among yourselves of that I said, A little while, and ye shall not see me: and again, a little while, and ye shall see me? \"JESUS_END\""
+    },
+    {
+      "book_id": "JHN",
+      "book_name": "John",
+      "chapter": 16,
+      "verse_start": 20,
+      "verse_end": 20,
+      "text": "\"JESUS_START\" Verily, verily, I say unto you, That ye shall weep and lament, but the world shall rejoice: and ye shall be sorrowful, but your sorrow shall be turned into joy. \"JESUS_END\""
+    },
+    {
+      "book_id": "JHN",
+      "book_name": "John",
+      "chapter": 16,
+      "verse_start": 21,
+      "verse_end": 21,
+      "text": "\"JESUS_START\" A woman when she is in travail hath sorrow, because her hour is come: but as soon as she is delivered of the child, she remembereth no more the anguish, for joy that a man is born into the world. \"JESUS_END\""
+    },
+    {
+      "book_id": "JHN",
+      "book_name": "John",
+      "chapter": 16,
+      "verse_start": 22,
+      "verse_end": 22,
+      "text": "\"JESUS_START\" And ye now therefore have sorrow: but I will see you again, and your heart shall rejoice, and your joy no man taketh from you. \"JESUS_END\""
+    },
+    {
+      "book_id": "JHN",
+      "book_name": "John",
+      "chapter": 16,
+      "verse_start": 23,
+      "verse_end": 23,
+      "text": "\"JESUS_START\" And in that day ye shall ask me nothing. Verily, verily, I say unto you, Whatsoever ye shall ask the Father in my name, he will give <em>it</em> you. \"JESUS_END\""
+    },
+    {
+      "book_id": "JHN",
+      "book_name": "John",
+      "chapter": 16,
+      "verse_start": 24,
+      "verse_end": 24,
+      "text": "\"JESUS_START\" Hitherto have ye asked nothing in my name: ask, and ye shall receive, that your joy may be full. \"JESUS_END\""
+    },
+    {
+      "book_id": "JHN",
+      "book_name": "John",
+      "chapter": 16,
+      "verse_start": 25,
+      "verse_end": 25,
+      "text": "\"JESUS_START\" These things have I spoken unto you in proverbs: but the time cometh, when I shall no more speak unto you in proverbs, but I shall shew you plainly of the Father. \"JESUS_END\""
+    },
+    {
+      "book_id": "JHN",
+      "book_name": "John",
+      "chapter": 16,
+      "verse_start": 26,
+      "verse_end": 26,
+      "text": "\"JESUS_START\" At that day ye shall ask in my name: and I say not unto you, that I will pray the Father for you: \"JESUS_END\""
+    },
+    {
+      "book_id": "JHN",
+      "book_name": "John",
+      "chapter": 16,
+      "verse_start": 27,
+      "verse_end": 27,
+      "text": "\"JESUS_START\" For the Father himself loveth you, because ye have loved me, and have believed that I came out from God. \"JESUS_END\""
+    },
+    {
+      "book_id": "JHN",
+      "book_name": "John",
+      "chapter": 16,
+      "verse_start": 28,
+      "verse_end": 28,
+      "text": "\"JESUS_START\" I came forth from the Father, and am come into the world: again, I leave the world, and go to the Father. \"JESUS_END\""
+    },
+    {
+      "book_id": "JHN",
+      "book_name": "John",
+      "chapter": 16,
+      "verse_start": 29,
+      "verse_end": 29,
+      "text": "His disciples said unto him, Lo, now speakest thou plainly, and speakest no proverb."
+    },
+    {
+      "book_id": "JHN",
+      "book_name": "John",
+      "chapter": 16,
+      "verse_start": 30,
+      "verse_end": 30,
+      "text": "Now are we sure that thou knowest all things, and needest not that any man should ask thee: by this we believe that thou camest forth from God."
+    },
+    {
+      "book_id": "JHN",
+      "book_name": "John",
+      "chapter": 16,
+      "verse_start": 31,
+      "verse_end": 31,
+      "text": "Jesus answered them, \"JESUS_START\" Do ye now believe? \"JESUS_END\""
+    },
+    {
+      "book_id": "JHN",
+      "book_name": "John",
+      "chapter": 16,
+      "verse_start": 32,
+      "verse_end": 32,
+      "text": "\"JESUS_START\" Behold, the hour cometh, yea, is now come, that ye shall be scattered, every man to his own, and shall leave me alone: and yet I am not alone, because the Father is with me. \"JESUS_END\""
+    },
+    {
+      "book_id": "JHN",
+      "book_name": "John",
+      "chapter": 16,
+      "verse_start": 33,
+      "verse_end": 33,
+      "text": "\"JESUS_START\" These things I have spoken unto you, that in me ye might have peace. In the world ye shall have tribulation: but be of good cheer; I have overcome the world. \"JESUS_END\""
+    }
+  ]
+}

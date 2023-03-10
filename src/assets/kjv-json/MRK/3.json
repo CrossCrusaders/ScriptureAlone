@@ -1,0 +1,285 @@
+{
+  "info": "",
+  "verses": [
+    {
+      "book_id": "MRK",
+      "book_name": "Mark",
+      "chapter": 3,
+      "verse_start": 1,
+      "verse_end": 1,
+      "text": "And he entered again into the synagogue; and there was a man there which had a withered hand."
+    },
+    {
+      "book_id": "MRK",
+      "book_name": "Mark",
+      "chapter": 3,
+      "verse_start": 2,
+      "verse_end": 2,
+      "text": "And they watched him, whether he would heal him on the sabbath day; that they might accuse him."
+    },
+    {
+      "book_id": "MRK",
+      "book_name": "Mark",
+      "chapter": 3,
+      "verse_start": 3,
+      "verse_end": 3,
+      "text": "And he saith unto the man which had the withered hand, \"JESUS_START\" Stand forth. \"JESUS_END\""
+    },
+    {
+      "book_id": "MRK",
+      "book_name": "Mark",
+      "chapter": 3,
+      "verse_start": 4,
+      "verse_end": 4,
+      "text": "And he saith unto them, \"JESUS_START\" Is it lawful to do good on the sabbath days, or to do evil? to save life, or to kill? \"JESUS_END\" But they held their peace."
+    },
+    {
+      "book_id": "MRK",
+      "book_name": "Mark",
+      "chapter": 3,
+      "verse_start": 5,
+      "verse_end": 5,
+      "text": "And when he had looked round about on them with anger, being grieved for the hardness of their hearts, he saith unto the man, \"JESUS_START\" Stretch forth thine hand. \"JESUS_END\" And he stretched <em>it</em> out: and his hand was restored whole as the other."
+    },
+    {
+      "book_id": "MRK",
+      "book_name": "Mark",
+      "chapter": 3,
+      "verse_start": 6,
+      "verse_end": 6,
+      "text": "And the Pharisees went forth, and straightway took counsel with the Herodians against him, how they might destroy him."
+    },
+    {
+      "book_id": "MRK",
+      "book_name": "Mark",
+      "chapter": 3,
+      "verse_start": 7,
+      "verse_end": 7,
+      "text": "But Jesus withdrew himself with his disciples to the sea: and a great multitude from Galilee followed him, and from Judaea,"
+    },
+    {
+      "book_id": "MRK",
+      "book_name": "Mark",
+      "chapter": 3,
+      "verse_start": 8,
+      "verse_end": 8,
+      "text": "And from Jerusalem, and from Idumaea, and <em>from</em> beyond Jordan; and they about Tyre and Sidon, a great multitude, when they had heard what great things he did, came unto him."
+    },
+    {
+      "book_id": "MRK",
+      "book_name": "Mark",
+      "chapter": 3,
+      "verse_start": 9,
+      "verse_end": 9,
+      "text": "And he spake to his disciples, that a small ship should wait on him because of the multitude, lest they should throng him."
+    },
+    {
+      "book_id": "MRK",
+      "book_name": "Mark",
+      "chapter": 3,
+      "verse_start": 10,
+      "verse_end": 10,
+      "text": "For he had healed many; insomuch that they pressed upon him for to touch him, as many as had plagues."
+    },
+    {
+      "book_id": "MRK",
+      "book_name": "Mark",
+      "chapter": 3,
+      "verse_start": 11,
+      "verse_end": 11,
+      "text": "And unclean spirits, when they saw him, fell down before him, and cried, saying, Thou art the Son of God."
+    },
+    {
+      "book_id": "MRK",
+      "book_name": "Mark",
+      "chapter": 3,
+      "verse_start": 12,
+      "verse_end": 12,
+      "text": "And he straitly charged them that they should not make him known."
+    },
+    {
+      "book_id": "MRK",
+      "book_name": "Mark",
+      "chapter": 3,
+      "verse_start": 13,
+      "verse_end": 13,
+      "text": "And he goeth up into a mountain, and calleth <em>unto him</em> whom he would: and they came unto him."
+    },
+    {
+      "book_id": "MRK",
+      "book_name": "Mark",
+      "chapter": 3,
+      "verse_start": 14,
+      "verse_end": 14,
+      "text": "And he ordained twelve, that they should be with him, and that he might send them forth to preach,"
+    },
+    {
+      "book_id": "MRK",
+      "book_name": "Mark",
+      "chapter": 3,
+      "verse_start": 15,
+      "verse_end": 15,
+      "text": "And to have power to heal sicknesses, and to cast out devils:"
+    },
+    {
+      "book_id": "MRK",
+      "book_name": "Mark",
+      "chapter": 3,
+      "verse_start": 16,
+      "verse_end": 16,
+      "text": "And Simon he surnamed Peter;"
+    },
+    {
+      "book_id": "MRK",
+      "book_name": "Mark",
+      "chapter": 3,
+      "verse_start": 17,
+      "verse_end": 17,
+      "text": "And James the <em>son</em> of Zebedee, and John the brother of James; and he surnamed them Boanerges, which is, The sons of thunder:"
+    },
+    {
+      "book_id": "MRK",
+      "book_name": "Mark",
+      "chapter": 3,
+      "verse_start": 18,
+      "verse_end": 18,
+      "text": "And Andrew, and Philip, and Bartholomew, and Matthew, and Thomas, and James the <em>son</em> of Alphaeus, and Thaddaeus, and Simon the Canaanite,"
+    },
+    {
+      "book_id": "MRK",
+      "book_name": "Mark",
+      "chapter": 3,
+      "verse_start": 19,
+      "verse_end": 19,
+      "text": "And Judas Iscariot, which also betrayed him: and they went into an house."
+    },
+    {
+      "book_id": "MRK",
+      "book_name": "Mark",
+      "chapter": 3,
+      "verse_start": 20,
+      "verse_end": 20,
+      "text": "And the multitude cometh together again, so that they could not so much as eat bread."
+    },
+    {
+      "book_id": "MRK",
+      "book_name": "Mark",
+      "chapter": 3,
+      "verse_start": 21,
+      "verse_end": 21,
+      "text": "And when his friends heard <em>of it</em>, they went out to lay hold on him: for they said, He is beside himself."
+    },
+    {
+      "book_id": "MRK",
+      "book_name": "Mark",
+      "chapter": 3,
+      "verse_start": 22,
+      "verse_end": 22,
+      "text": "And the scribes which came down from Jerusalem said, He hath Beelzebub, and by the prince of the devils casteth he out devils."
+    },
+    {
+      "book_id": "MRK",
+      "book_name": "Mark",
+      "chapter": 3,
+      "verse_start": 23,
+      "verse_end": 23,
+      "text": "And he called them <em>unto him</em>, and said unto them in parables, \"JESUS_START\" How can Satan cast out Satan? \"JESUS_END\""
+    },
+    {
+      "book_id": "MRK",
+      "book_name": "Mark",
+      "chapter": 3,
+      "verse_start": 24,
+      "verse_end": 24,
+      "text": "\"JESUS_START\" And if a kingdom be divided against itself, that kingdom cannot stand. \"JESUS_END\""
+    },
+    {
+      "book_id": "MRK",
+      "book_name": "Mark",
+      "chapter": 3,
+      "verse_start": 25,
+      "verse_end": 25,
+      "text": "\"JESUS_START\" And if a house be divided against itself, that house cannot stand. \"JESUS_END\""
+    },
+    {
+      "book_id": "MRK",
+      "book_name": "Mark",
+      "chapter": 3,
+      "verse_start": 26,
+      "verse_end": 26,
+      "text": "\"JESUS_START\" And if Satan rise up against himself, and be divided, he cannot stand, but hath an end. \"JESUS_END\""
+    },
+    {
+      "book_id": "MRK",
+      "book_name": "Mark",
+      "chapter": 3,
+      "verse_start": 27,
+      "verse_end": 27,
+      "text": "\"JESUS_START\" No man can enter into a strong man's house, and spoil his goods, except he will first bind the strong man; and then he will spoil his house. \"JESUS_END\""
+    },
+    {
+      "book_id": "MRK",
+      "book_name": "Mark",
+      "chapter": 3,
+      "verse_start": 28,
+      "verse_end": 28,
+      "text": "\"JESUS_START\" Verily I say unto you, All sins shall be forgiven unto the sons of men, and blasphemies wherewith soever they shall blaspheme: \"JESUS_END\""
+    },
+    {
+      "book_id": "MRK",
+      "book_name": "Mark",
+      "chapter": 3,
+      "verse_start": 29,
+      "verse_end": 29,
+      "text": "\"JESUS_START\" But he that shall blaspheme against the Holy Ghost hath never forgiveness, but is in danger of eternal damnation: \"JESUS_END\""
+    },
+    {
+      "book_id": "MRK",
+      "book_name": "Mark",
+      "chapter": 3,
+      "verse_start": 30,
+      "verse_end": 30,
+      "text": "Because they said, He hath an unclean spirit."
+    },
+    {
+      "book_id": "MRK",
+      "book_name": "Mark",
+      "chapter": 3,
+      "verse_start": 31,
+      "verse_end": 31,
+      "text": "There came then his brethren and his mother, and, standing without, sent unto him, calling him."
+    },
+    {
+      "book_id": "MRK",
+      "book_name": "Mark",
+      "chapter": 3,
+      "verse_start": 32,
+      "verse_end": 32,
+      "text": "And the multitude sat about him, and they said unto him, Behold, thy mother and thy brethren without seek for thee."
+    },
+    {
+      "book_id": "MRK",
+      "book_name": "Mark",
+      "chapter": 3,
+      "verse_start": 33,
+      "verse_end": 33,
+      "text": "And he answered them, saying, \"JESUS_START\" Who is my mother, or my brethren? \"JESUS_END\""
+    },
+    {
+      "book_id": "MRK",
+      "book_name": "Mark",
+      "chapter": 3,
+      "verse_start": 34,
+      "verse_end": 34,
+      "text": "And he looked round about on them which sat about him, and said, \"JESUS_START\" Behold my mother and my brethren! \"JESUS_END\""
+    },
+    {
+      "book_id": "MRK",
+      "book_name": "Mark",
+      "chapter": 3,
+      "verse_start": 35,
+      "verse_end": 35,
+      "text": "\"JESUS_START\" For whosoever shall do the will of God, the same is my brother, and my sister, and mother. \"JESUS_END\""
+    }
+  ]
+}

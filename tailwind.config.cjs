@@ -10,6 +10,9 @@ module.exports = {
         'sans': ['Poppins'],
         'body': ['Poppins', 'sans-serif'],
         'title': ['Montserrat', 'sans-serif']
+      },
+      spacing: {
+        '50': "50%"
       }
     },
   },

@@ -9,7 +9,7 @@
 </template>
 
 <script setup lang="ts">
-import { computed, ref } from 'vue';
+import { ref } from 'vue';
 import { useAuth } from '../../auth/services/AuthService'
 import { getUserProfileImage } from '../../user/services/UserService'
 const { user } = useAuth()

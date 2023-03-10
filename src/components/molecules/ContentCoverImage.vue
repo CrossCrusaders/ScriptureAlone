@@ -3,7 +3,6 @@
 </template>
 
 <script setup lang="ts">
-import { Author } from '../../authors/Author'
 import { defaultImage } from '../../user/services/UserService'
 
 export interface ContentCoverImageProps {

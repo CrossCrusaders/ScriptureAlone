@@ -1,0 +1,413 @@
+{
+  "info": "",
+  "verses": [
+    {
+      "book_id": "MAT",
+      "book_name": "Matthew",
+      "chapter": 24,
+      "verse_start": 1,
+      "verse_end": 1,
+      "text": "And Jesus went out, and departed from the temple: and his disciples came to <em>him</em> for to shew him the buildings of the temple."
+    },
+    {
+      "book_id": "MAT",
+      "book_name": "Matthew",
+      "chapter": 24,
+      "verse_start": 2,
+      "verse_end": 2,
+      "text": "And Jesus said unto them, \"JESUS_START\" See ye not all these things? verily I say unto you, There shall not be left here one stone upon another, that shall not be thrown down. \"JESUS_END\""
+    },
+    {
+      "book_id": "MAT",
+      "book_name": "Matthew",
+      "chapter": 24,
+      "verse_start": 3,
+      "verse_end": 3,
+      "text": "And as he sat upon the mount of Olives, the disciples came unto him privately, saying, Tell us, when shall these things be? and what <em>shall be</em> the sign of thy coming, and of the end of the world?"
+    },
+    {
+      "book_id": "MAT",
+      "book_name": "Matthew",
+      "chapter": 24,
+      "verse_start": 4,
+      "verse_end": 4,
+      "text": "And Jesus answered and said unto them, \"JESUS_START\" Take heed that no man deceive you. \"JESUS_END\""
+    },
+    {
+      "book_id": "MAT",
+      "book_name": "Matthew",
+      "chapter": 24,
+      "verse_start": 5,
+      "verse_end": 5,
+      "text": "\"JESUS_START\" For many shall come in my name, saying, I am Christ; and shall deceive many. \"JESUS_END\""
+    },
+    {
+      "book_id": "MAT",
+      "book_name": "Matthew",
+      "chapter": 24,
+      "verse_start": 6,
+      "verse_end": 6,
+      "text": "\"JESUS_START\" And ye shall hear of wars and rumours of wars: see that ye be not troubled: for all <em>these things</em> must come to pass, but the end is not yet. \"JESUS_END\""
+    },
+    {
+      "book_id": "MAT",
+      "book_name": "Matthew",
+      "chapter": 24,
+      "verse_start": 7,
+      "verse_end": 7,
+      "text": "\"JESUS_START\" For nation shall rise against nation, and kingdom against kingdom: and there shall be famines, and pestilences, and earthquakes, in divers places. \"JESUS_END\""
+    },
+    {
+      "book_id": "MAT",
+      "book_name": "Matthew",
+      "chapter": 24,
+      "verse_start": 8,
+      "verse_end": 8,
+      "text": "\"JESUS_START\" All these <em>are</em> the beginning of sorrows. \"JESUS_END\""
+    },
+    {
+      "book_id": "MAT",
+      "book_name": "Matthew",
+      "chapter": 24,
+      "verse_start": 9,
+      "verse_end": 9,
+      "text": "\"JESUS_START\" Then shall they deliver you up to be afflicted, and shall kill you: and ye shall be hated of all nations for my name's sake. \"JESUS_END\""
+    },
+    {
+      "book_id": "MAT",
+      "book_name": "Matthew",
+      "chapter": 24,
+      "verse_start": 10,
+      "verse_end": 10,
+      "text": "\"JESUS_START\" And then shall many be offended, and shall betray one another, and shall hate one another. \"JESUS_END\""
+    },
+    {
+      "book_id": "MAT",
+      "book_name": "Matthew",
+      "chapter": 24,
+      "verse_start": 11,
+      "verse_end": 11,
+      "text": "\"JESUS_START\" And many false prophets shall rise, and shall deceive many. \"JESUS_END\""
+    },
+    {
+      "book_id": "MAT",
+      "book_name": "Matthew",
+      "chapter": 24,
+      "verse_start": 12,
+      "verse_end": 12,
+      "text": "\"JESUS_START\" And because iniquity shall abound, the love of many shall wax cold. \"JESUS_END\""
+    },
+    {
+      "book_id": "MAT",
+      "book_name": "Matthew",
+      "chapter": 24,
+      "verse_start": 13,
+      "verse_end": 13,
+      "text": "\"JESUS_START\" But he that shall endure unto the end, the same shall be saved. \"JESUS_END\""
+    },
+    {
+      "book_id": "MAT",
+      "book_name": "Matthew",
+      "chapter": 24,
+      "verse_start": 14,
+      "verse_end": 14,
+      "text": "\"JESUS_START\" And this gospel of the kingdom shall be preached in all the world for a witness unto all nations; and then shall the end come. \"JESUS_END\""
+    },
+    {
+      "book_id": "MAT",
+      "book_name": "Matthew",
+      "chapter": 24,
+      "verse_start": 15,
+      "verse_end": 15,
+      "text": "\"JESUS_START\" When ye therefore shall see the abomination of desolation, spoken of by Daniel the prophet, stand in the holy place, (whoso readeth, let him understand:) \"JESUS_END\""
+    },
+    {
+      "book_id": "MAT",
+      "book_name": "Matthew",
+      "chapter": 24,
+      "verse_start": 16,
+      "verse_end": 16,
+      "text": "\"JESUS_START\" Then let them which be in Judaea flee into the mountains: \"JESUS_END\""
+    },
+    {
+      "book_id": "MAT",
+      "book_name": "Matthew",
+      "chapter": 24,
+      "verse_start": 17,
+      "verse_end": 17,
+      "text": "\"JESUS_START\" Let him which is on the housetop not come down to take any thing out of his house: \"JESUS_END\""
+    },
+    {
+      "book_id": "MAT",
+      "book_name": "Matthew",
+      "chapter": 24,
+      "verse_start": 18,
+      "verse_end": 18,
+      "text": "\"JESUS_START\" Neither let him which is in the field return back to take his clothes. \"JESUS_END\""
+    },
+    {
+      "book_id": "MAT",
+      "book_name": "Matthew",
+      "chapter": 24,
+      "verse_start": 19,
+      "verse_end": 19,
+      "text": "\"JESUS_START\" And woe unto them that are with child, and to them that give suck in those days! \"JESUS_END\""
+    },
+    {
+      "book_id": "MAT",
+      "book_name": "Matthew",
+      "chapter": 24,
+      "verse_start": 20,
+      "verse_end": 20,
+      "text": "\"JESUS_START\" But pray ye that your flight be not in the winter, neither on the sabbath day: \"JESUS_END\""
+    },
+    {
+      "book_id": "MAT",
+      "book_name": "Matthew",
+      "chapter": 24,
+      "verse_start": 21,
+      "verse_end": 21,
+      "text": "\"JESUS_START\" For then shall be great tribulation, such as was not since the beginning of the world to this time, no, nor ever shall be. \"JESUS_END\""
+    },
+    {
+      "book_id": "MAT",
+      "book_name": "Matthew",
+      "chapter": 24,
+      "verse_start": 22,
+      "verse_end": 22,
+      "text": "\"JESUS_START\" And except those days should be shortened, there should no flesh be saved: but for the elect's sake those days shall be shortened. \"JESUS_END\""
+    },
+    {
+      "book_id": "MAT",
+      "book_name": "Matthew",
+      "chapter": 24,
+      "verse_start": 23,
+      "verse_end": 23,
+      "text": "\"JESUS_START\" Then if any man shall say unto you, Lo, here <em>is</em> Christ, or there; believe <em>it</em> not. \"JESUS_END\""
+    },
+    {
+      "book_id": "MAT",
+      "book_name": "Matthew",
+      "chapter": 24,
+      "verse_start": 24,
+      "verse_end": 24,
+      "text": "\"JESUS_START\" For there shall arise false Christs, and false prophets, and shall shew great signs and wonders; insomuch that, if <em>it were</em> possible, they shall deceive the very elect. \"JESUS_END\""
+    },
+    {
+      "book_id": "MAT",
+      "book_name": "Matthew",
+      "chapter": 24,
+      "verse_start": 25,
+      "verse_end": 25,
+      "text": "\"JESUS_START\" Behold, I have told you before. \"JESUS_END\""
+    },
+    {
+      "book_id": "MAT",
+      "book_name": "Matthew",
+      "chapter": 24,
+      "verse_start": 26,
+      "verse_end": 26,
+      "text": "\"JESUS_START\" Wherefore if they shall say unto you, Behold, he is in the desert; go not forth: behold, <em>he is</em> in the secret chambers; believe <em>it</em> not. \"JESUS_END\""
+    },
+    {
+      "book_id": "MAT",
+      "book_name": "Matthew",
+      "chapter": 24,
+      "verse_start": 27,
+      "verse_end": 27,
+      "text": "\"JESUS_START\" For as the lightning cometh out of the east, and shineth even unto the west; so shall also the coming of the Son of man be. \"JESUS_END\""
+    },
+    {
+      "book_id": "MAT",
+      "book_name": "Matthew",
+      "chapter": 24,
+      "verse_start": 28,
+      "verse_end": 28,
+      "text": "\"JESUS_START\" For wheresoever the carcase is, there will the eagles be gathered together. \"JESUS_END\""
+    },
+    {
+      "book_id": "MAT",
+      "book_name": "Matthew",
+      "chapter": 24,
+      "verse_start": 29,
+      "verse_end": 29,
+      "text": "\"JESUS_START\" Immediately after the tribulation of those days shall the sun be darkened, and the moon shall not give her light, and the stars shall fall from heaven, and the powers of the heavens shall be shaken: \"JESUS_END\""
+    },
+    {
+      "book_id": "MAT",
+      "book_name": "Matthew",
+      "chapter": 24,
+      "verse_start": 30,
+      "verse_end": 30,
+      "text": "\"JESUS_START\" And then shall appear the sign of the Son of man in heaven: and then shall all the tribes of the earth mourn, and they shall see the Son of man coming in the clouds of heaven with power and great glory. \"JESUS_END\""
+    },
+    {
+      "book_id": "MAT",
+      "book_name": "Matthew",
+      "chapter": 24,
+      "verse_start": 31,
+      "verse_end": 31,
+      "text": "\"JESUS_START\" And he shall send his angels with a great sound of a trumpet, and they shall gather together his elect from the four winds, from one end of heaven to the other. \"JESUS_END\""
+    },
+    {
+      "book_id": "MAT",
+      "book_name": "Matthew",
+      "chapter": 24,
+      "verse_start": 32,
+      "verse_end": 32,
+      "text": "\"JESUS_START\" Now learn a parable of the fig tree; When his branch is yet tender, and putteth forth leaves, ye know that summer <em>is</em> nigh: \"JESUS_END\""
+    },
+    {
+      "book_id": "MAT",
+      "book_name": "Matthew",
+      "chapter": 24,
+      "verse_start": 33,
+      "verse_end": 33,
+      "text": "\"JESUS_START\" So likewise ye, when ye shall see all these things, know that it is near, <em>even</em> at the doors. \"JESUS_END\""
+    },
+    {
+      "book_id": "MAT",
+      "book_name": "Matthew",
+      "chapter": 24,
+      "verse_start": 34,
+      "verse_end": 34,
+      "text": "\"JESUS_START\" Verily I say unto you, This generation shall not pass, till all these things be fulfilled. \"JESUS_END\""
+    },
+    {
+      "book_id": "MAT",
+      "book_name": "Matthew",
+      "chapter": 24,
+      "verse_start": 35,
+      "verse_end": 35,
+      "text": "\"JESUS_START\" Heaven and earth shall pass away, but my words shall not pass away. \"JESUS_END\""
+    },
+    {
+      "book_id": "MAT",
+      "book_name": "Matthew",
+      "chapter": 24,
+      "verse_start": 36,
+      "verse_end": 36,
+      "text": "\"JESUS_START\" But of that day and hour knoweth no <em>man</em>, no, not the angels of heaven, but my Father only. \"JESUS_END\""
+    },
+    {
+      "book_id": "MAT",
+      "book_name": "Matthew",
+      "chapter": 24,
+      "verse_start": 37,
+      "verse_end": 37,
+      "text": "\"JESUS_START\" But as the days of Noe <em>were</em>, so shall also the coming of the Son of man be. \"JESUS_END\""
+    },
+    {
+      "book_id": "MAT",
+      "book_name": "Matthew",
+      "chapter": 24,
+      "verse_start": 38,
+      "verse_end": 38,
+      "text": "\"JESUS_START\" For as in the days that were before the flood they were eating and drinking, marrying and giving in marriage, until the day that Noe entered into the ark, \"JESUS_END\""
+    },
+    {
+      "book_id": "MAT",
+      "book_name": "Matthew",
+      "chapter": 24,
+      "verse_start": 39,
+      "verse_end": 39,
+      "text": "\"JESUS_START\" And knew not until the flood came, and took them all away; so shall also the coming of the Son of man be. \"JESUS_END\""
+    },
+    {
+      "book_id": "MAT",
+      "book_name": "Matthew",
+      "chapter": 24,
+      "verse_start": 40,
+      "verse_end": 40,
+      "text": "\"JESUS_START\" Then shall two be in the field; the one shall be taken, and the other left. \"JESUS_END\""
+    },
+    {
+      "book_id": "MAT",
+      "book_name": "Matthew",
+      "chapter": 24,
+      "verse_start": 41,
+      "verse_end": 41,
+      "text": "\"JESUS_START\" Two <em>women shall be</em> grinding at the mill; the one shall be taken, and the other left. \"JESUS_END\""
+    },
+    {
+      "book_id": "MAT",
+      "book_name": "Matthew",
+      "chapter": 24,
+      "verse_start": 42,
+      "verse_end": 42,
+      "text": "\"JESUS_START\" Watch therefore: for ye know not what hour your Lord doth come. \"JESUS_END\""
+    },
+    {
+      "book_id": "MAT",
+      "book_name": "Matthew",
+      "chapter": 24,
+      "verse_start": 43,
+      "verse_end": 43,
+      "text": "\"JESUS_START\" But know this, that if the goodman of the house had known in what watch the thief would come, he would have watched, and would not have suffered his house to be broken up. \"JESUS_END\""
+    },
+    {
+      "book_id": "MAT",
+      "book_name": "Matthew",
+      "chapter": 24,
+      "verse_start": 44,
+      "verse_end": 44,
+      "text": "\"JESUS_START\" Therefore be ye also ready: for in such an hour as ye think not the Son of man cometh. \"JESUS_END\""
+    },
+    {
+      "book_id": "MAT",
+      "book_name": "Matthew",
+      "chapter": 24,
+      "verse_start": 45,
+      "verse_end": 45,
+      "text": "\"JESUS_START\" Who then is a faithful and wise servant, whom his lord hath made ruler over his household, to give them meat in due season? \"JESUS_END\""
+    },
+    {
+      "book_id": "MAT",
+      "book_name": "Matthew",
+      "chapter": 24,
+      "verse_start": 46,
+      "verse_end": 46,
+      "text": "\"JESUS_START\" Blessed <em>is</em> that servant, whom his lord when he cometh shall find so doing. \"JESUS_END\""
+    },
+    {
+      "book_id": "MAT",
+      "book_name": "Matthew",
+      "chapter": 24,
+      "verse_start": 47,
+      "verse_end": 47,
+      "text": "\"JESUS_START\" Verily I say unto you, That he shall make him ruler over all his goods. \"JESUS_END\""
+    },
+    {
+      "book_id": "MAT",
+      "book_name": "Matthew",
+      "chapter": 24,
+      "verse_start": 48,
+      "verse_end": 48,
+      "text": "\"JESUS_START\" But and if that evil servant shall say in his heart, My lord delayeth his coming; \"JESUS_END\""
+    },
+    {
+      "book_id": "MAT",
+      "book_name": "Matthew",
+      "chapter": 24,
+      "verse_start": 49,
+      "verse_end": 49,
+      "text": "\"JESUS_START\" And shall begin to smite <em>his</em> fellowservants, and to eat and drink with the drunken; \"JESUS_END\""
+    },
+    {
+      "book_id": "MAT",
+      "book_name": "Matthew",
+      "chapter": 24,
+      "verse_start": 50,
+      "verse_end": 50,
+      "text": "\"JESUS_START\" The lord of that servant shall come in a day when he looketh not for <em>him</em>, and in an hour that he is not aware of, \"JESUS_END\""
+    },
+    {
+      "book_id": "MAT",
+      "book_name": "Matthew",
+      "chapter": 24,
+      "verse_start": 51,
+      "verse_end": 51,
+      "text": "\"JESUS_START\" And shall cut him asunder, and appoint <em>him</em> his portion with the hypocrites: there shall be weeping and gnashing of teeth. \"JESUS_END\""
+    }
+  ]
+}
