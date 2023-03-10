@@ -23,7 +23,7 @@ import { Author } from '../../authors/Author';
 import { useUserFavorites } from '../../user/services/UserService';
 import { useAuth } from '../../auth/services/AuthService';
 
-import { getSearch } from '../../search/services/SearchService'
+import { getSearch } from '../../search/services/SearchServicess'
 
 export interface DevotionalsPreviewGridProps {
   queryParams?: any

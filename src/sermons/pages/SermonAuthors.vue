@@ -49,7 +49,7 @@ import { Author } from '../../authors/Author';
 import { onMounted, ref } from 'vue';
 import AppButton from '../../components/atoms/form-controls/AppButton.vue';
 import InfiniteScrollContent from '../../components/templates/InfiniteScrollContent.vue';
-import { getSearchAuthors } from '../../search/services/SearchService';
+import { getSearchAuthors } from '../../search/services/SearchServicess';
 
 
 const router = useRouter()

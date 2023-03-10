@@ -21,7 +21,7 @@
   import { Author } from '../../authors/Author';
   import { useAuth } from '../../auth/services/AuthService';
   
-  import { getSearch } from '../../search/services/SearchService'
+  import { getSearch } from '../../search/services/SearchServicess'
    
   export interface TruthResourcePreviewGridProps {
     queryParams?: any

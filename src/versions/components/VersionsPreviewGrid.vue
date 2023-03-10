@@ -18,7 +18,7 @@ import ContentPreviewGrid from '../../components/molecules/ContentPreviewGrid.vu
 import { Pagination } from '../../core/Pagination';
 import { Version } from '../Version';
 import Spinner from '../../components/atoms/Spinner.vue';
-import { getSearch } from '../../search/services/SearchService'
+import { getSearch } from '../../search/services/SearchServicess'
 
 export interface VersionsPreviewGridProps {
     queryParams?: any
