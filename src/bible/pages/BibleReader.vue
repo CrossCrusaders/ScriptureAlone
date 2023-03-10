@@ -28,19 +28,11 @@
     </div>
     <PageContent>
       <div class="max-w-prose mx-auto h-fit">
-        <h2 class="text-center mb-4 h-full flex align-middle">
-          <AppButton @click="onPrevChapterButtonClicked" v-if="breakpoint == 'sm'" variant="primary-outline"
-            class="float-left h-14" size="sm">
-            <img src="/mdi/chevron-left.svg" class="my-1 prev-next-button" />
-          </AppButton>
+        <h2 class="text-center mb-4 mt-2 h-full flex align-middle">
           <div class="m-auto flex flex-col h-full">
             <span class="text-2xl font-bold">{{ selectedBook?.name }}&nbsp;{{ selectedChapterNumber }}</span>
             <span v-if="loadedChapterContent?.info" v-html="loadedChapterContent?.info"></span>
           </div>
-          <AppButton @click="onNextChapterButtonClicked" v-if="breakpoint == 'sm'" variant="primary-outline"
-            class="float-right h-14" size="sm">
-            <img src="/mdi/chevron-right.svg" class="my-1 prev-next-button" />
-          </AppButton>
         </h2>
       </div>
       <Spinner class="mx-auto" v-if="pageLoading"></Spinner>
@@ -78,14 +70,6 @@
     </PageContent>
     <div class="mb-8"></div>
   </AppLayout>
-  <AppButton @click="onPrevChapterButtonClicked" v-if="breakpoint != 'sm'" variant="primary-outline"
-    class="fixed top-1/2 left-1 md:left-16 xl:left-1/5 bg-white" size="sm">
-    <img src="/mdi/chevron-left.svg" class="my-1 prev-next-button" />
-  </AppButton>
-  <AppButton @click="onNextChapterButtonClicked" v-if="breakpoint != 'sm'" variant="primary-outline"
-    class="fixed top-1/2 right-1 md:right-16 xl:right-1/5 bg-white" size="sm">
-    <img src="/mdi/chevron-right.svg" class="my-1 prev-next-button" />
-  </AppButton>
   <AppModal v-model="openMenu" v-slot="{ close }">
     <div class="p-4 text-white flex flex-col gap-2" style="text-align: center">
       <div class="bg-slate-200 p-2 rounded text-black">
@@ -172,9 +156,7 @@
             selectedVerses,
             noteTitle,
             noteText
-          );
-        reloadNotes();
-                            ">
+          ); reloadNotes();">
         Add
       </button>
     </div>
@@ -212,16 +194,32 @@
       </div>
     </div>
   </AppModal>
-  <Transition name="audioBiblePlayerButton">
-    <div v-if="audioModal == false && globalAudioState == AudioPlayerState.hidden" class="w-full fixed bottom-0 left-0">
-      <div class="w-full h-full flex justify-center">
-        <button @click="audioModal = true"
-          class="w-16 h-16 mb-12 bg-gray-300 border-2 border-gray-400 rounded-full drop-shadow-2xl">
+  <div class="w-full fixed bottom-0 left-0">
+    <div class="w-full h-full flex">
+      <AppButton v-if="globalAudioState == AudioPlayerState.hidden" @click="onPrevChapterButtonClicked" variant="primary-outline"
+        class="ml-4 md:ml-48 mr-auto h-14 mb-12 bg-white" size="sm">
+        <img src="/mdi/chevron-left.svg" class="my-1 prev-next-button" />
+      </AppButton>
+      <AppButton v-else @click="onPrevChapterButtonClicked" variant="primary-outline"
+        class="ml-4 md:ml-48 mr-auto h-14 mb-44 md:mb-24 bg-white" size="sm">
+        <img src="/mdi/chevron-left.svg" class="my-1 prev-next-button" />
+      </AppButton>
+      <Transition name="audioBiblePlayerButton">
+        <button v-if="audioModal == false && globalAudioState == AudioPlayerState.hidden"  @click="audioModal = true"
+          class="w-14 h-14 mb-12 bg-gray-300 border-2 border-gray-400 rounded-full drop-shadow-2xl">
           <img src="/mdi/play.svg" class="m-2" />
         </button>
-      </div>
+      </Transition>
+      <AppButton v-if="globalAudioState == AudioPlayerState.hidden" @click="onNextChapterButtonClicked" variant="primary-outline"
+        class="mr-4 md:mr-48 ml-auto h-14 mb-12 bg-white" size="sm">
+        <img src="/mdi/chevron-right.svg" class="my-1 prev-next-button" />
+      </AppButton>
+      <AppButton v-else @click="onNextChapterButtonClicked" variant="primary-outline"
+        class="mr-4 md:mr-48 ml-auto h-14 mb-44 md:mb-24 bg-white" size="sm">
+        <img src="/mdi/chevron-right.svg" class="my-1 prev-next-button" />
+      </AppButton>
     </div>
-  </Transition>
+  </div>
 </template>
 
 <script setup lang="ts">
