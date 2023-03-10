@@ -126,7 +126,7 @@ import { useRouter } from "vue-router";
 import AppButton from "../../components/atoms/form-controls/AppButton.vue";
 import { useBreakpoint } from '../../browser/ViewportService'
 
-import { getSearch } from '../../search/services/SearchServicess'
+import { getSearch } from '../../search/services/SearchService'
 
 const verseName = ref("");
 const verseText = ref("");

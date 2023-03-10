@@ -48,7 +48,7 @@ import Divider from '../../components/atoms/Divider.vue'
 
 import TruthResourcesList from '../components/TruthResourcesList.vue'
 
-import { getSearch } from '../../search/services/SearchServicess'
+import { getSearch } from '../../search/services/SearchService'
 
 const Video = ref();
 const NonVideo = ref();
