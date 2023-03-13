@@ -128,7 +128,7 @@
             ':' +
             menuVerse.verse_start +
             ' - ' +
-            menuVerse.text.replaceAll('<em>', '').replaceAll('</em>', '')
+            menuVerse.text
           )
         ">
         Copy Verse
@@ -665,6 +665,7 @@ async function getNewVerses() {
 }
 
 async function copyString(str: string) {
+  str=str.replaceAll('<em>', '').replaceAll('</em>', '').replaceAll('"JESUS_START" ', '').replaceAll(' "JESUS_END"', '')
   const el = document.createElement("textarea");
   el.value = str;
   el.setAttribute("readonly", "");
