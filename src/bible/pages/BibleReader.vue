@@ -128,7 +128,7 @@
             ':' +
             menuVerse.verse_start +
             ' - ' +
-            menuVerse.text.replaceAll('<em>', '').replaceAll('</em>', '')
+            menuVerse.text
           )
         ">
         Copy Verse
@@ -401,8 +401,10 @@ const loadChapterContent = async () => {
         let push = true;
 
         if (word.includes("<em>") && !word.includes("</em>")) isItalics = true;
-        else if (!word.includes("<em>") && word.includes("</em>")) isItalics = false;
-
+        else if (!word.includes("<em>") && word.includes("</em>")){
+          word = `<em>${word}</em>`;
+          isItalics = false;
+        }
         if (isItalics) word = `<em>${word}</em>`;
 
         if (word == '"JESUS_START"') {
@@ -663,6 +665,7 @@ async function getNewVerses() {
 }
 
 async function copyString(str: string) {
+  str=str.replaceAll('<em>', '').replaceAll('</em>', '').replaceAll('"JESUS_START" ', '').replaceAll(' "JESUS_END"', '')
   const el = document.createElement("textarea");
   el.value = str;
   el.setAttribute("readonly", "");
