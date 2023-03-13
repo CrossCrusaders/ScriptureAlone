@@ -401,8 +401,10 @@ const loadChapterContent = async () => {
         let push = true;
 
         if (word.includes("<em>") && !word.includes("</em>")) isItalics = true;
-        else if (!word.includes("<em>") && word.includes("</em>")) isItalics = false;
-
+        else if (!word.includes("<em>") && word.includes("</em>")){
+          word = `<em>${word}</em>`;
+          isItalics = false;
+        }
         if (isItalics) word = `<em>${word}</em>`;
 
         if (word == '"JESUS_START"') {
