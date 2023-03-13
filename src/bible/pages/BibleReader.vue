@@ -78,7 +78,15 @@
             menuVerse.book_name + " " + menuVerse.chapter + ":" + menuVerse.verse_start
           }}
         </p>
-        <p v-html="menuVerse.text"></p>
+        <span v-for="word in menuVerse.text_array">
+          <span v-if="word.includes('<span') && word.includes('|')"
+            class="ml-1 text-red-500"
+            v-html="word.split('|')[0] + word.split('|')[1]"></span>
+          <span v-else-if="word.includes('|')"
+            class="ml-1"
+            v-html="word.split('|')[1]"></span>
+          <span v-else v-html="' ' + word"></span>
+        </span>
       </div>
       <div v-if="notesVerseIsIn.length" class="w-full flex flex-col justify-center">
         <div class="flex flex-row justify-center align-center">
@@ -196,8 +204,8 @@
   </AppModal>
   <div class="w-full fixed bottom-0 left-0">
     <div class="w-full h-full flex">
-      <AppButton v-if="globalAudioState == AudioPlayerState.hidden" @click="onPrevChapterButtonClicked" variant="primary-outline"
-        class="ml-4 md:ml-48 mr-auto h-14 mb-12 bg-white" size="sm">
+      <AppButton v-if="globalAudioState == AudioPlayerState.hidden" @click="onPrevChapterButtonClicked"
+        variant="primary-outline" class="ml-4 md:ml-48 mr-auto h-14 mb-12 bg-white" size="sm">
         <img src="/mdi/chevron-left.svg" class="my-1 prev-next-button" />
       </AppButton>
       <AppButton v-else @click="onPrevChapterButtonClicked" variant="primary-outline"
@@ -205,13 +213,13 @@
         <img src="/mdi/chevron-left.svg" class="my-1 prev-next-button" />
       </AppButton>
       <Transition name="audioBiblePlayerButton">
-        <button v-if="audioModal == false && globalAudioState == AudioPlayerState.hidden"  @click="audioModal = true"
+        <button v-if="audioModal == false && globalAudioState == AudioPlayerState.hidden" @click="audioModal = true"
           class="w-14 h-14 mb-12 bg-gray-300 border-2 border-gray-400 rounded-full drop-shadow-2xl">
           <img src="/mdi/play.svg" class="m-2" />
         </button>
       </Transition>
-      <AppButton v-if="globalAudioState == AudioPlayerState.hidden" @click="onNextChapterButtonClicked" variant="primary-outline"
-        class="mr-4 md:mr-48 ml-auto h-14 mb-12 bg-white" size="sm">
+      <AppButton v-if="globalAudioState == AudioPlayerState.hidden" @click="onNextChapterButtonClicked"
+        variant="primary-outline" class="mr-4 md:mr-48 ml-auto h-14 mb-12 bg-white" size="sm">
         <img src="/mdi/chevron-right.svg" class="my-1 prev-next-button" />
       </AppButton>
       <AppButton v-else @click="onNextChapterButtonClicked" variant="primary-outline"
@@ -296,6 +304,7 @@ const menuVerse = ref({
   book_name: "",
   chapter: "",
   book_id: "",
+  text_array: [""]
 });
 const noteTitle = ref("");
 const noteText = ref("");
@@ -401,7 +410,7 @@ const loadChapterContent = async () => {
         let push = true;
 
         if (word.includes("<em>") && !word.includes("</em>")) isItalics = true;
-        else if (!word.includes("<em>") && word.includes("</em>")){
+        else if (!word.includes("<em>") && word.includes("</em>")) {
           word = `<em>${word}</em>`;
           isItalics = false;
         }
@@ -665,7 +674,7 @@ async function getNewVerses() {
 }
 
 async function copyString(str: string) {
-  str=str.replaceAll('<em>', '').replaceAll('</em>', '').replaceAll('"JESUS_START" ', '').replaceAll(' "JESUS_END"', '')
+  str = str.replaceAll('<em>', '').replaceAll('</em>', '').replaceAll('"JESUS_START" ', '').replaceAll(' "JESUS_END"', '')
   const el = document.createElement("textarea");
   el.value = str;
   el.setAttribute("readonly", "");
