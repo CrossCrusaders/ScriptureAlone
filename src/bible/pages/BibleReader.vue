@@ -422,6 +422,10 @@ const loadChapterContent = async () => {
         } else if (word == '"JESUS_END"') {
           ChristsWords = false;
           push = false;
+        } else if(word.includes('"JESUS_END"')){
+          transformedTempVerseText[transformedTempVerseText.length-1] = transformedTempVerseText[transformedTempVerseText.length-1] + word.split('"JESUS_END"')[1];
+          ChristsWords = false;
+          push = false;
         } else if (ChristsWords) word = `<span class="text-red-500">${word}</span>`;
 
         if (push) transformedTempVerseText.push(word);
