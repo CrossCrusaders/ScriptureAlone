@@ -8,4 +8,5 @@ export interface BibleVerse {
   highlight: string
   verse_text?: string
   book_name_alt?: string
+  info?: string
 }

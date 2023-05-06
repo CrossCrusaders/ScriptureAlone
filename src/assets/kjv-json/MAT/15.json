@@ -7,7 +7,8 @@
       "chapter": 15,
       "verse_start": 1,
       "verse_end": 1,
-      "text": "Then came to Jesus scribes and Pharisees, which were of Jerusalem, saying,"
+      "text": "Then came to Jesus scribes and Pharisees, which were of Jerusalem, saying,",
+      "info": ""
     },
     {
       "book_id": "MAT",
@@ -15,7 +16,8 @@
       "chapter": 15,
       "verse_start": 2,
       "verse_end": 2,
-      "text": "Why do thy disciples transgress the tradition of the elders? for they wash not their hands when they eat bread."
+      "text": "Why do thy disciples transgress the tradition of the elders? for they wash not their hands when they eat bread.",
+      "info": ""
     },
     {
       "book_id": "MAT",
@@ -23,7 +25,8 @@
       "chapter": 15,
       "verse_start": 3,
       "verse_end": 3,
-      "text": "But he answered and said unto them, \"JESUS_START\" Why do ye also transgress the commandment of God by your tradition? \"JESUS_END\""
+      "text": "But he answered and said unto them, <span style=\"color:red;\">Why do ye also transgress the commandment of God by your tradition?</span>",
+      "info": ""
     },
     {
       "book_id": "MAT",
@@ -31,7 +34,8 @@
       "chapter": 15,
       "verse_start": 4,
       "verse_end": 4,
-      "text": "\"JESUS_START\" For God commanded, saying, Honour thy father and mother: and, He that curseth father or mother, let him die the death. \"JESUS_END\""
+      "text": "<span style=\"color:red;\">For God commanded, saying, Honour thy father and mother: and, He that curseth father or mother, let him die the death.</span>",
+      "info": ""
     },
     {
       "book_id": "MAT",
@@ -39,7 +43,8 @@
       "chapter": 15,
       "verse_start": 5,
       "verse_end": 5,
-      "text": "\"JESUS_START\" But ye say, Whosoever shall say to <em>his</em> father or <em>his</em> mother, <em>It is</em> a gift, by whatsoever thou mightest be profited by me; \"JESUS_END\""
+      "text": "<span style=\"color:red;\">But ye say, Whosoever shall say to <em>his</em> father or <em>his</em> mother, <em>It is</em> a gift, by whatsoever thou mightest be profited by me;</span>",
+      "info": ""
     },
     {
       "book_id": "MAT",
@@ -47,7 +52,8 @@
       "chapter": 15,
       "verse_start": 6,
       "verse_end": 6,
-      "text": "\"JESUS_START\" And honour not his father or his mother, <em>he shall be free</em>. Thus have ye made the commandment of God of none effect by your tradition. \"JESUS_END\""
+      "text": "<span style=\"color:red;\">And honour not his father or his mother, <em>he shall be free.</em> Thus have ye made the commandment of God of none effect by your tradition.</span>",
+      "info": ""
     },
     {
       "book_id": "MAT",
@@ -55,7 +61,8 @@
       "chapter": 15,
       "verse_start": 7,
       "verse_end": 7,
-      "text": "\"JESUS_START\" <em>Ye</em> hypocrites, well did Esaias prophesy of you, saying, \"JESUS_END\""
+      "text": "<span style=\"color:red;\"><em>Ye</em> hypocrites, well did Esaias prophesy of you, saying,</span>",
+      "info": ""
     },
     {
       "book_id": "MAT",
@@ -63,7 +70,8 @@
       "chapter": 15,
       "verse_start": 8,
       "verse_end": 8,
-      "text": "\"JESUS_START\" This people draweth nigh unto me with their mouth, and honoureth me with <em>their</em> lips; but their heart is far from me. \"JESUS_END\""
+      "text": "<span style=\"color:red;\">This people draweth nigh unto me with their mouth, and honoureth me with <em>their</em> lips; but their heart is far from me.</span>",
+      "info": ""
     },
     {
       "book_id": "MAT",
@@ -71,7 +79,8 @@
       "chapter": 15,
       "verse_start": 9,
       "verse_end": 9,
-      "text": "\"JESUS_START\" But in vain they do worship me, teaching <em>for</em> doctrines the commandments of men. \"JESUS_END\""
+      "text": "<span style=\"color:red;\">But in vain they do worship me, teaching <em>for</em> doctrines the commandments of men.</span>",
+      "info": ""
     },
     {
       "book_id": "MAT",
@@ -79,7 +88,8 @@
       "chapter": 15,
       "verse_start": 10,
       "verse_end": 10,
-      "text": "And he called the multitude, and said unto them, \"JESUS_START\" Hear, and understand: \"JESUS_END\""
+      "text": "And he called the multitude, and said unto them, <span style=\"color:red;\">Hear, and understand:</span>",
+      "info": ""
     },
     {
       "book_id": "MAT",
@@ -87,7 +97,8 @@
       "chapter": 15,
       "verse_start": 11,
       "verse_end": 11,
-      "text": "\"JESUS_START\" Not that which goeth into the mouth defileth a man; but that which cometh out of the mouth, this defileth a man. \"JESUS_END\""
+      "text": "<span style=\"color:red;\">Not that which goeth into the mouth defileth a man; but that which cometh out of the mouth, this defileth a man.</span>",
+      "info": ""
     },
     {
       "book_id": "MAT",
@@ -95,7 +106,8 @@
       "chapter": 15,
       "verse_start": 12,
       "verse_end": 12,
-      "text": "Then came his disciples, and said unto him, Knowest thou that the Pharisees were offended, after they heard this saying?"
+      "text": "Then came his disciples, and said unto him, Knowest thou that the Pharisees were offended, after they heard this saying?",
+      "info": ""
     },
     {
       "book_id": "MAT",
@@ -103,7 +115,8 @@
       "chapter": 15,
       "verse_start": 13,
       "verse_end": 13,
-      "text": "But he answered and said, \"JESUS_START\" Every plant, which my heavenly Father hath not planted, shall be rooted up. \"JESUS_END\""
+      "text": "But he answered and said, <span style=\"color:red;\">Every plant, which my heavenly Father hath not planted, shall be rooted up.</span>",
+      "info": ""
     },
     {
       "book_id": "MAT",
@@ -111,7 +124,8 @@
       "chapter": 15,
       "verse_start": 14,
       "verse_end": 14,
-      "text": "\"JESUS_START\" Let them alone: they be blind leaders of the blind. And if the blind lead the blind, both shall fall into the ditch. \"JESUS_END\""
+      "text": "<span style=\"color:red;\">Let them alone: they be blind leaders of the blind. And if the blind lead the blind, both shall fall into the ditch.</span>",
+      "info": ""
     },
     {
       "book_id": "MAT",
@@ -119,7 +133,8 @@
       "chapter": 15,
       "verse_start": 15,
       "verse_end": 15,
-      "text": "Then answered Peter and said unto him, Declare unto us this parable."
+      "text": "Then answered Peter and said unto him, Declare unto us this parable.",
+      "info": ""
     },
     {
       "book_id": "MAT",
@@ -127,7 +142,8 @@
       "chapter": 15,
       "verse_start": 16,
       "verse_end": 16,
-      "text": "And Jesus said, \"JESUS_START\" Are ye also yet without understanding? \"JESUS_END\""
+      "text": "And Jesus said, <span style=\"color:red;\">Are ye also yet without understanding?</span>",
+      "info": ""
     },
     {
       "book_id": "MAT",
@@ -135,7 +151,8 @@
       "chapter": 15,
       "verse_start": 17,
       "verse_end": 17,
-      "text": "\"JESUS_START\" Do not ye yet understand, that whatsoever entereth in at the mouth goeth into the belly, and is cast out into the draught? \"JESUS_END\""
+      "text": "<span style=\"color:red;\">Do not ye yet understand, that whatsoever entereth in at the mouth goeth into the belly, and is cast out into the draught?</span>",
+      "info": ""
     },
     {
       "book_id": "MAT",
@@ -143,7 +160,8 @@
       "chapter": 15,
       "verse_start": 18,
       "verse_end": 18,
-      "text": "\"JESUS_START\" But those things which proceed out of the mouth come forth from the heart; and they defile the man. \"JESUS_END\""
+      "text": "<span style=\"color:red;\">But those things which proceed out of the mouth come forth from the heart; and they defile the man.</span>",
+      "info": ""
     },
     {
       "book_id": "MAT",
@@ -151,7 +169,8 @@
       "chapter": 15,
       "verse_start": 19,
       "verse_end": 19,
-      "text": "\"JESUS_START\" For out of the heart proceed evil thoughts, murders, adulteries, fornications, thefts, false witness, blasphemies: \"JESUS_END\""
+      "text": "<span style=\"color:red;\">For out of the heart proceed evil thoughts, murders, adulteries, fornications, thefts, false witness, blasphemies:</span>",
+      "info": ""
     },
     {
       "book_id": "MAT",
@@ -159,7 +178,8 @@
       "chapter": 15,
       "verse_start": 20,
       "verse_end": 20,
-      "text": "\"JESUS_START\" These are <em>the things</em> which defile a man: but to eat with unwashen hands defileth not a man. \"JESUS_END\""
+      "text": "<span style=\"color:red;\">These are <em>the things</em> which defile a man: but to eat with unwashen hands defileth not a man.</span>",
+      "info": ""
     },
     {
       "book_id": "MAT",
@@ -167,7 +187,8 @@
       "chapter": 15,
       "verse_start": 21,
       "verse_end": 21,
-      "text": "Then Jesus went thence, and departed into the coasts of Tyre and Sidon."
+      "text": "Then Jesus went thence, and departed into the coasts of Tyre and Sidon.",
+      "info": ""
     },
     {
       "book_id": "MAT",
@@ -175,7 +196,8 @@
       "chapter": 15,
       "verse_start": 22,
       "verse_end": 22,
-      "text": "And, behold, a woman of Canaan came out of the same coasts, and cried unto him, saying, Have mercy on me, O Lord, <em>thou</em> Son of David; my daughter is grievously vexed with a devil."
+      "text": "And, behold, a woman of Canaan came out of the same coasts, and cried unto him, saying, Have mercy on me, O Lord, <em>thou</em> Son of David; my daughter is grievously vexed with a devil.",
+      "info": ""
     },
     {
       "book_id": "MAT",
@@ -183,7 +205,8 @@
       "chapter": 15,
       "verse_start": 23,
       "verse_end": 23,
-      "text": "But he answered her not a word. And his disciples came and besought him, saying, Send her away; for she crieth after us."
+      "text": "But he answered her not a word. And his disciples came and besought him, saying, Send her away; for she crieth after us.",
+      "info": ""
     },
     {
       "book_id": "MAT",
@@ -191,7 +214,8 @@
       "chapter": 15,
       "verse_start": 24,
       "verse_end": 24,
-      "text": "But he answered and said, \"JESUS_START\" I am not sent but unto the lost sheep of the house of Israel. \"JESUS_END\""
+      "text": "But he answered and said, <span style=\"color:red;\">I am not sent but unto the lost sheep of the house of Israel.</span>",
+      "info": ""
     },
     {
       "book_id": "MAT",
@@ -199,7 +223,8 @@
       "chapter": 15,
       "verse_start": 25,
       "verse_end": 25,
-      "text": "Then came she and worshipped him, saying, Lord, help me."
+      "text": "Then came she and worshipped him, saying, Lord, help me.",
+      "info": ""
     },
     {
       "book_id": "MAT",
@@ -207,7 +232,8 @@
       "chapter": 15,
       "verse_start": 26,
       "verse_end": 26,
-      "text": "But he answered and said, \"JESUS_START\" It is not meet to take the children's bread, and to cast <em>it</em> to dogs. \"JESUS_END\""
+      "text": "But he answered and said, <span style=\"color:red;\">It is not meet to take the children's bread, and to cast <em>it</em> to dogs.</span>",
+      "info": ""
     },
     {
       "book_id": "MAT",
@@ -215,7 +241,8 @@
       "chapter": 15,
       "verse_start": 27,
       "verse_end": 27,
-      "text": "And she said, Truth, Lord: yet the dogs eat of the crumbs which fall from their masters' table."
+      "text": "And she said, Truth, Lord: yet the dogs eat of the crumbs which fall from their masters' table.",
+      "info": ""
     },
     {
       "book_id": "MAT",
@@ -223,7 +250,8 @@
       "chapter": 15,
       "verse_start": 28,
       "verse_end": 28,
-      "text": "Then Jesus answered and said unto her, \"JESUS_START\" O woman, great <em>is</em> thy faith: be it unto thee even as thou wilt. \"JESUS_END\" And her daughter was made whole from that very hour."
+      "text": "Then Jesus answered and said unto her, <span style=\"color:red;\">O woman, great <em>is</em> thy faith: be it unto thee even as thou wilt.</span> And her daughter was made whole from that very hour.",
+      "info": ""
     },
     {
       "book_id": "MAT",
@@ -231,7 +259,8 @@
       "chapter": 15,
       "verse_start": 29,
       "verse_end": 29,
-      "text": "And Jesus departed from thence, and came nigh unto the sea of Galilee; and went up into a mountain, and sat down there."
+      "text": "And Jesus departed from thence, and came nigh unto the sea of Galilee; and went up into a mountain, and sat down there.",
+      "info": ""
     },
     {
       "book_id": "MAT",
@@ -239,7 +268,8 @@
       "chapter": 15,
       "verse_start": 30,
       "verse_end": 30,
-      "text": "And great multitudes came unto him, having with them <em>those that were</em> lame, blind, dumb, maimed, and many others, and cast them down at Jesus' feet; and he healed them:"
+      "text": "And great multitudes came unto him, having with them <em>those that were</em> lame, blind, dumb, maimed, and many others, and cast them down at Jesus' feet; and he healed them:",
+      "info": ""
     },
     {
       "book_id": "MAT",
@@ -247,7 +277,8 @@
       "chapter": 15,
       "verse_start": 31,
       "verse_end": 31,
-      "text": "Insomuch that the multitude wondered, when they saw the dumb to speak, the maimed to be whole, the lame to walk, and the blind to see: and they glorified the God of Israel."
+      "text": "Insomuch that the multitude wondered, when they saw the dumb to speak, the maimed to be whole, the lame to walk, and the blind to see: and they glorified the God of Israel.",
+      "info": ""
     },
     {
       "book_id": "MAT",
@@ -255,7 +286,8 @@
       "chapter": 15,
       "verse_start": 32,
       "verse_end": 32,
-      "text": "Then Jesus called his disciples <em>unto him</em>, and said, \"JESUS_START\" I have compassion on the multitude, because they continue with me now three days, and have nothing to eat: and I will not send them away fasting, lest they faint in the way. \"JESUS_END\""
+      "text": "Then Jesus called his disciples <em>unto him,</em> and said, <span style=\"color:red;\">I have compassion on the multitude, because they continue with me now three days, and have nothing to eat: and I will not send them away fasting, lest they faint in the way.</span>",
+      "info": ""
     },
     {
       "book_id": "MAT",
@@ -263,7 +295,8 @@
       "chapter": 15,
       "verse_start": 33,
       "verse_end": 33,
-      "text": "And his disciples say unto him, Whence should we have so much bread in the wilderness, as to fill so great a multitude?"
+      "text": "And his disciples say unto him, Whence should we have so much bread in the wilderness, as to fill so great a multitude?",
+      "info": ""
     },
     {
       "book_id": "MAT",
@@ -271,7 +304,8 @@
       "chapter": 15,
       "verse_start": 34,
       "verse_end": 34,
-      "text": "And Jesus saith unto them, \"JESUS_START\" How many loaves have ye? \"JESUS_END\" And they said, Seven, and a few little fishes."
+      "text": "And Jesus saith unto them, <span style=\"color:red;\">How many loaves have ye?</span> And they said, Seven, and a few little fishes.",
+      "info": ""
     },
     {
       "book_id": "MAT",
@@ -279,7 +313,8 @@
       "chapter": 15,
       "verse_start": 35,
       "verse_end": 35,
-      "text": "And he commanded the multitude to sit down on the ground."
+      "text": "And he commanded the multitude to sit down on the ground.",
+      "info": ""
     },
     {
       "book_id": "MAT",
@@ -287,7 +322,8 @@
       "chapter": 15,
       "verse_start": 36,
       "verse_end": 36,
-      "text": "And he took the seven loaves and the fishes, and gave thanks, and brake <em>them</em>, and gave to his disciples, and the disciples to the multitude."
+      "text": "And he took the seven loaves and the fishes, and gave thanks, and brake <em>them,</em> and gave to his disciples, and the disciples to the multitude.",
+      "info": ""
     },
     {
       "book_id": "MAT",
@@ -295,7 +331,8 @@
       "chapter": 15,
       "verse_start": 37,
       "verse_end": 37,
-      "text": "And they did all eat, and were filled: and they took up of the broken <em>meat</em> that was left seven baskets full."
+      "text": "And they did all eat, and were filled: and they took up of the broken <em>meat</em> that was left seven baskets full.",
+      "info": ""
     },
     {
       "book_id": "MAT",
@@ -303,7 +340,8 @@
       "chapter": 15,
       "verse_start": 38,
       "verse_end": 38,
-      "text": "And they that did eat were four thousand men, beside women and children."
+      "text": "And they that did eat were four thousand men, beside women and children.",
+      "info": ""
     },
     {
       "book_id": "MAT",
@@ -311,7 +349,8 @@
       "chapter": 15,
       "verse_start": 39,
       "verse_end": 39,
-      "text": "And he sent away the multitude, and took ship, and came into the coasts of Magdala."
+      "text": "And he sent away the multitude, and took ship, and came into the coasts of Magdala.",
+      "info": ""
     }
   ]
 }

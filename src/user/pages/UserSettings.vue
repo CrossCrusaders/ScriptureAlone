@@ -42,7 +42,7 @@
                       Change
                     </button>
                     <input type="file" id="fileInput"
-                      class="text-lg absolute left-0 top-0 opacity-0 max-h-8 w-48 h-8 max-w-48" ref="pfpInput"
+                      class="text-lg absolute left-0 top-0 opacity-0 max-h-8 w-48 h-8 max-w-48 cursor-pointer" ref="pfpInput"
                       @change="getTempPFP($event); setNeedsSaved(2, TabState, $event);" />
                   </div>
                   <div class="relative overflow-hidden inline-block">

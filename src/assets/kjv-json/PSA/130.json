@@ -7,7 +7,8 @@
       "chapter": 130,
       "verse_start": 1,
       "verse_end": 1,
-      "text": "Out of the depths have I cried unto thee, O LORD."
+      "text": "Out of the depths have I cried unto thee, O LORD.",
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -15,7 +16,8 @@
       "chapter": 130,
       "verse_start": 2,
       "verse_end": 2,
-      "text": "Lord, hear my voice: let thine ears be attentive to the voice of my supplications."
+      "text": "Lord, hear my voice: let thine ears be attentive to the voice of my supplications.",
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -23,7 +25,8 @@
       "chapter": 130,
       "verse_start": 3,
       "verse_end": 3,
-      "text": "If thou, LORD, shouldest mark iniquities, O Lord, who shall stand?"
+      "text": "If thou, LORD, shouldest mark iniquities, O Lord, who shall stand?",
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -31,7 +34,8 @@
       "chapter": 130,
       "verse_start": 4,
       "verse_end": 4,
-      "text": "But <em>there is</em> forgiveness with thee, that thou mayest be feared."
+      "text": "But <em>there is</em> forgiveness with thee, that thou mayest be feared.",
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -39,7 +43,8 @@
       "chapter": 130,
       "verse_start": 5,
       "verse_end": 5,
-      "text": "I wait for the LORD, my soul doth wait, and in his word do I hope."
+      "text": "I wait for the LORD, my soul doth wait, and in his word do I hope.",
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -47,7 +52,8 @@
       "chapter": 130,
       "verse_start": 6,
       "verse_end": 6,
-      "text": "My soul <em>waiteth</em> for the Lord more than they that watch for the morning: <em>I say, more than</em> they that watch for the morning."
+      "text": "My soul <em>waiteth</em> for the Lord more than they that watch for the morning: <em>I say, more than</em> they that watch for the morning.",
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -55,7 +61,8 @@
       "chapter": 130,
       "verse_start": 7,
       "verse_end": 7,
-      "text": "Let Israel hope in the LORD: for with the LORD <em>there is</em> mercy, and with him <em>is</em> plenteous redemption."
+      "text": "Let Israel hope in the LORD: for with the LORD <em>there is</em> mercy, and with him <em>is</em> plenteous redemption.",
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -63,7 +70,8 @@
       "chapter": 130,
       "verse_start": 8,
       "verse_end": 8,
-      "text": "And he shall redeem Israel from all his iniquities."
+      "text": "And he shall redeem Israel from all his iniquities.",
+      "info": ""
     }
   ]
 }

@@ -7,7 +7,8 @@
       "chapter": 20,
       "verse_start": 1,
       "verse_end": 1,
-      "text": "And it came to pass, <em>that</em> on one of those days, as he taught the people in the temple, and preached the gospel, the chief priests and the scribes came upon <em>him</em> with the elders,"
+      "text": "And it came to pass, <em>that</em> on one of those days, as he taught the people in the temple, and preached the gospel, the chief priests and the scribes came upon <em>him</em> with the elders,",
+      "info": ""
     },
     {
       "book_id": "LUK",
@@ -15,7 +16,8 @@
       "chapter": 20,
       "verse_start": 2,
       "verse_end": 2,
-      "text": "And spake unto him, saying, Tell us, by what authority doest thou these things? or who is he that gave thee this authority?"
+      "text": "And spake unto him, saying, Tell us, by what authority doest thou these things? or who is he that gave thee this authority?",
+      "info": ""
     },
     {
       "book_id": "LUK",
@@ -23,7 +25,8 @@
       "chapter": 20,
       "verse_start": 3,
       "verse_end": 3,
-      "text": "And he answered and said unto them, \"JESUS_START\" I will also ask you one thing; and answer me: \"JESUS_END\""
+      "text": "And he answered and said unto them, <span style=\"color:red;\">I will also ask you one thing; and answer me:</span>",
+      "info": ""
     },
     {
       "book_id": "LUK",
@@ -31,7 +34,8 @@
       "chapter": 20,
       "verse_start": 4,
       "verse_end": 4,
-      "text": "\"JESUS_START\" The baptism of John, was it from heaven, or of men? \"JESUS_END\""
+      "text": "<span style=\"color:red;\">The baptism of John, was it from heaven, or of men?</span>",
+      "info": ""
     },
     {
       "book_id": "LUK",
@@ -39,7 +43,8 @@
       "chapter": 20,
       "verse_start": 5,
       "verse_end": 5,
-      "text": "And they reasoned with themselves, saying, If we shall say, From heaven; he will say, Why then believed ye him not?"
+      "text": "And they reasoned with themselves, saying, If we shall say, From heaven; he will say, Why then believed ye him not?",
+      "info": ""
     },
     {
       "book_id": "LUK",
@@ -47,7 +52,8 @@
       "chapter": 20,
       "verse_start": 6,
       "verse_end": 6,
-      "text": "But and if we say, Of men; all the people will stone us: for they be persuaded that John was a prophet."
+      "text": "But and if we say, Of men; all the people will stone us: for they be persuaded that John was a prophet.",
+      "info": ""
     },
     {
       "book_id": "LUK",
@@ -55,7 +61,8 @@
       "chapter": 20,
       "verse_start": 7,
       "verse_end": 7,
-      "text": "And they answered, that they could not tell whence <em>it was</em>."
+      "text": "And they answered, that they could not tell whence <em>it was.</em>",
+      "info": ""
     },
     {
       "book_id": "LUK",
@@ -63,7 +70,8 @@
       "chapter": 20,
       "verse_start": 8,
       "verse_end": 8,
-      "text": "And Jesus said unto them, \"JESUS_START\" Neither tell I you by what authority I do these things. \"JESUS_END\""
+      "text": "And Jesus said unto them, <span style=\"color:red;\">Neither tell I you by what authority I do these things.</span>",
+      "info": ""
     },
     {
       "book_id": "LUK",
@@ -71,7 +79,8 @@
       "chapter": 20,
       "verse_start": 9,
       "verse_end": 9,
-      "text": "Then began he to speak to the people this parable; \"JESUS_START\" A certain man planted a vineyard, and let it forth to husbandmen, and went into a far country for a long time. \"JESUS_END\""
+      "text": "Then began he to speak to the people this parable; <span style=\"color:red;\">A certain man planted a vineyard, and let it forth to husbandmen, and went into a far country for a long time.</span>",
+      "info": ""
     },
     {
       "book_id": "LUK",
@@ -79,7 +88,8 @@
       "chapter": 20,
       "verse_start": 10,
       "verse_end": 10,
-      "text": "\"JESUS_START\" And at the season he sent a servant to the husbandmen, that they should give him of the fruit of the vineyard: but the husbandmen beat him, and sent <em>him</em> away empty. \"JESUS_END\""
+      "text": "<span style=\"color:red;\">And at the season he sent a servant to the husbandmen, that they should give him of the fruit of the vineyard: but the husbandmen beat him, and sent <em>him</em> away empty.</span>",
+      "info": ""
     },
     {
       "book_id": "LUK",
@@ -87,7 +97,8 @@
       "chapter": 20,
       "verse_start": 11,
       "verse_end": 11,
-      "text": "\"JESUS_START\" And again he sent another servant: and they beat him also, and entreated <em>him</em> shamefully, and sent <em>him</em> away empty. \"JESUS_END\""
+      "text": "<span style=\"color:red;\">And again he sent another servant: and they beat him also, and entreated <em>him</em> shamefully, and sent <em>him</em> away empty.</span>",
+      "info": ""
     },
     {
       "book_id": "LUK",
@@ -95,7 +106,8 @@
       "chapter": 20,
       "verse_start": 12,
       "verse_end": 12,
-      "text": "\"JESUS_START\" And again he sent a third: and they wounded him also, and cast <em>him</em> out. \"JESUS_END\""
+      "text": "<span style=\"color:red;\">And again he sent a third: and they wounded him also, and cast <em>him</em> out.</span>",
+      "info": ""
     },
     {
       "book_id": "LUK",
@@ -103,7 +115,8 @@
       "chapter": 20,
       "verse_start": 13,
       "verse_end": 13,
-      "text": "\"JESUS_START\" Then said the lord of the vineyard, What shall I do? I will send my beloved son: it may be they will reverence <em>him</em> when they see him. \"JESUS_END\""
+      "text": "<span style=\"color:red;\">Then said the lord of the vineyard, What shall I do? I will send my beloved son: it may be they will reverence <em>him</em> when they see him.</span>",
+      "info": ""
     },
     {
       "book_id": "LUK",
@@ -111,7 +124,8 @@
       "chapter": 20,
       "verse_start": 14,
       "verse_end": 14,
-      "text": "\"JESUS_START\" But when the husbandmen saw him, they reasoned among themselves, saying, This is the heir: come, let us kill him, that the inheritance may be ours. \"JESUS_END\""
+      "text": "<span style=\"color:red;\">But when the husbandmen saw him, they reasoned among themselves, saying, This is the heir: come, let us kill him, that the inheritance may be ours.</span>",
+      "info": ""
     },
     {
       "book_id": "LUK",
@@ -119,7 +133,8 @@
       "chapter": 20,
       "verse_start": 15,
       "verse_end": 15,
-      "text": "\"JESUS_START\" So they cast him out of the vineyard, and killed <em>him</em>. What therefore shall the lord of the vineyard do unto them? \"JESUS_END\""
+      "text": "<span style=\"color:red;\">So they cast him out of the vineyard, and killed <em>him.</em> What therefore shall the lord of the vineyard do unto them?</span>",
+      "info": ""
     },
     {
       "book_id": "LUK",
@@ -127,7 +142,8 @@
       "chapter": 20,
       "verse_start": 16,
       "verse_end": 16,
-      "text": "\"JESUS_START\" He shall come and destroy these husbandmen, and shall give the vineyard to others. \"JESUS_END\" And when they heard <em>it</em>, they said, God forbid."
+      "text": "<span style=\"color:red;\">He shall come and destroy these husbandmen, and shall give the vineyard to others.</span> And when they heard <em>it,</em> they said, God forbid.",
+      "info": ""
     },
     {
       "book_id": "LUK",
@@ -135,7 +151,8 @@
       "chapter": 20,
       "verse_start": 17,
       "verse_end": 17,
-      "text": "And he beheld them, and said, \"JESUS_START\" What is this then that is written, The stone which the builders rejected, the same is become the head of the corner? \"JESUS_END\""
+      "text": "And he beheld them, and said, <span style=\"color:red;\">What is this then that is written, The stone which the builders rejected, the same is become the head of the corner?</span>",
+      "info": ""
     },
     {
       "book_id": "LUK",
@@ -143,7 +160,8 @@
       "chapter": 20,
       "verse_start": 18,
       "verse_end": 18,
-      "text": "\"JESUS_START\" Whosoever shall fall upon that stone shall be broken; but on whomsoever it shall fall, it will grind him to powder. \"JESUS_END\""
+      "text": "<span style=\"color:red;\">Whosoever shall fall upon that stone shall be broken; but on whomsoever it shall fall, it will grind him to powder.</span>",
+      "info": ""
     },
     {
       "book_id": "LUK",
@@ -151,7 +169,8 @@
       "chapter": 20,
       "verse_start": 19,
       "verse_end": 19,
-      "text": "And the chief priests and the scribes the same hour sought to lay hands on him; and they feared the people: for they perceived that he had spoken this parable against them."
+      "text": "And the chief priests and the scribes the same hour sought to lay hands on him; and they feared the people: for they perceived that he had spoken this parable against them.",
+      "info": ""
     },
     {
       "book_id": "LUK",
@@ -159,7 +178,8 @@
       "chapter": 20,
       "verse_start": 20,
       "verse_end": 20,
-      "text": "And they watched <em>him</em>, and sent forth spies, which should feign themselves just men, that they might take hold of his words, that so they might deliver him unto the power and authority of the governor."
+      "text": "And they watched <em>him,</em> and sent forth spies, which should feign themselves just men, that they might take hold of his words, that so they might deliver him unto the power and authority of the governor.",
+      "info": ""
     },
     {
       "book_id": "LUK",
@@ -167,7 +187,8 @@
       "chapter": 20,
       "verse_start": 21,
       "verse_end": 21,
-      "text": "And they asked him, saying, Master, we know that thou sayest and teachest rightly, neither acceptest thou the person <em>of any</em>, but teachest the way of God truly:"
+      "text": "And they asked him, saying, Master, we know that thou sayest and teachest rightly, neither acceptest thou the person <em>of any,</em> but teachest the way of God truly:",
+      "info": ""
     },
     {
       "book_id": "LUK",
@@ -175,7 +196,8 @@
       "chapter": 20,
       "verse_start": 22,
       "verse_end": 22,
-      "text": "Is it lawful for us to give tribute unto Caesar, or no?"
+      "text": "Is it lawful for us to give tribute unto Caesar, or no?",
+      "info": ""
     },
     {
       "book_id": "LUK",
@@ -183,7 +205,8 @@
       "chapter": 20,
       "verse_start": 23,
       "verse_end": 23,
-      "text": "But he perceived their craftiness, and said unto them, \"JESUS_START\" Why tempt ye me? \"JESUS_END\""
+      "text": "But he perceived their craftiness, and said unto them, <span style=\"color:red;\">Why tempt ye me?</span>",
+      "info": ""
     },
     {
       "book_id": "LUK",
@@ -191,7 +214,8 @@
       "chapter": 20,
       "verse_start": 24,
       "verse_end": 24,
-      "text": "\"JESUS_START\" Shew me a penny. Whose image and superscription hath it? \"JESUS_END\" They answered and said, Caesar's."
+      "text": "<span style=\"color:red;\">Shew me a penny. Whose image and superscription hath it?</span> They answered and said, Caesar's.",
+      "info": ""
     },
     {
       "book_id": "LUK",
@@ -199,7 +223,8 @@
       "chapter": 20,
       "verse_start": 25,
       "verse_end": 25,
-      "text": "And he said unto them, \"JESUS_START\" Render therefore unto Caesar the things which be Caesar's, and unto God the things which be God's. \"JESUS_END\""
+      "text": "And he said unto them, <span style=\"color:red;\">Render therefore unto Caesar the things which be Caesar's, and unto God the things which be God's.</span>",
+      "info": ""
     },
     {
       "book_id": "LUK",
@@ -207,7 +232,8 @@
       "chapter": 20,
       "verse_start": 26,
       "verse_end": 26,
-      "text": "And they could not take hold of his words before the people: and they marvelled at his answer, and held their peace."
+      "text": "And they could not take hold of his words before the people: and they marvelled at his answer, and held their peace.",
+      "info": ""
     },
     {
       "book_id": "LUK",
@@ -215,7 +241,8 @@
       "chapter": 20,
       "verse_start": 27,
       "verse_end": 27,
-      "text": "Then came to <em>him</em> certain of the Sadducees, which deny that there is any resurrection; and they asked him,"
+      "text": "Then came to <em>him</em> certain of the Sadducees, which deny that there is any resurrection; and they asked him,",
+      "info": ""
     },
     {
       "book_id": "LUK",
@@ -223,7 +250,8 @@
       "chapter": 20,
       "verse_start": 28,
       "verse_end": 28,
-      "text": "Saying, Master, Moses wrote unto us, If any man's brother die, having a wife, and he die without children, that his brother should take his wife, and raise up seed unto his brother."
+      "text": "Saying, Master, Moses wrote unto us, If any man's brother die, having a wife, and he die without children, that his brother should take his wife, and raise up seed unto his brother.",
+      "info": ""
     },
     {
       "book_id": "LUK",
@@ -231,7 +259,8 @@
       "chapter": 20,
       "verse_start": 29,
       "verse_end": 29,
-      "text": "There were therefore seven brethren: and the first took a wife, and died without children."
+      "text": "There were therefore seven brethren: and the first took a wife, and died without children.",
+      "info": ""
     },
     {
       "book_id": "LUK",
@@ -239,7 +268,8 @@
       "chapter": 20,
       "verse_start": 30,
       "verse_end": 30,
-      "text": "And the second took her to wife, and he died childless."
+      "text": "And the second took her to wife, and he died childless.",
+      "info": ""
     },
     {
       "book_id": "LUK",
@@ -247,7 +277,8 @@
       "chapter": 20,
       "verse_start": 31,
       "verse_end": 31,
-      "text": "And the third took her; and in like manner the seven also: and they left no children, and died."
+      "text": "And the third took her; and in like manner the seven also: and they left no children, and died.",
+      "info": ""
     },
     {
       "book_id": "LUK",
@@ -255,7 +286,8 @@
       "chapter": 20,
       "verse_start": 32,
       "verse_end": 32,
-      "text": "Last of all the woman died also."
+      "text": "Last of all the woman died also.",
+      "info": ""
     },
     {
       "book_id": "LUK",
@@ -263,7 +295,8 @@
       "chapter": 20,
       "verse_start": 33,
       "verse_end": 33,
-      "text": "Therefore in the resurrection whose wife of them is she? for seven had her to wife."
+      "text": "Therefore in the resurrection whose wife of them is she? for seven had her to wife.",
+      "info": ""
     },
     {
       "book_id": "LUK",
@@ -271,7 +304,8 @@
       "chapter": 20,
       "verse_start": 34,
       "verse_end": 34,
-      "text": "And Jesus answering said unto them, \"JESUS_START\" The children of this world marry, and are given in marriage: \"JESUS_END\""
+      "text": "And Jesus answering said unto them, <span style=\"color:red;\">The children of this world marry, and are given in marriage:</span>",
+      "info": ""
     },
     {
       "book_id": "LUK",
@@ -279,7 +313,8 @@
       "chapter": 20,
       "verse_start": 35,
       "verse_end": 35,
-      "text": "\"JESUS_START\" But they which shall be accounted worthy to obtain that world, and the resurrection from the dead, neither marry, nor are given in marriage: \"JESUS_END\""
+      "text": "<span style=\"color:red;\">But they which shall be accounted worthy to obtain that world, and the resurrection from the dead, neither marry, nor are given in marriage:</span>",
+      "info": ""
     },
     {
       "book_id": "LUK",
@@ -287,7 +322,8 @@
       "chapter": 20,
       "verse_start": 36,
       "verse_end": 36,
-      "text": "\"JESUS_START\" Neither can they die any more: for they are equal unto the angels; and are the children of God, being the children of the resurrection. \"JESUS_END\""
+      "text": "<span style=\"color:red;\">Neither can they die any more: for they are equal unto the angels; and are the children of God, being the children of the resurrection.</span>",
+      "info": ""
     },
     {
       "book_id": "LUK",
@@ -295,7 +331,8 @@
       "chapter": 20,
       "verse_start": 37,
       "verse_end": 37,
-      "text": "\"JESUS_START\" Now that the dead are raised, even Moses shewed at the bush, when he calleth the Lord the God of Abraham, and the God of Isaac, and the God of Jacob. \"JESUS_END\""
+      "text": "<span style=\"color:red;\">Now that the dead are raised, even Moses shewed at the bush, when he calleth the Lord the God of Abraham, and the God of Isaac, and the God of Jacob.</span>",
+      "info": ""
     },
     {
       "book_id": "LUK",
@@ -303,7 +340,8 @@
       "chapter": 20,
       "verse_start": 38,
       "verse_end": 38,
-      "text": "\"JESUS_START\" For he is not a God of the dead, but of the living: for all live unto him. \"JESUS_END\""
+      "text": "<span style=\"color:red;\">For he is not a God of the dead, but of the living: for all live unto him.</span>",
+      "info": ""
     },
     {
       "book_id": "LUK",
@@ -311,7 +349,8 @@
       "chapter": 20,
       "verse_start": 39,
       "verse_end": 39,
-      "text": "Then certain of the scribes answering said, Master, thou hast well said."
+      "text": "Then certain of the scribes answering said, Master, thou hast well said.",
+      "info": ""
     },
     {
       "book_id": "LUK",
@@ -319,7 +358,8 @@
       "chapter": 20,
       "verse_start": 40,
       "verse_end": 40,
-      "text": "And after that they durst not ask him any <em>question at all</em>."
+      "text": "And after that they durst not ask him any <em>question at all.</em>",
+      "info": ""
     },
     {
       "book_id": "LUK",
@@ -327,7 +367,8 @@
       "chapter": 20,
       "verse_start": 41,
       "verse_end": 41,
-      "text": "And he said unto them, \"JESUS_START\" How say they that Christ is David's son? \"JESUS_END\""
+      "text": "And he said unto them, <span style=\"color:red;\">How say they that Christ is David's son?</span>",
+      "info": ""
     },
     {
       "book_id": "LUK",
@@ -335,7 +376,8 @@
       "chapter": 20,
       "verse_start": 42,
       "verse_end": 42,
-      "text": "\"JESUS_START\" And David himself saith in the book of Psalms, The LORD said unto my Lord, Sit thou on my right hand, \"JESUS_END\""
+      "text": "<span style=\"color:red;\">And David himself saith in the book of Psalms, The LORD said unto my Lord, Sit thou on my right hand,</span>",
+      "info": ""
     },
     {
       "book_id": "LUK",
@@ -343,7 +385,8 @@
       "chapter": 20,
       "verse_start": 43,
       "verse_end": 43,
-      "text": "\"JESUS_START\" Till I make thine enemies thy footstool. \"JESUS_END\""
+      "text": "<span style=\"color:red;\">Till I make thine enemies thy footstool.</span>",
+      "info": ""
     },
     {
       "book_id": "LUK",
@@ -351,7 +394,8 @@
       "chapter": 20,
       "verse_start": 44,
       "verse_end": 44,
-      "text": "\"JESUS_START\" David therefore calleth him Lord, how is he then his son? \"JESUS_END\""
+      "text": "<span style=\"color:red;\">David therefore calleth him Lord, how is he then his son?</span>",
+      "info": ""
     },
     {
       "book_id": "LUK",
@@ -359,7 +403,8 @@
       "chapter": 20,
       "verse_start": 45,
       "verse_end": 45,
-      "text": "Then in the audience of all the people he said unto his disciples,"
+      "text": "Then in the audience of all the people he said unto his disciples,",
+      "info": ""
     },
     {
       "book_id": "LUK",
@@ -367,7 +412,8 @@
       "chapter": 20,
       "verse_start": 46,
       "verse_end": 46,
-      "text": "\"JESUS_START\" Beware of the scribes, which desire to walk in long robes, and love greetings in the markets, and the highest seats in the synagogues, and the chief rooms at feasts; \"JESUS_END\""
+      "text": "<span style=\"color:red;\">Beware of the scribes, which desire to walk in long robes, and love greetings in the markets, and the highest seats in the synagogues, and the chief rooms at feasts;</span>",
+      "info": ""
     },
     {
       "book_id": "LUK",
@@ -375,7 +421,8 @@
       "chapter": 20,
       "verse_start": 47,
       "verse_end": 47,
-      "text": "\"JESUS_START\" Which devour widows' houses, and for a shew make long prayers: the same shall receive greater damnation. \"JESUS_END\""
+      "text": "<span style=\"color:red;\">Which devour widows' houses, and for a shew make long prayers: the same shall receive greater damnation.</span>",
+      "info": ""
     }
   ]
 }

@@ -7,7 +7,8 @@
       "chapter": 120,
       "verse_start": 1,
       "verse_end": 1,
-      "text": "In my distress I cried unto the LORD, and he heard me."
+      "text": "In my distress I cried unto the LORD, and he heard me.",
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -15,7 +16,8 @@
       "chapter": 120,
       "verse_start": 2,
       "verse_end": 2,
-      "text": "Deliver my soul, O LORD, from lying lips, <em>and</em> from a deceitful tongue."
+      "text": "Deliver my soul, O LORD, from lying lips, <em>and</em> from a deceitful tongue.",
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -23,7 +25,8 @@
       "chapter": 120,
       "verse_start": 3,
       "verse_end": 3,
-      "text": "What shall be given unto thee? or what shall be done unto thee, thou false tongue?"
+      "text": "What shall be given unto thee? or what shall be done unto thee, thou false tongue?",
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -31,7 +34,8 @@
       "chapter": 120,
       "verse_start": 4,
       "verse_end": 4,
-      "text": "Sharp arrows of the mighty, with coals of juniper."
+      "text": "Sharp arrows of the mighty, with coals of juniper.",
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -39,7 +43,8 @@
       "chapter": 120,
       "verse_start": 5,
       "verse_end": 5,
-      "text": "Woe is me, that I sojourn in Mesech, <em>that</em> I dwell in the tents of Kedar!"
+      "text": "Woe is me, that I sojourn in Mesech, <em>that</em> I dwell in the tents of Kedar!",
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -47,7 +52,8 @@
       "chapter": 120,
       "verse_start": 6,
       "verse_end": 6,
-      "text": "My soul hath long dwelt with him that hateth peace."
+      "text": "My soul hath long dwelt with him that hateth peace.",
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -55,7 +61,8 @@
       "chapter": 120,
       "verse_start": 7,
       "verse_end": 7,
-      "text": "I <em>am for</em> peace: but when I speak, they <em>are</em> for war."
+      "text": "I <em>am for</em> peace: but when I speak, they <em>are</em> for war.",
+      "info": ""
     }
   ]
 }

@@ -37,34 +37,35 @@
       </div>
       <Spinner class="mx-auto" v-if="pageLoading"></Spinner>
       <div v-else class="bible-reader-content max-w-prose mx-auto leading-loose">
-        <p v-for="verse in loadedChapterContent.verses" v-touch:longtap="
-          () => {
-            onVerseClicked(verse.verse_start, true);
-            menuVerse = verse;
-            openMenu = true;
-          }
-        " v-touch:tap="() => onVerseClicked(verse.verse_start)" :id="`verse-${verse.verse_start}`" :class="verse.css">
-          <span class="verse-number">{{ verse.verse_start }}</span><span class="verse-text">
-            <span v-for="word in verse.text_array">
-              <button @click="
-                handleOpenWordModal(
-                  getWordFromPastTense(word.split('|')[1].split('</span>')[0]),
-                  verse.verse_start
-                )
-              " v-if="word.includes('<span') && word.includes('|')"
-                class="underline ml-1 font-bold text-red-700 hover:text-red-500 transition-all"
-                v-html="word.split('|')[0] + word.split('|')[1]"></button>
-              <button @click="
-                handleOpenWordModal(
-                  getWordFromPastTense(word.split('|')[1]),
-                  verse.verse_start
-                )
-              " v-else-if="word.includes('|')"
-                class="underline ml-1 font-bold text-slate-500 hover:text-gray-500 transition-all"
-                v-html="word.split('|')[1]"></button>
-              <span v-else v-html="' ' + word"></span>
+        <p v-for="verse in loadedChapterContent.verses">
+          <div class="w-full text-center font-bold text-lg" v-if="verse?.info">{{ verse?.info }}</div>
+          <div 
+            v-touch:longtap="() => { onVerseClicked(verse.verse_start, true); menuVerse = verse; openMenu = true; }"
+            v-touch:tap="() => onVerseClicked(verse.verse_start)" :id="`verse-${verse.verse_start}`"
+            :class="verse.css"
+          >
+            <span class="verse-number">{{ verse.verse_start }}</span><span class="verse-text">
+              <span v-for="word in verse.text_array">
+                <button @click="
+                  handleOpenWordModal(
+                    getWordFromPastTense(word.split('|')[1].split('</span>')[0]),
+                    verse.verse_start
+                  )
+                " v-if="word.includes('<span') && word.includes('|')"
+                  class="underline ml-1 font-bold text-red-700 hover:text-red-500 transition-all"
+                  v-html="word.split('|')[0] + word.split('|')[1]"></button>
+                <button @click="
+                  handleOpenWordModal(
+                    getWordFromPastTense(word.split('|')[1]),
+                    verse.verse_start
+                  )
+                " v-else-if="word.includes('|')"
+                  class="underline ml-1 font-bold text-slate-500 hover:text-gray-500 transition-all"
+                  v-html="word.split('|')[1]"></button>
+                <span v-else v-html="' ' + word"></span>
+              </span>
             </span>
-          </span>
+          </div>
         </p>
       </div>
     </PageContent>
@@ -304,6 +305,7 @@ const menuVerse = ref({
   book_name: "",
   chapter: "",
   book_id: "",
+  info: "",
   text_array: [""]
 });
 const noteTitle = ref("");

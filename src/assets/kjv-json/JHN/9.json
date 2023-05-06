@@ -7,7 +7,8 @@
       "chapter": 9,
       "verse_start": 1,
       "verse_end": 1,
-      "text": "And as <em>Jesus</em> passed by, he saw a man which was blind from <em>his</em> birth."
+      "text": "And as <em>Jesus</em> passed by, he saw a man which was blind from <em>his</em> birth.",
+      "info": ""
     },
     {
       "book_id": "JHN",
@@ -15,7 +16,8 @@
       "chapter": 9,
       "verse_start": 2,
       "verse_end": 2,
-      "text": "And his disciples asked him, saying, Master, who did sin, this man, or his parents, that he was born blind?"
+      "text": "And his disciples asked him, saying, Master, who did sin, this man, or his parents, that he was born blind?",
+      "info": ""
     },
     {
       "book_id": "JHN",
@@ -23,7 +25,8 @@
       "chapter": 9,
       "verse_start": 3,
       "verse_end": 3,
-      "text": "Jesus answered, \"JESUS_START\" Neither hath this man sinned, nor his parents: but that the works of God should be made manifest in him. \"JESUS_END\""
+      "text": "Jesus answered, <span style=\"color:red;\">Neither hath this man sinned, nor his parents: but that the works of God should be made manifest in him.</span>",
+      "info": ""
     },
     {
       "book_id": "JHN",
@@ -31,7 +34,8 @@
       "chapter": 9,
       "verse_start": 4,
       "verse_end": 4,
-      "text": "\"JESUS_START\" I must work the works of him that sent me, while it is day: the night cometh, when no man can work. \"JESUS_END\""
+      "text": "<span style=\"color:red;\">I must work the works of him that sent me, while it is day: the night cometh, when no man can work.</span>",
+      "info": ""
     },
     {
       "book_id": "JHN",
@@ -39,7 +43,8 @@
       "chapter": 9,
       "verse_start": 5,
       "verse_end": 5,
-      "text": "\"JESUS_START\" As long as I am in the world, I am the light of the world. \"JESUS_END\""
+      "text": "<span style=\"color:red;\">As long as I am in the world, I am the light of the world.</span>",
+      "info": ""
     },
     {
       "book_id": "JHN",
@@ -47,7 +52,8 @@
       "chapter": 9,
       "verse_start": 6,
       "verse_end": 6,
-      "text": "When he had thus spoken, he spat on the ground, and made clay of the spittle, and he anointed the eyes of the blind man with the clay,"
+      "text": "When he had thus spoken, he spat on the ground, and made clay of the spittle, and he anointed the eyes of the blind man with the clay,",
+      "info": ""
     },
     {
       "book_id": "JHN",
@@ -55,7 +61,8 @@
       "chapter": 9,
       "verse_start": 7,
       "verse_end": 7,
-      "text": "And said unto him, \"JESUS_START\" Go, wash in the pool of Siloam, \"JESUS_END\" (which is by interpretation, Sent.) He went his way therefore, and washed, and came seeing."
+      "text": "And said unto him, <span style=\"color:red;\">Go, wash in the pool of Siloam,</span> (which is by interpretation, Sent.) He went his way therefore, and washed, and came seeing.",
+      "info": ""
     },
     {
       "book_id": "JHN",
@@ -63,7 +70,8 @@
       "chapter": 9,
       "verse_start": 8,
       "verse_end": 8,
-      "text": "The neighbours therefore, and they which before had seen him that he was blind, said, Is not this he that sat and begged?"
+      "text": "The neighbours therefore, and they which before had seen him that he was blind, said, Is not this he that sat and begged?",
+      "info": ""
     },
     {
       "book_id": "JHN",
@@ -71,7 +79,8 @@
       "chapter": 9,
       "verse_start": 9,
       "verse_end": 9,
-      "text": "Some said, This is he: others <em>said</em>, He is like him: <em>but</em> he said, I am <em>he</em>."
+      "text": "Some said, This is he: others <em>said,</em> He is like him: <em>but</em> he said, I am <em>he.</em>",
+      "info": ""
     },
     {
       "book_id": "JHN",
@@ -79,7 +88,8 @@
       "chapter": 9,
       "verse_start": 10,
       "verse_end": 10,
-      "text": "Therefore said they unto him, How were thine eyes opened?"
+      "text": "Therefore said they unto him, How were thine eyes opened?",
+      "info": ""
     },
     {
       "book_id": "JHN",
@@ -87,7 +97,8 @@
       "chapter": 9,
       "verse_start": 11,
       "verse_end": 11,
-      "text": "He answered and said, A man that is called Jesus made clay, and anointed mine eyes, and said unto me, Go to the pool of Siloam, and wash: and I went and washed, and I received sight."
+      "text": "He answered and said, A man that is called Jesus made clay, and anointed mine eyes, and said unto me, Go to the pool of Siloam, and wash: and I went and washed, and I received sight.",
+      "info": ""
     },
     {
       "book_id": "JHN",
@@ -95,7 +106,8 @@
       "chapter": 9,
       "verse_start": 12,
       "verse_end": 12,
-      "text": "Then said they unto him, Where is he? He said, I know not."
+      "text": "Then said they unto him, Where is he? He said, I know not.",
+      "info": ""
     },
     {
       "book_id": "JHN",
@@ -103,7 +115,8 @@
       "chapter": 9,
       "verse_start": 13,
       "verse_end": 13,
-      "text": "They brought to the Pharisees him that aforetime was blind."
+      "text": "They brought to the Pharisees him that aforetime was blind.",
+      "info": ""
     },
     {
       "book_id": "JHN",
@@ -111,7 +124,8 @@
       "chapter": 9,
       "verse_start": 14,
       "verse_end": 14,
-      "text": "And it was the sabbath day when Jesus made the clay, and opened his eyes."
+      "text": "And it was the sabbath day when Jesus made the clay, and opened his eyes.",
+      "info": ""
     },
     {
       "book_id": "JHN",
@@ -119,7 +133,8 @@
       "chapter": 9,
       "verse_start": 15,
       "verse_end": 15,
-      "text": "Then again the Pharisees also asked him how he had received his sight. He said unto them, He put clay upon mine eyes, and I washed, and do see."
+      "text": "Then again the Pharisees also asked him how he had received his sight. He said unto them, He put clay upon mine eyes, and I washed, and do see.",
+      "info": ""
     },
     {
       "book_id": "JHN",
@@ -127,7 +142,8 @@
       "chapter": 9,
       "verse_start": 16,
       "verse_end": 16,
-      "text": "Therefore said some of the Pharisees, This man is not of God, because he keepeth not the sabbath day. Others said, How can a man that is a sinner do such miracles? And there was a division among them."
+      "text": "Therefore said some of the Pharisees, This man is not of God, because he keepeth not the sabbath day. Others said, How can a man that is a sinner do such miracles? And there was a division among them.",
+      "info": ""
     },
     {
       "book_id": "JHN",
@@ -135,7 +151,8 @@
       "chapter": 9,
       "verse_start": 17,
       "verse_end": 17,
-      "text": "They say unto the blind man again, What sayest thou of him, that he hath opened thine eyes? He said, He is a prophet."
+      "text": "They say unto the blind man again, What sayest thou of him, that he hath opened thine eyes? He said, He is a prophet.",
+      "info": ""
     },
     {
       "book_id": "JHN",
@@ -143,7 +160,8 @@
       "chapter": 9,
       "verse_start": 18,
       "verse_end": 18,
-      "text": "But the Jews did not believe concerning him, that he had been blind, and received his sight, until they called the parents of him that had received his sight."
+      "text": "But the Jews did not believe concerning him, that he had been blind, and received his sight, until they called the parents of him that had received his sight.",
+      "info": ""
     },
     {
       "book_id": "JHN",
@@ -151,7 +169,8 @@
       "chapter": 9,
       "verse_start": 19,
       "verse_end": 19,
-      "text": "And they asked them, saying, Is this your son, who ye say was born blind? how then doth he now see?"
+      "text": "And they asked them, saying, Is this your son, who ye say was born blind? how then doth he now see?",
+      "info": ""
     },
     {
       "book_id": "JHN",
@@ -159,7 +178,8 @@
       "chapter": 9,
       "verse_start": 20,
       "verse_end": 20,
-      "text": "His parents answered them and said, We know that this is our son, and that he was born blind:"
+      "text": "His parents answered them and said, We know that this is our son, and that he was born blind:",
+      "info": ""
     },
     {
       "book_id": "JHN",
@@ -167,7 +187,8 @@
       "chapter": 9,
       "verse_start": 21,
       "verse_end": 21,
-      "text": "But by what means he now seeth, we know not; or who hath opened his eyes, we know not: he is of age; ask him: he shall speak for himself."
+      "text": "But by what means he now seeth, we know not; or who hath opened his eyes, we know not: he is of age; ask him: he shall speak for himself.",
+      "info": ""
     },
     {
       "book_id": "JHN",
@@ -175,7 +196,8 @@
       "chapter": 9,
       "verse_start": 22,
       "verse_end": 22,
-      "text": "These <em>words</em> spake his parents, because they feared the Jews: for the Jews had agreed already, that if any man did confess that he was Christ, he should be put out of the synagogue."
+      "text": "These <em>words</em> spake his parents, because they feared the Jews: for the Jews had agreed already, that if any man did confess that he was Christ, he should be put out of the synagogue.",
+      "info": ""
     },
     {
       "book_id": "JHN",
@@ -183,7 +205,8 @@
       "chapter": 9,
       "verse_start": 23,
       "verse_end": 23,
-      "text": "Therefore said his parents, He is of age; ask him."
+      "text": "Therefore said his parents, He is of age; ask him.",
+      "info": ""
     },
     {
       "book_id": "JHN",
@@ -191,7 +214,8 @@
       "chapter": 9,
       "verse_start": 24,
       "verse_end": 24,
-      "text": "Then again called they the man that was blind, and said unto him, Give God the praise: we know that this man is a sinner."
+      "text": "Then again called they the man that was blind, and said unto him, Give God the praise: we know that this man is a sinner.",
+      "info": ""
     },
     {
       "book_id": "JHN",
@@ -199,7 +223,8 @@
       "chapter": 9,
       "verse_start": 25,
       "verse_end": 25,
-      "text": "He answered and said, Whether he be a sinner <em>or no</em>, I know not: one thing I know, that, whereas I was blind, now I see."
+      "text": "He answered and said, Whether he be a sinner <em>or no,</em> I know not: one thing I know, that, whereas I was blind, now I see.",
+      "info": ""
     },
     {
       "book_id": "JHN",
@@ -207,7 +232,8 @@
       "chapter": 9,
       "verse_start": 26,
       "verse_end": 26,
-      "text": "Then said they to him again, What did he to thee? how opened he thine eyes?"
+      "text": "Then said they to him again, What did he to thee? how opened he thine eyes?",
+      "info": ""
     },
     {
       "book_id": "JHN",
@@ -215,7 +241,8 @@
       "chapter": 9,
       "verse_start": 27,
       "verse_end": 27,
-      "text": "He answered them, I have told you already, and ye did not hear: wherefore would ye hear <em>it</em> again? will ye also be his disciples?"
+      "text": "He answered them, I have told you already, and ye did not hear: wherefore would ye hear <em>it</em> again? will ye also be his disciples?",
+      "info": ""
     },
     {
       "book_id": "JHN",
@@ -223,7 +250,8 @@
       "chapter": 9,
       "verse_start": 28,
       "verse_end": 28,
-      "text": "Then they reviled him, and said, Thou art his disciple; but we are Moses' disciples."
+      "text": "Then they reviled him, and said, Thou art his disciple; but we are Moses' disciples.",
+      "info": ""
     },
     {
       "book_id": "JHN",
@@ -231,7 +259,8 @@
       "chapter": 9,
       "verse_start": 29,
       "verse_end": 29,
-      "text": "We know that God spake unto Moses: <em>as for</em> this <em>fellow</em>, we know not from whence he is."
+      "text": "We know that God spake unto Moses: <em>as for</em> this <em>fellow,</em> we know not from whence he is.",
+      "info": ""
     },
     {
       "book_id": "JHN",
@@ -239,7 +268,8 @@
       "chapter": 9,
       "verse_start": 30,
       "verse_end": 30,
-      "text": "The man answered and said unto them, Why herein is a marvellous thing, that ye know not from whence he is, and <em>yet</em> he hath opened mine eyes."
+      "text": "The man answered and said unto them, Why herein is a marvellous thing, that ye know not from whence he is, and <em>yet</em> he hath opened mine eyes.",
+      "info": ""
     },
     {
       "book_id": "JHN",
@@ -247,7 +277,8 @@
       "chapter": 9,
       "verse_start": 31,
       "verse_end": 31,
-      "text": "Now we know that God heareth not sinners: but if any man be a worshipper of God, and doeth his will, him he heareth."
+      "text": "Now we know that God heareth not sinners: but if any man be a worshipper of God, and doeth his will, him he heareth.",
+      "info": ""
     },
     {
       "book_id": "JHN",
@@ -255,7 +286,8 @@
       "chapter": 9,
       "verse_start": 32,
       "verse_end": 32,
-      "text": "Since the world began was it not heard that any man opened the eyes of one that was born blind."
+      "text": "Since the world began was it not heard that any man opened the eyes of one that was born blind.",
+      "info": ""
     },
     {
       "book_id": "JHN",
@@ -263,7 +295,8 @@
       "chapter": 9,
       "verse_start": 33,
       "verse_end": 33,
-      "text": "If this man were not of God, he could do nothing."
+      "text": "If this man were not of God, he could do nothing.",
+      "info": ""
     },
     {
       "book_id": "JHN",
@@ -271,7 +304,8 @@
       "chapter": 9,
       "verse_start": 34,
       "verse_end": 34,
-      "text": "They answered and said unto him, Thou wast altogether born in sins, and dost thou teach us? And they cast him out."
+      "text": "They answered and said unto him, Thou wast altogether born in sins, and dost thou teach us? And they cast him out.",
+      "info": ""
     },
     {
       "book_id": "JHN",
@@ -279,7 +313,8 @@
       "chapter": 9,
       "verse_start": 35,
       "verse_end": 35,
-      "text": "Jesus heard that they had cast him out; and when he had found him, he said unto him, \"JESUS_START\" Dost thou believe on the Son of God? \"JESUS_END\""
+      "text": "Jesus heard that they had cast him out; and when he had found him, he said unto him, <span style=\"color:red;\">Dost thou believe on the Son of God?</span>",
+      "info": ""
     },
     {
       "book_id": "JHN",
@@ -287,7 +322,8 @@
       "chapter": 9,
       "verse_start": 36,
       "verse_end": 36,
-      "text": "He answered and said, Who is he, Lord, that I might believe on him?"
+      "text": "He answered and said, Who is he, Lord, that I might believe on him?",
+      "info": ""
     },
     {
       "book_id": "JHN",
@@ -295,7 +331,8 @@
       "chapter": 9,
       "verse_start": 37,
       "verse_end": 37,
-      "text": "And Jesus said unto him, \"JESUS_START\" Thou hast both seen him, and it is he that talketh with thee. \"JESUS_END\""
+      "text": "And Jesus said unto him, <span style=\"color:red;\">Thou hast both seen him, and it is he that talketh with thee.</span>",
+      "info": ""
     },
     {
       "book_id": "JHN",
@@ -303,7 +340,8 @@
       "chapter": 9,
       "verse_start": 38,
       "verse_end": 38,
-      "text": "And he said, Lord, I believe. And he worshipped him."
+      "text": "And he said, Lord, I believe. And he worshipped him.",
+      "info": ""
     },
     {
       "book_id": "JHN",
@@ -311,7 +349,8 @@
       "chapter": 9,
       "verse_start": 39,
       "verse_end": 39,
-      "text": "And Jesus said, \"JESUS_START\" For judgment I am come into this world, that they which see not might see; and that they which see might be made blind. \"JESUS_END\""
+      "text": "And Jesus said, <span style=\"color:red;\">For judgment I am come into this world, that they which see not might see; and that they which see might be made blind.</span>",
+      "info": ""
     },
     {
       "book_id": "JHN",
@@ -319,7 +358,8 @@
       "chapter": 9,
       "verse_start": 40,
       "verse_end": 40,
-      "text": "And <em>some</em> of the Pharisees which were with him heard these words, and said unto him, Are we blind also?"
+      "text": "And <em>some</em> of the Pharisees which were with him heard these words, and said unto him, Are we blind also?",
+      "info": ""
     },
     {
       "book_id": "JHN",
@@ -327,7 +367,8 @@
       "chapter": 9,
       "verse_start": 41,
       "verse_end": 41,
-      "text": "Jesus said unto them, \"JESUS_START\" If ye were blind, ye should have no sin: but now ye say, We see; therefore your sin remaineth. \"JESUS_END\""
+      "text": "Jesus said unto them, <span style=\"color:red;\">If ye were blind, ye should have no sin: but now ye say, We see; therefore your sin remaineth.</span>",
+      "info": ""
     }
   ]
 }

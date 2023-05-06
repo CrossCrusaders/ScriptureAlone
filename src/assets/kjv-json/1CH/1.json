@@ -7,7 +7,8 @@
       "chapter": 1,
       "verse_start": 1,
       "verse_end": 1,
-      "text": "Adam, Sheth, Enosh,"
+      "text": "Adam, Sheth, Enosh,",
+      "info": ""
     },
     {
       "book_id": "1CH",
@@ -15,7 +16,8 @@
       "chapter": 1,
       "verse_start": 2,
       "verse_end": 2,
-      "text": "Kenan, Mahalaleel, Jered,"
+      "text": "Kenan, Mahalaleel, Jered,",
+      "info": ""
     },
     {
       "book_id": "1CH",
@@ -23,7 +25,8 @@
       "chapter": 1,
       "verse_start": 3,
       "verse_end": 3,
-      "text": "Henoch, Methuselah, Lamech,"
+      "text": "Henoch, Methuselah, Lamech,",
+      "info": ""
     },
     {
       "book_id": "1CH",
@@ -31,7 +34,8 @@
       "chapter": 1,
       "verse_start": 4,
       "verse_end": 4,
-      "text": "Noah, Shem, Ham, and Japheth."
+      "text": "Noah, Shem, Ham, and Japheth.",
+      "info": ""
     },
     {
       "book_id": "1CH",
@@ -39,7 +43,8 @@
       "chapter": 1,
       "verse_start": 5,
       "verse_end": 5,
-      "text": "The sons of Japheth; Gomer, and Magog, and Madai, and Javan, and Tubal, and Meshech, and Tiras."
+      "text": "The sons of Japheth; Gomer, and Magog, and Madai, and Javan, and Tubal, and Meshech, and Tiras.",
+      "info": ""
     },
     {
       "book_id": "1CH",
@@ -47,7 +52,8 @@
       "chapter": 1,
       "verse_start": 6,
       "verse_end": 6,
-      "text": "And the sons of Gomer; Ashchenaz, and Riphath, and Togarmah."
+      "text": "And the sons of Gomer; Ashchenaz, and Riphath, and Togarmah.",
+      "info": ""
     },
     {
       "book_id": "1CH",
@@ -55,7 +61,8 @@
       "chapter": 1,
       "verse_start": 7,
       "verse_end": 7,
-      "text": "And the sons of Javan; Elishah, and Tarshish, Kittim, and Dodanim."
+      "text": "And the sons of Javan; Elishah, and Tarshish, Kittim, and Dodanim.",
+      "info": ""
     },
     {
       "book_id": "1CH",
@@ -63,7 +70,8 @@
       "chapter": 1,
       "verse_start": 8,
       "verse_end": 8,
-      "text": "The sons of Ham; Cush, and Mizraim, Put, and Canaan."
+      "text": "The sons of Ham; Cush, and Mizraim, Put, and Canaan.",
+      "info": ""
     },
     {
       "book_id": "1CH",
@@ -71,7 +79,8 @@
       "chapter": 1,
       "verse_start": 9,
       "verse_end": 9,
-      "text": "And the sons of Cush; Seba, and Havilah, and Sabta, and Raamah, and Sabtecha. And the sons of Raamah; Sheba, and Dedan."
+      "text": "And the sons of Cush; Seba, and Havilah, and Sabta, and Raamah, and Sabtecha. And the sons of Raamah; Sheba, and Dedan.",
+      "info": ""
     },
     {
       "book_id": "1CH",
@@ -79,7 +88,8 @@
       "chapter": 1,
       "verse_start": 10,
       "verse_end": 10,
-      "text": "And Cush begat Nimrod: he began to be mighty upon the earth."
+      "text": "And Cush begat Nimrod: he began to be mighty upon the earth.",
+      "info": ""
     },
     {
       "book_id": "1CH",
@@ -87,7 +97,8 @@
       "chapter": 1,
       "verse_start": 11,
       "verse_end": 11,
-      "text": "And Mizraim begat Ludim, and Anamim, and Lehabim, and Naphtuhim,"
+      "text": "And Mizraim begat Ludim, and Anamim, and Lehabim, and Naphtuhim,",
+      "info": ""
     },
     {
       "book_id": "1CH",
@@ -95,7 +106,8 @@
       "chapter": 1,
       "verse_start": 12,
       "verse_end": 12,
-      "text": "And Pathrusim, and Casluhim, (of whom came the Philistines,) and Caphthorim."
+      "text": "And Pathrusim, and Casluhim, (of whom came the Philistines,) and Caphthorim.",
+      "info": ""
     },
     {
       "book_id": "1CH",
@@ -103,7 +115,8 @@
       "chapter": 1,
       "verse_start": 13,
       "verse_end": 13,
-      "text": "And Canaan begat Zidon his firstborn, and Heth,"
+      "text": "And Canaan begat Zidon his firstborn, and Heth,",
+      "info": ""
     },
     {
       "book_id": "1CH",
@@ -111,7 +124,8 @@
       "chapter": 1,
       "verse_start": 14,
       "verse_end": 14,
-      "text": "The Jebusite also, and the Amorite, and the Girgashite,"
+      "text": "The Jebusite also, and the Amorite, and the Girgashite,",
+      "info": ""
     },
     {
       "book_id": "1CH",
@@ -119,7 +133,8 @@
       "chapter": 1,
       "verse_start": 15,
       "verse_end": 15,
-      "text": "And the Hivite, and the Arkite, and the Sinite,"
+      "text": "And the Hivite, and the Arkite, and the Sinite,",
+      "info": ""
     },
     {
       "book_id": "1CH",
@@ -127,7 +142,8 @@
       "chapter": 1,
       "verse_start": 16,
       "verse_end": 16,
-      "text": "And the Arvadite, and the Zemarite, and the Hamathite."
+      "text": "And the Arvadite, and the Zemarite, and the Hamathite.",
+      "info": ""
     },
     {
       "book_id": "1CH",
@@ -135,7 +151,8 @@
       "chapter": 1,
       "verse_start": 17,
       "verse_end": 17,
-      "text": "The sons of Shem; Elam, and Asshur, and Arphaxad, and Lud, and Aram, and Uz, and Hul, and Gether, and Meshech."
+      "text": "The sons of Shem; Elam, and Asshur, and Arphaxad, and Lud, and Aram, and Uz, and Hul, and Gether, and Meshech.",
+      "info": ""
     },
     {
       "book_id": "1CH",
@@ -143,7 +160,8 @@
       "chapter": 1,
       "verse_start": 18,
       "verse_end": 18,
-      "text": "And Arphaxad begat Shelah, and Shelah begat Eber."
+      "text": "And Arphaxad begat Shelah, and Shelah begat Eber.",
+      "info": ""
     },
     {
       "book_id": "1CH",
@@ -151,7 +169,8 @@
       "chapter": 1,
       "verse_start": 19,
       "verse_end": 19,
-      "text": "And unto Eber were born two sons: the name of the one <em>was</em> Peleg; because in his days the earth was divided: and his brother's name <em>was</em> Joktan."
+      "text": "And unto Eber were born two sons: the name of the one <em>was</em> Peleg; because in his days the earth was divided: and his brother's name <em>was</em> Joktan.",
+      "info": ""
     },
     {
       "book_id": "1CH",
@@ -159,7 +178,8 @@
       "chapter": 1,
       "verse_start": 20,
       "verse_end": 20,
-      "text": "And Joktan begat Almodad, and Sheleph, and Hazarmaveth, and Jerah,"
+      "text": "And Joktan begat Almodad, and Sheleph, and Hazarmaveth, and Jerah,",
+      "info": ""
     },
     {
       "book_id": "1CH",
@@ -167,7 +187,8 @@
       "chapter": 1,
       "verse_start": 21,
       "verse_end": 21,
-      "text": "Hadoram also, and Uzal, and Diklah,"
+      "text": "Hadoram also, and Uzal, and Diklah,",
+      "info": ""
     },
     {
       "book_id": "1CH",
@@ -175,7 +196,8 @@
       "chapter": 1,
       "verse_start": 22,
       "verse_end": 22,
-      "text": "And Ebal, and Abimael, and Sheba,"
+      "text": "And Ebal, and Abimael, and Sheba,",
+      "info": ""
     },
     {
       "book_id": "1CH",
@@ -183,7 +205,8 @@
       "chapter": 1,
       "verse_start": 23,
       "verse_end": 23,
-      "text": "And Ophir, and Havilah, and Jobab. All these <em>were</em> the sons of Joktan."
+      "text": "And Ophir, and Havilah, and Jobab. All these <em>were</em> the sons of Joktan.",
+      "info": ""
     },
     {
       "book_id": "1CH",
@@ -191,7 +214,8 @@
       "chapter": 1,
       "verse_start": 24,
       "verse_end": 24,
-      "text": "Shem, Arphaxad, Shelah,"
+      "text": "Shem, Arphaxad, Shelah,",
+      "info": ""
     },
     {
       "book_id": "1CH",
@@ -199,7 +223,8 @@
       "chapter": 1,
       "verse_start": 25,
       "verse_end": 25,
-      "text": "Eber, Peleg, Reu,"
+      "text": "Eber, Peleg, Reu,",
+      "info": ""
     },
     {
       "book_id": "1CH",
@@ -207,7 +232,8 @@
       "chapter": 1,
       "verse_start": 26,
       "verse_end": 26,
-      "text": "Serug, Nahor, Terah,"
+      "text": "Serug, Nahor, Terah,",
+      "info": ""
     },
     {
       "book_id": "1CH",
@@ -215,7 +241,8 @@
       "chapter": 1,
       "verse_start": 27,
       "verse_end": 27,
-      "text": "Abram; the same <em>is</em> Abraham."
+      "text": "Abram; the same <em>is</em> Abraham.",
+      "info": ""
     },
     {
       "book_id": "1CH",
@@ -223,7 +250,8 @@
       "chapter": 1,
       "verse_start": 28,
       "verse_end": 28,
-      "text": "The sons of Abraham; Isaac, and Ishmael."
+      "text": "The sons of Abraham; Isaac, and Ishmael.",
+      "info": ""
     },
     {
       "book_id": "1CH",
@@ -231,7 +259,8 @@
       "chapter": 1,
       "verse_start": 29,
       "verse_end": 29,
-      "text": "These <em>are</em> their generations: The firstborn of Ishmael, Nebaioth; then Kedar, and Adbeel, and Mibsam,"
+      "text": "These <em>are</em> their generations: The firstborn of Ishmael, Nebaioth; then Kedar, and Adbeel, and Mibsam,",
+      "info": ""
     },
     {
       "book_id": "1CH",
@@ -239,7 +268,8 @@
       "chapter": 1,
       "verse_start": 30,
       "verse_end": 30,
-      "text": "Mishma, and Dumah, Massa, Hadad, and Tema,"
+      "text": "Mishma, and Dumah, Massa, Hadad, and Tema,",
+      "info": ""
     },
     {
       "book_id": "1CH",
@@ -247,7 +277,8 @@
       "chapter": 1,
       "verse_start": 31,
       "verse_end": 31,
-      "text": "Jetur, Naphish, and Kedemah. These are the sons of Ishmael."
+      "text": "Jetur, Naphish, and Kedemah. These are the sons of Ishmael.",
+      "info": ""
     },
     {
       "book_id": "1CH",
@@ -255,7 +286,8 @@
       "chapter": 1,
       "verse_start": 32,
       "verse_end": 32,
-      "text": "Now the sons of Keturah, Abraham's concubine: she bare Zimran, and Jokshan, and Medan, and Midian, and Ishbak, and Shuah. And the sons of Jokshan; Sheba, and Dedan."
+      "text": "Now the sons of Keturah, Abraham's concubine: she bare Zimran, and Jokshan, and Medan, and Midian, and Ishbak, and Shuah. And the sons of Jokshan; Sheba, and Dedan.",
+      "info": ""
     },
     {
       "book_id": "1CH",
@@ -263,7 +295,8 @@
       "chapter": 1,
       "verse_start": 33,
       "verse_end": 33,
-      "text": "And the sons of Midian; Ephah, and Epher, and Henoch, and Abida, and Eldaah. All these <em>are</em> the sons of Keturah."
+      "text": "And the sons of Midian; Ephah, and Epher, and Henoch, and Abida, and Eldaah. All these <em>are</em> the sons of Keturah.",
+      "info": ""
     },
     {
       "book_id": "1CH",
@@ -271,7 +304,8 @@
       "chapter": 1,
       "verse_start": 34,
       "verse_end": 34,
-      "text": "And Abraham begat Isaac. The sons of Isaac; Esau and Israel."
+      "text": "And Abraham begat Isaac. The sons of Isaac; Esau and Israel.",
+      "info": ""
     },
     {
       "book_id": "1CH",
@@ -279,7 +313,8 @@
       "chapter": 1,
       "verse_start": 35,
       "verse_end": 35,
-      "text": "The sons of Esau; Eliphaz, Reuel, and Jeush, and Jaalam, and Korah."
+      "text": "The sons of Esau; Eliphaz, Reuel, and Jeush, and Jaalam, and Korah.",
+      "info": ""
     },
     {
       "book_id": "1CH",
@@ -287,7 +322,8 @@
       "chapter": 1,
       "verse_start": 36,
       "verse_end": 36,
-      "text": "The sons of Eliphaz; Teman, and Omar, Zephi, and Gatam, Kenaz, and Timna, and Amalek."
+      "text": "The sons of Eliphaz; Teman, and Omar, Zephi, and Gatam, Kenaz, and Timna, and Amalek.",
+      "info": ""
     },
     {
       "book_id": "1CH",
@@ -295,7 +331,8 @@
       "chapter": 1,
       "verse_start": 37,
       "verse_end": 37,
-      "text": "The sons of Reuel; Nahath, Zerah, Shammah, and Mizzah."
+      "text": "The sons of Reuel; Nahath, Zerah, Shammah, and Mizzah.",
+      "info": ""
     },
     {
       "book_id": "1CH",
@@ -303,7 +340,8 @@
       "chapter": 1,
       "verse_start": 38,
       "verse_end": 38,
-      "text": "And the sons of Seir; Lotan, and Shobal, and Zibeon, and Anah, and Dishon, and Ezer, and Dishan."
+      "text": "And the sons of Seir; Lotan, and Shobal, and Zibeon, and Anah, and Dishon, and Ezer, and Dishan.",
+      "info": ""
     },
     {
       "book_id": "1CH",
@@ -311,7 +349,8 @@
       "chapter": 1,
       "verse_start": 39,
       "verse_end": 39,
-      "text": "And the sons of Lotan; Hori, and Homam: and Timna <em>was</em> Lotan's sister."
+      "text": "And the sons of Lotan; Hori, and Homam: and Timna <em>was</em> Lotan's sister.",
+      "info": ""
     },
     {
       "book_id": "1CH",
@@ -319,7 +358,8 @@
       "chapter": 1,
       "verse_start": 40,
       "verse_end": 40,
-      "text": "The sons of Shobal; Alian, and Manahath, and Ebal, Shephi, and Onam. And the sons of Zibeon; Aiah, and Anah."
+      "text": "The sons of Shobal; Alian, and Manahath, and Ebal, Shephi, and Onam. And the sons of Zibeon; Aiah, and Anah.",
+      "info": ""
     },
     {
       "book_id": "1CH",
@@ -327,7 +367,8 @@
       "chapter": 1,
       "verse_start": 41,
       "verse_end": 41,
-      "text": "The sons of Anah; Dishon. And the sons of Dishon; Amram, and Eshban, and Ithran, and Cheran."
+      "text": "The sons of Anah; Dishon. And the sons of Dishon; Amram, and Eshban, and Ithran, and Cheran.",
+      "info": ""
     },
     {
       "book_id": "1CH",
@@ -335,7 +376,8 @@
       "chapter": 1,
       "verse_start": 42,
       "verse_end": 42,
-      "text": "The sons of Ezer; Bilhan, and Zavan, <em>and</em> Jakan. The sons of Dishan; Uz, and Aran."
+      "text": "The sons of Ezer; Bilhan, and Zavan, <em>and</em> Jakan. The sons of Dishan; Uz, and Aran.",
+      "info": ""
     },
     {
       "book_id": "1CH",
@@ -343,7 +385,8 @@
       "chapter": 1,
       "verse_start": 43,
       "verse_end": 43,
-      "text": "Now these <em>are</em> the kings that reigned in the land of Edom before <em>any</em> king reigned over the children of Israel; Bela the son of Beor: and the name of his city <em>was</em> Dinhabah."
+      "text": "Now these <em>are</em> the kings that reigned in the land of Edom before <em>any</em> king reigned over the children of Israel; Bela the son of Beor: and the name of his city <em>was</em> Dinhabah.",
+      "info": ""
     },
     {
       "book_id": "1CH",
@@ -351,7 +394,8 @@
       "chapter": 1,
       "verse_start": 44,
       "verse_end": 44,
-      "text": "And when Bela was dead, Jobab the son of Zerah of Bozrah reigned in his stead."
+      "text": "And when Bela was dead, Jobab the son of Zerah of Bozrah reigned in his stead.",
+      "info": ""
     },
     {
       "book_id": "1CH",
@@ -359,7 +403,8 @@
       "chapter": 1,
       "verse_start": 45,
       "verse_end": 45,
-      "text": "And when Jobab was dead, Husham of the land of the Temanites reigned in his stead."
+      "text": "And when Jobab was dead, Husham of the land of the Temanites reigned in his stead.",
+      "info": ""
     },
     {
       "book_id": "1CH",
@@ -367,7 +412,8 @@
       "chapter": 1,
       "verse_start": 46,
       "verse_end": 46,
-      "text": "And when Husham was dead, Hadad the son of Bedad, which smote Midian in the field of Moab, reigned in his stead: and the name of his city <em>was</em> Avith."
+      "text": "And when Husham was dead, Hadad the son of Bedad, which smote Midian in the field of Moab, reigned in his stead: and the name of his city <em>was</em> Avith.",
+      "info": ""
     },
     {
       "book_id": "1CH",
@@ -375,7 +421,8 @@
       "chapter": 1,
       "verse_start": 47,
       "verse_end": 47,
-      "text": "And when Hadad was dead, Samlah of Masrekah reigned in his stead."
+      "text": "And when Hadad was dead, Samlah of Masrekah reigned in his stead.",
+      "info": ""
     },
     {
       "book_id": "1CH",
@@ -383,7 +430,8 @@
       "chapter": 1,
       "verse_start": 48,
       "verse_end": 48,
-      "text": "And when Samlah was dead, Shaul of Rehoboth by the river reigned in his stead."
+      "text": "And when Samlah was dead, Shaul of Rehoboth by the river reigned in his stead.",
+      "info": ""
     },
     {
       "book_id": "1CH",
@@ -391,7 +439,8 @@
       "chapter": 1,
       "verse_start": 49,
       "verse_end": 49,
-      "text": "And when Shaul was dead, Baalhanan the son of Achbor reigned in his stead."
+      "text": "And when Shaul was dead, Baalhanan the son of Achbor reigned in his stead.",
+      "info": ""
     },
     {
       "book_id": "1CH",
@@ -399,7 +448,8 @@
       "chapter": 1,
       "verse_start": 50,
       "verse_end": 50,
-      "text": "And when Baalhanan was dead, Hadad reigned in his stead: and the name of his city <em>was</em> Pai; and his wife's name <em>was</em> Mehetabel, the daughter of Matred, the daughter of Mezahab."
+      "text": "And when Baalhanan was dead, Hadad reigned in his stead: and the name of his city <em>was</em> Pai; and his wife's name <em>was</em> Mehetabel, the daughter of Matred, the daughter of Mezahab.",
+      "info": ""
     },
     {
       "book_id": "1CH",
@@ -407,7 +457,8 @@
       "chapter": 1,
       "verse_start": 51,
       "verse_end": 51,
-      "text": "Hadad died also. And the dukes of Edom were; duke Timnah, duke Aliah, duke Jetheth,"
+      "text": "Hadad died also. And the dukes of Edom were; duke Timnah, duke Aliah, duke Jetheth,",
+      "info": ""
     },
     {
       "book_id": "1CH",
@@ -415,7 +466,8 @@
       "chapter": 1,
       "verse_start": 52,
       "verse_end": 52,
-      "text": "Duke Aholibamah, duke Elah, duke Pinon,"
+      "text": "Duke Aholibamah, duke Elah, duke Pinon,",
+      "info": ""
     },
     {
       "book_id": "1CH",
@@ -423,7 +475,8 @@
       "chapter": 1,
       "verse_start": 53,
       "verse_end": 53,
-      "text": "Duke Kenaz, duke Teman, duke Mibzar,"
+      "text": "Duke Kenaz, duke Teman, duke Mibzar,",
+      "info": ""
     },
     {
       "book_id": "1CH",
@@ -431,7 +484,8 @@
       "chapter": 1,
       "verse_start": 54,
       "verse_end": 54,
-      "text": "Duke Magdiel, duke Iram. These <em>are</em> the dukes of Edom."
+      "text": "Duke Magdiel, duke Iram. These <em>are</em> the dukes of Edom.",
+      "info": ""
     }
   ]
 }

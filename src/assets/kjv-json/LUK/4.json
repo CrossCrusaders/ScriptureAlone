@@ -7,7 +7,8 @@
       "chapter": 4,
       "verse_start": 1,
       "verse_end": 1,
-      "text": "And Jesus being full of the Holy Ghost returned from Jordan, and was led by the Spirit into the wilderness,"
+      "text": "And Jesus being full of the Holy Ghost returned from Jordan, and was led by the Spirit into the wilderness,",
+      "info": ""
     },
     {
       "book_id": "LUK",
@@ -15,7 +16,8 @@
       "chapter": 4,
       "verse_start": 2,
       "verse_end": 2,
-      "text": "Being forty days tempted of the devil. And in those days he did eat nothing: and when they were ended, he afterward hungered."
+      "text": "Being forty days tempted of the devil. And in those days he did eat nothing: and when they were ended, he afterward hungered.",
+      "info": ""
     },
     {
       "book_id": "LUK",
@@ -23,7 +25,8 @@
       "chapter": 4,
       "verse_start": 3,
       "verse_end": 3,
-      "text": "And the devil said unto him, If thou be the Son of God, command this stone that it be made bread."
+      "text": "And the devil said unto him, If thou be the Son of God, command this stone that it be made bread.",
+      "info": ""
     },
     {
       "book_id": "LUK",
@@ -31,7 +34,8 @@
       "chapter": 4,
       "verse_start": 4,
       "verse_end": 4,
-      "text": "And Jesus answered him, saying, \"JESUS_START\" It is written, That man shall not live by bread alone, but by every word of God. \"JESUS_END\""
+      "text": "And Jesus answered him, saying, <span style=\"color:red;\">It is written, That man shall not live by bread alone, but by every word of God.</span>",
+      "info": ""
     },
     {
       "book_id": "LUK",
@@ -39,7 +43,8 @@
       "chapter": 4,
       "verse_start": 5,
       "verse_end": 5,
-      "text": "And the devil, taking him up into an high mountain, shewed unto him all the kingdoms of the world in a moment of time."
+      "text": "And the devil, taking him up into an high mountain, shewed unto him all the kingdoms of the world in a moment of time.",
+      "info": ""
     },
     {
       "book_id": "LUK",
@@ -47,7 +52,8 @@
       "chapter": 4,
       "verse_start": 6,
       "verse_end": 6,
-      "text": "And the devil said unto him, All this power will I give thee, and the glory of them: for that is delivered unto me; and to whomsoever I will I give it."
+      "text": "And the devil said unto him, All this power will I give thee, and the glory of them: for that is delivered unto me; and to whomsoever I will I give it.",
+      "info": ""
     },
     {
       "book_id": "LUK",
@@ -55,7 +61,8 @@
       "chapter": 4,
       "verse_start": 7,
       "verse_end": 7,
-      "text": "If thou therefore wilt worship me, all shall be thine."
+      "text": "If thou therefore wilt worship me, all shall be thine.",
+      "info": ""
     },
     {
       "book_id": "LUK",
@@ -63,7 +70,8 @@
       "chapter": 4,
       "verse_start": 8,
       "verse_end": 8,
-      "text": "And Jesus answered and said unto him, \"JESUS_START\" Get thee behind me, Satan: for it is written, Thou shalt worship the Lord thy God, and him only shalt thou serve. \"JESUS_END\""
+      "text": "And Jesus answered and said unto him, <span style=\"color:red;\">Get thee behind me, Satan: for it is written, Thou shalt worship the Lord thy God, and him only shalt thou serve.</span>",
+      "info": ""
     },
     {
       "book_id": "LUK",
@@ -71,7 +79,8 @@
       "chapter": 4,
       "verse_start": 9,
       "verse_end": 9,
-      "text": "And he brought him to Jerusalem, and set him on a pinnacle of the temple, and said unto him, If thou be the Son of God, cast thyself down from hence:"
+      "text": "And he brought him to Jerusalem, and set him on a pinnacle of the temple, and said unto him, If thou be the Son of God, cast thyself down from hence:",
+      "info": ""
     },
     {
       "book_id": "LUK",
@@ -79,7 +88,8 @@
       "chapter": 4,
       "verse_start": 10,
       "verse_end": 10,
-      "text": "For it is written, He shall give his angels charge over thee, to keep thee:"
+      "text": "For it is written, He shall give his angels charge over thee, to keep thee:",
+      "info": ""
     },
     {
       "book_id": "LUK",
@@ -87,7 +97,8 @@
       "chapter": 4,
       "verse_start": 11,
       "verse_end": 11,
-      "text": "And in <em>their</em> hands they shall bear thee up, lest at any time thou dash thy foot against a stone."
+      "text": "And in <em>their</em> hands they shall bear thee up, lest at any time thou dash thy foot against a stone.",
+      "info": ""
     },
     {
       "book_id": "LUK",
@@ -95,7 +106,8 @@
       "chapter": 4,
       "verse_start": 12,
       "verse_end": 12,
-      "text": "And Jesus answering said unto him, \"JESUS_START\" It is said, Thou shalt not tempt the Lord thy God. \"JESUS_END\""
+      "text": "And Jesus answering said unto him, <span style=\"color:red;\">It is said, Thou shalt not tempt the Lord thy God.</span>",
+      "info": ""
     },
     {
       "book_id": "LUK",
@@ -103,7 +115,8 @@
       "chapter": 4,
       "verse_start": 13,
       "verse_end": 13,
-      "text": "And when the devil had ended all the temptation, he departed from him for a season."
+      "text": "And when the devil had ended all the temptation, he departed from him for a season.",
+      "info": ""
     },
     {
       "book_id": "LUK",
@@ -111,7 +124,8 @@
       "chapter": 4,
       "verse_start": 14,
       "verse_end": 14,
-      "text": "And Jesus returned in the power of the Spirit into Galilee: and there went out a fame of him through all the region round about."
+      "text": "And Jesus returned in the power of the Spirit into Galilee: and there went out a fame of him through all the region round about.",
+      "info": ""
     },
     {
       "book_id": "LUK",
@@ -119,7 +133,8 @@
       "chapter": 4,
       "verse_start": 15,
       "verse_end": 15,
-      "text": "And he taught in their synagogues, being glorified of all."
+      "text": "And he taught in their synagogues, being glorified of all.",
+      "info": ""
     },
     {
       "book_id": "LUK",
@@ -127,7 +142,8 @@
       "chapter": 4,
       "verse_start": 16,
       "verse_end": 16,
-      "text": "And he came to Nazareth, where he had been brought up: and, as his custom was, he went into the synagogue on the sabbath day, and stood up for to read."
+      "text": "And he came to Nazareth, where he had been brought up: and, as his custom was, he went into the synagogue on the sabbath day, and stood up for to read.",
+      "info": ""
     },
     {
       "book_id": "LUK",
@@ -135,7 +151,8 @@
       "chapter": 4,
       "verse_start": 17,
       "verse_end": 17,
-      "text": "And there was delivered unto him the book of the prophet Esaias. And when he had opened the book, he found the place where it was written,"
+      "text": "And there was delivered unto him the book of the prophet Esaias. And when he had opened the book, he found the place where it was written,",
+      "info": ""
     },
     {
       "book_id": "LUK",
@@ -143,7 +160,8 @@
       "chapter": 4,
       "verse_start": 18,
       "verse_end": 18,
-      "text": "\"JESUS_START\" The Spirit of the Lord <em>is</em> upon me, because he hath anointed me to preach the gospel to the poor; he hath sent me to heal the brokenhearted, to preach deliverance to the captives, and recovering of sight to the blind, to set at liberty them that are bruised, \"JESUS_END\""
+      "text": "<span style=\"color:red;\">The Spirit of the Lord <em>is</em> upon me, because he hath anointed me to preach the gospel to the poor; he hath sent me to heal the brokenhearted, to preach deliverance to the captives, and recovering of sight to the blind, to set at liberty them that are bruised,</span>",
+      "info": ""
     },
     {
       "book_id": "LUK",
@@ -151,7 +169,8 @@
       "chapter": 4,
       "verse_start": 19,
       "verse_end": 19,
-      "text": "\"JESUS_START\" To preach the acceptable year of the Lord. \"JESUS_END\""
+      "text": "<span style=\"color:red;\">To preach the acceptable year of the Lord.</span>",
+      "info": ""
     },
     {
       "book_id": "LUK",
@@ -159,7 +178,8 @@
       "chapter": 4,
       "verse_start": 20,
       "verse_end": 20,
-      "text": "And he closed the book, and he gave <em>it</em> again to the minister, and sat down. And the eyes of all them that were in the synagogue were fastened on him."
+      "text": "And he closed the book, and he gave <em>it</em> again to the minister, and sat down. And the eyes of all them that were in the synagogue were fastened on him.",
+      "info": ""
     },
     {
       "book_id": "LUK",
@@ -167,7 +187,8 @@
       "chapter": 4,
       "verse_start": 21,
       "verse_end": 21,
-      "text": "And he began to say unto them, \"JESUS_START\" This day is this scripture fulfilled in your ears. \"JESUS_END\""
+      "text": "And he began to say unto them, <span style=\"color:red;\">This day is this scripture fulfilled in your ears.</span>",
+      "info": ""
     },
     {
       "book_id": "LUK",
@@ -175,7 +196,8 @@
       "chapter": 4,
       "verse_start": 22,
       "verse_end": 22,
-      "text": "And all bare him witness, and wondered at the gracious words which proceeded out of his mouth. And they said, Is not this Joseph's son?"
+      "text": "And all bare him witness, and wondered at the gracious words which proceeded out of his mouth. And they said, Is not this Joseph's son?",
+      "info": ""
     },
     {
       "book_id": "LUK",
@@ -183,7 +205,8 @@
       "chapter": 4,
       "verse_start": 23,
       "verse_end": 23,
-      "text": "And he said unto them, \"JESUS_START\" Ye will surely say unto me this proverb, Physician, heal thyself: whatsoever we have heard done in Capernaum, do also here in thy country. \"JESUS_END\""
+      "text": "And he said unto them, <span style=\"color:red;\">Ye will surely say unto me this proverb, Physician, heal thyself: whatsoever we have heard done in Capernaum, do also here in thy country.</span>",
+      "info": ""
     },
     {
       "book_id": "LUK",
@@ -191,7 +214,8 @@
       "chapter": 4,
       "verse_start": 24,
       "verse_end": 24,
-      "text": "And he said, \"JESUS_START\" Verily I say unto you, No prophet is accepted in his own country. \"JESUS_END\""
+      "text": "And he said, <span style=\"color:red;\">Verily I say unto you, No prophet is accepted in his own country.</span>",
+      "info": ""
     },
     {
       "book_id": "LUK",
@@ -199,7 +223,8 @@
       "chapter": 4,
       "verse_start": 25,
       "verse_end": 25,
-      "text": "\"JESUS_START\" But I tell you of a truth, many widows were in Israel in the days of Elias, when the heaven was shut up three years and six months, when great famine was throughout all the land; \"JESUS_END\""
+      "text": "<span style=\"color:red;\">But I tell you of a truth, many widows were in Israel in the days of Elias, when the heaven was shut up three years and six months, when great famine was throughout all the land;</span>",
+      "info": ""
     },
     {
       "book_id": "LUK",
@@ -207,7 +232,8 @@
       "chapter": 4,
       "verse_start": 26,
       "verse_end": 26,
-      "text": "\"JESUS_START\" But unto none of them was Elias sent, save unto Sarepta, <em>a city</em> of Sidon, unto a woman <em>that was</em> a widow. \"JESUS_END\""
+      "text": "<span style=\"color:red;\">But unto none of them was Elias sent, save unto Sarepta, <em>a city</em> of Sidon, unto a woman <em>that was</em> a widow.</span>",
+      "info": ""
     },
     {
       "book_id": "LUK",
@@ -215,7 +241,8 @@
       "chapter": 4,
       "verse_start": 27,
       "verse_end": 27,
-      "text": "\"JESUS_START\" And many lepers were in Israel in the time of Eliseus the prophet; and none of them was cleansed, saving Naaman the Syrian. \"JESUS_END\""
+      "text": "<span style=\"color:red;\">And many lepers were in Israel in the time of Eliseus the prophet; and none of them was cleansed, saving Naaman the Syrian.</span>",
+      "info": ""
     },
     {
       "book_id": "LUK",
@@ -223,7 +250,8 @@
       "chapter": 4,
       "verse_start": 28,
       "verse_end": 28,
-      "text": "And all they in the synagogue, when they heard these things, were filled with wrath,"
+      "text": "And all they in the synagogue, when they heard these things, were filled with wrath,",
+      "info": ""
     },
     {
       "book_id": "LUK",
@@ -231,7 +259,8 @@
       "chapter": 4,
       "verse_start": 29,
       "verse_end": 29,
-      "text": "And rose up, and thrust him out of the city, and led him unto the brow of the hill whereon their city was built, that they might cast him down headlong."
+      "text": "And rose up, and thrust him out of the city, and led him unto the brow of the hill whereon their city was built, that they might cast him down headlong.",
+      "info": ""
     },
     {
       "book_id": "LUK",
@@ -239,7 +268,8 @@
       "chapter": 4,
       "verse_start": 30,
       "verse_end": 30,
-      "text": "But he passing through the midst of them went his way,"
+      "text": "But he passing through the midst of them went his way,",
+      "info": ""
     },
     {
       "book_id": "LUK",
@@ -247,7 +277,8 @@
       "chapter": 4,
       "verse_start": 31,
       "verse_end": 31,
-      "text": "And came down to Capernaum, a city of Galilee, and taught them on the sabbath days."
+      "text": "And came down to Capernaum, a city of Galilee, and taught them on the sabbath days.",
+      "info": ""
     },
     {
       "book_id": "LUK",
@@ -255,7 +286,8 @@
       "chapter": 4,
       "verse_start": 32,
       "verse_end": 32,
-      "text": "And they were astonished at his doctrine: for his word was with power."
+      "text": "And they were astonished at his doctrine: for his word was with power.",
+      "info": ""
     },
     {
       "book_id": "LUK",
@@ -263,7 +295,8 @@
       "chapter": 4,
       "verse_start": 33,
       "verse_end": 33,
-      "text": "And in the synagogue there was a man, which had a spirit of an unclean devil, and cried out with a loud voice,"
+      "text": "And in the synagogue there was a man, which had a spirit of an unclean devil, and cried out with a loud voice,",
+      "info": ""
     },
     {
       "book_id": "LUK",
@@ -271,7 +304,8 @@
       "chapter": 4,
       "verse_start": 34,
       "verse_end": 34,
-      "text": "Saying, Let <em>us</em> alone; what have we to do with thee, <em>thou</em> Jesus of Nazareth? art thou come to destroy us? I know thee who thou art; the Holy One of God."
+      "text": "Saying, Let <em>us</em> alone; what have we to do with thee, <em>thou</em> Jesus of Nazareth? art thou come to destroy us? I know thee who thou art; the Holy One of God.",
+      "info": ""
     },
     {
       "book_id": "LUK",
@@ -279,7 +313,8 @@
       "chapter": 4,
       "verse_start": 35,
       "verse_end": 35,
-      "text": "And Jesus rebuked him, saying, \"JESUS_START\" Hold thy peace, and come out of him. \"JESUS_END\" And when the devil had thrown him in the midst, he came out of him, and hurt him not."
+      "text": "And Jesus rebuked him, saying, <span style=\"color:red;\">Hold thy peace, and come out of him.</span> And when the devil had thrown him in the midst, he came out of him, and hurt him not.",
+      "info": ""
     },
     {
       "book_id": "LUK",
@@ -287,7 +322,8 @@
       "chapter": 4,
       "verse_start": 36,
       "verse_end": 36,
-      "text": "And they were all amazed, and spake among themselves, saying, What a word <em>is</em> this! for with authority and power he commandeth the unclean spirits, and they come out."
+      "text": "And they were all amazed, and spake among themselves, saying, What a word <em>is</em> this! for with authority and power he commandeth the unclean spirits, and they come out.",
+      "info": ""
     },
     {
       "book_id": "LUK",
@@ -295,7 +331,8 @@
       "chapter": 4,
       "verse_start": 37,
       "verse_end": 37,
-      "text": "And the fame of him went out into every place of the country round about."
+      "text": "And the fame of him went out into every place of the country round about.",
+      "info": ""
     },
     {
       "book_id": "LUK",
@@ -303,7 +340,8 @@
       "chapter": 4,
       "verse_start": 38,
       "verse_end": 38,
-      "text": "And he arose out of the synagogue, and entered into Simon's house. And Simon's wife's mother was taken with a great fever; and they besought him for her."
+      "text": "And he arose out of the synagogue, and entered into Simon's house. And Simon's wife's mother was taken with a great fever; and they besought him for her.",
+      "info": ""
     },
     {
       "book_id": "LUK",
@@ -311,7 +349,8 @@
       "chapter": 4,
       "verse_start": 39,
       "verse_end": 39,
-      "text": "And he stood over her, and rebuked the fever; and it left her: and immediately she arose and ministered unto them."
+      "text": "And he stood over her, and rebuked the fever; and it left her: and immediately she arose and ministered unto them.",
+      "info": ""
     },
     {
       "book_id": "LUK",
@@ -319,7 +358,8 @@
       "chapter": 4,
       "verse_start": 40,
       "verse_end": 40,
-      "text": "Now when the sun was setting, all they that had any sick with divers diseases brought them unto him; and he laid his hands on every one of them, and healed them."
+      "text": "Now when the sun was setting, all they that had any sick with divers diseases brought them unto him; and he laid his hands on every one of them, and healed them.",
+      "info": ""
     },
     {
       "book_id": "LUK",
@@ -327,7 +367,8 @@
       "chapter": 4,
       "verse_start": 41,
       "verse_end": 41,
-      "text": "And devils also came out of many, crying out, and saying, Thou art Christ the Son of God. And he rebuking <em>them</em> suffered them not to speak: for they knew that he was Christ."
+      "text": "And devils also came out of many, crying out, and saying, Thou art Christ the Son of God. And he rebuking <em>them</em> suffered them not to speak: for they knew that he was Christ.",
+      "info": ""
     },
     {
       "book_id": "LUK",
@@ -335,7 +376,8 @@
       "chapter": 4,
       "verse_start": 42,
       "verse_end": 42,
-      "text": "And when it was day, he departed and went into a desert place: and the people sought him, and came unto him, and stayed him, that he should not depart from them."
+      "text": "And when it was day, he departed and went into a desert place: and the people sought him, and came unto him, and stayed him, that he should not depart from them.",
+      "info": ""
     },
     {
       "book_id": "LUK",
@@ -343,7 +385,8 @@
       "chapter": 4,
       "verse_start": 43,
       "verse_end": 43,
-      "text": "And he said unto them, \"JESUS_START\" I must preach the kingdom of God to other cities also: for therefore am I sent. \"JESUS_END\""
+      "text": "And he said unto them, <span style=\"color:red;\">I must preach the kingdom of God to other cities also: for therefore am I sent.</span>",
+      "info": ""
     },
     {
       "book_id": "LUK",
@@ -351,7 +394,8 @@
       "chapter": 4,
       "verse_start": 44,
       "verse_end": 44,
-      "text": "And he preached in the synagogues of Galilee."
+      "text": "And he preached in the synagogues of Galilee.",
+      "info": ""
     }
   ]
 }

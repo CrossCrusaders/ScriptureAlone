@@ -7,7 +7,7 @@
         <p class="font-bold text-3xl mb-2">Scripture Alone</p>
         <p class="mb-2"><RouterLink to="/">Home</RouterLink> · <a href="https://stats.uptimerobot.com/WzG2Eu6WXG" target="_blank">Uptime Status</a>
           · <RouterLink to="/versions">Updates</RouterLink></p>
-        <p class="text-xs">Scripture Alone © {{ (new Date).getFullYear() }}</p>
+        <p class="text-xs">Copyright © 2022-{{ (new Date).getFullYear() }} Cross Crusaders. All Rights Reserved</p>
       </div>
       <div class="mb-8 md:w-4/12 flex flex-col items-center">
         <p class="flex flex-row w-full md:justify-center">

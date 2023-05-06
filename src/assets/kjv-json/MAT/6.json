@@ -7,7 +7,8 @@
       "chapter": 6,
       "verse_start": 1,
       "verse_end": 1,
-      "text": "\"JESUS_START\" Take heed that ye do not your alms before men, to be seen of them: otherwise ye have no reward of your Father which is in heaven. \"JESUS_END\""
+      "text": "<span style=\"color:red;\">Take heed that ye do not your alms before men, to be seen of them: otherwise ye have no reward of your Father which is in heaven.</span>",
+      "info": ""
     },
     {
       "book_id": "MAT",
@@ -15,7 +16,8 @@
       "chapter": 6,
       "verse_start": 2,
       "verse_end": 2,
-      "text": "\"JESUS_START\" Therefore when thou doest <em>thine</em> alms, do not sound a trumpet before thee, as the hypocrites do in the synagogues and in the streets, that they may have glory of men. Verily I say unto you, They have their reward. \"JESUS_END\""
+      "text": "<span style=\"color:red;\">Therefore when thou doest <em>thine</em> alms, do not sound a trumpet before thee, as the hypocrites do in the synagogues and in the streets, that they may have glory of men. Verily I say unto you, They have their reward.</span>",
+      "info": ""
     },
     {
       "book_id": "MAT",
@@ -23,7 +25,8 @@
       "chapter": 6,
       "verse_start": 3,
       "verse_end": 3,
-      "text": "\"JESUS_START\" But when thou doest alms, let not thy left hand know what thy right hand doeth: \"JESUS_END\""
+      "text": "<span style=\"color:red;\">But when thou doest alms, let not thy left hand know what thy right hand doeth:</span>",
+      "info": ""
     },
     {
       "book_id": "MAT",
@@ -31,7 +34,8 @@
       "chapter": 6,
       "verse_start": 4,
       "verse_end": 4,
-      "text": "\"JESUS_START\" That thine alms may be in secret: and thy Father which seeth in secret himself shall reward thee openly. \"JESUS_END\""
+      "text": "<span style=\"color:red;\">That thine alms may be in secret: and thy Father which seeth in secret himself shall reward thee openly.</span>",
+      "info": ""
     },
     {
       "book_id": "MAT",
@@ -39,7 +43,8 @@
       "chapter": 6,
       "verse_start": 5,
       "verse_end": 5,
-      "text": "\"JESUS_START\" And when thou prayest, thou shalt not be as the hypocrites <em>are</em>: for they love to pray standing in the synagogues and in the corners of the streets, that they may be seen of men. Verily I say unto you, They have their reward. \"JESUS_END\""
+      "text": "<span style=\"color:red;\">And when thou prayest, thou shalt not be as the hypocrites <em>are:</em> for they love to pray standing in the synagogues and in the corners of the streets, that they may be seen of men. Verily I say unto you, They have their reward.</span>",
+      "info": ""
     },
     {
       "book_id": "MAT",
@@ -47,7 +52,8 @@
       "chapter": 6,
       "verse_start": 6,
       "verse_end": 6,
-      "text": "\"JESUS_START\" But thou, when thou prayest, enter into thy closet, and when thou hast shut thy door, pray to thy Father which is in secret; and thy Father which seeth in secret shall reward thee openly. \"JESUS_END\""
+      "text": "<span style=\"color:red;\">But thou, when thou prayest, enter into thy closet, and when thou hast shut thy door, pray to thy Father which is in secret; and thy Father which seeth in secret shall reward thee openly.</span>",
+      "info": ""
     },
     {
       "book_id": "MAT",
@@ -55,7 +61,8 @@
       "chapter": 6,
       "verse_start": 7,
       "verse_end": 7,
-      "text": "\"JESUS_START\" But when ye pray, use not vain repetitions, as the heathen <em>do</em>: for they think that they shall be heard for their much speaking. \"JESUS_END\""
+      "text": "<span style=\"color:red;\">But when ye pray, use not vain repetitions, as the heathen <em>do:</em> for they think that they shall be heard for their much speaking.</span>",
+      "info": ""
     },
     {
       "book_id": "MAT",
@@ -63,7 +70,8 @@
       "chapter": 6,
       "verse_start": 8,
       "verse_end": 8,
-      "text": "\"JESUS_START\" Be not ye therefore like unto them: for your Father knoweth what things ye have need of, before ye ask him. \"JESUS_END\""
+      "text": "<span style=\"color:red;\">Be not ye therefore like unto them: for your Father knoweth what things ye have need of, before ye ask him.</span>",
+      "info": ""
     },
     {
       "book_id": "MAT",
@@ -71,7 +79,8 @@
       "chapter": 6,
       "verse_start": 9,
       "verse_end": 9,
-      "text": "\"JESUS_START\" After this manner therefore pray ye: Our Father which art in heaven, Hallowed be thy name. \"JESUS_END\""
+      "text": "<span style=\"color:red;\">After this manner therefore pray ye: Our Father which art in heaven, Hallowed be thy name.</span>",
+      "info": ""
     },
     {
       "book_id": "MAT",
@@ -79,7 +88,8 @@
       "chapter": 6,
       "verse_start": 10,
       "verse_end": 10,
-      "text": "\"JESUS_START\" Thy kingdom come. Thy will be done in earth, as <em>it is</em> in heaven. \"JESUS_END\""
+      "text": "<span style=\"color:red;\">Thy kingdom come. Thy will be done in earth, as <em>it is</em> in heaven.</span>",
+      "info": ""
     },
     {
       "book_id": "MAT",
@@ -87,7 +97,8 @@
       "chapter": 6,
       "verse_start": 11,
       "verse_end": 11,
-      "text": "\"JESUS_START\" Give us this day our daily bread. \"JESUS_END\""
+      "text": "<span style=\"color:red;\">Give us this day our daily bread.</span>",
+      "info": ""
     },
     {
       "book_id": "MAT",
@@ -95,7 +106,8 @@
       "chapter": 6,
       "verse_start": 12,
       "verse_end": 12,
-      "text": "\"JESUS_START\" And forgive us our debts, as we forgive our debtors. \"JESUS_END\""
+      "text": "<span style=\"color:red;\">And forgive us our debts, as we forgive our debtors.</span>",
+      "info": ""
     },
     {
       "book_id": "MAT",
@@ -103,7 +115,8 @@
       "chapter": 6,
       "verse_start": 13,
       "verse_end": 13,
-      "text": "\"JESUS_START\" And lead us not into temptation, but deliver us from evil: For thine is the kingdom, and the power, and the glory, for ever. Amen. \"JESUS_END\""
+      "text": "<span style=\"color:red;\">And lead us not into temptation, but deliver us from evil: For thine is the kingdom, and the power, and the glory, for ever. Amen.</span>",
+      "info": ""
     },
     {
       "book_id": "MAT",
@@ -111,7 +124,8 @@
       "chapter": 6,
       "verse_start": 14,
       "verse_end": 14,
-      "text": "\"JESUS_START\" For if ye forgive men their trespasses, your heavenly Father will also forgive you: \"JESUS_END\""
+      "text": "<span style=\"color:red;\">For if ye forgive men their trespasses, your heavenly Father will also forgive you:</span>",
+      "info": ""
     },
     {
       "book_id": "MAT",
@@ -119,7 +133,8 @@
       "chapter": 6,
       "verse_start": 15,
       "verse_end": 15,
-      "text": "\"JESUS_START\" But if ye forgive not men their trespasses, neither will your Father forgive your trespasses. \"JESUS_END\""
+      "text": "<span style=\"color:red;\">But if ye forgive not men their trespasses, neither will your Father forgive your trespasses.</span>",
+      "info": ""
     },
     {
       "book_id": "MAT",
@@ -127,7 +142,8 @@
       "chapter": 6,
       "verse_start": 16,
       "verse_end": 16,
-      "text": "\"JESUS_START\" Moreover when ye fast, be not, as the hypocrites, of a sad countenance: for they disfigure their faces, that they may appear unto men to fast. Verily I say unto you, They have their reward. \"JESUS_END\""
+      "text": "<span style=\"color:red;\">Moreover when ye fast, be not, as the hypocrites, of a sad countenance: for they disfigure their faces, that they may appear unto men to fast. Verily I say unto you, They have their reward.</span>",
+      "info": ""
     },
     {
       "book_id": "MAT",
@@ -135,7 +151,8 @@
       "chapter": 6,
       "verse_start": 17,
       "verse_end": 17,
-      "text": "\"JESUS_START\" But thou, when thou fastest, anoint thine head, and wash thy face; \"JESUS_END\""
+      "text": "<span style=\"color:red;\">But thou, when thou fastest, anoint thine head, and wash thy face;</span>",
+      "info": ""
     },
     {
       "book_id": "MAT",
@@ -143,7 +160,8 @@
       "chapter": 6,
       "verse_start": 18,
       "verse_end": 18,
-      "text": "\"JESUS_START\" That thou appear not unto men to fast, but unto thy Father which is in secret: and thy Father, which seeth in secret, shall reward thee openly. \"JESUS_END\""
+      "text": "<span style=\"color:red;\">That thou appear not unto men to fast, but unto thy Father which is in secret: and thy Father, which seeth in secret, shall reward thee openly.</span>",
+      "info": ""
     },
     {
       "book_id": "MAT",
@@ -151,7 +169,8 @@
       "chapter": 6,
       "verse_start": 19,
       "verse_end": 19,
-      "text": "\"JESUS_START\" Lay not up for yourselves treasures upon earth, where moth and rust doth corrupt, and where thieves break through and steal: \"JESUS_END\""
+      "text": "<span style=\"color:red;\">Lay not up for yourselves treasures upon earth, where moth and rust doth corrupt, and where thieves break through and steal:</span>",
+      "info": ""
     },
     {
       "book_id": "MAT",
@@ -159,7 +178,8 @@
       "chapter": 6,
       "verse_start": 20,
       "verse_end": 20,
-      "text": "\"JESUS_START\" But lay up for yourselves treasures in heaven, where neither moth nor rust doth corrupt, and where thieves do not break through nor steal: \"JESUS_END\""
+      "text": "<span style=\"color:red;\">But lay up for yourselves treasures in heaven, where neither moth nor rust doth corrupt, and where thieves do not break through nor steal:</span>",
+      "info": ""
     },
     {
       "book_id": "MAT",
@@ -167,7 +187,8 @@
       "chapter": 6,
       "verse_start": 21,
       "verse_end": 21,
-      "text": "\"JESUS_START\" For where your treasure is, there will your heart be also. \"JESUS_END\""
+      "text": "<span style=\"color:red;\">For where your treasure is, there will your heart be also.</span>",
+      "info": ""
     },
     {
       "book_id": "MAT",
@@ -175,7 +196,8 @@
       "chapter": 6,
       "verse_start": 22,
       "verse_end": 22,
-      "text": "\"JESUS_START\" The light of the body is the eye: if therefore thine eye be single, thy whole body shall be full of light. \"JESUS_END\""
+      "text": "<span style=\"color:red;\">The light of the body is the eye: if therefore thine eye be single, thy whole body shall be full of light.</span>",
+      "info": ""
     },
     {
       "book_id": "MAT",
@@ -183,7 +205,8 @@
       "chapter": 6,
       "verse_start": 23,
       "verse_end": 23,
-      "text": "\"JESUS_START\" But if thine eye be evil, thy whole body shall be full of darkness. If therefore the light that is in thee be darkness, how great <em>is</em> that darkness! \"JESUS_END\""
+      "text": "<span style=\"color:red;\">But if thine eye be evil, thy whole body shall be full of darkness. If therefore the light that is in thee be darkness, how great <em>is</em> that darkness!</span>",
+      "info": ""
     },
     {
       "book_id": "MAT",
@@ -191,7 +214,8 @@
       "chapter": 6,
       "verse_start": 24,
       "verse_end": 24,
-      "text": "\"JESUS_START\" No man can serve two masters: for either he will hate the one, and love the other; or else he will hold to the one, and despise the other. Ye cannot serve God and mammon. \"JESUS_END\""
+      "text": "<span style=\"color:red;\">No man can serve two masters: for either he will hate the one, and love the other; or else he will hold to the one, and despise the other. Ye cannot serve God and mammon.</span>",
+      "info": ""
     },
     {
       "book_id": "MAT",
@@ -199,7 +223,8 @@
       "chapter": 6,
       "verse_start": 25,
       "verse_end": 25,
-      "text": "\"JESUS_START\" Therefore I say unto you, Take no thought for your life, what ye shall eat, or what ye shall drink; nor yet for your body, what ye shall put on. Is not the life more than meat, and the body than raiment? \"JESUS_END\""
+      "text": "<span style=\"color:red;\">Therefore I say unto you, Take no thought for your life, what ye shall eat, or what ye shall drink; nor yet for your body, what ye shall put on. Is not the life more than meat, and the body than raiment?</span>",
+      "info": ""
     },
     {
       "book_id": "MAT",
@@ -207,7 +232,8 @@
       "chapter": 6,
       "verse_start": 26,
       "verse_end": 26,
-      "text": "\"JESUS_START\" Behold the fowls of the air: for they sow not, neither do they reap, nor gather into barns; yet your heavenly Father feedeth them. Are ye not much better than they? \"JESUS_END\""
+      "text": "<span style=\"color:red;\">Behold the fowls of the air: for they sow not, neither do they reap, nor gather into barns; yet your heavenly Father feedeth them. Are ye not much better than they?</span>",
+      "info": ""
     },
     {
       "book_id": "MAT",
@@ -215,7 +241,8 @@
       "chapter": 6,
       "verse_start": 27,
       "verse_end": 27,
-      "text": "\"JESUS_START\" Which of you by taking thought can add one cubit unto his stature? \"JESUS_END\""
+      "text": "<span style=\"color:red;\">Which of you by taking thought can add one cubit unto his stature?</span>",
+      "info": ""
     },
     {
       "book_id": "MAT",
@@ -223,7 +250,8 @@
       "chapter": 6,
       "verse_start": 28,
       "verse_end": 28,
-      "text": "\"JESUS_START\" And why take ye thought for raiment? Consider the lilies of the field, how they grow; they toil not, neither do they spin: \"JESUS_END\""
+      "text": "<span style=\"color:red;\">And why take ye thought for raiment? Consider the lilies of the field, how they grow; they toil not, neither do they spin:</span>",
+      "info": ""
     },
     {
       "book_id": "MAT",
@@ -231,7 +259,8 @@
       "chapter": 6,
       "verse_start": 29,
       "verse_end": 29,
-      "text": "\"JESUS_START\" And yet I say unto you, That even Solomon in all his glory was not arrayed like one of these. \"JESUS_END\""
+      "text": "<span style=\"color:red;\">And yet I say unto you, That even Solomon in all his glory was not arrayed like one of these.</span>",
+      "info": ""
     },
     {
       "book_id": "MAT",
@@ -239,7 +268,8 @@
       "chapter": 6,
       "verse_start": 30,
       "verse_end": 30,
-      "text": "\"JESUS_START\" Wherefore, if God so clothe the grass of the field, which to day is, and to morrow is cast into the oven, <em>shall he</em> not much more <em>clothe</em> you, O ye of little faith? \"JESUS_END\""
+      "text": "<span style=\"color:red;\">Wherefore, if God so clothe the grass of the field, which to day is, and to morrow is cast into the oven, <em>shall he</em> not much more <em>clothe</em> you, O ye of little faith?</span>",
+      "info": ""
     },
     {
       "book_id": "MAT",
@@ -247,7 +277,8 @@
       "chapter": 6,
       "verse_start": 31,
       "verse_end": 31,
-      "text": "\"JESUS_START\" Therefore take no thought, saying, What shall we eat? or, What shall we drink? or, Wherewithal shall we be clothed? \"JESUS_END\""
+      "text": "<span style=\"color:red;\">Therefore take no thought, saying, What shall we eat? or, What shall we drink? or, Wherewithal shall we be clothed?</span>",
+      "info": ""
     },
     {
       "book_id": "MAT",
@@ -255,7 +286,8 @@
       "chapter": 6,
       "verse_start": 32,
       "verse_end": 32,
-      "text": "\"JESUS_START\" (For after all these things do the Gentiles seek:) for your heavenly Father knoweth that ye have need of all these things. \"JESUS_END\""
+      "text": "<span style=\"color:red;\">(For after all these things do the Gentiles seek:) for your heavenly Father knoweth that ye have need of all these things.</span>",
+      "info": ""
     },
     {
       "book_id": "MAT",
@@ -263,7 +295,8 @@
       "chapter": 6,
       "verse_start": 33,
       "verse_end": 33,
-      "text": "\"JESUS_START\" But seek ye first the kingdom of God, and his righteousness; and all these things shall be added unto you. \"JESUS_END\""
+      "text": "<span style=\"color:red;\">But seek ye first the kingdom of God, and his righteousness; and all these things shall be added unto you.</span>",
+      "info": ""
     },
     {
       "book_id": "MAT",
@@ -271,7 +304,8 @@
       "chapter": 6,
       "verse_start": 34,
       "verse_end": 34,
-      "text": "\"JESUS_START\" Take therefore no thought for the morrow: for the morrow shall take thought for the things of itself. Sufficient unto the day <em>is</em> the evil thereof. \"JESUS_END\""
+      "text": "<span style=\"color:red;\">Take therefore no thought for the morrow: for the morrow shall take thought for the things of itself. Sufficient unto the day <em>is</em> the evil thereof.</span>",
+      "info": ""
     }
   ]
 }

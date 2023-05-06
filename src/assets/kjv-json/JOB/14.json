@@ -7,7 +7,8 @@
       "chapter": 14,
       "verse_start": 1,
       "verse_end": 1,
-      "text": "Man <em>that is</em> born of a woman <em>is</em> of few days, and full of trouble."
+      "text": "Man <em>that is</em> born of a woman <em>is</em> of few days, and full of trouble.",
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -15,7 +16,8 @@
       "chapter": 14,
       "verse_start": 2,
       "verse_end": 2,
-      "text": "He cometh forth like a flower, and is cut down: he fleeth also as a shadow, and continueth not."
+      "text": "He cometh forth like a flower, and is cut down: he fleeth also as a shadow, and continueth not.",
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -23,7 +25,8 @@
       "chapter": 14,
       "verse_start": 3,
       "verse_end": 3,
-      "text": "And dost thou open thine eyes upon such an one, and bringest me into judgment with thee?"
+      "text": "And dost thou open thine eyes upon such an one, and bringest me into judgment with thee?",
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -31,7 +34,8 @@
       "chapter": 14,
       "verse_start": 4,
       "verse_end": 4,
-      "text": "Who can bring a clean <em>thing</em> out of an unclean? not one."
+      "text": "Who can bring a clean <em>thing</em> out of an unclean? not one.",
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -39,7 +43,8 @@
       "chapter": 14,
       "verse_start": 5,
       "verse_end": 5,
-      "text": "Seeing his days <em>are</em> determined, the number of his months <em>are</em> with thee, thou hast appointed his bounds that he cannot pass;"
+      "text": "Seeing his days <em>are</em> determined, the number of his months <em>are</em> with thee, thou hast appointed his bounds that he cannot pass;",
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -47,7 +52,8 @@
       "chapter": 14,
       "verse_start": 6,
       "verse_end": 6,
-      "text": "Turn from him, that he may rest, till he shall accomplish, as an hireling, his day."
+      "text": "Turn from him, that he may rest, till he shall accomplish, as an hireling, his day.",
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -55,7 +61,8 @@
       "chapter": 14,
       "verse_start": 7,
       "verse_end": 7,
-      "text": "For there is hope of a tree, if it be cut down, that it will sprout again, and that the tender branch thereof will not cease."
+      "text": "For there is hope of a tree, if it be cut down, that it will sprout again, and that the tender branch thereof will not cease.",
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -63,7 +70,8 @@
       "chapter": 14,
       "verse_start": 8,
       "verse_end": 8,
-      "text": "Though the root thereof wax old in the earth, and the stock thereof die in the ground;"
+      "text": "Though the root thereof wax old in the earth, and the stock thereof die in the ground;",
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -71,7 +79,8 @@
       "chapter": 14,
       "verse_start": 9,
       "verse_end": 9,
-      "text": "<em>Yet</em> through the scent of water it will bud, and bring forth boughs like a plant."
+      "text": "<em>Yet</em> through the scent of water it will bud, and bring forth boughs like a plant.",
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -79,7 +88,8 @@
       "chapter": 14,
       "verse_start": 10,
       "verse_end": 10,
-      "text": "But man dieth, and wasteth away: yea, man giveth up the ghost, and where <em>is</em> he?"
+      "text": "But man dieth, and wasteth away: yea, man giveth up the ghost, and where <em>is</em> he?",
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -87,7 +97,8 @@
       "chapter": 14,
       "verse_start": 11,
       "verse_end": 11,
-      "text": "<em>As</em> the waters fail from the sea, and the flood decayeth and drieth up:"
+      "text": "<em>As</em> the waters fail from the sea, and the flood decayeth and drieth up:",
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -95,7 +106,8 @@
       "chapter": 14,
       "verse_start": 12,
       "verse_end": 12,
-      "text": "So man lieth down, and riseth not: till the heavens <em>be</em> no more, they shall not awake, nor be raised out of their sleep."
+      "text": "So man lieth down, and riseth not: till the heavens <em>be</em> no more, they shall not awake, nor be raised out of their sleep.",
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -103,7 +115,8 @@
       "chapter": 14,
       "verse_start": 13,
       "verse_end": 13,
-      "text": "O that thou wouldest hide me in the grave, that thou wouldest keep me secret, until thy wrath be past, that thou wouldest appoint me a set time, and remember me!"
+      "text": "O that thou wouldest hide me in the grave, that thou wouldest keep me secret, until thy wrath be past, that thou wouldest appoint me a set time, and remember me!",
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -111,7 +124,8 @@
       "chapter": 14,
       "verse_start": 14,
       "verse_end": 14,
-      "text": "If a man die, shall he live <em>again</em>? all the days of my appointed time will I wait, till my change come."
+      "text": "If a man die, shall he live <em>again?</em> all the days of my appointed time will I wait, till my change come.",
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -119,7 +133,8 @@
       "chapter": 14,
       "verse_start": 15,
       "verse_end": 15,
-      "text": "Thou shalt call, and I will answer thee: thou wilt have a desire to the work of thine hands."
+      "text": "Thou shalt call, and I will answer thee: thou wilt have a desire to the work of thine hands.",
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -127,7 +142,8 @@
       "chapter": 14,
       "verse_start": 16,
       "verse_end": 16,
-      "text": "For now thou numberest my steps: dost thou not watch over my sin?"
+      "text": "For now thou numberest my steps: dost thou not watch over my sin?",
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -135,7 +151,8 @@
       "chapter": 14,
       "verse_start": 17,
       "verse_end": 17,
-      "text": "My transgression <em>is</em> sealed up in a bag, and thou sewest up mine iniquity."
+      "text": "My transgression <em>is</em> sealed up in a bag, and thou sewest up mine iniquity.",
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -143,7 +160,8 @@
       "chapter": 14,
       "verse_start": 18,
       "verse_end": 18,
-      "text": "And surely the mountain falling cometh to nought, and the rock is removed out of his place."
+      "text": "And surely the mountain falling cometh to nought, and the rock is removed out of his place.",
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -151,7 +169,8 @@
       "chapter": 14,
       "verse_start": 19,
       "verse_end": 19,
-      "text": "The waters wear the stones: thou washest away the things which grow <em>out</em> of the dust of the earth; and thou destroyest the hope of man."
+      "text": "The waters wear the stones: thou washest away the things which grow <em>out</em> of the dust of the earth; and thou destroyest the hope of man.",
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -159,7 +178,8 @@
       "chapter": 14,
       "verse_start": 20,
       "verse_end": 20,
-      "text": "Thou prevailest for ever against him, and he passeth: thou changest his countenance, and sendest him away."
+      "text": "Thou prevailest for ever against him, and he passeth: thou changest his countenance, and sendest him away.",
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -167,7 +187,8 @@
       "chapter": 14,
       "verse_start": 21,
       "verse_end": 21,
-      "text": "His sons come to honour, and he knoweth <em>it</em> not; and they are brought low, but he perceiveth <em>it</em> not of them."
+      "text": "His sons come to honour, and he knoweth <em>it</em> not; and they are brought low, but he perceiveth <em>it</em> not of them.",
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -175,7 +196,8 @@
       "chapter": 14,
       "verse_start": 22,
       "verse_end": 22,
-      "text": "But his flesh upon him shall have pain, and his soul within him shall mourn."
+      "text": "But his flesh upon him shall have pain, and his soul within him shall mourn.",
+      "info": ""
     }
   ]
 }

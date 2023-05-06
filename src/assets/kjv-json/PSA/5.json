@@ -7,7 +7,8 @@
       "chapter": 5,
       "verse_start": 1,
       "verse_end": 1,
-      "text": "Give ear to my words, O LORD, consider my meditation."
+      "text": "Give ear to my words, O LORD, consider my meditation.",
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -15,7 +16,8 @@
       "chapter": 5,
       "verse_start": 2,
       "verse_end": 2,
-      "text": "Hearken unto the voice of my cry, my King, and my God: for unto thee will I pray."
+      "text": "Hearken unto the voice of my cry, my King, and my God: for unto thee will I pray.",
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -23,7 +25,8 @@
       "chapter": 5,
       "verse_start": 3,
       "verse_end": 3,
-      "text": "My voice shalt thou hear in the morning, O LORD; in the morning will I direct <em>my prayer</em> unto thee, and will look up."
+      "text": "My voice shalt thou hear in the morning, O LORD; in the morning will I direct <em>my prayer</em> unto thee, and will look up.",
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -31,7 +34,8 @@
       "chapter": 5,
       "verse_start": 4,
       "verse_end": 4,
-      "text": "For thou <em>art</em> not a God that hath pleasure in wickedness: neither shall evil dwell with thee."
+      "text": "For thou <em>art</em> not a God that hath pleasure in wickedness: neither shall evil dwell with thee.",
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -39,7 +43,8 @@
       "chapter": 5,
       "verse_start": 5,
       "verse_end": 5,
-      "text": "The foolish shall not stand in thy sight: thou hatest all workers of iniquity."
+      "text": "The foolish shall not stand in thy sight: thou hatest all workers of iniquity.",
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -47,7 +52,8 @@
       "chapter": 5,
       "verse_start": 6,
       "verse_end": 6,
-      "text": "Thou shalt destroy them that speak leasing: the LORD will abhor the bloody and deceitful man."
+      "text": "Thou shalt destroy them that speak leasing: the LORD will abhor the bloody and deceitful man.",
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -55,7 +61,8 @@
       "chapter": 5,
       "verse_start": 7,
       "verse_end": 7,
-      "text": "But as for me, I will come <em>into</em> thy house in the multitude of thy mercy: <em>and</em> in thy fear will I worship toward thy holy temple."
+      "text": "But as for me, I will come <em>into</em> thy house in the multitude of thy mercy: <em>and</em> in thy fear will I worship toward thy holy temple.",
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -63,7 +70,8 @@
       "chapter": 5,
       "verse_start": 8,
       "verse_end": 8,
-      "text": "Lead me, O LORD, in thy righteousness because of mine enemies; make thy way straight before my face."
+      "text": "Lead me, O LORD, in thy righteousness because of mine enemies; make thy way straight before my face.",
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -71,7 +79,8 @@
       "chapter": 5,
       "verse_start": 9,
       "verse_end": 9,
-      "text": "For <em>there is</em> no faithfulness in their mouth; their inward part <em>is</em> very wickedness; their throat <em>is</em> an open sepulchre; they flatter with their tongue."
+      "text": "For <em>there is</em> no faithfulness in their mouth; their inward part <em>is</em> very wickedness; their throat <em>is</em> an open sepulchre; they flatter with their tongue.",
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -79,7 +88,8 @@
       "chapter": 5,
       "verse_start": 10,
       "verse_end": 10,
-      "text": "Destroy thou them, O God; let them fall by their own counsels; cast them out in the multitude of their transgressions; for they have rebelled against thee."
+      "text": "Destroy thou them, O God; let them fall by their own counsels; cast them out in the multitude of their transgressions; for they have rebelled against thee.",
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -87,7 +97,8 @@
       "chapter": 5,
       "verse_start": 11,
       "verse_end": 11,
-      "text": "But let all those that put their trust in thee rejoice: let them ever shout for joy, because thou defendest them: let them also that love thy name be joyful in thee."
+      "text": "But let all those that put their trust in thee rejoice: let them ever shout for joy, because thou defendest them: let them also that love thy name be joyful in thee.",
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -95,7 +106,8 @@
       "chapter": 5,
       "verse_start": 12,
       "verse_end": 12,
-      "text": "For thou, LORD, wilt bless the righteous; with favour wilt thou compass him as <em>with</em> a shield."
+      "text": "For thou, LORD, wilt bless the righteous; with favour wilt thou compass him as <em>with</em> a shield.",
+      "info": ""
     }
   ]
 }
