@@ -1,0 +1,43 @@
+{
+  "header": "",
+  "footer": "",
+  "language": "Hebrew",
+  "verses": [
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 123,
+      "verse_start": 1,
+      "verse_end": 1,
+      "text": "שׁיר המעלות אליך נשׂאתי את עיני הישׁבי בשׁמים׃",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 123,
+      "verse_start": 2,
+      "verse_end": 2,
+      "text": "הנה כעיני עבדים אל יד אדוניהם כעיני שׁפחה אל יד גברתה כן עינינו אל יהוה אלהינו עד שׁיחננו׃",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 123,
+      "verse_start": 3,
+      "verse_end": 3,
+      "text": "חננו יהוה חננו כי רב שׂבענו בוז׃",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 123,
+      "verse_start": 4,
+      "verse_end": 4,
+      "text": "רבת שׂבעה לה נפשׁנו הלעג השׁאננים הבוז לגאיונים׃",
+      "info": ""
+    }
+  ]
+}

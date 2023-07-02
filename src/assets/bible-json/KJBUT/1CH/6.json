@@ -1,0 +1,736 @@
+{
+  "header": "",
+  "footer": "",
+  "language": "Hebrew",
+  "verses": [
+    {
+      "book_id": "1CH",
+      "book_name": "1 Chronicles",
+      "chapter": 6,
+      "verse_start": 1,
+      "verse_end": 1,
+      "text": "בני לוי גרשׁון קהת ומררי׃",
+      "info": ""
+    },
+    {
+      "book_id": "1CH",
+      "book_name": "1 Chronicles",
+      "chapter": 6,
+      "verse_start": 2,
+      "verse_end": 2,
+      "text": "ובני קהת עמרם יצהר וחברון ועזיאל׃",
+      "info": ""
+    },
+    {
+      "book_id": "1CH",
+      "book_name": "1 Chronicles",
+      "chapter": 6,
+      "verse_start": 3,
+      "verse_end": 3,
+      "text": "ובני עמרם אהרן ומשׁה ומרים ובני אהרן נדב ואביהוא אלעזר ואיתמר׃",
+      "info": ""
+    },
+    {
+      "book_id": "1CH",
+      "book_name": "1 Chronicles",
+      "chapter": 6,
+      "verse_start": 4,
+      "verse_end": 4,
+      "text": "אלעזר הוליד את פינחס פינחס הליד את אבישׁוע׃",
+      "info": ""
+    },
+    {
+      "book_id": "1CH",
+      "book_name": "1 Chronicles",
+      "chapter": 6,
+      "verse_start": 5,
+      "verse_end": 5,
+      "text": "ואבישׁוע הוליד את בקי ובקי הוליד את עזי׃",
+      "info": ""
+    },
+    {
+      "book_id": "1CH",
+      "book_name": "1 Chronicles",
+      "chapter": 6,
+      "verse_start": 6,
+      "verse_end": 6,
+      "text": "ועזי הוליד את זרחיה וזרחיה הוליד את מריות׃",
+      "info": ""
+    },
+    {
+      "book_id": "1CH",
+      "book_name": "1 Chronicles",
+      "chapter": 6,
+      "verse_start": 7,
+      "verse_end": 7,
+      "text": "מריות הוליד את אמריה ואמריה הוליד את אחיטוב׃",
+      "info": ""
+    },
+    {
+      "book_id": "1CH",
+      "book_name": "1 Chronicles",
+      "chapter": 6,
+      "verse_start": 8,
+      "verse_end": 8,
+      "text": "ואחיטוב הוליד את צדוק וצדוק הוליד את אחימעץ׃",
+      "info": ""
+    },
+    {
+      "book_id": "1CH",
+      "book_name": "1 Chronicles",
+      "chapter": 6,
+      "verse_start": 9,
+      "verse_end": 9,
+      "text": "ואחימעץ הוליד את עזריה ועזריה הוליד את יוחנן׃",
+      "info": ""
+    },
+    {
+      "book_id": "1CH",
+      "book_name": "1 Chronicles",
+      "chapter": 6,
+      "verse_start": 10,
+      "verse_end": 10,
+      "text": "ויוחנן הוליד את עזריה הוא אשׁר כהן בבית אשׁר בנה שׁלמה בירושׁלם׃",
+      "info": ""
+    },
+    {
+      "book_id": "1CH",
+      "book_name": "1 Chronicles",
+      "chapter": 6,
+      "verse_start": 11,
+      "verse_end": 11,
+      "text": "ויולד עזריה את אמריה ואמריה הוליד את אחיטוב׃",
+      "info": ""
+    },
+    {
+      "book_id": "1CH",
+      "book_name": "1 Chronicles",
+      "chapter": 6,
+      "verse_start": 12,
+      "verse_end": 12,
+      "text": "ואחיטוב הוליד את צדוק וצדוק הוליד את שׁלום׃",
+      "info": ""
+    },
+    {
+      "book_id": "1CH",
+      "book_name": "1 Chronicles",
+      "chapter": 6,
+      "verse_start": 13,
+      "verse_end": 13,
+      "text": "ושׁלום הוליד את חלקיה וחלקיה הוליד את עזריה׃",
+      "info": ""
+    },
+    {
+      "book_id": "1CH",
+      "book_name": "1 Chronicles",
+      "chapter": 6,
+      "verse_start": 14,
+      "verse_end": 14,
+      "text": "ועזריה הוליד את שׂריה ושׂריה הוליד את יהוצדק׃",
+      "info": ""
+    },
+    {
+      "book_id": "1CH",
+      "book_name": "1 Chronicles",
+      "chapter": 6,
+      "verse_start": 15,
+      "verse_end": 15,
+      "text": "ויהוצדק הלך בהגלות יהוה את יהודה וירושׁלם ביד נבכדנאצר׃",
+      "info": ""
+    },
+    {
+      "book_id": "1CH",
+      "book_name": "1 Chronicles",
+      "chapter": 6,
+      "verse_start": 16,
+      "verse_end": 16,
+      "text": "בני לוי גרשׁם קהת ומררי׃",
+      "info": ""
+    },
+    {
+      "book_id": "1CH",
+      "book_name": "1 Chronicles",
+      "chapter": 6,
+      "verse_start": 17,
+      "verse_end": 17,
+      "text": "ואלה שׁמות בני גרשׁום לבני ושׁמעי׃",
+      "info": ""
+    },
+    {
+      "book_id": "1CH",
+      "book_name": "1 Chronicles",
+      "chapter": 6,
+      "verse_start": 18,
+      "verse_end": 18,
+      "text": "ובני קהת עמרם ויצהר וחברון ועזיאל׃",
+      "info": ""
+    },
+    {
+      "book_id": "1CH",
+      "book_name": "1 Chronicles",
+      "chapter": 6,
+      "verse_start": 19,
+      "verse_end": 19,
+      "text": "בני מררי מחלי ומשׁי ואלה משׁפחות הלוי לאבותיהם׃",
+      "info": ""
+    },
+    {
+      "book_id": "1CH",
+      "book_name": "1 Chronicles",
+      "chapter": 6,
+      "verse_start": 20,
+      "verse_end": 20,
+      "text": "לגרשׁום לבני בנו יחת בנו זמה בנו׃",
+      "info": ""
+    },
+    {
+      "book_id": "1CH",
+      "book_name": "1 Chronicles",
+      "chapter": 6,
+      "verse_start": 21,
+      "verse_end": 21,
+      "text": "יואח בנו עדו בנו זרח בנו יאתרי בנו׃",
+      "info": ""
+    },
+    {
+      "book_id": "1CH",
+      "book_name": "1 Chronicles",
+      "chapter": 6,
+      "verse_start": 22,
+      "verse_end": 22,
+      "text": "בני קהת עמינדב בנו קרח בנו אסיר בנו׃",
+      "info": ""
+    },
+    {
+      "book_id": "1CH",
+      "book_name": "1 Chronicles",
+      "chapter": 6,
+      "verse_start": 23,
+      "verse_end": 23,
+      "text": "אלקנה בנו ואביסף בנו ואסיר בנו׃",
+      "info": ""
+    },
+    {
+      "book_id": "1CH",
+      "book_name": "1 Chronicles",
+      "chapter": 6,
+      "verse_start": 24,
+      "verse_end": 24,
+      "text": "תחת בנו אוריאל בנו עזיה בנו ושׁאול בנו׃",
+      "info": ""
+    },
+    {
+      "book_id": "1CH",
+      "book_name": "1 Chronicles",
+      "chapter": 6,
+      "verse_start": 25,
+      "verse_end": 25,
+      "text": "ובני אלקנה עמשׂי ואחימות׃",
+      "info": ""
+    },
+    {
+      "book_id": "1CH",
+      "book_name": "1 Chronicles",
+      "chapter": 6,
+      "verse_start": 26,
+      "verse_end": 26,
+      "text": "אלקנה בנו אלקנה צופי בנו ונחת בנו׃",
+      "info": ""
+    },
+    {
+      "book_id": "1CH",
+      "book_name": "1 Chronicles",
+      "chapter": 6,
+      "verse_start": 27,
+      "verse_end": 27,
+      "text": "אליאב בנו ירחם בנו אלקנה בנו׃",
+      "info": ""
+    },
+    {
+      "book_id": "1CH",
+      "book_name": "1 Chronicles",
+      "chapter": 6,
+      "verse_start": 28,
+      "verse_end": 28,
+      "text": "ובני שׁמואל הבכר ושׁני ואביה׃",
+      "info": ""
+    },
+    {
+      "book_id": "1CH",
+      "book_name": "1 Chronicles",
+      "chapter": 6,
+      "verse_start": 29,
+      "verse_end": 29,
+      "text": "בני מררי מחלי לבני בנו שׁמעי בנו עזה בנו׃",
+      "info": ""
+    },
+    {
+      "book_id": "1CH",
+      "book_name": "1 Chronicles",
+      "chapter": 6,
+      "verse_start": 30,
+      "verse_end": 30,
+      "text": "שׁמעא בנו חגיה בנו עשׂיה בנו׃",
+      "info": ""
+    },
+    {
+      "book_id": "1CH",
+      "book_name": "1 Chronicles",
+      "chapter": 6,
+      "verse_start": 31,
+      "verse_end": 31,
+      "text": "ואלה אשׁר העמיד דויד על ידי שׁיר בית יהוה ממנוח הארון׃",
+      "info": ""
+    },
+    {
+      "book_id": "1CH",
+      "book_name": "1 Chronicles",
+      "chapter": 6,
+      "verse_start": 32,
+      "verse_end": 32,
+      "text": "ויהיו משׁרתים לפני משׁכן אהל מועד בשׁיר עד בנות שׁלמה את בית יהוה בירושׁלם ויעמדו כמשׁפטם על עבודתם׃",
+      "info": ""
+    },
+    {
+      "book_id": "1CH",
+      "book_name": "1 Chronicles",
+      "chapter": 6,
+      "verse_start": 33,
+      "verse_end": 33,
+      "text": "ואלה העמדים ובניהם מבני הקהתי הימן המשׁורר בן יואל בן שׁמואל׃",
+      "info": ""
+    },
+    {
+      "book_id": "1CH",
+      "book_name": "1 Chronicles",
+      "chapter": 6,
+      "verse_start": 34,
+      "verse_end": 34,
+      "text": "בן אלקנה בן ירחם בן אליאל בן תוח׃",
+      "info": ""
+    },
+    {
+      "book_id": "1CH",
+      "book_name": "1 Chronicles",
+      "chapter": 6,
+      "verse_start": 35,
+      "verse_end": 35,
+      "text": "בן ציף בן אלקנה בן מחת בן עמשׂי׃",
+      "info": ""
+    },
+    {
+      "book_id": "1CH",
+      "book_name": "1 Chronicles",
+      "chapter": 6,
+      "verse_start": 36,
+      "verse_end": 36,
+      "text": "בן אלקנה בן יואל בן עזריה בן צפניה׃",
+      "info": ""
+    },
+    {
+      "book_id": "1CH",
+      "book_name": "1 Chronicles",
+      "chapter": 6,
+      "verse_start": 37,
+      "verse_end": 37,
+      "text": "בן תחת בן אסיר בן אביסף בן קרח׃",
+      "info": ""
+    },
+    {
+      "book_id": "1CH",
+      "book_name": "1 Chronicles",
+      "chapter": 6,
+      "verse_start": 38,
+      "verse_end": 38,
+      "text": "בן יצהר בן קהת בן לוי בן ישׂראל׃",
+      "info": ""
+    },
+    {
+      "book_id": "1CH",
+      "book_name": "1 Chronicles",
+      "chapter": 6,
+      "verse_start": 39,
+      "verse_end": 39,
+      "text": "ואחיו אסף העמד על ימינו אסף בן ברכיהו בן שׁמעא׃",
+      "info": ""
+    },
+    {
+      "book_id": "1CH",
+      "book_name": "1 Chronicles",
+      "chapter": 6,
+      "verse_start": 40,
+      "verse_end": 40,
+      "text": "בן מיכאל בן בעשׂיה בן מלכיה׃",
+      "info": ""
+    },
+    {
+      "book_id": "1CH",
+      "book_name": "1 Chronicles",
+      "chapter": 6,
+      "verse_start": 41,
+      "verse_end": 41,
+      "text": "בן אתני בן זרח בן עדיה׃",
+      "info": ""
+    },
+    {
+      "book_id": "1CH",
+      "book_name": "1 Chronicles",
+      "chapter": 6,
+      "verse_start": 42,
+      "verse_end": 42,
+      "text": "בן איתן בן זמה בן שׁמעי׃",
+      "info": ""
+    },
+    {
+      "book_id": "1CH",
+      "book_name": "1 Chronicles",
+      "chapter": 6,
+      "verse_start": 43,
+      "verse_end": 43,
+      "text": "בן יחת בן גרשׁם בן לוי׃",
+      "info": ""
+    },
+    {
+      "book_id": "1CH",
+      "book_name": "1 Chronicles",
+      "chapter": 6,
+      "verse_start": 44,
+      "verse_end": 44,
+      "text": "ובני מררי אחיהם על השׂמאול איתן בן קישׁי בן עבדי בן מלוך׃",
+      "info": ""
+    },
+    {
+      "book_id": "1CH",
+      "book_name": "1 Chronicles",
+      "chapter": 6,
+      "verse_start": 45,
+      "verse_end": 45,
+      "text": "בן חשׁביה בן אמציה בן חלקיה׃",
+      "info": ""
+    },
+    {
+      "book_id": "1CH",
+      "book_name": "1 Chronicles",
+      "chapter": 6,
+      "verse_start": 46,
+      "verse_end": 46,
+      "text": "בן אמצי בן בני בן שׁמר׃",
+      "info": ""
+    },
+    {
+      "book_id": "1CH",
+      "book_name": "1 Chronicles",
+      "chapter": 6,
+      "verse_start": 47,
+      "verse_end": 47,
+      "text": "בן מחלי בן מושׁי בן מררי בן לוי׃",
+      "info": ""
+    },
+    {
+      "book_id": "1CH",
+      "book_name": "1 Chronicles",
+      "chapter": 6,
+      "verse_start": 48,
+      "verse_end": 48,
+      "text": "ואחיהם הלוים נתונים לכל עבודת משׁכן בית האלהים׃",
+      "info": ""
+    },
+    {
+      "book_id": "1CH",
+      "book_name": "1 Chronicles",
+      "chapter": 6,
+      "verse_start": 49,
+      "verse_end": 49,
+      "text": "ואהרן ובניו מקטירים על מזבח העולה ועל מזבח הקטרת לכל מלאכת קדשׁ הקדשׁים ולכפר על ישׂראל ככל אשׁר צוה משׁה עבד האלהים׃",
+      "info": ""
+    },
+    {
+      "book_id": "1CH",
+      "book_name": "1 Chronicles",
+      "chapter": 6,
+      "verse_start": 50,
+      "verse_end": 50,
+      "text": "ואלה בני אהרן אלעזר בנו פינחס בנו אבישׁוע בנו׃",
+      "info": ""
+    },
+    {
+      "book_id": "1CH",
+      "book_name": "1 Chronicles",
+      "chapter": 6,
+      "verse_start": 51,
+      "verse_end": 51,
+      "text": "בקי בנו עזי בנו זרחיה בנו׃",
+      "info": ""
+    },
+    {
+      "book_id": "1CH",
+      "book_name": "1 Chronicles",
+      "chapter": 6,
+      "verse_start": 52,
+      "verse_end": 52,
+      "text": "מריות בנו אמריה בנו אחיטוב בנו׃",
+      "info": ""
+    },
+    {
+      "book_id": "1CH",
+      "book_name": "1 Chronicles",
+      "chapter": 6,
+      "verse_start": 53,
+      "verse_end": 53,
+      "text": "צדוק בנו אחימעץ בנו׃",
+      "info": ""
+    },
+    {
+      "book_id": "1CH",
+      "book_name": "1 Chronicles",
+      "chapter": 6,
+      "verse_start": 54,
+      "verse_end": 54,
+      "text": "ואלה מושׁבותם לטירותם בגבולם לבני אהרן למשׁפחת הקהתי כי להם היה הגורל׃",
+      "info": ""
+    },
+    {
+      "book_id": "1CH",
+      "book_name": "1 Chronicles",
+      "chapter": 6,
+      "verse_start": 55,
+      "verse_end": 55,
+      "text": "ויתנו להם את חברון בארץ יהודה ואת מגרשׁיה סביבתיה׃",
+      "info": ""
+    },
+    {
+      "book_id": "1CH",
+      "book_name": "1 Chronicles",
+      "chapter": 6,
+      "verse_start": 56,
+      "verse_end": 56,
+      "text": "ואת שׂדה העיר ואת חצריה נתנו לכלב בן יפנה׃",
+      "info": ""
+    },
+    {
+      "book_id": "1CH",
+      "book_name": "1 Chronicles",
+      "chapter": 6,
+      "verse_start": 57,
+      "verse_end": 57,
+      "text": "ולבני אהרן נתנו את ערי המקלט את חברון ואת לבנה ואת מגרשׁיה ואת יתר ואת אשׁתמע ואת מגרשׁיה׃",
+      "info": ""
+    },
+    {
+      "book_id": "1CH",
+      "book_name": "1 Chronicles",
+      "chapter": 6,
+      "verse_start": 58,
+      "verse_end": 58,
+      "text": "ואת חילז ואת מגרשׁיה את דביר ואת מגרשׁיה׃",
+      "info": ""
+    },
+    {
+      "book_id": "1CH",
+      "book_name": "1 Chronicles",
+      "chapter": 6,
+      "verse_start": 59,
+      "verse_end": 59,
+      "text": "ואת עשׁן ואת מגרשׁיה ואת בית שׁמשׁ ואת מגרשׁיה׃",
+      "info": ""
+    },
+    {
+      "book_id": "1CH",
+      "book_name": "1 Chronicles",
+      "chapter": 6,
+      "verse_start": 60,
+      "verse_end": 60,
+      "text": "וממטה בנימן את גבע ואת מגרשׁיה ואת עלמת ואת מגרשׁיה ואת ענתות ואת מגרשׁיה כל עריהם שׁלשׁ עשׂרה עיר במשׁפחותיהם׃",
+      "info": ""
+    },
+    {
+      "book_id": "1CH",
+      "book_name": "1 Chronicles",
+      "chapter": 6,
+      "verse_start": 61,
+      "verse_end": 61,
+      "text": "ולבני קהת הנותרים ממשׁפחת המטה ממחצית מטה חצי מנשׁה בגורל ערים עשׂר׃",
+      "info": ""
+    },
+    {
+      "book_id": "1CH",
+      "book_name": "1 Chronicles",
+      "chapter": 6,
+      "verse_start": 62,
+      "verse_end": 62,
+      "text": "ולבני גרשׁום למשׁפחותם ממטה ישׂשכר וממטה אשׁר וממטה נפתלי וממטה מנשׁה בבשׁן ערים שׁלשׁ עשׂרה׃",
+      "info": ""
+    },
+    {
+      "book_id": "1CH",
+      "book_name": "1 Chronicles",
+      "chapter": 6,
+      "verse_start": 63,
+      "verse_end": 63,
+      "text": "לבני מררי למשׁפחותם ממטה ראובן וממטה גד וממטה זבולן בגורל ערים שׁתים עשׂרה׃",
+      "info": ""
+    },
+    {
+      "book_id": "1CH",
+      "book_name": "1 Chronicles",
+      "chapter": 6,
+      "verse_start": 64,
+      "verse_end": 64,
+      "text": "ויתנו בני ישׂראל ללוים את הערים ואת מגרשׁיהם׃",
+      "info": ""
+    },
+    {
+      "book_id": "1CH",
+      "book_name": "1 Chronicles",
+      "chapter": 6,
+      "verse_start": 65,
+      "verse_end": 65,
+      "text": "ויתנו בגורל ממטה בני יהודה וממטה בני שׁמעון וממטה בני בנימן את הערים האלה אשׁר יקראו אתהם בשׁמות׃",
+      "info": ""
+    },
+    {
+      "book_id": "1CH",
+      "book_name": "1 Chronicles",
+      "chapter": 6,
+      "verse_start": 66,
+      "verse_end": 66,
+      "text": "וממשׁפחות בני קהת ויהי ערי גבולם ממטה אפרים׃",
+      "info": ""
+    },
+    {
+      "book_id": "1CH",
+      "book_name": "1 Chronicles",
+      "chapter": 6,
+      "verse_start": 67,
+      "verse_end": 67,
+      "text": "ויתנו להם את ערי המקלט את שׁכם ואת מגרשׁיה בהר אפרים ואת גזר ואת מגרשׁיה׃",
+      "info": ""
+    },
+    {
+      "book_id": "1CH",
+      "book_name": "1 Chronicles",
+      "chapter": 6,
+      "verse_start": 68,
+      "verse_end": 68,
+      "text": "ואת יקמעם ואת מגרשׁיה ואת בית חורון ואת מגרשׁיה׃",
+      "info": ""
+    },
+    {
+      "book_id": "1CH",
+      "book_name": "1 Chronicles",
+      "chapter": 6,
+      "verse_start": 69,
+      "verse_end": 69,
+      "text": "ואת אילון ואת מגרשׁיה ואת גת רמון ואת מגרשׁיה׃",
+      "info": ""
+    },
+    {
+      "book_id": "1CH",
+      "book_name": "1 Chronicles",
+      "chapter": 6,
+      "verse_start": 70,
+      "verse_end": 70,
+      "text": "וממחצית מטה מנשׁה את ענר ואת מגרשׁיה ואת בלעם ואת מגרשׁיה למשׁפחת לבני קהת הנותרים׃",
+      "info": ""
+    },
+    {
+      "book_id": "1CH",
+      "book_name": "1 Chronicles",
+      "chapter": 6,
+      "verse_start": 71,
+      "verse_end": 71,
+      "text": "לבני גרשׁום ממשׁפחת חצי מטה מנשׁה את גולן בבשׁן ואת מגרשׁיה ואת עשׁתרות ואת מגרשׁיה׃",
+      "info": ""
+    },
+    {
+      "book_id": "1CH",
+      "book_name": "1 Chronicles",
+      "chapter": 6,
+      "verse_start": 72,
+      "verse_end": 72,
+      "text": "וממטה ישׂשכר את קדשׁ ואת מגרשׁיה את דברת ואת מגרשׁיה׃",
+      "info": ""
+    },
+    {
+      "book_id": "1CH",
+      "book_name": "1 Chronicles",
+      "chapter": 6,
+      "verse_start": 73,
+      "verse_end": 73,
+      "text": "ואת ראמות ואת מגרשׁיה ואת ענם ואת מגרשׁיה׃",
+      "info": ""
+    },
+    {
+      "book_id": "1CH",
+      "book_name": "1 Chronicles",
+      "chapter": 6,
+      "verse_start": 74,
+      "verse_end": 74,
+      "text": "וממטה אשׁר את משׁל ואת מגרשׁיה ואת עבדון ואת מגרשׁיה׃",
+      "info": ""
+    },
+    {
+      "book_id": "1CH",
+      "book_name": "1 Chronicles",
+      "chapter": 6,
+      "verse_start": 75,
+      "verse_end": 75,
+      "text": "ואת חוקק ואת מגרשׁיה ואת רחב ואת מגרשׁיה׃",
+      "info": ""
+    },
+    {
+      "book_id": "1CH",
+      "book_name": "1 Chronicles",
+      "chapter": 6,
+      "verse_start": 76,
+      "verse_end": 76,
+      "text": "וממטה נפתלי את קדשׁ בגליל ואת מגרשׁיה ואת חמון ואת מגרשׁיה ואת קריתים ואת מגרשׁיה׃",
+      "info": ""
+    },
+    {
+      "book_id": "1CH",
+      "book_name": "1 Chronicles",
+      "chapter": 6,
+      "verse_start": 77,
+      "verse_end": 77,
+      "text": "לבני מררי הנותרים ממטה זבולן את רמונו ואת מגרשׁיה את תבור ואת מגרשׁיה׃",
+      "info": ""
+    },
+    {
+      "book_id": "1CH",
+      "book_name": "1 Chronicles",
+      "chapter": 6,
+      "verse_start": 78,
+      "verse_end": 78,
+      "text": "ומעבר לירדן ירחו למזרח הירדן ממטה ראובן את בצר במדבר ואת מגרשׁיה ואת יהצה ואת מגרשׁיה׃",
+      "info": ""
+    },
+    {
+      "book_id": "1CH",
+      "book_name": "1 Chronicles",
+      "chapter": 6,
+      "verse_start": 79,
+      "verse_end": 79,
+      "text": "ואת קדמות ואת מגרשׁיה ואת מיפעת ואת מגרשׁיה׃",
+      "info": ""
+    },
+    {
+      "book_id": "1CH",
+      "book_name": "1 Chronicles",
+      "chapter": 6,
+      "verse_start": 80,
+      "verse_end": 80,
+      "text": "וממטה גד את ראמות בגלעד ואת מגרשׁיה ואת מחנים ואת מגרשׁיה׃",
+      "info": ""
+    },
+    {
+      "book_id": "1CH",
+      "book_name": "1 Chronicles",
+      "chapter": 6,
+      "verse_start": 81,
+      "verse_end": 81,
+      "text": "ואת חשׁבון ואת מגרשׁיה ואת יעזיר ואת מגרשׁיה׃",
+      "info": ""
+    }
+  ]
+}

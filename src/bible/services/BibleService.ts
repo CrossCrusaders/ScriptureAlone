@@ -9,6 +9,7 @@ let cacheLoaded = false
 let bibleChaptersCache: BibleChapter[] | any = null
 let bibleBooksCache: BibleBook[] | null = null
 let bibleBookLookupCache: BibleBookLookup[] | null = null
+let bibleTranslationsCache: any[] | null = null
 
 
 
@@ -36,7 +37,7 @@ export async function getVerseOfTheDay() {
 		const [book, chapter, verse] = verses[0].split('.')
 		verseBookId = book.toUpperCase();
 		verseChapter = chapter;
-		verseResponse = await getVerses(book, chapter, verse, verse)
+		verseResponse = await getVerses("KJB1762", book, chapter, verse, verse)
 		verseReference = `${verseResponse.verses[0].book_name} ${chapter}:${verse}`
 	} else {
 		throw new Error('Invalid Verse of the Day Format')
@@ -58,10 +59,12 @@ export async function getVerseOfTheDay() {
  * Primary function for querying the bible API
  * and getting bible verses
  */
-export async function getVerses(book: string, chapter: number, startVerse?: number, endVerse?: number): Promise<{ info: string, verses: BibleVerse[] }> {
+export async function getVerses(translation: string, book: string, chapter: number, startVerse?: number, endVerse?: number): Promise<{
+[x: string]: any, header: string, verses: BibleVerse[], footer: string 
+}> {
 	book = book.toUpperCase();
 	var data:any = null;
-	data = { ...await(await import(`../../assets/kjv-json/${book}/${chapter}.json`)).default };
+	data = { ...await(await import(`../../assets/bible-json/${translation}/${book}/${chapter}.json`)).default };
 
 	if (!startVerse)
 		return data;
@@ -99,8 +102,10 @@ export async function getUserHighlightedVerses() {
 }
 
 async function loadBibleData() {
+	const BibleTranslations = await import(`../../assets/bible/translations.json`)
 	const BibleBookChapters = await import(`../../assets/bible/bible-books.json`)
 	const BibleBookLookup = await import('../../assets/bible/bible-book-lookup.json')
+	bibleTranslationsCache = BibleTranslations.default
 	bibleChaptersCache = BibleBookChapters.default
 	bibleBookLookupCache = BibleBookLookup.default
 
@@ -187,6 +192,14 @@ export async function getPreviousChapterBySequenceNumber(sequenceNumber: number)
 
 export async function getNextChapterBySequenceNumber(sequenceNumber: number) {
 	return bibleCacheMonad(() => _getNextChapterBySequenceNumber(sequenceNumber))
+}
+
+export async function getTranslations() {
+	return bibleCacheMonad(() => bibleTranslationsCache)
+}
+
+export async function getTranslationById(translationId: string) {
+	return bibleCacheMonad(() => bibleTranslationsCache?.find(tr => tr.id == translationId))
 }
 
 export interface BibleSearchMetaPagination {

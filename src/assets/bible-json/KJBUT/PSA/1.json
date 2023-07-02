@@ -1,0 +1,61 @@
+{
+  "header": "",
+  "footer": "",
+  "language": "Hebrew",
+  "verses": [
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 1,
+      "verse_start": 1,
+      "verse_end": 1,
+      "text": "אשׁרי האישׁ אשׁר לא הלך בעצת רשׁעים ובדרך חטאים לא עמד ובמושׁב לצים לא ישׁב׃",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 1,
+      "verse_start": 2,
+      "verse_end": 2,
+      "text": "כי אם בתורת יהוה חפצו ובתורתו יהגה יומם ולילה׃",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 1,
+      "verse_start": 3,
+      "verse_end": 3,
+      "text": "והיה כעץ שׁתול על פלגי מים אשׁר פריו יתן בעתו ועלהו לא יבול וכל אשׁר יעשׂה יצליח׃",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 1,
+      "verse_start": 4,
+      "verse_end": 4,
+      "text": "לא כן הרשׁעים כי אם כמץ אשׁר תדפנו רוח׃",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 1,
+      "verse_start": 5,
+      "verse_end": 5,
+      "text": "על כן לא יקמו רשׁעים במשׁפט וחטאים בעדת צדיקים׃",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 1,
+      "verse_start": 6,
+      "verse_end": 6,
+      "text": "כי יודע יהוה דרך צדיקים ודרך רשׁעים תאבד׃",
+      "info": ""
+    }
+  ]
+}

@@ -1,0 +1,268 @@
+{
+  "header": "",
+  "footer": "",
+  "language": "English",
+  "verses": [
+    {
+      "book_id": "DEU",
+      "book_name": "Deuteronomy",
+      "chapter": 14,
+      "verse_start": 1,
+      "verse_end": 1,
+      "text": "Yee are the children of the Lord your God: yee shall not cutte your selues, nor make any baldnesse betweene your eyes for the dead.",
+      "info": ""
+    },
+    {
+      "book_id": "DEU",
+      "book_name": "Deuteronomy",
+      "chapter": 14,
+      "verse_start": 2,
+      "verse_end": 2,
+      "text": "For thou art an holy people vnto the Lord thy God, and the Lord hath chosen thee to be a peculiar people vnto himselfe, aboue all the nations that are vpon the earth.",
+      "info": ""
+    },
+    {
+      "book_id": "DEU",
+      "book_name": "Deuteronomy",
+      "chapter": 14,
+      "verse_start": 3,
+      "verse_end": 3,
+      "text": "¶ Thou shalt not eate any abominable thing.",
+      "info": ""
+    },
+    {
+      "book_id": "DEU",
+      "book_name": "Deuteronomy",
+      "chapter": 14,
+      "verse_start": 4,
+      "verse_end": 4,
+      "text": "These are the beasts which yee shall eate: the oxe, the sheepe, and the goat,",
+      "info": ""
+    },
+    {
+      "book_id": "DEU",
+      "book_name": "Deuteronomy",
+      "chapter": 14,
+      "verse_start": 5,
+      "verse_end": 5,
+      "text": "The Hart, and the Roe bucke, and the fallow deere, and the wilde goat, and the Pygarg, and the wilde oxe, and the chamois.",
+      "info": ""
+    },
+    {
+      "book_id": "DEU",
+      "book_name": "Deuteronomy",
+      "chapter": 14,
+      "verse_start": 6,
+      "verse_end": 6,
+      "text": "And euery beast that parteth the hoofe, and cleaueth the clift into two clawes, and cheweth the cud amongst the beasts: that ye shall eate.",
+      "info": ""
+    },
+    {
+      "book_id": "DEU",
+      "book_name": "Deuteronomy",
+      "chapter": 14,
+      "verse_start": 7,
+      "verse_end": 7,
+      "text": "Neuerthelesse these yee shall not eate, of them that chew the cud, or of them that diuide the clouen hoofe, as the camel, and the hare, and the cony: for they chew the cudde, but diuide not the hoofe, therefore they are vncleane vnto you.",
+      "info": ""
+    },
+    {
+      "book_id": "DEU",
+      "book_name": "Deuteronomy",
+      "chapter": 14,
+      "verse_start": 8,
+      "verse_end": 8,
+      "text": "And the swine, because it diuideth the hoofe, yet cheweth not the cud, it is vncleane vnto you: ye shall not eate of their flesh, nor touch their dead carkeise.",
+      "info": ""
+    },
+    {
+      "book_id": "DEU",
+      "book_name": "Deuteronomy",
+      "chapter": 14,
+      "verse_start": 9,
+      "verse_end": 9,
+      "text": "¶ These yee shall eate of all that are in the waters: all that haue finnes and scales shall ye eate:",
+      "info": ""
+    },
+    {
+      "book_id": "DEU",
+      "book_name": "Deuteronomy",
+      "chapter": 14,
+      "verse_start": 10,
+      "verse_end": 10,
+      "text": "And whatsoeuer hath not sinnes and scales, ye may not eat: it is vncleane vnto you.",
+      "info": ""
+    },
+    {
+      "book_id": "DEU",
+      "book_name": "Deuteronomy",
+      "chapter": 14,
+      "verse_start": 11,
+      "verse_end": 11,
+      "text": "¶ Of all cleane birds ye shall eate.",
+      "info": ""
+    },
+    {
+      "book_id": "DEU",
+      "book_name": "Deuteronomy",
+      "chapter": 14,
+      "verse_start": 12,
+      "verse_end": 12,
+      "text": "But these are they of which ye shall not eat: the Eagle, and the ossifrage, and the ospray,",
+      "info": ""
+    },
+    {
+      "book_id": "DEU",
+      "book_name": "Deuteronomy",
+      "chapter": 14,
+      "verse_start": 13,
+      "verse_end": 13,
+      "text": "And the glede, and the kite, and the vulture after his kinde,",
+      "info": ""
+    },
+    {
+      "book_id": "DEU",
+      "book_name": "Deuteronomy",
+      "chapter": 14,
+      "verse_start": 14,
+      "verse_end": 14,
+      "text": "And euery rauen after his kinde,",
+      "info": ""
+    },
+    {
+      "book_id": "DEU",
+      "book_name": "Deuteronomy",
+      "chapter": 14,
+      "verse_start": 15,
+      "verse_end": 15,
+      "text": "And the owle, &amp; the night hawke, and the cuckow, and the hawke after his kinde,",
+      "info": ""
+    },
+    {
+      "book_id": "DEU",
+      "book_name": "Deuteronomy",
+      "chapter": 14,
+      "verse_start": 16,
+      "verse_end": 16,
+      "text": "The little owle, and the great owle, and the swanne,",
+      "info": ""
+    },
+    {
+      "book_id": "DEU",
+      "book_name": "Deuteronomy",
+      "chapter": 14,
+      "verse_start": 17,
+      "verse_end": 17,
+      "text": "And the pellicane, and the Geer-eagle, and the cormorant,",
+      "info": ""
+    },
+    {
+      "book_id": "DEU",
+      "book_name": "Deuteronomy",
+      "chapter": 14,
+      "verse_start": 18,
+      "verse_end": 18,
+      "text": "And the Storke, and the Heron after her kind, and the lapwing, and the batte.",
+      "info": ""
+    },
+    {
+      "book_id": "DEU",
+      "book_name": "Deuteronomy",
+      "chapter": 14,
+      "verse_start": 19,
+      "verse_end": 19,
+      "text": "And euery creeping thing that flyeth, is vncleane vnto you: they shall not be eaten.",
+      "info": ""
+    },
+    {
+      "book_id": "DEU",
+      "book_name": "Deuteronomy",
+      "chapter": 14,
+      "verse_start": 20,
+      "verse_end": 20,
+      "text": "But of all cleane foules ye may eat.",
+      "info": ""
+    },
+    {
+      "book_id": "DEU",
+      "book_name": "Deuteronomy",
+      "chapter": 14,
+      "verse_start": 21,
+      "verse_end": 21,
+      "text": "¶ Ye shall not eate of any thing that dieth of it selfe: thou shalt giue it vnto the stranger that is in thy gates, that he may eate it, or thou mayest sell it vnto an alien: for thou art an holy people vnto the Lord thy God. Thou shalt not seethe a kidde in his mothers milke.",
+      "info": ""
+    },
+    {
+      "book_id": "DEU",
+      "book_name": "Deuteronomy",
+      "chapter": 14,
+      "verse_start": 22,
+      "verse_end": 22,
+      "text": "Thou shalt truely tithe all the increase of thy seede, that the field bringeth forth yeere by yeere.",
+      "info": ""
+    },
+    {
+      "book_id": "DEU",
+      "book_name": "Deuteronomy",
+      "chapter": 14,
+      "verse_start": 23,
+      "verse_end": 23,
+      "text": "And thou shalt eate before the Lord thy God, in the place which he shall chuse to place his Name there, the tithe of thy corne, of thy wine, and of thine oyle, and the firstlings of thy herdes, and of thy flockes: that thou mayest learne to feare the Lord thy God alwayes.",
+      "info": ""
+    },
+    {
+      "book_id": "DEU",
+      "book_name": "Deuteronomy",
+      "chapter": 14,
+      "verse_start": 24,
+      "verse_end": 24,
+      "text": "And if the way bee too long for thee, so that thou art not able to carie it, or if the place be too farre from thee, which the Lord thy God shall chuse to set his name there, when the Lord thy God hath blessed thee:",
+      "info": ""
+    },
+    {
+      "book_id": "DEU",
+      "book_name": "Deuteronomy",
+      "chapter": 14,
+      "verse_start": 25,
+      "verse_end": 25,
+      "text": "Then shalt thou turne it into money, and binde vp the money in thine hand, and shalt goe vnto the place which the Lord thy God shal chuse.",
+      "info": ""
+    },
+    {
+      "book_id": "DEU",
+      "book_name": "Deuteronomy",
+      "chapter": 14,
+      "verse_start": 26,
+      "verse_end": 26,
+      "text": "And thou shalt bestow that money for whatsoeuer thy soule lusteth after, for oxen, or for sheepe, or for wine, or for strong drinke, or for whatsoeuer thy soule desireth: and thou shalt eat there before the Lord thy God, and thou shalt reioyce, thou and thine houshold.",
+      "info": ""
+    },
+    {
+      "book_id": "DEU",
+      "book_name": "Deuteronomy",
+      "chapter": 14,
+      "verse_start": 27,
+      "verse_end": 27,
+      "text": "And the Leuite that is within thy gates, thou shalt not forsake him: for he hath no part nor inheritance with thee.",
+      "info": ""
+    },
+    {
+      "book_id": "DEU",
+      "book_name": "Deuteronomy",
+      "chapter": 14,
+      "verse_start": 28,
+      "verse_end": 28,
+      "text": "¶ At the end of three yeres thou shalt bring forth all the tithe of thine increase the same yeere, and shalt lay it vp within thy gates.",
+      "info": ""
+    },
+    {
+      "book_id": "DEU",
+      "book_name": "Deuteronomy",
+      "chapter": 14,
+      "verse_start": 29,
+      "verse_end": 29,
+      "text": "And the Leuite, because he hath no part nor inheritance with thee, and the stranger, and the fatherlesse, and the widowe which are within thy gates, shall come and shal eate, and be satisfied, that the Lord thy God may blesse thee, in all the worke of thine hande which thou doest.",
+      "info": ""
+    }
+  ]
+}

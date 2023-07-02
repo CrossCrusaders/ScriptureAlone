@@ -1,0 +1,79 @@
+{
+  "header": "",
+  "footer": "",
+  "language": "Hebrew",
+  "verses": [
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 114,
+      "verse_start": 1,
+      "verse_end": 1,
+      "text": "בצאת ישׂראל ממצרים בית יעקב מעם לעז׃",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 114,
+      "verse_start": 2,
+      "verse_end": 2,
+      "text": "היתה יהודה לקדשׁו ישׂראל ממשׁלותיו׃",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 114,
+      "verse_start": 3,
+      "verse_end": 3,
+      "text": "הים ראה וינס הירדן יסב לאחור׃",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 114,
+      "verse_start": 4,
+      "verse_end": 4,
+      "text": "ההרים רקדו כאילים גבעות כבני צאן׃",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 114,
+      "verse_start": 5,
+      "verse_end": 5,
+      "text": "מה לך הים כי תנוס הירדן תסב לאחור׃",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 114,
+      "verse_start": 6,
+      "verse_end": 6,
+      "text": "ההרים תרקדו כאילים גבעות כבני צאן׃",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 114,
+      "verse_start": 7,
+      "verse_end": 7,
+      "text": "מלפני אדון חולי ארץ מלפני אלוה יעקב׃",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 114,
+      "verse_start": 8,
+      "verse_end": 8,
+      "text": "ההפכי הצור אגם מים חלמישׁ למעינו מים׃",
+      "info": ""
+    }
+  ]
+}

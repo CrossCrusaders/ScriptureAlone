@@ -1,0 +1,88 @@
+{
+  "header": "¶ <em>A Psalme of Dauid.",
+  "footer": "",
+  "language": "English",
+  "verses": [
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 28,
+      "verse_start": 1,
+      "verse_end": 1,
+      "text": "Vnto thee will I cry, O Lord, my rocke, be not silent to mee: lest if thou be silent to me, I become like them that goe downe into the pit.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 28,
+      "verse_start": 2,
+      "verse_end": 2,
+      "text": "Heare the voyce of my supplications, when I cry vnto thee: when I lift vp my handes toward thy holy Oracle.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 28,
+      "verse_start": 3,
+      "verse_end": 3,
+      "text": "Draw me not away with the wicked, and with the workers of iniquitie: which speake peace to their neighbors, but mischiefe is in their hearts.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 28,
+      "verse_start": 4,
+      "verse_end": 4,
+      "text": "Giue them according to their deedes, and according to the wickednes of their endeuours: giue them after the worke of their handes, render to them their desert.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 28,
+      "verse_start": 5,
+      "verse_end": 5,
+      "text": "Because they regard not the workes of the Lord, nor the operation of his hands, he shal destroy them, and not build them vp.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 28,
+      "verse_start": 6,
+      "verse_end": 6,
+      "text": "Blessed be the Lord, because he hath heard the voyce of my supplications.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 28,
+      "verse_start": 7,
+      "verse_end": 7,
+      "text": "The Lord is my strength, and my shield, my heart trusted in him, and I am helped: therefore my heart greatly reioyceth, and with my song will I praise him.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 28,
+      "verse_start": 8,
+      "verse_end": 8,
+      "text": "The Lord is their strength, and hee is the sauing strength of his Anointed.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 28,
+      "verse_start": 9,
+      "verse_end": 9,
+      "text": "Saue thy people, and blesse thine inheritance, feede them also, and lift them vp for euer.",
+      "info": ""
+    }
+  ]
+}

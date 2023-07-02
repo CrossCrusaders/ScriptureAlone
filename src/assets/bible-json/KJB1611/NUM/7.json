@@ -1,0 +1,808 @@
+{
+  "header": "",
+  "footer": "",
+  "language": "English",
+  "verses": [
+    {
+      "book_id": "NUM",
+      "book_name": "Numbers",
+      "chapter": 7,
+      "verse_start": 1,
+      "verse_end": 1,
+      "text": "And it came to passe on the day that Moses had fully set vp the Tabernacle, and had anointed it, and sanctified it, and all the instruments thereof, both the Altar, and all the vessels thereof, and had anointed them, and sanctified them:",
+      "info": ""
+    },
+    {
+      "book_id": "NUM",
+      "book_name": "Numbers",
+      "chapter": 7,
+      "verse_start": 2,
+      "verse_end": 2,
+      "text": "That the Princes of Israel, heads of the house of their fathers, (who were the Princes of the tribes, and were ouer them that were numbred) offered:",
+      "info": ""
+    },
+    {
+      "book_id": "NUM",
+      "book_name": "Numbers",
+      "chapter": 7,
+      "verse_start": 3,
+      "verse_end": 3,
+      "text": "And they brought their offering before the Lord, sixe couered wagons, and twelue oxen: a wagon for two of the Princes, and for each one an oxe, and they brought them before the Tabernacle.",
+      "info": ""
+    },
+    {
+      "book_id": "NUM",
+      "book_name": "Numbers",
+      "chapter": 7,
+      "verse_start": 4,
+      "verse_end": 4,
+      "text": "And the Lord spake vnto Moses, saying,",
+      "info": ""
+    },
+    {
+      "book_id": "NUM",
+      "book_name": "Numbers",
+      "chapter": 7,
+      "verse_start": 5,
+      "verse_end": 5,
+      "text": "Take it of them, that they may be to doe the seruice of the Tabernacle of the Congregation, and thou shalt giue them vnto the Leuites, to euery man according to his seruice.",
+      "info": ""
+    },
+    {
+      "book_id": "NUM",
+      "book_name": "Numbers",
+      "chapter": 7,
+      "verse_start": 6,
+      "verse_end": 6,
+      "text": "And Moses tooke the wagons, and the oxen, and gaue them vnto the Leuites.",
+      "info": ""
+    },
+    {
+      "book_id": "NUM",
+      "book_name": "Numbers",
+      "chapter": 7,
+      "verse_start": 7,
+      "verse_end": 7,
+      "text": "Two wagons and foure oxen he gaue vnto the sonnes of Gershon, according to their seruice.",
+      "info": ""
+    },
+    {
+      "book_id": "NUM",
+      "book_name": "Numbers",
+      "chapter": 7,
+      "verse_start": 8,
+      "verse_end": 8,
+      "text": "And foure wagons and eight oxen he gaue vnto the sonnes of Merari, according vnto their seruice, vnder the hand of Ithamar the sonne of Aaron the Priest.",
+      "info": ""
+    },
+    {
+      "book_id": "NUM",
+      "book_name": "Numbers",
+      "chapter": 7,
+      "verse_start": 9,
+      "verse_end": 9,
+      "text": "But vnto the sonnes of Kohath he gaue none: because the seruice of the Sanctuary belonging vnto them, was that they should beare vpon their shoulders.",
+      "info": ""
+    },
+    {
+      "book_id": "NUM",
+      "book_name": "Numbers",
+      "chapter": 7,
+      "verse_start": 10,
+      "verse_end": 10,
+      "text": "¶ And the Princes offered for dedicating of the Altar, in the day that it was anointed, euen the Princes offered their offering before the Altar.",
+      "info": ""
+    },
+    {
+      "book_id": "NUM",
+      "book_name": "Numbers",
+      "chapter": 7,
+      "verse_start": 11,
+      "verse_end": 11,
+      "text": "And the Lord said vnto Moses, They shall offer their offering eche Prince on his day, for the dedicating of the Altar.",
+      "info": ""
+    },
+    {
+      "book_id": "NUM",
+      "book_name": "Numbers",
+      "chapter": 7,
+      "verse_start": 12,
+      "verse_end": 12,
+      "text": "¶ And he that offered his offring the first day, was Nahshon the sonne of Amminadab, of the tribe of Iudah.",
+      "info": ""
+    },
+    {
+      "book_id": "NUM",
+      "book_name": "Numbers",
+      "chapter": 7,
+      "verse_start": 13,
+      "verse_end": 13,
+      "text": "And his offering was one siluer charger, the weight thereof was an hundred and thirty shekels, one siluer bowle of seuentie shekels, after the shekel of the Sanctuary; both of them were full of fine flowre mingled with oile for a meat offering:",
+      "info": ""
+    },
+    {
+      "book_id": "NUM",
+      "book_name": "Numbers",
+      "chapter": 7,
+      "verse_start": 14,
+      "verse_end": 14,
+      "text": "One spoone of ten shekels of gold, full of incense:",
+      "info": ""
+    },
+    {
+      "book_id": "NUM",
+      "book_name": "Numbers",
+      "chapter": 7,
+      "verse_start": 15,
+      "verse_end": 15,
+      "text": "One yong bullocke, one ramme, one lambe of the first yeere, for a burnt offering,",
+      "info": ""
+    },
+    {
+      "book_id": "NUM",
+      "book_name": "Numbers",
+      "chapter": 7,
+      "verse_start": 16,
+      "verse_end": 16,
+      "text": "One kid of the goats for a sinne offering:",
+      "info": ""
+    },
+    {
+      "book_id": "NUM",
+      "book_name": "Numbers",
+      "chapter": 7,
+      "verse_start": 17,
+      "verse_end": 17,
+      "text": "And for a sacrifice of peace offerings, two oxen, fiue rammes, fiue hee goats, fiue lambes of the first yeere: this was the offering of Nahshon the sonne of Amminadab.",
+      "info": ""
+    },
+    {
+      "book_id": "NUM",
+      "book_name": "Numbers",
+      "chapter": 7,
+      "verse_start": 18,
+      "verse_end": 18,
+      "text": "¶ On the second day Nethaneel the sonne of Zuar, Prince of Issachar did offer.",
+      "info": ""
+    },
+    {
+      "book_id": "NUM",
+      "book_name": "Numbers",
+      "chapter": 7,
+      "verse_start": 19,
+      "verse_end": 19,
+      "text": "He offered for his offering one siluer charger, the weight whereof was an hundred and thirtie shekels, one siluer bowle of seuenty shekels, after the shekel of the Sanctuary, both of them full of fine flowre mingled with oile, for a meat offering:",
+      "info": ""
+    },
+    {
+      "book_id": "NUM",
+      "book_name": "Numbers",
+      "chapter": 7,
+      "verse_start": 20,
+      "verse_end": 20,
+      "text": "One spoone of gold of ten shekels, full of incense:",
+      "info": ""
+    },
+    {
+      "book_id": "NUM",
+      "book_name": "Numbers",
+      "chapter": 7,
+      "verse_start": 21,
+      "verse_end": 21,
+      "text": "One yong bullocke, one ramme, one lambe of the first yeere for a burnt offering:",
+      "info": ""
+    },
+    {
+      "book_id": "NUM",
+      "book_name": "Numbers",
+      "chapter": 7,
+      "verse_start": 22,
+      "verse_end": 22,
+      "text": "One kid of the goats for a sinne offering:",
+      "info": ""
+    },
+    {
+      "book_id": "NUM",
+      "book_name": "Numbers",
+      "chapter": 7,
+      "verse_start": 23,
+      "verse_end": 23,
+      "text": "And for a sacrifice of peace offerings, two oxen, fiue rammes, fiue hee goats, fiue lambes of the first yeere: this was the offering of Nethaneel the sonne of Zuar.",
+      "info": ""
+    },
+    {
+      "book_id": "NUM",
+      "book_name": "Numbers",
+      "chapter": 7,
+      "verse_start": 24,
+      "verse_end": 24,
+      "text": "¶ On the third day Eliab the sonne of Helon, Prince of the children of Zebulun did offer.",
+      "info": ""
+    },
+    {
+      "book_id": "NUM",
+      "book_name": "Numbers",
+      "chapter": 7,
+      "verse_start": 25,
+      "verse_end": 25,
+      "text": "His offering was one siluer charger, the weight whereof was an hundred and thirtie shekels, one siluer bowle of seuentie shekels, after the shekel of the Sanctuary, both of them full of fine flowre mingled with oile, for a meat offering:",
+      "info": ""
+    },
+    {
+      "book_id": "NUM",
+      "book_name": "Numbers",
+      "chapter": 7,
+      "verse_start": 26,
+      "verse_end": 26,
+      "text": "One golden spoone of ten shekels, full of incense:",
+      "info": ""
+    },
+    {
+      "book_id": "NUM",
+      "book_name": "Numbers",
+      "chapter": 7,
+      "verse_start": 27,
+      "verse_end": 27,
+      "text": "One yong bullocke, one ramme, one lambe of the first yeere for a burnt offering:",
+      "info": ""
+    },
+    {
+      "book_id": "NUM",
+      "book_name": "Numbers",
+      "chapter": 7,
+      "verse_start": 28,
+      "verse_end": 28,
+      "text": "One kid of the goats for a sinne offering:",
+      "info": ""
+    },
+    {
+      "book_id": "NUM",
+      "book_name": "Numbers",
+      "chapter": 7,
+      "verse_start": 29,
+      "verse_end": 29,
+      "text": "And for a sacrifice of peace offerings, two oxen, fiue rammes, fiue hee goats, fiue lambes of the first yeere: This was the offring of Eliab the sonne of Helon.",
+      "info": ""
+    },
+    {
+      "book_id": "NUM",
+      "book_name": "Numbers",
+      "chapter": 7,
+      "verse_start": 30,
+      "verse_end": 30,
+      "text": "¶ On the fourth day Elizur the sonne of Shedeur, Prince of the children of Reuben did offer.",
+      "info": ""
+    },
+    {
+      "book_id": "NUM",
+      "book_name": "Numbers",
+      "chapter": 7,
+      "verse_start": 31,
+      "verse_end": 31,
+      "text": "His offering was one siluer charger of an hundred and thirty shekels, one siluer bowle of seuentie shekels, after the shekel of the Sanctuary, both of them full of fine flowre mingled with oyle, for a meat offering:",
+      "info": ""
+    },
+    {
+      "book_id": "NUM",
+      "book_name": "Numbers",
+      "chapter": 7,
+      "verse_start": 32,
+      "verse_end": 32,
+      "text": "One golden spoone of tenne shekels, full of incense:",
+      "info": ""
+    },
+    {
+      "book_id": "NUM",
+      "book_name": "Numbers",
+      "chapter": 7,
+      "verse_start": 33,
+      "verse_end": 33,
+      "text": "One yong bullocke, one ramme, one lambe of the first yeere for a burnt offering:",
+      "info": ""
+    },
+    {
+      "book_id": "NUM",
+      "book_name": "Numbers",
+      "chapter": 7,
+      "verse_start": 34,
+      "verse_end": 34,
+      "text": "One kid of the goats for a sinne offering:",
+      "info": ""
+    },
+    {
+      "book_id": "NUM",
+      "book_name": "Numbers",
+      "chapter": 7,
+      "verse_start": 35,
+      "verse_end": 35,
+      "text": "And for a sacrifice of peace offerings, two oxen, fiue rammes, fiue hee goats, fiue lambs of the first yere: This was the offering of Elizur the sonne of Shedeur.",
+      "info": ""
+    },
+    {
+      "book_id": "NUM",
+      "book_name": "Numbers",
+      "chapter": 7,
+      "verse_start": 36,
+      "verse_end": 36,
+      "text": "¶ On the fifth day Shelumiel the sonne of Zurishaddai Prince of the children of Simeon, did offer.",
+      "info": ""
+    },
+    {
+      "book_id": "NUM",
+      "book_name": "Numbers",
+      "chapter": 7,
+      "verse_start": 37,
+      "verse_end": 37,
+      "text": "His offring was one siluer charger, the weight whereof was an hundred and thirtie shekels, one siluer bowle of seuentie shekels, after the shekel of the Sanctuary, both of them full of fine flowre, mingled with oyle, for a meate offering:",
+      "info": ""
+    },
+    {
+      "book_id": "NUM",
+      "book_name": "Numbers",
+      "chapter": 7,
+      "verse_start": 38,
+      "verse_end": 38,
+      "text": "One golden spoone of ten shekels, full of incense:",
+      "info": ""
+    },
+    {
+      "book_id": "NUM",
+      "book_name": "Numbers",
+      "chapter": 7,
+      "verse_start": 39,
+      "verse_end": 39,
+      "text": "One yong bullocke, one ramme, one lambe of the first yeere for a burnt offering:",
+      "info": ""
+    },
+    {
+      "book_id": "NUM",
+      "book_name": "Numbers",
+      "chapter": 7,
+      "verse_start": 40,
+      "verse_end": 40,
+      "text": "One kidde of the goates for a sinne offering:",
+      "info": ""
+    },
+    {
+      "book_id": "NUM",
+      "book_name": "Numbers",
+      "chapter": 7,
+      "verse_start": 41,
+      "verse_end": 41,
+      "text": "And for a sacrifice of peace offerings, two oxen, fiue rammes, fiue hee goates, fiue lambes of the first yeere: This was the offering of Shelumiel the sonne of Zurishaddai.",
+      "info": ""
+    },
+    {
+      "book_id": "NUM",
+      "book_name": "Numbers",
+      "chapter": 7,
+      "verse_start": 42,
+      "verse_end": 42,
+      "text": "¶ On the sixt day, Eliasaph the sonne of Deuel, Prince of the children of Gad, offered:",
+      "info": ""
+    },
+    {
+      "book_id": "NUM",
+      "book_name": "Numbers",
+      "chapter": 7,
+      "verse_start": 43,
+      "verse_end": 43,
+      "text": "His offering was one siluer charger of the weight of an hundred and thirtie shekels, a siluer bowle of seuentie shekels, after the shekel of the Sanctuarie, both of them ful of fine flowre mingled with oyle, for a meate offering:",
+      "info": ""
+    },
+    {
+      "book_id": "NUM",
+      "book_name": "Numbers",
+      "chapter": 7,
+      "verse_start": 44,
+      "verse_end": 44,
+      "text": "One golden spoone of ten shekels, full of incense:",
+      "info": ""
+    },
+    {
+      "book_id": "NUM",
+      "book_name": "Numbers",
+      "chapter": 7,
+      "verse_start": 45,
+      "verse_end": 45,
+      "text": "One yong bullocke, one ramme, one lambe of the first yeere, for a burnt offering:",
+      "info": ""
+    },
+    {
+      "book_id": "NUM",
+      "book_name": "Numbers",
+      "chapter": 7,
+      "verse_start": 46,
+      "verse_end": 46,
+      "text": "One kid of the goates for a sinne offering:",
+      "info": ""
+    },
+    {
+      "book_id": "NUM",
+      "book_name": "Numbers",
+      "chapter": 7,
+      "verse_start": 47,
+      "verse_end": 47,
+      "text": "And for a sacrifice of peace offerings, two oxen, fiue rammes, fiue hee goates, fiue lambes of the first yeere. This was the offering of Eliasaph the sonne of Deuel.",
+      "info": ""
+    },
+    {
+      "book_id": "NUM",
+      "book_name": "Numbers",
+      "chapter": 7,
+      "verse_start": 48,
+      "verse_end": 48,
+      "text": "¶ On the seuenth day, Elishama the sonne of Ammiud, Prince of the children of Ephraim offered.",
+      "info": ""
+    },
+    {
+      "book_id": "NUM",
+      "book_name": "Numbers",
+      "chapter": 7,
+      "verse_start": 49,
+      "verse_end": 49,
+      "text": "His offering was one siluer charger, the weight whereof was an hundred and thirtie shekels, one siluer bowle of seuentie shekels, after the shekel of the Sanctuarie, both of them full of fine flowre mingled with oile for a meat offering:",
+      "info": ""
+    },
+    {
+      "book_id": "NUM",
+      "book_name": "Numbers",
+      "chapter": 7,
+      "verse_start": 50,
+      "verse_end": 50,
+      "text": "One golden spoone of ten shekels, full of incense:",
+      "info": ""
+    },
+    {
+      "book_id": "NUM",
+      "book_name": "Numbers",
+      "chapter": 7,
+      "verse_start": 51,
+      "verse_end": 51,
+      "text": "One yong bullocke, one ramme, one lambe of the first yeere, for a burnt offering:",
+      "info": ""
+    },
+    {
+      "book_id": "NUM",
+      "book_name": "Numbers",
+      "chapter": 7,
+      "verse_start": 52,
+      "verse_end": 52,
+      "text": "One kid of the goates for a sinne offering:",
+      "info": ""
+    },
+    {
+      "book_id": "NUM",
+      "book_name": "Numbers",
+      "chapter": 7,
+      "verse_start": 53,
+      "verse_end": 53,
+      "text": "And for a sacrifice of peace offrings, two oxen, fiue rammes, fiue hee goats, fiue lambes of the first yeere. This was the offering of Elishama the sonne of Ammiud.",
+      "info": ""
+    },
+    {
+      "book_id": "NUM",
+      "book_name": "Numbers",
+      "chapter": 7,
+      "verse_start": 54,
+      "verse_end": 54,
+      "text": "¶ On the eight day offered Gamaliel the sonne of Pedazur, Prince of the children of Manasseh.",
+      "info": ""
+    },
+    {
+      "book_id": "NUM",
+      "book_name": "Numbers",
+      "chapter": 7,
+      "verse_start": 55,
+      "verse_end": 55,
+      "text": "His offering was one siluer charger of an hundred and thirtie shekels, one siluer bowle of seuentie shekels, after the shekel of the Sanctuary, both of them full of fine flowre mingled with oile, for a meate offering:",
+      "info": ""
+    },
+    {
+      "book_id": "NUM",
+      "book_name": "Numbers",
+      "chapter": 7,
+      "verse_start": 56,
+      "verse_end": 56,
+      "text": "One golden spoone of ten shekels, full of incense:",
+      "info": ""
+    },
+    {
+      "book_id": "NUM",
+      "book_name": "Numbers",
+      "chapter": 7,
+      "verse_start": 57,
+      "verse_end": 57,
+      "text": "One yong bullocke, one ramme, one lambe of the first yeere, for a burnt offering:",
+      "info": ""
+    },
+    {
+      "book_id": "NUM",
+      "book_name": "Numbers",
+      "chapter": 7,
+      "verse_start": 58,
+      "verse_end": 58,
+      "text": "One kid of the goates for a sinne offering:",
+      "info": ""
+    },
+    {
+      "book_id": "NUM",
+      "book_name": "Numbers",
+      "chapter": 7,
+      "verse_start": 59,
+      "verse_end": 59,
+      "text": "And for a sacrifice of peace offerings, two oxen, fiue rammes, fiue hee goats, fiue lambes of the first yeere. This was the offering of Gamaliel the sonne of Pedazur.",
+      "info": ""
+    },
+    {
+      "book_id": "NUM",
+      "book_name": "Numbers",
+      "chapter": 7,
+      "verse_start": 60,
+      "verse_end": 60,
+      "text": "¶ On the ninth day, Abidan the sonne of Gideoni, prince of the children of Beniamin offered.",
+      "info": ""
+    },
+    {
+      "book_id": "NUM",
+      "book_name": "Numbers",
+      "chapter": 7,
+      "verse_start": 61,
+      "verse_end": 61,
+      "text": "His offering was one siluer charger, the weight whereof was an hundred and thirtie shekels, a siluer bowle of seuentie shekels, after the shekel of the Sanctuary, both of them full of fine flowre mingled with oyle, for a meate offering:",
+      "info": ""
+    },
+    {
+      "book_id": "NUM",
+      "book_name": "Numbers",
+      "chapter": 7,
+      "verse_start": 62,
+      "verse_end": 62,
+      "text": "One golden spoone of ten shekels, full of incense:",
+      "info": ""
+    },
+    {
+      "book_id": "NUM",
+      "book_name": "Numbers",
+      "chapter": 7,
+      "verse_start": 63,
+      "verse_end": 63,
+      "text": "One yong bullocke, one ramme, one lambe of the first yeere for a burnt offering:",
+      "info": ""
+    },
+    {
+      "book_id": "NUM",
+      "book_name": "Numbers",
+      "chapter": 7,
+      "verse_start": 64,
+      "verse_end": 64,
+      "text": "One kid of the goats for a sinne offering:",
+      "info": ""
+    },
+    {
+      "book_id": "NUM",
+      "book_name": "Numbers",
+      "chapter": 7,
+      "verse_start": 65,
+      "verse_end": 65,
+      "text": "And for a sacrifice of peace offerings, two oxen, fiue rammes, fiue hee goates, fiue lambes of the first yeere. This was the offering of Abidan, the sonne of Gideoni.",
+      "info": ""
+    },
+    {
+      "book_id": "NUM",
+      "book_name": "Numbers",
+      "chapter": 7,
+      "verse_start": 66,
+      "verse_end": 66,
+      "text": "¶ On the tenth day Ahiezer the sonne of Ammishaddai, Prince of the children of Dan offered.",
+      "info": ""
+    },
+    {
+      "book_id": "NUM",
+      "book_name": "Numbers",
+      "chapter": 7,
+      "verse_start": 67,
+      "verse_end": 67,
+      "text": "His offring was one siluer charger, the weight whereof was an hundred and thirtie shekels, one siluer bowle of seuentie shekels, after the shekel of the Sanctuarie, both of them full of fine flowre mingled with oyle, for a meate offering:",
+      "info": ""
+    },
+    {
+      "book_id": "NUM",
+      "book_name": "Numbers",
+      "chapter": 7,
+      "verse_start": 68,
+      "verse_end": 68,
+      "text": "One golden spoone of ten shekels, full of incense:",
+      "info": ""
+    },
+    {
+      "book_id": "NUM",
+      "book_name": "Numbers",
+      "chapter": 7,
+      "verse_start": 69,
+      "verse_end": 69,
+      "text": "One yong bullocke, one ramme, one lambe of the first yeere, for a burnt offering:",
+      "info": ""
+    },
+    {
+      "book_id": "NUM",
+      "book_name": "Numbers",
+      "chapter": 7,
+      "verse_start": 70,
+      "verse_end": 70,
+      "text": "One kid of the goates for a sinne offering:",
+      "info": ""
+    },
+    {
+      "book_id": "NUM",
+      "book_name": "Numbers",
+      "chapter": 7,
+      "verse_start": 71,
+      "verse_end": 71,
+      "text": "And for a sacrifice of peace offerings, two oxen, fiue rammes, fiue hee goats, fiue lambes of the first yeere. This was the offering of Ahiezer the sonne of Ammishaddai.",
+      "info": ""
+    },
+    {
+      "book_id": "NUM",
+      "book_name": "Numbers",
+      "chapter": 7,
+      "verse_start": 72,
+      "verse_end": 72,
+      "text": "¶ On the eleuenth day, Pagiel the sonne of Ocran, Prince of the children of Asher offered.",
+      "info": ""
+    },
+    {
+      "book_id": "NUM",
+      "book_name": "Numbers",
+      "chapter": 7,
+      "verse_start": 73,
+      "verse_end": 73,
+      "text": "His offering was one siluer charger, the weight whereof was an hundred and thirtie shekels, one siluer bowle of seuentie shekels, after the shekel of the Sanctuarie, both of them full of fine flowre mingled with oyle, for a meat offering:",
+      "info": ""
+    },
+    {
+      "book_id": "NUM",
+      "book_name": "Numbers",
+      "chapter": 7,
+      "verse_start": 74,
+      "verse_end": 74,
+      "text": "One golden spoone of ten shekels, full of incense:",
+      "info": ""
+    },
+    {
+      "book_id": "NUM",
+      "book_name": "Numbers",
+      "chapter": 7,
+      "verse_start": 75,
+      "verse_end": 75,
+      "text": "One yong bullocke, one ramme, one lambe of the first yeere for a burnt offering:",
+      "info": ""
+    },
+    {
+      "book_id": "NUM",
+      "book_name": "Numbers",
+      "chapter": 7,
+      "verse_start": 76,
+      "verse_end": 76,
+      "text": "One kid of the goates for a sinne offering:",
+      "info": ""
+    },
+    {
+      "book_id": "NUM",
+      "book_name": "Numbers",
+      "chapter": 7,
+      "verse_start": 77,
+      "verse_end": 77,
+      "text": "And for a sacrifice of peace offrings, two oxen, fiue rammes, fiue hee goats, fiue lambs of the first yeere. This was the offering of Pagiel the sonne of Ocran.",
+      "info": ""
+    },
+    {
+      "book_id": "NUM",
+      "book_name": "Numbers",
+      "chapter": 7,
+      "verse_start": 78,
+      "verse_end": 78,
+      "text": "¶ On the twelfth day, Ahira the sonne of Enan, Prince of the children of Naphtali, offered.",
+      "info": ""
+    },
+    {
+      "book_id": "NUM",
+      "book_name": "Numbers",
+      "chapter": 7,
+      "verse_start": 79,
+      "verse_end": 79,
+      "text": "His offering was one siluer charger, the weight whereof was an hundred and thirtie shekels, one siluer bowle of seuentie shekels, after the shekel of the Sanctuary, both of them full of fine flowre mingled with oyle, for a meate offering:",
+      "info": ""
+    },
+    {
+      "book_id": "NUM",
+      "book_name": "Numbers",
+      "chapter": 7,
+      "verse_start": 80,
+      "verse_end": 80,
+      "text": "One golden spoone of ten shekels, full of incense:",
+      "info": ""
+    },
+    {
+      "book_id": "NUM",
+      "book_name": "Numbers",
+      "chapter": 7,
+      "verse_start": 81,
+      "verse_end": 81,
+      "text": "One yong bullocke, one ramme, one lambe of the first yeere for a burnt offering:",
+      "info": ""
+    },
+    {
+      "book_id": "NUM",
+      "book_name": "Numbers",
+      "chapter": 7,
+      "verse_start": 82,
+      "verse_end": 82,
+      "text": "One kidde of the goats for a sinne offering:",
+      "info": ""
+    },
+    {
+      "book_id": "NUM",
+      "book_name": "Numbers",
+      "chapter": 7,
+      "verse_start": 83,
+      "verse_end": 83,
+      "text": "And for a sacrifice of peace offrings, two oxen, fiue rammes, fiue hee goats, fiue lambs of the first yeere. This was the offering of Ahira the sonne of Enan.",
+      "info": ""
+    },
+    {
+      "book_id": "NUM",
+      "book_name": "Numbers",
+      "chapter": 7,
+      "verse_start": 84,
+      "verse_end": 84,
+      "text": "This was the dedication of the Altar (in the day when it was annointed) by the Princes of Israel: twelue chargers of siluer, twelue siluer bowles, twelue spoones of gold:",
+      "info": ""
+    },
+    {
+      "book_id": "NUM",
+      "book_name": "Numbers",
+      "chapter": 7,
+      "verse_start": 85,
+      "verse_end": 85,
+      "text": "Each charger of siluer weighing an hundred and thirtie shekels, each bowle seuentie: all the siluer vessels weighed two thousand and foure hundred shekels, after the shekel of the Sanctuary.",
+      "info": ""
+    },
+    {
+      "book_id": "NUM",
+      "book_name": "Numbers",
+      "chapter": 7,
+      "verse_start": 86,
+      "verse_end": 86,
+      "text": "The golden spoones were twelue, full of incense, weighing ten shekels a piece, after the shekel of the Sanctuary: all the gold of the spoones, was an hundred and twentie shekels.",
+      "info": ""
+    },
+    {
+      "book_id": "NUM",
+      "book_name": "Numbers",
+      "chapter": 7,
+      "verse_start": 87,
+      "verse_end": 87,
+      "text": "All the oxen for the burnt offering, were twelue bullocks, the rams twelue, the lambes of the first yeere twelue, with their meat offering: and the kids of the goats for sinne offering, twelue.",
+      "info": ""
+    },
+    {
+      "book_id": "NUM",
+      "book_name": "Numbers",
+      "chapter": 7,
+      "verse_start": 88,
+      "verse_end": 88,
+      "text": "And all the oxen for the sacrifice of the peace offerings, were twenty and foure bullocks, the rammes sixtie, the hee goates sixtie, the lambes of the first yeere sixtie. This was the dedication of the Altar, after that it was anoynted.",
+      "info": ""
+    },
+    {
+      "book_id": "NUM",
+      "book_name": "Numbers",
+      "chapter": 7,
+      "verse_start": 89,
+      "verse_end": 89,
+      "text": "And when Moses was gone into the Tabernacle of the Congregation, to speake with him, then he heard the voyce of one speaking vnto him, from off the Mercie seat, that was vpon the Arke of Testimony from betweene the two Cherubims: and he spake vnto him.",
+      "info": ""
+    }
+  ]
+}

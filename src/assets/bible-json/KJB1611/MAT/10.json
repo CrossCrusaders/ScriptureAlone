@@ -1,0 +1,385 @@
+{
+  "header": "",
+  "footer": "",
+  "language": "English",
+  "verses": [
+    {
+      "book_id": "MAT",
+      "book_name": "Matthew",
+      "chapter": 10,
+      "verse_start": 1,
+      "verse_end": 1,
+      "text": "And when hee had called vnto him his twelue disciples, he gaue them power against vncleane spirits, to cast them out, and to heale all maner of sickenesse, and all maner of disease.",
+      "info": ""
+    },
+    {
+      "book_id": "MAT",
+      "book_name": "Matthew",
+      "chapter": 10,
+      "verse_start": 2,
+      "verse_end": 2,
+      "text": "Now the names of the twelue Apostles are these: The first, Simon, who is called Peter, and Andrew his brother, Iames the sonne of Zebedee, and Iohn his brother:",
+      "info": ""
+    },
+    {
+      "book_id": "MAT",
+      "book_name": "Matthew",
+      "chapter": 10,
+      "verse_start": 3,
+      "verse_end": 3,
+      "text": "Philip, and Bartholomew, Thomas, and Matthew the Publicane, Iames the sonne of Alpheus, and Lebbeus, whose surname was Thaddeus:",
+      "info": ""
+    },
+    {
+      "book_id": "MAT",
+      "book_name": "Matthew",
+      "chapter": 10,
+      "verse_start": 4,
+      "verse_end": 4,
+      "text": "Simon the Canaanite, and Iudas Iscariot, who also betrayed him.",
+      "info": ""
+    },
+    {
+      "book_id": "MAT",
+      "book_name": "Matthew",
+      "chapter": 10,
+      "verse_start": 5,
+      "verse_end": 5,
+      "text": "These twelue Iesus sent foorth, and commanded them, saying, Goe not into the way of the Gentiles, and into any city of the Samaritans enter ye not:",
+      "info": ""
+    },
+    {
+      "book_id": "MAT",
+      "book_name": "Matthew",
+      "chapter": 10,
+      "verse_start": 6,
+      "verse_end": 6,
+      "text": "But goe rather to the lost sheepe of the house of Israel.",
+      "info": ""
+    },
+    {
+      "book_id": "MAT",
+      "book_name": "Matthew",
+      "chapter": 10,
+      "verse_start": 7,
+      "verse_end": 7,
+      "text": "And as yee goe, preach, saying, The kingdome of heauen is at hand:",
+      "info": ""
+    },
+    {
+      "book_id": "MAT",
+      "book_name": "Matthew",
+      "chapter": 10,
+      "verse_start": 8,
+      "verse_end": 8,
+      "text": "Heale the sicke, cleanse the lepers, raise the dead, cast out deuils: freely ye haue receiued, freely giue.",
+      "info": ""
+    },
+    {
+      "book_id": "MAT",
+      "book_name": "Matthew",
+      "chapter": 10,
+      "verse_start": 9,
+      "verse_end": 9,
+      "text": "Prouide neither gold, nor siluer, nor brasse in your purses:",
+      "info": ""
+    },
+    {
+      "book_id": "MAT",
+      "book_name": "Matthew",
+      "chapter": 10,
+      "verse_start": 10,
+      "verse_end": 10,
+      "text": "Nor scrippe for your iourney, neither two coats, neither shooes, nor yet staues: (for the workeman is worthy of his meat.)",
+      "info": ""
+    },
+    {
+      "book_id": "MAT",
+      "book_name": "Matthew",
+      "chapter": 10,
+      "verse_start": 11,
+      "verse_end": 11,
+      "text": "And into whatsoeuer city or towne ye shall enter, inquire who in it is worthy, and there abide till yee goe thence.",
+      "info": ""
+    },
+    {
+      "book_id": "MAT",
+      "book_name": "Matthew",
+      "chapter": 10,
+      "verse_start": 12,
+      "verse_end": 12,
+      "text": "And when ye come into an house, salute it.",
+      "info": ""
+    },
+    {
+      "book_id": "MAT",
+      "book_name": "Matthew",
+      "chapter": 10,
+      "verse_start": 13,
+      "verse_end": 13,
+      "text": "And if the house be worthy, let your peace come vpon it: but if it be not worthy, let your peace returne to you.",
+      "info": ""
+    },
+    {
+      "book_id": "MAT",
+      "book_name": "Matthew",
+      "chapter": 10,
+      "verse_start": 14,
+      "verse_end": 14,
+      "text": "And whosoeuer shall not receiue you, nor heare your words: when yee depart out of that house, or city, shake off the dust of your feete.",
+      "info": ""
+    },
+    {
+      "book_id": "MAT",
+      "book_name": "Matthew",
+      "chapter": 10,
+      "verse_start": 15,
+      "verse_end": 15,
+      "text": "Uerely I say vnto you, it shall be more tolerable for the land of Sodom and Gomorrha in the day of iudgment, then for that citie.",
+      "info": ""
+    },
+    {
+      "book_id": "MAT",
+      "book_name": "Matthew",
+      "chapter": 10,
+      "verse_start": 16,
+      "verse_end": 16,
+      "text": "¶ Behold, I send you foorth as sheepe in the middest of wolues: be yee therefore wise as serpents, and harmelesse as doues.",
+      "info": ""
+    },
+    {
+      "book_id": "MAT",
+      "book_name": "Matthew",
+      "chapter": 10,
+      "verse_start": 17,
+      "verse_end": 17,
+      "text": "But beware of men: for they will deliuer you vp to the Councils, and they will scourge you in their Synagogues,",
+      "info": ""
+    },
+    {
+      "book_id": "MAT",
+      "book_name": "Matthew",
+      "chapter": 10,
+      "verse_start": 18,
+      "verse_end": 18,
+      "text": "And yee shall be brought before Gouernours and Kings for my sake, for a testimonie against them, and the Gentiles.",
+      "info": ""
+    },
+    {
+      "book_id": "MAT",
+      "book_name": "Matthew",
+      "chapter": 10,
+      "verse_start": 19,
+      "verse_end": 19,
+      "text": "But when they deliuer you vp, take no thought, how or what ye shall speake, for it shall bee giuen you in that same houre what ye shall speake.",
+      "info": ""
+    },
+    {
+      "book_id": "MAT",
+      "book_name": "Matthew",
+      "chapter": 10,
+      "verse_start": 20,
+      "verse_end": 20,
+      "text": "For it is not yee that speake, but the Spirit of your Father, which speaketh in you.",
+      "info": ""
+    },
+    {
+      "book_id": "MAT",
+      "book_name": "Matthew",
+      "chapter": 10,
+      "verse_start": 21,
+      "verse_end": 21,
+      "text": "And the brother shall deliuer vp the brother to death, and the father the childe: and the children shall rise vp against their parents, and cause them to be put to death.",
+      "info": ""
+    },
+    {
+      "book_id": "MAT",
+      "book_name": "Matthew",
+      "chapter": 10,
+      "verse_start": 22,
+      "verse_end": 22,
+      "text": "And yee shall be hated of all men for my Names sake: but he that endureth to the end, shalbe saued.",
+      "info": ""
+    },
+    {
+      "book_id": "MAT",
+      "book_name": "Matthew",
+      "chapter": 10,
+      "verse_start": 23,
+      "verse_end": 23,
+      "text": "But when they persecute you in this citie, flee ye into another: for verely I say vnto you, ye shall not haue gone ouer the cities of Israel, till the Sonne of man be come.",
+      "info": ""
+    },
+    {
+      "book_id": "MAT",
+      "book_name": "Matthew",
+      "chapter": 10,
+      "verse_start": 24,
+      "verse_end": 24,
+      "text": "The disciple is not aboue his master, nor the seruant aboue his lord.",
+      "info": ""
+    },
+    {
+      "book_id": "MAT",
+      "book_name": "Matthew",
+      "chapter": 10,
+      "verse_start": 25,
+      "verse_end": 25,
+      "text": "It is enough for the disciple that he be as his master, and the seruant as his Lord: If they haue called the Master of the house of Beelzebub, how much more shall they call them of his household?",
+      "info": ""
+    },
+    {
+      "book_id": "MAT",
+      "book_name": "Matthew",
+      "chapter": 10,
+      "verse_start": 26,
+      "verse_end": 26,
+      "text": "Feare them not therefore: for there is nothing couered, that shall not be reueiled; and hidde, that shall not be knowen.",
+      "info": ""
+    },
+    {
+      "book_id": "MAT",
+      "book_name": "Matthew",
+      "chapter": 10,
+      "verse_start": 27,
+      "verse_end": 27,
+      "text": "What I tell you in darkenesse, that speake yee in light: and what yee heare in the eare, that preach yee vpon the house tops.",
+      "info": ""
+    },
+    {
+      "book_id": "MAT",
+      "book_name": "Matthew",
+      "chapter": 10,
+      "verse_start": 28,
+      "verse_end": 28,
+      "text": "And feare not them which kill the body, but are not able to kill the soule: but rather feare him which is able to destroy both soule and body in hell.",
+      "info": ""
+    },
+    {
+      "book_id": "MAT",
+      "book_name": "Matthew",
+      "chapter": 10,
+      "verse_start": 29,
+      "verse_end": 29,
+      "text": "Are not two Sparrowes solde for a farthing? And one of them shall not fall on the ground without your Father.",
+      "info": ""
+    },
+    {
+      "book_id": "MAT",
+      "book_name": "Matthew",
+      "chapter": 10,
+      "verse_start": 30,
+      "verse_end": 30,
+      "text": "But the very haires of your head are all numbred.",
+      "info": ""
+    },
+    {
+      "book_id": "MAT",
+      "book_name": "Matthew",
+      "chapter": 10,
+      "verse_start": 31,
+      "verse_end": 31,
+      "text": "Feare yee not therefore, ye are of more value then many Sparrowes.",
+      "info": ""
+    },
+    {
+      "book_id": "MAT",
+      "book_name": "Matthew",
+      "chapter": 10,
+      "verse_start": 32,
+      "verse_end": 32,
+      "text": "Whosoeuer therefore shall confesse mee before men, him will I confesse also before my Father which is in heauen.",
+      "info": ""
+    },
+    {
+      "book_id": "MAT",
+      "book_name": "Matthew",
+      "chapter": 10,
+      "verse_start": 33,
+      "verse_end": 33,
+      "text": "But whosoeuer shall deny me before men, him will I also deny before my Father which is in heauen.",
+      "info": ""
+    },
+    {
+      "book_id": "MAT",
+      "book_name": "Matthew",
+      "chapter": 10,
+      "verse_start": 34,
+      "verse_end": 34,
+      "text": "Thinke not that I am come to send peace on earth: I came not to send peace, but a sword.",
+      "info": ""
+    },
+    {
+      "book_id": "MAT",
+      "book_name": "Matthew",
+      "chapter": 10,
+      "verse_start": 35,
+      "verse_end": 35,
+      "text": "For I am come to set a man at variance against his father, &amp; the daughter against her mother, and the daughter in law against her mother in law.",
+      "info": ""
+    },
+    {
+      "book_id": "MAT",
+      "book_name": "Matthew",
+      "chapter": 10,
+      "verse_start": 36,
+      "verse_end": 36,
+      "text": "And a mans foes shalbe they of his owne houshold.",
+      "info": ""
+    },
+    {
+      "book_id": "MAT",
+      "book_name": "Matthew",
+      "chapter": 10,
+      "verse_start": 37,
+      "verse_end": 37,
+      "text": "He that loueth father or mother more then me, is not worthy of me: and he that loueth sonne or daughter more then me, is not worthy of me.",
+      "info": ""
+    },
+    {
+      "book_id": "MAT",
+      "book_name": "Matthew",
+      "chapter": 10,
+      "verse_start": 38,
+      "verse_end": 38,
+      "text": "And he that taketh not his crosse, and followeth after me, is not worthy of me.",
+      "info": ""
+    },
+    {
+      "book_id": "MAT",
+      "book_name": "Matthew",
+      "chapter": 10,
+      "verse_start": 39,
+      "verse_end": 39,
+      "text": "He that findeth his life, shall lose it: and he that loseth his life for my sake, shall find it.",
+      "info": ""
+    },
+    {
+      "book_id": "MAT",
+      "book_name": "Matthew",
+      "chapter": 10,
+      "verse_start": 40,
+      "verse_end": 40,
+      "text": "¶ He that receiueth you, receiueth me: and he that receiueth mee, receiueth him that sent me.",
+      "info": ""
+    },
+    {
+      "book_id": "MAT",
+      "book_name": "Matthew",
+      "chapter": 10,
+      "verse_start": 41,
+      "verse_end": 41,
+      "text": "He that receiueth a Prophet in the name of a Prophet, shall receiue a Prophets reward: and he that receiueth a righteous man, in the name of a righteous man, shal receiue a righteous mans reward.",
+      "info": ""
+    },
+    {
+      "book_id": "MAT",
+      "book_name": "Matthew",
+      "chapter": 10,
+      "verse_start": 42,
+      "verse_end": 42,
+      "text": "And whosoeuer shall giue to drinke vnto one of these litle ones, a cup of cold water onely, in the name of a disciple, verily I say vnto you, hee shall in no wise lose his reward.",
+      "info": ""
+    }
+  ]
+}

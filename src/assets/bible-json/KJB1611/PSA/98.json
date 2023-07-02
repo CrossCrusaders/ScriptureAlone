@@ -1,0 +1,88 @@
+{
+  "header": "¶ <em>A Psalme.",
+  "footer": "",
+  "language": "English",
+  "verses": [
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 98,
+      "verse_start": 1,
+      "verse_end": 1,
+      "text": "O sing vnto the Lord a New song, for hee hath done marueilous things: his right hand, and his holy arme hath gotten him the victorie.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 98,
+      "verse_start": 2,
+      "verse_end": 2,
+      "text": "The Lord hath made knowen his saluation: his righteousnesse hath hee openly shewed in the sight of the heathen.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 98,
+      "verse_start": 3,
+      "verse_end": 3,
+      "text": "Hee hath remembred his mercie and his trueth toward the house of Israel: all the ends of the earth haue seene the saluation of our God.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 98,
+      "verse_start": 4,
+      "verse_end": 4,
+      "text": "Make a ioyfull noise vnto the Lord, all the earth: make a lowd noise, and reioyce, and sing praise.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 98,
+      "verse_start": 5,
+      "verse_end": 5,
+      "text": "Sing vnto the Lord with the harpe: with the harpe, and the voice of a Psalme.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 98,
+      "verse_start": 6,
+      "verse_end": 6,
+      "text": "With trumpets and sound of cornet: make a ioyfull noise before the Lord, the King.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 98,
+      "verse_start": 7,
+      "verse_end": 7,
+      "text": "Let the sea roare, and the fulnesse thereof: the world, and they that dwell therein.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 98,
+      "verse_start": 8,
+      "verse_end": 8,
+      "text": "Let the floods clap their handes: let the hilles be ioyfull together",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 98,
+      "verse_start": 9,
+      "verse_end": 9,
+      "text": "Before the Lord, for he commeth to iudge the earth: with righteousnesse shall hee iudge the world, and the people with equitie.",
+      "info": ""
+    }
+  ]
+}

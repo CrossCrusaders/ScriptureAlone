@@ -1,0 +1,79 @@
+{
+  "header": "¶ <em>A Psalme of Dauid when he fled from Absalom his sonne.",
+  "footer": "",
+  "language": "English",
+  "verses": [
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 3,
+      "verse_start": 1,
+      "verse_end": 1,
+      "text": "Lord, how are they increased that trouble mee? many are they that rise vp against me.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 3,
+      "verse_start": 2,
+      "verse_end": 2,
+      "text": "Many there bee which say of my soule, There is no helpe for him in God. Selah.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 3,
+      "verse_start": 3,
+      "verse_end": 3,
+      "text": "But thou, O Lord, art a shield for me; my glory, and the lifter vp of mine head.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 3,
+      "verse_start": 4,
+      "verse_end": 4,
+      "text": "I cryed vnto the Lord with my voyce, and he heard me out of his holy hill. Selah.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 3,
+      "verse_start": 5,
+      "verse_end": 5,
+      "text": "I layd me downe and slept; I awaked, for the Lord sustained me.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 3,
+      "verse_start": 6,
+      "verse_end": 6,
+      "text": "I will not be afraid of ten thousands of people, that haue set themselues against me round about.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 3,
+      "verse_start": 7,
+      "verse_end": 7,
+      "text": "Arise, O Lord, saue mee, O my God; for thou hast smitten all mine enemies vpon the cheeke bone: thou hast broken the teeth of the vngodly.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 3,
+      "verse_start": 8,
+      "verse_end": 8,
+      "text": "Saluation belongeth vnto the Lord: thy blessing is vpon thy people. Selah.",
+      "info": ""
+    }
+  ]
+}

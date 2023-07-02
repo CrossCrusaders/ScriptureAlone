@@ -1,0 +1,574 @@
+{
+  "header": "",
+  "footer": "",
+  "language": "Hebrew",
+  "verses": [
+    {
+      "book_id": "EZK",
+      "book_name": "Ezekiel",
+      "chapter": 16,
+      "verse_start": 1,
+      "verse_end": 1,
+      "text": "ויהי דבר יהוה אלי לאמר׃",
+      "info": ""
+    },
+    {
+      "book_id": "EZK",
+      "book_name": "Ezekiel",
+      "chapter": 16,
+      "verse_start": 2,
+      "verse_end": 2,
+      "text": "בן אדם הודע את ירושׁלם את תועבתיה׃",
+      "info": ""
+    },
+    {
+      "book_id": "EZK",
+      "book_name": "Ezekiel",
+      "chapter": 16,
+      "verse_start": 3,
+      "verse_end": 3,
+      "text": "ואמרת כה אמר אדני יהוה לירושׁלם מכרתיך ומלדתיך מארץ הכנעני אביך האמרי ואמך חתית׃",
+      "info": ""
+    },
+    {
+      "book_id": "EZK",
+      "book_name": "Ezekiel",
+      "chapter": 16,
+      "verse_start": 4,
+      "verse_end": 4,
+      "text": "ומולדותיך ביום הולדת אתך לא כרת שׁרך ובמים לא רחצת למשׁעי והמלח לא המלחת והחתל לא חתלת׃",
+      "info": ""
+    },
+    {
+      "book_id": "EZK",
+      "book_name": "Ezekiel",
+      "chapter": 16,
+      "verse_start": 5,
+      "verse_end": 5,
+      "text": "לא חסה עליך עין לעשׂות לך אחת מאלה לחמלה עליך ותשׁלכי אל פני השׂדה בגעל נפשׁך ביום הלדת אתך׃",
+      "info": ""
+    },
+    {
+      "book_id": "EZK",
+      "book_name": "Ezekiel",
+      "chapter": 16,
+      "verse_start": 6,
+      "verse_end": 6,
+      "text": "ואעבר עליך ואראך מתבוססת בדמיך ואמר לך בדמיך חיי ואמר לך בדמיך חיי׃",
+      "info": ""
+    },
+    {
+      "book_id": "EZK",
+      "book_name": "Ezekiel",
+      "chapter": 16,
+      "verse_start": 7,
+      "verse_end": 7,
+      "text": "רבבה כצמח השׂדה נתתיך ותרבי ותגדלי ותבאי בעדי עדיים שׁדים נכנו ושׂערך צמח ואת ערם ועריה׃",
+      "info": ""
+    },
+    {
+      "book_id": "EZK",
+      "book_name": "Ezekiel",
+      "chapter": 16,
+      "verse_start": 8,
+      "verse_end": 8,
+      "text": "ואעבר עליך ואראך והנה עתך עת דדים ואפרשׂ כנפי עליך ואכסה ערותך ואשׁבע לך ואבוא בברית אתך נאם אדני יהוה ותהיי׃",
+      "info": ""
+    },
+    {
+      "book_id": "EZK",
+      "book_name": "Ezekiel",
+      "chapter": 16,
+      "verse_start": 9,
+      "verse_end": 9,
+      "text": "וארחצך במים ואשׁטף דמיך מעליך ואסכך בשׁמן׃",
+      "info": ""
+    },
+    {
+      "book_id": "EZK",
+      "book_name": "Ezekiel",
+      "chapter": 16,
+      "verse_start": 10,
+      "verse_end": 10,
+      "text": "ואלבישׁך רקמה ואנעלך תחשׁ ואחבשׁך בשׁשׁ ואכסך משׁי׃",
+      "info": ""
+    },
+    {
+      "book_id": "EZK",
+      "book_name": "Ezekiel",
+      "chapter": 16,
+      "verse_start": 11,
+      "verse_end": 11,
+      "text": "ואעדך עדי ואתנה צמידים על ידיך ורביד על גרונך׃",
+      "info": ""
+    },
+    {
+      "book_id": "EZK",
+      "book_name": "Ezekiel",
+      "chapter": 16,
+      "verse_start": 12,
+      "verse_end": 12,
+      "text": "ואתן נזם על אפך ועגילים על אזניך ועטרת תפארת בראשׁך׃",
+      "info": ""
+    },
+    {
+      "book_id": "EZK",
+      "book_name": "Ezekiel",
+      "chapter": 16,
+      "verse_start": 13,
+      "verse_end": 13,
+      "text": "ותעדי זהב וכסף ומלבושׁך שׁשׁי ומשׁי ורקמה סלת ודבשׁ ושׁמן אכלתי ותיפי במאד מאד ותצלחי למלוכה׃",
+      "info": ""
+    },
+    {
+      "book_id": "EZK",
+      "book_name": "Ezekiel",
+      "chapter": 16,
+      "verse_start": 14,
+      "verse_end": 14,
+      "text": "ויצא לך שׁם בגוים ביפיך כי כליל הוא בהדרי אשׁר שׂמתי עליך נאם אדני יהוה׃",
+      "info": ""
+    },
+    {
+      "book_id": "EZK",
+      "book_name": "Ezekiel",
+      "chapter": 16,
+      "verse_start": 15,
+      "verse_end": 15,
+      "text": "ותבטחי ביפיך ותזני על שׁמך ותשׁפכי את תזנותיך על כל עובר לו יהי׃",
+      "info": ""
+    },
+    {
+      "book_id": "EZK",
+      "book_name": "Ezekiel",
+      "chapter": 16,
+      "verse_start": 16,
+      "verse_end": 16,
+      "text": "ותקחי מבגדיך ותעשׂי לך במות טלאות ותזני עליהם לא באות ולא יהיה׃",
+      "info": ""
+    },
+    {
+      "book_id": "EZK",
+      "book_name": "Ezekiel",
+      "chapter": 16,
+      "verse_start": 17,
+      "verse_end": 17,
+      "text": "ותקחי כלי תפארתך מזהבי ומכספי אשׁר נתתי לך ותעשׂי לך צלמי זכר ותזני׃",
+      "info": ""
+    },
+    {
+      "book_id": "EZK",
+      "book_name": "Ezekiel",
+      "chapter": 16,
+      "verse_start": 18,
+      "verse_end": 18,
+      "text": "ותקחי את בגדי רקמתך ותכסים ושׁמני וקטרתי נתתי לפניהם׃",
+      "info": ""
+    },
+    {
+      "book_id": "EZK",
+      "book_name": "Ezekiel",
+      "chapter": 16,
+      "verse_start": 19,
+      "verse_end": 19,
+      "text": "ולחמי אשׁר נתתי לך סלת ושׁמן ודבשׁ האכלתיך ונתתיהו לפניהם לריח ניחח ויהי נאם אדני יהוה׃",
+      "info": ""
+    },
+    {
+      "book_id": "EZK",
+      "book_name": "Ezekiel",
+      "chapter": 16,
+      "verse_start": 20,
+      "verse_end": 20,
+      "text": "ותקחי את בניך ואת בנותיך אשׁר ילדת לי ותזבחים להם לאכול המעט מתזנתך׃",
+      "info": ""
+    },
+    {
+      "book_id": "EZK",
+      "book_name": "Ezekiel",
+      "chapter": 16,
+      "verse_start": 21,
+      "verse_end": 21,
+      "text": "ותשׁחטי את בני ותתנים בהעביר אותם׃",
+      "info": ""
+    },
+    {
+      "book_id": "EZK",
+      "book_name": "Ezekiel",
+      "chapter": 16,
+      "verse_start": 22,
+      "verse_end": 22,
+      "text": "ואת כל תועבתיך ותזנתיך לא זכרתי את ימי נעוריך בהיותך ערם ועריה מתבוססת בדמך היית׃",
+      "info": ""
+    },
+    {
+      "book_id": "EZK",
+      "book_name": "Ezekiel",
+      "chapter": 16,
+      "verse_start": 23,
+      "verse_end": 23,
+      "text": "ויהי אחרי כל רעתך אוי אוי לך נאם אדני יהוה׃",
+      "info": ""
+    },
+    {
+      "book_id": "EZK",
+      "book_name": "Ezekiel",
+      "chapter": 16,
+      "verse_start": 24,
+      "verse_end": 24,
+      "text": "ותבני לך גב ותעשׂי לך רמה בכל רחוב׃",
+      "info": ""
+    },
+    {
+      "book_id": "EZK",
+      "book_name": "Ezekiel",
+      "chapter": 16,
+      "verse_start": 25,
+      "verse_end": 25,
+      "text": "אל כל ראשׁ דרך בנית רמתך ותתעבי את יפיך ותפשׂקי את רגליך לכל עובר ותרבי את תזנתך׃",
+      "info": ""
+    },
+    {
+      "book_id": "EZK",
+      "book_name": "Ezekiel",
+      "chapter": 16,
+      "verse_start": 26,
+      "verse_end": 26,
+      "text": "ותזני אל בני מצרים שׁכניך גדלי בשׂר ותרבי את תזנתך להכעיסני׃",
+      "info": ""
+    },
+    {
+      "book_id": "EZK",
+      "book_name": "Ezekiel",
+      "chapter": 16,
+      "verse_start": 27,
+      "verse_end": 27,
+      "text": "והנה נטיתי ידי עליך ואגרע חקך ואתנך בנפשׁ שׂנאותיך בנות פלשׁתים הנכלמות מדרכך זמה׃",
+      "info": ""
+    },
+    {
+      "book_id": "EZK",
+      "book_name": "Ezekiel",
+      "chapter": 16,
+      "verse_start": 28,
+      "verse_end": 28,
+      "text": "ותזני אל בני אשׁור מבלתי שׂבעתך ותזנים וגם לא שׂבעת׃",
+      "info": ""
+    },
+    {
+      "book_id": "EZK",
+      "book_name": "Ezekiel",
+      "chapter": 16,
+      "verse_start": 29,
+      "verse_end": 29,
+      "text": "ותרבי את תזנותך אל ארץ כנען כשׂדימה וגם בזאת לא שׂבעת׃",
+      "info": ""
+    },
+    {
+      "book_id": "EZK",
+      "book_name": "Ezekiel",
+      "chapter": 16,
+      "verse_start": 30,
+      "verse_end": 30,
+      "text": "מה אמלה לבתך נאם אדני יהוה בעשׂותך את כל אלה מעשׂה אשׁה זונה שׁלטת׃",
+      "info": ""
+    },
+    {
+      "book_id": "EZK",
+      "book_name": "Ezekiel",
+      "chapter": 16,
+      "verse_start": 31,
+      "verse_end": 31,
+      "text": "בבנותיך גבך בראשׁ כל דרך ורמתך עשׂיתי בכל רחוב ולא הייתי כזונה לקלס אתנן׃",
+      "info": ""
+    },
+    {
+      "book_id": "EZK",
+      "book_name": "Ezekiel",
+      "chapter": 16,
+      "verse_start": 32,
+      "verse_end": 32,
+      "text": "האשׁה המנאפת תחת אישׁה תקח את זרים׃",
+      "info": ""
+    },
+    {
+      "book_id": "EZK",
+      "book_name": "Ezekiel",
+      "chapter": 16,
+      "verse_start": 33,
+      "verse_end": 33,
+      "text": "לכל זנות יתנו נדה ואת נתת את נדניך לכל מאהביך ותשׁחדי אותם לבוא אליך מסביב בתזנותיך׃",
+      "info": ""
+    },
+    {
+      "book_id": "EZK",
+      "book_name": "Ezekiel",
+      "chapter": 16,
+      "verse_start": 34,
+      "verse_end": 34,
+      "text": "ויהי בך הפך מן הנשׁים בתזנותיך ואחריך לא זונה ובתתך אתנן ואתנן לא נתן לך ותהי להפך׃",
+      "info": ""
+    },
+    {
+      "book_id": "EZK",
+      "book_name": "Ezekiel",
+      "chapter": 16,
+      "verse_start": 35,
+      "verse_end": 35,
+      "text": "לכן זונה שׁמעי דבר יהוה׃",
+      "info": ""
+    },
+    {
+      "book_id": "EZK",
+      "book_name": "Ezekiel",
+      "chapter": 16,
+      "verse_start": 36,
+      "verse_end": 36,
+      "text": "כה אמר אדני יהוה יען השׁפך נחשׁתך ותגלה ערותך בתזנותיך על מאהביך ועל כל גלולי תועבותיך וכדמי בניך אשׁר נתת׃",
+      "info": ""
+    },
+    {
+      "book_id": "EZK",
+      "book_name": "Ezekiel",
+      "chapter": 16,
+      "verse_start": 37,
+      "verse_end": 37,
+      "text": "לכן הנני מקבץ את כל מאהביך אשׁר ערבת עליהם ואת כל אשׁר אהבת על כל אשׁר שׂנאת וקבצתי אתם עליך מסביב וגליתי ערותך אלהם וראו את כל ערותך׃",
+      "info": ""
+    },
+    {
+      "book_id": "EZK",
+      "book_name": "Ezekiel",
+      "chapter": 16,
+      "verse_start": 38,
+      "verse_end": 38,
+      "text": "ושׁפטתיך משׁפטי נאפות ושׁפכת דם ונתתיך דם חמה וקנאה׃",
+      "info": ""
+    },
+    {
+      "book_id": "EZK",
+      "book_name": "Ezekiel",
+      "chapter": 16,
+      "verse_start": 39,
+      "verse_end": 39,
+      "text": "ונתתי אותך בידם והרסו גבך ונתצו רמתיך והפשׁיטו אותך בגדיך ולקחו כלי תפארתך והניחוך עירם ועריה׃",
+      "info": ""
+    },
+    {
+      "book_id": "EZK",
+      "book_name": "Ezekiel",
+      "chapter": 16,
+      "verse_start": 40,
+      "verse_end": 40,
+      "text": "והעלו עליך קהל ורגמו אותך באבן ובתקוך בחרבותם׃",
+      "info": ""
+    },
+    {
+      "book_id": "EZK",
+      "book_name": "Ezekiel",
+      "chapter": 16,
+      "verse_start": 41,
+      "verse_end": 41,
+      "text": "ושׂרפו בתיך באשׁ ועשׂו בך שׁפטים לעיני נשׁים רבות והשׁבתיך מזונה וגם אתנן לא תתני עוד׃",
+      "info": ""
+    },
+    {
+      "book_id": "EZK",
+      "book_name": "Ezekiel",
+      "chapter": 16,
+      "verse_start": 42,
+      "verse_end": 42,
+      "text": "והנחתי חמתי בך וסרה קנאתי ממך ושׁקטתי ולא אכעס עוד׃",
+      "info": ""
+    },
+    {
+      "book_id": "EZK",
+      "book_name": "Ezekiel",
+      "chapter": 16,
+      "verse_start": 43,
+      "verse_end": 43,
+      "text": "יען אשׁר לא זכרתי את ימי נעוריך ותרגזי לי בכל אלה וגם אני הא דרכך בראשׁ נתתי נאם אדני יהוה ולא עשׂיתי את הזמה על כל תועבתיך׃",
+      "info": ""
+    },
+    {
+      "book_id": "EZK",
+      "book_name": "Ezekiel",
+      "chapter": 16,
+      "verse_start": 44,
+      "verse_end": 44,
+      "text": "הנה כל המשׁל עליך ימשׁל לאמר כאמה בתה׃",
+      "info": ""
+    },
+    {
+      "book_id": "EZK",
+      "book_name": "Ezekiel",
+      "chapter": 16,
+      "verse_start": 45,
+      "verse_end": 45,
+      "text": "בת אמך את געלת אישׁה ובניה ואחות אחותך את אשׁר געלו אנשׁיהן ובניהן אמכן חתית ואביכן אמרי׃",
+      "info": ""
+    },
+    {
+      "book_id": "EZK",
+      "book_name": "Ezekiel",
+      "chapter": 16,
+      "verse_start": 46,
+      "verse_end": 46,
+      "text": "ואחותך הגדולה שׁמרון היא ובנותיה היושׁבת על שׂמאולך ואחותך הקטנה ממך היושׁבת מימינך סדם ובנותיה׃",
+      "info": ""
+    },
+    {
+      "book_id": "EZK",
+      "book_name": "Ezekiel",
+      "chapter": 16,
+      "verse_start": 47,
+      "verse_end": 47,
+      "text": "ולא בדרכיהן הלכת ובתועבותיהן עשׂיתי כמעט קט ותשׁחתי מהן בכל דרכיך׃",
+      "info": ""
+    },
+    {
+      "book_id": "EZK",
+      "book_name": "Ezekiel",
+      "chapter": 16,
+      "verse_start": 48,
+      "verse_end": 48,
+      "text": "חי אני נאם אדני יהוה אם עשׂתה סדם אחותך היא ובנותיה כאשׁר עשׂית את ובנותיך׃",
+      "info": ""
+    },
+    {
+      "book_id": "EZK",
+      "book_name": "Ezekiel",
+      "chapter": 16,
+      "verse_start": 49,
+      "verse_end": 49,
+      "text": "הנה זה היה עון סדם אחותך גאון שׂבעת לחם ושׁלות השׁקט היה לה ולבנותיה ויד עני ואביון לא החזיקה׃",
+      "info": ""
+    },
+    {
+      "book_id": "EZK",
+      "book_name": "Ezekiel",
+      "chapter": 16,
+      "verse_start": 50,
+      "verse_end": 50,
+      "text": "ותגבהינה ותעשׂינה תועבה לפני ואסיר אתהן כאשׁר ראיתי׃",
+      "info": ""
+    },
+    {
+      "book_id": "EZK",
+      "book_name": "Ezekiel",
+      "chapter": 16,
+      "verse_start": 51,
+      "verse_end": 51,
+      "text": "ושׁמרון כחצי חטאתיך לא חטאה ותרבי את תועבותיך מהנה ותצדקי את אחותך בכל תועבותיך אשׁר עשׂיתי׃",
+      "info": ""
+    },
+    {
+      "book_id": "EZK",
+      "book_name": "Ezekiel",
+      "chapter": 16,
+      "verse_start": 52,
+      "verse_end": 52,
+      "text": "גם את שׂאי כלמתך אשׁר פללת לאחותך בחטאתיך אשׁר התעבת מהן תצדקנה ממך וגם את בושׁי ושׂאי כלמתך בצדקתך אחיותך׃",
+      "info": ""
+    },
+    {
+      "book_id": "EZK",
+      "book_name": "Ezekiel",
+      "chapter": 16,
+      "verse_start": 53,
+      "verse_end": 53,
+      "text": "ושׁבתי את שׁביתהן את שׁבית סדם ובנותיה ואת שׁבית שׁמרון ובנותיה ושׁבית שׁביתיך בתוכהנה׃",
+      "info": ""
+    },
+    {
+      "book_id": "EZK",
+      "book_name": "Ezekiel",
+      "chapter": 16,
+      "verse_start": 54,
+      "verse_end": 54,
+      "text": "למען תשׂאי כלמתך ונכלמת מכל אשׁר עשׂית בנחמך אתן׃",
+      "info": ""
+    },
+    {
+      "book_id": "EZK",
+      "book_name": "Ezekiel",
+      "chapter": 16,
+      "verse_start": 55,
+      "verse_end": 55,
+      "text": "ואחותיך סדם ובנותיה תשׁבן לקדמתן ושׁמרון ובנותיה תשׁבן לקדמתן ואת ובנותיך תשׁבינה לקדמתכן׃",
+      "info": ""
+    },
+    {
+      "book_id": "EZK",
+      "book_name": "Ezekiel",
+      "chapter": 16,
+      "verse_start": 56,
+      "verse_end": 56,
+      "text": "ולוא היתה סדם אחותך לשׁמועה בפיך ביום גאוניך׃",
+      "info": ""
+    },
+    {
+      "book_id": "EZK",
+      "book_name": "Ezekiel",
+      "chapter": 16,
+      "verse_start": 57,
+      "verse_end": 57,
+      "text": "בטרם תגלה רעתך כמו עת חרפת בנות ארם וכל סביבותיה בנות פלשׁתים השׁאטות אותך מסביב׃",
+      "info": ""
+    },
+    {
+      "book_id": "EZK",
+      "book_name": "Ezekiel",
+      "chapter": 16,
+      "verse_start": 58,
+      "verse_end": 58,
+      "text": "את זמתך ואת תועבותיך את נשׂאתים נאם יהוה׃",
+      "info": ""
+    },
+    {
+      "book_id": "EZK",
+      "book_name": "Ezekiel",
+      "chapter": 16,
+      "verse_start": 59,
+      "verse_end": 59,
+      "text": "כי כה אמר אדני יהוה ועשׂית אותך כאשׁר עשׂית אשׁר בזית אלה להפר ברית׃",
+      "info": ""
+    },
+    {
+      "book_id": "EZK",
+      "book_name": "Ezekiel",
+      "chapter": 16,
+      "verse_start": 60,
+      "verse_end": 60,
+      "text": "וזכרתי אני את בריתי אותך בימי נעוריך והקמותי לך ברית עולם׃",
+      "info": ""
+    },
+    {
+      "book_id": "EZK",
+      "book_name": "Ezekiel",
+      "chapter": 16,
+      "verse_start": 61,
+      "verse_end": 61,
+      "text": "וזכרת את דרכיך ונכלמת בקחתך את אחותיך הגדלות ממך אל הקטנות ממך ונתתי אתהן לך לבנות ולא מבריתך׃",
+      "info": ""
+    },
+    {
+      "book_id": "EZK",
+      "book_name": "Ezekiel",
+      "chapter": 16,
+      "verse_start": 62,
+      "verse_end": 62,
+      "text": "והקימותי אני את בריתי אתך וידעת כי אני יהוה׃",
+      "info": ""
+    },
+    {
+      "book_id": "EZK",
+      "book_name": "Ezekiel",
+      "chapter": 16,
+      "verse_start": 63,
+      "verse_end": 63,
+      "text": "למען תזכרי ובשׁת ולא יהיה לך עוד פתחון פה מפני כלמתך בכפרי לך לכל אשׁר עשׂית נאם אדני יהוה׃",
+      "info": ""
+    }
+  ]
+}

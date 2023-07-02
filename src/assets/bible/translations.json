@@ -1,0 +1,17 @@
+[
+    {
+      "id": "KJB1762",
+      "name": "King James Bible 1762",
+      "abbreviation": "KJB 1762"
+    },
+    {
+      "id": "KJB1611",
+      "name": "King James Bible 1611",
+      "abbreviation": "KJB 1611"
+    },
+    {
+      "id": "KJBUT",
+      "name": "King James Bible Underlying Texts",
+      "abbreviation": "KJB UT"
+    }
+  ]

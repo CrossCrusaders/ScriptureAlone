@@ -1,6 +1,6 @@
 <template>
   <AppLayout>
-    <div class="bible-reader-toolbar flex flex-row mb-4 sticky top-0 pt-4 pb-4 gap-2 bg-slate-200"
+    <div class="bible-reader-toolbar flex flex-row mb-4 sticky top-0 z-40 pt-4 pb-4 gap-2 bg-slate-200"
       style="justify-content: center">
       <AppSelect :model-value="selectedBookId" @update:model-value="onSelectedBookIdChanged">
         <option v-for="book of availableBooks" :value="book.bookId">
@@ -13,6 +13,10 @@
           {{ chapter.chapterNumber }}
         </option>
       </AppSelect>
+
+      <BibleTranslationSelect :model-value="selectedBibleTranslationId"
+        @update:model-value="onSelectedBibleTranslationIdChanged">
+      </BibleTranslationSelect>
     </div>
     <div class="w-full flex justify-center">
       <form class="w-full md:w-1/2 lg:w-1/3" @submit="handleSearchSubmit($event)">
@@ -31,27 +35,26 @@
         <h2 class="text-center mb-4 mt-2 h-full flex align-middle">
           <div class="m-auto flex flex-col h-full">
             <span class="text-2xl font-bold">{{ selectedBook?.name }}&nbsp;{{ selectedChapterNumber }}</span>
-            <span v-if="loadedChapterContent?.info" v-html="loadedChapterContent?.info"></span>
+            <span v-if="loadedChapterContent?.header" v-html="loadedChapterContent?.header"></span>
           </div>
         </h2>
       </div>
       <Spinner class="mx-auto" v-if="pageLoading"></Spinner>
-      <div v-else class="bible-reader-content max-w-prose mx-auto leading-loose">
+      <div v-else class="bible-reader-content max-w-prose mx-auto leading-loose z-50">
         <p v-for="verse in loadedChapterContent.verses">
-          <div class="w-full text-center font-bold text-lg" v-if="verse?.info">{{ verse?.info }}</div>
-          <div 
-            v-touch:longtap="() => { onVerseClicked(verse.verse_start, true); menuVerse = verse; openMenu = true; }"
-            v-touch:tap="() => onVerseClicked(verse.verse_start)" :id="`verse-${verse.verse_start}`"
-            :class="verse.css"
-          >
-            <span class="verse-number">{{ verse.verse_start }}</span><span class="verse-text">
+        <div class="w-full text-center font-bold text-lg" v-if="verse?.info">{{ verse?.info }}</div>
+        <div v-touch:longtap="() => { onVerseClicked(verse.verse_start, true); menuVerse = verse; openMenu = true; }"
+          v-touch:tap="() => onVerseClicked(verse.verse_start)" :id="`verse-${verse.verse_start}`" :class="verse.css">
+          <div v-if="loadedChapterContent.language == 'English'">
+            <span class="verse-number">{{ verse.verse_start }}</span>
+            <span class="verse-text">
               <span v-for="word in verse.text_array">
                 <button @click="
                   handleOpenWordModal(
                     getWordFromPastTense(word.split('|')[1].split('</span>')[0]),
                     verse.verse_start
                   )
-                " v-if="word.includes('<span') && word.includes('|')"
+                  " v-if="word.includes('<span') && word.includes('|')"
                   class="underline ml-1 font-bold text-red-700 hover:text-red-500 transition-all"
                   v-html="word.split('|')[0] + word.split('|')[1]"></button>
                 <button @click="
@@ -59,14 +62,34 @@
                     getWordFromPastTense(word.split('|')[1]),
                     verse.verse_start
                   )
-                " v-else-if="word.includes('|')"
+                  " v-else-if="word.includes('|')"
                   class="underline ml-1 font-bold text-slate-500 hover:text-gray-500 transition-all"
                   v-html="word.split('|')[1]"></button>
                 <span v-else v-html="' ' + word"></span>
               </span>
             </span>
           </div>
+          <div v-else-if="loadedChapterContent.language == 'Hebrew'" class="flex justify-between">
+            <span class="verse-number">{{ verse.verse_start }}</span>
+            <div class="verse-text Hebrew">
+              <span v-for="word in verse.text_array" v-html="' ' + word"></span>
+            </div>
+          </div>
+          <div v-else-if="loadedChapterContent.language == 'Greek'">
+            <span class="verse-number">{{ verse.verse_start }}</span>
+            <span class="verse-text Greek">
+              <span v-for="word in verse.text_array" v-html="' ' + word"></span>
+            </span>
+          </div>
+        </div>
         </p>
+      </div>
+      <div class="max-w-prose mx-auto h-fit">
+        <h2 class="text-center mt-4 mb-2 h-full flex align-middle">
+          <div class="m-auto flex flex-col h-full">
+            <span v-if="loadedChapterContent?.footer" v-html="loadedChapterContent?.footer"></span>
+          </div>
+        </h2>
       </div>
     </PageContent>
     <div class="mb-8"></div>
@@ -80,12 +103,9 @@
           }}
         </p>
         <span v-for="word in menuVerse.text_array">
-          <span v-if="word.includes('<span') && word.includes('|')"
-            class="ml-1 text-red-500"
+          <span v-if="word.includes('<span') && word.includes('|')" class="ml-1 text-red-500"
             v-html="word.split('|')[0] + word.split('|')[1]"></span>
-          <span v-else-if="word.includes('|')"
-            class="ml-1"
-            v-html="word.split('|')[1]"></span>
+          <span v-else-if="word.includes('|')" class="ml-1" v-html="word.split('|')[1]"></span>
           <span v-else v-html="' ' + word"></span>
         </span>
       </div>
@@ -139,7 +159,7 @@
             ' - ' +
             menuVerse.text
           )
-        ">
+          ">
         Copy Verse
       </button>
       <button
@@ -232,7 +252,6 @@
 </template>
 
 <script setup lang="ts">
-import { useBreakpoint } from "../../browser/ViewportService";
 import { onMounted, ref, watch } from "vue";
 import AppLayout from "../../components/templates/AppLayout.vue";
 import PageContent from "../../components/templates/PageContent.vue";
@@ -251,6 +270,7 @@ import {
 } from "../../cache/services/LocalStorageService";
 import Icon from "../../components/atoms/Icon.vue";
 import AppButton from "../../components/atoms/form-controls/AppButton.vue";
+import BibleTranslationSelect from '../../components/organisms/BibleTranslationSelect.vue'
 import { BibleBook } from "../BibleBook";
 import { useRoute, useRouter } from "vue-router";
 import AppSelect from "../../components/atoms/form-controls/AppSelect.vue";
@@ -262,7 +282,7 @@ import {
   getHighlightedVerses,
   highlightVerses,
 } from "../../bible/services/BibleService";
-import { createNote, getAllNotesInChapter } from "../../notes/services/NoteService";
+import { createNote } from "../../notes/services/NoteService";
 import { Word } from "../../websters/Word";
 import { getWord } from "../../websters/services/WebstersService";
 import { Preferences } from "@capacitor/preferences";
@@ -274,6 +294,7 @@ import Config from "../../config/services/ConfigService";
 import Divider from "../../components/atoms/Divider.vue";
 
 export interface BiblePageQueryParams {
+  t?: string; // translation
   c?: string; //chapter
   b?: string; // book
   vs?: string; // verse-start
@@ -282,15 +303,15 @@ export interface BiblePageQueryParams {
 export interface LocalBibleSelectionCache {
   selectedBookId: string;
   selectedChapter: number;
+  selectedBibleTranslationId: string;
 }
-
-const { breakpoint } = useBreakpoint();
 
 const localCacheKeyLastLoadedChapter = "__scripture_alone_last_loaded_bible_info__";
 
 const availableBooks = ref<BibleBook[]>([]);
 const availableChapters = ref<BibleChapter[]>([]);
 
+const selectedBibleTranslationId = ref('1762')
 const selectedBookId = ref("JHN");
 const selectedChapterNumber = ref(1);
 const selectedVerses = ref<any[]>([]);
@@ -354,32 +375,33 @@ const WebstersWords = ref<any[]>([]);
  * Query the API to download the text for a bible.
  */
 const loadChapterContent = async () => {
-  loadedChapterContent.value = { info: "", verses: [] };
+  loadedChapterContent.value = { chapterNumber: selectedChapterNumber.value, info: "", language: "", verses: [], infoAfter: false };
   pageLoading.value = true;
   try {
-    if (platform.value != "web")
-      await Preferences.set({
-        key: "LastBibleData",
-        value: JSON.stringify({
-          book: selectedBookId.value,
-          chapter: selectedChapterNumber.value,
-        }),
-      });
+    await Preferences.set({
+      key: "LastBibleData",
+      value: JSON.stringify({
+        translation: selectedBibleTranslationId.value,
+        book: selectedBookId.value,
+        chapter: selectedChapterNumber.value,
+      }),
+    });
 
-    const response = await getVerses(selectedBookId.value, selectedChapterNumber.value);
+    const response = await getVerses(selectedBibleTranslationId.value, selectedBookId.value, selectedChapterNumber.value);
 
-    loadedChapterContent.value.info = response.info;
+    loadedChapterContent.value.header = response.header;
+    loadedChapterContent.value.footer = response.footer;
+    loadedChapterContent.value.language = response.language;
 
     var versesHighlights: any;
     var chapterText: any[] = [];
-    if (
-      (connectedToWifi.value && connectedToWifi.value.connected) ||
-      platform.value == "web"
-    )
-      versesHighlights = await getHighlightedVerses(
-        response.verses[0].book_id,
-        response.verses[0].chapter.toString()
-      );
+    try {
+      if ((connectedToWifi.value && connectedToWifi.value.connected) || platform.value == "web")
+        versesHighlights = await getHighlightedVerses(response.verses[0].book_id, response.verses[0].chapter.toString());
+    }
+    catch (err) {
+      console.log(err)
+    }
 
     var ChristsWords = false;
     var isItalics = false;
@@ -424,8 +446,8 @@ const loadChapterContent = async () => {
         } else if (word == '"JESUS_END"') {
           ChristsWords = false;
           push = false;
-        } else if(word.includes('"JESUS_END"')){
-          transformedTempVerseText[transformedTempVerseText.length-1] = transformedTempVerseText[transformedTempVerseText.length-1] + word.split('"JESUS_END"')[1];
+        } else if (word.includes('"JESUS_END"')) {
+          transformedTempVerseText[transformedTempVerseText.length - 1] = transformedTempVerseText[transformedTempVerseText.length - 1] + word.split('"JESUS_END"')[1];
           ChristsWords = false;
           push = false;
         } else if (ChristsWords) word = `<span class="text-red-500">${word}</span>`;
@@ -456,6 +478,7 @@ const loadChapterContent = async () => {
     await setLocalCacheItem(
       localCacheKeyLastLoadedChapter,
       {
+        selectedBibleTranslationId: selectedBibleTranslationId.value || '1762',
         selectedBookId: selectedBookId.value || "JHN",
         selectedChapter: selectedChapterNumber.value || 1,
       },
@@ -464,7 +487,7 @@ const loadChapterContent = async () => {
 
     router.replace({
       path: "/bible",
-      query: { ...route.query, b: selectedBookId.value, c: selectedChapterNumber.value },
+      query: { ...route.query, t: selectedBibleTranslationId.value, b: selectedBookId.value, c: selectedChapterNumber.value },
     });
     if (shouldHighlight)
       setTimeout(() => {
@@ -481,14 +504,13 @@ const loadChapterContent = async () => {
 };
 
 async function reloadNotes() {
-  if (
-    (connectedToWifi.value && connectedToWifi.value.connected) ||
-    platform.value == "web"
-  )
-    availableNotes.value = await getAllNotesInChapter(
-      selectedBookId.value,
-      selectedChapterNumber.value
-    );
+  try {
+    //if((connectedToWifi.value && connectedToWifi.value.connected) || platform.value == "web")
+    //availableNotes.value = await getAllNotesInChapter(selectedBookId.value, selectedChapterNumber.value);
+  }
+  catch (err) {
+    console.log(err)
+  }
 }
 
 onMounted(async () => {
@@ -640,7 +662,7 @@ const handleSearchSubmit = async (event: Event) => {
 
       window.scrollTo({ top: 0 });
       await router.push(
-        `/bible?c=${result.chapter}&b=${result.book_id}&vs=${result.verse_start}&ve=${result.verse_end}`
+        `/bible?t=${selectedBibleTranslationId.value}&c=${result.chapter}&b=${result.book_id}&vs=${result.verse_start}&ve=${result.verse_end}`
       );
       return getNewVerses();
     } else {
@@ -652,9 +674,9 @@ const handleSearchSubmit = async (event: Event) => {
 };
 
 async function getNewVerses() {
-  let { b, c, vs, ve } = route.query as BiblePageQueryParams;
+  let { t, b, c, vs, ve } = route.query as BiblePageQueryParams;
 
-  if (!b && !c && platform.value != "web") {
+  if (!b && !c) {
     const ret: any = await Preferences.get({ key: "LastBibleData" });
     if (ret.value) {
       const data = JSON.parse(ret.value);
@@ -673,6 +695,11 @@ async function getNewVerses() {
     shouldHighlight = true;
     highlightRange = [parseInt(vs), ve ? parseInt(ve) : parseInt(vs)];
   }
+
+  if (t)
+    selectedBibleTranslationId.value = t;
+  else
+    selectedBibleTranslationId.value = "KJB1762";
 
   availableBooks.value = await getBooks();
 
@@ -720,6 +747,11 @@ async function onVerseClicked(verse: number, willHighlight?: boolean) {
   selectedVerses.value.sort(sorter);
 }
 
+const onSelectedBibleTranslationIdChanged = async (value: any) => {
+  selectedBibleTranslationId.value = value
+  await loadChapterContent()
+}
+
 function sorter(a: number, b: number) {
   if (a < b) return -1; // any negative number works
   if (a > b) return 1; // any positive number works
@@ -743,6 +775,7 @@ function sorter(a: number, b: number) {
 .bible-reader-content .verse .verse-number {
   font-weight: 500;
   font-style: italic;
+  font-size: medium;
 }
 
 .verse {
@@ -793,28 +826,6 @@ function sorter(a: number, b: number) {
   }
 }
 
-#popup {
-  height: 40vh;
-}
-
-.popup-enter-active {
-  animation: popup 0.5s;
-}
-
-.popup-leave-active {
-  animation: popup 0.5s reverse;
-}
-
-@keyframes popup {
-  0% {
-    transform: translateY(100%);
-  }
-
-  100% {
-    transform: translateY(0%);
-  }
-}
-
 .prev-next-button {
   width: 24px;
   height: 24px;
@@ -857,5 +868,14 @@ function sorter(a: number, b: number) {
   100% {
     transform: translateY(10em);
   }
+}
+
+.Greek {
+  font-size: larger;
+}
+
+.Hebrew {
+  text-align: right;
+  font-size: larger;
 }
 </style>

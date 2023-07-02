@@ -1,0 +1,77 @@
+{
+  "header": "¶ To the chief Musician on Neginoth, Maschil, <em>A Psalm</em> of David, when the Ziphims came and said to Saul, Doth not David hide himself with us?",
+  "footer": "",
+  "language": "English",
+  "verses": [
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 54,
+      "verse_start": 1,
+      "verse_end": 1,
+      "text": "Save me, O God, by thy name, and judge me by thy strength.",
+      "info": "",
+      "language": "English"
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 54,
+      "verse_start": 2,
+      "verse_end": 2,
+      "text": "Hear my prayer, O God; give ear to the words of my mouth.",
+      "info": "",
+      "language": "English"
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 54,
+      "verse_start": 3,
+      "verse_end": 3,
+      "text": "For strangers are risen up against me, and oppressors seek after my soul: they have not set God before them. Selah.",
+      "info": "",
+      "language": "English"
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 54,
+      "verse_start": 4,
+      "verse_end": 4,
+      "text": "Behold, God <em>is</em> mine helper: the Lord <em>is</em> with them that uphold my soul.",
+      "info": "",
+      "language": "English"
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 54,
+      "verse_start": 5,
+      "verse_end": 5,
+      "text": "He shall reward evil unto mine enemies: cut them off in thy truth.",
+      "info": "",
+      "language": "English"
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 54,
+      "verse_start": 6,
+      "verse_end": 6,
+      "text": "I will freely sacrifice unto thee: I will praise thy name, O LORD; for <em>it is</em> good.",
+      "info": "",
+      "language": "English"
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 54,
+      "verse_start": 7,
+      "verse_end": 7,
+      "text": "For he hath delivered me out of all trouble: and mine eye hath seen <em>his desire</em> upon mine enemies.",
+      "info": "",
+      "language": "English"
+    }
+  ]
+}

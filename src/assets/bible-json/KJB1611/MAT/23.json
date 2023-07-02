@@ -1,0 +1,358 @@
+{
+  "header": "",
+  "footer": "",
+  "language": "English",
+  "verses": [
+    {
+      "book_id": "MAT",
+      "book_name": "Matthew",
+      "chapter": 23,
+      "verse_start": 1,
+      "verse_end": 1,
+      "text": "Then spake Iesus to the multitude, and to his disciples,",
+      "info": ""
+    },
+    {
+      "book_id": "MAT",
+      "book_name": "Matthew",
+      "chapter": 23,
+      "verse_start": 2,
+      "verse_end": 2,
+      "text": "Saying, The Scribes and the Pharises sit in Moses seate:",
+      "info": ""
+    },
+    {
+      "book_id": "MAT",
+      "book_name": "Matthew",
+      "chapter": 23,
+      "verse_start": 3,
+      "verse_end": 3,
+      "text": "All therefore whatsoeuer they bid you obserue, that obserue and doe, but doe not ye after their workes: for they say, and doe not.",
+      "info": ""
+    },
+    {
+      "book_id": "MAT",
+      "book_name": "Matthew",
+      "chapter": 23,
+      "verse_start": 4,
+      "verse_end": 4,
+      "text": "For they binde heauie burdens, and grieuous to be borne, and lay them on mens shoulders, but they themselues will not mooue them with one of their fingers.",
+      "info": ""
+    },
+    {
+      "book_id": "MAT",
+      "book_name": "Matthew",
+      "chapter": 23,
+      "verse_start": 5,
+      "verse_end": 5,
+      "text": "But all their workes they doe, for to be seene of men: they make broad their phylacteries, and enlarge the borders of their garments,",
+      "info": ""
+    },
+    {
+      "book_id": "MAT",
+      "book_name": "Matthew",
+      "chapter": 23,
+      "verse_start": 6,
+      "verse_end": 6,
+      "text": "And loue the vppermost roomes at feasts, and the chiefe seats in the Synagogues,",
+      "info": ""
+    },
+    {
+      "book_id": "MAT",
+      "book_name": "Matthew",
+      "chapter": 23,
+      "verse_start": 7,
+      "verse_end": 7,
+      "text": "And greetings in the markets, and to be called of men, Rabbi, Rabbi.",
+      "info": ""
+    },
+    {
+      "book_id": "MAT",
+      "book_name": "Matthew",
+      "chapter": 23,
+      "verse_start": 8,
+      "verse_end": 8,
+      "text": "But be not ye called Rabbi: for one is your Master, euen Christ, and all ye are brethren.",
+      "info": ""
+    },
+    {
+      "book_id": "MAT",
+      "book_name": "Matthew",
+      "chapter": 23,
+      "verse_start": 9,
+      "verse_end": 9,
+      "text": "And call no man your father vpon the earth: for one is your father which is in heauen.",
+      "info": ""
+    },
+    {
+      "book_id": "MAT",
+      "book_name": "Matthew",
+      "chapter": 23,
+      "verse_start": 10,
+      "verse_end": 10,
+      "text": "Neither be ye called masters: for one is your Master, euen Christ.",
+      "info": ""
+    },
+    {
+      "book_id": "MAT",
+      "book_name": "Matthew",
+      "chapter": 23,
+      "verse_start": 11,
+      "verse_end": 11,
+      "text": "But hee that is greatest among you, shall be your seruant.",
+      "info": ""
+    },
+    {
+      "book_id": "MAT",
+      "book_name": "Matthew",
+      "chapter": 23,
+      "verse_start": 12,
+      "verse_end": 12,
+      "text": "And whosoeuer shall exalt himselfe, shall be abased: and he that shall humble himselfe, shall be exalted.",
+      "info": ""
+    },
+    {
+      "book_id": "MAT",
+      "book_name": "Matthew",
+      "chapter": 23,
+      "verse_start": 13,
+      "verse_end": 13,
+      "text": "¶ But woe vnto you, Scribes and Pharisees, hypocrites; for yee shut vp the kingdom of heauen against men: For yee neither goe in your selues, neither suffer ye them that are entring, to goe in.",
+      "info": ""
+    },
+    {
+      "book_id": "MAT",
+      "book_name": "Matthew",
+      "chapter": 23,
+      "verse_start": 14,
+      "verse_end": 14,
+      "text": "Woe vnto you Scribes and Pharisees, hypocrites; for yee deuoure widowes houses, and for a pretence make long prayer; therefore ye shall receiue the greater damnation.",
+      "info": ""
+    },
+    {
+      "book_id": "MAT",
+      "book_name": "Matthew",
+      "chapter": 23,
+      "verse_start": 15,
+      "verse_end": 15,
+      "text": "Woe vnto you Scribes and Pharises, hypocrites; for yee compasse Sea and land to make one Proselyte, and when hee is made, yee make him two fold more the childe of hell then your selues.",
+      "info": ""
+    },
+    {
+      "book_id": "MAT",
+      "book_name": "Matthew",
+      "chapter": 23,
+      "verse_start": 16,
+      "verse_end": 16,
+      "text": "Woe vnto you, yee blind guides, which say, Whosoeuer shall sweare by the Temple, it is nothing: but whosoeuer shal sweare by the gold of the Temple, he is a debter.",
+      "info": ""
+    },
+    {
+      "book_id": "MAT",
+      "book_name": "Matthew",
+      "chapter": 23,
+      "verse_start": 17,
+      "verse_end": 17,
+      "text": "Ye fooles and blind: for whether is greater, the gold, or the Temple that sanctifieth the gold?",
+      "info": ""
+    },
+    {
+      "book_id": "MAT",
+      "book_name": "Matthew",
+      "chapter": 23,
+      "verse_start": 18,
+      "verse_end": 18,
+      "text": "And whosoeuer shall sweare by the Altar, it is nothing: but whosoeuer sweareth by the gift that is vpon it, he is guiltie.",
+      "info": ""
+    },
+    {
+      "book_id": "MAT",
+      "book_name": "Matthew",
+      "chapter": 23,
+      "verse_start": 19,
+      "verse_end": 19,
+      "text": "Ye fooles and blind: for whether is greater, the gift, or the Altar that sanctifieth the gift?",
+      "info": ""
+    },
+    {
+      "book_id": "MAT",
+      "book_name": "Matthew",
+      "chapter": 23,
+      "verse_start": 20,
+      "verse_end": 20,
+      "text": "Who so therefore shall sweare by the Altar, sweareth by it, and by all things thereon.",
+      "info": ""
+    },
+    {
+      "book_id": "MAT",
+      "book_name": "Matthew",
+      "chapter": 23,
+      "verse_start": 21,
+      "verse_end": 21,
+      "text": "And who so shall sweare by the Temple, sweareth by it, and by him that dwelleth therein.",
+      "info": ""
+    },
+    {
+      "book_id": "MAT",
+      "book_name": "Matthew",
+      "chapter": 23,
+      "verse_start": 22,
+      "verse_end": 22,
+      "text": "And he that shall sweare by heauen, sweareth by the throne of God, and by him that sitteth thereon.",
+      "info": ""
+    },
+    {
+      "book_id": "MAT",
+      "book_name": "Matthew",
+      "chapter": 23,
+      "verse_start": 23,
+      "verse_end": 23,
+      "text": "Woe vnto you Scribes and Pharisees, hypocrites; for yee pay tithe of mint, and annise, and cummine, and haue omitted the weightier matters of the Law, iudgement, mercie and faith: these ought ye to haue done, and not to leaue the other vndone.",
+      "info": ""
+    },
+    {
+      "book_id": "MAT",
+      "book_name": "Matthew",
+      "chapter": 23,
+      "verse_start": 24,
+      "verse_end": 24,
+      "text": "Ye blind guides, which straine at a gnat, and swallow a camel.",
+      "info": ""
+    },
+    {
+      "book_id": "MAT",
+      "book_name": "Matthew",
+      "chapter": 23,
+      "verse_start": 25,
+      "verse_end": 25,
+      "text": "Woe vnto you Scribes and Pharisees, hypocrites; for yee make cleane the outside of the cup, and of the platter, but within they are full of extortion and excesse.",
+      "info": ""
+    },
+    {
+      "book_id": "MAT",
+      "book_name": "Matthew",
+      "chapter": 23,
+      "verse_start": 26,
+      "verse_end": 26,
+      "text": "Thou blind Pharisee, cleanse first that which is within the cup and platter, that the outside of them may bee cleane also.",
+      "info": ""
+    },
+    {
+      "book_id": "MAT",
+      "book_name": "Matthew",
+      "chapter": 23,
+      "verse_start": 27,
+      "verse_end": 27,
+      "text": "Woe vnto you Scribes and Pharisees, hypocrites, for yee are like vnto whited sepulchres, which indeed appeare beautifull outward, but are within full of dead mens bones, and of all vncleannesse.",
+      "info": ""
+    },
+    {
+      "book_id": "MAT",
+      "book_name": "Matthew",
+      "chapter": 23,
+      "verse_start": 28,
+      "verse_end": 28,
+      "text": "Euen so, yee also outwardly appeare righteous vnto men, but within ye are full of hypocrisie and iniquitie.",
+      "info": ""
+    },
+    {
+      "book_id": "MAT",
+      "book_name": "Matthew",
+      "chapter": 23,
+      "verse_start": 29,
+      "verse_end": 29,
+      "text": "Woe vnto you Scribes and Pharisees, hypocrites, because ye build the tombes of the Prophets, and garnish the sepulchres of the righteous,",
+      "info": ""
+    },
+    {
+      "book_id": "MAT",
+      "book_name": "Matthew",
+      "chapter": 23,
+      "verse_start": 30,
+      "verse_end": 30,
+      "text": "And say, If wee had beene in the dayes of our fathers, wee would not haue bene partakers with them in the blood of the Prophets.",
+      "info": ""
+    },
+    {
+      "book_id": "MAT",
+      "book_name": "Matthew",
+      "chapter": 23,
+      "verse_start": 31,
+      "verse_end": 31,
+      "text": "Wherefore ye bee witnesses vnto your selues, that yee are the children of them which killed the Prophets.",
+      "info": ""
+    },
+    {
+      "book_id": "MAT",
+      "book_name": "Matthew",
+      "chapter": 23,
+      "verse_start": 32,
+      "verse_end": 32,
+      "text": "Fil ye vp then the measure of your fathers.",
+      "info": ""
+    },
+    {
+      "book_id": "MAT",
+      "book_name": "Matthew",
+      "chapter": 23,
+      "verse_start": 33,
+      "verse_end": 33,
+      "text": "Yee serpents, yee generation of vipers, How can yee escape the damnation of hell?",
+      "info": ""
+    },
+    {
+      "book_id": "MAT",
+      "book_name": "Matthew",
+      "chapter": 23,
+      "verse_start": 34,
+      "verse_end": 34,
+      "text": "¶ Wherefore behold, I send vnto you Prophets, and wisemen, and Scribes, and some of them yee shall kill and crucifie, and some of them shall yee scourge in your synagogues, and persecute them from citie to citie:",
+      "info": ""
+    },
+    {
+      "book_id": "MAT",
+      "book_name": "Matthew",
+      "chapter": 23,
+      "verse_start": 35,
+      "verse_end": 35,
+      "text": "That vpon you may come all the righteous blood shed vpon the earth, from the blood of righteous Abel, vnto the blood of Zacharias, sonne of Barachias, whom yee slew betweene the temple and the altar.",
+      "info": ""
+    },
+    {
+      "book_id": "MAT",
+      "book_name": "Matthew",
+      "chapter": 23,
+      "verse_start": 36,
+      "verse_end": 36,
+      "text": "Uerily I say vnto you, All these things shal come vpon this generation.",
+      "info": ""
+    },
+    {
+      "book_id": "MAT",
+      "book_name": "Matthew",
+      "chapter": 23,
+      "verse_start": 37,
+      "verse_end": 37,
+      "text": "O Hierusalem, Hierusalem, thou that killest the Prophets, and stonest them which are sent vnto thee, how often would I haue gathered thy children together, euen as a hen gathereth her chickens vnder her wings, and yee would not?",
+      "info": ""
+    },
+    {
+      "book_id": "MAT",
+      "book_name": "Matthew",
+      "chapter": 23,
+      "verse_start": 38,
+      "verse_end": 38,
+      "text": "Behold, your house is left vnto you desolate.",
+      "info": ""
+    },
+    {
+      "book_id": "MAT",
+      "book_name": "Matthew",
+      "chapter": 23,
+      "verse_start": 39,
+      "verse_end": 39,
+      "text": "For I say vnto you, yee shall not see me henceforth, till ye shall say, Blessed is he that commeth in the Name of the Lord.",
+      "info": ""
+    }
+  ]
+}

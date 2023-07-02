@@ -1,0 +1,79 @@
+{
+  "header": "¶ <em>A Psalme of Dauid.",
+  "footer": "",
+  "language": "English",
+  "verses": [
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 101,
+      "verse_start": 1,
+      "verse_end": 1,
+      "text": "I will sing of Mercie and Iudgement: vnto thee, O Lord, wil I sing.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 101,
+      "verse_start": 2,
+      "verse_end": 2,
+      "text": "I will behaue my selfe wisely in a perfect way, O when wilt thou come vnto me? I will walke within my house with a perfect heart.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 101,
+      "verse_start": 3,
+      "verse_end": 3,
+      "text": "I will set no wicked thing before mine eyes: I hate the worke of them that turne aside, it shal not cleaue to me.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 101,
+      "verse_start": 4,
+      "verse_end": 4,
+      "text": "A froward heart shall depart from me, I will not knowe a wicked person.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 101,
+      "verse_start": 5,
+      "verse_end": 5,
+      "text": "Whoso priuily slandereth his neighbour, him will I cut off: him that hath an high looke, and a proud heart, will not I suffer.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 101,
+      "verse_start": 6,
+      "verse_end": 6,
+      "text": "Mine eyes shall be vpon the faithfull of the land, that they may dwell with me: he that walketh in a perfect way, he shall serue me.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 101,
+      "verse_start": 7,
+      "verse_end": 7,
+      "text": "He that worketh deceit, shall not dwell within my house: he that telleth lies shall not tarie in my sight.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 101,
+      "verse_start": 8,
+      "verse_end": 8,
+      "text": "I will earely destroy all the wicked of the land: that I may cut off all wicked doers from the citie of the Lord.",
+      "info": ""
+    }
+  ]
+}

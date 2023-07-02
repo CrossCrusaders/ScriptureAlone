@@ -1,0 +1,727 @@
+{
+  "header": "¶ Maschil of Asaph.",
+  "footer": "",
+  "language": "English",
+  "verses": [
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 78,
+      "verse_start": 1,
+      "verse_end": 1,
+      "text": "Give ear, O my people, <em>to</em> my law: incline your ears to the words of my mouth.",
+      "info": "",
+      "language": "English"
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 78,
+      "verse_start": 2,
+      "verse_end": 2,
+      "text": "I will open my mouth in a parable: I will utter dark sayings of old:",
+      "info": "",
+      "language": "English"
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 78,
+      "verse_start": 3,
+      "verse_end": 3,
+      "text": "Which we have heard and known, and our fathers have told us.",
+      "info": "",
+      "language": "English"
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 78,
+      "verse_start": 4,
+      "verse_end": 4,
+      "text": "We will not hide <em>them</em> from their children, shewing to the generation to come the praises of the LORD, and his strength, and his wonderful works that he hath done.",
+      "info": "",
+      "language": "English"
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 78,
+      "verse_start": 5,
+      "verse_end": 5,
+      "text": "For he established a testimony in Jacob, and appointed a law in Israel, which he commanded our fathers, that they should make them known to their children:",
+      "info": "",
+      "language": "English"
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 78,
+      "verse_start": 6,
+      "verse_end": 6,
+      "text": "That the generation to come might know <em>them, even</em> the children <em>which</em> should be born; <em>who</em> should arise and declare <em>them</em> to their children:",
+      "info": "",
+      "language": "English"
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 78,
+      "verse_start": 7,
+      "verse_end": 7,
+      "text": "That they might set their hope in God, and not forget the works of God, but keep his commandments:",
+      "info": "",
+      "language": "English"
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 78,
+      "verse_start": 8,
+      "verse_end": 8,
+      "text": "And might not be as their fathers, a stubborn and rebellious generation; a generation <em>that</em> set not their heart aright, and whose spirit was not stedfast with God.",
+      "info": "",
+      "language": "English"
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 78,
+      "verse_start": 9,
+      "verse_end": 9,
+      "text": "The children of Ephraim, <em>being</em> armed, <em>and</em> carrying bows, turned back in the day of battle.",
+      "info": "",
+      "language": "English"
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 78,
+      "verse_start": 10,
+      "verse_end": 10,
+      "text": "They kept not the covenant of God, and refused to walk in his law;",
+      "info": "",
+      "language": "English"
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 78,
+      "verse_start": 11,
+      "verse_end": 11,
+      "text": "And forgat his works, and his wonders that he had shewed them.",
+      "info": "",
+      "language": "English"
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 78,
+      "verse_start": 12,
+      "verse_end": 12,
+      "text": "Marvellous things did he in the sight of their fathers, in the land of Egypt, <em>in</em> the field of Zoan.",
+      "info": "",
+      "language": "English"
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 78,
+      "verse_start": 13,
+      "verse_end": 13,
+      "text": "He divided the sea, and caused them to pass through; and he made the waters to stand as an heap.",
+      "info": "",
+      "language": "English"
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 78,
+      "verse_start": 14,
+      "verse_end": 14,
+      "text": "In the daytime also he led them with a cloud, and all the night with a light of fire.",
+      "info": "",
+      "language": "English"
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 78,
+      "verse_start": 15,
+      "verse_end": 15,
+      "text": "He clave the rocks in the wilderness, and gave <em>them</em> drink as <em>out of</em> the great depths.",
+      "info": "",
+      "language": "English"
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 78,
+      "verse_start": 16,
+      "verse_end": 16,
+      "text": "He brought streams also out of the rock, and caused waters to run down like rivers.",
+      "info": "",
+      "language": "English"
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 78,
+      "verse_start": 17,
+      "verse_end": 17,
+      "text": "And they sinned yet more against him by provoking the most High in the wilderness.",
+      "info": "",
+      "language": "English"
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 78,
+      "verse_start": 18,
+      "verse_end": 18,
+      "text": "And they tempted God in their heart by asking meat for their lust.",
+      "info": "",
+      "language": "English"
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 78,
+      "verse_start": 19,
+      "verse_end": 19,
+      "text": "Yea, they spake against God; they said, Can God furnish a table in the wilderness?",
+      "info": "",
+      "language": "English"
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 78,
+      "verse_start": 20,
+      "verse_end": 20,
+      "text": "Behold, he smote the rock, that the waters gushed out, and the streams overflowed; can he give bread also? can he provide flesh for his people?",
+      "info": "",
+      "language": "English"
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 78,
+      "verse_start": 21,
+      "verse_end": 21,
+      "text": "Therefore the LORD heard <em>this,</em> and was wroth: so a fire was kindled against Jacob, and anger also came up against Israel;",
+      "info": "",
+      "language": "English"
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 78,
+      "verse_start": 22,
+      "verse_end": 22,
+      "text": "Because they believed not in God, and trusted not in his salvation:",
+      "info": "",
+      "language": "English"
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 78,
+      "verse_start": 23,
+      "verse_end": 23,
+      "text": "Though he had commanded the clouds from above, and opened the doors of heaven,",
+      "info": "",
+      "language": "English"
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 78,
+      "verse_start": 24,
+      "verse_end": 24,
+      "text": "And had rained down manna upon them to eat, and had given them of the corn of heaven.",
+      "info": "",
+      "language": "English"
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 78,
+      "verse_start": 25,
+      "verse_end": 25,
+      "text": "Man did eat angels' food: he sent them meat to the full.",
+      "info": "",
+      "language": "English"
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 78,
+      "verse_start": 26,
+      "verse_end": 26,
+      "text": "He caused an east wind to blow in the heaven: and by his power he brought in the south wind.",
+      "info": "",
+      "language": "English"
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 78,
+      "verse_start": 27,
+      "verse_end": 27,
+      "text": "He rained flesh also upon them as dust, and feathered fowls like as the sand of the sea:",
+      "info": "",
+      "language": "English"
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 78,
+      "verse_start": 28,
+      "verse_end": 28,
+      "text": "And he let <em>it</em> fall in the midst of their camp, round about their habitations.",
+      "info": "",
+      "language": "English"
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 78,
+      "verse_start": 29,
+      "verse_end": 29,
+      "text": "So they did eat, and were well filled: for he gave them their own desire;",
+      "info": "",
+      "language": "English"
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 78,
+      "verse_start": 30,
+      "verse_end": 30,
+      "text": "They were not estranged from their lust. But while their meat <em>was</em> yet in their mouths,",
+      "info": "",
+      "language": "English"
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 78,
+      "verse_start": 31,
+      "verse_end": 31,
+      "text": "The wrath of God came upon them, and slew the fattest of them, and smote down the chosen <em>men</em> of Israel.",
+      "info": "",
+      "language": "English"
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 78,
+      "verse_start": 32,
+      "verse_end": 32,
+      "text": "For all this they sinned still, and believed not for his wondrous works.",
+      "info": "",
+      "language": "English"
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 78,
+      "verse_start": 33,
+      "verse_end": 33,
+      "text": "Therefore their days did he consume in vanity, and their years in trouble.",
+      "info": "",
+      "language": "English"
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 78,
+      "verse_start": 34,
+      "verse_end": 34,
+      "text": "When he slew them, then they sought him: and they returned and enquired early after God.",
+      "info": "",
+      "language": "English"
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 78,
+      "verse_start": 35,
+      "verse_end": 35,
+      "text": "And they remembered that God <em>was</em> their rock, and the high God their redeemer.",
+      "info": "",
+      "language": "English"
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 78,
+      "verse_start": 36,
+      "verse_end": 36,
+      "text": "Nevertheless they did flatter him with their mouth, and they lied unto him with their tongues.",
+      "info": "",
+      "language": "English"
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 78,
+      "verse_start": 37,
+      "verse_end": 37,
+      "text": "For their heart was not right with him, neither were they stedfast in his covenant.",
+      "info": "",
+      "language": "English"
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 78,
+      "verse_start": 38,
+      "verse_end": 38,
+      "text": "But he, <em>being</em> full of compassion, forgave <em>their</em> iniquity, and destroyed <em>them</em> not: yea, many a time turned he his anger away, and did not stir up all his wrath.",
+      "info": "",
+      "language": "English"
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 78,
+      "verse_start": 39,
+      "verse_end": 39,
+      "text": "For he remembered that they <em>were but</em> flesh; a wind that passeth away, and cometh not again.",
+      "info": "",
+      "language": "English"
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 78,
+      "verse_start": 40,
+      "verse_end": 40,
+      "text": "How oft did they provoke him in the wilderness, <em>and</em> grieve him in the desert!",
+      "info": "",
+      "language": "English"
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 78,
+      "verse_start": 41,
+      "verse_end": 41,
+      "text": "Yea, they turned back and tempted God, and limited the Holy One of Israel.",
+      "info": "",
+      "language": "English"
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 78,
+      "verse_start": 42,
+      "verse_end": 42,
+      "text": "They remembered not his hand, <em>nor</em> the day when he delivered them from the enemy.",
+      "info": "",
+      "language": "English"
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 78,
+      "verse_start": 43,
+      "verse_end": 43,
+      "text": "How he had wrought his signs in Egypt, and his wonders in the field of Zoan:",
+      "info": "",
+      "language": "English"
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 78,
+      "verse_start": 44,
+      "verse_end": 44,
+      "text": "And had turned their rivers into blood; and their floods, that they could not drink.",
+      "info": "",
+      "language": "English"
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 78,
+      "verse_start": 45,
+      "verse_end": 45,
+      "text": "He sent divers sorts of flies among them, which devoured them; and frogs, which destroyed them.",
+      "info": "",
+      "language": "English"
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 78,
+      "verse_start": 46,
+      "verse_end": 46,
+      "text": "He gave also their increase unto the caterpiller, and their labour unto the locust.",
+      "info": "",
+      "language": "English"
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 78,
+      "verse_start": 47,
+      "verse_end": 47,
+      "text": "He destroyed their vines with hail, and their sycomore trees with frost.",
+      "info": "",
+      "language": "English"
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 78,
+      "verse_start": 48,
+      "verse_end": 48,
+      "text": "He gave up their cattle also to the hail, and their flocks to hot thunderbolts.",
+      "info": "",
+      "language": "English"
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 78,
+      "verse_start": 49,
+      "verse_end": 49,
+      "text": "He cast upon them the fierceness of his anger, wrath, and indignation, and trouble, by sending evil angels <em>among them.</em>",
+      "info": "",
+      "language": "English"
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 78,
+      "verse_start": 50,
+      "verse_end": 50,
+      "text": "He made a way to his anger; he spared not their soul from death, but gave their life over to the pestilence;",
+      "info": "",
+      "language": "English"
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 78,
+      "verse_start": 51,
+      "verse_end": 51,
+      "text": "And smote all the firstborn in Egypt; the chief of <em>their</em> strength in the tabernacles of Ham:",
+      "info": "",
+      "language": "English"
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 78,
+      "verse_start": 52,
+      "verse_end": 52,
+      "text": "But made his own people to go forth like sheep, and guided them in the wilderness like a flock.",
+      "info": "",
+      "language": "English"
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 78,
+      "verse_start": 53,
+      "verse_end": 53,
+      "text": "And he led them on safely, so that they feared not: but the sea overwhelmed their enemies.",
+      "info": "",
+      "language": "English"
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 78,
+      "verse_start": 54,
+      "verse_end": 54,
+      "text": "And he brought them to the border of his sanctuary, <em>even to</em> this mountain, <em>which</em> his right hand had purchased.",
+      "info": "",
+      "language": "English"
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 78,
+      "verse_start": 55,
+      "verse_end": 55,
+      "text": "He cast out the heathen also before them, and divided them an inheritance by line, and made the tribes of Israel to dwell in their tents.",
+      "info": "",
+      "language": "English"
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 78,
+      "verse_start": 56,
+      "verse_end": 56,
+      "text": "Yet they tempted and provoked the most high God, and kept not his testimonies:",
+      "info": "",
+      "language": "English"
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 78,
+      "verse_start": 57,
+      "verse_end": 57,
+      "text": "But turned back, and dealt unfaithfully like their fathers: they were turned aside like a deceitful bow.",
+      "info": "",
+      "language": "English"
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 78,
+      "verse_start": 58,
+      "verse_end": 58,
+      "text": "For they provoked him to anger with their high places, and moved him to jealousy with their graven images.",
+      "info": "",
+      "language": "English"
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 78,
+      "verse_start": 59,
+      "verse_end": 59,
+      "text": "When God heard <em>this,</em> he was wroth, and greatly abhorred Israel:",
+      "info": "",
+      "language": "English"
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 78,
+      "verse_start": 60,
+      "verse_end": 60,
+      "text": "So that he forsook the tabernacle of Shiloh, the tent <em>which</em> he placed among men;",
+      "info": "",
+      "language": "English"
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 78,
+      "verse_start": 61,
+      "verse_end": 61,
+      "text": "And delivered his strength into captivity, and his glory into the enemy's hand.",
+      "info": "",
+      "language": "English"
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 78,
+      "verse_start": 62,
+      "verse_end": 62,
+      "text": "He gave his people over also unto the sword; and was wroth with his inheritance.",
+      "info": "",
+      "language": "English"
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 78,
+      "verse_start": 63,
+      "verse_end": 63,
+      "text": "The fire consumed their young men; and their maidens were not given to marriage.",
+      "info": "",
+      "language": "English"
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 78,
+      "verse_start": 64,
+      "verse_end": 64,
+      "text": "Their priests fell by the sword; and their widows made no lamentation.",
+      "info": "",
+      "language": "English"
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 78,
+      "verse_start": 65,
+      "verse_end": 65,
+      "text": "Then the Lord awaked as one out of sleep, <em>and</em> like a mighty man that shouteth by reason of wine.",
+      "info": "",
+      "language": "English"
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 78,
+      "verse_start": 66,
+      "verse_end": 66,
+      "text": "And he smote his enemies in the hinder parts: he put them to a perpetual reproach.",
+      "info": "",
+      "language": "English"
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 78,
+      "verse_start": 67,
+      "verse_end": 67,
+      "text": "Moreover he refused the tabernacle of Joseph, and chose not the tribe of Ephraim:",
+      "info": "",
+      "language": "English"
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 78,
+      "verse_start": 68,
+      "verse_end": 68,
+      "text": "But chose the tribe of Judah, the mount Zion which he loved.",
+      "info": "",
+      "language": "English"
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 78,
+      "verse_start": 69,
+      "verse_end": 69,
+      "text": "And he built his sanctuary like high <em>palaces,</em> like the earth which he hath established for ever.",
+      "info": "",
+      "language": "English"
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 78,
+      "verse_start": 70,
+      "verse_end": 70,
+      "text": "He chose David also his servant, and took him from the sheepfolds:",
+      "info": "",
+      "language": "English"
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 78,
+      "verse_start": 71,
+      "verse_end": 71,
+      "text": "From following the ewes great with young he brought him to feed Jacob his people, and Israel his inheritance.",
+      "info": "",
+      "language": "English"
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 78,
+      "verse_start": 72,
+      "verse_end": 72,
+      "text": "So he fed them according to the integrity of his heart; and guided them by the skilfulness of his hands.",
+      "info": "",
+      "language": "English"
+    }
+  ]
+}

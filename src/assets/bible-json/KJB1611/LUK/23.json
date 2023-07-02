@@ -1,0 +1,511 @@
+{
+  "header": "",
+  "footer": "",
+  "language": "English",
+  "verses": [
+    {
+      "book_id": "LUK",
+      "book_name": "Luke",
+      "chapter": 23,
+      "verse_start": 1,
+      "verse_end": 1,
+      "text": "And the whole multitude of them arose, and led him vnto Pilate.",
+      "info": ""
+    },
+    {
+      "book_id": "LUK",
+      "book_name": "Luke",
+      "chapter": 23,
+      "verse_start": 2,
+      "verse_end": 2,
+      "text": "And they began to accuse him, saying, We found this fellow peruerting the nation, and forbidding to giue tribute to Cesar, saying, that he himselfe is Christ a king.",
+      "info": ""
+    },
+    {
+      "book_id": "LUK",
+      "book_name": "Luke",
+      "chapter": 23,
+      "verse_start": 3,
+      "verse_end": 3,
+      "text": "And Pilate asked him, saying, Art thou the king of the Iewes? And he answered him, &amp; said, Thou sayest it.",
+      "info": ""
+    },
+    {
+      "book_id": "LUK",
+      "book_name": "Luke",
+      "chapter": 23,
+      "verse_start": 4,
+      "verse_end": 4,
+      "text": "Then saide Pilate to the chiefe Priests, and to the people, I finde no fault in this man.",
+      "info": ""
+    },
+    {
+      "book_id": "LUK",
+      "book_name": "Luke",
+      "chapter": 23,
+      "verse_start": 5,
+      "verse_end": 5,
+      "text": "And they were the more fierce, saying, He stirreth vp the people, teaching thorowout all Iurie, beginning from Galilee to this place.",
+      "info": ""
+    },
+    {
+      "book_id": "LUK",
+      "book_name": "Luke",
+      "chapter": 23,
+      "verse_start": 6,
+      "verse_end": 6,
+      "text": "When Pilate heard of Galilee, he asked whether the man were a Galilean.",
+      "info": ""
+    },
+    {
+      "book_id": "LUK",
+      "book_name": "Luke",
+      "chapter": 23,
+      "verse_start": 7,
+      "verse_end": 7,
+      "text": "And assoone as he knew that hee belonged vnto Herods iurisdiction, hee sent him to Herode, who himselfe also was at Hierusalem at that time.",
+      "info": ""
+    },
+    {
+      "book_id": "LUK",
+      "book_name": "Luke",
+      "chapter": 23,
+      "verse_start": 8,
+      "verse_end": 8,
+      "text": "¶ And when Herode saw Iesus, he was exceeding glad, for hee was desirous to see him of a long season, because he had heard many things of him, and hee hoped to haue seene some miracle done by him.",
+      "info": ""
+    },
+    {
+      "book_id": "LUK",
+      "book_name": "Luke",
+      "chapter": 23,
+      "verse_start": 9,
+      "verse_end": 9,
+      "text": "Then he questioned with him in many words, but he answered him nothing.",
+      "info": ""
+    },
+    {
+      "book_id": "LUK",
+      "book_name": "Luke",
+      "chapter": 23,
+      "verse_start": 10,
+      "verse_end": 10,
+      "text": "And the chiefe Priests and Scribes stood, and vehemently accused him.",
+      "info": ""
+    },
+    {
+      "book_id": "LUK",
+      "book_name": "Luke",
+      "chapter": 23,
+      "verse_start": 11,
+      "verse_end": 11,
+      "text": "And Herod with his men of warre set him at naught, and mocked him, and arayed him in a gorgeous robe, and sent him againe to Pilate.",
+      "info": ""
+    },
+    {
+      "book_id": "LUK",
+      "book_name": "Luke",
+      "chapter": 23,
+      "verse_start": 12,
+      "verse_end": 12,
+      "text": "¶ And the same day Pilate and Herod were made friends together; for before, they were at enmitie betweene themselues.",
+      "info": ""
+    },
+    {
+      "book_id": "LUK",
+      "book_name": "Luke",
+      "chapter": 23,
+      "verse_start": 13,
+      "verse_end": 13,
+      "text": "¶ And Pilate, when hee had called together the chiefe Priests, and the rulers, and the people,",
+      "info": ""
+    },
+    {
+      "book_id": "LUK",
+      "book_name": "Luke",
+      "chapter": 23,
+      "verse_start": 14,
+      "verse_end": 14,
+      "text": "Said vnto them, Ye haue brought this man vnto me, as one that peruerteth the people, and behold, I hauing examined him before you, haue found no fault in this man, touching those things whereof ye accuse him.",
+      "info": ""
+    },
+    {
+      "book_id": "LUK",
+      "book_name": "Luke",
+      "chapter": 23,
+      "verse_start": 15,
+      "verse_end": 15,
+      "text": "No, nor yet Herod: for I sent you to him, and loe, nothing worthy of death is done vnto him.",
+      "info": ""
+    },
+    {
+      "book_id": "LUK",
+      "book_name": "Luke",
+      "chapter": 23,
+      "verse_start": 16,
+      "verse_end": 16,
+      "text": "I will therefore chastise him, and release him.",
+      "info": ""
+    },
+    {
+      "book_id": "LUK",
+      "book_name": "Luke",
+      "chapter": 23,
+      "verse_start": 17,
+      "verse_end": 17,
+      "text": "For of necessitie hee must release one vnto them at the Feast.",
+      "info": ""
+    },
+    {
+      "book_id": "LUK",
+      "book_name": "Luke",
+      "chapter": 23,
+      "verse_start": 18,
+      "verse_end": 18,
+      "text": "And they cried out all at once, saying, Away with this man, and release vnto vs Barabbas,",
+      "info": ""
+    },
+    {
+      "book_id": "LUK",
+      "book_name": "Luke",
+      "chapter": 23,
+      "verse_start": 19,
+      "verse_end": 19,
+      "text": "Who for a certaine sedition made in the citie, and for murder, was cast in prison.",
+      "info": ""
+    },
+    {
+      "book_id": "LUK",
+      "book_name": "Luke",
+      "chapter": 23,
+      "verse_start": 20,
+      "verse_end": 20,
+      "text": "Pilate therefore willing to release Iesus, spake againe to them:",
+      "info": ""
+    },
+    {
+      "book_id": "LUK",
+      "book_name": "Luke",
+      "chapter": 23,
+      "verse_start": 21,
+      "verse_end": 21,
+      "text": "But they cried, saying, Crucifie him, crucifie him.",
+      "info": ""
+    },
+    {
+      "book_id": "LUK",
+      "book_name": "Luke",
+      "chapter": 23,
+      "verse_start": 22,
+      "verse_end": 22,
+      "text": "And hee said vnto them the third time, Why, what euill hath he done? I haue found no cause of death in him, I will therefore chastise him, &amp; let him goe.",
+      "info": ""
+    },
+    {
+      "book_id": "LUK",
+      "book_name": "Luke",
+      "chapter": 23,
+      "verse_start": 23,
+      "verse_end": 23,
+      "text": "And they were instant with loud voyces, requiring that he might be crucified: and the voyces of them, and of the chiefe Priests preuailed.",
+      "info": ""
+    },
+    {
+      "book_id": "LUK",
+      "book_name": "Luke",
+      "chapter": 23,
+      "verse_start": 24,
+      "verse_end": 24,
+      "text": "And Pilate gaue sentence that it should be as they required.",
+      "info": ""
+    },
+    {
+      "book_id": "LUK",
+      "book_name": "Luke",
+      "chapter": 23,
+      "verse_start": 25,
+      "verse_end": 25,
+      "text": "And he released vnto them, him that for sedition and murder was cast into prison, whom they had desired, but he deliuered Iesus to their will.",
+      "info": ""
+    },
+    {
+      "book_id": "LUK",
+      "book_name": "Luke",
+      "chapter": 23,
+      "verse_start": 26,
+      "verse_end": 26,
+      "text": "And as they led him away, they laid hold vpon one Simon a Cyrenian, comming out of the countrey, and on him they laid the crosse, that hee might beare it after Iesus.",
+      "info": ""
+    },
+    {
+      "book_id": "LUK",
+      "book_name": "Luke",
+      "chapter": 23,
+      "verse_start": 27,
+      "verse_end": 27,
+      "text": "¶ And there followed him a great company of people, and of women, which also bewailed &amp; lamented him.",
+      "info": ""
+    },
+    {
+      "book_id": "LUK",
+      "book_name": "Luke",
+      "chapter": 23,
+      "verse_start": 28,
+      "verse_end": 28,
+      "text": "But Iesus turning vnto them, said, Daughters of Hierusalem, weepe not for me, but weepe for your selues, and for your children.",
+      "info": ""
+    },
+    {
+      "book_id": "LUK",
+      "book_name": "Luke",
+      "chapter": 23,
+      "verse_start": 29,
+      "verse_end": 29,
+      "text": "For beholde, the dayes are comming, in the which they shall say, Blessed are the barren, and the wombs that neuer bare, and the paps which neuer gaue sucke.",
+      "info": ""
+    },
+    {
+      "book_id": "LUK",
+      "book_name": "Luke",
+      "chapter": 23,
+      "verse_start": 30,
+      "verse_end": 30,
+      "text": "Then shall they begin to say to the mountaines, Fall on vs, and to the hils, Couer vs.",
+      "info": ""
+    },
+    {
+      "book_id": "LUK",
+      "book_name": "Luke",
+      "chapter": 23,
+      "verse_start": 31,
+      "verse_end": 31,
+      "text": "For if they doe these things in a green tree, what shalbe done in the drie?",
+      "info": ""
+    },
+    {
+      "book_id": "LUK",
+      "book_name": "Luke",
+      "chapter": 23,
+      "verse_start": 32,
+      "verse_end": 32,
+      "text": "And there were also two other malefactors led with him, to bee put to death.",
+      "info": ""
+    },
+    {
+      "book_id": "LUK",
+      "book_name": "Luke",
+      "chapter": 23,
+      "verse_start": 33,
+      "verse_end": 33,
+      "text": "And when they were come to the place which is called Caluarie, there they crucified him, and the malefactors, one on the right hand, and the other on the left.",
+      "info": ""
+    },
+    {
+      "book_id": "LUK",
+      "book_name": "Luke",
+      "chapter": 23,
+      "verse_start": 34,
+      "verse_end": 34,
+      "text": "¶ Then said Iesus, Father, forgiue them, for they know not what they doe: And they parted his raiment, and cast lots.",
+      "info": ""
+    },
+    {
+      "book_id": "LUK",
+      "book_name": "Luke",
+      "chapter": 23,
+      "verse_start": 35,
+      "verse_end": 35,
+      "text": "And the people stood beholding, &amp; the rulers also with them derided him, saying, Hee saued others, let him saue himselfe, if he be Christ, þ<sup>e</sup> chosen of God.",
+      "info": ""
+    },
+    {
+      "book_id": "LUK",
+      "book_name": "Luke",
+      "chapter": 23,
+      "verse_start": 36,
+      "verse_end": 36,
+      "text": "And the souldiers also mocked him, comming to him, and offering him vineger,",
+      "info": ""
+    },
+    {
+      "book_id": "LUK",
+      "book_name": "Luke",
+      "chapter": 23,
+      "verse_start": 37,
+      "verse_end": 37,
+      "text": "And saying, If thou be the king of the Iewes, saue thy selfe.",
+      "info": ""
+    },
+    {
+      "book_id": "LUK",
+      "book_name": "Luke",
+      "chapter": 23,
+      "verse_start": 38,
+      "verse_end": 38,
+      "text": "And a superscription also was written ouer him in letters of Greeke, and Latin, &amp; Hebrew, THIS IS THE KING OF THE IEWES.",
+      "info": ""
+    },
+    {
+      "book_id": "LUK",
+      "book_name": "Luke",
+      "chapter": 23,
+      "verse_start": 39,
+      "verse_end": 39,
+      "text": "¶ And one of þ<sup>e</sup> malefactors, which were hanged, railed on him, saying, If thou be Christ, saue thy selfe and vs.",
+      "info": ""
+    },
+    {
+      "book_id": "LUK",
+      "book_name": "Luke",
+      "chapter": 23,
+      "verse_start": 40,
+      "verse_end": 40,
+      "text": "But the other answering, rebuked him, saying, Doest not thou feare God, seeing thou art in the same condemnation?",
+      "info": ""
+    },
+    {
+      "book_id": "LUK",
+      "book_name": "Luke",
+      "chapter": 23,
+      "verse_start": 41,
+      "verse_end": 41,
+      "text": "And we indeed iustly; for we receiue the due reward of our deeds, but this man hath done nothing amisse.",
+      "info": ""
+    },
+    {
+      "book_id": "LUK",
+      "book_name": "Luke",
+      "chapter": 23,
+      "verse_start": 42,
+      "verse_end": 42,
+      "text": "And he said vnto Iesus, Lord, remember me when thou commest into thy kingdome.",
+      "info": ""
+    },
+    {
+      "book_id": "LUK",
+      "book_name": "Luke",
+      "chapter": 23,
+      "verse_start": 43,
+      "verse_end": 43,
+      "text": "And Iesus said vnto him, Uerily, I say vnto thee, to day shalt thou be with me in Paradise.",
+      "info": ""
+    },
+    {
+      "book_id": "LUK",
+      "book_name": "Luke",
+      "chapter": 23,
+      "verse_start": 44,
+      "verse_end": 44,
+      "text": "And it was about the sixt houre, and there was a darkenesse ouer all the earth, vntill the ninth houre.",
+      "info": ""
+    },
+    {
+      "book_id": "LUK",
+      "book_name": "Luke",
+      "chapter": 23,
+      "verse_start": 45,
+      "verse_end": 45,
+      "text": "And the Sunne was darkened, and the vaile of the temple was rent in the mids.",
+      "info": ""
+    },
+    {
+      "book_id": "LUK",
+      "book_name": "Luke",
+      "chapter": 23,
+      "verse_start": 46,
+      "verse_end": 46,
+      "text": "¶ And when Iesus had cried with a loud voice, he said, Father, into thy hands I commend my spirit: And hauing said thus, he gaue vp the ghost.",
+      "info": ""
+    },
+    {
+      "book_id": "LUK",
+      "book_name": "Luke",
+      "chapter": 23,
+      "verse_start": 47,
+      "verse_end": 47,
+      "text": "Now when the Centurion saw what was done, he glorified God, saying, Certainly this was a righteous man.",
+      "info": ""
+    },
+    {
+      "book_id": "LUK",
+      "book_name": "Luke",
+      "chapter": 23,
+      "verse_start": 48,
+      "verse_end": 48,
+      "text": "And all the people that came together to that sight, beholding the things which were done, smote their breasts, and returned.",
+      "info": ""
+    },
+    {
+      "book_id": "LUK",
+      "book_name": "Luke",
+      "chapter": 23,
+      "verse_start": 49,
+      "verse_end": 49,
+      "text": "And all his acquaintance, and the women that followed him from Galilee, stood a farre off, beholding these things.",
+      "info": ""
+    },
+    {
+      "book_id": "LUK",
+      "book_name": "Luke",
+      "chapter": 23,
+      "verse_start": 50,
+      "verse_end": 50,
+      "text": "¶ And behold, there was a man named Ioseph, a counseller, and hee was a good man, and a iust.",
+      "info": ""
+    },
+    {
+      "book_id": "LUK",
+      "book_name": "Luke",
+      "chapter": 23,
+      "verse_start": 51,
+      "verse_end": 51,
+      "text": "(The same had not consented to the counsell and deede of them) he was of Arimathea, a city of the Iewes (who also himselfe waited for the kingdome of God.)",
+      "info": ""
+    },
+    {
+      "book_id": "LUK",
+      "book_name": "Luke",
+      "chapter": 23,
+      "verse_start": 52,
+      "verse_end": 52,
+      "text": "This man went vnto Pilate, and begged the body of Iesus.",
+      "info": ""
+    },
+    {
+      "book_id": "LUK",
+      "book_name": "Luke",
+      "chapter": 23,
+      "verse_start": 53,
+      "verse_end": 53,
+      "text": "And he tooke it downe, and wrapped it in linnen, and layd it in a Sepulchre that was hewen in stone, wherein neuer man before was layd.",
+      "info": ""
+    },
+    {
+      "book_id": "LUK",
+      "book_name": "Luke",
+      "chapter": 23,
+      "verse_start": 54,
+      "verse_end": 54,
+      "text": "And that day was the Preparation, and the Sabbath drew on.",
+      "info": ""
+    },
+    {
+      "book_id": "LUK",
+      "book_name": "Luke",
+      "chapter": 23,
+      "verse_start": 55,
+      "verse_end": 55,
+      "text": "And the women also which came with him from Galilee, followed after, and beheld the Sepulchre, and how his body was layd.",
+      "info": ""
+    },
+    {
+      "book_id": "LUK",
+      "book_name": "Luke",
+      "chapter": 23,
+      "verse_start": 56,
+      "verse_end": 56,
+      "text": "And they returned, and prepared spices and ointments, and rested the Sabbath day, according to the commandement.",
+      "info": ""
+    }
+  ]
+}

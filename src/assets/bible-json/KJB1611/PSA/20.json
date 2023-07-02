@@ -1,0 +1,88 @@
+{
+  "header": "¶ <em>To the chiefe Musician. A Psalme of Dauid.",
+  "footer": "",
+  "language": "English",
+  "verses": [
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 20,
+      "verse_start": 1,
+      "verse_end": 1,
+      "text": "The Lord heare thee in the day of trouble, the Name of the God of Iacob defend thee.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 20,
+      "verse_start": 2,
+      "verse_end": 2,
+      "text": "Send thee helpe from the Sanctuary: and strengthen thee out of Sion.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 20,
+      "verse_start": 3,
+      "verse_end": 3,
+      "text": "Remember all thy offerings, and accept thy burnt sacrifice. Selah.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 20,
+      "verse_start": 4,
+      "verse_end": 4,
+      "text": "Graunt thee according to thine owne heart, and fulfill all thy counsell.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 20,
+      "verse_start": 5,
+      "verse_end": 5,
+      "text": "We will reioyce in thy saluation, and in the Name of our God we will set vp our banners: the Lord fulfill all thy petitions.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 20,
+      "verse_start": 6,
+      "verse_end": 6,
+      "text": "Now know I, that the Lord saueth his Anointed: he wil heare him from his holy heauen, with the sauing strength of his right hand.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 20,
+      "verse_start": 7,
+      "verse_end": 7,
+      "text": "Some trust in charets, and some in horses: but wee will remember the Name of the Lord our God.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 20,
+      "verse_start": 8,
+      "verse_end": 8,
+      "text": "They are brought downe and fallen: but we are risen, and stand vpright.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 20,
+      "verse_start": 9,
+      "verse_end": 9,
+      "text": "Saue Lord, let the King heare vs when we call.",
+      "info": ""
+    }
+  ]
+}

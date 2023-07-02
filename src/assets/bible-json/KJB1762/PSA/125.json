@@ -1,0 +1,57 @@
+{
+  "header": "¶ A Song of degrees.",
+  "footer": "",
+  "language": "English",
+  "verses": [
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 125,
+      "verse_start": 1,
+      "verse_end": 1,
+      "text": "They that trust in the LORD <em>shall be</em> as mount Zion, <em>which</em> cannot be removed, <em>but</em> abideth for ever.",
+      "info": "",
+      "language": "English"
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 125,
+      "verse_start": 2,
+      "verse_end": 2,
+      "text": "As the mountains <em>are</em> round about Jerusalem, so the LORD <em>is</em> round about his people from henceforth even for ever.",
+      "info": "",
+      "language": "English"
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 125,
+      "verse_start": 3,
+      "verse_end": 3,
+      "text": "For the rod of the wicked shall not rest upon the lot of the righteous; lest the righteous put forth their hands unto iniquity.",
+      "info": "",
+      "language": "English"
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 125,
+      "verse_start": 4,
+      "verse_end": 4,
+      "text": "Do good, O LORD, unto <em>those that be</em> good, and <em>to them that are</em> upright in their hearts.",
+      "info": "",
+      "language": "English"
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 125,
+      "verse_start": 5,
+      "verse_end": 5,
+      "text": "As for such as turn aside unto their crooked ways, the LORD shall lead them forth with the workers of iniquity: <em>but</em> peace <em>shall be</em> upon Israel.",
+      "info": "",
+      "language": "English"
+    }
+  ]
+}

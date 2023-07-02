@@ -1,0 +1,106 @@
+{
+  "header": "¶ <em>A Psalme of Dauid.",
+  "footer": "",
+  "language": "English",
+  "verses": [
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 29,
+      "verse_start": 1,
+      "verse_end": 1,
+      "text": "Giue vnto the Lord (O ye mighty) giue vnto the Lord glory and strength.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 29,
+      "verse_start": 2,
+      "verse_end": 2,
+      "text": "Giue vnto the Lord the glory due vnto his Name; worship the Lord in the beautie of holinesse.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 29,
+      "verse_start": 3,
+      "verse_end": 3,
+      "text": "The voice of the Lord is vpon the waters: the God of glory thundreth, the Lord is vpon many waters.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 29,
+      "verse_start": 4,
+      "verse_end": 4,
+      "text": "The voice of the Lord is powerfull; the voyce of the Lord is full of Maiestie.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 29,
+      "verse_start": 5,
+      "verse_end": 5,
+      "text": "The voyce of the Lord breaketh the Cedars: yea, the Lord breaketh the Cedars of Lebanon.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 29,
+      "verse_start": 6,
+      "verse_end": 6,
+      "text": "He maketh them also to skip like a calfe: Lebanon, and Sirion like a yong Unicorne.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 29,
+      "verse_start": 7,
+      "verse_end": 7,
+      "text": "The voyce of the Lord diuideth the flames of fire.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 29,
+      "verse_start": 8,
+      "verse_end": 8,
+      "text": "The voyce of the Lord shaketh the wildernes: the Lord shaketh the wildernesse of Kadesh.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 29,
+      "verse_start": 9,
+      "verse_end": 9,
+      "text": "The voice of the Lord maketh the hindes to calue, and discouereth the forrests: and in his Temple doeth euery one speake of his glory.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 29,
+      "verse_start": 10,
+      "verse_end": 10,
+      "text": "The Lord sitteth vpon the flood: yea the Lord sitteth King for euer.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 29,
+      "verse_start": 11,
+      "verse_end": 11,
+      "text": "The Lord will giue strength vnto his people; the Lord will blesse his people with peace.",
+      "info": ""
+    }
+  ]
+}

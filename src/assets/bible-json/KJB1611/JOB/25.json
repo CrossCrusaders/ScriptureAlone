@@ -1,0 +1,61 @@
+{
+  "header": "",
+  "footer": "",
+  "language": "English",
+  "verses": [
+    {
+      "book_id": "JOB",
+      "book_name": "Job",
+      "chapter": 25,
+      "verse_start": 1,
+      "verse_end": 1,
+      "text": "Then answered Bildad the Shuhite, and said:",
+      "info": ""
+    },
+    {
+      "book_id": "JOB",
+      "book_name": "Job",
+      "chapter": 25,
+      "verse_start": 2,
+      "verse_end": 2,
+      "text": "Dominion and feare are with him, hee maketh peace in his high places.",
+      "info": ""
+    },
+    {
+      "book_id": "JOB",
+      "book_name": "Job",
+      "chapter": 25,
+      "verse_start": 3,
+      "verse_end": 3,
+      "text": "Is there any number of his armies? and vpon whom doeth not his light arise?",
+      "info": ""
+    },
+    {
+      "book_id": "JOB",
+      "book_name": "Job",
+      "chapter": 25,
+      "verse_start": 4,
+      "verse_end": 4,
+      "text": "How then can man bee iustified with God? or how can he be cleane that is borne of a woman?",
+      "info": ""
+    },
+    {
+      "book_id": "JOB",
+      "book_name": "Job",
+      "chapter": 25,
+      "verse_start": 5,
+      "verse_end": 5,
+      "text": "Behold euen to the moone, and it shineth not, yea the starres are not pure in his sight.",
+      "info": ""
+    },
+    {
+      "book_id": "JOB",
+      "book_name": "Job",
+      "chapter": 25,
+      "verse_start": 6,
+      "verse_end": 6,
+      "text": "How much lesse man, that is a worme: and the sonne of man which is a worme?",
+      "info": ""
+    }
+  ]
+}

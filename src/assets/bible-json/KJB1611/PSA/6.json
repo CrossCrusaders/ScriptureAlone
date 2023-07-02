@@ -1,0 +1,97 @@
+{
+  "header": "¶ <em>To the chiefe musician on Neginoth vpon Sheminith, A Psalme of Dauid.",
+  "footer": "",
+  "language": "English",
+  "verses": [
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 6,
+      "verse_start": 1,
+      "verse_end": 1,
+      "text": "O Lord, rebuke me not in thine anger, neither chasten me in thy hot displeasure.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 6,
+      "verse_start": 2,
+      "verse_end": 2,
+      "text": "Haue mercy vpon me, O Lord, for I am weake: O Lord heale mee, for my bones are vexed.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 6,
+      "verse_start": 3,
+      "verse_end": 3,
+      "text": "My soule is also sore vexed: but thou, O Lord, how long?",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 6,
+      "verse_start": 4,
+      "verse_end": 4,
+      "text": "Returne, O Lord, deliuer my soule: oh saue mee, for thy mercies sake.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 6,
+      "verse_start": 5,
+      "verse_end": 5,
+      "text": "For in death there is no remembrance of thee: in the graue who shall giue thee thankes?",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 6,
+      "verse_start": 6,
+      "verse_end": 6,
+      "text": "I am weary with my groning, all the night make I my bed to swim: I water my couch with my teares.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 6,
+      "verse_start": 7,
+      "verse_end": 7,
+      "text": "Mine eie is consumed because of griefe; it waxeth olde because of all mine enemies.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 6,
+      "verse_start": 8,
+      "verse_end": 8,
+      "text": "Depart from me, all yee workers of iniquitie: for the Lord hath heard the voice of my weeping.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 6,
+      "verse_start": 9,
+      "verse_end": 9,
+      "text": "The Lord hath heard my supplication; the Lord will receiue my prayer.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 6,
+      "verse_start": 10,
+      "verse_end": 10,
+      "text": "Let all mine enemies be ashamed and sore vexed: let them returne and be ashamed suddainly.",
+      "info": ""
+    }
+  ]
+}

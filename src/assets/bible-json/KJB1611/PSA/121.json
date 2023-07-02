@@ -1,0 +1,79 @@
+{
+  "header": "¶ <em>A song of degrees.",
+  "footer": "",
+  "language": "English",
+  "verses": [
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 121,
+      "verse_start": 1,
+      "verse_end": 1,
+      "text": "I will lift vp mine eyes vnto the hilles: from whence commeth my helpe.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 121,
+      "verse_start": 2,
+      "verse_end": 2,
+      "text": "My helpe commeth from the Lord: which made heauen and earth.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 121,
+      "verse_start": 3,
+      "verse_end": 3,
+      "text": "He will not suffer thy foote to bee moued: he that keepeth thee will not slumber.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 121,
+      "verse_start": 4,
+      "verse_end": 4,
+      "text": "Behold, he that keepeth Israel; shall neither slumber nor sleepe.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 121,
+      "verse_start": 5,
+      "verse_end": 5,
+      "text": "The Lord is thy keeper: the Lord is thy shade, vpon thy right hand.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 121,
+      "verse_start": 6,
+      "verse_end": 6,
+      "text": "The sunne shall not smite thee by day; nor the moone by night.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 121,
+      "verse_start": 7,
+      "verse_end": 7,
+      "text": "The Lord shall preserue thee from all euill: hee shall preserue thy soule.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 121,
+      "verse_start": 8,
+      "verse_end": 8,
+      "text": "The Lord shall preserue thy going out, and thy comming in: from this time foorth and euen for euermore.",
+      "info": ""
+    }
+  ]
+}

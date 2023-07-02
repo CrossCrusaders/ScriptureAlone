@@ -1,0 +1,106 @@
+{
+  "header": "¶ <em>A Psalme of Dauid, Maschil.",
+  "footer": "",
+  "language": "English",
+  "verses": [
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 32,
+      "verse_start": 1,
+      "verse_end": 1,
+      "text": "Blessed is he whose transgression is forgiuen, whose sinne is couered.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 32,
+      "verse_start": 2,
+      "verse_end": 2,
+      "text": "Blessed is the man vnto whom the Lord imputeth not iniquitie: and in whose spirit there is no guile.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 32,
+      "verse_start": 3,
+      "verse_end": 3,
+      "text": "When I kept silence, my bones waxed old; through my roaring all the day long.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 32,
+      "verse_start": 4,
+      "verse_end": 4,
+      "text": "For day and night thy hand was heauy vpon me: my moisture is turned into the drought of summer. Selah.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 32,
+      "verse_start": 5,
+      "verse_end": 5,
+      "text": "I acknowledged my sin vnto thee, and mine iniquitie haue I not hid: I said, I will confesse my transgressions vnto the Lord; and thou forgauest the iniquitie of my sinne. Selah.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 32,
+      "verse_start": 6,
+      "verse_end": 6,
+      "text": "For this shall euery one that is godly pray vnto thee, in a time when thou mayest bee found: surely in the floods of great waters, they shall not come nigh vnto him.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 32,
+      "verse_start": 7,
+      "verse_end": 7,
+      "text": "Thou art my hiding place, thou shalt preserue mee from trouble: thou shalt compasse me about with songs of deliuerance. Selah.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 32,
+      "verse_start": 8,
+      "verse_end": 8,
+      "text": "I will instruct thee, and teach thee in the way which thou shalt goe: I will guide thee with mine eye.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 32,
+      "verse_start": 9,
+      "verse_end": 9,
+      "text": "Be yee not as the horse, or as the mule which haue no vnderstanding: whose mouth must be held in with bit and bridle, least they come neere vnto thee.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 32,
+      "verse_start": 10,
+      "verse_end": 10,
+      "text": "Many sorrowes shall be to the wicked: but he that trusteth in the Lord, mercy shall compasse him about.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 32,
+      "verse_start": 11,
+      "verse_end": 11,
+      "text": "Be glad in the Lord, and reioyce yee righteous: and shout for ioy all ye that are vpright in heart.",
+      "info": ""
+    }
+  ]
+}

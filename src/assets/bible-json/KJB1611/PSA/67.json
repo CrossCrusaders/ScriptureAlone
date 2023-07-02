@@ -1,0 +1,70 @@
+{
+  "header": "¶ <em>To the chiefe Musician on Neginoth. A Psalme or song.",
+  "footer": "",
+  "language": "English",
+  "verses": [
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 67,
+      "verse_start": 1,
+      "verse_end": 1,
+      "text": "God be mercifull vnto vs, and blesse vs: and cause his face to shine vpon vs. Selah.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 67,
+      "verse_start": 2,
+      "verse_end": 2,
+      "text": "That thy way may bee knowen vpon earth, thy sauing health among all nations.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 67,
+      "verse_start": 3,
+      "verse_end": 3,
+      "text": "Let the people praise thee, O God; let all the people praise thee.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 67,
+      "verse_start": 4,
+      "verse_end": 4,
+      "text": "O let the nations be glad, and sing for ioy: for thou shalt iudge the people righteously; and gouerne the nations vpon earth. Selah.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 67,
+      "verse_start": 5,
+      "verse_end": 5,
+      "text": "Let the people praise thee, O God, let all the people praise thee.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 67,
+      "verse_start": 6,
+      "verse_end": 6,
+      "text": "Then shall the earth yeeld her increase; and God, euen our owne God, shall blesse vs.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 67,
+      "verse_start": 7,
+      "verse_end": 7,
+      "text": "God shall blesse vs; and all the ends of the earth shall feare him.",
+      "info": ""
+    }
+  ]
+}

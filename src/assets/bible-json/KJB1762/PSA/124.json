@@ -1,0 +1,87 @@
+{
+  "header": "¶ A Song of degrees of David.",
+  "footer": "",
+  "language": "English",
+  "verses": [
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 124,
+      "verse_start": 1,
+      "verse_end": 1,
+      "text": "If <em>it had not been</em> the LORD who was on our side, now may Israel say;",
+      "info": "",
+      "language": "English"
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 124,
+      "verse_start": 2,
+      "verse_end": 2,
+      "text": "If <em>it had not been</em> the LORD who was on our side, when men rose up against us:",
+      "info": "",
+      "language": "English"
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 124,
+      "verse_start": 3,
+      "verse_end": 3,
+      "text": "Then they had swallowed us up quick, when their wrath was kindled against us:",
+      "info": "",
+      "language": "English"
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 124,
+      "verse_start": 4,
+      "verse_end": 4,
+      "text": "Then the waters had overwhelmed us, the stream had gone over our soul:",
+      "info": "",
+      "language": "English"
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 124,
+      "verse_start": 5,
+      "verse_end": 5,
+      "text": "Then the proud waters had gone over our soul.",
+      "info": "",
+      "language": "English"
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 124,
+      "verse_start": 6,
+      "verse_end": 6,
+      "text": "Blessed <em>be</em> the LORD, who hath not given us <em>as</em> a prey to their teeth.",
+      "info": "",
+      "language": "English"
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 124,
+      "verse_start": 7,
+      "verse_end": 7,
+      "text": "Our soul is escaped as a bird out of the snare of the fowlers: the snare is broken, and we are escaped.",
+      "info": "",
+      "language": "English"
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 124,
+      "verse_start": 8,
+      "verse_end": 8,
+      "text": "Our help <em>is</em> in the name of the LORD, who made heaven and earth.",
+      "info": "",
+      "language": "English"
+    }
+  ]
+}

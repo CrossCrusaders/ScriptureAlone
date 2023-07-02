@@ -1,0 +1,655 @@
+{
+  "header": "",
+  "footer": "",
+  "language": "English",
+  "verses": [
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 78,
+      "verse_start": 1,
+      "verse_end": 1,
+      "text": "Giue eare, O my people, to my Lawe: incline your eares to the wordes of my mouth.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 78,
+      "verse_start": 2,
+      "verse_end": 2,
+      "text": "I will open my mouth in a parable: I wil vtter darke sayings of old:",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 78,
+      "verse_start": 3,
+      "verse_end": 3,
+      "text": "Which we haue heard, &amp; knowen: and our fathers haue told vs.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 78,
+      "verse_start": 4,
+      "verse_end": 4,
+      "text": "We will not hide them from their children, shewing to the generation to come, the praises of the Lord: and his strength, and his wonderful works that he hath done.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 78,
+      "verse_start": 5,
+      "verse_end": 5,
+      "text": "For he established a Testimony in Iacob, and appointed a Law in Israel, which he commaunded our fathers: that they should make them knowen to their children.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 78,
+      "verse_start": 6,
+      "verse_end": 6,
+      "text": "That the generation to come might know them, euen the children which should be borne: who should arise and declare them to their children:",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 78,
+      "verse_start": 7,
+      "verse_end": 7,
+      "text": "That they might set their hope in God, and not forget the works of God: but keepe his Commandements,",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 78,
+      "verse_start": 8,
+      "verse_end": 8,
+      "text": "And might not bee as their fathers, a stubborne and rebellious generation, a generation that set not their heart aright: and whose spirit was not stedfast with God.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 78,
+      "verse_start": 9,
+      "verse_end": 9,
+      "text": "The children of Ephraim being armed, and carying bowes, turned backe in the day of battell.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 78,
+      "verse_start": 10,
+      "verse_end": 10,
+      "text": "They kept not the couenant of God: and refused to walke in his Law:",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 78,
+      "verse_start": 11,
+      "verse_end": 11,
+      "text": "And forgat his workes: and his wonders that he had shewed them.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 78,
+      "verse_start": 12,
+      "verse_end": 12,
+      "text": "Marueilous things did he in the sight of their fathers: in the land of Egypt, in the field of Zoan.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 78,
+      "verse_start": 13,
+      "verse_end": 13,
+      "text": "Hee diuided the Sea, and caused them to passe through: and he made the waters to stand as an heape.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 78,
+      "verse_start": 14,
+      "verse_end": 14,
+      "text": "In the day time also he led them with a cloud: and all the night with a light of fire.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 78,
+      "verse_start": 15,
+      "verse_end": 15,
+      "text": "Hee claue the rockes in the wildernes: and gaue them drinke as out of the great depthes.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 78,
+      "verse_start": 16,
+      "verse_end": 16,
+      "text": "Hee brought streames also out of the rocke, and caused waters to runne downe like riuers.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 78,
+      "verse_start": 17,
+      "verse_end": 17,
+      "text": "And they sinned yet more against him: by prouoking the most High in the wildernes.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 78,
+      "verse_start": 18,
+      "verse_end": 18,
+      "text": "And they tempted God in their heart: by asking meat for their lust.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 78,
+      "verse_start": 19,
+      "verse_end": 19,
+      "text": "Yea, they spake against God: they said, Can God furnish a table in the wildernes?",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 78,
+      "verse_start": 20,
+      "verse_end": 20,
+      "text": "Behold, he smote the rocke, that the waters gushed out, &amp; the streames ouerflowed; can he giue bread also? can he prouide flesh for his people?",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 78,
+      "verse_start": 21,
+      "verse_end": 21,
+      "text": "Therefore the Lord heard this, and was wroth, so a fire was kindled against Iacob: and anger also came vp against Israel.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 78,
+      "verse_start": 22,
+      "verse_end": 22,
+      "text": "Because they beleeued not in God: and trusted not in his saluation:",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 78,
+      "verse_start": 23,
+      "verse_end": 23,
+      "text": "Though he had commanded the cloudes from aboue: and opened the doores of heauen:",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 78,
+      "verse_start": 24,
+      "verse_end": 24,
+      "text": "And had rained downe Manna vpon them to eate, and had giuen them of the corne of heauen.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 78,
+      "verse_start": 25,
+      "verse_end": 25,
+      "text": "Man did eate Angels food: hee sent them meat to the full.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 78,
+      "verse_start": 26,
+      "verse_end": 26,
+      "text": "He caused an East wind to blow in the heauen: and by his power hee brought in the South wind.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 78,
+      "verse_start": 27,
+      "verse_end": 27,
+      "text": "He rained flesh also vpon them as dust: and feathered soules like as the sand of the sea.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 78,
+      "verse_start": 28,
+      "verse_end": 28,
+      "text": "And hee let it fall in the midst of their campe, round about their habitations.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 78,
+      "verse_start": 29,
+      "verse_end": 29,
+      "text": "So they did eate, &amp; were well filled: for he gaue them their owne desire.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 78,
+      "verse_start": 30,
+      "verse_end": 30,
+      "text": "They were not estranged from their lust: but while their meate was yet in their mouthes,",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 78,
+      "verse_start": 31,
+      "verse_end": 31,
+      "text": "The wrath of God came vpon them, and slew the fattest of them: and smote downe the chosen men of Israel.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 78,
+      "verse_start": 32,
+      "verse_end": 32,
+      "text": "For all this they sinned still: and beleeued not for his wondrous works.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 78,
+      "verse_start": 33,
+      "verse_end": 33,
+      "text": "Therefore their dayes did he consume in vanitie, and their yeeres in trouble.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 78,
+      "verse_start": 34,
+      "verse_end": 34,
+      "text": "When hee slew them, then they sought him: and they returned, and inquired early after God.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 78,
+      "verse_start": 35,
+      "verse_end": 35,
+      "text": "And they remembred that God was their rocke: and the high God, their redeemer.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 78,
+      "verse_start": 36,
+      "verse_end": 36,
+      "text": "Neuerthelesse they did flatter him with their mouth: and they lyed vnto him with their tongues.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 78,
+      "verse_start": 37,
+      "verse_end": 37,
+      "text": "For their heart was not right with him: neither were they stedfast in his couenant.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 78,
+      "verse_start": 38,
+      "verse_end": 38,
+      "text": "But hee being full of compassion, forgaue their iniquity, and destroyed them not; yea many a time turned he his anger away, and did not stirre vp all his wrath.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 78,
+      "verse_start": 39,
+      "verse_end": 39,
+      "text": "For he remembred that they were but flesh; a wind that passeth away, and commeth not againe.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 78,
+      "verse_start": 40,
+      "verse_end": 40,
+      "text": "How oft did they prouoke him in the wildernesse: and grieue him in the desert?",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 78,
+      "verse_start": 41,
+      "verse_end": 41,
+      "text": "Yea they turned backe and tempted God: and limited the holy one of Israel.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 78,
+      "verse_start": 42,
+      "verse_end": 42,
+      "text": "They remembred not his hand: nor the day when hee deliuered them from the enemie:",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 78,
+      "verse_start": 43,
+      "verse_end": 43,
+      "text": "How he had wrought his signes in Egypt: and his wonders in the field of Zoan:",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 78,
+      "verse_start": 44,
+      "verse_end": 44,
+      "text": "And had turned their riuers into blood: and their flouds, that they could not drinke.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 78,
+      "verse_start": 45,
+      "verse_end": 45,
+      "text": "Hee sent diuers sorts of flies among them, which deuoured them: and frogges which destroyed them.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 78,
+      "verse_start": 46,
+      "verse_end": 46,
+      "text": "He gaue also their increase vnto the caterpiller: and their labour vnto the locust.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 78,
+      "verse_start": 47,
+      "verse_end": 47,
+      "text": "He destroyed their vines with haile: and their Sycomore trees with frost.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 78,
+      "verse_start": 48,
+      "verse_end": 48,
+      "text": "He gaue vp their cattel also to the haile: and their flockes to hot thunder-bolts.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 78,
+      "verse_start": 49,
+      "verse_end": 49,
+      "text": "He cast vpon them the fiercenesse of his anger, wrath and indignation, and trouble: by sending euill angels among them.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 78,
+      "verse_start": 50,
+      "verse_end": 50,
+      "text": "He made a way to his anger, hee spared not their soule from death: but gaue their life ouer to the pestilence.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 78,
+      "verse_start": 51,
+      "verse_end": 51,
+      "text": "And smote all the first borne in Egypt: the chiefe of their strength in the tabernacles of Ham:",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 78,
+      "verse_start": 52,
+      "verse_end": 52,
+      "text": "But made his owne people to goe forth like sheepe: and guided them in the wildernesse like a flocke.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 78,
+      "verse_start": 53,
+      "verse_end": 53,
+      "text": "And he led them on safely, so that they feared not: but the sea ouerwhelmed their enemies.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 78,
+      "verse_start": 54,
+      "verse_end": 54,
+      "text": "And he brought them to the border of his sanctuarie: euen to this mountaine which his right hand had purchased.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 78,
+      "verse_start": 55,
+      "verse_end": 55,
+      "text": "He cast out the heathen also before them, and diuided them an inheritance by line: and made the tribes of Israel to dwell in their tents.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 78,
+      "verse_start": 56,
+      "verse_end": 56,
+      "text": "Yet they tempted and prouoked the most high God: and kept not his testimonies:",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 78,
+      "verse_start": 57,
+      "verse_end": 57,
+      "text": "But turned backe, and dealt vnfaithfully like their fathers: they were turned aside like a deceitfull bowe.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 78,
+      "verse_start": 58,
+      "verse_end": 58,
+      "text": "For they prouoked him to anger with their high places: and moued him to ielousie with their grauen images.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 78,
+      "verse_start": 59,
+      "verse_end": 59,
+      "text": "When God heard this, hee was wroth, and greatly abhorred Israel:",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 78,
+      "verse_start": 60,
+      "verse_end": 60,
+      "text": "So that he forsooke the tabernacle of Shiloh: the tent which he placed among men,",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 78,
+      "verse_start": 61,
+      "verse_end": 61,
+      "text": "And deliuered his strength into captiuitie: and his glory into the enemies hand.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 78,
+      "verse_start": 62,
+      "verse_end": 62,
+      "text": "He gaue his people ouer also vnto the sword: and was wroth with his inheritance.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 78,
+      "verse_start": 63,
+      "verse_end": 63,
+      "text": "The fire consumed their young men: and their maidens were not giuen to mariage.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 78,
+      "verse_start": 64,
+      "verse_end": 64,
+      "text": "Their priests fell by the sword: and their widowes made no lamentation.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 78,
+      "verse_start": 65,
+      "verse_end": 65,
+      "text": "Then the Lord awaked as one out of sleepe: and like a mighty man that shouteth by reason of wine.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 78,
+      "verse_start": 66,
+      "verse_end": 66,
+      "text": "And he smote his enemies in the hinder parts: he put them to a perpetuall reproch.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 78,
+      "verse_start": 67,
+      "verse_end": 67,
+      "text": "Moreouer he refused the tabernacle of Ioseph: and chose not the tribe of Ephraim.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 78,
+      "verse_start": 68,
+      "verse_end": 68,
+      "text": "But chose the tribe of Iudah: the mount Sion which he loued.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 78,
+      "verse_start": 69,
+      "verse_end": 69,
+      "text": "And he built his sanctuarie like high palaces: like the earth which he hath established for euer.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 78,
+      "verse_start": 70,
+      "verse_end": 70,
+      "text": "He chose Dauid also his seruant, and tooke him from the sheepe-folds:",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 78,
+      "verse_start": 71,
+      "verse_end": 71,
+      "text": "From following the ewes great with young, hee brought him to feed Iacob his people, and Israel his inheritance.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 78,
+      "verse_start": 72,
+      "verse_end": 72,
+      "text": "So he fed them according to the integritie of his heart: and guided them by the skilfulnesse of his hands.",
+      "info": ""
+    }
+  ]
+}

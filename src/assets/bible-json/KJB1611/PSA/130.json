@@ -1,0 +1,79 @@
+{
+  "header": "¶ <em>A song of degrees.",
+  "footer": "",
+  "language": "English",
+  "verses": [
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 130,
+      "verse_start": 1,
+      "verse_end": 1,
+      "text": "Out of the depths haue I cryed vnto thee, O Lord.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 130,
+      "verse_start": 2,
+      "verse_end": 2,
+      "text": "Lorde, heare my voice: let thine eares be attentiue to the voice of my supplications.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 130,
+      "verse_start": 3,
+      "verse_end": 3,
+      "text": "If thou, Lord, shouldest marke iniquities: O Lord, who shal stand?",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 130,
+      "verse_start": 4,
+      "verse_end": 4,
+      "text": "But there is forgiuenesse with thee: that thou mayest be feared.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 130,
+      "verse_start": 5,
+      "verse_end": 5,
+      "text": "I wait for the Lord, my soule doeth waite: and in his worde doe I hope.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 130,
+      "verse_start": 6,
+      "verse_end": 6,
+      "text": "My soule waiteth for the Lord, more then they that watch for the morning: I say, more then they that watch for the morning.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 130,
+      "verse_start": 7,
+      "verse_end": 7,
+      "text": "Let Israel hope in the Lord, for with the Lord there is mercy: and with him is plenteous redemption.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 130,
+      "verse_start": 8,
+      "verse_end": 8,
+      "text": "And hee shall redeeme Israel, from all his iniquities.",
+      "info": ""
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "header": "¶ <em>A song of degrees for Solomon.",
+  "footer": "",
+  "language": "English",
+  "verses": [
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 127,
+      "verse_start": 1,
+      "verse_end": 1,
+      "text": "Except the Lord build the house, they labour in vaine that build it: except the Lord keepe the citie, the watchman waketh but in vaine.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 127,
+      "verse_start": 2,
+      "verse_end": 2,
+      "text": "It is vaine for you to rise vp early, to sit vp late, to eate the bread of sorrowes: for so hee giueth his beloued sleepe.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 127,
+      "verse_start": 3,
+      "verse_end": 3,
+      "text": "Loe, children are an heritage of the Lord: and the fruit of the wombe is his reward.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 127,
+      "verse_start": 4,
+      "verse_end": 4,
+      "text": "As arrowes are in the hand of a mightie man: so are children of the youth.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 127,
+      "verse_start": 5,
+      "verse_end": 5,
+      "text": "Happie is the man that hath his quiuer full of them, they shall not be ashamed: but they shall speake with the enemies in the gate.",
+      "info": ""
+    }
+  ]
+}

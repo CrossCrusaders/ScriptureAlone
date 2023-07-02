@@ -1,0 +1,52 @@
+{
+  "header": "",
+  "footer": "",
+  "language": "Hebrew",
+  "verses": [
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 43,
+      "verse_start": 1,
+      "verse_end": 1,
+      "text": "שׁפטני אלהים וריבה ריבי מגוי לא חסיד מאישׁ מרמה ועולה תפלטני׃",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 43,
+      "verse_start": 2,
+      "verse_end": 2,
+      "text": "כי אתה אלהי מעוזי למה זנחתני למה קדר אתהלך בלחץ אויב׃",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 43,
+      "verse_start": 3,
+      "verse_end": 3,
+      "text": "שׁלח אורך ואמתך המה ינחוני יביאוני אל הר קדשׁך ואל משׁכנותיך׃",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 43,
+      "verse_start": 4,
+      "verse_end": 4,
+      "text": "ואבואה אל מזבח אלהים אל אל שׂמחת גילי ואודך בכנור אלהים אלהי׃",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 43,
+      "verse_start": 5,
+      "verse_end": 5,
+      "text": "מה תשׁתוחחי נפשׁי ומה תהמי עלי הוחילי לאלהים כי עוד אודנו ישׁועת פני ואלהי׃",
+      "info": ""
+    }
+  ]
+}

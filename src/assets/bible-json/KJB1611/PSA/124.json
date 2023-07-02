@@ -1,0 +1,79 @@
+{
+  "header": "¶ <em>A song of degrees of Dauid.",
+  "footer": "",
+  "language": "English",
+  "verses": [
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 124,
+      "verse_start": 1,
+      "verse_end": 1,
+      "text": "If it had not bene the Lord who was on our side: nowe may Israel say:",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 124,
+      "verse_start": 2,
+      "verse_end": 2,
+      "text": "If it had not bene the Lord, who was on our side, when men rose vp against vs:",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 124,
+      "verse_start": 3,
+      "verse_end": 3,
+      "text": "Then they had swallowed vs vp quicke: when their wrath was kindled against vs.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 124,
+      "verse_start": 4,
+      "verse_end": 4,
+      "text": "Then the waters had ouerwhelmed vs; the streame had gone ouer our soule.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 124,
+      "verse_start": 5,
+      "verse_end": 5,
+      "text": "Then the proud waters had gone ouer our soule.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 124,
+      "verse_start": 6,
+      "verse_end": 6,
+      "text": "Blessed be the Lord: who hath not giuen vs as a pray to their teeth.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 124,
+      "verse_start": 7,
+      "verse_end": 7,
+      "text": "Our soule is escaped as a bird out of the snare of the foulers; the snare is broken, and we are escaped.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 124,
+      "verse_start": 8,
+      "verse_end": 8,
+      "text": "Our helpe is in the name of the Lord: who made heauen and earth.",
+      "info": ""
+    }
+  ]
+}

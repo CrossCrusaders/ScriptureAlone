@@ -1,0 +1,70 @@
+{
+  "header": "",
+  "footer": "",
+  "language": "Hebrew",
+  "verses": [
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 14,
+      "verse_start": 1,
+      "verse_end": 1,
+      "text": "למנצח לדוד אמר נבל בלבו אין אלהים השׁחיתו התעיבו עלילה אין עשׂה טוב׃",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 14,
+      "verse_start": 2,
+      "verse_end": 2,
+      "text": "יהוה משׁמים השׁקיף על בני אדם לראות הישׁ משׂכיל דרשׁ את אלהים׃",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 14,
+      "verse_start": 3,
+      "verse_end": 3,
+      "text": "הכל סר יחדו נאלחו אין עשׂה טוב אין גם אחד׃",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 14,
+      "verse_start": 4,
+      "verse_end": 4,
+      "text": "הלא ידעו כל פעלי און אכלי עמי אכלו לחם יהוה לא קראו׃",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 14,
+      "verse_start": 5,
+      "verse_end": 5,
+      "text": "שׁם פחדו פחד כי אלהים בדור צדיק׃",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 14,
+      "verse_start": 6,
+      "verse_end": 6,
+      "text": "עצת עני תבישׁו כי יהוה מחסהו׃",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 14,
+      "verse_start": 7,
+      "verse_end": 7,
+      "text": "מי יתן מציון ישׁועת ישׂראל בשׁוב יהוה שׁבות עמו יגל יעקב ישׂמח ישׂראל׃",
+      "info": ""
+    }
+  ]
+}

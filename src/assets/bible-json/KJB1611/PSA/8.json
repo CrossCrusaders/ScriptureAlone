@@ -1,0 +1,88 @@
+{
+  "header": "¶ <em>To the chiefe Musicion vpon Gittith, a Psalme of Dauid.",
+  "footer": "",
+  "language": "English",
+  "verses": [
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 8,
+      "verse_start": 1,
+      "verse_end": 1,
+      "text": "O Lord our Lord, how excellent is thy name in all the earth! who hast set thy glory aboue the heauens.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 8,
+      "verse_start": 2,
+      "verse_end": 2,
+      "text": "Out of the mouth of babes and sucklings hast thou ordained strength, because of thine enemies, that thou mightest still the enemie and the auenger.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 8,
+      "verse_start": 3,
+      "verse_end": 3,
+      "text": "When I consider thy heauens, the worke of thy fingers, the moone and the starres which thou hast ordained;",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 8,
+      "verse_start": 4,
+      "verse_end": 4,
+      "text": "What is man, that thou art mindfull of him? and the sonne of man, that thou visitest him?",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 8,
+      "verse_start": 5,
+      "verse_end": 5,
+      "text": "For thou hast made him a little lower then the Angels; and hast crowned him with glory and honour.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 8,
+      "verse_start": 6,
+      "verse_end": 6,
+      "text": "Thou madest him to haue dominion ouer the workes of thy hands; thou hast put all things vnder his feete.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 8,
+      "verse_start": 7,
+      "verse_end": 7,
+      "text": "All sheepe and oxen, yea and the beasts of the field.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 8,
+      "verse_start": 8,
+      "verse_end": 8,
+      "text": "The foule of the aire, and the fish of the sea, and whatsoeuer passeth through the paths of the seas.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 8,
+      "verse_start": 9,
+      "verse_end": 9,
+      "text": "O Lord our Lord, how excellent is thy name in all the earth!",
+      "info": ""
+    }
+  ]
+}

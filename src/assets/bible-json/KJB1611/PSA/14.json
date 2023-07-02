@@ -1,0 +1,70 @@
+{
+  "header": "¶ <em>To the chiefe musician, A Psalme of Dauid.",
+  "footer": "",
+  "language": "English",
+  "verses": [
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 14,
+      "verse_start": 1,
+      "verse_end": 1,
+      "text": "The foole hath sayd in his heart, There is no God: they are corrupt, they haue done abominable workes, there is none that doeth good.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 14,
+      "verse_start": 2,
+      "verse_end": 2,
+      "text": "The Lord looked downe from heauen vpon the children of men; to see if there were any that did vnderstand and seeke God.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 14,
+      "verse_start": 3,
+      "verse_end": 3,
+      "text": "They are all gone aside, they are all together become filthy: there is none that doeth good, no not one.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 14,
+      "verse_start": 4,
+      "verse_end": 4,
+      "text": "Haue all the workers of iniquity no knowledge? who eate vp my people as they eate bread, and call not vpon the Lord.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 14,
+      "verse_start": 5,
+      "verse_end": 5,
+      "text": "There were they in great feare; for God is in the generation of the righteous.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 14,
+      "verse_start": 6,
+      "verse_end": 6,
+      "text": "You haue shamed the counsell of the poore; because the Lord is his refuge.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 14,
+      "verse_start": 7,
+      "verse_end": 7,
+      "text": "O that the saluation of Israel were come out of Sion! when the Lord bringeth backe the captiuitie of his people, Iacob shall reioyce, and Israel shalbe glad.",
+      "info": ""
+    }
+  ]
+}

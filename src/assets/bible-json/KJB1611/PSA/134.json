@@ -1,0 +1,34 @@
+{
+  "header": "¶ <em>A song of degrees.",
+  "footer": "",
+  "language": "English",
+  "verses": [
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 134,
+      "verse_start": 1,
+      "verse_end": 1,
+      "text": "Beholde, blesse yee the Lord, all yee seruants of the Lord: which by night stand in the house of the Lord.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 134,
+      "verse_start": 2,
+      "verse_end": 2,
+      "text": "Lift vp your hands in the Sanctuary: &amp; blesse the Lord.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 134,
+      "verse_start": 3,
+      "verse_end": 3,
+      "text": "The Lord that made heauen and earth: blesse thee out of Zion.",
+      "info": ""
+    }
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "header": "¶ A Song of degrees.",
+  "footer": "",
+  "language": "English",
+  "verses": [
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 121,
+      "verse_start": 1,
+      "verse_end": 1,
+      "text": "I will lift up mine eyes unto the hills, from whence cometh my help.",
+      "info": "",
+      "language": "English"
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 121,
+      "verse_start": 2,
+      "verse_end": 2,
+      "text": "My help <em>cometh</em> from the LORD, which made heaven and earth.",
+      "info": "",
+      "language": "English"
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 121,
+      "verse_start": 3,
+      "verse_end": 3,
+      "text": "He will not suffer thy foot to be moved: he that keepeth thee will not slumber.",
+      "info": "",
+      "language": "English"
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 121,
+      "verse_start": 4,
+      "verse_end": 4,
+      "text": "Behold, he that keepeth Israel shall neither slumber nor sleep.",
+      "info": "",
+      "language": "English"
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 121,
+      "verse_start": 5,
+      "verse_end": 5,
+      "text": "The LORD <em>is</em> thy keeper: the LORD <em>is</em> thy shade upon thy right hand.",
+      "info": "",
+      "language": "English"
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 121,
+      "verse_start": 6,
+      "verse_end": 6,
+      "text": "The sun shall not smite thee by day, nor the moon by night.",
+      "info": "",
+      "language": "English"
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 121,
+      "verse_start": 7,
+      "verse_end": 7,
+      "text": "The LORD shall preserve thee from all evil: he shall preserve thy soul.",
+      "info": "",
+      "language": "English"
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 121,
+      "verse_start": 8,
+      "verse_end": 8,
+      "text": "The LORD shall preserve thy going out and thy coming in from this time forth, and even for evermore.",
+      "info": "",
+      "language": "English"
+    }
+  ]
+}

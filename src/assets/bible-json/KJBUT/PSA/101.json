@@ -1,0 +1,79 @@
+{
+  "header": "",
+  "footer": "",
+  "language": "Hebrew",
+  "verses": [
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 101,
+      "verse_start": 1,
+      "verse_end": 1,
+      "text": "לדוד מזמור חסד ומשׁפט אשׁירה לך יהוה אזמרה׃",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 101,
+      "verse_start": 2,
+      "verse_end": 2,
+      "text": "אשׂכילה בדרך תמים מתי תבוא אלי אתהלך בתם לבבי בקרב ביתי׃",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 101,
+      "verse_start": 3,
+      "verse_end": 3,
+      "text": "לא אשׁית לנגד עיני דבר בליעל עשׂה סטים שׂנאתי לא ידבק׃",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 101,
+      "verse_start": 4,
+      "verse_end": 4,
+      "text": "לבב עקשׁ יסור ממני רע לא אדע׃",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 101,
+      "verse_start": 5,
+      "verse_end": 5,
+      "text": "מלושׁני בסתר רעהו אותו אצמית גבה עינים ורחב לבב אתו לא אוכל׃",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 101,
+      "verse_start": 6,
+      "verse_end": 6,
+      "text": "עיני בנאמני ארץ לשׁבת עמדי הלך בדרך תמים הוא ישׁרתני׃",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 101,
+      "verse_start": 7,
+      "verse_end": 7,
+      "text": "לא ישׁב בקרב ביתי עשׂה רמיה דבר שׁקרים לא יכון לנגד עיני׃",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 101,
+      "verse_start": 8,
+      "verse_end": 8,
+      "text": "לבקרים אצמית כל רשׁעי ארץ להכרית מעיר יהוה כל פעלי און׃",
+      "info": ""
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "header": "¶ <em>A song of degrees.",
+  "footer": "",
+  "language": "English",
+  "verses": [
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 123,
+      "verse_start": 1,
+      "verse_end": 1,
+      "text": "Vnto thee lift I vp mine eyes: O thou that dwellest in the heauens.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 123,
+      "verse_start": 2,
+      "verse_end": 2,
+      "text": "Beholde, as the eyes of seruants looke vnto the hand of their Masters, and as the eyes of a maiden, vnto the hand of her mistresse: so our eyes waite vpon the Lord our God, vntill that he haue mercy vpon vs.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 123,
+      "verse_start": 3,
+      "verse_end": 3,
+      "text": "Haue mercy vpon vs, O Lord, haue mercy vpon vs: for we are exceedingly filled with contempt.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 123,
+      "verse_start": 4,
+      "verse_end": 4,
+      "text": "Our soule is exceedingly filled with the scorning of those that are at ease: and with the contempt of the proud.",
+      "info": ""
+    }
+  ]
+}

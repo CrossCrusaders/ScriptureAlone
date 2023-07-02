@@ -1,0 +1,427 @@
+{
+  "header": "",
+  "footer": "",
+  "language": "English",
+  "verses": [
+    {
+      "book_id": "MAT",
+      "book_name": "Matthew",
+      "chapter": 10,
+      "verse_start": 1,
+      "verse_end": 1,
+      "text": "And when he had called unto <em>him</em> his twelve disciples, he gave them power <em>against</em> unclean spirits, to cast them out, and to heal all manner of sickness and all manner of disease.",
+      "info": "",
+      "language": "English"
+    },
+    {
+      "book_id": "MAT",
+      "book_name": "Matthew",
+      "chapter": 10,
+      "verse_start": 2,
+      "verse_end": 2,
+      "text": "Now the names of the twelve apostles are these; The first, Simon, who is called Peter, and Andrew his brother; James <em>the son</em> of Zebedee, and John his brother;",
+      "info": "",
+      "language": "English"
+    },
+    {
+      "book_id": "MAT",
+      "book_name": "Matthew",
+      "chapter": 10,
+      "verse_start": 3,
+      "verse_end": 3,
+      "text": "Philip, and Bartholomew; Thomas, and Matthew the publican; James <em>the son</em> of Alphaeus, and Lebbaeus, whose surname was Thaddaeus;",
+      "info": "",
+      "language": "English"
+    },
+    {
+      "book_id": "MAT",
+      "book_name": "Matthew",
+      "chapter": 10,
+      "verse_start": 4,
+      "verse_end": 4,
+      "text": "Simon the Canaanite, and Judas Iscariot, who also betrayed him.",
+      "info": "",
+      "language": "English"
+    },
+    {
+      "book_id": "MAT",
+      "book_name": "Matthew",
+      "chapter": 10,
+      "verse_start": 5,
+      "verse_end": 5,
+      "text": "These twelve Jesus sent forth, and commanded them, saying, \"JESUS_START\" Go not into the way of the Gentiles, and into <em>any</em> city of the Samaritans enter ye not: \"JESUS_END\"",
+      "info": "",
+      "language": "English"
+    },
+    {
+      "book_id": "MAT",
+      "book_name": "Matthew",
+      "chapter": 10,
+      "verse_start": 6,
+      "verse_end": 6,
+      "text": "\"JESUS_START\" But go rather to the lost sheep of the house of Israel. \"JESUS_END\"",
+      "info": "",
+      "language": "English"
+    },
+    {
+      "book_id": "MAT",
+      "book_name": "Matthew",
+      "chapter": 10,
+      "verse_start": 7,
+      "verse_end": 7,
+      "text": "\"JESUS_START\" And as ye go, preach, saying, The kingdom of heaven is at hand. \"JESUS_END\"",
+      "info": "",
+      "language": "English"
+    },
+    {
+      "book_id": "MAT",
+      "book_name": "Matthew",
+      "chapter": 10,
+      "verse_start": 8,
+      "verse_end": 8,
+      "text": "\"JESUS_START\" Heal the sick, cleanse the lepers, raise the dead, cast out devils: freely ye have received, freely give. \"JESUS_END\"",
+      "info": "",
+      "language": "English"
+    },
+    {
+      "book_id": "MAT",
+      "book_name": "Matthew",
+      "chapter": 10,
+      "verse_start": 9,
+      "verse_end": 9,
+      "text": "\"JESUS_START\" Provide neither gold, nor silver, nor brass in your purses, \"JESUS_END\"",
+      "info": "",
+      "language": "English"
+    },
+    {
+      "book_id": "MAT",
+      "book_name": "Matthew",
+      "chapter": 10,
+      "verse_start": 10,
+      "verse_end": 10,
+      "text": "\"JESUS_START\" Nor scrip for <em>your</em> journey, neither two coats, neither shoes, nor yet staves: for the workman is worthy of his meat. \"JESUS_END\"",
+      "info": "",
+      "language": "English"
+    },
+    {
+      "book_id": "MAT",
+      "book_name": "Matthew",
+      "chapter": 10,
+      "verse_start": 11,
+      "verse_end": 11,
+      "text": "\"JESUS_START\" And into whatsoever city or town ye shall enter, enquire who in it is worthy; and there abide till ye go thence. \"JESUS_END\"",
+      "info": "",
+      "language": "English"
+    },
+    {
+      "book_id": "MAT",
+      "book_name": "Matthew",
+      "chapter": 10,
+      "verse_start": 12,
+      "verse_end": 12,
+      "text": "\"JESUS_START\" And when ye come into an house, salute it. \"JESUS_END\"",
+      "info": "",
+      "language": "English"
+    },
+    {
+      "book_id": "MAT",
+      "book_name": "Matthew",
+      "chapter": 10,
+      "verse_start": 13,
+      "verse_end": 13,
+      "text": "\"JESUS_START\" And if the house be worthy, let your peace come upon it: but if it be not worthy, let your peace return to you. \"JESUS_END\"",
+      "info": "",
+      "language": "English"
+    },
+    {
+      "book_id": "MAT",
+      "book_name": "Matthew",
+      "chapter": 10,
+      "verse_start": 14,
+      "verse_end": 14,
+      "text": "\"JESUS_START\" And whosoever shall not receive you, nor hear your words, when ye depart out of that house or city, shake off the dust of your feet. \"JESUS_END\"",
+      "info": "",
+      "language": "English"
+    },
+    {
+      "book_id": "MAT",
+      "book_name": "Matthew",
+      "chapter": 10,
+      "verse_start": 15,
+      "verse_end": 15,
+      "text": "\"JESUS_START\" Verily I say unto you, It shall be more tolerable for the land of Sodom and Gomorrha in the day of judgment, than for that city. \"JESUS_END\"",
+      "info": "",
+      "language": "English"
+    },
+    {
+      "book_id": "MAT",
+      "book_name": "Matthew",
+      "chapter": 10,
+      "verse_start": 16,
+      "verse_end": 16,
+      "text": "¶ \"JESUS_START\" Behold, I send you forth as sheep in the midst of wolves: be ye therefore wise as serpents, and harmless as doves. \"JESUS_END\"",
+      "info": "",
+      "language": "English"
+    },
+    {
+      "book_id": "MAT",
+      "book_name": "Matthew",
+      "chapter": 10,
+      "verse_start": 17,
+      "verse_end": 17,
+      "text": "\"JESUS_START\" But beware of men: for they will deliver you up to the councils, and they will scourge you in their synagogues; \"JESUS_END\"",
+      "info": "",
+      "language": "English"
+    },
+    {
+      "book_id": "MAT",
+      "book_name": "Matthew",
+      "chapter": 10,
+      "verse_start": 18,
+      "verse_end": 18,
+      "text": "\"JESUS_START\" And ye shall be brought before governors and kings for my sake, for a testimony against them and the Gentiles. \"JESUS_END\"",
+      "info": "",
+      "language": "English"
+    },
+    {
+      "book_id": "MAT",
+      "book_name": "Matthew",
+      "chapter": 10,
+      "verse_start": 19,
+      "verse_end": 19,
+      "text": "\"JESUS_START\" But when they deliver you up, take no thought how or what ye shall speak: for it shall be given you in that same hour what ye shall speak. \"JESUS_END\"",
+      "info": "",
+      "language": "English"
+    },
+    {
+      "book_id": "MAT",
+      "book_name": "Matthew",
+      "chapter": 10,
+      "verse_start": 20,
+      "verse_end": 20,
+      "text": "\"JESUS_START\" For it is not ye that speak, but the Spirit of your Father which speaketh in you. \"JESUS_END\"",
+      "info": "",
+      "language": "English"
+    },
+    {
+      "book_id": "MAT",
+      "book_name": "Matthew",
+      "chapter": 10,
+      "verse_start": 21,
+      "verse_end": 21,
+      "text": "\"JESUS_START\" And the brother shall deliver up the brother to death, and the father the child: and the children shall rise up against <em>their</em> parents, and cause them to be put to death. \"JESUS_END\"",
+      "info": "",
+      "language": "English"
+    },
+    {
+      "book_id": "MAT",
+      "book_name": "Matthew",
+      "chapter": 10,
+      "verse_start": 22,
+      "verse_end": 22,
+      "text": "\"JESUS_START\" And ye shall be hated of all <em>men</em> for my name's sake: but he that endureth to the end shall be saved. \"JESUS_END\"",
+      "info": "",
+      "language": "English"
+    },
+    {
+      "book_id": "MAT",
+      "book_name": "Matthew",
+      "chapter": 10,
+      "verse_start": 23,
+      "verse_end": 23,
+      "text": "\"JESUS_START\" But when they persecute you in this city, flee ye into another: for verily I say unto you, Ye shall not have gone over the cities of Israel, till the Son of man be come. \"JESUS_END\"",
+      "info": "",
+      "language": "English"
+    },
+    {
+      "book_id": "MAT",
+      "book_name": "Matthew",
+      "chapter": 10,
+      "verse_start": 24,
+      "verse_end": 24,
+      "text": "\"JESUS_START\" The disciple is not above <em>his</em> master, nor the servant above his lord. \"JESUS_END\"",
+      "info": "",
+      "language": "English"
+    },
+    {
+      "book_id": "MAT",
+      "book_name": "Matthew",
+      "chapter": 10,
+      "verse_start": 25,
+      "verse_end": 25,
+      "text": "\"JESUS_START\" It is enough for the disciple that he be as his master, and the servant as his lord. If they have called the master of the house Beelzebub, how much more <em>shall they call</em> them of his household? \"JESUS_END\"",
+      "info": "",
+      "language": "English"
+    },
+    {
+      "book_id": "MAT",
+      "book_name": "Matthew",
+      "chapter": 10,
+      "verse_start": 26,
+      "verse_end": 26,
+      "text": "\"JESUS_START\" Fear them not therefore: for there is nothing covered, that shall not be revealed; and hid, that shall not be known. \"JESUS_END\"",
+      "info": "",
+      "language": "English"
+    },
+    {
+      "book_id": "MAT",
+      "book_name": "Matthew",
+      "chapter": 10,
+      "verse_start": 27,
+      "verse_end": 27,
+      "text": "\"JESUS_START\" What I tell you in darkness, <em>that</em> speak ye in light: and what ye hear in the ear, <em>that</em> preach ye upon the housetops. \"JESUS_END\"",
+      "info": "",
+      "language": "English"
+    },
+    {
+      "book_id": "MAT",
+      "book_name": "Matthew",
+      "chapter": 10,
+      "verse_start": 28,
+      "verse_end": 28,
+      "text": "\"JESUS_START\" And fear not them which kill the body, but are not able to kill the soul: but rather fear him which is able to destroy both soul and body in hell. \"JESUS_END\"",
+      "info": "",
+      "language": "English"
+    },
+    {
+      "book_id": "MAT",
+      "book_name": "Matthew",
+      "chapter": 10,
+      "verse_start": 29,
+      "verse_end": 29,
+      "text": "\"JESUS_START\" Are not two sparrows sold for a farthing? and one of them shall not fall on the ground without your Father. \"JESUS_END\"",
+      "info": "",
+      "language": "English"
+    },
+    {
+      "book_id": "MAT",
+      "book_name": "Matthew",
+      "chapter": 10,
+      "verse_start": 30,
+      "verse_end": 30,
+      "text": "\"JESUS_START\" But the very hairs of your head are all numbered. \"JESUS_END\"",
+      "info": "",
+      "language": "English"
+    },
+    {
+      "book_id": "MAT",
+      "book_name": "Matthew",
+      "chapter": 10,
+      "verse_start": 31,
+      "verse_end": 31,
+      "text": "\"JESUS_START\" Fear ye not therefore, ye are of more value than many sparrows. \"JESUS_END\"",
+      "info": "",
+      "language": "English"
+    },
+    {
+      "book_id": "MAT",
+      "book_name": "Matthew",
+      "chapter": 10,
+      "verse_start": 32,
+      "verse_end": 32,
+      "text": "\"JESUS_START\" Whosoever therefore shall confess me before men, him will I confess also before my Father which is in heaven. \"JESUS_END\"",
+      "info": "",
+      "language": "English"
+    },
+    {
+      "book_id": "MAT",
+      "book_name": "Matthew",
+      "chapter": 10,
+      "verse_start": 33,
+      "verse_end": 33,
+      "text": "\"JESUS_START\" But whosoever shall deny me before men, him will I also deny before my Father which is in heaven. \"JESUS_END\"",
+      "info": "",
+      "language": "English"
+    },
+    {
+      "book_id": "MAT",
+      "book_name": "Matthew",
+      "chapter": 10,
+      "verse_start": 34,
+      "verse_end": 34,
+      "text": "\"JESUS_START\" Think not that I am come to send peace on earth: I came not to send peace, but a sword. \"JESUS_END\"",
+      "info": "",
+      "language": "English"
+    },
+    {
+      "book_id": "MAT",
+      "book_name": "Matthew",
+      "chapter": 10,
+      "verse_start": 35,
+      "verse_end": 35,
+      "text": "\"JESUS_START\" For I am come to set a man at variance against his father, and the daughter against her mother, and the daughter in law against her mother in law. \"JESUS_END\"",
+      "info": "",
+      "language": "English"
+    },
+    {
+      "book_id": "MAT",
+      "book_name": "Matthew",
+      "chapter": 10,
+      "verse_start": 36,
+      "verse_end": 36,
+      "text": "\"JESUS_START\" And a man's foes <em>shall be</em> they of his own household. \"JESUS_END\"",
+      "info": "",
+      "language": "English"
+    },
+    {
+      "book_id": "MAT",
+      "book_name": "Matthew",
+      "chapter": 10,
+      "verse_start": 37,
+      "verse_end": 37,
+      "text": "\"JESUS_START\" He that loveth father or mother more than me is not worthy of me: and he that loveth son or daughter more than me is not worthy of me. \"JESUS_END\"",
+      "info": "",
+      "language": "English"
+    },
+    {
+      "book_id": "MAT",
+      "book_name": "Matthew",
+      "chapter": 10,
+      "verse_start": 38,
+      "verse_end": 38,
+      "text": "\"JESUS_START\" And he that taketh not his cross, and followeth after me, is not worthy of me. \"JESUS_END\"",
+      "info": "",
+      "language": "English"
+    },
+    {
+      "book_id": "MAT",
+      "book_name": "Matthew",
+      "chapter": 10,
+      "verse_start": 39,
+      "verse_end": 39,
+      "text": "\"JESUS_START\" He that findeth his life shall lose it: and he that loseth his life for my sake shall find it. \"JESUS_END\"",
+      "info": "",
+      "language": "English"
+    },
+    {
+      "book_id": "MAT",
+      "book_name": "Matthew",
+      "chapter": 10,
+      "verse_start": 40,
+      "verse_end": 40,
+      "text": "¶ \"JESUS_START\" He that receiveth you receiveth me, and he that receiveth me receiveth him that sent me. \"JESUS_END\"",
+      "info": "",
+      "language": "English"
+    },
+    {
+      "book_id": "MAT",
+      "book_name": "Matthew",
+      "chapter": 10,
+      "verse_start": 41,
+      "verse_end": 41,
+      "text": "\"JESUS_START\" He that receiveth a prophet in the name of a prophet shall receive a prophet's reward; and he that receiveth a righteous man in the name of a righteous man shall receive a righteous man's reward. \"JESUS_END\"",
+      "info": "",
+      "language": "English"
+    },
+    {
+      "book_id": "MAT",
+      "book_name": "Matthew",
+      "chapter": 10,
+      "verse_start": 42,
+      "verse_end": 42,
+      "text": "\"JESUS_START\" And whosoever shall give to drink unto one of these little ones a cup of cold <em>water</em> only in the name of a disciple, verily I say unto you, he shall in no wise lose his reward. \"JESUS_END\"",
+      "info": "",
+      "language": "English"
+    }
+  ]
+}

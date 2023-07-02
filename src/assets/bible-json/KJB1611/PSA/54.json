@@ -1,0 +1,70 @@
+{
+  "header": "¶ <em>To the chiefe musician on Neginoth, Maschil, A Psalme of Dauid. When the Ziphims came and sayde to Saul: doeth not Dauid hide himselfe with vs?",
+  "footer": "",
+  "language": "English",
+  "verses": [
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 54,
+      "verse_start": 1,
+      "verse_end": 1,
+      "text": "Saue me, O God, by thy name, and iudge me by thy strength.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 54,
+      "verse_start": 2,
+      "verse_end": 2,
+      "text": "Heare my prayer, O God; giue eare to the words of my mouth.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 54,
+      "verse_start": 3,
+      "verse_end": 3,
+      "text": "For strangers are risen vp against me, and oppressors seeke after my soule; they haue not set God before them. Selah.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 54,
+      "verse_start": 4,
+      "verse_end": 4,
+      "text": "Behold, God is mine helper: the Lord is with them that vphold my soule.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 54,
+      "verse_start": 5,
+      "verse_end": 5,
+      "text": "He shall reward euill vnto mine enemies: cut them off in thy trueth.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 54,
+      "verse_start": 6,
+      "verse_end": 6,
+      "text": "I will freely sacrifice vnto thee; I will praise thy name (O Lord:) for it is good.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 54,
+      "verse_start": 7,
+      "verse_end": 7,
+      "text": "For hee hath deliuered me out of all trouble: and mine eye hath seene his desire vpon mine enemies.",
+      "info": ""
+    }
+  ]
+}

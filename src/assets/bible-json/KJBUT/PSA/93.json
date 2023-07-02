@@ -1,0 +1,52 @@
+{
+  "header": "",
+  "footer": "",
+  "language": "Hebrew",
+  "verses": [
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 93,
+      "verse_start": 1,
+      "verse_end": 1,
+      "text": "יהוה מלך גאות לבשׁ לבשׁ יהוה עז התאזר אף תכון תבל בל תמוט׃",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 93,
+      "verse_start": 2,
+      "verse_end": 2,
+      "text": "נכון כסאך מאז מעולם אתה׃",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 93,
+      "verse_start": 3,
+      "verse_end": 3,
+      "text": "נשׂאו נהרות יהוה נשׂאו נהרות קולם ישׂאו נהרות דכים׃",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 93,
+      "verse_start": 4,
+      "verse_end": 4,
+      "text": "מקלות מים רבים אדירים משׁברי ים אדיר במרום יהוה׃",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 93,
+      "verse_start": 5,
+      "verse_end": 5,
+      "text": "עדתיך נאמנו מאד לביתך נאוה קדשׁ יהוה לארך ימים׃",
+      "info": ""
+    }
+  ]
+}

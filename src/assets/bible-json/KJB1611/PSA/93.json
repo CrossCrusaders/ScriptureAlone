@@ -1,0 +1,52 @@
+{
+  "header": "",
+  "footer": "",
+  "language": "English",
+  "verses": [
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 93,
+      "verse_start": 1,
+      "verse_end": 1,
+      "text": "The Lord reigneth, he is clothed with Maiestie, the Lord is clothed with strength, wherewith hee hath girded himselfe: the world also is stablished, that it cannot be moued.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 93,
+      "verse_start": 2,
+      "verse_end": 2,
+      "text": "Thy throne is established of old: thou art from euerlasting.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 93,
+      "verse_start": 3,
+      "verse_end": 3,
+      "text": "The floods haue lifted vp, O Lord, the floods haue lifted vp their voice: the floods lift vp their waues.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 93,
+      "verse_start": 4,
+      "verse_end": 4,
+      "text": "The Lord on high is mightier then the noise of many waters, yea then the mightie waues of the Sea.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 93,
+      "verse_start": 5,
+      "verse_end": 5,
+      "text": "Thy testimonies are very sure: holinesse becommeth thine house, O Lord, for euer.",
+      "info": ""
+    }
+  ]
+}

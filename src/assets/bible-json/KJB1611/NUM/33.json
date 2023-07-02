@@ -1,0 +1,511 @@
+{
+  "header": "",
+  "footer": "",
+  "language": "English",
+  "verses": [
+    {
+      "book_id": "NUM",
+      "book_name": "Numbers",
+      "chapter": 33,
+      "verse_start": 1,
+      "verse_end": 1,
+      "text": "These are the iourneyes of the children of Israel, which went foorth out of the land of Egypt, with their armies, vnder the hand of Moses and Aaron.",
+      "info": ""
+    },
+    {
+      "book_id": "NUM",
+      "book_name": "Numbers",
+      "chapter": 33,
+      "verse_start": 2,
+      "verse_end": 2,
+      "text": "And Moses wrote their goings out according to their iourneyes, by the commandement of the Lord: and these are their iourneyes according to their goings out.",
+      "info": ""
+    },
+    {
+      "book_id": "NUM",
+      "book_name": "Numbers",
+      "chapter": 33,
+      "verse_start": 3,
+      "verse_end": 3,
+      "text": "And they departed from Rameses in the first moneth, on the fifteenth day of the first moneth: on the morrow after the Passeouer, the children of Israel went out with an high hand in the sight of all the Egyptians.",
+      "info": ""
+    },
+    {
+      "book_id": "NUM",
+      "book_name": "Numbers",
+      "chapter": 33,
+      "verse_start": 4,
+      "verse_end": 4,
+      "text": "(For the Egyptians buried all their first borne, which the Lord had smitten among them: vpon their gods also the Lord executed iudgements.)",
+      "info": ""
+    },
+    {
+      "book_id": "NUM",
+      "book_name": "Numbers",
+      "chapter": 33,
+      "verse_start": 5,
+      "verse_end": 5,
+      "text": "And the children of Israel remoued from Rameses, and pitched in Succoth.",
+      "info": ""
+    },
+    {
+      "book_id": "NUM",
+      "book_name": "Numbers",
+      "chapter": 33,
+      "verse_start": 6,
+      "verse_end": 6,
+      "text": "And they departed from Succoth, and pitched in Etham, which is in the edge of the wildernesse.",
+      "info": ""
+    },
+    {
+      "book_id": "NUM",
+      "book_name": "Numbers",
+      "chapter": 33,
+      "verse_start": 7,
+      "verse_end": 7,
+      "text": "And they remoued from Etham, and turned againe vnto Pihahiroth, which is before Baal-zephon: and they pitched before Migdol.",
+      "info": ""
+    },
+    {
+      "book_id": "NUM",
+      "book_name": "Numbers",
+      "chapter": 33,
+      "verse_start": 8,
+      "verse_end": 8,
+      "text": "And they departed from before Pihahiroth, and passed thorow the midst of the sea, into the wildernes, and went three dayes iourney in the wildernesse of Etham, and pitched in Marah.",
+      "info": ""
+    },
+    {
+      "book_id": "NUM",
+      "book_name": "Numbers",
+      "chapter": 33,
+      "verse_start": 9,
+      "verse_end": 9,
+      "text": "And they remoued from Marah, and came vnto Elim, and in Elim were twelue fountaines of water, and three score and ten palme trees, and they pitched there.",
+      "info": ""
+    },
+    {
+      "book_id": "NUM",
+      "book_name": "Numbers",
+      "chapter": 33,
+      "verse_start": 10,
+      "verse_end": 10,
+      "text": "And they remooued from Elim, and encamped by the red sea.",
+      "info": ""
+    },
+    {
+      "book_id": "NUM",
+      "book_name": "Numbers",
+      "chapter": 33,
+      "verse_start": 11,
+      "verse_end": 11,
+      "text": "And they remooued from the red sea, and encamped in the wildernesse of Sin.",
+      "info": ""
+    },
+    {
+      "book_id": "NUM",
+      "book_name": "Numbers",
+      "chapter": 33,
+      "verse_start": 12,
+      "verse_end": 12,
+      "text": "And they tooke their iourney out of the wildernesse of Sin, and encamped in Dophkah.",
+      "info": ""
+    },
+    {
+      "book_id": "NUM",
+      "book_name": "Numbers",
+      "chapter": 33,
+      "verse_start": 13,
+      "verse_end": 13,
+      "text": "And they departed from Dophkah, and encamped in Alush.",
+      "info": ""
+    },
+    {
+      "book_id": "NUM",
+      "book_name": "Numbers",
+      "chapter": 33,
+      "verse_start": 14,
+      "verse_end": 14,
+      "text": "And they remoued from Alush, and encamped at Rephidim, where was no water for the people to drinke.",
+      "info": ""
+    },
+    {
+      "book_id": "NUM",
+      "book_name": "Numbers",
+      "chapter": 33,
+      "verse_start": 15,
+      "verse_end": 15,
+      "text": "And they departed from Rephidim, and pitched in the wildernesse of Sinai.",
+      "info": ""
+    },
+    {
+      "book_id": "NUM",
+      "book_name": "Numbers",
+      "chapter": 33,
+      "verse_start": 16,
+      "verse_end": 16,
+      "text": "And they remoued from the desert of Sinai, and pitched at Kibroth Hattaauah.",
+      "info": ""
+    },
+    {
+      "book_id": "NUM",
+      "book_name": "Numbers",
+      "chapter": 33,
+      "verse_start": 17,
+      "verse_end": 17,
+      "text": "And they departed from Kibroth Hattaauah, and encamped at Hazeroth.",
+      "info": ""
+    },
+    {
+      "book_id": "NUM",
+      "book_name": "Numbers",
+      "chapter": 33,
+      "verse_start": 18,
+      "verse_end": 18,
+      "text": "And they departed from Hazeroth, and pitched in Rithmah.",
+      "info": ""
+    },
+    {
+      "book_id": "NUM",
+      "book_name": "Numbers",
+      "chapter": 33,
+      "verse_start": 19,
+      "verse_end": 19,
+      "text": "And they departed from Rithmah, and pitched at Rimmon Parez.",
+      "info": ""
+    },
+    {
+      "book_id": "NUM",
+      "book_name": "Numbers",
+      "chapter": 33,
+      "verse_start": 20,
+      "verse_end": 20,
+      "text": "And they departed from Rimmon Parez, and pitched in Libnah.",
+      "info": ""
+    },
+    {
+      "book_id": "NUM",
+      "book_name": "Numbers",
+      "chapter": 33,
+      "verse_start": 21,
+      "verse_end": 21,
+      "text": "And they remoued from Libnah, and pitched at Rissah.",
+      "info": ""
+    },
+    {
+      "book_id": "NUM",
+      "book_name": "Numbers",
+      "chapter": 33,
+      "verse_start": 22,
+      "verse_end": 22,
+      "text": "And they iourneyed from Rissah, and pitched in Kehelathah.",
+      "info": ""
+    },
+    {
+      "book_id": "NUM",
+      "book_name": "Numbers",
+      "chapter": 33,
+      "verse_start": 23,
+      "verse_end": 23,
+      "text": "And they went from Kehelathah, and pitched in mount Shapher.",
+      "info": ""
+    },
+    {
+      "book_id": "NUM",
+      "book_name": "Numbers",
+      "chapter": 33,
+      "verse_start": 24,
+      "verse_end": 24,
+      "text": "And they remoued from mount Shapher, and encamped in Haradah.",
+      "info": ""
+    },
+    {
+      "book_id": "NUM",
+      "book_name": "Numbers",
+      "chapter": 33,
+      "verse_start": 25,
+      "verse_end": 25,
+      "text": "And they remooued from Haradah, and pitched in Makheloth.",
+      "info": ""
+    },
+    {
+      "book_id": "NUM",
+      "book_name": "Numbers",
+      "chapter": 33,
+      "verse_start": 26,
+      "verse_end": 26,
+      "text": "And they remooued from Makheloth, and encamped at Tahath.",
+      "info": ""
+    },
+    {
+      "book_id": "NUM",
+      "book_name": "Numbers",
+      "chapter": 33,
+      "verse_start": 27,
+      "verse_end": 27,
+      "text": "And they departed from Tahath, and pitched at Tarah.",
+      "info": ""
+    },
+    {
+      "book_id": "NUM",
+      "book_name": "Numbers",
+      "chapter": 33,
+      "verse_start": 28,
+      "verse_end": 28,
+      "text": "And they remoued from Tarah, and pitched in Mithcah.",
+      "info": ""
+    },
+    {
+      "book_id": "NUM",
+      "book_name": "Numbers",
+      "chapter": 33,
+      "verse_start": 29,
+      "verse_end": 29,
+      "text": "And they went from Mithcah, and pitched in Hashmonah.",
+      "info": ""
+    },
+    {
+      "book_id": "NUM",
+      "book_name": "Numbers",
+      "chapter": 33,
+      "verse_start": 30,
+      "verse_end": 30,
+      "text": "And they departed from Hashmonah, and encamped at Moseroth.",
+      "info": ""
+    },
+    {
+      "book_id": "NUM",
+      "book_name": "Numbers",
+      "chapter": 33,
+      "verse_start": 31,
+      "verse_end": 31,
+      "text": "And they departed from Moseroth, and pitched in Bene-Iaakan.",
+      "info": ""
+    },
+    {
+      "book_id": "NUM",
+      "book_name": "Numbers",
+      "chapter": 33,
+      "verse_start": 32,
+      "verse_end": 32,
+      "text": "And they remooued from Bene-Iaakan, &amp; encamped at Horhagidgad.",
+      "info": ""
+    },
+    {
+      "book_id": "NUM",
+      "book_name": "Numbers",
+      "chapter": 33,
+      "verse_start": 33,
+      "verse_end": 33,
+      "text": "And they went from Horhagidgad, and pitched in Iotbathah.",
+      "info": ""
+    },
+    {
+      "book_id": "NUM",
+      "book_name": "Numbers",
+      "chapter": 33,
+      "verse_start": 34,
+      "verse_end": 34,
+      "text": "And they remooued from Iotbathah, and encamped at Ebronah.",
+      "info": ""
+    },
+    {
+      "book_id": "NUM",
+      "book_name": "Numbers",
+      "chapter": 33,
+      "verse_start": 35,
+      "verse_end": 35,
+      "text": "And they departed from Ebronah, and encamped at Ezion-gaber.",
+      "info": ""
+    },
+    {
+      "book_id": "NUM",
+      "book_name": "Numbers",
+      "chapter": 33,
+      "verse_start": 36,
+      "verse_end": 36,
+      "text": "And they remoued from Ezion-gaber, and pitched in the wildernes of Zin, which is Kadesh.",
+      "info": ""
+    },
+    {
+      "book_id": "NUM",
+      "book_name": "Numbers",
+      "chapter": 33,
+      "verse_start": 37,
+      "verse_end": 37,
+      "text": "And they remooued from Kadesh, and pitched in mount Hor, in the edge of the land of Edom.",
+      "info": ""
+    },
+    {
+      "book_id": "NUM",
+      "book_name": "Numbers",
+      "chapter": 33,
+      "verse_start": 38,
+      "verse_end": 38,
+      "text": "And Aaron the Priest went vp into mount Hor, at the commandement of the Lord, and died there in the fourtieth yeere, after the children of Israel were come out of the lande of Egypt, in the first day of the fift moneth.",
+      "info": ""
+    },
+    {
+      "book_id": "NUM",
+      "book_name": "Numbers",
+      "chapter": 33,
+      "verse_start": 39,
+      "verse_end": 39,
+      "text": "And Aaron was an hundred and twentie and three yeeres old, when hee died in mount Hor.",
+      "info": ""
+    },
+    {
+      "book_id": "NUM",
+      "book_name": "Numbers",
+      "chapter": 33,
+      "verse_start": 40,
+      "verse_end": 40,
+      "text": "And King Arad the Canaanite (which dwelt in the South, in the land of Canaan) heard of the comming of the children of Israel.",
+      "info": ""
+    },
+    {
+      "book_id": "NUM",
+      "book_name": "Numbers",
+      "chapter": 33,
+      "verse_start": 41,
+      "verse_end": 41,
+      "text": "And they departed from mount Hor, and pitched in Zalmonah.",
+      "info": ""
+    },
+    {
+      "book_id": "NUM",
+      "book_name": "Numbers",
+      "chapter": 33,
+      "verse_start": 42,
+      "verse_end": 42,
+      "text": "And they departed from Zalmonah, and pitched in Punon.",
+      "info": ""
+    },
+    {
+      "book_id": "NUM",
+      "book_name": "Numbers",
+      "chapter": 33,
+      "verse_start": 43,
+      "verse_end": 43,
+      "text": "And they departed from Punon, and pitched in Oboth.",
+      "info": ""
+    },
+    {
+      "book_id": "NUM",
+      "book_name": "Numbers",
+      "chapter": 33,
+      "verse_start": 44,
+      "verse_end": 44,
+      "text": "And they departed from Oboth, and pitched in Iie-Abarim, in the border of Moab.",
+      "info": ""
+    },
+    {
+      "book_id": "NUM",
+      "book_name": "Numbers",
+      "chapter": 33,
+      "verse_start": 45,
+      "verse_end": 45,
+      "text": "And they departed from Iim, and pitched in Dibon Gad.",
+      "info": ""
+    },
+    {
+      "book_id": "NUM",
+      "book_name": "Numbers",
+      "chapter": 33,
+      "verse_start": 46,
+      "verse_end": 46,
+      "text": "And they remoued from Dibon Gad, and encamped in Almon-Diblathaim.",
+      "info": ""
+    },
+    {
+      "book_id": "NUM",
+      "book_name": "Numbers",
+      "chapter": 33,
+      "verse_start": 47,
+      "verse_end": 47,
+      "text": "And they remooued from Almon-Diblathaim, and pitched in the mountaines of Abarim, before Nebo.",
+      "info": ""
+    },
+    {
+      "book_id": "NUM",
+      "book_name": "Numbers",
+      "chapter": 33,
+      "verse_start": 48,
+      "verse_end": 48,
+      "text": "And they departed from the mountaines of Abarim, and pitched in the plaines of Moab, by Iordan neere Iericho.",
+      "info": ""
+    },
+    {
+      "book_id": "NUM",
+      "book_name": "Numbers",
+      "chapter": 33,
+      "verse_start": 49,
+      "verse_end": 49,
+      "text": "And they pitched by Iordane from Beth-Iesimoth, euen vnto Abel Shittim, in the plaines of Moab.",
+      "info": ""
+    },
+    {
+      "book_id": "NUM",
+      "book_name": "Numbers",
+      "chapter": 33,
+      "verse_start": 50,
+      "verse_end": 50,
+      "text": "¶ And the Lord spake vnto Moses, in the plaines of Moab by Iordane, neere Iericho, saying,",
+      "info": ""
+    },
+    {
+      "book_id": "NUM",
+      "book_name": "Numbers",
+      "chapter": 33,
+      "verse_start": 51,
+      "verse_end": 51,
+      "text": "Speake vnto the children of Israel, and say vnto them, When ye are passed ouer Iordane into the land of Canaan;",
+      "info": ""
+    },
+    {
+      "book_id": "NUM",
+      "book_name": "Numbers",
+      "chapter": 33,
+      "verse_start": 52,
+      "verse_end": 52,
+      "text": "Then ye shall driue out all the inhabitants of the land from before you, and destroy all their pictures, and destroy all their molten images, and quite plucke downe all their high places.",
+      "info": ""
+    },
+    {
+      "book_id": "NUM",
+      "book_name": "Numbers",
+      "chapter": 33,
+      "verse_start": 53,
+      "verse_end": 53,
+      "text": "And ye shall dispossesse the inhabitants of the land, and dwell therein: for I haue giuen you the land to possesse it.",
+      "info": ""
+    },
+    {
+      "book_id": "NUM",
+      "book_name": "Numbers",
+      "chapter": 33,
+      "verse_start": 54,
+      "verse_end": 54,
+      "text": "And ye shall diuide the land by lot, for an inheritance among your families, and to the moe ye shall giue the more inheritance, and to the fewer yee shall giue the lesse inheritance: euery mans inheritance shall bee in the place where his lot falleth, according to the tribes of your fathers, ye shall inherite.",
+      "info": ""
+    },
+    {
+      "book_id": "NUM",
+      "book_name": "Numbers",
+      "chapter": 33,
+      "verse_start": 55,
+      "verse_end": 55,
+      "text": "But if ye will not driue out the inhabitants of the land from before you, then it shall come to passe that those which ye let remaine of them, shall be prickes in your eyes, and thornes in your sides, and shal vexe you in the land wherein ye dwell.",
+      "info": ""
+    },
+    {
+      "book_id": "NUM",
+      "book_name": "Numbers",
+      "chapter": 33,
+      "verse_start": 56,
+      "verse_end": 56,
+      "text": "Moreouer, it shall come to passe, that I shall do vnto you, as I thought to doe vnto them.",
+      "info": ""
+    }
+  ]
+}

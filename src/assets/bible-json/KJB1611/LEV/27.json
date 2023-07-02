@@ -1,0 +1,313 @@
+{
+  "header": "",
+  "footer": "",
+  "language": "English",
+  "verses": [
+    {
+      "book_id": "LEV",
+      "book_name": "Leviticus",
+      "chapter": 27,
+      "verse_start": 1,
+      "verse_end": 1,
+      "text": "And the Lord spake vnto Moses, saying,",
+      "info": ""
+    },
+    {
+      "book_id": "LEV",
+      "book_name": "Leviticus",
+      "chapter": 27,
+      "verse_start": 2,
+      "verse_end": 2,
+      "text": "Speake vnto the children of Israel, and say vnto them, When a man shal make a singular vow, the persons shall be for the Lord, by thy estimation.",
+      "info": ""
+    },
+    {
+      "book_id": "LEV",
+      "book_name": "Leviticus",
+      "chapter": 27,
+      "verse_start": 3,
+      "verse_end": 3,
+      "text": "And thy estimation shall be: Of the male from twentie yeeres old, euen vnto sixtie yeeres old: euen thy estimation shall be fiftie shekels of siluer, after the shekel of the Sanctuary.",
+      "info": ""
+    },
+    {
+      "book_id": "LEV",
+      "book_name": "Leviticus",
+      "chapter": 27,
+      "verse_start": 4,
+      "verse_end": 4,
+      "text": "And if it be a female, then thy estimation shall be thirtie shekels.",
+      "info": ""
+    },
+    {
+      "book_id": "LEV",
+      "book_name": "Leviticus",
+      "chapter": 27,
+      "verse_start": 5,
+      "verse_end": 5,
+      "text": "And if it be from fiue yeeres olde, euen vnto twentie yeeres old, then thy estimation shall be of the male twentie shekels, and for the female ten shekels.",
+      "info": ""
+    },
+    {
+      "book_id": "LEV",
+      "book_name": "Leviticus",
+      "chapter": 27,
+      "verse_start": 6,
+      "verse_end": 6,
+      "text": "And if it be from a moneth old, euen vnto fiue yeeres old, then thy estimation shall be of the male, fiue shekels of siluer, and for the female, thy estimation shall be three shekels of siluer.",
+      "info": ""
+    },
+    {
+      "book_id": "LEV",
+      "book_name": "Leviticus",
+      "chapter": 27,
+      "verse_start": 7,
+      "verse_end": 7,
+      "text": "And if it be from sixtie yeeres old, and aboue, if it be a male, then thy estimation shall be fifteene shekels, and for the female ten shekels.",
+      "info": ""
+    },
+    {
+      "book_id": "LEV",
+      "book_name": "Leviticus",
+      "chapter": 27,
+      "verse_start": 8,
+      "verse_end": 8,
+      "text": "But if he bee poorer then thy estimation, then he shall present himselfe before the Priest, and the Priest shall value him: according to his abilitie that vowed, shall the Priest value him.",
+      "info": ""
+    },
+    {
+      "book_id": "LEV",
+      "book_name": "Leviticus",
+      "chapter": 27,
+      "verse_start": 9,
+      "verse_end": 9,
+      "text": "And if it be a beast whereof men bring an offering vnto the Lord, all that any man giueth of such vnto the Lord, shall be holy.",
+      "info": ""
+    },
+    {
+      "book_id": "LEV",
+      "book_name": "Leviticus",
+      "chapter": 27,
+      "verse_start": 10,
+      "verse_end": 10,
+      "text": "He shall not alter it, nor change it, a good for a bad, or a bad for a good: And if hee shall at all change beast for beast, then it, and the exchange thereof shall be holy.",
+      "info": ""
+    },
+    {
+      "book_id": "LEV",
+      "book_name": "Leviticus",
+      "chapter": 27,
+      "verse_start": 11,
+      "verse_end": 11,
+      "text": "And if it be any vncleane beast, of which they doe not offer a sacrifice vnto the Lord, then he shall present the beast before the Priest:",
+      "info": ""
+    },
+    {
+      "book_id": "LEV",
+      "book_name": "Leviticus",
+      "chapter": 27,
+      "verse_start": 12,
+      "verse_end": 12,
+      "text": "And the Priest shall value it, whether it be good or bad: as thou valuest it who art the Priest: so shall it be.",
+      "info": ""
+    },
+    {
+      "book_id": "LEV",
+      "book_name": "Leviticus",
+      "chapter": 27,
+      "verse_start": 13,
+      "verse_end": 13,
+      "text": "But if hee will at all redeeme it, then he shall adde a fift part thereof vnto thy estimation.",
+      "info": ""
+    },
+    {
+      "book_id": "LEV",
+      "book_name": "Leviticus",
+      "chapter": 27,
+      "verse_start": 14,
+      "verse_end": 14,
+      "text": "¶ And when a man shall sanctifie his house to be holy vnto the Lord, then the Priest shal estimate it, whether it be good or bad: as the Priest shall estimate it, so shall it stand.",
+      "info": ""
+    },
+    {
+      "book_id": "LEV",
+      "book_name": "Leviticus",
+      "chapter": 27,
+      "verse_start": 15,
+      "verse_end": 15,
+      "text": "And if he that sanctified it, will redeeme his house, then he shall adde the fift part of the money of thy estimation vnto it, and it shall be his.",
+      "info": ""
+    },
+    {
+      "book_id": "LEV",
+      "book_name": "Leviticus",
+      "chapter": 27,
+      "verse_start": 16,
+      "verse_end": 16,
+      "text": "And if a man shall sanctifie vnto the Lord some part of a field of his possession, then thy estimation shall be according to the seed thereof: An Homer of barley seed shall be valued at fiftie shekels of siluer.",
+      "info": ""
+    },
+    {
+      "book_id": "LEV",
+      "book_name": "Leviticus",
+      "chapter": 27,
+      "verse_start": 17,
+      "verse_end": 17,
+      "text": "If hee sanctifie his field from the yeere of Iubile, according to thy estimation it shall stand.",
+      "info": ""
+    },
+    {
+      "book_id": "LEV",
+      "book_name": "Leviticus",
+      "chapter": 27,
+      "verse_start": 18,
+      "verse_end": 18,
+      "text": "But if hee sanctifie his field after the Iubile, then the Priest shall reckon vnto him the money, according to the yeeres that remaine, euen vnto the yeere of the Iubile, and it shall be abated from thy estimation.",
+      "info": ""
+    },
+    {
+      "book_id": "LEV",
+      "book_name": "Leviticus",
+      "chapter": 27,
+      "verse_start": 19,
+      "verse_end": 19,
+      "text": "And if he that sanctified the field, will in any wise redeeme it, then he shal adde the fift part of the money of thy estimation vnto it, and it shall be assured to him.",
+      "info": ""
+    },
+    {
+      "book_id": "LEV",
+      "book_name": "Leviticus",
+      "chapter": 27,
+      "verse_start": 20,
+      "verse_end": 20,
+      "text": "And if hee will not redeeme the field, or if he haue sold the field to another man, it shall not be redeemed any more.",
+      "info": ""
+    },
+    {
+      "book_id": "LEV",
+      "book_name": "Leviticus",
+      "chapter": 27,
+      "verse_start": 21,
+      "verse_end": 21,
+      "text": "But the field, when it goeth out in the Iubile, shall be holy vnto the Lord, as a field deuoted: the possession thereof shalbe the Priests.",
+      "info": ""
+    },
+    {
+      "book_id": "LEV",
+      "book_name": "Leviticus",
+      "chapter": 27,
+      "verse_start": 22,
+      "verse_end": 22,
+      "text": "And if a man sanctifie vnto the Lord a field which he hath bought, which is not of the fieldes of his possession:",
+      "info": ""
+    },
+    {
+      "book_id": "LEV",
+      "book_name": "Leviticus",
+      "chapter": 27,
+      "verse_start": 23,
+      "verse_end": 23,
+      "text": "Then the Priest shall reckon vnto him the worth of thy estimation, euen vnto the yeere of the Iubile, and hee shall giue thine estimation in that day, as a holy thing vnto the Lord.",
+      "info": ""
+    },
+    {
+      "book_id": "LEV",
+      "book_name": "Leviticus",
+      "chapter": 27,
+      "verse_start": 24,
+      "verse_end": 24,
+      "text": "In the yeere of the Iubile, the field shall returne vnto him of whom it was bought, euen to him to whom the possession of the land did belong.",
+      "info": ""
+    },
+    {
+      "book_id": "LEV",
+      "book_name": "Leviticus",
+      "chapter": 27,
+      "verse_start": 25,
+      "verse_end": 25,
+      "text": "And all thy estimations shall be according to the shekel of the Sanctuarie: twentie Gerahs shall bee the shekel.",
+      "info": ""
+    },
+    {
+      "book_id": "LEV",
+      "book_name": "Leviticus",
+      "chapter": 27,
+      "verse_start": 26,
+      "verse_end": 26,
+      "text": "¶ Onely the firstling of the beasts which should be the Lords firstling, no man shall sanctifie it, whether it bee oxe, or sheepe: It is the Lords.",
+      "info": ""
+    },
+    {
+      "book_id": "LEV",
+      "book_name": "Leviticus",
+      "chapter": 27,
+      "verse_start": 27,
+      "verse_end": 27,
+      "text": "And if it be of an vncleane beast, then hee shall redeeme it according to thine estimation, and shall adde a fifth part of it thereto: Or if it be not redeemed, then it shalbe sold according to thy estimation.",
+      "info": ""
+    },
+    {
+      "book_id": "LEV",
+      "book_name": "Leviticus",
+      "chapter": 27,
+      "verse_start": 28,
+      "verse_end": 28,
+      "text": "Notwithstanding, no deuoted thing that a man shall deuote vnto the Lord, of all that he hath, both of man and beast, and of the field of his possession, shall be sold or redeemed: euery deuoted thing is most holy vnto the Lord.",
+      "info": ""
+    },
+    {
+      "book_id": "LEV",
+      "book_name": "Leviticus",
+      "chapter": 27,
+      "verse_start": 29,
+      "verse_end": 29,
+      "text": "None deuoted, which shalbe deuoted of men, shall be redeemed: but shall surely be put to death.",
+      "info": ""
+    },
+    {
+      "book_id": "LEV",
+      "book_name": "Leviticus",
+      "chapter": 27,
+      "verse_start": 30,
+      "verse_end": 30,
+      "text": "And all the tithe of the land, whether of the seed of the land, or of the fruit of the tree, is the Lords: it is holy vnto the Lord.",
+      "info": ""
+    },
+    {
+      "book_id": "LEV",
+      "book_name": "Leviticus",
+      "chapter": 27,
+      "verse_start": 31,
+      "verse_end": 31,
+      "text": "And if a man will at all redeeme ought of his tithes, he shall adde thereto the fifth part thereof.",
+      "info": ""
+    },
+    {
+      "book_id": "LEV",
+      "book_name": "Leviticus",
+      "chapter": 27,
+      "verse_start": 32,
+      "verse_end": 32,
+      "text": "And concerning the tithe of the herde, or of the flocke, euen of whatsoeuer passeth vnder the rod, the tenth shalbe holy vnto the Lord.",
+      "info": ""
+    },
+    {
+      "book_id": "LEV",
+      "book_name": "Leviticus",
+      "chapter": 27,
+      "verse_start": 33,
+      "verse_end": 33,
+      "text": "He shall not search whether it be good or bad, neither shall he change it: and if he change it at all, then both it, and the change thereof, shall be holy; it shall not be redeemed.",
+      "info": ""
+    },
+    {
+      "book_id": "LEV",
+      "book_name": "Leviticus",
+      "chapter": 27,
+      "verse_start": 34,
+      "verse_end": 34,
+      "text": "These are the Commandements which the Lord commanded Moses, for the children of Israel in mount Sinai.",
+      "info": ""
+    }
+  ]
+}

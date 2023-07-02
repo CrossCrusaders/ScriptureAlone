@@ -1,0 +1,70 @@
+{
+  "header": "",
+  "footer": "",
+  "language": "Hebrew",
+  "verses": [
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 110,
+      "verse_start": 1,
+      "verse_end": 1,
+      "text": "לדוד מזמור נאם יהוה לאדני שׁב לימיני עד אשׁית איביך הדם לרגליך׃",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 110,
+      "verse_start": 2,
+      "verse_end": 2,
+      "text": "מטה עזך ישׁלח יהוה מציון רדה בקרב איביך׃",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 110,
+      "verse_start": 3,
+      "verse_end": 3,
+      "text": "עמך נדבת ביום חילך בהדרי קדשׁ מרחם משׁחר לך טל ילדתיך׃",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 110,
+      "verse_start": 4,
+      "verse_end": 4,
+      "text": "נשׁבע יהוה ולא ינחם אתה כהן לעולם על דברתי מלכי צדק׃",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 110,
+      "verse_start": 5,
+      "verse_end": 5,
+      "text": "אדני על ימינך מחץ ביום אפו מלכים׃",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 110,
+      "verse_start": 6,
+      "verse_end": 6,
+      "text": "ידין בגוים מלא גויות מחץ ראשׁ על ארץ רבה׃",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 110,
+      "verse_start": 7,
+      "verse_end": 7,
+      "text": "מנחל בדרך ישׁתה על כן ירים ראשׁ׃",
+      "info": ""
+    }
+  ]
+}

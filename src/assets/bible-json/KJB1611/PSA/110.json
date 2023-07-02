@@ -1,0 +1,70 @@
+{
+  "header": "¶ <em>A Psalme of Dauid.",
+  "footer": "",
+  "language": "English",
+  "verses": [
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 110,
+      "verse_start": 1,
+      "verse_end": 1,
+      "text": "The Lord said vnto my Lord, Sit thou at my right hand: vntil I make thine enemies thy footestoole.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 110,
+      "verse_start": 2,
+      "verse_end": 2,
+      "text": "The Lord shall send the rod of thy strength out of Zion: rule thou in the midst of thine enemies.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 110,
+      "verse_start": 3,
+      "verse_end": 3,
+      "text": "Thy people shalbe willing in the day of thy power, in the beauties of holinesse from the wombe of the morning: thou hast the dew of thy youth.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 110,
+      "verse_start": 4,
+      "verse_end": 4,
+      "text": "The Lord hath sworne, and will not repent, thou art a Priest for euer: after the order of Melchizedek.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 110,
+      "verse_start": 5,
+      "verse_end": 5,
+      "text": "The Lord at thy right hand shall strike through kings in the day of his wrath.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 110,
+      "verse_start": 6,
+      "verse_end": 6,
+      "text": "He shal iudge among the heathen, he shal fil the places with the dead bodies: he shall wound the heads ouer many countries.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 110,
+      "verse_start": 7,
+      "verse_end": 7,
+      "text": "He shall drinke of the brooke in the way: therefore shall hee lift vp the head.",
+      "info": ""
+    }
+  ]
+}

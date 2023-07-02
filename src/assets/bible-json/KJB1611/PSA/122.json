@@ -1,0 +1,88 @@
+{
+  "header": "¶ <em>A song of degrees of Dauid.",
+  "footer": "",
+  "language": "English",
+  "verses": [
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 122,
+      "verse_start": 1,
+      "verse_end": 1,
+      "text": "I was glad when they sayd vnto me: Let vs goe into the house of the Lord.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 122,
+      "verse_start": 2,
+      "verse_end": 2,
+      "text": "Our feete shall stand within thy gates, O Ierusalem.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 122,
+      "verse_start": 3,
+      "verse_end": 3,
+      "text": "Ierusalem is builded as a citie, that is compact together:",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 122,
+      "verse_start": 4,
+      "verse_end": 4,
+      "text": "Whither the tribes goe vp, the tribes of the Lord, vnto the testimonie of Israel: to giue thankes vnto the name of the Lord.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 122,
+      "verse_start": 5,
+      "verse_end": 5,
+      "text": "For there are set thrones of iudgment: the thrones of the house of Dauid.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 122,
+      "verse_start": 6,
+      "verse_end": 6,
+      "text": "Pray for the peace of Ierusalem: they shall prosper that loue thee.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 122,
+      "verse_start": 7,
+      "verse_end": 7,
+      "text": "Peace be within thy walles: and prosperitie within thy palaces.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 122,
+      "verse_start": 8,
+      "verse_end": 8,
+      "text": "For my brethren and companions sakes: I will now say, Peace be within thee.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 122,
+      "verse_start": 9,
+      "verse_end": 9,
+      "text": "Because of the house of the Lord our God: I will seeke thy good.",
+      "info": ""
+    }
+  ]
+}

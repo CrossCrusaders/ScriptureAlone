@@ -1,0 +1,70 @@
+{
+  "header": "¶ <em>A Psalme or song for the sonnes of Korah.",
+  "footer": "",
+  "language": "English",
+  "verses": [
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 87,
+      "verse_start": 1,
+      "verse_end": 1,
+      "text": "His foundation is in the holy mountaines.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 87,
+      "verse_start": 2,
+      "verse_end": 2,
+      "text": "The Lord loueth the gates of Zion: more then all the dwellings of Iacob.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 87,
+      "verse_start": 3,
+      "verse_end": 3,
+      "text": "Glorious things are spoken of thee, O Citie of God. Selah.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 87,
+      "verse_start": 4,
+      "verse_end": 4,
+      "text": "I will make mention of Rahab, and Babylon, to them that know mee; behold Philistia, and Tyre, with Ethiopia: this man was borne there.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 87,
+      "verse_start": 5,
+      "verse_end": 5,
+      "text": "And of Zion it shalbe said, This and that man was borne in her: and the highest himselfe shall establish her.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 87,
+      "verse_start": 6,
+      "verse_end": 6,
+      "text": "The Lord shall count when he writeth vp the people: that this man was borne there. Selah.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 87,
+      "verse_start": 7,
+      "verse_end": 7,
+      "text": "As wel the singers as the players on instruments shall bee there: all my springs are in thee.",
+      "info": ""
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "header": "",
+  "footer": "",
+  "language": "Hebrew",
+  "verses": [
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 53,
+      "verse_start": 1,
+      "verse_end": 1,
+      "text": "אמר נבל בלבו אין אלהים השׁחיתו והתעיבו עול אין עשׂה טוב׃",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 53,
+      "verse_start": 2,
+      "verse_end": 2,
+      "text": "אלהים משׁמים השׁקיף על בני אדם לראות הישׁ משׂכיל דרשׁ את אלהים׃",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 53,
+      "verse_start": 3,
+      "verse_end": 3,
+      "text": "כלו סג יחדו נאלחו אין עשׂה טוב אין גם אחד׃",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 53,
+      "verse_start": 4,
+      "verse_end": 4,
+      "text": "הלא ידעו פעלי און אכלי עמי אכלו לחם אלהים לא קראו׃",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 53,
+      "verse_start": 5,
+      "verse_end": 5,
+      "text": "שׁם פחדו פחד לא היה פחד כי אלהים פזר עצמות חנך הבשׁתה כי אלהים מאסם׃",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 53,
+      "verse_start": 6,
+      "verse_end": 6,
+      "text": "מי יתן מציון ישׁעות ישׂראל בשׁוב אלהים שׁבות עמו יגל יעקב ישׂמח ישׂראל׃",
+      "info": ""
+    }
+  ]
+}

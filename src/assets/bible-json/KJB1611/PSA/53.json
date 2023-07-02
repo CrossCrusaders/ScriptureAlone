@@ -1,0 +1,61 @@
+{
+  "header": "¶ <em>To the chiefe musician vpon Mahalath, Maschil, A Psalme of Dauid.",
+  "footer": "",
+  "language": "English",
+  "verses": [
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 53,
+      "verse_start": 1,
+      "verse_end": 1,
+      "text": "The foole hath sayde in his heart, There is no god; Corrupt are they, and haue done abhominable iniquitie; there is none that doth good.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 53,
+      "verse_start": 2,
+      "verse_end": 2,
+      "text": "God looked downe from heauen vpon the children of men, to see if there were any that did vnderstand, that did seeke God.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 53,
+      "verse_start": 3,
+      "verse_end": 3,
+      "text": "Euery one of them is gone backe, they are altogether become filthy: there is none that doth good, no not one.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 53,
+      "verse_start": 4,
+      "verse_end": 4,
+      "text": "Haue the workers of iniquitie no knowledge? who eate vp my people, as they eate bread; they haue not called vpon God.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 53,
+      "verse_start": 5,
+      "verse_end": 5,
+      "text": "There were they in great feare, where no feare was: for God hath scattered the bones of him that incampeth against thee, thou hast put them to shame, because God hath despised them.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 53,
+      "verse_start": 6,
+      "verse_end": 6,
+      "text": "O that the saluation of Israel were come out of Sion! when God bringeth backe the captiuitie of his people, Iaakob shall reioyce, and Israel shall be glad.",
+      "info": ""
+    }
+  ]
+}

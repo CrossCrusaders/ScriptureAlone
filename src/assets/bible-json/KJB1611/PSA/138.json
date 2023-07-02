@@ -1,0 +1,79 @@
+{
+  "header": "¶ <em>A Psalme of Dauid.",
+  "footer": "",
+  "language": "English",
+  "verses": [
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 138,
+      "verse_start": 1,
+      "verse_end": 1,
+      "text": "I will praise thee with my whole heart: before the gods will I sing praise vnto thee.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 138,
+      "verse_start": 2,
+      "verse_end": 2,
+      "text": "I will worship towards thy holy temple, and praise thy name, for thy louing kindnesse and for thy trueth: for thou hast magnified thy word aboue all thy name.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 138,
+      "verse_start": 3,
+      "verse_end": 3,
+      "text": "In the day when I cried, thou answeredst me: and strengthenedst me with strength in my soule.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 138,
+      "verse_start": 4,
+      "verse_end": 4,
+      "text": "All the kings of the earth shall praise thee, O Lord: when they heare the words of thy mouth.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 138,
+      "verse_start": 5,
+      "verse_end": 5,
+      "text": "Yea they shall sing in the wayes of the Lord: for great is the glory of the Lord.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 138,
+      "verse_start": 6,
+      "verse_end": 6,
+      "text": "Though the Lord be high, yet hath he respect vnto the lowly: but the proud he knoweth afarre off.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 138,
+      "verse_start": 7,
+      "verse_end": 7,
+      "text": "Though I walke in the mids of trouble, thou wilt reuiue me, thou shalt stretch foorth thine hand against the wrath of mine enemies: and thy right hand shall saue me.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 138,
+      "verse_start": 8,
+      "verse_end": 8,
+      "text": "The Lord wil perfit that which concerneth me: thy mercie, O Lord, endureth for euer: forsake not the works of thine owne hands.",
+      "info": ""
+    }
+  ]
+}

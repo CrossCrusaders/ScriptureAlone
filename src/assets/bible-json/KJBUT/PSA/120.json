@@ -1,0 +1,70 @@
+{
+  "header": "",
+  "footer": "",
+  "language": "Hebrew",
+  "verses": [
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 120,
+      "verse_start": 1,
+      "verse_end": 1,
+      "text": "שׁיר המעלות אל יהוה בצרתה לי קראתי ויענני׃",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 120,
+      "verse_start": 2,
+      "verse_end": 2,
+      "text": "יהוה הצילה נפשׁי משׂפת שׁקר מלשׁון רמיה׃",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 120,
+      "verse_start": 3,
+      "verse_end": 3,
+      "text": "מה יתן לך ומה יסיף לך לשׁון רמיה׃",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 120,
+      "verse_start": 4,
+      "verse_end": 4,
+      "text": "חצי גבור שׁנונים עם גחלי רתמים׃",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 120,
+      "verse_start": 5,
+      "verse_end": 5,
+      "text": "אויה לי כי גרתי משׁך שׁכנתי עם אהלי קדר׃",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 120,
+      "verse_start": 6,
+      "verse_end": 6,
+      "text": "רבת שׁכנה לה נפשׁי עם שׂונא שׁלום׃",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 120,
+      "verse_start": 7,
+      "verse_end": 7,
+      "text": "אני שׁלום וכי אדבר המה למלחמה׃",
+      "info": ""
+    }
+  ]
+}

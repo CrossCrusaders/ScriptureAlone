@@ -1,0 +1,97 @@
+{
+  "header": "¶ <em>A Psalme of Dauid.",
+  "footer": "",
+  "language": "English",
+  "verses": [
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 141,
+      "verse_start": 1,
+      "verse_end": 1,
+      "text": "Lord, I crie vnto thee, make haste vnto mee: giue eare vnto my voice, when I crie vnto thee.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 141,
+      "verse_start": 2,
+      "verse_end": 2,
+      "text": "Let my prayer bee set foorth before thee as incense: and the lifting vp of my hands as the Euening sacrifice.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 141,
+      "verse_start": 3,
+      "verse_end": 3,
+      "text": "Set a watch (O Lord) before my mouth: keepe the doore of my lips.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 141,
+      "verse_start": 4,
+      "verse_end": 4,
+      "text": "Incline not my heart to any euill thing, to practise wicked workes with men that worke iniquitie: and let mee not eate of their dainties.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 141,
+      "verse_start": 5,
+      "verse_end": 5,
+      "text": "Let the righteous smite mee, it shalbe a kindnesse: and let him reprooue me, it shalbe an excellent oile, which shall not breake my head: for yet my prayer also shalbe in their calamities.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 141,
+      "verse_start": 6,
+      "verse_end": 6,
+      "text": "When their Iudges are ouerthrowen in stonie places, they shall heare my words, for they are sweet.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 141,
+      "verse_start": 7,
+      "verse_end": 7,
+      "text": "Our bones are scattered at the graues mouth: as when one cutteth and cleaueth wood vpon the earth.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 141,
+      "verse_start": 8,
+      "verse_end": 8,
+      "text": "But mine eyes are vnto thee, O God the Lord: in thee is my trust, leaue not my soule destitute.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 141,
+      "verse_start": 9,
+      "verse_end": 9,
+      "text": "Keepe mee from the snare which they haue laide for me, and the grinnes of the workers of iniquitie.",
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 141,
+      "verse_start": 10,
+      "verse_end": 10,
+      "text": "Let the wicked fall into their owne nets: whilest that I withal escape.",
+      "info": ""
+    }
+  ]
+}
