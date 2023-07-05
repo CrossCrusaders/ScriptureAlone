@@ -35,7 +35,8 @@
         <h2 class="text-center mb-4 mt-2 h-full flex align-middle">
           <div class="m-auto flex flex-col h-full">
             <span class="text-2xl font-bold">{{ selectedBook?.name }}&nbsp;{{ selectedChapterNumber }}</span>
-            <span v-if="loadedChapterContent?.header" v-html="loadedChapterContent?.header"></span>
+            <span v-if="loadedChapterContent?.header && loadedChapterContent.language == 'English'" v-html="loadedChapterContent?.header" class="font-bold"></span>
+            <span v-if="loadedChapterContent?.header && loadedChapterContent.language == 'Hebrew'" v-html="loadedChapterContent?.header" class="text-xl font-bold"></span>
           </div>
         </h2>
       </div>
@@ -86,8 +87,8 @@
       </div>
       <div class="max-w-prose mx-auto h-fit">
         <h2 class="text-center mt-4 mb-2 h-full flex align-middle">
-          <div class="m-auto flex flex-col h-full">
-            <span v-if="loadedChapterContent?.footer" v-html="loadedChapterContent?.footer"></span>
+          <div class="m-auto flex flex-col">
+            <span v-if="loadedChapterContent?.footer" v-html="loadedChapterContent?.footer" class="font-bold"></span>
           </div>
         </h2>
       </div>
@@ -253,6 +254,7 @@
 
 <script setup lang="ts">
 import { onMounted, ref, watch } from "vue";
+import { getAllNotesInChapter } from "../../notes/services/NoteService"
 import AppLayout from "../../components/templates/AppLayout.vue";
 import PageContent from "../../components/templates/PageContent.vue";
 import {
@@ -505,8 +507,8 @@ const loadChapterContent = async () => {
 
 async function reloadNotes() {
   try {
-    //if((connectedToWifi.value && connectedToWifi.value.connected) || platform.value == "web")
-    //availableNotes.value = await getAllNotesInChapter(selectedBookId.value, selectedChapterNumber.value);
+    if((connectedToWifi.value && connectedToWifi.value.connected))
+      availableNotes.value = await getAllNotesInChapter(selectedBookId.value, selectedChapterNumber.value);
   }
   catch (err) {
     console.log(err)
@@ -748,7 +750,8 @@ async function onVerseClicked(verse: number, willHighlight?: boolean) {
 }
 
 const onSelectedBibleTranslationIdChanged = async (value: any) => {
-  selectedBibleTranslationId.value = value
+  selectedBibleTranslationId.value = value;
+  selectedVerses.value = [];
   await loadChapterContent()
 }
 

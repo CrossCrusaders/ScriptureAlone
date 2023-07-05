@@ -1,6 +1,6 @@
 {
   "header": "",
-  "footer": "",
+  "footer": "¶ Written from Rome to the Colossians, by Tychicus and Onesimus.",
   "language": "English",
   "verses": [
     {
@@ -162,7 +162,7 @@
       "chapter": 4,
       "verse_start": 18,
       "verse_end": 18,
-      "text": "The salutation by the hand of me Paul. Remember my bonds. Grace be with you. Amen. Written from Rome to the Colossians, by Tychicus and Onesimus.",
+      "text": "The salutation by the hand of me Paul. Remember my bonds. Grace be with you. Amen.",
       "info": ""
     }
   ]

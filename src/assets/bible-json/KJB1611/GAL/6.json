@@ -1,6 +1,6 @@
 {
   "header": "",
-  "footer": "",
+  "footer": "¶ Unto the Galatians, written from Rome.",
   "language": "English",
   "verses": [
     {
@@ -162,7 +162,7 @@
       "chapter": 6,
       "verse_start": 18,
       "verse_end": 18,
-      "text": "Brethren, the grace of our Lord Iesus Christ be with your spirit. Amen. Unto the Galatians, written from Rome.",
+      "text": "Brethren, the grace of our Lord Iesus Christ be with your spirit. Amen.",
       "info": ""
     }
   ]

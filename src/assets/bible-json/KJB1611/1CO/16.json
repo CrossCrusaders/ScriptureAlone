@@ -1,6 +1,6 @@
 {
   "header": "",
-  "footer": "",
+  "footer": "¶ The first Epistle to the Corinthians was written from Philippi by Stephanas, and Fortunatus, and Achaicus, and Timotheus.",
   "language": "English",
   "verses": [
     {
@@ -216,7 +216,7 @@
       "chapter": 16,
       "verse_start": 24,
       "verse_end": 24,
-      "text": "My loue be with you all in Christ Iesus, Amen. The first Epistle to the Corinthians was written from Philippi by Stephanas, and Fortunatus, and Achaicus, and Timotheus.",
+      "text": "My loue be with you all in Christ Iesus, Amen.",
       "info": ""
     }
   ]

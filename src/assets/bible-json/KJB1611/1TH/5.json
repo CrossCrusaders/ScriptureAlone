@@ -1,6 +1,6 @@
 {
   "header": "",
-  "footer": "",
+  "footer": "¶ The first Epistle vnto the Thessalonians, was written from Athens.",
   "language": "English",
   "verses": [
     {
@@ -252,7 +252,7 @@
       "chapter": 5,
       "verse_start": 28,
       "verse_end": 28,
-      "text": "The grace of our Lord Iesus Christ be with you, Amen. The first Epistle vnto the Thessalonians, was written from Athens.",
+      "text": "The grace of our Lord Iesus Christ be with you, Amen.",
       "info": ""
     }
   ]
