@@ -5,6 +5,8 @@ import router from './router'
 import { vfmPlugin } from 'vue-final-modal'
 import VuePdf from 'vue3-pdfjs'
 import Vue3TouchEvents from "vue3-touch-events"
+import VuePlyr from 'vue-plyr'
+import 'vue-plyr/dist/vue-plyr.css'
 
 // Functions
 import { setLocalCacheItem } from './cache/services/LocalStorageService';
@@ -19,6 +21,11 @@ app.use(vfmPlugin({
     componentName: 'VueFinalModal',
     dynamicContainerName: 'ModalsContainer'
 }))
+app.use(VuePlyr, {
+    plyr: {
+        ratio: "16:9"
+    }
+})
 app.mount('#app')
 
 // Platform

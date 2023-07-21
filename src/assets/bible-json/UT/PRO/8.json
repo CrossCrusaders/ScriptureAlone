@@ -1,0 +1,624 @@
+{
+  "header": "",
+  "footer": "",
+  "language": "Hebrew",
+  "verses": [
+    {
+      "book_id": "PRO",
+      "book_name": "Proverbs",
+      "chapter": 8,
+      "verse_start": 1,
+      "verse_end": 1,
+      "text": [
+        "הלא",
+        "חכמה",
+        "תקרא",
+        "ותבונה",
+        "תתן",
+        "קולה׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PRO",
+      "book_name": "Proverbs",
+      "chapter": 8,
+      "verse_start": 2,
+      "verse_end": 2,
+      "text": [
+        "בראשׁ",
+        "מרומים",
+        "עלי",
+        "דרך",
+        "בית",
+        "נתיבות",
+        "נצבה׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PRO",
+      "book_name": "Proverbs",
+      "chapter": 8,
+      "verse_start": 3,
+      "verse_end": 3,
+      "text": [
+        "ליד",
+        "שׁערים",
+        "לפי",
+        "קרת",
+        "מבוא",
+        "פתחים",
+        "תרנה׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PRO",
+      "book_name": "Proverbs",
+      "chapter": 8,
+      "verse_start": 4,
+      "verse_end": 4,
+      "text": [
+        "אליכם",
+        "אישׁים",
+        "אקרא",
+        "וקולי",
+        "אל",
+        "בני",
+        "אדם׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PRO",
+      "book_name": "Proverbs",
+      "chapter": 8,
+      "verse_start": 5,
+      "verse_end": 5,
+      "text": [
+        "הבינו",
+        "פתאים",
+        "ערמה",
+        "וכסילים",
+        "הבינו",
+        "לב׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PRO",
+      "book_name": "Proverbs",
+      "chapter": 8,
+      "verse_start": 6,
+      "verse_end": 6,
+      "text": [
+        "שׁמעו",
+        "כי",
+        "נגידים",
+        "אדבר",
+        "ומפתח",
+        "שׂפתי",
+        "מישׁרים׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PRO",
+      "book_name": "Proverbs",
+      "chapter": 8,
+      "verse_start": 7,
+      "verse_end": 7,
+      "text": [
+        "כי",
+        "אמת",
+        "יהגה",
+        "חכי",
+        "ותועבת",
+        "שׂפתי",
+        "רשׁע׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PRO",
+      "book_name": "Proverbs",
+      "chapter": 8,
+      "verse_start": 8,
+      "verse_end": 8,
+      "text": [
+        "בצדק",
+        "כל",
+        "אמרי",
+        "פי",
+        "אין",
+        "בהם",
+        "נפתל",
+        "ועקשׁ׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PRO",
+      "book_name": "Proverbs",
+      "chapter": 8,
+      "verse_start": 9,
+      "verse_end": 9,
+      "text": [
+        "כלם",
+        "נכחים",
+        "למבין",
+        "וישׁרים",
+        "למצאי",
+        "דעת׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PRO",
+      "book_name": "Proverbs",
+      "chapter": 8,
+      "verse_start": 10,
+      "verse_end": 10,
+      "text": [
+        "קחו",
+        "מוסרי",
+        "ואל",
+        "כסף",
+        "ודעת",
+        "מחרוץ",
+        "נבחר׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PRO",
+      "book_name": "Proverbs",
+      "chapter": 8,
+      "verse_start": 11,
+      "verse_end": 11,
+      "text": [
+        "כי",
+        "טובה",
+        "חכמה",
+        "מפנינים",
+        "וכל",
+        "חפצים",
+        "לא",
+        "ישׁוו׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PRO",
+      "book_name": "Proverbs",
+      "chapter": 8,
+      "verse_start": 12,
+      "verse_end": 12,
+      "text": [
+        "אני",
+        "חכמה",
+        "שׁכנתי",
+        "ערמה",
+        "ודעת",
+        "מזמות",
+        "אמצא׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PRO",
+      "book_name": "Proverbs",
+      "chapter": 8,
+      "verse_start": 13,
+      "verse_end": 13,
+      "text": [
+        "יראת",
+        "יהוה",
+        "שׂנאת",
+        "רע",
+        "גאה",
+        "וגאון",
+        "ודרך",
+        "רע",
+        "ופי",
+        "תהפכות",
+        "שׂנאתי׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PRO",
+      "book_name": "Proverbs",
+      "chapter": 8,
+      "verse_start": 14,
+      "verse_end": 14,
+      "text": [
+        "לי",
+        "עצה",
+        "ותושׁיה",
+        "אני",
+        "בינה",
+        "לי",
+        "גבורה׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PRO",
+      "book_name": "Proverbs",
+      "chapter": 8,
+      "verse_start": 15,
+      "verse_end": 15,
+      "text": [
+        "בי",
+        "מלכים",
+        "ימלכו",
+        "ורוזנים",
+        "יחקקו",
+        "צדק׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PRO",
+      "book_name": "Proverbs",
+      "chapter": 8,
+      "verse_start": 16,
+      "verse_end": 16,
+      "text": [
+        "בי",
+        "שׂרים",
+        "ישׂרו",
+        "ונדיבים",
+        "כל",
+        "שׁפטי",
+        "צדק׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PRO",
+      "book_name": "Proverbs",
+      "chapter": 8,
+      "verse_start": 17,
+      "verse_end": 17,
+      "text": [
+        "אני",
+        "אהביה",
+        "אהב",
+        "ומשׁחרי",
+        "ימצאנני׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PRO",
+      "book_name": "Proverbs",
+      "chapter": 8,
+      "verse_start": 18,
+      "verse_end": 18,
+      "text": [
+        "עשׁר",
+        "וכבוד",
+        "אתי",
+        "הון",
+        "עתק",
+        "וצדקה׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PRO",
+      "book_name": "Proverbs",
+      "chapter": 8,
+      "verse_start": 19,
+      "verse_end": 19,
+      "text": [
+        "טוב",
+        "פריי",
+        "מחרוץ",
+        "ומפז",
+        "ותבואתי",
+        "מכסף",
+        "נבחר׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PRO",
+      "book_name": "Proverbs",
+      "chapter": 8,
+      "verse_start": 20,
+      "verse_end": 20,
+      "text": [
+        "בארח",
+        "צדקה",
+        "אהלך",
+        "בתוך",
+        "נתיבות",
+        "משׁפט׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PRO",
+      "book_name": "Proverbs",
+      "chapter": 8,
+      "verse_start": 21,
+      "verse_end": 21,
+      "text": [
+        "להנחיל",
+        "אהבי",
+        "ישׁ",
+        "ואצרתיהם",
+        "אמלא׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PRO",
+      "book_name": "Proverbs",
+      "chapter": 8,
+      "verse_start": 22,
+      "verse_end": 22,
+      "text": [
+        "יהוה",
+        "קנני",
+        "ראשׁית",
+        "דרכו",
+        "קדם",
+        "מפעליו",
+        "מאז׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PRO",
+      "book_name": "Proverbs",
+      "chapter": 8,
+      "verse_start": 23,
+      "verse_end": 23,
+      "text": [
+        "מעולם",
+        "נסכתי",
+        "מראשׁ",
+        "מקדמי",
+        "ארץ׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PRO",
+      "book_name": "Proverbs",
+      "chapter": 8,
+      "verse_start": 24,
+      "verse_end": 24,
+      "text": [
+        "באין",
+        "תהמות",
+        "חוללתי",
+        "באין",
+        "מעינות",
+        "נכבדי",
+        "מים׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PRO",
+      "book_name": "Proverbs",
+      "chapter": 8,
+      "verse_start": 25,
+      "verse_end": 25,
+      "text": [
+        "בטרם",
+        "הרים",
+        "הטבעו",
+        "לפני",
+        "גבעות",
+        "חוללתי׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PRO",
+      "book_name": "Proverbs",
+      "chapter": 8,
+      "verse_start": 26,
+      "verse_end": 26,
+      "text": [
+        "עד",
+        "לא",
+        "עשׂה",
+        "ארץ",
+        "וחוצות",
+        "וראשׁ",
+        "עפרות",
+        "תבל׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PRO",
+      "book_name": "Proverbs",
+      "chapter": 8,
+      "verse_start": 27,
+      "verse_end": 27,
+      "text": [
+        "בהכינו",
+        "שׁמים",
+        "שׁם",
+        "אני",
+        "בחוקו",
+        "חוג",
+        "על",
+        "פני",
+        "תהום׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PRO",
+      "book_name": "Proverbs",
+      "chapter": 8,
+      "verse_start": 28,
+      "verse_end": 28,
+      "text": [
+        "באמצו",
+        "שׁחקים",
+        "ממעל",
+        "בעזוז",
+        "עינות",
+        "תהום׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PRO",
+      "book_name": "Proverbs",
+      "chapter": 8,
+      "verse_start": 29,
+      "verse_end": 29,
+      "text": [
+        "בשׂומו",
+        "לים",
+        "חקו",
+        "ומים",
+        "לא",
+        "יעברו",
+        "פיו",
+        "בחוקו",
+        "מוסדי",
+        "ארץ׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PRO",
+      "book_name": "Proverbs",
+      "chapter": 8,
+      "verse_start": 30,
+      "verse_end": 30,
+      "text": [
+        "ואהיה",
+        "אצלו",
+        "אמון",
+        "ואהיה",
+        "שׁעשׁעים",
+        "יום",
+        "יום",
+        "משׂחקת",
+        "לפניו",
+        "בכל",
+        "עת׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PRO",
+      "book_name": "Proverbs",
+      "chapter": 8,
+      "verse_start": 31,
+      "verse_end": 31,
+      "text": [
+        "משׂחקת",
+        "בתבל",
+        "ארצו",
+        "ושׁעשׁעי",
+        "את",
+        "בני",
+        "אדם׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PRO",
+      "book_name": "Proverbs",
+      "chapter": 8,
+      "verse_start": 32,
+      "verse_end": 32,
+      "text": [
+        "ועתה",
+        "בנים",
+        "שׁמעו",
+        "לי",
+        "ואשׁרי",
+        "דרכי",
+        "ישׁמרו׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PRO",
+      "book_name": "Proverbs",
+      "chapter": 8,
+      "verse_start": 33,
+      "verse_end": 33,
+      "text": [
+        "שׁמעו",
+        "מוסר",
+        "וחכמו",
+        "ואל",
+        "תפרעו׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PRO",
+      "book_name": "Proverbs",
+      "chapter": 8,
+      "verse_start": 34,
+      "verse_end": 34,
+      "text": [
+        "אשׁרי",
+        "אדם",
+        "שׁמע",
+        "לי",
+        "לשׁקד",
+        "על",
+        "דלתתי",
+        "יום",
+        "יום",
+        "לשׁמר",
+        "מזוזת",
+        "פתחי׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PRO",
+      "book_name": "Proverbs",
+      "chapter": 8,
+      "verse_start": 35,
+      "verse_end": 35,
+      "text": [
+        "כי",
+        "מצאי",
+        "מצאי",
+        "חיים",
+        "ויפק",
+        "רצון",
+        "מיהוה׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PRO",
+      "book_name": "Proverbs",
+      "chapter": 8,
+      "verse_start": 36,
+      "verse_end": 36,
+      "text": [
+        "וחטאי",
+        "חמס",
+        "נפשׁו",
+        "כל",
+        "משׂנאי",
+        "אהבו",
+        "מות׃"
+      ],
+      "info": ""
+    }
+  ]
+}

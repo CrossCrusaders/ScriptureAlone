@@ -9,11 +9,9 @@
 </template>
 
 <script setup lang="ts">
-
 import TopNavBar from '../organisms/TopNavBar.vue'
 import PageFooter from '../molecules/PageFooter.vue'
 import DonateButton from '../molecules/DonateButton.vue';
-
 
 </script>
 

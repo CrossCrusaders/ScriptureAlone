@@ -10,8 +10,13 @@
       "abbreviation": "KJB 1611"
     },
     {
-      "id": "KJBUT",
+      "id": "RVG2010",
+      "name": "Reina Valera Gómez 2010",
+      "abbreviation": "RVG 2010"
+    },
+    {
+      "id": "UT",
       "name": "King James Bible Underlying Texts",
-      "abbreviation": "KJB UT"
+      "abbreviation": "UT"
     }
   ]

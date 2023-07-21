@@ -5,6 +5,7 @@ import FourZeroFour from './home/pages/404.vue'
 // Bible Reader
 import BibleReader from './bible/pages/BibleReader.vue'
 import BibleSearch from './bible/pages/BibleSearch.vue'
+import VerseOfTheDay from './bible/pages/VerseOfTheDay.vue'
 
 // Account Management
 import LogIn from './auth/pages/LogIn.vue'
@@ -23,15 +24,6 @@ import UserSettings from './user/pages/UserSettings.vue'
 
 // 
 import Commentaries from './commentaries/pages/Commentaries.vue'
-
-// Sermons
-import Sermons from './sermons/pages/Sermons.vue'
-import SermonDetails from './sermons/pages/SermonDetails.vue'
-import SermonAuthors from './sermons/pages/SermonAuthors.vue'
-import SermonCategories from './sermons/pages/SermonCategories.vue'
-import SermonCategoryCollection from './sermons/pages/SermonCategoryCollection.vue'
-import SermonChurchCollection from './sermons/pages/SermonChurchCollection.vue'
-import SermonSearch from './sermons/pages/SermonSearch.vue'
 
 // Devotionals
 import Devotionals from './devotionals/pages/Devotionals.vue'
@@ -65,15 +57,7 @@ const routes = [
   // Bible
   { path: '/bible', component: BibleReader },
   { path: '/bible/search', component: BibleSearch },
-
-  // Sermons
-  { path: '/sermons', component: Sermons },
-  { path: '/sermons/search', component: SermonSearch },
-  { path: '/sermons/authors', component: SermonAuthors },
-  { path: '/sermons/topics', component: SermonCategories },
-  { path: '/sermons/topics/:categoryKey', component: SermonCategoryCollection },
-  { path: '/sermons/churches/:churchId', component: SermonChurchCollection },
-  { path: '/sermons/:id', component: SermonDetails },
+  { path: '/bible/votd', component: VerseOfTheDay },
 
   // Devotionals
   { path: '/devotionals', component: Devotionals },
@@ -139,6 +123,26 @@ const router = VueRouter.createRouter({
 
 router.afterEach((to, from, fail) => {
   console.log(fail)
+})
+
+import { Preferences } from "@capacitor/preferences";
+router.beforeEach(async(to, from)=>{
+  if(to.fullPath == "/"){
+    var HomeScreenEnabled = await (String(await (await Preferences.get({ key: "HomeScreenEnabled" })).value).toLowerCase() === 'true')
+    if(HomeScreenEnabled == null){
+      Preferences.set({
+        key: "HomeScreenEnabled",
+        value: "true"
+      })
+      HomeScreenEnabled = await (String(await (await Preferences.get({ key: "HomeScreenEnabled" })).value).toLowerCase() === 'true')
+    }
+  
+    if(!HomeScreenEnabled){
+      const string = await (await Preferences.get({ key: "LastBibleData" })).value
+      const BibleData = await JSON.parse(string || "");
+      router.push(`/bible?t=${BibleData?.translation}&b=${BibleData.book}&c=${BibleData.chapter}`);
+    }
+  }
 })
 
 export default router

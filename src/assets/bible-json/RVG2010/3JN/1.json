@@ -1,0 +1,30 @@
+{
+  "header": "",
+  "footer": "",
+  "language": "Spanish",
+  "verses": [
+    {
+      "book_id": "3JN",
+      "book_name": "3Juan",
+      "chapter": 1,
+      "verse_start": 1,
+      "verse_end": 1,
+      "text": [
+        "El",
+        "anciano",
+        "al",
+        "muy",
+        "amado",
+        "Gayo,",
+        "a",
+        "quien",
+        "yo",
+        "amo",
+        "en",
+        "la",
+        "verdad."
+      ],
+      "info": ""
+    }
+  ]
+}

@@ -1,0 +1,143 @@
+{
+  "header": "",
+  "footer": "",
+  "language": "Hebrew",
+  "verses": [
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 124,
+      "verse_start": 1,
+      "verse_end": 1,
+      "text": [
+        "שׁיר",
+        "המעלות",
+        "לדוד",
+        "לולי",
+        "יהוה",
+        "שׁהיה",
+        "לנו",
+        "יאמר",
+        "נא",
+        "ישׂראל׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 124,
+      "verse_start": 2,
+      "verse_end": 2,
+      "text": [
+        "לולי",
+        "יהוה",
+        "שׁהיה",
+        "לנו",
+        "בקום",
+        "עלינו",
+        "אדם׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 124,
+      "verse_start": 3,
+      "verse_end": 3,
+      "text": [
+        "אזי",
+        "חיים",
+        "בלעונו",
+        "בחרות",
+        "אפם׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 124,
+      "verse_start": 4,
+      "verse_end": 4,
+      "text": [
+        "אזי",
+        "המים",
+        "שׁטפונו",
+        "נחלה",
+        "עבר",
+        "על",
+        "נפשׁנו׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 124,
+      "verse_start": 5,
+      "verse_end": 5,
+      "text": [
+        "אזי",
+        "עבר",
+        "על",
+        "נפשׁנו",
+        "המים",
+        "הזידונים׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 124,
+      "verse_start": 6,
+      "verse_end": 6,
+      "text": [
+        "ברוך",
+        "יהוה",
+        "שׁלא",
+        "נתננו",
+        "טרף",
+        "לשׁניהם׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 124,
+      "verse_start": 7,
+      "verse_end": 7,
+      "text": [
+        "נפשׁנו",
+        "כצפור",
+        "נמלטה",
+        "מפח",
+        "יוקשׁים",
+        "הפח",
+        "נשׁבר",
+        "ואנחנו",
+        "נמלטנו׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 124,
+      "verse_start": 8,
+      "verse_end": 8,
+      "text": [
+        "עזרנו",
+        "בשׁם",
+        "יהוה",
+        "עשׂה",
+        "שׁמים",
+        "וארץ׃"
+      ],
+      "info": ""
+    }
+  ]
+}

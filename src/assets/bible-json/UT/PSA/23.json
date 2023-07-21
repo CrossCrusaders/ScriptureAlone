@@ -1,0 +1,124 @@
+{
+  "header": "",
+  "footer": "",
+  "language": "Hebrew",
+  "verses": [
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 23,
+      "verse_start": 1,
+      "verse_end": 1,
+      "text": [
+        "מזמור",
+        "לדוד",
+        "יהוה",
+        "רעי",
+        "לא",
+        "אחסר׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 23,
+      "verse_start": 2,
+      "verse_end": 2,
+      "text": [
+        "בנאות",
+        "דשׁא",
+        "ירביצני",
+        "על",
+        "מי",
+        "מנחות",
+        "ינהלני׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 23,
+      "verse_start": 3,
+      "verse_end": 3,
+      "text": [
+        "נפשׁי",
+        "ישׁובב",
+        "ינחני",
+        "במעגלי",
+        "צדק",
+        "למען",
+        "שׁמו׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 23,
+      "verse_start": 4,
+      "verse_end": 4,
+      "text": [
+        "גם",
+        "כי",
+        "אלך",
+        "בגיא",
+        "צלמות",
+        "לא",
+        "אירא",
+        "רע",
+        "כי",
+        "אתה",
+        "עמדי",
+        "שׁבטך",
+        "ומשׁענתך",
+        "המה",
+        "ינחמני׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 23,
+      "verse_start": 5,
+      "verse_end": 5,
+      "text": [
+        "תערך",
+        "לפני",
+        "שׁלחן",
+        "נגד",
+        "צררי",
+        "דשׁנת",
+        "בשׁמן",
+        "ראשׁי",
+        "כוסי",
+        "רויה׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 23,
+      "verse_start": 6,
+      "verse_end": 6,
+      "text": [
+        "אך",
+        "טוב",
+        "וחסד",
+        "ירדפוני",
+        "כל",
+        "ימי",
+        "חיי",
+        "ושׁבתי",
+        "בבית",
+        "יהוה",
+        "לארך",
+        "ימים׃"
+      ],
+      "info": ""
+    }
+  ]
+}

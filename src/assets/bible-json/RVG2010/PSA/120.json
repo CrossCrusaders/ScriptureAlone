@@ -1,0 +1,155 @@
+{
+  "header": "**Cántico gradual**",
+  "footer": "",
+  "language": "Spanish",
+  "verses": [
+    {
+      "book_id": "PSA",
+      "book_name": "Salmos",
+      "chapter": 120,
+      "verse_start": 1,
+      "verse_end": 1,
+      "text": [
+        "Clamé",
+        "a",
+        "Jehová",
+        "en",
+        "mi",
+        "angustia,",
+        "y",
+        "Él",
+        "me",
+        "respondió."
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Salmos",
+      "chapter": 120,
+      "verse_start": 2,
+      "verse_end": 2,
+      "text": [
+        "Libra",
+        "mi",
+        "alma,",
+        "oh",
+        "Jehová,",
+        "de",
+        "labio",
+        "mentiroso,",
+        "de",
+        "la",
+        "lengua",
+        "engañosa."
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Salmos",
+      "chapter": 120,
+      "verse_start": 3,
+      "verse_end": 3,
+      "text": [
+        "¿Qué",
+        "se",
+        "te",
+        "dará,",
+        "o",
+        "qué",
+        "te",
+        "aprovechará,",
+        "oh",
+        "lengua",
+        "engañosa?"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Salmos",
+      "chapter": 120,
+      "verse_start": 4,
+      "verse_end": 4,
+      "text": [
+        "Afiladas",
+        "saetas",
+        "de",
+        "valiente,",
+        "con",
+        "brasas",
+        "de",
+        "enebro."
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Salmos",
+      "chapter": 120,
+      "verse_start": 5,
+      "verse_end": 5,
+      "text": [
+        "¡Ay",
+        "de",
+        "mí,",
+        "que",
+        "peregrino",
+        "en",
+        "Mesec,",
+        "y",
+        "habito",
+        "entre",
+        "las",
+        "tiendas",
+        "de",
+        "Cedar!"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Salmos",
+      "chapter": 120,
+      "verse_start": 6,
+      "verse_end": 6,
+      "text": [
+        "Mucho",
+        "tiempo",
+        "ha",
+        "morado",
+        "mi",
+        "alma",
+        "con",
+        "los",
+        "que",
+        "aborrecen",
+        "la",
+        "paz."
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Salmos",
+      "chapter": 120,
+      "verse_start": 7,
+      "verse_end": 7,
+      "text": [
+        "Yo",
+        "soy",
+        "pacífico:",
+        "Mas",
+        "cuando",
+        "hablo,",
+        "ellos",
+        "<em>están</em>",
+        "por",
+        "la",
+        "guerra."
+      ],
+      "info": ""
+    }
+  ]
+}

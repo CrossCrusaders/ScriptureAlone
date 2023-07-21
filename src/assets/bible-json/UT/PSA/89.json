@@ -1,0 +1,907 @@
+{
+  "header": "משׂכיל לאיתן האזרחי׃",
+  "footer": "",
+  "language": "Hebrew",
+  "verses": [
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 89,
+      "verse_start": 1,
+      "verse_end": 1,
+      "text": [
+        "",
+        "חסדי",
+        "יהוה",
+        "עולם",
+        "אשׁירה",
+        "לדר",
+        "ודר",
+        "אודיע",
+        "אמונתך",
+        "בפי׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 89,
+      "verse_start": 2,
+      "verse_end": 2,
+      "text": [
+        "כי",
+        "אמרתי",
+        "עולם",
+        "חסד",
+        "יבנה",
+        "שׁמים",
+        "תכן",
+        "אמונתך׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 89,
+      "verse_start": 3,
+      "verse_end": 3,
+      "text": [
+        "כרתי",
+        "ברית",
+        "לבחירי",
+        "נשׁבעתי",
+        "לדוד",
+        "עבדי׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 89,
+      "verse_start": 4,
+      "verse_end": 4,
+      "text": [
+        "עד",
+        "עולם",
+        "אכין",
+        "זרעך",
+        "ובניתי",
+        "לדר",
+        "ודור",
+        "כסאך",
+        "סלה׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 89,
+      "verse_start": 5,
+      "verse_end": 5,
+      "text": [
+        "ויודו",
+        "שׁמים",
+        "פלאך",
+        "יהוה",
+        "אף",
+        "אמונתך",
+        "בקהל",
+        "קדשׁים׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 89,
+      "verse_start": 6,
+      "verse_end": 6,
+      "text": [
+        "כי",
+        "מי",
+        "בשׁחק",
+        "יערך",
+        "ליהוה",
+        "ידמה",
+        "ליהוה",
+        "בבני",
+        "אלים׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 89,
+      "verse_start": 7,
+      "verse_end": 7,
+      "text": [
+        "אל",
+        "נערץ",
+        "בסוד",
+        "קדשׁים",
+        "רבה",
+        "ונורא",
+        "על",
+        "כל",
+        "סביביו׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 89,
+      "verse_start": 8,
+      "verse_end": 8,
+      "text": [
+        "יהוה",
+        "אלהי",
+        "צבאות",
+        "מי",
+        "כמוך",
+        "חסין",
+        "יה",
+        "ואמונתך",
+        "סביבותיך׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 89,
+      "verse_start": 9,
+      "verse_end": 9,
+      "text": [
+        "אתה",
+        "מושׁל",
+        "בגאות",
+        "הים",
+        "בשׂוא",
+        "גליו",
+        "אתה",
+        "תשׁבחם׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 89,
+      "verse_start": 10,
+      "verse_end": 10,
+      "text": [
+        "אתה",
+        "דכאת",
+        "כחלל",
+        "רהב",
+        "בזרוע",
+        "עזך",
+        "פזרת",
+        "אויביך׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 89,
+      "verse_start": 11,
+      "verse_end": 11,
+      "text": [
+        "לך",
+        "שׁמים",
+        "אף",
+        "לך",
+        "ארץ",
+        "תבל",
+        "ומלאה",
+        "אתה",
+        "יסדתם׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 89,
+      "verse_start": 12,
+      "verse_end": 12,
+      "text": [
+        "צפון",
+        "וימין",
+        "אתה",
+        "בראתם",
+        "תבור",
+        "וחרמון",
+        "בשׁמך",
+        "ירננו׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 89,
+      "verse_start": 13,
+      "verse_end": 13,
+      "text": [
+        "לך",
+        "זרוע",
+        "עם",
+        "גבורה",
+        "תעז",
+        "ידך",
+        "תרום",
+        "ימינך׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 89,
+      "verse_start": 14,
+      "verse_end": 14,
+      "text": [
+        "צדק",
+        "ומשׁפט",
+        "מכון",
+        "כסאך",
+        "חסד",
+        "ואמת",
+        "יקדמו",
+        "פניך׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 89,
+      "verse_start": 15,
+      "verse_end": 15,
+      "text": [
+        "אשׁרי",
+        "העם",
+        "יודעי",
+        "תרועה",
+        "יהוה",
+        "באור",
+        "פניך",
+        "יהלכון׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 89,
+      "verse_start": 16,
+      "verse_end": 16,
+      "text": [
+        "בשׁמך",
+        "יגילון",
+        "כל",
+        "היום",
+        "ובצדקתך",
+        "ירומו׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 89,
+      "verse_start": 17,
+      "verse_end": 17,
+      "text": [
+        "כי",
+        "תפארת",
+        "עזמו",
+        "אתה",
+        "וברצנך",
+        "תרים",
+        "קרננו׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 89,
+      "verse_start": 18,
+      "verse_end": 18,
+      "text": [
+        "כי",
+        "ליהוה",
+        "מגננו",
+        "ולקדושׁ",
+        "ישׂראל",
+        "מלכנו׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 89,
+      "verse_start": 19,
+      "verse_end": 19,
+      "text": [
+        "אז",
+        "דברת",
+        "בחזון",
+        "לחסידיך",
+        "ותאמר",
+        "שׁויתי",
+        "עזר",
+        "על",
+        "גבור",
+        "הרימותי",
+        "בחור",
+        "מעם׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 89,
+      "verse_start": 20,
+      "verse_end": 20,
+      "text": [
+        "מצאתי",
+        "דוד",
+        "עבדי",
+        "בשׁמן",
+        "קדשׁי",
+        "משׁחתיו׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 89,
+      "verse_start": 21,
+      "verse_end": 21,
+      "text": [
+        "אשׁר",
+        "ידי",
+        "תכון",
+        "עמו",
+        "אף",
+        "זרועי",
+        "תאמצנו׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 89,
+      "verse_start": 22,
+      "verse_end": 22,
+      "text": [
+        "לא",
+        "ישׁא",
+        "אויב",
+        "בו",
+        "ובן",
+        "עולה",
+        "לא",
+        "יעננו׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 89,
+      "verse_start": 23,
+      "verse_end": 23,
+      "text": [
+        "וכתותי",
+        "מפניו",
+        "צריו",
+        "ומשׂנאיו",
+        "אגוף׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 89,
+      "verse_start": 24,
+      "verse_end": 24,
+      "text": [
+        "ואמונתי",
+        "וחסדי",
+        "עמו",
+        "ובשׁמי",
+        "תרום",
+        "קרנו׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 89,
+      "verse_start": 25,
+      "verse_end": 25,
+      "text": [
+        "ושׂמתי",
+        "בים",
+        "ידו",
+        "ובנהרות",
+        "ימינו׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 89,
+      "verse_start": 26,
+      "verse_end": 26,
+      "text": [
+        "הוא",
+        "יקראני",
+        "אבי",
+        "אתה",
+        "אלי",
+        "וצור",
+        "ישׁועתי׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 89,
+      "verse_start": 27,
+      "verse_end": 27,
+      "text": [
+        "אף",
+        "אני",
+        "בכור",
+        "אתנהו",
+        "עליון",
+        "למלכי",
+        "ארץ׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 89,
+      "verse_start": 28,
+      "verse_end": 28,
+      "text": [
+        "לעולם",
+        "אשׁמור",
+        "לו",
+        "חסדי",
+        "ובריתי",
+        "נאמנת׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 89,
+      "verse_start": 29,
+      "verse_end": 29,
+      "text": [
+        "ושׂמתי",
+        "לעד",
+        "זרעו",
+        "וכסאו",
+        "כימי",
+        "שׁמים׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 89,
+      "verse_start": 30,
+      "verse_end": 30,
+      "text": [
+        "אם",
+        "יעזבו",
+        "בניו",
+        "תורתי",
+        "ובמשׁפטי",
+        "לא",
+        "ילכון׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 89,
+      "verse_start": 31,
+      "verse_end": 31,
+      "text": [
+        "אם",
+        "חקתי",
+        "יחללו",
+        "ומצותי",
+        "לא",
+        "ישׁמרו׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 89,
+      "verse_start": 32,
+      "verse_end": 32,
+      "text": [
+        "ופקדתי",
+        "בשׁבט",
+        "פשׁעם",
+        "ובנגעים",
+        "עונם׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 89,
+      "verse_start": 33,
+      "verse_end": 33,
+      "text": [
+        "וחסדי",
+        "לא",
+        "אפיר",
+        "מעמו",
+        "ולא",
+        "אשׁקר",
+        "באמונתי׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 89,
+      "verse_start": 34,
+      "verse_end": 34,
+      "text": [
+        "לא",
+        "אחלל",
+        "בריתי",
+        "ומוצא",
+        "שׂפתי",
+        "לא",
+        "אשׁנה׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 89,
+      "verse_start": 35,
+      "verse_end": 35,
+      "text": [
+        "אחת",
+        "נשׁבעתי",
+        "בקדשׁי",
+        "אם",
+        "לדוד",
+        "אכזב׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 89,
+      "verse_start": 36,
+      "verse_end": 36,
+      "text": [
+        "זרעו",
+        "לעולם",
+        "יהיה",
+        "וכסאו",
+        "כשׁמשׁ",
+        "נגדי׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 89,
+      "verse_start": 37,
+      "verse_end": 37,
+      "text": [
+        "כירח",
+        "יכון",
+        "עולם",
+        "ועד",
+        "בשׁחק",
+        "נאמן",
+        "סלה׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 89,
+      "verse_start": 38,
+      "verse_end": 38,
+      "text": [
+        "ואתה",
+        "זנחת",
+        "ותמאס",
+        "התעברת",
+        "עם",
+        "משׁיחך׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 89,
+      "verse_start": 39,
+      "verse_end": 39,
+      "text": [
+        "נארתה",
+        "ברית",
+        "עבדך",
+        "חללת",
+        "לארץ",
+        "נזרו׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 89,
+      "verse_start": 40,
+      "verse_end": 40,
+      "text": [
+        "פרצת",
+        "כל",
+        "גדרתיו",
+        "שׂמת",
+        "מבצריו",
+        "מחתה׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 89,
+      "verse_start": 41,
+      "verse_end": 41,
+      "text": [
+        "שׁסהו",
+        "כל",
+        "עברי",
+        "דרך",
+        "היה",
+        "חרפה",
+        "לשׁכניו׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 89,
+      "verse_start": 42,
+      "verse_end": 42,
+      "text": [
+        "הרימות",
+        "ימין",
+        "צריו",
+        "השׂמחת",
+        "כל",
+        "אויביו׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 89,
+      "verse_start": 43,
+      "verse_end": 43,
+      "text": [
+        "אף",
+        "תשׁיב",
+        "צור",
+        "חרבו",
+        "ולא",
+        "הקימתו",
+        "במלחמה׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 89,
+      "verse_start": 44,
+      "verse_end": 44,
+      "text": [
+        "השׁבת",
+        "מטהרו",
+        "וכסאו",
+        "לארץ",
+        "מגרתה׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 89,
+      "verse_start": 45,
+      "verse_end": 45,
+      "text": [
+        "הקצרת",
+        "ימי",
+        "עלומיו",
+        "העטית",
+        "עליו",
+        "בושׁה",
+        "סלה׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 89,
+      "verse_start": 46,
+      "verse_end": 46,
+      "text": [
+        "עד",
+        "מה",
+        "יהוה",
+        "תסתר",
+        "לנצח",
+        "תבער",
+        "כמו",
+        "אשׁ",
+        "חמתך׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 89,
+      "verse_start": 47,
+      "verse_end": 47,
+      "text": [
+        "זכר",
+        "אני",
+        "מה",
+        "חלד",
+        "על",
+        "מה",
+        "שׁוא",
+        "בראת",
+        "כל",
+        "בני",
+        "אדם׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 89,
+      "verse_start": 48,
+      "verse_end": 48,
+      "text": [
+        "מי",
+        "גבר",
+        "יחיה",
+        "ולא",
+        "יראה",
+        "מות",
+        "ימלט",
+        "נפשׁו",
+        "מיד",
+        "שׁאול",
+        "סלה׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 89,
+      "verse_start": 49,
+      "verse_end": 49,
+      "text": [
+        "איה",
+        "חסדיך",
+        "הראשׁנים",
+        "אדני",
+        "נשׁבעת",
+        "לדוד",
+        "באמונתך׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 89,
+      "verse_start": 50,
+      "verse_end": 50,
+      "text": [
+        "זכר",
+        "אדני",
+        "חרפת",
+        "עבדיך",
+        "שׂאתי",
+        "בחיקי",
+        "כל",
+        "רבים",
+        "עמים׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 89,
+      "verse_start": 51,
+      "verse_end": 51,
+      "text": [
+        "אשׁר",
+        "חרפו",
+        "אויביך",
+        "יהוה",
+        "אשׁר",
+        "חרפו",
+        "עקבות",
+        "משׁיחך׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 89,
+      "verse_start": 52,
+      "verse_end": 52,
+      "text": [
+        "ברוך",
+        "יהוה",
+        "לעולם",
+        "אמן",
+        "ואמן׃"
+      ],
+      "info": ""
+    }
+  ]
+}

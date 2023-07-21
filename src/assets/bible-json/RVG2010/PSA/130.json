@@ -1,0 +1,184 @@
+{
+  "header": "**Cántico gradual**",
+  "footer": "",
+  "language": "Spanish",
+  "verses": [
+    {
+      "book_id": "PSA",
+      "book_name": "Salmos",
+      "chapter": 130,
+      "verse_start": 1,
+      "verse_end": 1,
+      "text": [
+        "De",
+        "lo",
+        "profundo,",
+        "oh",
+        "Jehová,",
+        "a",
+        "ti",
+        "clamo."
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Salmos",
+      "chapter": 130,
+      "verse_start": 2,
+      "verse_end": 2,
+      "text": [
+        "Señor,",
+        "oye",
+        "mi",
+        "voz;",
+        "estén",
+        "atentos",
+        "tus",
+        "oídos",
+        "a",
+        "la",
+        "voz",
+        "de",
+        "mi",
+        "súplica."
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Salmos",
+      "chapter": 130,
+      "verse_start": 3,
+      "verse_end": 3,
+      "text": [
+        "Jehová,",
+        "si",
+        "mirares",
+        "a",
+        "los",
+        "pecados,",
+        "¿Quién,",
+        "oh",
+        "Señor,",
+        "quedaría",
+        "en",
+        "pie?"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Salmos",
+      "chapter": 130,
+      "verse_start": 4,
+      "verse_end": 4,
+      "text": [
+        "Pero",
+        "en",
+        "ti",
+        "hay",
+        "perdón,",
+        "para",
+        "que",
+        "seas",
+        "temido."
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Salmos",
+      "chapter": 130,
+      "verse_start": 5,
+      "verse_end": 5,
+      "text": [
+        "Esperé",
+        "yo",
+        "a",
+        "Jehová,",
+        "esperó",
+        "mi",
+        "alma;",
+        "en",
+        "su",
+        "palabra",
+        "he",
+        "esperado."
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Salmos",
+      "chapter": 130,
+      "verse_start": 6,
+      "verse_end": 6,
+      "text": [
+        "Mi",
+        "alma",
+        "<em>espera</em>",
+        "a",
+        "Jehová",
+        "más",
+        "que",
+        "los",
+        "centinelas",
+        "a",
+        "la",
+        "mañana;",
+        "<em>más</em>",
+        "<em>que</em>",
+        "los",
+        "vigilantes",
+        "a",
+        "la",
+        "mañana."
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Salmos",
+      "chapter": 130,
+      "verse_start": 7,
+      "verse_end": 7,
+      "text": [
+        "Espere",
+        "Israel",
+        "a",
+        "Jehová;",
+        "porque",
+        "en",
+        "Jehová",
+        "<em>hay</em>",
+        "misericordia,",
+        "y",
+        "abundante",
+        "redención",
+        "con",
+        "Él."
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Salmos",
+      "chapter": 130,
+      "verse_start": 8,
+      "verse_end": 8,
+      "text": [
+        "Y",
+        "Él",
+        "redimirá",
+        "a",
+        "Israel",
+        "de",
+        "todos",
+        "sus",
+        "pecados."
+      ],
+      "info": ""
+    }
+  ]
+}

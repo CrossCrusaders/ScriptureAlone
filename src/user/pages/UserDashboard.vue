@@ -37,7 +37,7 @@
         <div v-if="versesData.length" class="max-h-96 overflow-y-scroll">
           <div v-for="verse in versesData" @click="
             router.push(
-              `bible?b=${verse.book_id}&c=${verse.chapter}&vs=${verse.verse_start}&ve=${verse.verse_end}`
+              `bible?b=${verse.book_id}&c=${verse.chapter}&vs=${verse.verse_start}&ve=${verse.verse_start}`
             )
           " :class="`rounded verse-${verse.color} transition-all hover:bg-slate-300 cursor-pointer m-2 p-2`">
             <p class="font-bold">
@@ -55,27 +55,6 @@
       </PageHero>
 
       <Divider></Divider>
-
-      <!-- Favorite Sermons -->
-      <PageHero>
-        <div class="flex justify-center">
-          <h1
-            class="font-bold font-title text-3xl md:text-5xl lg:text-6xl mb-2 bg-gradient-to-r from-[#57687f] to-[#1e293b] text-transparent bg-clip-text">
-            Favorited Sermons
-          </h1>
-        </div>
-        <Divider></Divider>
-        <ContentPreviewGrid v-if="favoriteSermons?.length" @click:author="router.push(`/authors/${$event.id}`)"
-          :content="favoriteSermons" @click:button="router.push(`/sermons/${$event.id}`)">
-        </ContentPreviewGrid>
-
-        <div v-else class="flex flex-col gap-3 items-center py-4">
-          <p class="text-xl mb-2">You haven't favorited any sermons yet!</p>
-          <div>
-            <AppButton to="/sermons" variant="primary">Browse Sermons</AppButton>
-          </div>
-        </div>
-      </PageHero>
 
       <!-- Favorite Devotionals -->
       <PageHero>
@@ -119,12 +98,11 @@ import { getUserProfileImage, useUserFavorites } from "../services/UserService";
 import Badge from "../../components/molecules/Badge.vue";
 import ContentPreviewGrid from "../../components/molecules/ContentPreviewGrid.vue";
 import { getUserFavoriteDevotionals } from "../../devotionals/services/DevotionalService";
-import { getUserFavoriteSermons } from "../../sermons/services/SermonService";
 import { getUserHighlightedVerses, getVerses } from "../../bible/services/BibleService";
 import Divider from "../../components/atoms/Divider.vue";
 
 const categories = ref<any>([
-  { name: "Read VOTD", link: "/?votd=t", badge: "book-heart" },
+  { name: "Are you failing?", link: "", badge: "hands-pray" },
   { name: "Are you failing?", link: "", badge: "hands-pray" },
   {
     name: "Are you truly saved?",
@@ -148,22 +126,19 @@ const userProfileImage = getUserProfileImage(user.value);
 const router = useRouter();
 
 const favoriteDevotionals = ref<any>([]);
-const favoriteSermons = ref<any>([]);
 
 onMounted(async () => {
   if (!user.value) return router.replace("/");
 
   const devotionalSearch = await getUserFavoriteDevotionals(user.value.id, 1, 8);
-  const sermonSearch = await getUserFavoriteSermons(user.value.id, 1, 8);
-
   favoriteDevotionals.value = devotionalSearch.items;
-  favoriteSermons.value = sermonSearch.items;
 
   await loadFavorites();
   chapters.value = await getUserHighlightedVerses();
   chapters.value.forEach(async (verse: any) => {
     var verseData = await (
       await getVerses(
+        "KJB1762",
         verse.book_id,
         parseInt(verse.chapter),
         parseInt(verse.verse.verse),

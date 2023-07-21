@@ -9,7 +9,7 @@ const getCurrentBreakpoint: any = () => {
   return 'sm'
 }
 
-let breakpoint: Ref<any> = ref(getCurrentBreakpoint())
+let breakpoint: Ref<string> = ref(getCurrentBreakpoint())
 
 window.addEventListener('resize', () => {
   breakpoint.value = getCurrentBreakpoint()

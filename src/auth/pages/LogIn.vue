@@ -10,7 +10,7 @@
             <h1 class="font-title font-bold text-3xl text-slate-800 mb-4">Log In</h1>
             <p class="font-body leading-normal text-slate-700 mb-4">Log into your Scripture Alone account to access all
               of
-              your saved sermons and devotionals! Don't have an
+              your favorited devotionals and highlighted verses! Don't have an
               account? <a href="/auth/register" class="underline text-red-700">Create one</a></p>
             <form @submit="handleFormSubmit($event)">
               <!-- <div>

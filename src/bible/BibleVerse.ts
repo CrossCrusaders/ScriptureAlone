@@ -4,7 +4,7 @@ export interface BibleVerse {
   chapter: number
   verse_end: number
   verse_start: number
-  text: string
+  text: string[]
   highlight: string
   verse_text?: string
   book_name_alt?: string

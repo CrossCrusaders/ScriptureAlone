@@ -1,7 +1,7 @@
 <template>
   <AppLayout>
     <PageContent>
-      <h1 id="page-title__sermon-authors"
+      <h1 id="page-title__authors"
         class="max-w-prose mx-auto text-slate-800 text-center text-5xl font-title font-bold mt-8 mb-8">Search
         Truth Resource Text Materials
       </h1>

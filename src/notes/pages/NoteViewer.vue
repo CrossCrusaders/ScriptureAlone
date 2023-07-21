@@ -55,7 +55,7 @@ const formatVerseRef = async (verses: number[]) => {
     let str = "";
 
     const versePromises = verses.map((verse) => {
-        return getVerses(note.value?.book_id as string, note.value?.chapter as number, verse, verse).then((response) => {
+        return getVerses("KJB1762", note.value?.book_id as string, note.value?.chapter as number, verse, verse).then((response) => {
             return response.verses[0];
         });
     });

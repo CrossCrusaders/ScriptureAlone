@@ -16,12 +16,21 @@
       <div class="flex flex-col gap-2">
         <h2 class="text-2xl font-bold mb-2 text-slate-700">{{ TabState }}:</h2>
         <div class="flex gap-1">
-          <button v-if="TabState != TabStates.Profile" class="border-t-2 border-l-2 border-r-2 border-solid rounded-tl-lg rounded-tr-lg border-slate-400 p-1 hover:bg-slate-200 transition-all" @click="updateTabs(TabStates.Profile)">Profile</button>
-          <button v-else class="bg-slate-400 border-t-2 border-l-2 border-r-2 border-solid rounded-tl-lg rounded-tr-lg border-slate-400 p-1">Profile</button>
-          <button v-if="TabState != TabStates.Account" class="border-t-2 border-l-2 border-r-2 border-solid rounded-tl-lg rounded-tr-lg border-slate-400 p-1 hover:bg-slate-200 transition-all" @click="updateTabs(TabStates.Account)">Account</button>
-          <button v-else class="bg-slate-400 border-t-2 border-l-2 border-r-2 border-solid rounded-tl-lg rounded-tr-lg border-slate-400 p-1">Account</button>
-          <!--<button v-if="TabState != TabStates.Notifications" class="border-t-2 border-l-2 border-r-2 border-solid rounded-tl-lg rounded-tr-lg border-slate-400 p-1 hover:bg-slate-200 transition-all" @click="updateTabs(TabStates.Notifications)">Notifications</button>
-          <button v-else class="bg-slate-400 border-t-2 border-l-2 border-r-2 border-solid rounded-tl-lg rounded-tr-lg border-slate-400 p-1">Notifications</button>-->
+          <button v-if="TabState != TabStates.Profile"
+            class="border-t-2 border-l-2 border-r-2 border-solid rounded-tl-lg rounded-tr-lg border-slate-400 p-1 hover:bg-slate-200 transition-all"
+            @click="updateTabs(TabStates.Profile)">Profile</button>
+          <button v-else
+            class="bg-slate-400 border-t-2 border-l-2 border-r-2 border-solid rounded-tl-lg rounded-tr-lg border-slate-400 p-1">Profile</button>
+          <button v-if="TabState != TabStates.Account"
+            class="border-t-2 border-l-2 border-r-2 border-solid rounded-tl-lg rounded-tr-lg border-slate-400 p-1 hover:bg-slate-200 transition-all"
+            @click="updateTabs(TabStates.Account)">Account</button>
+          <button v-else
+            class="bg-slate-400 border-t-2 border-l-2 border-r-2 border-solid rounded-tl-lg rounded-tr-lg border-slate-400 p-1">Account</button>
+          <button v-if="TabState != TabStates.Application"
+            class="border-t-2 border-l-2 border-r-2 border-solid rounded-tl-lg rounded-tr-lg border-slate-400 p-1 hover:bg-slate-200 transition-all"
+            @click="updateTabs(TabStates.Application)">Application</button>
+          <button v-else
+            class="bg-slate-400 border-t-2 border-l-2 border-r-2 border-solid rounded-tl-lg rounded-tr-lg border-slate-400 p-1">Application</button>
         </div>
       </div>
       <div class="w-full border-2 border-solid rounded-tr-lg rounded-br-lg rounded-bl-lg border-slate-400 mb-4 p-4">
@@ -42,8 +51,8 @@
                       Change
                     </button>
                     <input type="file" id="fileInput"
-                      class="text-lg absolute left-0 top-0 opacity-0 max-h-8 w-48 h-8 max-w-48 cursor-pointer" ref="pfpInput"
-                      @change="getTempPFP($event); setNeedsSaved(2, TabState, $event);" />
+                      class="text-lg absolute left-0 top-0 opacity-0 max-h-8 w-48 h-8 max-w-48 cursor-pointer"
+                      ref="pfpInput" @change="getTempPFP($event); setNeedsSaved(2, TabState, $event);" />
                   </div>
                   <div class="relative overflow-hidden inline-block">
                     <button
@@ -83,21 +92,14 @@
             <AppButton to="/auth/delete-account" variant="secondary">Delete Account</AppButton>
           </div>
         </div>
-        <!-- Notifications Tab -->
-        <div v-else-if="TabState == TabStates.Notifications">
+        <!-- Application Tab -->
+        <div v-else-if="TabState == TabStates.Application">
           <div class="flex justify-center">
             <div>
-              <h2 class="text-xl font-bold mb-4 mt-4 text-slate-700">Push Notifications:</h2>
+              <h2 class="text-xl font-bold mb-4 mt-4 text-slate-700">Show Home Screen On Open:</h2>
               <div class="flex justify-center overflow-hidden inline-block">
-                <input v-model="pushNotifications" @change="setNeedsSaved(6, TabState, pushNotifications)" type="checkbox" class="w-6 h-6" value="true" />
-              </div>
-            </div>
-          </div>
-          <div class="flex justify-center mb-4">
-            <div>
-              <h2 class="text-xl font-bold mb-2 text-slate-700">Email Notifications:</h2>
-              <div class="flex justify-center inline-block">
-                <input v-model="emailNotifications" @change="setNeedsSaved(7, TabState, emailNotifications)" type="checkbox" class="w-6 h-6" value="true" />
+                <input v-model="homeScreenEnabled" @change="setNeedsSaved(6, TabState, homeScreenEnabled)" type="checkbox"
+                  class="w-6 h-6" />
               </div>
             </div>
           </div>
@@ -123,6 +125,7 @@ import Divider from "../../components/atoms/Divider.vue";
 import { getBucketUrl } from "../../api/BucketStorageService.js";
 import AppInput from "../../components/atoms/form-controls/AppInput.vue";
 import AppButton from "../../components/atoms/form-controls/AppButton.vue";
+import { Preferences } from "@capacitor/preferences";
 
 const { user } = useAuth();
 const userProfileImage = ref();
@@ -133,13 +136,15 @@ const router = useRouter();
 
 const nameInput = ref();
 const pfpInput = ref();
-const pushNotifications = ref();
-const emailNotifications = ref();
+const homeScreenEnabled = ref();
+const currentHomeScreenValue = ref();
+
+const emailNotifications = ref()
 
 const TabStates = {
   Profile: "Profile",
   Account: "Account",
-  Notifications: "Notifications"
+  Application: "Application"
 };
 const TabState = ref(TabStates.Profile);
 
@@ -151,60 +156,62 @@ onMounted(async () => {
   nameInput.value = user.value?.profile.name;
   userProfileImage.value = getUserProfileImage(user.value);
   tempUserProfileImage.value = getUserProfileImage(user.value);
-  pushNotifications.value = user.value.profile.pushNotifications;
-  emailNotifications.value = user.value.profile.emailNotifications;
+  homeScreenEnabled.value = await (String(await (await Preferences.get({ key: "HomeScreenEnabled" })).value).toLowerCase() === 'true');
+  currentHomeScreenValue.value = homeScreenEnabled.value;
 });
 
 async function updateProfile(Tab: string) {
-  if(canSaveAgain.value != true)
+  if (canSaveAgain.value != true)
     return;
 
   var isNull = false;
-  var image:any;
-  if(tempUserProfileImage.value == "/logo-bible.png"){
+  var image: any;
+  if (tempUserProfileImage.value == "/logo-bible.png")
     isNull = true;
-  }
-  if(isNull){
+  if (isNull)
     image = null;
-  }
 
   canSaveAgain.value = false;
-  if(Tab == TabStates.Profile){
+  if (Tab == TabStates.Profile) {
     var fileInput: any = document.getElementById("fileInput");
-    
+
     if (fileInput?.files.length != 0) {
-      if(!isNull){
+      if (!isNull) {
         image = fileInput?.files[0];
       }
     } else {
-      if(!isNull){
+      if (!isNull) {
         image = await fetch(getBucketUrl(user.value?.profile, user.value?.profile.avatar, {})).then((r) => r.blob());
       }
     }
   }
-  else if(Tab == TabStates.Account){
+  else if (Tab == TabStates.Account) {
 
   }
-  else if(Tab == TabStates.Notifications){
-    if(!isNull){
-      image =  await fetch(getBucketUrl(user.value?.profile, user.value?.profile.avatar, {})).then((r) => r.blob());
+  else if (Tab == TabStates.Application) {
+    if (homeScreenEnabled.value != currentHomeScreenValue.value) {
+      await Preferences.set({ key: "HomeScreenEnabled", value: homeScreenEnabled.value.toString() })
+      homeScreenEnabled.value = await (String(await (await Preferences.get({ key: "HomeScreenEnabled" })).value).toLowerCase() === 'true')
+      currentHomeScreenValue.value = homeScreenEnabled.value;
     }
   }
 
-  user.value = await updateUserProfile(
-    nameInput.value,
-    "",
-    image,
-    user.value,
-    pushNotifications.value,
-    emailNotifications.value
-  );
-  userProfileImage.value = getUserProfileImage(user.value);
+  if (Tab != TabStates.Application) {
+    user.value = await updateUserProfile(
+      nameInput.value,
+      "",
+      image,
+      user.value,
+      homeScreenEnabled.value, // Push Notifications
+      emailNotifications.value
+    );
+    userProfileImage.value = getUserProfileImage(user.value);
+  }
   needsSaved.value = false;
   canSaveAgain.value = true;
 }
 
-async function setNeedsSaved(Element: number, Tab: string | null |any, value?: any, addValue?: any) {
+async function setNeedsSaved(Element: number, Tab: string | null | any, value?: any, addValue?: any) {
   /*
     Element Values:
     0 = nameInput
@@ -213,10 +220,10 @@ async function setNeedsSaved(Element: number, Tab: string | null |any, value?: a
     3 = emailInput
     4 = passwordInput
     5 = confirmPasswordInput
-    6 = pushNotifications
+    6 = homeScreenDisabled
     7 = emailNotifications
   */
-  if(Tab == TabStates.Profile){
+  if (Tab == TabStates.Profile) {
     if (Element == 0) {
       needsSaved.value = true;
       if (value == user.value?.profile.name) {
@@ -226,30 +233,29 @@ async function setNeedsSaved(Element: number, Tab: string | null |any, value?: a
     else {
       needsSaved.value = true;
       if (Element == 1) {
-        if(tempUserProfileImage.value == userProfileImage.value){
+        if (tempUserProfileImage.value == userProfileImage.value) {
           needsSaved.value = false;
         }
       }
       else if (Element == 2) {
-        var tempPFP:any = await getTempPFP(value);
+        var tempPFP: any = await getTempPFP(value);
         if (tempPFP == userProfileImage.value || tempPFP == "/logo-bible.png") {
           needsSaved.value = false;
         }
       }
     }
   }
-  else if(Tab == TabStates.Account){
-    
+  else if (Tab == TabStates.Account) {
+
   }
-  else if(Tab == TabStates.Notifications){
+  else if (Tab == TabStates.Application) {
     needsSaved.value = true;
-    if(Element == 6){
-      if(value == user.value?.profile.pushNotifications){
+    if (Element == 6) {
+      if (value == currentHomeScreenValue.value)
         needsSaved.value = false;
-      }
     }
-    else if(Element == 7){
-      if(value == user.value?.profile.emailNotifications){
+    else if (Element == 7) {
+      if (value == user.value?.profile.emailNotifications) {
         needsSaved.value = false;
       }
     }
@@ -277,10 +283,10 @@ async function removeTempPFP() {
   fileInput.value = null;
 }
 
-async function updateTabs(Tab: string){
+async function updateTabs(Tab: string) {
   tempUserProfileImage.value = userProfileImage.value;
   nameInput.value = user.value?.profile.name;
-  pushNotifications.value = user.value?.profile.pushNotifications;
+  homeScreenEnabled.value = await (String(await (await Preferences.get({ key: "HomeScreenEnabled" })).value).toLowerCase() === 'true')
   emailNotifications.value = user.value?.profile.emailNotifications;
 
   TabState.value = Tab;
@@ -288,6 +294,4 @@ async function updateTabs(Tab: string){
 }
 </script>
 
-<style>
-
-</style>
+<style></style>

@@ -15,16 +15,6 @@
 
         </div>
       </div>
-
-      <div v-if="queryParams">
-        <InfiniteScrollContent @scroll:end="onScrollEnd">
-          <SermonsPreviewGrid @data:loaded="loading = false" :append-content="true" :per-page="16" :page="currentPage"
-            :query-params="queryParams">
-          </SermonsPreviewGrid>
-        </InfiniteScrollContent>
-      </div>
-
-
     </PageContent>
   </AppLayout>
 </template>
@@ -34,14 +24,11 @@ import { onMounted, ref } from 'vue'
 import AppLayout from '../../components/templates/AppLayout.vue'
 import PageContent from '../../components/templates/PageContent.vue'
 import { getAuthor } from '../../authors/services/AuthorService'
-import { } from '../../sermons/services/SermonService'
 import { useRoute } from 'vue-router'
 import { Author } from '../../authors/Author'
 import AuthorPreviewColumn from '../../components/molecules/AuthorPreviewColumn.vue'
-import SermonsPreviewGrid from '../../sermons/components/SermonsPreviewGrid.vue'
 import { formatName } from '../../core/services/FormatService'
 import ChurchContactInfo from '../../components/molecules/ChurchContactInfo.vue'
-import InfiniteScrollContent from '../../components/templates/InfiniteScrollContent.vue'
 
 const route = useRoute()
 
@@ -57,14 +44,6 @@ onMounted(async () => {
   author.value = await getAuthor(authorId)
   queryParams.value = { filter: `author='${authorId}'` }
 })
-
-const onScrollEnd = () => {
-  if (!loading.value) {
-    currentPage.value += 1
-    loading.value = true
-  }
-}
-
 
 </script>
 

@@ -2,64 +2,30 @@
   <AppLayout>
     <PageContent>
       <div class="flex flex-col-reverse md:flex-row gap-2 md:gap-8 mt-8" v-if="!loading && !!truthResourceDetail">
-        <div class="md:w-2/6">
-          <AuthorPreviewColumn :show-church-info="true" :author="truthResourceDetail.author"
-            :coverImage="truthResourceDetail.coverImage">
-            <template v-slot:cover-image="{ image }">
-              <TruthResourceCoverImage :cover-image="image" :truth-resource-id="truthResourceDetail?.id"></TruthResourceCoverImage>
-            </template>
-          </AuthorPreviewColumn>
-          <!--TODO: Share Icons -->
-
-        </div>
-        <!-- Right Side -->
-        <div class="md:w-4/6 flex-auto pb-8">
-          <h1 class="font-title font-bold text-4xl mb-2 text-slate-800">{{ truthResourceDetail.title }}</h1>
-          <p class="text-slate-500">Updated: {{ truthResourceLastUpdatedDisplay }} &bullet;
-            <span class="text-slate-500" v-if="truthResourceDetail.duration">
-              Duration: {{ formatMillisecondsAsReadableDuration(
-                truthResourceDetail.duration)
-              }}
-            </span>
-          </p>
-
-          <p v-if="truthResourceDetail.truthResourceDate" class="mb-8 text-slate-500 font-bold">{{ truthResourceCreatedDisplay }}</p>
-          <p class="mb-8 text-slate-700 leading-normal">
-            {{ truthResourceDetail.description }}
-          </p>
-          <!-- Buttons -->
-          <div class="flex gap-4 mb-16">
-            <AppButton variant="primary" @click="onPlayAudioClicked()"
-              v-if="truthResourceAudioSrc && globalAudioState !== AudioPlayerState.playing && globalVideoState !== VideoPlayerState.playing">{{ 'Play Audio' }}
-            </AppButton>
-            <AppButton v-if="truthResourceAudioSrc && globalAudioState === AudioPlayerState.playing" @click="globalAudioState = AudioPlayerState.hidden" variant="accent">{{ 'Close' }}
-            </AppButton>
-            <AppButton v-if="truthResourceAudioSrc && globalAudioState === AudioPlayerState.playing" to="/bible" variant="accent">{{ 'Open Bible' }}
-            </AppButton>
-
-            <AppButton variant="primary" @click="onPlayVideoClicked()"
-              v-if="truthResourceVideoSrc && globalVideoState !== VideoPlayerState.playing && globalAudioState !== AudioPlayerState.playing">
-              {{ 'Play Video' }}
-            </AppButton>
-            <div v-if="truthResourceVideoSrc && globalVideoState === VideoPlayerState.playing">
-              <AppButton @click="globalVideoState = VideoPlayerState.hidden" variant="accent">{{ 'Close' }}
-              </AppButton>
-            </div>
-          </div>
-          <!-- Video -->
-          <Transition name="video">
-            <video v-if="truthResourceVideoSrc && globalVideoState === VideoPlayerState.playing" class="w-full"
-              :src="truthResourceVideoSrc" controlslist="nodownload" autoplay="true" controls></video>
-            <div class="w-full flex" v-else-if="!loading && !!truthResourceDetail && (truthResourceDetail.externalPDFLink || truthResourceDetail.pdf)">
-              <div class="overflow-scroll border-2 border-slate-400 border-solid w-full mb-4" style="height:45em;">
-                <VuePdf v-for="page in truthResourceDetail.pageAmount" :key="page" :src="getBucketUrl(truthResourceDetail, truthResourceDetail.pdf || truthResourceDetail.externalPDFLink)" :page="page" />
-              </div>
-            </div>
-          </Transition>
+        <div class="flex-auto pb-2">
+          
         </div>
       </div>
 
-      <UserRecommendationFooter></UserRecommendationFooter>
+      <!-- Video -->
+      <vue-plyr style="--plyr-color-main: #616161;" v-if="truthResourceVideoSrc && truthResourceDetail">
+        <video controls :data-poster="truthResourceDetail.coverImage" :poster="truthResourceDetail.coverImage">
+          <!--<video controls crossorigin playsinline :data-poster="videoDetail.thumbnail" :poster="videoDetail.thumbnail">-->
+          <source size="720" :src="truthResourceVideoSrc" type="video/mp4" />
+          <!--<source size="1080" :src="videoDetail.video_url" type="video/mp4" />-->
+          <!--<track default kind="captions" label="English captions" src="/path/to/english.vtt" srclang="en" />-->
+        </video>
+      </vue-plyr>
+
+      <div v-if="truthResourceDetail">
+        <h1 class="font-title font-bold text-lg mt-2 text-slate-800">{{ truthResourceDetail.title }}</h1>
+        <p class="mb-8 text-slate-700 leading-normal">
+          <p class="mb-4 text-slate-500 font-bold"><span><RouterLink :to="`/authors/${truthResourceDetail.author?.id}`">{{ truthResourceDetail.author?.firstName + " " + truthResourceDetail.author?.lastName }}</RouterLink></span> &bullet; <span>{{ truthResourceCreatedDisplay }}</span></p>
+            <p>{{ truthResourceDetail.description }}</p>
+          </p>
+      </div>
+
+      <UserRecommendationFooter class="mt-4"></UserRecommendationFooter>
 
       <br><br>
     </PageContent>
@@ -72,20 +38,14 @@ import { computed, onMounted, ref } from 'vue'
 
 import AppLayout from '../../components/templates/AppLayout.vue'
 import PageContent from '../../components/templates/PageContent.vue'
-import AppButton from '../../components/atoms/form-controls/AppButton.vue'
-import Divider from '../../components/atoms/Divider.vue'
-import AuthorPreviewColumn from '../../components/molecules/AuthorPreviewColumn.vue'
 import UserRecommendationFooter from '../../components/organisms/UserRecommendationFooter.vue'
-import { formatAddress } from '../../core/services/FormatService'
 import { getTruthResource } from '../services/TruthResourceService'
 import { useRoute } from 'vue-router'
 import { format } from 'date-fns'
-import { formatMillisecondsAsReadableDuration, formatName } from '../../core/services/FormatService'
+import { formatName } from '../../core/services/FormatService'
 import { TruthResource } from '../TruthResource'
-import TruthResourceCoverImage from '../components/TruthResourceCoverImage.vue'
 import { VideoPlayerState, useGlobalVideoPlayer } from '../../components/organisms/VideoPlayer/VideoPlayerService'
 import { AudioPlayerState, useGlobalAudioPlayer } from '../../components/organisms/AudioPlayer/AudioPlayerService'
-import { getBucketUrl } from '../../api/BucketStorageService'
 
 const {
   setGlobalAudioPayload,
@@ -102,9 +62,6 @@ const {
 const loading = ref(true)
 const truthResourceDetail = ref<TruthResource>()
 const route = useRoute()
-const showPlayerModal = ref(false)
-
-const numOfPages = ref(5);
 
 onMounted(async () => {
   // The Truth Resource ID
@@ -123,7 +80,6 @@ const truthResourceAudioSrc = computed(() => {
 })
 
 const truthResourceVideoSrc = computed(() => {
-  console.log(truthResourceDetail.value?.externalVideoFileUrl)
   return truthResourceDetail.value?.externalVideoFileUrl
 })
 
@@ -162,20 +118,20 @@ const onPlayVideoClicked = () => {
 
 const onPlayAudioClicked = () => {
 
-if (!truthResourceDetail.value)
-  return
-const { title, id, author } = truthResourceDetail.value
+  if (!truthResourceDetail.value)
+    return
+  const { title, id, author } = truthResourceDetail.value
 
-setGlobalAudioPayload({
-  id: id,
-  title: title,
-  author: formatName(author),
-  currentTime: 0,
-  url: truthResourceAudioSrc.value,
-  contentPage: `/truth-resources/${id}`
-})
+  setGlobalAudioPayload({
+    id: id,
+    title: title,
+    author: formatName(author),
+    currentTime: 0,
+    url: truthResourceAudioSrc.value,
+    contentPage: `/truth-resources/${id}`
+  })
 
-setGlobalAudioState(AudioPlayerState.playing)
+  setGlobalAudioState(AudioPlayerState.playing)
 }
 
 </script>

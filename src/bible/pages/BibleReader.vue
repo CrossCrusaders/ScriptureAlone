@@ -35,8 +35,11 @@
         <h2 class="text-center mb-4 mt-2 h-full flex align-middle">
           <div class="m-auto flex flex-col h-full">
             <span class="text-2xl font-bold">{{ selectedBook?.name }}&nbsp;{{ selectedChapterNumber }}</span>
-            <span v-if="loadedChapterContent?.header && loadedChapterContent.language == 'English'" v-html="loadedChapterContent?.header" class="font-bold"></span>
-            <span v-if="loadedChapterContent?.header && loadedChapterContent.language == 'Hebrew'" v-html="loadedChapterContent?.header" class="text-xl font-bold"></span>
+            <span
+              v-if="loadedChapterContent?.header && (loadedChapterContent.language == 'English' || loadedChapterContent.language == 'Spanish')"
+              v-html="loadedChapterContent?.header" class="font-bold"></span>
+            <span v-else-if="loadedChapterContent?.header && loadedChapterContent.language == 'Hebrew'"
+              v-html="loadedChapterContent?.header" class="text-xl font-bold"></span>
           </div>
         </h2>
       </div>
@@ -46,10 +49,10 @@
         <div class="w-full text-center font-bold text-lg" v-if="verse?.info">{{ verse?.info }}</div>
         <div v-touch:longtap="() => { onVerseClicked(verse.verse_start, true); menuVerse = verse; openMenu = true; }"
           v-touch:tap="() => onVerseClicked(verse.verse_start)" :id="`verse-${verse.verse_start}`" :class="verse.css">
-          <div v-if="loadedChapterContent.language == 'English'">
+          <div v-if="loadedChapterContent.language == 'English' || loadedChapterContent.language == 'Spanish'">
             <span class="verse-number">{{ verse.verse_start }}</span>
             <span class="verse-text">
-              <span v-for="word in verse.text_array">
+              <span v-for="word in verse.text">
                 <button @click="
                   handleOpenWordModal(
                     getWordFromPastTense(word.split('|')[1].split('</span>')[0]),
@@ -69,26 +72,36 @@
                 <span v-else v-html="' ' + word"></span>
               </span>
             </span>
+            <button
+              @click="router.push(`/bible?t=${selectedBibleTranslationId}&b=${crossRef.book}&c=${crossRef.chapter}&vs=${crossRef.verse}&ve=${crossRef.verse}`)"
+              class="ml-2 font-bold" v-for="crossRef in verse.cross_references">
+              {{ `${crossRef.book}. ${crossRef.chapter}:${crossRef.verse}` }}
+            </button>
           </div>
           <div v-else-if="loadedChapterContent.language == 'Hebrew'" class="flex justify-between">
             <span class="verse-number">{{ verse.verse_start }}</span>
             <div class="verse-text Hebrew">
-              <span v-for="word in verse.text_array" v-html="' ' + word"></span>
+              <span v-for="word in verse.text" v-html="' ' + word"></span>
             </div>
           </div>
           <div v-else-if="loadedChapterContent.language == 'Greek'">
             <span class="verse-number">{{ verse.verse_start }}</span>
             <span class="verse-text Greek">
-              <span v-for="word in verse.text_array" v-html="' ' + word"></span>
+              <span v-for="word in verse.text" v-html="' ' + word"></span>
             </span>
           </div>
         </div>
         </p>
       </div>
-      <div class="max-w-prose mx-auto h-fit">
-        <h2 class="text-center mt-4 mb-2 h-full flex align-middle">
-          <div class="m-auto flex flex-col">
-            <span v-if="loadedChapterContent?.footer" v-html="loadedChapterContent?.footer" class="font-bold"></span>
+      <div v-if="loadedChapterContent?.footer || loadedChapterContent.language == 'Spanish'"
+        class="max-w-prose mx-auto h-fit">
+        <h2 class="text-center mt-4 h-full flex align-middle">
+          <div class="m-auto flex flex-col font-bold">
+            <span v-if="loadedChapterContent.language == 'English'" v-html="loadedChapterContent?.footer"></span>
+            <span v-else-if="loadedChapterContent.language == 'Greek'" v-html="loadedChapterContent?.footer"
+              class="text-lg"></span>
+            <span v-else-if="loadedChapterContent.language == 'Spanish'">Copyright © 2004, 2010 Dr. Humberto Gómez
+              Caballero</span>
           </div>
         </h2>
       </div>
@@ -103,7 +116,7 @@
             menuVerse.book_name + " " + menuVerse.chapter + ":" + menuVerse.verse_start
           }}
         </p>
-        <span v-for="word in menuVerse.text_array">
+        <span v-for="word in menuVerse.text">
           <span v-if="word.includes('<span') && word.includes('|')" class="ml-1 text-red-500"
             v-html="word.split('|')[0] + word.split('|')[1]"></span>
           <span v-else-if="word.includes('|')" class="ml-1" v-html="word.split('|')[1]"></span>
@@ -150,17 +163,7 @@
         </div>
       </div>
       <button class="mx-auto bg-cyan-500 hover:bg-cyan-400 active:bg-cyan-600 transition-all p-2 rounded w-full md:w-1/2"
-        @click="
-          copyString(
-            menuVerse.book_name +
-            ' ' +
-            menuVerse.chapter +
-            ':' +
-            menuVerse.verse_start +
-            ' - ' +
-            menuVerse.text
-          )
-          ">
+        @click="copyString(`${menuVerse.book_name} ${menuVerse.chapter}:${menuVerse.verse_start} - ${menuVerse.text.join(' ')}`)">
         Copy Verse
       </button>
       <button
@@ -192,14 +195,16 @@
     </div>
   </AppModal>
   <AppModal v-model="wordDefModal" v-slot="{ close }">
-    <div class="px-4 pb-4 text-white flex flex-col gap-2 overflow-scroll" style="text-align: center">
+    <div class="px-4 pb-4 text-white flex flex-col gap-2 h-80" style="text-align: center">
       <div>
         <p class="font-bold text-2xl text-black">{{ wordDef?.word }}</p>
         <p class="font-bold text-black">{{ wordDef?.pronunciation }}</p>
       </div>
-      <div class="bg-slate-200 p-2 rounded text-black" v-for="definition in wordDef?.definitions">
-        <p class="font-bold">{{ definition.type }}</p>
-        <p v-html="definition.text"></p>
+      <div class="overflow-y-scroll flex flex-col gap-2">
+        <div class="bg-slate-200 p-2 rounded text-black" v-for="definition in wordDef?.definitions">
+          <p class="font-bold">{{ definition.type }}</p>
+          <p v-html="definition.text"></p>
+        </div>
       </div>
     </div>
   </AppModal>
@@ -323,13 +328,12 @@ const pageLoading = ref(false);
 
 const openMenu = ref(false);
 const menuVerse = ref({
-  text: "",
+  text: [""],
   verse_start: "",
   book_name: "",
   chapter: "",
   book_id: "",
   info: "",
-  text_array: [""]
 });
 const noteTitle = ref("");
 const noteText = ref("");
@@ -359,8 +363,8 @@ let highlightRange: number[] = [];
 const router = useRouter();
 const route = useRoute();
 
-const platform = ref("");
 const connectedToWifi = ref({ connected: false });
+const platform = ref("");
 
 const selectedBook = computed(() =>
   availableBooks.value.find((book: any) => book.bookId === selectedBookId.value)
@@ -405,11 +409,7 @@ const loadChapterContent = async () => {
       console.log(err)
     }
 
-    var ChristsWords = false;
-    var isItalics = false;
     response.verses.forEach((verse: any) => {
-      var tempVerseText: any = [];
-
       let verseCssClass = "cursor-pointer transition-all px-2 verse";
       if (
         shouldHighlight &&
@@ -418,47 +418,6 @@ const loadChapterContent = async () => {
         verse.verse_start <= highlightRange[1]
       )
         verseCssClass += " verse-highlight";
-
-      if (typeof verse.text === "string" || verse.text instanceof String)
-        tempVerseText = verse.text.split(" ");
-      var transformedTempVerseText: any = [];
-      tempVerseText.forEach((word: string, index: number) => {
-        if (
-          WebstersWords.value.includes(
-            (word.charAt(0).toUpperCase() + word.slice(1)).slice(0, word.length)
-          ) ||
-          WebstersWords.value.includes(
-            (word.charAt(0).toUpperCase() + word.slice(1)).slice(0, word.length - 1)
-          )
-        )
-          word = `|${word}`;
-
-        let push = true;
-
-        if (word.includes("<em>") && !word.includes("</em>")) isItalics = true;
-        else if (!word.includes("<em>") && word.includes("</em>")) {
-          word = `<em>${word}</em>`;
-          isItalics = false;
-        }
-        if (isItalics) word = `<em>${word}</em>`;
-
-        if (word == '"JESUS_START"') {
-          ChristsWords = true;
-          push = false;
-        } else if (word == '"JESUS_END"') {
-          ChristsWords = false;
-          push = false;
-        } else if (word.includes('"JESUS_END"')) {
-          transformedTempVerseText[transformedTempVerseText.length - 1] = transformedTempVerseText[transformedTempVerseText.length - 1] + word.split('"JESUS_END"')[1];
-          ChristsWords = false;
-          push = false;
-        } else if (ChristsWords) word = `<span class="text-red-500">${word}</span>`;
-
-        if (push) transformedTempVerseText.push(word);
-
-        if (index == tempVerseText.length - 1)
-          verse.text_array = transformedTempVerseText;
-      });
 
       var highlightColor = "";
       if (versesHighlights) {
@@ -507,7 +466,7 @@ const loadChapterContent = async () => {
 
 async function reloadNotes() {
   try {
-    if((connectedToWifi.value && connectedToWifi.value.connected))
+    if ((connectedToWifi.value && connectedToWifi.value.connected))
       availableNotes.value = await getAllNotesInChapter(selectedBookId.value, selectedChapterNumber.value);
   }
   catch (err) {
@@ -516,9 +475,9 @@ async function reloadNotes() {
 }
 
 onMounted(async () => {
+  platform.value = await getLocalCacheItem("__platform__", false)
   WebstersWords.value = (await import("../../assets/websters/words.json")).default;
   connectedToWifi.value = await getLocalCacheItem("__network_status__", true);
-  platform.value = await getLocalCacheItem("__platform__", false);
   await getNewVerses();
   watch(
     () => openMenu.value,
@@ -533,6 +492,25 @@ onMounted(async () => {
         });
       } else {
         notesVerseIsIn.value = [];
+      }
+    }
+  );
+  watch(
+    () => route.query,
+    async () => {
+      let { t, b, c, vs, ve } = route.query as any
+      if (b && c) {
+        if (t)
+          selectedBibleTranslationId.value = t;
+        if (b)
+          selectedBookId.value = b;
+        if (c)
+          selectedChapterNumber.value = c;
+        if (vs)
+          highlightRange[0] = vs;
+        if (ve)
+          highlightRange[1] = ve;
+        await loadChapterContent();
       }
     }
   );
@@ -567,8 +545,6 @@ async function startBibleAudio(timer: number) {
   else url += `00${selectedChapterNumber.value}`;
 
   url += ".mp3";
-
-  console.log(url);
 
   setGlobalAudioPayload({
     id: `${selectedBookId.value}.${selectedChapterNumber.value}`,
@@ -624,7 +600,8 @@ const onNextChapterButtonClicked = async () => {
   if (!nextData) return;
   selectedBookId.value = nextData.bookId;
   selectedChapterNumber.value = nextData.chapterNumber;
-  await loadChapterContent();
+  //await loadChapterContent();
+  router.push(`/bible?t=${selectedBibleTranslationId.value}&b=${selectedBookId.value}&c=${selectedChapterNumber.value}`)
 };
 
 const onPrevChapterButtonClicked = async () => {
@@ -637,7 +614,8 @@ const onPrevChapterButtonClicked = async () => {
 
   selectedBookId.value = nextData.bookId;
   selectedChapterNumber.value = nextData.chapterNumber;
-  await loadChapterContent();
+  //await loadChapterContent();
+  router.push(`/bible?t=${selectedBibleTranslationId.value}&b=${selectedBookId.value}&c=${selectedChapterNumber.value}`)
 };
 
 const onSelectedBookIdChanged = async (value: any) => {
@@ -645,12 +623,14 @@ const onSelectedBookIdChanged = async (value: any) => {
   selectedChapterNumber.value = 1;
 
   availableChapters.value = await getChaptersByBookId(selectedBookId.value);
-  await loadChapterContent();
+  //await loadChapterContent
+  router.push(`/bible?t=${selectedBibleTranslationId.value}&b=${selectedBookId.value}&c=${selectedChapterNumber.value}`)
 };
 
 const onSelectedChapterNumberChanged = async (value: any) => {
   selectedChapterNumber.value = value;
-  await loadChapterContent();
+  //await loadChapterContent();
+  router.push(`/bible?t=${selectedBibleTranslationId.value}&b=${selectedBookId.value}&c=${selectedChapterNumber.value}`)
 };
 
 const searchModel = ref("");
@@ -730,7 +710,7 @@ async function handleHighlightVerse(color: string) {
   ).then(async () => {
     selectedVerses.value = [];
     openMenu.value = false;
-    await loadChapterContent();
+    await loadChapterContent(); /////////////////////////////////////////////////////////////////// Fix (Highlighting verses not go back to the top of page)
   });
 }
 
@@ -752,7 +732,8 @@ async function onVerseClicked(verse: number, willHighlight?: boolean) {
 const onSelectedBibleTranslationIdChanged = async (value: any) => {
   selectedBibleTranslationId.value = value;
   selectedVerses.value = [];
-  await loadChapterContent()
+  //await loadChapterContent()
+  router.push(`/bible?t=${selectedBibleTranslationId.value}&b=${selectedBookId.value}&c=${selectedChapterNumber.value}`)
 }
 
 function sorter(a: number, b: number) {

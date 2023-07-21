@@ -1,0 +1,102 @@
+{
+  "header": "למנצח לדוד להזכיר׃",
+  "footer": "",
+  "language": "Hebrew",
+  "verses": [
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 70,
+      "verse_start": 1,
+      "verse_end": 1,
+      "text": [
+        "",
+        "אלהים",
+        "להצילני",
+        "יהוה",
+        "לעזרתי",
+        "חושׁה׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 70,
+      "verse_start": 2,
+      "verse_end": 2,
+      "text": [
+        "יבשׁו",
+        "ויחפרו",
+        "מבקשׁי",
+        "נפשׁי",
+        "יסגו",
+        "אחור",
+        "ויכלמו",
+        "חפצי",
+        "רעתי׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 70,
+      "verse_start": 3,
+      "verse_end": 3,
+      "text": [
+        "ישׁובו",
+        "על",
+        "עקב",
+        "בשׁתם",
+        "האמרים",
+        "האח",
+        "האח׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 70,
+      "verse_start": 4,
+      "verse_end": 4,
+      "text": [
+        "ישׂישׂו",
+        "וישׂמחו",
+        "בך",
+        "כל",
+        "מבקשׁיך",
+        "ויאמרו",
+        "תמיד",
+        "יגדל",
+        "אלהים",
+        "אהבי",
+        "ישׁועתך׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 70,
+      "verse_start": 5,
+      "verse_end": 5,
+      "text": [
+        "ואני",
+        "עני",
+        "ואביון",
+        "אלהים",
+        "חושׁה",
+        "לי",
+        "עזרי",
+        "ומפלטי",
+        "אתה",
+        "יהוה",
+        "אל",
+        "תאחר׃"
+      ],
+      "info": ""
+    }
+  ]
+}

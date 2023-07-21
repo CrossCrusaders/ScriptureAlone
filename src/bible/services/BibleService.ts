@@ -22,7 +22,7 @@ export async function getVerseOfTheDay() {
 
 	const verses = chosenVerse.verseId.split('-')
 
-	let verseResponse = { verses: [{ verse_start: 0, text: "", book_name: "" }]  }
+	let verseResponse = { verses: [{ verse_start: 0, text: [""], book_name: "" }]  }
 	let verseReference = ''
 	let verseBookId, verseChapter
 
@@ -31,7 +31,7 @@ export async function getVerseOfTheDay() {
 		verseBookId = book.toUpperCase();
 		verseChapter = chapter;
 		const [_, __, verse2] = verses[1].split('.')
-		verseResponse = await getVerses(book, chapter, verse1, verse2)
+		verseResponse = await getVerses("KJB1762", book, chapter, verse1, verse2)
 		verseReference = `${verseResponse.verses[0].book_name} ${chapter}:${verse1}-${verse2}`
 	} else if (verses.length === 1) {
 		const [book, chapter, verse] = verses[0].split('.')
@@ -44,7 +44,7 @@ export async function getVerseOfTheDay() {
 	}
 
 	const verseText = verseResponse.verses.reduce((aggregate, verse) => {
-		return aggregate + `<span class="verse-number">${verse.verse_start}</span>${verse.text.replaceAll('"JESUS_START" ', '<span class="text-red-500">').replaceAll(' "JESUS_END"', "</span>")} `
+		return aggregate + `<span class="verse-number">${verse.verse_start}</span>${verse.text.join(' ')} `
 	}, '')
 
 	return {
@@ -263,7 +263,7 @@ export async function isBibleReference(query: string) {
 		chapter: parseInt(chapter, 10),
 		verse_start: parseInt(startVerse),
 		verse_end: parseInt(endVerse || startVerse),
-		text: '',
+		text: [''],
 		highlight: ""
 	}
 	return bibleVerseRef

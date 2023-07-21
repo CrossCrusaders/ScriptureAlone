@@ -114,40 +114,17 @@ export const transformRecordResponse = (response: any, collection: string): Reco
     record.coverImage = getBucketUrl(record, record.coverImage)
   }
 
-  if (record.sermonDate)
-    record.sermonDate = new Date((record.sermonDate as any).replace(' ', 'T'))
-
-
-
-
-
   if (record.devotionalDate)
     record.devotionalDate = new Date((record.devotionalDate as any).replace(' ', 'T'))
-
-
-
-
 
   if (record.truthResourceDate)
     record.truthResourceDate = new Date((record.truthResourceDate as any).replace(' ', 'T'))
 
-
-
-
-
   if (record.updated)
     record.updated = new Date((record.updated as any).replace(' ', 'T'))
 
-
-
-
-
   if (record.created)
     record.created = new Date((record.created as any).replace(' ', 'T'))
-
-
-
-
 
   return record;
 }

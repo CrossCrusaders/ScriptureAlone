@@ -194,7 +194,7 @@ const onPlayAudioClicked = () => {
 
 async function getVerse() {
   if (devotionalDetail.value?.content != "" && devotionalDetail.value?.contentTitle != "" && devotionalDetail.value?.vBook != "" && devotionalDetail.value?.vChap != 0) {
-    const chapterData = await getVerses(devotionalDetail.value?.vBook || "", devotionalDetail.value?.vChap || 1, devotionalDetail.value?.vVerseS, devotionalDetail.value?.vVerseE)
+    const chapterData = await getVerses("KJB1762", devotionalDetail.value?.vBook || "", devotionalDetail.value?.vChap || 1, devotionalDetail.value?.vVerseS, devotionalDetail.value?.vVerseE)
     bookName.value = chapterData.verses[0].book_name;
     var FinishedVerseText = "";
     chapterData.verses.forEach((verse, index) => {

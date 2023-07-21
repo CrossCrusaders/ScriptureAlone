@@ -1,0 +1,49 @@
+{
+  "header": "",
+  "footer": "",
+  "language": "Spanish",
+  "verses": [
+    {
+      "book_id": "OBA",
+      "book_name": "Abdias",
+      "chapter": 1,
+      "verse_start": 1,
+      "verse_end": 1,
+      "text": [
+        "Visión",
+        "de",
+        "Abdías.",
+        "Así",
+        "dice",
+        "Jehová",
+        "el",
+        "Señor",
+        "en",
+        "cuanto",
+        "a",
+        "Edom:",
+        "Hemos",
+        "oído",
+        "el",
+        "pregón",
+        "de",
+        "Jehová,",
+        "y",
+        "mensajero",
+        "es",
+        "enviado",
+        "a",
+        "las",
+        "gentes.",
+        "Levantaos,",
+        "y",
+        "levantémonos",
+        "contra",
+        "ella",
+        "en",
+        "batalla."
+      ],
+      "info": ""
+    }
+  ]
+}

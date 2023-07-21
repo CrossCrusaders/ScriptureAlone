@@ -1,0 +1,636 @@
+{
+  "header": "",
+  "footer": "",
+  "language": "Hebrew",
+  "verses": [
+    {
+      "book_id": "PRO",
+      "book_name": "Proverbs",
+      "chapter": 30,
+      "verse_start": 1,
+      "verse_end": 1,
+      "text": [
+        "דברי",
+        "אגור",
+        "בן",
+        "יקה",
+        "המשׂא",
+        "נאם",
+        "הגבר",
+        "לאיתיאל",
+        "לאיתיאל",
+        "ואכל׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PRO",
+      "book_name": "Proverbs",
+      "chapter": 30,
+      "verse_start": 2,
+      "verse_end": 2,
+      "text": [
+        "כי",
+        "בער",
+        "אנכי",
+        "מאישׁ",
+        "ולא",
+        "בינת",
+        "אדם׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PRO",
+      "book_name": "Proverbs",
+      "chapter": 30,
+      "verse_start": 3,
+      "verse_end": 3,
+      "text": [
+        "ולא",
+        "למדתי",
+        "חכמה",
+        "ודעת",
+        "קדשׁים",
+        "אדע׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PRO",
+      "book_name": "Proverbs",
+      "chapter": 30,
+      "verse_start": 4,
+      "verse_end": 4,
+      "text": [
+        "מי",
+        "עלה",
+        "שׁמים",
+        "וירד",
+        "מי",
+        "אסף",
+        "רוח",
+        "בחפניו",
+        "מי",
+        "צרר",
+        "מים",
+        "בשׂמלה",
+        "מי",
+        "הקים",
+        "כל",
+        "אפסי",
+        "ארץ",
+        "מה",
+        "שׁמו",
+        "ומה",
+        "שׁם",
+        "בנו",
+        "כי",
+        "תדע׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PRO",
+      "book_name": "Proverbs",
+      "chapter": 30,
+      "verse_start": 5,
+      "verse_end": 5,
+      "text": [
+        "כל",
+        "אמרת",
+        "אלוה",
+        "צרופה",
+        "מגן",
+        "הוא",
+        "לחסים׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PRO",
+      "book_name": "Proverbs",
+      "chapter": 30,
+      "verse_start": 6,
+      "verse_end": 6,
+      "text": [
+        "אל",
+        "תוסף",
+        "על",
+        "דבריו",
+        "פן",
+        "יוכיח",
+        "בך",
+        "ונכזבת׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PRO",
+      "book_name": "Proverbs",
+      "chapter": 30,
+      "verse_start": 7,
+      "verse_end": 7,
+      "text": [
+        "שׁתים",
+        "שׁאלתי",
+        "מאתך",
+        "אל",
+        "תמנע",
+        "ממני",
+        "בטרם",
+        "אמות׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PRO",
+      "book_name": "Proverbs",
+      "chapter": 30,
+      "verse_start": 8,
+      "verse_end": 8,
+      "text": [
+        "שׁוא",
+        "ודבר",
+        "כזב",
+        "הרחק",
+        "ממני",
+        "ראשׁ",
+        "ועשׁר",
+        "אל",
+        "תתן",
+        "לי",
+        "הטריפני",
+        "לחם",
+        "חקי׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PRO",
+      "book_name": "Proverbs",
+      "chapter": 30,
+      "verse_start": 9,
+      "verse_end": 9,
+      "text": [
+        "פן",
+        "אשׂבע",
+        "וכחשׁתי",
+        "ואמרתי",
+        "מי",
+        "יהוה",
+        "ופן",
+        "אורשׁ",
+        "וגנבתי",
+        "ותפשׂתי",
+        "שׁם",
+        "אלהי׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PRO",
+      "book_name": "Proverbs",
+      "chapter": 30,
+      "verse_start": 10,
+      "verse_end": 10,
+      "text": [
+        "אל",
+        "תלשׁן",
+        "עבד",
+        "אל",
+        "אדנו",
+        "פן",
+        "יקללך",
+        "ואשׁמת׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PRO",
+      "book_name": "Proverbs",
+      "chapter": 30,
+      "verse_start": 11,
+      "verse_end": 11,
+      "text": [
+        "דור",
+        "אביו",
+        "יקלל",
+        "ואת",
+        "אמו",
+        "לא",
+        "יברך׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PRO",
+      "book_name": "Proverbs",
+      "chapter": 30,
+      "verse_start": 12,
+      "verse_end": 12,
+      "text": [
+        "דור",
+        "טהור",
+        "בעיניו",
+        "ומצאתו",
+        "לא",
+        "רחץ׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PRO",
+      "book_name": "Proverbs",
+      "chapter": 30,
+      "verse_start": 13,
+      "verse_end": 13,
+      "text": [
+        "דור",
+        "מה",
+        "רמו",
+        "עיניו",
+        "ועפעפיו",
+        "ינשׂאו׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PRO",
+      "book_name": "Proverbs",
+      "chapter": 30,
+      "verse_start": 14,
+      "verse_end": 14,
+      "text": [
+        "דור",
+        "חרבות",
+        "שׁניו",
+        "ומאכלות",
+        "מתלעתיו",
+        "לאכל",
+        "עניים",
+        "מארץ",
+        "ואביונים",
+        "מאדם׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PRO",
+      "book_name": "Proverbs",
+      "chapter": 30,
+      "verse_start": 15,
+      "verse_end": 15,
+      "text": [
+        "לעלוקה",
+        "שׁתי",
+        "בנות",
+        "הב",
+        "הב",
+        "שׁלושׁ",
+        "הנה",
+        "לא",
+        "תשׂבענה",
+        "ארבע",
+        "לא",
+        "אמרו",
+        "הון׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PRO",
+      "book_name": "Proverbs",
+      "chapter": 30,
+      "verse_start": 16,
+      "verse_end": 16,
+      "text": [
+        "שׁאול",
+        "ועצר",
+        "רחם",
+        "ארץ",
+        "לא",
+        "שׂבעה",
+        "מים",
+        "ואשׁ",
+        "לא",
+        "אמרה",
+        "הון׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PRO",
+      "book_name": "Proverbs",
+      "chapter": 30,
+      "verse_start": 17,
+      "verse_end": 17,
+      "text": [
+        "עין",
+        "תלעג",
+        "לאב",
+        "ותבוז",
+        "ליקהת",
+        "אם",
+        "יקרוה",
+        "ערבי",
+        "נחל",
+        "ויאכלוה",
+        "בני",
+        "נשׁר׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PRO",
+      "book_name": "Proverbs",
+      "chapter": 30,
+      "verse_start": 18,
+      "verse_end": 18,
+      "text": [
+        "שׁלשׁה",
+        "המה",
+        "נפלאו",
+        "ממני",
+        "וארבע",
+        "לא",
+        "ידעתים׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PRO",
+      "book_name": "Proverbs",
+      "chapter": 30,
+      "verse_start": 19,
+      "verse_end": 19,
+      "text": [
+        "דרך",
+        "הנשׁר",
+        "בשׁמים",
+        "דרך",
+        "נחשׁ",
+        "עלי",
+        "צור",
+        "דרך",
+        "אניה",
+        "בלב",
+        "ים",
+        "ודרך",
+        "גבר",
+        "בעלמה׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PRO",
+      "book_name": "Proverbs",
+      "chapter": 30,
+      "verse_start": 20,
+      "verse_end": 20,
+      "text": [
+        "כן",
+        "דרך",
+        "אשׁה",
+        "מנאפת",
+        "אכלה",
+        "ומחתה",
+        "פיה",
+        "ואמרה",
+        "לא",
+        "פעלתי",
+        "און׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PRO",
+      "book_name": "Proverbs",
+      "chapter": 30,
+      "verse_start": 21,
+      "verse_end": 21,
+      "text": [
+        "תחת",
+        "שׁלושׁ",
+        "רגזה",
+        "ארץ",
+        "ותחת",
+        "ארבע",
+        "לא",
+        "תוכל",
+        "שׂאת׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PRO",
+      "book_name": "Proverbs",
+      "chapter": 30,
+      "verse_start": 22,
+      "verse_end": 22,
+      "text": [
+        "תחת",
+        "עבד",
+        "כי",
+        "ימלוך",
+        "ונבל",
+        "כי",
+        "ישׂבע",
+        "לחם׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PRO",
+      "book_name": "Proverbs",
+      "chapter": 30,
+      "verse_start": 23,
+      "verse_end": 23,
+      "text": [
+        "תחת",
+        "שׂנואה",
+        "כי",
+        "תבעל",
+        "ושׁפחה",
+        "כי",
+        "תירשׁ",
+        "גברתה׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PRO",
+      "book_name": "Proverbs",
+      "chapter": 30,
+      "verse_start": 24,
+      "verse_end": 24,
+      "text": [
+        "ארבעה",
+        "הם",
+        "קטני",
+        "ארץ",
+        "והמה",
+        "חכמים",
+        "מחכמים׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PRO",
+      "book_name": "Proverbs",
+      "chapter": 30,
+      "verse_start": 25,
+      "verse_end": 25,
+      "text": [
+        "הנמלים",
+        "עם",
+        "לא",
+        "עז",
+        "ויכינו",
+        "בקיץ",
+        "לחמם׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PRO",
+      "book_name": "Proverbs",
+      "chapter": 30,
+      "verse_start": 26,
+      "verse_end": 26,
+      "text": [
+        "שׁפנים",
+        "עם",
+        "לא",
+        "עצום",
+        "וישׂימו",
+        "בסלע",
+        "ביתם׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PRO",
+      "book_name": "Proverbs",
+      "chapter": 30,
+      "verse_start": 27,
+      "verse_end": 27,
+      "text": [
+        "מלך",
+        "אין",
+        "לארבה",
+        "ויצא",
+        "חצץ",
+        "כלו׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PRO",
+      "book_name": "Proverbs",
+      "chapter": 30,
+      "verse_start": 28,
+      "verse_end": 28,
+      "text": [
+        "שׂממית",
+        "בידים",
+        "תתפשׂ",
+        "והיא",
+        "בהיכלי",
+        "מלך׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PRO",
+      "book_name": "Proverbs",
+      "chapter": 30,
+      "verse_start": 29,
+      "verse_end": 29,
+      "text": [
+        "שׁלשׁה",
+        "המה",
+        "מיטיבי",
+        "צעד",
+        "וארבעה",
+        "מיטבי",
+        "לכת׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PRO",
+      "book_name": "Proverbs",
+      "chapter": 30,
+      "verse_start": 30,
+      "verse_end": 30,
+      "text": [
+        "לישׁ",
+        "גבור",
+        "בבהמה",
+        "ולא",
+        "ישׁוב",
+        "מפני",
+        "כל׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PRO",
+      "book_name": "Proverbs",
+      "chapter": 30,
+      "verse_start": 31,
+      "verse_end": 31,
+      "text": [
+        "זרזיר",
+        "מתנים",
+        "או",
+        "תישׁ",
+        "ומלך",
+        "אלקום",
+        "עמו׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PRO",
+      "book_name": "Proverbs",
+      "chapter": 30,
+      "verse_start": 32,
+      "verse_end": 32,
+      "text": [
+        "אם",
+        "נבלת",
+        "בהתנשׂא",
+        "ואם",
+        "זמות",
+        "יד",
+        "לפה׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PRO",
+      "book_name": "Proverbs",
+      "chapter": 30,
+      "verse_start": 33,
+      "verse_end": 33,
+      "text": [
+        "כי",
+        "מיץ",
+        "חלב",
+        "יוציא",
+        "חמאה",
+        "ומיץ",
+        "אף",
+        "יוציא",
+        "דם",
+        "ומיץ",
+        "אפים",
+        "יוציא",
+        "ריב׃"
+      ],
+      "info": ""
+    }
+  ]
+}

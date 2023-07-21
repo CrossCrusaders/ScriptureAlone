@@ -1,0 +1,615 @@
+{
+  "header": "",
+  "footer": "",
+  "language": "Hebrew",
+  "verses": [
+    {
+      "book_id": "JOB",
+      "book_name": "Job",
+      "chapter": 9,
+      "verse_start": 1,
+      "verse_end": 1,
+      "text": [
+        "ויען",
+        "איוב",
+        "ויאמר׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "JOB",
+      "book_name": "Job",
+      "chapter": 9,
+      "verse_start": 2,
+      "verse_end": 2,
+      "text": [
+        "אמנם",
+        "ידעתי",
+        "כי",
+        "כן",
+        "ומה",
+        "יצדק",
+        "אנושׁ",
+        "עם",
+        "אל׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "JOB",
+      "book_name": "Job",
+      "chapter": 9,
+      "verse_start": 3,
+      "verse_end": 3,
+      "text": [
+        "אם",
+        "יחפץ",
+        "לריב",
+        "עמו",
+        "לא",
+        "יעננו",
+        "אחת",
+        "מני",
+        "אלף׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "JOB",
+      "book_name": "Job",
+      "chapter": 9,
+      "verse_start": 4,
+      "verse_end": 4,
+      "text": [
+        "חכם",
+        "לבב",
+        "ואמיץ",
+        "כח",
+        "מי",
+        "הקשׁה",
+        "אליו",
+        "וישׁלם׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "JOB",
+      "book_name": "Job",
+      "chapter": 9,
+      "verse_start": 5,
+      "verse_end": 5,
+      "text": [
+        "המעתיק",
+        "הרים",
+        "ולא",
+        "ידעו",
+        "אשׁר",
+        "הפכם",
+        "באפו׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "JOB",
+      "book_name": "Job",
+      "chapter": 9,
+      "verse_start": 6,
+      "verse_end": 6,
+      "text": [
+        "המרגיז",
+        "ארץ",
+        "ממקומה",
+        "ועמודיה",
+        "יתפלצון׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "JOB",
+      "book_name": "Job",
+      "chapter": 9,
+      "verse_start": 7,
+      "verse_end": 7,
+      "text": [
+        "האמר",
+        "לחרס",
+        "ולא",
+        "יזרח",
+        "ובעד",
+        "כוכבים",
+        "יחתם׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "JOB",
+      "book_name": "Job",
+      "chapter": 9,
+      "verse_start": 8,
+      "verse_end": 8,
+      "text": [
+        "נטה",
+        "שׁמים",
+        "לבדו",
+        "ודורך",
+        "על",
+        "במתי",
+        "ים׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "JOB",
+      "book_name": "Job",
+      "chapter": 9,
+      "verse_start": 9,
+      "verse_end": 9,
+      "text": [
+        "עשׂה",
+        "עשׁ",
+        "כסיל",
+        "וכימה",
+        "וחדרי",
+        "תמן׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "JOB",
+      "book_name": "Job",
+      "chapter": 9,
+      "verse_start": 10,
+      "verse_end": 10,
+      "text": [
+        "עשׂה",
+        "גדלות",
+        "עד",
+        "אין",
+        "חקר",
+        "ונפלאות",
+        "עד",
+        "אין",
+        "מספר׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "JOB",
+      "book_name": "Job",
+      "chapter": 9,
+      "verse_start": 11,
+      "verse_end": 11,
+      "text": [
+        "הן",
+        "יעבר",
+        "עלי",
+        "ולא",
+        "אראה",
+        "ויחלף",
+        "ולא",
+        "אבין׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "JOB",
+      "book_name": "Job",
+      "chapter": 9,
+      "verse_start": 12,
+      "verse_end": 12,
+      "text": [
+        "הן",
+        "יחתף",
+        "מי",
+        "ישׁיבנו",
+        "מי",
+        "יאמר",
+        "אליו",
+        "מה",
+        "תעשׂה׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "JOB",
+      "book_name": "Job",
+      "chapter": 9,
+      "verse_start": 13,
+      "verse_end": 13,
+      "text": [
+        "אלוה",
+        "לא",
+        "ישׁיב",
+        "אפו",
+        "תחתו",
+        "שׁחחו",
+        "עזרי",
+        "רהב׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "JOB",
+      "book_name": "Job",
+      "chapter": 9,
+      "verse_start": 14,
+      "verse_end": 14,
+      "text": [
+        "אף",
+        "כי",
+        "אנכי",
+        "אעננו",
+        "אבחרה",
+        "דברי",
+        "עמו׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "JOB",
+      "book_name": "Job",
+      "chapter": 9,
+      "verse_start": 15,
+      "verse_end": 15,
+      "text": [
+        "אשׁר",
+        "אם",
+        "צדקתי",
+        "לא",
+        "אענה",
+        "למשׁפטי",
+        "אתחנן׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "JOB",
+      "book_name": "Job",
+      "chapter": 9,
+      "verse_start": 16,
+      "verse_end": 16,
+      "text": [
+        "אם",
+        "קראתי",
+        "ויענני",
+        "לא",
+        "אאמין",
+        "כי",
+        "יאזין",
+        "קולי׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "JOB",
+      "book_name": "Job",
+      "chapter": 9,
+      "verse_start": 17,
+      "verse_end": 17,
+      "text": [
+        "אשׁר",
+        "בשׂערה",
+        "ישׁופני",
+        "והרבה",
+        "פצעי",
+        "חנם׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "JOB",
+      "book_name": "Job",
+      "chapter": 9,
+      "verse_start": 18,
+      "verse_end": 18,
+      "text": [
+        "לא",
+        "יתנני",
+        "השׁב",
+        "רוחי",
+        "כי",
+        "ישׂבעני",
+        "ממררים׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "JOB",
+      "book_name": "Job",
+      "chapter": 9,
+      "verse_start": 19,
+      "verse_end": 19,
+      "text": [
+        "אם",
+        "לכח",
+        "אמיץ",
+        "הנה",
+        "ואם",
+        "למשׁפט",
+        "מי",
+        "יועידני׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "JOB",
+      "book_name": "Job",
+      "chapter": 9,
+      "verse_start": 20,
+      "verse_end": 20,
+      "text": [
+        "אם",
+        "אצדק",
+        "פי",
+        "ירשׁיעני",
+        "תם",
+        "אני",
+        "ויעקשׁני׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "JOB",
+      "book_name": "Job",
+      "chapter": 9,
+      "verse_start": 21,
+      "verse_end": 21,
+      "text": [
+        "תם",
+        "אני",
+        "לא",
+        "אדע",
+        "נפשׁי",
+        "אמאס",
+        "חיי׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "JOB",
+      "book_name": "Job",
+      "chapter": 9,
+      "verse_start": 22,
+      "verse_end": 22,
+      "text": [
+        "אחת",
+        "היא",
+        "על",
+        "כן",
+        "אמרתי",
+        "תם",
+        "ורשׁע",
+        "הוא",
+        "מכלה׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "JOB",
+      "book_name": "Job",
+      "chapter": 9,
+      "verse_start": 23,
+      "verse_end": 23,
+      "text": [
+        "אם",
+        "שׁוט",
+        "ימית",
+        "פתאם",
+        "למסת",
+        "נקים",
+        "ילעג׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "JOB",
+      "book_name": "Job",
+      "chapter": 9,
+      "verse_start": 24,
+      "verse_end": 24,
+      "text": [
+        "ארץ",
+        "נתנה",
+        "ביד",
+        "רשׁע",
+        "פני",
+        "שׁפטיה",
+        "יכסה",
+        "אם",
+        "לא",
+        "אפוא",
+        "מי",
+        "הוא׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "JOB",
+      "book_name": "Job",
+      "chapter": 9,
+      "verse_start": 25,
+      "verse_end": 25,
+      "text": [
+        "וימי",
+        "קלו",
+        "מני",
+        "רץ",
+        "ברחו",
+        "לא",
+        "ראו",
+        "טובה׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "JOB",
+      "book_name": "Job",
+      "chapter": 9,
+      "verse_start": 26,
+      "verse_end": 26,
+      "text": [
+        "חלפו",
+        "עם",
+        "אניות",
+        "אבה",
+        "כנשׁר",
+        "יטושׂ",
+        "עלי",
+        "אכל׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "JOB",
+      "book_name": "Job",
+      "chapter": 9,
+      "verse_start": 27,
+      "verse_end": 27,
+      "text": [
+        "אם",
+        "אמרי",
+        "אשׁכחה",
+        "שׂיחי",
+        "אעזבה",
+        "פני",
+        "ואבליגה׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "JOB",
+      "book_name": "Job",
+      "chapter": 9,
+      "verse_start": 28,
+      "verse_end": 28,
+      "text": [
+        "יגרתי",
+        "כל",
+        "עצבתי",
+        "ידעתי",
+        "כי",
+        "לא",
+        "תנקני׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "JOB",
+      "book_name": "Job",
+      "chapter": 9,
+      "verse_start": 29,
+      "verse_end": 29,
+      "text": [
+        "אנכי",
+        "ארשׁע",
+        "למה",
+        "זה",
+        "הבל",
+        "איגע׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "JOB",
+      "book_name": "Job",
+      "chapter": 9,
+      "verse_start": 30,
+      "verse_end": 30,
+      "text": [
+        "אם",
+        "התרחצתי",
+        "במו",
+        "שׁלג",
+        "והזכותי",
+        "בבר",
+        "כפי׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "JOB",
+      "book_name": "Job",
+      "chapter": 9,
+      "verse_start": 31,
+      "verse_end": 31,
+      "text": [
+        "אז",
+        "בשׁחת",
+        "תטבלני",
+        "ותעבוני",
+        "שׂלמותי׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "JOB",
+      "book_name": "Job",
+      "chapter": 9,
+      "verse_start": 32,
+      "verse_end": 32,
+      "text": [
+        "כי",
+        "לא",
+        "אישׁ",
+        "כמני",
+        "אעננו",
+        "נבוא",
+        "יחדו",
+        "במשׁפט׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "JOB",
+      "book_name": "Job",
+      "chapter": 9,
+      "verse_start": 33,
+      "verse_end": 33,
+      "text": [
+        "לא",
+        "ישׁ",
+        "בינינו",
+        "מוכיח",
+        "ישׁת",
+        "ידו",
+        "על",
+        "שׁנינו׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "JOB",
+      "book_name": "Job",
+      "chapter": 9,
+      "verse_start": 34,
+      "verse_end": 34,
+      "text": [
+        "יסר",
+        "מעלי",
+        "שׁבטו",
+        "ואמתו",
+        "אל",
+        "תבעתני׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "JOB",
+      "book_name": "Job",
+      "chapter": 9,
+      "verse_start": 35,
+      "verse_end": 35,
+      "text": [
+        "אדברה",
+        "ולא",
+        "איראנו",
+        "כי",
+        "לא",
+        "כן",
+        "אנכי",
+        "עמדי׃"
+      ],
+      "info": ""
+    }
+  ]
+}

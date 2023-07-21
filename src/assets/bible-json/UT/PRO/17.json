@@ -1,0 +1,513 @@
+{
+  "header": "",
+  "footer": "",
+  "language": "Hebrew",
+  "verses": [
+    {
+      "book_id": "PRO",
+      "book_name": "Proverbs",
+      "chapter": 17,
+      "verse_start": 1,
+      "verse_end": 1,
+      "text": [
+        "טוב",
+        "פת",
+        "חרבה",
+        "ושׁלוה",
+        "בה",
+        "מבית",
+        "מלא",
+        "זבחי",
+        "ריב׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PRO",
+      "book_name": "Proverbs",
+      "chapter": 17,
+      "verse_start": 2,
+      "verse_end": 2,
+      "text": [
+        "עבד",
+        "משׂכיל",
+        "ימשׁל",
+        "בבן",
+        "מבישׁ",
+        "ובתוך",
+        "אחים",
+        "יחלק",
+        "נחלה׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PRO",
+      "book_name": "Proverbs",
+      "chapter": 17,
+      "verse_start": 3,
+      "verse_end": 3,
+      "text": [
+        "מצרף",
+        "לכסף",
+        "וכור",
+        "לזהב",
+        "ובחן",
+        "לבות",
+        "יהוה׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PRO",
+      "book_name": "Proverbs",
+      "chapter": 17,
+      "verse_start": 4,
+      "verse_end": 4,
+      "text": [
+        "מרע",
+        "מקשׁיב",
+        "על",
+        "שׂפת",
+        "און",
+        "שׁקר",
+        "מזין",
+        "על",
+        "לשׁון",
+        "הות׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PRO",
+      "book_name": "Proverbs",
+      "chapter": 17,
+      "verse_start": 5,
+      "verse_end": 5,
+      "text": [
+        "לעג",
+        "לרשׁ",
+        "חרף",
+        "עשׂהו",
+        "שׂמח",
+        "לאיד",
+        "לא",
+        "ינקה׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PRO",
+      "book_name": "Proverbs",
+      "chapter": 17,
+      "verse_start": 6,
+      "verse_end": 6,
+      "text": [
+        "עטרת",
+        "זקנים",
+        "בני",
+        "בנים",
+        "ותפארת",
+        "בנים",
+        "אבותם׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PRO",
+      "book_name": "Proverbs",
+      "chapter": 17,
+      "verse_start": 7,
+      "verse_end": 7,
+      "text": [
+        "לא",
+        "נאוה",
+        "לנבל",
+        "שׂפת",
+        "יתר",
+        "אף",
+        "כי",
+        "לנדיב",
+        "שׂפת",
+        "שׁקר׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PRO",
+      "book_name": "Proverbs",
+      "chapter": 17,
+      "verse_start": 8,
+      "verse_end": 8,
+      "text": [
+        "אבן",
+        "חן",
+        "השׁחד",
+        "בעיני",
+        "בעליו",
+        "אל",
+        "כל",
+        "אשׁר",
+        "יפנה",
+        "ישׂכיל׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PRO",
+      "book_name": "Proverbs",
+      "chapter": 17,
+      "verse_start": 9,
+      "verse_end": 9,
+      "text": [
+        "מכסה",
+        "פשׁע",
+        "מבקשׁ",
+        "אהבה",
+        "ושׁנה",
+        "בדבר",
+        "מפריד",
+        "אלוף׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PRO",
+      "book_name": "Proverbs",
+      "chapter": 17,
+      "verse_start": 10,
+      "verse_end": 10,
+      "text": [
+        "תחת",
+        "גערה",
+        "במבין",
+        "מהכות",
+        "כסיל",
+        "מאה׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PRO",
+      "book_name": "Proverbs",
+      "chapter": 17,
+      "verse_start": 11,
+      "verse_end": 11,
+      "text": [
+        "אך",
+        "מרי",
+        "יבקשׁ",
+        "רע",
+        "ומלאך",
+        "אכזרי",
+        "ישׁלח׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PRO",
+      "book_name": "Proverbs",
+      "chapter": 17,
+      "verse_start": 12,
+      "verse_end": 12,
+      "text": [
+        "פגושׁ",
+        "דב",
+        "שׁכול",
+        "באישׁ",
+        "ואל",
+        "כסיל",
+        "באולתו׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PRO",
+      "book_name": "Proverbs",
+      "chapter": 17,
+      "verse_start": 13,
+      "verse_end": 13,
+      "text": [
+        "משׁיב",
+        "רעה",
+        "תחת",
+        "טובה",
+        "לא",
+        "תמישׁ",
+        "רעה",
+        "מביתו׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PRO",
+      "book_name": "Proverbs",
+      "chapter": 17,
+      "verse_start": 14,
+      "verse_end": 14,
+      "text": [
+        "פוטר",
+        "מים",
+        "ראשׁית",
+        "מדון",
+        "ולפני",
+        "התגלע",
+        "הריב",
+        "נטושׁ׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PRO",
+      "book_name": "Proverbs",
+      "chapter": 17,
+      "verse_start": 15,
+      "verse_end": 15,
+      "text": [
+        "מצדיק",
+        "רשׁע",
+        "ומרשׁיע",
+        "צדיק",
+        "תועבת",
+        "יהוה",
+        "גם",
+        "שׁניהם׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PRO",
+      "book_name": "Proverbs",
+      "chapter": 17,
+      "verse_start": 16,
+      "verse_end": 16,
+      "text": [
+        "למה",
+        "זה",
+        "מחיר",
+        "ביד",
+        "כסיל",
+        "לקנות",
+        "חכמה",
+        "ולב",
+        "אין׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PRO",
+      "book_name": "Proverbs",
+      "chapter": 17,
+      "verse_start": 17,
+      "verse_end": 17,
+      "text": [
+        "בכל",
+        "עת",
+        "אהב",
+        "הרע",
+        "ואח",
+        "לצרה",
+        "יולד׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PRO",
+      "book_name": "Proverbs",
+      "chapter": 17,
+      "verse_start": 18,
+      "verse_end": 18,
+      "text": [
+        "אדם",
+        "חסר",
+        "לב",
+        "תוקע",
+        "כף",
+        "ערב",
+        "ערבה",
+        "לפני",
+        "רעהו׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PRO",
+      "book_name": "Proverbs",
+      "chapter": 17,
+      "verse_start": 19,
+      "verse_end": 19,
+      "text": [
+        "אהב",
+        "פשׁע",
+        "אהב",
+        "מצה",
+        "מגביה",
+        "פתחו",
+        "מבקשׁ",
+        "שׁבר׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PRO",
+      "book_name": "Proverbs",
+      "chapter": 17,
+      "verse_start": 20,
+      "verse_end": 20,
+      "text": [
+        "עקשׁ",
+        "לב",
+        "לא",
+        "ימצא",
+        "טוב",
+        "ונהפך",
+        "בלשׁונו",
+        "יפול",
+        "ברעה׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PRO",
+      "book_name": "Proverbs",
+      "chapter": 17,
+      "verse_start": 21,
+      "verse_end": 21,
+      "text": [
+        "ילד",
+        "כסיל",
+        "לתוגה",
+        "לו",
+        "ולא",
+        "ישׂמח",
+        "אבי",
+        "נבל׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PRO",
+      "book_name": "Proverbs",
+      "chapter": 17,
+      "verse_start": 22,
+      "verse_end": 22,
+      "text": [
+        "לב",
+        "שׂמח",
+        "ייטב",
+        "גהה",
+        "ורוח",
+        "נכאה",
+        "תיבשׁ",
+        "גרם׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PRO",
+      "book_name": "Proverbs",
+      "chapter": 17,
+      "verse_start": 23,
+      "verse_end": 23,
+      "text": [
+        "שׁחד",
+        "מחיק",
+        "רשׁע",
+        "יקח",
+        "להטות",
+        "ארחות",
+        "משׁפט׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PRO",
+      "book_name": "Proverbs",
+      "chapter": 17,
+      "verse_start": 24,
+      "verse_end": 24,
+      "text": [
+        "את",
+        "פני",
+        "מבין",
+        "חכמה",
+        "ועיני",
+        "כסיל",
+        "בקצה",
+        "ארץ׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PRO",
+      "book_name": "Proverbs",
+      "chapter": 17,
+      "verse_start": 25,
+      "verse_end": 25,
+      "text": [
+        "כעס",
+        "לאביו",
+        "בן",
+        "כסיל",
+        "וממר",
+        "ליולדתו׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PRO",
+      "book_name": "Proverbs",
+      "chapter": 17,
+      "verse_start": 26,
+      "verse_end": 26,
+      "text": [
+        "גם",
+        "ענושׁ",
+        "לצדיק",
+        "לא",
+        "טוב",
+        "להכות",
+        "נדיבים",
+        "על",
+        "ישׁר׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PRO",
+      "book_name": "Proverbs",
+      "chapter": 17,
+      "verse_start": 27,
+      "verse_end": 27,
+      "text": [
+        "חושׂך",
+        "אמריו",
+        "יודע",
+        "דעת",
+        "וקר",
+        "רוח",
+        "אישׁ",
+        "תבונה׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PRO",
+      "book_name": "Proverbs",
+      "chapter": 17,
+      "verse_start": 28,
+      "verse_end": 28,
+      "text": [
+        "גם",
+        "אויל",
+        "מחרישׁ",
+        "חכם",
+        "יחשׁב",
+        "אטם",
+        "שׂפתיו",
+        "נבון׃"
+      ],
+      "info": ""
+    }
+  ]
+}

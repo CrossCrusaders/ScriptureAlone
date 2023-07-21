@@ -1,0 +1,127 @@
+{
+  "header": "למנצח בנגינת מזמור שׁיר׃",
+  "footer": "",
+  "language": "Hebrew",
+  "verses": [
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 67,
+      "verse_start": 1,
+      "verse_end": 1,
+      "text": [
+        "",
+        "אלהים",
+        "יחננו",
+        "ויברכנו",
+        "יאר",
+        "פניו",
+        "אתנו",
+        "סלה׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 67,
+      "verse_start": 2,
+      "verse_end": 2,
+      "text": [
+        "לדעת",
+        "בארץ",
+        "דרכך",
+        "בכל",
+        "גוים",
+        "ישׁועתך׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 67,
+      "verse_start": 3,
+      "verse_end": 3,
+      "text": [
+        "יודוך",
+        "עמים",
+        "אלהים",
+        "יודוך",
+        "עמים",
+        "כלם׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 67,
+      "verse_start": 4,
+      "verse_end": 4,
+      "text": [
+        "ישׂמחו",
+        "וירננו",
+        "לאמים",
+        "כי",
+        "תשׁפט",
+        "עמים",
+        "מישׁור",
+        "ולאמים",
+        "בארץ",
+        "תנחם",
+        "סלה׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 67,
+      "verse_start": 5,
+      "verse_end": 5,
+      "text": [
+        "יודוך",
+        "עמים",
+        "אלהים",
+        "יודוך",
+        "עמים",
+        "כלם׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 67,
+      "verse_start": 6,
+      "verse_end": 6,
+      "text": [
+        "ארץ",
+        "נתנה",
+        "יבולה",
+        "יברכנו",
+        "אלהים",
+        "אלהינו׃"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Psalms",
+      "chapter": 67,
+      "verse_start": 7,
+      "verse_end": 7,
+      "text": [
+        "יברכנו",
+        "אלהים",
+        "וייראו",
+        "אתו",
+        "כל",
+        "אפסי",
+        "ארץ׃"
+      ],
+      "info": ""
+    }
+  ]
+}

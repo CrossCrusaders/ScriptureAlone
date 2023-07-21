@@ -1,0 +1,51 @@
+{
+  "header": "",
+  "footer": "",
+  "language": "Spanish",
+  "verses": [
+    {
+      "book_id": "PSA",
+      "book_name": "Salmos",
+      "chapter": 117,
+      "verse_start": 1,
+      "verse_end": 1,
+      "text": [
+        "Alabad",
+        "a",
+        "Jehová,",
+        "naciones",
+        "todas;",
+        "pueblos",
+        "todos,",
+        "alabadle."
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Salmos",
+      "chapter": 117,
+      "verse_start": 2,
+      "verse_end": 2,
+      "text": [
+        "Porque",
+        "ha",
+        "engrandecido",
+        "sobre",
+        "nosotros",
+        "su",
+        "misericordia;",
+        "y",
+        "la",
+        "verdad",
+        "de",
+        "Jehová",
+        "<em>es</em>",
+        "para",
+        "siempre.",
+        "¡Aleluya!"
+      ],
+      "info": ""
+    }
+  ]
+}

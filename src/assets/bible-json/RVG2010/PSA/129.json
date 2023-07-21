@@ -1,0 +1,186 @@
+{
+  "header": "**Cántico gradual**",
+  "footer": "",
+  "language": "Spanish",
+  "verses": [
+    {
+      "book_id": "PSA",
+      "book_name": "Salmos",
+      "chapter": 129,
+      "verse_start": 1,
+      "verse_end": 1,
+      "text": [
+        "Mucho",
+        "me",
+        "han",
+        "angustiado",
+        "desde",
+        "mi",
+        "juventud,",
+        "puede",
+        "decir",
+        "ahora",
+        "Israel;"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Salmos",
+      "chapter": 129,
+      "verse_start": 2,
+      "verse_end": 2,
+      "text": [
+        "mucho",
+        "me",
+        "han",
+        "angustiado",
+        "desde",
+        "mi",
+        "juventud;",
+        "mas",
+        "no",
+        "prevalecieron",
+        "contra",
+        "mí."
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Salmos",
+      "chapter": 129,
+      "verse_start": 3,
+      "verse_end": 3,
+      "text": [
+        "Sobre",
+        "mis",
+        "espaldas",
+        "araron",
+        "los",
+        "aradores;",
+        "hicieron",
+        "largos",
+        "surcos."
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Salmos",
+      "chapter": 129,
+      "verse_start": 4,
+      "verse_end": 4,
+      "text": [
+        "Jehová",
+        "es",
+        "justo;",
+        "cortó",
+        "las",
+        "coyundas",
+        "de",
+        "los",
+        "impíos."
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Salmos",
+      "chapter": 129,
+      "verse_start": 5,
+      "verse_end": 5,
+      "text": [
+        "Serán",
+        "avergonzados",
+        "y",
+        "vueltos",
+        "atrás",
+        "todos",
+        "los",
+        "que",
+        "aborrecen",
+        "a",
+        "Sión."
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Salmos",
+      "chapter": 129,
+      "verse_start": 6,
+      "verse_end": 6,
+      "text": [
+        "Serán",
+        "como",
+        "la",
+        "hierba",
+        "de",
+        "los",
+        "tejados,",
+        "que",
+        "se",
+        "seca",
+        "antes",
+        "que",
+        "crezca;"
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Salmos",
+      "chapter": 129,
+      "verse_start": 7,
+      "verse_end": 7,
+      "text": [
+        "de",
+        "la",
+        "cual",
+        "no",
+        "llenó",
+        "el",
+        "segador",
+        "su",
+        "mano,",
+        "ni",
+        "sus",
+        "brazos",
+        "el",
+        "que",
+        "hace",
+        "gavillas."
+      ],
+      "info": ""
+    },
+    {
+      "book_id": "PSA",
+      "book_name": "Salmos",
+      "chapter": 129,
+      "verse_start": 8,
+      "verse_end": 8,
+      "text": [
+        "Ni",
+        "dijeron",
+        "los",
+        "que",
+        "pasaban:",
+        "Bendición",
+        "de",
+        "Jehová",
+        "<em>sea</em>",
+        "sobre",
+        "vosotros;",
+        "os",
+        "bendecimos",
+        "en",
+        "el",
+        "nombre",
+        "de",
+        "Jehová."
+      ],
+      "info": ""
+    }
+  ]
+}
