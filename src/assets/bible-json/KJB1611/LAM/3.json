@@ -9,7 +9,22 @@
       "chapter": 3,
       "verse_start": 1,
       "verse_end": 1,
-      "text": "I Am the man that hath seene affliction by the rod of his wrath.",
+      "text": [
+        "I",
+        "Am",
+        "the",
+        "man",
+        "that",
+        "hath",
+        "seene",
+        "affliction",
+        "by",
+        "the",
+        "rod",
+        "of",
+        "his",
+        "wrath."
+      ],
       "info": ""
     },
     {
@@ -18,7 +33,21 @@
       "chapter": 3,
       "verse_start": 2,
       "verse_end": 2,
-      "text": "He hath led me and brought mee into darkenesse, but not into light.",
+      "text": [
+        "He",
+        "hath",
+        "led",
+        "me",
+        "and",
+        "brought",
+        "mee",
+        "into",
+        "darkenesse,",
+        "but",
+        "not",
+        "into",
+        "light."
+      ],
       "info": ""
     },
     {
@@ -27,7 +56,23 @@
       "chapter": 3,
       "verse_start": 3,
       "verse_end": 3,
-      "text": "Surely against me is he turned, he turneth his hand against me all the day.",
+      "text": [
+        "Surely",
+        "against",
+        "me",
+        "is",
+        "he",
+        "turned,",
+        "he",
+        "turneth",
+        "his",
+        "hand",
+        "against",
+        "me",
+        "all",
+        "the",
+        "day."
+      ],
       "info": ""
     },
     {
@@ -36,7 +81,22 @@
       "chapter": 3,
       "verse_start": 4,
       "verse_end": 4,
-      "text": "My flesh and my skinne hath he made old, he hath broken my bones.",
+      "text": [
+        "My",
+        "flesh",
+        "and",
+        "my",
+        "skinne",
+        "hath",
+        "he",
+        "made",
+        "old,",
+        "he",
+        "hath",
+        "broken",
+        "my",
+        "bones."
+      ],
       "info": ""
     },
     {
@@ -45,7 +105,20 @@
       "chapter": 3,
       "verse_start": 5,
       "verse_end": 5,
-      "text": "He hath builded against me, and compassed me with gall and trauel.",
+      "text": [
+        "He",
+        "hath",
+        "builded",
+        "against",
+        "me,",
+        "and",
+        "compassed",
+        "me",
+        "with",
+        "gall",
+        "and",
+        "trauel."
+      ],
       "info": ""
     },
     {
@@ -54,7 +127,22 @@
       "chapter": 3,
       "verse_start": 6,
       "verse_end": 6,
-      "text": "He hath set me in darke places, as they that be dead of old.",
+      "text": [
+        "He",
+        "hath",
+        "set",
+        "me",
+        "in",
+        "darke",
+        "places,",
+        "as",
+        "they",
+        "that",
+        "be",
+        "dead",
+        "of",
+        "old."
+      ],
       "info": ""
     },
     {
@@ -63,7 +151,24 @@
       "chapter": 3,
       "verse_start": 7,
       "verse_end": 7,
-      "text": "He hath hedged me about, that I cannot get out: hee hath made my chaine heauie.",
+      "text": [
+        "He",
+        "hath",
+        "hedged",
+        "me",
+        "about,",
+        "that",
+        "I",
+        "cannot",
+        "get",
+        "out:",
+        "hee",
+        "hath",
+        "made",
+        "my",
+        "chaine",
+        "heauie."
+      ],
       "info": ""
     },
     {
@@ -72,7 +177,19 @@
       "chapter": 3,
       "verse_start": 8,
       "verse_end": 8,
-      "text": "Also when I cry and shout, he shutteth out my prayer.",
+      "text": [
+        "Also",
+        "when",
+        "I",
+        "cry",
+        "and",
+        "shout,",
+        "he",
+        "shutteth",
+        "out",
+        "my",
+        "prayer."
+      ],
       "info": ""
     },
     {
@@ -81,7 +198,22 @@
       "chapter": 3,
       "verse_start": 9,
       "verse_end": 9,
-      "text": "Hee hath inclosed my wayes with hewen stone: he hath made my pathes crooked.",
+      "text": [
+        "Hee",
+        "hath",
+        "inclosed",
+        "my",
+        "wayes",
+        "with",
+        "hewen",
+        "stone:",
+        "he",
+        "hath",
+        "made",
+        "my",
+        "pathes",
+        "crooked."
+      ],
       "info": ""
     },
     {
@@ -90,7 +222,25 @@
       "chapter": 3,
       "verse_start": 10,
       "verse_end": 10,
-      "text": "He was vnto me as a Beare lying in waite, and as a Lion in secret places.",
+      "text": [
+        "He",
+        "was",
+        "vnto",
+        "me",
+        "as",
+        "a",
+        "Beare",
+        "lying",
+        "in",
+        "waite,",
+        "and",
+        "as",
+        "a",
+        "Lion",
+        "in",
+        "secret",
+        "places."
+      ],
       "info": ""
     },
     {
@@ -99,7 +249,24 @@
       "chapter": 3,
       "verse_start": 11,
       "verse_end": 11,
-      "text": "Hee hath turned aside my wayes, and pulled me in pieces: hee hath made me desolate.",
+      "text": [
+        "Hee",
+        "hath",
+        "turned",
+        "aside",
+        "my",
+        "wayes,",
+        "and",
+        "pulled",
+        "me",
+        "in",
+        "pieces:",
+        "hee",
+        "hath",
+        "made",
+        "me",
+        "desolate."
+      ],
       "info": ""
     },
     {
@@ -108,7 +275,22 @@
       "chapter": 3,
       "verse_start": 12,
       "verse_end": 12,
-      "text": "He hath bent his bow, and set me as a marke for the arrow.",
+      "text": [
+        "He",
+        "hath",
+        "bent",
+        "his",
+        "bow,",
+        "and",
+        "set",
+        "me",
+        "as",
+        "a",
+        "marke",
+        "for",
+        "the",
+        "arrow."
+      ],
       "info": ""
     },
     {
@@ -117,7 +299,21 @@
       "chapter": 3,
       "verse_start": 13,
       "verse_end": 13,
-      "text": "Hee hath caused the arrowes of his quiuer to enter into my reines.",
+      "text": [
+        "Hee",
+        "hath",
+        "caused",
+        "the",
+        "arrowes",
+        "of",
+        "his",
+        "quiuer",
+        "to",
+        "enter",
+        "into",
+        "my",
+        "reines."
+      ],
       "info": ""
     },
     {
@@ -126,7 +322,22 @@
       "chapter": 3,
       "verse_start": 14,
       "verse_end": 14,
-      "text": "I was a derision to all my people, and their song all the day.",
+      "text": [
+        "I",
+        "was",
+        "a",
+        "derision",
+        "to",
+        "all",
+        "my",
+        "people,",
+        "and",
+        "their",
+        "song",
+        "all",
+        "the",
+        "day."
+      ],
       "info": ""
     },
     {
@@ -135,7 +346,21 @@
       "chapter": 3,
       "verse_start": 15,
       "verse_end": 15,
-      "text": "Hee hath filled me with bitternesse, hee hath made me drunken with wormewood.",
+      "text": [
+        "Hee",
+        "hath",
+        "filled",
+        "me",
+        "with",
+        "bitternesse,",
+        "hee",
+        "hath",
+        "made",
+        "me",
+        "drunken",
+        "with",
+        "wormewood."
+      ],
       "info": ""
     },
     {
@@ -144,7 +369,23 @@
       "chapter": 3,
       "verse_start": 16,
       "verse_end": 16,
-      "text": "He hath also broken my teeth with grauell stones, hee hath couered me with ashes.",
+      "text": [
+        "He",
+        "hath",
+        "also",
+        "broken",
+        "my",
+        "teeth",
+        "with",
+        "grauell",
+        "stones,",
+        "hee",
+        "hath",
+        "couered",
+        "me",
+        "with",
+        "ashes."
+      ],
       "info": ""
     },
     {
@@ -153,7 +394,21 @@
       "chapter": 3,
       "verse_start": 17,
       "verse_end": 17,
-      "text": "And thou hast remoued my soule farre off from peace: I forgate prosperitie.",
+      "text": [
+        "And",
+        "thou",
+        "hast",
+        "remoued",
+        "my",
+        "soule",
+        "farre",
+        "off",
+        "from",
+        "peace:",
+        "I",
+        "forgate",
+        "prosperitie."
+      ],
       "info": ""
     },
     {
@@ -162,7 +417,21 @@
       "chapter": 3,
       "verse_start": 18,
       "verse_end": 18,
-      "text": "And I said, My strength and my hope is perished from the Lord:",
+      "text": [
+        "And",
+        "I",
+        "said,",
+        "My",
+        "strength",
+        "and",
+        "my",
+        "hope",
+        "is",
+        "perished",
+        "from",
+        "the",
+        "Lord:"
+      ],
       "info": ""
     },
     {
@@ -171,7 +440,19 @@
       "chapter": 3,
       "verse_start": 19,
       "verse_end": 19,
-      "text": "Remembring mine affliction and my miserie, the wormewood &amp; the gall.",
+      "text": [
+        "Remembring",
+        "mine",
+        "affliction",
+        "and",
+        "my",
+        "miserie,",
+        "the",
+        "wormewood",
+        "&amp;",
+        "the",
+        "gall."
+      ],
       "info": ""
     },
     {
@@ -180,7 +461,20 @@
       "chapter": 3,
       "verse_start": 20,
       "verse_end": 20,
-      "text": "My soule hath them still in remembrance, and is humbled in me.",
+      "text": [
+        "My",
+        "soule",
+        "hath",
+        "them",
+        "still",
+        "in",
+        "remembrance,",
+        "and",
+        "is",
+        "humbled",
+        "in",
+        "me."
+      ],
       "info": ""
     },
     {
@@ -189,7 +483,18 @@
       "chapter": 3,
       "verse_start": 21,
       "verse_end": 21,
-      "text": "This I recall to my mind, therefore haue I hope.",
+      "text": [
+        "This",
+        "I",
+        "recall",
+        "to",
+        "my",
+        "mind,",
+        "therefore",
+        "haue",
+        "I",
+        "hope."
+      ],
       "info": ""
     },
     {
@@ -198,7 +503,25 @@
       "chapter": 3,
       "verse_start": 22,
       "verse_end": 22,
-      "text": "¶ It is of the Lords mercies that wee are not consumed, because his compassions faile not.",
+      "text": [
+        "¶",
+        "It",
+        "is",
+        "of",
+        "the",
+        "Lords",
+        "mercies",
+        "that",
+        "wee",
+        "are",
+        "not",
+        "consumed,",
+        "because",
+        "his",
+        "compassions",
+        "faile",
+        "not."
+      ],
       "info": ""
     },
     {
@@ -207,7 +530,17 @@
       "chapter": 3,
       "verse_start": 23,
       "verse_end": 23,
-      "text": "They are newe euery morning: great is thy faithfulnesse.",
+      "text": [
+        "They",
+        "are",
+        "newe",
+        "euery",
+        "morning:",
+        "great",
+        "is",
+        "thy",
+        "faithfulnesse."
+      ],
       "info": ""
     },
     {
@@ -216,7 +549,22 @@
       "chapter": 3,
       "verse_start": 24,
       "verse_end": 24,
-      "text": "The Lord is my portion, sayth my soule, therefore will I hope in him.",
+      "text": [
+        "The",
+        "Lord",
+        "is",
+        "my",
+        "portion,",
+        "sayth",
+        "my",
+        "soule,",
+        "therefore",
+        "will",
+        "I",
+        "hope",
+        "in",
+        "him."
+      ],
       "info": ""
     },
     {
@@ -225,7 +573,24 @@
       "chapter": 3,
       "verse_start": 25,
       "verse_end": 25,
-      "text": "The Lord is good vnto them that waite for him, to the soule that seeketh him.",
+      "text": [
+        "The",
+        "Lord",
+        "is",
+        "good",
+        "vnto",
+        "them",
+        "that",
+        "waite",
+        "for",
+        "him,",
+        "to",
+        "the",
+        "soule",
+        "that",
+        "seeketh",
+        "him."
+      ],
       "info": ""
     },
     {
@@ -234,7 +599,26 @@
       "chapter": 3,
       "verse_start": 26,
       "verse_end": 26,
-      "text": "It is good that a man should both hope and quietly wait for the saluation of the Lord.",
+      "text": [
+        "It",
+        "is",
+        "good",
+        "that",
+        "a",
+        "man",
+        "should",
+        "both",
+        "hope",
+        "and",
+        "quietly",
+        "wait",
+        "for",
+        "the",
+        "saluation",
+        "of",
+        "the",
+        "Lord."
+      ],
       "info": ""
     },
     {
@@ -243,7 +627,22 @@
       "chapter": 3,
       "verse_start": 27,
       "verse_end": 27,
-      "text": "It is good for a man that he beare the yoke in his youth.",
+      "text": [
+        "It",
+        "is",
+        "good",
+        "for",
+        "a",
+        "man",
+        "that",
+        "he",
+        "beare",
+        "the",
+        "yoke",
+        "in",
+        "his",
+        "youth."
+      ],
       "info": ""
     },
     {
@@ -252,7 +651,21 @@
       "chapter": 3,
       "verse_start": 28,
       "verse_end": 28,
-      "text": "Hee sitteth alone and keepeth silence, because hee hath borne it vpon him.",
+      "text": [
+        "Hee",
+        "sitteth",
+        "alone",
+        "and",
+        "keepeth",
+        "silence,",
+        "because",
+        "hee",
+        "hath",
+        "borne",
+        "it",
+        "vpon",
+        "him."
+      ],
       "info": ""
     },
     {
@@ -261,7 +674,22 @@
       "chapter": 3,
       "verse_start": 29,
       "verse_end": 29,
-      "text": "He putteth his mouth in the dust, if so be there may be hope.",
+      "text": [
+        "He",
+        "putteth",
+        "his",
+        "mouth",
+        "in",
+        "the",
+        "dust,",
+        "if",
+        "so",
+        "be",
+        "there",
+        "may",
+        "be",
+        "hope."
+      ],
       "info": ""
     },
     {
@@ -270,7 +698,23 @@
       "chapter": 3,
       "verse_start": 30,
       "verse_end": 30,
-      "text": "Hee giueth his cheeke to him that smiteth him, hee is filled full with reproch.",
+      "text": [
+        "Hee",
+        "giueth",
+        "his",
+        "cheeke",
+        "to",
+        "him",
+        "that",
+        "smiteth",
+        "him,",
+        "hee",
+        "is",
+        "filled",
+        "full",
+        "with",
+        "reproch."
+      ],
       "info": ""
     },
     {
@@ -279,7 +723,17 @@
       "chapter": 3,
       "verse_start": 31,
       "verse_end": 31,
-      "text": "For the Lord will not cast off for euer.",
+      "text": [
+        "For",
+        "the",
+        "Lord",
+        "will",
+        "not",
+        "cast",
+        "off",
+        "for",
+        "euer."
+      ],
       "info": ""
     },
     {
@@ -288,7 +742,25 @@
       "chapter": 3,
       "verse_start": 32,
       "verse_end": 32,
-      "text": "But though hee cause griefe, yet will hee haue compassion according to the multitude of his mercies.",
+      "text": [
+        "But",
+        "though",
+        "hee",
+        "cause",
+        "griefe,",
+        "yet",
+        "will",
+        "hee",
+        "haue",
+        "compassion",
+        "according",
+        "to",
+        "the",
+        "multitude",
+        "of",
+        "his",
+        "mercies."
+      ],
       "info": ""
     },
     {
@@ -297,7 +769,20 @@
       "chapter": 3,
       "verse_start": 33,
       "verse_end": 33,
-      "text": "For he doth not afflict willingly, nor grieue the children of men.",
+      "text": [
+        "For",
+        "he",
+        "doth",
+        "not",
+        "afflict",
+        "willingly,",
+        "nor",
+        "grieue",
+        "the",
+        "children",
+        "of",
+        "men."
+      ],
       "info": ""
     },
     {
@@ -306,7 +791,19 @@
       "chapter": 3,
       "verse_start": 34,
       "verse_end": 34,
-      "text": "To crush vnder his feete all the prisoners of the earth,",
+      "text": [
+        "To",
+        "crush",
+        "vnder",
+        "his",
+        "feete",
+        "all",
+        "the",
+        "prisoners",
+        "of",
+        "the",
+        "earth,"
+      ],
       "info": ""
     },
     {
@@ -315,7 +812,23 @@
       "chapter": 3,
       "verse_start": 35,
       "verse_end": 35,
-      "text": "To turne aside the right of a man before the face of the most high,",
+      "text": [
+        "To",
+        "turne",
+        "aside",
+        "the",
+        "right",
+        "of",
+        "a",
+        "man",
+        "before",
+        "the",
+        "face",
+        "of",
+        "the",
+        "most",
+        "high,"
+      ],
       "info": ""
     },
     {
@@ -324,7 +837,19 @@
       "chapter": 3,
       "verse_start": 36,
       "verse_end": 36,
-      "text": "To subuert a man in his cause, the Lord approoueth not.",
+      "text": [
+        "To",
+        "subuert",
+        "a",
+        "man",
+        "in",
+        "his",
+        "cause,",
+        "the",
+        "Lord",
+        "approoueth",
+        "not."
+      ],
       "info": ""
     },
     {
@@ -333,7 +858,25 @@
       "chapter": 3,
       "verse_start": 37,
       "verse_end": 37,
-      "text": "¶ Who is hee that sayth, and it commeth to passe, when the Lord commandeth it not?",
+      "text": [
+        "¶",
+        "Who",
+        "is",
+        "hee",
+        "that",
+        "sayth,",
+        "and",
+        "it",
+        "commeth",
+        "to",
+        "passe,",
+        "when",
+        "the",
+        "Lord",
+        "commandeth",
+        "it",
+        "not?"
+      ],
       "info": ""
     },
     {
@@ -342,7 +885,21 @@
       "chapter": 3,
       "verse_start": 38,
       "verse_end": 38,
-      "text": "Out of the mouth of the most hie proceedeth not euill and good?",
+      "text": [
+        "Out",
+        "of",
+        "the",
+        "mouth",
+        "of",
+        "the",
+        "most",
+        "hie",
+        "proceedeth",
+        "not",
+        "euill",
+        "and",
+        "good?"
+      ],
       "info": ""
     },
     {
@@ -351,7 +908,22 @@
       "chapter": 3,
       "verse_start": 39,
       "verse_end": 39,
-      "text": "Wherefore doeth a liuing man complaine, a man for the punishment of his sinnes?",
+      "text": [
+        "Wherefore",
+        "doeth",
+        "a",
+        "liuing",
+        "man",
+        "complaine,",
+        "a",
+        "man",
+        "for",
+        "the",
+        "punishment",
+        "of",
+        "his",
+        "sinnes?"
+      ],
       "info": ""
     },
     {
@@ -360,7 +932,21 @@
       "chapter": 3,
       "verse_start": 40,
       "verse_end": 40,
-      "text": "Let vs search and try our waies, and turne againe to the Lord.",
+      "text": [
+        "Let",
+        "vs",
+        "search",
+        "and",
+        "try",
+        "our",
+        "waies,",
+        "and",
+        "turne",
+        "againe",
+        "to",
+        "the",
+        "Lord."
+      ],
       "info": ""
     },
     {
@@ -369,7 +955,22 @@
       "chapter": 3,
       "verse_start": 41,
       "verse_end": 41,
-      "text": "Let vs lift vp our heart with our hands vnto God in the heauens.",
+      "text": [
+        "Let",
+        "vs",
+        "lift",
+        "vp",
+        "our",
+        "heart",
+        "with",
+        "our",
+        "hands",
+        "vnto",
+        "God",
+        "in",
+        "the",
+        "heauens."
+      ],
       "info": ""
     },
     {
@@ -378,7 +979,18 @@
       "chapter": 3,
       "verse_start": 42,
       "verse_end": 42,
-      "text": "We haue transgressed, and haue rebelled, thou hast not pardoned.",
+      "text": [
+        "We",
+        "haue",
+        "transgressed,",
+        "and",
+        "haue",
+        "rebelled,",
+        "thou",
+        "hast",
+        "not",
+        "pardoned."
+      ],
       "info": ""
     },
     {
@@ -387,7 +999,23 @@
       "chapter": 3,
       "verse_start": 43,
       "verse_end": 43,
-      "text": "Thou hast couered with anger, and persecuted vs: thou hast slaine, thou hast not pitied.",
+      "text": [
+        "Thou",
+        "hast",
+        "couered",
+        "with",
+        "anger,",
+        "and",
+        "persecuted",
+        "vs:",
+        "thou",
+        "hast",
+        "slaine,",
+        "thou",
+        "hast",
+        "not",
+        "pitied."
+      ],
       "info": ""
     },
     {
@@ -396,7 +1024,23 @@
       "chapter": 3,
       "verse_start": 44,
       "verse_end": 44,
-      "text": "Thou hast couered thy selfe with a cloud, that our prayer should not passe through.",
+      "text": [
+        "Thou",
+        "hast",
+        "couered",
+        "thy",
+        "selfe",
+        "with",
+        "a",
+        "cloud,",
+        "that",
+        "our",
+        "prayer",
+        "should",
+        "not",
+        "passe",
+        "through."
+      ],
       "info": ""
     },
     {
@@ -405,7 +1049,23 @@
       "chapter": 3,
       "verse_start": 45,
       "verse_end": 45,
-      "text": "Thou hast made vs as the offscouring and refuse in the middest of the people.",
+      "text": [
+        "Thou",
+        "hast",
+        "made",
+        "vs",
+        "as",
+        "the",
+        "offscouring",
+        "and",
+        "refuse",
+        "in",
+        "the",
+        "middest",
+        "of",
+        "the",
+        "people."
+      ],
       "info": ""
     },
     {
@@ -414,7 +1074,17 @@
       "chapter": 3,
       "verse_start": 46,
       "verse_end": 46,
-      "text": "All our enemies haue opened their mouthes against vs.",
+      "text": [
+        "All",
+        "our",
+        "enemies",
+        "haue",
+        "opened",
+        "their",
+        "mouthes",
+        "against",
+        "vs."
+      ],
       "info": ""
     },
     {
@@ -423,7 +1093,19 @@
       "chapter": 3,
       "verse_start": 47,
       "verse_end": 47,
-      "text": "Feare and a snare is come vpon vs, desolation and destruction.",
+      "text": [
+        "Feare",
+        "and",
+        "a",
+        "snare",
+        "is",
+        "come",
+        "vpon",
+        "vs,",
+        "desolation",
+        "and",
+        "destruction."
+      ],
       "info": ""
     },
     {
@@ -432,7 +1114,25 @@
       "chapter": 3,
       "verse_start": 48,
       "verse_end": 48,
-      "text": "Mine eye runneth downe with riuers of water, for the destruction of the daughter of my people.",
+      "text": [
+        "Mine",
+        "eye",
+        "runneth",
+        "downe",
+        "with",
+        "riuers",
+        "of",
+        "water,",
+        "for",
+        "the",
+        "destruction",
+        "of",
+        "the",
+        "daughter",
+        "of",
+        "my",
+        "people."
+      ],
       "info": ""
     },
     {
@@ -441,7 +1141,18 @@
       "chapter": 3,
       "verse_start": 49,
       "verse_end": 49,
-      "text": "Mine eye trickleth downe and ceaseth not, without any intermission:",
+      "text": [
+        "Mine",
+        "eye",
+        "trickleth",
+        "downe",
+        "and",
+        "ceaseth",
+        "not,",
+        "without",
+        "any",
+        "intermission:"
+      ],
       "info": ""
     },
     {
@@ -450,7 +1161,17 @@
       "chapter": 3,
       "verse_start": 50,
       "verse_end": 50,
-      "text": "Till the Lord looke downe, and behold from heauen.",
+      "text": [
+        "Till",
+        "the",
+        "Lord",
+        "looke",
+        "downe,",
+        "and",
+        "behold",
+        "from",
+        "heauen."
+      ],
       "info": ""
     },
     {
@@ -459,7 +1180,21 @@
       "chapter": 3,
       "verse_start": 51,
       "verse_end": 51,
-      "text": "Mine eye affecteth mine heart, because of all the daughters of my city.",
+      "text": [
+        "Mine",
+        "eye",
+        "affecteth",
+        "mine",
+        "heart,",
+        "because",
+        "of",
+        "all",
+        "the",
+        "daughters",
+        "of",
+        "my",
+        "city."
+      ],
       "info": ""
     },
     {
@@ -468,7 +1203,18 @@
       "chapter": 3,
       "verse_start": 52,
       "verse_end": 52,
-      "text": "Mine enemies chased me sore like a bird, without cause.",
+      "text": [
+        "Mine",
+        "enemies",
+        "chased",
+        "me",
+        "sore",
+        "like",
+        "a",
+        "bird,",
+        "without",
+        "cause."
+      ],
       "info": ""
     },
     {
@@ -477,7 +1223,23 @@
       "chapter": 3,
       "verse_start": 53,
       "verse_end": 53,
-      "text": "They haue cut off my life in the dungeon, and cast a stone vpon me.",
+      "text": [
+        "They",
+        "haue",
+        "cut",
+        "off",
+        "my",
+        "life",
+        "in",
+        "the",
+        "dungeon,",
+        "and",
+        "cast",
+        "a",
+        "stone",
+        "vpon",
+        "me."
+      ],
       "info": ""
     },
     {
@@ -486,7 +1248,20 @@
       "chapter": 3,
       "verse_start": 54,
       "verse_end": 54,
-      "text": "Waters flowed ouer mine head, then I sayd, I am cut off.",
+      "text": [
+        "Waters",
+        "flowed",
+        "ouer",
+        "mine",
+        "head,",
+        "then",
+        "I",
+        "sayd,",
+        "I",
+        "am",
+        "cut",
+        "off."
+      ],
       "info": ""
     },
     {
@@ -495,7 +1270,21 @@
       "chapter": 3,
       "verse_start": 55,
       "verse_end": 55,
-      "text": "¶ I called vpon thy name, O Lord, out of the low dungeon.",
+      "text": [
+        "¶",
+        "I",
+        "called",
+        "vpon",
+        "thy",
+        "name,",
+        "O",
+        "Lord,",
+        "out",
+        "of",
+        "the",
+        "low",
+        "dungeon."
+      ],
       "info": ""
     },
     {
@@ -504,7 +1293,23 @@
       "chapter": 3,
       "verse_start": 56,
       "verse_end": 56,
-      "text": "Thou hast heard my voice, hide not thine eare at my breathing, at my crie.",
+      "text": [
+        "Thou",
+        "hast",
+        "heard",
+        "my",
+        "voice,",
+        "hide",
+        "not",
+        "thine",
+        "eare",
+        "at",
+        "my",
+        "breathing,",
+        "at",
+        "my",
+        "crie."
+      ],
       "info": ""
     },
     {
@@ -513,7 +1318,23 @@
       "chapter": 3,
       "verse_start": 57,
       "verse_end": 57,
-      "text": "Thou drewest neere in the day that I called vpon thee: thou saidst, Feare not.",
+      "text": [
+        "Thou",
+        "drewest",
+        "neere",
+        "in",
+        "the",
+        "day",
+        "that",
+        "I",
+        "called",
+        "vpon",
+        "thee:",
+        "thou",
+        "saidst,",
+        "Feare",
+        "not."
+      ],
       "info": ""
     },
     {
@@ -522,7 +1343,23 @@
       "chapter": 3,
       "verse_start": 58,
       "verse_end": 58,
-      "text": "O Lord, thou hast pleaded the causes of my soule, thou hast redeemed my life.",
+      "text": [
+        "O",
+        "Lord,",
+        "thou",
+        "hast",
+        "pleaded",
+        "the",
+        "causes",
+        "of",
+        "my",
+        "soule,",
+        "thou",
+        "hast",
+        "redeemed",
+        "my",
+        "life."
+      ],
       "info": ""
     },
     {
@@ -531,7 +1368,19 @@
       "chapter": 3,
       "verse_start": 59,
       "verse_end": 59,
-      "text": "O Lord, thou hast seene my wrong, iudge thou my cause.",
+      "text": [
+        "O",
+        "Lord,",
+        "thou",
+        "hast",
+        "seene",
+        "my",
+        "wrong,",
+        "iudge",
+        "thou",
+        "my",
+        "cause."
+      ],
       "info": ""
     },
     {
@@ -540,7 +1389,20 @@
       "chapter": 3,
       "verse_start": 60,
       "verse_end": 60,
-      "text": "Thou hast seene all their vengeance; and all their imaginations against me.",
+      "text": [
+        "Thou",
+        "hast",
+        "seene",
+        "all",
+        "their",
+        "vengeance;",
+        "and",
+        "all",
+        "their",
+        "imaginations",
+        "against",
+        "me."
+      ],
       "info": ""
     },
     {
@@ -549,7 +1411,21 @@
       "chapter": 3,
       "verse_start": 61,
       "verse_end": 61,
-      "text": "Thou hast heard their reproch, O Lord, and all their imaginations against me:",
+      "text": [
+        "Thou",
+        "hast",
+        "heard",
+        "their",
+        "reproch,",
+        "O",
+        "Lord,",
+        "and",
+        "all",
+        "their",
+        "imaginations",
+        "against",
+        "me:"
+      ],
       "info": ""
     },
     {
@@ -558,7 +1434,25 @@
       "chapter": 3,
       "verse_start": 62,
       "verse_end": 62,
-      "text": "The lippes of those that rose vp against me, and their deuice against me all the day.",
+      "text": [
+        "The",
+        "lippes",
+        "of",
+        "those",
+        "that",
+        "rose",
+        "vp",
+        "against",
+        "me,",
+        "and",
+        "their",
+        "deuice",
+        "against",
+        "me",
+        "all",
+        "the",
+        "day."
+      ],
       "info": ""
     },
     {
@@ -567,7 +1461,20 @@
       "chapter": 3,
       "verse_start": 63,
       "verse_end": 63,
-      "text": "Behold, their sitting downe and their rising vp, I am their musicke.",
+      "text": [
+        "Behold,",
+        "their",
+        "sitting",
+        "downe",
+        "and",
+        "their",
+        "rising",
+        "vp,",
+        "I",
+        "am",
+        "their",
+        "musicke."
+      ],
       "info": ""
     },
     {
@@ -576,7 +1483,23 @@
       "chapter": 3,
       "verse_start": 64,
       "verse_end": 64,
-      "text": "¶ Render vnto them a recompense, O Lord, according to the worke of their hands.",
+      "text": [
+        "¶",
+        "Render",
+        "vnto",
+        "them",
+        "a",
+        "recompense,",
+        "O",
+        "Lord,",
+        "according",
+        "to",
+        "the",
+        "worke",
+        "of",
+        "their",
+        "hands."
+      ],
       "info": ""
     },
     {
@@ -585,7 +1508,17 @@
       "chapter": 3,
       "verse_start": 65,
       "verse_end": 65,
-      "text": "Giue them sorrow of heart, thy curse vnto them.",
+      "text": [
+        "Giue",
+        "them",
+        "sorrow",
+        "of",
+        "heart,",
+        "thy",
+        "curse",
+        "vnto",
+        "them."
+      ],
       "info": ""
     },
     {
@@ -594,7 +1527,21 @@
       "chapter": 3,
       "verse_start": 66,
       "verse_end": 66,
-      "text": "Persecute and destroy them in anger, from vnder the heauens of the Lord.",
+      "text": [
+        "Persecute",
+        "and",
+        "destroy",
+        "them",
+        "in",
+        "anger,",
+        "from",
+        "vnder",
+        "the",
+        "heauens",
+        "of",
+        "the",
+        "Lord."
+      ],
       "info": ""
     }
   ]

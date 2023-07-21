@@ -9,9 +9,16 @@
       "chapter": 25,
       "verse_start": 1,
       "verse_end": 1,
-      "text": "Then answered Bildad the Shuhite, and said,",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Then",
+        "answered",
+        "Bildad",
+        "the",
+        "Shuhite,",
+        "and",
+        "said,"
+      ],
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -19,9 +26,22 @@
       "chapter": 25,
       "verse_start": 2,
       "verse_end": 2,
-      "text": "Dominion and fear <em>are</em> with him, he maketh peace in his high places.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Dominion",
+        "and",
+        "fear",
+        "<em>are</em>",
+        "with",
+        "him,",
+        "he",
+        "maketh",
+        "peace",
+        "in",
+        "his",
+        "high",
+        "places."
+      ],
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -29,9 +49,24 @@
       "chapter": 25,
       "verse_start": 3,
       "verse_end": 3,
-      "text": "Is there any number of his armies? and upon whom doth not his light arise?",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Is",
+        "there",
+        "any",
+        "number",
+        "of",
+        "his",
+        "armies?",
+        "and",
+        "upon",
+        "whom",
+        "doth",
+        "not",
+        "his",
+        "light",
+        "arise?"
+      ],
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -39,9 +74,29 @@
       "chapter": 25,
       "verse_start": 4,
       "verse_end": 4,
-      "text": "How then can man be justified with God? or how can he be clean <em>that is</em> born of a woman?",
-      "info": "",
-      "language": "English"
+      "text": [
+        "How",
+        "then",
+        "can",
+        "man",
+        "be",
+        "justified",
+        "with",
+        "God?",
+        "or",
+        "how",
+        "can",
+        "he",
+        "be",
+        "clean",
+        "<em>that</em>",
+        "<em>is</em>",
+        "born",
+        "of",
+        "a",
+        "woman?"
+      ],
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -49,9 +104,27 @@
       "chapter": 25,
       "verse_start": 5,
       "verse_end": 5,
-      "text": "Behold even to the moon, and it shineth not; yea, the stars are not pure in his sight.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Behold",
+        "even",
+        "to",
+        "the",
+        "moon,",
+        "and",
+        "it",
+        "shineth",
+        "not;",
+        "yea,",
+        "the",
+        "stars",
+        "are",
+        "not",
+        "pure",
+        "in",
+        "his",
+        "sight."
+      ],
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -59,9 +132,26 @@
       "chapter": 25,
       "verse_start": 6,
       "verse_end": 6,
-      "text": "How much less man, <em>that is</em> a worm? and the son of man, <em>which is</em> a worm?",
-      "info": "",
-      "language": "English"
+      "text": [
+        "How",
+        "much",
+        "less",
+        "man,",
+        "<em>that</em>",
+        "<em>is</em>",
+        "a",
+        "worm?",
+        "and",
+        "the",
+        "son",
+        "of",
+        "man,",
+        "<em>which</em>",
+        "<em>is</em>",
+        "a",
+        "worm?"
+      ],
+      "info": ""
     }
   ]
 }

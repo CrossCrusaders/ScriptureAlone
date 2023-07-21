@@ -9,9 +9,25 @@
       "chapter": 148,
       "verse_start": 1,
       "verse_end": 1,
-      "text": "Praise ye the LORD. Praise ye the LORD from the heavens: praise him in the heights.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Praise",
+        "ye",
+        "the",
+        "LORD.",
+        "Praise",
+        "ye",
+        "the",
+        "LORD",
+        "from",
+        "the",
+        "heavens:",
+        "praise",
+        "him",
+        "in",
+        "the",
+        "heights."
+      ],
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -19,9 +35,21 @@
       "chapter": 148,
       "verse_start": 2,
       "verse_end": 2,
-      "text": "Praise ye him, all his angels: praise ye him, all his hosts.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Praise",
+        "ye",
+        "him,",
+        "all",
+        "his",
+        "angels:",
+        "praise",
+        "ye",
+        "him,",
+        "all",
+        "his",
+        "hosts."
+      ],
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -29,9 +57,22 @@
       "chapter": 148,
       "verse_start": 3,
       "verse_end": 3,
-      "text": "Praise ye him, sun and moon: praise him, all ye stars of light.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Praise",
+        "ye",
+        "him,",
+        "sun",
+        "and",
+        "moon:",
+        "praise",
+        "him,",
+        "all",
+        "ye",
+        "stars",
+        "of",
+        "light."
+      ],
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -39,9 +80,23 @@
       "chapter": 148,
       "verse_start": 4,
       "verse_end": 4,
-      "text": "Praise him, ye heavens of heavens, and ye waters that <em>be</em> above the heavens.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Praise",
+        "him,",
+        "ye",
+        "heavens",
+        "of",
+        "heavens,",
+        "and",
+        "ye",
+        "waters",
+        "that",
+        "<em>be</em>",
+        "above",
+        "the",
+        "heavens."
+      ],
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -49,9 +104,24 @@
       "chapter": 148,
       "verse_start": 5,
       "verse_end": 5,
-      "text": "Let them praise the name of the LORD: for he commanded, and they were created.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Let",
+        "them",
+        "praise",
+        "the",
+        "name",
+        "of",
+        "the",
+        "LORD:",
+        "for",
+        "he",
+        "commanded,",
+        "and",
+        "they",
+        "were",
+        "created."
+      ],
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -59,9 +129,27 @@
       "chapter": 148,
       "verse_start": 6,
       "verse_end": 6,
-      "text": "He hath also stablished them for ever and ever: he hath made a decree which shall not pass.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "He",
+        "hath",
+        "also",
+        "stablished",
+        "them",
+        "for",
+        "ever",
+        "and",
+        "ever:",
+        "he",
+        "hath",
+        "made",
+        "a",
+        "decree",
+        "which",
+        "shall",
+        "not",
+        "pass."
+      ],
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -69,9 +157,20 @@
       "chapter": 148,
       "verse_start": 7,
       "verse_end": 7,
-      "text": "Praise the LORD from the earth, ye dragons, and all deeps:",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Praise",
+        "the",
+        "LORD",
+        "from",
+        "the",
+        "earth,",
+        "ye",
+        "dragons,",
+        "and",
+        "all",
+        "deeps:"
+      ],
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -79,9 +178,20 @@
       "chapter": 148,
       "verse_start": 8,
       "verse_end": 8,
-      "text": "Fire, and hail; snow, and vapour; stormy wind fulfilling his word:",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Fire,",
+        "and",
+        "hail;",
+        "snow,",
+        "and",
+        "vapour;",
+        "stormy",
+        "wind",
+        "fulfilling",
+        "his",
+        "word:"
+      ],
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -89,9 +199,18 @@
       "chapter": 148,
       "verse_start": 9,
       "verse_end": 9,
-      "text": "Mountains, and all hills; fruitful trees, and all cedars:",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Mountains,",
+        "and",
+        "all",
+        "hills;",
+        "fruitful",
+        "trees,",
+        "and",
+        "all",
+        "cedars:"
+      ],
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -99,9 +218,18 @@
       "chapter": 148,
       "verse_start": 10,
       "verse_end": 10,
-      "text": "Beasts, and all cattle; creeping things, and flying fowl:",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Beasts,",
+        "and",
+        "all",
+        "cattle;",
+        "creeping",
+        "things,",
+        "and",
+        "flying",
+        "fowl:"
+      ],
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -109,9 +237,23 @@
       "chapter": 148,
       "verse_start": 11,
       "verse_end": 11,
-      "text": "Kings of the earth, and all people; princes, and all judges of the earth:",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Kings",
+        "of",
+        "the",
+        "earth,",
+        "and",
+        "all",
+        "people;",
+        "princes,",
+        "and",
+        "all",
+        "judges",
+        "of",
+        "the",
+        "earth:"
+      ],
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -119,9 +261,18 @@
       "chapter": 148,
       "verse_start": 12,
       "verse_end": 12,
-      "text": "Both young men, and maidens; old men, and children:",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Both",
+        "young",
+        "men,",
+        "and",
+        "maidens;",
+        "old",
+        "men,",
+        "and",
+        "children:"
+      ],
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -129,9 +280,31 @@
       "chapter": 148,
       "verse_start": 13,
       "verse_end": 13,
-      "text": "Let them praise the name of the LORD: for his name alone is excellent; his glory <em>is</em> above the earth and heaven.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Let",
+        "them",
+        "praise",
+        "the",
+        "name",
+        "of",
+        "the",
+        "LORD:",
+        "for",
+        "his",
+        "name",
+        "alone",
+        "is",
+        "excellent;",
+        "his",
+        "glory",
+        "<em>is</em>",
+        "above",
+        "the",
+        "earth",
+        "and",
+        "heaven."
+      ],
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -139,9 +312,38 @@
       "chapter": 148,
       "verse_start": 14,
       "verse_end": 14,
-      "text": "He also exalteth the horn of his people, the praise of all his saints; <em>even</em> of the children of Israel, a people near unto him. Praise ye the LORD.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "He",
+        "also",
+        "exalteth",
+        "the",
+        "horn",
+        "of",
+        "his",
+        "people,",
+        "the",
+        "praise",
+        "of",
+        "all",
+        "his",
+        "saints;",
+        "<em>even</em>",
+        "of",
+        "the",
+        "children",
+        "of",
+        "Israel,",
+        "a",
+        "people",
+        "near",
+        "unto",
+        "him.",
+        "Praise",
+        "ye",
+        "the",
+        "LORD."
+      ],
+      "info": ""
     }
   ]
 }

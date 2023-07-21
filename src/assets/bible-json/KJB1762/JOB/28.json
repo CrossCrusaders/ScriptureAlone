@@ -9,9 +9,26 @@
       "chapter": 28,
       "verse_start": 1,
       "verse_end": 1,
-      "text": "Surely there is a vein for the silver, and a place for gold <em>where</em> they fine <em>it.</em>",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Surely",
+        "there",
+        "is",
+        "a",
+        "vein",
+        "for",
+        "the",
+        "silver,",
+        "and",
+        "a",
+        "place",
+        "for",
+        "gold",
+        "<em>where</em>",
+        "they",
+        "fine",
+        "<em>it.</em>"
+      ],
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -19,9 +36,24 @@
       "chapter": 28,
       "verse_start": 2,
       "verse_end": 2,
-      "text": "Iron is taken out of the earth, and brass <em>is</em> molten <em>out of</em> the stone.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Iron",
+        "is",
+        "taken",
+        "out",
+        "of",
+        "the",
+        "earth,",
+        "and",
+        "brass",
+        "<em>is</em>",
+        "molten",
+        "<em>out</em>",
+        "<em>of</em>",
+        "the",
+        "stone."
+      ],
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -29,9 +61,29 @@
       "chapter": 28,
       "verse_start": 3,
       "verse_end": 3,
-      "text": "He setteth an end to darkness, and searcheth out all perfection: the stones of darkness, and the shadow of death.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "He",
+        "setteth",
+        "an",
+        "end",
+        "to",
+        "darkness,",
+        "and",
+        "searcheth",
+        "out",
+        "all",
+        "perfection:",
+        "the",
+        "stones",
+        "of",
+        "darkness,",
+        "and",
+        "the",
+        "shadow",
+        "of",
+        "death."
+      ],
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -39,9 +91,33 @@
       "chapter": 28,
       "verse_start": 4,
       "verse_end": 4,
-      "text": "The flood breaketh out from the inhabitant; <em>even the waters</em> forgotten of the foot: they are dried up, they are gone away from men.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "The",
+        "flood",
+        "breaketh",
+        "out",
+        "from",
+        "the",
+        "inhabitant;",
+        "<em>even</em>",
+        "<em>the</em>",
+        "<em>waters</em>",
+        "forgotten",
+        "of",
+        "the",
+        "foot:",
+        "they",
+        "are",
+        "dried",
+        "up,",
+        "they",
+        "are",
+        "gone",
+        "away",
+        "from",
+        "men."
+      ],
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -49,9 +125,28 @@
       "chapter": 28,
       "verse_start": 5,
       "verse_end": 5,
-      "text": "<em>As for</em> the earth, out of it cometh bread: and under it is turned up as it were fire.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "<em>As</em>",
+        "<em>for</em>",
+        "the",
+        "earth,",
+        "out",
+        "of",
+        "it",
+        "cometh",
+        "bread:",
+        "and",
+        "under",
+        "it",
+        "is",
+        "turned",
+        "up",
+        "as",
+        "it",
+        "were",
+        "fire."
+      ],
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -59,9 +154,24 @@
       "chapter": 28,
       "verse_start": 6,
       "verse_end": 6,
-      "text": "The stones of it <em>are</em> the place of sapphires: and it hath dust of gold.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "The",
+        "stones",
+        "of",
+        "it",
+        "<em>are</em>",
+        "the",
+        "place",
+        "of",
+        "sapphires:",
+        "and",
+        "it",
+        "hath",
+        "dust",
+        "of",
+        "gold."
+      ],
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -69,9 +179,25 @@
       "chapter": 28,
       "verse_start": 7,
       "verse_end": 7,
-      "text": "<em>There is</em> a path which no fowl knoweth, and which the vulture's eye hath not seen:",
-      "info": "",
-      "language": "English"
+      "text": [
+        "<em>There</em>",
+        "<em>is</em>",
+        "a",
+        "path",
+        "which",
+        "no",
+        "fowl",
+        "knoweth,",
+        "and",
+        "which",
+        "the",
+        "vulture's",
+        "eye",
+        "hath",
+        "not",
+        "seen:"
+      ],
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -79,9 +205,23 @@
       "chapter": 28,
       "verse_start": 8,
       "verse_end": 8,
-      "text": "The lion's whelps have not trodden it, nor the fierce lion passed by it.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "The",
+        "lion's",
+        "whelps",
+        "have",
+        "not",
+        "trodden",
+        "it,",
+        "nor",
+        "the",
+        "fierce",
+        "lion",
+        "passed",
+        "by",
+        "it."
+      ],
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -89,9 +229,24 @@
       "chapter": 28,
       "verse_start": 9,
       "verse_end": 9,
-      "text": "He putteth forth his hand upon the rock; he overturneth the mountains by the roots.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "He",
+        "putteth",
+        "forth",
+        "his",
+        "hand",
+        "upon",
+        "the",
+        "rock;",
+        "he",
+        "overturneth",
+        "the",
+        "mountains",
+        "by",
+        "the",
+        "roots."
+      ],
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -99,9 +254,23 @@
       "chapter": 28,
       "verse_start": 10,
       "verse_end": 10,
-      "text": "He cutteth out rivers among the rocks; and his eye seeth every precious thing.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "He",
+        "cutteth",
+        "out",
+        "rivers",
+        "among",
+        "the",
+        "rocks;",
+        "and",
+        "his",
+        "eye",
+        "seeth",
+        "every",
+        "precious",
+        "thing."
+      ],
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -109,9 +278,26 @@
       "chapter": 28,
       "verse_start": 11,
       "verse_end": 11,
-      "text": "He bindeth the floods from overflowing; and <em>the thing that is</em> hid bringeth he forth to light.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "He",
+        "bindeth",
+        "the",
+        "floods",
+        "from",
+        "overflowing;",
+        "and",
+        "<em>the</em>",
+        "<em>thing</em>",
+        "<em>that</em>",
+        "<em>is</em>",
+        "hid",
+        "bringeth",
+        "he",
+        "forth",
+        "to",
+        "light."
+      ],
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -119,9 +305,22 @@
       "chapter": 28,
       "verse_start": 12,
       "verse_end": 12,
-      "text": "But where shall wisdom be found? and where <em>is</em> the place of understanding?",
-      "info": "",
-      "language": "English"
+      "text": [
+        "But",
+        "where",
+        "shall",
+        "wisdom",
+        "be",
+        "found?",
+        "and",
+        "where",
+        "<em>is</em>",
+        "the",
+        "place",
+        "of",
+        "understanding?"
+      ],
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -129,9 +328,25 @@
       "chapter": 28,
       "verse_start": 13,
       "verse_end": 13,
-      "text": "Man knoweth not the price thereof; neither is it found in the land of the living.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Man",
+        "knoweth",
+        "not",
+        "the",
+        "price",
+        "thereof;",
+        "neither",
+        "is",
+        "it",
+        "found",
+        "in",
+        "the",
+        "land",
+        "of",
+        "the",
+        "living."
+      ],
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -139,9 +354,26 @@
       "chapter": 28,
       "verse_start": 14,
       "verse_end": 14,
-      "text": "The depth saith, It <em>is</em> not in me: and the sea saith, <em>It is</em> not with me.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "The",
+        "depth",
+        "saith,",
+        "It",
+        "<em>is</em>",
+        "not",
+        "in",
+        "me:",
+        "and",
+        "the",
+        "sea",
+        "saith,",
+        "<em>It</em>",
+        "<em>is</em>",
+        "not",
+        "with",
+        "me."
+      ],
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -149,9 +381,24 @@
       "chapter": 28,
       "verse_start": 15,
       "verse_end": 15,
-      "text": "It cannot be gotten for gold, neither shall silver be weighed <em>for</em> the price thereof.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "It",
+        "cannot",
+        "be",
+        "gotten",
+        "for",
+        "gold,",
+        "neither",
+        "shall",
+        "silver",
+        "be",
+        "weighed",
+        "<em>for</em>",
+        "the",
+        "price",
+        "thereof."
+      ],
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -159,9 +406,25 @@
       "chapter": 28,
       "verse_start": 16,
       "verse_end": 16,
-      "text": "It cannot be valued with the gold of Ophir, with the precious onyx, or the sapphire.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "It",
+        "cannot",
+        "be",
+        "valued",
+        "with",
+        "the",
+        "gold",
+        "of",
+        "Ophir,",
+        "with",
+        "the",
+        "precious",
+        "onyx,",
+        "or",
+        "the",
+        "sapphire."
+      ],
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -169,9 +432,30 @@
       "chapter": 28,
       "verse_start": 17,
       "verse_end": 17,
-      "text": "The gold and the crystal cannot equal it: and the exchange of it <em>shall not be for</em> jewels of fine gold.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "The",
+        "gold",
+        "and",
+        "the",
+        "crystal",
+        "cannot",
+        "equal",
+        "it:",
+        "and",
+        "the",
+        "exchange",
+        "of",
+        "it",
+        "<em>shall</em>",
+        "<em>not</em>",
+        "<em>be</em>",
+        "<em>for</em>",
+        "jewels",
+        "of",
+        "fine",
+        "gold."
+      ],
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -179,9 +463,27 @@
       "chapter": 28,
       "verse_start": 18,
       "verse_end": 18,
-      "text": "No mention shall be made of coral, or of pearls: for the price of wisdom <em>is</em> above rubies.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "No",
+        "mention",
+        "shall",
+        "be",
+        "made",
+        "of",
+        "coral,",
+        "or",
+        "of",
+        "pearls:",
+        "for",
+        "the",
+        "price",
+        "of",
+        "wisdom",
+        "<em>is</em>",
+        "above",
+        "rubies."
+      ],
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -189,9 +491,25 @@
       "chapter": 28,
       "verse_start": 19,
       "verse_end": 19,
-      "text": "The topaz of Ethiopia shall not equal it, neither shall it be valued with pure gold.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "The",
+        "topaz",
+        "of",
+        "Ethiopia",
+        "shall",
+        "not",
+        "equal",
+        "it,",
+        "neither",
+        "shall",
+        "it",
+        "be",
+        "valued",
+        "with",
+        "pure",
+        "gold."
+      ],
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -199,9 +517,20 @@
       "chapter": 28,
       "verse_start": 20,
       "verse_end": 20,
-      "text": "Whence then cometh wisdom? and where <em>is</em> the place of understanding?",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Whence",
+        "then",
+        "cometh",
+        "wisdom?",
+        "and",
+        "where",
+        "<em>is</em>",
+        "the",
+        "place",
+        "of",
+        "understanding?"
+      ],
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -209,9 +538,28 @@
       "chapter": 28,
       "verse_start": 21,
       "verse_end": 21,
-      "text": "Seeing it is hid from the eyes of all living, and kept close from the fowls of the air.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Seeing",
+        "it",
+        "is",
+        "hid",
+        "from",
+        "the",
+        "eyes",
+        "of",
+        "all",
+        "living,",
+        "and",
+        "kept",
+        "close",
+        "from",
+        "the",
+        "fowls",
+        "of",
+        "the",
+        "air."
+      ],
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -219,9 +567,22 @@
       "chapter": 28,
       "verse_start": 22,
       "verse_end": 22,
-      "text": "Destruction and death say, We have heard the fame thereof with our ears.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Destruction",
+        "and",
+        "death",
+        "say,",
+        "We",
+        "have",
+        "heard",
+        "the",
+        "fame",
+        "thereof",
+        "with",
+        "our",
+        "ears."
+      ],
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -229,9 +590,20 @@
       "chapter": 28,
       "verse_start": 23,
       "verse_end": 23,
-      "text": "God understandeth the way thereof, and he knoweth the place thereof.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "God",
+        "understandeth",
+        "the",
+        "way",
+        "thereof,",
+        "and",
+        "he",
+        "knoweth",
+        "the",
+        "place",
+        "thereof."
+      ],
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -239,9 +611,24 @@
       "chapter": 28,
       "verse_start": 24,
       "verse_end": 24,
-      "text": "For he looketh to the ends of the earth, <em>and</em> seeth under the whole heaven;",
-      "info": "",
-      "language": "English"
+      "text": [
+        "For",
+        "he",
+        "looketh",
+        "to",
+        "the",
+        "ends",
+        "of",
+        "the",
+        "earth,",
+        "<em>and</em>",
+        "seeth",
+        "under",
+        "the",
+        "whole",
+        "heaven;"
+      ],
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -249,9 +636,23 @@
       "chapter": 28,
       "verse_start": 25,
       "verse_end": 25,
-      "text": "To make the weight for the winds; and he weigheth the waters by measure.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "To",
+        "make",
+        "the",
+        "weight",
+        "for",
+        "the",
+        "winds;",
+        "and",
+        "he",
+        "weigheth",
+        "the",
+        "waters",
+        "by",
+        "measure."
+      ],
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -259,9 +660,26 @@
       "chapter": 28,
       "verse_start": 26,
       "verse_end": 26,
-      "text": "When he made a decree for the rain, and a way for the lightning of the thunder:",
-      "info": "",
-      "language": "English"
+      "text": [
+        "When",
+        "he",
+        "made",
+        "a",
+        "decree",
+        "for",
+        "the",
+        "rain,",
+        "and",
+        "a",
+        "way",
+        "for",
+        "the",
+        "lightning",
+        "of",
+        "the",
+        "thunder:"
+      ],
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -269,9 +687,25 @@
       "chapter": 28,
       "verse_start": 27,
       "verse_end": 27,
-      "text": "Then did he see it, and declare it; he prepared it, yea, and searched it out.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Then",
+        "did",
+        "he",
+        "see",
+        "it,",
+        "and",
+        "declare",
+        "it;",
+        "he",
+        "prepared",
+        "it,",
+        "yea,",
+        "and",
+        "searched",
+        "it",
+        "out."
+      ],
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -279,9 +713,30 @@
       "chapter": 28,
       "verse_start": 28,
       "verse_end": 28,
-      "text": "And unto man he said, Behold, the fear of the Lord, that <em>is</em> wisdom; and to depart from evil <em>is</em> understanding.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "And",
+        "unto",
+        "man",
+        "he",
+        "said,",
+        "Behold,",
+        "the",
+        "fear",
+        "of",
+        "the",
+        "Lord,",
+        "that",
+        "<em>is</em>",
+        "wisdom;",
+        "and",
+        "to",
+        "depart",
+        "from",
+        "evil",
+        "<em>is</em>",
+        "understanding."
+      ],
+      "info": ""
     }
   ]
 }

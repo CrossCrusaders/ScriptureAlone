@@ -1,5 +1,5 @@
 {
-  "header": "¶ A Song of degrees.",
+  "header": "",
   "footer": "",
   "language": "English",
   "verses": [
@@ -9,9 +9,27 @@
       "chapter": 129,
       "verse_start": 1,
       "verse_end": 1,
-      "text": "Many a time have they afflicted me from my youth, may Israel now say:",
-      "info": "",
-      "language": "English"
+      "text": [
+        "(A",
+        "Song",
+        "of",
+        "degrees.)",
+        "Many",
+        "a",
+        "time",
+        "have",
+        "they",
+        "afflicted",
+        "me",
+        "from",
+        "my",
+        "youth,",
+        "may",
+        "Israel",
+        "now",
+        "say:"
+      ],
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -19,9 +37,26 @@
       "chapter": 129,
       "verse_start": 2,
       "verse_end": 2,
-      "text": "Many a time have they afflicted me from my youth: yet they have not prevailed against me.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Many",
+        "a",
+        "time",
+        "have",
+        "they",
+        "afflicted",
+        "me",
+        "from",
+        "my",
+        "youth:",
+        "yet",
+        "they",
+        "have",
+        "not",
+        "prevailed",
+        "against",
+        "me."
+      ],
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -29,9 +64,20 @@
       "chapter": 129,
       "verse_start": 3,
       "verse_end": 3,
-      "text": "The plowers plowed upon my back: they made long their furrows.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "The",
+        "plowers",
+        "plowed",
+        "upon",
+        "my",
+        "back:",
+        "they",
+        "made",
+        "long",
+        "their",
+        "furrows."
+      ],
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -39,9 +85,22 @@
       "chapter": 129,
       "verse_start": 4,
       "verse_end": 4,
-      "text": "The LORD <em>is</em> righteous: he hath cut asunder the cords of the wicked.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "The",
+        "LORD",
+        "<em>is</em>",
+        "righteous:",
+        "he",
+        "hath",
+        "cut",
+        "asunder",
+        "the",
+        "cords",
+        "of",
+        "the",
+        "wicked."
+      ],
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -49,9 +108,20 @@
       "chapter": 129,
       "verse_start": 5,
       "verse_end": 5,
-      "text": "Let them all be confounded and turned back that hate Zion.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Let",
+        "them",
+        "all",
+        "be",
+        "confounded",
+        "and",
+        "turned",
+        "back",
+        "that",
+        "hate",
+        "Zion."
+      ],
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -59,9 +129,24 @@
       "chapter": 129,
       "verse_start": 6,
       "verse_end": 6,
-      "text": "Let them be as the grass <em>upon</em> the housetops, which withereth afore it groweth up:",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Let",
+        "them",
+        "be",
+        "as",
+        "the",
+        "grass",
+        "<em>upon</em>",
+        "the",
+        "housetops,",
+        "which",
+        "withereth",
+        "afore",
+        "it",
+        "groweth",
+        "up:"
+      ],
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -69,9 +154,23 @@
       "chapter": 129,
       "verse_start": 7,
       "verse_end": 7,
-      "text": "Wherewith the mower filleth not his hand; nor he that bindeth sheaves his bosom.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Wherewith",
+        "the",
+        "mower",
+        "filleth",
+        "not",
+        "his",
+        "hand;",
+        "nor",
+        "he",
+        "that",
+        "bindeth",
+        "sheaves",
+        "his",
+        "bosom."
+      ],
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -79,9 +178,33 @@
       "chapter": 129,
       "verse_start": 8,
       "verse_end": 8,
-      "text": "Neither do they which go by say, The blessing of the LORD <em>be</em> upon you: we bless you in the name of the LORD.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Neither",
+        "do",
+        "they",
+        "which",
+        "go",
+        "by",
+        "say,",
+        "The",
+        "blessing",
+        "of",
+        "the",
+        "LORD",
+        "<em>be</em>",
+        "upon",
+        "you:",
+        "we",
+        "bless",
+        "you",
+        "in",
+        "the",
+        "name",
+        "of",
+        "the",
+        "LORD."
+      ],
+      "info": ""
     }
   ]
 }

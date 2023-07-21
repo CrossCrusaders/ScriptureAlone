@@ -9,9 +9,26 @@
       "chapter": 113,
       "verse_start": 1,
       "verse_end": 1,
-      "text": "Praise ye the LORD. Praise, O ye servants of the LORD, praise the name of the LORD.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Praise",
+        "ye",
+        "the",
+        "LORD.",
+        "Praise,",
+        "O",
+        "ye",
+        "servants",
+        "of",
+        "the",
+        "LORD,",
+        "praise",
+        "the",
+        "name",
+        "of",
+        "the",
+        "LORD."
+      ],
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -19,9 +36,23 @@
       "chapter": 113,
       "verse_start": 2,
       "verse_end": 2,
-      "text": "Blessed be the name of the LORD from this time forth and for evermore.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Blessed",
+        "be",
+        "the",
+        "name",
+        "of",
+        "the",
+        "LORD",
+        "from",
+        "this",
+        "time",
+        "forth",
+        "and",
+        "for",
+        "evermore."
+      ],
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -29,9 +60,29 @@
       "chapter": 113,
       "verse_start": 3,
       "verse_end": 3,
-      "text": "From the rising of the sun unto the going down of the same the LORD'S name <em>is</em> to be praised.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "From",
+        "the",
+        "rising",
+        "of",
+        "the",
+        "sun",
+        "unto",
+        "the",
+        "going",
+        "down",
+        "of",
+        "the",
+        "same",
+        "the",
+        "LORD'S",
+        "name",
+        "<em>is</em>",
+        "to",
+        "be",
+        "praised."
+      ],
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -39,9 +90,22 @@
       "chapter": 113,
       "verse_start": 4,
       "verse_end": 4,
-      "text": "The LORD <em>is</em> high above all nations, <em>and</em> his glory above the heavens.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "The",
+        "LORD",
+        "<em>is</em>",
+        "high",
+        "above",
+        "all",
+        "nations,",
+        "<em>and</em>",
+        "his",
+        "glory",
+        "above",
+        "the",
+        "heavens."
+      ],
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -49,9 +113,21 @@
       "chapter": 113,
       "verse_start": 5,
       "verse_end": 5,
-      "text": "Who <em>is</em> like unto the LORD our God, who dwelleth on high,",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Who",
+        "<em>is</em>",
+        "like",
+        "unto",
+        "the",
+        "LORD",
+        "our",
+        "God,",
+        "who",
+        "dwelleth",
+        "on",
+        "high,"
+      ],
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -59,9 +135,24 @@
       "chapter": 113,
       "verse_start": 6,
       "verse_end": 6,
-      "text": "Who humbleth <em>himself</em> to behold <em>the things that are</em> in heaven, and in the earth!",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Who",
+        "humbleth",
+        "<em>himself</em>",
+        "to",
+        "behold",
+        "<em>the</em>",
+        "<em>things</em>",
+        "<em>that</em>",
+        "<em>are</em>",
+        "in",
+        "heaven,",
+        "and",
+        "in",
+        "the",
+        "earth!"
+      ],
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -69,9 +160,26 @@
       "chapter": 113,
       "verse_start": 7,
       "verse_end": 7,
-      "text": "He raiseth up the poor out of the dust, <em>and</em> lifteth the needy out of the dunghill;",
-      "info": "",
-      "language": "English"
+      "text": [
+        "He",
+        "raiseth",
+        "up",
+        "the",
+        "poor",
+        "out",
+        "of",
+        "the",
+        "dust,",
+        "<em>and</em>",
+        "lifteth",
+        "the",
+        "needy",
+        "out",
+        "of",
+        "the",
+        "dunghill;"
+      ],
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -79,9 +187,23 @@
       "chapter": 113,
       "verse_start": 8,
       "verse_end": 8,
-      "text": "That he may set <em>him</em> with princes, <em>even</em> with the princes of his people.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "That",
+        "he",
+        "may",
+        "set",
+        "<em>him</em>",
+        "with",
+        "princes,",
+        "<em>even</em>",
+        "with",
+        "the",
+        "princes",
+        "of",
+        "his",
+        "people."
+      ],
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -89,9 +211,29 @@
       "chapter": 113,
       "verse_start": 9,
       "verse_end": 9,
-      "text": "He maketh the barren woman to keep house, <em>and to be</em> a joyful mother of children. Praise ye the LORD.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "He",
+        "maketh",
+        "the",
+        "barren",
+        "woman",
+        "to",
+        "keep",
+        "house,",
+        "<em>and</em>",
+        "<em>to</em>",
+        "<em>be</em>",
+        "a",
+        "joyful",
+        "mother",
+        "of",
+        "children.",
+        "Praise",
+        "ye",
+        "the",
+        "LORD."
+      ],
+      "info": ""
     }
   ]
 }

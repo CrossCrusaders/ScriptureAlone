@@ -1,5 +1,5 @@
 {
-  "header": "¶ A Psalme of Asaph.",
+  "header": "¶ A",
   "footer": "",
   "language": "English",
   "verses": [
@@ -9,7 +9,24 @@
       "chapter": 82,
       "verse_start": 1,
       "verse_end": 1,
-      "text": "God standeth in the Congregation of the mightie: hee iudgeth among the gods.",
+      "text": [
+        "<em>Psalme</em>",
+        "<em>of</em>",
+        "<em>Asaph.</em>",
+        "God",
+        "standeth",
+        "in",
+        "the",
+        "Congregation",
+        "of",
+        "the",
+        "mightie:",
+        "hee",
+        "iudgeth",
+        "among",
+        "the",
+        "gods."
+      ],
       "info": ""
     },
     {
@@ -18,7 +35,22 @@
       "chapter": 82,
       "verse_start": 2,
       "verse_end": 2,
-      "text": "How long will yee iudge vniustly: and accept the persons of the wicked? Selah.",
+      "text": [
+        "How",
+        "long",
+        "will",
+        "yee",
+        "iudge",
+        "vniustly:",
+        "and",
+        "accept",
+        "the",
+        "persons",
+        "of",
+        "the",
+        "wicked?",
+        "Selah."
+      ],
       "info": ""
     },
     {
@@ -27,7 +59,20 @@
       "chapter": 82,
       "verse_start": 3,
       "verse_end": 3,
-      "text": "Defend the poore and fatherlesse: doe iustice to the afflicted and needie.",
+      "text": [
+        "Defend",
+        "the",
+        "poore",
+        "and",
+        "fatherlesse:",
+        "doe",
+        "iustice",
+        "to",
+        "the",
+        "afflicted",
+        "and",
+        "needie."
+      ],
       "info": ""
     },
     {
@@ -36,7 +81,22 @@
       "chapter": 82,
       "verse_start": 4,
       "verse_end": 4,
-      "text": "Deliuer the poore and needy: rid them out of the hand of the wicked.",
+      "text": [
+        "Deliuer",
+        "the",
+        "poore",
+        "and",
+        "needy:",
+        "rid",
+        "them",
+        "out",
+        "of",
+        "the",
+        "hand",
+        "of",
+        "the",
+        "wicked."
+      ],
       "info": ""
     },
     {
@@ -45,7 +105,30 @@
       "chapter": 82,
       "verse_start": 5,
       "verse_end": 5,
-      "text": "They know not, neither wil they vnderstand; they walke on in darknes: all the foundations of the earth are out of course.",
+      "text": [
+        "They",
+        "know",
+        "not,",
+        "neither",
+        "wil",
+        "they",
+        "vnderstand;",
+        "they",
+        "walke",
+        "on",
+        "in",
+        "darknes:",
+        "all",
+        "the",
+        "foundations",
+        "of",
+        "the",
+        "earth",
+        "are",
+        "out",
+        "of",
+        "course."
+      ],
       "info": ""
     },
     {
@@ -54,7 +137,24 @@
       "chapter": 82,
       "verse_start": 6,
       "verse_end": 6,
-      "text": "I haue said, Ye are gods: and all of you are children of the most High:",
+      "text": [
+        "I",
+        "haue",
+        "said,",
+        "Ye",
+        "are",
+        "gods:",
+        "and",
+        "all",
+        "of",
+        "you",
+        "are",
+        "children",
+        "of",
+        "the",
+        "most",
+        "High:"
+      ],
       "info": ""
     },
     {
@@ -63,7 +163,21 @@
       "chapter": 82,
       "verse_start": 7,
       "verse_end": 7,
-      "text": "But ye shall die like men, and fall like one of the Princes.",
+      "text": [
+        "But",
+        "ye",
+        "shall",
+        "die",
+        "like",
+        "men,",
+        "and",
+        "fall",
+        "like",
+        "one",
+        "of",
+        "the",
+        "Princes."
+      ],
       "info": ""
     },
     {
@@ -72,7 +186,20 @@
       "chapter": 82,
       "verse_start": 8,
       "verse_end": 8,
-      "text": "Arise, O God, iudge the earth: for thou shalt inherite all nations.",
+      "text": [
+        "Arise,",
+        "O",
+        "God,",
+        "iudge",
+        "the",
+        "earth:",
+        "for",
+        "thou",
+        "shalt",
+        "inherite",
+        "all",
+        "nations."
+      ],
       "info": ""
     }
   ]

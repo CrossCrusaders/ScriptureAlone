@@ -9,9 +9,22 @@
       "chapter": 18,
       "verse_start": 1,
       "verse_end": 1,
-      "text": "Through desire a man, having separated himself, seeketh <em>and</em> intermeddleth with all wisdom.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Through",
+        "desire",
+        "a",
+        "man,",
+        "having",
+        "separated",
+        "himself,",
+        "seeketh",
+        "<em>and</em>",
+        "intermeddleth",
+        "with",
+        "all",
+        "wisdom."
+      ],
+      "info": ""
     },
     {
       "book_id": "PRO",
@@ -19,9 +32,23 @@
       "chapter": 18,
       "verse_start": 2,
       "verse_end": 2,
-      "text": "A fool hath no delight in understanding, but that his heart may discover itself.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "A",
+        "fool",
+        "hath",
+        "no",
+        "delight",
+        "in",
+        "understanding,",
+        "but",
+        "that",
+        "his",
+        "heart",
+        "may",
+        "discover",
+        "itself."
+      ],
+      "info": ""
     },
     {
       "book_id": "PRO",
@@ -29,9 +56,21 @@
       "chapter": 18,
       "verse_start": 3,
       "verse_end": 3,
-      "text": "When the wicked cometh, <em>then</em> cometh also contempt, and with ignominy reproach.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "When",
+        "the",
+        "wicked",
+        "cometh,",
+        "<em>then</em>",
+        "cometh",
+        "also",
+        "contempt,",
+        "and",
+        "with",
+        "ignominy",
+        "reproach."
+      ],
+      "info": ""
     },
     {
       "book_id": "PRO",
@@ -39,9 +78,28 @@
       "chapter": 18,
       "verse_start": 4,
       "verse_end": 4,
-      "text": "The words of a man's mouth <em>are as</em> deep waters, <em>and</em> the wellspring of wisdom <em>as</em> a flowing brook.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "The",
+        "words",
+        "of",
+        "a",
+        "man's",
+        "mouth",
+        "<em>are</em>",
+        "<em>as</em>",
+        "deep",
+        "waters,",
+        "<em>and</em>",
+        "the",
+        "wellspring",
+        "of",
+        "wisdom",
+        "<em>as</em>",
+        "a",
+        "flowing",
+        "brook."
+      ],
+      "info": ""
     },
     {
       "book_id": "PRO",
@@ -49,9 +107,26 @@
       "chapter": 18,
       "verse_start": 5,
       "verse_end": 5,
-      "text": "<em>It is</em> not good to accept the person of the wicked, to overthrow the righteous in judgment.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "<em>It</em>",
+        "<em>is</em>",
+        "not",
+        "good",
+        "to",
+        "accept",
+        "the",
+        "person",
+        "of",
+        "the",
+        "wicked,",
+        "to",
+        "overthrow",
+        "the",
+        "righteous",
+        "in",
+        "judgment."
+      ],
+      "info": ""
     },
     {
       "book_id": "PRO",
@@ -59,9 +134,21 @@
       "chapter": 18,
       "verse_start": 6,
       "verse_end": 6,
-      "text": "A fool's lips enter into contention, and his mouth calleth for strokes.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "A",
+        "fool's",
+        "lips",
+        "enter",
+        "into",
+        "contention,",
+        "and",
+        "his",
+        "mouth",
+        "calleth",
+        "for",
+        "strokes."
+      ],
+      "info": ""
     },
     {
       "book_id": "PRO",
@@ -69,9 +156,24 @@
       "chapter": 18,
       "verse_start": 7,
       "verse_end": 7,
-      "text": "A fool's mouth <em>is</em> his destruction, and his lips <em>are</em> the snare of his soul.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "A",
+        "fool's",
+        "mouth",
+        "<em>is</em>",
+        "his",
+        "destruction,",
+        "and",
+        "his",
+        "lips",
+        "<em>are</em>",
+        "the",
+        "snare",
+        "of",
+        "his",
+        "soul."
+      ],
+      "info": ""
     },
     {
       "book_id": "PRO",
@@ -79,9 +181,28 @@
       "chapter": 18,
       "verse_start": 8,
       "verse_end": 8,
-      "text": "The words of a talebearer <em>are</em> as wounds, and they go down into the innermost parts of the belly.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "The",
+        "words",
+        "of",
+        "a",
+        "talebearer",
+        "<em>are</em>",
+        "as",
+        "wounds,",
+        "and",
+        "they",
+        "go",
+        "down",
+        "into",
+        "the",
+        "innermost",
+        "parts",
+        "of",
+        "the",
+        "belly."
+      ],
+      "info": ""
     },
     {
       "book_id": "PRO",
@@ -89,9 +210,26 @@
       "chapter": 18,
       "verse_start": 9,
       "verse_end": 9,
-      "text": "He also that is slothful in his work is brother to him that is a great waster.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "He",
+        "also",
+        "that",
+        "is",
+        "slothful",
+        "in",
+        "his",
+        "work",
+        "is",
+        "brother",
+        "to",
+        "him",
+        "that",
+        "is",
+        "a",
+        "great",
+        "waster."
+      ],
+      "info": ""
     },
     {
       "book_id": "PRO",
@@ -99,9 +237,26 @@
       "chapter": 18,
       "verse_start": 10,
       "verse_end": 10,
-      "text": "The name of the LORD <em>is</em> a strong tower: the righteous runneth into it, and is safe.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "The",
+        "name",
+        "of",
+        "the",
+        "LORD",
+        "<em>is</em>",
+        "a",
+        "strong",
+        "tower:",
+        "the",
+        "righteous",
+        "runneth",
+        "into",
+        "it,",
+        "and",
+        "is",
+        "safe."
+      ],
+      "info": ""
     },
     {
       "book_id": "PRO",
@@ -109,9 +264,26 @@
       "chapter": 18,
       "verse_start": 11,
       "verse_end": 11,
-      "text": "The rich man's wealth <em>is</em> his strong city, and as an high wall in his own conceit.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "The",
+        "rich",
+        "man's",
+        "wealth",
+        "<em>is</em>",
+        "his",
+        "strong",
+        "city,",
+        "and",
+        "as",
+        "an",
+        "high",
+        "wall",
+        "in",
+        "his",
+        "own",
+        "conceit."
+      ],
+      "info": ""
     },
     {
       "book_id": "PRO",
@@ -119,9 +291,22 @@
       "chapter": 18,
       "verse_start": 12,
       "verse_end": 12,
-      "text": "Before destruction the heart of man is haughty, and before honour <em>is</em> humility.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Before",
+        "destruction",
+        "the",
+        "heart",
+        "of",
+        "man",
+        "is",
+        "haughty,",
+        "and",
+        "before",
+        "honour",
+        "<em>is</em>",
+        "humility."
+      ],
+      "info": ""
     },
     {
       "book_id": "PRO",
@@ -129,9 +314,25 @@
       "chapter": 18,
       "verse_start": 13,
       "verse_end": 13,
-      "text": "He that answereth a matter before he heareth <em>it,</em> it <em>is</em> folly and shame unto him.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "He",
+        "that",
+        "answereth",
+        "a",
+        "matter",
+        "before",
+        "he",
+        "heareth",
+        "<em>it,</em>",
+        "it",
+        "<em>is</em>",
+        "folly",
+        "and",
+        "shame",
+        "unto",
+        "him."
+      ],
+      "info": ""
     },
     {
       "book_id": "PRO",
@@ -139,9 +340,25 @@
       "chapter": 18,
       "verse_start": 14,
       "verse_end": 14,
-      "text": "The spirit of a man will sustain his infirmity; but a wounded spirit who can bear?",
-      "info": "",
-      "language": "English"
+      "text": [
+        "The",
+        "spirit",
+        "of",
+        "a",
+        "man",
+        "will",
+        "sustain",
+        "his",
+        "infirmity;",
+        "but",
+        "a",
+        "wounded",
+        "spirit",
+        "who",
+        "can",
+        "bear?"
+      ],
+      "info": ""
     },
     {
       "book_id": "PRO",
@@ -149,9 +366,24 @@
       "chapter": 18,
       "verse_start": 15,
       "verse_end": 15,
-      "text": "The heart of the prudent getteth knowledge; and the ear of the wise seeketh knowledge.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "The",
+        "heart",
+        "of",
+        "the",
+        "prudent",
+        "getteth",
+        "knowledge;",
+        "and",
+        "the",
+        "ear",
+        "of",
+        "the",
+        "wise",
+        "seeketh",
+        "knowledge."
+      ],
+      "info": ""
     },
     {
       "book_id": "PRO",
@@ -159,9 +391,22 @@
       "chapter": 18,
       "verse_start": 16,
       "verse_end": 16,
-      "text": "A man's gift maketh room for him, and bringeth him before great men.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "A",
+        "man's",
+        "gift",
+        "maketh",
+        "room",
+        "for",
+        "him,",
+        "and",
+        "bringeth",
+        "him",
+        "before",
+        "great",
+        "men."
+      ],
+      "info": ""
     },
     {
       "book_id": "PRO",
@@ -169,9 +414,26 @@
       "chapter": 18,
       "verse_start": 17,
       "verse_end": 17,
-      "text": "<em>He that is</em> first in his own cause <em>seemeth</em> just; but his neighbour cometh and searcheth him.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "<em>He</em>",
+        "<em>that</em>",
+        "<em>is</em>",
+        "first",
+        "in",
+        "his",
+        "own",
+        "cause",
+        "<em>seemeth</em>",
+        "just;",
+        "but",
+        "his",
+        "neighbour",
+        "cometh",
+        "and",
+        "searcheth",
+        "him."
+      ],
+      "info": ""
     },
     {
       "book_id": "PRO",
@@ -179,9 +441,20 @@
       "chapter": 18,
       "verse_start": 18,
       "verse_end": 18,
-      "text": "The lot causeth contentions to cease, and parteth between the mighty.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "The",
+        "lot",
+        "causeth",
+        "contentions",
+        "to",
+        "cease,",
+        "and",
+        "parteth",
+        "between",
+        "the",
+        "mighty."
+      ],
+      "info": ""
     },
     {
       "book_id": "PRO",
@@ -189,9 +462,31 @@
       "chapter": 18,
       "verse_start": 19,
       "verse_end": 19,
-      "text": "A brother offended <em>is harder to be won</em> than a strong city: and <em>their</em> contentions <em>are</em> like the bars of a castle.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "A",
+        "brother",
+        "offended",
+        "<em>is</em>",
+        "<em>harder</em>",
+        "<em>to</em>",
+        "<em>be</em>",
+        "<em>won</em>",
+        "than",
+        "a",
+        "strong",
+        "city:",
+        "and",
+        "<em>their</em>",
+        "contentions",
+        "<em>are</em>",
+        "like",
+        "the",
+        "bars",
+        "of",
+        "a",
+        "castle."
+      ],
+      "info": ""
     },
     {
       "book_id": "PRO",
@@ -199,9 +494,32 @@
       "chapter": 18,
       "verse_start": 20,
       "verse_end": 20,
-      "text": "A man's belly shall be satisfied with the fruit of his mouth; <em>and</em> with the increase of his lips shall he be filled.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "A",
+        "man's",
+        "belly",
+        "shall",
+        "be",
+        "satisfied",
+        "with",
+        "the",
+        "fruit",
+        "of",
+        "his",
+        "mouth;",
+        "<em>and</em>",
+        "with",
+        "the",
+        "increase",
+        "of",
+        "his",
+        "lips",
+        "shall",
+        "he",
+        "be",
+        "filled."
+      ],
+      "info": ""
     },
     {
       "book_id": "PRO",
@@ -209,9 +527,29 @@
       "chapter": 18,
       "verse_start": 21,
       "verse_end": 21,
-      "text": "Death and life <em>are</em> in the power of the tongue: and they that love it shall eat the fruit thereof.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Death",
+        "and",
+        "life",
+        "<em>are</em>",
+        "in",
+        "the",
+        "power",
+        "of",
+        "the",
+        "tongue:",
+        "and",
+        "they",
+        "that",
+        "love",
+        "it",
+        "shall",
+        "eat",
+        "the",
+        "fruit",
+        "thereof."
+      ],
+      "info": ""
     },
     {
       "book_id": "PRO",
@@ -219,9 +557,23 @@
       "chapter": 18,
       "verse_start": 22,
       "verse_end": 22,
-      "text": "<em>Whoso</em> findeth a wife findeth a good <em>thing,</em> and obtaineth favour of the LORD.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "<em>Whoso</em>",
+        "findeth",
+        "a",
+        "wife",
+        "findeth",
+        "a",
+        "good",
+        "<em>thing,</em>",
+        "and",
+        "obtaineth",
+        "favour",
+        "of",
+        "the",
+        "LORD."
+      ],
+      "info": ""
     },
     {
       "book_id": "PRO",
@@ -229,9 +581,18 @@
       "chapter": 18,
       "verse_start": 23,
       "verse_end": 23,
-      "text": "The poor useth intreaties; but the rich answereth roughly.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "The",
+        "poor",
+        "useth",
+        "intreaties;",
+        "but",
+        "the",
+        "rich",
+        "answereth",
+        "roughly."
+      ],
+      "info": ""
     },
     {
       "book_id": "PRO",
@@ -239,9 +600,29 @@
       "chapter": 18,
       "verse_start": 24,
       "verse_end": 24,
-      "text": "A man <em>that hath</em> friends must shew himself friendly: and there is a friend <em>that</em> sticketh closer than a brother.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "A",
+        "man",
+        "<em>that</em>",
+        "<em>hath</em>",
+        "friends",
+        "must",
+        "shew",
+        "himself",
+        "friendly:",
+        "and",
+        "there",
+        "is",
+        "a",
+        "friend",
+        "<em>that</em>",
+        "sticketh",
+        "closer",
+        "than",
+        "a",
+        "brother."
+      ],
+      "info": ""
     }
   ]
 }

@@ -1,5 +1,5 @@
 {
-  "header": "¶ A Psalm of David, to bring to remembrance.",
+  "header": "",
   "footer": "",
   "language": "English",
   "verses": [
@@ -9,9 +9,32 @@
       "chapter": 38,
       "verse_start": 1,
       "verse_end": 1,
-      "text": "O LORD, rebuke me not in thy wrath: neither chasten me in thy hot displeasure.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "(A",
+        "Psalm",
+        "of",
+        "David,",
+        "to",
+        "bring",
+        "to",
+        "remembrance.)",
+        "O",
+        "LORD,",
+        "rebuke",
+        "me",
+        "not",
+        "in",
+        "thy",
+        "wrath:",
+        "neither",
+        "chasten",
+        "me",
+        "in",
+        "thy",
+        "hot",
+        "displeasure."
+      ],
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -19,9 +42,22 @@
       "chapter": 38,
       "verse_start": 2,
       "verse_end": 2,
-      "text": "For thine arrows stick fast in me, and thy hand presseth me sore.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "For",
+        "thine",
+        "arrows",
+        "stick",
+        "fast",
+        "in",
+        "me,",
+        "and",
+        "thy",
+        "hand",
+        "presseth",
+        "me",
+        "sore."
+      ],
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -29,9 +65,32 @@
       "chapter": 38,
       "verse_start": 3,
       "verse_end": 3,
-      "text": "<em>There is</em> no soundness in my flesh because of thine anger; neither <em>is there any</em> rest in my bones because of my sin.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "<em>There</em>",
+        "<em>is</em>",
+        "no",
+        "soundness",
+        "in",
+        "my",
+        "flesh",
+        "because",
+        "of",
+        "thine",
+        "anger;",
+        "neither",
+        "<em>is</em>",
+        "<em>there</em>",
+        "<em>any</em>",
+        "rest",
+        "in",
+        "my",
+        "bones",
+        "because",
+        "of",
+        "my",
+        "sin."
+      ],
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -39,9 +98,27 @@
       "chapter": 38,
       "verse_start": 4,
       "verse_end": 4,
-      "text": "For mine iniquities are gone over mine head: as an heavy burden they are too heavy for me.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "For",
+        "mine",
+        "iniquities",
+        "are",
+        "gone",
+        "over",
+        "mine",
+        "head:",
+        "as",
+        "an",
+        "heavy",
+        "burden",
+        "they",
+        "are",
+        "too",
+        "heavy",
+        "for",
+        "me."
+      ],
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -49,9 +126,19 @@
       "chapter": 38,
       "verse_start": 5,
       "verse_end": 5,
-      "text": "My wounds stink <em>and</em> are corrupt because of my foolishness.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "My",
+        "wounds",
+        "stink",
+        "<em>and</em>",
+        "are",
+        "corrupt",
+        "because",
+        "of",
+        "my",
+        "foolishness."
+      ],
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -59,9 +146,24 @@
       "chapter": 38,
       "verse_start": 6,
       "verse_end": 6,
-      "text": "I am troubled; I am bowed down greatly; I go mourning all the day long.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "I",
+        "am",
+        "troubled;",
+        "I",
+        "am",
+        "bowed",
+        "down",
+        "greatly;",
+        "I",
+        "go",
+        "mourning",
+        "all",
+        "the",
+        "day",
+        "long."
+      ],
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -69,9 +171,26 @@
       "chapter": 38,
       "verse_start": 7,
       "verse_end": 7,
-      "text": "For my loins are filled with a loathsome <em>disease:</em> and <em>there is</em> no soundness in my flesh.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "For",
+        "my",
+        "loins",
+        "are",
+        "filled",
+        "with",
+        "a",
+        "loathsome",
+        "<em>disease:</em>",
+        "and",
+        "<em>there</em>",
+        "<em>is</em>",
+        "no",
+        "soundness",
+        "in",
+        "my",
+        "flesh."
+      ],
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -79,9 +198,26 @@
       "chapter": 38,
       "verse_start": 8,
       "verse_end": 8,
-      "text": "I am feeble and sore broken: I have roared by reason of the disquietness of my heart.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "I",
+        "am",
+        "feeble",
+        "and",
+        "sore",
+        "broken:",
+        "I",
+        "have",
+        "roared",
+        "by",
+        "reason",
+        "of",
+        "the",
+        "disquietness",
+        "of",
+        "my",
+        "heart."
+      ],
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -89,9 +225,24 @@
       "chapter": 38,
       "verse_start": 9,
       "verse_end": 9,
-      "text": "Lord, all my desire <em>is</em> before thee; and my groaning is not hid from thee.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Lord,",
+        "all",
+        "my",
+        "desire",
+        "<em>is</em>",
+        "before",
+        "thee;",
+        "and",
+        "my",
+        "groaning",
+        "is",
+        "not",
+        "hid",
+        "from",
+        "thee."
+      ],
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -99,9 +250,29 @@
       "chapter": 38,
       "verse_start": 10,
       "verse_end": 10,
-      "text": "My heart panteth, my strength faileth me: as for the light of mine eyes, it also is gone from me.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "My",
+        "heart",
+        "panteth,",
+        "my",
+        "strength",
+        "faileth",
+        "me:",
+        "as",
+        "for",
+        "the",
+        "light",
+        "of",
+        "mine",
+        "eyes,",
+        "it",
+        "also",
+        "is",
+        "gone",
+        "from",
+        "me."
+      ],
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -109,9 +280,25 @@
       "chapter": 38,
       "verse_start": 11,
       "verse_end": 11,
-      "text": "My lovers and my friends stand aloof from my sore; and my kinsmen stand afar off.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "My",
+        "lovers",
+        "and",
+        "my",
+        "friends",
+        "stand",
+        "aloof",
+        "from",
+        "my",
+        "sore;",
+        "and",
+        "my",
+        "kinsmen",
+        "stand",
+        "afar",
+        "off."
+      ],
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -119,9 +306,36 @@
       "chapter": 38,
       "verse_start": 12,
       "verse_end": 12,
-      "text": "They also that seek after my life lay snares <em>for me:</em> and they that seek my hurt speak mischievous things, and imagine deceits all the day long.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "They",
+        "also",
+        "that",
+        "seek",
+        "after",
+        "my",
+        "life",
+        "lay",
+        "snares",
+        "<em>for</em>",
+        "<em>me:</em>",
+        "and",
+        "they",
+        "that",
+        "seek",
+        "my",
+        "hurt",
+        "speak",
+        "mischievous",
+        "things,",
+        "and",
+        "imagine",
+        "deceits",
+        "all",
+        "the",
+        "day",
+        "long."
+      ],
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -129,9 +343,29 @@
       "chapter": 38,
       "verse_start": 13,
       "verse_end": 13,
-      "text": "But I, as a deaf <em>man,</em> heard not; and <em>I was</em> as a dumb man <em>that</em> openeth not his mouth.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "But",
+        "I,",
+        "as",
+        "a",
+        "deaf",
+        "<em>man,</em>",
+        "heard",
+        "not;",
+        "and",
+        "<em>I</em>",
+        "<em>was</em>",
+        "as",
+        "a",
+        "dumb",
+        "man",
+        "<em>that</em>",
+        "openeth",
+        "not",
+        "his",
+        "mouth."
+      ],
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -139,9 +373,25 @@
       "chapter": 38,
       "verse_start": 14,
       "verse_end": 14,
-      "text": "Thus I was as a man that heareth not, and in whose mouth <em>are</em> no reproofs.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Thus",
+        "I",
+        "was",
+        "as",
+        "a",
+        "man",
+        "that",
+        "heareth",
+        "not,",
+        "and",
+        "in",
+        "whose",
+        "mouth",
+        "<em>are</em>",
+        "no",
+        "reproofs."
+      ],
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -149,9 +399,24 @@
       "chapter": 38,
       "verse_start": 15,
       "verse_end": 15,
-      "text": "For in thee, O LORD, do I hope: thou wilt hear, O Lord my God.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "For",
+        "in",
+        "thee,",
+        "O",
+        "LORD,",
+        "do",
+        "I",
+        "hope:",
+        "thou",
+        "wilt",
+        "hear,",
+        "O",
+        "Lord",
+        "my",
+        "God."
+      ],
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -159,9 +424,30 @@
       "chapter": 38,
       "verse_start": 16,
       "verse_end": 16,
-      "text": "For I said, <em>Hear me,</em> lest <em>otherwise</em> they should rejoice over me: when my foot slippeth, they magnify <em>themselves</em> against me.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "For",
+        "I",
+        "said,",
+        "<em>Hear</em>",
+        "<em>me,</em>",
+        "lest",
+        "<em>otherwise</em>",
+        "they",
+        "should",
+        "rejoice",
+        "over",
+        "me:",
+        "when",
+        "my",
+        "foot",
+        "slippeth,",
+        "they",
+        "magnify",
+        "<em>themselves</em>",
+        "against",
+        "me."
+      ],
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -169,9 +455,22 @@
       "chapter": 38,
       "verse_start": 17,
       "verse_end": 17,
-      "text": "For I <em>am</em> ready to halt, and my sorrow <em>is</em> continually before me.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "For",
+        "I",
+        "<em>am</em>",
+        "ready",
+        "to",
+        "halt,",
+        "and",
+        "my",
+        "sorrow",
+        "<em>is</em>",
+        "continually",
+        "before",
+        "me."
+      ],
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -179,9 +478,22 @@
       "chapter": 38,
       "verse_start": 18,
       "verse_end": 18,
-      "text": "For I will declare mine iniquity; I will be sorry for my sin.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "For",
+        "I",
+        "will",
+        "declare",
+        "mine",
+        "iniquity;",
+        "I",
+        "will",
+        "be",
+        "sorry",
+        "for",
+        "my",
+        "sin."
+      ],
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -189,9 +501,26 @@
       "chapter": 38,
       "verse_start": 19,
       "verse_end": 19,
-      "text": "But mine enemies <em>are</em> lively, <em>and</em> they are strong: and they that hate me wrongfully are multiplied.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "But",
+        "mine",
+        "enemies",
+        "<em>are</em>",
+        "lively,",
+        "<em>and</em>",
+        "they",
+        "are",
+        "strong:",
+        "and",
+        "they",
+        "that",
+        "hate",
+        "me",
+        "wrongfully",
+        "are",
+        "multiplied."
+      ],
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -199,9 +528,27 @@
       "chapter": 38,
       "verse_start": 20,
       "verse_end": 20,
-      "text": "They also that render evil for good are mine adversaries; because I follow <em>the thing that</em> good <em>is.</em>",
-      "info": "",
-      "language": "English"
+      "text": [
+        "They",
+        "also",
+        "that",
+        "render",
+        "evil",
+        "for",
+        "good",
+        "are",
+        "mine",
+        "adversaries;",
+        "because",
+        "I",
+        "follow",
+        "<em>the</em>",
+        "<em>thing</em>",
+        "<em>that</em>",
+        "good",
+        "<em>is.</em>"
+      ],
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -209,9 +556,22 @@
       "chapter": 38,
       "verse_start": 21,
       "verse_end": 21,
-      "text": "Forsake me not, O LORD: O my God, be not far from me.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Forsake",
+        "me",
+        "not,",
+        "O",
+        "LORD:",
+        "O",
+        "my",
+        "God,",
+        "be",
+        "not",
+        "far",
+        "from",
+        "me."
+      ],
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -219,9 +579,18 @@
       "chapter": 38,
       "verse_start": 22,
       "verse_end": 22,
-      "text": "Make haste to help me, O Lord my salvation.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Make",
+        "haste",
+        "to",
+        "help",
+        "me,",
+        "O",
+        "Lord",
+        "my",
+        "salvation."
+      ],
+      "info": ""
     }
   ]
 }

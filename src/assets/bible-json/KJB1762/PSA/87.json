@@ -1,5 +1,5 @@
 {
-  "header": "¶ A Psalm <em>or</em> Song for the sons of Korah.",
+  "header": "",
   "footer": "",
   "language": "English",
   "verses": [
@@ -9,9 +9,25 @@
       "chapter": 87,
       "verse_start": 1,
       "verse_end": 1,
-      "text": "His foundation <em>is</em> in the holy mountains.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "(A",
+        "Psalm",
+        "<em>or</em>",
+        "Song",
+        "for",
+        "the",
+        "sons",
+        "of",
+        "Korah.)",
+        "His",
+        "foundation",
+        "<em>is</em>",
+        "in",
+        "the",
+        "holy",
+        "mountains."
+      ],
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -19,9 +35,23 @@
       "chapter": 87,
       "verse_start": 2,
       "verse_end": 2,
-      "text": "The LORD loveth the gates of Zion more than all the dwellings of Jacob.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "The",
+        "LORD",
+        "loveth",
+        "the",
+        "gates",
+        "of",
+        "Zion",
+        "more",
+        "than",
+        "all",
+        "the",
+        "dwellings",
+        "of",
+        "Jacob."
+      ],
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -29,9 +59,20 @@
       "chapter": 87,
       "verse_start": 3,
       "verse_end": 3,
-      "text": "Glorious things are spoken of thee, O city of God. Selah.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Glorious",
+        "things",
+        "are",
+        "spoken",
+        "of",
+        "thee,",
+        "O",
+        "city",
+        "of",
+        "God.",
+        "Selah."
+      ],
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -39,9 +80,33 @@
       "chapter": 87,
       "verse_start": 4,
       "verse_end": 4,
-      "text": "I will make mention of Rahab and Babylon to them that know me: behold Philistia, and Tyre, with Ethiopia; this <em>man</em> was born there.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "I",
+        "will",
+        "make",
+        "mention",
+        "of",
+        "Rahab",
+        "and",
+        "Babylon",
+        "to",
+        "them",
+        "that",
+        "know",
+        "me:",
+        "behold",
+        "Philistia,",
+        "and",
+        "Tyre,",
+        "with",
+        "Ethiopia;",
+        "this",
+        "<em>man</em>",
+        "was",
+        "born",
+        "there."
+      ],
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -49,9 +114,31 @@
       "chapter": 87,
       "verse_start": 5,
       "verse_end": 5,
-      "text": "And of Zion it shall be said, This and that man was born in her: and the highest himself shall establish her.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "And",
+        "of",
+        "Zion",
+        "it",
+        "shall",
+        "be",
+        "said,",
+        "This",
+        "and",
+        "that",
+        "man",
+        "was",
+        "born",
+        "in",
+        "her:",
+        "and",
+        "the",
+        "highest",
+        "himself",
+        "shall",
+        "establish",
+        "her."
+      ],
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -59,9 +146,26 @@
       "chapter": 87,
       "verse_start": 6,
       "verse_end": 6,
-      "text": "The LORD shall count, when he writeth up the people, <em>that</em> this <em>man</em> was born there. Selah.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "The",
+        "LORD",
+        "shall",
+        "count,",
+        "when",
+        "he",
+        "writeth",
+        "up",
+        "the",
+        "people,",
+        "<em>that</em>",
+        "this",
+        "<em>man</em>",
+        "was",
+        "born",
+        "there.",
+        "Selah."
+      ],
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -69,9 +173,27 @@
       "chapter": 87,
       "verse_start": 7,
       "verse_end": 7,
-      "text": "As well the singers as the players on instruments <em>shall be there:</em> all my springs <em>are</em> in thee.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "As",
+        "well",
+        "the",
+        "singers",
+        "as",
+        "the",
+        "players",
+        "on",
+        "instruments",
+        "<em>shall</em>",
+        "<em>be</em>",
+        "<em>there:</em>",
+        "all",
+        "my",
+        "springs",
+        "<em>are</em>",
+        "in",
+        "thee."
+      ],
+      "info": ""
     }
   ]
 }

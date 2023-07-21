@@ -1,5 +1,5 @@
 {
-  "header": "¶ A song of degrees.",
+  "header": "¶ A",
   "footer": "",
   "language": "English",
   "verses": [
@@ -9,7 +9,25 @@
       "chapter": 129,
       "verse_start": 1,
       "verse_end": 1,
-      "text": "Many a time haue they afflicted me from my youth: may Israel now say.",
+      "text": [
+        "<em>song</em>",
+        "<em>of</em>",
+        "<em>degrees.</em>",
+        "Many",
+        "a",
+        "time",
+        "haue",
+        "they",
+        "afflicted",
+        "me",
+        "from",
+        "my",
+        "youth:",
+        "may",
+        "Israel",
+        "now",
+        "say."
+      ],
       "info": ""
     },
     {
@@ -18,7 +36,25 @@
       "chapter": 129,
       "verse_start": 2,
       "verse_end": 2,
-      "text": "Many a time haue they afflicted me from my youth: yet they haue not preuailed against mee.",
+      "text": [
+        "Many",
+        "a",
+        "time",
+        "haue",
+        "they",
+        "afflicted",
+        "me",
+        "from",
+        "my",
+        "youth:",
+        "yet",
+        "they",
+        "haue",
+        "not",
+        "preuailed",
+        "against",
+        "mee."
+      ],
       "info": ""
     },
     {
@@ -27,7 +63,19 @@
       "chapter": 129,
       "verse_start": 3,
       "verse_end": 3,
-      "text": "The plowers plowed vpon my backe: they made long their furrowes.",
+      "text": [
+        "The",
+        "plowers",
+        "plowed",
+        "vpon",
+        "my",
+        "backe:",
+        "they",
+        "made",
+        "long",
+        "their",
+        "furrowes."
+      ],
       "info": ""
     },
     {
@@ -36,7 +84,21 @@
       "chapter": 129,
       "verse_start": 4,
       "verse_end": 4,
-      "text": "The Lord is righteous: hee hath cut asunder the cordes of the wicked.",
+      "text": [
+        "The",
+        "Lord",
+        "is",
+        "righteous:",
+        "hee",
+        "hath",
+        "cut",
+        "asunder",
+        "the",
+        "cordes",
+        "of",
+        "the",
+        "wicked."
+      ],
       "info": ""
     },
     {
@@ -45,7 +107,19 @@
       "chapter": 129,
       "verse_start": 5,
       "verse_end": 5,
-      "text": "Let them all be confounded and turned backe, that hate Zion.",
+      "text": [
+        "Let",
+        "them",
+        "all",
+        "be",
+        "confounded",
+        "and",
+        "turned",
+        "backe,",
+        "that",
+        "hate",
+        "Zion."
+      ],
       "info": ""
     },
     {
@@ -54,7 +128,24 @@
       "chapter": 129,
       "verse_start": 6,
       "verse_end": 6,
-      "text": "Let them bee as the grasse vpon the house tops: which withereth afore it groweth vp:",
+      "text": [
+        "Let",
+        "them",
+        "bee",
+        "as",
+        "the",
+        "grasse",
+        "vpon",
+        "the",
+        "house",
+        "tops:",
+        "which",
+        "withereth",
+        "afore",
+        "it",
+        "groweth",
+        "vp:"
+      ],
       "info": ""
     },
     {
@@ -63,7 +154,22 @@
       "chapter": 129,
       "verse_start": 7,
       "verse_end": 7,
-      "text": "Wherewith the mower filleth not his hand: nor hee that bindeth sheaues, his bosome.",
+      "text": [
+        "Wherewith",
+        "the",
+        "mower",
+        "filleth",
+        "not",
+        "his",
+        "hand:",
+        "nor",
+        "hee",
+        "that",
+        "bindeth",
+        "sheaues,",
+        "his",
+        "bosome."
+      ],
       "info": ""
     },
     {
@@ -72,7 +178,32 @@
       "chapter": 129,
       "verse_start": 8,
       "verse_end": 8,
-      "text": "Neither doe they which goe by, say, The blessing of the Lord be vpon you: wee blesse you in the Name of the Lord.",
+      "text": [
+        "Neither",
+        "doe",
+        "they",
+        "which",
+        "goe",
+        "by,",
+        "say,",
+        "The",
+        "blessing",
+        "of",
+        "the",
+        "Lord",
+        "be",
+        "vpon",
+        "you:",
+        "wee",
+        "blesse",
+        "you",
+        "in",
+        "the",
+        "Name",
+        "of",
+        "the",
+        "Lord."
+      ],
       "info": ""
     }
   ]

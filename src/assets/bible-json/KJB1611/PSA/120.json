@@ -1,5 +1,5 @@
 {
-  "header": "¶ A song of degrees.",
+  "header": "¶ A",
   "footer": "",
   "language": "English",
   "verses": [
@@ -9,7 +9,23 @@
       "chapter": 120,
       "verse_start": 1,
       "verse_end": 1,
-      "text": "In my distresse I cried vnto the Lord: and hee heard me.",
+      "text": [
+        "<em>song</em>",
+        "<em>of</em>",
+        "<em>degrees.</em>",
+        "In",
+        "my",
+        "distresse",
+        "I",
+        "cried",
+        "vnto",
+        "the",
+        "Lord:",
+        "and",
+        "hee",
+        "heard",
+        "me."
+      ],
       "info": ""
     },
     {
@@ -18,7 +34,21 @@
       "chapter": 120,
       "verse_start": 2,
       "verse_end": 2,
-      "text": "Deliuer my soule, O Lord, from lying lips: and from a deceitfull tongue.",
+      "text": [
+        "Deliuer",
+        "my",
+        "soule,",
+        "O",
+        "Lord,",
+        "from",
+        "lying",
+        "lips:",
+        "and",
+        "from",
+        "a",
+        "deceitfull",
+        "tongue."
+      ],
       "info": ""
     },
     {
@@ -27,7 +57,23 @@
       "chapter": 120,
       "verse_start": 3,
       "verse_end": 3,
-      "text": "What shall be giuen vnto thee? or what shalbe done vnto thee, thou false tongue?",
+      "text": [
+        "What",
+        "shall",
+        "be",
+        "giuen",
+        "vnto",
+        "thee?",
+        "or",
+        "what",
+        "shalbe",
+        "done",
+        "vnto",
+        "thee,",
+        "thou",
+        "false",
+        "tongue?"
+      ],
       "info": ""
     },
     {
@@ -36,7 +82,17 @@
       "chapter": 120,
       "verse_start": 4,
       "verse_end": 4,
-      "text": "Sharpe arrowes of the mightie: with coales of iuniper.",
+      "text": [
+        "Sharpe",
+        "arrowes",
+        "of",
+        "the",
+        "mightie:",
+        "with",
+        "coales",
+        "of",
+        "iuniper."
+      ],
       "info": ""
     },
     {
@@ -45,7 +101,24 @@
       "chapter": 120,
       "verse_start": 5,
       "verse_end": 5,
-      "text": "Woe is me, that I soiourne in Mesech: that I dwell in the tents of Kedar.",
+      "text": [
+        "Woe",
+        "is",
+        "me,",
+        "that",
+        "I",
+        "soiourne",
+        "in",
+        "Mesech:",
+        "that",
+        "I",
+        "dwell",
+        "in",
+        "the",
+        "tents",
+        "of",
+        "Kedar."
+      ],
       "info": ""
     },
     {
@@ -54,7 +127,18 @@
       "chapter": 120,
       "verse_start": 6,
       "verse_end": 6,
-      "text": "My soule hath long dwelt with him that hateth peace.",
+      "text": [
+        "My",
+        "soule",
+        "hath",
+        "long",
+        "dwelt",
+        "with",
+        "him",
+        "that",
+        "hateth",
+        "peace."
+      ],
       "info": ""
     },
     {
@@ -63,7 +147,20 @@
       "chapter": 120,
       "verse_start": 7,
       "verse_end": 7,
-      "text": "I am for peace: but when I speak, they are for warre.",
+      "text": [
+        "I",
+        "am",
+        "for",
+        "peace:",
+        "but",
+        "when",
+        "I",
+        "speak,",
+        "they",
+        "are",
+        "for",
+        "warre."
+      ],
       "info": ""
     }
   ]

@@ -9,9 +9,23 @@
       "chapter": 3,
       "verse_start": 1,
       "verse_end": 1,
-      "text": "I <em>am</em> the man <em>that</em> hath seen affliction by the rod of his wrath.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "I",
+        "<em>am</em>",
+        "the",
+        "man",
+        "<em>that</em>",
+        "hath",
+        "seen",
+        "affliction",
+        "by",
+        "the",
+        "rod",
+        "of",
+        "his",
+        "wrath."
+      ],
+      "info": ""
     },
     {
       "book_id": "LAM",
@@ -19,9 +33,22 @@
       "chapter": 3,
       "verse_start": 2,
       "verse_end": 2,
-      "text": "He hath led me, and brought <em>me into</em> darkness, but not <em>into</em> light.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "He",
+        "hath",
+        "led",
+        "me,",
+        "and",
+        "brought",
+        "<em>me</em>",
+        "<em>into</em>",
+        "darkness,",
+        "but",
+        "not",
+        "<em>into</em>",
+        "light."
+      ],
+      "info": ""
     },
     {
       "book_id": "LAM",
@@ -29,9 +56,24 @@
       "chapter": 3,
       "verse_start": 3,
       "verse_end": 3,
-      "text": "Surely against me is he turned; he turneth his hand <em>against me</em> all the day.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Surely",
+        "against",
+        "me",
+        "is",
+        "he",
+        "turned;",
+        "he",
+        "turneth",
+        "his",
+        "hand",
+        "<em>against</em>",
+        "<em>me</em>",
+        "all",
+        "the",
+        "day."
+      ],
+      "info": ""
     },
     {
       "book_id": "LAM",
@@ -39,9 +81,23 @@
       "chapter": 3,
       "verse_start": 4,
       "verse_end": 4,
-      "text": "My flesh and my skin hath he made old; he hath broken my bones.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "My",
+        "flesh",
+        "and",
+        "my",
+        "skin",
+        "hath",
+        "he",
+        "made",
+        "old;",
+        "he",
+        "hath",
+        "broken",
+        "my",
+        "bones."
+      ],
+      "info": ""
     },
     {
       "book_id": "LAM",
@@ -49,9 +105,21 @@
       "chapter": 3,
       "verse_start": 5,
       "verse_end": 5,
-      "text": "He hath builded against me, and compassed <em>me</em> with gall and travail.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "He",
+        "hath",
+        "builded",
+        "against",
+        "me,",
+        "and",
+        "compassed",
+        "<em>me</em>",
+        "with",
+        "gall",
+        "and",
+        "travail."
+      ],
+      "info": ""
     },
     {
       "book_id": "LAM",
@@ -59,9 +127,23 @@
       "chapter": 3,
       "verse_start": 6,
       "verse_end": 6,
-      "text": "He hath set me in dark places, as <em>they that be</em> dead of old.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "He",
+        "hath",
+        "set",
+        "me",
+        "in",
+        "dark",
+        "places,",
+        "as",
+        "<em>they</em>",
+        "<em>that</em>",
+        "<em>be</em>",
+        "dead",
+        "of",
+        "old."
+      ],
+      "info": ""
     },
     {
       "book_id": "LAM",
@@ -69,9 +151,25 @@
       "chapter": 3,
       "verse_start": 7,
       "verse_end": 7,
-      "text": "He hath hedged me about, that I cannot get out: he hath made my chain heavy.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "He",
+        "hath",
+        "hedged",
+        "me",
+        "about,",
+        "that",
+        "I",
+        "cannot",
+        "get",
+        "out:",
+        "he",
+        "hath",
+        "made",
+        "my",
+        "chain",
+        "heavy."
+      ],
+      "info": ""
     },
     {
       "book_id": "LAM",
@@ -79,9 +177,20 @@
       "chapter": 3,
       "verse_start": 8,
       "verse_end": 8,
-      "text": "Also when I cry and shout, he shutteth out my prayer.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Also",
+        "when",
+        "I",
+        "cry",
+        "and",
+        "shout,",
+        "he",
+        "shutteth",
+        "out",
+        "my",
+        "prayer."
+      ],
+      "info": ""
     },
     {
       "book_id": "LAM",
@@ -89,9 +198,23 @@
       "chapter": 3,
       "verse_start": 9,
       "verse_end": 9,
-      "text": "He hath inclosed my ways with hewn stone, he hath made my paths crooked.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "He",
+        "hath",
+        "inclosed",
+        "my",
+        "ways",
+        "with",
+        "hewn",
+        "stone,",
+        "he",
+        "hath",
+        "made",
+        "my",
+        "paths",
+        "crooked."
+      ],
+      "info": ""
     },
     {
       "book_id": "LAM",
@@ -99,9 +222,26 @@
       "chapter": 3,
       "verse_start": 10,
       "verse_end": 10,
-      "text": "He <em>was</em> unto me <em>as</em> a bear lying in wait, <em>and as</em> a lion in secret places.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "He",
+        "<em>was</em>",
+        "unto",
+        "me",
+        "<em>as</em>",
+        "a",
+        "bear",
+        "lying",
+        "in",
+        "wait,",
+        "<em>and</em>",
+        "<em>as</em>",
+        "a",
+        "lion",
+        "in",
+        "secret",
+        "places."
+      ],
+      "info": ""
     },
     {
       "book_id": "LAM",
@@ -109,9 +249,25 @@
       "chapter": 3,
       "verse_start": 11,
       "verse_end": 11,
-      "text": "He hath turned aside my ways, and pulled me in pieces: he hath made me desolate.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "He",
+        "hath",
+        "turned",
+        "aside",
+        "my",
+        "ways,",
+        "and",
+        "pulled",
+        "me",
+        "in",
+        "pieces:",
+        "he",
+        "hath",
+        "made",
+        "me",
+        "desolate."
+      ],
+      "info": ""
     },
     {
       "book_id": "LAM",
@@ -119,9 +275,23 @@
       "chapter": 3,
       "verse_start": 12,
       "verse_end": 12,
-      "text": "He hath bent his bow, and set me as a mark for the arrow.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "He",
+        "hath",
+        "bent",
+        "his",
+        "bow,",
+        "and",
+        "set",
+        "me",
+        "as",
+        "a",
+        "mark",
+        "for",
+        "the",
+        "arrow."
+      ],
+      "info": ""
     },
     {
       "book_id": "LAM",
@@ -129,9 +299,22 @@
       "chapter": 3,
       "verse_start": 13,
       "verse_end": 13,
-      "text": "He hath caused the arrows of his quiver to enter into my reins.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "He",
+        "hath",
+        "caused",
+        "the",
+        "arrows",
+        "of",
+        "his",
+        "quiver",
+        "to",
+        "enter",
+        "into",
+        "my",
+        "reins."
+      ],
+      "info": ""
     },
     {
       "book_id": "LAM",
@@ -139,9 +322,23 @@
       "chapter": 3,
       "verse_start": 14,
       "verse_end": 14,
-      "text": "I was a derision to all my people; <em>and</em> their song all the day.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "I",
+        "was",
+        "a",
+        "derision",
+        "to",
+        "all",
+        "my",
+        "people;",
+        "<em>and</em>",
+        "their",
+        "song",
+        "all",
+        "the",
+        "day."
+      ],
+      "info": ""
     },
     {
       "book_id": "LAM",
@@ -149,9 +346,22 @@
       "chapter": 3,
       "verse_start": 15,
       "verse_end": 15,
-      "text": "He hath filled me with bitterness, he hath made me drunken with wormwood.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "He",
+        "hath",
+        "filled",
+        "me",
+        "with",
+        "bitterness,",
+        "he",
+        "hath",
+        "made",
+        "me",
+        "drunken",
+        "with",
+        "wormwood."
+      ],
+      "info": ""
     },
     {
       "book_id": "LAM",
@@ -159,9 +369,24 @@
       "chapter": 3,
       "verse_start": 16,
       "verse_end": 16,
-      "text": "He hath also broken my teeth with gravel stones, he hath covered me with ashes.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "He",
+        "hath",
+        "also",
+        "broken",
+        "my",
+        "teeth",
+        "with",
+        "gravel",
+        "stones,",
+        "he",
+        "hath",
+        "covered",
+        "me",
+        "with",
+        "ashes."
+      ],
+      "info": ""
     },
     {
       "book_id": "LAM",
@@ -169,9 +394,22 @@
       "chapter": 3,
       "verse_start": 17,
       "verse_end": 17,
-      "text": "And thou hast removed my soul far off from peace: I forgat prosperity.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "And",
+        "thou",
+        "hast",
+        "removed",
+        "my",
+        "soul",
+        "far",
+        "off",
+        "from",
+        "peace:",
+        "I",
+        "forgat",
+        "prosperity."
+      ],
+      "info": ""
     },
     {
       "book_id": "LAM",
@@ -179,9 +417,22 @@
       "chapter": 3,
       "verse_start": 18,
       "verse_end": 18,
-      "text": "And I said, My strength and my hope is perished from the LORD:",
-      "info": "",
-      "language": "English"
+      "text": [
+        "And",
+        "I",
+        "said,",
+        "My",
+        "strength",
+        "and",
+        "my",
+        "hope",
+        "is",
+        "perished",
+        "from",
+        "the",
+        "LORD:"
+      ],
+      "info": ""
     },
     {
       "book_id": "LAM",
@@ -189,9 +440,20 @@
       "chapter": 3,
       "verse_start": 19,
       "verse_end": 19,
-      "text": "Remembering mine affliction and my misery, the wormwood and the gall.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Remembering",
+        "mine",
+        "affliction",
+        "and",
+        "my",
+        "misery,",
+        "the",
+        "wormwood",
+        "and",
+        "the",
+        "gall."
+      ],
+      "info": ""
     },
     {
       "book_id": "LAM",
@@ -199,9 +461,21 @@
       "chapter": 3,
       "verse_start": 20,
       "verse_end": 20,
-      "text": "My soul hath <em>them</em> still in remembrance, and is humbled in me.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "My",
+        "soul",
+        "hath",
+        "<em>them</em>",
+        "still",
+        "in",
+        "remembrance,",
+        "and",
+        "is",
+        "humbled",
+        "in",
+        "me."
+      ],
+      "info": ""
     },
     {
       "book_id": "LAM",
@@ -209,9 +483,19 @@
       "chapter": 3,
       "verse_start": 21,
       "verse_end": 21,
-      "text": "This I recall to my mind, therefore have I hope.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "This",
+        "I",
+        "recall",
+        "to",
+        "my",
+        "mind,",
+        "therefore",
+        "have",
+        "I",
+        "hope."
+      ],
+      "info": ""
     },
     {
       "book_id": "LAM",
@@ -219,9 +503,26 @@
       "chapter": 3,
       "verse_start": 22,
       "verse_end": 22,
-      "text": "¶ <em>It is of</em> the LORD'S mercies that we are not consumed, because his compassions fail not.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "¶",
+        "<em>It</em>",
+        "<em>is</em>",
+        "<em>of</em>",
+        "the",
+        "LORD'S",
+        "mercies",
+        "that",
+        "we",
+        "are",
+        "not",
+        "consumed,",
+        "because",
+        "his",
+        "compassions",
+        "fail",
+        "not."
+      ],
+      "info": ""
     },
     {
       "book_id": "LAM",
@@ -229,9 +530,18 @@
       "chapter": 3,
       "verse_start": 23,
       "verse_end": 23,
-      "text": "<em>They are</em> new every morning: great <em>is</em> thy faithfulness.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "<em>They</em>",
+        "<em>are</em>",
+        "new",
+        "every",
+        "morning:",
+        "great",
+        "<em>is</em>",
+        "thy",
+        "faithfulness."
+      ],
+      "info": ""
     },
     {
       "book_id": "LAM",
@@ -239,9 +549,23 @@
       "chapter": 3,
       "verse_start": 24,
       "verse_end": 24,
-      "text": "The LORD <em>is</em> my portion, saith my soul; therefore will I hope in him.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "The",
+        "LORD",
+        "<em>is</em>",
+        "my",
+        "portion,",
+        "saith",
+        "my",
+        "soul;",
+        "therefore",
+        "will",
+        "I",
+        "hope",
+        "in",
+        "him."
+      ],
+      "info": ""
     },
     {
       "book_id": "LAM",
@@ -249,9 +573,25 @@
       "chapter": 3,
       "verse_start": 25,
       "verse_end": 25,
-      "text": "The LORD <em>is</em> good unto them that wait for him, to the soul <em>that</em> seeketh him.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "The",
+        "LORD",
+        "<em>is</em>",
+        "good",
+        "unto",
+        "them",
+        "that",
+        "wait",
+        "for",
+        "him,",
+        "to",
+        "the",
+        "soul",
+        "<em>that</em>",
+        "seeketh",
+        "him."
+      ],
+      "info": ""
     },
     {
       "book_id": "LAM",
@@ -259,9 +599,27 @@
       "chapter": 3,
       "verse_start": 26,
       "verse_end": 26,
-      "text": "<em>It is</em> good that <em>a man</em> should both hope and quietly wait for the salvation of the LORD.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "<em>It</em>",
+        "<em>is</em>",
+        "good",
+        "that",
+        "<em>a</em>",
+        "<em>man</em>",
+        "should",
+        "both",
+        "hope",
+        "and",
+        "quietly",
+        "wait",
+        "for",
+        "the",
+        "salvation",
+        "of",
+        "the",
+        "LORD."
+      ],
+      "info": ""
     },
     {
       "book_id": "LAM",
@@ -269,9 +627,23 @@
       "chapter": 3,
       "verse_start": 27,
       "verse_end": 27,
-      "text": "<em>It is</em> good for a man that he bear the yoke in his youth.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "<em>It</em>",
+        "<em>is</em>",
+        "good",
+        "for",
+        "a",
+        "man",
+        "that",
+        "he",
+        "bear",
+        "the",
+        "yoke",
+        "in",
+        "his",
+        "youth."
+      ],
+      "info": ""
     },
     {
       "book_id": "LAM",
@@ -279,9 +651,22 @@
       "chapter": 3,
       "verse_start": 28,
       "verse_end": 28,
-      "text": "He sitteth alone and keepeth silence, because he hath borne <em>it</em> upon him.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "He",
+        "sitteth",
+        "alone",
+        "and",
+        "keepeth",
+        "silence,",
+        "because",
+        "he",
+        "hath",
+        "borne",
+        "<em>it</em>",
+        "upon",
+        "him."
+      ],
+      "info": ""
     },
     {
       "book_id": "LAM",
@@ -289,9 +674,23 @@
       "chapter": 3,
       "verse_start": 29,
       "verse_end": 29,
-      "text": "He putteth his mouth in the dust; if so be there may be hope.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "He",
+        "putteth",
+        "his",
+        "mouth",
+        "in",
+        "the",
+        "dust;",
+        "if",
+        "so",
+        "be",
+        "there",
+        "may",
+        "be",
+        "hope."
+      ],
+      "info": ""
     },
     {
       "book_id": "LAM",
@@ -299,9 +698,24 @@
       "chapter": 3,
       "verse_start": 30,
       "verse_end": 30,
-      "text": "He giveth <em>his</em> cheek to him that smiteth him: he is filled full with reproach.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "He",
+        "giveth",
+        "<em>his</em>",
+        "cheek",
+        "to",
+        "him",
+        "that",
+        "smiteth",
+        "him:",
+        "he",
+        "is",
+        "filled",
+        "full",
+        "with",
+        "reproach."
+      ],
+      "info": ""
     },
     {
       "book_id": "LAM",
@@ -309,9 +723,18 @@
       "chapter": 3,
       "verse_start": 31,
       "verse_end": 31,
-      "text": "For the Lord will not cast off for ever:",
-      "info": "",
-      "language": "English"
+      "text": [
+        "For",
+        "the",
+        "Lord",
+        "will",
+        "not",
+        "cast",
+        "off",
+        "for",
+        "ever:"
+      ],
+      "info": ""
     },
     {
       "book_id": "LAM",
@@ -319,9 +742,26 @@
       "chapter": 3,
       "verse_start": 32,
       "verse_end": 32,
-      "text": "But though he cause grief, yet will he have compassion according to the multitude of his mercies.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "But",
+        "though",
+        "he",
+        "cause",
+        "grief,",
+        "yet",
+        "will",
+        "he",
+        "have",
+        "compassion",
+        "according",
+        "to",
+        "the",
+        "multitude",
+        "of",
+        "his",
+        "mercies."
+      ],
+      "info": ""
     },
     {
       "book_id": "LAM",
@@ -329,9 +769,21 @@
       "chapter": 3,
       "verse_start": 33,
       "verse_end": 33,
-      "text": "For he doth not afflict willingly nor grieve the children of men.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "For",
+        "he",
+        "doth",
+        "not",
+        "afflict",
+        "willingly",
+        "nor",
+        "grieve",
+        "the",
+        "children",
+        "of",
+        "men."
+      ],
+      "info": ""
     },
     {
       "book_id": "LAM",
@@ -339,9 +791,20 @@
       "chapter": 3,
       "verse_start": 34,
       "verse_end": 34,
-      "text": "To crush under his feet all the prisoners of the earth,",
-      "info": "",
-      "language": "English"
+      "text": [
+        "To",
+        "crush",
+        "under",
+        "his",
+        "feet",
+        "all",
+        "the",
+        "prisoners",
+        "of",
+        "the",
+        "earth,"
+      ],
+      "info": ""
     },
     {
       "book_id": "LAM",
@@ -349,9 +812,24 @@
       "chapter": 3,
       "verse_start": 35,
       "verse_end": 35,
-      "text": "To turn aside the right of a man before the face of the most High,",
-      "info": "",
-      "language": "English"
+      "text": [
+        "To",
+        "turn",
+        "aside",
+        "the",
+        "right",
+        "of",
+        "a",
+        "man",
+        "before",
+        "the",
+        "face",
+        "of",
+        "the",
+        "most",
+        "High,"
+      ],
+      "info": ""
     },
     {
       "book_id": "LAM",
@@ -359,9 +837,20 @@
       "chapter": 3,
       "verse_start": 36,
       "verse_end": 36,
-      "text": "To subvert a man in his cause, the Lord approveth not.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "To",
+        "subvert",
+        "a",
+        "man",
+        "in",
+        "his",
+        "cause,",
+        "the",
+        "Lord",
+        "approveth",
+        "not."
+      ],
+      "info": ""
     },
     {
       "book_id": "LAM",
@@ -369,9 +858,26 @@
       "chapter": 3,
       "verse_start": 37,
       "verse_end": 37,
-      "text": "¶ Who <em>is</em> he <em>that</em> saith, and it cometh to pass, <em>when</em> the Lord commandeth <em>it</em> not?",
-      "info": "",
-      "language": "English"
+      "text": [
+        "¶",
+        "Who",
+        "<em>is</em>",
+        "he",
+        "<em>that</em>",
+        "saith,",
+        "and",
+        "it",
+        "cometh",
+        "to",
+        "pass,",
+        "<em>when</em>",
+        "the",
+        "Lord",
+        "commandeth",
+        "<em>it</em>",
+        "not?"
+      ],
+      "info": ""
     },
     {
       "book_id": "LAM",
@@ -379,9 +885,22 @@
       "chapter": 3,
       "verse_start": 38,
       "verse_end": 38,
-      "text": "Out of the mouth of the most High proceedeth not evil and good?",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Out",
+        "of",
+        "the",
+        "mouth",
+        "of",
+        "the",
+        "most",
+        "High",
+        "proceedeth",
+        "not",
+        "evil",
+        "and",
+        "good?"
+      ],
+      "info": ""
     },
     {
       "book_id": "LAM",
@@ -389,9 +908,23 @@
       "chapter": 3,
       "verse_start": 39,
       "verse_end": 39,
-      "text": "Wherefore doth a living man complain, a man for the punishment of his sins?",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Wherefore",
+        "doth",
+        "a",
+        "living",
+        "man",
+        "complain,",
+        "a",
+        "man",
+        "for",
+        "the",
+        "punishment",
+        "of",
+        "his",
+        "sins?"
+      ],
+      "info": ""
     },
     {
       "book_id": "LAM",
@@ -399,9 +932,22 @@
       "chapter": 3,
       "verse_start": 40,
       "verse_end": 40,
-      "text": "Let us search and try our ways, and turn again to the LORD.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Let",
+        "us",
+        "search",
+        "and",
+        "try",
+        "our",
+        "ways,",
+        "and",
+        "turn",
+        "again",
+        "to",
+        "the",
+        "LORD."
+      ],
+      "info": ""
     },
     {
       "book_id": "LAM",
@@ -409,9 +955,23 @@
       "chapter": 3,
       "verse_start": 41,
       "verse_end": 41,
-      "text": "Let us lift up our heart with <em>our</em> hands unto God in the heavens.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Let",
+        "us",
+        "lift",
+        "up",
+        "our",
+        "heart",
+        "with",
+        "<em>our</em>",
+        "hands",
+        "unto",
+        "God",
+        "in",
+        "the",
+        "heavens."
+      ],
+      "info": ""
     },
     {
       "book_id": "LAM",
@@ -419,9 +979,19 @@
       "chapter": 3,
       "verse_start": 42,
       "verse_end": 42,
-      "text": "We have transgressed and have rebelled: thou hast not pardoned.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "We",
+        "have",
+        "transgressed",
+        "and",
+        "have",
+        "rebelled:",
+        "thou",
+        "hast",
+        "not",
+        "pardoned."
+      ],
+      "info": ""
     },
     {
       "book_id": "LAM",
@@ -429,9 +999,24 @@
       "chapter": 3,
       "verse_start": 43,
       "verse_end": 43,
-      "text": "Thou hast covered with anger, and persecuted us: thou hast slain, thou hast not pitied.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Thou",
+        "hast",
+        "covered",
+        "with",
+        "anger,",
+        "and",
+        "persecuted",
+        "us:",
+        "thou",
+        "hast",
+        "slain,",
+        "thou",
+        "hast",
+        "not",
+        "pitied."
+      ],
+      "info": ""
     },
     {
       "book_id": "LAM",
@@ -439,9 +1024,23 @@
       "chapter": 3,
       "verse_start": 44,
       "verse_end": 44,
-      "text": "Thou hast covered thyself with a cloud, that <em>our</em> prayer should not pass through.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Thou",
+        "hast",
+        "covered",
+        "thyself",
+        "with",
+        "a",
+        "cloud,",
+        "that",
+        "<em>our</em>",
+        "prayer",
+        "should",
+        "not",
+        "pass",
+        "through."
+      ],
+      "info": ""
     },
     {
       "book_id": "LAM",
@@ -449,9 +1048,24 @@
       "chapter": 3,
       "verse_start": 45,
       "verse_end": 45,
-      "text": "Thou hast made us <em>as</em> the offscouring and refuse in the midst of the people.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Thou",
+        "hast",
+        "made",
+        "us",
+        "<em>as</em>",
+        "the",
+        "offscouring",
+        "and",
+        "refuse",
+        "in",
+        "the",
+        "midst",
+        "of",
+        "the",
+        "people."
+      ],
+      "info": ""
     },
     {
       "book_id": "LAM",
@@ -459,9 +1073,18 @@
       "chapter": 3,
       "verse_start": 46,
       "verse_end": 46,
-      "text": "All our enemies have opened their mouths against us.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "All",
+        "our",
+        "enemies",
+        "have",
+        "opened",
+        "their",
+        "mouths",
+        "against",
+        "us."
+      ],
+      "info": ""
     },
     {
       "book_id": "LAM",
@@ -469,9 +1092,20 @@
       "chapter": 3,
       "verse_start": 47,
       "verse_end": 47,
-      "text": "Fear and a snare is come upon us, desolation and destruction.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Fear",
+        "and",
+        "a",
+        "snare",
+        "is",
+        "come",
+        "upon",
+        "us,",
+        "desolation",
+        "and",
+        "destruction."
+      ],
+      "info": ""
     },
     {
       "book_id": "LAM",
@@ -479,9 +1113,26 @@
       "chapter": 3,
       "verse_start": 48,
       "verse_end": 48,
-      "text": "Mine eye runneth down with rivers of water for the destruction of the daughter of my people.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Mine",
+        "eye",
+        "runneth",
+        "down",
+        "with",
+        "rivers",
+        "of",
+        "water",
+        "for",
+        "the",
+        "destruction",
+        "of",
+        "the",
+        "daughter",
+        "of",
+        "my",
+        "people."
+      ],
+      "info": ""
     },
     {
       "book_id": "LAM",
@@ -489,9 +1140,19 @@
       "chapter": 3,
       "verse_start": 49,
       "verse_end": 49,
-      "text": "Mine eye trickleth down, and ceaseth not, without any intermission,",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Mine",
+        "eye",
+        "trickleth",
+        "down,",
+        "and",
+        "ceaseth",
+        "not,",
+        "without",
+        "any",
+        "intermission,"
+      ],
+      "info": ""
     },
     {
       "book_id": "LAM",
@@ -499,9 +1160,18 @@
       "chapter": 3,
       "verse_start": 50,
       "verse_end": 50,
-      "text": "Till the LORD look down, and behold from heaven.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Till",
+        "the",
+        "LORD",
+        "look",
+        "down,",
+        "and",
+        "behold",
+        "from",
+        "heaven."
+      ],
+      "info": ""
     },
     {
       "book_id": "LAM",
@@ -509,9 +1179,22 @@
       "chapter": 3,
       "verse_start": 51,
       "verse_end": 51,
-      "text": "Mine eye affecteth mine heart because of all the daughters of my city.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Mine",
+        "eye",
+        "affecteth",
+        "mine",
+        "heart",
+        "because",
+        "of",
+        "all",
+        "the",
+        "daughters",
+        "of",
+        "my",
+        "city."
+      ],
+      "info": ""
     },
     {
       "book_id": "LAM",
@@ -519,9 +1202,19 @@
       "chapter": 3,
       "verse_start": 52,
       "verse_end": 52,
-      "text": "Mine enemies chased me sore, like a bird, without cause.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Mine",
+        "enemies",
+        "chased",
+        "me",
+        "sore,",
+        "like",
+        "a",
+        "bird,",
+        "without",
+        "cause."
+      ],
+      "info": ""
     },
     {
       "book_id": "LAM",
@@ -529,9 +1222,24 @@
       "chapter": 3,
       "verse_start": 53,
       "verse_end": 53,
-      "text": "They have cut off my life in the dungeon, and cast a stone upon me.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "They",
+        "have",
+        "cut",
+        "off",
+        "my",
+        "life",
+        "in",
+        "the",
+        "dungeon,",
+        "and",
+        "cast",
+        "a",
+        "stone",
+        "upon",
+        "me."
+      ],
+      "info": ""
     },
     {
       "book_id": "LAM",
@@ -539,9 +1247,21 @@
       "chapter": 3,
       "verse_start": 54,
       "verse_end": 54,
-      "text": "Waters flowed over mine head; <em>then</em> I said, I am cut off.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Waters",
+        "flowed",
+        "over",
+        "mine",
+        "head;",
+        "<em>then</em>",
+        "I",
+        "said,",
+        "I",
+        "am",
+        "cut",
+        "off."
+      ],
+      "info": ""
     },
     {
       "book_id": "LAM",
@@ -549,9 +1269,22 @@
       "chapter": 3,
       "verse_start": 55,
       "verse_end": 55,
-      "text": "¶ I called upon thy name, O LORD, out of the low dungeon.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "¶",
+        "I",
+        "called",
+        "upon",
+        "thy",
+        "name,",
+        "O",
+        "LORD,",
+        "out",
+        "of",
+        "the",
+        "low",
+        "dungeon."
+      ],
+      "info": ""
     },
     {
       "book_id": "LAM",
@@ -559,9 +1292,24 @@
       "chapter": 3,
       "verse_start": 56,
       "verse_end": 56,
-      "text": "Thou hast heard my voice: hide not thine ear at my breathing, at my cry.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Thou",
+        "hast",
+        "heard",
+        "my",
+        "voice:",
+        "hide",
+        "not",
+        "thine",
+        "ear",
+        "at",
+        "my",
+        "breathing,",
+        "at",
+        "my",
+        "cry."
+      ],
+      "info": ""
     },
     {
       "book_id": "LAM",
@@ -569,9 +1317,24 @@
       "chapter": 3,
       "verse_start": 57,
       "verse_end": 57,
-      "text": "Thou drewest near in the day <em>that</em> I called upon thee: thou saidst, Fear not.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Thou",
+        "drewest",
+        "near",
+        "in",
+        "the",
+        "day",
+        "<em>that</em>",
+        "I",
+        "called",
+        "upon",
+        "thee:",
+        "thou",
+        "saidst,",
+        "Fear",
+        "not."
+      ],
+      "info": ""
     },
     {
       "book_id": "LAM",
@@ -579,9 +1342,24 @@
       "chapter": 3,
       "verse_start": 58,
       "verse_end": 58,
-      "text": "O Lord, thou hast pleaded the causes of my soul; thou hast redeemed my life.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "O",
+        "Lord,",
+        "thou",
+        "hast",
+        "pleaded",
+        "the",
+        "causes",
+        "of",
+        "my",
+        "soul;",
+        "thou",
+        "hast",
+        "redeemed",
+        "my",
+        "life."
+      ],
+      "info": ""
     },
     {
       "book_id": "LAM",
@@ -589,9 +1367,20 @@
       "chapter": 3,
       "verse_start": 59,
       "verse_end": 59,
-      "text": "O LORD, thou hast seen my wrong: judge thou my cause.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "O",
+        "LORD,",
+        "thou",
+        "hast",
+        "seen",
+        "my",
+        "wrong:",
+        "judge",
+        "thou",
+        "my",
+        "cause."
+      ],
+      "info": ""
     },
     {
       "book_id": "LAM",
@@ -599,9 +1388,21 @@
       "chapter": 3,
       "verse_start": 60,
       "verse_end": 60,
-      "text": "Thou hast seen all their vengeance <em>and</em> all their imaginations against me.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Thou",
+        "hast",
+        "seen",
+        "all",
+        "their",
+        "vengeance",
+        "<em>and</em>",
+        "all",
+        "their",
+        "imaginations",
+        "against",
+        "me."
+      ],
+      "info": ""
     },
     {
       "book_id": "LAM",
@@ -609,9 +1410,22 @@
       "chapter": 3,
       "verse_start": 61,
       "verse_end": 61,
-      "text": "Thou hast heard their reproach, O LORD, <em>and</em> all their imaginations against me;",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Thou",
+        "hast",
+        "heard",
+        "their",
+        "reproach,",
+        "O",
+        "LORD,",
+        "<em>and</em>",
+        "all",
+        "their",
+        "imaginations",
+        "against",
+        "me;"
+      ],
+      "info": ""
     },
     {
       "book_id": "LAM",
@@ -619,9 +1433,26 @@
       "chapter": 3,
       "verse_start": 62,
       "verse_end": 62,
-      "text": "The lips of those that rose up against me, and their device against me all the day.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "The",
+        "lips",
+        "of",
+        "those",
+        "that",
+        "rose",
+        "up",
+        "against",
+        "me,",
+        "and",
+        "their",
+        "device",
+        "against",
+        "me",
+        "all",
+        "the",
+        "day."
+      ],
+      "info": ""
     },
     {
       "book_id": "LAM",
@@ -629,9 +1460,21 @@
       "chapter": 3,
       "verse_start": 63,
       "verse_end": 63,
-      "text": "Behold their sitting down, and their rising up; I <em>am</em> their musick.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Behold",
+        "their",
+        "sitting",
+        "down,",
+        "and",
+        "their",
+        "rising",
+        "up;",
+        "I",
+        "<em>am</em>",
+        "their",
+        "musick."
+      ],
+      "info": ""
     },
     {
       "book_id": "LAM",
@@ -639,9 +1482,24 @@
       "chapter": 3,
       "verse_start": 64,
       "verse_end": 64,
-      "text": "¶ Render unto them a recompence, O LORD, according to the work of their hands.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "¶",
+        "Render",
+        "unto",
+        "them",
+        "a",
+        "recompence,",
+        "O",
+        "LORD,",
+        "according",
+        "to",
+        "the",
+        "work",
+        "of",
+        "their",
+        "hands."
+      ],
+      "info": ""
     },
     {
       "book_id": "LAM",
@@ -649,9 +1507,18 @@
       "chapter": 3,
       "verse_start": 65,
       "verse_end": 65,
-      "text": "Give them sorrow of heart, thy curse unto them.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Give",
+        "them",
+        "sorrow",
+        "of",
+        "heart,",
+        "thy",
+        "curse",
+        "unto",
+        "them."
+      ],
+      "info": ""
     },
     {
       "book_id": "LAM",
@@ -659,9 +1526,22 @@
       "chapter": 3,
       "verse_start": 66,
       "verse_end": 66,
-      "text": "Persecute and destroy them in anger from under the heavens of the LORD.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Persecute",
+        "and",
+        "destroy",
+        "them",
+        "in",
+        "anger",
+        "from",
+        "under",
+        "the",
+        "heavens",
+        "of",
+        "the",
+        "LORD."
+      ],
+      "info": ""
     }
   ]
 }

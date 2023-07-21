@@ -1,5 +1,5 @@
 {
-  "header": "¶ A Psalme or song for the sonnes of Korah.",
+  "header": "¶ A",
   "footer": "",
   "language": "English",
   "verses": [
@@ -9,7 +9,23 @@
       "chapter": 87,
       "verse_start": 1,
       "verse_end": 1,
-      "text": "His foundation is in the holy mountaines.",
+      "text": [
+        "<em>Psalme</em>",
+        "<em>or</em>",
+        "<em>song</em>",
+        "<em>for</em>",
+        "<em>the</em>",
+        "<em>sonnes</em>",
+        "<em>of</em>",
+        "<em>Korah.</em>",
+        "His",
+        "foundation",
+        "is",
+        "in",
+        "the",
+        "holy",
+        "mountaines."
+      ],
       "info": ""
     },
     {
@@ -18,7 +34,22 @@
       "chapter": 87,
       "verse_start": 2,
       "verse_end": 2,
-      "text": "The Lord loueth the gates of Zion: more then all the dwellings of Iacob.",
+      "text": [
+        "The",
+        "Lord",
+        "loueth",
+        "the",
+        "gates",
+        "of",
+        "Zion:",
+        "more",
+        "then",
+        "all",
+        "the",
+        "dwellings",
+        "of",
+        "Iacob."
+      ],
       "info": ""
     },
     {
@@ -27,7 +58,19 @@
       "chapter": 87,
       "verse_start": 3,
       "verse_end": 3,
-      "text": "Glorious things are spoken of thee, O Citie of God. Selah.",
+      "text": [
+        "Glorious",
+        "things",
+        "are",
+        "spoken",
+        "of",
+        "thee,",
+        "O",
+        "Citie",
+        "of",
+        "God.",
+        "Selah."
+      ],
       "info": ""
     },
     {
@@ -36,7 +79,32 @@
       "chapter": 87,
       "verse_start": 4,
       "verse_end": 4,
-      "text": "I will make mention of Rahab, and Babylon, to them that know mee; behold Philistia, and Tyre, with Ethiopia: this man was borne there.",
+      "text": [
+        "I",
+        "will",
+        "make",
+        "mention",
+        "of",
+        "Rahab,",
+        "and",
+        "Babylon,",
+        "to",
+        "them",
+        "that",
+        "know",
+        "mee;",
+        "behold",
+        "Philistia,",
+        "and",
+        "Tyre,",
+        "with",
+        "Ethiopia:",
+        "this",
+        "man",
+        "was",
+        "borne",
+        "there."
+      ],
       "info": ""
     },
     {
@@ -45,7 +113,29 @@
       "chapter": 87,
       "verse_start": 5,
       "verse_end": 5,
-      "text": "And of Zion it shalbe said, This and that man was borne in her: and the highest himselfe shall establish her.",
+      "text": [
+        "And",
+        "of",
+        "Zion",
+        "it",
+        "shalbe",
+        "said,",
+        "This",
+        "and",
+        "that",
+        "man",
+        "was",
+        "borne",
+        "in",
+        "her:",
+        "and",
+        "the",
+        "highest",
+        "himselfe",
+        "shall",
+        "establish",
+        "her."
+      ],
       "info": ""
     },
     {
@@ -54,7 +144,25 @@
       "chapter": 87,
       "verse_start": 6,
       "verse_end": 6,
-      "text": "The Lord shall count when he writeth vp the people: that this man was borne there. Selah.",
+      "text": [
+        "The",
+        "Lord",
+        "shall",
+        "count",
+        "when",
+        "he",
+        "writeth",
+        "vp",
+        "the",
+        "people:",
+        "that",
+        "this",
+        "man",
+        "was",
+        "borne",
+        "there.",
+        "Selah."
+      ],
       "info": ""
     },
     {
@@ -63,7 +171,26 @@
       "chapter": 87,
       "verse_start": 7,
       "verse_end": 7,
-      "text": "As wel the singers as the players on instruments shall bee there: all my springs are in thee.",
+      "text": [
+        "As",
+        "wel",
+        "the",
+        "singers",
+        "as",
+        "the",
+        "players",
+        "on",
+        "instruments",
+        "shall",
+        "bee",
+        "there:",
+        "all",
+        "my",
+        "springs",
+        "are",
+        "in",
+        "thee."
+      ],
       "info": ""
     }
   ]

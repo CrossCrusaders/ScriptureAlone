@@ -1,5 +1,5 @@
 {
-  "header": "¶ A Prayer of the afflicted, when he is overwhelmed, and poureth out his complaint before the LORD.",
+  "header": "",
   "footer": "",
   "language": "English",
   "verses": [
@@ -9,9 +9,38 @@
       "chapter": 102,
       "verse_start": 1,
       "verse_end": 1,
-      "text": "Hear my prayer, O LORD, and let my cry come unto thee.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "(A",
+        "Prayer",
+        "of",
+        "the",
+        "afflicted,",
+        "when",
+        "he",
+        "is",
+        "overwhelmed,",
+        "and",
+        "poureth",
+        "out",
+        "his",
+        "complaint",
+        "before",
+        "the",
+        "LORD.)",
+        "Hear",
+        "my",
+        "prayer,",
+        "O",
+        "LORD,",
+        "and",
+        "let",
+        "my",
+        "cry",
+        "come",
+        "unto",
+        "thee."
+      ],
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -19,9 +48,37 @@
       "chapter": 102,
       "verse_start": 2,
       "verse_end": 2,
-      "text": "Hide not thy face from me in the day <em>when</em> I am in trouble; incline thine ear unto me: in the day <em>when</em> I call answer me speedily.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Hide",
+        "not",
+        "thy",
+        "face",
+        "from",
+        "me",
+        "in",
+        "the",
+        "day",
+        "<em>when</em>",
+        "I",
+        "am",
+        "in",
+        "trouble;",
+        "incline",
+        "thine",
+        "ear",
+        "unto",
+        "me:",
+        "in",
+        "the",
+        "day",
+        "<em>when</em>",
+        "I",
+        "call",
+        "answer",
+        "me",
+        "speedily."
+      ],
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -29,9 +86,24 @@
       "chapter": 102,
       "verse_start": 3,
       "verse_end": 3,
-      "text": "For my days are consumed like smoke, and my bones are burned as an hearth.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "For",
+        "my",
+        "days",
+        "are",
+        "consumed",
+        "like",
+        "smoke,",
+        "and",
+        "my",
+        "bones",
+        "are",
+        "burned",
+        "as",
+        "an",
+        "hearth."
+      ],
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -39,9 +111,25 @@
       "chapter": 102,
       "verse_start": 4,
       "verse_end": 4,
-      "text": "My heart is smitten, and withered like grass; so that I forget to eat my bread.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "My",
+        "heart",
+        "is",
+        "smitten,",
+        "and",
+        "withered",
+        "like",
+        "grass;",
+        "so",
+        "that",
+        "I",
+        "forget",
+        "to",
+        "eat",
+        "my",
+        "bread."
+      ],
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -49,9 +137,23 @@
       "chapter": 102,
       "verse_start": 5,
       "verse_end": 5,
-      "text": "By reason of the voice of my groaning my bones cleave to my skin.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "By",
+        "reason",
+        "of",
+        "the",
+        "voice",
+        "of",
+        "my",
+        "groaning",
+        "my",
+        "bones",
+        "cleave",
+        "to",
+        "my",
+        "skin."
+      ],
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -59,9 +161,25 @@
       "chapter": 102,
       "verse_start": 6,
       "verse_end": 6,
-      "text": "I am like a pelican of the wilderness: I am like an owl of the desert.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "I",
+        "am",
+        "like",
+        "a",
+        "pelican",
+        "of",
+        "the",
+        "wilderness:",
+        "I",
+        "am",
+        "like",
+        "an",
+        "owl",
+        "of",
+        "the",
+        "desert."
+      ],
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -69,9 +187,21 @@
       "chapter": 102,
       "verse_start": 7,
       "verse_end": 7,
-      "text": "I watch, and am as a sparrow alone upon the house top.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "I",
+        "watch,",
+        "and",
+        "am",
+        "as",
+        "a",
+        "sparrow",
+        "alone",
+        "upon",
+        "the",
+        "house",
+        "top."
+      ],
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -79,9 +209,27 @@
       "chapter": 102,
       "verse_start": 8,
       "verse_end": 8,
-      "text": "Mine enemies reproach me all the day; <em>and</em> they that are mad against me are sworn against me.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Mine",
+        "enemies",
+        "reproach",
+        "me",
+        "all",
+        "the",
+        "day;",
+        "<em>and</em>",
+        "they",
+        "that",
+        "are",
+        "mad",
+        "against",
+        "me",
+        "are",
+        "sworn",
+        "against",
+        "me."
+      ],
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -89,9 +237,22 @@
       "chapter": 102,
       "verse_start": 9,
       "verse_end": 9,
-      "text": "For I have eaten ashes like bread, and mingled my drink with weeping,",
-      "info": "",
-      "language": "English"
+      "text": [
+        "For",
+        "I",
+        "have",
+        "eaten",
+        "ashes",
+        "like",
+        "bread,",
+        "and",
+        "mingled",
+        "my",
+        "drink",
+        "with",
+        "weeping,"
+      ],
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -99,9 +260,26 @@
       "chapter": 102,
       "verse_start": 10,
       "verse_end": 10,
-      "text": "Because of thine indignation and thy wrath: for thou hast lifted me up, and cast me down.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Because",
+        "of",
+        "thine",
+        "indignation",
+        "and",
+        "thy",
+        "wrath:",
+        "for",
+        "thou",
+        "hast",
+        "lifted",
+        "me",
+        "up,",
+        "and",
+        "cast",
+        "me",
+        "down."
+      ],
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -109,9 +287,23 @@
       "chapter": 102,
       "verse_start": 11,
       "verse_end": 11,
-      "text": "My days <em>are</em> like a shadow that declineth; and I am withered like grass.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "My",
+        "days",
+        "<em>are</em>",
+        "like",
+        "a",
+        "shadow",
+        "that",
+        "declineth;",
+        "and",
+        "I",
+        "am",
+        "withered",
+        "like",
+        "grass."
+      ],
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -119,9 +311,23 @@
       "chapter": 102,
       "verse_start": 12,
       "verse_end": 12,
-      "text": "But thou, O LORD, shalt endure for ever; and thy remembrance unto all generations.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "But",
+        "thou,",
+        "O",
+        "LORD,",
+        "shalt",
+        "endure",
+        "for",
+        "ever;",
+        "and",
+        "thy",
+        "remembrance",
+        "unto",
+        "all",
+        "generations."
+      ],
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -129,9 +335,29 @@
       "chapter": 102,
       "verse_start": 13,
       "verse_end": 13,
-      "text": "Thou shalt arise, <em>and</em> have mercy upon Zion: for the time to favour her, yea, the set time, is come.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Thou",
+        "shalt",
+        "arise,",
+        "<em>and</em>",
+        "have",
+        "mercy",
+        "upon",
+        "Zion:",
+        "for",
+        "the",
+        "time",
+        "to",
+        "favour",
+        "her,",
+        "yea,",
+        "the",
+        "set",
+        "time,",
+        "is",
+        "come."
+      ],
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -139,9 +365,22 @@
       "chapter": 102,
       "verse_start": 14,
       "verse_end": 14,
-      "text": "For thy servants take pleasure in her stones, and favour the dust thereof.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "For",
+        "thy",
+        "servants",
+        "take",
+        "pleasure",
+        "in",
+        "her",
+        "stones,",
+        "and",
+        "favour",
+        "the",
+        "dust",
+        "thereof."
+      ],
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -149,9 +388,28 @@
       "chapter": 102,
       "verse_start": 15,
       "verse_end": 15,
-      "text": "So the heathen shall fear the name of the LORD, and all the kings of the earth thy glory.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "So",
+        "the",
+        "heathen",
+        "shall",
+        "fear",
+        "the",
+        "name",
+        "of",
+        "the",
+        "LORD,",
+        "and",
+        "all",
+        "the",
+        "kings",
+        "of",
+        "the",
+        "earth",
+        "thy",
+        "glory."
+      ],
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -159,9 +417,22 @@
       "chapter": 102,
       "verse_start": 16,
       "verse_end": 16,
-      "text": "When the LORD shall build up Zion, he shall appear in his glory.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "When",
+        "the",
+        "LORD",
+        "shall",
+        "build",
+        "up",
+        "Zion,",
+        "he",
+        "shall",
+        "appear",
+        "in",
+        "his",
+        "glory."
+      ],
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -169,9 +440,22 @@
       "chapter": 102,
       "verse_start": 17,
       "verse_end": 17,
-      "text": "He will regard the prayer of the destitute, and not despise their prayer.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "He",
+        "will",
+        "regard",
+        "the",
+        "prayer",
+        "of",
+        "the",
+        "destitute,",
+        "and",
+        "not",
+        "despise",
+        "their",
+        "prayer."
+      ],
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -179,9 +463,29 @@
       "chapter": 102,
       "verse_start": 18,
       "verse_end": 18,
-      "text": "This shall be written for the generation to come: and the people which shall be created shall praise the LORD.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "This",
+        "shall",
+        "be",
+        "written",
+        "for",
+        "the",
+        "generation",
+        "to",
+        "come:",
+        "and",
+        "the",
+        "people",
+        "which",
+        "shall",
+        "be",
+        "created",
+        "shall",
+        "praise",
+        "the",
+        "LORD."
+      ],
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -189,9 +493,28 @@
       "chapter": 102,
       "verse_start": 19,
       "verse_end": 19,
-      "text": "For he hath looked down from the height of his sanctuary; from heaven did the LORD behold the earth;",
-      "info": "",
-      "language": "English"
+      "text": [
+        "For",
+        "he",
+        "hath",
+        "looked",
+        "down",
+        "from",
+        "the",
+        "height",
+        "of",
+        "his",
+        "sanctuary;",
+        "from",
+        "heaven",
+        "did",
+        "the",
+        "LORD",
+        "behold",
+        "the",
+        "earth;"
+      ],
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -199,9 +522,24 @@
       "chapter": 102,
       "verse_start": 20,
       "verse_end": 20,
-      "text": "To hear the groaning of the prisoner; to loose those that are appointed to death;",
-      "info": "",
-      "language": "English"
+      "text": [
+        "To",
+        "hear",
+        "the",
+        "groaning",
+        "of",
+        "the",
+        "prisoner;",
+        "to",
+        "loose",
+        "those",
+        "that",
+        "are",
+        "appointed",
+        "to",
+        "death;"
+      ],
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -209,9 +547,23 @@
       "chapter": 102,
       "verse_start": 21,
       "verse_end": 21,
-      "text": "To declare the name of the LORD in Zion, and his praise in Jerusalem;",
-      "info": "",
-      "language": "English"
+      "text": [
+        "To",
+        "declare",
+        "the",
+        "name",
+        "of",
+        "the",
+        "LORD",
+        "in",
+        "Zion,",
+        "and",
+        "his",
+        "praise",
+        "in",
+        "Jerusalem;"
+      ],
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -219,9 +571,22 @@
       "chapter": 102,
       "verse_start": 22,
       "verse_end": 22,
-      "text": "When the people are gathered together, and the kingdoms, to serve the LORD.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "When",
+        "the",
+        "people",
+        "are",
+        "gathered",
+        "together,",
+        "and",
+        "the",
+        "kingdoms,",
+        "to",
+        "serve",
+        "the",
+        "LORD."
+      ],
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -229,9 +594,20 @@
       "chapter": 102,
       "verse_start": 23,
       "verse_end": 23,
-      "text": "He weakened my strength in the way; he shortened my days.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "He",
+        "weakened",
+        "my",
+        "strength",
+        "in",
+        "the",
+        "way;",
+        "he",
+        "shortened",
+        "my",
+        "days."
+      ],
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -239,9 +615,30 @@
       "chapter": 102,
       "verse_start": 24,
       "verse_end": 24,
-      "text": "I said, O my God, take me not away in the midst of my days: thy years <em>are</em> throughout all generations.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "I",
+        "said,",
+        "O",
+        "my",
+        "God,",
+        "take",
+        "me",
+        "not",
+        "away",
+        "in",
+        "the",
+        "midst",
+        "of",
+        "my",
+        "days:",
+        "thy",
+        "years",
+        "<em>are</em>",
+        "throughout",
+        "all",
+        "generations."
+      ],
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -249,9 +646,28 @@
       "chapter": 102,
       "verse_start": 25,
       "verse_end": 25,
-      "text": "Of old hast thou laid the foundation of the earth: and the heavens <em>are</em> the work of thy hands.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Of",
+        "old",
+        "hast",
+        "thou",
+        "laid",
+        "the",
+        "foundation",
+        "of",
+        "the",
+        "earth:",
+        "and",
+        "the",
+        "heavens",
+        "<em>are</em>",
+        "the",
+        "work",
+        "of",
+        "thy",
+        "hands."
+      ],
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -259,9 +675,38 @@
       "chapter": 102,
       "verse_start": 26,
       "verse_end": 26,
-      "text": "They shall perish, but thou shalt endure: yea, all of them shall wax old like a garment; as a vesture shalt thou change them, and they shall be changed:",
-      "info": "",
-      "language": "English"
+      "text": [
+        "They",
+        "shall",
+        "perish,",
+        "but",
+        "thou",
+        "shalt",
+        "endure:",
+        "yea,",
+        "all",
+        "of",
+        "them",
+        "shall",
+        "wax",
+        "old",
+        "like",
+        "a",
+        "garment;",
+        "as",
+        "a",
+        "vesture",
+        "shalt",
+        "thou",
+        "change",
+        "them,",
+        "and",
+        "they",
+        "shall",
+        "be",
+        "changed:"
+      ],
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -269,9 +714,21 @@
       "chapter": 102,
       "verse_start": 27,
       "verse_end": 27,
-      "text": "But thou <em>art</em> the same, and thy years shall have no end.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "But",
+        "thou",
+        "<em>art</em>",
+        "the",
+        "same,",
+        "and",
+        "thy",
+        "years",
+        "shall",
+        "have",
+        "no",
+        "end."
+      ],
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -279,9 +736,24 @@
       "chapter": 102,
       "verse_start": 28,
       "verse_end": 28,
-      "text": "The children of thy servants shall continue, and their seed shall be established before thee.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "The",
+        "children",
+        "of",
+        "thy",
+        "servants",
+        "shall",
+        "continue,",
+        "and",
+        "their",
+        "seed",
+        "shall",
+        "be",
+        "established",
+        "before",
+        "thee."
+      ],
+      "info": ""
     }
   ]
 }

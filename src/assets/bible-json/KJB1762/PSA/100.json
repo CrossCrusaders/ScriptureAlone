@@ -1,5 +1,5 @@
 {
-  "header": "¶ A Psalm of praise.",
+  "header": "",
   "footer": "",
   "language": "English",
   "verses": [
@@ -9,9 +9,23 @@
       "chapter": 100,
       "verse_start": 1,
       "verse_end": 1,
-      "text": "Make a joyful noise unto the LORD, all ye lands.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "(A",
+        "Psalm",
+        "of",
+        "praise.)",
+        "Make",
+        "a",
+        "joyful",
+        "noise",
+        "unto",
+        "the",
+        "LORD,",
+        "all",
+        "ye",
+        "lands."
+      ],
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -19,9 +33,20 @@
       "chapter": 100,
       "verse_start": 2,
       "verse_end": 2,
-      "text": "Serve the LORD with gladness: come before his presence with singing.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Serve",
+        "the",
+        "LORD",
+        "with",
+        "gladness:",
+        "come",
+        "before",
+        "his",
+        "presence",
+        "with",
+        "singing."
+      ],
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -29,9 +54,38 @@
       "chapter": 100,
       "verse_start": 3,
       "verse_end": 3,
-      "text": "Know ye that the LORD he <em>is</em> God: <em>it is</em> he <em>that</em> hath made us, and not we ourselves; <em>we are</em> his people, and the sheep of his pasture.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Know",
+        "ye",
+        "that",
+        "the",
+        "LORD",
+        "he",
+        "<em>is</em>",
+        "God:",
+        "<em>it</em>",
+        "<em>is</em>",
+        "he",
+        "<em>that</em>",
+        "hath",
+        "made",
+        "us,",
+        "and",
+        "not",
+        "we",
+        "ourselves;",
+        "<em>we</em>",
+        "<em>are</em>",
+        "his",
+        "people,",
+        "and",
+        "the",
+        "sheep",
+        "of",
+        "his",
+        "pasture."
+      ],
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -39,9 +93,29 @@
       "chapter": 100,
       "verse_start": 4,
       "verse_end": 4,
-      "text": "Enter into his gates with thanksgiving, <em>and</em> into his courts with praise: be thankful unto him, <em>and</em> bless his name.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Enter",
+        "into",
+        "his",
+        "gates",
+        "with",
+        "thanksgiving,",
+        "<em>and</em>",
+        "into",
+        "his",
+        "courts",
+        "with",
+        "praise:",
+        "be",
+        "thankful",
+        "unto",
+        "him,",
+        "<em>and</em>",
+        "bless",
+        "his",
+        "name."
+      ],
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -49,9 +123,25 @@
       "chapter": 100,
       "verse_start": 5,
       "verse_end": 5,
-      "text": "For the LORD <em>is</em> good; his mercy <em>is</em> everlasting; and his truth <em>endureth</em> to all generations.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "For",
+        "the",
+        "LORD",
+        "<em>is</em>",
+        "good;",
+        "his",
+        "mercy",
+        "<em>is</em>",
+        "everlasting;",
+        "and",
+        "his",
+        "truth",
+        "<em>endureth</em>",
+        "to",
+        "all",
+        "generations."
+      ],
+      "info": ""
     }
   ]
 }

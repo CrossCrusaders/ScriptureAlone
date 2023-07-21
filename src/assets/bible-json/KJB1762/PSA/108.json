@@ -1,5 +1,5 @@
 {
-  "header": "¶ A Song <em>or</em> Psalm of David.",
+  "header": "",
   "footer": "",
   "language": "English",
   "verses": [
@@ -9,9 +9,31 @@
       "chapter": 108,
       "verse_start": 1,
       "verse_end": 1,
-      "text": "O God, my heart is fixed; I will sing and give praise, even with my glory.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "(A",
+        "Song",
+        "<em>or</em>",
+        "Psalm",
+        "of",
+        "David.)",
+        "O",
+        "God,",
+        "my",
+        "heart",
+        "is",
+        "fixed;",
+        "I",
+        "will",
+        "sing",
+        "and",
+        "give",
+        "praise,",
+        "even",
+        "with",
+        "my",
+        "glory."
+      ],
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -19,9 +41,18 @@
       "chapter": 108,
       "verse_start": 2,
       "verse_end": 2,
-      "text": "Awake, psaltery and harp: I <em>myself</em> will awake early.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Awake,",
+        "psaltery",
+        "and",
+        "harp:",
+        "I",
+        "<em>myself</em>",
+        "will",
+        "awake",
+        "early."
+      ],
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -29,9 +60,28 @@
       "chapter": 108,
       "verse_start": 3,
       "verse_end": 3,
-      "text": "I will praise thee, O LORD, among the people: and I will sing praises unto thee among the nations.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "I",
+        "will",
+        "praise",
+        "thee,",
+        "O",
+        "LORD,",
+        "among",
+        "the",
+        "people:",
+        "and",
+        "I",
+        "will",
+        "sing",
+        "praises",
+        "unto",
+        "thee",
+        "among",
+        "the",
+        "nations."
+      ],
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -39,9 +89,24 @@
       "chapter": 108,
       "verse_start": 4,
       "verse_end": 4,
-      "text": "For thy mercy <em>is</em> great above the heavens: and thy truth <em>reacheth</em> unto the clouds.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "For",
+        "thy",
+        "mercy",
+        "<em>is</em>",
+        "great",
+        "above",
+        "the",
+        "heavens:",
+        "and",
+        "thy",
+        "truth",
+        "<em>reacheth</em>",
+        "unto",
+        "the",
+        "clouds."
+      ],
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -49,9 +114,24 @@
       "chapter": 108,
       "verse_start": 5,
       "verse_end": 5,
-      "text": "Be thou exalted, O God, above the heavens: and thy glory above all the earth;",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Be",
+        "thou",
+        "exalted,",
+        "O",
+        "God,",
+        "above",
+        "the",
+        "heavens:",
+        "and",
+        "thy",
+        "glory",
+        "above",
+        "all",
+        "the",
+        "earth;"
+      ],
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -59,9 +139,23 @@
       "chapter": 108,
       "verse_start": 6,
       "verse_end": 6,
-      "text": "That thy beloved may be delivered: save <em>with</em> thy right hand, and answer me.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "That",
+        "thy",
+        "beloved",
+        "may",
+        "be",
+        "delivered:",
+        "save",
+        "<em>with</em>",
+        "thy",
+        "right",
+        "hand,",
+        "and",
+        "answer",
+        "me."
+      ],
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -69,9 +163,29 @@
       "chapter": 108,
       "verse_start": 7,
       "verse_end": 7,
-      "text": "God hath spoken in his holiness; I will rejoice, I will divide Shechem, and mete out the valley of Succoth.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "God",
+        "hath",
+        "spoken",
+        "in",
+        "his",
+        "holiness;",
+        "I",
+        "will",
+        "rejoice,",
+        "I",
+        "will",
+        "divide",
+        "Shechem,",
+        "and",
+        "mete",
+        "out",
+        "the",
+        "valley",
+        "of",
+        "Succoth."
+      ],
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -79,9 +193,27 @@
       "chapter": 108,
       "verse_start": 8,
       "verse_end": 8,
-      "text": "Gilead <em>is</em> mine; Manasseh <em>is</em> mine; Ephraim also <em>is</em> the strength of mine head; Judah <em>is</em> my lawgiver;",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Gilead",
+        "<em>is</em>",
+        "mine;",
+        "Manasseh",
+        "<em>is</em>",
+        "mine;",
+        "Ephraim",
+        "also",
+        "<em>is</em>",
+        "the",
+        "strength",
+        "of",
+        "mine",
+        "head;",
+        "Judah",
+        "<em>is</em>",
+        "my",
+        "lawgiver;"
+      ],
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -89,9 +221,26 @@
       "chapter": 108,
       "verse_start": 9,
       "verse_end": 9,
-      "text": "Moab <em>is</em> my washpot; over Edom will I cast out my shoe; over Philistia will I triumph.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Moab",
+        "<em>is</em>",
+        "my",
+        "washpot;",
+        "over",
+        "Edom",
+        "will",
+        "I",
+        "cast",
+        "out",
+        "my",
+        "shoe;",
+        "over",
+        "Philistia",
+        "will",
+        "I",
+        "triumph."
+      ],
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -99,9 +248,23 @@
       "chapter": 108,
       "verse_start": 10,
       "verse_end": 10,
-      "text": "Who will bring me into the strong city? who will lead me into Edom?",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Who",
+        "will",
+        "bring",
+        "me",
+        "into",
+        "the",
+        "strong",
+        "city?",
+        "who",
+        "will",
+        "lead",
+        "me",
+        "into",
+        "Edom?"
+      ],
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -109,9 +272,30 @@
       "chapter": 108,
       "verse_start": 11,
       "verse_end": 11,
-      "text": "<em>Wilt</em> not <em>thou,</em> O God, <em>who</em> hast cast us off? and wilt not thou, O God, go forth with our hosts?",
-      "info": "",
-      "language": "English"
+      "text": [
+        "<em>Wilt</em>",
+        "not",
+        "<em>thou,</em>",
+        "O",
+        "God,",
+        "<em>who</em>",
+        "hast",
+        "cast",
+        "us",
+        "off?",
+        "and",
+        "wilt",
+        "not",
+        "thou,",
+        "O",
+        "God,",
+        "go",
+        "forth",
+        "with",
+        "our",
+        "hosts?"
+      ],
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -119,9 +303,21 @@
       "chapter": 108,
       "verse_start": 12,
       "verse_end": 12,
-      "text": "Give us help from trouble: for vain <em>is</em> the help of man.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Give",
+        "us",
+        "help",
+        "from",
+        "trouble:",
+        "for",
+        "vain",
+        "<em>is</em>",
+        "the",
+        "help",
+        "of",
+        "man."
+      ],
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -129,9 +325,25 @@
       "chapter": 108,
       "verse_start": 13,
       "verse_end": 13,
-      "text": "Through God we shall do valiantly: for he <em>it is that</em> shall tread down our enemies.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Through",
+        "God",
+        "we",
+        "shall",
+        "do",
+        "valiantly:",
+        "for",
+        "he",
+        "<em>it</em>",
+        "<em>is</em>",
+        "<em>that</em>",
+        "shall",
+        "tread",
+        "down",
+        "our",
+        "enemies."
+      ],
+      "info": ""
     }
   ]
 }

@@ -9,9 +9,23 @@
       "chapter": 33,
       "verse_start": 1,
       "verse_end": 1,
-      "text": "Wherefore, Job, I pray thee, hear my speeches, and hearken to all my words.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Wherefore,",
+        "Job,",
+        "I",
+        "pray",
+        "thee,",
+        "hear",
+        "my",
+        "speeches,",
+        "and",
+        "hearken",
+        "to",
+        "all",
+        "my",
+        "words."
+      ],
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -19,9 +33,23 @@
       "chapter": 33,
       "verse_start": 2,
       "verse_end": 2,
-      "text": "Behold, now I have opened my mouth, my tongue hath spoken in my mouth.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Behold,",
+        "now",
+        "I",
+        "have",
+        "opened",
+        "my",
+        "mouth,",
+        "my",
+        "tongue",
+        "hath",
+        "spoken",
+        "in",
+        "my",
+        "mouth."
+      ],
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -29,9 +57,26 @@
       "chapter": 33,
       "verse_start": 3,
       "verse_end": 3,
-      "text": "My words <em>shall be of</em> the uprightness of my heart: and my lips shall utter knowledge clearly.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "My",
+        "words",
+        "<em>shall</em>",
+        "<em>be</em>",
+        "<em>of</em>",
+        "the",
+        "uprightness",
+        "of",
+        "my",
+        "heart:",
+        "and",
+        "my",
+        "lips",
+        "shall",
+        "utter",
+        "knowledge",
+        "clearly."
+      ],
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -39,9 +84,26 @@
       "chapter": 33,
       "verse_start": 4,
       "verse_end": 4,
-      "text": "The Spirit of God hath made me, and the breath of the Almighty hath given me life.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "The",
+        "Spirit",
+        "of",
+        "God",
+        "hath",
+        "made",
+        "me,",
+        "and",
+        "the",
+        "breath",
+        "of",
+        "the",
+        "Almighty",
+        "hath",
+        "given",
+        "me",
+        "life."
+      ],
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -49,9 +111,23 @@
       "chapter": 33,
       "verse_start": 5,
       "verse_end": 5,
-      "text": "If thou canst answer me, set <em>thy words</em> in order before me, stand up.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "If",
+        "thou",
+        "canst",
+        "answer",
+        "me,",
+        "set",
+        "<em>thy</em>",
+        "<em>words</em>",
+        "in",
+        "order",
+        "before",
+        "me,",
+        "stand",
+        "up."
+      ],
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -59,9 +135,27 @@
       "chapter": 33,
       "verse_start": 6,
       "verse_end": 6,
-      "text": "Behold, I <em>am</em> according to thy wish in God's stead: I also am formed out of the clay.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Behold,",
+        "I",
+        "<em>am</em>",
+        "according",
+        "to",
+        "thy",
+        "wish",
+        "in",
+        "God's",
+        "stead:",
+        "I",
+        "also",
+        "am",
+        "formed",
+        "out",
+        "of",
+        "the",
+        "clay."
+      ],
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -69,9 +163,25 @@
       "chapter": 33,
       "verse_start": 7,
       "verse_end": 7,
-      "text": "Behold, my terror shall not make thee afraid, neither shall my hand be heavy upon thee.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Behold,",
+        "my",
+        "terror",
+        "shall",
+        "not",
+        "make",
+        "thee",
+        "afraid,",
+        "neither",
+        "shall",
+        "my",
+        "hand",
+        "be",
+        "heavy",
+        "upon",
+        "thee."
+      ],
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -79,9 +189,26 @@
       "chapter": 33,
       "verse_start": 8,
       "verse_end": 8,
-      "text": "Surely thou hast spoken in mine hearing, and I have heard the voice of <em>thy</em> words, <em>saying,</em>",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Surely",
+        "thou",
+        "hast",
+        "spoken",
+        "in",
+        "mine",
+        "hearing,",
+        "and",
+        "I",
+        "have",
+        "heard",
+        "the",
+        "voice",
+        "of",
+        "<em>thy</em>",
+        "words,",
+        "<em>saying,</em>"
+      ],
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -89,9 +216,23 @@
       "chapter": 33,
       "verse_start": 9,
       "verse_end": 9,
-      "text": "I am clean without transgression, I <em>am</em> innocent; neither <em>is there</em> iniquity in me.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "I",
+        "am",
+        "clean",
+        "without",
+        "transgression,",
+        "I",
+        "<em>am</em>",
+        "innocent;",
+        "neither",
+        "<em>is</em>",
+        "<em>there</em>",
+        "iniquity",
+        "in",
+        "me."
+      ],
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -99,9 +240,21 @@
       "chapter": 33,
       "verse_start": 10,
       "verse_end": 10,
-      "text": "Behold, he findeth occasions against me, he counteth me for his enemy,",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Behold,",
+        "he",
+        "findeth",
+        "occasions",
+        "against",
+        "me,",
+        "he",
+        "counteth",
+        "me",
+        "for",
+        "his",
+        "enemy,"
+      ],
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -109,9 +262,21 @@
       "chapter": 33,
       "verse_start": 11,
       "verse_end": 11,
-      "text": "He putteth my feet in the stocks, he marketh all my paths.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "He",
+        "putteth",
+        "my",
+        "feet",
+        "in",
+        "the",
+        "stocks,",
+        "he",
+        "marketh",
+        "all",
+        "my",
+        "paths."
+      ],
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -119,9 +284,26 @@
       "chapter": 33,
       "verse_start": 12,
       "verse_end": 12,
-      "text": "Behold, <em>in</em> this thou art not just: I will answer thee, that God is greater than man.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Behold,",
+        "<em>in</em>",
+        "this",
+        "thou",
+        "art",
+        "not",
+        "just:",
+        "I",
+        "will",
+        "answer",
+        "thee,",
+        "that",
+        "God",
+        "is",
+        "greater",
+        "than",
+        "man."
+      ],
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -129,9 +311,25 @@
       "chapter": 33,
       "verse_start": 13,
       "verse_end": 13,
-      "text": "Why dost thou strive against him? for he giveth not account of any of his matters.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Why",
+        "dost",
+        "thou",
+        "strive",
+        "against",
+        "him?",
+        "for",
+        "he",
+        "giveth",
+        "not",
+        "account",
+        "of",
+        "any",
+        "of",
+        "his",
+        "matters."
+      ],
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -139,9 +337,20 @@
       "chapter": 33,
       "verse_start": 14,
       "verse_end": 14,
-      "text": "For God speaketh once, yea twice, <em>yet man</em> perceiveth it not.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "For",
+        "God",
+        "speaketh",
+        "once,",
+        "yea",
+        "twice,",
+        "<em>yet</em>",
+        "<em>man</em>",
+        "perceiveth",
+        "it",
+        "not."
+      ],
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -149,9 +358,29 @@
       "chapter": 33,
       "verse_start": 15,
       "verse_end": 15,
-      "text": "In a dream, in a vision of the night, when deep sleep falleth upon men, in slumberings upon the bed;",
-      "info": "",
-      "language": "English"
+      "text": [
+        "In",
+        "a",
+        "dream,",
+        "in",
+        "a",
+        "vision",
+        "of",
+        "the",
+        "night,",
+        "when",
+        "deep",
+        "sleep",
+        "falleth",
+        "upon",
+        "men,",
+        "in",
+        "slumberings",
+        "upon",
+        "the",
+        "bed;"
+      ],
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -159,9 +388,20 @@
       "chapter": 33,
       "verse_start": 16,
       "verse_end": 16,
-      "text": "Then he openeth the ears of men, and sealeth their instruction,",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Then",
+        "he",
+        "openeth",
+        "the",
+        "ears",
+        "of",
+        "men,",
+        "and",
+        "sealeth",
+        "their",
+        "instruction,"
+      ],
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -169,9 +409,22 @@
       "chapter": 33,
       "verse_start": 17,
       "verse_end": 17,
-      "text": "That he may withdraw man <em>from his</em> purpose, and hide pride from man.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "That",
+        "he",
+        "may",
+        "withdraw",
+        "man",
+        "<em>from</em>",
+        "<em>his</em>",
+        "purpose,",
+        "and",
+        "hide",
+        "pride",
+        "from",
+        "man."
+      ],
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -179,9 +432,25 @@
       "chapter": 33,
       "verse_start": 18,
       "verse_end": 18,
-      "text": "He keepeth back his soul from the pit, and his life from perishing by the sword.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "He",
+        "keepeth",
+        "back",
+        "his",
+        "soul",
+        "from",
+        "the",
+        "pit,",
+        "and",
+        "his",
+        "life",
+        "from",
+        "perishing",
+        "by",
+        "the",
+        "sword."
+      ],
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -189,9 +458,27 @@
       "chapter": 33,
       "verse_start": 19,
       "verse_end": 19,
-      "text": "He is chastened also with pain upon his bed, and the multitude of his bones with strong <em>pain:</em>",
-      "info": "",
-      "language": "English"
+      "text": [
+        "He",
+        "is",
+        "chastened",
+        "also",
+        "with",
+        "pain",
+        "upon",
+        "his",
+        "bed,",
+        "and",
+        "the",
+        "multitude",
+        "of",
+        "his",
+        "bones",
+        "with",
+        "strong",
+        "<em>pain:</em>"
+      ],
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -199,9 +486,20 @@
       "chapter": 33,
       "verse_start": 20,
       "verse_end": 20,
-      "text": "So that his life abhorreth bread, and his soul dainty meat.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "So",
+        "that",
+        "his",
+        "life",
+        "abhorreth",
+        "bread,",
+        "and",
+        "his",
+        "soul",
+        "dainty",
+        "meat."
+      ],
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -209,9 +507,28 @@
       "chapter": 33,
       "verse_start": 21,
       "verse_end": 21,
-      "text": "His flesh is consumed away, that it cannot be seen; and his bones <em>that</em> were not seen stick out.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "His",
+        "flesh",
+        "is",
+        "consumed",
+        "away,",
+        "that",
+        "it",
+        "cannot",
+        "be",
+        "seen;",
+        "and",
+        "his",
+        "bones",
+        "<em>that</em>",
+        "were",
+        "not",
+        "seen",
+        "stick",
+        "out."
+      ],
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -219,9 +536,23 @@
       "chapter": 33,
       "verse_start": 22,
       "verse_end": 22,
-      "text": "Yea, his soul draweth near unto the grave, and his life to the destroyers.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Yea,",
+        "his",
+        "soul",
+        "draweth",
+        "near",
+        "unto",
+        "the",
+        "grave,",
+        "and",
+        "his",
+        "life",
+        "to",
+        "the",
+        "destroyers."
+      ],
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -229,9 +560,28 @@
       "chapter": 33,
       "verse_start": 23,
       "verse_end": 23,
-      "text": "If there be a messenger with him, an interpreter, one among a thousand, to shew unto man his uprightness:",
-      "info": "",
-      "language": "English"
+      "text": [
+        "If",
+        "there",
+        "be",
+        "a",
+        "messenger",
+        "with",
+        "him,",
+        "an",
+        "interpreter,",
+        "one",
+        "among",
+        "a",
+        "thousand,",
+        "to",
+        "shew",
+        "unto",
+        "man",
+        "his",
+        "uprightness:"
+      ],
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -239,9 +589,30 @@
       "chapter": 33,
       "verse_start": 24,
       "verse_end": 24,
-      "text": "Then he is gracious unto him, and saith, Deliver him from going down to the pit: I have found a ransom.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Then",
+        "he",
+        "is",
+        "gracious",
+        "unto",
+        "him,",
+        "and",
+        "saith,",
+        "Deliver",
+        "him",
+        "from",
+        "going",
+        "down",
+        "to",
+        "the",
+        "pit:",
+        "I",
+        "have",
+        "found",
+        "a",
+        "ransom."
+      ],
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -249,9 +620,26 @@
       "chapter": 33,
       "verse_start": 25,
       "verse_end": 25,
-      "text": "His flesh shall be fresher than a child's: he shall return to the days of his youth:",
-      "info": "",
-      "language": "English"
+      "text": [
+        "His",
+        "flesh",
+        "shall",
+        "be",
+        "fresher",
+        "than",
+        "a",
+        "child's:",
+        "he",
+        "shall",
+        "return",
+        "to",
+        "the",
+        "days",
+        "of",
+        "his",
+        "youth:"
+      ],
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -259,9 +647,37 @@
       "chapter": 33,
       "verse_start": 26,
       "verse_end": 26,
-      "text": "He shall pray unto God, and he will be favourable unto him: and he shall see his face with joy: for he will render unto man his righteousness.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "He",
+        "shall",
+        "pray",
+        "unto",
+        "God,",
+        "and",
+        "he",
+        "will",
+        "be",
+        "favourable",
+        "unto",
+        "him:",
+        "and",
+        "he",
+        "shall",
+        "see",
+        "his",
+        "face",
+        "with",
+        "joy:",
+        "for",
+        "he",
+        "will",
+        "render",
+        "unto",
+        "man",
+        "his",
+        "righteousness."
+      ],
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -269,9 +685,31 @@
       "chapter": 33,
       "verse_start": 27,
       "verse_end": 27,
-      "text": "He looketh upon men, and <em>if any</em> say, I have sinned, and perverted <em>that which was</em> right, and it profited me not;",
-      "info": "",
-      "language": "English"
+      "text": [
+        "He",
+        "looketh",
+        "upon",
+        "men,",
+        "and",
+        "<em>if</em>",
+        "<em>any</em>",
+        "say,",
+        "I",
+        "have",
+        "sinned,",
+        "and",
+        "perverted",
+        "<em>that</em>",
+        "<em>which</em>",
+        "<em>was</em>",
+        "right,",
+        "and",
+        "it",
+        "profited",
+        "me",
+        "not;"
+      ],
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -279,9 +717,26 @@
       "chapter": 33,
       "verse_start": 28,
       "verse_end": 28,
-      "text": "He will deliver his soul from going into the pit, and his life shall see the light.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "He",
+        "will",
+        "deliver",
+        "his",
+        "soul",
+        "from",
+        "going",
+        "into",
+        "the",
+        "pit,",
+        "and",
+        "his",
+        "life",
+        "shall",
+        "see",
+        "the",
+        "light."
+      ],
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -289,9 +744,18 @@
       "chapter": 33,
       "verse_start": 29,
       "verse_end": 29,
-      "text": "Lo, all these <em>things</em> worketh God oftentimes with man,",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Lo,",
+        "all",
+        "these",
+        "<em>things</em>",
+        "worketh",
+        "God",
+        "oftentimes",
+        "with",
+        "man,"
+      ],
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -299,9 +763,26 @@
       "chapter": 33,
       "verse_start": 30,
       "verse_end": 30,
-      "text": "To bring back his soul from the pit, to be enlightened with the light of the living.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "To",
+        "bring",
+        "back",
+        "his",
+        "soul",
+        "from",
+        "the",
+        "pit,",
+        "to",
+        "be",
+        "enlightened",
+        "with",
+        "the",
+        "light",
+        "of",
+        "the",
+        "living."
+      ],
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -309,9 +790,23 @@
       "chapter": 33,
       "verse_start": 31,
       "verse_end": 31,
-      "text": "Mark well, O Job, hearken unto me: hold thy peace, and I will speak.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Mark",
+        "well,",
+        "O",
+        "Job,",
+        "hearken",
+        "unto",
+        "me:",
+        "hold",
+        "thy",
+        "peace,",
+        "and",
+        "I",
+        "will",
+        "speak."
+      ],
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -319,9 +814,25 @@
       "chapter": 33,
       "verse_start": 32,
       "verse_end": 32,
-      "text": "If thou hast any thing to say, answer me: speak, for I desire to justify thee.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "If",
+        "thou",
+        "hast",
+        "any",
+        "thing",
+        "to",
+        "say,",
+        "answer",
+        "me:",
+        "speak,",
+        "for",
+        "I",
+        "desire",
+        "to",
+        "justify",
+        "thee."
+      ],
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -329,9 +840,23 @@
       "chapter": 33,
       "verse_start": 33,
       "verse_end": 33,
-      "text": "If not, hearken unto me: hold thy peace, and I shall teach thee wisdom.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "If",
+        "not,",
+        "hearken",
+        "unto",
+        "me:",
+        "hold",
+        "thy",
+        "peace,",
+        "and",
+        "I",
+        "shall",
+        "teach",
+        "thee",
+        "wisdom."
+      ],
+      "info": ""
     }
   ]
 }

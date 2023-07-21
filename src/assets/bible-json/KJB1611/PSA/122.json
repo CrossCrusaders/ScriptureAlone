@@ -1,5 +1,5 @@
 {
-  "header": "¶ A song of degrees of Dauid.",
+  "header": "¶ A",
   "footer": "",
   "language": "English",
   "verses": [
@@ -9,7 +9,30 @@
       "chapter": 122,
       "verse_start": 1,
       "verse_end": 1,
-      "text": "I was glad when they sayd vnto me: Let vs goe into the house of the Lord.",
+      "text": [
+        "<em>song</em>",
+        "<em>of</em>",
+        "<em>degrees</em>",
+        "<em>of</em>",
+        "<em>Dauid.</em>",
+        "I",
+        "was",
+        "glad",
+        "when",
+        "they",
+        "sayd",
+        "vnto",
+        "me:",
+        "Let",
+        "vs",
+        "goe",
+        "into",
+        "the",
+        "house",
+        "of",
+        "the",
+        "Lord."
+      ],
       "info": ""
     },
     {
@@ -18,7 +41,17 @@
       "chapter": 122,
       "verse_start": 2,
       "verse_end": 2,
-      "text": "Our feete shall stand within thy gates, O Ierusalem.",
+      "text": [
+        "Our",
+        "feete",
+        "shall",
+        "stand",
+        "within",
+        "thy",
+        "gates,",
+        "O",
+        "Ierusalem."
+      ],
       "info": ""
     },
     {
@@ -27,7 +60,18 @@
       "chapter": 122,
       "verse_start": 3,
       "verse_end": 3,
-      "text": "Ierusalem is builded as a citie, that is compact together:",
+      "text": [
+        "Ierusalem",
+        "is",
+        "builded",
+        "as",
+        "a",
+        "citie,",
+        "that",
+        "is",
+        "compact",
+        "together:"
+      ],
       "info": ""
     },
     {
@@ -36,7 +80,32 @@
       "chapter": 122,
       "verse_start": 4,
       "verse_end": 4,
-      "text": "Whither the tribes goe vp, the tribes of the Lord, vnto the testimonie of Israel: to giue thankes vnto the name of the Lord.",
+      "text": [
+        "Whither",
+        "the",
+        "tribes",
+        "goe",
+        "vp,",
+        "the",
+        "tribes",
+        "of",
+        "the",
+        "Lord,",
+        "vnto",
+        "the",
+        "testimonie",
+        "of",
+        "Israel:",
+        "to",
+        "giue",
+        "thankes",
+        "vnto",
+        "the",
+        "name",
+        "of",
+        "the",
+        "Lord."
+      ],
       "info": ""
     },
     {
@@ -45,7 +114,22 @@
       "chapter": 122,
       "verse_start": 5,
       "verse_end": 5,
-      "text": "For there are set thrones of iudgment: the thrones of the house of Dauid.",
+      "text": [
+        "For",
+        "there",
+        "are",
+        "set",
+        "thrones",
+        "of",
+        "iudgment:",
+        "the",
+        "thrones",
+        "of",
+        "the",
+        "house",
+        "of",
+        "Dauid."
+      ],
       "info": ""
     },
     {
@@ -54,7 +138,20 @@
       "chapter": 122,
       "verse_start": 6,
       "verse_end": 6,
-      "text": "Pray for the peace of Ierusalem: they shall prosper that loue thee.",
+      "text": [
+        "Pray",
+        "for",
+        "the",
+        "peace",
+        "of",
+        "Ierusalem:",
+        "they",
+        "shall",
+        "prosper",
+        "that",
+        "loue",
+        "thee."
+      ],
       "info": ""
     },
     {
@@ -63,7 +160,18 @@
       "chapter": 122,
       "verse_start": 7,
       "verse_end": 7,
-      "text": "Peace be within thy walles: and prosperitie within thy palaces.",
+      "text": [
+        "Peace",
+        "be",
+        "within",
+        "thy",
+        "walles:",
+        "and",
+        "prosperitie",
+        "within",
+        "thy",
+        "palaces."
+      ],
       "info": ""
     },
     {
@@ -72,7 +180,22 @@
       "chapter": 122,
       "verse_start": 8,
       "verse_end": 8,
-      "text": "For my brethren and companions sakes: I will now say, Peace be within thee.",
+      "text": [
+        "For",
+        "my",
+        "brethren",
+        "and",
+        "companions",
+        "sakes:",
+        "I",
+        "will",
+        "now",
+        "say,",
+        "Peace",
+        "be",
+        "within",
+        "thee."
+      ],
       "info": ""
     },
     {
@@ -81,7 +204,22 @@
       "chapter": 122,
       "verse_start": 9,
       "verse_end": 9,
-      "text": "Because of the house of the Lord our God: I will seeke thy good.",
+      "text": [
+        "Because",
+        "of",
+        "the",
+        "house",
+        "of",
+        "the",
+        "Lord",
+        "our",
+        "God:",
+        "I",
+        "will",
+        "seeke",
+        "thy",
+        "good."
+      ],
       "info": ""
     }
   ]

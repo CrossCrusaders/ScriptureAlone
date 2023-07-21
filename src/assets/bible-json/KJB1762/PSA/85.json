@@ -1,5 +1,5 @@
 {
-  "header": "¶ To the chief Musician, A Psalm for the sons of Korah.",
+  "header": "",
   "footer": "",
   "language": "English",
   "verses": [
@@ -9,9 +9,36 @@
       "chapter": 85,
       "verse_start": 1,
       "verse_end": 1,
-      "text": "LORD, thou hast been favourable unto thy land: thou hast brought back the captivity of Jacob.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "(To",
+        "the",
+        "chief",
+        "Musician,",
+        "A",
+        "Psalm",
+        "for",
+        "the",
+        "sons",
+        "of",
+        "Korah.)",
+        "LORD,",
+        "thou",
+        "hast",
+        "been",
+        "favourable",
+        "unto",
+        "thy",
+        "land:",
+        "thou",
+        "hast",
+        "brought",
+        "back",
+        "the",
+        "captivity",
+        "of",
+        "Jacob."
+      ],
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -19,9 +46,24 @@
       "chapter": 85,
       "verse_start": 2,
       "verse_end": 2,
-      "text": "Thou hast forgiven the iniquity of thy people, thou hast covered all their sin. Selah.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Thou",
+        "hast",
+        "forgiven",
+        "the",
+        "iniquity",
+        "of",
+        "thy",
+        "people,",
+        "thou",
+        "hast",
+        "covered",
+        "all",
+        "their",
+        "sin.",
+        "Selah."
+      ],
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -29,9 +71,26 @@
       "chapter": 85,
       "verse_start": 3,
       "verse_end": 3,
-      "text": "Thou hast taken away all thy wrath: thou hast turned <em>thyself</em> from the fierceness of thine anger.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Thou",
+        "hast",
+        "taken",
+        "away",
+        "all",
+        "thy",
+        "wrath:",
+        "thou",
+        "hast",
+        "turned",
+        "<em>thyself</em>",
+        "from",
+        "the",
+        "fierceness",
+        "of",
+        "thine",
+        "anger."
+      ],
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -39,9 +98,24 @@
       "chapter": 85,
       "verse_start": 4,
       "verse_end": 4,
-      "text": "Turn us, O God of our salvation, and cause thine anger toward us to cease.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Turn",
+        "us,",
+        "O",
+        "God",
+        "of",
+        "our",
+        "salvation,",
+        "and",
+        "cause",
+        "thine",
+        "anger",
+        "toward",
+        "us",
+        "to",
+        "cease."
+      ],
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -49,9 +123,26 @@
       "chapter": 85,
       "verse_start": 5,
       "verse_end": 5,
-      "text": "Wilt thou be angry with us for ever? wilt thou draw out thine anger to all generations?",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Wilt",
+        "thou",
+        "be",
+        "angry",
+        "with",
+        "us",
+        "for",
+        "ever?",
+        "wilt",
+        "thou",
+        "draw",
+        "out",
+        "thine",
+        "anger",
+        "to",
+        "all",
+        "generations?"
+      ],
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -59,9 +150,22 @@
       "chapter": 85,
       "verse_start": 6,
       "verse_end": 6,
-      "text": "Wilt thou not revive us again: that thy people may rejoice in thee?",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Wilt",
+        "thou",
+        "not",
+        "revive",
+        "us",
+        "again:",
+        "that",
+        "thy",
+        "people",
+        "may",
+        "rejoice",
+        "in",
+        "thee?"
+      ],
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -69,9 +173,20 @@
       "chapter": 85,
       "verse_start": 7,
       "verse_end": 7,
-      "text": "Shew us thy mercy, O LORD, and grant us thy salvation.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Shew",
+        "us",
+        "thy",
+        "mercy,",
+        "O",
+        "LORD,",
+        "and",
+        "grant",
+        "us",
+        "thy",
+        "salvation."
+      ],
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -79,9 +194,38 @@
       "chapter": 85,
       "verse_start": 8,
       "verse_end": 8,
-      "text": "I will hear what God the LORD will speak: for he will speak peace unto his people, and to his saints: but let them not turn again to folly.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "I",
+        "will",
+        "hear",
+        "what",
+        "God",
+        "the",
+        "LORD",
+        "will",
+        "speak:",
+        "for",
+        "he",
+        "will",
+        "speak",
+        "peace",
+        "unto",
+        "his",
+        "people,",
+        "and",
+        "to",
+        "his",
+        "saints:",
+        "but",
+        "let",
+        "them",
+        "not",
+        "turn",
+        "again",
+        "to",
+        "folly."
+      ],
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -89,9 +233,25 @@
       "chapter": 85,
       "verse_start": 9,
       "verse_end": 9,
-      "text": "Surely his salvation <em>is</em> nigh them that fear him; that glory may dwell in our land.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Surely",
+        "his",
+        "salvation",
+        "<em>is</em>",
+        "nigh",
+        "them",
+        "that",
+        "fear",
+        "him;",
+        "that",
+        "glory",
+        "may",
+        "dwell",
+        "in",
+        "our",
+        "land."
+      ],
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -99,9 +259,22 @@
       "chapter": 85,
       "verse_start": 10,
       "verse_end": 10,
-      "text": "Mercy and truth are met together; righteousness and peace have kissed <em>each other.</em>",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Mercy",
+        "and",
+        "truth",
+        "are",
+        "met",
+        "together;",
+        "righteousness",
+        "and",
+        "peace",
+        "have",
+        "kissed",
+        "<em>each</em>",
+        "<em>other.</em>"
+      ],
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -109,9 +282,23 @@
       "chapter": 85,
       "verse_start": 11,
       "verse_end": 11,
-      "text": "Truth shall spring out of the earth; and righteousness shall look down from heaven.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Truth",
+        "shall",
+        "spring",
+        "out",
+        "of",
+        "the",
+        "earth;",
+        "and",
+        "righteousness",
+        "shall",
+        "look",
+        "down",
+        "from",
+        "heaven."
+      ],
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -119,9 +306,25 @@
       "chapter": 85,
       "verse_start": 12,
       "verse_end": 12,
-      "text": "Yea, the LORD shall give <em>that which is</em> good; and our land shall yield her increase.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Yea,",
+        "the",
+        "LORD",
+        "shall",
+        "give",
+        "<em>that</em>",
+        "<em>which</em>",
+        "<em>is</em>",
+        "good;",
+        "and",
+        "our",
+        "land",
+        "shall",
+        "yield",
+        "her",
+        "increase."
+      ],
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -129,9 +332,24 @@
       "chapter": 85,
       "verse_start": 13,
       "verse_end": 13,
-      "text": "Righteousness shall go before him; and shall set <em>us</em> in the way of his steps.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Righteousness",
+        "shall",
+        "go",
+        "before",
+        "him;",
+        "and",
+        "shall",
+        "set",
+        "<em>us</em>",
+        "in",
+        "the",
+        "way",
+        "of",
+        "his",
+        "steps."
+      ],
+      "info": ""
     }
   ]
 }

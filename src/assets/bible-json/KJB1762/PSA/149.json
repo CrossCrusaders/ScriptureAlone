@@ -9,9 +9,28 @@
       "chapter": 149,
       "verse_start": 1,
       "verse_end": 1,
-      "text": "Praise ye the LORD. Sing unto the LORD a new song, <em>and</em> his praise in the congregation of saints.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Praise",
+        "ye",
+        "the",
+        "LORD.",
+        "Sing",
+        "unto",
+        "the",
+        "LORD",
+        "a",
+        "new",
+        "song,",
+        "<em>and</em>",
+        "his",
+        "praise",
+        "in",
+        "the",
+        "congregation",
+        "of",
+        "saints."
+      ],
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -19,9 +38,27 @@
       "chapter": 149,
       "verse_start": 2,
       "verse_end": 2,
-      "text": "Let Israel rejoice in him that made him: let the children of Zion be joyful in their King.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Let",
+        "Israel",
+        "rejoice",
+        "in",
+        "him",
+        "that",
+        "made",
+        "him:",
+        "let",
+        "the",
+        "children",
+        "of",
+        "Zion",
+        "be",
+        "joyful",
+        "in",
+        "their",
+        "King."
+      ],
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -29,9 +66,28 @@
       "chapter": 149,
       "verse_start": 3,
       "verse_end": 3,
-      "text": "Let them praise his name in the dance: let them sing praises unto him with the timbrel and harp.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Let",
+        "them",
+        "praise",
+        "his",
+        "name",
+        "in",
+        "the",
+        "dance:",
+        "let",
+        "them",
+        "sing",
+        "praises",
+        "unto",
+        "him",
+        "with",
+        "the",
+        "timbrel",
+        "and",
+        "harp."
+      ],
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -39,9 +95,24 @@
       "chapter": 149,
       "verse_start": 4,
       "verse_end": 4,
-      "text": "For the LORD taketh pleasure in his people: he will beautify the meek with salvation.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "For",
+        "the",
+        "LORD",
+        "taketh",
+        "pleasure",
+        "in",
+        "his",
+        "people:",
+        "he",
+        "will",
+        "beautify",
+        "the",
+        "meek",
+        "with",
+        "salvation."
+      ],
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -49,9 +120,23 @@
       "chapter": 149,
       "verse_start": 5,
       "verse_end": 5,
-      "text": "Let the saints be joyful in glory: let them sing aloud upon their beds.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Let",
+        "the",
+        "saints",
+        "be",
+        "joyful",
+        "in",
+        "glory:",
+        "let",
+        "them",
+        "sing",
+        "aloud",
+        "upon",
+        "their",
+        "beds."
+      ],
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -59,9 +144,26 @@
       "chapter": 149,
       "verse_start": 6,
       "verse_end": 6,
-      "text": "<em>Let</em> the high <em>praises</em> of God <em>be</em> in their mouth, and a twoedged sword in their hand;",
-      "info": "",
-      "language": "English"
+      "text": [
+        "<em>Let</em>",
+        "the",
+        "high",
+        "<em>praises</em>",
+        "of",
+        "God",
+        "<em>be</em>",
+        "in",
+        "their",
+        "mouth,",
+        "and",
+        "a",
+        "twoedged",
+        "sword",
+        "in",
+        "their",
+        "hand;"
+      ],
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -69,9 +171,20 @@
       "chapter": 149,
       "verse_start": 7,
       "verse_end": 7,
-      "text": "To execute vengeance upon the heathen, <em>and</em> punishments upon the people;",
-      "info": "",
-      "language": "English"
+      "text": [
+        "To",
+        "execute",
+        "vengeance",
+        "upon",
+        "the",
+        "heathen,",
+        "<em>and</em>",
+        "punishments",
+        "upon",
+        "the",
+        "people;"
+      ],
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -79,9 +192,22 @@
       "chapter": 149,
       "verse_start": 8,
       "verse_end": 8,
-      "text": "To bind their kings with chains, and their nobles with fetters of iron;",
-      "info": "",
-      "language": "English"
+      "text": [
+        "To",
+        "bind",
+        "their",
+        "kings",
+        "with",
+        "chains,",
+        "and",
+        "their",
+        "nobles",
+        "with",
+        "fetters",
+        "of",
+        "iron;"
+      ],
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -89,9 +215,26 @@
       "chapter": 149,
       "verse_start": 9,
       "verse_end": 9,
-      "text": "To execute upon them the judgment written: this honour have all his saints. Praise ye the LORD.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "To",
+        "execute",
+        "upon",
+        "them",
+        "the",
+        "judgment",
+        "written:",
+        "this",
+        "honour",
+        "have",
+        "all",
+        "his",
+        "saints.",
+        "Praise",
+        "ye",
+        "the",
+        "LORD."
+      ],
+      "info": ""
     }
   ]
 }

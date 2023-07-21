@@ -9,9 +9,14 @@
       "chapter": 26,
       "verse_start": 1,
       "verse_end": 1,
-      "text": "But Job answered and said,",
-      "info": "",
-      "language": "English"
+      "text": [
+        "But",
+        "Job",
+        "answered",
+        "and",
+        "said,"
+      ],
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -19,9 +24,27 @@
       "chapter": 26,
       "verse_start": 2,
       "verse_end": 2,
-      "text": "How hast thou helped <em>him that is</em> without power? <em>how</em> savest thou the arm <em>that hath</em> no strength?",
-      "info": "",
-      "language": "English"
+      "text": [
+        "How",
+        "hast",
+        "thou",
+        "helped",
+        "<em>him</em>",
+        "<em>that</em>",
+        "<em>is</em>",
+        "without",
+        "power?",
+        "<em>how</em>",
+        "savest",
+        "thou",
+        "the",
+        "arm",
+        "<em>that</em>",
+        "<em>hath</em>",
+        "no",
+        "strength?"
+      ],
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -29,9 +52,29 @@
       "chapter": 26,
       "verse_start": 3,
       "verse_end": 3,
-      "text": "How hast thou counselled <em>him that hath</em> no wisdom? and <em>how</em> hast thou plentifully declared the thing as it is?",
-      "info": "",
-      "language": "English"
+      "text": [
+        "How",
+        "hast",
+        "thou",
+        "counselled",
+        "<em>him</em>",
+        "<em>that</em>",
+        "<em>hath</em>",
+        "no",
+        "wisdom?",
+        "and",
+        "<em>how</em>",
+        "hast",
+        "thou",
+        "plentifully",
+        "declared",
+        "the",
+        "thing",
+        "as",
+        "it",
+        "is?"
+      ],
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -39,9 +82,21 @@
       "chapter": 26,
       "verse_start": 4,
       "verse_end": 4,
-      "text": "To whom hast thou uttered words? and whose spirit came from thee?",
-      "info": "",
-      "language": "English"
+      "text": [
+        "To",
+        "whom",
+        "hast",
+        "thou",
+        "uttered",
+        "words?",
+        "and",
+        "whose",
+        "spirit",
+        "came",
+        "from",
+        "thee?"
+      ],
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -49,9 +104,21 @@
       "chapter": 26,
       "verse_start": 5,
       "verse_end": 5,
-      "text": "Dead <em>things</em> are formed from under the waters, and the inhabitants thereof.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Dead",
+        "<em>things</em>",
+        "are",
+        "formed",
+        "from",
+        "under",
+        "the",
+        "waters,",
+        "and",
+        "the",
+        "inhabitants",
+        "thereof."
+      ],
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -59,9 +126,19 @@
       "chapter": 26,
       "verse_start": 6,
       "verse_end": 6,
-      "text": "Hell <em>is</em> naked before him, and destruction hath no covering.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Hell",
+        "<em>is</em>",
+        "naked",
+        "before",
+        "him,",
+        "and",
+        "destruction",
+        "hath",
+        "no",
+        "covering."
+      ],
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -69,9 +146,24 @@
       "chapter": 26,
       "verse_start": 7,
       "verse_end": 7,
-      "text": "He stretcheth out the north over the empty place, <em>and</em> hangeth the earth upon nothing.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "He",
+        "stretcheth",
+        "out",
+        "the",
+        "north",
+        "over",
+        "the",
+        "empty",
+        "place,",
+        "<em>and</em>",
+        "hangeth",
+        "the",
+        "earth",
+        "upon",
+        "nothing."
+      ],
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -79,9 +171,26 @@
       "chapter": 26,
       "verse_start": 8,
       "verse_end": 8,
-      "text": "He bindeth up the waters in his thick clouds; and the cloud is not rent under them.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "He",
+        "bindeth",
+        "up",
+        "the",
+        "waters",
+        "in",
+        "his",
+        "thick",
+        "clouds;",
+        "and",
+        "the",
+        "cloud",
+        "is",
+        "not",
+        "rent",
+        "under",
+        "them."
+      ],
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -89,9 +198,23 @@
       "chapter": 26,
       "verse_start": 9,
       "verse_end": 9,
-      "text": "He holdeth back the face of his throne, <em>and</em> spreadeth his cloud upon it.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "He",
+        "holdeth",
+        "back",
+        "the",
+        "face",
+        "of",
+        "his",
+        "throne,",
+        "<em>and</em>",
+        "spreadeth",
+        "his",
+        "cloud",
+        "upon",
+        "it."
+      ],
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -99,9 +222,25 @@
       "chapter": 26,
       "verse_start": 10,
       "verse_end": 10,
-      "text": "He hath compassed the waters with bounds, until the day and night come to an end.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "He",
+        "hath",
+        "compassed",
+        "the",
+        "waters",
+        "with",
+        "bounds,",
+        "until",
+        "the",
+        "day",
+        "and",
+        "night",
+        "come",
+        "to",
+        "an",
+        "end."
+      ],
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -109,9 +248,20 @@
       "chapter": 26,
       "verse_start": 11,
       "verse_end": 11,
-      "text": "The pillars of heaven tremble and are astonished at his reproof.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "The",
+        "pillars",
+        "of",
+        "heaven",
+        "tremble",
+        "and",
+        "are",
+        "astonished",
+        "at",
+        "his",
+        "reproof."
+      ],
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -119,9 +269,25 @@
       "chapter": 26,
       "verse_start": 12,
       "verse_end": 12,
-      "text": "He divideth the sea with his power, and by his understanding he smiteth through the proud.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "He",
+        "divideth",
+        "the",
+        "sea",
+        "with",
+        "his",
+        "power,",
+        "and",
+        "by",
+        "his",
+        "understanding",
+        "he",
+        "smiteth",
+        "through",
+        "the",
+        "proud."
+      ],
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -129,9 +295,24 @@
       "chapter": 26,
       "verse_start": 13,
       "verse_end": 13,
-      "text": "By his spirit he hath garnished the heavens; his hand hath formed the crooked serpent.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "By",
+        "his",
+        "spirit",
+        "he",
+        "hath",
+        "garnished",
+        "the",
+        "heavens;",
+        "his",
+        "hand",
+        "hath",
+        "formed",
+        "the",
+        "crooked",
+        "serpent."
+      ],
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -139,9 +320,34 @@
       "chapter": 26,
       "verse_start": 14,
       "verse_end": 14,
-      "text": "Lo, these <em>are</em> parts of his ways: but how little a portion is heard of him? but the thunder of his power who can understand?",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Lo,",
+        "these",
+        "<em>are</em>",
+        "parts",
+        "of",
+        "his",
+        "ways:",
+        "but",
+        "how",
+        "little",
+        "a",
+        "portion",
+        "is",
+        "heard",
+        "of",
+        "him?",
+        "but",
+        "the",
+        "thunder",
+        "of",
+        "his",
+        "power",
+        "who",
+        "can",
+        "understand?"
+      ],
+      "info": ""
     }
   ]
 }

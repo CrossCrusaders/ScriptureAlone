@@ -1,5 +1,5 @@
 {
-  "header": "¶ To the chief Musician on Neginoth upon Sheminith, A Psalm of David.",
+  "header": "",
   "footer": "",
   "language": "English",
   "verses": [
@@ -9,9 +9,36 @@
       "chapter": 6,
       "verse_start": 1,
       "verse_end": 1,
-      "text": "O LORD, rebuke me not in thine anger, neither chasten me in thy hot displeasure.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "(To",
+        "the",
+        "chief",
+        "Musician",
+        "on",
+        "Neginoth",
+        "upon",
+        "Sheminith,",
+        "A",
+        "Psalm",
+        "of",
+        "David.)",
+        "O",
+        "LORD,",
+        "rebuke",
+        "me",
+        "not",
+        "in",
+        "thine",
+        "anger,",
+        "neither",
+        "chasten",
+        "me",
+        "in",
+        "thy",
+        "hot",
+        "displeasure."
+      ],
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -19,9 +46,28 @@
       "chapter": 6,
       "verse_start": 2,
       "verse_end": 2,
-      "text": "Have mercy upon me, O LORD; for I <em>am</em> weak: O LORD, heal me; for my bones are vexed.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Have",
+        "mercy",
+        "upon",
+        "me,",
+        "O",
+        "LORD;",
+        "for",
+        "I",
+        "<em>am</em>",
+        "weak:",
+        "O",
+        "LORD,",
+        "heal",
+        "me;",
+        "for",
+        "my",
+        "bones",
+        "are",
+        "vexed."
+      ],
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -29,9 +75,21 @@
       "chapter": 6,
       "verse_start": 3,
       "verse_end": 3,
-      "text": "My soul is also sore vexed: but thou, O LORD, how long?",
-      "info": "",
-      "language": "English"
+      "text": [
+        "My",
+        "soul",
+        "is",
+        "also",
+        "sore",
+        "vexed:",
+        "but",
+        "thou,",
+        "O",
+        "LORD,",
+        "how",
+        "long?"
+      ],
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -39,9 +97,22 @@
       "chapter": 6,
       "verse_start": 4,
       "verse_end": 4,
-      "text": "Return, O LORD, deliver my soul: oh save me for thy mercies' sake.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Return,",
+        "O",
+        "LORD,",
+        "deliver",
+        "my",
+        "soul:",
+        "oh",
+        "save",
+        "me",
+        "for",
+        "thy",
+        "mercies'",
+        "sake."
+      ],
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -49,9 +120,26 @@
       "chapter": 6,
       "verse_start": 5,
       "verse_end": 5,
-      "text": "For in death <em>there is</em> no remembrance of thee: in the grave who shall give thee thanks?",
-      "info": "",
-      "language": "English"
+      "text": [
+        "For",
+        "in",
+        "death",
+        "<em>there</em>",
+        "<em>is</em>",
+        "no",
+        "remembrance",
+        "of",
+        "thee:",
+        "in",
+        "the",
+        "grave",
+        "who",
+        "shall",
+        "give",
+        "thee",
+        "thanks?"
+      ],
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -59,9 +147,31 @@
       "chapter": 6,
       "verse_start": 6,
       "verse_end": 6,
-      "text": "I am weary with my groaning; all the night make I my bed to swim; I water my couch with my tears.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "I",
+        "am",
+        "weary",
+        "with",
+        "my",
+        "groaning;",
+        "all",
+        "the",
+        "night",
+        "make",
+        "I",
+        "my",
+        "bed",
+        "to",
+        "swim;",
+        "I",
+        "water",
+        "my",
+        "couch",
+        "with",
+        "my",
+        "tears."
+      ],
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -69,9 +179,24 @@
       "chapter": 6,
       "verse_start": 7,
       "verse_end": 7,
-      "text": "Mine eye is consumed because of grief; it waxeth old because of all mine enemies.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Mine",
+        "eye",
+        "is",
+        "consumed",
+        "because",
+        "of",
+        "grief;",
+        "it",
+        "waxeth",
+        "old",
+        "because",
+        "of",
+        "all",
+        "mine",
+        "enemies."
+      ],
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -79,9 +204,27 @@
       "chapter": 6,
       "verse_start": 8,
       "verse_end": 8,
-      "text": "Depart from me, all ye workers of iniquity; for the LORD hath heard the voice of my weeping.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Depart",
+        "from",
+        "me,",
+        "all",
+        "ye",
+        "workers",
+        "of",
+        "iniquity;",
+        "for",
+        "the",
+        "LORD",
+        "hath",
+        "heard",
+        "the",
+        "voice",
+        "of",
+        "my",
+        "weeping."
+      ],
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -89,9 +232,21 @@
       "chapter": 6,
       "verse_start": 9,
       "verse_end": 9,
-      "text": "The LORD hath heard my supplication; the LORD will receive my prayer.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "The",
+        "LORD",
+        "hath",
+        "heard",
+        "my",
+        "supplication;",
+        "the",
+        "LORD",
+        "will",
+        "receive",
+        "my",
+        "prayer."
+      ],
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -99,9 +254,25 @@
       "chapter": 6,
       "verse_start": 10,
       "verse_end": 10,
-      "text": "Let all mine enemies be ashamed and sore vexed: let them return <em>and</em> be ashamed suddenly.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Let",
+        "all",
+        "mine",
+        "enemies",
+        "be",
+        "ashamed",
+        "and",
+        "sore",
+        "vexed:",
+        "let",
+        "them",
+        "return",
+        "<em>and</em>",
+        "be",
+        "ashamed",
+        "suddenly."
+      ],
+      "info": ""
     }
   ]
 }

@@ -9,9 +9,16 @@
       "chapter": 4,
       "verse_start": 1,
       "verse_end": 1,
-      "text": "Then Eliphaz the Temanite answered and said,",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Then",
+        "Eliphaz",
+        "the",
+        "Temanite",
+        "answered",
+        "and",
+        "said,"
+      ],
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -19,9 +26,27 @@
       "chapter": 4,
       "verse_start": 2,
       "verse_end": 2,
-      "text": "<em>If</em> we assay to commune with thee, wilt thou be grieved? but who can withhold himself from speaking?",
-      "info": "",
-      "language": "English"
+      "text": [
+        "<em>If</em>",
+        "we",
+        "assay",
+        "to",
+        "commune",
+        "with",
+        "thee,",
+        "wilt",
+        "thou",
+        "be",
+        "grieved?",
+        "but",
+        "who",
+        "can",
+        "withhold",
+        "himself",
+        "from",
+        "speaking?"
+      ],
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -29,9 +54,21 @@
       "chapter": 4,
       "verse_start": 3,
       "verse_end": 3,
-      "text": "Behold, thou hast instructed many, and thou hast strengthened the weak hands.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Behold,",
+        "thou",
+        "hast",
+        "instructed",
+        "many,",
+        "and",
+        "thou",
+        "hast",
+        "strengthened",
+        "the",
+        "weak",
+        "hands."
+      ],
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -39,9 +76,24 @@
       "chapter": 4,
       "verse_start": 4,
       "verse_end": 4,
-      "text": "Thy words have upholden him that was falling, and thou hast strengthened the feeble knees.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Thy",
+        "words",
+        "have",
+        "upholden",
+        "him",
+        "that",
+        "was",
+        "falling,",
+        "and",
+        "thou",
+        "hast",
+        "strengthened",
+        "the",
+        "feeble",
+        "knees."
+      ],
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -49,9 +101,26 @@
       "chapter": 4,
       "verse_start": 5,
       "verse_end": 5,
-      "text": "But now it is come upon thee, and thou faintest; it toucheth thee, and thou art troubled.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "But",
+        "now",
+        "it",
+        "is",
+        "come",
+        "upon",
+        "thee,",
+        "and",
+        "thou",
+        "faintest;",
+        "it",
+        "toucheth",
+        "thee,",
+        "and",
+        "thou",
+        "art",
+        "troubled."
+      ],
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -59,9 +128,24 @@
       "chapter": 4,
       "verse_start": 6,
       "verse_end": 6,
-      "text": "<em>Is</em> not <em>this</em> thy fear, thy confidence, thy hope, and the uprightness of thy ways?",
-      "info": "",
-      "language": "English"
+      "text": [
+        "<em>Is</em>",
+        "not",
+        "<em>this</em>",
+        "thy",
+        "fear,",
+        "thy",
+        "confidence,",
+        "thy",
+        "hope,",
+        "and",
+        "the",
+        "uprightness",
+        "of",
+        "thy",
+        "ways?"
+      ],
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -69,9 +153,25 @@
       "chapter": 4,
       "verse_start": 7,
       "verse_end": 7,
-      "text": "Remember, I pray thee, who <em>ever</em> perished, being innocent? or where were the righteous cut off?",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Remember,",
+        "I",
+        "pray",
+        "thee,",
+        "who",
+        "<em>ever</em>",
+        "perished,",
+        "being",
+        "innocent?",
+        "or",
+        "where",
+        "were",
+        "the",
+        "righteous",
+        "cut",
+        "off?"
+      ],
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -79,9 +179,24 @@
       "chapter": 4,
       "verse_start": 8,
       "verse_end": 8,
-      "text": "Even as I have seen, they that plow iniquity, and sow wickedness, reap the same.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Even",
+        "as",
+        "I",
+        "have",
+        "seen,",
+        "they",
+        "that",
+        "plow",
+        "iniquity,",
+        "and",
+        "sow",
+        "wickedness,",
+        "reap",
+        "the",
+        "same."
+      ],
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -89,9 +204,26 @@
       "chapter": 4,
       "verse_start": 9,
       "verse_end": 9,
-      "text": "By the blast of God they perish, and by the breath of his nostrils are they consumed.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "By",
+        "the",
+        "blast",
+        "of",
+        "God",
+        "they",
+        "perish,",
+        "and",
+        "by",
+        "the",
+        "breath",
+        "of",
+        "his",
+        "nostrils",
+        "are",
+        "they",
+        "consumed."
+      ],
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -99,9 +231,30 @@
       "chapter": 4,
       "verse_start": 10,
       "verse_end": 10,
-      "text": "The roaring of the lion, and the voice of the fierce lion, and the teeth of the young lions, are broken.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "The",
+        "roaring",
+        "of",
+        "the",
+        "lion,",
+        "and",
+        "the",
+        "voice",
+        "of",
+        "the",
+        "fierce",
+        "lion,",
+        "and",
+        "the",
+        "teeth",
+        "of",
+        "the",
+        "young",
+        "lions,",
+        "are",
+        "broken."
+      ],
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -109,9 +262,25 @@
       "chapter": 4,
       "verse_start": 11,
       "verse_end": 11,
-      "text": "The old lion perisheth for lack of prey, and the stout lion's whelps are scattered abroad.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "The",
+        "old",
+        "lion",
+        "perisheth",
+        "for",
+        "lack",
+        "of",
+        "prey,",
+        "and",
+        "the",
+        "stout",
+        "lion's",
+        "whelps",
+        "are",
+        "scattered",
+        "abroad."
+      ],
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -119,9 +288,24 @@
       "chapter": 4,
       "verse_start": 12,
       "verse_end": 12,
-      "text": "Now a thing was secretly brought to me, and mine ear received a little thereof.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Now",
+        "a",
+        "thing",
+        "was",
+        "secretly",
+        "brought",
+        "to",
+        "me,",
+        "and",
+        "mine",
+        "ear",
+        "received",
+        "a",
+        "little",
+        "thereof."
+      ],
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -129,9 +313,23 @@
       "chapter": 4,
       "verse_start": 13,
       "verse_end": 13,
-      "text": "In thoughts from the visions of the night, when deep sleep falleth on men,",
-      "info": "",
-      "language": "English"
+      "text": [
+        "In",
+        "thoughts",
+        "from",
+        "the",
+        "visions",
+        "of",
+        "the",
+        "night,",
+        "when",
+        "deep",
+        "sleep",
+        "falleth",
+        "on",
+        "men,"
+      ],
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -139,9 +337,22 @@
       "chapter": 4,
       "verse_start": 14,
       "verse_end": 14,
-      "text": "Fear came upon me, and trembling, which made all my bones to shake.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Fear",
+        "came",
+        "upon",
+        "me,",
+        "and",
+        "trembling,",
+        "which",
+        "made",
+        "all",
+        "my",
+        "bones",
+        "to",
+        "shake."
+      ],
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -149,9 +360,23 @@
       "chapter": 4,
       "verse_start": 15,
       "verse_end": 15,
-      "text": "Then a spirit passed before my face; the hair of my flesh stood up:",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Then",
+        "a",
+        "spirit",
+        "passed",
+        "before",
+        "my",
+        "face;",
+        "the",
+        "hair",
+        "of",
+        "my",
+        "flesh",
+        "stood",
+        "up:"
+      ],
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -159,9 +384,35 @@
       "chapter": 4,
       "verse_start": 16,
       "verse_end": 16,
-      "text": "It stood still, but I could not discern the form thereof: an image <em>was</em> before mine eyes, <em>there was</em> silence, and I heard a voice, <em>saying,</em>",
-      "info": "",
-      "language": "English"
+      "text": [
+        "It",
+        "stood",
+        "still,",
+        "but",
+        "I",
+        "could",
+        "not",
+        "discern",
+        "the",
+        "form",
+        "thereof:",
+        "an",
+        "image",
+        "<em>was</em>",
+        "before",
+        "mine",
+        "eyes,",
+        "<em>there</em>",
+        "<em>was</em>",
+        "silence,",
+        "and",
+        "I",
+        "heard",
+        "a",
+        "voice,",
+        "<em>saying,</em>"
+      ],
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -169,9 +420,26 @@
       "chapter": 4,
       "verse_start": 17,
       "verse_end": 17,
-      "text": "Shall mortal man be more just than God? shall a man be more pure than his maker?",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Shall",
+        "mortal",
+        "man",
+        "be",
+        "more",
+        "just",
+        "than",
+        "God?",
+        "shall",
+        "a",
+        "man",
+        "be",
+        "more",
+        "pure",
+        "than",
+        "his",
+        "maker?"
+      ],
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -179,9 +447,24 @@
       "chapter": 4,
       "verse_start": 18,
       "verse_end": 18,
-      "text": "Behold, he put no trust in his servants; and his angels he charged with folly:",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Behold,",
+        "he",
+        "put",
+        "no",
+        "trust",
+        "in",
+        "his",
+        "servants;",
+        "and",
+        "his",
+        "angels",
+        "he",
+        "charged",
+        "with",
+        "folly:"
+      ],
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -189,9 +472,32 @@
       "chapter": 4,
       "verse_start": 19,
       "verse_end": 19,
-      "text": "How much less <em>in</em> them that dwell in houses of clay, whose foundation <em>is</em> in the dust, <em>which</em> are crushed before the moth?",
-      "info": "",
-      "language": "English"
+      "text": [
+        "How",
+        "much",
+        "less",
+        "<em>in</em>",
+        "them",
+        "that",
+        "dwell",
+        "in",
+        "houses",
+        "of",
+        "clay,",
+        "whose",
+        "foundation",
+        "<em>is</em>",
+        "in",
+        "the",
+        "dust,",
+        "<em>which</em>",
+        "are",
+        "crushed",
+        "before",
+        "the",
+        "moth?"
+      ],
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -199,9 +505,24 @@
       "chapter": 4,
       "verse_start": 20,
       "verse_end": 20,
-      "text": "They are destroyed from morning to evening: they perish for ever without any regarding <em>it.</em>",
-      "info": "",
-      "language": "English"
+      "text": [
+        "They",
+        "are",
+        "destroyed",
+        "from",
+        "morning",
+        "to",
+        "evening:",
+        "they",
+        "perish",
+        "for",
+        "ever",
+        "without",
+        "any",
+        "regarding",
+        "<em>it.</em>"
+      ],
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -209,9 +530,24 @@
       "chapter": 4,
       "verse_start": 21,
       "verse_end": 21,
-      "text": "Doth not their excellency <em>which is</em> in them go away? they die, even without wisdom.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Doth",
+        "not",
+        "their",
+        "excellency",
+        "<em>which</em>",
+        "<em>is</em>",
+        "in",
+        "them",
+        "go",
+        "away?",
+        "they",
+        "die,",
+        "even",
+        "without",
+        "wisdom."
+      ],
+      "info": ""
     }
   ]
 }

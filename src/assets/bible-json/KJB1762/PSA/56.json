@@ -1,5 +1,5 @@
 {
-  "header": "¶ To the chief Musician upon Jonathelemrechokim, Michtam of David, when the Philistines took him in Gath.",
+  "header": "",
   "footer": "",
   "language": "English",
   "verses": [
@@ -9,9 +9,42 @@
       "chapter": 56,
       "verse_start": 1,
       "verse_end": 1,
-      "text": "Be merciful unto me, O God: for man would swallow me up; he fighting daily oppresseth me.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "(To",
+        "the",
+        "chief",
+        "Musician",
+        "upon",
+        "Jonathelemrechokim,",
+        "Michtam",
+        "of",
+        "David,",
+        "when",
+        "the",
+        "Philistines",
+        "took",
+        "him",
+        "in",
+        "Gath.)",
+        "Be",
+        "merciful",
+        "unto",
+        "me,",
+        "O",
+        "God:",
+        "for",
+        "man",
+        "would",
+        "swallow",
+        "me",
+        "up;",
+        "he",
+        "fighting",
+        "daily",
+        "oppresseth",
+        "me."
+      ],
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -19,9 +52,28 @@
       "chapter": 56,
       "verse_start": 2,
       "verse_end": 2,
-      "text": "Mine enemies would daily swallow <em>me</em> up: for <em>they be</em> many that fight against me, O thou most High.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Mine",
+        "enemies",
+        "would",
+        "daily",
+        "swallow",
+        "<em>me</em>",
+        "up:",
+        "for",
+        "<em>they</em>",
+        "<em>be</em>",
+        "many",
+        "that",
+        "fight",
+        "against",
+        "me,",
+        "O",
+        "thou",
+        "most",
+        "High."
+      ],
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -29,9 +81,19 @@
       "chapter": 56,
       "verse_start": 3,
       "verse_end": 3,
-      "text": "What time I am afraid, I will trust in thee.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "What",
+        "time",
+        "I",
+        "am",
+        "afraid,",
+        "I",
+        "will",
+        "trust",
+        "in",
+        "thee."
+      ],
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -39,9 +101,33 @@
       "chapter": 56,
       "verse_start": 4,
       "verse_end": 4,
-      "text": "In God I will praise his word, in God I have put my trust; I will not fear what flesh can do unto me.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "In",
+        "God",
+        "I",
+        "will",
+        "praise",
+        "his",
+        "word,",
+        "in",
+        "God",
+        "I",
+        "have",
+        "put",
+        "my",
+        "trust;",
+        "I",
+        "will",
+        "not",
+        "fear",
+        "what",
+        "flesh",
+        "can",
+        "do",
+        "unto",
+        "me."
+      ],
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -49,9 +135,23 @@
       "chapter": 56,
       "verse_start": 5,
       "verse_end": 5,
-      "text": "Every day they wrest my words: all their thoughts <em>are</em> against me for evil.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Every",
+        "day",
+        "they",
+        "wrest",
+        "my",
+        "words:",
+        "all",
+        "their",
+        "thoughts",
+        "<em>are</em>",
+        "against",
+        "me",
+        "for",
+        "evil."
+      ],
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -59,9 +159,26 @@
       "chapter": 56,
       "verse_start": 6,
       "verse_end": 6,
-      "text": "They gather themselves together, they hide themselves, they mark my steps, when they wait for my soul.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "They",
+        "gather",
+        "themselves",
+        "together,",
+        "they",
+        "hide",
+        "themselves,",
+        "they",
+        "mark",
+        "my",
+        "steps,",
+        "when",
+        "they",
+        "wait",
+        "for",
+        "my",
+        "soul."
+      ],
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -69,9 +186,23 @@
       "chapter": 56,
       "verse_start": 7,
       "verse_end": 7,
-      "text": "Shall they escape by iniquity? in <em>thine</em> anger cast down the people, O God.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Shall",
+        "they",
+        "escape",
+        "by",
+        "iniquity?",
+        "in",
+        "<em>thine</em>",
+        "anger",
+        "cast",
+        "down",
+        "the",
+        "people,",
+        "O",
+        "God."
+      ],
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -79,9 +210,26 @@
       "chapter": 56,
       "verse_start": 8,
       "verse_end": 8,
-      "text": "Thou tellest my wanderings: put thou my tears into thy bottle: <em>are they</em> not in thy book?",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Thou",
+        "tellest",
+        "my",
+        "wanderings:",
+        "put",
+        "thou",
+        "my",
+        "tears",
+        "into",
+        "thy",
+        "bottle:",
+        "<em>are</em>",
+        "<em>they</em>",
+        "not",
+        "in",
+        "thy",
+        "book?"
+      ],
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -89,9 +237,28 @@
       "chapter": 56,
       "verse_start": 9,
       "verse_end": 9,
-      "text": "When I cry <em>unto thee,</em> then shall mine enemies turn back: this I know; for God <em>is</em> for me.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "When",
+        "I",
+        "cry",
+        "<em>unto</em>",
+        "<em>thee,</em>",
+        "then",
+        "shall",
+        "mine",
+        "enemies",
+        "turn",
+        "back:",
+        "this",
+        "I",
+        "know;",
+        "for",
+        "God",
+        "<em>is</em>",
+        "for",
+        "me."
+      ],
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -99,9 +266,24 @@
       "chapter": 56,
       "verse_start": 10,
       "verse_end": 10,
-      "text": "In God will I praise <em>his</em> word: in the LORD will I praise <em>his</em> word.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "In",
+        "God",
+        "will",
+        "I",
+        "praise",
+        "<em>his</em>",
+        "word:",
+        "in",
+        "the",
+        "LORD",
+        "will",
+        "I",
+        "praise",
+        "<em>his</em>",
+        "word."
+      ],
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -109,9 +291,27 @@
       "chapter": 56,
       "verse_start": 11,
       "verse_end": 11,
-      "text": "In God have I put my trust: I will not be afraid what man can do unto me.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "In",
+        "God",
+        "have",
+        "I",
+        "put",
+        "my",
+        "trust:",
+        "I",
+        "will",
+        "not",
+        "be",
+        "afraid",
+        "what",
+        "man",
+        "can",
+        "do",
+        "unto",
+        "me."
+      ],
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -119,9 +319,22 @@
       "chapter": 56,
       "verse_start": 12,
       "verse_end": 12,
-      "text": "Thy vows <em>are</em> upon me, O God: I will render praises unto thee.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Thy",
+        "vows",
+        "<em>are</em>",
+        "upon",
+        "me,",
+        "O",
+        "God:",
+        "I",
+        "will",
+        "render",
+        "praises",
+        "unto",
+        "thee."
+      ],
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -129,9 +342,37 @@
       "chapter": 56,
       "verse_start": 13,
       "verse_end": 13,
-      "text": "For thou hast delivered my soul from death: <em>wilt</em> not <em>thou deliver</em> my feet from falling, that I may walk before God in the light of the living?",
-      "info": "",
-      "language": "English"
+      "text": [
+        "For",
+        "thou",
+        "hast",
+        "delivered",
+        "my",
+        "soul",
+        "from",
+        "death:",
+        "<em>wilt</em>",
+        "not",
+        "<em>thou</em>",
+        "<em>deliver</em>",
+        "my",
+        "feet",
+        "from",
+        "falling,",
+        "that",
+        "I",
+        "may",
+        "walk",
+        "before",
+        "God",
+        "in",
+        "the",
+        "light",
+        "of",
+        "the",
+        "living?"
+      ],
+      "info": ""
     }
   ]
 }

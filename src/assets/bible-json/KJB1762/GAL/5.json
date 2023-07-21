@@ -9,9 +9,31 @@
       "chapter": 5,
       "verse_start": 1,
       "verse_end": 1,
-      "text": "Stand fast therefore in the liberty wherewith Christ hath made us free, and be not entangled again with the yoke of bondage.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Stand",
+        "fast",
+        "therefore",
+        "in",
+        "the",
+        "liberty",
+        "wherewith",
+        "Christ",
+        "hath",
+        "made",
+        "us",
+        "free,",
+        "and",
+        "be",
+        "not",
+        "entangled",
+        "again",
+        "with",
+        "the",
+        "yoke",
+        "of",
+        "bondage."
+      ],
+      "info": ""
     },
     {
       "book_id": "GAL",
@@ -19,9 +41,25 @@
       "chapter": 5,
       "verse_start": 2,
       "verse_end": 2,
-      "text": "Behold, I Paul say unto you, that if ye be circumcised, Christ shall profit you nothing.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Behold,",
+        "I",
+        "Paul",
+        "say",
+        "unto",
+        "you,",
+        "that",
+        "if",
+        "ye",
+        "be",
+        "circumcised,",
+        "Christ",
+        "shall",
+        "profit",
+        "you",
+        "nothing."
+      ],
+      "info": ""
     },
     {
       "book_id": "GAL",
@@ -29,9 +67,29 @@
       "chapter": 5,
       "verse_start": 3,
       "verse_end": 3,
-      "text": "For I testify again to every man that is circumcised, that he is a debtor to do the whole law.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "For",
+        "I",
+        "testify",
+        "again",
+        "to",
+        "every",
+        "man",
+        "that",
+        "is",
+        "circumcised,",
+        "that",
+        "he",
+        "is",
+        "a",
+        "debtor",
+        "to",
+        "do",
+        "the",
+        "whole",
+        "law."
+      ],
+      "info": ""
     },
     {
       "book_id": "GAL",
@@ -39,9 +97,30 @@
       "chapter": 5,
       "verse_start": 4,
       "verse_end": 4,
-      "text": "Christ is become of no effect unto you, whosoever of you are justified by the law; ye are fallen from grace.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Christ",
+        "is",
+        "become",
+        "of",
+        "no",
+        "effect",
+        "unto",
+        "you,",
+        "whosoever",
+        "of",
+        "you",
+        "are",
+        "justified",
+        "by",
+        "the",
+        "law;",
+        "ye",
+        "are",
+        "fallen",
+        "from",
+        "grace."
+      ],
+      "info": ""
     },
     {
       "book_id": "GAL",
@@ -49,9 +128,22 @@
       "chapter": 5,
       "verse_start": 5,
       "verse_end": 5,
-      "text": "For we through the Spirit wait for the hope of righteousness by faith.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "For",
+        "we",
+        "through",
+        "the",
+        "Spirit",
+        "wait",
+        "for",
+        "the",
+        "hope",
+        "of",
+        "righteousness",
+        "by",
+        "faith."
+      ],
+      "info": ""
     },
     {
       "book_id": "GAL",
@@ -59,9 +151,26 @@
       "chapter": 5,
       "verse_start": 6,
       "verse_end": 6,
-      "text": "For in Jesus Christ neither circumcision availeth any thing, nor uncircumcision; but faith which worketh by love.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "For",
+        "in",
+        "Jesus",
+        "Christ",
+        "neither",
+        "circumcision",
+        "availeth",
+        "any",
+        "thing,",
+        "nor",
+        "uncircumcision;",
+        "but",
+        "faith",
+        "which",
+        "worketh",
+        "by",
+        "love."
+      ],
+      "info": ""
     },
     {
       "book_id": "GAL",
@@ -69,9 +178,24 @@
       "chapter": 5,
       "verse_start": 7,
       "verse_end": 7,
-      "text": "Ye did run well; who did hinder you that ye should not obey the truth?",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Ye",
+        "did",
+        "run",
+        "well;",
+        "who",
+        "did",
+        "hinder",
+        "you",
+        "that",
+        "ye",
+        "should",
+        "not",
+        "obey",
+        "the",
+        "truth?"
+      ],
+      "info": ""
     },
     {
       "book_id": "GAL",
@@ -79,9 +203,18 @@
       "chapter": 5,
       "verse_start": 8,
       "verse_end": 8,
-      "text": "This persuasion <em>cometh</em> not of him that calleth you.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "This",
+        "persuasion",
+        "<em>cometh</em>",
+        "not",
+        "of",
+        "him",
+        "that",
+        "calleth",
+        "you."
+      ],
+      "info": ""
     },
     {
       "book_id": "GAL",
@@ -89,9 +222,16 @@
       "chapter": 5,
       "verse_start": 9,
       "verse_end": 9,
-      "text": "A little leaven leaveneth the whole lump.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "A",
+        "little",
+        "leaven",
+        "leaveneth",
+        "the",
+        "whole",
+        "lump."
+      ],
+      "info": ""
     },
     {
       "book_id": "GAL",
@@ -99,9 +239,36 @@
       "chapter": 5,
       "verse_start": 10,
       "verse_end": 10,
-      "text": "I have confidence in you through the Lord, that ye will be none otherwise minded: but he that troubleth you shall bear his judgment, whosoever he be.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "I",
+        "have",
+        "confidence",
+        "in",
+        "you",
+        "through",
+        "the",
+        "Lord,",
+        "that",
+        "ye",
+        "will",
+        "be",
+        "none",
+        "otherwise",
+        "minded:",
+        "but",
+        "he",
+        "that",
+        "troubleth",
+        "you",
+        "shall",
+        "bear",
+        "his",
+        "judgment,",
+        "whosoever",
+        "he",
+        "be."
+      ],
+      "info": ""
     },
     {
       "book_id": "GAL",
@@ -109,9 +276,31 @@
       "chapter": 5,
       "verse_start": 11,
       "verse_end": 11,
-      "text": "And I, brethren, if I yet preach circumcision, why do I yet suffer persecution? then is the offence of the cross ceased.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "And",
+        "I,",
+        "brethren,",
+        "if",
+        "I",
+        "yet",
+        "preach",
+        "circumcision,",
+        "why",
+        "do",
+        "I",
+        "yet",
+        "suffer",
+        "persecution?",
+        "then",
+        "is",
+        "the",
+        "offence",
+        "of",
+        "the",
+        "cross",
+        "ceased."
+      ],
+      "info": ""
     },
     {
       "book_id": "GAL",
@@ -119,9 +308,19 @@
       "chapter": 5,
       "verse_start": 12,
       "verse_end": 12,
-      "text": "I would they were even cut off which trouble you.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "I",
+        "would",
+        "they",
+        "were",
+        "even",
+        "cut",
+        "off",
+        "which",
+        "trouble",
+        "you."
+      ],
+      "info": ""
     },
     {
       "book_id": "GAL",
@@ -129,9 +328,33 @@
       "chapter": 5,
       "verse_start": 13,
       "verse_end": 13,
-      "text": "For, brethren, ye have been called unto liberty; only <em>use</em> not liberty for an occasion to the flesh, but by love serve one another.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "For,",
+        "brethren,",
+        "ye",
+        "have",
+        "been",
+        "called",
+        "unto",
+        "liberty;",
+        "only",
+        "<em>use</em>",
+        "not",
+        "liberty",
+        "for",
+        "an",
+        "occasion",
+        "to",
+        "the",
+        "flesh,",
+        "but",
+        "by",
+        "love",
+        "serve",
+        "one",
+        "another."
+      ],
+      "info": ""
     },
     {
       "book_id": "GAL",
@@ -139,9 +362,28 @@
       "chapter": 5,
       "verse_start": 14,
       "verse_end": 14,
-      "text": "For all the law is fulfilled in one word, <em>even</em> in this; Thou shalt love thy neighbour as thyself.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "For",
+        "all",
+        "the",
+        "law",
+        "is",
+        "fulfilled",
+        "in",
+        "one",
+        "word,",
+        "<em>even</em>",
+        "in",
+        "this;",
+        "Thou",
+        "shalt",
+        "love",
+        "thy",
+        "neighbour",
+        "as",
+        "thyself."
+      ],
+      "info": ""
     },
     {
       "book_id": "GAL",
@@ -149,9 +391,27 @@
       "chapter": 5,
       "verse_start": 15,
       "verse_end": 15,
-      "text": "But if ye bite and devour one another, take heed that ye be not consumed one of another.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "But",
+        "if",
+        "ye",
+        "bite",
+        "and",
+        "devour",
+        "one",
+        "another,",
+        "take",
+        "heed",
+        "that",
+        "ye",
+        "be",
+        "not",
+        "consumed",
+        "one",
+        "of",
+        "another."
+      ],
+      "info": ""
     },
     {
       "book_id": "GAL",
@@ -159,9 +419,27 @@
       "chapter": 5,
       "verse_start": 16,
       "verse_end": 16,
-      "text": "<em>This</em> I say then, Walk in the Spirit, and ye shall not fulfil the lust of the flesh.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "<em>This</em>",
+        "I",
+        "say",
+        "then,",
+        "Walk",
+        "in",
+        "the",
+        "Spirit,",
+        "and",
+        "ye",
+        "shall",
+        "not",
+        "fulfil",
+        "the",
+        "lust",
+        "of",
+        "the",
+        "flesh."
+      ],
+      "info": ""
     },
     {
       "book_id": "GAL",
@@ -169,9 +447,41 @@
       "chapter": 5,
       "verse_start": 17,
       "verse_end": 17,
-      "text": "For the flesh lusteth against the Spirit, and the Spirit against the flesh: and these are contrary the one to the other: so that ye cannot do the things that ye would.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "For",
+        "the",
+        "flesh",
+        "lusteth",
+        "against",
+        "the",
+        "Spirit,",
+        "and",
+        "the",
+        "Spirit",
+        "against",
+        "the",
+        "flesh:",
+        "and",
+        "these",
+        "are",
+        "contrary",
+        "the",
+        "one",
+        "to",
+        "the",
+        "other:",
+        "so",
+        "that",
+        "ye",
+        "cannot",
+        "do",
+        "the",
+        "things",
+        "that",
+        "ye",
+        "would."
+      ],
+      "info": ""
     },
     {
       "book_id": "GAL",
@@ -179,9 +489,23 @@
       "chapter": 5,
       "verse_start": 18,
       "verse_end": 18,
-      "text": "But if ye be led of the Spirit, ye are not under the law.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "But",
+        "if",
+        "ye",
+        "be",
+        "led",
+        "of",
+        "the",
+        "Spirit,",
+        "ye",
+        "are",
+        "not",
+        "under",
+        "the",
+        "law."
+      ],
+      "info": ""
     },
     {
       "book_id": "GAL",
@@ -189,9 +513,24 @@
       "chapter": 5,
       "verse_start": 19,
       "verse_end": 19,
-      "text": "Now the works of the flesh are manifest, which are <em>these;</em> Adultery, fornication, uncleanness, lasciviousness,",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Now",
+        "the",
+        "works",
+        "of",
+        "the",
+        "flesh",
+        "are",
+        "manifest,",
+        "which",
+        "are",
+        "<em>these;</em>",
+        "Adultery,",
+        "fornication,",
+        "uncleanness,",
+        "lasciviousness,"
+      ],
+      "info": ""
     },
     {
       "book_id": "GAL",
@@ -199,9 +538,18 @@
       "chapter": 5,
       "verse_start": 20,
       "verse_end": 20,
-      "text": "Idolatry, witchcraft, hatred, variance, emulations, wrath, strife, seditions, heresies,",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Idolatry,",
+        "witchcraft,",
+        "hatred,",
+        "variance,",
+        "emulations,",
+        "wrath,",
+        "strife,",
+        "seditions,",
+        "heresies,"
+      ],
+      "info": ""
     },
     {
       "book_id": "GAL",
@@ -209,9 +557,45 @@
       "chapter": 5,
       "verse_start": 21,
       "verse_end": 21,
-      "text": "Envyings, murders, drunkenness, revellings, and such like: of the which I tell you before, as I have also told <em>you</em> in time past, that they which do such things shall not inherit the kingdom of God.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Envyings,",
+        "murders,",
+        "drunkenness,",
+        "revellings,",
+        "and",
+        "such",
+        "like:",
+        "of",
+        "the",
+        "which",
+        "I",
+        "tell",
+        "you",
+        "before,",
+        "as",
+        "I",
+        "have",
+        "also",
+        "told",
+        "<em>you</em>",
+        "in",
+        "time",
+        "past,",
+        "that",
+        "they",
+        "which",
+        "do",
+        "such",
+        "things",
+        "shall",
+        "not",
+        "inherit",
+        "the",
+        "kingdom",
+        "of",
+        "God."
+      ],
+      "info": ""
     },
     {
       "book_id": "GAL",
@@ -219,9 +603,23 @@
       "chapter": 5,
       "verse_start": 22,
       "verse_end": 22,
-      "text": "But the fruit of the Spirit is love, joy, peace, longsuffering, gentleness, goodness, faith,",
-      "info": "",
-      "language": "English"
+      "text": [
+        "But",
+        "the",
+        "fruit",
+        "of",
+        "the",
+        "Spirit",
+        "is",
+        "love,",
+        "joy,",
+        "peace,",
+        "longsuffering,",
+        "gentleness,",
+        "goodness,",
+        "faith,"
+      ],
+      "info": ""
     },
     {
       "book_id": "GAL",
@@ -229,9 +627,17 @@
       "chapter": 5,
       "verse_start": 23,
       "verse_end": 23,
-      "text": "Meekness, temperance: against such there is no law.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Meekness,",
+        "temperance:",
+        "against",
+        "such",
+        "there",
+        "is",
+        "no",
+        "law."
+      ],
+      "info": ""
     },
     {
       "book_id": "GAL",
@@ -239,9 +645,23 @@
       "chapter": 5,
       "verse_start": 24,
       "verse_end": 24,
-      "text": "And they that are Christ's have crucified the flesh with the affections and lusts.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "And",
+        "they",
+        "that",
+        "are",
+        "Christ's",
+        "have",
+        "crucified",
+        "the",
+        "flesh",
+        "with",
+        "the",
+        "affections",
+        "and",
+        "lusts."
+      ],
+      "info": ""
     },
     {
       "book_id": "GAL",
@@ -249,9 +669,22 @@
       "chapter": 5,
       "verse_start": 25,
       "verse_end": 25,
-      "text": "If we live in the Spirit, let us also walk in the Spirit.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "If",
+        "we",
+        "live",
+        "in",
+        "the",
+        "Spirit,",
+        "let",
+        "us",
+        "also",
+        "walk",
+        "in",
+        "the",
+        "Spirit."
+      ],
+      "info": ""
     },
     {
       "book_id": "GAL",
@@ -259,9 +692,23 @@
       "chapter": 5,
       "verse_start": 26,
       "verse_end": 26,
-      "text": "Let us not be desirous of vain glory, provoking one another, envying one another.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Let",
+        "us",
+        "not",
+        "be",
+        "desirous",
+        "of",
+        "vain",
+        "glory,",
+        "provoking",
+        "one",
+        "another,",
+        "envying",
+        "one",
+        "another."
+      ],
+      "info": ""
     }
   ]
 }

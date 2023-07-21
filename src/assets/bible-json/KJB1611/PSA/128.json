@@ -1,5 +1,5 @@
 {
-  "header": "¶ A song of degrees.",
+  "header": "¶ A",
   "footer": "",
   "language": "English",
   "verses": [
@@ -9,7 +9,24 @@
       "chapter": 128,
       "verse_start": 1,
       "verse_end": 1,
-      "text": "Blessed is euery one that feareth the Lord: that walketh in his wayes.",
+      "text": [
+        "<em>song</em>",
+        "<em>of</em>",
+        "<em>degrees.</em>",
+        "Blessed",
+        "is",
+        "euery",
+        "one",
+        "that",
+        "feareth",
+        "the",
+        "Lord:",
+        "that",
+        "walketh",
+        "in",
+        "his",
+        "wayes."
+      ],
       "info": ""
     },
     {
@@ -18,7 +35,28 @@
       "chapter": 128,
       "verse_start": 2,
       "verse_end": 2,
-      "text": "For thou shalt eat the labour of thine handes: happie shalt thou bee, and it shall be well with thee.",
+      "text": [
+        "For",
+        "thou",
+        "shalt",
+        "eat",
+        "the",
+        "labour",
+        "of",
+        "thine",
+        "handes:",
+        "happie",
+        "shalt",
+        "thou",
+        "bee,",
+        "and",
+        "it",
+        "shall",
+        "be",
+        "well",
+        "with",
+        "thee."
+      ],
       "info": ""
     },
     {
@@ -27,7 +65,30 @@
       "chapter": 128,
       "verse_start": 3,
       "verse_end": 3,
-      "text": "Thy wife shalbe as a fruitful Uine by the sides of thine house, thy children like Oliue plants: round about thy table.",
+      "text": [
+        "Thy",
+        "wife",
+        "shalbe",
+        "as",
+        "a",
+        "fruitful",
+        "Uine",
+        "by",
+        "the",
+        "sides",
+        "of",
+        "thine",
+        "house,",
+        "thy",
+        "children",
+        "like",
+        "Oliue",
+        "plants:",
+        "round",
+        "about",
+        "thy",
+        "table."
+      ],
       "info": ""
     },
     {
@@ -36,7 +97,20 @@
       "chapter": 128,
       "verse_start": 4,
       "verse_end": 4,
-      "text": "Beholde that thus shall the man be blessed; that feareth the Lord.",
+      "text": [
+        "Beholde",
+        "that",
+        "thus",
+        "shall",
+        "the",
+        "man",
+        "be",
+        "blessed;",
+        "that",
+        "feareth",
+        "the",
+        "Lord."
+      ],
       "info": ""
     },
     {
@@ -45,7 +119,30 @@
       "chapter": 128,
       "verse_start": 5,
       "verse_end": 5,
-      "text": "The Lord shall blesse thee out of Zion: and thou shalt see the good of Ierusalem, all the dayes of thy life.",
+      "text": [
+        "The",
+        "Lord",
+        "shall",
+        "blesse",
+        "thee",
+        "out",
+        "of",
+        "Zion:",
+        "and",
+        "thou",
+        "shalt",
+        "see",
+        "the",
+        "good",
+        "of",
+        "Ierusalem,",
+        "all",
+        "the",
+        "dayes",
+        "of",
+        "thy",
+        "life."
+      ],
       "info": ""
     },
     {
@@ -54,7 +151,19 @@
       "chapter": 128,
       "verse_start": 6,
       "verse_end": 6,
-      "text": "Yea, thou shalt see thy childrens children: and peace vpon Israel.",
+      "text": [
+        "Yea,",
+        "thou",
+        "shalt",
+        "see",
+        "thy",
+        "childrens",
+        "children:",
+        "and",
+        "peace",
+        "vpon",
+        "Israel."
+      ],
       "info": ""
     }
   ]

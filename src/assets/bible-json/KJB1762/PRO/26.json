@@ -9,9 +9,26 @@
       "chapter": 26,
       "verse_start": 1,
       "verse_end": 1,
-      "text": "As snow in summer, and as rain in harvest, so honour is not seemly for a fool.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "As",
+        "snow",
+        "in",
+        "summer,",
+        "and",
+        "as",
+        "rain",
+        "in",
+        "harvest,",
+        "so",
+        "honour",
+        "is",
+        "not",
+        "seemly",
+        "for",
+        "a",
+        "fool."
+      ],
+      "info": ""
     },
     {
       "book_id": "PRO",
@@ -19,9 +36,26 @@
       "chapter": 26,
       "verse_start": 2,
       "verse_end": 2,
-      "text": "As the bird by wandering, as the swallow by flying, so the curse causeless shall not come.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "As",
+        "the",
+        "bird",
+        "by",
+        "wandering,",
+        "as",
+        "the",
+        "swallow",
+        "by",
+        "flying,",
+        "so",
+        "the",
+        "curse",
+        "causeless",
+        "shall",
+        "not",
+        "come."
+      ],
+      "info": ""
     },
     {
       "book_id": "PRO",
@@ -29,9 +63,26 @@
       "chapter": 26,
       "verse_start": 3,
       "verse_end": 3,
-      "text": "A whip for the horse, a bridle for the ass, and a rod for the fool's back.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "A",
+        "whip",
+        "for",
+        "the",
+        "horse,",
+        "a",
+        "bridle",
+        "for",
+        "the",
+        "ass,",
+        "and",
+        "a",
+        "rod",
+        "for",
+        "the",
+        "fool's",
+        "back."
+      ],
+      "info": ""
     },
     {
       "book_id": "PRO",
@@ -39,9 +90,24 @@
       "chapter": 26,
       "verse_start": 4,
       "verse_end": 4,
-      "text": "Answer not a fool according to his folly, lest thou also be like unto him.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Answer",
+        "not",
+        "a",
+        "fool",
+        "according",
+        "to",
+        "his",
+        "folly,",
+        "lest",
+        "thou",
+        "also",
+        "be",
+        "like",
+        "unto",
+        "him."
+      ],
+      "info": ""
     },
     {
       "book_id": "PRO",
@@ -49,9 +115,24 @@
       "chapter": 26,
       "verse_start": 5,
       "verse_end": 5,
-      "text": "Answer a fool according to his folly, lest he be wise in his own conceit.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Answer",
+        "a",
+        "fool",
+        "according",
+        "to",
+        "his",
+        "folly,",
+        "lest",
+        "he",
+        "be",
+        "wise",
+        "in",
+        "his",
+        "own",
+        "conceit."
+      ],
+      "info": ""
     },
     {
       "book_id": "PRO",
@@ -59,9 +140,27 @@
       "chapter": 26,
       "verse_start": 6,
       "verse_end": 6,
-      "text": "He that sendeth a message by the hand of a fool cutteth off the feet, <em>and</em> drinketh damage.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "He",
+        "that",
+        "sendeth",
+        "a",
+        "message",
+        "by",
+        "the",
+        "hand",
+        "of",
+        "a",
+        "fool",
+        "cutteth",
+        "off",
+        "the",
+        "feet,",
+        "<em>and</em>",
+        "drinketh",
+        "damage."
+      ],
+      "info": ""
     },
     {
       "book_id": "PRO",
@@ -69,9 +168,26 @@
       "chapter": 26,
       "verse_start": 7,
       "verse_end": 7,
-      "text": "The legs of the lame are not equal: so <em>is</em> a parable in the mouth of fools.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "The",
+        "legs",
+        "of",
+        "the",
+        "lame",
+        "are",
+        "not",
+        "equal:",
+        "so",
+        "<em>is</em>",
+        "a",
+        "parable",
+        "in",
+        "the",
+        "mouth",
+        "of",
+        "fools."
+      ],
+      "info": ""
     },
     {
       "book_id": "PRO",
@@ -79,9 +195,27 @@
       "chapter": 26,
       "verse_start": 8,
       "verse_end": 8,
-      "text": "As he that bindeth a stone in a sling, so <em>is</em> he that giveth honour to a fool.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "As",
+        "he",
+        "that",
+        "bindeth",
+        "a",
+        "stone",
+        "in",
+        "a",
+        "sling,",
+        "so",
+        "<em>is</em>",
+        "he",
+        "that",
+        "giveth",
+        "honour",
+        "to",
+        "a",
+        "fool."
+      ],
+      "info": ""
     },
     {
       "book_id": "PRO",
@@ -89,9 +223,29 @@
       "chapter": 26,
       "verse_start": 9,
       "verse_end": 9,
-      "text": "<em>As</em> a thorn goeth up into the hand of a drunkard, so <em>is</em> a parable in the mouth of fools.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "<em>As</em>",
+        "a",
+        "thorn",
+        "goeth",
+        "up",
+        "into",
+        "the",
+        "hand",
+        "of",
+        "a",
+        "drunkard,",
+        "so",
+        "<em>is</em>",
+        "a",
+        "parable",
+        "in",
+        "the",
+        "mouth",
+        "of",
+        "fools."
+      ],
+      "info": ""
     },
     {
       "book_id": "PRO",
@@ -99,9 +253,23 @@
       "chapter": 26,
       "verse_start": 10,
       "verse_end": 10,
-      "text": "The great <em>God</em> that formed all <em>things</em> both rewardeth the fool, and rewardeth transgressors.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "The",
+        "great",
+        "<em>God</em>",
+        "that",
+        "formed",
+        "all",
+        "<em>things</em>",
+        "both",
+        "rewardeth",
+        "the",
+        "fool,",
+        "and",
+        "rewardeth",
+        "transgressors."
+      ],
+      "info": ""
     },
     {
       "book_id": "PRO",
@@ -109,9 +277,23 @@
       "chapter": 26,
       "verse_start": 11,
       "verse_end": 11,
-      "text": "As a dog returneth to his vomit, <em>so</em> a fool returneth to his folly.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "As",
+        "a",
+        "dog",
+        "returneth",
+        "to",
+        "his",
+        "vomit,",
+        "<em>so</em>",
+        "a",
+        "fool",
+        "returneth",
+        "to",
+        "his",
+        "folly."
+      ],
+      "info": ""
     },
     {
       "book_id": "PRO",
@@ -119,9 +301,28 @@
       "chapter": 26,
       "verse_start": 12,
       "verse_end": 12,
-      "text": "Seest thou a man wise in his own conceit? <em>there is</em> more hope of a fool than of him.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Seest",
+        "thou",
+        "a",
+        "man",
+        "wise",
+        "in",
+        "his",
+        "own",
+        "conceit?",
+        "<em>there</em>",
+        "<em>is</em>",
+        "more",
+        "hope",
+        "of",
+        "a",
+        "fool",
+        "than",
+        "of",
+        "him."
+      ],
+      "info": ""
     },
     {
       "book_id": "PRO",
@@ -129,9 +330,26 @@
       "chapter": 26,
       "verse_start": 13,
       "verse_end": 13,
-      "text": "The slothful <em>man</em> saith, <em>There is</em> a lion in the way; a lion <em>is</em> in the streets.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "The",
+        "slothful",
+        "<em>man</em>",
+        "saith,",
+        "<em>There</em>",
+        "<em>is</em>",
+        "a",
+        "lion",
+        "in",
+        "the",
+        "way;",
+        "a",
+        "lion",
+        "<em>is</em>",
+        "in",
+        "the",
+        "streets."
+      ],
+      "info": ""
     },
     {
       "book_id": "PRO",
@@ -139,9 +357,23 @@
       "chapter": 26,
       "verse_start": 14,
       "verse_end": 14,
-      "text": "<em>As</em> the door turneth upon his hinges, so <em>doth</em> the slothful upon his bed.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "<em>As</em>",
+        "the",
+        "door",
+        "turneth",
+        "upon",
+        "his",
+        "hinges,",
+        "so",
+        "<em>doth</em>",
+        "the",
+        "slothful",
+        "upon",
+        "his",
+        "bed."
+      ],
+      "info": ""
     },
     {
       "book_id": "PRO",
@@ -149,9 +381,27 @@
       "chapter": 26,
       "verse_start": 15,
       "verse_end": 15,
-      "text": "The slothful hideth his hand in <em>his</em> bosom; it grieveth him to bring it again to his mouth.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "The",
+        "slothful",
+        "hideth",
+        "his",
+        "hand",
+        "in",
+        "<em>his</em>",
+        "bosom;",
+        "it",
+        "grieveth",
+        "him",
+        "to",
+        "bring",
+        "it",
+        "again",
+        "to",
+        "his",
+        "mouth."
+      ],
+      "info": ""
     },
     {
       "book_id": "PRO",
@@ -159,9 +409,25 @@
       "chapter": 26,
       "verse_start": 16,
       "verse_end": 16,
-      "text": "The sluggard <em>is</em> wiser in his own conceit than seven men that can render a reason.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "The",
+        "sluggard",
+        "<em>is</em>",
+        "wiser",
+        "in",
+        "his",
+        "own",
+        "conceit",
+        "than",
+        "seven",
+        "men",
+        "that",
+        "can",
+        "render",
+        "a",
+        "reason."
+      ],
+      "info": ""
     },
     {
       "book_id": "PRO",
@@ -169,9 +435,31 @@
       "chapter": 26,
       "verse_start": 17,
       "verse_end": 17,
-      "text": "He that passeth by, <em>and</em> meddleth with strife <em>belonging</em> not to him, <em>is like</em> one that taketh a dog by the ears.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "He",
+        "that",
+        "passeth",
+        "by,",
+        "<em>and</em>",
+        "meddleth",
+        "with",
+        "strife",
+        "<em>belonging</em>",
+        "not",
+        "to",
+        "him,",
+        "<em>is</em>",
+        "<em>like</em>",
+        "one",
+        "that",
+        "taketh",
+        "a",
+        "dog",
+        "by",
+        "the",
+        "ears."
+      ],
+      "info": ""
     },
     {
       "book_id": "PRO",
@@ -179,9 +467,19 @@
       "chapter": 26,
       "verse_start": 18,
       "verse_end": 18,
-      "text": "As a mad <em>man</em> who casteth firebrands, arrows, and death,",
-      "info": "",
-      "language": "English"
+      "text": [
+        "As",
+        "a",
+        "mad",
+        "<em>man</em>",
+        "who",
+        "casteth",
+        "firebrands,",
+        "arrows,",
+        "and",
+        "death,"
+      ],
+      "info": ""
     },
     {
       "book_id": "PRO",
@@ -189,9 +487,24 @@
       "chapter": 26,
       "verse_start": 19,
       "verse_end": 19,
-      "text": "So <em>is</em> the man <em>that</em> deceiveth his neighbour, and saith, Am not I in sport?",
-      "info": "",
-      "language": "English"
+      "text": [
+        "So",
+        "<em>is</em>",
+        "the",
+        "man",
+        "<em>that</em>",
+        "deceiveth",
+        "his",
+        "neighbour,",
+        "and",
+        "saith,",
+        "Am",
+        "not",
+        "I",
+        "in",
+        "sport?"
+      ],
+      "info": ""
     },
     {
       "book_id": "PRO",
@@ -199,9 +512,27 @@
       "chapter": 26,
       "verse_start": 20,
       "verse_end": 20,
-      "text": "Where no wood is, <em>there</em> the fire goeth out: so where <em>there is</em> no talebearer, the strife ceaseth.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Where",
+        "no",
+        "wood",
+        "is,",
+        "<em>there</em>",
+        "the",
+        "fire",
+        "goeth",
+        "out:",
+        "so",
+        "where",
+        "<em>there</em>",
+        "<em>is</em>",
+        "no",
+        "talebearer,",
+        "the",
+        "strife",
+        "ceaseth."
+      ],
+      "info": ""
     },
     {
       "book_id": "PRO",
@@ -209,9 +540,27 @@
       "chapter": 26,
       "verse_start": 21,
       "verse_end": 21,
-      "text": "<em>As</em> coals <em>are</em> to burning coals, and wood to fire; so <em>is</em> a contentious man to kindle strife.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "<em>As</em>",
+        "coals",
+        "<em>are</em>",
+        "to",
+        "burning",
+        "coals,",
+        "and",
+        "wood",
+        "to",
+        "fire;",
+        "so",
+        "<em>is</em>",
+        "a",
+        "contentious",
+        "man",
+        "to",
+        "kindle",
+        "strife."
+      ],
+      "info": ""
     },
     {
       "book_id": "PRO",
@@ -219,9 +568,28 @@
       "chapter": 26,
       "verse_start": 22,
       "verse_end": 22,
-      "text": "The words of a talebearer <em>are</em> as wounds, and they go down into the innermost parts of the belly.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "The",
+        "words",
+        "of",
+        "a",
+        "talebearer",
+        "<em>are</em>",
+        "as",
+        "wounds,",
+        "and",
+        "they",
+        "go",
+        "down",
+        "into",
+        "the",
+        "innermost",
+        "parts",
+        "of",
+        "the",
+        "belly."
+      ],
+      "info": ""
     },
     {
       "book_id": "PRO",
@@ -229,9 +597,23 @@
       "chapter": 26,
       "verse_start": 23,
       "verse_end": 23,
-      "text": "Burning lips and a wicked heart <em>are like</em> a potsherd covered with silver dross.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Burning",
+        "lips",
+        "and",
+        "a",
+        "wicked",
+        "heart",
+        "<em>are</em>",
+        "<em>like</em>",
+        "a",
+        "potsherd",
+        "covered",
+        "with",
+        "silver",
+        "dross."
+      ],
+      "info": ""
     },
     {
       "book_id": "PRO",
@@ -239,9 +621,22 @@
       "chapter": 26,
       "verse_start": 24,
       "verse_end": 24,
-      "text": "He that hateth dissembleth with his lips, and layeth up deceit within him;",
-      "info": "",
-      "language": "English"
+      "text": [
+        "He",
+        "that",
+        "hateth",
+        "dissembleth",
+        "with",
+        "his",
+        "lips,",
+        "and",
+        "layeth",
+        "up",
+        "deceit",
+        "within",
+        "him;"
+      ],
+      "info": ""
     },
     {
       "book_id": "PRO",
@@ -249,9 +644,24 @@
       "chapter": 26,
       "verse_start": 25,
       "verse_end": 25,
-      "text": "When he speaketh fair, believe him not: for <em>there are</em> seven abominations in his heart.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "When",
+        "he",
+        "speaketh",
+        "fair,",
+        "believe",
+        "him",
+        "not:",
+        "for",
+        "<em>there</em>",
+        "<em>are</em>",
+        "seven",
+        "abominations",
+        "in",
+        "his",
+        "heart."
+      ],
+      "info": ""
     },
     {
       "book_id": "PRO",
@@ -259,9 +669,24 @@
       "chapter": 26,
       "verse_start": 26,
       "verse_end": 26,
-      "text": "<em>Whose</em> hatred is covered by deceit, his wickedness shall be shewed before the <em>whole</em> congregation.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "<em>Whose</em>",
+        "hatred",
+        "is",
+        "covered",
+        "by",
+        "deceit,",
+        "his",
+        "wickedness",
+        "shall",
+        "be",
+        "shewed",
+        "before",
+        "the",
+        "<em>whole</em>",
+        "congregation."
+      ],
+      "info": ""
     },
     {
       "book_id": "PRO",
@@ -269,9 +694,27 @@
       "chapter": 26,
       "verse_start": 27,
       "verse_end": 27,
-      "text": "Whoso diggeth a pit shall fall therein: and he that rolleth a stone, it will return upon him.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Whoso",
+        "diggeth",
+        "a",
+        "pit",
+        "shall",
+        "fall",
+        "therein:",
+        "and",
+        "he",
+        "that",
+        "rolleth",
+        "a",
+        "stone,",
+        "it",
+        "will",
+        "return",
+        "upon",
+        "him."
+      ],
+      "info": ""
     },
     {
       "book_id": "PRO",
@@ -279,9 +722,25 @@
       "chapter": 26,
       "verse_start": 28,
       "verse_end": 28,
-      "text": "A lying tongue hateth <em>those that are</em> afflicted by it; and a flattering mouth worketh ruin.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "A",
+        "lying",
+        "tongue",
+        "hateth",
+        "<em>those</em>",
+        "<em>that</em>",
+        "<em>are</em>",
+        "afflicted",
+        "by",
+        "it;",
+        "and",
+        "a",
+        "flattering",
+        "mouth",
+        "worketh",
+        "ruin."
+      ],
+      "info": ""
     }
   ]
 }

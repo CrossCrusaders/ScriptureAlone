@@ -9,9 +9,14 @@
       "chapter": 19,
       "verse_start": 1,
       "verse_end": 1,
-      "text": "Then Job answered and said,",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Then",
+        "Job",
+        "answered",
+        "and",
+        "said,"
+      ],
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -19,9 +24,23 @@
       "chapter": 19,
       "verse_start": 2,
       "verse_end": 2,
-      "text": "How long will ye vex my soul, and break me in pieces with words?",
-      "info": "",
-      "language": "English"
+      "text": [
+        "How",
+        "long",
+        "will",
+        "ye",
+        "vex",
+        "my",
+        "soul,",
+        "and",
+        "break",
+        "me",
+        "in",
+        "pieces",
+        "with",
+        "words?"
+      ],
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -29,9 +48,27 @@
       "chapter": 19,
       "verse_start": 3,
       "verse_end": 3,
-      "text": "These ten times have ye reproached me: ye are not ashamed <em>that</em> ye make yourselves strange to me.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "These",
+        "ten",
+        "times",
+        "have",
+        "ye",
+        "reproached",
+        "me:",
+        "ye",
+        "are",
+        "not",
+        "ashamed",
+        "<em>that</em>",
+        "ye",
+        "make",
+        "yourselves",
+        "strange",
+        "to",
+        "me."
+      ],
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -39,9 +76,22 @@
       "chapter": 19,
       "verse_start": 4,
       "verse_end": 4,
-      "text": "And be it indeed <em>that</em> I have erred, mine error remaineth with myself.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "And",
+        "be",
+        "it",
+        "indeed",
+        "<em>that</em>",
+        "I",
+        "have",
+        "erred,",
+        "mine",
+        "error",
+        "remaineth",
+        "with",
+        "myself."
+      ],
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -49,9 +99,23 @@
       "chapter": 19,
       "verse_start": 5,
       "verse_end": 5,
-      "text": "If indeed ye will magnify <em>yourselves</em> against me, and plead against me my reproach:",
-      "info": "",
-      "language": "English"
+      "text": [
+        "If",
+        "indeed",
+        "ye",
+        "will",
+        "magnify",
+        "<em>yourselves</em>",
+        "against",
+        "me,",
+        "and",
+        "plead",
+        "against",
+        "me",
+        "my",
+        "reproach:"
+      ],
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -59,9 +123,23 @@
       "chapter": 19,
       "verse_start": 6,
       "verse_end": 6,
-      "text": "Know now that God hath overthrown me, and hath compassed me with his net.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Know",
+        "now",
+        "that",
+        "God",
+        "hath",
+        "overthrown",
+        "me,",
+        "and",
+        "hath",
+        "compassed",
+        "me",
+        "with",
+        "his",
+        "net."
+      ],
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -69,9 +147,28 @@
       "chapter": 19,
       "verse_start": 7,
       "verse_end": 7,
-      "text": "Behold, I cry out of wrong, but I am not heard: I cry aloud, but <em>there is</em> no judgment.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Behold,",
+        "I",
+        "cry",
+        "out",
+        "of",
+        "wrong,",
+        "but",
+        "I",
+        "am",
+        "not",
+        "heard:",
+        "I",
+        "cry",
+        "aloud,",
+        "but",
+        "<em>there</em>",
+        "<em>is</em>",
+        "no",
+        "judgment."
+      ],
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -79,9 +176,27 @@
       "chapter": 19,
       "verse_start": 8,
       "verse_end": 8,
-      "text": "He hath fenced up my way that I cannot pass, and he hath set darkness in my paths.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "He",
+        "hath",
+        "fenced",
+        "up",
+        "my",
+        "way",
+        "that",
+        "I",
+        "cannot",
+        "pass,",
+        "and",
+        "he",
+        "hath",
+        "set",
+        "darkness",
+        "in",
+        "my",
+        "paths."
+      ],
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -89,9 +204,23 @@
       "chapter": 19,
       "verse_start": 9,
       "verse_end": 9,
-      "text": "He hath stripped me of my glory, and taken the crown <em>from</em> my head.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "He",
+        "hath",
+        "stripped",
+        "me",
+        "of",
+        "my",
+        "glory,",
+        "and",
+        "taken",
+        "the",
+        "crown",
+        "<em>from</em>",
+        "my",
+        "head."
+      ],
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -99,9 +228,29 @@
       "chapter": 19,
       "verse_start": 10,
       "verse_end": 10,
-      "text": "He hath destroyed me on every side, and I am gone: and mine hope hath he removed like a tree.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "He",
+        "hath",
+        "destroyed",
+        "me",
+        "on",
+        "every",
+        "side,",
+        "and",
+        "I",
+        "am",
+        "gone:",
+        "and",
+        "mine",
+        "hope",
+        "hath",
+        "he",
+        "removed",
+        "like",
+        "a",
+        "tree."
+      ],
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -109,9 +258,28 @@
       "chapter": 19,
       "verse_start": 11,
       "verse_end": 11,
-      "text": "He hath also kindled his wrath against me, and he counteth me unto him as <em>one of</em> his enemies.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "He",
+        "hath",
+        "also",
+        "kindled",
+        "his",
+        "wrath",
+        "against",
+        "me,",
+        "and",
+        "he",
+        "counteth",
+        "me",
+        "unto",
+        "him",
+        "as",
+        "<em>one</em>",
+        "<em>of</em>",
+        "his",
+        "enemies."
+      ],
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -119,9 +287,26 @@
       "chapter": 19,
       "verse_start": 12,
       "verse_end": 12,
-      "text": "His troops come together, and raise up their way against me, and encamp round about my tabernacle.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "His",
+        "troops",
+        "come",
+        "together,",
+        "and",
+        "raise",
+        "up",
+        "their",
+        "way",
+        "against",
+        "me,",
+        "and",
+        "encamp",
+        "round",
+        "about",
+        "my",
+        "tabernacle."
+      ],
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -129,9 +314,25 @@
       "chapter": 19,
       "verse_start": 13,
       "verse_end": 13,
-      "text": "He hath put my brethren far from me, and mine acquaintance are verily estranged from me.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "He",
+        "hath",
+        "put",
+        "my",
+        "brethren",
+        "far",
+        "from",
+        "me,",
+        "and",
+        "mine",
+        "acquaintance",
+        "are",
+        "verily",
+        "estranged",
+        "from",
+        "me."
+      ],
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -139,9 +340,20 @@
       "chapter": 19,
       "verse_start": 14,
       "verse_end": 14,
-      "text": "My kinsfolk have failed, and my familiar friends have forgotten me.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "My",
+        "kinsfolk",
+        "have",
+        "failed,",
+        "and",
+        "my",
+        "familiar",
+        "friends",
+        "have",
+        "forgotten",
+        "me."
+      ],
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -149,9 +361,30 @@
       "chapter": 19,
       "verse_start": 15,
       "verse_end": 15,
-      "text": "They that dwell in mine house, and my maids, count me for a stranger: I am an alien in their sight.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "They",
+        "that",
+        "dwell",
+        "in",
+        "mine",
+        "house,",
+        "and",
+        "my",
+        "maids,",
+        "count",
+        "me",
+        "for",
+        "a",
+        "stranger:",
+        "I",
+        "am",
+        "an",
+        "alien",
+        "in",
+        "their",
+        "sight."
+      ],
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -159,9 +392,25 @@
       "chapter": 19,
       "verse_start": 16,
       "verse_end": 16,
-      "text": "I called my servant, and he gave <em>me</em> no answer; I intreated him with my mouth.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "I",
+        "called",
+        "my",
+        "servant,",
+        "and",
+        "he",
+        "gave",
+        "<em>me</em>",
+        "no",
+        "answer;",
+        "I",
+        "intreated",
+        "him",
+        "with",
+        "my",
+        "mouth."
+      ],
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -169,9 +418,27 @@
       "chapter": 19,
       "verse_start": 17,
       "verse_end": 17,
-      "text": "My breath is strange to my wife, though I intreated for the children's <em>sake</em> of mine own body.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "My",
+        "breath",
+        "is",
+        "strange",
+        "to",
+        "my",
+        "wife,",
+        "though",
+        "I",
+        "intreated",
+        "for",
+        "the",
+        "children's",
+        "<em>sake</em>",
+        "of",
+        "mine",
+        "own",
+        "body."
+      ],
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -179,9 +446,21 @@
       "chapter": 19,
       "verse_start": 18,
       "verse_end": 18,
-      "text": "Yea, young children despised me; I arose, and they spake against me.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Yea,",
+        "young",
+        "children",
+        "despised",
+        "me;",
+        "I",
+        "arose,",
+        "and",
+        "they",
+        "spake",
+        "against",
+        "me."
+      ],
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -189,9 +468,24 @@
       "chapter": 19,
       "verse_start": 19,
       "verse_end": 19,
-      "text": "All my inward friends abhorred me: and they whom I loved are turned against me.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "All",
+        "my",
+        "inward",
+        "friends",
+        "abhorred",
+        "me:",
+        "and",
+        "they",
+        "whom",
+        "I",
+        "loved",
+        "are",
+        "turned",
+        "against",
+        "me."
+      ],
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -199,9 +493,29 @@
       "chapter": 19,
       "verse_start": 20,
       "verse_end": 20,
-      "text": "My bone cleaveth to my skin and to my flesh, and I am escaped with the skin of my teeth.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "My",
+        "bone",
+        "cleaveth",
+        "to",
+        "my",
+        "skin",
+        "and",
+        "to",
+        "my",
+        "flesh,",
+        "and",
+        "I",
+        "am",
+        "escaped",
+        "with",
+        "the",
+        "skin",
+        "of",
+        "my",
+        "teeth."
+      ],
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -209,9 +523,29 @@
       "chapter": 19,
       "verse_start": 21,
       "verse_end": 21,
-      "text": "Have pity upon me, have pity upon me, O ye my friends; for the hand of God hath touched me.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Have",
+        "pity",
+        "upon",
+        "me,",
+        "have",
+        "pity",
+        "upon",
+        "me,",
+        "O",
+        "ye",
+        "my",
+        "friends;",
+        "for",
+        "the",
+        "hand",
+        "of",
+        "God",
+        "hath",
+        "touched",
+        "me."
+      ],
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -219,9 +553,23 @@
       "chapter": 19,
       "verse_start": 22,
       "verse_end": 22,
-      "text": "Why do ye persecute me as God, and are not satisfied with my flesh?",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Why",
+        "do",
+        "ye",
+        "persecute",
+        "me",
+        "as",
+        "God,",
+        "and",
+        "are",
+        "not",
+        "satisfied",
+        "with",
+        "my",
+        "flesh?"
+      ],
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -229,9 +577,24 @@
       "chapter": 19,
       "verse_start": 23,
       "verse_end": 23,
-      "text": "Oh that my words were now written! oh that they were printed in a book!",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Oh",
+        "that",
+        "my",
+        "words",
+        "were",
+        "now",
+        "written!",
+        "oh",
+        "that",
+        "they",
+        "were",
+        "printed",
+        "in",
+        "a",
+        "book!"
+      ],
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -239,9 +602,24 @@
       "chapter": 19,
       "verse_start": 24,
       "verse_end": 24,
-      "text": "That they were graven with an iron pen and lead in the rock for ever!",
-      "info": "",
-      "language": "English"
+      "text": [
+        "That",
+        "they",
+        "were",
+        "graven",
+        "with",
+        "an",
+        "iron",
+        "pen",
+        "and",
+        "lead",
+        "in",
+        "the",
+        "rock",
+        "for",
+        "ever!"
+      ],
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -249,9 +627,28 @@
       "chapter": 19,
       "verse_start": 25,
       "verse_end": 25,
-      "text": "For I know <em>that</em> my redeemer liveth, and <em>that</em> he shall stand at the latter <em>day</em> upon the earth:",
-      "info": "",
-      "language": "English"
+      "text": [
+        "For",
+        "I",
+        "know",
+        "<em>that</em>",
+        "my",
+        "redeemer",
+        "liveth,",
+        "and",
+        "<em>that</em>",
+        "he",
+        "shall",
+        "stand",
+        "at",
+        "the",
+        "latter",
+        "<em>day</em>",
+        "upon",
+        "the",
+        "earth:"
+      ],
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -259,9 +656,26 @@
       "chapter": 19,
       "verse_start": 26,
       "verse_end": 26,
-      "text": "And <em>though</em> after my skin <em>worms</em> destroy this <em>body,</em> yet in my flesh shall I see God:",
-      "info": "",
-      "language": "English"
+      "text": [
+        "And",
+        "<em>though</em>",
+        "after",
+        "my",
+        "skin",
+        "<em>worms</em>",
+        "destroy",
+        "this",
+        "<em>body,</em>",
+        "yet",
+        "in",
+        "my",
+        "flesh",
+        "shall",
+        "I",
+        "see",
+        "God:"
+      ],
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -269,9 +683,30 @@
       "chapter": 19,
       "verse_start": 27,
       "verse_end": 27,
-      "text": "Whom I shall see for myself, and mine eyes shall behold, and not another; <em>though</em> my reins be consumed within me.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Whom",
+        "I",
+        "shall",
+        "see",
+        "for",
+        "myself,",
+        "and",
+        "mine",
+        "eyes",
+        "shall",
+        "behold,",
+        "and",
+        "not",
+        "another;",
+        "<em>though</em>",
+        "my",
+        "reins",
+        "be",
+        "consumed",
+        "within",
+        "me."
+      ],
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -279,9 +714,27 @@
       "chapter": 19,
       "verse_start": 28,
       "verse_end": 28,
-      "text": "But ye should say, Why persecute we him, seeing the root of the matter is found in me?",
-      "info": "",
-      "language": "English"
+      "text": [
+        "But",
+        "ye",
+        "should",
+        "say,",
+        "Why",
+        "persecute",
+        "we",
+        "him,",
+        "seeing",
+        "the",
+        "root",
+        "of",
+        "the",
+        "matter",
+        "is",
+        "found",
+        "in",
+        "me?"
+      ],
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -289,9 +742,31 @@
       "chapter": 19,
       "verse_start": 29,
       "verse_end": 29,
-      "text": "Be ye afraid of the sword: for wrath <em>bringeth</em> the punishments of the sword, that ye may know <em>there is</em> a judgment.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Be",
+        "ye",
+        "afraid",
+        "of",
+        "the",
+        "sword:",
+        "for",
+        "wrath",
+        "<em>bringeth</em>",
+        "the",
+        "punishments",
+        "of",
+        "the",
+        "sword,",
+        "that",
+        "ye",
+        "may",
+        "know",
+        "<em>there</em>",
+        "<em>is</em>",
+        "a",
+        "judgment."
+      ],
+      "info": ""
     }
   ]
 }

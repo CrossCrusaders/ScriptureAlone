@@ -1,5 +1,5 @@
 {
-  "header": "¶ To the chief Musician, A Psalm of David.",
+  "header": "",
   "footer": "",
   "language": "English",
   "verses": [
@@ -9,9 +9,36 @@
       "chapter": 13,
       "verse_start": 1,
       "verse_end": 1,
-      "text": "How long wilt thou forget me, O LORD? for ever? how long wilt thou hide thy face from me?",
-      "info": "",
-      "language": "English"
+      "text": [
+        "(To",
+        "the",
+        "chief",
+        "Musician,",
+        "A",
+        "Psalm",
+        "of",
+        "David.)",
+        "How",
+        "long",
+        "wilt",
+        "thou",
+        "forget",
+        "me,",
+        "O",
+        "LORD?",
+        "for",
+        "ever?",
+        "how",
+        "long",
+        "wilt",
+        "thou",
+        "hide",
+        "thy",
+        "face",
+        "from",
+        "me?"
+      ],
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -19,9 +46,33 @@
       "chapter": 13,
       "verse_start": 2,
       "verse_end": 2,
-      "text": "How long shall I take counsel in my soul, <em>having</em> sorrow in my heart daily? how long shall mine enemy be exalted over me?",
-      "info": "",
-      "language": "English"
+      "text": [
+        "How",
+        "long",
+        "shall",
+        "I",
+        "take",
+        "counsel",
+        "in",
+        "my",
+        "soul,",
+        "<em>having</em>",
+        "sorrow",
+        "in",
+        "my",
+        "heart",
+        "daily?",
+        "how",
+        "long",
+        "shall",
+        "mine",
+        "enemy",
+        "be",
+        "exalted",
+        "over",
+        "me?"
+      ],
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -29,9 +80,27 @@
       "chapter": 13,
       "verse_start": 3,
       "verse_end": 3,
-      "text": "Consider <em>and</em> hear me, O LORD my God: lighten mine eyes, lest I sleep the <em>sleep of</em> death;",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Consider",
+        "<em>and</em>",
+        "hear",
+        "me,",
+        "O",
+        "LORD",
+        "my",
+        "God:",
+        "lighten",
+        "mine",
+        "eyes,",
+        "lest",
+        "I",
+        "sleep",
+        "the",
+        "<em>sleep</em>",
+        "<em>of</em>",
+        "death;"
+      ],
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -39,9 +108,28 @@
       "chapter": 13,
       "verse_start": 4,
       "verse_end": 4,
-      "text": "Lest mine enemy say, I have prevailed against him; <em>and</em> those that trouble me rejoice when I am moved.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Lest",
+        "mine",
+        "enemy",
+        "say,",
+        "I",
+        "have",
+        "prevailed",
+        "against",
+        "him;",
+        "<em>and</em>",
+        "those",
+        "that",
+        "trouble",
+        "me",
+        "rejoice",
+        "when",
+        "I",
+        "am",
+        "moved."
+      ],
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -49,9 +137,23 @@
       "chapter": 13,
       "verse_start": 5,
       "verse_end": 5,
-      "text": "But I have trusted in thy mercy; my heart shall rejoice in thy salvation.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "But",
+        "I",
+        "have",
+        "trusted",
+        "in",
+        "thy",
+        "mercy;",
+        "my",
+        "heart",
+        "shall",
+        "rejoice",
+        "in",
+        "thy",
+        "salvation."
+      ],
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -59,9 +161,22 @@
       "chapter": 13,
       "verse_start": 6,
       "verse_end": 6,
-      "text": "I will sing unto the LORD, because he hath dealt bountifully with me.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "I",
+        "will",
+        "sing",
+        "unto",
+        "the",
+        "LORD,",
+        "because",
+        "he",
+        "hath",
+        "dealt",
+        "bountifully",
+        "with",
+        "me."
+      ],
+      "info": ""
     }
   ]
 }

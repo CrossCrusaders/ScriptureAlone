@@ -9,7 +9,11 @@
       "chapter": 1,
       "verse_start": 1,
       "verse_end": 1,
-      "text": "Adam, Sheth, Enosh,",
+      "text": [
+        "Adam,",
+        "Sheth,",
+        "Enosh,"
+      ],
       "info": ""
     },
     {
@@ -18,7 +22,11 @@
       "chapter": 1,
       "verse_start": 2,
       "verse_end": 2,
-      "text": "Kenan, Mahalaleel, Iered,",
+      "text": [
+        "Kenan,",
+        "Mahalaleel,",
+        "Iered,"
+      ],
       "info": ""
     },
     {
@@ -27,7 +35,11 @@
       "chapter": 1,
       "verse_start": 3,
       "verse_end": 3,
-      "text": "Henoch, Methushelah, Lamech,",
+      "text": [
+        "Henoch,",
+        "Methushelah,",
+        "Lamech,"
+      ],
       "info": ""
     },
     {
@@ -36,7 +48,13 @@
       "chapter": 1,
       "verse_start": 4,
       "verse_end": 4,
-      "text": "Noah, Shem, Ham, &amp; Iapheth.",
+      "text": [
+        "Noah,",
+        "Shem,",
+        "Ham,",
+        "&amp;",
+        "Iapheth."
+      ],
       "info": ""
     },
     {
@@ -45,7 +63,26 @@
       "chapter": 1,
       "verse_start": 5,
       "verse_end": 5,
-      "text": "¶ The sonnes of Iapheth: Gomer, and Magog, and Madai, and Iauan, and Tubal, and Meshech, and Tiras.",
+      "text": [
+        "¶",
+        "The",
+        "sonnes",
+        "of",
+        "Iapheth:",
+        "Gomer,",
+        "and",
+        "Magog,",
+        "and",
+        "Madai,",
+        "and",
+        "Iauan,",
+        "and",
+        "Tubal,",
+        "and",
+        "Meshech,",
+        "and",
+        "Tiras."
+      ],
       "info": ""
     },
     {
@@ -54,7 +91,18 @@
       "chapter": 1,
       "verse_start": 6,
       "verse_end": 6,
-      "text": "And the sonnes of Gomer: Ashchenaz, and Riphath, and Togarmah.",
+      "text": [
+        "And",
+        "the",
+        "sonnes",
+        "of",
+        "Gomer:",
+        "Ashchenaz,",
+        "and",
+        "Riphath,",
+        "and",
+        "Togarmah."
+      ],
       "info": ""
     },
     {
@@ -63,7 +111,19 @@
       "chapter": 1,
       "verse_start": 7,
       "verse_end": 7,
-      "text": "And the sonnes of Iauan: Elishah, and Tarshish, Kittim, and Dodanim.",
+      "text": [
+        "And",
+        "the",
+        "sonnes",
+        "of",
+        "Iauan:",
+        "Elishah,",
+        "and",
+        "Tarshish,",
+        "Kittim,",
+        "and",
+        "Dodanim."
+      ],
       "info": ""
     },
     {
@@ -72,7 +132,19 @@
       "chapter": 1,
       "verse_start": 8,
       "verse_end": 8,
-      "text": "¶ The sonnes of Ham: Cush, and Mizraim, Put, and Canaan.",
+      "text": [
+        "¶",
+        "The",
+        "sonnes",
+        "of",
+        "Ham:",
+        "Cush,",
+        "and",
+        "Mizraim,",
+        "Put,",
+        "and",
+        "Canaan."
+      ],
       "info": ""
     },
     {
@@ -81,7 +153,30 @@
       "chapter": 1,
       "verse_start": 9,
       "verse_end": 9,
-      "text": "And the sonnes of Cush: Siba, and Hauilah, and Sabta, and Raamah, and Sabtecha: and the sonnes of Raamah: Sheba, and Dedan.",
+      "text": [
+        "And",
+        "the",
+        "sonnes",
+        "of",
+        "Cush:",
+        "Siba,",
+        "and",
+        "Hauilah,",
+        "and",
+        "Sabta,",
+        "and",
+        "Raamah,",
+        "and",
+        "Sabtecha:",
+        "and",
+        "the",
+        "sonnes",
+        "of",
+        "Raamah:",
+        "Sheba,",
+        "and",
+        "Dedan."
+      ],
       "info": ""
     },
     {
@@ -90,7 +185,20 @@
       "chapter": 1,
       "verse_start": 10,
       "verse_end": 10,
-      "text": "And Cush begate Nimrod: hee began to be mightie vpon the earth.",
+      "text": [
+        "And",
+        "Cush",
+        "begate",
+        "Nimrod:",
+        "hee",
+        "began",
+        "to",
+        "be",
+        "mightie",
+        "vpon",
+        "the",
+        "earth."
+      ],
       "info": ""
     },
     {
@@ -99,7 +207,18 @@
       "chapter": 1,
       "verse_start": 11,
       "verse_end": 11,
-      "text": "And Mizraim begate Ludim, and Anamim, and Lehabim, and Naphtuhim,",
+      "text": [
+        "And",
+        "Mizraim",
+        "begate",
+        "Ludim,",
+        "and",
+        "Anamim,",
+        "and",
+        "Lehabim,",
+        "and",
+        "Naphtuhim,"
+      ],
       "info": ""
     },
     {
@@ -108,7 +227,19 @@
       "chapter": 1,
       "verse_start": 12,
       "verse_end": 12,
-      "text": "And Pathrusim, and Casluhim (of whome came the Philistines) and Caphthorim.",
+      "text": [
+        "And",
+        "Pathrusim,",
+        "and",
+        "Casluhim",
+        "(of",
+        "whome",
+        "came",
+        "the",
+        "Philistines)",
+        "and",
+        "Caphthorim."
+      ],
       "info": ""
     },
     {
@@ -117,7 +248,17 @@
       "chapter": 1,
       "verse_start": 13,
       "verse_end": 13,
-      "text": "And Canaan begate Zidon his first borne, and Heth.",
+      "text": [
+        "And",
+        "Canaan",
+        "begate",
+        "Zidon",
+        "his",
+        "first",
+        "borne,",
+        "and",
+        "Heth."
+      ],
       "info": ""
     },
     {
@@ -126,7 +267,17 @@
       "chapter": 1,
       "verse_start": 14,
       "verse_end": 14,
-      "text": "The Iebusite also, and the Amorite, and the Girgashite,",
+      "text": [
+        "The",
+        "Iebusite",
+        "also,",
+        "and",
+        "the",
+        "Amorite,",
+        "and",
+        "the",
+        "Girgashite,"
+      ],
       "info": ""
     },
     {
@@ -135,7 +286,17 @@
       "chapter": 1,
       "verse_start": 15,
       "verse_end": 15,
-      "text": "And the Hiuite, and the Arkite, and the Sinite,",
+      "text": [
+        "And",
+        "the",
+        "Hiuite,",
+        "and",
+        "the",
+        "Arkite,",
+        "and",
+        "the",
+        "Sinite,"
+      ],
       "info": ""
     },
     {
@@ -144,7 +305,17 @@
       "chapter": 1,
       "verse_start": 16,
       "verse_end": 16,
-      "text": "And the Aruadite, and the Zemarite, and the Hamathite.",
+      "text": [
+        "And",
+        "the",
+        "Aruadite,",
+        "and",
+        "the",
+        "Zemarite,",
+        "and",
+        "the",
+        "Hamathite."
+      ],
       "info": ""
     },
     {
@@ -153,7 +324,30 @@
       "chapter": 1,
       "verse_start": 17,
       "verse_end": 17,
-      "text": "¶ The sonnes of Shem: Elam, and Asshur, and Arphaxad, and Lud, and Aram, and Uz, &amp; Hul, and Gether, and Meshech.",
+      "text": [
+        "¶",
+        "The",
+        "sonnes",
+        "of",
+        "Shem:",
+        "Elam,",
+        "and",
+        "Asshur,",
+        "and",
+        "Arphaxad,",
+        "and",
+        "Lud,",
+        "and",
+        "Aram,",
+        "and",
+        "Uz,",
+        "&amp;",
+        "Hul,",
+        "and",
+        "Gether,",
+        "and",
+        "Meshech."
+      ],
       "info": ""
     },
     {
@@ -162,7 +356,16 @@
       "chapter": 1,
       "verse_start": 18,
       "verse_end": 18,
-      "text": "And Arphaxad begate Shelah, and Shelah begate Eber.",
+      "text": [
+        "And",
+        "Arphaxad",
+        "begate",
+        "Shelah,",
+        "and",
+        "Shelah",
+        "begate",
+        "Eber."
+      ],
       "info": ""
     },
     {
@@ -171,7 +374,36 @@
       "chapter": 1,
       "verse_start": 19,
       "verse_end": 19,
-      "text": "And vnto Eber were borne two sonnes: the name of the one was Peleg, (because in his dayes the earth was diuided) and his brothers name was Ioktan.",
+      "text": [
+        "And",
+        "vnto",
+        "Eber",
+        "were",
+        "borne",
+        "two",
+        "sonnes:",
+        "the",
+        "name",
+        "of",
+        "the",
+        "one",
+        "was",
+        "Peleg,",
+        "(because",
+        "in",
+        "his",
+        "dayes",
+        "the",
+        "earth",
+        "was",
+        "diuided)",
+        "and",
+        "his",
+        "brothers",
+        "name",
+        "was",
+        "Ioktan."
+      ],
       "info": ""
     },
     {
@@ -180,7 +412,18 @@
       "chapter": 1,
       "verse_start": 20,
       "verse_end": 20,
-      "text": "And Ioktan begate Almodad, and Sheleph, and Hazermaueth, and Ierah,",
+      "text": [
+        "And",
+        "Ioktan",
+        "begate",
+        "Almodad,",
+        "and",
+        "Sheleph,",
+        "and",
+        "Hazermaueth,",
+        "and",
+        "Ierah,"
+      ],
       "info": ""
     },
     {
@@ -189,7 +432,14 @@
       "chapter": 1,
       "verse_start": 21,
       "verse_end": 21,
-      "text": "Hadoram also, and Uzal, and Diklah,",
+      "text": [
+        "Hadoram",
+        "also,",
+        "and",
+        "Uzal,",
+        "and",
+        "Diklah,"
+      ],
       "info": ""
     },
     {
@@ -198,7 +448,14 @@
       "chapter": 1,
       "verse_start": 22,
       "verse_end": 22,
-      "text": "And Ebal, and Abimael, and Sheba,",
+      "text": [
+        "And",
+        "Ebal,",
+        "and",
+        "Abimael,",
+        "and",
+        "Sheba,"
+      ],
       "info": ""
     },
     {
@@ -207,7 +464,21 @@
       "chapter": 1,
       "verse_start": 23,
       "verse_end": 23,
-      "text": "And Ophir, and Hauilah, and Iobab: all these were the sonnes of Ioktan.",
+      "text": [
+        "And",
+        "Ophir,",
+        "and",
+        "Hauilah,",
+        "and",
+        "Iobab:",
+        "all",
+        "these",
+        "were",
+        "the",
+        "sonnes",
+        "of",
+        "Ioktan."
+      ],
       "info": ""
     },
     {
@@ -216,7 +487,12 @@
       "chapter": 1,
       "verse_start": 24,
       "verse_end": 24,
-      "text": "¶ Shem, Arphaxad, Shelah,",
+      "text": [
+        "¶",
+        "Shem,",
+        "Arphaxad,",
+        "Shelah,"
+      ],
       "info": ""
     },
     {
@@ -225,7 +501,11 @@
       "chapter": 1,
       "verse_start": 25,
       "verse_end": 25,
-      "text": "Eber, Peleg, Rehu,",
+      "text": [
+        "Eber,",
+        "Peleg,",
+        "Rehu,"
+      ],
       "info": ""
     },
     {
@@ -234,7 +514,11 @@
       "chapter": 1,
       "verse_start": 26,
       "verse_end": 26,
-      "text": "Serug, Nahor, Terah,",
+      "text": [
+        "Serug,",
+        "Nahor,",
+        "Terah,"
+      ],
       "info": ""
     },
     {
@@ -243,7 +527,13 @@
       "chapter": 1,
       "verse_start": 27,
       "verse_end": 27,
-      "text": "Abram, the same is Abraham.",
+      "text": [
+        "Abram,",
+        "the",
+        "same",
+        "is",
+        "Abraham."
+      ],
       "info": ""
     },
     {
@@ -252,7 +542,15 @@
       "chapter": 1,
       "verse_start": 28,
       "verse_end": 28,
-      "text": "The sonnes of Abraham: Isaac, and Ishmael.",
+      "text": [
+        "The",
+        "sonnes",
+        "of",
+        "Abraham:",
+        "Isaac,",
+        "and",
+        "Ishmael."
+      ],
       "info": ""
     },
     {
@@ -261,7 +559,24 @@
       "chapter": 1,
       "verse_start": 29,
       "verse_end": 29,
-      "text": "¶ These are their generations: The first-borne of Ishmael, Nebaioth, then Kedar, and Adbeel, and Mibsam,",
+      "text": [
+        "¶",
+        "These",
+        "are",
+        "their",
+        "generations:",
+        "The",
+        "first-borne",
+        "of",
+        "Ishmael,",
+        "Nebaioth,",
+        "then",
+        "Kedar,",
+        "and",
+        "Adbeel,",
+        "and",
+        "Mibsam,"
+      ],
       "info": ""
     },
     {
@@ -270,7 +585,15 @@
       "chapter": 1,
       "verse_start": 30,
       "verse_end": 30,
-      "text": "Mishma, and Dumah, Massa, Hadad, and Tema,",
+      "text": [
+        "Mishma,",
+        "and",
+        "Dumah,",
+        "Massa,",
+        "Hadad,",
+        "and",
+        "Tema,"
+      ],
       "info": ""
     },
     {
@@ -279,7 +602,18 @@
       "chapter": 1,
       "verse_start": 31,
       "verse_end": 31,
-      "text": "Ietur, Naphish, and Kedemah. These are the sonnes of Ishmael.",
+      "text": [
+        "Ietur,",
+        "Naphish,",
+        "and",
+        "Kedemah.",
+        "These",
+        "are",
+        "the",
+        "sonnes",
+        "of",
+        "Ishmael."
+      ],
       "info": ""
     },
     {
@@ -288,7 +622,37 @@
       "chapter": 1,
       "verse_start": 32,
       "verse_end": 32,
-      "text": "¶ Now the sonnes of Keturah, Abrahams Concubine: she bare Zimran, and Iokshan, and Medan, and Midian, and Ishbak, and Shuah. And the sonnes of Iokshan, Sheba, and Dedan.",
+      "text": [
+        "¶",
+        "Now",
+        "the",
+        "sonnes",
+        "of",
+        "Keturah,",
+        "Abrahams",
+        "Concubine:",
+        "she",
+        "bare",
+        "Zimran,",
+        "and",
+        "Iokshan,",
+        "and",
+        "Medan,",
+        "and",
+        "Midian,",
+        "and",
+        "Ishbak,",
+        "and",
+        "Shuah.",
+        "And",
+        "the",
+        "sonnes",
+        "of",
+        "Iokshan,",
+        "Sheba,",
+        "and",
+        "Dedan."
+      ],
       "info": ""
     },
     {
@@ -297,7 +661,29 @@
       "chapter": 1,
       "verse_start": 33,
       "verse_end": 33,
-      "text": "And the sonnes of Midian: Ephah, and Ephar, and Henoch, and Abida, and Eldaah. All these are the sonnes of Keturah.",
+      "text": [
+        "And",
+        "the",
+        "sonnes",
+        "of",
+        "Midian:",
+        "Ephah,",
+        "and",
+        "Ephar,",
+        "and",
+        "Henoch,",
+        "and",
+        "Abida,",
+        "and",
+        "Eldaah.",
+        "All",
+        "these",
+        "are",
+        "the",
+        "sonnes",
+        "of",
+        "Keturah."
+      ],
       "info": ""
     },
     {
@@ -306,7 +692,19 @@
       "chapter": 1,
       "verse_start": 34,
       "verse_end": 34,
-      "text": "And Abraham begate Isaac. The sonnes of Isaac: Esau, and Israel.",
+      "text": [
+        "And",
+        "Abraham",
+        "begate",
+        "Isaac.",
+        "The",
+        "sonnes",
+        "of",
+        "Isaac:",
+        "Esau,",
+        "and",
+        "Israel."
+      ],
       "info": ""
     },
     {
@@ -315,7 +713,21 @@
       "chapter": 1,
       "verse_start": 35,
       "verse_end": 35,
-      "text": "¶ The sonnes of Esau: Eliphaz, Reuel, and Ieush, and Iaalam, and Korah.",
+      "text": [
+        "¶",
+        "The",
+        "sonnes",
+        "of",
+        "Esau:",
+        "Eliphaz,",
+        "Reuel,",
+        "and",
+        "Ieush,",
+        "and",
+        "Iaalam,",
+        "and",
+        "Korah."
+      ],
       "info": ""
     },
     {
@@ -324,7 +736,23 @@
       "chapter": 1,
       "verse_start": 36,
       "verse_end": 36,
-      "text": "The sonnes of Eliphaz: Teman, and Omar, Zephi, and Gatam, Kenaz, and Timna, and Amalek.",
+      "text": [
+        "The",
+        "sonnes",
+        "of",
+        "Eliphaz:",
+        "Teman,",
+        "and",
+        "Omar,",
+        "Zephi,",
+        "and",
+        "Gatam,",
+        "Kenaz,",
+        "and",
+        "Timna,",
+        "and",
+        "Amalek."
+      ],
       "info": ""
     },
     {
@@ -333,7 +761,17 @@
       "chapter": 1,
       "verse_start": 37,
       "verse_end": 37,
-      "text": "The sonnes of Reuel: Nahath, Zerah, Shammah, and Mizzah.",
+      "text": [
+        "The",
+        "sonnes",
+        "of",
+        "Reuel:",
+        "Nahath,",
+        "Zerah,",
+        "Shammah,",
+        "and",
+        "Mizzah."
+      ],
       "info": ""
     },
     {
@@ -342,7 +780,26 @@
       "chapter": 1,
       "verse_start": 38,
       "verse_end": 38,
-      "text": "And the sonnes of Seir: Lotan, and Shobal, and Zibeon, and Anah, and Dishon, and Ezer, and Dishan.",
+      "text": [
+        "And",
+        "the",
+        "sonnes",
+        "of",
+        "Seir:",
+        "Lotan,",
+        "and",
+        "Shobal,",
+        "and",
+        "Zibeon,",
+        "and",
+        "Anah,",
+        "and",
+        "Dishon,",
+        "and",
+        "Ezer,",
+        "and",
+        "Dishan."
+      ],
       "info": ""
     },
     {
@@ -351,7 +808,21 @@
       "chapter": 1,
       "verse_start": 39,
       "verse_end": 39,
-      "text": "And the sonnes of Lotan: Hori, and Homam: and Timna was Lotans sister.",
+      "text": [
+        "And",
+        "the",
+        "sonnes",
+        "of",
+        "Lotan:",
+        "Hori,",
+        "and",
+        "Homam:",
+        "and",
+        "Timna",
+        "was",
+        "Lotans",
+        "sister."
+      ],
       "info": ""
     },
     {
@@ -360,7 +831,28 @@
       "chapter": 1,
       "verse_start": 40,
       "verse_end": 40,
-      "text": "The sonnes of Shobal: Atian, and Manahath, and Ebal, Shephi, and Onam. And the sonnes of Zibeon: Aiah, and Anah.",
+      "text": [
+        "The",
+        "sonnes",
+        "of",
+        "Shobal:",
+        "Atian,",
+        "and",
+        "Manahath,",
+        "and",
+        "Ebal,",
+        "Shephi,",
+        "and",
+        "Onam.",
+        "And",
+        "the",
+        "sonnes",
+        "of",
+        "Zibeon:",
+        "Aiah,",
+        "and",
+        "Anah."
+      ],
       "info": ""
     },
     {
@@ -369,7 +861,25 @@
       "chapter": 1,
       "verse_start": 41,
       "verse_end": 41,
-      "text": "The sonnes of Anah: Dishon. And the sonnes of Dishon: Amram, and Eshban, and Ithran, and Cheran.",
+      "text": [
+        "The",
+        "sonnes",
+        "of",
+        "Anah:",
+        "Dishon.",
+        "And",
+        "the",
+        "sonnes",
+        "of",
+        "Dishon:",
+        "Amram,",
+        "and",
+        "Eshban,",
+        "and",
+        "Ithran,",
+        "and",
+        "Cheran."
+      ],
       "info": ""
     },
     {
@@ -378,7 +888,24 @@
       "chapter": 1,
       "verse_start": 42,
       "verse_end": 42,
-      "text": "The sonnes of Ezer: Bilham, and Zauan, and Iakan. The sonnes of Dishon: Uz, and Aran.",
+      "text": [
+        "The",
+        "sonnes",
+        "of",
+        "Ezer:",
+        "Bilham,",
+        "and",
+        "Zauan,",
+        "and",
+        "Iakan.",
+        "The",
+        "sonnes",
+        "of",
+        "Dishon:",
+        "Uz,",
+        "and",
+        "Aran."
+      ],
       "info": ""
     },
     {
@@ -387,7 +914,43 @@
       "chapter": 1,
       "verse_start": 43,
       "verse_end": 43,
-      "text": "¶ Now these are the kings that reigned in the land of Edom, before any king reigned ouer the children of Israel. Bela the sonne of Beor; and the name of his citie, was Dinhabah.",
+      "text": [
+        "¶",
+        "Now",
+        "these",
+        "are",
+        "the",
+        "kings",
+        "that",
+        "reigned",
+        "in",
+        "the",
+        "land",
+        "of",
+        "Edom,",
+        "before",
+        "any",
+        "king",
+        "reigned",
+        "ouer",
+        "the",
+        "children",
+        "of",
+        "Israel.",
+        "Bela",
+        "the",
+        "sonne",
+        "of",
+        "Beor;",
+        "and",
+        "the",
+        "name",
+        "of",
+        "his",
+        "citie,",
+        "was",
+        "Dinhabah."
+      ],
       "info": ""
     },
     {
@@ -396,7 +959,24 @@
       "chapter": 1,
       "verse_start": 44,
       "verse_end": 44,
-      "text": "And when Bela was dead, Iobab the sonne of Zerah of Bosrah, reigned in his stead.",
+      "text": [
+        "And",
+        "when",
+        "Bela",
+        "was",
+        "dead,",
+        "Iobab",
+        "the",
+        "sonne",
+        "of",
+        "Zerah",
+        "of",
+        "Bosrah,",
+        "reigned",
+        "in",
+        "his",
+        "stead."
+      ],
       "info": ""
     },
     {
@@ -405,7 +985,24 @@
       "chapter": 1,
       "verse_start": 45,
       "verse_end": 45,
-      "text": "And when Iobab was dead, Husham of the land of the Temanits, reigned in his stead.",
+      "text": [
+        "And",
+        "when",
+        "Iobab",
+        "was",
+        "dead,",
+        "Husham",
+        "of",
+        "the",
+        "land",
+        "of",
+        "the",
+        "Temanits,",
+        "reigned",
+        "in",
+        "his",
+        "stead."
+      ],
       "info": ""
     },
     {
@@ -414,7 +1011,38 @@
       "chapter": 1,
       "verse_start": 46,
       "verse_end": 46,
-      "text": "And when Husham was dead, Hadad, the sonne of Bedad (which smote Midian in the field of Moab) reigned in his stead: and the name of his citie was Auith.",
+      "text": [
+        "And",
+        "when",
+        "Husham",
+        "was",
+        "dead,",
+        "Hadad,",
+        "the",
+        "sonne",
+        "of",
+        "Bedad",
+        "(which",
+        "smote",
+        "Midian",
+        "in",
+        "the",
+        "field",
+        "of",
+        "Moab)",
+        "reigned",
+        "in",
+        "his",
+        "stead:",
+        "and",
+        "the",
+        "name",
+        "of",
+        "his",
+        "citie",
+        "was",
+        "Auith."
+      ],
       "info": ""
     },
     {
@@ -423,7 +1051,20 @@
       "chapter": 1,
       "verse_start": 47,
       "verse_end": 47,
-      "text": "And when Hadad was dead, Samlah of Masrekah, reigned in his stead.",
+      "text": [
+        "And",
+        "when",
+        "Hadad",
+        "was",
+        "dead,",
+        "Samlah",
+        "of",
+        "Masrekah,",
+        "reigned",
+        "in",
+        "his",
+        "stead."
+      ],
       "info": ""
     },
     {
@@ -432,7 +1073,23 @@
       "chapter": 1,
       "verse_start": 48,
       "verse_end": 48,
-      "text": "And when Samlah was dead, Shaul of Rehoboth by the riuer, reigned in his stead.",
+      "text": [
+        "And",
+        "when",
+        "Samlah",
+        "was",
+        "dead,",
+        "Shaul",
+        "of",
+        "Rehoboth",
+        "by",
+        "the",
+        "riuer,",
+        "reigned",
+        "in",
+        "his",
+        "stead."
+      ],
       "info": ""
     },
     {
@@ -441,7 +1098,22 @@
       "chapter": 1,
       "verse_start": 49,
       "verse_end": 49,
-      "text": "And when Shaul was dead, Baal-hanan the sonne of Achbor, reigned in his stead.",
+      "text": [
+        "And",
+        "when",
+        "Shaul",
+        "was",
+        "dead,",
+        "Baal-hanan",
+        "the",
+        "sonne",
+        "of",
+        "Achbor,",
+        "reigned",
+        "in",
+        "his",
+        "stead."
+      ],
       "info": ""
     },
     {
@@ -450,7 +1122,40 @@
       "chapter": 1,
       "verse_start": 50,
       "verse_end": 50,
-      "text": "And when Baal-hanan was dead, Hadad reigned in his stead: and the name of his citie was Pai: and his wiues name was Mehetabel the daughter of Matred, the daughter of Mezahab.",
+      "text": [
+        "And",
+        "when",
+        "Baal-hanan",
+        "was",
+        "dead,",
+        "Hadad",
+        "reigned",
+        "in",
+        "his",
+        "stead:",
+        "and",
+        "the",
+        "name",
+        "of",
+        "his",
+        "citie",
+        "was",
+        "Pai:",
+        "and",
+        "his",
+        "wiues",
+        "name",
+        "was",
+        "Mehetabel",
+        "the",
+        "daughter",
+        "of",
+        "Matred,",
+        "the",
+        "daughter",
+        "of",
+        "Mezahab."
+      ],
       "info": ""
     },
     {
@@ -459,7 +1164,24 @@
       "chapter": 1,
       "verse_start": 51,
       "verse_end": 51,
-      "text": "¶ Hadad dyed also. And the Dukes of Edom were: Duke Timnah, Duke Aliah, Duke Ietheth,",
+      "text": [
+        "¶",
+        "Hadad",
+        "dyed",
+        "also.",
+        "And",
+        "the",
+        "Dukes",
+        "of",
+        "Edom",
+        "were:",
+        "Duke",
+        "Timnah,",
+        "Duke",
+        "Aliah,",
+        "Duke",
+        "Ietheth,"
+      ],
       "info": ""
     },
     {
@@ -468,7 +1190,14 @@
       "chapter": 1,
       "verse_start": 52,
       "verse_end": 52,
-      "text": "Duke Aholibamah, Duke Elah, Duke Pinon,",
+      "text": [
+        "Duke",
+        "Aholibamah,",
+        "Duke",
+        "Elah,",
+        "Duke",
+        "Pinon,"
+      ],
       "info": ""
     },
     {
@@ -477,7 +1206,14 @@
       "chapter": 1,
       "verse_start": 53,
       "verse_end": 53,
-      "text": "Duke Kenaz, Duke Teman, Duke Mibzar,",
+      "text": [
+        "Duke",
+        "Kenaz,",
+        "Duke",
+        "Teman,",
+        "Duke",
+        "Mibzar,"
+      ],
       "info": ""
     },
     {
@@ -486,7 +1222,18 @@
       "chapter": 1,
       "verse_start": 54,
       "verse_end": 54,
-      "text": "Duke Magdiel, Duke Iram. These are the Dukes of Edom.",
+      "text": [
+        "Duke",
+        "Magdiel,",
+        "Duke",
+        "Iram.",
+        "These",
+        "are",
+        "the",
+        "Dukes",
+        "of",
+        "Edom."
+      ],
       "info": ""
     }
   ]

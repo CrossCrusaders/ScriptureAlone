@@ -1,5 +1,5 @@
 {
-  "header": "¶ A Song of degrees of David.",
+  "header": "",
   "footer": "",
   "language": "English",
   "verses": [
@@ -9,9 +9,40 @@
       "chapter": 131,
       "verse_start": 1,
       "verse_end": 1,
-      "text": "LORD, my heart is not haughty, nor mine eyes lofty: neither do I exercise myself in great matters, or in things too high for me.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "(A",
+        "Song",
+        "of",
+        "degrees",
+        "of",
+        "David.)",
+        "LORD,",
+        "my",
+        "heart",
+        "is",
+        "not",
+        "haughty,",
+        "nor",
+        "mine",
+        "eyes",
+        "lofty:",
+        "neither",
+        "do",
+        "I",
+        "exercise",
+        "myself",
+        "in",
+        "great",
+        "matters,",
+        "or",
+        "in",
+        "things",
+        "too",
+        "high",
+        "for",
+        "me."
+      ],
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -19,9 +50,33 @@
       "chapter": 131,
       "verse_start": 2,
       "verse_end": 2,
-      "text": "Surely I have behaved and quieted myself, as a child that is weaned of his mother: my soul <em>is</em> even as a weaned child.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Surely",
+        "I",
+        "have",
+        "behaved",
+        "and",
+        "quieted",
+        "myself,",
+        "as",
+        "a",
+        "child",
+        "that",
+        "is",
+        "weaned",
+        "of",
+        "his",
+        "mother:",
+        "my",
+        "soul",
+        "<em>is</em>",
+        "even",
+        "as",
+        "a",
+        "weaned",
+        "child."
+      ],
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -29,9 +84,20 @@
       "chapter": 131,
       "verse_start": 3,
       "verse_end": 3,
-      "text": "Let Israel hope in the LORD from henceforth and for ever.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Let",
+        "Israel",
+        "hope",
+        "in",
+        "the",
+        "LORD",
+        "from",
+        "henceforth",
+        "and",
+        "for",
+        "ever."
+      ],
+      "info": ""
     }
   ]
 }

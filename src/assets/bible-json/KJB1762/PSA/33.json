@@ -9,9 +9,23 @@
       "chapter": 33,
       "verse_start": 1,
       "verse_end": 1,
-      "text": "Rejoice in the LORD, O ye righteous: <em>for</em> praise is comely for the upright.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Rejoice",
+        "in",
+        "the",
+        "LORD,",
+        "O",
+        "ye",
+        "righteous:",
+        "<em>for</em>",
+        "praise",
+        "is",
+        "comely",
+        "for",
+        "the",
+        "upright."
+      ],
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -19,9 +33,26 @@
       "chapter": 33,
       "verse_start": 2,
       "verse_end": 2,
-      "text": "Praise the LORD with harp: sing unto him with the psaltery <em>and</em> an instrument of ten strings.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Praise",
+        "the",
+        "LORD",
+        "with",
+        "harp:",
+        "sing",
+        "unto",
+        "him",
+        "with",
+        "the",
+        "psaltery",
+        "<em>and</em>",
+        "an",
+        "instrument",
+        "of",
+        "ten",
+        "strings."
+      ],
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -29,9 +60,21 @@
       "chapter": 33,
       "verse_start": 3,
       "verse_end": 3,
-      "text": "Sing unto him a new song; play skilfully with a loud noise.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Sing",
+        "unto",
+        "him",
+        "a",
+        "new",
+        "song;",
+        "play",
+        "skilfully",
+        "with",
+        "a",
+        "loud",
+        "noise."
+      ],
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -39,9 +82,25 @@
       "chapter": 33,
       "verse_start": 4,
       "verse_end": 4,
-      "text": "For the word of the LORD <em>is</em> right; and all his works <em>are done</em> in truth.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "For",
+        "the",
+        "word",
+        "of",
+        "the",
+        "LORD",
+        "<em>is</em>",
+        "right;",
+        "and",
+        "all",
+        "his",
+        "works",
+        "<em>are</em>",
+        "<em>done</em>",
+        "in",
+        "truth."
+      ],
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -49,9 +108,24 @@
       "chapter": 33,
       "verse_start": 5,
       "verse_end": 5,
-      "text": "He loveth righteousness and judgment: the earth is full of the goodness of the LORD.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "He",
+        "loveth",
+        "righteousness",
+        "and",
+        "judgment:",
+        "the",
+        "earth",
+        "is",
+        "full",
+        "of",
+        "the",
+        "goodness",
+        "of",
+        "the",
+        "LORD."
+      ],
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -59,9 +133,31 @@
       "chapter": 33,
       "verse_start": 6,
       "verse_end": 6,
-      "text": "By the word of the LORD were the heavens made; and all the host of them by the breath of his mouth.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "By",
+        "the",
+        "word",
+        "of",
+        "the",
+        "LORD",
+        "were",
+        "the",
+        "heavens",
+        "made;",
+        "and",
+        "all",
+        "the",
+        "host",
+        "of",
+        "them",
+        "by",
+        "the",
+        "breath",
+        "of",
+        "his",
+        "mouth."
+      ],
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -69,9 +165,27 @@
       "chapter": 33,
       "verse_start": 7,
       "verse_end": 7,
-      "text": "He gathereth the waters of the sea together as an heap: he layeth up the depth in storehouses.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "He",
+        "gathereth",
+        "the",
+        "waters",
+        "of",
+        "the",
+        "sea",
+        "together",
+        "as",
+        "an",
+        "heap:",
+        "he",
+        "layeth",
+        "up",
+        "the",
+        "depth",
+        "in",
+        "storehouses."
+      ],
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -79,9 +193,28 @@
       "chapter": 33,
       "verse_start": 8,
       "verse_end": 8,
-      "text": "Let all the earth fear the LORD: let all the inhabitants of the world stand in awe of him.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Let",
+        "all",
+        "the",
+        "earth",
+        "fear",
+        "the",
+        "LORD:",
+        "let",
+        "all",
+        "the",
+        "inhabitants",
+        "of",
+        "the",
+        "world",
+        "stand",
+        "in",
+        "awe",
+        "of",
+        "him."
+      ],
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -89,9 +222,22 @@
       "chapter": 33,
       "verse_start": 9,
       "verse_end": 9,
-      "text": "For he spake, and it was <em>done;</em> he commanded, and it stood fast.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "For",
+        "he",
+        "spake,",
+        "and",
+        "it",
+        "was",
+        "<em>done;</em>",
+        "he",
+        "commanded,",
+        "and",
+        "it",
+        "stood",
+        "fast."
+      ],
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -99,9 +245,29 @@
       "chapter": 33,
       "verse_start": 10,
       "verse_end": 10,
-      "text": "The LORD bringeth the counsel of the heathen to nought: he maketh the devices of the people of none effect.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "The",
+        "LORD",
+        "bringeth",
+        "the",
+        "counsel",
+        "of",
+        "the",
+        "heathen",
+        "to",
+        "nought:",
+        "he",
+        "maketh",
+        "the",
+        "devices",
+        "of",
+        "the",
+        "people",
+        "of",
+        "none",
+        "effect."
+      ],
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -109,9 +275,25 @@
       "chapter": 33,
       "verse_start": 11,
       "verse_end": 11,
-      "text": "The counsel of the LORD standeth for ever, the thoughts of his heart to all generations.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "The",
+        "counsel",
+        "of",
+        "the",
+        "LORD",
+        "standeth",
+        "for",
+        "ever,",
+        "the",
+        "thoughts",
+        "of",
+        "his",
+        "heart",
+        "to",
+        "all",
+        "generations."
+      ],
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -119,9 +301,29 @@
       "chapter": 33,
       "verse_start": 12,
       "verse_end": 12,
-      "text": "Blessed <em>is</em> the nation whose God <em>is</em> the LORD; <em>and</em> the people <em>whom</em> he hath chosen for his own inheritance.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Blessed",
+        "<em>is</em>",
+        "the",
+        "nation",
+        "whose",
+        "God",
+        "<em>is</em>",
+        "the",
+        "LORD;",
+        "<em>and</em>",
+        "the",
+        "people",
+        "<em>whom</em>",
+        "he",
+        "hath",
+        "chosen",
+        "for",
+        "his",
+        "own",
+        "inheritance."
+      ],
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -129,9 +331,21 @@
       "chapter": 33,
       "verse_start": 13,
       "verse_end": 13,
-      "text": "The LORD looketh from heaven; he beholdeth all the sons of men.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "The",
+        "LORD",
+        "looketh",
+        "from",
+        "heaven;",
+        "he",
+        "beholdeth",
+        "all",
+        "the",
+        "sons",
+        "of",
+        "men."
+      ],
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -139,9 +353,24 @@
       "chapter": 33,
       "verse_start": 14,
       "verse_end": 14,
-      "text": "From the place of his habitation he looketh upon all the inhabitants of the earth.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "From",
+        "the",
+        "place",
+        "of",
+        "his",
+        "habitation",
+        "he",
+        "looketh",
+        "upon",
+        "all",
+        "the",
+        "inhabitants",
+        "of",
+        "the",
+        "earth."
+      ],
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -149,9 +378,19 @@
       "chapter": 33,
       "verse_start": 15,
       "verse_end": 15,
-      "text": "He fashioneth their hearts alike; he considereth all their works.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "He",
+        "fashioneth",
+        "their",
+        "hearts",
+        "alike;",
+        "he",
+        "considereth",
+        "all",
+        "their",
+        "works."
+      ],
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -159,9 +398,29 @@
       "chapter": 33,
       "verse_start": 16,
       "verse_end": 16,
-      "text": "There is no king saved by the multitude of an host: a mighty man is not delivered by much strength.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "There",
+        "is",
+        "no",
+        "king",
+        "saved",
+        "by",
+        "the",
+        "multitude",
+        "of",
+        "an",
+        "host:",
+        "a",
+        "mighty",
+        "man",
+        "is",
+        "not",
+        "delivered",
+        "by",
+        "much",
+        "strength."
+      ],
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -169,9 +428,26 @@
       "chapter": 33,
       "verse_start": 17,
       "verse_end": 17,
-      "text": "An horse <em>is</em> a vain thing for safety: neither shall he deliver <em>any</em> by his great strength.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "An",
+        "horse",
+        "<em>is</em>",
+        "a",
+        "vain",
+        "thing",
+        "for",
+        "safety:",
+        "neither",
+        "shall",
+        "he",
+        "deliver",
+        "<em>any</em>",
+        "by",
+        "his",
+        "great",
+        "strength."
+      ],
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -179,9 +455,28 @@
       "chapter": 33,
       "verse_start": 18,
       "verse_end": 18,
-      "text": "Behold, the eye of the LORD <em>is</em> upon them that fear him, upon them that hope in his mercy;",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Behold,",
+        "the",
+        "eye",
+        "of",
+        "the",
+        "LORD",
+        "<em>is</em>",
+        "upon",
+        "them",
+        "that",
+        "fear",
+        "him,",
+        "upon",
+        "them",
+        "that",
+        "hope",
+        "in",
+        "his",
+        "mercy;"
+      ],
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -189,9 +484,22 @@
       "chapter": 33,
       "verse_start": 19,
       "verse_end": 19,
-      "text": "To deliver their soul from death, and to keep them alive in famine.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "To",
+        "deliver",
+        "their",
+        "soul",
+        "from",
+        "death,",
+        "and",
+        "to",
+        "keep",
+        "them",
+        "alive",
+        "in",
+        "famine."
+      ],
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -199,9 +507,22 @@
       "chapter": 33,
       "verse_start": 20,
       "verse_end": 20,
-      "text": "Our soul waiteth for the LORD: he <em>is</em> our help and our shield.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Our",
+        "soul",
+        "waiteth",
+        "for",
+        "the",
+        "LORD:",
+        "he",
+        "<em>is</em>",
+        "our",
+        "help",
+        "and",
+        "our",
+        "shield."
+      ],
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -209,9 +530,24 @@
       "chapter": 33,
       "verse_start": 21,
       "verse_end": 21,
-      "text": "For our heart shall rejoice in him, because we have trusted in his holy name.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "For",
+        "our",
+        "heart",
+        "shall",
+        "rejoice",
+        "in",
+        "him,",
+        "because",
+        "we",
+        "have",
+        "trusted",
+        "in",
+        "his",
+        "holy",
+        "name."
+      ],
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -219,9 +555,23 @@
       "chapter": 33,
       "verse_start": 22,
       "verse_end": 22,
-      "text": "Let thy mercy, O LORD, be upon us, according as we hope in thee.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Let",
+        "thy",
+        "mercy,",
+        "O",
+        "LORD,",
+        "be",
+        "upon",
+        "us,",
+        "according",
+        "as",
+        "we",
+        "hope",
+        "in",
+        "thee."
+      ],
+      "info": ""
     }
   ]
 }

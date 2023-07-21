@@ -9,9 +9,32 @@
       "chapter": 10,
       "verse_start": 1,
       "verse_end": 1,
-      "text": "Now these <em>are</em> the generations of the sons of Noah, Shem, Ham, and Japheth: and unto them were sons born after the flood.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Now",
+        "these",
+        "<em>are</em>",
+        "the",
+        "generations",
+        "of",
+        "the",
+        "sons",
+        "of",
+        "Noah,",
+        "Shem,",
+        "Ham,",
+        "and",
+        "Japheth:",
+        "and",
+        "unto",
+        "them",
+        "were",
+        "sons",
+        "born",
+        "after",
+        "the",
+        "flood."
+      ],
+      "info": ""
     },
     {
       "book_id": "GEN",
@@ -19,9 +42,26 @@
       "chapter": 10,
       "verse_start": 2,
       "verse_end": 2,
-      "text": "The sons of Japheth; Gomer, and Magog, and Madai, and Javan, and Tubal, and Meshech, and Tiras.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "The",
+        "sons",
+        "of",
+        "Japheth;",
+        "Gomer,",
+        "and",
+        "Magog,",
+        "and",
+        "Madai,",
+        "and",
+        "Javan,",
+        "and",
+        "Tubal,",
+        "and",
+        "Meshech,",
+        "and",
+        "Tiras."
+      ],
+      "info": ""
     },
     {
       "book_id": "GEN",
@@ -29,9 +69,19 @@
       "chapter": 10,
       "verse_start": 3,
       "verse_end": 3,
-      "text": "And the sons of Gomer; Ashkenaz, and Riphath, and Togarmah.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "And",
+        "the",
+        "sons",
+        "of",
+        "Gomer;",
+        "Ashkenaz,",
+        "and",
+        "Riphath,",
+        "and",
+        "Togarmah."
+      ],
+      "info": ""
     },
     {
       "book_id": "GEN",
@@ -39,9 +89,20 @@
       "chapter": 10,
       "verse_start": 4,
       "verse_end": 4,
-      "text": "And the sons of Javan; Elishah, and Tarshish, Kittim, and Dodanim.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "And",
+        "the",
+        "sons",
+        "of",
+        "Javan;",
+        "Elishah,",
+        "and",
+        "Tarshish,",
+        "Kittim,",
+        "and",
+        "Dodanim."
+      ],
+      "info": ""
     },
     {
       "book_id": "GEN",
@@ -49,9 +110,32 @@
       "chapter": 10,
       "verse_start": 5,
       "verse_end": 5,
-      "text": "By these were the isles of the Gentiles divided in their lands; every one after his tongue, after their families, in their nations.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "By",
+        "these",
+        "were",
+        "the",
+        "isles",
+        "of",
+        "the",
+        "Gentiles",
+        "divided",
+        "in",
+        "their",
+        "lands;",
+        "every",
+        "one",
+        "after",
+        "his",
+        "tongue,",
+        "after",
+        "their",
+        "families,",
+        "in",
+        "their",
+        "nations."
+      ],
+      "info": ""
     },
     {
       "book_id": "GEN",
@@ -59,9 +143,22 @@
       "chapter": 10,
       "verse_start": 6,
       "verse_end": 6,
-      "text": "¶ And the sons of Ham; Cush, and Mizraim, and Phut, and Canaan.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "¶",
+        "And",
+        "the",
+        "sons",
+        "of",
+        "Ham;",
+        "Cush,",
+        "and",
+        "Mizraim,",
+        "and",
+        "Phut,",
+        "and",
+        "Canaan."
+      ],
+      "info": ""
     },
     {
       "book_id": "GEN",
@@ -69,9 +166,31 @@
       "chapter": 10,
       "verse_start": 7,
       "verse_end": 7,
-      "text": "And the sons of Cush; Seba, and Havilah, and Sabtah, and Raamah, and Sabtecha: and the sons of Raamah; Sheba, and Dedan.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "And",
+        "the",
+        "sons",
+        "of",
+        "Cush;",
+        "Seba,",
+        "and",
+        "Havilah,",
+        "and",
+        "Sabtah,",
+        "and",
+        "Raamah,",
+        "and",
+        "Sabtecha:",
+        "and",
+        "the",
+        "sons",
+        "of",
+        "Raamah;",
+        "Sheba,",
+        "and",
+        "Dedan."
+      ],
+      "info": ""
     },
     {
       "book_id": "GEN",
@@ -79,9 +198,23 @@
       "chapter": 10,
       "verse_start": 8,
       "verse_end": 8,
-      "text": "And Cush begat Nimrod: he began to be a mighty one in the earth.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "And",
+        "Cush",
+        "begat",
+        "Nimrod:",
+        "he",
+        "began",
+        "to",
+        "be",
+        "a",
+        "mighty",
+        "one",
+        "in",
+        "the",
+        "earth."
+      ],
+      "info": ""
     },
     {
       "book_id": "GEN",
@@ -89,9 +222,30 @@
       "chapter": 10,
       "verse_start": 9,
       "verse_end": 9,
-      "text": "He was a mighty hunter before the LORD: wherefore it is said, Even as Nimrod the mighty hunter before the LORD.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "He",
+        "was",
+        "a",
+        "mighty",
+        "hunter",
+        "before",
+        "the",
+        "LORD:",
+        "wherefore",
+        "it",
+        "is",
+        "said,",
+        "Even",
+        "as",
+        "Nimrod",
+        "the",
+        "mighty",
+        "hunter",
+        "before",
+        "the",
+        "LORD."
+      ],
+      "info": ""
     },
     {
       "book_id": "GEN",
@@ -99,9 +253,28 @@
       "chapter": 10,
       "verse_start": 10,
       "verse_end": 10,
-      "text": "And the beginning of his kingdom was Babel, and Erech, and Accad, and Calneh, in the land of Shinar.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "And",
+        "the",
+        "beginning",
+        "of",
+        "his",
+        "kingdom",
+        "was",
+        "Babel,",
+        "and",
+        "Erech,",
+        "and",
+        "Accad,",
+        "and",
+        "Calneh,",
+        "in",
+        "the",
+        "land",
+        "of",
+        "Shinar."
+      ],
+      "info": ""
     },
     {
       "book_id": "GEN",
@@ -109,9 +282,25 @@
       "chapter": 10,
       "verse_start": 11,
       "verse_end": 11,
-      "text": "Out of that land went forth Asshur, and builded Nineveh, and the city Rehoboth, and Calah,",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Out",
+        "of",
+        "that",
+        "land",
+        "went",
+        "forth",
+        "Asshur,",
+        "and",
+        "builded",
+        "Nineveh,",
+        "and",
+        "the",
+        "city",
+        "Rehoboth,",
+        "and",
+        "Calah,"
+      ],
+      "info": ""
     },
     {
       "book_id": "GEN",
@@ -119,9 +308,21 @@
       "chapter": 10,
       "verse_start": 12,
       "verse_end": 12,
-      "text": "And Resen between Nineveh and Calah: the same <em>is</em> a great city.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "And",
+        "Resen",
+        "between",
+        "Nineveh",
+        "and",
+        "Calah:",
+        "the",
+        "same",
+        "<em>is</em>",
+        "a",
+        "great",
+        "city."
+      ],
+      "info": ""
     },
     {
       "book_id": "GEN",
@@ -129,9 +330,19 @@
       "chapter": 10,
       "verse_start": 13,
       "verse_end": 13,
-      "text": "And Mizraim begat Ludim, and Anamim, and Lehabim, and Naphtuhim,",
-      "info": "",
-      "language": "English"
+      "text": [
+        "And",
+        "Mizraim",
+        "begat",
+        "Ludim,",
+        "and",
+        "Anamim,",
+        "and",
+        "Lehabim,",
+        "and",
+        "Naphtuhim,"
+      ],
+      "info": ""
     },
     {
       "book_id": "GEN",
@@ -139,9 +350,20 @@
       "chapter": 10,
       "verse_start": 14,
       "verse_end": 14,
-      "text": "And Pathrusim, and Casluhim, (out of whom came Philistim,) and Caphtorim.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "And",
+        "Pathrusim,",
+        "and",
+        "Casluhim,",
+        "(out",
+        "of",
+        "whom",
+        "came",
+        "Philistim,)",
+        "and",
+        "Caphtorim."
+      ],
+      "info": ""
     },
     {
       "book_id": "GEN",
@@ -149,9 +371,18 @@
       "chapter": 10,
       "verse_start": 15,
       "verse_end": 15,
-      "text": "¶ And Canaan begat Sidon his firstborn, and Heth,",
-      "info": "",
-      "language": "English"
+      "text": [
+        "¶",
+        "And",
+        "Canaan",
+        "begat",
+        "Sidon",
+        "his",
+        "firstborn,",
+        "and",
+        "Heth,"
+      ],
+      "info": ""
     },
     {
       "book_id": "GEN",
@@ -159,9 +390,18 @@
       "chapter": 10,
       "verse_start": 16,
       "verse_end": 16,
-      "text": "And the Jebusite, and the Amorite, and the Girgasite,",
-      "info": "",
-      "language": "English"
+      "text": [
+        "And",
+        "the",
+        "Jebusite,",
+        "and",
+        "the",
+        "Amorite,",
+        "and",
+        "the",
+        "Girgasite,"
+      ],
+      "info": ""
     },
     {
       "book_id": "GEN",
@@ -169,9 +409,18 @@
       "chapter": 10,
       "verse_start": 17,
       "verse_end": 17,
-      "text": "And the Hivite, and the Arkite, and the Sinite,",
-      "info": "",
-      "language": "English"
+      "text": [
+        "And",
+        "the",
+        "Hivite,",
+        "and",
+        "the",
+        "Arkite,",
+        "and",
+        "the",
+        "Sinite,"
+      ],
+      "info": ""
     },
     {
       "book_id": "GEN",
@@ -179,9 +428,28 @@
       "chapter": 10,
       "verse_start": 18,
       "verse_end": 18,
-      "text": "And the Arvadite, and the Zemarite, and the Hamathite: and afterward were the families of the Canaanites spread abroad.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "And",
+        "the",
+        "Arvadite,",
+        "and",
+        "the",
+        "Zemarite,",
+        "and",
+        "the",
+        "Hamathite:",
+        "and",
+        "afterward",
+        "were",
+        "the",
+        "families",
+        "of",
+        "the",
+        "Canaanites",
+        "spread",
+        "abroad."
+      ],
+      "info": ""
     },
     {
       "book_id": "GEN",
@@ -189,9 +457,39 @@
       "chapter": 10,
       "verse_start": 19,
       "verse_end": 19,
-      "text": "And the border of the Canaanites was from Sidon, as thou comest to Gerar, unto Gaza; as thou goest, unto Sodom, and Gomorrah, and Admah, and Zeboim, even unto Lasha.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "And",
+        "the",
+        "border",
+        "of",
+        "the",
+        "Canaanites",
+        "was",
+        "from",
+        "Sidon,",
+        "as",
+        "thou",
+        "comest",
+        "to",
+        "Gerar,",
+        "unto",
+        "Gaza;",
+        "as",
+        "thou",
+        "goest,",
+        "unto",
+        "Sodom,",
+        "and",
+        "Gomorrah,",
+        "and",
+        "Admah,",
+        "and",
+        "Zeboim,",
+        "even",
+        "unto",
+        "Lasha."
+      ],
+      "info": ""
     },
     {
       "book_id": "GEN",
@@ -199,9 +497,28 @@
       "chapter": 10,
       "verse_start": 20,
       "verse_end": 20,
-      "text": "These <em>are</em> the sons of Ham, after their families, after their tongues, in their countries, <em>and</em> in their nations.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "These",
+        "<em>are</em>",
+        "the",
+        "sons",
+        "of",
+        "Ham,",
+        "after",
+        "their",
+        "families,",
+        "after",
+        "their",
+        "tongues,",
+        "in",
+        "their",
+        "countries,",
+        "<em>and</em>",
+        "in",
+        "their",
+        "nations."
+      ],
+      "info": ""
     },
     {
       "book_id": "GEN",
@@ -209,9 +526,33 @@
       "chapter": 10,
       "verse_start": 21,
       "verse_end": 21,
-      "text": "¶ Unto Shem also, the father of all the children of Eber, the brother of Japheth the elder, even to him were <em>children</em> born.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "¶",
+        "Unto",
+        "Shem",
+        "also,",
+        "the",
+        "father",
+        "of",
+        "all",
+        "the",
+        "children",
+        "of",
+        "Eber,",
+        "the",
+        "brother",
+        "of",
+        "Japheth",
+        "the",
+        "elder,",
+        "even",
+        "to",
+        "him",
+        "were",
+        "<em>children</em>",
+        "born."
+      ],
+      "info": ""
     },
     {
       "book_id": "GEN",
@@ -219,9 +560,22 @@
       "chapter": 10,
       "verse_start": 22,
       "verse_end": 22,
-      "text": "The children of Shem; Elam, and Asshur, and Arphaxad, and Lud, and Aram.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "The",
+        "children",
+        "of",
+        "Shem;",
+        "Elam,",
+        "and",
+        "Asshur,",
+        "and",
+        "Arphaxad,",
+        "and",
+        "Lud,",
+        "and",
+        "Aram."
+      ],
+      "info": ""
     },
     {
       "book_id": "GEN",
@@ -229,9 +583,21 @@
       "chapter": 10,
       "verse_start": 23,
       "verse_end": 23,
-      "text": "And the children of Aram; Uz, and Hul, and Gether, and Mash.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "And",
+        "the",
+        "children",
+        "of",
+        "Aram;",
+        "Uz,",
+        "and",
+        "Hul,",
+        "and",
+        "Gether,",
+        "and",
+        "Mash."
+      ],
+      "info": ""
     },
     {
       "book_id": "GEN",
@@ -239,9 +605,17 @@
       "chapter": 10,
       "verse_start": 24,
       "verse_end": 24,
-      "text": "And Arphaxad begat Salah; and Salah begat Eber.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "And",
+        "Arphaxad",
+        "begat",
+        "Salah;",
+        "and",
+        "Salah",
+        "begat",
+        "Eber."
+      ],
+      "info": ""
     },
     {
       "book_id": "GEN",
@@ -249,9 +623,36 @@
       "chapter": 10,
       "verse_start": 25,
       "verse_end": 25,
-      "text": "And unto Eber were born two sons: the name of one <em>was</em> Peleg; for in his days was the earth divided; and his brother's name <em>was</em> Joktan.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "And",
+        "unto",
+        "Eber",
+        "were",
+        "born",
+        "two",
+        "sons:",
+        "the",
+        "name",
+        "of",
+        "one",
+        "<em>was</em>",
+        "Peleg;",
+        "for",
+        "in",
+        "his",
+        "days",
+        "was",
+        "the",
+        "earth",
+        "divided;",
+        "and",
+        "his",
+        "brother's",
+        "name",
+        "<em>was</em>",
+        "Joktan."
+      ],
+      "info": ""
     },
     {
       "book_id": "GEN",
@@ -259,9 +660,19 @@
       "chapter": 10,
       "verse_start": 26,
       "verse_end": 26,
-      "text": "And Joktan begat Almodad, and Sheleph, and Hazarmaveth, and Jerah,",
-      "info": "",
-      "language": "English"
+      "text": [
+        "And",
+        "Joktan",
+        "begat",
+        "Almodad,",
+        "and",
+        "Sheleph,",
+        "and",
+        "Hazarmaveth,",
+        "and",
+        "Jerah,"
+      ],
+      "info": ""
     },
     {
       "book_id": "GEN",
@@ -269,9 +680,15 @@
       "chapter": 10,
       "verse_start": 27,
       "verse_end": 27,
-      "text": "And Hadoram, and Uzal, and Diklah,",
-      "info": "",
-      "language": "English"
+      "text": [
+        "And",
+        "Hadoram,",
+        "and",
+        "Uzal,",
+        "and",
+        "Diklah,"
+      ],
+      "info": ""
     },
     {
       "book_id": "GEN",
@@ -279,9 +696,15 @@
       "chapter": 10,
       "verse_start": 28,
       "verse_end": 28,
-      "text": "And Obal, and Abimael, and Sheba,",
-      "info": "",
-      "language": "English"
+      "text": [
+        "And",
+        "Obal,",
+        "and",
+        "Abimael,",
+        "and",
+        "Sheba,"
+      ],
+      "info": ""
     },
     {
       "book_id": "GEN",
@@ -289,9 +712,22 @@
       "chapter": 10,
       "verse_start": 29,
       "verse_end": 29,
-      "text": "And Ophir, and Havilah, and Jobab: all these <em>were</em> the sons of Joktan.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "And",
+        "Ophir,",
+        "and",
+        "Havilah,",
+        "and",
+        "Jobab:",
+        "all",
+        "these",
+        "<em>were</em>",
+        "the",
+        "sons",
+        "of",
+        "Joktan."
+      ],
+      "info": ""
     },
     {
       "book_id": "GEN",
@@ -299,9 +735,25 @@
       "chapter": 10,
       "verse_start": 30,
       "verse_end": 30,
-      "text": "And their dwelling was from Mesha, as thou goest unto Sephar a mount of the east.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "And",
+        "their",
+        "dwelling",
+        "was",
+        "from",
+        "Mesha,",
+        "as",
+        "thou",
+        "goest",
+        "unto",
+        "Sephar",
+        "a",
+        "mount",
+        "of",
+        "the",
+        "east."
+      ],
+      "info": ""
     },
     {
       "book_id": "GEN",
@@ -309,9 +761,27 @@
       "chapter": 10,
       "verse_start": 31,
       "verse_end": 31,
-      "text": "These <em>are</em> the sons of Shem, after their families, after their tongues, in their lands, after their nations.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "These",
+        "<em>are</em>",
+        "the",
+        "sons",
+        "of",
+        "Shem,",
+        "after",
+        "their",
+        "families,",
+        "after",
+        "their",
+        "tongues,",
+        "in",
+        "their",
+        "lands,",
+        "after",
+        "their",
+        "nations."
+      ],
+      "info": ""
     },
     {
       "book_id": "GEN",
@@ -319,9 +789,37 @@
       "chapter": 10,
       "verse_start": 32,
       "verse_end": 32,
-      "text": "These <em>are</em> the families of the sons of Noah, after their generations, in their nations: and by these were the nations divided in the earth after the flood.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "These",
+        "<em>are</em>",
+        "the",
+        "families",
+        "of",
+        "the",
+        "sons",
+        "of",
+        "Noah,",
+        "after",
+        "their",
+        "generations,",
+        "in",
+        "their",
+        "nations:",
+        "and",
+        "by",
+        "these",
+        "were",
+        "the",
+        "nations",
+        "divided",
+        "in",
+        "the",
+        "earth",
+        "after",
+        "the",
+        "flood."
+      ],
+      "info": ""
     }
   ]
 }

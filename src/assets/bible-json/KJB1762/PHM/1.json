@@ -1,6 +1,6 @@
 {
   "header": "",
-  "footer": "¶ Written from Rome to Philemon, by Onesimus a servant.",
+  "footer": "¶ Written</em> <em>from</em> <em>Rome</em> <em>to</em> <em>Philemon,</em> <em>by</em> <em>Onesimus</em> <em>a</em> <em>servant.",
   "language": "English",
   "verses": [
     {
@@ -9,9 +9,26 @@
       "chapter": 1,
       "verse_start": 1,
       "verse_end": 1,
-      "text": "Paul, a prisoner of Jesus Christ, and Timothy <em>our</em> brother, unto Philemon our dearly beloved, and fellowlabourer,",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Paul,",
+        "a",
+        "prisoner",
+        "of",
+        "Jesus",
+        "Christ,",
+        "and",
+        "Timothy",
+        "<em>our</em>",
+        "brother,",
+        "unto",
+        "Philemon",
+        "our",
+        "dearly",
+        "beloved,",
+        "and",
+        "fellowlabourer,"
+      ],
+      "info": ""
     },
     {
       "book_id": "PHM",
@@ -19,9 +36,25 @@
       "chapter": 1,
       "verse_start": 2,
       "verse_end": 2,
-      "text": "And to <em>our</em> beloved Apphia, and Archippus our fellowsoldier, and to the church in thy house:",
-      "info": "",
-      "language": "English"
+      "text": [
+        "And",
+        "to",
+        "<em>our</em>",
+        "beloved",
+        "Apphia,",
+        "and",
+        "Archippus",
+        "our",
+        "fellowsoldier,",
+        "and",
+        "to",
+        "the",
+        "church",
+        "in",
+        "thy",
+        "house:"
+      ],
+      "info": ""
     },
     {
       "book_id": "PHM",
@@ -29,9 +62,23 @@
       "chapter": 1,
       "verse_start": 3,
       "verse_end": 3,
-      "text": "Grace to you, and peace, from God our Father and the Lord Jesus Christ.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Grace",
+        "to",
+        "you,",
+        "and",
+        "peace,",
+        "from",
+        "God",
+        "our",
+        "Father",
+        "and",
+        "the",
+        "Lord",
+        "Jesus",
+        "Christ."
+      ],
+      "info": ""
     },
     {
       "book_id": "PHM",
@@ -39,9 +86,21 @@
       "chapter": 1,
       "verse_start": 4,
       "verse_end": 4,
-      "text": "I thank my God, making mention of thee always in my prayers,",
-      "info": "",
-      "language": "English"
+      "text": [
+        "I",
+        "thank",
+        "my",
+        "God,",
+        "making",
+        "mention",
+        "of",
+        "thee",
+        "always",
+        "in",
+        "my",
+        "prayers,"
+      ],
+      "info": ""
     },
     {
       "book_id": "PHM",
@@ -49,9 +108,26 @@
       "chapter": 1,
       "verse_start": 5,
       "verse_end": 5,
-      "text": "Hearing of thy love and faith, which thou hast toward the Lord Jesus, and toward all saints;",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Hearing",
+        "of",
+        "thy",
+        "love",
+        "and",
+        "faith,",
+        "which",
+        "thou",
+        "hast",
+        "toward",
+        "the",
+        "Lord",
+        "Jesus,",
+        "and",
+        "toward",
+        "all",
+        "saints;"
+      ],
+      "info": ""
     },
     {
       "book_id": "PHM",
@@ -59,9 +135,32 @@
       "chapter": 1,
       "verse_start": 6,
       "verse_end": 6,
-      "text": "That the communication of thy faith may become effectual by the acknowledging of every good thing which is in you in Christ Jesus.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "That",
+        "the",
+        "communication",
+        "of",
+        "thy",
+        "faith",
+        "may",
+        "become",
+        "effectual",
+        "by",
+        "the",
+        "acknowledging",
+        "of",
+        "every",
+        "good",
+        "thing",
+        "which",
+        "is",
+        "in",
+        "you",
+        "in",
+        "Christ",
+        "Jesus."
+      ],
+      "info": ""
     },
     {
       "book_id": "PHM",
@@ -69,9 +168,30 @@
       "chapter": 1,
       "verse_start": 7,
       "verse_end": 7,
-      "text": "For we have great joy and consolation in thy love, because the bowels of the saints are refreshed by thee, brother.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "For",
+        "we",
+        "have",
+        "great",
+        "joy",
+        "and",
+        "consolation",
+        "in",
+        "thy",
+        "love,",
+        "because",
+        "the",
+        "bowels",
+        "of",
+        "the",
+        "saints",
+        "are",
+        "refreshed",
+        "by",
+        "thee,",
+        "brother."
+      ],
+      "info": ""
     },
     {
       "book_id": "PHM",
@@ -79,9 +199,25 @@
       "chapter": 1,
       "verse_start": 8,
       "verse_end": 8,
-      "text": "Wherefore, though I might be much bold in Christ to enjoin thee that which is convenient,",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Wherefore,",
+        "though",
+        "I",
+        "might",
+        "be",
+        "much",
+        "bold",
+        "in",
+        "Christ",
+        "to",
+        "enjoin",
+        "thee",
+        "that",
+        "which",
+        "is",
+        "convenient,"
+      ],
+      "info": ""
     },
     {
       "book_id": "PHM",
@@ -89,9 +225,33 @@
       "chapter": 1,
       "verse_start": 9,
       "verse_end": 9,
-      "text": "Yet for love's sake I rather beseech <em>thee,</em> being such an one as Paul the aged, and now also a prisoner of Jesus Christ.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Yet",
+        "for",
+        "love's",
+        "sake",
+        "I",
+        "rather",
+        "beseech",
+        "<em>thee,</em>",
+        "being",
+        "such",
+        "an",
+        "one",
+        "as",
+        "Paul",
+        "the",
+        "aged,",
+        "and",
+        "now",
+        "also",
+        "a",
+        "prisoner",
+        "of",
+        "Jesus",
+        "Christ."
+      ],
+      "info": ""
     },
     {
       "book_id": "PHM",
@@ -99,9 +259,23 @@
       "chapter": 1,
       "verse_start": 10,
       "verse_end": 10,
-      "text": "I beseech thee for my son Onesimus, whom I have begotten in my bonds:",
-      "info": "",
-      "language": "English"
+      "text": [
+        "I",
+        "beseech",
+        "thee",
+        "for",
+        "my",
+        "son",
+        "Onesimus,",
+        "whom",
+        "I",
+        "have",
+        "begotten",
+        "in",
+        "my",
+        "bonds:"
+      ],
+      "info": ""
     },
     {
       "book_id": "PHM",
@@ -109,9 +283,25 @@
       "chapter": 1,
       "verse_start": 11,
       "verse_end": 11,
-      "text": "Which in time past was to thee unprofitable, but now profitable to thee and to me:",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Which",
+        "in",
+        "time",
+        "past",
+        "was",
+        "to",
+        "thee",
+        "unprofitable,",
+        "but",
+        "now",
+        "profitable",
+        "to",
+        "thee",
+        "and",
+        "to",
+        "me:"
+      ],
+      "info": ""
     },
     {
       "book_id": "PHM",
@@ -119,9 +309,23 @@
       "chapter": 1,
       "verse_start": 12,
       "verse_end": 12,
-      "text": "Whom I have sent again: thou therefore receive him, that is, mine own bowels:",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Whom",
+        "I",
+        "have",
+        "sent",
+        "again:",
+        "thou",
+        "therefore",
+        "receive",
+        "him,",
+        "that",
+        "is,",
+        "mine",
+        "own",
+        "bowels:"
+      ],
+      "info": ""
     },
     {
       "book_id": "PHM",
@@ -129,9 +333,32 @@
       "chapter": 1,
       "verse_start": 13,
       "verse_end": 13,
-      "text": "Whom I would have retained with me, that in thy stead he might have ministered unto me in the bonds of the gospel:",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Whom",
+        "I",
+        "would",
+        "have",
+        "retained",
+        "with",
+        "me,",
+        "that",
+        "in",
+        "thy",
+        "stead",
+        "he",
+        "might",
+        "have",
+        "ministered",
+        "unto",
+        "me",
+        "in",
+        "the",
+        "bonds",
+        "of",
+        "the",
+        "gospel:"
+      ],
+      "info": ""
     },
     {
       "book_id": "PHM",
@@ -139,9 +366,30 @@
       "chapter": 1,
       "verse_start": 14,
       "verse_end": 14,
-      "text": "But without thy mind would I do nothing; that thy benefit should not be as it were of necessity, but willingly.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "But",
+        "without",
+        "thy",
+        "mind",
+        "would",
+        "I",
+        "do",
+        "nothing;",
+        "that",
+        "thy",
+        "benefit",
+        "should",
+        "not",
+        "be",
+        "as",
+        "it",
+        "were",
+        "of",
+        "necessity,",
+        "but",
+        "willingly."
+      ],
+      "info": ""
     },
     {
       "book_id": "PHM",
@@ -149,9 +397,24 @@
       "chapter": 1,
       "verse_start": 15,
       "verse_end": 15,
-      "text": "For perhaps he therefore departed for a season, that thou shouldest receive him for ever;",
-      "info": "",
-      "language": "English"
+      "text": [
+        "For",
+        "perhaps",
+        "he",
+        "therefore",
+        "departed",
+        "for",
+        "a",
+        "season,",
+        "that",
+        "thou",
+        "shouldest",
+        "receive",
+        "him",
+        "for",
+        "ever;"
+      ],
+      "info": ""
     },
     {
       "book_id": "PHM",
@@ -159,9 +422,38 @@
       "chapter": 1,
       "verse_start": 16,
       "verse_end": 16,
-      "text": "Not now as a servant, but above a servant, a brother beloved, specially to me, but how much more unto thee, both in the flesh, and in the Lord?",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Not",
+        "now",
+        "as",
+        "a",
+        "servant,",
+        "but",
+        "above",
+        "a",
+        "servant,",
+        "a",
+        "brother",
+        "beloved,",
+        "specially",
+        "to",
+        "me,",
+        "but",
+        "how",
+        "much",
+        "more",
+        "unto",
+        "thee,",
+        "both",
+        "in",
+        "the",
+        "flesh,",
+        "and",
+        "in",
+        "the",
+        "Lord?"
+      ],
+      "info": ""
     },
     {
       "book_id": "PHM",
@@ -169,9 +461,20 @@
       "chapter": 1,
       "verse_start": 17,
       "verse_end": 17,
-      "text": "If thou count me therefore a partner, receive him as myself.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "If",
+        "thou",
+        "count",
+        "me",
+        "therefore",
+        "a",
+        "partner,",
+        "receive",
+        "him",
+        "as",
+        "myself."
+      ],
+      "info": ""
     },
     {
       "book_id": "PHM",
@@ -179,9 +482,23 @@
       "chapter": 1,
       "verse_start": 18,
       "verse_end": 18,
-      "text": "If he hath wronged thee, or oweth <em>thee</em> ought, put that on mine account;",
-      "info": "",
-      "language": "English"
+      "text": [
+        "If",
+        "he",
+        "hath",
+        "wronged",
+        "thee,",
+        "or",
+        "oweth",
+        "<em>thee</em>",
+        "ought,",
+        "put",
+        "that",
+        "on",
+        "mine",
+        "account;"
+      ],
+      "info": ""
     },
     {
       "book_id": "PHM",
@@ -189,9 +506,39 @@
       "chapter": 1,
       "verse_start": 19,
       "verse_end": 19,
-      "text": "I Paul have written <em>it</em> with mine own hand, I will repay <em>it:</em> albeit I do not say to thee how thou owest unto me even thine own self besides.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "I",
+        "Paul",
+        "have",
+        "written",
+        "<em>it</em>",
+        "with",
+        "mine",
+        "own",
+        "hand,",
+        "I",
+        "will",
+        "repay",
+        "<em>it:</em>",
+        "albeit",
+        "I",
+        "do",
+        "not",
+        "say",
+        "to",
+        "thee",
+        "how",
+        "thou",
+        "owest",
+        "unto",
+        "me",
+        "even",
+        "thine",
+        "own",
+        "self",
+        "besides."
+      ],
+      "info": ""
     },
     {
       "book_id": "PHM",
@@ -199,9 +546,26 @@
       "chapter": 1,
       "verse_start": 20,
       "verse_end": 20,
-      "text": "Yea, brother, let me have joy of thee in the Lord: refresh my bowels in the Lord.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Yea,",
+        "brother,",
+        "let",
+        "me",
+        "have",
+        "joy",
+        "of",
+        "thee",
+        "in",
+        "the",
+        "Lord:",
+        "refresh",
+        "my",
+        "bowels",
+        "in",
+        "the",
+        "Lord."
+      ],
+      "info": ""
     },
     {
       "book_id": "PHM",
@@ -209,9 +573,28 @@
       "chapter": 1,
       "verse_start": 21,
       "verse_end": 21,
-      "text": "Having confidence in thy obedience I wrote unto thee, knowing that thou wilt also do more than I say.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Having",
+        "confidence",
+        "in",
+        "thy",
+        "obedience",
+        "I",
+        "wrote",
+        "unto",
+        "thee,",
+        "knowing",
+        "that",
+        "thou",
+        "wilt",
+        "also",
+        "do",
+        "more",
+        "than",
+        "I",
+        "say."
+      ],
+      "info": ""
     },
     {
       "book_id": "PHM",
@@ -219,9 +602,29 @@
       "chapter": 1,
       "verse_start": 22,
       "verse_end": 22,
-      "text": "But withal prepare me also a lodging: for I trust that through your prayers I shall be given unto you.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "But",
+        "withal",
+        "prepare",
+        "me",
+        "also",
+        "a",
+        "lodging:",
+        "for",
+        "I",
+        "trust",
+        "that",
+        "through",
+        "your",
+        "prayers",
+        "I",
+        "shall",
+        "be",
+        "given",
+        "unto",
+        "you."
+      ],
+      "info": ""
     },
     {
       "book_id": "PHM",
@@ -229,9 +632,18 @@
       "chapter": 1,
       "verse_start": 23,
       "verse_end": 23,
-      "text": "There salute thee Epaphras, my fellowprisoner in Christ Jesus;",
-      "info": "",
-      "language": "English"
+      "text": [
+        "There",
+        "salute",
+        "thee",
+        "Epaphras,",
+        "my",
+        "fellowprisoner",
+        "in",
+        "Christ",
+        "Jesus;"
+      ],
+      "info": ""
     },
     {
       "book_id": "PHM",
@@ -239,9 +651,15 @@
       "chapter": 1,
       "verse_start": 24,
       "verse_end": 24,
-      "text": "Marcus, Aristarchus, Demas, Lucas, my fellowlabourers.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Marcus,",
+        "Aristarchus,",
+        "Demas,",
+        "Lucas,",
+        "my",
+        "fellowlabourers."
+      ],
+      "info": ""
     },
     {
       "book_id": "PHM",
@@ -249,9 +667,21 @@
       "chapter": 1,
       "verse_start": 25,
       "verse_end": 25,
-      "text": "The grace of our Lord Jesus Christ <em>be</em> with your spirit. Amen.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "The",
+        "grace",
+        "of",
+        "our",
+        "Lord",
+        "Jesus",
+        "Christ",
+        "<em>be</em>",
+        "with",
+        "your",
+        "spirit.",
+        "Amen."
+      ],
+      "info": ""
     }
   ]
 }

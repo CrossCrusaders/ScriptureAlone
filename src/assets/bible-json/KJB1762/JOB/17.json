@@ -9,9 +9,23 @@
       "chapter": 17,
       "verse_start": 1,
       "verse_end": 1,
-      "text": "My breath is corrupt, my days are extinct, the graves <em>are ready</em> for me.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "My",
+        "breath",
+        "is",
+        "corrupt,",
+        "my",
+        "days",
+        "are",
+        "extinct,",
+        "the",
+        "graves",
+        "<em>are</em>",
+        "<em>ready</em>",
+        "for",
+        "me."
+      ],
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -19,9 +33,24 @@
       "chapter": 17,
       "verse_start": 2,
       "verse_end": 2,
-      "text": "<em>Are there</em> not mockers with me? and doth not mine eye continue in their provocation?",
-      "info": "",
-      "language": "English"
+      "text": [
+        "<em>Are</em>",
+        "<em>there</em>",
+        "not",
+        "mockers",
+        "with",
+        "me?",
+        "and",
+        "doth",
+        "not",
+        "mine",
+        "eye",
+        "continue",
+        "in",
+        "their",
+        "provocation?"
+      ],
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -29,9 +58,28 @@
       "chapter": 17,
       "verse_start": 3,
       "verse_end": 3,
-      "text": "Lay down now, put me in a surety with thee; who <em>is</em> he <em>that</em> will strike hands with me?",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Lay",
+        "down",
+        "now,",
+        "put",
+        "me",
+        "in",
+        "a",
+        "surety",
+        "with",
+        "thee;",
+        "who",
+        "<em>is</em>",
+        "he",
+        "<em>that</em>",
+        "will",
+        "strike",
+        "hands",
+        "with",
+        "me?"
+      ],
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -39,9 +87,23 @@
       "chapter": 17,
       "verse_start": 4,
       "verse_end": 4,
-      "text": "For thou hast hid their heart from understanding: therefore shalt thou not exalt <em>them.</em>",
-      "info": "",
-      "language": "English"
+      "text": [
+        "For",
+        "thou",
+        "hast",
+        "hid",
+        "their",
+        "heart",
+        "from",
+        "understanding:",
+        "therefore",
+        "shalt",
+        "thou",
+        "not",
+        "exalt",
+        "<em>them.</em>"
+      ],
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -49,9 +111,24 @@
       "chapter": 17,
       "verse_start": 5,
       "verse_end": 5,
-      "text": "He that speaketh flattery to <em>his</em> friends, even the eyes of his children shall fail.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "He",
+        "that",
+        "speaketh",
+        "flattery",
+        "to",
+        "<em>his</em>",
+        "friends,",
+        "even",
+        "the",
+        "eyes",
+        "of",
+        "his",
+        "children",
+        "shall",
+        "fail."
+      ],
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -59,9 +136,26 @@
       "chapter": 17,
       "verse_start": 6,
       "verse_end": 6,
-      "text": "He hath made me also a byword of the people; and aforetime I was as a tabret.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "He",
+        "hath",
+        "made",
+        "me",
+        "also",
+        "a",
+        "byword",
+        "of",
+        "the",
+        "people;",
+        "and",
+        "aforetime",
+        "I",
+        "was",
+        "as",
+        "a",
+        "tabret."
+      ],
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -69,9 +163,26 @@
       "chapter": 17,
       "verse_start": 7,
       "verse_end": 7,
-      "text": "Mine eye also is dim by reason of sorrow, and all my members <em>are</em> as a shadow.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Mine",
+        "eye",
+        "also",
+        "is",
+        "dim",
+        "by",
+        "reason",
+        "of",
+        "sorrow,",
+        "and",
+        "all",
+        "my",
+        "members",
+        "<em>are</em>",
+        "as",
+        "a",
+        "shadow."
+      ],
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -79,9 +190,26 @@
       "chapter": 17,
       "verse_start": 8,
       "verse_end": 8,
-      "text": "Upright <em>men</em> shall be astonied at this, and the innocent shall stir up himself against the hypocrite.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Upright",
+        "<em>men</em>",
+        "shall",
+        "be",
+        "astonied",
+        "at",
+        "this,",
+        "and",
+        "the",
+        "innocent",
+        "shall",
+        "stir",
+        "up",
+        "himself",
+        "against",
+        "the",
+        "hypocrite."
+      ],
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -89,9 +217,28 @@
       "chapter": 17,
       "verse_start": 9,
       "verse_end": 9,
-      "text": "The righteous also shall hold on his way, and he that hath clean hands shall be stronger and stronger.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "The",
+        "righteous",
+        "also",
+        "shall",
+        "hold",
+        "on",
+        "his",
+        "way,",
+        "and",
+        "he",
+        "that",
+        "hath",
+        "clean",
+        "hands",
+        "shall",
+        "be",
+        "stronger",
+        "and",
+        "stronger."
+      ],
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -99,9 +246,29 @@
       "chapter": 17,
       "verse_start": 10,
       "verse_end": 10,
-      "text": "But as for you all, do ye return, and come now: for I cannot find <em>one</em> wise <em>man</em> among you.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "But",
+        "as",
+        "for",
+        "you",
+        "all,",
+        "do",
+        "ye",
+        "return,",
+        "and",
+        "come",
+        "now:",
+        "for",
+        "I",
+        "cannot",
+        "find",
+        "<em>one</em>",
+        "wise",
+        "<em>man</em>",
+        "among",
+        "you."
+      ],
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -109,9 +276,24 @@
       "chapter": 17,
       "verse_start": 11,
       "verse_end": 11,
-      "text": "My days are past, my purposes are broken off, <em>even</em> the thoughts of my heart.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "My",
+        "days",
+        "are",
+        "past,",
+        "my",
+        "purposes",
+        "are",
+        "broken",
+        "off,",
+        "<em>even</em>",
+        "the",
+        "thoughts",
+        "of",
+        "my",
+        "heart."
+      ],
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -119,9 +301,22 @@
       "chapter": 17,
       "verse_start": 12,
       "verse_end": 12,
-      "text": "They change the night into day: the light <em>is</em> short because of darkness.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "They",
+        "change",
+        "the",
+        "night",
+        "into",
+        "day:",
+        "the",
+        "light",
+        "<em>is</em>",
+        "short",
+        "because",
+        "of",
+        "darkness."
+      ],
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -129,9 +324,25 @@
       "chapter": 17,
       "verse_start": 13,
       "verse_end": 13,
-      "text": "If I wait, the grave <em>is</em> mine house: I have made my bed in the darkness.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "If",
+        "I",
+        "wait,",
+        "the",
+        "grave",
+        "<em>is</em>",
+        "mine",
+        "house:",
+        "I",
+        "have",
+        "made",
+        "my",
+        "bed",
+        "in",
+        "the",
+        "darkness."
+      ],
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -139,9 +350,28 @@
       "chapter": 17,
       "verse_start": 14,
       "verse_end": 14,
-      "text": "I have said to corruption, Thou <em>art</em> my father: to the worm, <em>Thou art</em> my mother, and my sister.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "I",
+        "have",
+        "said",
+        "to",
+        "corruption,",
+        "Thou",
+        "<em>art</em>",
+        "my",
+        "father:",
+        "to",
+        "the",
+        "worm,",
+        "<em>Thou</em>",
+        "<em>art</em>",
+        "my",
+        "mother,",
+        "and",
+        "my",
+        "sister."
+      ],
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -149,9 +379,23 @@
       "chapter": 17,
       "verse_start": 15,
       "verse_end": 15,
-      "text": "And where <em>is</em> now my hope? as for my hope, who shall see it?",
-      "info": "",
-      "language": "English"
+      "text": [
+        "And",
+        "where",
+        "<em>is</em>",
+        "now",
+        "my",
+        "hope?",
+        "as",
+        "for",
+        "my",
+        "hope,",
+        "who",
+        "shall",
+        "see",
+        "it?"
+      ],
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -159,9 +403,27 @@
       "chapter": 17,
       "verse_start": 16,
       "verse_end": 16,
-      "text": "They shall go down to the bars of the pit, when <em>our</em> rest together <em>is</em> in the dust.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "They",
+        "shall",
+        "go",
+        "down",
+        "to",
+        "the",
+        "bars",
+        "of",
+        "the",
+        "pit,",
+        "when",
+        "<em>our</em>",
+        "rest",
+        "together",
+        "<em>is</em>",
+        "in",
+        "the",
+        "dust."
+      ],
+      "info": ""
     }
   ]
 }

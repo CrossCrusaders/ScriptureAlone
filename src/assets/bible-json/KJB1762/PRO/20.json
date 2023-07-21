@@ -9,9 +9,25 @@
       "chapter": 20,
       "verse_start": 1,
       "verse_end": 1,
-      "text": "Wine <em>is</em> a mocker, strong drink <em>is</em> raging: and whosoever is deceived thereby is not wise.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Wine",
+        "<em>is</em>",
+        "a",
+        "mocker,",
+        "strong",
+        "drink",
+        "<em>is</em>",
+        "raging:",
+        "and",
+        "whosoever",
+        "is",
+        "deceived",
+        "thereby",
+        "is",
+        "not",
+        "wise."
+      ],
+      "info": ""
     },
     {
       "book_id": "PRO",
@@ -19,9 +35,31 @@
       "chapter": 20,
       "verse_start": 2,
       "verse_end": 2,
-      "text": "The fear of a king <em>is</em> as the roaring of a lion: <em>whoso</em> provoketh him to anger sinneth <em>against</em> his own soul.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "The",
+        "fear",
+        "of",
+        "a",
+        "king",
+        "<em>is</em>",
+        "as",
+        "the",
+        "roaring",
+        "of",
+        "a",
+        "lion:",
+        "<em>whoso</em>",
+        "provoketh",
+        "him",
+        "to",
+        "anger",
+        "sinneth",
+        "<em>against</em>",
+        "his",
+        "own",
+        "soul."
+      ],
+      "info": ""
     },
     {
       "book_id": "PRO",
@@ -29,9 +67,26 @@
       "chapter": 20,
       "verse_start": 3,
       "verse_end": 3,
-      "text": "<em>It is</em> an honour for a man to cease from strife: but every fool will be meddling.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "<em>It</em>",
+        "<em>is</em>",
+        "an",
+        "honour",
+        "for",
+        "a",
+        "man",
+        "to",
+        "cease",
+        "from",
+        "strife:",
+        "but",
+        "every",
+        "fool",
+        "will",
+        "be",
+        "meddling."
+      ],
+      "info": ""
     },
     {
       "book_id": "PRO",
@@ -39,9 +94,28 @@
       "chapter": 20,
       "verse_start": 4,
       "verse_end": 4,
-      "text": "The sluggard will not plow by reason of the cold; <em>therefore</em> shall he beg in harvest, and <em>have</em> nothing.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "The",
+        "sluggard",
+        "will",
+        "not",
+        "plow",
+        "by",
+        "reason",
+        "of",
+        "the",
+        "cold;",
+        "<em>therefore</em>",
+        "shall",
+        "he",
+        "beg",
+        "in",
+        "harvest,",
+        "and",
+        "<em>have</em>",
+        "nothing."
+      ],
+      "info": ""
     },
     {
       "book_id": "PRO",
@@ -49,9 +123,28 @@
       "chapter": 20,
       "verse_start": 5,
       "verse_end": 5,
-      "text": "Counsel in the heart of man <em>is like</em> deep water; but a man of understanding will draw it out.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Counsel",
+        "in",
+        "the",
+        "heart",
+        "of",
+        "man",
+        "<em>is</em>",
+        "<em>like</em>",
+        "deep",
+        "water;",
+        "but",
+        "a",
+        "man",
+        "of",
+        "understanding",
+        "will",
+        "draw",
+        "it",
+        "out."
+      ],
+      "info": ""
     },
     {
       "book_id": "PRO",
@@ -59,9 +152,25 @@
       "chapter": 20,
       "verse_start": 6,
       "verse_end": 6,
-      "text": "Most men will proclaim every one his own goodness: but a faithful man who can find?",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Most",
+        "men",
+        "will",
+        "proclaim",
+        "every",
+        "one",
+        "his",
+        "own",
+        "goodness:",
+        "but",
+        "a",
+        "faithful",
+        "man",
+        "who",
+        "can",
+        "find?"
+      ],
+      "info": ""
     },
     {
       "book_id": "PRO",
@@ -69,9 +178,22 @@
       "chapter": 20,
       "verse_start": 7,
       "verse_end": 7,
-      "text": "The just <em>man</em> walketh in his integrity: his children <em>are</em> blessed after him.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "The",
+        "just",
+        "<em>man</em>",
+        "walketh",
+        "in",
+        "his",
+        "integrity:",
+        "his",
+        "children",
+        "<em>are</em>",
+        "blessed",
+        "after",
+        "him."
+      ],
+      "info": ""
     },
     {
       "book_id": "PRO",
@@ -79,9 +201,25 @@
       "chapter": 20,
       "verse_start": 8,
       "verse_end": 8,
-      "text": "A king that sitteth in the throne of judgment scattereth away all evil with his eyes.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "A",
+        "king",
+        "that",
+        "sitteth",
+        "in",
+        "the",
+        "throne",
+        "of",
+        "judgment",
+        "scattereth",
+        "away",
+        "all",
+        "evil",
+        "with",
+        "his",
+        "eyes."
+      ],
+      "info": ""
     },
     {
       "book_id": "PRO",
@@ -89,9 +227,24 @@
       "chapter": 20,
       "verse_start": 9,
       "verse_end": 9,
-      "text": "Who can say, I have made my heart clean, I am pure from my sin?",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Who",
+        "can",
+        "say,",
+        "I",
+        "have",
+        "made",
+        "my",
+        "heart",
+        "clean,",
+        "I",
+        "am",
+        "pure",
+        "from",
+        "my",
+        "sin?"
+      ],
+      "info": ""
     },
     {
       "book_id": "PRO",
@@ -99,9 +252,23 @@
       "chapter": 20,
       "verse_start": 10,
       "verse_end": 10,
-      "text": "Divers weights, <em>and</em> divers measures, both of them <em>are</em> alike abomination to the LORD.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Divers",
+        "weights,",
+        "<em>and</em>",
+        "divers",
+        "measures,",
+        "both",
+        "of",
+        "them",
+        "<em>are</em>",
+        "alike",
+        "abomination",
+        "to",
+        "the",
+        "LORD."
+      ],
+      "info": ""
     },
     {
       "book_id": "PRO",
@@ -109,9 +276,27 @@
       "chapter": 20,
       "verse_start": 11,
       "verse_end": 11,
-      "text": "Even a child is known by his doings, whether his work <em>be</em> pure, and whether <em>it be</em> right.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Even",
+        "a",
+        "child",
+        "is",
+        "known",
+        "by",
+        "his",
+        "doings,",
+        "whether",
+        "his",
+        "work",
+        "<em>be</em>",
+        "pure,",
+        "and",
+        "whether",
+        "<em>it</em>",
+        "<em>be</em>",
+        "right."
+      ],
+      "info": ""
     },
     {
       "book_id": "PRO",
@@ -119,9 +304,24 @@
       "chapter": 20,
       "verse_start": 12,
       "verse_end": 12,
-      "text": "The hearing ear, and the seeing eye, the LORD hath made even both of them.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "The",
+        "hearing",
+        "ear,",
+        "and",
+        "the",
+        "seeing",
+        "eye,",
+        "the",
+        "LORD",
+        "hath",
+        "made",
+        "even",
+        "both",
+        "of",
+        "them."
+      ],
+      "info": ""
     },
     {
       "book_id": "PRO",
@@ -129,9 +329,27 @@
       "chapter": 20,
       "verse_start": 13,
       "verse_end": 13,
-      "text": "Love not sleep, lest thou come to poverty; open thine eyes, <em>and</em> thou shalt be satisfied with bread.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Love",
+        "not",
+        "sleep,",
+        "lest",
+        "thou",
+        "come",
+        "to",
+        "poverty;",
+        "open",
+        "thine",
+        "eyes,",
+        "<em>and</em>",
+        "thou",
+        "shalt",
+        "be",
+        "satisfied",
+        "with",
+        "bread."
+      ],
+      "info": ""
     },
     {
       "book_id": "PRO",
@@ -139,9 +357,28 @@
       "chapter": 20,
       "verse_start": 14,
       "verse_end": 14,
-      "text": "<em>It is</em> naught, <em>it is</em> naught, saith the buyer: but when he is gone his way, then he boasteth.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "<em>It</em>",
+        "<em>is</em>",
+        "naught,",
+        "<em>it</em>",
+        "<em>is</em>",
+        "naught,",
+        "saith",
+        "the",
+        "buyer:",
+        "but",
+        "when",
+        "he",
+        "is",
+        "gone",
+        "his",
+        "way,",
+        "then",
+        "he",
+        "boasteth."
+      ],
+      "info": ""
     },
     {
       "book_id": "PRO",
@@ -149,9 +386,26 @@
       "chapter": 20,
       "verse_start": 15,
       "verse_end": 15,
-      "text": "There is gold, and a multitude of rubies: but the lips of knowledge <em>are</em> a precious jewel.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "There",
+        "is",
+        "gold,",
+        "and",
+        "a",
+        "multitude",
+        "of",
+        "rubies:",
+        "but",
+        "the",
+        "lips",
+        "of",
+        "knowledge",
+        "<em>are</em>",
+        "a",
+        "precious",
+        "jewel."
+      ],
+      "info": ""
     },
     {
       "book_id": "PRO",
@@ -159,9 +413,28 @@
       "chapter": 20,
       "verse_start": 16,
       "verse_end": 16,
-      "text": "Take his garment that is surety <em>for</em> a stranger: and take a pledge of him for a strange woman.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Take",
+        "his",
+        "garment",
+        "that",
+        "is",
+        "surety",
+        "<em>for</em>",
+        "a",
+        "stranger:",
+        "and",
+        "take",
+        "a",
+        "pledge",
+        "of",
+        "him",
+        "for",
+        "a",
+        "strange",
+        "woman."
+      ],
+      "info": ""
     },
     {
       "book_id": "PRO",
@@ -169,9 +442,26 @@
       "chapter": 20,
       "verse_start": 17,
       "verse_end": 17,
-      "text": "Bread of deceit <em>is</em> sweet to a man; but afterwards his mouth shall be filled with gravel.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Bread",
+        "of",
+        "deceit",
+        "<em>is</em>",
+        "sweet",
+        "to",
+        "a",
+        "man;",
+        "but",
+        "afterwards",
+        "his",
+        "mouth",
+        "shall",
+        "be",
+        "filled",
+        "with",
+        "gravel."
+      ],
+      "info": ""
     },
     {
       "book_id": "PRO",
@@ -179,9 +469,21 @@
       "chapter": 20,
       "verse_start": 18,
       "verse_end": 18,
-      "text": "<em>Every</em> purpose is established by counsel: and with good advice make war.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "<em>Every</em>",
+        "purpose",
+        "is",
+        "established",
+        "by",
+        "counsel:",
+        "and",
+        "with",
+        "good",
+        "advice",
+        "make",
+        "war."
+      ],
+      "info": ""
     },
     {
       "book_id": "PRO",
@@ -189,9 +491,28 @@
       "chapter": 20,
       "verse_start": 19,
       "verse_end": 19,
-      "text": "He that goeth about <em>as</em> a talebearer revealeth secrets: therefore meddle not with him that flattereth with his lips.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "He",
+        "that",
+        "goeth",
+        "about",
+        "<em>as</em>",
+        "a",
+        "talebearer",
+        "revealeth",
+        "secrets:",
+        "therefore",
+        "meddle",
+        "not",
+        "with",
+        "him",
+        "that",
+        "flattereth",
+        "with",
+        "his",
+        "lips."
+      ],
+      "info": ""
     },
     {
       "book_id": "PRO",
@@ -199,9 +520,25 @@
       "chapter": 20,
       "verse_start": 20,
       "verse_end": 20,
-      "text": "Whoso curseth his father or his mother, his lamp shall be put out in obscure darkness.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Whoso",
+        "curseth",
+        "his",
+        "father",
+        "or",
+        "his",
+        "mother,",
+        "his",
+        "lamp",
+        "shall",
+        "be",
+        "put",
+        "out",
+        "in",
+        "obscure",
+        "darkness."
+      ],
+      "info": ""
     },
     {
       "book_id": "PRO",
@@ -209,9 +546,26 @@
       "chapter": 20,
       "verse_start": 21,
       "verse_end": 21,
-      "text": "An inheritance <em>may be</em> gotten hastily at the beginning; but the end thereof shall not be blessed.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "An",
+        "inheritance",
+        "<em>may</em>",
+        "<em>be</em>",
+        "gotten",
+        "hastily",
+        "at",
+        "the",
+        "beginning;",
+        "but",
+        "the",
+        "end",
+        "thereof",
+        "shall",
+        "not",
+        "be",
+        "blessed."
+      ],
+      "info": ""
     },
     {
       "book_id": "PRO",
@@ -219,9 +573,26 @@
       "chapter": 20,
       "verse_start": 22,
       "verse_end": 22,
-      "text": "Say not thou, I will recompense evil; <em>but</em> wait on the LORD, and he shall save thee.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Say",
+        "not",
+        "thou,",
+        "I",
+        "will",
+        "recompense",
+        "evil;",
+        "<em>but</em>",
+        "wait",
+        "on",
+        "the",
+        "LORD,",
+        "and",
+        "he",
+        "shall",
+        "save",
+        "thee."
+      ],
+      "info": ""
     },
     {
       "book_id": "PRO",
@@ -229,9 +600,24 @@
       "chapter": 20,
       "verse_start": 23,
       "verse_end": 23,
-      "text": "Divers weights <em>are</em> an abomination unto the LORD; and a false balance <em>is</em> not good.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Divers",
+        "weights",
+        "<em>are</em>",
+        "an",
+        "abomination",
+        "unto",
+        "the",
+        "LORD;",
+        "and",
+        "a",
+        "false",
+        "balance",
+        "<em>is</em>",
+        "not",
+        "good."
+      ],
+      "info": ""
     },
     {
       "book_id": "PRO",
@@ -239,9 +625,24 @@
       "chapter": 20,
       "verse_start": 24,
       "verse_end": 24,
-      "text": "Man's goings <em>are</em> of the LORD; how can a man then understand his own way?",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Man's",
+        "goings",
+        "<em>are</em>",
+        "of",
+        "the",
+        "LORD;",
+        "how",
+        "can",
+        "a",
+        "man",
+        "then",
+        "understand",
+        "his",
+        "own",
+        "way?"
+      ],
+      "info": ""
     },
     {
       "book_id": "PRO",
@@ -249,9 +650,28 @@
       "chapter": 20,
       "verse_start": 25,
       "verse_end": 25,
-      "text": "<em>It is</em> a snare to the man <em>who</em> devoureth <em>that which is</em> holy, and after vows to make enquiry.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "<em>It</em>",
+        "<em>is</em>",
+        "a",
+        "snare",
+        "to",
+        "the",
+        "man",
+        "<em>who</em>",
+        "devoureth",
+        "<em>that</em>",
+        "<em>which</em>",
+        "<em>is</em>",
+        "holy,",
+        "and",
+        "after",
+        "vows",
+        "to",
+        "make",
+        "enquiry."
+      ],
+      "info": ""
     },
     {
       "book_id": "PRO",
@@ -259,9 +679,21 @@
       "chapter": 20,
       "verse_start": 26,
       "verse_end": 26,
-      "text": "A wise king scattereth the wicked, and bringeth the wheel over them.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "A",
+        "wise",
+        "king",
+        "scattereth",
+        "the",
+        "wicked,",
+        "and",
+        "bringeth",
+        "the",
+        "wheel",
+        "over",
+        "them."
+      ],
+      "info": ""
     },
     {
       "book_id": "PRO",
@@ -269,9 +701,27 @@
       "chapter": 20,
       "verse_start": 27,
       "verse_end": 27,
-      "text": "The spirit of man <em>is</em> the candle of the LORD, searching all the inward parts of the belly.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "The",
+        "spirit",
+        "of",
+        "man",
+        "<em>is</em>",
+        "the",
+        "candle",
+        "of",
+        "the",
+        "LORD,",
+        "searching",
+        "all",
+        "the",
+        "inward",
+        "parts",
+        "of",
+        "the",
+        "belly."
+      ],
+      "info": ""
     },
     {
       "book_id": "PRO",
@@ -279,9 +729,22 @@
       "chapter": 20,
       "verse_start": 28,
       "verse_end": 28,
-      "text": "Mercy and truth preserve the king: and his throne is upholden by mercy.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Mercy",
+        "and",
+        "truth",
+        "preserve",
+        "the",
+        "king:",
+        "and",
+        "his",
+        "throne",
+        "is",
+        "upholden",
+        "by",
+        "mercy."
+      ],
+      "info": ""
     },
     {
       "book_id": "PRO",
@@ -289,9 +752,27 @@
       "chapter": 20,
       "verse_start": 29,
       "verse_end": 29,
-      "text": "The glory of young men <em>is</em> their strength: and the beauty of old men <em>is</em> the gray head.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "The",
+        "glory",
+        "of",
+        "young",
+        "men",
+        "<em>is</em>",
+        "their",
+        "strength:",
+        "and",
+        "the",
+        "beauty",
+        "of",
+        "old",
+        "men",
+        "<em>is</em>",
+        "the",
+        "gray",
+        "head."
+      ],
+      "info": ""
     },
     {
       "book_id": "PRO",
@@ -299,9 +780,26 @@
       "chapter": 20,
       "verse_start": 30,
       "verse_end": 30,
-      "text": "The blueness of a wound cleanseth away evil: so <em>do</em> stripes the inward parts of the belly.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "The",
+        "blueness",
+        "of",
+        "a",
+        "wound",
+        "cleanseth",
+        "away",
+        "evil:",
+        "so",
+        "<em>do</em>",
+        "stripes",
+        "the",
+        "inward",
+        "parts",
+        "of",
+        "the",
+        "belly."
+      ],
+      "info": ""
     }
   ]
 }

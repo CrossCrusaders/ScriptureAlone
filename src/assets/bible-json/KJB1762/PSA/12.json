@@ -1,5 +1,5 @@
 {
-  "header": "¶ To the chief Musician upon Sheminith, A Psalm of David.",
+  "header": "",
   "footer": "",
   "language": "English",
   "verses": [
@@ -9,9 +9,36 @@
       "chapter": 12,
       "verse_start": 1,
       "verse_end": 1,
-      "text": "Help, LORD; for the godly man ceaseth; for the faithful fail from among the children of men.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "(To",
+        "the",
+        "chief",
+        "Musician",
+        "upon",
+        "Sheminith,",
+        "A",
+        "Psalm",
+        "of",
+        "David.)",
+        "Help,",
+        "LORD;",
+        "for",
+        "the",
+        "godly",
+        "man",
+        "ceaseth;",
+        "for",
+        "the",
+        "faithful",
+        "fail",
+        "from",
+        "among",
+        "the",
+        "children",
+        "of",
+        "men."
+      ],
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -19,9 +46,28 @@
       "chapter": 12,
       "verse_start": 2,
       "verse_end": 2,
-      "text": "They speak vanity every one with his neighbour: <em>with</em> flattering lips <em>and</em> with a double heart do they speak.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "They",
+        "speak",
+        "vanity",
+        "every",
+        "one",
+        "with",
+        "his",
+        "neighbour:",
+        "<em>with</em>",
+        "flattering",
+        "lips",
+        "<em>and</em>",
+        "with",
+        "a",
+        "double",
+        "heart",
+        "do",
+        "they",
+        "speak."
+      ],
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -29,9 +75,24 @@
       "chapter": 12,
       "verse_start": 3,
       "verse_end": 3,
-      "text": "The LORD shall cut off all flattering lips, <em>and</em> the tongue that speaketh proud things:",
-      "info": "",
-      "language": "English"
+      "text": [
+        "The",
+        "LORD",
+        "shall",
+        "cut",
+        "off",
+        "all",
+        "flattering",
+        "lips,",
+        "<em>and</em>",
+        "the",
+        "tongue",
+        "that",
+        "speaketh",
+        "proud",
+        "things:"
+      ],
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -39,9 +100,28 @@
       "chapter": 12,
       "verse_start": 4,
       "verse_end": 4,
-      "text": "Who have said, With our tongue will we prevail; our lips <em>are</em> our own: who <em>is</em> lord over us?",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Who",
+        "have",
+        "said,",
+        "With",
+        "our",
+        "tongue",
+        "will",
+        "we",
+        "prevail;",
+        "our",
+        "lips",
+        "<em>are</em>",
+        "our",
+        "own:",
+        "who",
+        "<em>is</em>",
+        "lord",
+        "over",
+        "us?"
+      ],
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -49,9 +129,40 @@
       "chapter": 12,
       "verse_start": 5,
       "verse_end": 5,
-      "text": "For the oppression of the poor, for the sighing of the needy, now will I arise, saith the LORD; I will set <em>him</em> in safety <em>from him that</em> puffeth at him.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "For",
+        "the",
+        "oppression",
+        "of",
+        "the",
+        "poor,",
+        "for",
+        "the",
+        "sighing",
+        "of",
+        "the",
+        "needy,",
+        "now",
+        "will",
+        "I",
+        "arise,",
+        "saith",
+        "the",
+        "LORD;",
+        "I",
+        "will",
+        "set",
+        "<em>him</em>",
+        "in",
+        "safety",
+        "<em>from</em>",
+        "<em>him</em>",
+        "<em>that</em>",
+        "puffeth",
+        "at",
+        "him."
+      ],
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -59,9 +170,28 @@
       "chapter": 12,
       "verse_start": 6,
       "verse_end": 6,
-      "text": "The words of the LORD <em>are</em> pure words: <em>as</em> silver tried in a furnace of earth, purified seven times.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "The",
+        "words",
+        "of",
+        "the",
+        "LORD",
+        "<em>are</em>",
+        "pure",
+        "words:",
+        "<em>as</em>",
+        "silver",
+        "tried",
+        "in",
+        "a",
+        "furnace",
+        "of",
+        "earth,",
+        "purified",
+        "seven",
+        "times."
+      ],
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -69,9 +199,24 @@
       "chapter": 12,
       "verse_start": 7,
       "verse_end": 7,
-      "text": "Thou shalt keep them, O LORD, thou shalt preserve them from this generation for ever.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Thou",
+        "shalt",
+        "keep",
+        "them,",
+        "O",
+        "LORD,",
+        "thou",
+        "shalt",
+        "preserve",
+        "them",
+        "from",
+        "this",
+        "generation",
+        "for",
+        "ever."
+      ],
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -79,9 +224,21 @@
       "chapter": 12,
       "verse_start": 8,
       "verse_end": 8,
-      "text": "The wicked walk on every side, when the vilest men are exalted.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "The",
+        "wicked",
+        "walk",
+        "on",
+        "every",
+        "side,",
+        "when",
+        "the",
+        "vilest",
+        "men",
+        "are",
+        "exalted."
+      ],
+      "info": ""
     }
   ]
 }

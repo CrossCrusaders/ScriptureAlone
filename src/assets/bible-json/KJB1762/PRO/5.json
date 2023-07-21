@@ -9,9 +9,22 @@
       "chapter": 5,
       "verse_start": 1,
       "verse_end": 1,
-      "text": "My son, attend unto my wisdom, <em>and</em> bow thine ear to my understanding:",
-      "info": "",
-      "language": "English"
+      "text": [
+        "My",
+        "son,",
+        "attend",
+        "unto",
+        "my",
+        "wisdom,",
+        "<em>and</em>",
+        "bow",
+        "thine",
+        "ear",
+        "to",
+        "my",
+        "understanding:"
+      ],
+      "info": ""
     },
     {
       "book_id": "PRO",
@@ -19,9 +32,21 @@
       "chapter": 5,
       "verse_start": 2,
       "verse_end": 2,
-      "text": "That thou mayest regard discretion, and <em>that</em> thy lips may keep knowledge.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "That",
+        "thou",
+        "mayest",
+        "regard",
+        "discretion,",
+        "and",
+        "<em>that</em>",
+        "thy",
+        "lips",
+        "may",
+        "keep",
+        "knowledge."
+      ],
+      "info": ""
     },
     {
       "book_id": "PRO",
@@ -29,9 +54,28 @@
       "chapter": 5,
       "verse_start": 3,
       "verse_end": 3,
-      "text": "¶ For the lips of a strange woman drop <em>as</em> an honeycomb, and her mouth <em>is</em> smoother than oil:",
-      "info": "",
-      "language": "English"
+      "text": [
+        "¶",
+        "For",
+        "the",
+        "lips",
+        "of",
+        "a",
+        "strange",
+        "woman",
+        "drop",
+        "<em>as</em>",
+        "an",
+        "honeycomb,",
+        "and",
+        "her",
+        "mouth",
+        "<em>is</em>",
+        "smoother",
+        "than",
+        "oil:"
+      ],
+      "info": ""
     },
     {
       "book_id": "PRO",
@@ -39,9 +83,21 @@
       "chapter": 5,
       "verse_start": 4,
       "verse_end": 4,
-      "text": "But her end is bitter as wormwood, sharp as a twoedged sword.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "But",
+        "her",
+        "end",
+        "is",
+        "bitter",
+        "as",
+        "wormwood,",
+        "sharp",
+        "as",
+        "a",
+        "twoedged",
+        "sword."
+      ],
+      "info": ""
     },
     {
       "book_id": "PRO",
@@ -49,9 +105,21 @@
       "chapter": 5,
       "verse_start": 5,
       "verse_end": 5,
-      "text": "Her feet go down to death; her steps take hold on hell.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Her",
+        "feet",
+        "go",
+        "down",
+        "to",
+        "death;",
+        "her",
+        "steps",
+        "take",
+        "hold",
+        "on",
+        "hell."
+      ],
+      "info": ""
     },
     {
       "book_id": "PRO",
@@ -59,9 +127,27 @@
       "chapter": 5,
       "verse_start": 6,
       "verse_end": 6,
-      "text": "Lest thou shouldest ponder the path of life, her ways are moveable, <em>that</em> thou canst not know <em>them.</em>",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Lest",
+        "thou",
+        "shouldest",
+        "ponder",
+        "the",
+        "path",
+        "of",
+        "life,",
+        "her",
+        "ways",
+        "are",
+        "moveable,",
+        "<em>that</em>",
+        "thou",
+        "canst",
+        "not",
+        "know",
+        "<em>them.</em>"
+      ],
+      "info": ""
     },
     {
       "book_id": "PRO",
@@ -69,9 +155,25 @@
       "chapter": 5,
       "verse_start": 7,
       "verse_end": 7,
-      "text": "Hear me now therefore, O ye children, and depart not from the words of my mouth.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Hear",
+        "me",
+        "now",
+        "therefore,",
+        "O",
+        "ye",
+        "children,",
+        "and",
+        "depart",
+        "not",
+        "from",
+        "the",
+        "words",
+        "of",
+        "my",
+        "mouth."
+      ],
+      "info": ""
     },
     {
       "book_id": "PRO",
@@ -79,9 +181,24 @@
       "chapter": 5,
       "verse_start": 8,
       "verse_end": 8,
-      "text": "Remove thy way far from her, and come not nigh the door of her house:",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Remove",
+        "thy",
+        "way",
+        "far",
+        "from",
+        "her,",
+        "and",
+        "come",
+        "not",
+        "nigh",
+        "the",
+        "door",
+        "of",
+        "her",
+        "house:"
+      ],
+      "info": ""
     },
     {
       "book_id": "PRO",
@@ -89,9 +206,22 @@
       "chapter": 5,
       "verse_start": 9,
       "verse_end": 9,
-      "text": "Lest thou give thine honour unto others, and thy years unto the cruel:",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Lest",
+        "thou",
+        "give",
+        "thine",
+        "honour",
+        "unto",
+        "others,",
+        "and",
+        "thy",
+        "years",
+        "unto",
+        "the",
+        "cruel:"
+      ],
+      "info": ""
     },
     {
       "book_id": "PRO",
@@ -99,9 +229,26 @@
       "chapter": 5,
       "verse_start": 10,
       "verse_end": 10,
-      "text": "Lest strangers be filled with thy wealth; and thy labours <em>be</em> in the house of a stranger;",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Lest",
+        "strangers",
+        "be",
+        "filled",
+        "with",
+        "thy",
+        "wealth;",
+        "and",
+        "thy",
+        "labours",
+        "<em>be</em>",
+        "in",
+        "the",
+        "house",
+        "of",
+        "a",
+        "stranger;"
+      ],
+      "info": ""
     },
     {
       "book_id": "PRO",
@@ -109,9 +256,23 @@
       "chapter": 5,
       "verse_start": 11,
       "verse_end": 11,
-      "text": "And thou mourn at the last, when thy flesh and thy body are consumed,",
-      "info": "",
-      "language": "English"
+      "text": [
+        "And",
+        "thou",
+        "mourn",
+        "at",
+        "the",
+        "last,",
+        "when",
+        "thy",
+        "flesh",
+        "and",
+        "thy",
+        "body",
+        "are",
+        "consumed,"
+      ],
+      "info": ""
     },
     {
       "book_id": "PRO",
@@ -119,9 +280,21 @@
       "chapter": 5,
       "verse_start": 12,
       "verse_end": 12,
-      "text": "And say, How have I hated instruction, and my heart despised reproof;",
-      "info": "",
-      "language": "English"
+      "text": [
+        "And",
+        "say,",
+        "How",
+        "have",
+        "I",
+        "hated",
+        "instruction,",
+        "and",
+        "my",
+        "heart",
+        "despised",
+        "reproof;"
+      ],
+      "info": ""
     },
     {
       "book_id": "PRO",
@@ -129,9 +302,27 @@
       "chapter": 5,
       "verse_start": 13,
       "verse_end": 13,
-      "text": "And have not obeyed the voice of my teachers, nor inclined mine ear to them that instructed me!",
-      "info": "",
-      "language": "English"
+      "text": [
+        "And",
+        "have",
+        "not",
+        "obeyed",
+        "the",
+        "voice",
+        "of",
+        "my",
+        "teachers,",
+        "nor",
+        "inclined",
+        "mine",
+        "ear",
+        "to",
+        "them",
+        "that",
+        "instructed",
+        "me!"
+      ],
+      "info": ""
     },
     {
       "book_id": "PRO",
@@ -139,9 +330,23 @@
       "chapter": 5,
       "verse_start": 14,
       "verse_end": 14,
-      "text": "I was almost in all evil in the midst of the congregation and assembly.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "I",
+        "was",
+        "almost",
+        "in",
+        "all",
+        "evil",
+        "in",
+        "the",
+        "midst",
+        "of",
+        "the",
+        "congregation",
+        "and",
+        "assembly."
+      ],
+      "info": ""
     },
     {
       "book_id": "PRO",
@@ -149,9 +354,25 @@
       "chapter": 5,
       "verse_start": 15,
       "verse_end": 15,
-      "text": "¶ Drink waters out of thine own cistern, and running waters out of thine own well.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "¶",
+        "Drink",
+        "waters",
+        "out",
+        "of",
+        "thine",
+        "own",
+        "cistern,",
+        "and",
+        "running",
+        "waters",
+        "out",
+        "of",
+        "thine",
+        "own",
+        "well."
+      ],
+      "info": ""
     },
     {
       "book_id": "PRO",
@@ -159,9 +380,22 @@
       "chapter": 5,
       "verse_start": 16,
       "verse_end": 16,
-      "text": "Let thy fountains be dispersed abroad, <em>and</em> rivers of waters in the streets.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Let",
+        "thy",
+        "fountains",
+        "be",
+        "dispersed",
+        "abroad,",
+        "<em>and</em>",
+        "rivers",
+        "of",
+        "waters",
+        "in",
+        "the",
+        "streets."
+      ],
+      "info": ""
     },
     {
       "book_id": "PRO",
@@ -169,9 +403,20 @@
       "chapter": 5,
       "verse_start": 17,
       "verse_end": 17,
-      "text": "Let them be only thine own, and not strangers' with thee.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Let",
+        "them",
+        "be",
+        "only",
+        "thine",
+        "own,",
+        "and",
+        "not",
+        "strangers'",
+        "with",
+        "thee."
+      ],
+      "info": ""
     },
     {
       "book_id": "PRO",
@@ -179,9 +424,22 @@
       "chapter": 5,
       "verse_start": 18,
       "verse_end": 18,
-      "text": "Let thy fountain be blessed: and rejoice with the wife of thy youth.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Let",
+        "thy",
+        "fountain",
+        "be",
+        "blessed:",
+        "and",
+        "rejoice",
+        "with",
+        "the",
+        "wife",
+        "of",
+        "thy",
+        "youth."
+      ],
+      "info": ""
     },
     {
       "book_id": "PRO",
@@ -189,9 +447,35 @@
       "chapter": 5,
       "verse_start": 19,
       "verse_end": 19,
-      "text": "<em>Let her be as</em> the loving hind and pleasant roe; let her breasts satisfy thee at all times; and be thou ravished always with her love.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "<em>Let</em>",
+        "<em>her</em>",
+        "<em>be</em>",
+        "<em>as</em>",
+        "the",
+        "loving",
+        "hind",
+        "and",
+        "pleasant",
+        "roe;",
+        "let",
+        "her",
+        "breasts",
+        "satisfy",
+        "thee",
+        "at",
+        "all",
+        "times;",
+        "and",
+        "be",
+        "thou",
+        "ravished",
+        "always",
+        "with",
+        "her",
+        "love."
+      ],
+      "info": ""
     },
     {
       "book_id": "PRO",
@@ -199,9 +483,28 @@
       "chapter": 5,
       "verse_start": 20,
       "verse_end": 20,
-      "text": "And why wilt thou, my son, be ravished with a strange woman, and embrace the bosom of a stranger?",
-      "info": "",
-      "language": "English"
+      "text": [
+        "And",
+        "why",
+        "wilt",
+        "thou,",
+        "my",
+        "son,",
+        "be",
+        "ravished",
+        "with",
+        "a",
+        "strange",
+        "woman,",
+        "and",
+        "embrace",
+        "the",
+        "bosom",
+        "of",
+        "a",
+        "stranger?"
+      ],
+      "info": ""
     },
     {
       "book_id": "PRO",
@@ -209,9 +512,27 @@
       "chapter": 5,
       "verse_start": 21,
       "verse_end": 21,
-      "text": "For the ways of man <em>are</em> before the eyes of the LORD, and he pondereth all his goings.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "For",
+        "the",
+        "ways",
+        "of",
+        "man",
+        "<em>are</em>",
+        "before",
+        "the",
+        "eyes",
+        "of",
+        "the",
+        "LORD,",
+        "and",
+        "he",
+        "pondereth",
+        "all",
+        "his",
+        "goings."
+      ],
+      "info": ""
     },
     {
       "book_id": "PRO",
@@ -219,9 +540,29 @@
       "chapter": 5,
       "verse_start": 22,
       "verse_end": 22,
-      "text": "¶ His own iniquities shall take the wicked himself, and he shall be holden with the cords of his sins.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "¶",
+        "His",
+        "own",
+        "iniquities",
+        "shall",
+        "take",
+        "the",
+        "wicked",
+        "himself,",
+        "and",
+        "he",
+        "shall",
+        "be",
+        "holden",
+        "with",
+        "the",
+        "cords",
+        "of",
+        "his",
+        "sins."
+      ],
+      "info": ""
     },
     {
       "book_id": "PRO",
@@ -229,9 +570,25 @@
       "chapter": 5,
       "verse_start": 23,
       "verse_end": 23,
-      "text": "He shall die without instruction; and in the greatness of his folly he shall go astray.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "He",
+        "shall",
+        "die",
+        "without",
+        "instruction;",
+        "and",
+        "in",
+        "the",
+        "greatness",
+        "of",
+        "his",
+        "folly",
+        "he",
+        "shall",
+        "go",
+        "astray."
+      ],
+      "info": ""
     }
   ]
 }

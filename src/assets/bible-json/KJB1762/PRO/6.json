@@ -9,9 +9,27 @@
       "chapter": 6,
       "verse_start": 1,
       "verse_end": 1,
-      "text": "My son, if thou be surety for thy friend, <em>if</em> thou hast stricken thy hand with a stranger,",
-      "info": "",
-      "language": "English"
+      "text": [
+        "My",
+        "son,",
+        "if",
+        "thou",
+        "be",
+        "surety",
+        "for",
+        "thy",
+        "friend,",
+        "<em>if</em>",
+        "thou",
+        "hast",
+        "stricken",
+        "thy",
+        "hand",
+        "with",
+        "a",
+        "stranger,"
+      ],
+      "info": ""
     },
     {
       "book_id": "PRO",
@@ -19,9 +37,27 @@
       "chapter": 6,
       "verse_start": 2,
       "verse_end": 2,
-      "text": "Thou art snared with the words of thy mouth, thou art taken with the words of thy mouth.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Thou",
+        "art",
+        "snared",
+        "with",
+        "the",
+        "words",
+        "of",
+        "thy",
+        "mouth,",
+        "thou",
+        "art",
+        "taken",
+        "with",
+        "the",
+        "words",
+        "of",
+        "thy",
+        "mouth."
+      ],
+      "info": ""
     },
     {
       "book_id": "PRO",
@@ -29,9 +65,35 @@
       "chapter": 6,
       "verse_start": 3,
       "verse_end": 3,
-      "text": "Do this now, my son, and deliver thyself, when thou art come into the hand of thy friend; go, humble thyself, and make sure thy friend.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Do",
+        "this",
+        "now,",
+        "my",
+        "son,",
+        "and",
+        "deliver",
+        "thyself,",
+        "when",
+        "thou",
+        "art",
+        "come",
+        "into",
+        "the",
+        "hand",
+        "of",
+        "thy",
+        "friend;",
+        "go,",
+        "humble",
+        "thyself,",
+        "and",
+        "make",
+        "sure",
+        "thy",
+        "friend."
+      ],
+      "info": ""
     },
     {
       "book_id": "PRO",
@@ -39,9 +101,20 @@
       "chapter": 6,
       "verse_start": 4,
       "verse_end": 4,
-      "text": "Give not sleep to thine eyes, nor slumber to thine eyelids.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Give",
+        "not",
+        "sleep",
+        "to",
+        "thine",
+        "eyes,",
+        "nor",
+        "slumber",
+        "to",
+        "thine",
+        "eyelids."
+      ],
+      "info": ""
     },
     {
       "book_id": "PRO",
@@ -49,9 +122,30 @@
       "chapter": 6,
       "verse_start": 5,
       "verse_end": 5,
-      "text": "Deliver thyself as a roe from the hand <em>of the hunter,</em> and as a bird from the hand of the fowler.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Deliver",
+        "thyself",
+        "as",
+        "a",
+        "roe",
+        "from",
+        "the",
+        "hand",
+        "<em>of</em>",
+        "<em>the</em>",
+        "<em>hunter,</em>",
+        "and",
+        "as",
+        "a",
+        "bird",
+        "from",
+        "the",
+        "hand",
+        "of",
+        "the",
+        "fowler."
+      ],
+      "info": ""
     },
     {
       "book_id": "PRO",
@@ -59,9 +153,22 @@
       "chapter": 6,
       "verse_start": 6,
       "verse_end": 6,
-      "text": "¶ Go to the ant, thou sluggard; consider her ways, and be wise:",
-      "info": "",
-      "language": "English"
+      "text": [
+        "¶",
+        "Go",
+        "to",
+        "the",
+        "ant,",
+        "thou",
+        "sluggard;",
+        "consider",
+        "her",
+        "ways,",
+        "and",
+        "be",
+        "wise:"
+      ],
+      "info": ""
     },
     {
       "book_id": "PRO",
@@ -69,9 +176,16 @@
       "chapter": 6,
       "verse_start": 7,
       "verse_end": 7,
-      "text": "Which having no guide, overseer, or ruler,",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Which",
+        "having",
+        "no",
+        "guide,",
+        "overseer,",
+        "or",
+        "ruler,"
+      ],
+      "info": ""
     },
     {
       "book_id": "PRO",
@@ -79,9 +193,22 @@
       "chapter": 6,
       "verse_start": 8,
       "verse_end": 8,
-      "text": "Provideth her meat in the summer, <em>and</em> gathereth her food in the harvest.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Provideth",
+        "her",
+        "meat",
+        "in",
+        "the",
+        "summer,",
+        "<em>and</em>",
+        "gathereth",
+        "her",
+        "food",
+        "in",
+        "the",
+        "harvest."
+      ],
+      "info": ""
     },
     {
       "book_id": "PRO",
@@ -89,9 +216,24 @@
       "chapter": 6,
       "verse_start": 9,
       "verse_end": 9,
-      "text": "How long wilt thou sleep, O sluggard? when wilt thou arise out of thy sleep?",
-      "info": "",
-      "language": "English"
+      "text": [
+        "How",
+        "long",
+        "wilt",
+        "thou",
+        "sleep,",
+        "O",
+        "sluggard?",
+        "when",
+        "wilt",
+        "thou",
+        "arise",
+        "out",
+        "of",
+        "thy",
+        "sleep?"
+      ],
+      "info": ""
     },
     {
       "book_id": "PRO",
@@ -99,9 +241,24 @@
       "chapter": 6,
       "verse_start": 10,
       "verse_end": 10,
-      "text": "<em>Yet</em> a little sleep, a little slumber, a little folding of the hands to sleep:",
-      "info": "",
-      "language": "English"
+      "text": [
+        "<em>Yet</em>",
+        "a",
+        "little",
+        "sleep,",
+        "a",
+        "little",
+        "slumber,",
+        "a",
+        "little",
+        "folding",
+        "of",
+        "the",
+        "hands",
+        "to",
+        "sleep:"
+      ],
+      "info": ""
     },
     {
       "book_id": "PRO",
@@ -109,9 +266,25 @@
       "chapter": 6,
       "verse_start": 11,
       "verse_end": 11,
-      "text": "So shall thy poverty come as one that travelleth, and thy want as an armed man.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "So",
+        "shall",
+        "thy",
+        "poverty",
+        "come",
+        "as",
+        "one",
+        "that",
+        "travelleth,",
+        "and",
+        "thy",
+        "want",
+        "as",
+        "an",
+        "armed",
+        "man."
+      ],
+      "info": ""
     },
     {
       "book_id": "PRO",
@@ -119,9 +292,21 @@
       "chapter": 6,
       "verse_start": 12,
       "verse_end": 12,
-      "text": "¶ A naughty person, a wicked man, walketh with a froward mouth.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "¶",
+        "A",
+        "naughty",
+        "person,",
+        "a",
+        "wicked",
+        "man,",
+        "walketh",
+        "with",
+        "a",
+        "froward",
+        "mouth."
+      ],
+      "info": ""
     },
     {
       "book_id": "PRO",
@@ -129,9 +314,24 @@
       "chapter": 6,
       "verse_start": 13,
       "verse_end": 13,
-      "text": "He winketh with his eyes, he speaketh with his feet, he teacheth with his fingers;",
-      "info": "",
-      "language": "English"
+      "text": [
+        "He",
+        "winketh",
+        "with",
+        "his",
+        "eyes,",
+        "he",
+        "speaketh",
+        "with",
+        "his",
+        "feet,",
+        "he",
+        "teacheth",
+        "with",
+        "his",
+        "fingers;"
+      ],
+      "info": ""
     },
     {
       "book_id": "PRO",
@@ -139,9 +339,21 @@
       "chapter": 6,
       "verse_start": 14,
       "verse_end": 14,
-      "text": "Frowardness <em>is</em> in his heart, he deviseth mischief continually; he soweth discord.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Frowardness",
+        "<em>is</em>",
+        "in",
+        "his",
+        "heart,",
+        "he",
+        "deviseth",
+        "mischief",
+        "continually;",
+        "he",
+        "soweth",
+        "discord."
+      ],
+      "info": ""
     },
     {
       "book_id": "PRO",
@@ -149,9 +361,22 @@
       "chapter": 6,
       "verse_start": 15,
       "verse_end": 15,
-      "text": "Therefore shall his calamity come suddenly; suddenly shall he be broken without remedy.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Therefore",
+        "shall",
+        "his",
+        "calamity",
+        "come",
+        "suddenly;",
+        "suddenly",
+        "shall",
+        "he",
+        "be",
+        "broken",
+        "without",
+        "remedy."
+      ],
+      "info": ""
     },
     {
       "book_id": "PRO",
@@ -159,9 +384,24 @@
       "chapter": 6,
       "verse_start": 16,
       "verse_end": 16,
-      "text": "¶ These six <em>things</em> doth the LORD hate: yea, seven <em>are</em> an abomination unto him:",
-      "info": "",
-      "language": "English"
+      "text": [
+        "¶",
+        "These",
+        "six",
+        "<em>things</em>",
+        "doth",
+        "the",
+        "LORD",
+        "hate:",
+        "yea,",
+        "seven",
+        "<em>are</em>",
+        "an",
+        "abomination",
+        "unto",
+        "him:"
+      ],
+      "info": ""
     },
     {
       "book_id": "PRO",
@@ -169,9 +409,21 @@
       "chapter": 6,
       "verse_start": 17,
       "verse_end": 17,
-      "text": "A proud look, a lying tongue, and hands that shed innocent blood,",
-      "info": "",
-      "language": "English"
+      "text": [
+        "A",
+        "proud",
+        "look,",
+        "a",
+        "lying",
+        "tongue,",
+        "and",
+        "hands",
+        "that",
+        "shed",
+        "innocent",
+        "blood,"
+      ],
+      "info": ""
     },
     {
       "book_id": "PRO",
@@ -179,9 +431,23 @@
       "chapter": 6,
       "verse_start": 18,
       "verse_end": 18,
-      "text": "An heart that deviseth wicked imaginations, feet that be swift in running to mischief,",
-      "info": "",
-      "language": "English"
+      "text": [
+        "An",
+        "heart",
+        "that",
+        "deviseth",
+        "wicked",
+        "imaginations,",
+        "feet",
+        "that",
+        "be",
+        "swift",
+        "in",
+        "running",
+        "to",
+        "mischief,"
+      ],
+      "info": ""
     },
     {
       "book_id": "PRO",
@@ -189,9 +455,22 @@
       "chapter": 6,
       "verse_start": 19,
       "verse_end": 19,
-      "text": "A false witness <em>that</em> speaketh lies, and he that soweth discord among brethren.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "A",
+        "false",
+        "witness",
+        "<em>that</em>",
+        "speaketh",
+        "lies,",
+        "and",
+        "he",
+        "that",
+        "soweth",
+        "discord",
+        "among",
+        "brethren."
+      ],
+      "info": ""
     },
     {
       "book_id": "PRO",
@@ -199,9 +478,24 @@
       "chapter": 6,
       "verse_start": 20,
       "verse_end": 20,
-      "text": "¶ My son, keep thy father's commandment, and forsake not the law of thy mother:",
-      "info": "",
-      "language": "English"
+      "text": [
+        "¶",
+        "My",
+        "son,",
+        "keep",
+        "thy",
+        "father's",
+        "commandment,",
+        "and",
+        "forsake",
+        "not",
+        "the",
+        "law",
+        "of",
+        "thy",
+        "mother:"
+      ],
+      "info": ""
     },
     {
       "book_id": "PRO",
@@ -209,9 +503,21 @@
       "chapter": 6,
       "verse_start": 21,
       "verse_end": 21,
-      "text": "Bind them continually upon thine heart, <em>and</em> tie them about thy neck.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Bind",
+        "them",
+        "continually",
+        "upon",
+        "thine",
+        "heart,",
+        "<em>and</em>",
+        "tie",
+        "them",
+        "about",
+        "thy",
+        "neck."
+      ],
+      "info": ""
     },
     {
       "book_id": "PRO",
@@ -219,9 +525,32 @@
       "chapter": 6,
       "verse_start": 22,
       "verse_end": 22,
-      "text": "When thou goest, it shall lead thee; when thou sleepest, it shall keep thee; and <em>when</em> thou awakest, it shall talk with thee.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "When",
+        "thou",
+        "goest,",
+        "it",
+        "shall",
+        "lead",
+        "thee;",
+        "when",
+        "thou",
+        "sleepest,",
+        "it",
+        "shall",
+        "keep",
+        "thee;",
+        "and",
+        "<em>when</em>",
+        "thou",
+        "awakest,",
+        "it",
+        "shall",
+        "talk",
+        "with",
+        "thee."
+      ],
+      "info": ""
     },
     {
       "book_id": "PRO",
@@ -229,9 +558,29 @@
       "chapter": 6,
       "verse_start": 23,
       "verse_end": 23,
-      "text": "For the commandment <em>is</em> a lamp; and the law <em>is</em> light; and reproofs of instruction <em>are</em> the way of life:",
-      "info": "",
-      "language": "English"
+      "text": [
+        "For",
+        "the",
+        "commandment",
+        "<em>is</em>",
+        "a",
+        "lamp;",
+        "and",
+        "the",
+        "law",
+        "<em>is</em>",
+        "light;",
+        "and",
+        "reproofs",
+        "of",
+        "instruction",
+        "<em>are</em>",
+        "the",
+        "way",
+        "of",
+        "life:"
+      ],
+      "info": ""
     },
     {
       "book_id": "PRO",
@@ -239,9 +588,26 @@
       "chapter": 6,
       "verse_start": 24,
       "verse_end": 24,
-      "text": "To keep thee from the evil woman, from the flattery of the tongue of a strange woman.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "To",
+        "keep",
+        "thee",
+        "from",
+        "the",
+        "evil",
+        "woman,",
+        "from",
+        "the",
+        "flattery",
+        "of",
+        "the",
+        "tongue",
+        "of",
+        "a",
+        "strange",
+        "woman."
+      ],
+      "info": ""
     },
     {
       "book_id": "PRO",
@@ -249,9 +615,25 @@
       "chapter": 6,
       "verse_start": 25,
       "verse_end": 25,
-      "text": "Lust not after her beauty in thine heart; neither let her take thee with her eyelids.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Lust",
+        "not",
+        "after",
+        "her",
+        "beauty",
+        "in",
+        "thine",
+        "heart;",
+        "neither",
+        "let",
+        "her",
+        "take",
+        "thee",
+        "with",
+        "her",
+        "eyelids."
+      ],
+      "info": ""
     },
     {
       "book_id": "PRO",
@@ -259,9 +641,34 @@
       "chapter": 6,
       "verse_start": 26,
       "verse_end": 26,
-      "text": "For by means of a whorish woman <em>a man is brought</em> to a piece of bread: and the adulteress will hunt for the precious life.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "For",
+        "by",
+        "means",
+        "of",
+        "a",
+        "whorish",
+        "woman",
+        "<em>a</em>",
+        "<em>man</em>",
+        "<em>is</em>",
+        "<em>brought</em>",
+        "to",
+        "a",
+        "piece",
+        "of",
+        "bread:",
+        "and",
+        "the",
+        "adulteress",
+        "will",
+        "hunt",
+        "for",
+        "the",
+        "precious",
+        "life."
+      ],
+      "info": ""
     },
     {
       "book_id": "PRO",
@@ -269,9 +676,23 @@
       "chapter": 6,
       "verse_start": 27,
       "verse_end": 27,
-      "text": "Can a man take fire in his bosom, and his clothes not be burned?",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Can",
+        "a",
+        "man",
+        "take",
+        "fire",
+        "in",
+        "his",
+        "bosom,",
+        "and",
+        "his",
+        "clothes",
+        "not",
+        "be",
+        "burned?"
+      ],
+      "info": ""
     },
     {
       "book_id": "PRO",
@@ -279,9 +700,21 @@
       "chapter": 6,
       "verse_start": 28,
       "verse_end": 28,
-      "text": "Can one go upon hot coals, and his feet not be burned?",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Can",
+        "one",
+        "go",
+        "upon",
+        "hot",
+        "coals,",
+        "and",
+        "his",
+        "feet",
+        "not",
+        "be",
+        "burned?"
+      ],
+      "info": ""
     },
     {
       "book_id": "PRO",
@@ -289,9 +722,25 @@
       "chapter": 6,
       "verse_start": 29,
       "verse_end": 29,
-      "text": "So he that goeth in to his neighbour's wife; whosoever toucheth her shall not be innocent.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "So",
+        "he",
+        "that",
+        "goeth",
+        "in",
+        "to",
+        "his",
+        "neighbour's",
+        "wife;",
+        "whosoever",
+        "toucheth",
+        "her",
+        "shall",
+        "not",
+        "be",
+        "innocent."
+      ],
+      "info": ""
     },
     {
       "book_id": "PRO",
@@ -299,9 +748,26 @@
       "chapter": 6,
       "verse_start": 30,
       "verse_end": 30,
-      "text": "<em>Men</em> do not despise a thief, if he steal to satisfy his soul when he is hungry;",
-      "info": "",
-      "language": "English"
+      "text": [
+        "<em>Men</em>",
+        "do",
+        "not",
+        "despise",
+        "a",
+        "thief,",
+        "if",
+        "he",
+        "steal",
+        "to",
+        "satisfy",
+        "his",
+        "soul",
+        "when",
+        "he",
+        "is",
+        "hungry;"
+      ],
+      "info": ""
     },
     {
       "book_id": "PRO",
@@ -309,9 +775,27 @@
       "chapter": 6,
       "verse_start": 31,
       "verse_end": 31,
-      "text": "But <em>if</em> he be found, he shall restore sevenfold; he shall give all the substance of his house.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "But",
+        "<em>if</em>",
+        "he",
+        "be",
+        "found,",
+        "he",
+        "shall",
+        "restore",
+        "sevenfold;",
+        "he",
+        "shall",
+        "give",
+        "all",
+        "the",
+        "substance",
+        "of",
+        "his",
+        "house."
+      ],
+      "info": ""
     },
     {
       "book_id": "PRO",
@@ -319,9 +803,26 @@
       "chapter": 6,
       "verse_start": 32,
       "verse_end": 32,
-      "text": "<em>But</em> whoso committeth adultery with a woman lacketh understanding: he <em>that</em> doeth it destroyeth his own soul.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "<em>But</em>",
+        "whoso",
+        "committeth",
+        "adultery",
+        "with",
+        "a",
+        "woman",
+        "lacketh",
+        "understanding:",
+        "he",
+        "<em>that</em>",
+        "doeth",
+        "it",
+        "destroyeth",
+        "his",
+        "own",
+        "soul."
+      ],
+      "info": ""
     },
     {
       "book_id": "PRO",
@@ -329,9 +830,24 @@
       "chapter": 6,
       "verse_start": 33,
       "verse_end": 33,
-      "text": "A wound and dishonour shall he get; and his reproach shall not be wiped away.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "A",
+        "wound",
+        "and",
+        "dishonour",
+        "shall",
+        "he",
+        "get;",
+        "and",
+        "his",
+        "reproach",
+        "shall",
+        "not",
+        "be",
+        "wiped",
+        "away."
+      ],
+      "info": ""
     },
     {
       "book_id": "PRO",
@@ -339,9 +855,27 @@
       "chapter": 6,
       "verse_start": 34,
       "verse_end": 34,
-      "text": "For jealousy <em>is</em> the rage of a man: therefore he will not spare in the day of vengeance.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "For",
+        "jealousy",
+        "<em>is</em>",
+        "the",
+        "rage",
+        "of",
+        "a",
+        "man:",
+        "therefore",
+        "he",
+        "will",
+        "not",
+        "spare",
+        "in",
+        "the",
+        "day",
+        "of",
+        "vengeance."
+      ],
+      "info": ""
     },
     {
       "book_id": "PRO",
@@ -349,9 +883,25 @@
       "chapter": 6,
       "verse_start": 35,
       "verse_end": 35,
-      "text": "He will not regard any ransom; neither will he rest content, though thou givest many gifts.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "He",
+        "will",
+        "not",
+        "regard",
+        "any",
+        "ransom;",
+        "neither",
+        "will",
+        "he",
+        "rest",
+        "content,",
+        "though",
+        "thou",
+        "givest",
+        "many",
+        "gifts."
+      ],
+      "info": ""
     }
   ]
 }

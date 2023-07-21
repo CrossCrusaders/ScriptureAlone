@@ -1,5 +1,5 @@
 {
-  "header": "¶ A Psalme of Asaph.",
+  "header": "¶ A",
   "footer": "",
   "language": "English",
   "verses": [
@@ -9,7 +9,26 @@
       "chapter": 73,
       "verse_start": 1,
       "verse_end": 1,
-      "text": "Truely God is good to Israel, euen to such as are of a cleane heart.",
+      "text": [
+        "<em>Psalme</em>",
+        "<em>of</em>",
+        "<em>Asaph.</em>",
+        "Truely",
+        "God",
+        "is",
+        "good",
+        "to",
+        "Israel,",
+        "euen",
+        "to",
+        "such",
+        "as",
+        "are",
+        "of",
+        "a",
+        "cleane",
+        "heart."
+      ],
       "info": ""
     },
     {
@@ -18,7 +37,22 @@
       "chapter": 73,
       "verse_start": 2,
       "verse_end": 2,
-      "text": "But as for mee, my feete were almost gone: my steps had well-nigh slipt.",
+      "text": [
+        "But",
+        "as",
+        "for",
+        "mee,",
+        "my",
+        "feete",
+        "were",
+        "almost",
+        "gone:",
+        "my",
+        "steps",
+        "had",
+        "well-nigh",
+        "slipt."
+      ],
       "info": ""
     },
     {
@@ -27,7 +61,23 @@
       "chapter": 73,
       "verse_start": 3,
       "verse_end": 3,
-      "text": "For I was enuious at the foolish, when I sawe the prosperity of the wicked.",
+      "text": [
+        "For",
+        "I",
+        "was",
+        "enuious",
+        "at",
+        "the",
+        "foolish,",
+        "when",
+        "I",
+        "sawe",
+        "the",
+        "prosperity",
+        "of",
+        "the",
+        "wicked."
+      ],
       "info": ""
     },
     {
@@ -36,7 +86,21 @@
       "chapter": 73,
       "verse_start": 4,
       "verse_end": 4,
-      "text": "For there are no bands in their death: but their strength is firme.",
+      "text": [
+        "For",
+        "there",
+        "are",
+        "no",
+        "bands",
+        "in",
+        "their",
+        "death:",
+        "but",
+        "their",
+        "strength",
+        "is",
+        "firme."
+      ],
       "info": ""
     },
     {
@@ -45,7 +109,23 @@
       "chapter": 73,
       "verse_start": 5,
       "verse_end": 5,
-      "text": "They are not in trouble as other men: neither are they plagued like other men.",
+      "text": [
+        "They",
+        "are",
+        "not",
+        "in",
+        "trouble",
+        "as",
+        "other",
+        "men:",
+        "neither",
+        "are",
+        "they",
+        "plagued",
+        "like",
+        "other",
+        "men."
+      ],
       "info": ""
     },
     {
@@ -54,7 +134,22 @@
       "chapter": 73,
       "verse_start": 6,
       "verse_end": 6,
-      "text": "Therefore pride compasseth them about as a chaine: violence couereth them as a garment.",
+      "text": [
+        "Therefore",
+        "pride",
+        "compasseth",
+        "them",
+        "about",
+        "as",
+        "a",
+        "chaine:",
+        "violence",
+        "couereth",
+        "them",
+        "as",
+        "a",
+        "garment."
+      ],
       "info": ""
     },
     {
@@ -63,7 +158,21 @@
       "chapter": 73,
       "verse_start": 7,
       "verse_end": 7,
-      "text": "Their eies stand out with fatnes: they haue more then heart could wish.",
+      "text": [
+        "Their",
+        "eies",
+        "stand",
+        "out",
+        "with",
+        "fatnes:",
+        "they",
+        "haue",
+        "more",
+        "then",
+        "heart",
+        "could",
+        "wish."
+      ],
       "info": ""
     },
     {
@@ -72,7 +181,19 @@
       "chapter": 73,
       "verse_start": 8,
       "verse_end": 8,
-      "text": "They are corrupt, and speake wickedly concerning oppression: they speake loftily.",
+      "text": [
+        "They",
+        "are",
+        "corrupt,",
+        "and",
+        "speake",
+        "wickedly",
+        "concerning",
+        "oppression:",
+        "they",
+        "speake",
+        "loftily."
+      ],
       "info": ""
     },
     {
@@ -81,7 +202,22 @@
       "chapter": 73,
       "verse_start": 9,
       "verse_end": 9,
-      "text": "They set their mouth against the heauens; and their tongue walketh through the earth.",
+      "text": [
+        "They",
+        "set",
+        "their",
+        "mouth",
+        "against",
+        "the",
+        "heauens;",
+        "and",
+        "their",
+        "tongue",
+        "walketh",
+        "through",
+        "the",
+        "earth."
+      ],
       "info": ""
     },
     {
@@ -90,7 +226,24 @@
       "chapter": 73,
       "verse_start": 10,
       "verse_end": 10,
-      "text": "Therefore his people returne hither: and waters of a full cup are wrung out to them.",
+      "text": [
+        "Therefore",
+        "his",
+        "people",
+        "returne",
+        "hither:",
+        "and",
+        "waters",
+        "of",
+        "a",
+        "full",
+        "cup",
+        "are",
+        "wrung",
+        "out",
+        "to",
+        "them."
+      ],
       "info": ""
     },
     {
@@ -99,7 +252,23 @@
       "chapter": 73,
       "verse_start": 11,
       "verse_end": 11,
-      "text": "And they say, How doth God know? and is there knowledge in the most High?",
+      "text": [
+        "And",
+        "they",
+        "say,",
+        "How",
+        "doth",
+        "God",
+        "know?",
+        "and",
+        "is",
+        "there",
+        "knowledge",
+        "in",
+        "the",
+        "most",
+        "High?"
+      ],
       "info": ""
     },
     {
@@ -108,7 +277,22 @@
       "chapter": 73,
       "verse_start": 12,
       "verse_end": 12,
-      "text": "Behold, these are the vngodly: who prosper in the world, they increase in riches.",
+      "text": [
+        "Behold,",
+        "these",
+        "are",
+        "the",
+        "vngodly:",
+        "who",
+        "prosper",
+        "in",
+        "the",
+        "world,",
+        "they",
+        "increase",
+        "in",
+        "riches."
+      ],
       "info": ""
     },
     {
@@ -117,7 +301,22 @@
       "chapter": 73,
       "verse_start": 13,
       "verse_end": 13,
-      "text": "Uerily I haue cleansed my heart in vaine, and washed my hands in innocencie.",
+      "text": [
+        "Uerily",
+        "I",
+        "haue",
+        "cleansed",
+        "my",
+        "heart",
+        "in",
+        "vaine,",
+        "and",
+        "washed",
+        "my",
+        "hands",
+        "in",
+        "innocencie."
+      ],
       "info": ""
     },
     {
@@ -126,7 +325,21 @@
       "chapter": 73,
       "verse_start": 14,
       "verse_end": 14,
-      "text": "For all the day long haue I bene plagued, and chastened euery morning.",
+      "text": [
+        "For",
+        "all",
+        "the",
+        "day",
+        "long",
+        "haue",
+        "I",
+        "bene",
+        "plagued,",
+        "and",
+        "chastened",
+        "euery",
+        "morning."
+      ],
       "info": ""
     },
     {
@@ -135,7 +348,25 @@
       "chapter": 73,
       "verse_start": 15,
       "verse_end": 15,
-      "text": "If I say, I will speake thus: behold, I should offend against the generation of thy children.",
+      "text": [
+        "If",
+        "I",
+        "say,",
+        "I",
+        "will",
+        "speake",
+        "thus:",
+        "behold,",
+        "I",
+        "should",
+        "offend",
+        "against",
+        "the",
+        "generation",
+        "of",
+        "thy",
+        "children."
+      ],
       "info": ""
     },
     {
@@ -144,7 +375,20 @@
       "chapter": 73,
       "verse_start": 16,
       "verse_end": 16,
-      "text": "When I thought to know this, it was too painfull for me,",
+      "text": [
+        "When",
+        "I",
+        "thought",
+        "to",
+        "know",
+        "this,",
+        "it",
+        "was",
+        "too",
+        "painfull",
+        "for",
+        "me,"
+      ],
       "info": ""
     },
     {
@@ -153,7 +397,21 @@
       "chapter": 73,
       "verse_start": 17,
       "verse_end": 17,
-      "text": "Untill I went into the Sanctuarie of God; then vnderstood I their end.",
+      "text": [
+        "Untill",
+        "I",
+        "went",
+        "into",
+        "the",
+        "Sanctuarie",
+        "of",
+        "God;",
+        "then",
+        "vnderstood",
+        "I",
+        "their",
+        "end."
+      ],
       "info": ""
     },
     {
@@ -162,7 +420,22 @@
       "chapter": 73,
       "verse_start": 18,
       "verse_end": 18,
-      "text": "Surely thou didst set them in slippery places: thou castedst them downe into destruction.",
+      "text": [
+        "Surely",
+        "thou",
+        "didst",
+        "set",
+        "them",
+        "in",
+        "slippery",
+        "places:",
+        "thou",
+        "castedst",
+        "them",
+        "downe",
+        "into",
+        "destruction."
+      ],
       "info": ""
     },
     {
@@ -171,7 +444,24 @@
       "chapter": 73,
       "verse_start": 19,
       "verse_end": 19,
-      "text": "How are they brought into desolation as in a moment? they are vtterly consumed with terrours.",
+      "text": [
+        "How",
+        "are",
+        "they",
+        "brought",
+        "into",
+        "desolation",
+        "as",
+        "in",
+        "a",
+        "moment?",
+        "they",
+        "are",
+        "vtterly",
+        "consumed",
+        "with",
+        "terrours."
+      ],
       "info": ""
     },
     {
@@ -180,7 +470,25 @@
       "chapter": 73,
       "verse_start": 20,
       "verse_end": 20,
-      "text": "As a dreame when one awaketh; so, O Lord, when thou awakest thou shalt despise their image.",
+      "text": [
+        "As",
+        "a",
+        "dreame",
+        "when",
+        "one",
+        "awaketh;",
+        "so,",
+        "O",
+        "Lord,",
+        "when",
+        "thou",
+        "awakest",
+        "thou",
+        "shalt",
+        "despise",
+        "their",
+        "image."
+      ],
       "info": ""
     },
     {
@@ -189,7 +497,20 @@
       "chapter": 73,
       "verse_start": 21,
       "verse_end": 21,
-      "text": "Thus my heart was greeued, and I was pricked in my reines.",
+      "text": [
+        "Thus",
+        "my",
+        "heart",
+        "was",
+        "greeued,",
+        "and",
+        "I",
+        "was",
+        "pricked",
+        "in",
+        "my",
+        "reines."
+      ],
       "info": ""
     },
     {
@@ -198,7 +519,21 @@
       "chapter": 73,
       "verse_start": 22,
       "verse_end": 22,
-      "text": "So foolish was I, and ignorant: I was as a beast before thee.",
+      "text": [
+        "So",
+        "foolish",
+        "was",
+        "I,",
+        "and",
+        "ignorant:",
+        "I",
+        "was",
+        "as",
+        "a",
+        "beast",
+        "before",
+        "thee."
+      ],
       "info": ""
     },
     {
@@ -207,7 +542,22 @@
       "chapter": 73,
       "verse_start": 23,
       "verse_end": 23,
-      "text": "Neuerthelesse I am continually with thee: thou hast holden me by my right hand.",
+      "text": [
+        "Neuerthelesse",
+        "I",
+        "am",
+        "continually",
+        "with",
+        "thee:",
+        "thou",
+        "hast",
+        "holden",
+        "me",
+        "by",
+        "my",
+        "right",
+        "hand."
+      ],
       "info": ""
     },
     {
@@ -216,7 +566,21 @@
       "chapter": 73,
       "verse_start": 24,
       "verse_end": 24,
-      "text": "Thou shalt guide me with thy counsell; and afterward receiue me to glory.",
+      "text": [
+        "Thou",
+        "shalt",
+        "guide",
+        "me",
+        "with",
+        "thy",
+        "counsell;",
+        "and",
+        "afterward",
+        "receiue",
+        "me",
+        "to",
+        "glory."
+      ],
       "info": ""
     },
     {
@@ -225,7 +589,26 @@
       "chapter": 73,
       "verse_start": 25,
       "verse_end": 25,
-      "text": "Whom haue I in heauen but thee? and there is none vpon earth that I desire besides thee.",
+      "text": [
+        "Whom",
+        "haue",
+        "I",
+        "in",
+        "heauen",
+        "but",
+        "thee?",
+        "and",
+        "there",
+        "is",
+        "none",
+        "vpon",
+        "earth",
+        "that",
+        "I",
+        "desire",
+        "besides",
+        "thee."
+      ],
       "info": ""
     },
     {
@@ -234,7 +617,27 @@
       "chapter": 73,
       "verse_start": 26,
       "verse_end": 26,
-      "text": "My flesh and my heart faileth: but God is the strength of my heart, and my portion for euer.",
+      "text": [
+        "My",
+        "flesh",
+        "and",
+        "my",
+        "heart",
+        "faileth:",
+        "but",
+        "God",
+        "is",
+        "the",
+        "strength",
+        "of",
+        "my",
+        "heart,",
+        "and",
+        "my",
+        "portion",
+        "for",
+        "euer."
+      ],
       "info": ""
     },
     {
@@ -243,7 +646,28 @@
       "chapter": 73,
       "verse_start": 27,
       "verse_end": 27,
-      "text": "For loe, they that are farre from thee, shall perish: thou hast destroyed all them that goe awhoring from thee.",
+      "text": [
+        "For",
+        "loe,",
+        "they",
+        "that",
+        "are",
+        "farre",
+        "from",
+        "thee,",
+        "shall",
+        "perish:",
+        "thou",
+        "hast",
+        "destroyed",
+        "all",
+        "them",
+        "that",
+        "goe",
+        "awhoring",
+        "from",
+        "thee."
+      ],
       "info": ""
     },
     {
@@ -252,7 +676,34 @@
       "chapter": 73,
       "verse_start": 28,
       "verse_end": 28,
-      "text": "But it is good for me, to drawe neere to God: I haue put my trust in the Lord God, that I maydeclare all thy workes.",
+      "text": [
+        "But",
+        "it",
+        "is",
+        "good",
+        "for",
+        "me,",
+        "to",
+        "drawe",
+        "neere",
+        "to",
+        "God:",
+        "I",
+        "haue",
+        "put",
+        "my",
+        "trust",
+        "in",
+        "the",
+        "Lord",
+        "God,",
+        "that",
+        "I",
+        "maydeclare",
+        "all",
+        "thy",
+        "workes."
+      ],
       "info": ""
     }
   ]

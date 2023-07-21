@@ -192,7 +192,7 @@
     </div>
   </AppModal>
   <AppModal v-model="wordDefModal" v-slot="{ close }">
-    <div class="px-4 pb-4 text-white flex flex-col gap-2" style="text-align: center">
+    <div class="px-4 pb-4 text-white flex flex-col gap-2 overflow-scroll" style="text-align: center">
       <div>
         <p class="font-bold text-2xl text-black">{{ wordDef?.word }}</p>
         <p class="font-bold text-black">{{ wordDef?.pronunciation }}</p>

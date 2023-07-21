@@ -9,9 +9,24 @@
       "chapter": 31,
       "verse_start": 1,
       "verse_end": 1,
-      "text": "I made a covenant with mine eyes; why then should I think upon a maid?",
-      "info": "",
-      "language": "English"
+      "text": [
+        "I",
+        "made",
+        "a",
+        "covenant",
+        "with",
+        "mine",
+        "eyes;",
+        "why",
+        "then",
+        "should",
+        "I",
+        "think",
+        "upon",
+        "a",
+        "maid?"
+      ],
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -19,9 +34,27 @@
       "chapter": 31,
       "verse_start": 2,
       "verse_end": 2,
-      "text": "For what portion of God <em>is there</em> from above? and <em>what</em> inheritance of the Almighty from on high?",
-      "info": "",
-      "language": "English"
+      "text": [
+        "For",
+        "what",
+        "portion",
+        "of",
+        "God",
+        "<em>is</em>",
+        "<em>there</em>",
+        "from",
+        "above?",
+        "and",
+        "<em>what</em>",
+        "inheritance",
+        "of",
+        "the",
+        "Almighty",
+        "from",
+        "on",
+        "high?"
+      ],
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -29,9 +62,24 @@
       "chapter": 31,
       "verse_start": 3,
       "verse_end": 3,
-      "text": "<em>Is</em> not destruction to the wicked? and a strange <em>punishment</em> to the workers of iniquity?",
-      "info": "",
-      "language": "English"
+      "text": [
+        "<em>Is</em>",
+        "not",
+        "destruction",
+        "to",
+        "the",
+        "wicked?",
+        "and",
+        "a",
+        "strange",
+        "<em>punishment</em>",
+        "to",
+        "the",
+        "workers",
+        "of",
+        "iniquity?"
+      ],
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -39,9 +87,20 @@
       "chapter": 31,
       "verse_start": 4,
       "verse_end": 4,
-      "text": "Doth not he see my ways, and count all my steps?",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Doth",
+        "not",
+        "he",
+        "see",
+        "my",
+        "ways,",
+        "and",
+        "count",
+        "all",
+        "my",
+        "steps?"
+      ],
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -49,9 +108,23 @@
       "chapter": 31,
       "verse_start": 5,
       "verse_end": 5,
-      "text": "If I have walked with vanity, or if my foot hath hasted to deceit;",
-      "info": "",
-      "language": "English"
+      "text": [
+        "If",
+        "I",
+        "have",
+        "walked",
+        "with",
+        "vanity,",
+        "or",
+        "if",
+        "my",
+        "foot",
+        "hath",
+        "hasted",
+        "to",
+        "deceit;"
+      ],
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -59,9 +132,23 @@
       "chapter": 31,
       "verse_start": 6,
       "verse_end": 6,
-      "text": "Let me be weighed in an even balance, that God may know mine integrity.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Let",
+        "me",
+        "be",
+        "weighed",
+        "in",
+        "an",
+        "even",
+        "balance,",
+        "that",
+        "God",
+        "may",
+        "know",
+        "mine",
+        "integrity."
+      ],
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -69,9 +156,34 @@
       "chapter": 31,
       "verse_start": 7,
       "verse_end": 7,
-      "text": "If my step hath turned out of the way, and mine heart walked after mine eyes, and if any blot hath cleaved to mine hands;",
-      "info": "",
-      "language": "English"
+      "text": [
+        "If",
+        "my",
+        "step",
+        "hath",
+        "turned",
+        "out",
+        "of",
+        "the",
+        "way,",
+        "and",
+        "mine",
+        "heart",
+        "walked",
+        "after",
+        "mine",
+        "eyes,",
+        "and",
+        "if",
+        "any",
+        "blot",
+        "hath",
+        "cleaved",
+        "to",
+        "mine",
+        "hands;"
+      ],
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -79,9 +191,24 @@
       "chapter": 31,
       "verse_start": 8,
       "verse_end": 8,
-      "text": "<em>Then</em> let me sow, and let another eat; yea, let my offspring be rooted out.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "<em>Then</em>",
+        "let",
+        "me",
+        "sow,",
+        "and",
+        "let",
+        "another",
+        "eat;",
+        "yea,",
+        "let",
+        "my",
+        "offspring",
+        "be",
+        "rooted",
+        "out."
+      ],
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -89,9 +216,28 @@
       "chapter": 31,
       "verse_start": 9,
       "verse_end": 9,
-      "text": "If mine heart have been deceived by a woman, or <em>if</em> I have laid wait at my neighbour's door;",
-      "info": "",
-      "language": "English"
+      "text": [
+        "If",
+        "mine",
+        "heart",
+        "have",
+        "been",
+        "deceived",
+        "by",
+        "a",
+        "woman,",
+        "or",
+        "<em>if</em>",
+        "I",
+        "have",
+        "laid",
+        "wait",
+        "at",
+        "my",
+        "neighbour's",
+        "door;"
+      ],
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -99,9 +245,23 @@
       "chapter": 31,
       "verse_start": 10,
       "verse_end": 10,
-      "text": "<em>Then</em> let my wife grind unto another, and let others bow down upon her.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "<em>Then</em>",
+        "let",
+        "my",
+        "wife",
+        "grind",
+        "unto",
+        "another,",
+        "and",
+        "let",
+        "others",
+        "bow",
+        "down",
+        "upon",
+        "her."
+      ],
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -109,9 +269,26 @@
       "chapter": 31,
       "verse_start": 11,
       "verse_end": 11,
-      "text": "For this <em>is</em> an heinous crime; yea, it <em>is</em> an iniquity <em>to be punished by</em> the judges.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "For",
+        "this",
+        "<em>is</em>",
+        "an",
+        "heinous",
+        "crime;",
+        "yea,",
+        "it",
+        "<em>is</em>",
+        "an",
+        "iniquity",
+        "<em>to</em>",
+        "<em>be</em>",
+        "<em>punished</em>",
+        "<em>by</em>",
+        "the",
+        "judges."
+      ],
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -119,9 +296,25 @@
       "chapter": 31,
       "verse_start": 12,
       "verse_end": 12,
-      "text": "For it <em>is</em> a fire <em>that</em> consumeth to destruction, and would root out all mine increase.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "For",
+        "it",
+        "<em>is</em>",
+        "a",
+        "fire",
+        "<em>that</em>",
+        "consumeth",
+        "to",
+        "destruction,",
+        "and",
+        "would",
+        "root",
+        "out",
+        "all",
+        "mine",
+        "increase."
+      ],
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -129,9 +322,27 @@
       "chapter": 31,
       "verse_start": 13,
       "verse_end": 13,
-      "text": "If I did despise the cause of my manservant or of my maidservant, when they contended with me;",
-      "info": "",
-      "language": "English"
+      "text": [
+        "If",
+        "I",
+        "did",
+        "despise",
+        "the",
+        "cause",
+        "of",
+        "my",
+        "manservant",
+        "or",
+        "of",
+        "my",
+        "maidservant,",
+        "when",
+        "they",
+        "contended",
+        "with",
+        "me;"
+      ],
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -139,9 +350,27 @@
       "chapter": 31,
       "verse_start": 14,
       "verse_end": 14,
-      "text": "What then shall I do when God riseth up? and when he visiteth, what shall I answer him?",
-      "info": "",
-      "language": "English"
+      "text": [
+        "What",
+        "then",
+        "shall",
+        "I",
+        "do",
+        "when",
+        "God",
+        "riseth",
+        "up?",
+        "and",
+        "when",
+        "he",
+        "visiteth,",
+        "what",
+        "shall",
+        "I",
+        "answer",
+        "him?"
+      ],
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -149,9 +378,29 @@
       "chapter": 31,
       "verse_start": 15,
       "verse_end": 15,
-      "text": "Did not he that made me in the womb make him? and did not one fashion us in the womb?",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Did",
+        "not",
+        "he",
+        "that",
+        "made",
+        "me",
+        "in",
+        "the",
+        "womb",
+        "make",
+        "him?",
+        "and",
+        "did",
+        "not",
+        "one",
+        "fashion",
+        "us",
+        "in",
+        "the",
+        "womb?"
+      ],
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -159,9 +408,28 @@
       "chapter": 31,
       "verse_start": 16,
       "verse_end": 16,
-      "text": "If I have withheld the poor from <em>their</em> desire, or have caused the eyes of the widow to fail;",
-      "info": "",
-      "language": "English"
+      "text": [
+        "If",
+        "I",
+        "have",
+        "withheld",
+        "the",
+        "poor",
+        "from",
+        "<em>their</em>",
+        "desire,",
+        "or",
+        "have",
+        "caused",
+        "the",
+        "eyes",
+        "of",
+        "the",
+        "widow",
+        "to",
+        "fail;"
+      ],
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -169,9 +437,23 @@
       "chapter": 31,
       "verse_start": 17,
       "verse_end": 17,
-      "text": "Or have eaten my morsel myself alone, and the fatherless hath not eaten thereof;",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Or",
+        "have",
+        "eaten",
+        "my",
+        "morsel",
+        "myself",
+        "alone,",
+        "and",
+        "the",
+        "fatherless",
+        "hath",
+        "not",
+        "eaten",
+        "thereof;"
+      ],
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -179,9 +461,32 @@
       "chapter": 31,
       "verse_start": 18,
       "verse_end": 18,
-      "text": "(For from my youth he was brought up with me, as <em>with</em> a father, and I have guided her from my mother's womb;)",
-      "info": "",
-      "language": "English"
+      "text": [
+        "(For",
+        "from",
+        "my",
+        "youth",
+        "he",
+        "was",
+        "brought",
+        "up",
+        "with",
+        "me,",
+        "as",
+        "<em>with</em>",
+        "a",
+        "father,",
+        "and",
+        "I",
+        "have",
+        "guided",
+        "her",
+        "from",
+        "my",
+        "mother's",
+        "womb;)"
+      ],
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -189,9 +494,24 @@
       "chapter": 31,
       "verse_start": 19,
       "verse_end": 19,
-      "text": "If I have seen any perish for want of clothing, or any poor without covering;",
-      "info": "",
-      "language": "English"
+      "text": [
+        "If",
+        "I",
+        "have",
+        "seen",
+        "any",
+        "perish",
+        "for",
+        "want",
+        "of",
+        "clothing,",
+        "or",
+        "any",
+        "poor",
+        "without",
+        "covering;"
+      ],
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -199,9 +519,28 @@
       "chapter": 31,
       "verse_start": 20,
       "verse_end": 20,
-      "text": "If his loins have not blessed me, and <em>if</em> he were <em>not</em> warmed with the fleece of my sheep;",
-      "info": "",
-      "language": "English"
+      "text": [
+        "If",
+        "his",
+        "loins",
+        "have",
+        "not",
+        "blessed",
+        "me,",
+        "and",
+        "<em>if</em>",
+        "he",
+        "were",
+        "<em>not</em>",
+        "warmed",
+        "with",
+        "the",
+        "fleece",
+        "of",
+        "my",
+        "sheep;"
+      ],
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -209,9 +548,27 @@
       "chapter": 31,
       "verse_start": 21,
       "verse_end": 21,
-      "text": "If I have lifted up my hand against the fatherless, when I saw my help in the gate:",
-      "info": "",
-      "language": "English"
+      "text": [
+        "If",
+        "I",
+        "have",
+        "lifted",
+        "up",
+        "my",
+        "hand",
+        "against",
+        "the",
+        "fatherless,",
+        "when",
+        "I",
+        "saw",
+        "my",
+        "help",
+        "in",
+        "the",
+        "gate:"
+      ],
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -219,9 +576,26 @@
       "chapter": 31,
       "verse_start": 22,
       "verse_end": 22,
-      "text": "<em>Then</em> let mine arm fall from my shoulder blade, and mine arm be broken from the bone.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "<em>Then</em>",
+        "let",
+        "mine",
+        "arm",
+        "fall",
+        "from",
+        "my",
+        "shoulder",
+        "blade,",
+        "and",
+        "mine",
+        "arm",
+        "be",
+        "broken",
+        "from",
+        "the",
+        "bone."
+      ],
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -229,9 +603,28 @@
       "chapter": 31,
       "verse_start": 23,
       "verse_end": 23,
-      "text": "For destruction <em>from</em> God <em>was</em> a terror to me, and by reason of his highness I could not endure.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "For",
+        "destruction",
+        "<em>from</em>",
+        "God",
+        "<em>was</em>",
+        "a",
+        "terror",
+        "to",
+        "me,",
+        "and",
+        "by",
+        "reason",
+        "of",
+        "his",
+        "highness",
+        "I",
+        "could",
+        "not",
+        "endure."
+      ],
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -239,9 +632,27 @@
       "chapter": 31,
       "verse_start": 24,
       "verse_end": 24,
-      "text": "If I have made gold my hope, or have said to the fine gold, <em>Thou art</em> my confidence;",
-      "info": "",
-      "language": "English"
+      "text": [
+        "If",
+        "I",
+        "have",
+        "made",
+        "gold",
+        "my",
+        "hope,",
+        "or",
+        "have",
+        "said",
+        "to",
+        "the",
+        "fine",
+        "gold,",
+        "<em>Thou</em>",
+        "<em>art</em>",
+        "my",
+        "confidence;"
+      ],
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -249,9 +660,24 @@
       "chapter": 31,
       "verse_start": 25,
       "verse_end": 25,
-      "text": "If I rejoiced because my wealth <em>was</em> great, and because mine hand had gotten much;",
-      "info": "",
-      "language": "English"
+      "text": [
+        "If",
+        "I",
+        "rejoiced",
+        "because",
+        "my",
+        "wealth",
+        "<em>was</em>",
+        "great,",
+        "and",
+        "because",
+        "mine",
+        "hand",
+        "had",
+        "gotten",
+        "much;"
+      ],
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -259,9 +685,23 @@
       "chapter": 31,
       "verse_start": 26,
       "verse_end": 26,
-      "text": "If I beheld the sun when it shined, or the moon walking <em>in</em> brightness;",
-      "info": "",
-      "language": "English"
+      "text": [
+        "If",
+        "I",
+        "beheld",
+        "the",
+        "sun",
+        "when",
+        "it",
+        "shined,",
+        "or",
+        "the",
+        "moon",
+        "walking",
+        "<em>in</em>",
+        "brightness;"
+      ],
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -269,9 +709,23 @@
       "chapter": 31,
       "verse_start": 27,
       "verse_end": 27,
-      "text": "And my heart hath been secretly enticed, or my mouth hath kissed my hand:",
-      "info": "",
-      "language": "English"
+      "text": [
+        "And",
+        "my",
+        "heart",
+        "hath",
+        "been",
+        "secretly",
+        "enticed,",
+        "or",
+        "my",
+        "mouth",
+        "hath",
+        "kissed",
+        "my",
+        "hand:"
+      ],
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -279,9 +733,30 @@
       "chapter": 31,
       "verse_start": 28,
       "verse_end": 28,
-      "text": "This also <em>were</em> an iniquity <em>to be punished by</em> the judge: for I should have denied the God <em>that is</em> above.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "This",
+        "also",
+        "<em>were</em>",
+        "an",
+        "iniquity",
+        "<em>to</em>",
+        "<em>be</em>",
+        "<em>punished</em>",
+        "<em>by</em>",
+        "the",
+        "judge:",
+        "for",
+        "I",
+        "should",
+        "have",
+        "denied",
+        "the",
+        "God",
+        "<em>that</em>",
+        "<em>is</em>",
+        "above."
+      ],
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -289,9 +764,28 @@
       "chapter": 31,
       "verse_start": 29,
       "verse_end": 29,
-      "text": "If I rejoiced at the destruction of him that hated me, or lifted up myself when evil found him:",
-      "info": "",
-      "language": "English"
+      "text": [
+        "If",
+        "I",
+        "rejoiced",
+        "at",
+        "the",
+        "destruction",
+        "of",
+        "him",
+        "that",
+        "hated",
+        "me,",
+        "or",
+        "lifted",
+        "up",
+        "myself",
+        "when",
+        "evil",
+        "found",
+        "him:"
+      ],
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -299,9 +793,24 @@
       "chapter": 31,
       "verse_start": 30,
       "verse_end": 30,
-      "text": "Neither have I suffered my mouth to sin by wishing a curse to his soul.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Neither",
+        "have",
+        "I",
+        "suffered",
+        "my",
+        "mouth",
+        "to",
+        "sin",
+        "by",
+        "wishing",
+        "a",
+        "curse",
+        "to",
+        "his",
+        "soul."
+      ],
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -309,9 +818,28 @@
       "chapter": 31,
       "verse_start": 31,
       "verse_end": 31,
-      "text": "If the men of my tabernacle said not, Oh that we had of his flesh! we cannot be satisfied.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "If",
+        "the",
+        "men",
+        "of",
+        "my",
+        "tabernacle",
+        "said",
+        "not,",
+        "Oh",
+        "that",
+        "we",
+        "had",
+        "of",
+        "his",
+        "flesh!",
+        "we",
+        "cannot",
+        "be",
+        "satisfied."
+      ],
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -319,9 +847,25 @@
       "chapter": 31,
       "verse_start": 32,
       "verse_end": 32,
-      "text": "The stranger did not lodge in the street: <em>but</em> I opened my doors to the traveller.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "The",
+        "stranger",
+        "did",
+        "not",
+        "lodge",
+        "in",
+        "the",
+        "street:",
+        "<em>but</em>",
+        "I",
+        "opened",
+        "my",
+        "doors",
+        "to",
+        "the",
+        "traveller."
+      ],
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -329,9 +873,23 @@
       "chapter": 31,
       "verse_start": 33,
       "verse_end": 33,
-      "text": "If I covered my transgressions as Adam, by hiding mine iniquity in my bosom:",
-      "info": "",
-      "language": "English"
+      "text": [
+        "If",
+        "I",
+        "covered",
+        "my",
+        "transgressions",
+        "as",
+        "Adam,",
+        "by",
+        "hiding",
+        "mine",
+        "iniquity",
+        "in",
+        "my",
+        "bosom:"
+      ],
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -339,9 +897,34 @@
       "chapter": 31,
       "verse_start": 34,
       "verse_end": 34,
-      "text": "Did I fear a great multitude, or did the contempt of families terrify me, that I kept silence, <em>and</em> went not out of the door?",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Did",
+        "I",
+        "fear",
+        "a",
+        "great",
+        "multitude,",
+        "or",
+        "did",
+        "the",
+        "contempt",
+        "of",
+        "families",
+        "terrify",
+        "me,",
+        "that",
+        "I",
+        "kept",
+        "silence,",
+        "<em>and</em>",
+        "went",
+        "not",
+        "out",
+        "of",
+        "the",
+        "door?"
+      ],
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -349,9 +932,33 @@
       "chapter": 31,
       "verse_start": 35,
       "verse_end": 35,
-      "text": "Oh that one would hear me! behold, my desire <em>is, that</em> the Almighty would answer me, and <em>that</em> mine adversary had written a book.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Oh",
+        "that",
+        "one",
+        "would",
+        "hear",
+        "me!",
+        "behold,",
+        "my",
+        "desire",
+        "<em>is,</em>",
+        "<em>that</em>",
+        "the",
+        "Almighty",
+        "would",
+        "answer",
+        "me,",
+        "and",
+        "<em>that</em>",
+        "mine",
+        "adversary",
+        "had",
+        "written",
+        "a",
+        "book."
+      ],
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -359,9 +966,25 @@
       "chapter": 31,
       "verse_start": 36,
       "verse_end": 36,
-      "text": "Surely I would take it upon my shoulder, <em>and</em> bind it <em>as</em> a crown to me.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Surely",
+        "I",
+        "would",
+        "take",
+        "it",
+        "upon",
+        "my",
+        "shoulder,",
+        "<em>and</em>",
+        "bind",
+        "it",
+        "<em>as</em>",
+        "a",
+        "crown",
+        "to",
+        "me."
+      ],
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -369,9 +992,28 @@
       "chapter": 31,
       "verse_start": 37,
       "verse_end": 37,
-      "text": "I would declare unto him the number of my steps; as a prince would I go near unto him.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "I",
+        "would",
+        "declare",
+        "unto",
+        "him",
+        "the",
+        "number",
+        "of",
+        "my",
+        "steps;",
+        "as",
+        "a",
+        "prince",
+        "would",
+        "I",
+        "go",
+        "near",
+        "unto",
+        "him."
+      ],
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -379,9 +1021,22 @@
       "chapter": 31,
       "verse_start": 38,
       "verse_end": 38,
-      "text": "If my land cry against me, or that the furrows likewise thereof complain;",
-      "info": "",
-      "language": "English"
+      "text": [
+        "If",
+        "my",
+        "land",
+        "cry",
+        "against",
+        "me,",
+        "or",
+        "that",
+        "the",
+        "furrows",
+        "likewise",
+        "thereof",
+        "complain;"
+      ],
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -389,9 +1044,28 @@
       "chapter": 31,
       "verse_start": 39,
       "verse_end": 39,
-      "text": "If I have eaten the fruits thereof without money, or have caused the owners thereof to lose their life:",
-      "info": "",
-      "language": "English"
+      "text": [
+        "If",
+        "I",
+        "have",
+        "eaten",
+        "the",
+        "fruits",
+        "thereof",
+        "without",
+        "money,",
+        "or",
+        "have",
+        "caused",
+        "the",
+        "owners",
+        "thereof",
+        "to",
+        "lose",
+        "their",
+        "life:"
+      ],
+      "info": ""
     },
     {
       "book_id": "JOB",
@@ -399,9 +1073,26 @@
       "chapter": 31,
       "verse_start": 40,
       "verse_end": 40,
-      "text": "Let thistles grow instead of wheat, and cockle instead of barley. The words of Job are ended.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Let",
+        "thistles",
+        "grow",
+        "instead",
+        "of",
+        "wheat,",
+        "and",
+        "cockle",
+        "instead",
+        "of",
+        "barley.",
+        "The",
+        "words",
+        "of",
+        "Job",
+        "are",
+        "ended."
+      ],
+      "info": ""
     }
   ]
 }

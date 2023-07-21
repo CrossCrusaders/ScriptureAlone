@@ -1,5 +1,5 @@
 {
-  "header": "¶ To the chiefe Musician on Neginoth. A Psalme or song.",
+  "header": "¶ To",
   "footer": "",
   "language": "English",
   "verses": [
@@ -9,7 +9,34 @@
       "chapter": 67,
       "verse_start": 1,
       "verse_end": 1,
-      "text": "God be mercifull vnto vs, and blesse vs: and cause his face to shine vpon vs. Selah.",
+      "text": [
+        "<em>the</em>",
+        "<em>chiefe</em>",
+        "<em>Musician</em>",
+        "<em>on</em>",
+        "<em>Neginoth.</em>",
+        "<em>A</em>",
+        "<em>Psalme</em>",
+        "<em>or</em>",
+        "<em>song.</em>",
+        "God",
+        "be",
+        "mercifull",
+        "vnto",
+        "vs,",
+        "and",
+        "blesse",
+        "vs:",
+        "and",
+        "cause",
+        "his",
+        "face",
+        "to",
+        "shine",
+        "vpon",
+        "vs.",
+        "Selah."
+      ],
       "info": ""
     },
     {
@@ -18,7 +45,22 @@
       "chapter": 67,
       "verse_start": 2,
       "verse_end": 2,
-      "text": "That thy way may bee knowen vpon earth, thy sauing health among all nations.",
+      "text": [
+        "That",
+        "thy",
+        "way",
+        "may",
+        "bee",
+        "knowen",
+        "vpon",
+        "earth,",
+        "thy",
+        "sauing",
+        "health",
+        "among",
+        "all",
+        "nations."
+      ],
       "info": ""
     },
     {
@@ -27,7 +69,21 @@
       "chapter": 67,
       "verse_start": 3,
       "verse_end": 3,
-      "text": "Let the people praise thee, O God; let all the people praise thee.",
+      "text": [
+        "Let",
+        "the",
+        "people",
+        "praise",
+        "thee,",
+        "O",
+        "God;",
+        "let",
+        "all",
+        "the",
+        "people",
+        "praise",
+        "thee."
+      ],
       "info": ""
     },
     {
@@ -36,7 +92,32 @@
       "chapter": 67,
       "verse_start": 4,
       "verse_end": 4,
-      "text": "O let the nations be glad, and sing for ioy: for thou shalt iudge the people righteously; and gouerne the nations vpon earth. Selah.",
+      "text": [
+        "O",
+        "let",
+        "the",
+        "nations",
+        "be",
+        "glad,",
+        "and",
+        "sing",
+        "for",
+        "ioy:",
+        "for",
+        "thou",
+        "shalt",
+        "iudge",
+        "the",
+        "people",
+        "righteously;",
+        "and",
+        "gouerne",
+        "the",
+        "nations",
+        "vpon",
+        "earth.",
+        "Selah."
+      ],
       "info": ""
     },
     {
@@ -45,7 +126,21 @@
       "chapter": 67,
       "verse_start": 5,
       "verse_end": 5,
-      "text": "Let the people praise thee, O God, let all the people praise thee.",
+      "text": [
+        "Let",
+        "the",
+        "people",
+        "praise",
+        "thee,",
+        "O",
+        "God,",
+        "let",
+        "all",
+        "the",
+        "people",
+        "praise",
+        "thee."
+      ],
       "info": ""
     },
     {
@@ -54,7 +149,24 @@
       "chapter": 67,
       "verse_start": 6,
       "verse_end": 6,
-      "text": "Then shall the earth yeeld her increase; and God, euen our owne God, shall blesse vs.",
+      "text": [
+        "Then",
+        "shall",
+        "the",
+        "earth",
+        "yeeld",
+        "her",
+        "increase;",
+        "and",
+        "God,",
+        "euen",
+        "our",
+        "owne",
+        "God,",
+        "shall",
+        "blesse",
+        "vs."
+      ],
       "info": ""
     },
     {
@@ -63,7 +175,22 @@
       "chapter": 67,
       "verse_start": 7,
       "verse_end": 7,
-      "text": "God shall blesse vs; and all the ends of the earth shall feare him.",
+      "text": [
+        "God",
+        "shall",
+        "blesse",
+        "vs;",
+        "and",
+        "all",
+        "the",
+        "ends",
+        "of",
+        "the",
+        "earth",
+        "shall",
+        "feare",
+        "him."
+      ],
       "info": ""
     }
   ]

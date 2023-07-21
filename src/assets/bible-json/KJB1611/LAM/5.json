@@ -9,7 +9,21 @@
       "chapter": 5,
       "verse_start": 1,
       "verse_end": 1,
-      "text": "Remember, O Lord, what is come vpon vs: consider and beholde our reproch.",
+      "text": [
+        "Remember,",
+        "O",
+        "Lord,",
+        "what",
+        "is",
+        "come",
+        "vpon",
+        "vs:",
+        "consider",
+        "and",
+        "beholde",
+        "our",
+        "reproch."
+      ],
       "info": ""
     },
     {
@@ -18,7 +32,18 @@
       "chapter": 5,
       "verse_start": 2,
       "verse_end": 2,
-      "text": "Our inheritance is turned to strangers, our houses to aliants.",
+      "text": [
+        "Our",
+        "inheritance",
+        "is",
+        "turned",
+        "to",
+        "strangers,",
+        "our",
+        "houses",
+        "to",
+        "aliants."
+      ],
       "info": ""
     },
     {
@@ -27,7 +52,18 @@
       "chapter": 5,
       "verse_start": 3,
       "verse_end": 3,
-      "text": "We are orphanes and fatherlesse, our mothers are as widowes.",
+      "text": [
+        "We",
+        "are",
+        "orphanes",
+        "and",
+        "fatherlesse,",
+        "our",
+        "mothers",
+        "are",
+        "as",
+        "widowes."
+      ],
       "info": ""
     },
     {
@@ -36,7 +72,21 @@
       "chapter": 5,
       "verse_start": 4,
       "verse_end": 4,
-      "text": "We haue drunken our water for money, our wood is sold vnto vs.",
+      "text": [
+        "We",
+        "haue",
+        "drunken",
+        "our",
+        "water",
+        "for",
+        "money,",
+        "our",
+        "wood",
+        "is",
+        "sold",
+        "vnto",
+        "vs."
+      ],
       "info": ""
     },
     {
@@ -45,7 +95,19 @@
       "chapter": 5,
       "verse_start": 5,
       "verse_end": 5,
-      "text": "Our neckes are vnder persecution: we labour and haue no rest.",
+      "text": [
+        "Our",
+        "neckes",
+        "are",
+        "vnder",
+        "persecution:",
+        "we",
+        "labour",
+        "and",
+        "haue",
+        "no",
+        "rest."
+      ],
       "info": ""
     },
     {
@@ -54,7 +116,25 @@
       "chapter": 5,
       "verse_start": 6,
       "verse_end": 6,
-      "text": "We haue giuen the hand to the Egyptians, and to the Assyrians, to be satisfied with bread.",
+      "text": [
+        "We",
+        "haue",
+        "giuen",
+        "the",
+        "hand",
+        "to",
+        "the",
+        "Egyptians,",
+        "and",
+        "to",
+        "the",
+        "Assyrians,",
+        "to",
+        "be",
+        "satisfied",
+        "with",
+        "bread."
+      ],
       "info": ""
     },
     {
@@ -63,7 +143,21 @@
       "chapter": 5,
       "verse_start": 7,
       "verse_end": 7,
-      "text": "Our fathers haue sinned and are not, and wee haue borne their iniquities.",
+      "text": [
+        "Our",
+        "fathers",
+        "haue",
+        "sinned",
+        "and",
+        "are",
+        "not,",
+        "and",
+        "wee",
+        "haue",
+        "borne",
+        "their",
+        "iniquities."
+      ],
       "info": ""
     },
     {
@@ -72,7 +166,24 @@
       "chapter": 5,
       "verse_start": 8,
       "verse_end": 8,
-      "text": "Seruants haue ruled ouer vs: there is none that doeth deliuer vs out of their hand.",
+      "text": [
+        "Seruants",
+        "haue",
+        "ruled",
+        "ouer",
+        "vs:",
+        "there",
+        "is",
+        "none",
+        "that",
+        "doeth",
+        "deliuer",
+        "vs",
+        "out",
+        "of",
+        "their",
+        "hand."
+      ],
       "info": ""
     },
     {
@@ -81,7 +192,25 @@
       "chapter": 5,
       "verse_start": 9,
       "verse_end": 9,
-      "text": "We gate our bread with the perill of our liues, because of the sword of the wildernesse.",
+      "text": [
+        "We",
+        "gate",
+        "our",
+        "bread",
+        "with",
+        "the",
+        "perill",
+        "of",
+        "our",
+        "liues,",
+        "because",
+        "of",
+        "the",
+        "sword",
+        "of",
+        "the",
+        "wildernesse."
+      ],
       "info": ""
     },
     {
@@ -90,7 +219,20 @@
       "chapter": 5,
       "verse_start": 10,
       "verse_end": 10,
-      "text": "Our skinne was blacke like an ouen, because of the terrible famine.",
+      "text": [
+        "Our",
+        "skinne",
+        "was",
+        "blacke",
+        "like",
+        "an",
+        "ouen,",
+        "because",
+        "of",
+        "the",
+        "terrible",
+        "famine."
+      ],
       "info": ""
     },
     {
@@ -99,7 +241,22 @@
       "chapter": 5,
       "verse_start": 11,
       "verse_end": 11,
-      "text": "They rauished the women in Zion, and the maides in the cities of Iudah.",
+      "text": [
+        "They",
+        "rauished",
+        "the",
+        "women",
+        "in",
+        "Zion,",
+        "and",
+        "the",
+        "maides",
+        "in",
+        "the",
+        "cities",
+        "of",
+        "Iudah."
+      ],
       "info": ""
     },
     {
@@ -108,7 +265,22 @@
       "chapter": 5,
       "verse_start": 12,
       "verse_end": 12,
-      "text": "Princes are hanged vp by their hand: the faces of Elders were not honoured.",
+      "text": [
+        "Princes",
+        "are",
+        "hanged",
+        "vp",
+        "by",
+        "their",
+        "hand:",
+        "the",
+        "faces",
+        "of",
+        "Elders",
+        "were",
+        "not",
+        "honoured."
+      ],
       "info": ""
     },
     {
@@ -117,7 +289,22 @@
       "chapter": 5,
       "verse_start": 13,
       "verse_end": 13,
-      "text": "They tooke the young men to grinde, and the children fell vnder the wood.",
+      "text": [
+        "They",
+        "tooke",
+        "the",
+        "young",
+        "men",
+        "to",
+        "grinde,",
+        "and",
+        "the",
+        "children",
+        "fell",
+        "vnder",
+        "the",
+        "wood."
+      ],
       "info": ""
     },
     {
@@ -126,7 +313,21 @@
       "chapter": 5,
       "verse_start": 14,
       "verse_end": 14,
-      "text": "The Elders haue ceased from the gate, the young men from their musicke.",
+      "text": [
+        "The",
+        "Elders",
+        "haue",
+        "ceased",
+        "from",
+        "the",
+        "gate,",
+        "the",
+        "young",
+        "men",
+        "from",
+        "their",
+        "musicke."
+      ],
       "info": ""
     },
     {
@@ -135,7 +336,21 @@
       "chapter": 5,
       "verse_start": 15,
       "verse_end": 15,
-      "text": "The ioy of our heart is ceased, our daunce is turned into mourning.",
+      "text": [
+        "The",
+        "ioy",
+        "of",
+        "our",
+        "heart",
+        "is",
+        "ceased,",
+        "our",
+        "daunce",
+        "is",
+        "turned",
+        "into",
+        "mourning."
+      ],
       "info": ""
     },
     {
@@ -144,7 +359,22 @@
       "chapter": 5,
       "verse_start": 16,
       "verse_end": 16,
-      "text": "The crowne is fallen from our head: Woe vnto vs, that wee haue sinned.",
+      "text": [
+        "The",
+        "crowne",
+        "is",
+        "fallen",
+        "from",
+        "our",
+        "head:",
+        "Woe",
+        "vnto",
+        "vs,",
+        "that",
+        "wee",
+        "haue",
+        "sinned."
+      ],
       "info": ""
     },
     {
@@ -153,7 +383,21 @@
       "chapter": 5,
       "verse_start": 17,
       "verse_end": 17,
-      "text": "For this our heart is faint, for these things our eyes are dimme.",
+      "text": [
+        "For",
+        "this",
+        "our",
+        "heart",
+        "is",
+        "faint,",
+        "for",
+        "these",
+        "things",
+        "our",
+        "eyes",
+        "are",
+        "dimme."
+      ],
       "info": ""
     },
     {
@@ -162,7 +406,22 @@
       "chapter": 5,
       "verse_start": 18,
       "verse_end": 18,
-      "text": "Because of the mountaine of Zion, which is desolate, the foxes walke vpon it.",
+      "text": [
+        "Because",
+        "of",
+        "the",
+        "mountaine",
+        "of",
+        "Zion,",
+        "which",
+        "is",
+        "desolate,",
+        "the",
+        "foxes",
+        "walke",
+        "vpon",
+        "it."
+      ],
       "info": ""
     },
     {
@@ -171,7 +430,20 @@
       "chapter": 5,
       "verse_start": 19,
       "verse_end": 19,
-      "text": "Thou, O Lord, remainest for euer: thy throne from generation to generation.",
+      "text": [
+        "Thou,",
+        "O",
+        "Lord,",
+        "remainest",
+        "for",
+        "euer:",
+        "thy",
+        "throne",
+        "from",
+        "generation",
+        "to",
+        "generation."
+      ],
       "info": ""
     },
     {
@@ -180,7 +452,21 @@
       "chapter": 5,
       "verse_start": 20,
       "verse_end": 20,
-      "text": "Wherefore doest thou forget vs for euer, and forsake vs so long time?",
+      "text": [
+        "Wherefore",
+        "doest",
+        "thou",
+        "forget",
+        "vs",
+        "for",
+        "euer,",
+        "and",
+        "forsake",
+        "vs",
+        "so",
+        "long",
+        "time?"
+      ],
       "info": ""
     },
     {
@@ -189,7 +475,26 @@
       "chapter": 5,
       "verse_start": 21,
       "verse_end": 21,
-      "text": "Turne thou vs vnto thee, O Lord, and we shall be turned: renew our dayes as of old.",
+      "text": [
+        "Turne",
+        "thou",
+        "vs",
+        "vnto",
+        "thee,",
+        "O",
+        "Lord,",
+        "and",
+        "we",
+        "shall",
+        "be",
+        "turned:",
+        "renew",
+        "our",
+        "dayes",
+        "as",
+        "of",
+        "old."
+      ],
       "info": ""
     },
     {
@@ -198,7 +503,20 @@
       "chapter": 5,
       "verse_start": 22,
       "verse_end": 22,
-      "text": "But thou hast vtterly reiected vs: thou art very wroth against vs.",
+      "text": [
+        "But",
+        "thou",
+        "hast",
+        "vtterly",
+        "reiected",
+        "vs:",
+        "thou",
+        "art",
+        "very",
+        "wroth",
+        "against",
+        "vs."
+      ],
       "info": ""
     }
   ]

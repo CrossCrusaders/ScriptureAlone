@@ -9,9 +9,20 @@
       "chapter": 1,
       "verse_start": 1,
       "verse_end": 1,
-      "text": "The proverbs of Solomon the son of David, king of Israel;",
-      "info": "",
-      "language": "English"
+      "text": [
+        "The",
+        "proverbs",
+        "of",
+        "Solomon",
+        "the",
+        "son",
+        "of",
+        "David,",
+        "king",
+        "of",
+        "Israel;"
+      ],
+      "info": ""
     },
     {
       "book_id": "PRO",
@@ -19,9 +30,20 @@
       "chapter": 1,
       "verse_start": 2,
       "verse_end": 2,
-      "text": "To know wisdom and instruction; to perceive the words of understanding;",
-      "info": "",
-      "language": "English"
+      "text": [
+        "To",
+        "know",
+        "wisdom",
+        "and",
+        "instruction;",
+        "to",
+        "perceive",
+        "the",
+        "words",
+        "of",
+        "understanding;"
+      ],
+      "info": ""
     },
     {
       "book_id": "PRO",
@@ -29,9 +51,20 @@
       "chapter": 1,
       "verse_start": 3,
       "verse_end": 3,
-      "text": "To receive the instruction of wisdom, justice, and judgment, and equity;",
-      "info": "",
-      "language": "English"
+      "text": [
+        "To",
+        "receive",
+        "the",
+        "instruction",
+        "of",
+        "wisdom,",
+        "justice,",
+        "and",
+        "judgment,",
+        "and",
+        "equity;"
+      ],
+      "info": ""
     },
     {
       "book_id": "PRO",
@@ -39,9 +72,22 @@
       "chapter": 1,
       "verse_start": 4,
       "verse_end": 4,
-      "text": "To give subtilty to the simple, to the young man knowledge and discretion.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "To",
+        "give",
+        "subtilty",
+        "to",
+        "the",
+        "simple,",
+        "to",
+        "the",
+        "young",
+        "man",
+        "knowledge",
+        "and",
+        "discretion."
+      ],
+      "info": ""
     },
     {
       "book_id": "PRO",
@@ -49,9 +95,28 @@
       "chapter": 1,
       "verse_start": 5,
       "verse_end": 5,
-      "text": "A wise <em>man</em> will hear, and will increase learning; and a man of understanding shall attain unto wise counsels:",
-      "info": "",
-      "language": "English"
+      "text": [
+        "A",
+        "wise",
+        "<em>man</em>",
+        "will",
+        "hear,",
+        "and",
+        "will",
+        "increase",
+        "learning;",
+        "and",
+        "a",
+        "man",
+        "of",
+        "understanding",
+        "shall",
+        "attain",
+        "unto",
+        "wise",
+        "counsels:"
+      ],
+      "info": ""
     },
     {
       "book_id": "PRO",
@@ -59,9 +124,25 @@
       "chapter": 1,
       "verse_start": 6,
       "verse_end": 6,
-      "text": "To understand a proverb, and the interpretation; the words of the wise, and their dark sayings.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "To",
+        "understand",
+        "a",
+        "proverb,",
+        "and",
+        "the",
+        "interpretation;",
+        "the",
+        "words",
+        "of",
+        "the",
+        "wise,",
+        "and",
+        "their",
+        "dark",
+        "sayings."
+      ],
+      "info": ""
     },
     {
       "book_id": "PRO",
@@ -69,9 +150,26 @@
       "chapter": 1,
       "verse_start": 7,
       "verse_end": 7,
-      "text": "¶ The fear of the LORD <em>is</em> the beginning of knowledge: <em>but</em> fools despise wisdom and instruction.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "¶",
+        "The",
+        "fear",
+        "of",
+        "the",
+        "LORD",
+        "<em>is</em>",
+        "the",
+        "beginning",
+        "of",
+        "knowledge:",
+        "<em>but</em>",
+        "fools",
+        "despise",
+        "wisdom",
+        "and",
+        "instruction."
+      ],
+      "info": ""
     },
     {
       "book_id": "PRO",
@@ -79,9 +177,25 @@
       "chapter": 1,
       "verse_start": 8,
       "verse_end": 8,
-      "text": "My son, hear the instruction of thy father, and forsake not the law of thy mother:",
-      "info": "",
-      "language": "English"
+      "text": [
+        "My",
+        "son,",
+        "hear",
+        "the",
+        "instruction",
+        "of",
+        "thy",
+        "father,",
+        "and",
+        "forsake",
+        "not",
+        "the",
+        "law",
+        "of",
+        "thy",
+        "mother:"
+      ],
+      "info": ""
     },
     {
       "book_id": "PRO",
@@ -89,9 +203,25 @@
       "chapter": 1,
       "verse_start": 9,
       "verse_end": 9,
-      "text": "For they <em>shall be</em> an ornament of grace unto thy head, and chains about thy neck.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "For",
+        "they",
+        "<em>shall</em>",
+        "<em>be</em>",
+        "an",
+        "ornament",
+        "of",
+        "grace",
+        "unto",
+        "thy",
+        "head,",
+        "and",
+        "chains",
+        "about",
+        "thy",
+        "neck."
+      ],
+      "info": ""
     },
     {
       "book_id": "PRO",
@@ -99,9 +229,19 @@
       "chapter": 1,
       "verse_start": 10,
       "verse_end": 10,
-      "text": "¶ My son, if sinners entice thee, consent thou not.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "¶",
+        "My",
+        "son,",
+        "if",
+        "sinners",
+        "entice",
+        "thee,",
+        "consent",
+        "thou",
+        "not."
+      ],
+      "info": ""
     },
     {
       "book_id": "PRO",
@@ -109,9 +249,30 @@
       "chapter": 1,
       "verse_start": 11,
       "verse_end": 11,
-      "text": "If they say, Come with us, let us lay wait for blood, let us lurk privily for the innocent without cause:",
-      "info": "",
-      "language": "English"
+      "text": [
+        "If",
+        "they",
+        "say,",
+        "Come",
+        "with",
+        "us,",
+        "let",
+        "us",
+        "lay",
+        "wait",
+        "for",
+        "blood,",
+        "let",
+        "us",
+        "lurk",
+        "privily",
+        "for",
+        "the",
+        "innocent",
+        "without",
+        "cause:"
+      ],
+      "info": ""
     },
     {
       "book_id": "PRO",
@@ -119,9 +280,28 @@
       "chapter": 1,
       "verse_start": 12,
       "verse_end": 12,
-      "text": "Let us swallow them up alive as the grave; and whole, as those that go down into the pit:",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Let",
+        "us",
+        "swallow",
+        "them",
+        "up",
+        "alive",
+        "as",
+        "the",
+        "grave;",
+        "and",
+        "whole,",
+        "as",
+        "those",
+        "that",
+        "go",
+        "down",
+        "into",
+        "the",
+        "pit:"
+      ],
+      "info": ""
     },
     {
       "book_id": "PRO",
@@ -129,9 +309,22 @@
       "chapter": 1,
       "verse_start": 13,
       "verse_end": 13,
-      "text": "We shall find all precious substance, we shall fill our houses with spoil:",
-      "info": "",
-      "language": "English"
+      "text": [
+        "We",
+        "shall",
+        "find",
+        "all",
+        "precious",
+        "substance,",
+        "we",
+        "shall",
+        "fill",
+        "our",
+        "houses",
+        "with",
+        "spoil:"
+      ],
+      "info": ""
     },
     {
       "book_id": "PRO",
@@ -139,9 +332,21 @@
       "chapter": 1,
       "verse_start": 14,
       "verse_end": 14,
-      "text": "Cast in thy lot among us; let us all have one purse:",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Cast",
+        "in",
+        "thy",
+        "lot",
+        "among",
+        "us;",
+        "let",
+        "us",
+        "all",
+        "have",
+        "one",
+        "purse:"
+      ],
+      "info": ""
     },
     {
       "book_id": "PRO",
@@ -149,9 +354,25 @@
       "chapter": 1,
       "verse_start": 15,
       "verse_end": 15,
-      "text": "My son, walk not thou in the way with them; refrain thy foot from their path:",
-      "info": "",
-      "language": "English"
+      "text": [
+        "My",
+        "son,",
+        "walk",
+        "not",
+        "thou",
+        "in",
+        "the",
+        "way",
+        "with",
+        "them;",
+        "refrain",
+        "thy",
+        "foot",
+        "from",
+        "their",
+        "path:"
+      ],
+      "info": ""
     },
     {
       "book_id": "PRO",
@@ -159,9 +380,21 @@
       "chapter": 1,
       "verse_start": 16,
       "verse_end": 16,
-      "text": "For their feet run to evil, and make haste to shed blood.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "For",
+        "their",
+        "feet",
+        "run",
+        "to",
+        "evil,",
+        "and",
+        "make",
+        "haste",
+        "to",
+        "shed",
+        "blood."
+      ],
+      "info": ""
     },
     {
       "book_id": "PRO",
@@ -169,9 +402,22 @@
       "chapter": 1,
       "verse_start": 17,
       "verse_end": 17,
-      "text": "Surely in vain the net is spread in the sight of any bird.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Surely",
+        "in",
+        "vain",
+        "the",
+        "net",
+        "is",
+        "spread",
+        "in",
+        "the",
+        "sight",
+        "of",
+        "any",
+        "bird."
+      ],
+      "info": ""
     },
     {
       "book_id": "PRO",
@@ -179,9 +425,24 @@
       "chapter": 1,
       "verse_start": 18,
       "verse_end": 18,
-      "text": "And they lay wait for their <em>own</em> blood; they lurk privily for their <em>own</em> lives.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "And",
+        "they",
+        "lay",
+        "wait",
+        "for",
+        "their",
+        "<em>own</em>",
+        "blood;",
+        "they",
+        "lurk",
+        "privily",
+        "for",
+        "their",
+        "<em>own</em>",
+        "lives."
+      ],
+      "info": ""
     },
     {
       "book_id": "PRO",
@@ -189,9 +450,30 @@
       "chapter": 1,
       "verse_start": 19,
       "verse_end": 19,
-      "text": "So <em>are</em> the ways of every one that is greedy of gain; <em>which</em> taketh away the life of the owners thereof.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "So",
+        "<em>are</em>",
+        "the",
+        "ways",
+        "of",
+        "every",
+        "one",
+        "that",
+        "is",
+        "greedy",
+        "of",
+        "gain;",
+        "<em>which</em>",
+        "taketh",
+        "away",
+        "the",
+        "life",
+        "of",
+        "the",
+        "owners",
+        "thereof."
+      ],
+      "info": ""
     },
     {
       "book_id": "PRO",
@@ -199,9 +481,20 @@
       "chapter": 1,
       "verse_start": 20,
       "verse_end": 20,
-      "text": "¶ Wisdom crieth without; she uttereth her voice in the streets:",
-      "info": "",
-      "language": "English"
+      "text": [
+        "¶",
+        "Wisdom",
+        "crieth",
+        "without;",
+        "she",
+        "uttereth",
+        "her",
+        "voice",
+        "in",
+        "the",
+        "streets:"
+      ],
+      "info": ""
     },
     {
       "book_id": "PRO",
@@ -209,9 +502,31 @@
       "chapter": 1,
       "verse_start": 21,
       "verse_end": 21,
-      "text": "She crieth in the chief place of concourse, in the openings of the gates: in the city she uttereth her words, <em>saying,</em>",
-      "info": "",
-      "language": "English"
+      "text": [
+        "She",
+        "crieth",
+        "in",
+        "the",
+        "chief",
+        "place",
+        "of",
+        "concourse,",
+        "in",
+        "the",
+        "openings",
+        "of",
+        "the",
+        "gates:",
+        "in",
+        "the",
+        "city",
+        "she",
+        "uttereth",
+        "her",
+        "words,",
+        "<em>saying,</em>"
+      ],
+      "info": ""
     },
     {
       "book_id": "PRO",
@@ -219,9 +534,29 @@
       "chapter": 1,
       "verse_start": 22,
       "verse_end": 22,
-      "text": "How long, ye simple ones, will ye love simplicity? and the scorners delight in their scorning, and fools hate knowledge?",
-      "info": "",
-      "language": "English"
+      "text": [
+        "How",
+        "long,",
+        "ye",
+        "simple",
+        "ones,",
+        "will",
+        "ye",
+        "love",
+        "simplicity?",
+        "and",
+        "the",
+        "scorners",
+        "delight",
+        "in",
+        "their",
+        "scorning,",
+        "and",
+        "fools",
+        "hate",
+        "knowledge?"
+      ],
+      "info": ""
     },
     {
       "book_id": "PRO",
@@ -229,9 +564,31 @@
       "chapter": 1,
       "verse_start": 23,
       "verse_end": 23,
-      "text": "Turn you at my reproof: behold, I will pour out my spirit unto you, I will make known my words unto you.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Turn",
+        "you",
+        "at",
+        "my",
+        "reproof:",
+        "behold,",
+        "I",
+        "will",
+        "pour",
+        "out",
+        "my",
+        "spirit",
+        "unto",
+        "you,",
+        "I",
+        "will",
+        "make",
+        "known",
+        "my",
+        "words",
+        "unto",
+        "you."
+      ],
+      "info": ""
     },
     {
       "book_id": "PRO",
@@ -239,9 +596,27 @@
       "chapter": 1,
       "verse_start": 24,
       "verse_end": 24,
-      "text": "¶ Because I have called, and ye refused; I have stretched out my hand, and no man regarded;",
-      "info": "",
-      "language": "English"
+      "text": [
+        "¶",
+        "Because",
+        "I",
+        "have",
+        "called,",
+        "and",
+        "ye",
+        "refused;",
+        "I",
+        "have",
+        "stretched",
+        "out",
+        "my",
+        "hand,",
+        "and",
+        "no",
+        "man",
+        "regarded;"
+      ],
+      "info": ""
     },
     {
       "book_id": "PRO",
@@ -249,9 +624,24 @@
       "chapter": 1,
       "verse_start": 25,
       "verse_end": 25,
-      "text": "But ye have set at nought all my counsel, and would none of my reproof:",
-      "info": "",
-      "language": "English"
+      "text": [
+        "But",
+        "ye",
+        "have",
+        "set",
+        "at",
+        "nought",
+        "all",
+        "my",
+        "counsel,",
+        "and",
+        "would",
+        "none",
+        "of",
+        "my",
+        "reproof:"
+      ],
+      "info": ""
     },
     {
       "book_id": "PRO",
@@ -259,9 +649,23 @@
       "chapter": 1,
       "verse_start": 26,
       "verse_end": 26,
-      "text": "I also will laugh at your calamity; I will mock when your fear cometh;",
-      "info": "",
-      "language": "English"
+      "text": [
+        "I",
+        "also",
+        "will",
+        "laugh",
+        "at",
+        "your",
+        "calamity;",
+        "I",
+        "will",
+        "mock",
+        "when",
+        "your",
+        "fear",
+        "cometh;"
+      ],
+      "info": ""
     },
     {
       "book_id": "PRO",
@@ -269,9 +673,29 @@
       "chapter": 1,
       "verse_start": 27,
       "verse_end": 27,
-      "text": "When your fear cometh as desolation, and your destruction cometh as a whirlwind; when distress and anguish cometh upon you.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "When",
+        "your",
+        "fear",
+        "cometh",
+        "as",
+        "desolation,",
+        "and",
+        "your",
+        "destruction",
+        "cometh",
+        "as",
+        "a",
+        "whirlwind;",
+        "when",
+        "distress",
+        "and",
+        "anguish",
+        "cometh",
+        "upon",
+        "you."
+      ],
+      "info": ""
     },
     {
       "book_id": "PRO",
@@ -279,9 +703,31 @@
       "chapter": 1,
       "verse_start": 28,
       "verse_end": 28,
-      "text": "Then shall they call upon me, but I will not answer; they shall seek me early, but they shall not find me:",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Then",
+        "shall",
+        "they",
+        "call",
+        "upon",
+        "me,",
+        "but",
+        "I",
+        "will",
+        "not",
+        "answer;",
+        "they",
+        "shall",
+        "seek",
+        "me",
+        "early,",
+        "but",
+        "they",
+        "shall",
+        "not",
+        "find",
+        "me:"
+      ],
+      "info": ""
     },
     {
       "book_id": "PRO",
@@ -289,9 +735,23 @@
       "chapter": 1,
       "verse_start": 29,
       "verse_end": 29,
-      "text": "For that they hated knowledge, and did not choose the fear of the LORD:",
-      "info": "",
-      "language": "English"
+      "text": [
+        "For",
+        "that",
+        "they",
+        "hated",
+        "knowledge,",
+        "and",
+        "did",
+        "not",
+        "choose",
+        "the",
+        "fear",
+        "of",
+        "the",
+        "LORD:"
+      ],
+      "info": ""
     },
     {
       "book_id": "PRO",
@@ -299,9 +759,20 @@
       "chapter": 1,
       "verse_start": 30,
       "verse_end": 30,
-      "text": "They would none of my counsel: they despised all my reproof.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "They",
+        "would",
+        "none",
+        "of",
+        "my",
+        "counsel:",
+        "they",
+        "despised",
+        "all",
+        "my",
+        "reproof."
+      ],
+      "info": ""
     },
     {
       "book_id": "PRO",
@@ -309,9 +780,27 @@
       "chapter": 1,
       "verse_start": 31,
       "verse_end": 31,
-      "text": "Therefore shall they eat of the fruit of their own way, and be filled with their own devices.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Therefore",
+        "shall",
+        "they",
+        "eat",
+        "of",
+        "the",
+        "fruit",
+        "of",
+        "their",
+        "own",
+        "way,",
+        "and",
+        "be",
+        "filled",
+        "with",
+        "their",
+        "own",
+        "devices."
+      ],
+      "info": ""
     },
     {
       "book_id": "PRO",
@@ -319,9 +808,27 @@
       "chapter": 1,
       "verse_start": 32,
       "verse_end": 32,
-      "text": "For the turning away of the simple shall slay them, and the prosperity of fools shall destroy them.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "For",
+        "the",
+        "turning",
+        "away",
+        "of",
+        "the",
+        "simple",
+        "shall",
+        "slay",
+        "them,",
+        "and",
+        "the",
+        "prosperity",
+        "of",
+        "fools",
+        "shall",
+        "destroy",
+        "them."
+      ],
+      "info": ""
     },
     {
       "book_id": "PRO",
@@ -329,9 +836,25 @@
       "chapter": 1,
       "verse_start": 33,
       "verse_end": 33,
-      "text": "But whoso hearkeneth unto me shall dwell safely, and shall be quiet from fear of evil.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "But",
+        "whoso",
+        "hearkeneth",
+        "unto",
+        "me",
+        "shall",
+        "dwell",
+        "safely,",
+        "and",
+        "shall",
+        "be",
+        "quiet",
+        "from",
+        "fear",
+        "of",
+        "evil."
+      ],
+      "info": ""
     }
   ]
 }

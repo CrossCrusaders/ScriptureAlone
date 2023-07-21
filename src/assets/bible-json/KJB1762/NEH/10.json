@@ -9,9 +9,23 @@
       "chapter": 10,
       "verse_start": 1,
       "verse_end": 1,
-      "text": "Now those that sealed <em>were,</em> Nehemiah, the Tirshatha, the son of Hachaliah, and Zidkijah,",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Now",
+        "those",
+        "that",
+        "sealed",
+        "<em>were,</em>",
+        "Nehemiah,",
+        "the",
+        "Tirshatha,",
+        "the",
+        "son",
+        "of",
+        "Hachaliah,",
+        "and",
+        "Zidkijah,"
+      ],
+      "info": ""
     },
     {
       "book_id": "NEH",
@@ -19,9 +33,12 @@
       "chapter": 10,
       "verse_start": 2,
       "verse_end": 2,
-      "text": "Seraiah, Azariah, Jeremiah,",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Seraiah,",
+        "Azariah,",
+        "Jeremiah,"
+      ],
+      "info": ""
     },
     {
       "book_id": "NEH",
@@ -29,9 +46,12 @@
       "chapter": 10,
       "verse_start": 3,
       "verse_end": 3,
-      "text": "Pashur, Amariah, Malchijah,",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Pashur,",
+        "Amariah,",
+        "Malchijah,"
+      ],
+      "info": ""
     },
     {
       "book_id": "NEH",
@@ -39,9 +59,12 @@
       "chapter": 10,
       "verse_start": 4,
       "verse_end": 4,
-      "text": "Hattush, Shebaniah, Malluch,",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Hattush,",
+        "Shebaniah,",
+        "Malluch,"
+      ],
+      "info": ""
     },
     {
       "book_id": "NEH",
@@ -49,9 +72,12 @@
       "chapter": 10,
       "verse_start": 5,
       "verse_end": 5,
-      "text": "Harim, Meremoth, Obadiah,",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Harim,",
+        "Meremoth,",
+        "Obadiah,"
+      ],
+      "info": ""
     },
     {
       "book_id": "NEH",
@@ -59,9 +85,12 @@
       "chapter": 10,
       "verse_start": 6,
       "verse_end": 6,
-      "text": "Daniel, Ginnethon, Baruch,",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Daniel,",
+        "Ginnethon,",
+        "Baruch,"
+      ],
+      "info": ""
     },
     {
       "book_id": "NEH",
@@ -69,9 +98,12 @@
       "chapter": 10,
       "verse_start": 7,
       "verse_end": 7,
-      "text": "Meshullam, Abijah, Mijamin,",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Meshullam,",
+        "Abijah,",
+        "Mijamin,"
+      ],
+      "info": ""
     },
     {
       "book_id": "NEH",
@@ -79,9 +111,16 @@
       "chapter": 10,
       "verse_start": 8,
       "verse_end": 8,
-      "text": "Maaziah, Bilgai, Shemaiah: these <em>were</em> the priests.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Maaziah,",
+        "Bilgai,",
+        "Shemaiah:",
+        "these",
+        "<em>were</em>",
+        "the",
+        "priests."
+      ],
+      "info": ""
     },
     {
       "book_id": "NEH",
@@ -89,9 +128,25 @@
       "chapter": 10,
       "verse_start": 9,
       "verse_end": 9,
-      "text": "And the Levites: both Jeshua the son of Azaniah, Binnui of the sons of Henadad, Kadmiel;",
-      "info": "",
-      "language": "English"
+      "text": [
+        "And",
+        "the",
+        "Levites:",
+        "both",
+        "Jeshua",
+        "the",
+        "son",
+        "of",
+        "Azaniah,",
+        "Binnui",
+        "of",
+        "the",
+        "sons",
+        "of",
+        "Henadad,",
+        "Kadmiel;"
+      ],
+      "info": ""
     },
     {
       "book_id": "NEH",
@@ -99,9 +154,17 @@
       "chapter": 10,
       "verse_start": 10,
       "verse_end": 10,
-      "text": "And their brethren, Shebaniah, Hodijah, Kelita, Pelaiah, Hanan,",
-      "info": "",
-      "language": "English"
+      "text": [
+        "And",
+        "their",
+        "brethren,",
+        "Shebaniah,",
+        "Hodijah,",
+        "Kelita,",
+        "Pelaiah,",
+        "Hanan,"
+      ],
+      "info": ""
     },
     {
       "book_id": "NEH",
@@ -109,9 +172,12 @@
       "chapter": 10,
       "verse_start": 11,
       "verse_end": 11,
-      "text": "Micha, Rehob, Hashabiah,",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Micha,",
+        "Rehob,",
+        "Hashabiah,"
+      ],
+      "info": ""
     },
     {
       "book_id": "NEH",
@@ -119,9 +185,12 @@
       "chapter": 10,
       "verse_start": 12,
       "verse_end": 12,
-      "text": "Zaccur, Sherebiah, Shebaniah,",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Zaccur,",
+        "Sherebiah,",
+        "Shebaniah,"
+      ],
+      "info": ""
     },
     {
       "book_id": "NEH",
@@ -129,9 +198,12 @@
       "chapter": 10,
       "verse_start": 13,
       "verse_end": 13,
-      "text": "Hodijah, Bani, Beninu.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Hodijah,",
+        "Bani,",
+        "Beninu."
+      ],
+      "info": ""
     },
     {
       "book_id": "NEH",
@@ -139,9 +211,19 @@
       "chapter": 10,
       "verse_start": 14,
       "verse_end": 14,
-      "text": "The chief of the people; Parosh, Pahathmoab, Elam, Zatthu, Bani,",
-      "info": "",
-      "language": "English"
+      "text": [
+        "The",
+        "chief",
+        "of",
+        "the",
+        "people;",
+        "Parosh,",
+        "Pahathmoab,",
+        "Elam,",
+        "Zatthu,",
+        "Bani,"
+      ],
+      "info": ""
     },
     {
       "book_id": "NEH",
@@ -149,9 +231,12 @@
       "chapter": 10,
       "verse_start": 15,
       "verse_end": 15,
-      "text": "Bunni, Azgad, Bebai,",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Bunni,",
+        "Azgad,",
+        "Bebai,"
+      ],
+      "info": ""
     },
     {
       "book_id": "NEH",
@@ -159,9 +244,12 @@
       "chapter": 10,
       "verse_start": 16,
       "verse_end": 16,
-      "text": "Adonijah, Bigvai, Adin,",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Adonijah,",
+        "Bigvai,",
+        "Adin,"
+      ],
+      "info": ""
     },
     {
       "book_id": "NEH",
@@ -169,9 +257,12 @@
       "chapter": 10,
       "verse_start": 17,
       "verse_end": 17,
-      "text": "Ater, Hizkijah, Azzur,",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Ater,",
+        "Hizkijah,",
+        "Azzur,"
+      ],
+      "info": ""
     },
     {
       "book_id": "NEH",
@@ -179,9 +270,12 @@
       "chapter": 10,
       "verse_start": 18,
       "verse_end": 18,
-      "text": "Hodijah, Hashum, Bezai,",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Hodijah,",
+        "Hashum,",
+        "Bezai,"
+      ],
+      "info": ""
     },
     {
       "book_id": "NEH",
@@ -189,9 +283,12 @@
       "chapter": 10,
       "verse_start": 19,
       "verse_end": 19,
-      "text": "Hariph, Anathoth, Nebai,",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Hariph,",
+        "Anathoth,",
+        "Nebai,"
+      ],
+      "info": ""
     },
     {
       "book_id": "NEH",
@@ -199,9 +296,12 @@
       "chapter": 10,
       "verse_start": 20,
       "verse_end": 20,
-      "text": "Magpiash, Meshullam, Hezir,",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Magpiash,",
+        "Meshullam,",
+        "Hezir,"
+      ],
+      "info": ""
     },
     {
       "book_id": "NEH",
@@ -209,9 +309,12 @@
       "chapter": 10,
       "verse_start": 21,
       "verse_end": 21,
-      "text": "Meshezabeel, Zadok, Jaddua,",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Meshezabeel,",
+        "Zadok,",
+        "Jaddua,"
+      ],
+      "info": ""
     },
     {
       "book_id": "NEH",
@@ -219,9 +322,12 @@
       "chapter": 10,
       "verse_start": 22,
       "verse_end": 22,
-      "text": "Pelatiah, Hanan, Anaiah,",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Pelatiah,",
+        "Hanan,",
+        "Anaiah,"
+      ],
+      "info": ""
     },
     {
       "book_id": "NEH",
@@ -229,9 +335,12 @@
       "chapter": 10,
       "verse_start": 23,
       "verse_end": 23,
-      "text": "Hoshea, Hananiah, Hashub,",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Hoshea,",
+        "Hananiah,",
+        "Hashub,"
+      ],
+      "info": ""
     },
     {
       "book_id": "NEH",
@@ -239,9 +348,12 @@
       "chapter": 10,
       "verse_start": 24,
       "verse_end": 24,
-      "text": "Hallohesh, Pileha, Shobek,",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Hallohesh,",
+        "Pileha,",
+        "Shobek,"
+      ],
+      "info": ""
     },
     {
       "book_id": "NEH",
@@ -249,9 +361,12 @@
       "chapter": 10,
       "verse_start": 25,
       "verse_end": 25,
-      "text": "Rehum, Hashabnah, Maaseiah,",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Rehum,",
+        "Hashabnah,",
+        "Maaseiah,"
+      ],
+      "info": ""
     },
     {
       "book_id": "NEH",
@@ -259,9 +374,13 @@
       "chapter": 10,
       "verse_start": 26,
       "verse_end": 26,
-      "text": "And Ahijah, Hanan, Anan,",
-      "info": "",
-      "language": "English"
+      "text": [
+        "And",
+        "Ahijah,",
+        "Hanan,",
+        "Anan,"
+      ],
+      "info": ""
     },
     {
       "book_id": "NEH",
@@ -269,9 +388,12 @@
       "chapter": 10,
       "verse_start": 27,
       "verse_end": 27,
-      "text": "Malluch, Harim, Baanah.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Malluch,",
+        "Harim,",
+        "Baanah."
+      ],
+      "info": ""
     },
     {
       "book_id": "NEH",
@@ -279,9 +401,58 @@
       "chapter": 10,
       "verse_start": 28,
       "verse_end": 28,
-      "text": "¶ And the rest of the people, the priests, the Levites, the porters, the singers, the Nethinims, and all they that had separated themselves from the people of the lands unto the law of God, their wives, their sons, and their daughters, every one having knowledge, and having understanding;",
-      "info": "",
-      "language": "English"
+      "text": [
+        "¶",
+        "And",
+        "the",
+        "rest",
+        "of",
+        "the",
+        "people,",
+        "the",
+        "priests,",
+        "the",
+        "Levites,",
+        "the",
+        "porters,",
+        "the",
+        "singers,",
+        "the",
+        "Nethinims,",
+        "and",
+        "all",
+        "they",
+        "that",
+        "had",
+        "separated",
+        "themselves",
+        "from",
+        "the",
+        "people",
+        "of",
+        "the",
+        "lands",
+        "unto",
+        "the",
+        "law",
+        "of",
+        "God,",
+        "their",
+        "wives,",
+        "their",
+        "sons,",
+        "and",
+        "their",
+        "daughters,",
+        "every",
+        "one",
+        "having",
+        "knowledge,",
+        "and",
+        "having",
+        "understanding;"
+      ],
+      "info": ""
     },
     {
       "book_id": "NEH",
@@ -289,9 +460,58 @@
       "chapter": 10,
       "verse_start": 29,
       "verse_end": 29,
-      "text": "They clave to their brethren, their nobles, and entered into a curse, and into an oath, to walk in God's law, which was given by Moses the servant of God, and to observe and do all the commandments of the LORD our Lord, and his judgments and his statutes;",
-      "info": "",
-      "language": "English"
+      "text": [
+        "They",
+        "clave",
+        "to",
+        "their",
+        "brethren,",
+        "their",
+        "nobles,",
+        "and",
+        "entered",
+        "into",
+        "a",
+        "curse,",
+        "and",
+        "into",
+        "an",
+        "oath,",
+        "to",
+        "walk",
+        "in",
+        "God's",
+        "law,",
+        "which",
+        "was",
+        "given",
+        "by",
+        "Moses",
+        "the",
+        "servant",
+        "of",
+        "God,",
+        "and",
+        "to",
+        "observe",
+        "and",
+        "do",
+        "all",
+        "the",
+        "commandments",
+        "of",
+        "the",
+        "LORD",
+        "our",
+        "Lord,",
+        "and",
+        "his",
+        "judgments",
+        "and",
+        "his",
+        "statutes;"
+      ],
+      "info": ""
     },
     {
       "book_id": "NEH",
@@ -299,9 +519,30 @@
       "chapter": 10,
       "verse_start": 30,
       "verse_end": 30,
-      "text": "And that we would not give our daughters unto the people of the land, nor take their daughters for our sons:",
-      "info": "",
-      "language": "English"
+      "text": [
+        "And",
+        "that",
+        "we",
+        "would",
+        "not",
+        "give",
+        "our",
+        "daughters",
+        "unto",
+        "the",
+        "people",
+        "of",
+        "the",
+        "land,",
+        "nor",
+        "take",
+        "their",
+        "daughters",
+        "for",
+        "our",
+        "sons:"
+      ],
+      "info": ""
     },
     {
       "book_id": "NEH",
@@ -309,9 +550,57 @@
       "chapter": 10,
       "verse_start": 31,
       "verse_end": 31,
-      "text": "And <em>if</em> the people of the land bring ware or any victuals on the sabbath day to sell, <em>that</em> we would not buy it of them on the sabbath, or on the holy day: and <em>that</em> we would leave the seventh year, and the exaction of every debt.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "And",
+        "<em>if</em>",
+        "the",
+        "people",
+        "of",
+        "the",
+        "land",
+        "bring",
+        "ware",
+        "or",
+        "any",
+        "victuals",
+        "on",
+        "the",
+        "sabbath",
+        "day",
+        "to",
+        "sell,",
+        "<em>that</em>",
+        "we",
+        "would",
+        "not",
+        "buy",
+        "it",
+        "of",
+        "them",
+        "on",
+        "the",
+        "sabbath,",
+        "or",
+        "on",
+        "the",
+        "holy",
+        "day:",
+        "and",
+        "<em>that</em>",
+        "we",
+        "would",
+        "leave",
+        "the",
+        "seventh",
+        "year,",
+        "and",
+        "the",
+        "exaction",
+        "of",
+        "every",
+        "debt."
+      ],
+      "info": ""
     },
     {
       "book_id": "NEH",
@@ -319,9 +608,35 @@
       "chapter": 10,
       "verse_start": 32,
       "verse_end": 32,
-      "text": "Also we made ordinances for us, to charge ourselves yearly with the third part of a shekel for the service of the house of our God;",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Also",
+        "we",
+        "made",
+        "ordinances",
+        "for",
+        "us,",
+        "to",
+        "charge",
+        "ourselves",
+        "yearly",
+        "with",
+        "the",
+        "third",
+        "part",
+        "of",
+        "a",
+        "shekel",
+        "for",
+        "the",
+        "service",
+        "of",
+        "the",
+        "house",
+        "of",
+        "our",
+        "God;"
+      ],
+      "info": ""
     },
     {
       "book_id": "NEH",
@@ -329,9 +644,62 @@
       "chapter": 10,
       "verse_start": 33,
       "verse_end": 33,
-      "text": "For the shewbread, and for the continual meat offering, and for the continual burnt offering, of the sabbaths, of the new moons, for the set feasts, and for the holy <em>things,</em> and for the sin offerings to make an atonement for Israel, and <em>for</em> all the work of the house of our God.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "For",
+        "the",
+        "shewbread,",
+        "and",
+        "for",
+        "the",
+        "continual",
+        "meat",
+        "offering,",
+        "and",
+        "for",
+        "the",
+        "continual",
+        "burnt",
+        "offering,",
+        "of",
+        "the",
+        "sabbaths,",
+        "of",
+        "the",
+        "new",
+        "moons,",
+        "for",
+        "the",
+        "set",
+        "feasts,",
+        "and",
+        "for",
+        "the",
+        "holy",
+        "<em>things,</em>",
+        "and",
+        "for",
+        "the",
+        "sin",
+        "offerings",
+        "to",
+        "make",
+        "an",
+        "atonement",
+        "for",
+        "Israel,",
+        "and",
+        "<em>for</em>",
+        "all",
+        "the",
+        "work",
+        "of",
+        "the",
+        "house",
+        "of",
+        "our",
+        "God."
+      ],
+      "info": ""
     },
     {
       "book_id": "NEH",
@@ -339,9 +707,64 @@
       "chapter": 10,
       "verse_start": 34,
       "verse_end": 34,
-      "text": "And we cast the lots among the priests, the Levites, and the people, for the wood offering, to bring <em>it</em> into the house of our God, after the houses of our fathers, at times appointed year by year, to burn upon the altar of the LORD our God, as <em>it is</em> written in the law:",
-      "info": "",
-      "language": "English"
+      "text": [
+        "And",
+        "we",
+        "cast",
+        "the",
+        "lots",
+        "among",
+        "the",
+        "priests,",
+        "the",
+        "Levites,",
+        "and",
+        "the",
+        "people,",
+        "for",
+        "the",
+        "wood",
+        "offering,",
+        "to",
+        "bring",
+        "<em>it</em>",
+        "into",
+        "the",
+        "house",
+        "of",
+        "our",
+        "God,",
+        "after",
+        "the",
+        "houses",
+        "of",
+        "our",
+        "fathers,",
+        "at",
+        "times",
+        "appointed",
+        "year",
+        "by",
+        "year,",
+        "to",
+        "burn",
+        "upon",
+        "the",
+        "altar",
+        "of",
+        "the",
+        "LORD",
+        "our",
+        "God,",
+        "as",
+        "<em>it</em>",
+        "<em>is</em>",
+        "written",
+        "in",
+        "the",
+        "law:"
+      ],
+      "info": ""
     },
     {
       "book_id": "NEH",
@@ -349,9 +772,35 @@
       "chapter": 10,
       "verse_start": 35,
       "verse_end": 35,
-      "text": "And to bring the firstfruits of our ground, and the firstfruits of all fruit of all trees, year by year, unto the house of the LORD:",
-      "info": "",
-      "language": "English"
+      "text": [
+        "And",
+        "to",
+        "bring",
+        "the",
+        "firstfruits",
+        "of",
+        "our",
+        "ground,",
+        "and",
+        "the",
+        "firstfruits",
+        "of",
+        "all",
+        "fruit",
+        "of",
+        "all",
+        "trees,",
+        "year",
+        "by",
+        "year,",
+        "unto",
+        "the",
+        "house",
+        "of",
+        "the",
+        "LORD:"
+      ],
+      "info": ""
     },
     {
       "book_id": "NEH",
@@ -359,9 +808,55 @@
       "chapter": 10,
       "verse_start": 36,
       "verse_end": 36,
-      "text": "Also the firstborn of our sons, and of our cattle, as <em>it is</em> written in the law, and the firstlings of our herds and of our flocks, to bring to the house of our God, unto the priests that minister in the house of our God:",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Also",
+        "the",
+        "firstborn",
+        "of",
+        "our",
+        "sons,",
+        "and",
+        "of",
+        "our",
+        "cattle,",
+        "as",
+        "<em>it</em>",
+        "<em>is</em>",
+        "written",
+        "in",
+        "the",
+        "law,",
+        "and",
+        "the",
+        "firstlings",
+        "of",
+        "our",
+        "herds",
+        "and",
+        "of",
+        "our",
+        "flocks,",
+        "to",
+        "bring",
+        "to",
+        "the",
+        "house",
+        "of",
+        "our",
+        "God,",
+        "unto",
+        "the",
+        "priests",
+        "that",
+        "minister",
+        "in",
+        "the",
+        "house",
+        "of",
+        "our",
+        "God:"
+      ],
+      "info": ""
     },
     {
       "book_id": "NEH",
@@ -369,9 +864,71 @@
       "chapter": 10,
       "verse_start": 37,
       "verse_end": 37,
-      "text": "And <em>that</em> we should bring the firstfruits of our dough, and our offerings, and the fruit of all manner of trees, of wine and of oil, unto the priests, to the chambers of the house of our God; and the tithes of our ground unto the Levites, that the same Levites might have the tithes in all the cities of our tillage.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "And",
+        "<em>that</em>",
+        "we",
+        "should",
+        "bring",
+        "the",
+        "firstfruits",
+        "of",
+        "our",
+        "dough,",
+        "and",
+        "our",
+        "offerings,",
+        "and",
+        "the",
+        "fruit",
+        "of",
+        "all",
+        "manner",
+        "of",
+        "trees,",
+        "of",
+        "wine",
+        "and",
+        "of",
+        "oil,",
+        "unto",
+        "the",
+        "priests,",
+        "to",
+        "the",
+        "chambers",
+        "of",
+        "the",
+        "house",
+        "of",
+        "our",
+        "God;",
+        "and",
+        "the",
+        "tithes",
+        "of",
+        "our",
+        "ground",
+        "unto",
+        "the",
+        "Levites,",
+        "that",
+        "the",
+        "same",
+        "Levites",
+        "might",
+        "have",
+        "the",
+        "tithes",
+        "in",
+        "all",
+        "the",
+        "cities",
+        "of",
+        "our",
+        "tillage."
+      ],
+      "info": ""
     },
     {
       "book_id": "NEH",
@@ -379,9 +936,50 @@
       "chapter": 10,
       "verse_start": 38,
       "verse_end": 38,
-      "text": "And the priest the son of Aaron shall be with the Levites, when the Levites take tithes: and the Levites shall bring up the tithe of the tithes unto the house of our God, to the chambers, into the treasure house.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "And",
+        "the",
+        "priest",
+        "the",
+        "son",
+        "of",
+        "Aaron",
+        "shall",
+        "be",
+        "with",
+        "the",
+        "Levites,",
+        "when",
+        "the",
+        "Levites",
+        "take",
+        "tithes:",
+        "and",
+        "the",
+        "Levites",
+        "shall",
+        "bring",
+        "up",
+        "the",
+        "tithe",
+        "of",
+        "the",
+        "tithes",
+        "unto",
+        "the",
+        "house",
+        "of",
+        "our",
+        "God,",
+        "to",
+        "the",
+        "chambers,",
+        "into",
+        "the",
+        "treasure",
+        "house."
+      ],
+      "info": ""
     },
     {
       "book_id": "NEH",
@@ -389,9 +987,64 @@
       "chapter": 10,
       "verse_start": 39,
       "verse_end": 39,
-      "text": "For the children of Israel and the children of Levi shall bring the offering of the corn, of the new wine, and the oil, unto the chambers, where <em>are</em> the vessels of the sanctuary, and the priests that minister, and the porters, and the singers: and we will not forsake the house of our God.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "For",
+        "the",
+        "children",
+        "of",
+        "Israel",
+        "and",
+        "the",
+        "children",
+        "of",
+        "Levi",
+        "shall",
+        "bring",
+        "the",
+        "offering",
+        "of",
+        "the",
+        "corn,",
+        "of",
+        "the",
+        "new",
+        "wine,",
+        "and",
+        "the",
+        "oil,",
+        "unto",
+        "the",
+        "chambers,",
+        "where",
+        "<em>are</em>",
+        "the",
+        "vessels",
+        "of",
+        "the",
+        "sanctuary,",
+        "and",
+        "the",
+        "priests",
+        "that",
+        "minister,",
+        "and",
+        "the",
+        "porters,",
+        "and",
+        "the",
+        "singers:",
+        "and",
+        "we",
+        "will",
+        "not",
+        "forsake",
+        "the",
+        "house",
+        "of",
+        "our",
+        "God."
+      ],
+      "info": ""
     }
   ]
 }

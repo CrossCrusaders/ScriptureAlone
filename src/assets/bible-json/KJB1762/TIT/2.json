@@ -9,9 +9,18 @@
       "chapter": 2,
       "verse_start": 1,
       "verse_end": 1,
-      "text": "But speak thou the things which become sound doctrine:",
-      "info": "",
-      "language": "English"
+      "text": [
+        "But",
+        "speak",
+        "thou",
+        "the",
+        "things",
+        "which",
+        "become",
+        "sound",
+        "doctrine:"
+      ],
+      "info": ""
     },
     {
       "book_id": "TIT",
@@ -19,9 +28,24 @@
       "chapter": 2,
       "verse_start": 2,
       "verse_end": 2,
-      "text": "That the aged men be sober, grave, temperate, sound in faith, in charity, in patience.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "That",
+        "the",
+        "aged",
+        "men",
+        "be",
+        "sober,",
+        "grave,",
+        "temperate,",
+        "sound",
+        "in",
+        "faith,",
+        "in",
+        "charity,",
+        "in",
+        "patience."
+      ],
+      "info": ""
     },
     {
       "book_id": "TIT",
@@ -29,9 +53,33 @@
       "chapter": 2,
       "verse_start": 3,
       "verse_end": 3,
-      "text": "The aged women likewise, that <em>they be</em> in behaviour as becometh holiness, not false accusers, not given to much wine, teachers of good things;",
-      "info": "",
-      "language": "English"
+      "text": [
+        "The",
+        "aged",
+        "women",
+        "likewise,",
+        "that",
+        "<em>they</em>",
+        "<em>be</em>",
+        "in",
+        "behaviour",
+        "as",
+        "becometh",
+        "holiness,",
+        "not",
+        "false",
+        "accusers,",
+        "not",
+        "given",
+        "to",
+        "much",
+        "wine,",
+        "teachers",
+        "of",
+        "good",
+        "things;"
+      ],
+      "info": ""
     },
     {
       "book_id": "TIT",
@@ -39,9 +87,27 @@
       "chapter": 2,
       "verse_start": 4,
       "verse_end": 4,
-      "text": "That they may teach the young women to be sober, to love their husbands, to love their children,",
-      "info": "",
-      "language": "English"
+      "text": [
+        "That",
+        "they",
+        "may",
+        "teach",
+        "the",
+        "young",
+        "women",
+        "to",
+        "be",
+        "sober,",
+        "to",
+        "love",
+        "their",
+        "husbands,",
+        "to",
+        "love",
+        "their",
+        "children,"
+      ],
+      "info": ""
     },
     {
       "book_id": "TIT",
@@ -49,9 +115,30 @@
       "chapter": 2,
       "verse_start": 5,
       "verse_end": 5,
-      "text": "<em>To be</em> discreet, chaste, keepers at home, good, obedient to their own husbands, that the word of God be not blasphemed.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "<em>To</em>",
+        "<em>be</em>",
+        "discreet,",
+        "chaste,",
+        "keepers",
+        "at",
+        "home,",
+        "good,",
+        "obedient",
+        "to",
+        "their",
+        "own",
+        "husbands,",
+        "that",
+        "the",
+        "word",
+        "of",
+        "God",
+        "be",
+        "not",
+        "blasphemed."
+      ],
+      "info": ""
     },
     {
       "book_id": "TIT",
@@ -59,9 +146,17 @@
       "chapter": 2,
       "verse_start": 6,
       "verse_end": 6,
-      "text": "Young men likewise exhort to be sober minded.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Young",
+        "men",
+        "likewise",
+        "exhort",
+        "to",
+        "be",
+        "sober",
+        "minded."
+      ],
+      "info": ""
     },
     {
       "book_id": "TIT",
@@ -69,9 +164,25 @@
       "chapter": 2,
       "verse_start": 7,
       "verse_end": 7,
-      "text": "In all things shewing thyself a pattern of good works: in doctrine <em>shewing</em> uncorruptness, gravity, sincerity,",
-      "info": "",
-      "language": "English"
+      "text": [
+        "In",
+        "all",
+        "things",
+        "shewing",
+        "thyself",
+        "a",
+        "pattern",
+        "of",
+        "good",
+        "works:",
+        "in",
+        "doctrine",
+        "<em>shewing</em>",
+        "uncorruptness,",
+        "gravity,",
+        "sincerity,"
+      ],
+      "info": ""
     },
     {
       "book_id": "TIT",
@@ -79,9 +190,34 @@
       "chapter": 2,
       "verse_start": 8,
       "verse_end": 8,
-      "text": "Sound speech, that cannot be condemned; that he that is of the contrary part may be ashamed, having no evil thing to say of you.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Sound",
+        "speech,",
+        "that",
+        "cannot",
+        "be",
+        "condemned;",
+        "that",
+        "he",
+        "that",
+        "is",
+        "of",
+        "the",
+        "contrary",
+        "part",
+        "may",
+        "be",
+        "ashamed,",
+        "having",
+        "no",
+        "evil",
+        "thing",
+        "to",
+        "say",
+        "of",
+        "you."
+      ],
+      "info": ""
     },
     {
       "book_id": "TIT",
@@ -89,9 +225,29 @@
       "chapter": 2,
       "verse_start": 9,
       "verse_end": 9,
-      "text": "<em>Exhort</em> servants to be obedient unto their own masters, <em>and</em> to please <em>them</em> well in all <em>things;</em> not answering again;",
-      "info": "",
-      "language": "English"
+      "text": [
+        "<em>Exhort</em>",
+        "servants",
+        "to",
+        "be",
+        "obedient",
+        "unto",
+        "their",
+        "own",
+        "masters,",
+        "<em>and</em>",
+        "to",
+        "please",
+        "<em>them</em>",
+        "well",
+        "in",
+        "all",
+        "<em>things;</em>",
+        "not",
+        "answering",
+        "again;"
+      ],
+      "info": ""
     },
     {
       "book_id": "TIT",
@@ -99,9 +255,29 @@
       "chapter": 2,
       "verse_start": 10,
       "verse_end": 10,
-      "text": "Not purloining, but shewing all good fidelity; that they may adorn the doctrine of God our Saviour in all things.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Not",
+        "purloining,",
+        "but",
+        "shewing",
+        "all",
+        "good",
+        "fidelity;",
+        "that",
+        "they",
+        "may",
+        "adorn",
+        "the",
+        "doctrine",
+        "of",
+        "God",
+        "our",
+        "Saviour",
+        "in",
+        "all",
+        "things."
+      ],
+      "info": ""
     },
     {
       "book_id": "TIT",
@@ -109,9 +285,22 @@
       "chapter": 2,
       "verse_start": 11,
       "verse_end": 11,
-      "text": "For the grace of God that bringeth salvation hath appeared to all men,",
-      "info": "",
-      "language": "English"
+      "text": [
+        "For",
+        "the",
+        "grace",
+        "of",
+        "God",
+        "that",
+        "bringeth",
+        "salvation",
+        "hath",
+        "appeared",
+        "to",
+        "all",
+        "men,"
+      ],
+      "info": ""
     },
     {
       "book_id": "TIT",
@@ -119,9 +308,28 @@
       "chapter": 2,
       "verse_start": 12,
       "verse_end": 12,
-      "text": "Teaching us that, denying ungodliness and worldly lusts, we should live soberly, righteously, and godly, in this present world;",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Teaching",
+        "us",
+        "that,",
+        "denying",
+        "ungodliness",
+        "and",
+        "worldly",
+        "lusts,",
+        "we",
+        "should",
+        "live",
+        "soberly,",
+        "righteously,",
+        "and",
+        "godly,",
+        "in",
+        "this",
+        "present",
+        "world;"
+      ],
+      "info": ""
     },
     {
       "book_id": "TIT",
@@ -129,9 +337,27 @@
       "chapter": 2,
       "verse_start": 13,
       "verse_end": 13,
-      "text": "Looking for that blessed hope, and the glorious appearing of the great God and our Saviour Jesus Christ;",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Looking",
+        "for",
+        "that",
+        "blessed",
+        "hope,",
+        "and",
+        "the",
+        "glorious",
+        "appearing",
+        "of",
+        "the",
+        "great",
+        "God",
+        "and",
+        "our",
+        "Saviour",
+        "Jesus",
+        "Christ;"
+      ],
+      "info": ""
     },
     {
       "book_id": "TIT",
@@ -139,9 +365,33 @@
       "chapter": 2,
       "verse_start": 14,
       "verse_end": 14,
-      "text": "Who gave himself for us, that he might redeem us from all iniquity, and purify unto himself a peculiar people, zealous of good works.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Who",
+        "gave",
+        "himself",
+        "for",
+        "us,",
+        "that",
+        "he",
+        "might",
+        "redeem",
+        "us",
+        "from",
+        "all",
+        "iniquity,",
+        "and",
+        "purify",
+        "unto",
+        "himself",
+        "a",
+        "peculiar",
+        "people,",
+        "zealous",
+        "of",
+        "good",
+        "works."
+      ],
+      "info": ""
     },
     {
       "book_id": "TIT",
@@ -149,9 +399,24 @@
       "chapter": 2,
       "verse_start": 15,
       "verse_end": 15,
-      "text": "These things speak, and exhort, and rebuke with all authority. Let no man despise thee.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "These",
+        "things",
+        "speak,",
+        "and",
+        "exhort,",
+        "and",
+        "rebuke",
+        "with",
+        "all",
+        "authority.",
+        "Let",
+        "no",
+        "man",
+        "despise",
+        "thee."
+      ],
+      "info": ""
     }
   ]
 }

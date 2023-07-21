@@ -1,5 +1,5 @@
 {
-  "header": "¶ A Psalm.",
+  "header": "",
   "footer": "",
   "language": "English",
   "verses": [
@@ -9,9 +9,37 @@
       "chapter": 98,
       "verse_start": 1,
       "verse_end": 1,
-      "text": "O sing unto the LORD a new song; for he hath done marvellous things: his right hand, and his holy arm, hath gotten him the victory.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "(A",
+        "Psalm.)",
+        "O",
+        "sing",
+        "unto",
+        "the",
+        "LORD",
+        "a",
+        "new",
+        "song;",
+        "for",
+        "he",
+        "hath",
+        "done",
+        "marvellous",
+        "things:",
+        "his",
+        "right",
+        "hand,",
+        "and",
+        "his",
+        "holy",
+        "arm,",
+        "hath",
+        "gotten",
+        "him",
+        "the",
+        "victory."
+      ],
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -19,9 +47,28 @@
       "chapter": 98,
       "verse_start": 2,
       "verse_end": 2,
-      "text": "The LORD hath made known his salvation: his righteousness hath he openly shewed in the sight of the heathen.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "The",
+        "LORD",
+        "hath",
+        "made",
+        "known",
+        "his",
+        "salvation:",
+        "his",
+        "righteousness",
+        "hath",
+        "he",
+        "openly",
+        "shewed",
+        "in",
+        "the",
+        "sight",
+        "of",
+        "the",
+        "heathen."
+      ],
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -29,9 +76,35 @@
       "chapter": 98,
       "verse_start": 3,
       "verse_end": 3,
-      "text": "He hath remembered his mercy and his truth toward the house of Israel: all the ends of the earth have seen the salvation of our God.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "He",
+        "hath",
+        "remembered",
+        "his",
+        "mercy",
+        "and",
+        "his",
+        "truth",
+        "toward",
+        "the",
+        "house",
+        "of",
+        "Israel:",
+        "all",
+        "the",
+        "ends",
+        "of",
+        "the",
+        "earth",
+        "have",
+        "seen",
+        "the",
+        "salvation",
+        "of",
+        "our",
+        "God."
+      ],
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -39,9 +112,28 @@
       "chapter": 98,
       "verse_start": 4,
       "verse_end": 4,
-      "text": "Make a joyful noise unto the LORD, all the earth: make a loud noise, and rejoice, and sing praise.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Make",
+        "a",
+        "joyful",
+        "noise",
+        "unto",
+        "the",
+        "LORD,",
+        "all",
+        "the",
+        "earth:",
+        "make",
+        "a",
+        "loud",
+        "noise,",
+        "and",
+        "rejoice,",
+        "and",
+        "sing",
+        "praise."
+      ],
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -49,9 +141,25 @@
       "chapter": 98,
       "verse_start": 5,
       "verse_end": 5,
-      "text": "Sing unto the LORD with the harp; with the harp, and the voice of a psalm.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Sing",
+        "unto",
+        "the",
+        "LORD",
+        "with",
+        "the",
+        "harp;",
+        "with",
+        "the",
+        "harp,",
+        "and",
+        "the",
+        "voice",
+        "of",
+        "a",
+        "psalm."
+      ],
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -59,9 +167,24 @@
       "chapter": 98,
       "verse_start": 6,
       "verse_end": 6,
-      "text": "With trumpets and sound of cornet make a joyful noise before the LORD, the King.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "With",
+        "trumpets",
+        "and",
+        "sound",
+        "of",
+        "cornet",
+        "make",
+        "a",
+        "joyful",
+        "noise",
+        "before",
+        "the",
+        "LORD,",
+        "the",
+        "King."
+      ],
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -69,9 +192,24 @@
       "chapter": 98,
       "verse_start": 7,
       "verse_end": 7,
-      "text": "Let the sea roar, and the fulness thereof; the world, and they that dwell therein.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Let",
+        "the",
+        "sea",
+        "roar,",
+        "and",
+        "the",
+        "fulness",
+        "thereof;",
+        "the",
+        "world,",
+        "and",
+        "they",
+        "that",
+        "dwell",
+        "therein."
+      ],
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -79,9 +217,21 @@
       "chapter": 98,
       "verse_start": 8,
       "verse_end": 8,
-      "text": "Let the floods clap <em>their</em> hands: let the hills be joyful together",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Let",
+        "the",
+        "floods",
+        "clap",
+        "<em>their</em>",
+        "hands:",
+        "let",
+        "the",
+        "hills",
+        "be",
+        "joyful",
+        "together"
+      ],
+      "info": ""
     },
     {
       "book_id": "PSA",
@@ -89,9 +239,31 @@
       "chapter": 98,
       "verse_start": 9,
       "verse_end": 9,
-      "text": "Before the LORD; for he cometh to judge the earth: with righteousness shall he judge the world, and the people with equity.",
-      "info": "",
-      "language": "English"
+      "text": [
+        "Before",
+        "the",
+        "LORD;",
+        "for",
+        "he",
+        "cometh",
+        "to",
+        "judge",
+        "the",
+        "earth:",
+        "with",
+        "righteousness",
+        "shall",
+        "he",
+        "judge",
+        "the",
+        "world,",
+        "and",
+        "the",
+        "people",
+        "with",
+        "equity."
+      ],
+      "info": ""
     }
   ]
 }
